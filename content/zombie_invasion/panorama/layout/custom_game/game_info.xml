@@ -1,0 +1,30 @@
+<root>
+
+	<!--Прописываем источники наших стилей, один из которых делали сами, второй дефолтный-->	
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/game_info.css" />
+	</styles>
+
+	<!--Оформляем нашу главную фоновую панельку-->
+	<Panel class="GameInfo" >
+
+		<!--Надпись оглавления в отдельной панельке-->
+		<Panel id="Title">
+			<Label id="TitleName" text="#addon_game_name" />
+		</Panel> 
+
+		<!--Первый заголовок-->	
+		<Label id="H1" class="InfoRow" html="true" text="#head_wisp" /> 
+		<!--Первая картиночка с текстом-->
+
+		<!--Второй заголовок-->
+		<Label id="H2" class="InfoRow" html="true" text="#head_blood" />
+		<!--Вторая картиночка с текстом-->
+		<Panel id="Info2" class="InfoStringDown" >
+			<Image id="InfoImage" src="file://{images}/custom_game/game_info/glaza.png" />
+			<Label id="InfoText" text="#Info2" />						
+		</Panel> 
+
+	</Panel>		
+</root>

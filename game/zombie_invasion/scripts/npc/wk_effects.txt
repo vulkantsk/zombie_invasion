@@ -1,0 +1,13 @@
+models/heroes/wraith_king/wraith_king_prop.vmdl
+
+particles/units/heroes/hero_skeletonking/wraith_king_ghosts_ambient.vpcf
+particles/units/heroes/hero_skeletonking/wraith_king_reincarnate.vpcf
+particles/units/heroes/hero_skeletonking/wraith_king_ambient.vpcf
+
+sounds/weapons/hero/arc_warden/spark_wraith_appear.vsnd
+
+sounds/vo/skeleton_king/wraith_spawn_03.vsnd
+sounds/vo/skeleton_king/wraith_respawn_07.vsnd
+sounds/vo/skeleton_king/wraith_rare_06.vsnd
+sounds/vo/skeleton_king/wraith_rare_07.vsnd
+sounds/vo/skeleton_king/wraith_rare_02.vsnd

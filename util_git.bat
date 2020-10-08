@@ -10,7 +10,7 @@ SetLocal EnableDelayedExpansion
 :: Main logic with multi folders for git repo when working with addons DOTA2 - Kain(pvpby) owner this repo.  Version 1.0 Test Win7_x64 
 cls
 ::SETTING here NEED change name your addon / тут НАДО изменить имя вашего аддона
-set your_addon=addon_name
+set your_addon=zombie_invasion
 Call :notok 10 || Exit /b
 ::DOWN DONT CHANGE! / Дальше настройки не трогать!
 set reg_path=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 570

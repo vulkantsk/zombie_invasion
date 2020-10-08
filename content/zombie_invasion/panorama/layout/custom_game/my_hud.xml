@@ -1,0 +1,15 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/sounds.js" />
+	</scripts>
+
+	<styles>
+		<include src="file://{resources}/styles/custom_game/my_hud.css" />
+	</styles>
+	
+	<Panel class="Hud" hittest="false"> 
+		<Panel id="MusicToggleContainer" onactivate="ToggleSound()" onmouseover="UIShowTextTooltipStyled( music_toggle, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" >
+			<Button id="BtnMusicToggle" />
+		</Panel>
+	</Panel>
+</root>
