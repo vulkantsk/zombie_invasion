@@ -1108,7 +1108,7 @@
 		// Vision
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"700"
+		"VisionNighttimeRange"		"950"
 
 	}
 
@@ -1264,5 +1264,100 @@
 		"VisionDaytimeRange"		"900"		// Range of vision during day light.
 		"VisionNighttimeRange"		"600"		// Range of vision at night time.
 	}	
+	
+	//============================================================================================================
+	// Test
+	//============================================================================================================
+	
+		"npc_sound_test"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/siren/siren.vmdl"
+		"ModelScale"				"2"
+		"Level"						"10"
+		"HealthBarOffset"			"140"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+		"IsNeutralUnitType"         "1"
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"sound_test_1"
+		"Ability2"					"sound_test_2"
+		"Ability3"					"sound_test_3"
+		"Ability4"					"sound_test_4"
+		"Ability5"					"sound_test_5"
+		"Ability6"					"sound_test_6"
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "8090" }
+					"Wearable1" { "ItemDef" "8089" }
+					"Wearable1" { "ItemDef" "8096" }
+					"Wearable1" { "ItemDef" "8091" }
+					"Wearable1" { "ItemDef" "8092" }
+					"Wearable1" { "ItemDef" "8093" }
+					"Wearable1" { "ItemDef" "8094" }
+ 				
+				}
+		}	
+	}
+	
 	
 }

@@ -148,7 +148,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemShopTags"                  "block"
-        "ItemQuality"                   "artifact"
+        "ItemQuality"                   "component"
         "ItemCost"                      "225"
 				"SideShop"						"1"
  
@@ -215,7 +215,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemShopTags"                  "block"
-        "ItemQuality"                   "artifact"
+        "ItemQuality"                   "common"
         "ItemCost"                      "225"
 				"SideShop"						"1"
  
@@ -289,7 +289,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemShopTags"                  "block"
-        "ItemQuality"                   "artifact"
+        "ItemQuality"                   "rare"
         "ItemCost"                      "225"
 				"SideShop"						"1"
  
@@ -368,7 +368,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemShopTags"                  "block"
-        "ItemQuality"                   "artifact"
+        "ItemQuality"                   "rare"
         "ItemCost"                      "225"
 				"SideShop"						"1"
  

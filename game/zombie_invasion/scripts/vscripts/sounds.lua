@@ -9,7 +9,7 @@ Sounds = Sounds or {
   		["Mase - Psycho"] = 194,  
 		
   		["Серега пират - АМ ФП"] = 128,  
-  		["Life - Larson"] = 68,
+  		["Life - Larson"] = 69,
   		["Musica - Fly Project"] = 46,
   		["Wake Me Up - Avicii"] = 107,
   		["Galantis - No Money"] = 75,
