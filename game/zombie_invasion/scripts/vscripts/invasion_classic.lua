@@ -533,10 +533,14 @@ function InvasionMode:InvasionGameStart()
 	    		shortest_music = sound
 	    	end
 	    end
+	    print("longest_music = "..longest_music)
+	    print("longest_music len= "..longest_music_len)
+	    print("shortest_music = "..shortest_music)
+	    print("shortest_music len= "..shortest_music_len)
 
 	    if 	time_until_end > longest_music_len then
 	    	current_music = music[RandomInt(1, #music)]
-	    elseif 	time_until_end > longest_music_len then
+	    elseif 	time_until_end < longest_music_len then
 	    	current_music = shortest_music
 	    elseif time_until_end < shortest_music_len then
 	    	return time_until_end+1
@@ -547,6 +551,16 @@ function InvasionMode:InvasionGameStart()
 	    print("sound  = "..current_music) 
 	    print("sound duration = "..Sounds:GetSoundDuration(current_music)) 
 	    return Sounds:GetSoundDuration(current_music)		    
+	end)
+
+	Timers:CreateTimer(0, function()
+		self:SpawnZombie("npc_classic_wave_zombie",1)
+		return 20
+	end)
+
+	Timers:CreateTimer(10, function()
+		self:SpawnGhost("npc_classic_wave_ghost",2)
+		return 40
 	end)
 
 --5 минута, 1я ночь
@@ -1328,11 +1342,28 @@ function InvasionMode:InvasionGameStart()
 		InvasionMode:spawn_zombie_2222()
 	  end
 	end)
-	
- 
-	
-
 end
+
+function InvasionMode:SpawnZombie(unit_name, unit_count)
+	local points = Entities:FindAllByName("zombie_spawner")
+
+	for i=1, unit_count do
+		local point = points[RandomInt(1, #points)]
+		local unit = CreateUnitByName(unit_name, point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		unit:SetInitialGoalEntity(point)
+	end
+end
+
+function InvasionMode:SpawnGhost(unit_name, unit_count)
+	local points = Entities:FindAllByName("ghost_spawner")
+
+	for i=1, unit_count do
+		local point = points[RandomInt(1, #points)]
+		local unit = CreateUnitByName(unit_name, point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		unit:SetInitialGoalEntity(point)
+	end
+end
+
 --спавны
 function InvasionMode:InvasionSpawnMoobs()
 	local point = nil

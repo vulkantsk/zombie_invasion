@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"uni",
+				"unit_count"
+			],
+			[
 				"getframet",
 				"GetGameFrameTime"
 			],
@@ -62,10 +66,6 @@
 			[
 				"far",
 				"farthest_enemy"
-			],
-			[
-				"uni",
-				"unit_point"
 			],
 			[
 				"findne",
@@ -523,7 +523,7 @@
 			"file": "vscripts/invasion_classic.lua",
 			"settings":
 			{
-				"buffer_size": 49614,
+				"buffer_size": 47096,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -618,6 +618,7 @@
 	],
 	"file_history":
 	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/dungeon/scripts/vscripts/items/item_gravel_foot.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/berserk_form.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_demon/true_form.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/bosses/watermelon/tentacle.lua",
@@ -744,12 +745,11 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_firesnap_cookie_lua.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/penguin_sledding_ride.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/modifiers/modifier_sled_penguin_movement_self.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/kill_boss/scripts/npc/npc_units_custom.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_gold_kirk.lua"
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/kill_boss/scripts/npc/npc_units_custom.txt"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -763,6 +763,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"spawn_zombie_1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -789,15 +790,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 49614,
+						"buffer_size": 47096,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21566,
-								21538
+								20481,
+								20481
 							]
 						],
 						"settings":
@@ -806,7 +807,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9697.0,
+						"translation.y": 8806.4,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

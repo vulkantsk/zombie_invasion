@@ -1,3 +1,6 @@
+/game/zombie_invasion/panorama/*
+!/game/zombie_invasion/panorama/localization/
+
 *.bin
 panorama_debugger.cfg
 settings.kv
