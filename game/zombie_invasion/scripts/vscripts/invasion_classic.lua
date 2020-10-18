@@ -121,7 +121,8 @@ function InvasionMode:InvasionGameStart()
       		"Sia - Chandelier",
       		"RSAC - NBA",
       		"Would I Lie To You",
-      		"Does It Matter - Janieck",    		
+      		"Does It Matter - Janieck",   
+            "Dodik",			
     	},
     }
  
