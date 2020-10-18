@@ -67,364 +67,6 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 	local npc = EntIndexToHScript(data.entindex)
 end
 
- 
-
-function InvasionMode:spawn_undying_1()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "undying_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_undying", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_undying_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "undying_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_undying_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_undying_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "undying_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_undying_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_undying_4()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "undying_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_undying_4", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_toxic_1()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "toxic_zombie"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_zombie_toxic", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
- 
- function InvasionMode:spawn_toxic_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "toxic_zombie"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_zombie_toxic_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_toxic_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "toxic_zombie"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_zombie_toxic_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_toxic_4()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "toxic_zombie"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_zombie_toxic_4", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_flash_1()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "golem_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_flash_golem", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_flash_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "golem_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_flash_golem_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-
-function InvasionMode:spawn_flash_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "golem_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_flash_golem_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-
-function InvasionMode:spawn_zombie_1()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_3"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_4()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_4"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-
-
-function InvasionMode:spawn_zombie_11()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_big_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_22()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_big_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_33()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_3"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_big_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_44()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_4"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_big_zombie", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_ghost_1()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_5"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghost", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_ghost_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_6"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghost", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_111()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghoul", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_222()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghoul", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_333()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_3"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghoul", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_444()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_4"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghoul", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_ghost_11()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_5"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghost_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_1111()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_pudge", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_2222()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_pudge", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_3333()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_3"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_pudge", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_zombie_4444()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_4"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_pudge", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_ghost_111()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_5"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghost_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:spawn_ghost_boss()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "wave_spawner_6"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_wave_ghost_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
 function InvasionMode:spawn_last_boss()
 	local point = nil  -- отвечает за то, где появиться свинья
 	local unit = nil  -- Кто появиться
@@ -448,7 +90,8 @@ function InvasionMode:InvasionGameStart()
   		    "Ula - Cannabis",
   		    "Toby Fox – Once Upon a Time",  
   		    "C418 - Sweden",
-  		    "Mase - Psycho",	
+  		    "Mase - Psycho",
+            "Rig",			
     	},
     	[2] = {
   		    "Серега пират - АМ ФП", 
@@ -457,7 +100,8 @@ function InvasionMode:InvasionGameStart()
   		    "Wake Me Up - Avicii",
   		    "Galantis - No Money",
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 		
+  		    "Boulevard of Broken Dreams - Green Day", 	
+            "balah_babar",			
     	},
     	[3] = {
 		
@@ -471,11 +115,13 @@ function InvasionMode:InvasionGameStart()
   		    "Kiesza - Hideaway",
   		    "John  Newman - Fire In Me",
   		    "iSpy - KYLE feat. Lil Yachty",	
+			"shaman"
     	},
      	[4] = {
-      		"Invasion.Castaways",
-      		"August - Intelligency",
-      		"Galantis - No Money",    		
+      		"Sia - Chandelier",
+      		"RSAC - NBA",
+      		"Would I Lie To You",
+      		"Does It Matter - Janieck",    		
     	},
     }
  
@@ -521,6 +167,8 @@ function InvasionMode:InvasionGameStart()
 	    local longest_music_len = Sounds:GetSoundDuration(music[1])
 	    local shortest_music = music[1]
 	    local shortest_music_len = Sounds:GetSoundDuration(music[1])
+	    local midle_music = music[1]
+	    local midle_music_len = Sounds:GetSoundDuration(music[1])
 
 	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
 	    for _,sound in pairs(music) do
@@ -531,6 +179,9 @@ function InvasionMode:InvasionGameStart()
 	    	elseif music_len < shortest_music_len then
 	    		shortest_music_len = music_len
 	    		shortest_music = sound
+			elseif music_len < longest_music_len and music_len > shortest_music_len then
+			     midle_music_len = music_len
+				 midle_music = sound
 	    	end
 	    end
 	    print("longest_music = "..longest_music)
@@ -538,11 +189,13 @@ function InvasionMode:InvasionGameStart()
 	    print("shortest_music = "..shortest_music)
 	    print("shortest_music len= "..shortest_music_len)
 
+         
+		 
 	    if 	time_until_end > longest_music_len then
 	    	current_music = music[RandomInt(1, #music)]
-	    elseif 	time_until_end < longest_music_len then
+	    elseif 	time_until_end >= shortest_music_len then
 	    	current_music = shortest_music
-	    elseif time_until_end < shortest_music_len then
+	    elseif time_until_end < shortest_music_len  then
 	    	return time_until_end+1
 	    end 
 
@@ -552,16 +205,7 @@ function InvasionMode:InvasionGameStart()
 	    print("sound duration = "..Sounds:GetSoundDuration(current_music)) 
 	    return Sounds:GetSoundDuration(current_music)		    
 	end)
-
-	Timers:CreateTimer(0, function()
-		self:SpawnZombie("npc_classic_wave_zombie",1)
-		return 20
-	end)
-
-	Timers:CreateTimer(10, function()
-		self:SpawnGhost("npc_classic_wave_ghost",2)
-		return 40
-	end)
+	
 
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
@@ -667,680 +311,201 @@ function InvasionMode:InvasionGameStart()
 		    SendToConsole("stopsound")
 	end)
  
- 	Timers:CreateTimer(300,function()
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_1()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_2()
-	  end
-	  for i = 1 , 6 do
-         InvasionMode:spawn_zombie_3()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_4()
-	  end
-	end)
-
+ 
+ 
+ -- 1 НОЧЬ
+ 
 	local wave = 0	
-	local wave_end = 0
-	local wave_toxic = 0
-	Timers:CreateTimer(300,function()
-	    while wave_end <30 do 
-		wave = wave + 1
-		wave_end = wave_end + 1
-		
-		local unit_count = 5 * (1 + wave%2)
-		for i = 1 ,unit_count do
-			InvasionMode:spawn_zombie_1()
-		end
-		return 10
-		end
+	
+ 	Timers:CreateTimer(300,function()
+		 self:SpawnZombie("npc_classic_wave_zombie",18)
 	end)
 	
-	Timers:CreateTimer(360,function()
-	    while wave_toxic <4 do 
-		wave_toxic = wave_toxic + 1
+	Timers:CreateTimer(300, function()
+	     while wave < 29 do
+		     wave = wave + 1
+			 
+			 local unit_count = 5 * (1 + wave%2)
+		     self:SpawnZombie("npc_classic_wave_zombie", unit_count)
+		     return 10
+		 end			 
+	end)
 
-		    InvasionMode:spawn_toxic_1()
-		return 60
-		end
+	Timers:CreateTimer(360, function()
+	     while wave <  28 do 
+		     self:SpawnZombie("npc_zombie_toxic",1)
+		 return 60
+		 end
+	end)	
+ 
+ 	Timers:CreateTimer(455,function()
+		 self:SpawnZombie("npc_undying",1)
 	end)
 	
-	Timers:CreateTimer(440,function()
-		InvasionMode:spawn_undying_1()
+ 	Timers:CreateTimer(580,function()
+		 self:SpawnZombie("npc_classic_wave_zombie",15)
 	end)
+ 
+ 
+ 
+ -- 2 НОЧЬ
 
+    local wave_2 = 0
 
-
-
- 	
  	Timers:CreateTimer(900,function()
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_11()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_22()
-	  end
-	  for i = 1 , 6 do
-         InvasionMode:spawn_zombie_33()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_44()
-	  end
-	  for i = 1 , 8 do
-		InvasionMode:spawn_ghost_1()
-	  end
+		 self:SpawnZombie("npc_classic_wave_big_zombie",16)
+		 self:SpawnGhost("npc_classic_wave_ghost",8)
 	end)
- 
- 
- 	local wave_2 = 0	
-	local wave_end_2 = 0
-	local wave_toxic_2 = 0
-    local wave_ghost = 0
-	local wave_ghost_end = 0
-    local wave_ghost_1 = 1
-	local wave_ghost_end_1 = 0
 	
-	Timers:CreateTimer(900,function()
-	    while wave_end_2 <30 do 
-		wave_2 = wave_2 + 1
-		wave_end_2 = wave_end_2 + 1
-		
-		local unit_count = 5 * (1 + wave_2%2)
-		for i = 1 ,unit_count do
-			InvasionMode:spawn_zombie_11()
-		end
-		return 10
+	Timers:CreateTimer(900, function()
+	     while wave_2 < 29 do
+			 wave_2 = wave_2 + 1
+			 
+			 local unit_count = 5 * (1 + wave_2%2)
+		     self:SpawnZombie("npc_classic_wave_big_zombie", unit_count)
+		     return 10
+		 end			 
+	end)
+	
+	Timers:CreateTimer(900, function()
+	    while wave_2 < 29 do 
+		     local unit_count = 3 * (1 + wave_2%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost",unit_count)
+		     return 30
 		end
 	end)
 	
-	Timers:CreateTimer(950,function()
-	    while wave_toxic_2 <5 do 
-		wave_toxic_2 = wave_toxic_2 + 1
-
-		    InvasionMode:spawn_toxic_2()
-		return 50
-		end
+	Timers:CreateTimer(950, function()
+	     while wave_2 <  28 do 
+		     self:SpawnZombie("npc_zombie_toxic_2",1)
+		 return 50
+		 end
 	end)
 	
-	Timers:CreateTimer(900,function()
-	    while wave_ghost_end <9 do 
-		wave_ghost = wave_ghost + 1
-		wave_ghost_end = wave_ghost_end + 1
-		
-		local unit_count = 3 * (1 + wave_ghost%2)
-		for i = 1 ,unit_count do
-			InvasionMode:spawn_ghost_1()
-		end
-		return 30
-		end
-	end)
-	
-	Timers:CreateTimer(915,function()
-	    while wave_ghost_end_1 <9 do 
-		wave_ghost_1 = wave_ghost_1 + 1
-		wave_ghost_end_1 = wave_ghost_end_1 + 1
-		
-		local unit_count = 3 * (1 + wave_ghost_1%2)
-		for i = 1 ,unit_count do
-			InvasionMode:spawn_ghost_2()
-		end
-		return 30
-		end
-	end)
- 
 	Timers:CreateTimer(990,function()
-		InvasionMode:spawn_undying_2()
+		 self:SpawnZombie("npc_undying_2",1)
 	end)
  
 	Timers:CreateTimer(1110,function()
-		InvasionMode:spawn_undying_2()
+		 self:SpawnZombie("npc_undying_2",1)
 	end)
 	
 	Timers:CreateTimer(1148,function()
-		InvasionMode:spawn_flash_1()
+		 self:SpawnZombie("npc_flash_golem",1)
+	end)
+	
+ 	Timers:CreateTimer(1180,function()
+		 self:SpawnZombie("npc_classic_wave_big_zombie",14)
+		 self:SpawnGhost("npc_classic_wave_ghost",6)
+	end)
+
+ 	
+	
+  -- 3 НОЧЬ 
+ 
+    local wave_3 = 0
+	
+  	Timers:CreateTimer(1500,function()
+		 self:SpawnZombie("npc_classic_wave_ghoul",16)
+		 self:SpawnGhost("npc_classic_wave_ghost_2",8)
+	end)
+	
+	Timers:CreateTimer(1500, function()
+	     while wave_3 < 29 do
+			 wave_3 = wave_3 + 1
+			 
+			 local unit_count = 5 * (1 + wave_3%2)
+		     self:SpawnZombie("npc_classic_wave_ghoul", unit_count)
+		     return 10
+		 end			 
+	end)
+	
+	Timers:CreateTimer(1500, function()
+	    while wave_3 < 29 do 
+		     local unit_count = 3 * (1 + wave_3%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_2",unit_count)
+		     return 30
+		end
+	end)
+	
+	Timers:CreateTimer(1540, function()
+	     while wave_3 <  28 do 
+		     self:SpawnZombie("npc_zombie_toxic_3",1)
+		 return 40
+		 end
 	end)
  
 
-
-
-
-
-
-
-	Timers:CreateTimer(1500,function()
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_222()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_333()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_444()
-	  end
-	  for i = 1 , 8 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	
-	
-	Timers:CreateTimer(1510,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1520,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1530,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1540,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1550,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1560,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1570,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1580,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
 	Timers:CreateTimer(1590,function()
-		InvasionMode:spawn_undying_3()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1600,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1610,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1620,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1630,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
+		 self:SpawnZombie("npc_undying_3",1)
 	end)
 
-	Timers:CreateTimer(1635,function()
-		InvasionMode:spawn_toxic_3()
-	end)
-	
-	Timers:CreateTimer(1640,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1650,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1655,function()
-		InvasionMode:spawn_toxic_3()
-	end)
-	
-	Timers:CreateTimer(1660,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1670,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1680,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1685,function()
-		InvasionMode:spawn_toxic_3()
-	end)
-
-	Timers:CreateTimer(1690,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1700,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
 	Timers:CreateTimer(1710,function()
-		InvasionMode:spawn_undying_3()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1720,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1730,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-
-	Timers:CreateTimer(1740,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1748,function()
-		InvasionMode:spawn_flash_2()
-	end)
-	
-	Timers:CreateTimer(1750,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1760,function()
-		InvasionMode:spawn_toxic_3()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-	
-	Timers:CreateTimer(1770,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(1775,function()
-		InvasionMode:spawn_toxic_3()
-	end)
-	
-	Timers:CreateTimer(1780,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_222()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_333()
-	  end
-	  for i = 1 , 8 do
-		InvasionMode:spawn_ghost_11()
-	  end
-	end)
-
-
-
-	Timers:CreateTimer(2100,function()
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_2222()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_3333()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_zombie_4444()
-	  end
-	  for i = 1 , 8 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2120,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
+		 self:SpawnZombie("npc_undying_3",1)
 	end)
 	
  
-	
-	Timers:CreateTimer(2130,function()
-		InvasionMode:spawn_toxic_4()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
+	Timers:CreateTimer(1748,function()
+		 self:SpawnZombie("npc_flash_golem_2",1)
 	end)
-	
-	Timers:CreateTimer(2140,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
+ 
+   	Timers:CreateTimer(1780,function()
+		 self:SpawnZombie("npc_classic_wave_ghoul",14)
+		 self:SpawnGhost("npc_classic_wave_ghost_2",7)
 	end)
+ 
+ 
+   -- 4 НОЧЬ 
+  
+    local wave_4 = 0
 	
-	Timers:CreateTimer(2150,function()
-		InvasionMode:spawn_toxic_4()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
+  	Timers:CreateTimer(2100,function()
+		 self:SpawnZombie("npc_classic_wave_pudge",16)
+		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
 	end)
 	
-	Timers:CreateTimer(2155,function()
-		InvasionMode:spawn_toxic_4()
-		InvasionMode:spawn_ghost_boss()
+	Timers:CreateTimer(2100, function()
+	     while wave_4 < 29 do
+			 wave_4 = wave_4 + 1
+			 
+			 local unit_count = 5 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+		     return 10
+		 end			 
 	end)
 	
-	Timers:CreateTimer(2160,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
+	Timers:CreateTimer(2100, function()
+	    while wave_4 < 29 do 
+		     local unit_count = 3 * (1 + wave_4%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
+			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     return 30
+		end
 	end)
 	
-	Timers:CreateTimer(2170,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
+	Timers:CreateTimer(2135, function()
+	     while wave_4 <  28 do 
+		     self:SpawnZombie("npc_zombie_toxic_4",1)
+		 return 35
+		 end
 	end)
-	
-	Timers:CreateTimer(2175,function()
-		InvasionMode:spawn_toxic_4()
-	end)
-	
-	Timers:CreateTimer(2180,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2190,function()
-		InvasionMode:spawn_undying_4()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2200,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2210,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2215,function()
-		InvasionMode:spawn_toxic_4()
-	end)
-	
-	Timers:CreateTimer(2220,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2230,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2240,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2245,function()
-		InvasionMode:spawn_toxic_4()
-	end)
-	
-	Timers:CreateTimer(2250,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2260,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 5 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2270,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2280,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 3 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2290,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2295,function()
-		InvasionMode:spawn_toxic_4()
-	end)
-
-	Timers:CreateTimer(2300,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 5 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	end)
+ 
+  
 	
 	Timers:CreateTimer(2310,function()
-		InvasionMode:spawn_undying_4()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
+		 self:SpawnZombie("npc_undying_4",1)
 	end)
-	
-	Timers:CreateTimer(2320,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 6 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	end)
-	
-	Timers:CreateTimer(2325,function()
-		InvasionMode:spawn_toxic_4()
-		InvasionMode:spawn_ghost_boss()
-	end)
-
-	Timers:CreateTimer(2330,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
-
-	Timers:CreateTimer(2340,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end
-	  InvasionMode:spawn_ghost_boss()
-	end)
-	
-	Timers:CreateTimer(2350,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	end)
+ 
 	
 	Timers:CreateTimer(2360,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	  for i = 1 , 4 do
-		InvasionMode:spawn_ghost_111()
-	  end  
-	InvasionMode:spawn_flash_3()
-	 
-	end)
-	
-	Timers:CreateTimer(2370,function()
-	  for i = 1 , 5 do
-		InvasionMode:spawn_zombie_1111()
-	  end
+		 self:SpawnZombie("npc_flash_golem_3",1)
 	end)
 	
 	Timers:CreateTimer(2380,function()
-	  for i = 1 , 10 do
-		InvasionMode:spawn_zombie_1111()
-	  end
-	   for i = 1 , 10 do
-		InvasionMode:spawn_zombie_2222()
-	  end
+		 self:SpawnZombie("npc_classic_wave_pudge",24)	
 	end)
 end
 
