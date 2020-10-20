@@ -189,8 +189,6 @@ function InvasionMode:InvasionGameStart()
 	    print("longest_music len= "..longest_music_len)
 	    print("shortest_music = "..shortest_music)
 	    print("shortest_music len= "..shortest_music_len)
-
-         
 		 
 	    if 	time_until_end > longest_music_len then
 	    	current_music = music[RandomInt(1, #music)]

@@ -2,6 +2,7 @@ Sounds = Sounds or {
   	playerSounds = {},
   	playersStateMusic = {},
   	SoundDuration = {
+
   		["Akira Yamaoka – Never Forgive Me"] = 134,
   		["Ula - Cannabis"] = 182,
   		["Toby Fox – Once Upon a Time"] = 89,  
