@@ -82,128 +82,7 @@ end
 function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
---день 
-    day_music =
-    { 	
-    	[1] = {
-  		    "Akira Yamaoka – Never Forgive Me",
-  		    "Ula - Cannabis",
-  		    "Toby Fox – Once Upon a Time",  
-  		    "C418 - Sweden",
-  		    "Mase - Psycho",
-            "Rig",			
-    	},
-    	[2] = {
-  		    "Серега пират - АМ ФП", 
-  		    "Life - Larson",
-  		    "Musica - Fly Project",
-  		    "Wake Me Up - Avicii",
-  		    "Galantis - No Money",
-  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 	
-            "balah_babar",			
-    	},
-    	[3] = {
-		
-  		    "Lana Del Rey - Summertime Sadness (smoke remix)",
-  		    "I Follow Rivers - Lykke Li",
-  		    "August - Intelligency",  
-  		    "Shotgun - Yellow Claw feat. Rochelle",
-  		    "Runaway - Parachute Youth feat. Jay Martin",
-  		    "Sia - Cheap Thrills",
-  		    "L Starz - My Life Be LikeGrits",
-  		    "Kiesza - Hideaway",
-  		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",	
-			"shaman"
-    	},
-     	[4] = {
-      		"Sia - Chandelier",
-      		"RSAC - NBA",
-      		"Would I Lie To You",
-      		"Does It Matter - Janieck",   
-            "Dodik",			
-    	},
-    }
- 
- 	night_music =
- 	{
- 		[1] = {
-			"Undertale - Respite",
-		},
- 		[2] = {
-	 		"C418-Key",
- 		},
- 		[3] = {
-			"Invasion.HalloweenJC",
- 		},
- 		[4] = {
-	 		"C418-Key",
-			"Undertale - Respite",
-			"Invasion.HalloweenJC",
- 		},
- 	}
-
-	Timers:CreateTimer(0,function()
-	    local time = GameRules:GetDOTATime(false, false)
-	    local day_time = GameRules:GetDOTATime(false, false)%600
-	    local current_day =  math.floor(time/600)+1
-	    local music 
-	    local time_until_end
-
-	    if day_time > 300 then
-	    	music = night_music[current_day]
-	    	time_until_end = 600 - day_time
-	    	print("night time")
-	    else
-	    	music = day_music[current_day]
-	    	time_until_end = 300 - day_time
-	    	print("day time")
-	    end
-
-		print("time until night = "..time_until_end)
-
-	    local current_music = nil
-	    local longest_music = music[1]
-	    local longest_music_len = Sounds:GetSoundDuration(music[1])
-	    local shortest_music = music[1]
-	    local shortest_music_len = Sounds:GetSoundDuration(music[1])
-	    local midle_music = music[1]
-	    local midle_music_len = Sounds:GetSoundDuration(music[1])
-
-	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
-	    for _,sound in pairs(music) do
-	    	local music_len = Sounds:GetSoundDuration(sound)
-	    	if music_len > longest_music_len then
-	    		longest_music_len = music_len
-	    		longest_music = sound
-	    	elseif music_len < shortest_music_len then
-	    		shortest_music_len = music_len
-	    		shortest_music = sound
-			elseif music_len < longest_music_len and music_len > shortest_music_len then
-			     midle_music_len = music_len
-				 midle_music = sound
-	    	end
-	    end
-	    print("longest_music = "..longest_music)
-	    print("longest_music len= "..longest_music_len)
-	    print("shortest_music = "..shortest_music)
-	    print("shortest_music len= "..shortest_music_len)
-		 
-	    if 	time_until_end > longest_music_len then
-	    	current_music = music[RandomInt(1, #music)]
-	    elseif 	time_until_end >= shortest_music_len then
-	    	current_music = shortest_music
-	    elseif time_until_end < shortest_music_len  then
-	    	return time_until_end+1
-	    end 
-
-	    Sounds:CreateGlobalSound( current_music )
-	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
-	    print("sound  = "..current_music) 
-	    print("sound duration = "..Sounds:GetSoundDuration(current_music)) 
-	    return Sounds:GetSoundDuration(current_music)		    
-	end)
+	InvasionMode:ThemeMusic()
 	
 
 --5 минута, 1я ночь
@@ -871,4 +750,134 @@ function InvasionMode:PrintEndgameMessage1()
 Timers:CreateTimer(5, function()  EmitGlobalSound("Undertale - Last Goodbye Dual Mix") end)
  
 	Timers:CreateTimer(136, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
+end
+
+function InvasionMode:ThemeMusic()
+	day_music =
+    { 	
+    	[1] = {
+  		    "Akira Yamaoka – Never Forgive Me",
+  		    "Ula - Cannabis",
+  		    "Toby Fox – Once Upon a Time",  
+  		    "C418 - Sweden",
+  		    "Mase - Psycho",
+            "Rig",			
+    	},
+    	[2] = {
+  		    "Серега пират - АМ ФП", 
+  		    "Life - Larson",
+  		    "Musica - Fly Project",
+  		    "Wake Me Up - Avicii",
+  		    "Galantis - No Money",
+  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  		    "Boulevard of Broken Dreams - Green Day", 	
+            "balah_babar",			
+    	},
+    	[3] = {
+		
+  		    "Lana Del Rey - Summertime Sadness (smoke remix)",
+  		    "I Follow Rivers - Lykke Li",
+  		    "August - Intelligency",  
+  		    "Shotgun - Yellow Claw feat. Rochelle",
+  		    "Runaway - Parachute Youth feat. Jay Martin",
+  		    "Sia - Cheap Thrills",
+  		    "L Starz - My Life Be LikeGrits",
+  		    "Kiesza - Hideaway",
+  		    "John  Newman - Fire In Me",
+  		    "iSpy - KYLE feat. Lil Yachty",	
+			"shaman"
+    	},
+     	[4] = {
+      		"Sia - Chandelier",
+      		"RSAC - NBA",
+      		"Would I Lie To You",
+      		"Does It Matter - Janieck",   
+            "Dodik",			
+    	},
+    }
+ 
+ 	night_music =
+ 	{
+ 		[1] = {
+			"Undertale - Respite",
+		},
+ 		[2] = {
+	 		"C418-Key",
+ 		},
+ 		[3] = {
+			"Invasion.HalloweenJC",
+ 		},
+ 		[4] = {
+	 		"C418-Key",
+			"Undertale - Respite",
+			"Invasion.HalloweenJC",
+ 		},
+ 	}
+
+	Timers:CreateTimer(0,function()
+	    local time = GameRules:GetDOTATime(false, false)
+	    local day_time = GameRules:GetDOTATime(false, false)%600
+	    local current_day =  math.floor(time/600)+1
+	    local music 
+	    local time_until_end
+
+	    if day_time > 300 then
+	    	music = night_music[current_day]
+	    	time_until_end = 600 - day_time
+	    	print("night time")
+	    else
+	    	music = day_music[current_day]
+	    	time_until_end = 300 - day_time
+	    	print("day time")
+	    end
+
+		print("time until night = "..time_until_end)
+
+	    local current_music = nil
+	    local longest_music = music[1]
+	    local longest_music_len = Sounds:GetSoundDuration(music[1])
+	    local shortest_music = music[1]
+	    local shortest_music_len = Sounds:GetSoundDuration(music[1])
+	    local midle_music = music[1]
+	    local midle_music_len = Sounds:GetSoundDuration(music[1])
+	    local available_music = {}
+
+	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
+	    for _,sound in pairs(music) do
+	    	local music_len = Sounds:GetSoundDuration(sound)
+	    	if music_len > longest_music_len then
+	    		longest_music_len = music_len
+	    		longest_music = sound
+	    	elseif music_len < shortest_music_len then
+	    		shortest_music_len = music_len
+	    		shortest_music = sound
+			elseif music_len < longest_music_len and music_len > shortest_music_len then
+			     midle_music_len = music_len
+				 midle_music = sound
+	    	end
+	    end
+	    print("longest_music = "..longest_music)
+	    print("longest_music len= "..longest_music_len)
+	    print("shortest_music = "..shortest_music)
+	    print("shortest_music len= "..shortest_music_len)
+
+	    if time_until_end >= shortest_music_len then
+	    	for _, sound in pairs(music) do
+	    		local music_len = Sounds:GetSoundDuration(sound)
+	    		if music_len <= time_until_end then
+	    			table.insert(available_music, sound)
+	    			print(string.format("sound name = %s",sound))
+	    		end
+	    	end
+	    	current_music = available_music[RandomInt(1, #available_music)]
+	    else
+	    	return time_until_end+1
+	    end
+
+	    Sounds:CreateGlobalSound( current_music )
+	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
+	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music))) 
+
+	    return Sounds:GetSoundDuration(current_music)		    
+	end)
 end

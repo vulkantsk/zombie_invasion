@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"shor",
+				"shortest_music_len"
+			],
+			[
+				"unit",
+				"unit_count"
+			],
+			[
 				"uni",
 				"unit_count"
 			],
@@ -506,14 +514,6 @@
 			[
 				"abs",
 				"absorbAmount"
-			],
-			[
-				"Increst",
-				"IncrementStackCount"
-			],
-			[
-				"Getatt",
-				"GetAttributes"
 			]
 		]
 	},
@@ -523,9 +523,26 @@
 			"file": "vscripts/invasion_classic.lua",
 			"settings":
 			{
-				"buffer_size": 47096,
+				"buffer_size": 25718,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "npc/npc_units_custom.txt",
+			"settings":
+			{
+				"buffer_size": 43285,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/sounds.lua",
+			"settings":
+			{
+				"buffer_size": 5364,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -749,7 +766,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -763,6 +780,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"GetSoundDuration",
+			"getsound",
+			"SpawnZombie",
+			"spawnzo",
+			"spawn_zombie_2222",
+			"SetInitialGoalEntity",
+			"spawn_zombie_1",
+			"undy",
+			"zombi",
+			"InvasionSpawnMoobs",
+			"longest",
 			"spawn_zombie_1"
 		],
 		"highlight": true,
@@ -790,15 +818,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 47096,
+						"buffer_size": 25718,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20481,
-								20481
+								5862,
+								5877
 							]
 						],
 						"settings":
@@ -807,10 +835,67 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8806.4,
+						"translation.y": 2532.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "npc/npc_units_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17765,
+								17769
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9730.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vscripts/sounds.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2719,
+								2703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 911.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -868,6 +953,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"npc",
+				"npc\\npc_units_custom.txt"
+			],
+			[
+				"so",
+				"vscripts\\sounds.lua"
+			],
 			[
 				"class",
 				"vscripts\\invasion_classic.lua"
@@ -1371,14 +1464,6 @@
 			[
 				"livi",
 				"vscripts\\abilities\\living_armor.lua"
-			],
-			[
-				"overr",
-				"npc\\npc_abilities_override.txt"
-			],
-			[
-				"dagon",
-				"vscripts\\items\\item_dagon.lua"
 			]
 		],
 		"width": 0.0
