@@ -87,33 +87,29 @@ function InvasionMode:InvasionGameStart()
 
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
+        InvasionMode:ZombieNight1()  
 		EmitGlobalSound("Invasion.Night")
---		EmitGlobalSound("C418-Key")
---      GameRules:SendCustomMessage("<font color='#58ACFA'>C418 - Key</font>", 0, 0)
 	return nil
 	end)
 
 
 --15 минута, 2я ночь
 	Timers:CreateTimer(900,function()
+	    InvasionMode:ZombieNight2()  
 		EmitGlobalSound("invasion.Night")
---		EmitGlobalSound("Invasion.HalloweenJC")
---		GameRules:SendCustomMessage("<font color='#58ACFA'>Halloween - John Carpenter</font>", 0, 0)
 		return nil
 	end)
 
 --25 минута, 3я ночь
 	Timers:CreateTimer(1500,function()
+	    InvasionMode:ZombieNight3()  
 		EmitGlobalSound("invasion.Night")
---		EmitGlobalSound("Invasion.HalloweenJC")
---		GameRules:SendCustomMessage("<font color='#58ACFA'>Halloween - John Carpenter</font>", 0, 0)
 		return nil
 	end)
 	
 	Timers:CreateTimer(2100,function()
+	    InvasionMode:ZombieNight4()  
 		EmitGlobalSound("invasion.Night")
---		EmitGlobalSound("Undertale - Respite")
---		GameRules:SendCustomMessage("<font color='#58ACFA'>Undertale - Respite</font>", 0, 0)
 		return nil
 	end)
 
@@ -190,16 +186,19 @@ function InvasionMode:InvasionGameStart()
 	end)
  
  
- 
+end
+
+
+function InvasionMode:ZombieNight1()  
  -- 1 НОЧЬ
  
 	local wave = 0	
 	
- 	Timers:CreateTimer(300,function()
+ 	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_zombie",18)
 	end)
 	
-	Timers:CreateTimer(300, function()
+	Timers:CreateTimer(0, function()
 	     while wave < 29 do
 		     wave = wave + 1
 			 
@@ -209,33 +208,35 @@ function InvasionMode:InvasionGameStart()
 		 end			 
 	end)
 
-	Timers:CreateTimer(360, function()
+	Timers:CreateTimer(60, function()
 	     while wave <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic",1)
 		 return 60
 		 end
 	end)	
  
- 	Timers:CreateTimer(455,function()
+ 	Timers:CreateTimer(155,function()
 		 self:SpawnZombie("npc_undying",1)
 	end)
 	
- 	Timers:CreateTimer(580,function()
+ 	Timers:CreateTimer(280,function()
 		 self:SpawnZombie("npc_classic_wave_zombie",15)
 	end)
  
+end
  
  
+ function InvasionMode:ZombieNight2()  
  -- 2 НОЧЬ
 
     local wave_2 = 0
 
- 	Timers:CreateTimer(900,function()
+ 	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_big_zombie",16)
 		 self:SpawnGhost("npc_classic_wave_ghost",8)
 	end)
 	
-	Timers:CreateTimer(900, function()
+	Timers:CreateTimer(0, function()
 	     while wave_2 < 29 do
 			 wave_2 = wave_2 + 1
 			 
@@ -245,7 +246,7 @@ function InvasionMode:InvasionGameStart()
 		 end			 
 	end)
 	
-	Timers:CreateTimer(900, function()
+	Timers:CreateTimer(0, function()
 	    while wave_2 < 29 do 
 		     local unit_count = 3 * (1 + wave_2%2)
 			 
@@ -254,42 +255,43 @@ function InvasionMode:InvasionGameStart()
 		end
 	end)
 	
-	Timers:CreateTimer(950, function()
+	Timers:CreateTimer(50, function()
 	     while wave_2 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_2",1)
 		 return 50
 		 end
 	end)
 	
-	Timers:CreateTimer(990,function()
+	Timers:CreateTimer(90,function()
 		 self:SpawnZombie("npc_undying_2",1)
 	end)
  
-	Timers:CreateTimer(1110,function()
+	Timers:CreateTimer(210,function()
 		 self:SpawnZombie("npc_undying_2",1)
 	end)
 	
-	Timers:CreateTimer(1148,function()
+	Timers:CreateTimer(248,function()
 		 self:SpawnZombie("npc_flash_golem",1)
 	end)
 	
- 	Timers:CreateTimer(1180,function()
+ 	Timers:CreateTimer(280,function()
 		 self:SpawnZombie("npc_classic_wave_big_zombie",14)
 		 self:SpawnGhost("npc_classic_wave_ghost",6)
 	end)
 
+end
  	
-	
+function InvasionMode:ZombieNight3()  	
   -- 3 НОЧЬ 
  
     local wave_3 = 0
 	
-  	Timers:CreateTimer(1500,function()
+  	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_ghoul",16)
 		 self:SpawnGhost("npc_classic_wave_ghost_2",8)
 	end)
 	
-	Timers:CreateTimer(1500, function()
+	Timers:CreateTimer(0, function()
 	     while wave_3 < 29 do
 			 wave_3 = wave_3 + 1
 			 
@@ -299,7 +301,7 @@ function InvasionMode:InvasionGameStart()
 		 end			 
 	end)
 	
-	Timers:CreateTimer(1500, function()
+	Timers:CreateTimer(0, function()
 	    while wave_3 < 29 do 
 		     local unit_count = 3 * (1 + wave_3%2)
 			 
@@ -308,7 +310,7 @@ function InvasionMode:InvasionGameStart()
 		end
 	end)
 	
-	Timers:CreateTimer(1540, function()
+	Timers:CreateTimer(40, function()
 	     while wave_3 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_3",1)
 		 return 40
@@ -316,35 +318,37 @@ function InvasionMode:InvasionGameStart()
 	end)
  
 
-	Timers:CreateTimer(1590,function()
+	Timers:CreateTimer(90,function()
 		 self:SpawnZombie("npc_undying_3",1)
 	end)
 
-	Timers:CreateTimer(1710,function()
+	Timers:CreateTimer(210,function()
 		 self:SpawnZombie("npc_undying_3",1)
 	end)
 	
  
-	Timers:CreateTimer(1748,function()
+	Timers:CreateTimer(248,function()
 		 self:SpawnZombie("npc_flash_golem_2",1)
 	end)
  
-   	Timers:CreateTimer(1780,function()
+   	Timers:CreateTimer(280,function()
 		 self:SpawnZombie("npc_classic_wave_ghoul",14)
 		 self:SpawnGhost("npc_classic_wave_ghost_2",7)
 	end)
  
+ end
  
+ function InvasionMode:ZombieNight4()  
    -- 4 НОЧЬ 
   
     local wave_4 = 0
 	
-  	Timers:CreateTimer(2100,function()
+  	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_pudge",16)
 		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
 	end)
 	
-	Timers:CreateTimer(2100, function()
+	Timers:CreateTimer(0, function()
 	     while wave_4 < 29 do
 			 wave_4 = wave_4 + 1
 			 
@@ -354,7 +358,7 @@ function InvasionMode:InvasionGameStart()
 		 end			 
 	end)
 	
-	Timers:CreateTimer(2100, function()
+	Timers:CreateTimer(0, function()
 	    while wave_4 < 29 do 
 		     local unit_count = 3 * (1 + wave_4%2)
 			 
@@ -364,7 +368,7 @@ function InvasionMode:InvasionGameStart()
 		end
 	end)
 	
-	Timers:CreateTimer(2135, function()
+	Timers:CreateTimer(35, function()
 	     while wave_4 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_4",1)
 		 return 35
@@ -373,18 +377,19 @@ function InvasionMode:InvasionGameStart()
  
   
 	
-	Timers:CreateTimer(2310,function()
+	Timers:CreateTimer(210,function()
 		 self:SpawnZombie("npc_undying_4",1)
 	end)
  
 	
-	Timers:CreateTimer(2360,function()
+	Timers:CreateTimer(260,function()
 		 self:SpawnZombie("npc_flash_golem_3",1)
 	end)
 	
-	Timers:CreateTimer(2380,function()
+	Timers:CreateTimer(280,function()
 		 self:SpawnZombie("npc_classic_wave_pudge",24)	
 	end)
+ 
 end
 
 function InvasionMode:SpawnZombie(unit_name, unit_count)
@@ -549,13 +554,22 @@ end
 	unit = CreateUnitByName("npc_boss_pig", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
-
-
-
 end
 
 
-local pig_count = 0
+ function InvasionMode:spawngulya() -- Вызывание свина 
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+
+
+	--bosses
+	point = Entities:FindByName( nil, "boss_spawner_3"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_boss_dead_pig", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit.respawn = false	
+	unit:SetForwardVector(RandomVector(1))
+end
+
+ 
 
 function GiveGoldPlayers( gold )
 	for index=0 ,4 do
@@ -568,9 +582,12 @@ function GiveGoldPlayers( gold )
 	end
 end
  
-    
+      local pig_count = 0
+	  
 function InvasionMode:InvasionEntityKilled (data)
+    local time = GameRules:GetDOTATime(false, false)
 	local killedEntity = EntIndexToHScript(data.entindex_killed)
+ 
 
 	if killedEntity:GetUnitName() == "NPC_base" then
 		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
@@ -598,8 +615,13 @@ pig_count = pig_count+1
 	    GameRules:SendCustomMessage("#big_bo_4",0,0)
 	end
     if pig_count == 75 then
-	    InvasionMode:spawnsvini()
-	    EmitGlobalSound("Invasion.HommerWin")
+	    if time <= 1800 then
+	        InvasionMode:spawnsvini()
+	        EmitGlobalSound("Invasion.HommerWin")
+		elseif time > 1800 then
+	        InvasionMode:spawngulya()		      
+	        EmitGlobalSound("vurdalak")		
+		end
     end
 end
 
@@ -691,6 +713,16 @@ end
             	self:CreateDrop("item_big_meat", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) ) 
         	end
 		end
+	
+		if killedEntity:GetUnitName() == "npc_boss_dead_pig" then
+			for i = 1, 4 do
+            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
+        	end
+			for i = 1, 1 do
+            	self:CreateDrop("item_dead_golova", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
+        	end
+				        EmitGlobalSound("vurdalak_1")	
+		end
 
 		if killedEntity:GetUnitName() == "npc_dota_bochok_saxara" then
 			for i = 1, 1 do
@@ -760,8 +792,7 @@ function InvasionMode:ThemeMusic()
   		    "Ula - Cannabis",
   		    "Toby Fox – Once Upon a Time",  
   		    "C418 - Sweden",
-  		    "Mase - Psycho",
-            "Rig",			
+  		    "Mase - Psycho",		
     	},
     	[2] = {
   		    "Серега пират - АМ ФП", 
@@ -770,11 +801,9 @@ function InvasionMode:ThemeMusic()
   		    "Wake Me Up - Avicii",
   		    "Galantis - No Money",
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 	
-            "balah_babar",			
+  		    "Boulevard of Broken Dreams - Green Day", 		
     	},
     	[3] = {
-		
   		    "Lana Del Rey - Summertime Sadness (smoke remix)",
   		    "I Follow Rivers - Lykke Li",
   		    "August - Intelligency",  
@@ -784,15 +813,13 @@ function InvasionMode:ThemeMusic()
   		    "L Starz - My Life Be LikeGrits",
   		    "Kiesza - Hideaway",
   		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",	
-			"shaman"
+  		    "iSpy - KYLE feat. Lil Yachty",
     	},
      	[4] = {
       		"Sia - Chandelier",
       		"RSAC - NBA",
       		"Would I Lie To You",
-      		"Does It Matter - Janieck",   
-            "Dodik",			
+      		"Does It Matter - Janieck",   			
     	},
     }
  
@@ -805,12 +832,12 @@ function InvasionMode:ThemeMusic()
 	 		"C418-Key",
  		},
  		[3] = {
-			"Invasion.HalloweenJC",
+			"Argh Ost – Halloween",
  		},
  		[4] = {
 	 		"C418-Key",
 			"Undertale - Respite",
-			"Invasion.HalloweenJC",
+			"Argh Ost – Halloween",  
  		},
  	}
 

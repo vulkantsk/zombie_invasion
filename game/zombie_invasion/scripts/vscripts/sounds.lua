@@ -7,8 +7,7 @@ Sounds = Sounds or {
   		["Ula - Cannabis"] = 182,
   		["Toby Fox – Once Upon a Time"] = 89,  
   		["C418 - Sweden"] = 217,
-  		["Mase - Psycho"] = 194,  
-			["Rig"] = 88,  
+  		["Mase - Psycho"] = 192,  
 		
   		["Серега пират - АМ ФП"] = 128,  
   		["Life - Larson"] = 69,
@@ -17,7 +16,6 @@ Sounds = Sounds or {
   		["Galantis - No Money"] = 75,
   		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
   		["Boulevard of Broken Dreams - Green Day"] = 71,
-		    ["balah_babar"] = 45,
 		
   		["Lana Del Rey - Summertime Sadness (smoke remix)"] = 63,
   		["I Follow Rivers - Lykke Li"] = 54,
@@ -29,17 +27,15 @@ Sounds = Sounds or {
   		["Kiesza - Hideaway"] = 92,
   		["John  Newman - Fire In Me"] = 93,
   		["iSpy - KYLE feat. Lil Yachty"] = 114,
-		    ["shaman"] = 37,
 		
 		["RSAC - NBA"] = 131,
 		["Daved Guetta - Would I Lie To You"] = 38,
 		["Sia - Chandelier"] = 107,
 		["Does It Matter - Janieck"] = 65,
-		   ["Dodik"] = 37,
 		
 		["C418-Key"] = 184,
 		["Undertale - Respite"] = 105,
-		["Invasion.HalloweenJC"] = 145,
+		["Argh Ost – Halloween"] = 145,
 		
   	},
 }

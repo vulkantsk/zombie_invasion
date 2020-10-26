@@ -6,6 +6,9 @@ function Spawn( entityKeyValues )
 	if thisEntity == nil then
 		return
 	end
+
+	
+ 
 	
 	thisEntity:SetContextThink( "NeutralAutoCasterThink", NeutralAutoCasterThink, 1 )
 end
@@ -53,37 +56,35 @@ function NeutralAutoCasterThink()
 	
 	-- Как далеко юнит находится от своей точки спавна ?
 	local fDist = ( npc:GetOrigin() - npc.vInitialSpawnPos ):Length2D()
-	if fDist > search_radius then
-		RetreatHome()			-- если юнит слишком далеко, то идет на точку спавна
-		return 3
-	end
+
 	
 	local enemies = FindUnitsInRadius( 
 						npc:GetTeamNumber(),		--команда юнита
 						npc.vInitialSpawnPos,		--местоположение юнита
 						nil,	--айди юнита (необязательно)
-						search_radius + 50,	--радиус поиска
+						search_radius + 50000,	--радиус поиска
 						DOTA_UNIT_TARGET_TEAM_ENEMY,	-- юнитов чьей команды ищем вражеской/дружественной
 						DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	--юнитов какого типа ищем 
 						DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE,	--поиск по флагам
 						FIND_CLOSEST,	--сортировка от ближнего к дальнему 
 						false )
 
-	if #enemies == 0 then	-- если найденных юнитов нету
-		if npc.agro then
-			RetreatHome()	-- если юнит под действием агра
-		end		
-		return 0.5
-	end
+
 	
 	local enemy = enemies[1]	-- врагом выбирается первый близжайший
 	
 	
 	if npc.agro then	-- если юнит находится под действием агра
-		
+	
 
+ 
+		
+		 
 --		npc:MoveToPositionAggressive(enemy:GetAbsOrigin())
 
+		if ItemAbility ~= nil and ItemAbility:IsFullyCastable()  then	--если предмет существует и её можно использовать
+				ItemAbilityCast( enemy )	
+		end
 		TryCastAbility(npc.ability0, npc, enemy)	-- попытка использовать способность
 		TryCastAbility(npc.ability1, npc, enemy)	-- попытка использовать способность
 		TryCastAbility(npc.ability2, npc, enemy)	-- попытка использовать способность
@@ -102,7 +103,7 @@ function NeutralAutoCasterThink()
 				FIND_CLOSEST, 
 				false )
 				
-		for i=1,#allies do	-- заставляет братков быть агрессивными и атаковать врага
+		for i=1,1 do	-- заставляет братков быть агрессивными и атаковать врага
 			local ally = allies[i]
 			ally.agro = true	-- накладывает действие агра
 			AttackMove(ally, enemy)	
@@ -193,6 +194,29 @@ function AttackMove( unit, enemy )
 	return 1
 end
 
+function ItemAbilityCast( enemy )
+		ExecuteOrderFromTable({
+			UnitIndex = thisEntity:entindex(),	--индекс кастера
+			OrderType = DOTA_UNIT_ORDER_CAST_TARGET,	-- тип приказа
+			AbilityIndex = ItemAbility:entindex(), -- индекс способности
+					TargetIndex = enemy:entindex(),
+			Queue = false,
+		})
+	return 1.5
+end
+
+
+function FindItemAbility( hCaster, szItemName )	--необходимая утилита , без нее не будет работать функция FindItemAbility
+	for i = 0, 5 do
+		local item = hCaster:GetItemInSlot( i )
+		if item then
+			if item:GetAbilityName() == szItemName then
+				return item
+			end
+		end
+	end
+end
+
 function RetreatHome()
 	thisEntity.agro = false	-- снимается действие агра
 
@@ -202,4 +226,3 @@ function RetreatHome()
 		Position = thisEntity.vInitialSpawnPos		
 	})
 end
-

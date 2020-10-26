@@ -22,6 +22,7 @@ modifier_item_pirog_dps = class({
 		{	MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 			MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 			MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE,  
+		    MODIFIER_PROPERTY_MODEL_SCALE,
 		} end,
 })
 
@@ -29,9 +30,14 @@ function modifier_item_pirog_dps:OnCreated()
 	self.bonus_value = self:GetAbility():GetSpecialValueFor("base_atack")
 	self.bonus_value1 = self:GetAbility():GetSpecialValueFor("bonus_agility")
 	self.bonus_value2 = self:GetAbility():GetSpecialValueFor("bonus_dps")
+	self.bonus_value3 = self:GetAbility():GetSpecialValueFor("bonus_model")
 end
 
  
+
+function modifier_item_pirog_dps:GetModifierModelScale()
+	return self.bonus_value3
+end
 
 function modifier_item_pirog_dps:GetModifierBaseDamageOutgoing_Percentage()
 	return self.bonus_value2

@@ -2057,6 +2057,11 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"bonus_dps"		"15"
+			}	
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_model"		"20"
 			}				
 		}
 		"Modifiers"
@@ -2113,6 +2118,11 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"bonus_derjat"		"30"
+			}	
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_model"		"20"
 			}				
 		}
 		"Modifiers"
@@ -2170,7 +2180,12 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"bonus_dps"		"25"
-			}				
+			}	
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_model"		"20"
+			}			
 		}
 		"Modifiers"
 		{
@@ -3893,6 +3908,247 @@
 				"radius"			"200"
 			}						
 		}
+	}
+	
+	"item_radiance_dead_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_radiance"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityCastRange" 				"700"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"radiance"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"140"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_damage"			"75"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_damage_illusions"	"75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blind_pct"				"35"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"900"
+			}
+		}
+	}
+	
+	"item_assault_dead_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastRange"				"1200"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"ac;assault cuirass"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"30"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"1200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_attack_speed"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_positive_armor"	"0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_negative_armor"	"-15"
+			}			
+		}
+	}
+	
+	"item_recipe_heart_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+ 		"AbilityTextureName" 			"custom_folder/item_recipe" 
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+		"ItemPurchasable"				"0"
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_heart_2"
+		"ItemRequirements"
+		{
+			"01"						"item_heart;item_dead_golova"
+		}
+	}
+	
+ 
+	"item_heart_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ScriptFile"					"items/item_heart_2.lua"
+		"AbilityTextureName"			"boss_item/heart_dead"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemQuality"					"epic"
+		"ItemAliases"					"hot;heart of tarrasque"
+ 
+		"ItemPurchasable"				"0"
+		"ShouldBeSuggested"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"1550"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_str"				"20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"450"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"base_regen"			"1.5"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"noncombat_regen"		"0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"regen_cooldown_melee"	"4"
+			}
+
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"regen_cooldown_ranged"	"4"
+			}
+		}		
+ 
+	}
+	
+		"item_dead_golova"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"boss_item/Mask_of_mugato"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+		
+        "AbilitySpecial"
+        {
+ 
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "all_bonus"                 "55"
+            }
+        }
+        "Modifiers"
+        {
+            "modifier_dead_golova_passive_bonus"
+            {
+                "Passive"        "1"
+                "IsHidden"       "1"
+                "Attributes"     "MODIFIER_ATTRIBUTE_MULTIPLE"
+ 
+ 
+                "Properties"
+                {
+ 
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"                "%all_bonus"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"                 "%all_bonus"
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"               "%all_bonus"
+                }
+ 
+            }
+        }
 	}
 	
 	"item_admin"

@@ -1126,6 +1126,7 @@
 		"Ability2"					"pig_open_wounds"
 		"Ability3"					"slark_dark_pact"	
 		"Ability4"					"blood_effect"
+		"Ability5"					""
 
 		// Armor
 		//----------------------------------------------------------------
@@ -1170,8 +1171,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"500"
-		"VisionNighttimeRange"		"300"
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
 
 
 		// Team
@@ -1183,6 +1184,108 @@
 
  
 	}
+	
+	"npc_boss_dead_pig"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"vscripts"		"ai/ai_boss_dead_pig.lua"		
+		"Model"						"models/heroes/life_stealer/life_stealer.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_LifeStealer"
+		"GameSoundsFile"			"soundevents/game_sounds_life_stealer.vsndevts"
+		"Level"						"15"
+		"ModelScale" 				"2.5"
+		"UseNeutralCreepBehavior"	"0"
+		"HasInventory"              "1"
+		"IsAncient"					"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"dead_stealer_feast"
+		"Ability2"					"pig_dead_open_wounds"
+		"Ability3"					"lifestealer_passive"	
+		"Ability4"					"blood_effect"
+		"Ability5"					"aghsfort_lifestealer_enraged_pulse"
+		"Ability6"					"ghoul_crazy_look"
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"52"
+		"MagicalResistance"         "75"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"895"
+		"AttackDamageMax"			"1350"
+		"AttackRate"				"1.15"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"90"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"5250"
+		"BountyGoldMin"				"350"	
+		"BountyGoldMax"				"750"	
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"12500"
+		"StatusHealthRegen"			"35"
+		"StatusMana"				"2500"	
+		"StatusManaRegen"			"3.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"850"
+		"VisionNighttimeRange"		"850"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		"Creature"
+		{
+			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "9215" }
+					"Wearable1" { "ItemDef" "13787" }
+					"Wearable1" { "ItemDef" "12934" }
+					"Wearable1" { "ItemDef" "6475" }
+				}
+				
+		
+ 			"DisableResistance"			"80.0"
+			
+		"EquippedItems"
+			{
+				"1"            	{"Item"        "item_radiance_dead_boss"}
+				"2"            	{"Item"        "item_assault_dead_boss"}
+ 
+			}
+		}
+		
+	}
+
 
 //Xuita
 

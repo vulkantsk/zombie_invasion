@@ -23,6 +23,7 @@ modifier_item_pirog_tank = class({
 			MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE,
 			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,  
 			MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
+		    MODIFIER_PROPERTY_MODEL_SCALE,
 		} end,
 })
 
@@ -31,6 +32,11 @@ function modifier_item_pirog_tank:OnCreated()
 	self.bonus_value1 = self:GetAbility():GetSpecialValueFor("bonus_regen")
 	self.bonus_value2 = self:GetAbility():GetSpecialValueFor("bonus_armor")
 	self.bonus_value3 = self:GetAbility():GetSpecialValueFor("bonus_derjat")
+	self.bonus_value4 = self:GetAbility():GetSpecialValueFor("bonus_model")
+end
+
+function modifier_item_pirog_tank:GetModifierModelScale()
+	return self.bonus_value4
 end
 
 function modifier_item_pirog_tank:GetModifierMagicalResistanceBonus()

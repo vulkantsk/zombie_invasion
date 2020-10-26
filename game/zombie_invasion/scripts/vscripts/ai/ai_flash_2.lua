@@ -82,7 +82,7 @@ function NeutralAutoCasterThink()
 
  
 		
-		AttackMove(npc, enemy)
+		 
 --		npc:MoveToPositionAggressive(enemy:GetAbsOrigin())
 
 		if ItemAbility ~= nil and ItemAbility:IsFullyCastable()  then	--если предмет существует и её можно использовать
