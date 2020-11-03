@@ -9765,4 +9765,78 @@
  
 }
 
+//-------------------------------------------------------------------------------
+//oracle 
+//-------------------------------------------------------------------------------
+
+	"oracle_bonus_int"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"					"heroes/hero_oracle/int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"oracle/int"
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades"			"2"
+		"RequiredLevel"					"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"bonus_int"							"5 12 24 35"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"stack_bonus_int"					"1 2 3 4"
+			}
+		}
+	}
+
+    "false_promise_custom"
+    {
+    	"BaseClass"           "ability_lua"
+    	"ScriptFile"          "heroes/hero_oracle/false_promise_custom"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    	"AbilityTextureName"  "oracle/false_promise"
+    	"MaxLevel"            "4"
+    	"LevelsBetweenUpgrades" "2"
+    	"RequiredLevel" "1"
+
+    	"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.01"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost" "25 50 75 100"
+
+    	"AbilitySpecial"
+    	{
+         	"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"min_damage"							"50 100 150 200"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"max_damage"					"100 200 300 400"
+
+			}
+				"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonus_int_damage"					"0.5 1.0 1.5 2.0"
+			}	
+    	}  
+    }
 }

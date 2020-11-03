@@ -4219,7 +4219,7 @@
 	
 			"RunScript"
 			{
-				"ScriptFile"	"items/custom/item_ultra_boots.lua"
+				"ScriptFile"	"items/item_ultra_boots.lua"
 				"Function"		"CreateTeleportParticles"
 				"Target"		"POINT"
 			}
@@ -4239,7 +4239,7 @@
 			}	
 			"RunScript"
 			{
-				"ScriptFile"	"items/custom/item_ultra_boots.lua"
+				"ScriptFile"	"items/item_ultra_boots.lua"
 				"Function"		"Teleport"
 				"Target"		"POINT"
 			}
@@ -4249,7 +4249,7 @@
 		{	
 			"RunScript"
 			{
-				"ScriptFile"	"items/custom/item_ultra_boots.lua"
+				"ScriptFile"	"items/item_ultra_boots.lua"
 				"Function"		"EndTeleport"
 			}
 		}
