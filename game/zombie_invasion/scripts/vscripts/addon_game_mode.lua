@@ -3,9 +3,10 @@
 ]]
 
 -- Required files to be visible from anywhere
+ 
 require( 'timers' )
 require( 'sounds' )
---require( 'barebones' )
+ 
 require( 'invasion_classic' )
 require( 'invasion_armageddon' )
 require( 'triggers' )
@@ -21,7 +22,12 @@ if InvasionMode == nil then
 	InvasionMode = class({})
 end
 
+ 
+
+
 function Precache( context )
+
+		print("[BAREBONES] Performing pre-load precache")
 
 	---------------------------------model-------------------------------
 	PrecacheModel("models/props_gameplay/pig.vmdl", context) --pig

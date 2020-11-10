@@ -1,9 +1,23 @@
- 
+
 require( 'modifiers_links' )
 require( 'timers' )
 
 if InvasionMode == nil then
 	InvasionMode = class({})
+end
+
+ HeroMaxLevel = 36
+HeroExpTable = {0}
+exp={10,20,30,40,50,60,70,80,90,100,
+  110,120,130,140,150,160,170,180,190,
+  200,210,220,230,240,250,260,270,280,290,
+  300,310,320,330,340,350
+  
+  }
+
+xp=0
+for i=2,HeroMaxLevel-1 do
+  HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
 
 MONSTERS_RESPAWN_TIME = 10
@@ -30,8 +44,11 @@ function InvasionMode:InvasionMap()
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )	
  
+   
  
- 
+    GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
+  	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
+	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
 
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
@@ -614,11 +631,11 @@ pig_count = pig_count+1
     if pig_count == 70 then
 	    GameRules:SendCustomMessage("#big_bo_4",0,0)
 	end
-    if pig_count == 75 then
-	    if time <= 1800 then
+    if pig_count == 1 then
+	    if time <= 1 then
 	        InvasionMode:spawnsvini()
 	        EmitGlobalSound("Invasion.HommerWin")
-		elseif time > 1800 then
+		elseif time > 1 then
 	        InvasionMode:spawngulya()		      
 	        EmitGlobalSound("vurdalak")		
 		end

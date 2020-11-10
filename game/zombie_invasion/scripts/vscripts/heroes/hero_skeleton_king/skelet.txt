@@ -1,0 +1,351 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Wraith King: Wraithfire Blast
+	//=================================================================================================================
+	"wraith_king_wraithfire_blast_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_skeleton_king/skeleton_king_blast/wraith_king_wraithfire_blast_lua"
+		"AbilityTextureName"			"Hero/Skeleton_king/Hellfire_Blast_icon"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		precache
+		{
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+			"particleFile"				"particles/units/heroes/hero_skeletonking/skeletonking_hellfireblast.vpcf"
+			"particleFile"				"particles/units/heroes/hero_skeletonking/skeletonking_hellfireblast_debuff.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"525"
+		"AbilityCastPoint"				"0.35"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"8.0"
+		"AbilityManaCost"				"140"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_dmg"			"60 120 150 180"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"str_dmg"		"100"
+			}
+ 
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_speed"			"1000"
+			}
+			
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_stun_durationn"	"1.0 1.5 2.0 2.5"
+			}
+			
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_slow_duration"	"2"
+			}
+			
+			
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_dot_durationn"	"4"
+			}
+			
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_dot_damagee"		"25 50 75 100"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Wraith King: Vampiric Aura (Lua version)
+	//=================================================================================================================
+	"wraith_king_vampiric_aura_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_skeleton_king/vampiric_aura/wraith_king_vampiric_aura_lua"
+		"AbilityTextureName"			"Hero/Skeleton_king/Aura"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+			"particle"					"particles/units/heroes/hero_skeletonking/wraith_king_vampiric_aura_lifesteal.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura_radius"	"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura"			"15 20 25 30"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Wraith King: Mortal Strike (lua version)
+	//=================================================================================================================
+	"wraith_king_mortal_strike_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_skeleton_king/mortal_strike/wraith_king_mortal_strike_lua"
+		"AbilityTextureName"			"Hero/Skeleton_king/brortal"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+			"particle"	"particles/units/heroes/hero_skeletonking/skeletonking_mortalstrike.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_mult"					"200 250 300 350"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_chance"				"15"
+			}
+		}
+	}
+		
+	//=================================================================================================================
+	// Dragon Knight: Dragon Blood (Lua version)
+	//=================================================================================================================
+	"dragon_knight_dragon_blood_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_skeleton_king/stronger/dragon_knight_dragon_blood_lua"
+		"AbilityTextureName"			"Hero/Skeleton_king/stronger"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"6 5.5 5"
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_strength"			"15 25 35 "
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonus_armor"					"4 7 10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"  
+				"bonus_resist"					"15 20 25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"  
+				"bonus_speed_atack"					"1.6 1.55 1.50"
+			}
+		
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_speed_buff"		"400"
+			}
+
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_hits"			"2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"down"			"6 5.5 5.0"
+			}
+      }
+		
+	}
+
+ 
+
+	"skeleton_king_reincarnation"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5089"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"			"Hero/Skeleton_king/Reincornation"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"LevelsBetweenUpgrades"			"30"
+		"RequiredLevel"					"35"
+		"MaxLevel"						"1"
+
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Hero_SkeletonKing.Reincarnate"
+		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Slow isn't the main function of this ability.
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reincarnate_time"		"3.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_radius"			"900"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"-75"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackslow"			"-75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"			"5.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_duration"		"7"
+				"RequiresScepter"			"1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"	"1200"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius_tooltip_scepter"	"1200"
+				"RequiresScepter"			"1"
+			}
+		}
+	}
+
+}

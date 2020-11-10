@@ -11,9 +11,9 @@ Sounds = Sounds or {
 		
   		["Серега пират - АМ ФП"] = 128,  
   		["Life - Larson"] = 69,
-  		["Musica - Fly Project"] = 46,
+  		["Musica - Fly Project"] = 48,
   		["Wake Me Up - Avicii"] = 107,
-  		["Galantis - No Money"] = 75,
+  		["Galantis - No Money"] = 77,
   		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
   		["Boulevard of Broken Dreams - Green Day"] = 71,
 		
@@ -25,7 +25,7 @@ Sounds = Sounds or {
   		["Sia - Cheap Thrills"] = 60,
   		["L Starz - My Life Be LikeGrits"] = 38,
   		["Kiesza - Hideaway"] = 92,
-  		["John  Newman - Fire In Me"] = 93,
+  		["John  Newman - Fire In Me"] = 95,
   		["iSpy - KYLE feat. Lil Yachty"] = 114,
 		
 		["RSAC - NBA"] = 131,

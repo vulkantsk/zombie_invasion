@@ -1721,30 +1721,7 @@
 			}
 		}
 	}
-
-	"skeleton_king_vampiric_aura"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityTextureName"      		"custom_folder/vampiric_aura"	
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"vampiric_aura_radius"	"900"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"vampiric_aura"			"25 30 40 45"
-				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_2"
-			}
-		}
-	}
+ 
 
 	"centaur_return"
 	{
