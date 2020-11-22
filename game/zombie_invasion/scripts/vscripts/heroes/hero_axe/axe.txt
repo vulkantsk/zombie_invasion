@@ -1,0 +1,250 @@
+"DOTAAbilities"
+{
+	"sven_great_cleave_lua"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"					"sven_great_cleave_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"heroes/hero_axe/rubilka/sven_great_cleave_lua"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"great_cleave_radius"	"300.0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"great_cleave_damage"	"20 35 50 65"
+			}
+		}
+	}
+
+	"axe_culling_blade_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/rubilka/axe_culling_blade_lua"
+		"AbilityTextureName"			"Hero/kAxe/axe_culling_blade"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"4"
+ "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+			"particle"	"particles/units/heroes/hero_axe/axe_culling_blade.vpcf"
+			"particle"	"particles/units/heroes/hero_axe/axe_culling_blade_kill.vpcf"
+			"particle"	"particles/units/heroes/hero_axe/axe_cullingblade_sprint.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"6 5 4 3"
+		"AbilityManaCost"				"45 60 70 80"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_true"					"250 280 330 350"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"great_cleave_radius"	"150.0"
+			}
+			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"great_cleave_damage"	"175"
+			}
+		}
+	}
+
+		//=================================================================================================================
+	// Dragon Knight: Dragon Blood (Lua version)
+	//=================================================================================================================
+	"axe_solo"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/solo/axe_solo"
+		"AbilityTextureName"			"Hero/kAxe/solo_1"
+		"FightRecapLevel"				"1"
+				"RequiredLevel"					"35"
+		"MaxLevel" "1"
+
+ 
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+ 
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonuss_strength"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonuss_regen"					"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonuss_armor"					"60"
+			}
+ 			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_model"			"80"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"radius"					"550"
+			}
+
+
+
+
+
+
+
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_strength_false"			"50"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonus_regen_false"					"10"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonus_armor_false"					"30"
+			}
+		
+      }
+		
+	}
+
+	"ursa_enrage_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/ursa_energy/ursa_enrage_lua"
+		"AbilityTextureName"			"Hero/kAxe/energy"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+			"particle"	"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf"
+ 
+		}
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"HasScepterUpgrade"				"1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 40 30"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4.0 4.5 5.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction"			"80"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"status_resistance"			"50 60 70"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"cooldown_scepter"			"30 24 18"
+			}
+		}
+	}
+
+ 
+
+}

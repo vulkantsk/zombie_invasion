@@ -55,6 +55,7 @@ function InvasionMode:InvasionMap()
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	--GameRules:GetGameModeEntity():SetRecommendedItemsDisabled( true )
 
+ 
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
@@ -82,6 +83,21 @@ end
 function InvasionMode:InvasionOnNPCSpawn(data)
 
 	local npc = EntIndexToHScript(data.entindex)
+	    local name = npc:GetUnitName()
+ 
+
+ 
+ 
+
+ 
+
+    --npc:AddNewModifier(npc, nil, "modifier_demon_lord_buff", {})
+    --npc:AddNewModifier(npc, nil, "modifier_insane", {})
+
+ 
+
+        --			npc:AddNewModifier(npc, nil, "modifier_your_armor", {})
+ 
 end
 
 function InvasionMode:spawn_last_boss()
@@ -631,11 +647,11 @@ pig_count = pig_count+1
     if pig_count == 70 then
 	    GameRules:SendCustomMessage("#big_bo_4",0,0)
 	end
-    if pig_count == 1 then
-	    if time <= 1 then
+    if pig_count == 75 then
+	    if time <= 1800 then
 	        InvasionMode:spawnsvini()
 	        EmitGlobalSound("Invasion.HommerWin")
-		elseif time > 1 then
+		elseif time > 1800 then
 	        InvasionMode:spawngulya()		      
 	        EmitGlobalSound("vurdalak")		
 		end
@@ -925,3 +941,5 @@ function InvasionMode:ThemeMusic()
 	    return Sounds:GetSoundDuration(current_music)		    
 	end)
 end
+
+ 
