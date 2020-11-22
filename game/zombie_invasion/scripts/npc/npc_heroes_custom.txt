@@ -3,7 +3,6 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
-
 	"npc_dota_hero_skeleton_king"
 	{
 		"Model"		"models/items/wraith_king/arcana/wraith_king_arcana.vmdl"
@@ -243,7 +242,7 @@
 		"Ability2"		"shredder_timber_chain"
 		"Ability3"		"shredder_reactive_armor"
 		"Ability4"		"shredder_chakram_2"
-		"Ability5"		"generic_hidden"
+		"Ability5"		"boss_timbersaw_chakram_dance"
 		"Ability6"		"shredder_chakram"
 		"Ability7"		"shredder_return_chakram"
 		"Ability8"		"shredder_return_chakram_2"
@@ -960,18 +959,23 @@
 		"Role"						"Support,Durable"
 		"Rolelevels"				"3,1"
 
-		"Ability1"					"lone_druid_spirit_bear"
+		"Ability1"					"dazzle_poison_touch"
 		"Ability2"					"dazzle_shallow_grave"
-		"Ability3"					"dazzle_shadow_wave"
-		"Ability4"					"dazzle_weave"
-		//"Ability10"		"special_bonus_intelligence_10"
-		//"Ability11"		"special_bonus_hp_125"
-		//"Ability12"		"special_bonus_cast_range_100"
-		//"Ability13"		"special_bonus_attack_damage_40"
-		//"Ability14"		"special_bonus_movement_speed_25"
-		//"Ability15"		"special_bonus_respawn_reduction_30"
-		//"Ability16"		"special_bonus_unique_dazzle_1"
-		//"Ability17"		"special_bonus_unique_dazzle_2"			
+		"Ability3"					"undying_soul_rip"
+		"Ability4"					"dazzle_bad_juju"
+		"Ability5"					"dazzle_weave"
+		"Ability6"					""
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"		"special_bonus_intelligence_10"
+		"Ability11"		"special_bonus_hp_125"
+		"Ability12"		"special_bonus_cast_range_100"
+	    "Ability13"		"special_bonus_attack_damage_40"
+		"Ability14"		"special_bonus_movement_speed_25"
+		"Ability15"		"special_bonus_respawn_reduction_30"
+		"Ability16"		"special_bonus_unique_dazzle_1"
+		"Ability17"		"special_bonus_unique_dazzle_4"			
 	}
 
 "npc_dota_hero_crystal_maiden"
@@ -1042,18 +1046,23 @@
 	// HERO: WISP
 	//=================================================================================================================
 	"npc_dota_hero_wisp"
-	{		
-		"AbilityLayout"		"4"					
-		"Ability1"		""
-		"Ability2"		""
-		"Ability3"		""
+	{						
+		"Ability1"		"wisp_tether"
+		"Ability2"		"wisp_spirits"
+		"Ability3"		"wisp_overcharge"
 		"Ability4"		""
-		"Ability5"		""
-		"Ability6"		""
-		"Ability7"		""
-		"Ability8"		""
-		"Ability9"		""
-		"Ability10"		""	
+		"Ability5"		"wisp_sueside"
+		"Ability6"		"ability_wisp_teleport"
+		"Ability7"		"wisp_tether_break"
+		"Ability8"		"wisp_spirits_in"
+		"Ability10"		"special_bonus_unique_wisp_7"
+		"Ability11"		"special_bonus_attack_damage_45"
+		"Ability12"		"special_bonus_unique_wisp"
+		"Ability13"		"special_bonus_hp_regen_8"
+		"Ability14"		"special_bonus_gold_income_25"
+		"Ability15"		"special_bonus_armor_15"
+		"Ability16"		"special_bonus_unique_wisp_6"
+		"Ability17"		"special_bonus_unique_wisp_4"	
 
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
@@ -1061,7 +1070,7 @@
 		"AttributeBaseStrength"		"1"
 		"AttributeStrengthGain"		"0"
 		"AttributeBaseIntelligence"	"1"
-		"AttributeIntelligenceGain"	"0"
+		"AttributeIntelligenceGain"	"100"
 		"AttributeBaseAgility"		"1"
 		"AttributeAgilityGain"		"0"
 
@@ -1293,11 +1302,11 @@
 		"ModelScale"		"1.200000"
 
 		"Ability1"		"false_promise_custom"
-		"Ability2"		""
-		"Ability3"		"oracle_bonus_int"
-		"Ability4"		""
-		"Ability5"		""
-		"Ability6"		""
+		"Ability2"		"death_or_life"
+		"Ability3"		"int"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"arc_warden_tempest_double"
+		"Ability6"		"oracle_time"
 		"Ability10"		"special_bonus_magic_resistance_20"
 		"Ability11"		"special_bonus_movement_speed_10"
 		"Ability12"		"special_bonus_attack_damage_25"

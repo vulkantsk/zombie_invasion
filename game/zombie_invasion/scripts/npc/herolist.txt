@@ -49,7 +49,7 @@
 	"npc_dota_hero_invoker"				"0"
 	"npc_dota_hero_tinker"				"0" 
 
-	"npc_dota_hero_dazzle"				"0"
+	"npc_dota_hero_dazzle"				"1"
 	"npc_dota_hero_earthshaker"			"0"
 	"npc_dota_hero_omniknight"			"0"
 	"npc_dota_hero_keeper_of_the_light"	"0" 
@@ -89,7 +89,7 @@
 	"npc_dota_hero_faceless_void"		"0"
 	"npc_dota_hero_huskar"				"0"
 
-	"npc_dota_hero_wisp"				"0"
+	"npc_dota_hero_wisp"				"1"
 	"npc_dota_hero_legion_commander"	"0" 
 	"npc_dota_hero_leshrac"				"0"
 	"npc_dota_hero_lich"				"0"

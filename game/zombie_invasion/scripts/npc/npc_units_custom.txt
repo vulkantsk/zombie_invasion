@@ -96,7 +96,8 @@
 			}
 		}	
 		
-	}		
+	}	
+
  
 	"npc_dota_clinkz_skeleton_archer_frostivus2018"
 	{
