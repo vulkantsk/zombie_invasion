@@ -1,4 +1,7 @@
-  #base "../vscripts/heroes/hero_skeleton_king/skelet.txt"
+#base "../vscripts/heroes/hero_skeleton_king/skelet.txt"
+#base "../vscripts/heroes/hero_axe/axe.txt"
+#base "../vscripts/heroes/hero_sven/sven.txt"
+#base "../vscripts/heroes/hero_lion/lion.txt"
   
 "DOTAAbilities"
 {
