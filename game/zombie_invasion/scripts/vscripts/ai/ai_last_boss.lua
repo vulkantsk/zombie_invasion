@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
 		return
 	end
 	
-    local waypoint = Entities:FindByName( nil, "wave_spawner_2") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
+    local waypoint = Entities:FindByName( nil, "last_boss") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
  	if waypoint then thisEntity:SetInitialGoalEntity( waypoint ) end-- Посылаем моба на наш d_waypoint19, координаты которого мы записали в переменную 'waypoint'
 	
 	thisEntity:SetContextThink( "NeutralAutoCasterThink", NeutralAutoCasterThink, 1 )

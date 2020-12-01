@@ -20,6 +20,7 @@ for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
 
+HERO_RESPAWN_TIME_BEFORE_10 = 10
 MONSTERS_RESPAWN_TIME = 10
 WAVE_RESPAWN_TIME = 2
 MEAT_DROP_PERC = 35
@@ -105,7 +106,7 @@ function InvasionMode:spawn_last_boss()
 	local unit = nil  -- Кто появиться
 	
  
-	point = Entities:FindByName( nil, "wave_spawner_3"):GetAbsOrigin()
+	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
 	unit = CreateUnitByName("npc_last_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
@@ -621,6 +622,14 @@ function InvasionMode:InvasionEntityKilled (data)
     local time = GameRules:GetDOTATime(false, false)
 	local killedEntity = EntIndexToHScript(data.entindex_killed)
  
+ 	if killedEntity:IsRealHero() and killedEntity:IsReincarnating() == false then
+ 		if killedEntity:GetLevel() <= 10 then 
+		killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )
+	else 
+		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		
+	end
+	end
+
 
 	if killedEntity:GetUnitName() == "NPC_base" then
 		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
@@ -796,25 +805,26 @@ function InvasionMode:PrintEndgameMessage1()
 	
 	Timers:CreateTimer(5, function() GameRules:SendCustomMessage("#ending_2",0,0) end)
  
-	Timers:CreateTimer(8, function() GameRules:SendCustomMessage("#ending_3",0,0) end)
+	Timers:CreateTimer(12, function() GameRules:SendCustomMessage("#ending_3",0,0) end)
  
 	Timers:CreateTimer(15, function() GameRules:SendCustomMessage("#Game_notification_win",0,0) end)
 	
 	Timers:CreateTimer(30, function() GameRules:SendCustomMessage("#ending_4",0,0) end)
 	
-	Timers:CreateTimer(40, function() GameRules:SendCustomMessage("#ending_5",0,0) end)
+	Timers:CreateTimer(35, function() GameRules:SendCustomMessage("#ending_5",0,0) end)
 	
-	Timers:CreateTimer(45, function() GameRules:SendCustomMessage("#ending_6",0,0) end)
+	Timers:CreateTimer(40, function() GameRules:SendCustomMessage("#ending_6",0,0) end)
 	
-	Timers:CreateTimer(100, function() GameRules:SendCustomMessage("#ending_7",0,0) end)
+	Timers:CreateTimer(70, function() GameRules:SendCustomMessage("#ending_7",0,0) end)
 	
-	Timers:CreateTimer(115, function() GameRules:SendCustomMessage("#ending_8",0,0) end)
+	Timers:CreateTimer(85, function() GameRules:SendCustomMessage("#ending_8",0,0) end)
 	
-	Timers:CreateTimer(135, function() GameRules:SendCustomMessage("#ending_9",0,0) end)
+	Timers:CreateTimer(95, function() GameRules:SendCustomMessage("#ending_9",0,0) end)
 	
-Timers:CreateTimer(5, function()  EmitGlobalSound("Undertale - Last Goodbye Dual Mix") end)
- 
-	Timers:CreateTimer(136, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
+Timers:CreateTimer(3, function()  EmitGlobalSound("Серега пират - гимн Дахака") end)
+ 	Timers:CreateTimer(3, function() GameRules:SendCustomMessage("Серега пират - гимн Дахака",0,0) end)
+
+	Timers:CreateTimer(96, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
 end
 
 function InvasionMode:ThemeMusic()

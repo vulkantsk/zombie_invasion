@@ -9,7 +9,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_lion/finger/lion_finger_of_death_lua"
-		"AbilityTextureName"			"lion_finger_of_death_lua"
+		"AbilityTextureName"			"Hero/lion/Finger_of_Death"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
 		"HasScepterUpgrade"				"1"
@@ -75,7 +75,12 @@
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"splash_radius_scepter"		"325"
+				"splash_radius_scepter"		"220"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_myself"		"8"
 			}
 		}
 	}
