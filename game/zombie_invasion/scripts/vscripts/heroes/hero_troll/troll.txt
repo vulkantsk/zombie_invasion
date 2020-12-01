@@ -1,0 +1,524 @@
+"DOTAAbilities"
+{
+
+	"frostivus2018_troll_warlord_fervor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityTextureName"			"troll_warlord_fervor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+ 		"AbilityCastAnimation"			"ACT_INVALID"
+		
+		// Casting
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_speed"			"15 20 25 30"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_stacks"			"12"
+				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_2"
+			}
+		}
+	}
+	
+	"troll_warlord_berserkers_rage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5508"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilitySound"					"Hero_TrollWarlord.BerserkersRage.Toggle"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2 0.2 0.2 0.2"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp"				"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_move_speed"		"10 20 30 40"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"6"
+			}
+			"04"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"bonus_range"			"350"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"base_attack_time"		"1.45"
+			}	
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ensnare_chance"			"14 16 18 20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ensnare_duration"			"0.8 1.2 1.6 2.0"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+
+	//=================================================================================================================
+	// Troll Warlord: Whirling Axes (Throw)
+	//=================================================================================================================
+	"troll_warlord_whirling_axes_ranged"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5509"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_TrollWarlord.WhirlingAxes.Ranged"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_WHIRLING_AXES_RANGED"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.2 0.2 0.2 0.2"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"axe_width"					"100"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"axe_speed"					"1500.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"axe_range"					"1000.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"axe_damage"				"75"
+				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_3"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"axe_slow_duration"			"2.5 3 3.5 4"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"			"40"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"axe_spread"				"25"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"axe_count"					"5"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Troll Warlord: Whirling Axes Spin
+	//=================================================================================================================
+	"troll_warlord_whirling_axes_melee"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5510"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_TrollWarlord.WhirlingAxes.Melee"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+ 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastPoint"				"0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"50 100 150 200"
+				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_3"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hit_radius"				"100"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"max_range"					"450.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"axe_movement_speed"		"1250"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"blind_duration"			"5"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"blind_pct"					"60"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"whirl_duration"			"3.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Troll Warlord Scepter
+	//=================================================================================================================
+	"troll_warlord_scepter"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7865"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"MaxLevel"						"1"
+		"FightRecapLevel"				"1"
+		"IsGrantedByScepter"			"1"
+		"HasScepterUpgrade"			"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_WHIRLING_AXES_RANGED"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.2"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"			"1200"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"				"3.0"
+			}
+		}
+	}
+ 
+	
+	//=================================================================================================================
+	//  Troll Warlord: Battle Trance
+	//=================================================================================================================
+	"troll_warlord_battle_trance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5512"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_TrollWarlord.BattleTrance.Cast"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"3"
+        "HasScepterUpgrade"			"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastPoint"				"0.0 0.0 0.0"
+		"AbilityCastRange"				"525"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"trance_duration"		"6.5"		
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"lifesteal"			"40 60 80"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"attack_speed"			"140 170 200"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movement_speed"		"30 35 40"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"range"				"900"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"scepter_cooldown"	"35"
+				"RequiresScepter"	"1"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"scepter_duration_enemies"	"3.25"
+				"RequiresScepter"	"1"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"scepter_cast_range_tooltip"	"525"
+				"RequiresScepter"	"1"
+			}
+			
+		}
+	}
+
+ "lycan_spirit_wolf_custom"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"heroes/hero_troll/mini_troll/spirit_wolf"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"DisplayAdditionalHeroes"		"1"
+	"AbilityTextureName"			"Hero/mini-troll"
+	"RequiredLevel"					"35"
+	"LevelsBetweenUpgrades"         "35"
+	"MaxLevel"						"1"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.5"
+
+	// Time
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"120.0"
+ 
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"175"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		// This Values are mostly for tooltips, the unit stats are not affected
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"summon_hp"					"2250"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"summon_hpreg"				"15"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"summon_dmg"				"135"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"summon_armor"				"18"
+ 
+		}
+		"05"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"summon_bat"				"1"
+		}
+		"06"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"hp_per_str"				"5.0"
+ 
+		}
+		"07"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"dmg_per_str"				"1.0"
+ 
+		}
+		"08"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"summon_scale"				"1.0"
+		}
+		"09"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"backlash_damage"			"25.0"
+		}
+	}
+}
+
+	"spectre_dispersion_troll"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"spectre_dispersion"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+			"MaxLevel"						"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_reflection_pct"	"7 12 17 22"
+				"LinkedSpecialBonus"		"special_bonus_unique_spectre_5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min_radius"			"300 300 300 300"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_radius"			"700"
+			}			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+		"legion_commander_moment_of_courage_troll"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"legion_commander_moment_of_courage"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySound"					"Hero_LegionCommander.Courage"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2.3 1.8 1.3 0.8"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"trigger_chance"			"25"
+				"LinkedSpecialBonus"        "special_bonus_unique_legion_commander_3"																	
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"buff_duration"				"1.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hp_leech_percent"			"55 65 75 85"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+}

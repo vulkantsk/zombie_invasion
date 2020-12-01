@@ -1,0 +1,318 @@
+"DOTAAbilities"
+{
+
+	"sandking_burrowstrike"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5102"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Ability.SandKing_BurrowStrike"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400 500 600 700"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 13 12 11"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"110 120 130 140"
+		
+		"AbilityDamage"					"100 160 220 280"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_width"		"150"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_duration"	"1.6 1.8 2.0 2.2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed"		"2000"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_anim_time"	"0.52"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_scepter"		"800 1000 1200 1400"
+				"RequiresScepter"			"1"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed_scepter"		"3000"
+				"RequiresScepter"			"1"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+ 
+	"ability_thunder_clap"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_sand_king/clap/thunder_clap"
+        "AbilityTextureName"            "Hero/clap"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_Brewmaster.ThunderClap"
+ 		"AbilityCastAnimation"		"ACT_DOTA_SPAWN"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"13"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.4 0.4 0.4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"90 100 110 120"		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"450 550 650 750"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"90 160 230 300"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_slow"				"25 35 45 55"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_speed_slow"			"25 35 45 55"
+			}			
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4.0"
+				"LinkedSpecialBonus"		"special_bonus_unique_brewmaster_3"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration_creeps"			"8.0 8.0 8.0 8.0"
+				"LinkedSpecialBonus"		"special_bonus_unique_brewmaster_3"
+			}			
+		}
+ 
+	}
+
+	"sandking_sand_storm"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5103"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Ability.SandKing_SandStorm.start"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityDuration"				"30 40 50"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityCastPoint"				"0.0 0.0 0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_tick_rate"	"0.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_radius"		"500 575 650"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"AbilityDuration"		"30 40 50"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_damage"		"45 70 95"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_delay"			"0.7"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	
+	"sandking_caustic_finale"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5104"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Ability.SandKing_CausticFinale"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_radius"		"500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_damage_base"		"70 90 110 130"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_damage_pct"		"10 14 18 22"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"caustic_finale_duration"	"5"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_slow"		"-10 -15 -20 -25"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_6"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}				
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	//=================================================================================================================
+	// Ability: Sand King Epicenter
+	//=================================================================================================================
+	"sandking_epicenter"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5105"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Ability.SandKing_Epicenter"
+				"FightRecapLevel"				"1"
+				"RequiredLevel"					"35"
+		"MaxLevel" "1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"80"
+		"AbilityDuration"				"3.0"
+		"AbilityChannelTime"			"2.0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"425"
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Damage is the main component of spell
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_radius"	"275 325 375 425 475 525 575 625 675 725 775 825 875 925"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_pulses"	"10"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_damage"	"130"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_5"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_slow"	"-30"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"epicenter_slow_as"		"-30"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_3"
+			}
+		}
+	}
+
+}

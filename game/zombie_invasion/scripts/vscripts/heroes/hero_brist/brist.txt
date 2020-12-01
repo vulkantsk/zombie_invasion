@@ -1,0 +1,146 @@
+"DOTAAbilities"
+{
+
+ 	"bristleback_viscous_goo_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"             		"heroes/hero_brist/viscous_goo/viscous_goo_custom"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"            "bristleback_viscous_nasal_goo"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+
+		"AbilityCooldown"				"12 11 10 9"
+		"AbilityManaCost"				"80"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"250"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"debuff_duration"		"3.5 4.0 4.5 5.0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"interval"			"0.5"
+//				"interval"			"0.25"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"interval_dmg"		"25 25 30 30"
+			}
+
+		}
+	}
+
+	"life_stealer_rage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5249"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilitySound"					"Hero_LifeStealer.Rage"  
+
+				"AbilityTextureName"			"Hero/rage"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+		"AbilityCastRange"				"0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75 75 75"
+		
+		"AbilityDuration"				"3 4 5"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed_bonus"	"15"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.0 4.0 5.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_lifestealer"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"ability_warpath"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_brist/warpath/warpath"
+		"AbilityTextureName"			"bristleback_warpath"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"35"
+		"LevelsBetweenUpgrades"			"35"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDuration"				"10.0 10.0 10.0"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_per_stack"					"1.5"
+ 
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"move_speed_per_stack"				"6"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stack_duration"				"14.0"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_stacks"					"7"
+			}
+		}
+	}
+
+}
