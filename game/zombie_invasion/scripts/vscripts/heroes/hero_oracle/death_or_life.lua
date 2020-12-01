@@ -8,6 +8,8 @@ local target = self:GetCursorTarget()
 local ability = self
 local buff_duration = self:GetSpecialValueFor("buff_duration")
 local dmg = (target:GetMaxHealth() / 100) * ability:GetSpecialValueFor("hp_proc")
+local effect = "particles/units/heroes/hero_grimstroke/grimstroke_darkartistry_dmg_stroke_tgt.vpcf"
+local effect1 = "particles/addons_gameplay/tower_good_tintable_lamp_end.vpcf"
 local dick = {
 victim = target,
 attacker = caster,
@@ -18,10 +20,11 @@ damage_type = DAMAGE_TYPE_PURE,
 
        if RollPercentage(ability:GetSpecialValueFor("kill_chance")) then
 
-    
+    ParticleManager:CreateParticle(effect, PATTACH_CENTER_FOLLOW, target)
      ApplyDamage(dick)
     elseif RollPercentage(ability:GetSpecialValueFor("buff_chance")) then
     target:AddNewModifier(caster, ability, "modifier_death_or_life", {duration = buff_duration})
+    ParticleManager:CreateParticle(effect1, PATTACH_CENTER_FOLLOW, target)
     
     end
  
