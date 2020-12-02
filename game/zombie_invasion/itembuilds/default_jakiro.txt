@@ -11,6 +11,7 @@
 		{
 			"item"		"item_hand_of_midas"								
 			"item"		"item_flask"
+						"item"		"item_boots"
 		}
 		
 		"#DOTA_Item_Build_Early_Game"
