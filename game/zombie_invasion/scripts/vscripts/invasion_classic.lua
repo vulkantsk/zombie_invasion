@@ -863,10 +863,10 @@ function InvasionMode:ThemeMusic()
   		    "iSpy - KYLE feat. Lil Yachty",
     	},
      	[4] = {
-		"RSAC - NBA",
-		"Daved Guetta - Would I Lie To You",
-		 "Sia - Chandelier",
-		"Does It Matter - Janieck",	  			
+      		"Sia - Chandelier",
+      		"RSAC - NBA",
+      		"Would I Lie To You",
+      		"Does It Matter - Janieck",   			
     	},
     }
  
