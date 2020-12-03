@@ -9,10 +9,10 @@
 	{		
 		"#DOTA_Item_Build_Starting_Items"
 		{
- 		
-			"item"		"item_shield"	
-			"item"		"item_flask"	
-			"item"		"item_boots"		
+			"item"		"item_hand_of_midas"			
+			"item"		"item_stout_shield"
+			"item"		"item_branches"			
+			"item"		"item_flask"			
 		}
 		
 		"#DOTA_Item_Build_Early_Game"

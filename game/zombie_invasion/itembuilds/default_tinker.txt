@@ -1,8 +1,8 @@
 "itembuilds"
 {
 	"author"		"ilia"
-	"hero"			"npc_dota_hero_jakiro"
-	"Title"			"Recommended items for Jakiro"
+	"hero"			"npc_dota_hero_tinker"
+	"Title"			"Recommended items for Tinker"
 	
 
 	"Items"
@@ -30,7 +30,8 @@
 		"#DOTA_Item_Build_Luxury"
 		{					
 			"item"		"item_guardian_greaves"	
-			"item"		"item_octarinity"
+			"item"		"item_octarinity"																				
+			"item"		"item_refresher"
 			"item"		"item_sphere"					
 		}
 	}
