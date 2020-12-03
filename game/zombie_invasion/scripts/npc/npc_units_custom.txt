@@ -851,13 +851,13 @@
 		{
 			"AttachWearables"
 				{
-					"Wearable1" { "ItemDef" "8090" }
-					"Wearable1" { "ItemDef" "8089" }
-					"Wearable1" { "ItemDef" "8096" }
-					"Wearable1" { "ItemDef" "8091" }
-					"Wearable1" { "ItemDef" "8092" }
-					"Wearable1" { "ItemDef" "8093" }
-					"Wearable1" { "ItemDef" "8094" }
+					"Wearable1" { "ItemDef" "5470" }
+					"Wearable1" { "ItemDef" "4119" }
+					"Wearable1" { "ItemDef" "4121" }
+					"Wearable1" { "ItemDef" "4033" }
+					"Wearable1" { "ItemDef" "10" }
+					"Wearable1" { "ItemDef" "357" }
+					"Wearable1" { "ItemDef" "5254" }
  				
 				}
 		}	

@@ -34,7 +34,7 @@ function modifier_axe_solo:OnIntervalThink()
 				count = count + 1
 			
 		end
- 
+           self:GetCaster():CalculateStatBonus()
 		self:SetStackCount( count )
 end
 
