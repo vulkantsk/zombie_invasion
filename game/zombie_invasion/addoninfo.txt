@@ -1,0 +1,14 @@
+"AddonInfo"
+
+{
+	maps			"invasion_refresh"
+	"IsPlayable"	"1"
+	"HeroGuidesSupported" "1"
+	"invasion_refresh"
+	{
+					"MaxPlayers"                    "4"
+	}
+ 
+
+
+}
