@@ -8,10 +8,10 @@ end
 
  HeroMaxLevel = 36
 HeroExpTable = {0}
-exp={150,280,360,430,420,490,600,700,730,815,
-  840,960,980,1000,1025,1050,1200,1260,1265,
-  1400,1550,1650,1825,2425,3125,3825,4525,5225,5925,
-  6625,6625,6625,6625,6625,6625
+exp={149,274,349,413,399,461,558,651,672,734,
+  748,845,853,860,871,882,996,1033,1025,
+  1120,1225,1287,1405,1819,2313,2793,3258,3710,4148,
+  4572,4505,4439,4373,4307,4240
   
   }
 
@@ -30,6 +30,7 @@ EGG_DROP_PERC = 20
 EGG_STRONG_DROP_PERC = 30
 BONE_DROP_PERC = 20
 BONE_STRONG_DROP_PERC = 40
+BOSS_DROP_PERC = 100
 function InvasionMode:InvasionMap()
      
   
@@ -675,6 +676,10 @@ end
        elseif killedEntity:GetUnitName() == "npc_flash_golem_2"		then 	GiveGoldPlayers(1550)
         elseif killedEntity:GetUnitName() == "npc_undying_4"		then 	GiveGoldPlayers(1125)      
 	   elseif killedEntity:GetUnitName() == "npc_flash_golem_3"		then 	GiveGoldPlayers(2230)
+	   	       elseif killedEntity:GetUnitName() == "npc_classic_wave_zombie"		then 	GiveGoldPlayers(2)
+       elseif killedEntity:GetUnitName() == "npc_classic_wave_big_zombie"		then 	GiveGoldPlayers(5)
+        elseif killedEntity:GetUnitName() == "npc_classic_wave_ghoul"		then 	GiveGoldPlayers(10)      
+	   elseif killedEntity:GetUnitName() == "npc_classic_wave_pudge"		then 	GiveGoldPlayers(15)
 	end
  
  
@@ -731,18 +736,24 @@ end
                 self:CreateDrop("item_bone", killedEntity:GetAbsOrigin())
             end
 		end
+
+		if killedEntity:GetUnitName() == "npc_boss_chicken" then
+            if RollPercentage(BOSS_DROP_PERC) then
+                self:CreateDrop("item_eggs", killedEntity:GetAbsOrigin())
+            end
+		end
 		
 		
 
 		if killedEntity:GetUnitName() == "npc_classic_witch" then
 			for i = 1, 2 do
-            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
+            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 50)) )
         	end
 		end
 		
 		if killedEntity:GetUnitName() == "npc_classic_witch" then
 			for i = 1, 1 do
-            	self:CreateDrop("item_corica", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) ) 
+            	self:CreateDrop("item_corica", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 50)) ) 
         	end
 		end
 		if killedEntity:GetUnitName() == "npc_boss_pig" then

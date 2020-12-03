@@ -24,7 +24,7 @@ end
 function RespawnStrong(keys)	
 
 	local caster= keys.caster
-	local position = caster.respoint + RandomVector( RandomFloat( 0, 100))
+	local position = caster.respoint + RandomVector( RandomFloat( 0, 20))
 	local name = caster:GetUnitName()
 	local team = caster:GetTeam()
 	local respawn_time = UNIT_RESPAWN_TIME

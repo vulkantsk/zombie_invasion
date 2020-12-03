@@ -1517,8 +1517,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"45"
-		"BountyGoldMin"				"30"	
-		"BountyGoldMax"				"50"
+		"BountyGoldMin"				"55"	
+		"BountyGoldMax"				"70"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1620,8 +1620,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"60"
-		"BountyGoldMin"				"45"	
-		"BountyGoldMax"				"60"
+		"BountyGoldMin"				"85"	
+		"BountyGoldMax"				"100"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1683,6 +1683,120 @@
 			}
 		}
 	}
+
+				"npc_boss_chicken"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"maps/reef_assets/characters/anglerfish/darkreef_anglerfish.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"4"
+		"ModelScale" 				"4"
+		"UseNeutralCreepBehavior"	"1"
+		"HasInventory"				"1"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"blood_effect"
+		"Ability2"					"respawn_fish"
+		"Ability3"					"slardar_amplify_damage"	
+		"Ability4"					"slardar_bash"
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"22"
+		"MagicalResistance"         "40"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"350"
+		"AttackDamageMax"			"450"
+		"AttackRate"				"1"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"90"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"60"
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"250"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2000"
+		"StatusHealthRegen"			"5"
+		"StatusMana"				"550"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DefaultState"       "Invade"
+			"States"
+			{
+			    "Invade"
+			    {
+			        "Name"          "Invade"
+			        "Aggression"    "100.0"
+			        "Avoidance"     "20.0"
+			        "Support"       "0.0"
+			        "RoamDistance"  "400.0"
+			    }
+			}
+			
+						"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"slardar_amplify_damage"										
+				}
+				
+			}
+			
+						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_moon_shard"}
+				"2"            	{"Item"        "item_moon_shard"}
+				"3"            	{"Item"        "item_moon_shard"}
+				"4"            	{"Item"        "item_moon_shard"}
+				"5"            	{"Item"        "item_moon_shard"}
+				"6"            	{"Item"        "item_moon_shard"}
+ 
+
+			}
+		}
+	}
+
 
 
 	"npc_classic_half_zombie"	
@@ -1821,8 +1935,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"60"
-		"BountyGoldMin"				"50"	
-		"BountyGoldMax"				"60"	
+		"BountyGoldMin"				"115"	
+		"BountyGoldMax"				"125"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1914,8 +2028,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"20"
-		"BountyGoldMin"				"10"	
-		"BountyGoldMax"				"15"	
+		"BountyGoldMin"				"3"	
+		"BountyGoldMax"				"5"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2012,8 +2126,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"90"
-		"BountyGoldMin"				"75"	
-		"BountyGoldMax"				"95"	
+		"BountyGoldMin"				"200"	
+		"BountyGoldMax"				"210"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2116,8 +2230,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"130"
-		"BountyGoldMin"				"150"	
-		"BountyGoldMax"				"200"	
+		"BountyGoldMin"				"250"	
+		"BountyGoldMax"				"280"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2236,8 +2350,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"80"
-		"BountyGoldMin"				"100"	
-		"BountyGoldMax"				"120"	
+		"BountyGoldMin"				"160"	
+		"BountyGoldMax"				"185"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2333,8 +2447,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"70"
-		"BountyGoldMin"				"80"	
-		"BountyGoldMax"				"100"	
+		"BountyGoldMin"				"140"	
+		"BountyGoldMax"				"155"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2443,8 +2557,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"30"
-		"BountyGoldMin"				"25"	
-		"BountyGoldMax"				"30"	
+		"BountyGoldMin"				"7"	
+		"BountyGoldMax"				"10"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -3219,8 +3333,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"80"
-		"BountyGoldMin"				"60"	
-		"BountyGoldMax"				"80"	
+		"BountyGoldMin"				"20"	
+		"BountyGoldMax"				"26"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -3331,8 +3445,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"50"
-		"BountyGoldMin"				"45"	
-		"BountyGoldMax"				"60"	
+		"BountyGoldMin"				"16"	
+		"BountyGoldMax"				"20"	
 
 		// Movement
 		//----------------------------------------------------------------
