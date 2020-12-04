@@ -57,7 +57,7 @@ function InvasionMode:InvasionMap()
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	--GameRules:GetGameModeEntity():SetRecommendedItemsDisabled( true )
 
- 
+ 	ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(InvasionMode, 'OnPlayerLevelUp'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
@@ -81,6 +81,29 @@ end
 
 end
 
+function InvasionMode:OnPlayerLevelUp(keys)
+	print ('[BAREBONES] OnPlayerLevelUp')
+	DeepPrintTable(keys)
+
+--	local player = EntIndexToHScript(keys.player)
+--	local hero = EntIndexToHScript(keys.hero_entindex)
+	local hero = PlayerResource:GetSelectedHeroEntity(keys.player_id)
+	local level = keys.level
+	if hero and level then
+		local ability_point = hero:GetAbilityPoints()
+		local no_points_levels = {
+		[17] = 1,
+		[19] = 1,
+		[21] = 1,
+		[22] = 1,
+		[23] = 1,
+		[24] = 1,
+		}
+		if no_points_levels[level] or level >= 34 then
+			hero:SetAbilityPoints(ability_point + 1)
+		end
+	end
+end
 
 function InvasionMode:InvasionOnNPCSpawn(data)
 
