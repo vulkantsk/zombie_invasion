@@ -36,6 +36,9 @@ Sounds = Sounds or {
 		["C418-Key"] = 184,
 		["Undertale - Respite"] = 105,
 		["Argh Ost – Halloween"] = 145,
+
+		--Boss theme
+		["Asgore_main_classic"] = 154,
 		
   	},
 }

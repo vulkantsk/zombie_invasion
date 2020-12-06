@@ -31,6 +31,55 @@
 		}
 
 	}
+
+	"intro_rotate"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/intro_rotate"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"			
+	}
+
+	"techies_taunt"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/techies_taunt"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+	}
+	"techies_attack"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/techies_attack"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"			
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	}
+	"antimage_ult"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/antimage_ult"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"			
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	}
+	"antimage_attack"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/antimage_attack"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"			
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+        "AbilityCastRange"				"150"
+ 	}
+	"pudge_death"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/pudge_death"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+	}
 	
 	"hidden_passive"
 {
@@ -416,18 +465,6 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityTextureName"			"Own/DJ"
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"154"
-			}
-
-		}
-		
 		"OnOwnerDied"
 		{
 			"RunScript"
@@ -437,6 +474,7 @@
 				"sound"            "Asgore_main_classic"
 			}
 		}
+		
 		"Modifiers"
 		{
 			"modifier_alcore_genocide"
@@ -466,16 +504,6 @@
 					}
 
 					
-				}
-				"ThinkInterval"		"%duration"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/genocide.lua"
-						"Function"		"GenocideMusic"
-						"sound"			"Asgore_main_classic"
-					}
 				}
 
 			}			
@@ -9711,258 +9739,84 @@
 	//============================================================================================================
 	// Test
 	//============================================================================================================
-	
-"sound_test_1"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
 
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_1"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_1"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
 
- 
-}
-
-"sound_test_2"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
-
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_2"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_2"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
 
- 
-}
-
-"sound_test_3"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
-
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_3"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_3"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
 
- 
-}
-
-"sound_test_4"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
-
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_4"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_4"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
 
- 
-}
-
-"sound_test_5"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
-
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_5"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_5"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
 
- 
-}
-
-"sound_test_6"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"undying_tombstone"
-	"RequiredLevel"					"1"
- 
-	"MaxLevel"						"1"
-
-		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	"AbilityCastPoint"				"0.5"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"0"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-
-	
- 
-
-	"OnSpellStart"
+	"ability_test_6"
 	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/test_sound.lua"
-			"Function"		"Sound_6"
-		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
 
 	}
-
- 
-}
 
 //-------------------------------------------------------------------------------
 //oracle 

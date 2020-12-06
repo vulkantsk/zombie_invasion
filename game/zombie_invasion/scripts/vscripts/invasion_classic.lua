@@ -186,39 +186,37 @@ function InvasionMode:InvasionGameStart()
 	end)  
 	
 	Timers:CreateTimer(2448,function()
-		    		    GameRules:SendCustomMessage("#laughter", 0, 0) 
-								    
-														     
+		GameRules:SendCustomMessage("#laughter", 0, 0)
 	end)
 
 	Timers:CreateTimer(2449,function()
-		    		    GameRules:SendCustomMessage("#laughter", 0, 0) 
-								    		    GameRules:SendCustomMessage("#laughter_2", 0, 0) 
+		GameRules:SendCustomMessage("#laughter", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_2", 0, 0) 
 														    		 
 	end)
 	
 	Timers:CreateTimer(2450,function()
-		    		    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-								    		    GameRules:SendCustomMessage("#laughter_4", 0, 0) 
-														    		    GameRules:SendCustomMessage("#laughter_5", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
 	Timers:CreateTimer(2451,function()
-		    		    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-								    		    GameRules:SendCustomMessage("#laughter_6", 0, 0) 
-														    		    GameRules:SendCustomMessage("#laughter_5", 0, 0) 
+	    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_6", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
 	Timers:CreateTimer(2452,function()
-		    		    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-								    		    GameRules:SendCustomMessage("#laughter_4", 0, 0) 
-														    		    GameRules:SendCustomMessage("#laughter_5", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
 	Timers:CreateTimer(2453,function()
-		    		    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-								    		    GameRules:SendCustomMessage("#laughter_7", 0, 0) 
-														    		    GameRules:SendCustomMessage("#laughter_8", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_7", 0, 0) 
+		GameRules:SendCustomMessage("#laughter_8", 0, 0) 
 	end)
 	
 	Timers:CreateTimer(2460,function()
@@ -704,8 +702,7 @@ function InvasionMode:InvasionEntityKilled (data)
  
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
- 
-     InvasionMode:PrintEndgameMessage1()
+     EndGame:GoodEnd()
 end
  
 if killedEntity:GetUnitName() == "npc_classic_pig" then
@@ -875,34 +872,6 @@ function InvasionMode:CreateDrop (itemName, pos)
    newItem:LaunchLoot(false, 300, 0.75, pos + RandomVector(RandomFloat(50, 350)))
 end
 
-function InvasionMode:PrintEndgameMessage1()
-	 	    
-	 	   GameRules:SetTimeOfDay(0.25)
-		Timers:CreateTimer(1, function() GameRules:SendCustomMessage("#ending_1",0,0) end)
-	
-	Timers:CreateTimer(5, function() GameRules:SendCustomMessage("#ending_2",0,0) end)
- 
-	Timers:CreateTimer(12, function() GameRules:SendCustomMessage("#ending_3",0,0) end)
- 
-	Timers:CreateTimer(15, function() GameRules:SendCustomMessage("#Game_notification_win",0,0) end)
-	
-	Timers:CreateTimer(30, function() GameRules:SendCustomMessage("#ending_4",0,0) end)
-	
-	Timers:CreateTimer(35, function() GameRules:SendCustomMessage("#ending_5",0,0) end)
-	
-	Timers:CreateTimer(40, function() GameRules:SendCustomMessage("#ending_6",0,0) end)
-	
-	Timers:CreateTimer(70, function() GameRules:SendCustomMessage("#ending_7",0,0) end)
-	
-	Timers:CreateTimer(85, function() GameRules:SendCustomMessage("#ending_8",0,0) end)
-	
-	Timers:CreateTimer(95, function() GameRules:SendCustomMessage("#ending_9",0,0) end)
-	
-Timers:CreateTimer(3, function()  EmitGlobalSound("Серега пират - гимн Дахака") end)
- 	Timers:CreateTimer(3, function() GameRules:SendCustomMessage("Серега пират - гимн Дахака",0,0) end)
-
-	Timers:CreateTimer(96, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
-end
 
 function InvasionMode:ThemeMusic()
 	day_music =

@@ -10,6 +10,7 @@ LinkLuaModifier("modifier_aura_of_death", "modifiers/modifier_aura_of_death.lua"
 LinkLuaModifier("modifier_aura_of_death_debuff", "modifiers/modifier_aura_of_death.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_hommer_cry", "modifiers/modifier_hommer_cry.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_attack_of_deactivating", "modifiers/modifier_attack_of_deactivating.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier("modifier_victory_animation", "modifiers/modifier_victory_animation.lua", LUA_MODIFIER_MOTION_NONE )
 
 
 

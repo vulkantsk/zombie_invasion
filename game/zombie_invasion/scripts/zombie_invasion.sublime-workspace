@@ -523,7 +523,7 @@
 			"file": "vscripts/invasion_classic.lua",
 			"settings":
 			{
-				"buffer_size": 25718,
+				"buffer_size": 27404,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,16 @@
 			"file": "npc/npc_units_custom.txt",
 			"settings":
 			{
-				"buffer_size": 43285,
+				"buffer_size": 46243,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/ai/ai_last_boss.lua",
+			"settings":
+			{
+				"buffer_size": 7005,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -540,7 +549,7 @@
 			"file": "vscripts/sounds.lua",
 			"settings":
 			{
-				"buffer_size": 5364,
+				"buffer_size": 5274,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -780,6 +789,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"antima",
 			"GetSoundDuration",
 			"getsound",
 			"SpawnZombie",
@@ -818,15 +828,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25718,
+						"buffer_size": 27404,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5862,
-								5877
+								6062,
+								6062
 							]
 						],
 						"settings":
@@ -835,7 +845,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2532.0,
+						"translation.y": 2616.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -847,15 +857,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43285,
+						"buffer_size": 46243,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17765,
-								17769
+								5527,
+								5527
 							]
 						],
 						"settings":
@@ -864,27 +874,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9730.0,
+						"translation.y": 2316.8,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "vscripts/sounds.lua",
+					"file": "vscripts/ai/ai_last_boss.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5364,
+						"buffer_size": 7005,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2719,
-								2703
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "vscripts/sounds.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -895,7 +934,7 @@
 						"translation.y": 911.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -953,6 +992,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"last",
+				"vscripts\\ai\\ai_last_boss.lua"
+			],
 			[
 				"npc",
 				"npc\\npc_units_custom.txt"
@@ -1460,10 +1503,6 @@
 			[
 				"living",
 				"vscripts\\items\\custom\\item_living_armor.lua"
-			],
-			[
-				"livi",
-				"vscripts\\abilities\\living_armor.lua"
 			]
 		],
 		"width": 0.0

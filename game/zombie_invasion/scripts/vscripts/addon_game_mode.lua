@@ -17,6 +17,7 @@ require( 'constant_links' )
 --require( 'scorched_earth' )
 --require("statcollection/init")
 --require( 'invasion_td' )
+require("end_game")
 
 if InvasionMode == nil then
 	InvasionMode = class({})
@@ -150,6 +151,13 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context )		
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context )
+	
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_techies.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_pudge.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_antimage.vsndevts", context )
 
 
 
@@ -167,7 +175,8 @@ end
 
 function Activate()
 	--GameRules.GameMode = GameMode()
-	InvasionMode:InitInvasionMode()
+	InvasionMode:InvasionMap()
+--	InvasionMode:InitInvasionMode()
 end
 
  
@@ -176,20 +185,11 @@ function InvasionMode:InitInvasionMode()
 	local MapName = GetMapName()
 	print(MapName)
 
-	if MapName == "invasion_classic" then
-	print("----------------------------------------invasion Start----------------------------------------")	
-	InvasionMode:InvasionMap()
-	end
-	
-	if MapName == "invasion2" then
-	print("----------------------------------------invasion Start----------------------------------------")	
-	InvasionMode:InvasionMap()
-	end
-
 	if MapName == "invasion_refresh" then
 	print("----------------------------------------invasion Start----------------------------------------")	
 	InvasionMode:InvasionMap()
 	end
+
 
 
 end

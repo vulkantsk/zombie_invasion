@@ -98,7 +98,367 @@
 		}	
 		
 	}	
+	"npc_end_antimage"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/antimage/antimage.vmdl"
+		"ModelScale" 				"1.0"		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"HasInventory"              "1"
+		"IsSummoned"                "1"
+		"CanBeDominated"            "0"
 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"		"antimage_mana_break"
+		"Ability2"		"antimage_blink"
+		"Ability3"		"antimage_counterspell"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"antimage_mana_void"
+		"Ability7"					"intro_rotate"			
+		"Ability8"					"antimage_attack"			
+		"Ability9"					"antimage_ult"			
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"25"
+		"MagicalResistance"         "50"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"200"		// Damage range max.
+		"AttackRate"				"0.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.2"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"		// Speed.	
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1250"		// Base health.
+		"StatusHealthRegen"			"10"		// Health regeneration rate.
+		"StatusMana"				"500"			// Base mana.
+		"StatusManaRegen"			"10.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_manta"}
+				
+			}	
+			"AttachWearables"//Fervent Conscript
+			{
+				"Wearable1" {"ItemDef" "8534"}//armor("Armor of the Fervent Conscript")
+				"Wearable2" {"ItemDef" "8545"}//offhand_weapon("Off-Hand Blade of the Fervent Conscript")
+				"Wearable3" {"ItemDef" "8546"}//head("Style of the Fervent Conscript")
+				"Wearable4" {"ItemDef" "8535"}//belt("Belt of the Fervent Conscript")
+				"Wearable5" {"ItemDef" "8536"}//shoulder("Shoulder Plate of the Fervent Conscript")
+				"Wearable6" {"ItemDef" "8543"}//arms("Bracers of the Fervent Conscript")
+				"Wearable7" {"ItemDef" "8544"}//("Blade of the Fervent Conscript")
+			}
+		}
+	}
+	"npc_end_techies"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/techies/techies.vmdl"
+		"ModelScale" 				"0.7"		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"HasInventory"              "1"
+		"IsSummoned"                "1"
+		"CanBeDominated"            "0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"		"techies_land_mines"
+		"Ability2"		"techies_stasis_trap"
+		"Ability3"		"techies_suicide"
+		"Ability4"		"techies_focused_detonate"
+		"Ability5"		"techies_minefield_sign"
+		"Ability6"		"techies_remote_mines"
+		"Ability7"					"intro_rotate"			
+		"Ability8"					"techies_attack"			
+		"Ability9"					"techies_taunt"			
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"         "25"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"200"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"		// Speed.	
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"		// Base health.
+		"StatusHealthRegen"			"500"		// Health regeneration rate.
+		"StatusMana"				"5000"			// Base mana.
+		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1500"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1500"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"//Pachyderm Powderwagon
+			{
+				"Wearable1" {"ItemDef" "13666"}//belt("Pachyderm Powderwagon Sign")
+				"Wearable2" {"ItemDef" "13548"}//arms("Pachyderm Powderwagon Remote Mine")
+				"Wearable3" {"ItemDef" "13530"}//back("Pachyderm Powderwagon Spoon")
+				"Wearable4" {"ItemDef" "13529"}//("Pachyderm Powderwagon Weapon")
+				"Wearable5" {"ItemDef" "13528"}//shoulder("Pachyderm Powderwagon Spleen")
+				"Wearable6" {"ItemDef" "13527"}//mount("Pachyderm Powderwagon Elephant")
+				"Wearable7" {"ItemDef" "13526"}//head("Pachyderm Powderwagon Squee")
+			}
+		}
+	}
+	"npc_end_pudge"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/pudge/pudge.vmdl"
+		"ModelScale" 				"1.3"		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"HasInventory"              "1"
+		"IsSummoned"                "1"
+		"CanBeDominated"            "0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"		"pudge_meat_hook"
+		"Ability2"		"pudge_rot"
+		"Ability3"		"pudge_flesh_heap"
+		"Ability4"		"pudge_eject"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"pudge_dismember"
+		"Ability7"					"intro_rotate"			
+		"Ability8"					"pudge_death"			
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"         "25"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"200"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"		// Speed.	
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"		// Base health.
+		"StatusHealthRegen"			"500"		// Health regeneration rate.
+		"StatusMana"				"5000"			// Base mana.
+		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"//Chains of the Black Death
+			{
+				"Wearable1" {"ItemDef" "6293"}//head("Crazed Tassels of the Black Death")
+				"Wearable2" {"ItemDef" "6294"}//arms("Wrist Shackles of the Black Death")
+				"Wearable3" {"ItemDef" "6295"}//offhand_weapon("Axe of the Black Death Executioner")
+				"Wearable4" {"ItemDef" "6296"}//("Cuff Hook of the Black Death")
+				"Wearable5" {"ItemDef" "6297"}//back("Execution Headclamp of the Black Death")
+				"Wearable6" {"ItemDef" "6298"}//shoulder("Shoulder of the Black Death")
+				"Wearable7" {"ItemDef" "6299"}//belt("Ball-n-Chains of the Black Death")
+				}
+		}
+	}
+	"npc_end_bear"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/lone_druid/bear/spirit_of_the_atniw/spirit_of_the_atniw.vmdl"
+		"ModelScale" 				"0.55"		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"10"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"lone_druid_spirit_bear_return"			// Ability 1
+		"Ability2"					"lone_druid_spirit_bear_demolish"			// Ability 2
+		"Ability3"					"lone_druid_savage_roar_bear"			// Ability 3
+		"Ability4"					"lone_druid_spirit_bear_entangle"			// 
+		"Ability5"		"generic_hidden"
+		"Ability6"		"generic_hidden"
+		"Ability7"					"intro_rotate"			
+		"Ability8"					""			
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"         "25"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"200"		// Damage range min.
+		"AttackDamageMax"			"300"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"		// Speed.	
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"		// Base health.
+		"StatusHealthRegen"			"500"		// Health regeneration rate.
+		"StatusMana"				"300"			// Base mana.
+		"StatusManaRegen"			"3.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	}
 			"npc_dota_spirit_wolf1"
 	{
 		// General
@@ -732,7 +1092,7 @@
 			"DisableResistance"			"95.0"
  
 
-								"EquippedItems"
+			"EquippedItems"
 			{
 				"1"            	{"Item"        "item_radiance_boss"}
 				"2"            	{"Item"        "item_shivas_guard_boss"}
@@ -1327,7 +1687,7 @@
 	// Test
 	//============================================================================================================
 	
-		"npc_sound_test"
+		"npc_test"
 	{
 		// General
 		//----------------------------------------------------------------
@@ -1343,12 +1703,12 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"sound_test_1"
-		"Ability2"					"sound_test_2"
-		"Ability3"					"sound_test_3"
-		"Ability4"					"sound_test_4"
-		"Ability5"					"sound_test_5"
-		"Ability6"					"sound_test_6"
+		"Ability1"					"ability_test_1"
+		"Ability2"					"ability_test_2"
+		"Ability3"					"ability_test_3"
+		"Ability4"					"ability_test_4"
+		"Ability5"					"ability_test_5"
+		"Ability6"					"ability_test_6"
 
 		
 		// Armor
