@@ -396,6 +396,20 @@
 
 	"item_monkey_king_bar"
 	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"135"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"4850"
+		"ItemShopTags"					"damage;attack_speed;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"mkb;monkey king bar"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -403,10 +417,24 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"46"
+				"bonus_damage"			"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"60"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_chance"			"80"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_chance_damage"			"250"
 			}
 		}
-
 	}
 
 	"item_greater_crit"
@@ -1409,33 +1437,6 @@
 	//	TIDE
 	//============================================================================================================
 
-
-	"tidehunter_kraken_shell"
-	{
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_reduction"		"20 40 60 80"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_cleanse"		"600 550 500 450"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"damage_reset_interval"	"6.0 6.0 6.0 6.0"
-			}
-		}
-	}
-
-
 	"tidehunter_anchor_smash"
 	{
 
@@ -1698,21 +1699,31 @@
 	//=================================================================================================================
 	// BRISTLEBACK
 	//=================================================================================================================
-	"bristleback_quill_spray"
+		"bristleback_quill_spray"
 	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5549"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Bristleback.QuillSpray"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"625"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"AbilityCastRange"				"650"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"3.0 3.0 3.0 3.0"
+		"AbilityCooldown"				"5.0 4.0 3.0 2.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"35 35 35 35"
+		"AbilityManaCost"				"10 20 30 40"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1721,7 +1732,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"625"
+				"radius"				"700"
 			}
 			"02"
 			{
@@ -1731,24 +1742,24 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_stack_damage"	"30.0 32.0 34.0 36.0"
+				"quill_stack_damage"	"25.0 30.0 35.0 40.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_bristleback_2"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"quill_stack_duration"	"14.0"
-				"LinkedSpecialBonus"	"special_bonus_unique_bristleback"				
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_damage"			"450.0"
+				"max_damage"			"322322.0"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"projectile_speed"		"2400"
-			}			
+			}
 		}
 	}
 
@@ -1782,6 +1793,42 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"quill_release_threshold"				"150"
+			}
+		}
+	}
+
+		"item_rapier"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"133"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_gameplay/divine_rapier.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"6000"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"divine rapier"
+		"ItemShareability"				"ITEM_NOT_SHAREABLE"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+		"ItemContributesToNetWorthWhenDropped"	"0"
+		"AllowedInBackpack"				"0"
+		"IsTempestDoubleClonable"		"0"
+		"ItemDisassembleRule"				"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"250"
 			}
 		}
 	}
@@ -2745,7 +2792,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"10000"
+				"radius"				"800"
 			}
 		}
 	}
@@ -3802,18 +3849,18 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"65"
+				"duration"				"30"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_gain_pct"		"600"
+				"health_gain_pct"		"60"
 				"LinkedSpecialBonus"			"special_bonus_unique_clinkz_8"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_gain_pct"		"100"
+				"damage_gain_pct"		"10"
 				"LinkedSpecialBonus"			"special_bonus_unique_clinkz_8"
 				"LinkedSpecialBonusField"		"value2"
 			}

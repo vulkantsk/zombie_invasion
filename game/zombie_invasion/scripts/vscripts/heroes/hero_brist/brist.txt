@@ -73,7 +73,7 @@
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"75 75 75"
+		"AbilityManaCost"				"50 100 150"
 		
 		"AbilityDuration"				"3 4 5"
 		
@@ -122,7 +122,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_per_stack"					"1.5"
+				"armor_per_stack"					"3"
  
 			}
 			"02"
@@ -138,7 +138,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"max_stacks"					"7"
+				"max_stacks"					"15"
 			}
 		}
 	}

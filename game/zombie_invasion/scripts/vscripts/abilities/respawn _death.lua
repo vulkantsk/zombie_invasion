@@ -1,4 +1,4 @@
-UNIT_RESPAWN_TIME = 60
+UNIT_RESPAWN_TIME = 30
 
 function Respoint (keys )
 	Timers:CreateTimer(0.01,function()	          

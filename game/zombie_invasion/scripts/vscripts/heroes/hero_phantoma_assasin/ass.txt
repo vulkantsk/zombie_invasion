@@ -233,9 +233,9 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"			"Hero/pa/phantom_assassin_arcana_coup_de_grace_png"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
-		"LevelsBetweenUpgrades"			"35"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"2"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -258,7 +258,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"200"
+				"damage"				"30 50 70 90"
  
 			}
 			"02"

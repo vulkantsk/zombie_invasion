@@ -12,14 +12,14 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"skeleton_king_reincarnation"
 		"Ability6"		"dragon_knight_dragon_blood_lua"
-		"Ability10"		"special_bonus_unique_wraith_king_9"
-		"Ability11"		"special_bonus_attack_speed_15"
-		"Ability12"		"special_bonus_strength_12"
-		"Ability13"		"special_bonus_unique_wraith_king_6"
-		"Ability14"		"special_bonus_unique_wraith_king_1"
-		"Ability15"		"special_bonus_unique_wraith_king_5"
-		"Ability16"		"special_bonus_unique_wraith_king_2"
-		"Ability17"		"special_bonus_unique_wraith_king_4"
+		"Ability10"		"special_bonus_cleave_25"
+		"Ability11"		"ad_special_bonus_gold_750_r"
+		"Ability12"		"special_bonus_hp_400"
+		"Ability13"		"special_bonus_corruption_3"
+		"Ability14"		"special_bonus_truestrike"
+		"Ability15"		"special_bonus_haste"
+		"Ability16"		"special_bonus_attack_damage_100"
+		"Ability17"		"special_bonus_20_bash_2"
 		"ArmorPhysical"		"-1"
 		"AttackDamageMin"		"40"
 		"AttackDamageMax"		"42"
@@ -43,8 +43,8 @@
 		"Ability2"		"troll_warlord_whirling_axes_ranged"
 		"Ability3"		"troll_warlord_whirling_axes_melee"
 		"Ability4"		"frostivus2018_troll_warlord_fervor"
-		"Ability5"		"lycan_spirit_wolf_custom"
-		"Ability6"		"troll_warlord_battle_trance"
+		"Ability5"		"troll_warlord_battle_trance"
+		"Ability6"		"lycan_spirit_wolf_custom"
 		"Ability10"		"special_bonus_agility_8"
 		"Ability11"		"special_bonus_hp_200"
 		"Ability12"		"special_bonus_unique_troll_warlord_5"
@@ -84,22 +84,14 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"roshan_create_aegis"
 		"Ability6"		"ursa_enrage"
-		"Ability10"		"special_bonus_unique_ursa_4"
-		"Ability11"		"special_bonus_mp_regen_150"
-		"Ability12"		"special_bonus_agility_12"
-		"Ability13"		"special_bonus_hp_300"
-		"Ability14"		"special_bonus_unique_ursa_2"
-		"Ability15"		"special_bonus_unique_ursa"
-		"Ability16"		"special_bonus_unique_ursa_5"
-		"Ability17"		"special_bonus_unique_ursa_7"
-
-		"AbilityDraftAbilities"
-		{
-			"Ability1"		"ursa_earthshock"
-			"Ability2"		"ursa_overpower"
-			"Ability3"		"ursa_fury_swipes"
-			"Ability4"		"ursa_enrage"
-		}
+        "Ability10"        "special_bonus_unique_ursa_5"
+        "Ability11"        "special_bonus_mp_regen_2" 
+        "Ability12"        "special_bonus_all_stats_12"
+        "Ability13"        "special_bonus_unique_ursa_7"
+        "Ability14"        "special_bonus_armor_12"
+        "Ability15"        "special_bonus_20_crit_15"
+        "Ability16"        "special_bonus_attack_speed_100"
+        "Ability17"        "special_bonus_unique_ursa""
 		"ArmorPhysical"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"24"
@@ -158,19 +150,19 @@
 	"npc_dota_hero_phantom_assassin"
 	{
 		"Ability1"		"phantom_assassin_stifling_dagger_nb2017"
-		"Ability2"		"phantom_assassin_adrenaline"
-		"Ability3"		"phantom_assassin_blur_2"
+		"Ability2"		"riki_dance"
+		"Ability3"		"pa_skill"
 		"Ability4"		"generic_hidden"
-		"Ability5"		"riki_dance"
+		"Ability5"		"pa_gds"
 		"Ability6"		"phantom_assassin_coup_de_grace"
-		"Ability10"		"special_bonus_hp_175"
-		"Ability11"		"special_bonus_unique_phantom_assassin_7"
-		"Ability12"		"special_bonus_lifesteal_12"
-		"Ability13"		"special_bonus_unique_phantom_assassin_6"
-		"Ability14"		"special_bonus_corruption_3"
-		"Ability15"		"special_bonus_unique_phantom_assassin_3"
-		"Ability16"		"special_bonus_unique_phantom_assassin_4"
-		"Ability17"		"special_bonus_unique_phantom_assassin"
+		"Ability10"		"special_bonus_vision_200"
+		"Ability11"		"special_bonus_evasion_10"
+		"Ability12"		"special_bonus_attack_damage_25"
+		"Ability13"		"special_bonus_armor_8"
+		"Ability14"		"special_bonus_unique_phantom_assassin_2"
+		"Ability15"		"special_bonus_corruption_5"
+		"Ability16"		"special_bonus_lifesteal_30"
+		"Ability17"		"special_bonus_unique_phantom_assassin_4"
 		"ArmorPhysical"		"1"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"32"
@@ -450,14 +442,14 @@
 "Ability5" "axe_solo"
 "Ability6" "ursa_enrage_lua"
 "Ability7" "axe_berserkers_call"
-"Ability10" "special_bonus_attack_speed_25"
-"Ability11" "special_bonus_movement_speed_35"
-"Ability12" "special_bonus_mp_regen_4"
-"Ability13" "special_bonus_unique_axe"
-"Ability14" "special_bonus_unique_axe_5"
-"Ability15" "special_bonus_unique_axe_3"
-"Ability16" "special_bonus_mana_reduction_9"
-"Ability17" "special_bonus_unique_axe_4"
+"Ability10" "ad_special_bonus_gold_250_r"
+"Ability11" "special_bonus_armor_5"
+"Ability12" "special_bonus_unique_axe"
+"Ability13" "special_bonus_spell_lifesteal_10"
+"Ability14" "special_bonus_spell_amplify_20"
+"Ability15" "special_bonus_unique_axe_4"
+"Ability16" "special_bonus_all_stats_15"
+"Ability17" "special_bonus_strength_30"
 }
 
 	"npc_dota_hero_shredder"
@@ -517,14 +509,15 @@
 		"Ability4"		"clinkz_death_pact"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"frostivus2018_clinkz_burning_army"
-		"Ability10"		"special_bonus_hp_475"
-		"Ability11"		"special_bonus_mp_regen_175"
-		"Ability12"		"special_bonus_lifesteal_12"
-		"Ability13"		"special_bonus_unique_clinkz_1"
-		"Ability14"		"special_bonus_attack_range_125"
-		"Ability15"		"special_bonus_unique_clinkz_7"
-		"Ability16"		"special_bonus_mana_reduction_11"
+		"Ability10"		"special_bonus_unique_clinkz_1"
+		"Ability11"		"special_bonus_mp_regen_2"
+		"Ability12"		"special_bonus_unique_clinkz_7"
+		"Ability13"		"special_bonus_mana_reduction_11"
+		"Ability14"		"special_bonus_strength_20"
+		"Ability15"		"special_bonus_unique_clinkz_5"
+		"Ability16"		"special_bonus_unique_clinkz_8"
 		"Ability17"		"special_bonus_unique_clinkz_3"
+
 	
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -717,15 +710,15 @@
 		"Ability3"					"tidehunter_anchor_smash"
 		"Ability4"					"tidehunter_ravage"
 		"Ability5"					"generic_hidden"
-		"Ability6"					"death_prophet_spirit_siphon"
-		//"Ability10"		"special_bonus_attack_damage_20"
-		//"Ability11"		"special_bonus_armor_5"
-		//"Ability12"		"special_bonus_all_stats_6"
-		//"Ability13"		"special_bonus_movement_speed_15"
-		//"Ability14"		"special_bonus_attack_speed_25"
-		//"Ability15"		"special_bonus_strength_12"
-		//"Ability16"		"special_bonus_hp_400"
-		//"Ability17"		"special_bonus_unique_spectre"				
+		"Ability6"					"tide_health"
+		"Ability10"		"special_bonus_mp_regen_150"
+		"Ability11"		"special_bonus_armor_5"
+		"Ability12"		"special_bonus_movement_speed_30"
+		"Ability13"		"special_bonus_unique_tidehunter"
+		"Ability14"		"special_bonus_unique_tidehunter_4"
+		"Ability15"		"special_bonus_hp_regen_30"
+		"Ability16"		"special_bonus_unique_tidehunter_3"
+		"Ability17"		"special_bonus_attack_damage_120"				
 	}	
 
 "npc_dota_hero_spectre"
@@ -780,14 +773,14 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "ability_warpath"
         "Ability6"                    "life_stealer_rage"
-        //"Ability10"        "special_bonus_strength_7"
-        //"Ability11"        "special_bonus_mp_regen_2"
-        //"Ability12"        "special_bonus_movement_speed_20"
-        //"Ability13"        "special_bonus_hp_200"
-        //"Ability14"        "special_bonus_attack_speed_45"
-        //"Ability15"        "special_bonus_respawn_reduction_30"
-        //"Ability16"        "special_bonus_hp_regen_25"
-        //"Ability17"        "special_bonus_unique_bristleback"
+        "Ability10"        "special_bonus_hp_150"
+        "Ability11"        "special_bonus_mp_regen_2"
+        "Ability12"        "special_bonus_armor_7"
+        "Ability13"        "special_bonus_strength_15"
+        "Ability14"        "special_bonus_unique_bristleback_2"
+        "Ability15"        "special_bonus_cooldown_reduction_15"
+        "Ability16"        "special_bonus_night_vision_1000"
+        "Ability17"        "special_bonus_magic_resistance_35"
     }
 
 "npc_dota_hero_tiny"
@@ -1073,62 +1066,61 @@
 		"Ability1"		"wisp_tether"
 		"Ability2"		"wisp_spirits"
 		"Ability3"		"wisp_overcharge"
-		"Ability4"		""
+		"Ability4"		"generic_hidden"
 		"Ability5"		"wisp_sueside"
 		"Ability6"		"ability_wisp_teleport"
 		"Ability7"		"wisp_tether_break"
 		"Ability8"		"wisp_spirits_in"
-		"Ability10"		"special_bonus_unique_wisp_7"
-		"Ability11"		"special_bonus_attack_damage_45"
-		"Ability12"		"special_bonus_unique_wisp"
-		"Ability13"		"special_bonus_hp_regen_8"
-		"Ability14"		"special_bonus_gold_income_25"
-		"Ability15"		"special_bonus_armor_15"
-		"Ability16"		"special_bonus_unique_wisp_6"
-		"Ability17"		"special_bonus_unique_wisp_4"	
+		"Ability10"		"special_bonus_exp_boost_15"
+		"Ability11"		"special_bonus_unique_wisp_3"
+		"Ability12"		"special_bonus_gold_income_120"
+		"Ability13"		"special_bonus_hp_regen_12"
+		"Ability14"		"special_bonus_unique_wisp_5"
+		"Ability15"		"special_bonus_attack_damage_70"
+		"Ability16"		"special_bonus_spell_immunity	"
+		"Ability17"		"special_bonus_unique_wisp_4"
+
+		"AttackDamageMin"			"20"										// Damage range min.
+		"AttackDamageMax"			"20"	
+		"BaseAttackSpeed"           "250"									// Damage range max.
+		"AttackRate"				"3.5"									// Speed of attack.
+		"ProjectileSpeed"			"900"									// Speed of projectile.
+		"AttackAnimationPoint"		"0.55"
+		"AttackRange"				"620"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"3"									// Physical protection.
+		"MagicalResistance"			"25"									// Magical protection (percentage).
+
 
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
-		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"1"
-		"AttributeStrengthGain"		"0"
-		"AttributeBaseIntelligence"	"1"
-		"AttributeIntelligenceGain"	"100"
-		"AttributeBaseAgility"		"1"
-		"AttributeAgilityGain"		"0"
 
-		// Status
-		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"			"80"
-		"StatusHealthRegen"		"0"
-		"StatusMana"			"0"
-		"StatusManaRegen"		"0"
-
-		// Vision
-		//-------------------------------------------------------------------------------------------------------------
-		"VisionDaytimeRange"		"1600"
-		"VisionNighttimeRange"		"1600"
-
-		// Armor
-		//-------------------------------------------------------------------------------------------------------------		
-		"ArmorPhysical"			"0"
-		"MagicalResistance"		"0"
-		
-		// Attack
-		//-------------------------------------------------------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"1"
-		"AttackDamageMax"			"1"
-		"AttackRate"				"1.700000"
-		"AttackAnimationPoint"		"0.150000"
-		"AttackAcquisitionRange"	"800"
-		"AttackRange"				"120"
-		"ProjectileSpeed"			"1200"
+		"AttributeBaseStrength"		"13"										// Base strength
+		"AttributeStrengthGain"		"3.6"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"23"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.2"    									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"13"										// Base agility
+		"AttributeAgilityGain"		"2.2"										// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"		"300"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"320"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
 
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"				"100"									// Base health.
+		"StatusHealthRegen"			"1.0"									// Health regeneration rate.
+		"StatusMana"				"150"											// Base mana.
+		"StatusManaRegen"			"2"									// Mana regeneration rate.
+
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
 	}
 
 //=========================================================================================================

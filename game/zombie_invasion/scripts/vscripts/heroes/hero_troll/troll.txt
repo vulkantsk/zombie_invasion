@@ -291,7 +291,7 @@
 	//=================================================================================================================
 	//  Troll Warlord: Battle Trance
 	//=================================================================================================================
-	"troll_warlord_battle_trance"
+		"troll_warlord_battle_trance"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -299,10 +299,10 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_TrollWarlord.BattleTrance.Cast"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"MaxLevel"						"3"
+    	"MaxLevel"            "1"
+    	"LevelsBetweenUpgrades" "1"
+    	"RequiredLevel" "35"
         "HasScepterUpgrade"			"1"
 
 		// Casting
@@ -332,12 +332,12 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal"			"40 60 80"
+				"lifesteal"			"100"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attack_speed"			"140 170 200"
+				"attack_speed"			"350"
 			}
 			"04"
 			{
@@ -380,9 +380,9 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	"DisplayAdditionalHeroes"		"1"
 	"AbilityTextureName"			"Hero/mini-troll"
-	"RequiredLevel"					"35"
-	"LevelsBetweenUpgrades"         "35"
-	"MaxLevel"						"1"
+	"RequiredLevel"					"6"
+	"LevelsBetweenUpgrades"         "6"
+	"MaxLevel"						"3"
 
 	// Casting
 	//-------------------------------------------------------------------------------------------------------------
@@ -405,39 +405,39 @@
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"summon_hp"					"2250"
+			"summon_hp"					"1000 2000 3000"
 		}
 		"02"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"summon_hpreg"				"15"
+			"summon_hpreg"				"10 20 30"
 		}
 		"03"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"summon_dmg"				"135"
+			"summon_dmg"				"75 150 225"
 		}
 		"04"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"summon_armor"				"18"
+			"summon_armor"				"5 10 15"
  
 		}
 		"05"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"summon_bat"				"1"
+			"summon_bat"				"1.0"
 		}
 		"06"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"hp_per_str"				"5.0"
+			"hp_per_str"				"2.0 4.0 6.0"
  
 		}
 		"07"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"dmg_per_str"				"1.0"
+			"dmg_per_str"				"0.5 1.0 1.5"
  
 		}
 		"08"
