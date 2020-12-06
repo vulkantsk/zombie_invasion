@@ -213,12 +213,7 @@ function modifier_campfire_quest:OnIntervalThink()
 				if item then
  
 					local item_name = item:GetName()
-					if item_name == "item_meat" then
-	--					EmitSoundOn("Hero_Broodmother.SpawnSpiderlings",caster)
-						local newItem = CreateItem( "item_big_meat", nil, nil )
-						CreateItemOnPositionSync( caster:GetAbsOrigin(), newItem )					
-						unit:RemoveItem(item)	
-					end	
+ 
 
 					if item_name == "item_tvorog" or item_name == "item_testo" or item_name == "item_corica_2" or item_name == "item_saxar" then
 --						print("find item = "..item_name)

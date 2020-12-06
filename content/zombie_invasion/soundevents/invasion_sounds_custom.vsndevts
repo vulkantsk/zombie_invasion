@@ -1146,750 +1146,518 @@
 
 "Boulevard of Broken Dreams - Green Day" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Boulevard of Broken Dreams Green Day.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/Boulevard of Broken Dreams Green Day.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+                         
+   
 }
 
 "Ula - Cannabis"
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Ula Cannabis.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                       "value0"        "sounds/Ula Cannabis.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+                               
+ 
 }
 
 "Does It Matter - Janieck" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Does It Matter Janieck.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                                       "value0"        "sounds/Does It Matter Janieck.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+                
+ 
 }
 
 "I Follow Rivers - Lykke Li" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/I Follow Rivers Lykke Li.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                                 "value0"        "sounds/I Follow Rivers Lykke Li.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+                      
+ 
 }
 
 "August - Intelligency" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+         "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/August Intelligency.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                         "value0"        "sounds/August Intelligency.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+                             
+ 
 }
 
    
 
 "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+ 
+
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Jackie Chan.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/Jackie Chan"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+ 
+
 }
 
 "Life - Larson"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Life Larson.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                      "value0"        "sounds/Life Larson.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                              
+ 
 }
 
  
 
 "iSpy - KYLE feat. Lil Yachty"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/iSpy KYLE.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/iSpy KYLE.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                    
+ 
 }
 
 "Musica - Fly Project"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+ 
+                        
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Musica Fly Project.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/Musica Fly Project.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+               
 }
  
 "Shotgun - Yellow Claw feat. Rochelle"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+ 
+                         
+                              
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Shotgun.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/Shotgun.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
 }
 
 "Wake Me Up - Avicii"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+                              
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Wake Me Up Avicii.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/Wake Me Up Avicii.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
 }
+                               
+ 
+ 
    
 "Daved Guetta - Would I Lie To You"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+                              
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Would I Lie To You.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                          "value0"        "sounds/Would I Lie To You.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
 }
-
+                               
+ 
+ 
+ 
  
 
 "Runaway - Parachute Youth feat. Jay Martin"   
 {
-    "operator_stacks"
-    {
-        "update_stack"
+                              
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Runaway.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"        "sounds/Runaway.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
 }
+                              
+ 
+ 
 
 "I_am_sad"   
 {
@@ -2091,7 +1859,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "2.500000"  }
-   									     "soundlevel"		{   "value"     "37"  }
+   									     "soundlevel"		{   "value"     "24"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2129,7 +1897,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "50"  }
+   									     "soundlevel"		{   "value"     "40"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2273,7 +2041,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "40"  }
+   									     "soundlevel"		{   "value"     "73"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2667,345 +2435,232 @@
 
 "Sia - Cheap Thrills" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+ 
+                            
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Sia - Cheap Thrills.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                           "value0"        "sounds/Sia - Cheap Thrills.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
 }
 
 "Sia - Chandelier" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Sia - Chandelier.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                           "value0"        "sounds/Sia - Chandelier.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                               
+ 
 }
 
 "RSAC - NBA" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/RSAC - NBA.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                         "value0"        "sounds/RSAC - NBA.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+   
+                               
+ 
 }
 
 
 "L Starz - My Life Be LikeGrits" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/L Starz - My Life Be LikeGrits.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                           "value0"        "sounds/L Starz - My Life Be LikeGrits.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                               
+ 
 }
 
 "Galantis - No Money" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Galantis - No Money.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                           "value0"        "sounds/Galantis - No Money.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                              
+ 
 }
 
 "Kiesza - Hideaway" 
 {
-    "operator_stacks"
-    {
-        "update_stack"
+        "operator_stacks"
         {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
+                "update_stack"
                 {
-                    "vsnd_files"
-                    {
-                        "value"
+                        "reference_operator"
                         {
-                              "value0"        "sounds/Kiesza - Hideaway.vsnd"
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                            "value0"        "sounds/Kiesza - Hideaway.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "24"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
                         }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
                 }
-            }
         }
-    }
+                             
+ 
 }
 
 "John  Newman - Fire In Me" 
@@ -3102,155 +2757,10 @@
         }
 }
 
-"C418 - Sweden_1"   
-{
-        "operator_stacks"
-        {
-                "update_stack"
-                {
-                        "reference_operator"
-                        {
-                                "operator"              "sos_reference_stack"
-                                "reference_stack"               "src1_3d"
-                                "operator_variables"
-                                {
-                                        "vsnd_files"
-                                        {
-                                                "value"
-                                                {
-                                                        "value0"                "sounds/C418 - Sweden_1"
-                                                }
-                                        }
-										"volume"			{   "value"     "2.500000"  }
-   									     "soundlevel"		{   "value"     "37"  }
-										"pitch"       		{  	"value"   	"1.000000" }
-                                       "chan_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                        "memory_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                }
-                        }
-                }
-        }
-}
+ 
+ 
 
-"Ula Cannabis_1"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Ula Cannabis_1.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-"Ula Cannabis_2"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Ula Cannabis_2.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
+ 
 
 "Mase - Psycho"
 {
@@ -3308,329 +2818,7 @@
         }
     }
 }
-
-"Mase - Psycho_1"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Mase - Psycho_1.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-
-"Mase - Psycho_2"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Mase - Psycho_2.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-"Mase - Psycho_3"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Mase - Psycho_3.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-"C418 - Sweden_2"   
-{
-        "operator_stacks"
-        {
-                "update_stack"
-                {
-                        "reference_operator"
-                        {
-                                "operator"              "sos_reference_stack"
-                                "reference_stack"               "src1_3d"
-                                "operator_variables"
-                                {
-                                        "vsnd_files"
-                                        {
-                                                "value"
-                                                {
-                                                        "value0"                "sounds/C418 - Sweden_2"
-                                                }
-                                        }
-										"volume"			{   "value"     "2.500000"  }
-   									     "soundlevel"		{   "value"     "37"  }
-										"pitch"       		{  	"value"   	"1.000000" }
-                                       "chan_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                        "memory_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                }
-                        }
-                }
-        }
-}
-
-"Intro_3"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Intro_3.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-"Intro_2"
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Intro_2.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
+ 
 
 "Серега пират - АМ ФП" 
 {
@@ -3689,352 +2877,12 @@
     }
 }
 
-"Boulevard of Broken Dreams - Green Day_main" 
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Boulevard of Broken Dreams - Green Day_main.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-
-"Life - Larson_main"   
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Life - Larson_main.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-"Musica - Fly Project_main"   
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Musica - Fly Project_main.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-
-"Wake Me Up - Avicii_main"   
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Wake Me Up - Avicii_main.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
+ 
+ 
    
   
-"Galantis - No Money_main" 
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/Galantis - No Money_main.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
-
-"jack"   
-{
-    "operator_stacks"
-    {
-        "update_stack"
-        {
-            "reference_operator"
-            {
-                "operator"              "sos_reference_stack"
-                "reference_stack"       "dota_src1_3d"
-                "operator_variables"
-                {
-                    "vsnd_files"
-                    {
-                        "value"
-                        {
-                              "value0"        "sounds/jack.vsnd"
-                        }
-                    }
-					"volume_min"
-					{
-							"value"         "1.500000"
-					}
-					"volume_max"
-					{
-							"value"         "1.500000"
-					}
-					"pitch_min"
-					{
-							"value"         "0.950000"
-					}
-					"pitch_max"
-					{
-							"value"         "1.050000"
-					}
-					"chan_type"
-					{
-							"value"         "6"
-					}
-					"memory_type"
-					{
-							"value"         "0"
-					}
-					"soundlevel_min"
-					{
-							"value"         "100.000000"
-					}
-					"soundlevel_max"
-					{
-							"value"         "100.000000"
-					}
-                }
-            }
-        }
-    }
-}
-
+ 
+ 
    
 "Rig"   
 {
@@ -4113,7 +2961,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "75"  }
+   									     "soundlevel"		{   "value"     "32"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4150,7 +2998,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "75"  }
+   									     "soundlevel"		{   "value"     "30"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4187,7 +3035,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "75"  }
+   									     "soundlevel"		{   "value"     "60"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4297,7 +3145,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "2.500000"  }
-   									     "soundlevel"		{   "value"     "37"  }
+   									     "soundlevel"		{   "value"     "35"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4333,7 +3181,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "68"  }
+   									     "soundlevel"		{   "value"     "60"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {

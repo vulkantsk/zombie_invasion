@@ -650,7 +650,7 @@
 		"IsAncient"					"1"
 		"IsBossMonster"				"1"	
 		"UseNeutralCreepBehavior" 	"0"
-		"CanBeDominated"            "0"
+ 
 		"HasInventory"              "1"
 		
 		"MinimapIcon"				"minimap_roshancamp"
@@ -658,25 +658,25 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"lycan_boss_claw_attack"		
-		"Ability2"					"lycan_boss_claw_lunge"
-		"Ability3"					"rupture_custom"
-		"Ability4"					"ghoul_crazy_look"
-		"Ability5"					"boss_eclipse"
-		"Ability6"					"huskar_berserkers_blood_boss"
-		"Ability7"					"last_boss_music"				
-		"Ability8"					"blood"	
-		"Ability9"                  "boss_thirst"
+   	"Ability1"					"lycan_boss_claw_attack"		
+ 		"Ability2"					"lycan_boss_claw_lunge"
+ 		"Ability3"					"rupture_custom"
+ 		"Ability4"					"ghoul_crazy_look"
+	 	"Ability5"					"hardskin_pudge"
+ 		"Ability6"					"huskar_berserkers_blood_boss"
+ 		"Ability7"					"last_boss_music"				
+ 		"Ability8"					"blood"	
+ 	"Ability9"                  "boss_thirst"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"130"			// Physical protection.
+		"ArmorPhysical"				"135"			// Physical protection.
 		"MagicalResistance"         "95"
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"1150"					
-		"AttackDamageMax"			"1300"	
+		"AttackDamageMin"			"1250"					
+		"AttackDamageMax"			"1400"	
 		"AttackDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"AttackRate"				"1.4"
 		"AttackAnimationPoint"		"0.5"				// Normalized time in animation cycle to attack.
@@ -697,14 +697,14 @@
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
 		"MovementSpeed"				"550"		// Speed.	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"30000"		// Base health.
-		"StatusHealthRegen"			"125"		// Health regeneration rate.
+		"StatusHealth"				"36000"		// Base health.
+		"StatusHealthRegen"			"135"		// Health regeneration rate.
 		"StatusMana"				"2000"			// Base mana.
 		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
 		
@@ -727,25 +727,10 @@
 		{
 		
 
-			//"AttachWearables"
-			//{
-			//    "Wearable1" { "ItemDef" "168" }
-			//    "Wearable2" { "ItemDef" "169" }
-			//}
+ 
 			
 			"DisableResistance"			"95.0"
-			"DefaultState"			"Invade"
-				"States"	
-				{
-					"Invade"
-					{
-						"Name"				"Invade"
-		        "Aggression"    "100.0"
-			        "Avoidance"     "0.0"
-			        "Support"       "0.0"
-			        "RoamDistance"  "15000.0"
-					}
-				}
+ 
 
 								"EquippedItems"
 			{
@@ -756,14 +741,7 @@
 			}				
 		
 		
-			//Level Up
-			"HPGain"					"50"
-			"DamageGain"				"2"
-			"ArmorGain"					"0.25"
-			"MagicResistGain"			"0.1"
-			"MoveSpeedGain"				"1"
-			"BountyGain"				"3"
-			"XPGain"					"15"
+ 
 		}
 	}
 	
@@ -787,6 +765,7 @@
 		"HasInventory"				"0"
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
+		"IsAncient"                 "1"
  
  
 		// Abilities
@@ -876,7 +855,7 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"CanBeDominated"            "0"
- 
+ 		"IsAncient"                 "1"
 		
 		// Abilities
 		//----------------------------------------------------------------
@@ -964,7 +943,7 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"CanBeDominated"            "0"
- 
+ 		"IsAncient"                 "1"
 		
 		// Abilities
 		//----------------------------------------------------------------

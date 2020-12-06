@@ -1517,12 +1517,12 @@
 		"02"
         {
 			"var_type"              "FIELD_FLOAT"
-			"bonus_hp"            	"50" 
+			"bonus_hp"            	"25" 
         }
 		"03"
         {
 			"var_type"              "FIELD_INTEGER"
-			"bonus_dmg"            "25" 
+			"bonus_dmg"            "15" 
         }
 			
 	}

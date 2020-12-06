@@ -18,5 +18,6 @@ function GenocideMusic(keys)
 end
 
 function GenocideEnd(keys)
-	SendToConsole("stopsound")
+		local sound = keys.sound
+	StopGlobalSound(sound)
 end

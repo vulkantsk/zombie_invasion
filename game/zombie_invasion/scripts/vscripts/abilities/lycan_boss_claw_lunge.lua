@@ -1,5 +1,7 @@
 lycan_boss_claw_lunge = class({})
 LinkLuaModifier( "modifier_lycan_boss_claw_lunge", "modifiers/modifier_lycan_boss_claw_lunge", LUA_MODIFIER_MOTION_HORIZONTAL )
+LinkLuaModifier( "modifier_no_heal", "modifiers/modifier_no_heal", LUA_MODIFIER_MOTION_HORIZONTAL )
+LinkLuaModifier( "modifier_generic_bashed_lua", "heroes/generic/modifier_generic_bashed_lua", LUA_MODIFIER_MOTION_HORIZONTAL )
 
 --------------------------------------------------------------------------------
 
@@ -79,6 +81,8 @@ function lycan_boss_claw_lunge:OnProjectileHit( hTarget, vLocation )
 	if IsServer() then
 		if hTarget ~= nil then
 			if hTarget:IsInvulnerable() == false then
+				    hTarget:AddNewModifier(self:GetCaster(), self, "modifier_no_heal", {duration = 12})
+ 				    hTarget:AddNewModifier(self:GetCaster(), self, "modifier_generic_bashed_lua", {duration = 0.75})
 				local damageInfo =
 				{
 					victim = hTarget,

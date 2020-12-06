@@ -8,10 +8,10 @@ end
 
  HeroMaxLevel = 36
 HeroExpTable = {0}
-exp={149,274,349,413,399,461,558,651,672,734,
-  748,845,853,860,871,882,996,1033,1025,
-  1120,1225,1287,1405,1819,2313,2793,3258,3710,4148,
-  4572,4505,4439,4373,4307,4240
+exp={150,200,275,375,450,  500,550,615,780,715,
+  735,785,825,875,925,975,1300,  1050,1100,
+  1245,1375,1475,2000,1800,1900,2200,2250,2300,2350,
+  2500,2500,2500,2500,2500,2500
   
   }
 
@@ -110,11 +110,8 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
  
-
- 
  
 
- 
 
     --npc:AddNewModifier(npc, nil, "modifier_demon_lord_buff", {})
     --npc:AddNewModifier(npc, nil, "modifier_insane", {})
@@ -135,6 +132,7 @@ function InvasionMode:spawn_last_boss()
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
 end
+
 
 
 function InvasionMode:InvasionGameStart()
@@ -179,7 +177,7 @@ function InvasionMode:InvasionGameStart()
 	 	    EmitGlobalSound("Invasion.Castaways")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>The Castaways – Liar Liar</font>", 0, 0) 
 		elseif xuitat3 == 2 then
-	 	    EmitGlobalSound("Would I Lie To You")
+	 	    EmitGlobalSound("Daved Guetta - Would I Lie To You")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Would I Lie To You - David Guetta, Cedric Gervais, Chris Willis</font>", 0, 0) 		
 		else
 	 	    EmitGlobalSound("Sergey")
@@ -235,12 +233,22 @@ function InvasionMode:InvasionGameStart()
 	
 	Timers:CreateTimer(2478, function() GameRules:SendCustomMessage("#begining_3",0,0) end)
 	
-	Timers:CreateTimer(2478,function()
+	Timers:CreateTimer(2480,function()
        InvasionMode:spawn_last_boss()
 	end)
 	
 	Timers:CreateTimer(2450,function()
-		    SendToConsole("stopsound")
+				if xuitat3 == 1 then
+	 	    StopGlobalSound("Invasion.Castaways")    
+ 
+		elseif xuitat3 == 2 then
+	 	    StopGlobalSound("Daved Guetta - Would I Lie To You")
+ 	
+		else
+	 	    StopGlobalSound("Sergey")
+ 
+        end	
+	   
 	end)
  
  
@@ -271,7 +279,14 @@ function InvasionMode:ZombieNight1()
 		     self:SpawnZombie("npc_zombie_toxic",1)
 		 return 60
 		 end
-	end)	
+	end)
+
+	Timers:CreateTimer(90, function()
+	     while wave <  29 do 
+		     self:SpawnZombie("npc_seerdying",1)
+		 return 90
+		 end
+	end)		
  
  	Timers:CreateTimer(155,function()
 		 self:SpawnZombie("npc_undying",1)
@@ -319,6 +334,13 @@ end
 		 return 50
 		 end
 	end)
+
+	Timers:CreateTimer(90, function()
+	     while wave_2 <  29 do 
+		     self:SpawnZombie("npc_seerdying_2",1)
+		 return 90
+		 end
+	end)	
 	
 	Timers:CreateTimer(90,function()
 		 self:SpawnZombie("npc_undying_2",1)
@@ -375,6 +397,14 @@ function InvasionMode:ZombieNight3()
 		 end
 	end)
  
+ 	Timers:CreateTimer(90, function()
+	     while wave_3 <  29 do 
+		     self:SpawnZombie("npc_seerdying_3",1)
+		 return 90
+		 end
+	end)	
+	
+
 
 	Timers:CreateTimer(90,function()
 		 self:SpawnZombie("npc_undying_3",1)
@@ -433,6 +463,14 @@ function InvasionMode:ZombieNight3()
 		 end
 	end)
  
+  	Timers:CreateTimer(90, function()
+	     while wave_4 <  29 do 
+		     self:SpawnZombie("npc_seerdying_4",1)
+		 return 90
+		 end
+	end)	
+	
+
   
 	
 	Timers:CreateTimer(210,function()
@@ -653,6 +691,9 @@ function InvasionMode:InvasionEntityKilled (data)
 		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		
 	end
 	end
+    
+ 
+ 
 
 
 	if killedEntity:GetUnitName() == "NPC_base" then
@@ -663,6 +704,7 @@ function InvasionMode:InvasionEntityKilled (data)
  
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
+ 
      InvasionMode:PrintEndgameMessage1()
 end
  
@@ -834,7 +876,8 @@ function InvasionMode:CreateDrop (itemName, pos)
 end
 
 function InvasionMode:PrintEndgameMessage1()
-	 
+	 	    
+	 	   GameRules:SetTimeOfDay(0.25)
 		Timers:CreateTimer(1, function() GameRules:SendCustomMessage("#ending_1",0,0) end)
 	
 	Timers:CreateTimer(5, function() GameRules:SendCustomMessage("#ending_2",0,0) end)

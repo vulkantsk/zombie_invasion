@@ -82,7 +82,7 @@ function modifier_veteran_grow:DeclareFunctions()
 end
 
 function modifier_veteran_grow:GetModifierPreAttack_BonusDamage()
-	return self:GetStackCount()*25
+	return self:GetStackCount()*15
 end
 
 --function modifier_veteran_grow:GetModifierPhysicalArmorBonus()
@@ -90,7 +90,7 @@ end
 --end
 
 function modifier_veteran_grow:GetModifierExtraHealthBonus()
-	return self:GetStackCount()*50
+	return self:GetStackCount()*25
 end
 
 

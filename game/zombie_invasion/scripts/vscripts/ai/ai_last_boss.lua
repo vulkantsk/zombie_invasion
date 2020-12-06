@@ -2,16 +2,23 @@ function Spawn( entityKeyValues )
 	if not IsServer() then
 		return
 	end
-
+ 
 	if thisEntity == nil then
 		return
 	end
-	
+
+	   GameRules:SetTimeOfDay(0.75)
+		hClawLungeAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_lunge" )
+		hClawAttackAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_attack" )
+ 
     local waypoint = Entities:FindByName( nil, "last_boss") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
  	if waypoint then thisEntity:SetInitialGoalEntity( waypoint ) end-- Посылаем моба на наш d_waypoint19, координаты которого мы записали в переменную 'waypoint'
 	
 	thisEntity:SetContextThink( "NeutralAutoCasterThink", NeutralAutoCasterThink, 1 )
 end
+
+ 
+
 
 function NeutralAutoCasterThink()
 	if ( not thisEntity:IsAlive() ) then		--если юнит мертв
@@ -38,13 +45,13 @@ function NeutralAutoCasterThink()
 		npc.bInitialized = true						-- флаг инициализации
 		npc.agro = false							-- флаг агра
 		
-		npc.ability0 = FindAbility(npc, 0)			-- ищет способность по индексу
-		npc.ability1 = FindAbility(npc, 1)			-- ищет способность по индексу
-		npc.ability2 = FindAbility(npc, 2)			-- ищет способность по индексу
-		npc.ability3 = FindAbility(npc, 3)			-- ищет способность по индексу
-		npc.ability4 = FindAbility(npc, 4)			-- ищет способность по индексу
-		npc.ability5 = FindAbility(npc, 5)			-- ищет способность по индексу
-		
+ 
+	 
+ 
+ 
+ 
+			npc.ability2 = FindAbility(npc,2)
+				npc.ability4 = FindAbility(npc,4)
 	end
 
 	local search_radius 							-- радиус поиска зависит от того, имеет ли юнит агр
@@ -62,37 +69,47 @@ function NeutralAutoCasterThink()
 						npc:GetTeamNumber(),		--команда юнита
 						npc.vInitialSpawnPos,		--местоположение юнита
 						nil,	--айди юнита (необязательно)
-						search_radius + 15000,	--радиус поиска
+						search_radius + 7500,	--радиус поиска
 						DOTA_UNIT_TARGET_TEAM_ENEMY,	-- юнитов чьей команды ищем вражеской/дружественной
 						DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	--юнитов какого типа ищем 
 						DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE,	--поиск по флагам
 						FIND_CLOSEST,	--сортировка от ближнего к дальнему 
 						false )
 
-	if #enemies == 0 then	-- если найденных юнитов нету
-		if npc.agro then
-			RetreatHome()	-- если юнит под действием агра
-		end		
-		return 0.5
+    local waypoint = Entities:FindByName( nil, "last_boss") 
+ 
+
+ 
+		if #enemies == 0 then
+		return thisEntity:SetInitialGoalEntity( waypoint )
 	end
 	
 	local enemy = enemies[1]	-- врагом выбирается первый близжайший
-	
-	
+ 
+ 
+	 
 	if npc.agro then	-- если юнит находится под действием агра
-		
+	
 
-			if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.7 ) then 
-				TryCastAbility(npc.ability1, npc, enemy)
-			end
-			
-		TryCastAbility(npc.ability0, npc, enemy)	-- попытка использовать способность
+ 
+		 
+--		npc:MoveToPositionAggressive(enemy:GetAbsOrigin())
+ 
+  
+		 
+    TryCastAbility(npc.ability4, npc, enemy)
 		if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.3 ) then 		  
 		    TryCastAbility(npc.ability2, npc, enemy)	-- попытка использовать способность
 		end
-		TryCastAbility(npc.ability3, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability4, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability5, npc, enemy)	-- попытка использовать способность
+
+		if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.9 ) then 		  
+		    	  CastClawLunge( enemies[ RandomInt( 1, #enemies ) ] )
+		end
+
+	   	CastClawAttack( enemy )
+ 
+	
+ 
 	else
 		local allies = FindUnitsInRadius(	-- ищет всех союзных братков в радиусе 
 				npc:GetTeamNumber(), 
@@ -112,6 +129,7 @@ function NeutralAutoCasterThink()
 		end	
 	end	
 	return 1
+	
 	
 end
 
@@ -196,6 +214,29 @@ function AttackMove( unit, enemy )
 	return 1
 end
 
+function ItemAbilityCast( enemy )
+		ExecuteOrderFromTable({
+			UnitIndex = thisEntity:entindex(),	--индекс кастера
+			OrderType = DOTA_UNIT_ORDER_CAST_TARGET,	-- тип приказа
+			AbilityIndex = ItemAbility:entindex(), -- индекс способности
+					TargetIndex = enemy:entindex(),
+			Queue = false,
+		})
+	return 1.5
+end
+
+
+function FindItemAbility( hCaster, szItemName )	--необходимая утилита , без нее не будет работать функция FindItemAbility
+	for i = 0, 5 do
+		local item = hCaster:GetItemInSlot( i )
+		if item then
+			if item:GetAbilityName() == szItemName then
+				return item
+			end
+		end
+	end
+end
+
 function RetreatHome()
 	thisEntity.agro = false	-- снимается действие агра
 
@@ -206,3 +247,24 @@ function RetreatHome()
 	})
 end
 
+function CastClawAttack( enemy )
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+		TargetIndex = enemy:entindex(),
+		AbilityIndex = hClawAttackAbility:entindex(),
+	})
+
+	return 1.00
+end
+
+function CastClawLunge( enemy )
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
+		AbilityIndex = hClawLungeAbility:entindex(),
+		Position = enemy:GetOrigin(),
+	})
+
+	return 0.5
+end

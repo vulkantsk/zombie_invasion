@@ -3,16 +3,16 @@ Sounds = Sounds or {
   	playersStateMusic = {},
   	SoundDuration = {
 
-  		["Akira Yamaoka – Never Forgive Me"] = 134,
+  		["Akira Yamaoka – Never Forgive Me"] = 137,
   		["Ula - Cannabis"] = 182,
   		["Toby Fox – Once Upon a Time"] = 89,  
   		["C418 - Sweden"] = 217,
   		["Mase - Psycho"] = 192,  
 		
-  		["Серега пират - АМ ФП"] = 128,  
+  		["Серега пират - АМ ФП"] = 130,  
   		["Life - Larson"] = 69,
   		["Musica - Fly Project"] = 48,
-  		["Wake Me Up - Avicii"] = 107,
+  		["Wake Me Up - Avicii"] = 109,
   		["Galantis - No Money"] = 77,
   		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
   		["Boulevard of Broken Dreams - Green Day"] = 71,
@@ -26,7 +26,7 @@ Sounds = Sounds or {
   		["L Starz - My Life Be LikeGrits"] = 38,
   		["Kiesza - Hideaway"] = 92,
   		["John  Newman - Fire In Me"] = 95,
-  		["iSpy - KYLE feat. Lil Yachty"] = 114,
+  		["iSpy - KYLE feat. Lil Yachty"] = 116,
 		
 		["RSAC - NBA"] = 131,
 		["Daved Guetta - Would I Lie To You"] = 38,

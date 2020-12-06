@@ -99,7 +99,7 @@ end
 
 function modifier_quest_template:OnIntervalThink()
     local parent = self:GetParent()
-  
+       
     local heroes = FindUnitsInRadius(parent:GetTeamNumber(),
                                     parent:GetAbsOrigin(),
                                     nil,
@@ -128,8 +128,7 @@ function modifier_quest_template:OnIntervalThink()
                     if self.reward_gold > 0 then
                         hero:GiveGoldPlayers( self.reward_gold )
                     end
-                    EmitGlobalSound("quest_complete")
-                  
+                     EmitSoundOn("quest_complete", self:GetParent())                  
                     if self.reward_item then
                         parent:DropQuestItem( hero, self.reward_item )
                     end

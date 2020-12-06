@@ -9,7 +9,7 @@ end
 function tombstone_night_2()
 
  InvasionMode:spawn_tombs_2()
-
+ 
 end
 
 function tombstone_night_3()
