@@ -1022,7 +1022,7 @@
  		"Ability2"					"lycan_boss_claw_lunge"
  		"Ability3"					"rupture_custom"
  		"Ability4"					"ghoul_crazy_look"
-	 	"Ability5"					""
+	 	"Ability5"					"last_stuck"
  		"Ability6"					"huskar_berserkers_blood_boss"
  		"Ability7"					"last_boss_music"				
  		"Ability8"					"blood"	

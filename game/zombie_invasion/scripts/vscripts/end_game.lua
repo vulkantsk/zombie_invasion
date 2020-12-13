@@ -8,6 +8,7 @@ function EndGame:GoodEnd()
 	local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetAbsOrigin()
 	local pudge_start_point = Entities:FindByName(nil, "pudge_start_point"):GetAbsOrigin()
 	local pudge_end_point = Entities:FindByName(nil, "pudge_end_point"):GetAbsOrigin()
+	local techies_end_point = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
 	local antimage_start_point = Entities:FindByName(nil, "antimage_start_point"):GetAbsOrigin()
 	local antimage_end_point = Entities:FindByName(nil, "antimage_end_point"):GetAbsOrigin()
 
@@ -21,6 +22,8 @@ function EndGame:GoodEnd()
 	local antimage3 = nil
 
 	Timers:CreateTimer(0,function()
+				--направить текиса в точку
+		MoveToPoint(techies, techies_end_point)
 		--направить пуджа на точку
 		MoveToPoint(pudge, pudge_end_point)
 		--направить ама на точку
@@ -57,17 +60,30 @@ function EndGame:GoodEnd()
 --		local effect = "particles/items2_fx/manta_phase.vpcf"
 --		local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN, antimage1)
 --		ParticleManager:ReleaseParticleIndex(pfx)
-		
+				Timers:CreateTimer(1,function()
+			AntimageThink(antimage1)
+		end)		
+					Timers:CreateTimer(2,function()
+			AntimageThink(antimage2)
+		end)	
 		antimage1:SetAbsOrigin(point + RandomVector(50))
-		AntimageThink(antimage1)
+	 
 
 		antimage2 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
 		antimage2:SetForwardVector(fw)
-		AntimageThink(antimage2)
+ 
 
 		antimage3 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
 		antimage3:SetForwardVector(fw)
-		AntimageThink(antimage3)
+		Timers:CreateTimer(3,function()
+ 
+		end)
+		
+	end)
+
+	Timers:CreateTimer(19,function()
+		--пудж издаёт звук
+		pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
 	end)
 	
 	Timers:CreateTimer(19,function()
@@ -92,7 +108,8 @@ function EndGame:GoodEnd()
 		
 		techies:EmitSound("Hero_Invoker.SunStrike.Ignite")
 
-		local point = techies_start_point+RandomVector(300)
+
+		local point = techies_end_point+RandomVector(300)
 		local effect = "particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf"
 		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, nil)
 		ParticleManager:SetParticleControl(pfx, 0, point)
@@ -108,7 +125,7 @@ function EndGame:GoodEnd()
 
 		pudge_bear = CreateUnitByName("npc_end_bear", point, false, nil, nil, DOTA_TEAM_BADGUYS)
 		pudge_bear:SetForwardVector(fw)
-		MoveToPoint(pudge_bear, techies_start_point)
+		MoveToPoint(pudge_bear, techies_end_point)
 	end)
 	
 	Timers:CreateTimer(41,function()
@@ -228,7 +245,7 @@ function AntimageThink(npc)
 			return 1	
 		end
 
-		local point = Entities:FindByName(nil, "techies_start_point"):GetAbsOrigin()
+		local point = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
 		local blink_point = point + RandomVector(400)
 
 		local effect = "particles/units/heroes/hero_antimage/antimage_blink_start.vpcf"

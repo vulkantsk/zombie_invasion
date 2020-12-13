@@ -104,6 +104,18 @@ function CDOTA_BaseNPC:AddStackModifier(data)
 	return self:GetModifierStackCount( data.modifier, data.ability )
 end
 
+function DealDamage(source, target, damage, dType, flags, ability)
+    local dTable = {
+        victim = target,
+        attacker = source,
+        damage = damage,
+        damage_type = dType,
+        damage_flags = flags,
+        ability = ability
+    }
+    ApplyDamage(dTable)
+end
+
 function PrintTable(t, indent, done)
 	--print ( string.format ('PrintTable type %s', type(keys)) )
 	if type(t) ~= "table" then return end

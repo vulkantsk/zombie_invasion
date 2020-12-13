@@ -283,7 +283,33 @@
             }
         }
     }
-    
+
+	"last_stuck"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/last_stuck"
+		"AbilityTextureName"			"spectre_desolate"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stack_duration"		"14"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stack_damage"			"50"
+			}
+		}
+	}
+
 "rupture_custom"
 {
 	// General
@@ -8347,7 +8373,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"65"
+				"damage_per_unit"			"125"
 			}			
 			"02"
 			{
@@ -8465,7 +8491,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"95"
+				"damage_per_unit"			"155"
 			}			
 			"02"
 			{
@@ -8527,12 +8553,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"185"
+				"damage"				"195"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"18"
+				"armor_reduction"		"19"
 			}
 			"05"
 			{
@@ -8583,7 +8609,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"135"
+				"damage_per_unit"			"200"
 			}			
 			"02"
 			{
