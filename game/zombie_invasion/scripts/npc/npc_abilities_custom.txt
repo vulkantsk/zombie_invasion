@@ -155,7 +155,7 @@
         // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastRange"              "200"
-        "AbilityCastPoint"              "1.32"
+        "AbilityCastPoint"              "0.95"
         
         // Time     
         //-------------------------------------------------------------------------------------------------------------
@@ -182,12 +182,12 @@
             "03"
             {
                 "var_type"                  "FIELD_FLOAT"
-                "animation_time"            "1.32"
+                "animation_time"            "0.95"
             }
             "04"
             {
                 "var_type"                  "FIELD_FLOAT"
-                "initial_delay"             "1.08"
+                "initial_delay"             "0.62"
             }
             "05"
             {
@@ -246,7 +246,7 @@
         // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastRange"              "1000"
-        "AbilityCastPoint"              "2.0"
+        "AbilityCastPoint"              "1.25"
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
@@ -355,8 +355,28 @@
 			"var_type"					"FIELD_INTEGER"
 			"cast_range_tooltip"		"100000"
 		}
+		"06"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"duration_imun"		"2.0"
+		}
 	}
 	
+	"OnAbilityPhaseStart"
+	{
+		
+ 
+ 
+
+				"ApplyModifier"
+				{
+					"ModifierName"	"modifier_imunitity"
+					"Target" 		"CASTER"
+					"Duration"		"%duration_imun"
+				}
+ 
+	}
+
 	"OnSpellStart"
 	{
 		
@@ -379,9 +399,16 @@
 					"Duration"		"%duration"
 				}
 
+ 
+
 			}
-		}
+ 
+ 
+
+			 		}
 	}
+
+ 
 	
 	"Modifiers"
 	{
@@ -417,6 +444,17 @@
 				}
 			}
 		}
+				"modifier_imunitity"
+ 
+			{
+				"Duration"	"%duration_imun"
+
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"		"MODIFIER_STATE_VALUE_ENABLED"
+ 
+				}
+			}
 	}
 }
 
@@ -1356,7 +1394,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"30"
+				"damage_min"			"35"
 			}
 			"01"
 			{
@@ -1391,12 +1429,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"60"
+				"damage_min"			"120"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"135"
+				"damage_max"			"240"
 			}						
 		}
 
@@ -1426,12 +1464,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"160"
+				"damage_min"			"240"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"240"
+				"damage_max"			"480"
 			}						
 		}
 
@@ -1462,12 +1500,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"320"
+				"damage_min"			"480"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"380"
+				"damage_max"			"1080"
 			}						
 		}
 
@@ -1507,8 +1545,8 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
-		"AbilityCharges"				"1 2 3 4"
-		"AbilityChargeRestoreTime"		"45 40 35 30"
+		"AbilityCharges"				"1"
+		"AbilityChargeRestoreTime"		"8"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -1532,7 +1570,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"haunt_duration"				"14"
+				"haunt_duration"				"8"
 			}
 			"04"
 			{
@@ -2126,24 +2164,69 @@
 	}
 
 
-	"ghost_elusive"
+	"ghost_elusive_1"
 	{
-		"BaseClass" 					"ability_datadriven"
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/ghost_elusive"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
 	    "AbilityTextureName"            "vengefulspirit_wave_of_terror"
 	    "MaxLevel"                      "1"	
 
-		"OnCreated"
+ 		"AbilitySpecial"
 		{
-			"RunScript"
+			"01"
 			{
-				"ScriptFile"	"abilities/ability_helper.lua"
-				"Function"		"ApplyModifierToUnit"
-				"ModifName"		"modifier_elusive"
+				"var_type"				"FIELD_INTEGER"
+				"miss"	"30"
 			}
-		}	
+ 
+		}
 
 	}
+
+
+	"ghost_elusive_2"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/ghost_elusive"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "vengefulspirit_wave_of_terror"
+	    "MaxLevel"                      "1"	
+
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"miss"	"65"
+			}
+ 
+		}
+
+	}
+
+
+	"ghost_elusive_3"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/ghost_elusive"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "vengefulspirit_wave_of_terror"
+	    "MaxLevel"                      "1"	
+
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"miss"	"100"
+			}
+ 
+		}
+
+	}
+
+
 
 
 	"mutant_dismemberment"
@@ -5276,7 +5359,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		//"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"MaxLevel"						"1"
 		"RequiredLevel"					"35"
 		"AbilitySound"					"Hero_Medusa.StoneGaze.Cast"
@@ -5321,7 +5404,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"stone_duration"			"3"
+				"stone_duration"			"2.5"
 			}
 			"05"
 			{
@@ -5336,7 +5419,7 @@
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_physical_damage"		"50"
+				"bonus_physical_damage"		"45"
 			}
 			"08"
 			{
@@ -5429,12 +5512,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"snake_damage"			"150 400 650"
+				"snake_damage"			"200 275 350"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"snake_mana_steal"		"30 50 70"
+				"snake_mana_steal"		"0"
 			}
 			"06"
 			{
@@ -5453,8 +5536,8 @@
 			}
 			"09"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"stone_duration"		"1 2 3"
+				"var_type"				"FIELD_FLOAT"
+				"stone_duration"		"1.5 2 2.5"
 			}
 		}
 	}
@@ -5677,7 +5760,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"mana_cost_per_second"	"5 10 20 30"
+				"mana_cost_per_second"	"10 20 40 60"
 			}			
 		}
 	
@@ -5777,15 +5860,15 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30.0 25.0 20.0"
+		"AbilityCooldown"				"20.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"25 25 25"
+		"AbilityManaCost"				"100 75 50"
 		
 		// Cast Range
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1000 1000 1000"
+		"AbilityCastRange"				"600 800 1000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -5794,7 +5877,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"10.0 20.0 30.0"
+				"duration"					"30.0"
 			}
 			"02"
 			{
@@ -5828,12 +5911,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"spell_amp"				"10 15 20 25 "
+				"spell_amp"				"7 14 21 30 "
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"status_resistance"			"10 20 30 40"
+				"status_resistance"			"15 20 25 30"
 			}
 		}
 	}
@@ -7426,7 +7509,7 @@
 			}
 		}
 	}
-	
+ 
 	
 			"hardskin_pudge"
 	{
@@ -8175,6 +8258,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_DECAY"
@@ -8207,12 +8291,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"30"
+				"damage"				"35"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"8"
+				"armor_reduction"		"7"
 			}
 			"05"
 			{
@@ -8220,7 +8304,7 @@
 				"tick_rate"				"0.75"
 			}
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+		 
 	}
 	
 	"undying_soul_rip_flash_1"
@@ -8236,6 +8320,7 @@
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Undying.SoulRip.Cast"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_SOUL_RIP"
@@ -8245,11 +8330,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"24.0 18.0 12.0 6.0"
+		"AbilityCooldown"				"8.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 110 120 130"		
+		"AbilityManaCost"				"100"		
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -8262,12 +8347,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"22 29 36 43"
+				"damage_per_unit"			"65"
 			}			
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max_units"					"8 9 10 11"
+				"max_units"					"12"
 			}
 			"03"
 			{
@@ -8277,7 +8362,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tombstone_heal"			"4 8 12 16"
+				"tombstone_heal"			""
 			}
 		}
 	}	
@@ -8291,6 +8376,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_DECAY"
@@ -8313,7 +8399,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"675"
+				"radius"				"725"
 			}
 			"02"
 			{
@@ -8323,12 +8409,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"55"
+				"damage"				"115"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"8"
+				"armor_reduction"		"12"
 			}
 			"05"
 			{
@@ -8336,7 +8422,7 @@
 				"tick_rate"				"0.75"
 			}
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+		 
 	}
 	
 		"undying_soul_rip_flash_2"
@@ -8352,6 +8438,7 @@
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Undying.SoulRip.Cast"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_SOUL_RIP"
@@ -8361,11 +8448,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"24.0 18.0 12.0 6.0"
+		"AbilityCooldown"				"7.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 110 120 180"		
+		"AbilityManaCost"				"110"		
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -8378,12 +8465,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"22 29 36 60"
+				"damage_per_unit"			"95"
 			}			
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max_units"					"8 9 10 15"
+				"max_units"					"15"
 			}
 			"03"
 			{
@@ -8393,7 +8480,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tombstone_heal"			"4 8 12 16"
+				"tombstone_heal"			""
 			}
 		}
 	}	
@@ -8407,6 +8494,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_DECAY"
@@ -8429,22 +8517,22 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"1050"
+				"radius"				"825"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"9"
+				"duration"				"14"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"155"
+				"damage"				"185"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"12"
+				"armor_reduction"		"18"
 			}
 			"05"
 			{
@@ -8452,7 +8540,7 @@
 				"tick_rate"				"0.7"
 			}
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+ 
 	}
 	
 		"undying_soul_rip_flash_3"
@@ -8468,6 +8556,7 @@
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Undying.SoulRip.Cast"
 
+		"MaxLevel"						"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_SOUL_RIP"
@@ -8477,11 +8566,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"24.0 18.0 12.0 5.5"
+		"AbilityCooldown"				"5.5"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 110 120 240"		
+		"AbilityManaCost"				"125"		
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -8494,12 +8583,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_unit"			"22 29 36 120"
+				"damage_per_unit"			"135"
 			}			
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max_units"					"8 9 10 18"
+				"max_units"					"18"
 			}
 			"03"
 			{
@@ -8509,7 +8598,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tombstone_heal"			"4 8 12 16"
+				"tombstone_heal"			""
 			}
 		}
 	}
@@ -10443,7 +10532,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"spell"		"50"
+				"spell"		"45"
 			}
 		}
 	}

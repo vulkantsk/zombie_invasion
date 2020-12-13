@@ -46,3 +46,5 @@ end
 function modifier_no_heal:StatusEffectPriority()
 	return MODIFIER_PRIORITY_HIGH
 end
+
+ 

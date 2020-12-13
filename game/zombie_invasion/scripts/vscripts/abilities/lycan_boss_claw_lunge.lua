@@ -1,13 +1,14 @@
 lycan_boss_claw_lunge = class({})
 LinkLuaModifier( "modifier_lycan_boss_claw_lunge", "modifiers/modifier_lycan_boss_claw_lunge", LUA_MODIFIER_MOTION_HORIZONTAL )
 LinkLuaModifier( "modifier_no_heal", "modifiers/modifier_no_heal", LUA_MODIFIER_MOTION_HORIZONTAL )
+LinkLuaModifier( "modifier_bkb", "modifiers/modifier_bkb", LUA_MODIFIER_MOTION_HORIZONTAL )
 LinkLuaModifier( "modifier_generic_bashed_lua", "heroes/generic/modifier_generic_bashed_lua", LUA_MODIFIER_MOTION_HORIZONTAL )
 
 --------------------------------------------------------------------------------
 
 function lycan_boss_claw_lunge:OnAbilityPhaseStart()
 	if IsServer() then
-	 
+	 		 self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_bkb", {duration = 2})
 		EmitSoundOn( "Hero_Lycan.Howl", self:GetCaster() )
 
 		self.nPreviewFX = ParticleManager:CreateParticle( "particles/darkmoon_creep_warning.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster() )
@@ -25,6 +26,7 @@ function lycan_boss_claw_lunge:OnAbilityPhaseInterrupted()
 	if IsServer() then
 		self:GetCaster():RemoveGesture( ACT_DOTA_ATTACK )
 		ParticleManager:DestroyParticle( self.nPreviewFX, false )
+ 
 	end 
 end
 

@@ -1,0 +1,40 @@
+"itembuilds"
+{
+	"author"		"Plarget"
+	"hero"			"npc_dota_hero_oracle"
+	"Title"			"Recommended items for Oracle"
+	
+
+	"Items"
+	{		
+		"#DOTA_Item_Build_Starting_Items"
+		{
+ 		
+			"item"		"item_hand_of_midas"	
+ 		  	"item"               "item_clarity"	
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{	
+		"item"		"item_boots"
+			"item"		"item_vambrace"
+			"item"		"item_kaya"				
+		}
+		
+		"#DOTA_Item_Build_Core_Items"
+		{ 
+			"item"		"item_octarine_core"
+			"item"		"item_bloodstone"  
+			"item"		"item_veil_of_discord"
+ 								
+		}
+		
+		"#DOTA_Item_Build_Luxury"
+		{
+			"item"		"item_travel_boots_2"		
+			"item"		"item_skadi_2"
+ 	
+ 
+		}
+	}
+}

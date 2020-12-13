@@ -1022,7 +1022,7 @@
  		"Ability2"					"lycan_boss_claw_lunge"
  		"Ability3"					"rupture_custom"
  		"Ability4"					"ghoul_crazy_look"
-	 	"Ability5"					"hardskin_pudge"
+	 	"Ability5"					""
  		"Ability6"					"huskar_berserkers_blood_boss"
  		"Ability7"					"last_boss_music"				
  		"Ability8"					"blood"	
@@ -1030,13 +1030,13 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"145"			// Physical protection.
+		"ArmorPhysical"				"160"			// Physical protection.
 		"MagicalResistance"         "95"
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"1250"					
-		"AttackDamageMax"			"1400"	
+		"AttackDamageMin"			"1350"					
+		"AttackDamageMax"			"1450"	
 		"AttackDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"AttackRate"				"1.4"
 		"AttackAnimationPoint"		"0.5"				// Normalized time in animation cycle to attack.
@@ -1063,8 +1063,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"36000"		// Base health.
-		"StatusHealthRegen"			"135"		// Health regeneration rate.
+		"StatusHealth"				"42500"		// Base health.
+		"StatusHealthRegen"			"225"		// Health regeneration rate.
 		"StatusMana"				"2000"			// Base mana.
 		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
 		
@@ -1096,8 +1096,9 @@
 			{
 				"1"            	{"Item"        "item_radiance_boss"}
 				"2"            	{"Item"        "item_shivas_guard_boss"}
-				"3"            	{"Item"        "item_assault_boss"}
-				
+				"3"            	{"Item"        "item_assault_boss"}  
+				"4"            	{"Item"        "item_sange_last"}
+
 			}				
 		
 		

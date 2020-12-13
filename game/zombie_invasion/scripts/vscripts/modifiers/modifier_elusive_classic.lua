@@ -32,7 +32,10 @@ function modifier_elusive_classic:DeclareFunctions()
 end
 
 function modifier_elusive_classic:GetModifierEvasion_Constant()	
-	return 100
+		if not self:GetParent():PassivesDisabled() then
+		return 100
+	end
+ 
 end
 
 

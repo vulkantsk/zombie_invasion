@@ -1,0 +1,44 @@
+"itembuilds"
+{
+	"author"		"Plarget"
+	"hero"			"npc_dota_hero_troll_warlord"
+	"Title"			"Recommended items for Troll"
+	
+
+	"Items"
+	{		
+		"#DOTA_Item_Build_Starting_Items"
+		{
+ 		
+			"item"		"item_quelling_blade"								
+			"item"		"item_flask"
+			"item"		"item_boots"
+			"item"		"item_wraith_band"	
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{	
+					"item"		"item_phase_boots"		
+			"item"		"item_vambrace"
+		    "item"		"item_lifesteal"						
+		}
+		
+		"#DOTA_Item_Build_Core_Items"
+		{ 
+			"item"   	"item_bfury"
+ 					"item"		"item_rapier"   
+					"item"   	"item_butterfly" 	
+ 
+ 							
+		}
+		
+		"#DOTA_Item_Build_Luxury"
+		{
+ 			"item"		"item_travel_boots_2"	
+		"item"      "item_bunch_of_butterfly"				
+				 	"item"		"item_satanic"	
+			"item"		"item_skadi_2"	
+			 
+		}
+	}
+}

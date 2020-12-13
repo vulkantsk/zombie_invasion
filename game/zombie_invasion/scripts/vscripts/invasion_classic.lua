@@ -9,8 +9,8 @@ end
  HeroMaxLevel = 36
 HeroExpTable = {0}
 exp={150,200,275,375,450,  500,550,615,780,715,
-  735,785,825,875,925,975,1300,  1050,1100,
-  1245,1375,1475,2000,1800,1900,2200,2250,2300,2350,
+  735,785,825,875,925,975,1300,  1250,1350,
+  1450,1550,1650,2000,1800,1900,2200,2250,2300,2350,
   2500,2500,2500,2500,2500,2500
   
   }
@@ -46,12 +46,13 @@ function InvasionMode:InvasionMap()
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )	
  
-   
+  
  
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
   	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
 	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
 
+ 
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
@@ -109,16 +110,21 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
+ --[[   LinkLuaModifier( "modifier_troll_speed", "modifiers/npc/modifier_troll_speed", LUA_MODIFIER_MOTION_HORIZONTAL )
+
+    if npc:IsRealHero() and npc.FirstSpawned == nil then
+        --
+        npc.FirstSpawned = true
+
+        if name == "npc_dota_hero_troll_warlord" then
+                 npc:AddNewModifier(npc, nil, "modifier_troll_speed", {  })
+        end
  
- 
 
-
-    --npc:AddNewModifier(npc, nil, "modifier_demon_lord_buff", {})
-    --npc:AddNewModifier(npc, nil, "modifier_insane", {})
+end
+ ]]
 
  
-
-        --			npc:AddNewModifier(npc, nil, "modifier_your_armor", {})
  
 end
 
@@ -139,8 +145,7 @@ function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
 	InvasionMode:ThemeMusic()
-	
-
+ 
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
         InvasionMode:ZombieNight1()  
@@ -308,7 +313,7 @@ end
 	end)
 	
 	Timers:CreateTimer(0, function()
-	     while wave_2 < 29 do
+	     while wave_2 < 26 do
 			 wave_2 = wave_2 + 1
 			 
 			 local unit_count = 5 * (1 + wave_2%2)
@@ -316,9 +321,19 @@ end
 		     return 10
 		 end			 
 	end)
-	
+
+	Timers:CreateTimer(260, function()
+	     while wave_2 < 29 do
+			 wave_2 = wave_2 + 1
+			 
+			 local unit_count = 1 * (1 + wave_2%2)
+		     self:SpawnZombie("npc_classic_wave_big_zombie", unit_count)
+		     return 10
+		 end			 
+	end)
+
 	Timers:CreateTimer(0, function()
-	    while wave_2 < 29 do 
+	    while wave_2 < 26 do 
 		     local unit_count = 3 * (1 + wave_2%2)
 			 
 		     self:SpawnGhost("npc_classic_wave_ghost",unit_count)
@@ -326,6 +341,15 @@ end
 		end
 	end)
 	
+	Timers:CreateTimer(260, function()
+	    while wave_2 < 29 do 
+		     local unit_count = 1 * (1 + wave_2%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost",unit_count)
+		     return 30
+		end
+	end)
+
 	Timers:CreateTimer(50, function()
 	     while wave_2 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_2",1)
@@ -336,7 +360,7 @@ end
 	Timers:CreateTimer(90, function()
 	     while wave_2 <  29 do 
 		     self:SpawnZombie("npc_seerdying_2",1)
-		 return 90
+		 return 100
 		 end
 	end)	
 	
@@ -348,14 +372,11 @@ end
 		 self:SpawnZombie("npc_undying_2",1)
 	end)
 	
-	Timers:CreateTimer(248,function()
-		 self:SpawnZombie("npc_flash_golem",1)
-	end)
+	Timers:CreateTimer(260,function()
+		 self:SpawnFlash("npc_flash_golem")
+	end) 
 	
- 	Timers:CreateTimer(280,function()
-		 self:SpawnZombie("npc_classic_wave_big_zombie",14)
-		 self:SpawnGhost("npc_classic_wave_ghost",6)
-	end)
+ 
 
 end
  	
@@ -370,7 +391,7 @@ function InvasionMode:ZombieNight3()
 	end)
 	
 	Timers:CreateTimer(0, function()
-	     while wave_3 < 29 do
+	     while wave_3 < 26 do
 			 wave_3 = wave_3 + 1
 			 
 			 local unit_count = 5 * (1 + wave_3%2)
@@ -378,16 +399,35 @@ function InvasionMode:ZombieNight3()
 		     return 10
 		 end			 
 	end)
-	
+
+	Timers:CreateTimer(260, function()
+	     while wave_3 < 29 do
+			 wave_3 = wave_3 + 1
+			 
+			 local unit_count = 1 * (1 + wave_3%2)
+		     self:SpawnZombie("npc_classic_wave_ghoul", unit_count)
+		     return 10
+		 end			 
+	end)
+
 	Timers:CreateTimer(0, function()
-	    while wave_3 < 29 do 
+	    while wave_3 < 26 do 
 		     local unit_count = 3 * (1 + wave_3%2)
 			 
 		     self:SpawnGhost("npc_classic_wave_ghost_2",unit_count)
 		     return 30
 		end
 	end)
-	
+
+	Timers:CreateTimer(260, function()
+	    while wave_3 < 29 do 
+		     local unit_count = 1 * (1 + wave_3%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_2",unit_count)
+		     return 30
+		end
+	end)
+
 	Timers:CreateTimer(40, function()
 	     while wave_3 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_3",1)
@@ -413,14 +453,14 @@ function InvasionMode:ZombieNight3()
 	end)
 	
  
-	Timers:CreateTimer(248,function()
-		 self:SpawnZombie("npc_flash_golem_2",1)
-	end)
  
-   	Timers:CreateTimer(280,function()
-		 self:SpawnZombie("npc_classic_wave_ghoul",14)
-		 self:SpawnGhost("npc_classic_wave_ghost_2",7)
-	end)
+ 
+ 	Timers:CreateTimer(260,function()
+		 self:SpawnFlash("npc_flash_golem_2")
+	end) 
+	
+
+ 
  
  end
  
@@ -435,7 +475,7 @@ function InvasionMode:ZombieNight3()
 	end)
 	
 	Timers:CreateTimer(0, function()
-	     while wave_4 < 29 do
+	     while wave_4 < 26 do
 			 wave_4 = wave_4 + 1
 			 
 			 local unit_count = 5 * (1 + wave_4%2)
@@ -443,9 +483,20 @@ function InvasionMode:ZombieNight3()
 		     return 10
 		 end			 
 	end)
+
 	
+	Timers:CreateTimer(260, function()
+	     while wave_4 < 29 do
+			 wave_4 = wave_4 + 1
+			 
+			 local unit_count = 1 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+		     return 10
+		 end			 
+	end)
+
 	Timers:CreateTimer(0, function()
-	    while wave_4 < 29 do 
+	    while wave_4 < 26 do 
 		     local unit_count = 3 * (1 + wave_4%2)
 			 
 		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
@@ -453,7 +504,18 @@ function InvasionMode:ZombieNight3()
 		     return 30
 		end
 	end)
-	
+
+
+	Timers:CreateTimer(260, function()
+	    while wave_4 < 29 do 
+		     local unit_count = 1 * (1 + wave_4%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
+			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     return 30
+		end
+	end)
+
 	Timers:CreateTimer(35, function()
 	     while wave_4 <  28 do 
 		     self:SpawnZombie("npc_zombie_toxic_4",1)
@@ -476,13 +538,12 @@ function InvasionMode:ZombieNight3()
 	end)
  
 	
-	Timers:CreateTimer(260,function()
-		 self:SpawnZombie("npc_flash_golem_3",1)
-	end)
+ 
 	
-	Timers:CreateTimer(280,function()
-		 self:SpawnZombie("npc_classic_wave_pudge",24)	
-	end)
+ 	Timers:CreateTimer(260,function()
+		 self:SpawnFlash("npc_flash_golem_3")
+	end) 
+ 
  
 end
 
@@ -494,6 +555,17 @@ function InvasionMode:SpawnZombie(unit_name, unit_count)
 		local unit = CreateUnitByName(unit_name, point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
 		unit:SetInitialGoalEntity(point)
 	end
+end
+
+function InvasionMode:SpawnFlash(unit_name)
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+	
+ 
+	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
+	unit = CreateUnitByName(unit_name, point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit.respawn = false	
+	unit:SetForwardVector(RandomVector(1))
 end
 
 function InvasionMode:SpawnGhost(unit_name, unit_count)
@@ -707,26 +779,27 @@ end
  
 if killedEntity:GetUnitName() == "npc_classic_pig" then
 pig_count = pig_count+1
-    if pig_count == 15 then
+    if pig_count == 30 then
 	    GameRules:SendCustomMessage("#big_bo_1",0,0)
 	end
-    if pig_count == 35 then
+    if pig_count == 60 then
 	    GameRules:SendCustomMessage("#big_bo_2",0,0)
 	end
-    if pig_count == 50 then
+    if pig_count == 80 then
 	    GameRules:SendCustomMessage("#big_bo_3",0,0)
 	end
-    if pig_count == 70 then
+    if pig_count == 115 then
 	    GameRules:SendCustomMessage("#big_bo_4",0,0)
 	end
-    if pig_count == 75 then
-	    if time <= 1800 then
+    if pig_count == 120 then
+	    
 	        InvasionMode:spawnsvini()
 	        EmitGlobalSound("Invasion.HommerWin")
-		elseif time > 1800 then
+	 end
+    if pig_count == 650 then		 
 	        InvasionMode:spawngulya()		      
 	        EmitGlobalSound("vurdalak")		
-		end
+		 
     end
 end
 

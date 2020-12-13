@@ -1,0 +1,40 @@
+"itembuilds"
+{
+	"author"		"Plarget"
+	"hero"			"npc_dota_hero_wisp"
+	"Title"			"Recommended items for Wisp"
+	
+
+	"Items"
+	{		
+		"#DOTA_Item_Build_Starting_Items"
+		{
+ 		
+			"item"		"item_hand_of_midas"	
+ 		  	"item"               "item_clarity"
+		}
+					 
+		"#DOTA_Item_Build_Early_Game"
+		{	
+			"item"		"item_arcane_boots"
+			"item"		"item_headdress"
+			"item"		"item_buckler"							
+		}
+		
+		"#DOTA_Item_Build_Core_Items"
+		{ 
+ 
+			"item"			           "item_ultimate_scepter"
+			"item"		"item_mekansm"
+			"item"		"item_vladmir"																
+		}
+		
+		"#DOTA_Item_Build_Luxury"
+		{
+			"item"		"item_heart"		
+			"item"		"item_guardian_greaves"
+			"item"		"item_pipe"			
+			"item"		"item_solar_crest"
+		}
+	}
+}

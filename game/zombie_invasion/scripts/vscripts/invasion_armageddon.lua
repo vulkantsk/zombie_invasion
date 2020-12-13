@@ -11,7 +11,7 @@ function ArmageddonMode:Settings()
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 4 )
 
 	GameRules:SetSameHeroSelectionEnabled(false)
-	
+	GameRules:SetMaximumAttackSpeed(2000) 
 	GameRules:SetHeroRespawnEnabled( false )
 	GameRules:SetUseUniversalShopMode( false )
 	GameRules:SetHeroSelectionTime( 30.0 )

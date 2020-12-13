@@ -1,6 +1,6 @@
 "itembuilds"
 {
-	"author"		"ilia"
+	"author"		"Plarget"
 	"hero"			"npc_dota_hero_bristleback"
 	"Title"			"Recommended items for Bristleback"
 	
@@ -9,35 +9,32 @@
 	{		
 		"#DOTA_Item_Build_Starting_Items"
 		{
-			"item"		"item_hand_of_midas"			
-			"item"		"item_stout_shield"
-			"item"		"item_branches"			
-			"item"		"item_flask"			
+			"item"		"item_hand_of_midas"					
+ 		  	"item"               "item_clarity"				
 		}
 		
 		"#DOTA_Item_Build_Early_Game"
 		{	
-			"item"		"item_vanguard"
-			"item"		"item_headdress"
-			"item"		"item_soul_ring"
-			"item"		"item_buckler"							
+			"item"		"item_boots"
+			"item"		"item_shield_2"							
 		}
 		
 		"#DOTA_Item_Build_Core_Items"
 		{ 
-			"item"		"item_octarine_core"
-			"item"		"item_radiance"
-			"item"		"item_crimson_guard"								
-			"item"		"item_pipe"									
+			"item"		"item_octarine_core"	
+			"item"		"item_bloodstone"  
+			"item"		"item_shield_3"
+ 			"item"		"item_travel_boots_2"	
+ 						
 		}
 		
 		"#DOTA_Item_Build_Luxury"
 		{		
+ 
 			"item"		"item_assault"
-			"item"		"item_bloodstone"
-			"item"		"item_octarinity"
-			"item"		"item_shivas_guard"			
-			"item"		"item_sphere"																
+			"item"		"item_shield_4"
+			"item"		"item_heart"	
+			"item"		"item_skadi_2"																
 		}
 	}
 }
