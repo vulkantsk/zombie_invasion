@@ -300,12 +300,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stack_duration"		"14"
+				"stack_duration"		"8"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stack_damage"			"50"
+				"stack_damage"			"15"
 			}
 		}
 	}

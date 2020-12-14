@@ -42,7 +42,7 @@ function modifier_darksoul_desolate:OnAttackLanded( params )
 
 				local stack_count = modifier:GetStackCount()
 				local damage = stack_count * stack_damage
-				DealDamage(caster, target, damage, DAMAGE_TYPE_PURE, nil, ability)
+				DealDamage(caster, target, damage, DAMAGE_TYPE_PHYSICAL, nil, ability)
 			end
 		end
 	end
