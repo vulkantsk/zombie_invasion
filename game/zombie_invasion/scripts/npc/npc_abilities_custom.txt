@@ -1460,7 +1460,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"240"
+				"damage_max"			"180"
 			}						
 		}
 
@@ -1490,12 +1490,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"240"
+				"damage_min"			"220"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"480"
+				"damage_max"			"300"
 			}						
 		}
 
@@ -1526,12 +1526,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"480"
+				"damage_min"			"300"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"1080"
+				"damage_max"			"450"
 			}						
 		}
 
