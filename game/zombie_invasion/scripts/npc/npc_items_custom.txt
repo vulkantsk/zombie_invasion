@@ -304,7 +304,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"855"	
+		"ItemCost"						"1300"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -313,7 +313,7 @@
 		"ItemResult"					"item_shield_3"
 		"ItemRequirements"
 		{
-			"01"						"item_shield_2;item_ring_of_tarrasque"
+			"01"						"item_shield_2"
 		}
 	}
 	
@@ -383,7 +383,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2135"	
+		"ItemCost"						"2000"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -392,7 +392,7 @@
 		"ItemResult"					"item_shield_4"
 		"ItemRequirements"
 		{
-			"01"						"item_shield_3;item_regenchick;item_headdress"
+			"01"						"item_shield_3;item_headdress"
 		}
 	}
 	
@@ -4642,6 +4642,278 @@
 					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"		"%bonus_all_stats"
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all_stats"
 				}
+			}
+		}
+	}
+
+	"item_pudge_essence"
+	{
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"mask_of_madness_5"
+		"ItemCost"                      "322"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/hero_change.lua"
+				"Function"			"GiveNewHero"
+				"hero_name"			"npc_dota_hero_pudge"
+			}
+		}
+	}
+
+	"item_dickrapier"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_dickrapier"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName" "dick_rapier"
+
+		"ItemCost"						"4500"
+		"ItemAliases"					"dickrapier"
+
+				"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"	"322"
+			}
+		}
+	}
+
+	"item_recipe_god_rapier"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"400"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_god_rapier"
+		"ItemRequirements"
+		{
+			"01"						"item_dickrapier;item_relic"
+		}
+	}
+
+		"item_god_rapier"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_god_rapier"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName" "god_rapier"
+
+		"ItemCost"						"9000"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemAliases"					"rapier"
+
+				"AbilitySpecial"
+				{
+		
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"	"400"
+			}
+		}
+	}
+
+
+		"item_color_red"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_red"
+		"ScriptFile"                    "items/colors/item_color_red"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"IsTempestDoubleClonable"		"0"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+	}
+
+			"item_color_green"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_green"
+		"ScriptFile"                    "items/colors/item_color_green"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+				"IsTempestDoubleClonable"		"0"
+	}
+
+			"item_color_yellow"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_yellow"
+		"ScriptFile"                    "items/colors/item_color_yellow"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+				"IsTempestDoubleClonable"		"0"
+	}
+
+			"item_color_blue"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_blue"
+		"ScriptFile"                    "items/colors/item_color_blue"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+				"IsTempestDoubleClonable"		"0"
+	}
+
+			"item_color_aqua"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_aqua"
+		"ScriptFile"                    "items/colors/item_color_aqua"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+				"IsTempestDoubleClonable"		"0"
+		"ItemInitialCharges"            "1"
+	}
+
+	"item_color_fuchsia"
+	{
+		"BaseClass"                     "item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"colors/item_color_fuchsia"
+		"ScriptFile"                    "items/colors/item_color_fuchsia"
+		"ItemCost"                      "0"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+				"IsTempestDoubleClonable"		"0"
+		"ItemInitialCharges"            "1"
+	}
+
+	"item_recipe_item_her"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"900"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_her"
+		"ItemRequirements"
+		{
+			"01"						"item_vitality_booster;item_reaver"
+		}
+	}
+
+		"item_her"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_her"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName" "item_heart"
+
+		"ItemCost"						"4800"
+		"ItemAliases"					"dickrapier"
+
+				"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"str"	"40"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"hp"	"1000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rg"	"7"
 			}
 		}
 	}

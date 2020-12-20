@@ -9,7 +9,12 @@
 		"item"		"item_ward_observer"
 		"item"		"item_ward_sentry"
 		"item"		"item_tome_of_knowledge"
-
+		"item"		"item_color_red"
+		"item"		"item_color_green"
+		"item"		"item_color_yellow"	
+		"item"		"item_color_blue"
+		"item"		"item_color_aqua"
+		"item"		"item_color_fuchsia"
 	}
 
 	"attributes"
@@ -129,7 +134,7 @@
 		"item"		"item_manta"
 		"item"		"item_hurricane_pike"	
 		"item"		"item_assault"
-		"item"		"item_heart"	
+		"item"		"item_her"	
 	}
 			
 	"weapons"
@@ -170,6 +175,7 @@
  		"item"		"item_mjollnir"
  		"item"		"item_satanic"		
  		"item"		"item_skadi_2" 	
+ 		"item"		"item_god_rapier" 	 		
 	}
 
 	"sideshop1"

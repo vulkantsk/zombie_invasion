@@ -284,6 +284,103 @@
         }
     }
 
+    	"terrorblade_metamorphosis"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5621"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilitySound"					"Hero_Terrorblade.Metamorphosis"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"transformation_time"	"0.35"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"base_attack_time"		"1.5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_range"			"400"
+				"LinkedSpecialBonus"	"special_bonus_unique_terrorblade_3"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_attack_range"			"550"
+				"LinkedSpecialBonus"	"special_bonus_unique_terrorblade_3"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"10 30 50 70"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed_loss"				"0"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"metamorph_aura_tooltip"				"1200"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fear_duration"		"3.75"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_cooldown_reduction"		"0"
+			}
+			"11"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scepter_radius"				"1600"
+			}
+			"12"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scepter_speed"				"1000"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_spawn_delay"		"0.6"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
 	"last_stuck"
 	{
 		// General
@@ -1420,12 +1517,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"35"
+				"damage_min"			"10"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"80"
+				"damage_max"			"40"
 			}						
 		}
 
@@ -1455,12 +1552,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"120"
+				"damage_min"			"70"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"180"
+				"damage_max"			"110"
 			}						
 		}
 
@@ -1490,12 +1587,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"220"
+				"damage_min"			"150"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"300"
+				"damage_max"			"190"
 			}						
 		}
 
@@ -1526,12 +1623,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"300"
+				"damage_min"			"230"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"450"
+				"damage_max"			"260"
 			}						
 		}
 
@@ -1590,7 +1687,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_pct"					"7.0"
+				"damage_pct"					"3.0"
 				"LinkedSpecialBonus"	"special_bonus_unique_death_prophet_3"
 			}
 			"03"
@@ -10658,7 +10755,7 @@
             "01"
             {
                 "var_type"                          "FIELD_INTEGER"
-                "dmg_proc"                          "1000"
+                "dmg_proc"                          "100"
             }
             "02"
             {
@@ -10669,4 +10766,189 @@
         }
 
     }  
+
+        "tb_swap"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_tb/tb_swap"
+        "AbilityTextureName"            "tb/Sunder_icon"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
+        "MaxLevel"                      "3"
+        "LevelsBetweenUpgrades"         "6"
+        "RequiredLevel"                 "6"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "2000 4000 6000"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+        
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "5.0 2.5 0.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "20 20 20"
+    }
+
+    	"tb_illusion_dd"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_tb/tb_illusion_dd"
+		"AbilityTextureName"			"tb/dd"
+		"FightRecapLevel"				"1"
+		"LinkedAbility"					"tb_illusion_tank"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"10 20 30 40"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_duration"					"15 30 45 60"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_damage"			"-30 -20 -10 -0"		 
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_tooltip"			"70 80 90 100"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_incoming_damage"			"1000.0"
+			}
+		}
+	}
+
+	    	"tb_illusion_tank"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_tb/tb_illusion_tank"
+		"AbilityTextureName"			"tb/tank"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"LinkedAbility"					"tb_illusion_dd"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"10 20 30 40"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_duration"					"15 30 45 60"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_outgoing_damage"			"-90"		 
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_tooltip"			"10"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_incoming_damage"			"130 120 100 100"
+			}
+		}
+	}
+		"tb_astral"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_tb/tb_astral"
+		"AbilityTextureName"			"tb/astral"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"25 20 15 10"
+		"AbilityManaCost"				"10 20 30 40"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_duration"					"5 6 7 8"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_outgoing_damage"			"-50"		 
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_tooltip"			"50"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_incoming_damage"			"200"
+			}
+			"06"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"buff_duration"			"5"
+			}
+		}
+	}
+
+	"tb_soul"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_tb/tb_soul"
+		"AbilityTextureName"			"tb/soul"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"50"
+		"AbilityManaCost"				"225"
+		"MaxLevel"                      "1"
+        "RequiredLevel"                 "35"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_duration"					"20"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_outgoing_damage"			"250"		 
+			}
+
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"illusion_incoming_damage"			"100"
+			}
+		}
+	}
 }
