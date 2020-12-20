@@ -111,6 +111,7 @@ function modifier_quest_template:OnIntervalThink()
                                     false)
     for i = 1, #heroes do
         local hero = heroes[1]
+        if not  hero:IsIllusion() then
         for j = 0,9 do
             local item = hero:GetItemInSlot(j)
             if item and item:GetName() == self.quest_item then
@@ -144,6 +145,7 @@ function modifier_quest_template:OnIntervalThink()
                 end
             end
         end
+    end
     end
 end
 

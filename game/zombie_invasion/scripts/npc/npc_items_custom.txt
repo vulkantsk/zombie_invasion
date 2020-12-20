@@ -2104,26 +2104,26 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"25"
+				"bonus_movement_speed"	"225"
 			}
 
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30"
+				"bonus_damage"			"95"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"phase_ms"				"14"
+				"phase_ms"				"24"
 			}
 
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"phase_duration"		"6"
+				"phase_duration"		"8"
 			}
 
 			"05"
@@ -2135,7 +2135,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"6"
+				"bonus_strength"		"28"
 			}
 
 			"07"
@@ -4751,7 +4751,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4772,7 +4772,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4793,7 +4793,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4814,7 +4814,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4835,7 +4835,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4856,7 +4856,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
@@ -4866,12 +4866,13 @@
 		"ItemInitialCharges"            "1"
 	}
 
-	"item_recipe_item_her"
+	"item_recipe_her"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
+				"AbilityTextureName" 			"custom_folder/item_recipe"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4887,6 +4888,7 @@
 			"01"						"item_vitality_booster;item_reaver"
 		}
 	}
+ 
 
 		"item_her"
 	{

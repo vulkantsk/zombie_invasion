@@ -678,12 +678,14 @@
 
 
 		"AttackRange"				"200"							
-		"Ability1"					"juggernaut_blade_fury"
-		"Ability2"					"huskar_berserkers_blood"
-		"Ability3"					"phantom_assassin_blur"
-		"Ability4"					"generic_hidden"				
-		"Ability5"					"generic_hidden"				
-		"Ability6"					"phantom_assassin_coup_de_grace"				
+"Ability1" "jugger"
+"Ability2" "jugger_2"
+"Ability3" "jugger_3"
+"Ability4" "jugger_5"
+"Ability5" "jugger_4"
+"Ability6" "juggernaut_first_gate"
+"Ability16" ""
+"Ability17" ""			
 	}
 	
 "npc_dota_hero_earthshaker"
