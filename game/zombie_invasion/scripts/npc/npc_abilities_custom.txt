@@ -10330,7 +10330,7 @@
 		"AbilityCastGestureSlot"		"DEFAULT"
 	}
 
-		"wisp_spirits"
+	"wisp_spirits"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -10363,12 +10363,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"creep_damage"				"15 30 45 60"
+				"creep_damage"				"10 20 30 40"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"hero_damage"				"50 100 150 200"
+				"hero_damage"				"30 50 70 90"
 				"LinkedSpecialBonus"		"special_bonus_unique_wisp"
 			}
 			"03"
@@ -10379,7 +10379,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"min_range"					"150"
+				"min_range"					"200"
 			}
 			"05"
 			{
@@ -10414,8 +10414,6 @@
 			}
 		}
 	}	
-
-
 
 	"wisp_sueside"
 {
