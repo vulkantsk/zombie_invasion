@@ -48,7 +48,7 @@
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		
+		 
 		// ******************** moobs ********************	
 	    "npc_end_pudge"	                                        "DAXAK"
 	    "npc_end_techies"	                                    "TPABOMAH"
