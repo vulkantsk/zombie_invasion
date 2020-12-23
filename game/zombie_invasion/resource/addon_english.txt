@@ -50,6 +50,12 @@
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
 		
 		// ******************** moobs ********************	
+	    "npc_end_pudge"	                                        "DAXAK"
+	    "npc_end_techies"	                                    "TPABOMAH"
+	    "npc_end_antimage"	                                    "Perega Sirat"
+	    "npc_end_bear"	                                        "Virtus bear"
+	    "npc_test"	                                        	"test"
+
 	    "npc_dota_bochok_saxara"	                                        "Sugar box"
 		"npc_classic_pudge5"	                                            "Budge"
 		"npc_classic_pudge4"	                                            "Budge"

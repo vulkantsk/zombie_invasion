@@ -62,25 +62,23 @@ function EndGame:GoodEnd()
 	--		local effect = "particles/items2_fx/manta_phase.vpcf"
 	--		local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN, antimage1)
 	--		ParticleManager:ReleaseParticleIndex(pfx)
-					Timers:CreateTimer(1,function()
-				AntimageThink(antimage1)
-			end)		
-						Timers:CreateTimer(2,function()
-				AntimageThink(antimage2)
-			end)	
 			antimage1:SetAbsOrigin(point + RandomVector(50))
 		 
-
 			antimage2 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
 			antimage2:SetForwardVector(fw)
 	 
-
 			antimage3 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
 			antimage3:SetForwardVector(fw)
-			Timers:CreateTimer(3,function()
-	 
-			end)
 			
+			Timers:CreateTimer(1,function()
+				AntimageThink(antimage1)
+			end)		
+			Timers:CreateTimer(2,function()
+				AntimageThink(antimage2)
+			end)	
+			Timers:CreateTimer(3,function()
+				AntimageThink(antimage3)	 
+			end)		
 		end
 
 		if timer == 19 then
