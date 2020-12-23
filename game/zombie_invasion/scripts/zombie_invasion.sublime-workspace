@@ -4,6 +4,118 @@
 		"selected_items":
 		[
 			[
+				"anti",
+				"antimage3"
+			],
+			[
+				"an",
+				"antimage3"
+			],
+			[
+				"priority_",
+				"MODIFIER_PRIORITY_LOW"
+			],
+			[
+				"act_dota_abili",
+				"ACT_DOTA_CAST_ABILITY_4"
+			],
+			[
+				"cas",
+				"caster_point"
+			],
+			[
+				"IsEn",
+				"IsValidEntity"
+			],
+			[
+				"Ra",
+				"RandomInt"
+			],
+			[
+				"techi",
+				"techies_start_point"
+			],
+			[
+				"part",
+				"ParticleManager"
+			],
+			[
+				"par",
+				"ParticleManager"
+			],
+			[
+				"Getcur",
+				"GetCursorTarget"
+			],
+			[
+				"Particle",
+				"SetParticleControl"
+			],
+			[
+				"tec",
+				"techies_mine"
+			],
+			[
+				"act_ab",
+				"ACT_DOTA_CAST_ABILITY_1"
+			],
+			[
+				"Move",
+				"MoveToPosition"
+			],
+			[
+				"Cas",
+				"CastSkill"
+			],
+			[
+				"patt",
+				"PATTACH_ABSORIGIN"
+			],
+			[
+				"ACt_dota_cast_ab",
+				"ACT_DOTA_CAST_ABILITY_2"
+			],
+			[
+				"SetCone",
+				"SetContextThink"
+			],
+			[
+				"SetAbs",
+				"SetAbsOrigin"
+			],
+			[
+				"Radn",
+				"RandomVector"
+			],
+			[
+				"MODIFIER_STATE_no",
+				"MODIFIER_STATE_NO_UNIT_COLLISION"
+			],
+			[
+				"MODIFIER_STATE_INv",
+				"MODIFIER_STATE_INVULNERABLE"
+			],
+			[
+				"modifier_in",
+				"modifier_intro_rotate_passive"
+			],
+			[
+				"Intr",
+				"GetIntrinsicModifierName"
+			],
+			[
+				"moveto",
+				"MoveToPosition"
+			],
+			[
+				"team_g",
+				"DOTA_TEAM_BADGUYS"
+			],
+			[
+				"Findby",
+				"FindByName"
+			],
+			[
 				"shor",
 				"shortest_music_len"
 			],
@@ -402,129 +514,16 @@
 			[
 				"GetAb",
 				"GetAbsOrigin"
-			],
-			[
-				"cooc",
-				"cookies_count"
-			],
-			[
-				"getspe",
-				"GetSpellAmplification"
-			],
-			[
-				"MODIFIER_PROPERTY_base",
-				"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"
-			],
-			[
-				"modifier_phy",
-				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"
-			],
-			[
-				"modifier_fire",
-				"modifier_fire_flies_aura"
-			],
-			[
-				"Getmodi",
-				"GetModifierAura"
-			],
-			[
-				"Getaura",
-				"GetAuraSearchTeam"
-			],
-			[
-				"GetAura",
-				"GetAuraRadius"
-			],
-			[
-				"snapfir",
-				"snapfire_fire_flies"
-			],
-			[
-				"snpa",
-				"snapfire_fire_flies"
-			],
-			[
-				"modifier_snap",
-				"modifier_snapfire_gunner_on_passive"
-			],
-			[
-				"proj",
-				"projectile_damage"
-			],
-			[
-				"ene",
-				"enemy_point"
-			],
-			[
-				"override_ab",
-				"ACT_DOTA_OVERRIDE_ABILITY_4"
-			],
-			[
-				"enemy",
-				"enemy_point"
-			],
-			[
-				"modifier_snapf",
-				"modifier_snapfire_mortimer_kiss_passive"
-			],
-			[
-				"cull",
-				"culling_blade_custom"
-			],
-			[
-				"hero",
-				"hero_snapfire"
-			],
-			[
-				"extra",
-				"extra_xp"
-			],
-			[
-				"morp",
-				"morphling_morph_replicate"
-			],
-			[
-				"modifier_m",
-				"modifier_morphling_morph_agi_custom"
-			],
-			[
-				"DOTA_ABILITY_BEHAVIOR_p",
-				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-			],
-			[
-				"EmitSo",
-				"EmitSoundOn"
-			],
-			[
-				"mor",
-				"morph_cooldown"
-			],
-			[
-				"jacob_",
-				"jacob_infest"
-			],
-			[
-				"modifier_state_inv",
-				"MODIFIER_STATE_INVULNERABLE"
-			],
-			[
-				"modifier_bac",
-				"modifier_backdoor_protection_custom_buff"
-			],
-			[
-				"abs",
-				"absorbAmount"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "vscripts/invasion_classic.lua",
+			"file": "npc/npc_heroes_custom.txt",
 			"settings":
 			{
-				"buffer_size": 27404,
-				"encoding": "UTF-8",
+				"buffer_size": 50048,
 				"line_ending": "Windows"
 			}
 		},
@@ -532,24 +531,109 @@
 			"file": "npc/npc_units_custom.txt",
 			"settings":
 			{
-				"buffer_size": 46243,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "vscripts/ai/ai_last_boss.lua",
-			"settings":
-			{
-				"buffer_size": 7005,
+				"buffer_size": 59433,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "vscripts/sounds.lua",
+			"file": "npc/npc_abilities_custom.txt",
 			"settings":
 			{
-				"buffer_size": 5274,
+				"buffer_size": 301763,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "npc/npc_items_custom.txt",
+			"settings":
+			{
+				"buffer_size": 122386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/end_game.lua",
+			"settings":
+			{
+				"buffer_size": 10329,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/addon_game_mode.lua",
+			"settings":
+			{
+				"buffer_size": 13664,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/invasion_classic.lua",
+			"settings":
+			{
+				"buffer_size": 27987,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
+			"settings":
+			{
+				"buffer_size": 616653,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
+			"settings":
+			{
+				"buffer_size": 2650152,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
+			"settings":
+			{
+				"buffer_size": 839339,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/vulka/Desktop/dota/items.txt",
+			"settings":
+			{
+				"buffer_size": 516614,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_english.txt",
+			"settings":
+			{
+				"buffer_size": 79712,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_russian.txt",
+			"settings":
+			{
+				"buffer_size": 83279,
+				"encoding": "UTF-16 LE with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/heroes/hero_dev/genocide.lua",
+			"settings":
+			{
+				"buffer_size": 510,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -644,6 +728,20 @@
 	],
 	"file_history":
 	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/ai/ai_last_boss.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/heroes/hero_dev/genocide.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/sounds.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/ai/ai_flash.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/endgame/antimage_attack.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/endgame/antimage_ult.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/endgame/techies_attack.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/endgame/pudge_death.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/modifiers/modifier_victory_animation.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/endgame/techies_taunt.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/modifiers_links.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/quest/quest_template.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/antimage_ult.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/abilities/intro_rotate.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/dungeon/scripts/vscripts/items/item_gravel_foot.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/berserk_form.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_demon/true_form.lua",
@@ -757,21 +855,7 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_huskar/double_spear.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/combat_feel.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_riki/riki_dance.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_mortimer_kisses_lua.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_lil_shredder_lua.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_kirk.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_monkey_king/boundless_strike_custom.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/mortimer_ultrakiss.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_monkey_king/immortal_secret.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_mars/this_is_sparta.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_mars/friend.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_felt_boots.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/lua_abilities/generic/modifier_generic_custom_indicator.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_scatterblast_lua.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_firesnap_cookie_lua.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/penguin_sledding_ride.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/modifiers/modifier_sled_penguin_movement_self.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/kill_boss/scripts/npc/npc_units_custom.txt"
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/snapfire_mortimer_kisses_lua.lua"
 	],
 	"find":
 	{
@@ -789,6 +873,87 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Sugar",
+			"test",
+			"tech",
+			"techies_start_point",
+			"start",
+			"updat",
+			"playerSounds",
+			"stop",
+			"npc_last_boss",
+			"пизду",
+			"endga",
+			"тильт",
+			"AntimageThink",
+			"test",
+			"DAMAGE_TYPE_ArmorPhysical",
+			"AntimageThink",
+			"Game_notification_win",
+			"DOTA_TEAM_GOODGUYS",
+			"SetGameWinner",
+			"win",
+			"AntimageThink",
+			"KillLoot",
+			"MoveToPoint",
+			"CreateUnitByName",
+			"MoveToPoint",
+			"techies",
+			"pudge_death",
+			"attack_of_deactivating",
+			"AntimageThink",
+			"SetContextThink",
+			"npc_test",
+			"test",
+			"CastSkill",
+			"InvasionMap",
+			"techies_taunt",
+			"MoveToPoint",
+			"MoveToPosition",
+			"+",
+			"invul",
+			"game_sounds_techies",
+			"game_sounds_pudge",
+			"game_sounds_techies",
+			"antimgae",
+			"antimgae_ult",
+			"oder",
+			"behavior",
+			"AddParticle",
+			"intro_rotate",
+			"mark_strength",
+			"self:GetCaster()",
+			"tanut",
+			"antimage_attack",
+			"antimage_ult",
+			"ability_test_1",
+			"SetParticleControl",
+			"sound_test_",
+			"ability_test",
+			"(data)",
+			"sound_test_5",
+			"test",
+			"sound_test_6",
+			"test",
+			"order_type",
+			"intro_invul",
+			"endga",
+			"pudge",
+			"techies",
+			"pudge_star",
+			"start",
+			"pudge",
+			"ending_9",
+			"PrintEndgameMessage1",
+			"SetGameWinner",
+			"InvasionEntityKilled",
+			"npc_last_boss",
+			"spawn_last_boss",
+			"begining_1",
+			"laughter",
+			"antimage",
+			"rattletrap",
+			"wear",
 			"antima",
 			"GetSoundDuration",
 			"getsound",
@@ -819,74 +984,16 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "vscripts/invasion_classic.lua",
+					"file": "npc/npc_heroes_custom.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6062,
-								6062
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2616.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "npc/npc_units_custom.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 46243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5527,
-								5527
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2316.8,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "vscripts/ai/ai_last_boss.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7005,
+						"buffer_size": 50048,
 						"regions":
 						{
 						},
@@ -895,6 +1002,149 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "npc/npc_units_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6291,
+								6306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2492.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "npc/npc_abilities_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 301763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14611,
+								14611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6931.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "npc/npc_items_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 66256.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "vscripts/end_game.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2589,
+								2589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "vscripts/addon_game_mode.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
 							]
 						],
 						"settings":
@@ -906,16 +1156,80 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "vscripts/sounds.lua",
+					"buffer": 6,
+					"file": "vscripts/invasion_classic.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5274,
+						"buffer_size": 27987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18246,
+								18166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9786.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 616653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565747,
+								565800
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 293930.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2650152,
 						"regions":
 						{
 						},
@@ -928,13 +1242,158 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 839339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644809,
+								644768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 235704.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/vulka/Desktop/dota/items.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 516614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243160,
+								243160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 116663.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_english.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3792,
+								3792
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_russian.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 83279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "vscripts/heroes/hero_dev/genocide.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								506,
+								506
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Lua/Lua.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 911.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -957,11 +1416,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -993,8 +1459,80 @@
 		"selected_items":
 		[
 			[
+				"geno",
+				"vscripts\\heroes\\hero_dev\\genocide.lua"
+			],
+			[
+				"soun",
+				"vscripts\\sounds.lua"
+			],
+			[
 				"last",
 				"vscripts\\ai\\ai_last_boss.lua"
+			],
+			[
+				"items",
+				"npc\\npc_items_custom.txt"
+			],
+			[
+				"atta",
+				"vscripts\\abilities\\endgame\\antimage_attack.lua"
+			],
+			[
+				"victr",
+				"vscripts\\modifiers\\modifier_victory_animation.lua"
+			],
+			[
+				"modifier",
+				"vscripts\\modifiers\\modifier_bodybuilder.lua"
+			],
+			[
+				"modifi",
+				"vscripts\\modifiers_links.lua"
+			],
+			[
+				"attac",
+				"vscripts\\abilities\\endgame\\techies_attack.lua"
+			],
+			[
+				"ult",
+				"vscripts\\abilities\\endgame\\antimage_ult.lua"
+			],
+			[
+				"taun",
+				"vscripts\\abilities\\endgame\\techies_taunt.lua"
+			],
+			[
+				"que",
+				"vscripts\\abilities\\quest\\quest_template.lua"
+			],
+			[
+				"tau",
+				"vscripts\\abilities\\techies_taunt.lua"
+			],
+			[
+				"abil",
+				"vscripts\\abilities\\ability_test.lua"
+			],
+			[
+				"ai",
+				"vscripts\\ai\\ai_flash.lua"
+			],
+			[
+				"abili",
+				"vscripts\\abilities\\ability_helper.lua"
+			],
+			[
+				"hero",
+				"npc\\npc_heroes_custom.txt"
+			],
+			[
+				"invas",
+				"vscripts\\invasion_classic.lua"
+			],
+			[
+				"game",
+				"vscripts\\addon_game_mode.lua"
 			],
 			[
 				"npc",
@@ -1203,10 +1741,6 @@
 			[
 				"ai_",
 				"vscripts\\ai\\ai_example.lua"
-			],
-			[
-				"ai",
-				"vscripts\\ai\\ai_default.lua"
 			],
 			[
 				"ai_d",
@@ -1435,74 +1969,6 @@
 			[
 				"snapf",
 				"vscripts\\heroes\\hero_snapfire\\snapfire_fire_flies.lua"
-			],
-			[
-				"abilities/",
-				"vscripts\\abilities\\acult_ghost.lua"
-			],
-			[
-				"warr",
-				"vscripts\\abilities\\warrior_curse.lua"
-			],
-			[
-				"jotar",
-				"vscripts\\heroes\\hero_jotaro\\ora_ora_rush.lua"
-			],
-			[
-				"wd_",
-				"vscripts\\abilities\\wd_music.lua"
-			],
-			[
-				"ai/ne",
-				"vscripts\\ai\\ai_neutral.lua"
-			],
-			[
-				"ai/",
-				"vscripts\\ai\\ai_default.lua"
-			],
-			[
-				"base",
-				"vscripts\\items\\baseitems\\item_base_chainmail.lua"
-			],
-			[
-				"arro",
-				"vscripts\\items\\custom\\item_arrow.lua"
-			],
-			[
-				"alacr",
-				"vscripts\\heroes\\hero_invoker\\invoker_wex_alacrity.lua"
-			],
-			[
-				"trigger",
-				"vscripts\\trigger\\swamp_location.lua"
-			],
-			[
-				"water_s",
-				"vscripts\\heroes\\hero_invoker\\invoker_quas_water_shield.lua"
-			],
-			[
-				"fire_en",
-				"vscripts\\heroes\\hero_invoker\\invoker_exort_fire_enchant.lua"
-			],
-			[
-				"greats",
-				"vscripts\\items\\custom\\item_greatsword.lua"
-			],
-			[
-				"sven/",
-				"vscripts\\heroes\\hero_sven\\thirsty_blade.lua"
-			],
-			[
-				"special_st",
-				"vscripts\\heroes\\hero_storm\\item_special_storm.lua"
-			],
-			[
-				"_model",
-				"vscripts\\heroes\\hero_lycan\\modifiers\\modifier_shapeshift_model_lua.lua"
-			],
-			[
-				"living",
-				"vscripts\\items\\custom\\item_living_armor.lua"
 			]
 		],
 		"width": 0.0
@@ -1525,7 +1991,7 @@
 		],
 		"width": 587.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

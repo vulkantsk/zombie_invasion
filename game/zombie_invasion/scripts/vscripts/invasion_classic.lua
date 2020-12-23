@@ -1002,6 +1002,7 @@ function InvasionMode:ThemeMusic()
 			"Argh Ost – Halloween",  
  		},
  	}
+ 	local last_music = nil
 
 	Timers:CreateTimer(0,function()
 	    local time = GameRules:GetDOTATime(false, false)
@@ -1021,6 +1022,9 @@ function InvasionMode:ThemeMusic()
 	    end
 
 		print("time until night = "..time_until_end)
+		if last_music then
+			Sounds:RemoveGlobalLoopingSound( last_music )
+		end
 
 	    local current_music = nil
 	    local longest_music = music[1]
@@ -1063,9 +1067,10 @@ function InvasionMode:ThemeMusic()
 	    	return time_until_end+1
 	    end
 
-	    Sounds:CreateGlobalSound( current_music )
+	    Sounds:CreateGlobalLoopingSound( current_music )
 	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
-	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music))) 
+	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
+	    last_music = current_music 
 
 	    return Sounds:GetSoundDuration(current_music)		    
 	end)

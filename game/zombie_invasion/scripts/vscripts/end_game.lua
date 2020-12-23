@@ -21,189 +21,195 @@ function EndGame:GoodEnd()
 	local antimage2 = nil
 	local antimage3 = nil
 
+	local timer = 0
 	Timers:CreateTimer(0,function()
-				--направить текиса в точку
-		MoveToPoint(techies, techies_end_point)
-		--направить пуджа на точку
-		MoveToPoint(pudge, pudge_end_point)
-		--направить ама на точку
-		MoveToPoint(antimage1, antimage_end_point)
-	end)
-	
-	Timers:CreateTimer(9,function()
-		--направить лицо ама на текиса 
-		antimage1:CastPointSkill("intro_rotate",techies:GetAbsOrigin())
-		--напривить лицо пуджа на текиса + анимация
-		pudge:CastPointSkill("intro_rotate",techies:GetAbsOrigin())
-	end)
-	
-	Timers:CreateTimer(10,function()
-		--текис поворачивает голову в сторону ама
-		techies:CastPointSkill("intro_rotate",antimage1:GetAbsOrigin())
-	end)
-	
-	Timers:CreateTimer(11,function()
-		--текис поворачивает голову в сторону пуджа
-		techies:CastPointSkill("intro_rotate",pudge:GetAbsOrigin())
-	end)
-	
-	Timers:CreateTimer(12,function()
-		--текис начинает веселиться
-		techies:AddNewModifier(techies, nil, "modifier_victory_animation", nil)
-		--пудж начинает веселиться
-		pudge:AddNewModifier(pudge, nil, "modifier_victory_animation", nil)
-		--ам создаёт иллюзию
-		local point = antimage1:GetAbsOrigin()
-		local fw = antimage1:GetForwardVector()
+		if timer == 1 then
+			--направить текиса в точку
+			MoveToPoint(techies, techies_end_point)
+			--направить пуджа на точку
+			MoveToPoint(pudge, pudge_end_point)
+			--направить ама на точку
+			MoveToPoint(antimage1, antimage_end_point)
+		end
+		
+		if timer == 9 then
+			--направить лицо ама на текиса 
+			antimage1:CastPointSkill("intro_rotate",techies:GetAbsOrigin())
+			--напривить лицо пуджа на текиса + анимация
+			pudge:CastPointSkill("intro_rotate",techies:GetAbsOrigin())
+		end
+		
+		if timer == 10 then
+			--текис поворачивает голову в сторону ама
+			techies:CastPointSkill("intro_rotate",antimage1:GetAbsOrigin())
+		end
+		
+		if timer == 11 then
+			--текис поворачивает голову в сторону пуджа
+			techies:CastPointSkill("intro_rotate",pudge:GetAbsOrigin())
+		end
+		
+		if timer == 12 then
+			--текис начинает веселиться
+			techies:AddNewModifier(techies, nil, "modifier_victory_animation", nil)
+			--пудж начинает веселиться
+			pudge:AddNewModifier(pudge, nil, "modifier_victory_animation", nil)
+			--ам создаёт иллюзию
+			local point = antimage1:GetAbsOrigin()
+			local fw = antimage1:GetForwardVector()
 
-		antimage1:EmitSound("DOTA_Item.Manta.Activate")
---		local effect = "particles/items2_fx/manta_phase.vpcf"
---		local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN, antimage1)
---		ParticleManager:ReleaseParticleIndex(pfx)
-				Timers:CreateTimer(1,function()
-			AntimageThink(antimage1)
-		end)		
-					Timers:CreateTimer(2,function()
-			AntimageThink(antimage2)
-		end)	
-		antimage1:SetAbsOrigin(point + RandomVector(50))
+			antimage1:EmitSound("DOTA_Item.Manta.Activate")
+	--		local effect = "particles/items2_fx/manta_phase.vpcf"
+	--		local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN, antimage1)
+	--		ParticleManager:ReleaseParticleIndex(pfx)
+					Timers:CreateTimer(1,function()
+				AntimageThink(antimage1)
+			end)		
+						Timers:CreateTimer(2,function()
+				AntimageThink(antimage2)
+			end)	
+			antimage1:SetAbsOrigin(point + RandomVector(50))
+		 
+
+			antimage2 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
+			antimage2:SetForwardVector(fw)
 	 
 
-		antimage2 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
-		antimage2:SetForwardVector(fw)
- 
+			antimage3 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
+			antimage3:SetForwardVector(fw)
+			Timers:CreateTimer(3,function()
+	 
+			end)
+			
+		end
 
-		antimage3 = CreateUnitByName("npc_end_antimage", point + RandomVector(50), false, nil, nil, DOTA_TEAM_BADGUYS)
-		antimage3:SetForwardVector(fw)
-		Timers:CreateTimer(3,function()
- 
-		end)
+		if timer == 19 then
+			--пудж издаёт звук
+			pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
+		end
 		
-	end)
-
-	Timers:CreateTimer(19,function()
-		--пудж издаёт звук
-		pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
-	end)
-	
-	Timers:CreateTimer(19,function()
-		--пудж издаёт звук
-		pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
-	end)
-	
-	Timers:CreateTimer(25,function()
-		--насмешка текиса
-		techies:CastSkill("techies_taunt")
-	end)
-	
-	Timers:CreateTimer(29,function()
-		--ам ульта
-		antimage1.stop = true
-		antimage1:CastSkill("antimage_ult", techies)
-	end)
-	
-	Timers:CreateTimer(31,function()
-		--санстрайк мимо
-		antimage1.stop = false
+		if timer == 19 then
+			--пудж издаёт звук
+			pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
+		end
 		
-		techies:EmitSound("Hero_Invoker.SunStrike.Ignite")
+		if timer == 25 then
+			--насмешка текиса
+			techies:CastSkill("techies_taunt")
+		end
+		
+		if timer == 29 then
+			--ам ульта
+			antimage1.stop = true
+			antimage1:CastSkill("antimage_ult", techies)
+		end
+		
+		if timer == 31 then
+			--санстрайк мимо
+			antimage1.stop = false
+			
+			techies:EmitSound("Hero_Invoker.SunStrike.Ignite")
 
 
-		local point = techies_end_point+RandomVector(300)
-		local effect = "particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf"
-		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, nil)
-		ParticleManager:SetParticleControl(pfx, 0, point)
+			local point = techies_end_point+RandomVector(300)
+			local effect = "particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf"
+			local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, nil)
+			ParticleManager:SetParticleControl(pfx, 0, point)
 
-		ParticleManager:ReleaseParticleIndex(pfx)
+			ParticleManager:ReleaseParticleIndex(pfx)
 
-	end)
-	
-	Timers:CreateTimer(39,function()
-		--появляется мишка + идёт на текиса
-		local fw = pudge:GetForwardVector()
-		local point = pudge:GetAbsOrigin()+fw*100
+		end
+		
+		if timer == 39 then
+			--появляется мишка + идёт на текиса
+			local fw = pudge:GetForwardVector()
+			local point = pudge:GetAbsOrigin()+fw*100
 
-		pudge_bear = CreateUnitByName("npc_end_bear", point, false, nil, nil, DOTA_TEAM_BADGUYS)
-		pudge_bear:SetForwardVector(fw)
-		MoveToPoint(pudge_bear, techies_end_point)
-	end)
-	
-	Timers:CreateTimer(41,function()
-		--текис стреляет в медведя
-		techies:CastSkill("techies_attack", pudge_bear)
-	end)
-	
-	Timers:CreateTimer(51,function()
-		--пудж падает
-		pudge:CastSkill("pudge_death")
-	end)
-	
-	Timers:CreateTimer(60,function()
-		--пудж издаёт звук
-		pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
-	end)
-	
-	Timers:CreateTimer(65,function()
-		--текис насмешка
-		techies:CastSkill("techies_taunt")
-	end)
-	
-	Timers:CreateTimer(72,function()
-		--текис насмешка
-		techies:CastSkill("techies_taunt")
-	end)
-	
-	Timers:CreateTimer(77,function()
-		--текис ставит мину
-		techies:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_1, 2)
-		techies:EmitSound("Hero_Techies.LandMine.Plant")
-		local point = techies:GetAbsOrigin()+techies:GetForwardVector()*100
+			pudge_bear = CreateUnitByName("npc_end_bear", point, false, nil, nil, DOTA_TEAM_BADGUYS)
+			pudge_bear:SetForwardVector(fw)
+			MoveToPoint(pudge_bear, techies_end_point)
+		end
+		
+		if timer == 41 then
+			--текис стреляет в медведя
+			techies:CastSkill("techies_attack", pudge_bear)
+		end
+		
+		if timer == 51 then
+			--пудж падает
+			pudge:CastSkill("pudge_death")
+		end
+		
+		if timer == 60 then
+			--пудж издаёт звук
+			pudge:EmitSound("pudge_pud_anger_0"..RandomInt(1, 5))
+		end
+		
+		if timer == 65 then
+			--текис насмешка
+			techies:CastSkill("techies_taunt")
+		end
+		
+		if timer == 72 then
+			--текис насмешка
+			techies:CastSkill("techies_taunt")
+		end
+		
+		if timer == 77 then
+			--текис ставит мину
+			techies:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_1, 2)
+			techies:EmitSound("Hero_Techies.LandMine.Plant")
+			local point = techies:GetAbsOrigin()+techies:GetForwardVector()*100
 
-		techies_mine = CreateUnitByName("npc_dota_techies_land_mine", point, false, nil, nil, DOTA_TEAM_GOODGUYS)
-		--ам с колнами бегут на текиса
-		antimage1.stop = true
-		antimage1:CastSkill("antimage_attack", techies)
+			techies_mine = CreateUnitByName("npc_dota_techies_land_mine", point, false, nil, nil, DOTA_TEAM_GOODGUYS)
+			--ам с колнами бегут на текиса
+			antimage1.stop = true
+			antimage1:CastSkill("antimage_attack", techies)
 
-		antimage2.stop = true
-		antimage2:CastSkill("antimage_attack", techies)
+			antimage2.stop = true
+			antimage2:CastSkill("antimage_attack", techies)
 
-		antimage3.stop = true
-		antimage3:CastSkill("antimage_attack", techies)
-	end)
-	
-	Timers:CreateTimer(78,function()
-		--мина пищит
-		techies:EmitSound("Hero_Techies.LandMine.Priming")
-	end)
-	
-	Timers:CreateTimer(79,function()
-		antimage1:CastSkill("antimage_attack", techies)
-		antimage2:CastSkill("antimage_attack", techies)
-		antimage3:CastSkill("antimage_attack", techies)
-	end)
-	
-	Timers:CreateTimer(80,function()
-		--мина взрывается
-		techies_mine:ForceKill(false)
+			antimage3.stop = true
+			antimage3:CastSkill("antimage_attack", techies)
+		end
+		
+		if timer == 78 then
+			--мина пищит
+			techies:EmitSound("Hero_Techies.LandMine.Priming")
+		end
+		
+		if timer == 79 then
+			antimage1:CastSkill("antimage_attack", techies)
+			antimage2:CastSkill("antimage_attack", techies)
+			antimage3:CastSkill("antimage_attack", techies)
+		end
+		
+		if timer == 80 then
+			--мина взрывается
+			techies_mine:ForceKill(false)
 
-		techies:EmitSound("Hero_Techies.LandMine.Detonate")
-		local effect = "particles/units/heroes/hero_techies/techies_land_mine_explode.vpcf"
-		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, nil)
-		ParticleManager:SetParticleControl(pfx, 0, techies_mine:GetAbsOrigin())
-		ParticleManager:SetParticleControl(pfx, 1, Vector(300, 1, 1))
-		ParticleManager:ReleaseParticleIndex(pfx)
-		--ам с клонами умирают
-		antimage1:ForceKill(false)
-		antimage2:ForceKill(false)
-		antimage3:ForceKill(false)
+			techies:EmitSound("Hero_Techies.LandMine.Detonate")
+			local effect = "particles/units/heroes/hero_techies/techies_land_mine_explode.vpcf"
+			local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, nil)
+			ParticleManager:SetParticleControl(pfx, 0, techies_mine:GetAbsOrigin())
+			ParticleManager:SetParticleControl(pfx, 1, Vector(300, 1, 1))
+			ParticleManager:ReleaseParticleIndex(pfx)
+			--ам с клонами умирают
+			antimage1:ForceKill(false)
+			antimage2:ForceKill(false)
+			antimage3:ForceKill(false)
 
-		techies:EmitSound("antimage_anti_death_0"..RandomInt(1, 9))
+			techies:EmitSound("antimage_anti_death_0"..RandomInt(1, 9))
+		end
+		
+		if timer == 83 then 
+			GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+			return -1 
+		end
+		
+		timer = timer + 1
+		return 1
 	end)
-	
-	Timers:CreateTimer(83, function() 
-		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) 
-	end)
-
 
 end
 

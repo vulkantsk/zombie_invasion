@@ -37,7 +37,8 @@
 	{
 		"BaseClass" 					"ability_lua"
 		"ScriptFile"					"abilities/endgame/intro_rotate"
-    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"		
+    	"IsOnCastBar"                   "0"	
 	}
 
 	"techies_taunt"
@@ -45,6 +46,7 @@
 		"BaseClass" 					"ability_lua"
 		"ScriptFile"					"abilities/endgame/techies_taunt"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+    	"IsOnCastBar"                   "0"	
 	}
 	"techies_attack"
 	{
@@ -54,6 +56,7 @@
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    	"IsOnCastBar"                   "0"	
 	}
 	"antimage_ult"
 	{
@@ -63,6 +66,7 @@
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_ALL"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    	"IsOnCastBar"                   "0"	
 	}
 	"antimage_attack"
 	{
@@ -74,18 +78,20 @@
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 
         "AbilityCastRange"				"150"
- 	}
+     	"IsOnCastBar"                   "0"	
+	}
 	"pudge_death"
 	{
 		"BaseClass" 					"ability_lua"
 		"ScriptFile"					"abilities/endgame/pudge_death"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+    	"IsOnCastBar"                   "0"	
 	}
 	
 	"hidden_passive"
 {
 	"BaseClass"						"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE|DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
 	"Modifiers"
 	{

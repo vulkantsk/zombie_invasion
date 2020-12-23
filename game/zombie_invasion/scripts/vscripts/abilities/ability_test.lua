@@ -7,19 +7,19 @@ end
 ability_test_2=class({})
 
 function ability_test_2:OnSpellStart()
-	EndGame:GoodEnd()
+	Sounds:CreateGlobalLoopingSound("C418 - Sweden")
 end
 
 ability_test_3=class({})
 
 function ability_test_3:OnSpellStart()
-	EndGame:GoodEnd()
+	EmitGlobalSound("Ability.GushCast")
 end
 
 ability_test_4=class({})
 
 function ability_test_4:OnSpellStart()
-	EndGame:GoodEnd()
+	Sounds:CreateGlobalSound("Ability.GushCast")
 end
 
 ability_test_5=class({})

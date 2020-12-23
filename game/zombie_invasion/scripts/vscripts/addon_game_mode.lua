@@ -6,7 +6,7 @@
  
 require( 'timers' )
 require( 'sounds' )
- require('util/util');
+require('util/util');
 require( 'invasion_classic' )
 require( 'invasion_armageddon' )
 require( 'triggers' )
