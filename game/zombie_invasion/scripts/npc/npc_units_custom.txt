@@ -1111,7 +1111,330 @@
 	//============================================================================================================
 	// Quest
 	//============================================================================================================
+ 		"npc_penguin"
+	{
+		// General
+		//----------------------------------------------------------------
+				"vscripts"		"ai/ai_penguin.lua"
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/events/frostivus/penguin/penguin.vmdl"
+		"ModelScale"				"1"
+		"Level"						"10"
+		"HealthBarOffset"			"140"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
  
+		"IsAncient"                 "1"
+				"UseNeutralCreepBehavior"	"0"
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  ""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"7"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"250"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+		}	
+	}
+
+ 		"npc_penguin_2"
+	{
+		// General
+		//----------------------------------------------------------------
+				"vscripts"		"ai/ai_penguin_2.lua"
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/events/frostivus/penguin/penguin.vmdl"
+		"ModelScale"				"1"
+		"Level"						"10"
+		"HealthBarOffset"			"140"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+ 
+		"IsAncient"                 "1"
+				"UseNeutralCreepBehavior"	"0"
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  ""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"7"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"250"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+		}	
+	}
+
+ 		"npc_penguin_4"
+	{
+		// General
+		//----------------------------------------------------------------
+ 
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/events/frostivus/penguin/penguin.vmdl"
+		"ModelScale"				"1"
+		"Level"						"10"
+		"HealthBarOffset"			"140"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+ 
+		"IsAncient"                 "1"
+ 
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  ""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"170"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"250"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+		}	
+	}
+
+
+ 		"npc_penguin_3"
+	{
+		// General
+		//----------------------------------------------------------------
+				"vscripts"		"ai/ai_penguin_3.lua"
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/events/frostivus/penguin/penguin.vmdl"
+		"ModelScale"				"1"
+		"Level"						"10"
+		"HealthBarOffset"			"140"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+ 
+		"IsAncient"                 "1"
+				"UseNeutralCreepBehavior"	"0"
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  ""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+		}	
+	}
 
 	
 		"npc_jitel"
@@ -1684,6 +2007,246 @@
 		"VisionNighttimeRange"		"600"		// Range of vision at night time.
 	}	
 	
+	//============================================================================================================
+	// New Year
+	//============================================================================================================
+
+ 		"npc_mini_elka_1"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+ 
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+
+	}
+
+ 		"npc_mini_elka_2"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+
+	}
+
+ 		"npc_mini_elka_3"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+
+	}
+
+
+ 		"npc_mini_elka_4"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+
+	}
+
+ 		"npc_mini_elka_5"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+	}
+
+ 		"npc_mini_elka_6"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+	}
+
+
+ 		"npc_snowmen"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/props_tree/frostivus_tree.vmdl"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "1000" // Experience earn.
+		"BountyGoldMin" "100" // Gold earned min.
+		"BountyGoldMax" "200" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+	}
+
+
+
+		"npc_main_elka"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_building"
+		"Model"						"models/props_frostivus/frostivus_ancient/frostivus_ancient.vmdl"
+		"ModelScale"				"1"
+ 
+ 
+ 
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  "main_elka"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_BARRACKS"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+		}	
+	}
+
+
+		
+ 
 	//============================================================================================================
 	// Test
 	//============================================================================================================

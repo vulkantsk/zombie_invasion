@@ -9,9 +9,9 @@ function item_bag_of_gold:OnSpellStart()
 		for playerID = 0, DOTA_MAX_TEAM_PLAYERS-1 do
 			if PlayerResource:IsValidPlayerID(playerID) then
 				local hero = PlayerResource:GetSelectedHeroEntity( playerID)
-				PlayerResource:ModifyGold(playerID, 1000, true, DOTA_ModifyGold_SharedGold)
+				PlayerResource:ModifyGold(playerID, 2000, true, DOTA_ModifyGold_SharedGold)
 				EmitSoundOnClient( "General.Coins", PlayerResource:GetPlayer(playerID))
-				SendOverheadEventMessage( PlayerResource:GetPlayer(playerID), OVERHEAD_ALERT_GOLD, hero, 1000, nil )
+				SendOverheadEventMessage( PlayerResource:GetPlayer(playerID), OVERHEAD_ALERT_GOLD, hero, 2000, nil )
 			end
 		end
 		UTIL_Remove(self:GetContainer())

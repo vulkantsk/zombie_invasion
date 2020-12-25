@@ -62,6 +62,7 @@ function InvasionMode:InvasionMap()
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
+	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(InvasionMode, 'OnItemPickedUp'), self)
 
 	AddFOWViewer(DOTA_TEAM_BADGUYS, Entities:FindByName( nil, "dota_shop"):GetAbsOrigin(), 1000, -1, false)
 
@@ -81,6 +82,30 @@ end
 	end
 
 end
+
+function InvasionMode:OnItemPickedUp(keys)
+	print ( '[BAREBONES] OnItemPurchased' )
+	DeepPrintTable(keys)
+
+--	local heroEntity = EntIndexToHScript()
+	local unit_index = keys.HeroEntityIndex or keys.UnitEntityIndex
+	local hero = EntIndexToHScript(unit_index):GetPlayerOwner()
+	local itemEntity = EntIndexToHScript(keys.ItemEntityIndex)
+	local player = keys.PlayerID
+	local itemname = keys.itemname
+		local owner = EntIndexToHScript( keys.HeroEntityIndex )
+	
+	--r = RandomInt(200, 400)
+	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+
+	if itemname == "item_bonus_health" then
+ 
+               owner:AddNewModifier(owner, nil, "modifier_health", {  })
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+ 
+	end
+end
+
 
 function InvasionMode:OnPlayerLevelUp(keys)
 	print ('[BAREBONES] OnPlayerLevelUp')
@@ -105,26 +130,50 @@ function InvasionMode:OnPlayerLevelUp(keys)
 		end
 	end
 end
-
+ 
+ 
 function InvasionMode:InvasionOnNPCSpawn(data)
-
+if IsServer() then
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
- --[[   LinkLuaModifier( "modifier_troll_speed", "modifiers/npc/modifier_troll_speed", LUA_MODIFIER_MOTION_HORIZONTAL )
-
+ 
     if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
 
-        if name == "npc_dota_hero_troll_warlord" then
-                 npc:AddNewModifier(npc, nil, "modifier_troll_speed", {  })
-        end
+   
+                 npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
+                 	npc:SetModifierStackCount("modifier_elka_bonus", nil, (1))
+  
  
 
 end
- ]]
+  
 
  
+     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+    for i = 1, #allBuildings, 1 do
+        local building = allBuildings[i]
+        building:RemoveModifierByName('modifier_invulnerable')
+        building:RemoveModifierByName("modifier_tower_truesight_aura")
+ 
+ 
+    end
+
+    local main_team = DOTA_TEAM_GOODGUYS
+
+ local main_elka  =  Entities:FindByName(nil, "npc_main_elka")
+    local elka = main_elka:FindModifierByName("modifier_item_letter"):GetStackCount()   
+        if (team ~= main_team and not npc:IsRealHero()) then
+
+  
+ 
+            SetGoldMultiplier(npc, 10)
+ 
+        end
+ 
+ 
+end
  
 end
 
@@ -146,6 +195,18 @@ function InvasionMode:InvasionGameStart()
 	InvasionMode:InvasionSpawnMoobs()
 	InvasionMode:ThemeMusic()
  
+ 
+   local allCreatures = Entities:FindAllByClassname('npc_dota_creature')
+ 
+ 	for i = 1, #allCreatures, 1 do
+		local creature = allCreatures[i]
+ 
+  	SetGoldMultiplier(creature , 1.05)    
+       
+       end 
+
+ 
+
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
         InvasionMode:ZombieNight1()  
@@ -557,6 +618,7 @@ function InvasionMode:SpawnZombie(unit_name, unit_count)
 	end
 end
 
+ 
 function InvasionMode:SpawnFlash(unit_name)
 	local point = nil  -- отвечает за то, где появиться свинья
 	local unit = nil  -- Кто появиться
@@ -776,6 +838,13 @@ function InvasionMode:InvasionEntityKilled (data)
 if killedEntity:GetUnitName() == "npc_last_boss" then
      EndGame:GoodEnd()
 end
+
+if killedEntity:GetUnitName() == "npc_boss_dead_pig" then
+      EmitGlobalSound("vurdalak_1")
+end
+
+ 
+
  
 if killedEntity:GetUnitName() == "npc_classic_pig" then
 pig_count = pig_count+1
@@ -820,7 +889,7 @@ end
  
 
 
-
+--[[ 
 	if killedEntity:IsCreature() then
 		if killedEntity.respawn  then
 			if killedEntity.nightZombie then
@@ -933,8 +1002,21 @@ end
         	end
 		end
 
-	end
 
+
+
+
+    if killedEntity:GetUnitName() == "npc_mini_elka_1" or killedEntity:GetUnitName() == "npc_mini_elka_2" or killedEntity:GetUnitName() == "npc_mini_elka_3" or killedEntity:GetUnitName() == "npc_mini_elka_4" or killedEntity:GetUnitName() == "npc_mini_elka_5" or killedEntity:GetUnitName() == "npc_mini_elka_6" then
+			for i = 1, 1 do
+            	self:CreateDrop("item_undying_heart", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
+        	end
+		end
+
+ 
+
+
+	end
+]]
 
 end
  
@@ -949,6 +1031,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
+    	--[[
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
   		    "Ula - Cannabis",
@@ -956,6 +1039,10 @@ function InvasionMode:ThemeMusic()
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
     	},
+  ]]
+   [1] = {
+ "Merry - Christmas Jingle Bells",  
+  },
     	[2] = {
   		    "Серега пират - АМ ФП", 
   		    "Life - Larson",
@@ -1067,7 +1154,9 @@ function InvasionMode:ThemeMusic()
 	    	return time_until_end+1
 	    end
 
+ 
 	    Sounds:CreateGlobalLoopingSound( current_music )
+ 
 	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
 	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
 	    last_music = current_music 
