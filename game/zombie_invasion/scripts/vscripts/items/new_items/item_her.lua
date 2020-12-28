@@ -15,10 +15,6 @@ modifier_item_her = class({
 	}end,
 })
 
-function modifier_item_her:GetAttributes()
-	return MODIFIER_ATTRIBUTE_MULTIPLE 
-end
-
 function modifier_item_her:GetModifierBonusStats_Strength()
 	return self:GetAbility():GetSpecialValueFor("str")
 end

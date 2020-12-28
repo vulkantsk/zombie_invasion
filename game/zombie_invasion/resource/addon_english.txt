@@ -120,6 +120,13 @@
 		"npc_tombstone3"                                                	"Tombstone"
 		"npc_tombstone4"                                                	"Tombstone"
 
+		"npc_greevil"                                                	"Golden greevil"
+		"npc_classic_new_years"                                                	"Frozen zombie"
+		"npc_classic_new_years_lich"                                                	"Chilling Horror"
+		"npc_classic_new_years_winterwyvern"                                                	"Winged Harbinger of Cold"
+		"npc_classic_new_years_ancient"                                                	"A particle of ice from ancient times"
+		"npc_classic_new_years_seer"                                                	"Winter eyes"		
+
 
 		// ******************** Предметы********************
 		
@@ -926,6 +933,10 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_Description"				"Auto-attacks of this creature do magic damage."
 		"DOTA_Tooltip_Ability_range_magick_attack_damage_min"				"MIN DAMAGE:"
 		"DOTA_Tooltip_Ability_range_magick_attack_damage_max"				"MAX DAMAGE:"
+
+		"DOTA_Tooltip_modifier_greevil" "Number of gifts"
+		"DOTA_Tooltip_Ability_greevil" "Gifts!"
+		"DOTA_Tooltip_Ability_greevil_Description" "How many gifts will you get?"
 
 		"DOTA_Tooltip_Ability_range_boss_magick_attack"						"Magick Damage"
 		"DOTA_Tooltip_Ability_range_boss_magick_attack_Description"			"Auto-attacks of this creature do magic damage."

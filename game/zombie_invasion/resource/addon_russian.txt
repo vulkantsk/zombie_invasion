@@ -13,6 +13,8 @@
 		"DOTA_GameMode_15" 				"Нашествие зомби"	
 		
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
+
+
  		
        // ******************** Messages ********************
 	   
@@ -115,6 +117,12 @@
 		"npc_tombstone3"                                                	"Томба"
 		"npc_tombstone4"                                                	"Томба"
 
+		"npc_greevil"                                                	"Золотой валенок"
+		"npc_classic_new_years"                                                	"Застывший зомби"
+		"npc_classic_new_years_lich"                                                	"Леденящий кровь Ужас"
+		"npc_classic_new_years_winterwyvern"                                                	"Крылатый предвестник холода"
+		"npc_classic_new_years_ancient"                                                	"Частица льда древнейших времён"
+		"npc_classic_new_years_seer"                                                	"Глаза зимы"								
 
 		// ******************** Предметы********************
 		
@@ -786,7 +794,10 @@
 
 "DOTA_Tooltip_modifier_axe_solo" "FOREVER ALONE"
 "DOTA_Tooltip_modifier_axe_solo_Description" "Число союзников находящиеся рядом с аксом( сам Axe тоже считается )"
- 
+
+"DOTA_Tooltip_modifier_greevil" "Число подарков"
+"DOTA_Tooltip_Ability_greevil" "Подарки!"
+"DOTA_Tooltip_Ability_greevil_Description" "Сколько же подарков вам достанется?"
 	
 		// -----------------timber--------------------	
 
@@ -962,6 +973,16 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_2_Description"				"Автоатаки этого существа наносят магический урон."
 		"DOTA_Tooltip_Ability_range_magick_attack_2_damage_min"				"МИН. УРОН:"
 		"DOTA_Tooltip_Ability_range_magick_attack_2_damage_max"				"МАКС. УРОН:"
+
+		"DOTA_Tooltip_Ability_range_magick_attack_4"							"Magick Damage"
+		"DOTA_Tooltip_Ability_range_magick_attack_4_Description"				"Автоатаки этого существа наносят магический урон."
+		"DOTA_Tooltip_Ability_range_magick_attack_4_damage_min"				"МИН. УРОН:"
+		"DOTA_Tooltip_Ability_range_magick_attack_4_damage_max"				"МАКС. УРОН:"
+
+		"DOTA_Tooltip_Ability_range_magick_attack_5"							"Magick Damage"
+		"DOTA_Tooltip_Ability_range_magick_attack_5_Description"				"Автоатаки этого существа наносят магический урон."
+		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_min"				"МИН. УРОН:"
+		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"МАКС. УРОН:"		
 
 				"DOTA_Tooltip_Ability_range_magick_attack_3"							"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_3_Description"				"Автоатаки этого существа наносят магический урон."
