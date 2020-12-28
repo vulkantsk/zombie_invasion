@@ -3,7 +3,9 @@
 	"Language"		"russian"
 	"Tokens"
 	{		
-		"music_toggle"                                              "Включить/отключить музыку в игре"
+
+		"music_toggle"                                              "Включить/отключить музыку"
+
 		"sss"                                               	""
 
 	    		"dota_game_end_victory_title_radiant"	"Деревня защищена!"
