@@ -84,14 +84,22 @@ function greevil:OnOwnerDied()
 	local caster = self:GetCaster()
 	local caster_position = caster:GetAbsOrigin()
 		for i = 0, A do
-	if RollPercentage(50) then
-		item = "item_her"
+	if RollPercentage(16) then
+		item = "item_bonus_health1"
+	elseif RollPercentage(20) then
+		item = "item_bonus_damage1"
+	elseif RollPercentage(25) then
+		item = "item_bonus_mana_regen1"
+	elseif RollPercentage(33) then
+		item = "item_bonus_spell1"
+	elseif RollPercentage(50) then
+		item = "item_bonus_mana1"
 	else
-		item = "item_god_rapier"
+		item = "item_bonus_health_regen1"								
 	end
 		local newItem = CreateItem( item, nil, nil )	
 		local drop = CreateItemOnPositionForLaunch( caster_position, newItem )
-		local dropRadius = RandomFloat( 50, 500 )
+		local dropRadius = RandomFloat( 50, 200 )
 		newItem:LaunchLootInitialHeight( false, 0, 400, 0.5, caster_position + RandomVector( dropRadius ) )
 	end
 end

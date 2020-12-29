@@ -420,16 +420,38 @@
 		"DOTA_Tooltip_ability_item_bonus_health_Description"							"<h1>Активная: С новым годом!</h1> Дает 20 хп навсегда!"
 		
 		"DOTA_Tooltip_Ability_item_bonus_health_regen"				"Подарок"
-		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 0.45 хп регена навсегда!"
+		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 2 хп регена навсегда!"
 
 		"DOTA_Tooltip_Ability_item_bonus_mana_regen"				"Подарок"
-		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 0.45 маны регена навсегда!"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 1 мана регена навсегда!"
 
 		"DOTA_Tooltip_Ability_item_bonus_mana"				"Подарок"
 		"DOTA_Tooltip_ability_item_bonus_mana_Description"							"<h1>Активная: С новым годом!</h1> Дает 20 маны навсегда!"
 
 		"DOTA_Tooltip_Ability_item_bonus_damage"				"Подарок"
 		"DOTA_Tooltip_ability_item_bonus_damage_Description"							"<h1>Активная: С новым годом!</h1> Дает 4 урона навсегда!"	
+
+		"DOTA_Tooltip_Ability_item_bonus_spell"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_spell_Description"							"<h1>Активная: С новым годом!</h1> Дает 2% усиления заклинаний навсегда!"	
+
+
+		"DOTA_Tooltip_Ability_item_bonus_health1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_health1_Description"							"<h1>Активная: С новым годом!</h1> Дает 200 хп навсегда!"
+		
+		"DOTA_Tooltip_Ability_item_bonus_health_regen1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_health_regen1_Description"							"<h1>Активная: С новым годом!</h1> Дает 20 хп регена навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana_regen1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen1_Description"							"<h1>Активная: С новым годом!</h1> Дает 10 мана регена навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_mana1_Description"							"<h1>Активная: С новым годом!</h1> Дает 200 маны навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_damage1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_damage1_Description"							"<h1>Активная: С новым годом!</h1> Дает 40 урона навсегда!"	
+
+		"DOTA_Tooltip_Ability_item_bonus_spell1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Активная: С новым годом!</h1> Дает 20% усиления заклинаний навсегда!"			
 
 "DOTA_Tooltip_modifier_greevil" "Число подарков"
 "DOTA_Tooltip_Ability_greevil" "Подарки!"

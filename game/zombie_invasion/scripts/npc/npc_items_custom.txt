@@ -5365,6 +5365,261 @@
  
 	}
 
+		"item_bonus_spell"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_spell"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+
+
+		"item_bonus_health1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_2"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+ 
+ 
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+
+	"item_bonus_health_regen1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_2"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+	"item_bonus_mana_regen1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_mana"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+	"item_bonus_mana1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_mana"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+	"item_bonus_damage1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_damage"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
+		"item_bonus_spell1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_winter/present.vmdl"
+		"AbilityTextureName"			"new_year/present_spell"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+		"AbilityCooldown"				"1.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+ 
+	}
+
 
  
 

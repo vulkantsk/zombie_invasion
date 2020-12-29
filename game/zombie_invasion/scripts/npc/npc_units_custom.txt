@@ -2023,7 +2023,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "250" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -2045,7 +2045,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "300" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -2067,7 +2067,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "350" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -2090,7 +2090,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "400" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -2112,7 +2112,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "450" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -2133,7 +2133,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "1000" // Experience earn.
+		"BountyXP" "500" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "200" // Gold earned max.
 		"StatusHealth" "1" // Base health.

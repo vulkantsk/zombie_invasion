@@ -103,6 +103,13 @@ function InvasionMode:OnItemPickedUp(keys)
 	LinkLuaModifier("modifier_mana_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
 	LinkLuaModifier("modifier_mana", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_damage", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_spell", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
+	LinkLuaModifier("modifier_health1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_health_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_mana_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_mana1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)		
 
 	if itemname == "item_bonus_health" then
      EmitSoundOn("present", owner) 
@@ -149,6 +156,69 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_spell" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_spell", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory		
+    elseif itemname == "item_bonus_health_regen1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_health_regen1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_mana_regen1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_mana_regen1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_mana1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_mana1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_damage1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_damage1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_spell1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_spell1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory	
+    elseif itemname == "item_bonus_health1" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_health1", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory				
 	end
 end
 
@@ -232,8 +302,8 @@ function InvasionMode:spawn_greevil()
 	local unit = nil  -- Кто появиться
 	
  
-	point = Entities:FindByName( nil, "techies_end_point"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_portal", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	point = Entities:FindByName( nil, "npc_portal"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_greevil", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
 end
