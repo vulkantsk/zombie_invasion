@@ -1,3 +1,4 @@
+
 LinkLuaModifier( "modifier_greevil", "abilities/zombie/greevil", LUA_MODIFIER_MOTION_NONE )
 
 greevil = class ({})

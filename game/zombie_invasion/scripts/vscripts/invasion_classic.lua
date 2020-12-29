@@ -20,6 +20,8 @@ for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
 
+ Christmas_night = 0
+
 HERO_RESPAWN_TIME_BEFORE_10 = 10
 MONSTERS_RESPAWN_TIME = 10
 WAVE_RESPAWN_TIME = 2
@@ -62,6 +64,7 @@ function InvasionMode:InvasionMap()
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
+	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(InvasionMode, 'OnItemPickedUp'), self)
 
 	AddFOWViewer(DOTA_TEAM_BADGUYS, Entities:FindByName( nil, "dota_shop"):GetAbsOrigin(), 1000, -1, false)
 
@@ -79,8 +82,82 @@ end
 			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 		end
 	end
-
+ 
 end
+
+function InvasionMode:OnItemPickedUp(keys)
+	print ( '[BAREBONES] OnItemPurchased' )
+	DeepPrintTable(keys)
+
+--	local heroEntity = EntIndexToHScript()
+	local unit_index = keys.HeroEntityIndex or keys.UnitEntityIndex
+	local hero = EntIndexToHScript(unit_index):GetPlayerOwner()
+	local itemEntity = EntIndexToHScript(keys.ItemEntityIndex)
+	local player = keys.PlayerID
+	local itemname = keys.itemname
+		local owner = EntIndexToHScript( keys.HeroEntityIndex )
+	
+	--r = RandomInt(200, 400)
+	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_health_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_mana_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_mana", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_damage", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+
+	if itemname == "item_bonus_health" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_health", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_health_regen" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_health_regen", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_mana_regen" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_mana_regen", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_mana" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_mana", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+    elseif itemname == "item_bonus_damage" then
+     EmitSoundOn("present", owner) 
+               owner:AddNewModifier(owner, nil, "modifier_damage", {  })
+               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
+			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+	end
+end
+
+ 
+  function InvasionMode:Christmas_plus()
+ Christmas_night = Christmas_night + 1
+ 
+end
+
 
 function InvasionMode:OnPlayerLevelUp(keys)
 	print ('[BAREBONES] OnPlayerLevelUp')
@@ -105,27 +182,27 @@ function InvasionMode:OnPlayerLevelUp(keys)
 		end
 	end
 end
-
+ 
+ 
 function InvasionMode:InvasionOnNPCSpawn(data)
-
+ 
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
- --[[   LinkLuaModifier( "modifier_troll_speed", "modifiers/npc/modifier_troll_speed", LUA_MODIFIER_MOTION_HORIZONTAL )
-
+ 
     if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
 
-        if name == "npc_dota_hero_troll_warlord" then
-                 npc:AddNewModifier(npc, nil, "modifier_troll_speed", {  })
-        end
+   
+                 npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
+                 	npc:SetModifierStackCount("modifier_elka_bonus", nil, (1))
+  
  
 
 end
- ]]
-
  
  
+  
 end
 
 function InvasionMode:spawn_last_boss()
@@ -139,13 +216,41 @@ function InvasionMode:spawn_last_boss()
 	unit:SetForwardVector(RandomVector(1))
 end
 
+function InvasionMode:spawn_christmas_boss()
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+	
+ 
+	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_christmas_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit.respawn = false	
+	unit:SetForwardVector(RandomVector(1))
+end
+ 
+function InvasionMode:spawn_greevil()
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+	
+ 
+	point = Entities:FindByName( nil, "techies_end_point"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_greevil", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit.respawn = false	
+	unit:SetForwardVector(RandomVector(1))
+end
 
 
 function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
-	InvasionMode:ThemeMusic()
- 
+ 	InvasionMode:ThemeMusic()
+ --[[ 
+	Timers:CreateTimer(0,function()
+	EmitGlobalSound("christmas_boss_begin")
+	end)
+ 	Timers:CreateTimer(12,function()
+   InvasionMode:spawn_christmas_boss()
+	end)
+ ]]
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
         InvasionMode:ZombieNight1()  
@@ -175,7 +280,21 @@ function InvasionMode:InvasionGameStart()
 	end)
 
  --40 минута, конец 4ей ночи, день
-	Timers:CreateTimer(2400,function()
+ 	Timers:CreateTimer(2400,function()
+ 
+ 
+ if Christmas_night == 0 then
+ InvasionMode:UsuallyEnd() 
+elseif Christmas_night == 1 then
+	InvasionMode:ChristmasEnd()
+end
+ end)
+end
+
+function InvasionMode:UsuallyEnd()  
+ -- Обычнй конец
+ 	Timers:CreateTimer(0,function()
+		--[[ 
 	    xuitat3 = RandomInt(1,3)
         print(xuitat3)
 		if xuitat3 == 1 then
@@ -187,60 +306,64 @@ function InvasionMode:InvasionGameStart()
 		else
 	 	    EmitGlobalSound("Sergey")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - АМ ФП</font>", 0, 0) 
-        end			
+        end	
+        ]]		
+        	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
+		    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
 	end)  
 	
-	Timers:CreateTimer(2448,function()
+	Timers:CreateTimer(48,function()
 		GameRules:SendCustomMessage("#laughter", 0, 0)
 	end)
 
-	Timers:CreateTimer(2449,function()
+	Timers:CreateTimer(49,function()
 		GameRules:SendCustomMessage("#laughter", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_2", 0, 0) 
 														    		 
 	end)
 	
-	Timers:CreateTimer(2450,function()
+	Timers:CreateTimer(50,function()
 		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
-	Timers:CreateTimer(2451,function()
+	Timers:CreateTimer(51,function()
 	    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_6", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
-	Timers:CreateTimer(2452,function()
+	Timers:CreateTimer(52,function()
 		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
 	end)
 	
-	Timers:CreateTimer(2453,function()
+	Timers:CreateTimer(53,function()
 		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_7", 0, 0) 
 		GameRules:SendCustomMessage("#laughter_8", 0, 0) 
 	end)
 	
-	Timers:CreateTimer(2460,function()
+	Timers:CreateTimer(60,function()
 		    EmitGlobalSound("Asgore_Intro_classic")
 	end)
 	
  
 	
-	Timers:CreateTimer(2462, function() GameRules:SendCustomMessage("#begining_1",0,0) end)
+	Timers:CreateTimer(62, function() GameRules:SendCustomMessage("#begining_1",0,0) end)
 	
-	Timers:CreateTimer(2470, function() GameRules:SendCustomMessage("#begining_2",0,0) end)
+	Timers:CreateTimer(70, function() GameRules:SendCustomMessage("#begining_2",0,0) end)
 	
-	Timers:CreateTimer(2478, function() GameRules:SendCustomMessage("#begining_3",0,0) end)
+	Timers:CreateTimer(78, function() GameRules:SendCustomMessage("#begining_3",0,0) end)
 	
-	Timers:CreateTimer(2480,function()
+	Timers:CreateTimer(80,function()
        InvasionMode:spawn_last_boss()
 	end)
 	
-	Timers:CreateTimer(2450,function()
+	Timers:CreateTimer(50,function()
+		--[[
 				if xuitat3 == 1 then
 	 	    StopGlobalSound("Invasion.Castaways")    
  
@@ -251,12 +374,37 @@ function InvasionMode:InvasionGameStart()
 	 	    StopGlobalSound("Sergey")
  
         end	
-	   
+	   ]]
+	  StopGlobalSound("Bobby Helms - Jingle bell")
 	end)
- 
- 
 end
+ 
+ function InvasionMode:ChristmasEnd()  
+ -- Новогодний конец
+InvasionMode:ChristmasMusic()
+  
+	Timers:CreateTimer(0, function() GameRules:SendCustomMessage("#christmas_night_1",0,0) end)
+	Timers:CreateTimer(220, function() GameRules:SendCustomMessage("#christmas_night_2",0,0) end)
 
+	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+    for i = 1, #allBuildings, 1 do
+        local building = allBuildings[i]
+        building:AddAbility("penguins") 
+  
+ 
+ end
+	Timers:CreateTimer(225, function()  
+ InvasionMode:spawn_greevil()
+end)
+	Timers:CreateTimer(300,function()
+  		 self:SpawnZombie("npc_classic_wave_zombie",18)        
+	end)  
+
+ 	Timers:CreateTimer(660,function()
+  InvasionMode:spawn_christmas_boss()
+  end) 
+ end
+  
 
 function InvasionMode:ZombieNight1()  
  -- 1 НОЧЬ
@@ -547,6 +695,90 @@ function InvasionMode:ZombieNight3()
  
 end
 
+function InvasionMode:ChristmasNight4()  
+   -- 4 НОЧЬ 
+  
+    local wave_4 = 0
+	
+  	Timers:CreateTimer(0,function()
+		 self:SpawnZombie("npc_classic_wave_pudge",16)
+		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
+	end)
+	
+	Timers:CreateTimer(0, function()
+	     while wave_4 < 26 do
+			 wave_4 = wave_4 + 1
+			 
+			 local unit_count = 5 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+		     return 10
+		 end			 
+	end)
+
+	
+	Timers:CreateTimer(260, function()
+	     while wave_4 < 29 do
+			 wave_4 = wave_4 + 1
+			 
+			 local unit_count = 1 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+		     return 10
+		 end			 
+	end)
+
+	Timers:CreateTimer(0, function()
+	    while wave_4 < 26 do 
+		     local unit_count = 3 * (1 + wave_4%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
+			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     return 30
+		end
+	end)
+
+
+	Timers:CreateTimer(260, function()
+	    while wave_4 < 29 do 
+		     local unit_count = 1 * (1 + wave_4%2)
+			 
+		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
+			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     return 30
+		end
+	end)
+
+	Timers:CreateTimer(35, function()
+	     while wave_4 <  28 do 
+		     self:SpawnZombie("npc_zombie_toxic_4",1)
+		 return 35
+		 end
+	end)
+ 
+  	Timers:CreateTimer(90, function()
+	     while wave_4 <  29 do 
+		     self:SpawnZombie("npc_seerdying_4",1)
+		 return 90
+		 end
+	end)	
+	
+
+  
+	
+	Timers:CreateTimer(210,function()
+		 self:SpawnZombie("npc_undying_4",1)
+	end)
+ 
+	
+ 
+	
+ 	Timers:CreateTimer(260,function()
+		 self:SpawnFlash("npc_flash_golem_3")
+	end) 
+ 
+ 
+end
+
+
 function InvasionMode:SpawnZombie(unit_name, unit_count)
 	local points = Entities:FindAllByName("zombie_spawner")
 
@@ -557,6 +789,7 @@ function InvasionMode:SpawnZombie(unit_name, unit_count)
 	end
 end
 
+ 
 function InvasionMode:SpawnFlash(unit_name)
 	local point = nil  -- отвечает за то, где появиться свинья
 	local unit = nil  -- Кто появиться
@@ -775,9 +1008,23 @@ function InvasionMode:InvasionEntityKilled (data)
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
      EndGame:GoodEnd()
+     	   GameRules:SetTimeOfDay(0.25)
 end
+
+if killedEntity:GetUnitName() == "npc_christmas_boss" then
+     EndGame:GoodEnd()
+     	   GameRules:SetTimeOfDay(0.25)
+end
+
+if killedEntity:GetUnitName() == "npc_boss_dead_pig" then
+      EmitGlobalSound("vurdalak_1")
+end
+
+ 
+
  
 if killedEntity:GetUnitName() == "npc_classic_pig" then
+ 
 pig_count = pig_count+1
     if pig_count == 30 then
 	    GameRules:SendCustomMessage("#big_bo_1",0,0)
@@ -815,16 +1062,16 @@ end
        elseif killedEntity:GetUnitName() == "npc_classic_wave_big_zombie"		then 	GiveGoldPlayers(5)
         elseif killedEntity:GetUnitName() == "npc_classic_wave_ghoul"		then 	GiveGoldPlayers(10)      
 	   elseif killedEntity:GetUnitName() == "npc_classic_wave_pudge"		then 	GiveGoldPlayers(15)
-	     elseif killedEntity:GetUnitName() == "npc_classic_new_years"		then 	GiveGoldPlayers(25)
-       elseif killedEntity:GetUnitName() == "npc_classic_new_years_ancient"		then 	GiveGoldPlayers(3100)
         elseif killedEntity:GetUnitName() == "npc_classic_wave_ghoul"		then 	GiveGoldPlayers(10)      
 	   elseif killedEntity:GetUnitName() == "npc_classic_wave_pudge"		then 	GiveGoldPlayers(15)
+	     elseif killedEntity:GetUnitName() == "npc_classic_new_years"		then 	GiveGoldPlayers(25)
+       elseif killedEntity:GetUnitName() == "npc_classic_new_years_ancient"		then 	GiveGoldPlayers(3100)
 	end
  
  
 
 
-
+--[[ 
 	if killedEntity:IsCreature() then
 		if killedEntity.respawn  then
 			if killedEntity.nightZombie then
@@ -937,8 +1184,21 @@ end
         	end
 		end
 
-	end
 
+
+
+
+    if killedEntity:GetUnitName() == "npc_mini_elka_1" or killedEntity:GetUnitName() == "npc_mini_elka_2" or killedEntity:GetUnitName() == "npc_mini_elka_3" or killedEntity:GetUnitName() == "npc_mini_elka_4" or killedEntity:GetUnitName() == "npc_mini_elka_5" or killedEntity:GetUnitName() == "npc_mini_elka_6" then
+			for i = 1, 1 do
+            	self:CreateDrop("item_undying_heart", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
+        	end
+		end
+
+ 
+
+
+	end
+]]
 
 end
  
@@ -949,10 +1209,12 @@ function InvasionMode:CreateDrop (itemName, pos)
    newItem:LaunchLoot(false, 300, 0.75, pos + RandomVector(RandomFloat(50, 350)))
 end
 
+ 
 
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
+    	--[[
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
   		    "Ula - Cannabis",
@@ -960,6 +1222,13 @@ function InvasionMode:ThemeMusic()
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
     	},
+  ]]
+   [1] = {
+ "Merry - Christmas Jingle Bells",  
+  "Jingle Вells" ,
+  "Lofi Origin - Jingle Bells Lo Fi Chill",
+  },
+      	--[[
     	[2] = {
   		    "Серега пират - АМ ФП", 
   		    "Life - Larson",
@@ -969,6 +1238,14 @@ function InvasionMode:ThemeMusic()
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
   		    "Boulevard of Broken Dreams - Green Day", 		
     	},
+    	]]
+    	[2] = {
+  		    "Aurélie - Jingle Bells", 
+  		    "Ансамбль Детские Песни - Три белых коня",
+  		    "Дискотека Авария - Новогодняя",
+ 
+    	},
+    	    	--[[
     	[3] = {
   		    "Lana Del Rey - Summertime Sadness (smoke remix)",
   		    "I Follow Rivers - Lykke Li",
@@ -981,19 +1258,35 @@ function InvasionMode:ThemeMusic()
   		    "John  Newman - Fire In Me",
   		    "iSpy - KYLE feat. Lil Yachty",
     	},
+    	]]
+     	[3] = {
+  		    "Дима Билан - Новый Год с новой строчки",
+  		    "ABBA - Happy New Year",
+  		    "O Liebert - Jinggle Bells",  
+  		    "WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS",
+    	},
+    	   	    	--[[
      	[4] = {
 		"RSAC - NBA",
 		"Daved Guetta - Would I Lie To You",
 		 "Sia - Chandelier",
 		"Does It Matter - Janieck",	  			
     	},
+    	]]
+     	[4] = {
+		"Jinggle bells - Remix",
+		"Wham! - Last Christmas",
+ 		
+    	},
     }
  
  	night_music =
  	{
+--[[
  		[1] = {
 			"Undertale - Respite",
 		},
+
  		[2] = {
 	 		"C418-Key",
  		},
@@ -1005,6 +1298,22 @@ function InvasionMode:ThemeMusic()
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
  		},
+]]
+ 		[1] = {
+			"Кошмар перед рождеством - End Title",
+		},
+
+ 		[2] = {
+	 		"Dinah Washington - Silent Night",
+ 		},
+ 		[3] = {
+			"Кошмар перед рождеством - Oogie Boogie39s Song",
+ 		},
+ 		[4] = {
+	 		"Кошмар перед рождеством - Making Christmas",
+ 
+ 		},
+
  	}
  	local last_music = nil
 
@@ -1019,10 +1328,33 @@ function InvasionMode:ThemeMusic()
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
 	    	print("night time")
+
+           
+ 	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+ 
+ 	    	    
+ 	    	     	         
+ 	    	    
+ 	    	      for i = 1, #allBuildings, 1 do
+        local building = allBuildings[i]
+        building:AddNewModifier(building, nil, 'modifier_invulnerable', {}) 
+ 
+ 
+ 
+    end
+   
 	    else
 	    	music = day_music[current_day]
 	    	time_until_end = 300 - day_time
 	    	print("day time")
+	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+    for i = 1, #allBuildings, 1 do
+        local building = allBuildings[i]
+        building:RemoveModifierByName('modifier_invulnerable')
+  
+ 
+ 
+    end
 	    end
 
 		print("time until night = "..time_until_end)
@@ -1071,13 +1403,121 @@ function InvasionMode:ThemeMusic()
 	    	return time_until_end+1
 	    end
 
+ 
+ 
 	    Sounds:CreateGlobalLoopingSound( current_music )
+ 
+ 
 	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
 	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
 	    last_music = current_music 
 
 	    return Sounds:GetSoundDuration(current_music)		    
 	end)
+ end
+ function InvasionMode:ChristmasMusic()
+	day_music =
+    { 	
+ 
+     	[1] = {
+		"Jinggle bells - Remix",
+		"Wham! - Last Christmas",
+ 		
+    	},
+    }
+ 
+ 	night_music =
+ 	{
+ 
+ 		[1] = {
+	 		"Кошмар перед рождеством - Making Christmas",
+ 
+ 		},
+
+ 	}
+ 
+
+	Timers:CreateTimer(0,function()
+	    local time = GameRules:GetDOTATime(false, false)
+	    local day_time = GameRules:GetDOTATime(false, false)%600
+	    local current_day =  math.floor(time/600)+1
+	    local music 
+	    local time_until_end
+
+	    if day_time > 300 then
+	    	music = night_music[current_day]
+	    	time_until_end = 600 - day_time
+	    	print("night time")
+ 
+ 
+ 
+ 
+ 
+   
+	    else
+	    	music = day_music[current_day]
+	    	time_until_end = 300 - day_time
+	    	print("day time")
+ 
+	    end
+
+		print("time until night = "..time_until_end)
+ 
+
+	    local current_music = nil
+	    local longest_music = music[1]
+	    local longest_music_len = Sounds:GetSoundDuration(music[1])
+	    local shortest_music = music[1]
+	    local shortest_music_len = Sounds:GetSoundDuration(music[1])
+	    local midle_music = music[1]
+	    local midle_music_len = Sounds:GetSoundDuration(music[1])
+	    local available_music = {}
+
+	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
+	    for _,sound in pairs(music) do
+	    	local music_len = Sounds:GetSoundDuration(sound)
+	    	if music_len > longest_music_len then
+	    		longest_music_len = music_len
+	    		longest_music = sound
+	    	elseif music_len < shortest_music_len then
+	    		shortest_music_len = music_len
+	    		shortest_music = sound
+			elseif music_len < longest_music_len and music_len > shortest_music_len then
+			     midle_music_len = music_len
+				 midle_music = sound
+	    	end
+	    end
+	    print("longest_music = "..longest_music)
+	    print("longest_music len= "..longest_music_len)
+	    print("shortest_music = "..shortest_music)
+	    print("shortest_music len= "..shortest_music_len)
+
+	    if time_until_end >= shortest_music_len then
+	    	for _, sound in pairs(music) do
+	    		local music_len = Sounds:GetSoundDuration(sound)
+	    		if music_len <= time_until_end then
+	    			table.insert(available_music, sound)
+	    			print(string.format("sound name = %s",sound))
+	    		end
+	    	end
+	    	current_music = available_music[RandomInt(1, #available_music)]
+	    else
+	    	return time_until_end+1
+	    end
+
+ 
+ 
+	    Sounds:CreateGlobalLoopingSound( current_music )
+ 
+ 
+	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
+	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
+ 
+
+	    return Sounds:GetSoundDuration(current_music)		    
+	end)
+ 
+
 end
 
  

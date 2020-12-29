@@ -43,7 +43,11 @@
 	   "ending_7"                                                  "<font color='#58ACFA'>And the village begins to live so long and happy !</font>"
 	   "ending_8"                                                  "<font color='#58ACFA'>Zombies more didn't go to the village .</font>"
 	   "ending_9"                                                  "<font color='#58ACFA'>But of course it for the next time)))</font>"
-	   
+
+       // ******************** Messages Christmas ********************
+	   "christmas_night_1"			                                    	"<font color='#fffacd'>You have a day to end your does  !</font>"	
+	   "christmas_night_2"			                                    	"<font color='#fffacd'>The harbinger of Christmas is coming!</font>"		   
+	   	   
 		// ******************** heroes ********************
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
@@ -120,13 +124,26 @@
 		"npc_tombstone3"                                                	"Tombstone"
 		"npc_tombstone4"                                                	"Tombstone"
 
+
+
+
+		"npc_penguin"                                                         "Penguin"
+		"npc_penguin_2"	                                                    "Penguin"
+		"npc_penguin_3"                                                 "Penguin"
+		"npc_penguin_4"                                                 "Penguin"
+		"npc_mini_elka_1"                                                 "mini christmas tree"				
+		"npc_mini_elka_2"                                                 "mini christmas tree"
+		"npc_mini_elka_3"	                                                	"mini christmas tree"
+		"npc_mini_elka_4"	                                                	"mini christmas tree"
+		"npc_mini_elka_5"	                                                	"mini christmas tree"
+		"npc_mini_elka_6"	                                                	"mini christmas tree"
+		"npc_main_elka"	                                                	"Main christmas tree"
 		"npc_greevil"                                                	"Golden greevil"
 		"npc_classic_new_years"                                                	"Frozen zombie"
 		"npc_classic_new_years_lich"                                                	"Chilling Horror"
 		"npc_classic_new_years_winterwyvern"                                                	"Winged Harbinger of Cold"
 		"npc_classic_new_years_ancient"                                                	"A particle of ice from ancient times"
-		"npc_classic_new_years_seer"                                                	"Winter eyes"		
-
+		"npc_classic_new_years_seer"                                                	"Winter eyes"	
 
 		// ******************** Предметы********************
 		
@@ -178,6 +195,11 @@
 		
 		"DOTA_Tooltip_Ability_item_bag_of_gold_pig"							"Gold of pig"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_pig_Description"				"Somebody said that if you take a lot of this gold you will be pig!"
+
+
+		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant"							"Infected gold"
+		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant_Description"				"This gold smell like rot and... seeds?"
+
 
 		"DOTA_Tooltip_Ability_item_tesla"								"Tesla"
 		"DOTA_Tooltip_Ability_item_tesla_Description"					"Passive: Alternating current - for melee heroes grants each attack a chance to hit nearby targets current and stun them. Discharge deals magic damage equal to  the damage of the attacker.\nPassive: Damage Block - blocks 50 any incoming damage from each attack.\n\nDo not combine with Battlefury and not stackable."
@@ -379,7 +401,35 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_attack_speed"                  "+$attack"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
+
+
+
+
+
+		"DOTA_Tooltip_Ability_item_letter"							"Letter for Santa"
+		"DOTA_Tooltip_Ability_item_letter_Description"				"<h1>Active: Put under christmas tree</h1>This letter usually put under main christmas tree to Santa give presents. Somebody said, that if under christmas tree will be big number of letters then Santa himself will give presents!"
+		"DOTA_Tooltip_Ability_item_letter_Lore"							"These letters are saved very good taking into account what happened... It is miracle!"	
+
+		"DOTA_Tooltip_modifier_greevil" "Number of gifts"
+		"DOTA_Tooltip_Ability_greevil" "Gifts!"
+		"DOTA_Tooltip_Ability_greevil_Description" "How many gifts will you get?"
+
+		"DOTA_Tooltip_Ability_item_bonus_health"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_health_Description"							"<h1>Active: Happy new year!</h1> It gives 20 hp on forever!"
 		
+		"DOTA_Tooltip_Ability_item_bonus_health_regen"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 0.45 hp regen on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana_regen"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 0.45 mana regen on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_mana_Description"							"<h1>Active: Happy new year!</h1> It gives 20 mana on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_damage"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_damage_Description"							"<h1>Active: Happy new year!</h1> It gives 4 damage on forever!"	
+
+
 // ******************** квесты ********************
 		"DOTA_Tooltip_Ability_quest_test01"										"Swinish case"
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Ohhh... how I want to meat. Hey, men can you give me meat? There is pig so close kill their and give me meat."
@@ -934,10 +984,6 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_damage_min"				"MIN DAMAGE:"
 		"DOTA_Tooltip_Ability_range_magick_attack_damage_max"				"MAX DAMAGE:"
 
-		"DOTA_Tooltip_modifier_greevil" "Number of gifts"
-		"DOTA_Tooltip_Ability_greevil" "Gifts!"
-		"DOTA_Tooltip_Ability_greevil_Description" "How many gifts will you get?"
-
 		"DOTA_Tooltip_Ability_range_boss_magick_attack"						"Magick Damage"
 		"DOTA_Tooltip_Ability_range_boss_magick_attack_Description"			"Auto-attacks of this creature do magic damage."
 		"DOTA_Tooltip_Ability_range_boss_magick_attack_damage_min"			"MIN DAMAGE:"
@@ -958,6 +1004,16 @@
 
 		"DOTA_Tooltip_Ability_ghost_elusive_3"								"Devourer"
 		"DOTA_Tooltip_Ability_ghost_elusive_3_Description"					"This creature has no flesh. You will miss in %miss%%  case on him."
+
+		"DOTA_Tooltip_Ability_range_magick_attack_4"							"Magick Damage"
+		"DOTA_Tooltip_Ability_range_magick_attack_4_Description"				"Auto-attacks of this creature do magic damage."
+		"DOTA_Tooltip_Ability_range_magick_attack_4_damage_min"				"МИН. УРОН:"
+		"DOTA_Tooltip_Ability_range_magick_attack_4_damage_max"				"МАКС. УРОН:"
+
+		"DOTA_Tooltip_Ability_range_magick_attack_5"							"Magick Damage"
+		"DOTA_Tooltip_Ability_range_magick_attack_5_Description"				"Auto-attacks of this creature do magic damage."
+		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_min"				"MIN DAMAGE:"
+		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"MAX DAMAGE:"	
 
 
 		"DOTA_Tooltip_Ability_mutant_dismemberment"							"Dismemberment"
@@ -1056,6 +1112,19 @@
 
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff"						"Rot"	
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff_Description"							"How longer you are smelling it, then more you feel so bad."		
+
+
+
+
+
+
+
+		"DOTA_Tooltip_Ability_main_elka"										"The holiday is coming to us"
+		"DOTA_Tooltip_Ability_main_elka_Description"							"Santa today don't like place with big number of people. But if you as follow will ask then maybe he come:)"
+
+
+ 		"DOTA_Tooltip_modifier_item_letter"												"Letters under christmas tree"
+		"DOTA_Tooltip_modifier_item_letter_Description"									"Than more here letters more chance to appear Santa"
 		
 		// ******************** MODIFIERS ********************
 		
@@ -1126,11 +1195,13 @@
     	"dota_hud_error_full_inventory"                    						"Say him to he be less fat"
     	"dota_hud_error_havent_charges"                    						"just end"
     
+
+       	"dota_hud_error_letter_bad_target"                    					"It can use only on Main christmas tree!"
 		// ******************** Обучалка: ********************
 
 
 		"head_wisp"					"SoSi"
-		"head_blood"					"What do are you doing? Do you want to know something about the custom? Suck my dick!"		
+		"head_blood"					"What are you doing? Do you want to know something about the custom? Suck my dick!"		
 		"Info1"						"Info 1"
 		"Info2"						" "	    
 

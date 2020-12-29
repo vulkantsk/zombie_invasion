@@ -3,7 +3,9 @@
 	"Language"		"russian"
 	"Tokens"
 	{		
-		"music_toggle"                                              "Включить/отключить музыку в игре"
+
+		"music_toggle"                                              "Включить/отключить музыку"
+
 		"sss"                                               	""
 
 	    		"dota_game_end_victory_title_radiant"	"Деревня защищена!"
@@ -13,8 +15,6 @@
 		"DOTA_GameMode_15" 				"Нашествие зомби"	
 		
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
-
-
  		
        // ******************** Messages ********************
 	   
@@ -45,7 +45,11 @@
 	   "ending_7"                                                  "<font color='#58ACFA'>И деревня жила долго и счастливо!</font>"
 	   "ending_8"                                                  "<font color='#58ACFA'>Зомби больше не приходили в деревню.</font>"
 	   "ending_9"                                                  "<font color='#58ACFA'>Но это конечно до следующего раза))</font>"
-	   
+
+       // ******************** Messages Christmas ********************
+	   "christmas_night_1"			                                    	"<font color='#fffacd'>У вас есть еще день, чтобы закончить дела в этом году!</font>"	
+	   "christmas_night_2"			                                    	"<font color='#fffacd'>Предвестник рождества приближается!</font>"		   
+
 		// ******************** heroes ********************
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
@@ -117,12 +121,28 @@
 		"npc_tombstone3"                                                	"Томба"
 		"npc_tombstone4"                                                	"Томба"
 
+
+
+
+
+
+		"npc_penguin"                                                         "Пингвин"
+		"npc_penguin_2"	                                                    "Пингвин"
+		"npc_penguin_3"                                                 "Пингвин"
+		"npc_penguin_4"                                                 "Пингвин"
+		"npc_mini_elka_1"                                                 "Мини-елка"				
+		"npc_mini_elka_2"                                                 "Мини-елка"
+		"npc_mini_elka_3"	                                                	"Мини-елка"
+		"npc_mini_elka_4"	                                                	"Мини-елка"
+		"npc_mini_elka_5"	                                                	"Мини-елка"
+		"npc_mini_elka_6"	                                                	"Мини-елка"
+		"npc_main_elka"	                                                	"Главная Елка"
 		"npc_greevil"                                                	"Золотой валенок"
 		"npc_classic_new_years"                                                	"Застывший зомби"
 		"npc_classic_new_years_lich"                                                	"Леденящий кровь Ужас"
 		"npc_classic_new_years_winterwyvern"                                                	"Крылатый предвестник холода"
 		"npc_classic_new_years_ancient"                                                	"Частица льда древнейших времён"
-		"npc_classic_new_years_seer"                                                	"Глаза зимы"								
+		"npc_classic_new_years_seer"                                                	"Глаза зимы"	
 
 		// ******************** Предметы********************
 		
@@ -177,6 +197,9 @@
 		
 		"DOTA_Tooltip_Ability_item_bag_of_gold_pig"							"Свинское золото"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_pig_Description"				"Говорят, что если возьмешь слишком много этого золота, то превратишься в свинью!"
+
+		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant"							"Зараженное золото"
+		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant_Description"				"Это золото пахнет гнилью ииииии.... зерном?"
 
 		"DOTA_Tooltip_Ability_item_tesla"								"Tesla"
 		"DOTA_Tooltip_Ability_item_tesla_Description"					"Пассивная: Alternating current - при атаке дает шанс героям ближнего боя ударить током соседние цели и оглушить их. Разряды наносят магический урон равный урону атакующего.\nПассивная: Damage Block - блокирует 50 любого входящего урона от каждой атаки.\n\nНе сочетается с Battlefury и не стакается."
@@ -381,7 +404,34 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_attack_speed"                  "+$attack"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
+
+
+
+
+
+		"DOTA_Tooltip_Ability_item_letter"							"Письмо Деду Морозу"
+		"DOTA_Tooltip_Ability_item_letter_Description"				"<h1>Активная: Положить под елку</h1>Это письмо обычно ложили под сааамую главную елку, чтобы Дедушка Мороз принес подарки. Говорят, что если писем было очень много, то Дед Мороз сам приходил выдавать подарки!"
+		"DOTA_Tooltip_Ability_item_letter_Lore"							"Эти письма сохранились очень хорошо, учитывая что произошло... Это просто чудо!"	
+
+		"DOTA_Tooltip_Ability_item_bonus_health"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_health_Description"							"<h1>Активная: С новым годом!</h1> Дает 20 хп навсегда!"
 		
+		"DOTA_Tooltip_Ability_item_bonus_health_regen"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 0.45 хп регена навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana_regen"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Активная: С новым годом!</h1> Дает 0.45 маны регена навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_mana_Description"							"<h1>Активная: С новым годом!</h1> Дает 20 маны навсегда!"
+
+		"DOTA_Tooltip_Ability_item_bonus_damage"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_damage_Description"							"<h1>Активная: С новым годом!</h1> Дает 4 урона навсегда!"	
+
+"DOTA_Tooltip_modifier_greevil" "Число подарков"
+"DOTA_Tooltip_Ability_greevil" "Подарки!"
+"DOTA_Tooltip_Ability_greevil_Description" "Сколько же подарков вам достанется?"
+
 // ******************** квесты ********************
 		"DOTA_Tooltip_Ability_quest_test01"										"Свинские дела"
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Ох, как же  хочеться сейчас мяска. Путник, не мог бы ты принести его? Здесь не подалеку есть свиньи, убей их и я вознагражу тебя."
@@ -794,10 +844,7 @@
 
 "DOTA_Tooltip_modifier_axe_solo" "FOREVER ALONE"
 "DOTA_Tooltip_modifier_axe_solo_Description" "Число союзников находящиеся рядом с аксом( сам Axe тоже считается )"
-
-"DOTA_Tooltip_modifier_greevil" "Число подарков"
-"DOTA_Tooltip_Ability_greevil" "Подарки!"
-"DOTA_Tooltip_Ability_greevil_Description" "Сколько же подарков вам достанется?"
+ 
 	
 		// -----------------timber--------------------	
 
@@ -974,6 +1021,11 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_2_damage_min"				"МИН. УРОН:"
 		"DOTA_Tooltip_Ability_range_magick_attack_2_damage_max"				"МАКС. УРОН:"
 
+				"DOTA_Tooltip_Ability_range_magick_attack_3"							"Magick Damage"
+		"DOTA_Tooltip_Ability_range_magick_attack_3_Description"				"Автоатаки этого существа наносят магический урон."
+		"DOTA_Tooltip_Ability_range_magick_attack_3_damage_min"				"МИН. УРОН:"
+		"DOTA_Tooltip_Ability_range_magick_attack_3_damage_max"				"МАКС. УРОН:"
+
 		"DOTA_Tooltip_Ability_range_magick_attack_4"							"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_4_Description"				"Автоатаки этого существа наносят магический урон."
 		"DOTA_Tooltip_Ability_range_magick_attack_4_damage_min"				"МИН. УРОН:"
@@ -982,12 +1034,8 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_5"							"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_5_Description"				"Автоатаки этого существа наносят магический урон."
 		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_min"				"МИН. УРОН:"
-		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"МАКС. УРОН:"		
-
-				"DOTA_Tooltip_Ability_range_magick_attack_3"							"Magick Damage"
-		"DOTA_Tooltip_Ability_range_magick_attack_3_Description"				"Автоатаки этого существа наносят магический урон."
-		"DOTA_Tooltip_Ability_range_magick_attack_3_damage_min"				"МИН. УРОН:"
-		"DOTA_Tooltip_Ability_range_magick_attack_3_damage_max"				"МАКС. УРОН:"
+		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"МАКС. УРОН:"	
+		
 
 		"DOTA_Tooltip_Ability_range_magick_attack_boss"						"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_boss_Description"			"Автоатаки этого существа наносят магический урон."
@@ -1106,6 +1154,14 @@
 
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff"						"Rot"	
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff_Description"							"Чем дольше вы нюхаете это, тем хуже вам становится."		
+
+
+
+		"DOTA_Tooltip_Ability_main_elka"										"Праздник к нам приходит"
+		"DOTA_Tooltip_Ability_main_elka_Description"							"Дедушка мороз нынче, не очень любит людные места. Но если как следует его попросить, то может он и придет:)"
+ 
+ 
+
 		// ******************** MODIFIERS ********************
 		
  		"DOTA_Tooltip_modifier_no_heal"												"NO HEALING"
@@ -1132,7 +1188,20 @@
 
 		"DOTA_Tooltip_modifier_ghost_evasion"												"Бестелесность"
 		"DOTA_Tooltip_modifier_ghost_evasion_Description"									"По бестелесным существвам сложно попасть: 100 %% уклонеине"
+
+
 		
+
+
+
+
+
+ 		"DOTA_Tooltip_modifier_elka_bonus"												"С НОВЫМ ГОДОМ!"
+		"DOTA_Tooltip_modifier_elka_bonus_Description"									"За каждый стак вы получаете  <font color='#ffffff'>+5%% </font>к получаемому опыту и золоту"
+
+
+ 		"DOTA_Tooltip_modifier_item_letter"												"Письма под елкой"
+		"DOTA_Tooltip_modifier_item_letter_Description"									"Чем больше ты ложешь писем, тем больше Дед Мороз хочет прийти"
  
  
 		// ******************** ferm ********************
@@ -1182,11 +1251,13 @@
     	"dota_hud_error_havent_charges"                    						"It просто брбрббр-кончилась"
     	"dota_hud_error_bad_target"                    						"НЕВЕРНО ВЫБРАНА ЦЕЛЬ"
     
+
+    	"dota_hud_error_letter_bad_target"                    					"Письмо можно использовать только на главную елку!"
 		// ******************** Обучалка: ********************
 
 
-		"head_wisp"					"SoSi"
-		"head_blood"					"Что, хотел что-то узнать о игре?? А мне ПИХУЙ на тебя!"		
+		"head_wisp"					"удачи тебе:)"
+		"head_blood"					"С новым годом Славяне! Пусть в новом году, а что в новом году? Ладно("		
 		"Info1"						"Info 1"
 		"Info2"						" "	    
 
