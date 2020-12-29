@@ -1710,6 +1710,7 @@
 		"Ability4"					"ability_test_4"
 		"Ability5"					"ability_test_5"
 		"Ability6"					"ability_test_6"
+		"Ability7"					"ability_test_7"		
 
 		
 		// Armor

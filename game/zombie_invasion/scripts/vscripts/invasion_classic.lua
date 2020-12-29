@@ -815,6 +815,10 @@ end
        elseif killedEntity:GetUnitName() == "npc_classic_wave_big_zombie"		then 	GiveGoldPlayers(5)
         elseif killedEntity:GetUnitName() == "npc_classic_wave_ghoul"		then 	GiveGoldPlayers(10)      
 	   elseif killedEntity:GetUnitName() == "npc_classic_wave_pudge"		then 	GiveGoldPlayers(15)
+	     elseif killedEntity:GetUnitName() == "npc_classic_new_years"		then 	GiveGoldPlayers(25)
+       elseif killedEntity:GetUnitName() == "npc_classic_new_years_ancient"		then 	GiveGoldPlayers(3100)
+        elseif killedEntity:GetUnitName() == "npc_classic_wave_ghoul"		then 	GiveGoldPlayers(10)      
+	   elseif killedEntity:GetUnitName() == "npc_classic_wave_pudge"		then 	GiveGoldPlayers(15)
 	end
  
  

@@ -1614,6 +1614,76 @@
 		}
 
 	}
+
+		"range_magick_attack_4"
+	{
+		"BaseClass" 					"ability_datadriven"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "shadow_demon_disruption"
+	    "MaxLevel"                      "1"	
+	    	
+		// Special
+		//--------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_min"			"280"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_max"			"300"
+			}						
+		}
+
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_helper.lua"
+				"Function"		"ApplyModifierToUnit"
+				"ModifName"		"modifier_range_magick_attack"
+			}
+		}
+
+	}
+
+			"range_magick_attack_5"
+	{
+		"BaseClass" 					"ability_datadriven"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "shadow_demon_disruption"
+	    "MaxLevel"                      "1"	
+	    	
+		// Special
+		//--------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_min"			"400"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_max"			"450"
+			}						
+		}
+
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/ability_helper.lua"
+				"Function"		"ApplyModifierToUnit"
+				"ModifName"		"modifier_range_magick_attack"
+			}
+		}
+
+	}
 	
 	
 	"range_magick_attack_boss"
@@ -10037,6 +10107,20 @@
 
 	}
 
+	"ability_test_7"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/ability_test"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"AbilityTextureName"			"undying_tombstone"
+
+	}
+
+
 //-------------------------------------------------------------------------------
 //oracle 
 //-------------------------------------------------------------------------------
@@ -10956,4 +11040,16 @@
 			}
 		}
 	}
+
+		   "greevil"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/zombie/greevil"
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    }    
 }
