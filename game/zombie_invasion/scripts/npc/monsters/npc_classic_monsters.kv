@@ -5353,6 +5353,7 @@
 		}
 	}
 
+ 
 	//new years
 
 		"npc_classic_new_years"	
@@ -5400,37 +5401,11 @@
 		"BountyGoldMin"				"36"	
 		"BountyGoldMax"				"42"	
 
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"500"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"4000"
-		"StatusHealthRegen"			"50.0"
-		"StatusMana"				"0"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"5000"
-		"VisionNighttimeRange"		"5000"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
-		{
-			"DefaultState"       "Invade"
+		{	
+					"DefaultState"       "Invade"
 			"States"
 			{
 			    "Invade"
@@ -5452,6 +5427,132 @@
 				}				
 			}
 		}
+
+ 
+	"npc_christmas_boss"	
+	{
+		// General
+		//----------------------------------------------------------------
+		
+ 		"vscripts"                  "ai/ai_christmas_boss.lua"
+		
+		"Model"						"models/heroes/doom/doom.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Roshan"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"25"
+		"ModelScale" 				"1.7"
+		"ConsideredHero"			"1"
+		"IsAncient"					"1"
+		"IsBossMonster"				"1"	
+		"UseNeutralCreepBehavior" 	"0"
+ 
+		"HasInventory"              "1"
+		
+		"MinimapIcon"				"minimap_roshancamp"
+		"MinimapIconSize"			"950"
+
+		// Abilities
+		//----------------------------------------------------------------
+   	"Ability1"					"doom_bringer_infernal_blade"		
+ 		"Ability2"					"doom_doom_lua"
+ 		"Ability3"					"boss_blink_strike"
+ 		"Ability4"					"ghoul_crazy_look"
+	 	"Ability5"					"doom_devour_lua"
+ 		"Ability6"					"huskar_berserkers_blood_boss"
+ 		"Ability7"					"doom_mini"				
+ 		"Ability8"					"blood"	
+ 	"Ability9"                  "boss_thirst"
+ 	"Ability10"                  "phantom_assassin_phantom_strike_lua"
+ 	"Ability11"                  "attack_of_deactivating"
+  	"Ability12"    	                                 "christmas_boss_music"
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+		"MagicalResistance"         "95"
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"2350"					
+		"AttackDamageMax"			"2450"	
+		"AttackDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AttackRate"				"1.35"
+		"AttackAnimationPoint"		"0.5"				// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"	
+		"AttackRange"				"120"
+  
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"90"
+		"HealthBarOffset"			"495"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"500"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+ 
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"		// Speed.	
+ 
+		
+
+ 
+		"StatusHealth"				"4500"		// Base health.
+		"StatusHealthRegen"			"0"		// Health regeneration rate.
+		"StatusMana"				"2000"			// Base mana.
+		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1000"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1000"		// Range of vision at night time.
+ 
+
+		// Team
+		//----------------------------------------------------------------
+ 
+		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
+ 
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+			"DisableResistance"			"95.0"
+ 			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "6102" }
+					"Wearable1" { "ItemDef" "17985" }
+					"Wearable1" { "ItemDef" "17987" }
+					"Wearable1" { "ItemDef" "17988" }
+					"Wearable1" { "ItemDef" "17986" }
+					"Wearable1" { "ItemDef" "6506" }
+					"Wearable1" { "ItemDef" "9741" }
+ 				
+				}
+
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_radiance_christmas_boss"}
+				"2"            	{"Item"        "item_shivas_guard_christmas_boss"}
+				"3"            	{"Item"        "item_assault_christmas_boss"}  
+				"4"            	{"Item"        "item_sange_last"}
+
+			}				
+ 
+		
+ 
+		}
+
 	}
 
 		"npc_classic_new_years_lich"	
@@ -5687,73 +5788,33 @@
 		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
 		"Level"						"1"
 		"ModelScale" 				".9"
-
-		// Abilities
-		//----------------------------------------------------------------
 		"Ability1"					"ghoul_crazy_look"
 		"Ability2"					""
 		"Ability3"					"blood_effect"	
 		"Ability4"					"attack_of_deactivating"
 		"Ability5"		            "crystal_maiden_freezing_field"
-
-		// Armor
+ 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"90"
 		"MagicalResistance"         "95"
-
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+ 
 		"AttackDamageMin"			"2020"
 		"AttackDamageMax"			"2521"
 		"AttackRate"				"0.8"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
 		"AttackRange"				"225"
-	     
-
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"180"
+ 		
+ 		"BountyXP"					"180"
 		"BountyGoldMin"				"0"	
 		"BountyGoldMax"				"0"	
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+ 
 		"MovementSpeed"				"500"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"8325"
+ 		"StatusHealth"				"8325"
 		"StatusHealthRegen"			"100.0"
-		"StatusMana"				"0"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"5000"
-		"VisionNighttimeRange"		"5000"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-		// Creature Data
-		//----------------------------------------------------------------
-		"Creature"
+ 		"Creature"
 		{
+ 
 			"DefaultState"       "Invade"
 			"States"
 			{
@@ -5781,6 +5842,117 @@
 					"Wearable1" { "ItemDef" "7462" }
 					"Wearable1" { "ItemDef" "9462" }
 				}
+	 	}
+ 	
+	}
+	
+	
+	"npc_classic_mini_crampus"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/doom/doom.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_LifeStealer"
+		"GameSoundsFile"			"soundevents/game_sounds_life_stealer.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				"0.3"
+ 
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ghoul_crazy_look"
+ 		"Ability2"					"doom_bringer_infernal_blade_mini"
+		"Ability3"					"blood_effect"	
+		"Ability4"					"attack_of_deactivating"
+ 
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"70"
+		"MagicalResistance"         "80"
+ 
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+ 
+ 
+		"AttackDamageMin"			"340"
+		"AttackDamageMax"			"360"
+		"AttackRate"				"0.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"5000"
+		"AttackRange"				"90"
+ 
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+ 
+		"BountyXP"					"107"
+		"BountyGoldMin"				"16"	
+		"BountyGoldMax"				"20"	
+ 
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+ 
+		"MovementSpeed"				"750"	
+ 
+		
+
+		// Status
+		//----------------------------------------------------------------
+ 
+		"StatusHealth"				"3550"
+		"StatusHealthRegen"			"0.5"
+ 
+		"StatusMana"				"0"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"5000"
+		"VisionNighttimeRange"		"5000"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 
+			 			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "8502" }
+					"Wearable1" { "ItemDef" "8507" }
+					"Wearable1" { "ItemDef" "8504" }
+					"Wearable1" { "ItemDef" "8508" }
+					"Wearable1" { "ItemDef" "8505" }
+					"Wearable1" { "ItemDef" "8506" }
+					"Wearable1" { "ItemDef" "8503" }
+ 				
+				}
+									"OffensiveAbilities"
+			{
+				"Ability2"
+				{
+					"Name"					"doom_bringer_infernal_blade_mini"										
+				}
+				
+			}
 		}
 	}	
 
@@ -5811,13 +5983,72 @@
 		"ArmorPhysical"				"80"
 		"MagicalResistance"         "85"
 
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+				"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+
 		"AttackDamageMin"			"1500"
 		"AttackDamageMax"			"1717"
 		"AttackRate"				"0.5"
+
+		"BountyXP"					"860"
+		"BountyGoldMin"				"620"	
+		"BountyGoldMax"				"850"	
+
+ 
+		"MovementSpeed"				"500"	
+
+		"StatusHealth"				"6400"
+		"StatusHealthRegen"			"45"
+		"StatusMana"				"350"	
+
+		"VisionDaytimeRange"		"5000"
+		"VisionNighttimeRange"		"5000" 
+ 		"Creature"
+		{
+		
+					"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "12859" }
+                    "Wearable1" { "ItemDef" "12860" }
+                    "Wearable1" { "ItemDef" "12861" } 
+ 				
+				}
+ 	
+			
+         } 
+	}
+
+	"npc_classic_doom_crampus"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/warlock/golem/ahmhedoq/ahmhedoq.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_LifeStealer"
+		"GameSoundsFile"			"soundevents/game_sounds_life_stealer.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ghoul_crazy_look"
+		"Ability2"					"doom_aura"
+		"Ability3"					"blood_effect"	
+		"Ability4"					"attack_of_deactivating"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"95"
+		"MagicalResistance"         "80"
+ 
+
+		// Attack
+		//----------------------------------------------------------------
+ 
+		"AttackDamageMin"			"1120"
+		"AttackDamageMax"			"1430"
+		"AttackRate"				"0.75"
+ 
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
 		"AttackRange"				"90"
@@ -5830,27 +6061,33 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"860"
-		"BountyGoldMin"				"620"	
-		"BountyGoldMax"				"850"	
+ 
+		"BountyXP"					"107"
+		"BountyGoldMin"				"16"	
+		"BountyGoldMax"				"20"	
+ 
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"500"	
-		
+ 
+ 
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"6400"
-		"StatusHealthRegen"			"45"
-		"StatusMana"				"350"	
+ 
+		"StatusHealth"				"12680"
+		"StatusHealthRegen"			"150.0"
+		"StatusMana"				"0"	
+ 
 		"StatusManaRegen"			"0.0"		 
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
+ 
+		"VisionDaytimeRange"		"5000"
+		"VisionNighttimeRange"		"5000"
+ 
 
 
 		// Team
@@ -5859,20 +6096,7 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		
-		"Creature"
-		{
-		
-					"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "12859" }
-                    "Wearable1" { "ItemDef" "12860" }
-                    "Wearable1" { "ItemDef" "12861" } 
- 				
-				}
- 	
-			
-		}
+ 
 	}
 
 }

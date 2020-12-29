@@ -13,3 +13,7 @@ end
 function GenocideEnd(keys)
 	Sounds:RemoveGlobalLoopingSound( "Asgore_main_classic" )
 end
+ 
+function GenocideEndChristmas(keys)
+	Sounds:RemoveGlobalLoopingSound( "christmas_boss_theme" )
+end

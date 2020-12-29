@@ -8,9 +8,13 @@ function Spawn( entityKeyValues )
 	end
 
 	   GameRules:SetTimeOfDay(0.75)
-		hClawLungeAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_lunge" )
-		hClawAttackAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_attack" )  
-		hRaptureAbility = thisEntity:FindAbilityByName( "rupture_custom" )
+ 
+
+ 		hBlinkAbility = thisEntity:FindAbilityByName( "phantom_assassin_phantom_strike_lua" )
+		hEatAbility = thisEntity:FindAbilityByName( "doom_devour_lua" ) 		  
+
+		hAttackAbility = thisEntity:FindAbilityByName( "doom_bringer_infernal_blade" )
+ 
 		
  	hSpawner = Entities:FindByName( nil, "final_point" )
     local waypoint = Entities:FindByName( nil, "last_boss") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
@@ -26,47 +30,34 @@ function NeutralAutoCasterThink()
 	if GameRules:IsGamePaused() == true or GameRules:State_Get() == DOTA_GAMERULES_STATE_POST_GAME or thisEntity:IsAlive() == false then
 		return 1
 	end
-	 
+	
 	local npc = thisEntity
- 
+     local timee = 0
  
 	
 	-- Как далеко юнит находится от своей точки спавна ?
- 	local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), nil, 7500, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC , DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE, FIND_CLOSEST, false )
+ 	local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), nil, 15000000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE, FIND_CLOSEST, false )
  
  
  		local enemy = enemies[1]	-- врагом выбирается первый близжайший
-
+        
  
-  		if #enemies == 0   then
-
-	return MoveToTarget()
  
-	end	
 	 
-		if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.35 ) then 	
-	if hRaptureAbility ~= nil and hRaptureAbility:IsFullyCastable() then
- 
-		return   CastRapture()
-	end
-end
-	if hClawAttackAbility ~= nil and hClawAttackAbility:IsFullyCastable() then
- 
-		return  CastClawAttack( enemy )
-	end
-
- 
-  
-	 
- 
-
-		if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.9 ) then 		  
-		 
-		    if hClawLungeAbility ~= nil and hClawLungeAbility:IsFullyCastable() then
-			    	return  CastClawLunge( enemies[ RandomInt( 1, #enemies ) ] )
+		    if hBlinkAbility ~= nil and hBlinkAbility:IsFullyCastable() then
+			    	return  CastBlink ()
 		end
-		end
-
+ 
+	if hEatAbility ~= nil and hEatAbility:IsFullyCastable() then
+ 
+		return  CastEat( enemy )
+	end
+	if #enemies > 0 then
+	if hAttackAbility ~= nil and hAttackAbility:IsFullyCastable() then
+ 
+		return  CastAct( enemy )
+	end
+ end
 	 
 	return 0.5
 	
@@ -74,6 +65,20 @@ end
 
  
  
+function AttackMove( enemy )
+	if enemy == nil then
+		return
+	end
+--	print("ATTACK MOVE")
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),				--индекс кастера
+		OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,	-- тип приказа атака
+		Position = enemy:GetOrigin(),				-- пощиция врага
+		Queue = false,
+	})
+
+	return 1
+end
 
 function ItemAbilityCast( enemy )
 		ExecuteOrderFromTable({
@@ -86,39 +91,46 @@ function ItemAbilityCast( enemy )
 	return 1.5
 end
 
- 
- 
-function CastClawAttack( enemy )
+ function CastAct( enemy )
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
 		TargetIndex = enemy:entindex(),
-		AbilityIndex = hClawAttackAbility:entindex(),
+		AbilityIndex = hAttackAbility:entindex(),
 	})
-
+ 
 	return 1.00
 end
 
-function CastRapture()
+ 
+function CastBlink( enemy )
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
-		AbilityIndex = hRaptureAbility:entindex(),
+		AbilityIndex = hBlinkAbility:entindex(),
 	})
+	     local waypoint = Entities:FindByName( nil, "last_boss") 
+thisEntity:SetInitialGoalEntity( waypoint )
 
 	return 1.00
 end
 
-function CastClawLunge( enemy )
+function CastEat( enemy )
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-		AbilityIndex = hClawLungeAbility:entindex(),
-		Position = enemy:GetOrigin(),
+		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+		TargetIndex = enemy:entindex(),
+		AbilityIndex = hEatAbility:entindex(),
 	})
 
-	return 0.5
+	     local waypoint = Entities:FindByName( nil, "last_boss") 
+thisEntity:SetInitialGoalEntity( waypoint )
+	return 1.00
 end
+
+ 
+
+ 
 
 function MoveToTarget()
 	if hSpawner == nil then
