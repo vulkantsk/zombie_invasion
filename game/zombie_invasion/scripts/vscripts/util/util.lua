@@ -26,14 +26,6 @@ function GetMultipleBountyBonus(hUnit)
 	return bonus
 end 
 
- 
-function SetGoldMultiplier(unit, multiplier)
-
-    unit:SetMaximumGoldBounty(unit:GetMaximumGoldBounty() * multiplier)
-    unit:SetMinimumGoldBounty(unit:GetMinimumGoldBounty() * multiplier)
-
-end
-
 function SetLevelForSubAbility(main_ability, sub_ability_name, target, level_required, level_to_set)
 	local main_ability_level = main_ability:GetLevel()
 	local sub_ability = target:FindAbilityByName(sub_ability_name)

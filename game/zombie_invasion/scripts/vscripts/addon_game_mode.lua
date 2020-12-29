@@ -3,7 +3,7 @@
 ]]
 
 -- Required files to be visible from anywhere
- require ("item_drop")
+ 
 require( 'timers' )
 require( 'sounds' )
 require('util/util');

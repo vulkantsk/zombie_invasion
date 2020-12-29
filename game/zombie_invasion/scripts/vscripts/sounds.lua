@@ -3,12 +3,11 @@ Sounds = Sounds or {
   	playersStateMusic = {},
   	SoundDuration = {
 
-      ["Merry - Christmas Jingle Bells" ] = 135,
---  		["Akira Yamaoka – Never Forgive Me"] = 137,
---  		["Ula - Cannabis"] = 182,
---  		["Toby Fox – Once Upon a Time"] = 89,  
- -- 		["C418 - Sweden"] = 217,
- -- 		["Mase - Psycho"] = 192,  
+  		["Akira Yamaoka – Never Forgive Me"] = 137,
+  		["Ula - Cannabis"] = 182,
+  		["Toby Fox – Once Upon a Time"] = 89,  
+  		["C418 - Sweden"] = 217,
+  		["Mase - Psycho"] = 192,  
 		
   		["Серега пират - АМ ФП"] = 130,  
   		["Life - Larson"] = 69,

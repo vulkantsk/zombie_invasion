@@ -83,7 +83,7 @@
 		"Ability3"		"ursa_fury_swipes"
 		"Ability4"		"generic_hidden"
 		"Ability5"		"roshan_create_aegis"
-		"Ability6"		"ursa_enrage"
+		"Ability6"		"tb_swap"
         "Ability10"        "special_bonus_unique_ursa_5"
         "Ability11"        "special_bonus_mp_regen_2" 
         "Ability12"        "special_bonus_all_stats_12"
