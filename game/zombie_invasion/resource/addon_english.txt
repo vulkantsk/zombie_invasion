@@ -144,13 +144,15 @@
 		"npc_classic_new_years_winterwyvern"                                                	"Winged Harbinger of Cold"
 		"npc_classic_new_years_ancient"                                                	"A particle of ice from ancient times"
 		"npc_classic_new_years_seer"                                                	"Winter eyes"	
-
+		"npc_christmas_boss"	                                                	"Krampus"
+		"npc_classic_mini_crampus" 	                                                	"mini-krampus"
+        "npc_classic_doom_crampus" 	                                                	"Spawn of Hell"
 		// ******************** Предметы********************
 		
 		"DOTA_Item_Build_Starting_Items"						"Starting Items"
 		"DOTA_Item_Build_Early_Game"							"For the first night"
 		"DOTA_Item_Build_Core_Items"							"For the second night"
-		"DOTA_Item_Build_Luxury"								"For the third night"
+		"DOTA_Item_Build_Luxury"								"For the last night"
 		
 		
 
@@ -824,6 +826,10 @@
         "DOTA_Tooltip_Ability_pa_gds_Description"                                "Phantom Assassin concentrates his uncontrollable power, gaining a bonus damage for 6 seconds."
         "DOTA_Tooltip_Ability_pa_gds_dmg"                                        "DAMAGE MULTIPLIER:"
 
+		"DOTA_Tooltip_modifier_pa_gds"			"God strength"
+		"DOTA_Tooltip_modifier_pa_gds_Description"	"More damage"	
+
+
         "DOTA_Tooltip_Ability_pa_skill"                                            "Blur"
         "DOTA_Tooltip_Ability_pa_skill_Description"                                "Phantom Assassin gains evasion and movespeed bonuses."
         "DOTA_Tooltip_Ability_pa_skill_miss"                                        "%EVASION CHANCE:"
@@ -854,12 +860,15 @@
  
 	// -----------------TIdehunter--------------------
 
-		"DOTA_Tooltip_Ability_tide_health"                                            "More strength"
+		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "When the tide comes in, it gets stronger."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "SPENT HEALTH TO GET A STACK:"
-        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS STRENGTH PER STACK:"
+        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS HEALTH PER STACK:"
 
+		"DOTA_Tooltip_modifier_tide_health"												"More health"
+		"DOTA_Tooltip_modifier_tide_health_Description"									"I NEED MORE HP"
 
+// -----------------Tb--------------------
 "DOTA_Tooltip_Ability_tb_illusion_dd" "<font color='#ff4d4d'>Conjure Image</font>"
 "DOTA_Tooltip_Ability_tb_illusion_dd_Description" "Creates the illusion of the hero that deals damage."
 "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_duration" "DURATION OF ILLUSION:"

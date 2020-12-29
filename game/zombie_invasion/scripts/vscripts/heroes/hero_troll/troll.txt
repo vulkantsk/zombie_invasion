@@ -23,7 +23,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_stacks"			"12"
+				"max_stacks"			"12 13 14 15"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_2"
 			}
 		}
@@ -293,7 +293,7 @@
 	//=================================================================================================================
 	//  Troll Warlord: Battle Trance
 	//=================================================================================================================
-		"troll_warlord_battle_trance"
+	"troll_warlord_battle_trance"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -301,9 +301,12 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_TrollWarlord.BattleTrance.Cast"
- 
-        "HasScepterUpgrade"			"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"3"
+
+        "HasShardUpgrade"			"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -314,11 +317,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"90 80 70"
+		"AbilityCooldown"				"60"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"75"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -327,7 +330,8 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"trance_duration"		"6.5"		
+				"trance_duration"		"6.0 7.0 7.0"		
+				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_7"
 			}
 			"02"
 			{
@@ -337,12 +341,12 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attack_speed"			"175"
+				"attack_speed"			"140 170 200"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"movement_speed"		"30 35 40"
+				"movement_speed"		"40 45 50"
 			}
 			"05"
 			{

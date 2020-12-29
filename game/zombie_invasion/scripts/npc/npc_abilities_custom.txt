@@ -2554,6 +2554,7 @@
 		}
 	}
 	
+ 
 	"jakiro_macropyre"
 	{
 		// General
@@ -2569,11 +2570,11 @@
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Jakiro.Macropyre.Cast"
 
-		"HasScepterUpgrade"			"1"
+		"HasScepterUpgrade"   			"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"800"
+		"AbilityCastRange"				"600"
 		"AbilityCastPoint"				"0.55"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 
@@ -2583,7 +2584,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"220 330 440"		
+		"AbilityManaCost"				"330 440 550"		
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -2592,12 +2593,13 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"75 140 205"
+				"damage"					"85 145 205"
+				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_7"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cast_range"				"800"					
+				"cast_range"				"600"					
 			}
 			
 			"03"
@@ -2618,28 +2620,88 @@
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_scepter"			"125 185 225"
+				"damage_scepter"			"125 175 225"
 				"RequiresScepter"		"1"
 			}
 			"07"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"cast_range_scepter"		"1100"
-				"RequiresScepter"		"1"
+				"var_type"					"FIELD_FLOAT"
+				"linger_duration"			"2"
 			}
 			"08"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration_scepter"			"50"
+				"scepter_bonus_range"			"200"
 				"RequiresScepter"		"1"
 			}
 			"09"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"linger_duration"			"2"
+				"scepter_bonus_duration"			"12"
+				"RequiresScepter"		"1"
 			}
 			
 		}	
+	}
+	"jakiro_liquid_ice"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"553"											// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_DEAD"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_Jakiro.LiquidFire"
+		"MaxLevel"						"1"
+		"FightRecapLevel"				"1"
+		"IsGrantedByShard"			"1"
+		"HasShardUpgrade"				"1"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportBonus"		"35"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_slow" 		"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_damage" 		"85"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pct_health_damage" 		"1.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"425"
+			}
+		}		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	
 	"jakiro_liquid_fire"
@@ -7606,6 +7668,63 @@
 		}				
 	}
 
+	"tidehunter_anchor_smash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5120"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Tidehunter.AnchorSmash"
+
+        "HasShardUpgrade"               "1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"375"
+		"AbilityCastPoint"				"0.4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"7.0 6.0 5.0 4.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"30 40 50 60"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_damage"			"45 90 135 180"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_reduction"		"-15"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_3"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reduction_duration"	"3.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"375"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
 		"tidehunter_kraken_shell"
 	{
 		// General
@@ -10823,12 +10942,12 @@
             "01"
             {
                 "var_type"                          "FIELD_INTEGER"
-                "dmg_proc"                          "100"
+                "dmg_proc"                          "325"
             }
             "02"
             {
-                "var_type"                          "FIELD_INTEGER"
-                "str_per_stack"                      "1 2 3"
+                "var_type"                          "FIELD_FLOAT"
+                "str_per_stack"                      "1 1.5 2.0"
             }
 
         }
@@ -11564,5 +11683,5 @@
 		
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     } 
-    
+
 }

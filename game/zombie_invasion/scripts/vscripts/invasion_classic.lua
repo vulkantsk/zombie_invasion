@@ -233,7 +233,7 @@ function InvasionMode:spawn_greevil()
 	
  
 	point = Entities:FindByName( nil, "techies_end_point"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_greevil", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit = CreateUnitByName("npc_portal", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
 end
@@ -243,14 +243,8 @@ function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
  	InvasionMode:ThemeMusic()
- --[[ 
-	Timers:CreateTimer(0,function()
-	EmitGlobalSound("christmas_boss_begin")
-	end)
- 	Timers:CreateTimer(12,function()
-   InvasionMode:spawn_christmas_boss()
-	end)
- ]]
+  
+ 
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
         InvasionMode:ZombieNight1()  
@@ -379,30 +373,89 @@ function InvasionMode:UsuallyEnd()
 	end)
 end
  
+ function InvasionMode:ChristmassEror()  
+ -- Обычнй конец
+ 
+	Timers:CreateTimer(0,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+
+	Timers:CreateTimer(1,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	
+	Timers:CreateTimer(2,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(3,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(4,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(5,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(6,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(7,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(8,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(9,function()
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
+	end)
+	Timers:CreateTimer(15,function()
+		GameRules:SendCustomMessage('<font color="#58ACFA">PROTOCOL "The end of the world" WAS STARTED</font>', 0, 0)
+	end)
+ 
+	
+ 
+ 
+end
+
+
  function InvasionMode:ChristmasEnd()  
  -- Новогодний конец
 InvasionMode:ChristmasMusic()
-  
+   		EmitGlobalSound("ho_ho_ho")
 	Timers:CreateTimer(0, function() GameRules:SendCustomMessage("#christmas_night_1",0,0) end)
 	Timers:CreateTimer(220, function() GameRules:SendCustomMessage("#christmas_night_2",0,0) end)
 
-	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
-    for i = 1, #allBuildings, 1 do
-        local building = allBuildings[i]
-        building:AddAbility("penguins") 
-  
  
- end
 	Timers:CreateTimer(225, function()  
  InvasionMode:spawn_greevil()
 end)
 	Timers:CreateTimer(300,function()
-  		 self:SpawnZombie("npc_classic_wave_zombie",18)        
+  		 InvasionMode:ChristmasNight()       
 	end)  
 
- 	Timers:CreateTimer(660,function()
-  InvasionMode:spawn_christmas_boss()
-  end) 
+	Timers:CreateTimer(602,function()
+	EmitGlobalSound("christmas_ne_Bydet")
+	InvasionMode:ChristmassEror()
+	end)
+
+ 
+	Timers:CreateTimer(634,function()
+	EmitGlobalSound("christmas_boss_begin")
+	end)
+ 	Timers:CreateTimer(646,function()
+   InvasionMode:spawn_christmas_boss()
+	end)
+ 
  end
   
 
@@ -688,29 +741,30 @@ function InvasionMode:ZombieNight3()
 	
  
 	
- 	Timers:CreateTimer(260,function()
-		 self:SpawnFlash("npc_flash_golem_3")
-	end) 
+  	Timers:CreateTimer(260,function()
+		 self:SpawnZombie("npc_classic_wave_pudge",16)
+		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
+	end)
  
  
 end
 
-function InvasionMode:ChristmasNight4()  
+function InvasionMode:ChristmasNight()  
    -- 4 НОЧЬ 
   
     local wave_4 = 0
 	
   	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_pudge",16)
-		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
+		 self:SpawnZombie("npc_classic_new_years",12)
+		 self:SpawnGhost("npc_classic_new_years_lich",2)
 	end)
 	
 	Timers:CreateTimer(0, function()
 	     while wave_4 < 26 do
 			 wave_4 = wave_4 + 1
 			 
-			 local unit_count = 5 * (1 + wave_4%2)
-		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+			 local unit_count = 4 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_new_years", unit_count)
 		     return 10
 		 end			 
 	end)
@@ -720,18 +774,18 @@ function InvasionMode:ChristmasNight4()
 	     while wave_4 < 29 do
 			 wave_4 = wave_4 + 1
 			 
-			 local unit_count = 1 * (1 + wave_4%2)
-		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
+			 local unit_count = 4 * (1 + wave_4%2)
+		     self:SpawnZombie("npc_classic_new_years", unit_count)
 		     return 10
 		 end			 
 	end)
 
 	Timers:CreateTimer(0, function()
 	    while wave_4 < 26 do 
-		     local unit_count = 3 * (1 + wave_4%2)
+		     local unit_count = 2 * (1 + wave_4%2)
 			 
-		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
-			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     self:SpawnGhost("npc_classic_new_years_lich",unit_count)
+			 self:SpawnGhost("npc_classic_new_years_winterwyvern",1)
 		     return 30
 		end
 	end)
@@ -739,41 +793,35 @@ function InvasionMode:ChristmasNight4()
 
 	Timers:CreateTimer(260, function()
 	    while wave_4 < 29 do 
-		     local unit_count = 1 * (1 + wave_4%2)
+		     local unit_count = 2 * (1 + wave_4%2)
 			 
-		     self:SpawnGhost("npc_classic_wave_ghost_3",unit_count)
-			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
+		     self:SpawnGhost("npc_classic_new_years_lich",unit_count)
+			 self:SpawnGhost("npc_classic_new_years_winterwyvern",1)
 		     return 30
 		end
 	end)
 
-	Timers:CreateTimer(35, function()
-	     while wave_4 <  28 do 
-		     self:SpawnZombie("npc_zombie_toxic_4",1)
-		 return 35
-		 end
-	end)
  
   	Timers:CreateTimer(90, function()
 	     while wave_4 <  29 do 
-		     self:SpawnZombie("npc_seerdying_4",1)
+		     self:SpawnZombie("npc_classic_new_years_seer",1)
 		 return 90
 		 end
 	end)	
 	
-
-  
-	
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_4",1)
-	end)
+ 
+    	Timers:CreateTimer(90, function()
+	     while wave_4 <  29 do 
+		     self:SpawnZombie("npc_classic_new_years_ancient",1)
+		 return 50
+		 end
+	end)	
+ 
  
 	
  
 	
- 	Timers:CreateTimer(260,function()
-		 self:SpawnFlash("npc_flash_golem_3")
-	end) 
+ 
  
  
 end
@@ -1419,17 +1467,18 @@ function InvasionMode:ThemeMusic()
 	day_music =
     { 	
  
-     	[1] = {
+     	[5] = {
 		"Jinggle bells - Remix",
 		"Wham! - Last Christmas",
- 		
+		"Aurélie - Jingle Bells",
+ 		"Дима Билан - Новый Год с новой строчки",
     	},
     }
  
  	night_music =
  	{
  
- 		[1] = {
+ 		[5] = {
 	 		"Кошмар перед рождеством - Making Christmas",
  
  		},

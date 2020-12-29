@@ -142,7 +142,10 @@
 		"npc_classic_new_years_lich"                                                	"Леденящий кровь Ужас"
 		"npc_classic_new_years_winterwyvern"                                                	"Крылатый предвестник холода"
 		"npc_classic_new_years_ancient"                                                	"Частица льда древнейших времён"
-		"npc_classic_new_years_seer"                                                	"Глаза зимы"	
+		"npc_classic_new_years_seer"                                                	"Глаза зимы"
+		"npc_christmas_boss"	                                                	"Крампус"
+		"npc_classic_mini_crampus" 	                                                	"Крампусёнок"
+        "npc_classic_doom_crampus" 	                                                	"Отродье Ада"
 
 		// ******************** Предметы********************
 		
@@ -150,7 +153,7 @@
 		"DOTA_Item_Build_Starting_Items"								"Начальные предметы"
 		"DOTA_Item_Build_Early_Game"									"Для первой ночи"
 		"DOTA_Item_Build_Core_Items"									"Для второй ночи"
-		"DOTA_Item_Build_Luxury"										"Для третьей ночи"
+		"DOTA_Item_Build_Luxury"										"Для последней ночи"
 		
 		
 
@@ -517,10 +520,14 @@
 
 // -------------tide ----------
 
-		"DOTA_Tooltip_Ability_tide_health"                                            "More strength"
+		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "Когда тайда бьют, он становится сильнее."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
-        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС СИЛЫ ЗА СТАК:"
+        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС ЗДОРОВЬЯ ЗА СТАК:"
+
+		"DOTA_Tooltip_modifier_tide_health"												"More health"
+		"DOTA_Tooltip_modifier_tide_health_Description"									"МНЕ НУЖНО БОЛЬШЕ ХП"
+
 
         //---tb-----
         "DOTA_Tooltip_Ability_tb_illusion_dd"                                            "<font color='#ff4d4d'>Conjure Image</font>"
@@ -741,6 +748,10 @@
         "DOTA_Tooltip_Ability_pa_gds_Description"                                "Фантомка концентрирует свою неконтролируемую силу, получая бонус к урону на 6 секунд."
         "DOTA_Tooltip_Ability_pa_gds_dmg"                                        "МНОЖИТЕЛЬ УРОНА:"
 
+		"DOTA_Tooltip_modifier_pa_gds"			"God strength"
+		"DOTA_Tooltip_modifier_pa_gds_Description"	"Божественный урон"	
+
+ 
         "DOTA_Tooltip_Ability_pa_skill"                                            "Blur"
         "DOTA_Tooltip_Ability_pa_skill_Description"                                "Фантомка получает бонус уклонения и скорости бега."
         "DOTA_Tooltip_Ability_pa_skill_miss"                                        "%БОНУС УКЛОНЕНИЯ:"
@@ -1035,7 +1046,7 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_5_Description"				"Автоатаки этого существа наносят магический урон."
 		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_min"				"МИН. УРОН:"
 		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"МАКС. УРОН:"	
-		
+
 
 		"DOTA_Tooltip_Ability_range_magick_attack_boss"						"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_boss_Description"			"Автоатаки этого существа наносят магический урон."

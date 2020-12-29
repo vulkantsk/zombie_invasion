@@ -20,7 +20,7 @@
 	"npc_dota_hero_ursa"				"1" 
 	"npc_dota_hero_sand_king"			"1"
 	"npc_dota_hero_skywrath_mage"		"1"
-	"npc_dota_hero_juggernaut"			"1"
+	"npc_dota_hero_juggernaut"			"0"
 	"npc_dota_hero_terrorblade"			"1"
  
 	 
@@ -126,7 +126,7 @@
 	"npc_dota_hero_phantom_lancer"		"0"
 	"npc_dota_hero_phoenix"				"0"
 	"npc_dota_hero_puck"				"0"
-	"npc_dota_hero_pudge"				"1"
+	"npc_dota_hero_pudge"				"0"
 	"npc_dota_hero_pugna"				"0"
 	"npc_dota_hero_razor"				"0" 
 	"npc_dota_hero_riki"				"0"

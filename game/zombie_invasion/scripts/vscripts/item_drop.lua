@@ -22,6 +22,7 @@ ItemDrop.item_drop = {
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_undying_heart"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 
+		{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage"},chance = 2,duration = 25  },
 		{items = {"item_saxar_svekla"}, units ={"npc_dota_bochok_saxara"}},
 		{items = {"item_magic_heart"}, units ={"npc_dota_bochok_saxara"}},
 		--все что ниже нахимичил ЕНОТ. А енотов бить нельзя кста!!!=)

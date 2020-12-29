@@ -18,7 +18,7 @@ require( 'constant_links' )
 --require("statcollection/init")
 --require( 'invasion_td' )
 require("end_game")
-
+ 
 if InvasionMode == nil then
 	InvasionMode = class({})
 end

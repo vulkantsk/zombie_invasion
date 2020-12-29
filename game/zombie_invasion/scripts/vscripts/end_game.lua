@@ -239,6 +239,48 @@ function EndGame:GoodEndMessages()
  	GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - гимн Дахака</font>",0,0)
 end
 
+function EndGame:ChristmasEnd()
+	EndGame:GoodEndMessages()
+ 
+	 
+local tochka = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
+ 	local tocka_2 = Entities:FindByName(nil, "pudge_end_point"):GetAbsOrigin()
+  
+ 
+	local all_creature = Entities:FindAllByClassname('npc_dota_creature') 
+ 
+ 	    	    
+ 	    	     	         
+ 	    	    
+ 	    	      for i = 1, #all_creature, 1 do
+        local kunkka = all_creature[i]
+        if kunkka:GetUnitName() == "npc_penguin_3" then 
+   
+       MoveToPoint(kunkka, tochka)
+
+              
+             		Timers:CreateTimer(0,function()
+         MoveToPoint(kunkka, tochka)
+	end)
+
+              		Timers:CreateTimer(45,function()
+        	kunkka:CastPointSkill("intro_rotate",tocka_2)
+	end)            		
+     end
+ 			 
+ 
+
+ 
+			 
+ 
+ 
+    end
+ 			 
+ 
+ 
+ 
+end
+
 function AntimageThink(npc)
 	Timers:CreateTimer(0, function()
 		if ( not npc:IsAlive() ) then		--если юнит мертв

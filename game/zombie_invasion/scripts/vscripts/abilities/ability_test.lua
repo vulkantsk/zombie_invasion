@@ -1,7 +1,7 @@
 ability_test_1=class({})
 
 function ability_test_1:OnSpellStart()
-	EndGame:GoodEnd()
+ 	EndGame:ChristmasEnd()
 end
 
 ability_test_2=class({})

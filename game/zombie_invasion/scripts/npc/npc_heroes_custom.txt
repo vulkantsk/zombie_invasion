@@ -257,10 +257,10 @@
         "Ability1"        "jakiro_dual_breath"
         "Ability2"        "jakiro_ice_path"
         "Ability3"        "jakiro_liquid_fire"
-        "Ability4"        "generic_hidden"
+        "Ability4"        "jakiro_liquid_ice"
         "Ability5"        "phoenix_sun_ray"
         "Ability6"        "jakiro_macropyre"
- 
+                           
         "Ability8"        "phoenix_sun_ray_stop"
  
         "Ability10"        "special_bonus_hp_450"
