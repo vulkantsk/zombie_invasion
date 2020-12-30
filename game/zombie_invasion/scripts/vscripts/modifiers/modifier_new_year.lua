@@ -169,7 +169,7 @@ function modifier_health1:OnCreated()
 end
 
 function modifier_health1:GetModifierHealthBonus()
-	return  600
+	return  200
 end
 
  modifier_health_regen1 = class({
@@ -193,7 +193,7 @@ function modifier_health_regen1:OnCreated()
 end
 
 function modifier_health_regen1:GetModifierConstantHealthRegen()
-	return 60
+	return 20
 end
 
  
@@ -219,7 +219,7 @@ function modifier_mana_regen1:OnCreated()
 end
 
 function modifier_mana_regen1:GetModifierConstantManaRegen()
-	return 30
+	return 10
 end
 
  modifier_mana1 = class({
@@ -243,7 +243,7 @@ function modifier_mana1:OnCreated()
 end
 
 function modifier_mana1:GetModifierManaBonus()
-	return 600
+	return 200
 end
 
  
@@ -268,7 +268,7 @@ function modifier_damage1:OnCreated()
 end
 
 function modifier_damage1:GetModifierPreAttack_BonusDamage()
-	return 120
+	return 40
 end
 
  modifier_spell1 = class({
@@ -292,7 +292,7 @@ function modifier_spell1:OnCreated()
 end
 
 function modifier_spell1:GetModifierSpellAmplify_Percentage()
-	return 60
+	return 20
 end
 
 

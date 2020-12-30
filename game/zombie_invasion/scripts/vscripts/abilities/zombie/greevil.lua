@@ -55,7 +55,7 @@ function modifier_greevil:OnTakeDamage( params )
 		if hUnit == parent then
 			local damage = params.damage
 			local ability = self:GetAbility()
-			local dmg_proc = 30000 
+			local dmg_proc = 10000 
 			local parent_maxhealth = parent:GetMaxHealth()
 			if damage >= parent_maxhealth then
 				damage = parent_maxhealth
