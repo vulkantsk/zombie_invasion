@@ -1131,7 +1131,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "penguins"
-		"Ability2"					""
+		"Ability2"					"intro_rotate"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1212,7 +1212,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "penguins"
-		"Ability2"					""
+		"Ability2"					"intro_rotate"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1294,7 +1294,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					  ""
 		"Ability2"					"penguins"
-		"Ability3"					""
+		"Ability3"					"intro_rotate"
 		"Ability4"					""
 
 		
@@ -1376,7 +1376,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					  ""
 		"Ability2"					"penguins"
-		"Ability3"					""
+		"Ability3"					"intro_rotate"
 		"Ability4"					""
 
 		
@@ -1544,7 +1544,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_woman01"
-		"Ability2"					""
+		"Ability2"					"intro_rotate"
 		"Ability3"					""
 		"Ability4"					""
 

@@ -21,6 +21,7 @@ for i=2,HeroMaxLevel-1 do
 end
 
  Christmas_night = 0
+ Christmas_penguin = 0
 
 HERO_RESPAWN_TIME_BEFORE_10 = 10
 MONSTERS_RESPAWN_TIME = 10
@@ -222,12 +223,16 @@ function InvasionMode:OnItemPickedUp(keys)
 	end
 end
 
- 
+  
   function InvasionMode:Christmas_plus()
  Christmas_night = Christmas_night + 1
  
 end
 
+  function InvasionMode:Christmas_penguiun_plus()
+ Christmas_penguin = Christmas_penguin + 1
+ 
+end
 
 function InvasionMode:OnPlayerLevelUp(keys)
 	print ('[BAREBONES] OnPlayerLevelUp')
@@ -1130,7 +1135,7 @@ if killedEntity:GetUnitName() == "npc_last_boss" then
 end
 
 if killedEntity:GetUnitName() == "npc_christmas_boss" then
-     EndGame:GoodEnd()
+    EndGame:ChristmasEnd()
      	   GameRules:SetTimeOfDay(0.25)
 end
 

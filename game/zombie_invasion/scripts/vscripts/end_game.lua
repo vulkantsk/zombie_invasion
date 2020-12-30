@@ -240,21 +240,33 @@ function EndGame:GoodEndMessages()
 end
 
 function EndGame:ChristmasEnd()
-	EndGame:GoodEndMessages()
+	 	               		Timers:CreateTimer(2,function()
+ EmitGlobalSound("christmas_Bydet")
+  	GameRules:SendCustomMessage("<font color='#58ACFA'>Стекловата - Новый год</font>",0,0)  
+	end)
  
+  
+ InvasionMode:Christmas_penguiun_plus()
 	 
 local tochka = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
  	local tocka_2 = Entities:FindByName(nil, "pudge_end_point"):GetAbsOrigin()
-  
  
 	local all_creature = Entities:FindAllByClassname('npc_dota_creature') 
  
+
+	local crystal = CreateUnitByName("npc_jitel_2", tocka_2, false, nil, nil, DOTA_TEAM_GOODGUYS) 
  	    	    
- 	    	     	         
- 	    	    
+ 	    	           	         
+ 	               		Timers:CreateTimer(0,function()
+      MoveToPoint(crystal, tochka)    
+	end)
+
+              		Timers:CreateTimer(10,function()
+        	crystal:CastPointSkill("intro_rotate",tocka_2)
+	end)      	    
  	    	      for i = 1, #all_creature, 1 do
         local kunkka = all_creature[i]
-        if kunkka:GetUnitName() == "npc_penguin_3" then 
+        if kunkka:GetUnitName() == "npc_penguin_3"   then 
    
        MoveToPoint(kunkka, tochka)
 
@@ -267,7 +279,60 @@ local tochka = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
         	kunkka:CastPointSkill("intro_rotate",tocka_2)
 	end)            		
      end
+ 	
+         if kunkka:GetUnitName() ==   "npc_penguin_2"   then 
+   
+       MoveToPoint(kunkka, tochka)
+
+              
+             		Timers:CreateTimer(0,function()
+         MoveToPoint(kunkka, tochka)
+	end)
+
+              		Timers:CreateTimer(45,function()
+        	kunkka:CastPointSkill("intro_rotate",tocka_2)
+	end)            		
+     end
+ 	
  			 
+ 
+
+        if kunkka:GetUnitName() ==   "npc_penguin"  then 
+   
+       MoveToPoint(kunkka, tochka)
+
+              
+             		Timers:CreateTimer(0,function()
+         MoveToPoint(kunkka, tochka)
+	end)
+
+              		Timers:CreateTimer(45,function()
+        	kunkka:CastPointSkill("intro_rotate",tocka_2)
+	end)            		
+     end
+ 	
+ 			 
+ 
+
+        if kunkka:GetUnitName() ==   "npc_penguin_4" then 
+   
+       MoveToPoint(kunkka, tochka)
+
+              
+             		Timers:CreateTimer(0,function()
+         MoveToPoint(kunkka, tochka)
+	end)
+
+              		Timers:CreateTimer(45,function()
+        	kunkka:CastPointSkill("intro_rotate",tocka_2)
+	end)            		
+     end
+ 	
+  
+
+ 		 
+ 
+			 
  
 
  

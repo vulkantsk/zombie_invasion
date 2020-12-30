@@ -21,6 +21,7 @@ function NeutralAutoCasterThink()
 		return 1
 	end
 	local hEnemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), nil, 0, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE, FIND_CLOSEST, false )
+	if Christmas_penguin == 0 then 
 	if #hEnemies == 0 then
 		  	 	local hSpawners = Entities:FindAllByName(  "penguin_walk" )
 	           local hSpawner = hSpawners[RandomInt(1, #hSpawners)]
@@ -29,8 +30,11 @@ function NeutralAutoCasterThink()
 		OrderType = DOTA_UNIT_ORDER_MOVE_TO_POSITION,
 		Position = hSpawner:GetOrigin()
 	})
- 
+   
 	end
+ else 
+ 	return 
+ end
  
 	return 4
 	
