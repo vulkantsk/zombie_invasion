@@ -5130,12 +5130,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hp"	"1000"
+				"hp"	"1350"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"rg"	"7"
+				"var_type"				"FIELD_FLOAT"
+				"rg"	"3.25"
 			}
 		}
 	}

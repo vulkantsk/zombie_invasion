@@ -41,6 +41,14 @@
     	"IsOnCastBar"                   "0"	
 	}
 
+	"intro_rotate_christmas"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/endgame/intro_rotate_christmas"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"		
+    	"IsOnCastBar"                   "0"	
+	}
+	
 	"techies_taunt"
 	{
 		"BaseClass" 					"ability_lua"
@@ -1757,7 +1765,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_pct"					"3.0"
+				"damage_pct"					"8.5"
 				"LinkedSpecialBonus"	"special_bonus_unique_death_prophet_3"
 			}
 			"03"
@@ -5910,6 +5918,26 @@
 		}		
 	}	
 	
+		"special_bonus_mp_regen_10"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"6116"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"20"
+			}
+		}
+	}
+
 	//=================================================================================================================
 	// RUBICK
 	//=================================================================================================================
@@ -7693,7 +7721,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"30 40 50 60"
+		"AbilityManaCost"				"15 20 25 30"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -7702,12 +7730,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_damage"			"45 90 135 180"
+				"attack_damage"			"5 10 15 20"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_reduction"		"-15"
+				"damage_reduction"		"-10"
 				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_3"
 				"CalculateSpellDamageTooltip"	"0"
 			}
@@ -7719,7 +7747,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"375"
+				"radius"				"325"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -7743,7 +7771,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_reduction"		"20 50 75 100"
+				"damage_reduction"		"20 70 85 100"
 				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_4"
 				"CalculateSpellDamageTooltip"	"0"
 			}
@@ -7756,11 +7784,32 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_reset_interval"	"100"
+				"damage_reset_interval"	"5"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	"special_bonus_unique_tidehunter_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"6946"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"-15"
+				"ad_linked_ability"			"tidehunter_anchor_smash"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
 	}
 
 		"special_bonus_unique_tidehunter"
@@ -7778,27 +7827,40 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"value"				"5"
+				"value"				"7"
 				"ad_linked_ability"			"tidehunter_gush"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
 			}
 		}
 	}
 
-			"tidehunter_ravage"
+"tidehunter_gush"
 	{
-
-		"MaxLevel"            "1"
-    	"LevelsBetweenUpgrades" "1"
-    	"RequiredLevel" "35"
-		"AbilityCooldown"				"60"
-
-		// Damage.
+		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"675"
+		"ID"					"5118"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Ability.GushCast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+		"AbilityDuration"				"4.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"325"
+		"AbilityManaCost"				"60 65 70 75"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -7807,7 +7869,77 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"2000"
+				"gush_damage"		"125 180 275 335"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"projectile_speed"	"2500"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movement_speed"	"-40 -40 -40 -40"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"negative_armor"		"5 6 7 8"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed_scepter"		"1500"
+				"RequiresScepter"		"1"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_scepter"		"260"
+				"RequiresScepter"		"1"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cooldown_scepter"		"6"
+				"RequiresScepter"		"1"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_scepter"		"1200"
+				"RequiresScepter"		"1"
+			}	
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+			"tidehunter_ravage"
+	{
+
+		"MaxLevel"            "1"
+    	"LevelsBetweenUpgrades" "1"
+    	"RequiredLevel" "35"
+		"AbilityCooldown"				"60.0"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"675"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"175"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1625"
 			}
 			"02"
 			{
@@ -10947,7 +11079,7 @@
             "02"
             {
                 "var_type"                          "FIELD_FLOAT"
-                "str_per_stack"                      "1 1.5 2.0"
+                "str_per_stack"                      "8.0 10.0 12.0"
             }
 
         }
@@ -11339,7 +11471,7 @@
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"interval"				"0.4"
+			"interval"				"1.0"
 		}
 		"03"
 		{
@@ -11616,12 +11748,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"280"
+				"damage_min"			"325"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"300"
+				"damage_max"			"480"
 			}						
 		}
 
@@ -11637,6 +11769,7 @@
 
 	}
 
+
 			"range_magick_attack_5"
 	{
 		"BaseClass" 					"ability_datadriven"
@@ -11651,12 +11784,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"400"
+				"damage_min"			"520"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"450"
+				"damage_max"			"620"
 			}						
 		}
 

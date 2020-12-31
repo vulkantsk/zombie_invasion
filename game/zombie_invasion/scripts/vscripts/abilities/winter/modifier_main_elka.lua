@@ -87,6 +87,7 @@ print(Christmas_night)
  			unit:SetModifierStackCount("modifier_elka_bonus", nil, (7))
 	        end   
 	        if Christmas_night == 0 then
+	        	   		EmitGlobalSound("ho_ho_ho")
 	       InvasionMode:Christmas_plus()
 	   end
 	  end 

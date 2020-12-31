@@ -47,7 +47,7 @@ function modifier_doom_mini:OnTakeDamage( keys )
  
 	end)  
          	Timers:CreateTimer(2,function()
-              for i = 1, 7 do
+              for i = 1, 5 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
   	          end
 
@@ -58,20 +58,20 @@ function modifier_doom_mini:OnTakeDamage( keys )
 
  
             Timers:CreateTimer(10,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end)  
  
 
             Timers:CreateTimer(15,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end) 
 
             Timers:CreateTimer(20,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end) 
@@ -80,37 +80,40 @@ function modifier_doom_mini:OnTakeDamage( keys )
             CreateUnitByName("npc_classic_doom_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
   end)  
             Timers:CreateTimer(30,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end)  
 
                       Timers:CreateTimer(45,function()      
-                                      for i = 1, 2 do
+                                      for i = 1, 1 do
             CreateUnitByName("npc_classic_doom_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
                           end
   end)  
 
             Timers:CreateTimer(35,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end)  
 
               Timers:CreateTimer(45,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end)  
 
             Timers:CreateTimer(50,function()
-              for i = 1, 8 do
+              for i = 1, 4 do
             CreateUnitByName("npc_classic_mini_crampus",  self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(50, 300)), true, nil, nil, DOTA_TEAM_BADGUYS)
               end
   end)  
 
             Timers:CreateTimer(60,function()
+                     local waypoint = Entities:FindByName( nil, "last_boss") 
+ 
           self:GetCaster():RemoveModifierByName('modifier_doom_mini_death') 
+           self:GetCaster():SetInitialGoalEntity( waypoint )
   end) 
       doom = doom + 1
  

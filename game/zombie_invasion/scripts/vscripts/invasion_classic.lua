@@ -318,7 +318,7 @@ function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
  	InvasionMode:ThemeMusic()
-  
+ 
  
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
@@ -508,7 +508,8 @@ end
 InvasionMode:ChristmasMusic()
    		EmitGlobalSound("ho_ho_ho")
 	Timers:CreateTimer(0, function() GameRules:SendCustomMessage("#christmas_night_1",0,0) end)
-	Timers:CreateTimer(220, function() GameRules:SendCustomMessage("#christmas_night_2",0,0) end)
+	Timers:CreateTimer(90, function() GameRules:SendCustomMessage("#christmas_night_3",0,0) end)
+	Timers:CreateTimer(210, function() GameRules:SendCustomMessage("#christmas_night_2",0,0) end)
 
  
 	Timers:CreateTimer(225, function()  
@@ -754,7 +755,7 @@ function InvasionMode:ZombieNight3()
 	     while wave_4 < 26 do
 			 wave_4 = wave_4 + 1
 			 
-			 local unit_count = 5 * (1 + wave_4%2)
+			 local unit_count = 4 * (1 + wave_4%2)
 		     self:SpawnZombie("npc_classic_wave_pudge", unit_count)
 		     return 10
 		 end			 
@@ -817,8 +818,7 @@ function InvasionMode:ZombieNight3()
  
 	
   	Timers:CreateTimer(260,function()
-		 self:SpawnZombie("npc_classic_wave_pudge",16)
-		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
+ 		 self:SpawnFlash("npc_flash_golem_3")
 	end)
  
  
@@ -830,51 +830,43 @@ function InvasionMode:ChristmasNight()
     local wave_4 = 0
 	
   	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_new_years",12)
-		 self:SpawnGhost("npc_classic_new_years_lich",2)
+		 self:SpawnZombie("npc_classic_new_years",8)
+		 self:SpawnGhost("npc_classic_new_years_lich",1)
 	end)
 	
 	Timers:CreateTimer(0, function()
-	     while wave_4 < 26 do
-			 wave_4 = wave_4 + 1
-			 
-			 local unit_count = 4 * (1 + wave_4%2)
-		     self:SpawnZombie("npc_classic_new_years", unit_count)
-		     return 10
-		 end			 
-	end)
-
-	
-	Timers:CreateTimer(260, function()
 	     while wave_4 < 29 do
 			 wave_4 = wave_4 + 1
 			 
-			 local unit_count = 4 * (1 + wave_4%2)
+			 local unit_count = 4
 		     self:SpawnZombie("npc_classic_new_years", unit_count)
 		     return 10
 		 end			 
 	end)
 
-	Timers:CreateTimer(0, function()
-	    while wave_4 < 26 do 
-		     local unit_count = 2 * (1 + wave_4%2)
-			 
-		     self:SpawnGhost("npc_classic_new_years_lich",unit_count)
-			 self:SpawnGhost("npc_classic_new_years_winterwyvern",1)
-		     return 30
-		end
-	end)
-
-
-	Timers:CreateTimer(260, function()
+		Timers:CreateTimer(0, function()
 	    while wave_4 < 29 do 
-		     local unit_count = 2 * (1 + wave_4%2)
-			 
-		     self:SpawnGhost("npc_classic_new_years_lich",unit_count)
+ 
+ 
+			  self:SpawnGhost("npc_classic_new_years_lich",1)
+		     return 25
+		end
+	end)
+
+ 			 
+		    
+
+	Timers:CreateTimer(0, function()
+	    while wave_4 < 29 do 
+ 
+ 
 			 self:SpawnGhost("npc_classic_new_years_winterwyvern",1)
 		     return 30
 		end
 	end)
+
+
+ 
 
  
   	Timers:CreateTimer(90, function()
@@ -890,14 +882,7 @@ function InvasionMode:ChristmasNight()
 		     self:SpawnZombie("npc_classic_new_years_ancient",1)
 		 return 50
 		 end
-	end)	
- 
- 
-	
- 
-	
- 
- 
+	end) 
  
 end
 
@@ -1539,11 +1524,12 @@ function InvasionMode:ThemeMusic()
 	end)
  end
  function InvasionMode:ChristmasMusic()
+ 	
 	day_music =
     { 	
  
      	[5] = {
-		"Jinggle bells - Remix",
+		"Bobby Helms - Jingle bell",
 		"Wham! - Last Christmas",
 		"Aurélie - Jingle Bells",
  		"Дима Билан - Новый Год с новой строчки",
@@ -1560,86 +1546,7 @@ function InvasionMode:ThemeMusic()
 
  	}
  
-
-	Timers:CreateTimer(0,function()
-	    local time = GameRules:GetDOTATime(false, false)
-	    local day_time = GameRules:GetDOTATime(false, false)%600
-	    local current_day =  math.floor(time/600)+1
-	    local music 
-	    local time_until_end
-
-	    if day_time > 300 then
-	    	music = night_music[current_day]
-	    	time_until_end = 600 - day_time
-	    	print("night time")
  
- 
- 
- 
- 
-   
-	    else
-	    	music = day_music[current_day]
-	    	time_until_end = 300 - day_time
-	    	print("day time")
- 
-	    end
-
-		print("time until night = "..time_until_end)
- 
-
-	    local current_music = nil
-	    local longest_music = music[1]
-	    local longest_music_len = Sounds:GetSoundDuration(music[1])
-	    local shortest_music = music[1]
-	    local shortest_music_len = Sounds:GetSoundDuration(music[1])
-	    local midle_music = music[1]
-	    local midle_music_len = Sounds:GetSoundDuration(music[1])
-	    local available_music = {}
-
-	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
-	    for _,sound in pairs(music) do
-	    	local music_len = Sounds:GetSoundDuration(sound)
-	    	if music_len > longest_music_len then
-	    		longest_music_len = music_len
-	    		longest_music = sound
-	    	elseif music_len < shortest_music_len then
-	    		shortest_music_len = music_len
-	    		shortest_music = sound
-			elseif music_len < longest_music_len and music_len > shortest_music_len then
-			     midle_music_len = music_len
-				 midle_music = sound
-	    	end
-	    end
-	    print("longest_music = "..longest_music)
-	    print("longest_music len= "..longest_music_len)
-	    print("shortest_music = "..shortest_music)
-	    print("shortest_music len= "..shortest_music_len)
-
-	    if time_until_end >= shortest_music_len then
-	    	for _, sound in pairs(music) do
-	    		local music_len = Sounds:GetSoundDuration(sound)
-	    		if music_len <= time_until_end then
-	    			table.insert(available_music, sound)
-	    			print(string.format("sound name = %s",sound))
-	    		end
-	    	end
-	    	current_music = available_music[RandomInt(1, #available_music)]
-	    else
-	    	return time_until_end+1
-	    end
-
- 
- 
-	    Sounds:CreateGlobalLoopingSound( current_music )
- 
- 
-	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
-	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
- 
-
-	    return Sounds:GetSoundDuration(current_music)		    
-	end)
  
 
 end

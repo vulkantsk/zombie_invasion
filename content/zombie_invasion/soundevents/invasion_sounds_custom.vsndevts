@@ -3507,7 +3507,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/O. Liebert - Jinggle Bells"
+                                                        "value0"                "sounds/O Liebert - Jinggle Bells"
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
@@ -4094,7 +4094,7 @@
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "37"  }
+   									     "soundlevel"		{   "value"     "40"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {

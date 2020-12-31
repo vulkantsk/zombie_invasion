@@ -1472,50 +1472,7 @@
 
 
 
-
-	//============================================================================================================
-	//	TIDE
-	//============================================================================================================
-
-	"tidehunter_anchor_smash"
-	{
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"7.0 6.0 5.0 4.0"
-
-		// Damage.
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"125 175 225 300"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"20 30 40 50"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_reduction"		"-45 -50 -55 -60"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"reduction_duration"	"6.0 6.0 6.0 6.0"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"375"
-			}
-		}
-	}
-
-
-
+ 
 
 
 
@@ -3527,43 +3484,7 @@
 		}
 	}
 
-		"tidehunter_ravage"
-	{
-
-		"MaxLevel"            "1"
-    	"LevelsBetweenUpgrades" "1"
-    	"RequiredLevel" "35"
-		"AbilityCooldown"				"150"
-
-		// Damage.
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"675"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"325"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"			"2000"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"speed"				"725"
-			}
-			"03"
-			{	
-				"var_type"			"FIELD_FLOAT"
-				"duration"			"5"
-			}
-		}
-	}
+ 
 
 
 	"skywrath_mage_arcane_bolt"
@@ -3925,18 +3846,18 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"burn_damage"			"220"
+				"burn_damage"			"175"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"burn_damage_pct"		"6.25"
+				"burn_damage_pct"		"3.50"
 				"LinkedSpecialBonus"	"special_bonus_unique_doom_1"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"burn_duration"			"4.25"
+				"burn_duration"			"4.00"
 			}
 			"04"
 			{
@@ -3993,7 +3914,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"550"
+				"damage"				"1950"
 			}
 			"02"
 			{
@@ -4003,7 +3924,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_range"			"900"
+				"jump_range"			"600"
 			}			
 			"04"
 			{
@@ -4018,12 +3939,12 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"slow_duration"			"2.5"
+				"slow_duration"			"4.5"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"1000"
+				"projectile_speed"		"1350"
 			}
 			"08"
 			{	
@@ -4033,7 +3954,7 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_jump_damage"		"50"
+				"bonus_jump_damage"		"150"
 			}
 		}			
 	}
@@ -4095,7 +4016,7 @@
 			"05"
 			{	
 				"var_type"			"FIELD_FLOAT"
-				"duration"			"10.0"
+				"duration"			"5.0"
 			}
 		}
 	}

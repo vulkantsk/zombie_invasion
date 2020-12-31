@@ -7,8 +7,8 @@ function Spawn( entityKeyValues )
 		return
 	end
 
-	   GameRules:SetTimeOfDay(0.75)
  
+  	   GameRules:SetTimeOfDay(0.75)
 
  		hBlinkAbility = thisEntity:FindAbilityByName( "phantom_assassin_phantom_strike_lua" )
 		hEatAbility = thisEntity:FindAbilityByName( "doom_devour_lua" ) 		  
@@ -41,6 +41,7 @@ function NeutralAutoCasterThink()
  
  		local enemy = enemies[1]	-- врагом выбирается первый близжайший
         
+ 
  
  
 	 
@@ -98,7 +99,8 @@ end
 		TargetIndex = enemy:entindex(),
 		AbilityIndex = hAttackAbility:entindex(),
 	})
- 
+ 	     local waypoint = Entities:FindByName( nil, "last_boss") 
+thisEntity:SetInitialGoalEntity( waypoint )
 	return 1.00
 end
 

@@ -48,7 +48,7 @@ Sounds = Sounds or {
 	 --	["Daved Guetta - Would I Lie To You"] = 38,
 	 --	["Sia - Chandelier"] = 107,
 	 --	["Does It Matter - Janieck"] = 65,
-		
+		["Bobby Helms - Jingle bell"] = 128,
 
 
  

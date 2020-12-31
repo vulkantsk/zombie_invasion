@@ -166,8 +166,11 @@ function modifier_imba_haste_boots_buff:OnIntervalThink()
 end
 
 function modifier_imba_haste_boots_buff:DeclareFunctions()
-	local decFuncs = {MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
-		MODIFIER_PROPERTY_MOVESPEED_MAX}
+	local decFuncs = {
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+		MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
+		MODIFIER_PROPERTY_MOVESPEED_LIMIT,
+	}
 
 	return decFuncs
 end
@@ -176,7 +179,11 @@ function modifier_imba_haste_boots_buff:GetModifierMoveSpeedBonus_Percentage()
 	return self.phase_ms
 end
 
-function modifier_imba_haste_boots_buff:GetModifierMoveSpeed_Max()
+function modifier_imba_haste_boots_buff:GetModifierIgnoreMovespeedLimit()  
+	return 1
+end
+
+function modifier_imba_haste_boots_buff:GetModifierMoveSpeed_Limit()  
 	return self.ms_limit
 end
 

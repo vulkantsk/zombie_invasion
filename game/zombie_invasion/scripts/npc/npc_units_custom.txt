@@ -1131,7 +1131,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "penguins"
-		"Ability2"					"intro_rotate"
+		"Ability2"					"intro_rotate_christmas"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1212,7 +1212,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "penguins"
-		"Ability2"					"intro_rotate"
+		"Ability2"					"intro_rotate_christmas"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1292,9 +1292,9 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  ""
+		"Ability1"					  "intro_rotate_christmas"
 		"Ability2"					"penguins"
-		"Ability3"					"intro_rotate"
+		"Ability3"					""
 		"Ability4"					""
 
 		
@@ -1374,9 +1374,9 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  ""
+		"Ability1"					  "intro_rotate_christmas"
 		"Ability2"					"penguins"
-		"Ability3"					"intro_rotate"
+		"Ability3"					""
 		"Ability4"					""
 
 		
@@ -1399,7 +1399,7 @@
 		
 		// Bounds
 		//----------------------------------------------------------------
-        "BoundsHullName"         "DOTA_HULL_SIZE_SMALL"
+        "BoundsHullName"         "DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 		"CollisionSize"				"1"
 		
@@ -1455,7 +1455,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test01"
-		"Ability2"					"intro_rotate"
+		"Ability2"					"intro_rotate_christmas"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1544,7 +1544,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_woman01"
-		"Ability2"					"intro_rotate"
+		"Ability2"					"intro_rotate_christmas"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1635,6 +1635,7 @@
 		"Ability2"					"quest_brodyaga_test02"
 		"Ability3"					"quest_brodyaga_test04"
 		"Ability4"					"quest_brodyaga_test03"
+	    "Ability5"	             	"intro_rotate_christmas"
 
 		
 		// Armor
@@ -2023,9 +2024,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "250" // Experience earn.
-		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyXP" "80" // Experience earn.
+		"BountyGoldMin" "60" // Gold earned min.
+		"BountyGoldMax" "120" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -2045,9 +2046,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "300" // Experience earn.
-		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyXP" "100" // Experience earn.
+		"BountyGoldMin" "80" // Gold earned min.
+		"BountyGoldMax" "140" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -2067,9 +2068,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "350" // Experience earn.
+		"BountyXP" "150" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyGoldMax" "150" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -2090,9 +2091,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "400" // Experience earn.
-		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyXP" "500" // Experience earn.
+		"BountyGoldMin" "300" // Gold earned min.
+		"BountyGoldMax" "400" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -2113,8 +2114,8 @@
 		"Ability1"					""			// Ability 1.
 
 		"BountyXP" "450" // Experience earn.
-		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyGoldMin" "300" // Gold earned min.
+		"BountyGoldMax" "400" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -2134,8 +2135,8 @@
 		"Ability1"					""			// Ability 1.
 
 		"BountyXP" "500" // Experience earn.
-		"BountyGoldMin" "100" // Gold earned min.
-		"BountyGoldMax" "200" // Gold earned max.
+		"BountyGoldMin" "300" // Gold earned min.
+		"BountyGoldMax" "400" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 

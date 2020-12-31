@@ -240,110 +240,128 @@ function EndGame:GoodEndMessages()
 end
 
 function EndGame:ChristmasEnd()
+	
 	 	               		Timers:CreateTimer(2,function()
  EmitGlobalSound("christmas_Bydet")
   	GameRules:SendCustomMessage("<font color='#58ACFA'>Стекловата - Новый год</font>",0,0)  
 	end)
  
-  
+ 	 	               		Timers:CreateTimer(0,function()
+ 
+  	GameRules:SendCustomMessage("#christmas_1",0,0)  
+	end)
+
+  LinkLuaModifier("modifier_intro_rotate_christmas_passive", "abilities/endgame/intro_rotate_christmas", 0)
  InvasionMode:Christmas_penguiun_plus()
+
+ 
+local point_for_kunkka = Entities:FindByName(nil, "for_kunkka"):GetAbsOrigin()
+local point_for_crystal = Entities:FindByName(nil, "for_crystal"):GetAbsOrigin()
+local for_brodyagi = Entities:FindByName(nil, "for_brodyagi"):GetAbsOrigin()
+local point_for_penguins_1 = Entities:FindByName(nil, "for_penguins_1"):GetAbsOrigin()
+local point_for_penguins_2 = Entities:FindByName(nil, "for_penguins_2"):GetAbsOrigin()
+local point_for_putin = Entities:FindByName(nil, "putin"):GetAbsOrigin() 
+
+ 	local point_for_rotate = Entities:FindByName(nil, "pudge_end_point")
+ 
+	local crystalka = Entities:FindByName(nil, 'crystalka')   
+	local brodyaga = Entities:FindByName(nil, 'brodyaga')    
+	local kunkka = Entities:FindByName(nil, 'kunkka')  
+	local putin = Entities:FindByName(nil, 'NPC_base')   
+
+ 	local penguin = Entities:FindAllByName('penguin')   
+ 	 	local penguin_2 = Entities:FindAllByName('penguin_2')          
+ 	Timers:CreateTimer(0, function()  
+ 
+ 	kunkka:AddNewModifier(kunkka, nil, "modifier_intro_rotate_christmas_passive", {})
+ 	crystalka:AddNewModifier(crystalka, nil, "modifier_intro_rotate_christmas_passive", {})
+  	brodyaga:AddNewModifier(brodyaga, nil, "modifier_intro_rotate_christmas_passive", {})
+   	putin:AddNewModifier(putin, nil, "modifier_intro_rotate_christmas_passive", {})
+
+  kunkka:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
+    brodyaga:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
+      crystalka:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
+
+      MoveToPoint(kunkka, point_for_kunkka)    
+       MoveToPoint(brodyaga, for_brodyagi)      
+      MoveToPoint(crystalka, point_for_crystal)   
+    end)
+ 
+ 
+ 
+
+ 
+
+	Timers:CreateTimer(90, function()  
+			   GameRules:SetTimeOfDay(0.75)
+
+  kunkka:RemoveGesture(ACT_DOTA_VICTORY) 
+  brodyaga:RemoveGesture(ACT_DOTA_VICTORY) 
+    crystalka:RemoveGesture(ACT_DOTA_VICTORY) 
+
+					kunkka:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
+					brodyaga:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
+					crystalka:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
+         PuitnThink(putin)
+    end)
+       
+
+ 		for i = 1, 	 #penguin do
+ 			local pingin = penguin[i]
+ 			   		Timers:CreateTimer(0, function()  
+			 
+ 
+   
+        MoveToPoint(pingin, point_for_penguins_1)    
+   	    pingin:AddAbility("intro_rotate_christmas")	
+   	      end)
+   		Timers:CreateTimer(90, function()  
+					pingin:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
+ 
+    end)
+     end
+  		for i = 1, 	 #penguin_2 do
+ 			local pingin_2 = penguin_2[i]  
+ 					   		Timers:CreateTimer(0, function()  
+             MoveToPoint(pingin_2, point_for_penguins_2)  
+   	    pingin_2:AddAbility("intro_rotate_christmas")	
+   	      end)
+   	 	Timers:CreateTimer(90, function()  
+					pingin_2:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
+ 
+    end)
+     end
+   	 	Timers:CreateTimer(134, function()  
+				GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+ 
+    end)   			 
+
+end
+
+function PuitnThink(npc)
+	Timers:CreateTimer(0, function()
+		if ( not npc:IsAlive() ) then		--если юнит мертв
+			return -1	
+		end
+		
+		if npc.stop then	--если игра приостановлена
+			return 1	
+		end
+
+		local point = Entities:FindByName(nil, "putin"):GetAbsOrigin()
+		local blink_point = point  
+
+		local effect = "models/heroes/antimage_female/debut/particles/blink/antimage_debut_blink_sparkles.vpcf"
+		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, npc)
+		ParticleManager:SetParticleControl(pfx, 0, npc:GetAbsOrigin())
+		ParticleManager:ReleaseParticleIndex(pfx)
+		npc:SetAbsOrigin(blink_point)
+		npc:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_2, 1)
+		npc:EmitSound("Hero_Antimage.Blink_out")
+
+ 
 	 
-local tochka = Entities:FindByName(nil, "techies_end_point"):GetAbsOrigin()
- 	local tocka_2 = Entities:FindByName(nil, "pudge_end_point"):GetAbsOrigin()
- 
-	local all_creature = Entities:FindAllByClassname('npc_dota_creature') 
- 
-
-	local crystal = CreateUnitByName("npc_jitel_2", tocka_2, false, nil, nil, DOTA_TEAM_GOODGUYS) 
- 	    	    
- 	    	           	         
- 	               		Timers:CreateTimer(0,function()
-      MoveToPoint(crystal, tochka)    
 	end)
-
-              		Timers:CreateTimer(10,function()
-        	crystal:CastPointSkill("intro_rotate",tocka_2)
-	end)      	    
- 	    	      for i = 1, #all_creature, 1 do
-        local kunkka = all_creature[i]
-        if kunkka:GetUnitName() == "npc_penguin_3"   then 
-   
-       MoveToPoint(kunkka, tochka)
-
-              
-             		Timers:CreateTimer(0,function()
-         MoveToPoint(kunkka, tochka)
-	end)
-
-              		Timers:CreateTimer(45,function()
-        	kunkka:CastPointSkill("intro_rotate",tocka_2)
-	end)            		
-     end
- 	
-         if kunkka:GetUnitName() ==   "npc_penguin_2"   then 
-   
-       MoveToPoint(kunkka, tochka)
-
-              
-             		Timers:CreateTimer(0,function()
-         MoveToPoint(kunkka, tochka)
-	end)
-
-              		Timers:CreateTimer(45,function()
-        	kunkka:CastPointSkill("intro_rotate",tocka_2)
-	end)            		
-     end
- 	
- 			 
- 
-
-        if kunkka:GetUnitName() ==   "npc_penguin"  then 
-   
-       MoveToPoint(kunkka, tochka)
-
-              
-             		Timers:CreateTimer(0,function()
-         MoveToPoint(kunkka, tochka)
-	end)
-
-              		Timers:CreateTimer(45,function()
-        	kunkka:CastPointSkill("intro_rotate",tocka_2)
-	end)            		
-     end
- 	
- 			 
- 
-
-        if kunkka:GetUnitName() ==   "npc_penguin_4" then 
-   
-       MoveToPoint(kunkka, tochka)
-
-              
-             		Timers:CreateTimer(0,function()
-         MoveToPoint(kunkka, tochka)
-	end)
-
-              		Timers:CreateTimer(45,function()
-        	kunkka:CastPointSkill("intro_rotate",tocka_2)
-	end)            		
-     end
- 	
-  
-
- 		 
- 
-			 
- 
-
- 
-			 
- 
- 
-    end
- 			 
- 
- 
- 
 end
 
 function AntimageThink(npc)

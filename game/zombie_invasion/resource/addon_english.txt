@@ -45,8 +45,10 @@
 	   "ending_9"                                                  "<font color='#58ACFA'>But of course it for the next time)))</font>"
 
        // ******************** Messages Christmas ********************
+       	   "christmas_1"                                                  "<font color='#deaa88'>The Celebration continues!</font>"
 	   "christmas_night_1"			                                    	"<font color='#fffacd'>You have a day to end your does  !</font>"	
-	   "christmas_night_2"			                                    	"<font color='#fffacd'>The harbinger of Christmas is coming!</font>"		   
+	   "christmas_night_2"			                                    	"<font color='#fffacd'>The harbinger of Christmas is coming!</font>"	
+	   "christmas_night_3"                                                    "<font color='#deaa88'>Throw few minutes message will appear  about coming Greevil. He appears around Main-Christmas tree before the moment while he will give you presents. Good luck:)</font>"	   
 	   	   
 		// ******************** heroes ********************
 
