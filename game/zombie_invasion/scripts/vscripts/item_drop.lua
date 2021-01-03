@@ -22,12 +22,12 @@ ItemDrop.item_drop = {
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_undying_heart"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 
-		{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
+ 
 		{items = {"item_saxar_svekla"}, units ={"npc_dota_bochok_saxara"}},
 		{items = {"item_magic_heart"}, units ={"npc_dota_bochok_saxara"}},
 		--все что ниже нахимичил ЕНОТ. А енотов бить нельзя кста!!!=)
 		{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
- 
+ --		{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
 }
 
 ItemDrop.secret_items = {
