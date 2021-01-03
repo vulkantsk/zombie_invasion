@@ -22,7 +22,7 @@
 		<Label id="H2" class="InfoRow" html="true" text="#head_blood" />
 		<!--Вторая картиночка с текстом-->
 		<Panel id="Info2" class="InfoStringDown" >
-			<Image id="InfoImage" src="file://{images}/custom_game/game_info/glaza_new_year.png" />
+			<Image id="InfoImage" src="file://{images}/custom_game/game_info/glaza.png" />
 			<Label id="InfoText" text="#Info2" />						
 		</Panel> 
 

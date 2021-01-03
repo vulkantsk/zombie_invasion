@@ -838,7 +838,34 @@
 
 
 
+	// -----------------Samurai--------------------
+ 
+       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua"	"Blade Fury"
+       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Description"	"Герой крутится в вихре сокрушительных ударов клинком, становясь невосприимчивым к магии и нанося урон врагам поблизости. \n\nТИП РАЗВЕИВАНИЯ: нормальное."
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage"					"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_duration"					"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Note0"								"Во время действия этой способности можно использовать предметы и атаковать врагов."
+ 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Lore"								"Умение Самурая обращаться с катаной внушает страх и воинам, и магам."
 
+       "DOTA_Tooltip_ability_juggernaut_shadow"	"Hidden in shadow"
+       "DOTA_Tooltip_ability_juggernaut_shadow_Description"	"Самурай начинает сливаться со своей же тенью и враги в недопонимании начинают промахиваться."
+		"DOTA_Tooltip_ability_juggernaut_shadow_miss"				"%БОНУС УКЛОНЕНИЯ:"
+		"DOTA_Tooltip_ability_juggernaut_shadow_speed_atack"					"БАЗОВАЯ СКОРОСТЬ АТАКИ:"
+ 		"DOTA_Tooltip_ability_juggernaut_shadow_Lore"								"Быть единым с тенью. Этому всегда учили Самурая, и он успешно приобрел и преуспел в этих навыках."
+ 		"DOTA_Tooltip_ability_juggernaut_shadow_Note0"								""
+
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua"									"Blade Dance"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Description"						"Даёт герою шанс нанести атакой критический урон."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Lore"								"Как один из представитель своего культа, Самурай должен убедиться, что вы запомните стиль его боя."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_mult"				"%КРИТИЧЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_chance"			"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
+
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua"									"Blade Dance"
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Description"						"Даёт герою шанс нанести атакой критический урон."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Lore"								"Как один из представитель своего культа, Самурай должен убедиться, что вы запомните стиль его боя."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_blade_dance_crit_mult"				"%КРИТИЧЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_blade_dance_crit_chance"			"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
 		
 		// -----------------axe--------------------			
 		"DOTA_Tooltip_Ability_axe_battle_hunger_custom" "Berserker's Call"
@@ -1291,8 +1318,8 @@
 		// ******************** Обучалка: ********************
 
 
-		"head_wisp"					"удачи тебе:)"
-		"head_blood"					"С новым годом Славяне! Пусть в новом году, а что в новом году? Ладно("		
+		"head_wisp"					"Нет блин уху ел"
+		"head_blood"					"Че охуел аааааааааааааааааааааааааа?"		
 		"Info1"						"Info 1"
 		"Info2"						" "	    
 

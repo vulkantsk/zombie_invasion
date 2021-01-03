@@ -264,7 +264,8 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
  
-    if npc:IsRealHero() and npc.FirstSpawned == nil then
+ --[[
+     if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
 
@@ -276,7 +277,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 end
  
- 
+ ]]
   
 end
 
@@ -351,19 +352,17 @@ function InvasionMode:InvasionGameStart()
  --40 минута, конец 4ей ночи, день
  	Timers:CreateTimer(2400,function()
  
- 
- if Christmas_night == 0 then
  InvasionMode:UsuallyEnd() 
-elseif Christmas_night == 1 then
-	InvasionMode:ChristmasEnd()
-end
+ 
+ 
+ 
  end)
 end
 
 function InvasionMode:UsuallyEnd()  
  -- Обычнй конец
  	Timers:CreateTimer(0,function()
-		--[[ 
+	 
 	    xuitat3 = RandomInt(1,3)
         print(xuitat3)
 		if xuitat3 == 1 then
@@ -376,9 +375,11 @@ function InvasionMode:UsuallyEnd()
 	 	    EmitGlobalSound("Sergey")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - АМ ФП</font>", 0, 0) 
         end	
-        ]]		
+       
+        		--[[ 	
         	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
+		           ]]	
 	end)  
 	
 	Timers:CreateTimer(48,function()
@@ -432,7 +433,7 @@ function InvasionMode:UsuallyEnd()
 	end)
 	
 	Timers:CreateTimer(50,function()
-		--[[
+ 
 				if xuitat3 == 1 then
 	 	    StopGlobalSound("Invasion.Castaways")    
  
@@ -443,13 +444,12 @@ function InvasionMode:UsuallyEnd()
 	 	    StopGlobalSound("Sergey")
  
         end	
-	   ]]
-	  StopGlobalSound("Bobby Helms - Jingle bell")
+	 
+	--  StopGlobalSound("Bobby Helms - Jingle bell")
 	end)
 end
  
  function InvasionMode:ChristmassEror()  
- -- Обычнй конец
  
 	Timers:CreateTimer(0,function()
 		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
@@ -1177,136 +1177,7 @@ end
 	end
  
  
-
-
---[[ 
-	if killedEntity:IsCreature() then
-		if killedEntity.respawn  then
-			if killedEntity.nightZombie then
-				self:RespawnCreature(killedEntity,WAVE_RESPAWN_TIME)
-			else
-				self:RespawnCreature(killedEntity,MONSTERS_RESPAWN_TIME)
-			end
-		end
-
-		if killedEntity:GetUnitName() == "npc_classic_pig" then
-            if RollPercentage(MEAT_DROP_PERC) then
-                self:CreateDrop("item_meat", killedEntity:GetAbsOrigin())
-            end
-		end	
-
-		if killedEntity:GetUnitName() == "npc_classic_sheep" then
-            if RollPercentage(MILK_DROP_PERC) then
-                self:CreateDrop("item_milk", killedEntity:GetAbsOrigin())
-            end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_classic_half_zombie" then
-            if RollPercentage(SKIN_DROP_PERC) then
-                self:CreateDrop("item_zombie_skin", killedEntity:GetAbsOrigin())
-            end
-		end
-
-		if killedEntity:GetUnitName() == "npc_classic_chicken" then
-            if RollPercentage(EGG_DROP_PERC) then
-                self:CreateDrop("item_eggs", killedEntity:GetAbsOrigin())
-            end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_stronger_chicken" then
-            if RollPercentage(EGG_STRONG_DROP_PERC) then
-                self:CreateDrop("item_eggs", killedEntity:GetAbsOrigin())
-            end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_classic_skelet" then
-            if RollPercentage(BONE_DROP_PERC) then
-                self:CreateDrop("item_bone", killedEntity:GetAbsOrigin())
-            end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_classic_skeleton_king" then
-            if RollPercentage(BONE_STRONG_DROP_PERC) then
-                self:CreateDrop("item_bone", killedEntity:GetAbsOrigin())
-            end
-		end
-
-		if killedEntity:GetUnitName() == "npc_boss_chicken" then
-            if RollPercentage(BOSS_DROP_PERC) then
-                self:CreateDrop("item_eggs", killedEntity:GetAbsOrigin())
-            end
-		end
-		
-		
-
-		if killedEntity:GetUnitName() == "npc_classic_witch" then
-			for i = 1, 2 do
-            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 50)) )
-        	end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_classic_witch" then
-			for i = 1, 1 do
-            	self:CreateDrop("item_corica", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 50)) ) 
-        	end
-		end
-		if killedEntity:GetUnitName() == "npc_boss_pig" then
-			for i = 1, 4 do
-            	self:CreateDrop("item_bag_of_gold_pig", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) ) 
-        	end
-		end
-		if killedEntity:GetUnitName() == "npc_boss_pig" then
-			for i = 1, 1 do
-            	self:CreateDrop("item_big_meat", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) ) 
-        	end
-		end
-	
-		if killedEntity:GetUnitName() == "npc_boss_dead_pig" then
-			for i = 1, 4 do
-            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
-        	end
-			for i = 1, 1 do
-            	self:CreateDrop("item_dead_golova", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
-        	end
-				        EmitGlobalSound("vurdalak_1")	
-		end
-
-		if killedEntity:GetUnitName() == "npc_dota_bochok_saxara" then
-			for i = 1, 1 do
-            	self:CreateDrop("item_saxar_svekla", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 150)) ) 
-        	end
-			for i = 1, 1 do
-            	self:CreateDrop("item_magic_heart", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 150)) ) 
-        	end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_boss_mutant" then
-			for i = 1, 3 do
-            	self:CreateDrop("item_bag_of_gold", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
-        	end
-		end
-		
-		if killedEntity:GetUnitName() == "npc_boss_mutant" then
-			for i = 1, 1 do
-            	self:CreateDrop("item_undying_heart", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
-        	end
-		end
-
-
-
-
-
-    if killedEntity:GetUnitName() == "npc_mini_elka_1" or killedEntity:GetUnitName() == "npc_mini_elka_2" or killedEntity:GetUnitName() == "npc_mini_elka_3" or killedEntity:GetUnitName() == "npc_mini_elka_4" or killedEntity:GetUnitName() == "npc_mini_elka_5" or killedEntity:GetUnitName() == "npc_mini_elka_6" then
-			for i = 1, 1 do
-            	self:CreateDrop("item_undying_heart", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 300)) )
-        	end
-		end
-
  
-
-
-	end
-]]
 
 end
  
@@ -1322,7 +1193,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
-    	--[[
+ 
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
   		    "Ula - Cannabis",
@@ -1330,13 +1201,14 @@ function InvasionMode:ThemeMusic()
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
     	},
-  ]]
+     	--[[
    [1] = {
  "Merry - Christmas Jingle Bells",  
   "Jingle Вells" ,
   "Lofi Origin - Jingle Bells Lo Fi Chill",
   },
-      	--[[
+    ]]
+ 
     	[2] = {
   		    "Серега пират - АМ ФП", 
   		    "Life - Larson",
@@ -1346,14 +1218,16 @@ function InvasionMode:ThemeMusic()
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
   		    "Boulevard of Broken Dreams - Green Day", 		
     	},
-    	]]
+ 
+    	      	--[[
     	[2] = {
   		    "Aurélie - Jingle Bells", 
   		    "Ансамбль Детские Песни - Три белых коня",
   		    "Дискотека Авария - Новогодняя",
  
     	},
-    	    	--[[
+    	 	]]
+ 
     	[3] = {
   		    "Lana Del Rey - Summertime Sadness (smoke remix)",
   		    "I Follow Rivers - Lykke Li",
@@ -1366,31 +1240,33 @@ function InvasionMode:ThemeMusic()
   		    "John  Newman - Fire In Me",
   		    "iSpy - KYLE feat. Lil Yachty",
     	},
-    	]]
+     	    	--[[
      	[3] = {
   		    "Дима Билан - Новый Год с новой строчки",
   		    "ABBA - Happy New Year",
   		    "O Liebert - Jinggle Bells",  
   		    "WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS",
     	},
-    	   	    	--[[
+    	]]
+ 
      	[4] = {
 		"RSAC - NBA",
 		"Daved Guetta - Would I Lie To You",
 		 "Sia - Chandelier",
 		"Does It Matter - Janieck",	  			
     	},
-    	]]
+     	   	    	--[[
      	[4] = {
 		"Jinggle bells - Remix",
 		"Wham! - Last Christmas",
  		
     	},
+    	]]
     }
  
  	night_music =
  	{
---[[
+ 
  		[1] = {
 			"Undertale - Respite",
 		},
@@ -1406,7 +1282,8 @@ function InvasionMode:ThemeMusic()
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
  		},
-]]
+ 
+--[[
  		[1] = {
 			"Кошмар перед рождеством - End Title",
 		},
@@ -1421,7 +1298,7 @@ function InvasionMode:ThemeMusic()
 	 		"Кошмар перед рождеством - Making Christmas",
  
  		},
-
+]]
  	}
  	local last_music = nil
 

@@ -37,6 +37,8 @@
 		"MovementTurnRate"		"0.500000"
 	}
 
+ 
+
 		"npc_dota_hero_troll_warlord"
 	{
 		"Ability1"		"troll_warlord_berserkers_rage"

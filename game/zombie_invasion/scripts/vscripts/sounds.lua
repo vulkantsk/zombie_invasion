@@ -3,67 +3,93 @@ Sounds = Sounds or {
   	playersStateMusic = {},
   	SoundDuration = {
 
+ 
+  		["Akira Yamaoka – Never Forgive Me"] = 137,
+  		["Ula - Cannabis"] = 182,
+  		 		["Toby Fox – Once Upon a Time"] = 89,  
+  		["C418 - Sweden"] = 217,
+  		["Mase - Psycho"] = 192,  
+		
+
+ 
+         
+
+     	["Серега пират - АМ ФП"] = 130,  
+  		["Life - Larson"] = 69,
+  		["Musica - Fly Project"] = 48,
+  		["Wake Me Up - Avicii"] = 109,
+        ["Galantis - No Money"] = 77,
+  		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
+  		["Boulevard of Broken Dreams - Green Day"] = 73,
+		
+ 
+  		["Lana Del Rey - Summertime Sadness (smoke remix)"] = 63,
+  		["I Follow Rivers - Lykke Li"] = 54,
+   		["August - Intelligency"] = 91,  
+   		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
+  		["Runaway - Parachute Youth feat. Jay Martin"] = 89,
+   		["Sia - Cheap Thrills"] = 62,
+   		["L Starz - My Life Be LikeGrits"] = 38,
+  	 	["Kiesza - Hideaway"] = 92,
+  	 	["John  Newman - Fire In Me"] = 95,
+  	 	["iSpy - KYLE feat. Lil Yachty"] = 116,
+		
+ 
+ 
+	 	["RSAC - NBA"] = 131,
+	 	["Daved Guetta - Would I Lie To You"] = 38,
+	 	["Sia - Chandelier"] = 107,
+	 	["Does It Matter - Janieck"] = 65,
+ 
+
+
+ 
+
+["C418-Key"] = 184,
+
+["Undertale - Respite"] = 105,
+ 
+["Argh Ost – Halloween"] = 145,
+ 
+
+ 
+		--Boss theme
+		["Asgore_main_classic"] = 154,
+			["christmas_boss_theme"] = 187,	
+
+
+		--New year music
+		--[[ 
       ["Merry - Christmas Jingle Bells" ] = 135,
        ["Jingle Вells" ] = 133,
        ["Lofi Origin - Jingle Bells Lo Fi Chill" ] = 170,
---  		["Akira Yamaoka – Never Forgive Me"] = 137,
---  		["Ula - Cannabis"] = 182,
---  		["Toby Fox – Once Upon a Time"] = 89,  
- -- 		["C418 - Sweden"] = 217,
- -- 		["Mase - Psycho"] = 192,  
-		
+
 
        ["Aurélie - Jingle Bells" ] = 221,
        ["Ансамбль Детские Песни - Три белых коня" ] = 153,
        ["Дискотека Авария - Новогодняя" ] = 298,
          
 
- -- 		["Серега пират - АМ ФП"] = 130,  
-  --		["Life - Larson"] = 69,
-  --		["Musica - Fly Project"] = 48,
-  --		["Wake Me Up - Avicii"] = 109,
---       ["Galantis - No Money"] = 77,
-  --		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
-  --		["Boulevard of Broken Dreams - Green Day"] = 73,
-		
 		["Дима Билан - Новый Год с новой строчки" ] = 201,
         ["ABBA - Happy New Year" ] = 261,
                 ["O Liebert - Jinggle Bells"] = 237,
                ["WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS"] = 155,
-  --		["Lana Del Rey - Summertime Sadness (smoke remix)"] = 63,
-  --		["I Follow Rivers - Lykke Li"] = 54,
-   --		["August - Intelligency"] = 91,  
-   --		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
-   --		["Runaway - Parachute Youth feat. Jay Martin"] = 89,
-   --		["Sia - Cheap Thrills"] = 62,
-   --		["L Starz - My Life Be LikeGrits"] = 38,
-  	 --	["Kiesza - Hideaway"] = 92,
-  	 --	["John  Newman - Fire In Me"] = 95,
-  	 --	["iSpy - KYLE feat. Lil Yachty"] = 116,
-		
- 
+
+
 	 	["Jinggle bells - Remix"] = 246,
 	 	["Wham! - Last Christmas"] = 265,
-	 --	["RSAC - NBA"] = 131,
-	 --	["Daved Guetta - Would I Lie To You"] = 38,
-	 --	["Sia - Chandelier"] = 107,
-	 --	["Does It Matter - Janieck"] = 65,
 		["Bobby Helms - Jingle bell"] = 128,
 
 
- 
-["Кошмар перед рождеством - End Title"] = 298,
-	--	["C418-Key"] = 184,
 
-	--	["Undertale - Respite"] = 105,
+["Кошмар перед рождеством - End Title"] = 298,
+ 
 ["Dinah Washington - Silent Night"] = 143,
-	--	["Argh Ost – Halloween"] = 145,
+ 
 ["Кошмар перед рождеством - Oogie Boogie39s Song"] = 195,
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
-		--Boss theme
-		["Asgore_main_classic"] = 154,
-			["christmas_boss_theme"] = 187,	
+]]
   	},
 }
 
