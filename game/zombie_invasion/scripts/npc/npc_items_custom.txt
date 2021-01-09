@@ -5621,6 +5621,21 @@
 	}
 
 
+	"item_midas"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_midas"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName" "midas"
+
+		"ItemCost"						"500"
+		"ItemAliases"					"midas"
+		"AbilityCastPoint"				"0.5"
+		"AbilityCooldown"				"50"
+		"AbilityManaCost"				"0"		
+	}
+
+
  
 
 }
