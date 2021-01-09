@@ -5,6 +5,7 @@ LinkLuaModifier( "modifier_sven_great_cleave_lua", "heroes/hero_axe/rubilka/modi
 -- Ability Start
 function axe_culling_blade_lua:OnSpellStart()
 	-- unit identifier
+	
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 
@@ -32,7 +33,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			victim = target,
 			attacker = caster,
 			damage = threshold,
-			damage_type = DAMAGE_TYPE_PHYSICAL,
+			damage_type = DAMAGE_TYPE_PURE,
 			ability = self, --Optional.
 			damage_flags = DOTA_DAMAGE_FLAG_HPLOSS, --Optional.
 		}
@@ -49,7 +50,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			victim = target,
 			attacker = caster,
 			damage = damage,
-			damage_type = DAMAGE_TYPE_PHYSICAL,
+			damage_type = DAMAGE_TYPE_PURE,
 			ability = self, --Optional.
 		}
 		ApplyDamage(damageTable)	

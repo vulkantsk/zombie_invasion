@@ -27,6 +27,35 @@ function GetMultipleBountyBonus(hUnit)
 end 
 
  
+ function PopupNumbers(target, pfx, color, lifetime, number, presymbol, postsymbol)
+    local pfxPath = string.format("particles/msg_fx/msg_%s.vpcf", pfx)
+    local pidx
+    if pfx == "gold" or pfx == "lumber" then
+        pidx = ParticleManager:CreateParticleForTeam(pfxPath, PATTACH_ABSORIGIN_FOLLOW, target, target:GetTeamNumber())
+    else
+        pidx = ParticleManager:CreateParticle(pfxPath, PATTACH_ABSORIGIN_FOLLOW, target)
+    end
+
+    local digits = 0
+    if number ~= nil then
+        digits = #tostring(number)
+    end
+    if presymbol ~= nil then
+        digits = digits + 1
+    end
+    if postsymbol ~= nil then
+        digits = digits + 1
+    end
+
+    ParticleManager:SetParticleControl(pidx, 1, Vector(tonumber(presymbol), tonumber(number), tonumber(postsymbol)))
+    ParticleManager:SetParticleControl(pidx, 2, Vector(lifetime, digits, 0))
+    ParticleManager:SetParticleControl(pidx, 3, color)
+end
+
+function PopupCriticalDamage(target, amount)
+    PopupNumbers(target, "crit", Vector(255, 0, 0), 1.0, amount, nil, 4)
+end
+
 function SetGoldMultiplier(unit, multiplier)
 
     unit:SetMaximumGoldBounty(unit:GetMaximumGoldBounty() * multiplier)

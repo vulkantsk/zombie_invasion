@@ -24,7 +24,8 @@ function modifier_juggernaut_blade_fury_lua:OnCreated( kv )
 	self.tick = self:GetAbility():GetSpecialValueFor( "blade_fury_damage_tick" ) -- special value
 	self.radius = self:GetAbility():GetSpecialValueFor( "blade_fury_radius" ) -- special value
 	self.dps = self:GetAbility():GetSpecialValueFor( "blade_fury_damage" ) -- special value
-	
+	self.damage_agility = self:GetAbility():GetSpecialValueFor( "blade_fury_damage_agility" ) -- special value
+
 	self.max_count = kv.duration/self.tick
 	self.count = 0
     self:GetCaster():StartGestureWithPlaybackRate(ACT_DOTA_OVERRIDE_ABILITY_1, 1)  
@@ -34,7 +35,7 @@ function modifier_juggernaut_blade_fury_lua:OnCreated( kv )
 		self.damageTable = {
 			-- victim = target,
 			attacker = self:GetParent(),
-			damage = self.dps * self.tick,
+			damage = (self.dps + self:GetCaster():GetAgility()*self.damage_agility) * self.tick,
 			damage_type = DAMAGE_TYPE_MAGICAL,
 			ability = self:GetAbility(), --Optional.
 		}
@@ -51,6 +52,7 @@ function modifier_juggernaut_blade_fury_lua:OnRefresh( kv )
 	self.tick = self:GetAbility():GetSpecialValueFor( "blade_fury_damage_tick" ) -- special value
 	self.radius = self:GetAbility():GetSpecialValueFor( "blade_fury_radius" ) -- special value
 	self.dps = self:GetAbility():GetSpecialValueFor( "blade_fury_damage" ) -- special value
+	self.damage_agility = self:GetAbility():GetSpecialValueFor( "blade_fury_damage_agility" ) -- special value
 	self.count = 0
 
 	if IsServer() then

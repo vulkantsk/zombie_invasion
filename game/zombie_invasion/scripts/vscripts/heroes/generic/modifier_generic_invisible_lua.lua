@@ -96,3 +96,5 @@ end
 function modifier_generic_invisible_lua:OnIntervalThink()
 	self.hidden = true
 end
+
+ 

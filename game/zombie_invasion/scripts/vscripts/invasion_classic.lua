@@ -49,18 +49,25 @@ function InvasionMode:InvasionMap()
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )	
  
-  
+ 
  
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
   	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
 	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
-
+ 
  
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	--GameRules:GetGameModeEntity():SetRecommendedItemsDisabled( true )
 
+
+
+
+  		GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ARMOR,0.050)
+
+
+  		
  	ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(InvasionMode, 'OnPlayerLevelUp'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
@@ -1313,33 +1320,12 @@ function InvasionMode:ThemeMusic()
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
 	    	print("night time")
-
-           
- 	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
  
- 	    	    
- 	    	     	         
- 	    	    
- 	    	      for i = 1, #allBuildings, 1 do
-        local building = allBuildings[i]
-        building:AddNewModifier(building, nil, 'modifier_invulnerable', {}) 
- 
- 
- 
-    end
-   
 	    else
 	    	music = day_music[current_day]
 	    	time_until_end = 300 - day_time
 	    	print("day time")
-	    	     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
-    for i = 1, #allBuildings, 1 do
-        local building = allBuildings[i]
-        building:RemoveModifierByName('modifier_invulnerable')
-  
  
- 
-    end
 	    end
 
 		print("time until night = "..time_until_end)

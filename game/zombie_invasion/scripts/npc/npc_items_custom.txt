@@ -4910,7 +4910,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"	"322"
+				"bonus_damage"	"200"
 			}
 		}
 	}
@@ -5630,7 +5630,7 @@
 
 		"ItemCost"						"500"
 		"ItemAliases"					"midas"
-		"AbilityCastPoint"				"0.5"
+		"AbilityCastPoint"				"1.5"
 		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"0"		
 	}

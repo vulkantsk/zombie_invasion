@@ -17,6 +17,7 @@
 	"item_recipe_mjollnir"							"REMOVE"
 	"item_mjollnir"							"REMOVE"
 	"item_wind_waker" "REMOVE"
+	"item_hand_of_midas" "REMOVE"
 	"item_rapier" "REMOVE"
 	"item_heart" "REMOVE"
 	//============================================================================================================

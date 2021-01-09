@@ -3890,41 +3890,7 @@
         }
 }
 
- "present"   
-{
-        "operator_stacks"
-        {
-                "update_stack"
-                {
-                        "reference_operator"
-                        {
-                                "operator"              "sos_reference_stack"
-                                "reference_stack"               "src1_3d"
-                                "operator_variables"
-                                {
-                                        "vsnd_files"
-                                        {
-                                                "value"
-                                                {
-                                                        "value0"                "sounds/present"
-                                                }
-                                        }
-										"volume"			{   "value"     "5.000000"  }
-   									     "soundlevel"		{   "value"     "64"  }
-										"pitch"       		{  	"value"   	"1.000000" }
-                                       "chan_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                        "memory_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                }
-                        }
-                }
-        }
-}
+ 
 
 "christmas_boss_begin"   
 {
@@ -4095,6 +4061,150 @@
                                         }
 										"volume"			{   "value"     "3.000000"  }
    									     "soundlevel"		{   "value"     "40"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"hood_shoot"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/hood_shoot"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "56"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"gate_dead"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/gate_dead"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "62"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"gate_dead_theme"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/gate_dead_theme"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "62"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"gate_dead_after"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/gate_dead_after"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "62"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {

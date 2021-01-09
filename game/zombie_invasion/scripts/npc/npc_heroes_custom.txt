@@ -20,7 +20,7 @@
 		"Ability15"		"special_bonus_haste"
 		"Ability16"		"special_bonus_attack_damage_100"
 		"Ability17"		"special_bonus_all_stats_20"
-		"ArmorPhysical"		"-1"
+		"ArmorPhysical"		"4"
 		"AttackDamageMin"		"40"
 		"AttackDamageMax"		"42"
 		"AttackRate"		"1.700000"
@@ -65,20 +65,21 @@
 		"AbilityDraftDisabled"		"0"
 		"AbilityLayout"					"5"
 		"Ability1"					"hoodwink_acorn_shot"
-		"Ability2"					"hoodwink_bushwhack"
-		"Ability3"					"hoodwink_scurry"
+		"Ability2"					"tree_dependency"
+		"Ability3"					"hoodwink_scurry_custom"
 		"Ability4"					"generic_hidden"
-		"Ability5"					"generic_hidden"
-		"Ability6"					"hoodwink_sharpshooter"
+		"Ability5"					"hoodwink_anti_armor"
+		"Ability6"					"hoodwink_sharp_shoot"
 		"Ability7"					"hoodwink_sharpshooter_release"
 		"Ability10"					"special_bonus_hp_175"
-		"Ability11"					"special_bonus_unique_hoodwink_bushwhack_cooldown"
-		"Ability12"					"special_bonus_unique_hoodwink_camouflage"
+		"Ability11"					"special_bonus_lifesteal_8"
+		"Ability12"					"special_bonus_attack_range_100"
 		"Ability13"					"special_bonus_agility_14"
-		"Ability14"					"special_bonus_unique_hoodwink_sharpshooter_speed"
+		"Ability14"					"special_bonus_all_stats_15"
 		"Ability15"					"special_bonus_corruption_3"
 		"Ability16"					"special_bonus_unique_hoodwink_acorn_shot_charges"
-		"Ability17"					"special_bonus_unique_hoodwink_sharpshooter_pure_damage"
+		"Ability17"					"special_hoodwink"
+				"AttackRate"		"1.700000"
     } 
 
 		"npc_dota_hero_troll_warlord"
@@ -121,7 +122,9 @@
 
 	"npc_dota_hero_ursa"
 	{
+  
  
+
 		"Ability1"		"ursa_earthshock"
 		"Ability2"		"ursa_overpower"
 		"Ability3"		"ursa_fury_swipes"
@@ -136,7 +139,7 @@
         "Ability15"        "special_bonus_20_crit_15"
         "Ability16"        "special_bonus_attack_speed_100"
         "Ability17"        "special_bonus_unique_ursa"
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"4"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"24"
 		"AttackDamageMax"		"28"
@@ -158,7 +161,8 @@
 	"npc_dota_hero_sand_king"
 	{
  
- 
+  
+
 		"Ability1"		"sandking_burrowstrike"
 		"Ability2"		"ability_thunder_clap"
 		"Ability3"		"sandking_caustic_finale"
@@ -173,7 +177,7 @@
 		"Ability15"		"special_bonus_hp_regen_20"
 		"Ability16"		"special_bonus_unique_sand_king"
 		"Ability17"		"special_bonus_unique_sand_king_4"
-		"ArmorPhysical"		"-1"
+		"ArmorPhysical"		"7"
 		"AttackDamageMin"		"23"
 		"AttackDamageMax"		"33"
 		"AttackRate"		"1.700000"
@@ -194,6 +198,8 @@
 		"npc_dota_hero_terrorblade"
 	{
  
+ 		"ArmorPhysical"		"3"
+
 		"Ability1"		"tb_illusion_dd"
 		"Ability2"      "tb_illusion_tank" 
 		"Ability3"      "tb_astral"  
@@ -227,7 +233,7 @@
 		"Ability15"		"special_bonus_corruption_5"
 		"Ability16"		"special_bonus_lifesteal_30"
 		"Ability17"		"special_bonus_unique_phantom_assassin_4"
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"3"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"32"
 		"AttackRate"		"1.700000"
@@ -488,6 +494,8 @@
 "Role" "Durable,Nuker"
 "Rolelevels" "3,3"
 
+		"ArmorPhysical"		"6"
+
 "AttackRange" "200"
 "AbilityLayout" "4"
 "Ability1" "axe_battle_hunger_custom"
@@ -719,7 +727,7 @@
 		"override_hero"				"npc_dota_hero_juggernaut"
 		"Role"						"Carry,Nuker"
 		"Rolelevels"				"3,1"
-
+		"ArmorPhysical"		"3"
 
 		"AttackRange"				"200"							
 "Ability1" "jugger"
@@ -728,8 +736,14 @@
 "Ability4" "jugger_5"
 "Ability5" "jugger_4"
 "Ability6" "juggernaut_first_gate"
-"Ability16" ""
-"Ability17" ""			
+	     "Ability10"		"special_bonus_magic_resistance_8"
+		 "Ability11"		"special_bonus_mp_250"
+		 "Ability12"		"special_bonus_strength_16"
+		 "Ability13"		"special_bonus_movement_speed_35"
+		 "Ability14"		"special_bonus_agility_25"
+		 "Ability15"		"special_bonus_armor_10"
+		 "Ability16"		"special_bonus_hp_800"
+		 "Ability17"		"special_bonus_cooldown_reduction_15"				
 	}
 	
 "npc_dota_hero_earthshaker"
@@ -759,6 +773,7 @@
 		"override_hero"				"npc_dota_hero_tidehunter"
 		"Role"						"Durable,Carry"
 		"Rolelevels"				"3,2"
+		"ArmorPhysical"		"5"
 
 		"AttackRange"				"200"				
 		"Ability1"					"tidehunter_gush"
@@ -821,6 +836,7 @@
         "override_hero"                "npc_dota_hero_bristleback"
         "Role"                        "Durable,Nuker"
         "Rolelevels"                "2,1"
+		"ArmorPhysical"		"5"
 
         "AttackRange"                "200"
         "Ability1"                    "bristleback_viscous_goo_custom"

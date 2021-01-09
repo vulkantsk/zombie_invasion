@@ -36,7 +36,7 @@ function modifier_juggernaut_third_gate:OnIntervalThink()
     if not caster:HasAbility("juggernaut_omni_slash") then
   	    caster:AddAbility( "juggernaut_omni_slash" ):SetLevel(1)
   	        caster:SwapAbilities("jugger_3", "juggernaut_omni_slash", false, true)
-  	    caster:AddAbility( "juggernaut_fourth_gate" )
+  	    caster:AddAbility( "juggernaut_sixth_gate" )
   	    	caster:RemoveAbility("juggernaut_third_gate")
   	end
  end

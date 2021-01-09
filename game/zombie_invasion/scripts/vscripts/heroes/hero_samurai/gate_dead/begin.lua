@@ -29,7 +29,7 @@ function modifier_juggernaut_first_gate:OnCreated()
   	    caster:AddAbility( "juggernaut_blade_fury_lua" )
   	    caster:FindAbilityByName("juggernaut_blade_fury_lua"):SetLevel(1)
   	    caster:SwapAbilities("jugger", "juggernaut_blade_fury_lua", false, true)
-  caster:AddAbility( "juggernaut_second_gate" )
+  caster:AddAbility( "juggernaut_fourth_gate" )
      		caster:RemoveAbility("juggernaut_first_gate")
 end
 

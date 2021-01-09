@@ -6,7 +6,9 @@ LinkLuaModifier( "modifier_generic_silenced_jug", "heroes/hero_samurai/spells/mo
 function juggernaut_blade_fury_lua:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
-
+	if caster:HasModifier("modifier_phantom_assassin_death_rush") then 
+		return nil 
+	else
 	-- load data
 	local bDuration = self:GetSpecialValueFor("duration")
  	caster:Purge( false, true, false, true, true )
@@ -23,6 +25,8 @@ function juggernaut_blade_fury_lua:OnSpellStart()
 		"modifier_generic_silenced_jug", -- modifier name
 		{ duration = bDuration } -- kv
 	)
+ 
+	end
 end
 
   

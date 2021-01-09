@@ -7,7 +7,7 @@
  
         "IsOnCastBar"                   "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
- 
+ 		"RequiredLevel"					"75"
 	}
 
  	"jugger_2"
@@ -16,7 +16,7 @@
  
         "IsOnCastBar"                   "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
- 
+ 		"RequiredLevel"					"75"
 	}
 
  	"jugger_3"
@@ -25,7 +25,7 @@
  
         "IsOnCastBar"                   "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
- 
+ 		"RequiredLevel"					"75"
 	}
 
 
@@ -35,7 +35,7 @@
  
         "IsOnCastBar"                   "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
- 
+ 		"RequiredLevel"					"75"
 	}
 
 
@@ -45,14 +45,13 @@
  
         "IsOnCastBar"                   "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
- 
+ 		"RequiredLevel"					"75"
 	}
 
    "juggernaut_first_gate"
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/begin"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityTextureName"			"Hero/samurai/gates/begin"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -93,7 +92,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"18"
-		"AbilityManaCost"				"90"
+		"AbilityManaCost"				"60"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -115,13 +114,19 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"blade_fury_damage"			"75"
+				"blade_fury_damage"			"45"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"duration"					"5.0"
 			}
+         	"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"blade_fury_damage_agility"					"1.75"
+			}
+			 
 		}
 	}
 
@@ -129,13 +134,12 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/shadow"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityTextureName"			"Hero/samurai/gates/shadow"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
-        "RequiredLevel"                 "4"
+        "RequiredLevel"                 "14"
  
 	}
 
@@ -144,22 +148,30 @@
 	{
 		"BaseClass" 					"ability_lua"
 		"ScriptFile"					"heroes/hero_samurai/spells/shadow_spell"
-    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET  | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"	
+ 
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"		
 	    "AbilityTextureName"            "Hero/samurai/spells/shadow"
 	    "MaxLevel"                      "1"	
-
+ 	    "AbilityManaCost"				"40"
+		"AbilityCooldown"				"28" 	    
  		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"miss"	"20"
+			"miss"	"35"
 			}
  
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"speed_atack"	"1.30"
+			}  
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"	"8"
 			}
 		}
 
@@ -169,13 +181,13 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/pain"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityTextureName"			"Hero/samurai/gates/pain"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
-        "RequiredLevel"                 "9"
+        "RequiredLevel"                 "21"
  
 	}
 
@@ -205,11 +217,11 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"9"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"125"
+		"AbilityManaCost"				"55"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -254,13 +266,12 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/art"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityTextureName"			"Hero/samurai/gates/art"
+		"AbilityTextureName"			"Hero/samurai/gates/art_2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
-        "RequiredLevel"                 "14"
+        "RequiredLevel"                 "4"
  
 	}
 
@@ -315,13 +326,12 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/limit"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityTextureName"			"Hero/samurai/gates/limit"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
-        "RequiredLevel"                 "21"
+        "RequiredLevel"                 "9"
  
 	}
 
@@ -363,8 +373,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12"
-		"AbilityManaCost"				"80 90 100"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"60"
 		"AbilityCastRange"				"1100"
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -406,11 +416,6 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pop_damage"			"150 200 250"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"movement_slow_pct"		"40 60 80"
 			}
 		}
@@ -420,9 +425,9 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/miracle"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityTextureName"			"Hero/samurai/gates/shadow"
+		"AbilityTextureName"			"Hero/samurai/gates/dead"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
@@ -491,9 +496,9 @@
 	{
 		"ScriptFile"					"heroes/hero_samurai/gate_dead/dead"
 		"BaseClass"						"ability_lua"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityTextureName"			"Hero/samurai/gates/dead"
+		"AbilityTextureName"			"Hero/samurai/gates/life"    
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"                      "1"
         "LevelsBetweenUpgrades"         "1"
@@ -512,7 +517,7 @@
 		"MaxLevel"						"1"
 		"LevelsBetweenUpgrades"			"1"
 		"RequiredLevel"					"75"
-
+ 
 
 		"precache"
 		{
@@ -521,7 +526,7 @@
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"60"
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"AbilityCastPoint"				"0.7"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -534,7 +539,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"6.5"
+				"duration"					"23.5"
 			}
 			"02"
 			{
@@ -544,12 +549,37 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"as_bonus"					"600"
+				"as_bonus"					"900"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dmg_bonus"					"125"
+				"dmg_bonus"					"475"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_self"					"8.5"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cooldown"					"75"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"turn"					"100"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"attack_base"					"0.90"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"status_resist"					"50"
 			}
 
 		}

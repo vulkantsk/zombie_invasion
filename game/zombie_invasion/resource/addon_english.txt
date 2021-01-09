@@ -54,7 +54,8 @@
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		 
+		"npc_dota_hero_juggernaut"                                      "Samurai" 	
+				 
 		// ******************** moobs ********************	
 	    "npc_end_pudge"	                                        "DAXAK"
 	    "npc_end_techies"	                                    "TPABOMAH"
@@ -521,7 +522,8 @@
  
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom"										"Like Robin Hood"
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom_Description"							"Feel like Robin Hood, shooting at several targets at once. \n\nThis ability is not unique modifier attack and combined with all the orbs."
-		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damage"     							"%DAMAGE:"
+		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damage"     							""
+		"DOTA_Tooltip_Ability_medusa_split_shot_custom_fake_damage"      							"%DAMAGE:"
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom_arrow_count"                 		"NUMBER OF ARROWS:"
 		
 
@@ -868,7 +870,7 @@
         "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS HEALTH PER STACK:"
 
 		"DOTA_Tooltip_modifier_tide_health"												"More health"
-		"DOTA_Tooltip_modifier_tide_health_Description"									"I NEED MORE HP"
+		"DOTA_Tooltip_modifier_tide_health_Description"									"It has %dMODIFIER_PROPERTY_HEALTH_BONUS%% of bonus health"
 
 // -----------------Tb--------------------
 "DOTA_Tooltip_Ability_tb_illusion_dd" "<font color='#ff4d4d'>Conjure Image</font>"
@@ -970,6 +972,149 @@
       "DOTA_Tooltip_modifier_frostivus2018_troll_warlord_fervor"	"Fervor"
  
       "DOTA_Tooltip_modifier_frostivus2018_troll_warlord_fervor_Description"	"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+	// -----------------Samurai--------------------
+
+      "DOTA_Tooltip_ability_jugger"	"Х" 
+      "DOTA_Tooltip_ability_jugger_2"	"М" 
+      "DOTA_Tooltip_ability_jugger_3"	"М" 
+      "DOTA_Tooltip_ability_jugger_4"	"М" 
+       "DOTA_Tooltip_ability_jugger_5"	"М" 
+            
+       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua"	"Blade Fury"
+       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Description"	"Causes a bladestorm of destructive force around Samurai, rendering him immune to magic and dealing damage to nearby enemy units. \n\nDISPEL TYPE: Basic Dispel."
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage"					"DAMAGE:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage_agility"					"DAMAGE FROM AGILITY:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_duration"					"DURATION:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Note0"								"You can use items during Blade Fury and attacking enemies."
+ 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Lore"								"Samurai's renowned katana techniques are feared by warriors and sorcerors alike."
+
+      "DOTA_Tooltip_modifier_juggernaut_blade_fury_lua"	"Blade Fury" 
+      "DOTA_Tooltip_modifier_juggernaut_blade_fury_lua_Description"	"JUUUUUUGGGGGGGERRRNNAAUUUUUT"
+
+       "DOTA_Tooltip_ability_juggernaut_shadow"	"Hidden in shadow"
+       "DOTA_Tooltip_ability_juggernaut_shadow_Description"	"The samurai merges so well with his own shadow that enemies in confusing begin to miss him. Can be activated Samurai merges with his shadow completely and his enemies will be not see him."
+		"DOTA_Tooltip_ability_juggernaut_shadow_miss"				"%EVASION:"
+		"DOTA_Tooltip_ability_juggernaut_shadow_speed_atack"					"BASE ATTACK TIME:"
+		"DOTA_Tooltip_ability_juggernaut_shadow_duration"					"DURATION:"
+ 		"DOTA_Tooltip_ability_juggernaut_shadow_Lore"								"Be one with shadow. Samurai's teacher always teach it and Samurai successful begin to have this skill."
+ 		"DOTA_Tooltip_ability_juggernaut_shadow_Note0"								""
+
+      "DOTA_Tooltip_modifier_shadow_jug"	"Hidden in shadow" 
+      "DOTA_Tooltip_modifier_shadow_jug_Description"	"It is one with shadow"
+
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua"									"Blade Dance"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Description"						"Gives Samurai a chance to deal critical damage on each attack."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Lore"								"Like the one of representative of his heritage's commitment to bladework, Samurai ensures that the style is remembered."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_mult"				"%CRITICAL DAMAGE:"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_chance"			"%CRITICAL CHANCE:"
+
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua"									"Spiritual Step" 
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Description"						"Void Spirit tears a rift through the spirit plane to appear at the target location, attacking all enemies along the path. This attack inflicts a void mark that slows enemies."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Lore"								"Samurai's step is one of miracle the world."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_movement_slow_pct"			"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_max_travel_distance"	"RANGE:"
+
+		"DOTA_Tooltip_modifier_void_spirit_astral_step_lua"				"Spiritual Step"
+		"DOTA_Tooltip_modifier_void_spirit_astral_step_lua_Description"	"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_ability_jugger_miracle"									"Miracle"
+		"DOTA_Tooltip_ability_jugger_miracle_Description"						"Collecting all the things he had learned. The samurai remains in this world for a moment longer."
+		"DOTA_Tooltip_ability_jugger_miracle_Lore"								"The end... All things in this world have the end but Samurai can delay this moment and live else more a long time."
+		"DOTA_Tooltip_ability_jugger_miracle_duration"	"BUFF DURATION:"
+		"DOTA_Tooltip_ability_jugger_miracle_as_bonus"	"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_jugger_miracle_dmg_bonus"	"BONUS DAMAGE:"
+
+		"DOTA_Tooltip_modifier_jugger_miracle"				"Miracle"
+		"DOTA_Tooltip_modifier_jugger_miracle_Description"	"I WILL BE LIVING FOREVER!!!!"
+
+		"DOTA_Tooltip_ability_jugger_dead"									"<font color='#ff0000'>Death</font>"
+		"DOTA_Tooltip_ability_jugger_dead_Description"						"Using the last gate the Samurai sacrifices everything and becomes very strong. But in the process, he takes damage in the amount of %damage_self%% of his health per second. At the end of the action of the gate, Samurai begins to move away from them and is stunned, after some time he dies...\n<font color='#ff0000'> Use this spell if you really need in it! </font>"
+ 		"DOTA_Tooltip_ability_jugger_dead_Note0"								"After use this spell You will have the buff which reduces your damage on 15%, buff is stackable "
+  		"DOTA_Tooltip_ability_jugger_dead_Note1"								"\You can't die using this spell. You can't use these abilities: Blade Fury, Hidden in shadow."
+		"DOTA_Tooltip_ability_jugger_dead_Lore"								"The last gate... Teacher always said Samurai that you can use this spell only if your team are in the big dangerous."
+		"DOTA_Tooltip_ability_jugger_dead_duration"	"BUFF DURATION:"
+		"DOTA_Tooltip_ability_jugger_dead_as_bonus"	"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_jugger_dead_ms_bonus"	"MOVE SPEED:"
+		"DOTA_Tooltip_ability_jugger_dead_dmg_bonus"	"BONUS DAMAGE:"  
+ 		"DOTA_Tooltip_ability_jugger_dead_attack_base"	"BASE ATTACK TIME:"
+ 		"DOTA_Tooltip_ability_jugger_dead_status_resist"	"%RESISTANCE OF EFFECT:"
+
+		"DOTA_Tooltip_modifier_phantom_assassin_death_rush"				"Gate Death"
+		"DOTA_Tooltip_modifier_phantom_assassin_death_rush_Description"	"I will give of myself everything..."
+
+		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after"				"Responsibility" 
+		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after_Description"	"For your actions, you and only you are always responsible... Damage reduction on %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
+
+
+
+
+
+
+       "DOTA_Tooltip_ability_juggernaut_first_gate"	"The Gate of the Beginning"
+       "DOTA_Tooltip_ability_juggernaut_first_gate_Description"	"Первые врата из семи доступных Самураю. Открывает способность Blade Fury, которая позволяет крутиться вокруг себя."
+		"DOTA_Tooltip_ability_juggernaut_first_gate_Lore"								"Самые первые врата, самое начало."
+
+       "DOTA_Tooltip_ability_juggernaut_fourth_gate"	"The Gate of the Art"
+       "DOTA_Tooltip_ability_juggernaut_fourth_gate_Description"	"Вторые врата из семи доступных Самураю. Открывает способность Blade Dance, которая позволяет наносить удары вдвое сильнее обычных."
+		"DOTA_Tooltip_ability_juggernaut_fourth_gate_Lore"								"Чтобы открыть эти врата, Самураю пришлось побывать в самых изумительных местах этого мира."
+
+       "DOTA_Tooltip_ability_juggernaut_fifth_gate"	"The Gate of the Limit"
+       "DOTA_Tooltip_ability_juggernaut_fifth_gate_Description"	"Третьи врата из семи доступных Самураю. Открывает способность Spiritual Step, которая позволяет перемещаться к врагу через духовный портал, при этом нанося урон всем, кто попадется на пути."
+		"DOTA_Tooltip_ability_juggernaut_fifth_gate_Lore"								"Эти врата Самурай открыл только с помощью изнурительных тренеровок. Учитель не щадил своего ученика, заставлял его бегать 10 км, 100 раз отжиматься, 100 раз делать пресс и 100 раз приседать, КАЖДЫЙ ДЕНЬ!"
+
+
+       "DOTA_Tooltip_ability_juggernaut_second_gate"	"The Gate of the Shadows"
+       "DOTA_Tooltip_ability_juggernaut_second_gate_Description"	"Четвёртые врата из семи доступных Самураю. Открывает способность Hidden in shadow, которая позволяет прятаться в собственной тени."
+		"DOTA_Tooltip_ability_juggernaut_second_gate_Lore"								"Врата теней требуют большей концентрации, поэтому чтобы овладеть ими, нужно много медитировать."
+
+       "DOTA_Tooltip_ability_juggernaut_third_gate"	"The Gate of the Pain"
+       "DOTA_Tooltip_ability_juggernaut_third_gate_Description"	"Пятые врата из семи доступных Самураю. Открывает способность Omnislash, которая позволяет обрушить шквал ударов на врага."
+		"DOTA_Tooltip_ability_juggernaut_third_gate_Lore"								"Только всплеск сильных негативных эмоций поможет открыть Врата Боли."
+
+       "DOTA_Tooltip_ability_juggernaut_sixth_gate"	"The Gate of the Life"
+       "DOTA_Tooltip_ability_juggernaut_sixth_gate_Description"	"Шестые врата из семи доступных Самураю. Открывает способность Miracle, которая позволяет владельцу не умирать."
+		"DOTA_Tooltip_ability_juggernaut_sixth_gate_Lore"								"Жизнь - это самое дорогое, что у нас есть, и только на грани смерти мы можем осознать это. Врата открываются после того, как ты был на волоске от смерти."
+  
+         "DOTA_Tooltip_ability_juggernaut_seventh_gate"	"<font color='#ff0000'>The Gate of the Deaths</font>"
+       "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>Последние врата из семи доступных Самураю. Открывает способность Death, которая дарует владельцу неземную мощь, но взамен забирает жизнь...</font>""
+ 
+
+	// -----------------Hoodwink-------------------
+
+       "DOTA_Tooltip_ability_tree_dependency"	"Proximity with nature"  
+       "DOTA_Tooltip_ability_tree_dependency_Description"	"If Hoodwink be located closely with trees in radius %radius%. Her powers will increase."
+		"DOTA_Tooltip_ability_tree_dependency_attack_speed"				"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_tree_dependency_bonus_damage"					"BONUS DAMAGE:"
+		"DOTA_Tooltip_ability_tree_dependency_bonus_envasion"					"%EVASION:"
+ 		"DOTA_Tooltip_ability_tree_dependency_Lore"								"Hoodwink always love nature and the proximity with trees brings her happy memories."
+ 
+		"DOTA_Tooltip_modifier_tree_dependency"					"Proximity with nature"
+       "DOTA_Tooltip_modifier_tree_dependency_Description"	"Bonus  %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed,  %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% damage and  %dMODIFIER_PROPERTY_EVASION_CONSTANT%%% evasion"
+
+ 		"DOTA_Tooltip_Ability_special_hoodwink"											"+{s:value} to damage from Proximity with nature"
+
+ 		"DOTA_Tooltip_ability_hoodwink_scurry_custom"							"Scurry"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Description"				"When activated, Hoodwink gains bonus movement speed, phased collision and the removal of restrictions on movement speed for a brief time. \n If you hit somebody during the action of this ability, the effect of movement speed will be destroy."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Lore"						"There's not a nook or cranny in the Wood Tomo'kan out of reach of Hoodwink's paws."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_movement_speed_pct"		"%MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_duration"					"BUFF DURATION:"
+ 
+ 		"DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff"					"Scurry"
+		"DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff_Description"		"Gaining %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% bonus movement speed and the ability to walk through units."
+
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot"					"Sharpshooter"   
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Description"		"Hoodwink charges up and fires a deadly bolt from her crossbow. It are dealing heavy damage from her damage in size %damage_pct%%  and stun on a %stun_duration% second  an enemy creatures. "
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Lore"				"While her first arbalest was a chance discovery, Hoodwink now takes great care in carving and caring for her own -- of course with some necessary components pilfered or otherwise cleverly procured."
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_base_dmg"					"BASE DAMAGE:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct" "%CRITICAL DAMAGE:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"			"STUN DURATION:"
+
+        "DOTA_Tooltip_ability_hoodwink_anti_armor"	"Powerful crossbow"
+       "DOTA_Tooltip_ability_hoodwink_anti_armor_Description"	"The forces of nature have given Hoodwink the ability to deal damage while ignoring armor"
+        "DOTA_Tooltip_ability_hoodwink_anti_armor_trigger_chance"	"%CHANCE:"
+       "DOTA_Tooltip_ability_hoodwink_anti_armor_Lore"	"The Hoodwink crossbow has always been filled with the power of nature, but recently this power is becoming  more stronger."
 
 
 	// -----------------Wisp--------------------

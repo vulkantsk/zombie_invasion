@@ -1,0 +1,286 @@
+"DOTAAbilities"
+{
+
+	"hoodwink_acorn_shot"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"8429"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16 14 12 10"
+		"AbilityCastRange"				"575"
+		"AbilityCastPoint"				"0.2"
+		"AbilityManaCost"				"75 85 95 105"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{		
+			"01"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"bonus_range"			"125 200 275 350"
+			}
+			"02"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"20 40 60 80"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"projectile_speed"		"2000"
+			}
+			"04"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"bounce_count"			"5 7 9 11"
+			}
+			"05"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"bounce_range"			"525"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"debuff_duration"		"0.25"
+			}
+			"07"
+			{	
+				"var_type"				"FIELD_INTEGER"
+				"slow"					"100"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bounce_delay"			"0.1"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+ 	 
+ 	 	"tree_dependency"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_hoodwink/TreeDependency/dependency"
+		"AbilityTextureName"			"Hero/hood/dependency"
+ 		"AbilityCastRange"				"275"
+
+        "LevelsBetweenUpgrades"         "5" 
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+ 
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+ 
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"radius"					"275"
+			}  
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"attack_speed"					"30 65 105 155"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonus_damage"					"15 40 80 115"
+								"LinkedSpecialBonus"			"special_hoodwink"
+			}
+ 			"04"
+			{
+				"var_type"						"FIELD_INTEGER"  
+				"bonus_envasion"					"10 20 30 40"
+			}
+ 
+		
+      }
+		
+	}
+
+	"hoodwink_scurry_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"ability_lua"
+		"ScriptFile"             		"heroes/hero_hoodwink/scurry/scurry"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"hoodwink_scurry"
+ 
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+ 
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+		"AbilityCharges"				"2"
+		"AbilityChargeRestoreTime"		"14 12 10 8"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"45"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed_pct"			"41 49 57 65"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"4.0"
+			}
+ 
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	"hoodwink_sharp_shoot"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"             		"heroes/hero_hoodwink/sharp_shoot/sharp_shoot"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"               "1"
+		"AbilityTextureName"            "hoodwink_sharpshooter"
+ 
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"              "3.0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"               "40"
+		"AbilityManaCost"               "150 225 300"
+ 
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"wave_speed"        "2200"
+			}
+
+			"02"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"wave_width_initial"    "200"
+			}
+			"03"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"wave_width_end"        "200"
+			}
+
+			"04"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"wave_distance"         "1800"
+			}
+			"05"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"base_dmg"          		"300"
+			}
+			"06"
+			{
+				"var_type"                  "FIELD_INTEGER"
+				"damage_pct"            	"225 350 475"
+				"CalculateSpellDamageTooltip" "0"
+			}
+			"07"
+			{
+				"var_type"                   "FIELD_INTEGER"
+				"stun_duration"          	 "1"
+			}
+		}
+	}
+
+	"hoodwink_anti_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_hoodwink/anti_armor/armor_penetration"
+		"AbilityBehavior"		      	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"Hero/hood/armor"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"35"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+            "01"
+            {
+			     "var_type"					"FIELD_INTEGER"
+			     "trigger_chance"			"12"
+		    }
+		}
+	}
+
+	"special_hoodwink"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"175"
+			}
+		}
+	}
+
+ 
+}

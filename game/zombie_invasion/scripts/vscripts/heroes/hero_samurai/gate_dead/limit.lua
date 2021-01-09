@@ -35,7 +35,7 @@ function modifier_juggernaut_fifth_gate:OnIntervalThink()
     if not caster:HasAbility("void_spirit_astral_step_lua") then
   	    caster:AddAbility( "void_spirit_astral_step_lua" ):SetLevel(1)
   	      	    caster:SwapAbilities("jugger_5", "void_spirit_astral_step_lua", false, true)
-  	      	    caster:AddAbility( "juggernaut_sixth_gate" )
+  	      	    caster:AddAbility( "juggernaut_second_gate" )
   	    	caster:RemoveAbility("juggernaut_fifth_gate")
   	end
  end
