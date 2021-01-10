@@ -479,7 +479,7 @@
 
 		"MinimapIconSize"           "1"
 		"RingRadius"				"10"
-		"HealthBarOffset"			"20000"
+		"HealthBarOffset"			"150"
 
 		// Bounty
 		//----------------------------------------------------------------

@@ -16,7 +16,7 @@
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"sange"
 		"ShouldBeSuggested"				"1"
-		
+		"ItemPurchasable"				"0"		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -4921,7 +4921,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
-		
+		 		"AbilityTextureName" 			"custom_folder/item_recipe"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"400"	
@@ -5125,19 +5125,33 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"str"	"40"
+				"str"	"38"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hp"	"1350"
+				"hp"	"1150"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rg"	"3.25"
+				"rg"	"2.00"
 			}
 		}
+	}
+
+	"item_midas"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_midas"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName" "midas_2"
+
+		"ItemCost"						"500"
+		"ItemAliases"					"midas"
+		"AbilityCastPoint"				"1.5"
+		"AbilityCooldown"				"50"
+		"AbilityManaCost"				"0"		
 	}
 
 
@@ -5621,20 +5635,7 @@
 	}
 
 
-	"item_midas"
-	{
-		"BaseClass"          "item_lua"
-		"ScriptFile"         "items/new_items/item_midas"
-		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName" "midas"
-
-		"ItemCost"						"500"
-		"ItemAliases"					"midas"
-		"AbilityCastPoint"				"1.5"
-		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"0"		
-	}
-
+ 
 
  
 

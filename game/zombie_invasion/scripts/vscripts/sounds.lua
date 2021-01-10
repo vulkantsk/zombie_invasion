@@ -19,17 +19,17 @@ Sounds = Sounds or {
   		["Musica - Fly Project"] = 48,
   		["Wake Me Up - Avicii"] = 109,
         ["Galantis - No Money"] = 77,
-  		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 93,  
-  		["Boulevard of Broken Dreams - Green Day"] = 73,
+  		["Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone"] = 95,  
+  		["Boulevard of Broken Dreams - Green Day"] = 75,
 		
  
   		["Lana Del Rey - Summertime Sadness (smoke remix)"] = 63,
-  		["I Follow Rivers - Lykke Li"] = 54,
+  		["I Follow Rivers - Lykke Li"] = 55,
    		["August - Intelligency"] = 91,  
    		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
   		["Runaway - Parachute Youth feat. Jay Martin"] = 89,
    		["Sia - Cheap Thrills"] = 62,
-   		["L Starz - My Life Be LikeGrits"] = 38,
+   		["L Starz - My Life Be LikeGrits"] = 40,
   	 	["Kiesza - Hideaway"] = 92,
   	 	["John  Newman - Fire In Me"] = 95,
   	 	["iSpy - KYLE feat. Lil Yachty"] = 116,
@@ -47,7 +47,7 @@ Sounds = Sounds or {
 
 ["C418-Key"] = 184,
 
-["Undertale - Respite"] = 105,
+["Undertale - Respite"] = 108,
  
 ["Argh Ost – Halloween"] = 145,
  

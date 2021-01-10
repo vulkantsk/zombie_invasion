@@ -9,7 +9,7 @@
 	{		
 		"#DOTA_Item_Build_Starting_Items"
 		{
-			"item"		"item_hand_of_midas"					
+			"item"		"item_midas"					
  
  
 		}
@@ -26,7 +26,7 @@
 		{ 
  			"item"		"item_travel_boots_2"	
  			"item"	      "item_tesla"		
-					"item"		"item_rapier"   
+			"item"   	"item_god_rapier"
 					"item"   	"item_butterfly" 
  																	
 		}

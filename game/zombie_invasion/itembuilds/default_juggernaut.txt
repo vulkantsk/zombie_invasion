@@ -1,8 +1,8 @@
 "itembuilds"
 {
 	"author"		"Plarget"
-	"hero"			"npc_dota_hero_ursa"
-	"Title"			"Recommended items for Ursa"
+	"hero"			"npc_dota_hero_juggernaut"
+	"Title"			"Recommended items for Samurai"
 	
 
 	"Items"
@@ -19,22 +19,28 @@
 		{	
 					"item"		"item_phase_boots"		
 			"item"		"item_vambrace"
-		    "item"		"item_lifesteal"							
+			"item"   	"item_bfury"			
+ 					
 		}
 		
 		"#DOTA_Item_Build_Core_Items"
 		{ 
-			"item"   	"item_bfury"
+		    "item"		"item_lifesteal"	
+					"item"   	"item_butterfly" 		
 			"item"   	"item_god_rapier"
-					"item"   	"item_butterfly" 								
+ 			"item"		"item_travel_boots_2"
+ 					"item"		"item_bunch_of_butterfly"   
+ 	
+ 
+ 							
 		}
 		
 		"#DOTA_Item_Build_Luxury"
 		{
- 			"item"		"item_travel_boots_2"	
-		"item"      "item_bunch_of_butterfly"				
-				 	"item"		"item_satanic"	
-			"item"		"item_skadi_2"	
+ 				"item"		"item_skadi_2"
+		 	"item"		"item_satanic"
+ 		 	"item"		"item_imba_haste_boots"	
+			 
 		}
 	}
 }

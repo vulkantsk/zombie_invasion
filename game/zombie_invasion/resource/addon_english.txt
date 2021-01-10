@@ -78,7 +78,8 @@
 		"npc_jitel_3"                                                       "Tramp"
 		"npc_boss_pig"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Strange Bo"   			
-		
+		"npc_medas"                                                  		"Treasure"
+
 		"npc_base"                                                  		"Homer"
 
 		"npc_classic_pig"                                                  	"Pig"
@@ -407,6 +408,28 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
 
+        "DOTA_Tooltip_Ability_item_dickrapier" "Dickrapier"
+        "DOTA_Tooltip_Ability_item_dickrapier_Description" "<h1>Passive: Cock</h1>Owner receives more damage."
+        "DOTA_Tooltip_Ability_item_dickrapier_bonus_damage" "+$damage"
+        "DOTA_Tooltip_Ability_item_dickrapier_Lore" "Dick, I think cock(((( Ok kock so cokc."
+
+        "DOTA_Tooltip_Ability_item_god_rapier" "Rapier"
+        "DOTA_Tooltip_Ability_item_god_rapier_Description" "<h1>Passive: True strike</h1>Owner receives more damage and true-strike."
+        "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage" "+$damage"
+        "DOTA_Tooltip_Ability_item_god_rapier_Lore" "So powerful, it cannot have a single owner."
+
+        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
+        "DOTA_Tooltip_Ability_item_her_Description"                                "<h1>Passive: Heart of Tarrasque</h1>The owner increases the health regeneration."
+        "DOTA_Tooltip_Ability_item_her_str"                                        "BONUS STRENGTH:"
+                "DOTA_Tooltip_Ability_item_her_hp"                                        "BONUS HEALTH:"
+                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%BONUS REGENERATION:"
+        "DOTA_Tooltip_Ability_item_her_Lore"                                "Preserved heart of an extinct monster, it bolsters the bearer's fortitude."
+
+        "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
+        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Active: Summon the Treasure</h1>It summon Midas's treasure and if you break treasure then you will have exp and gold."       
+        "DOTA_Tooltip_Ability_item_midas_Lore"                                "It had once been Midas's own chest."  
+
+
 
 
 
@@ -561,8 +584,8 @@
 		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_slow"          						"%SLOWDOWN:"
 		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_speed_bonus"          				"SPEED BONUS:"
 
-		"DOTA_Tooltip_Ability_axe_culling_blade_custom"										"Mincer"
-		"DOTA_Tooltip_Ability_axe_culling_blade_custom_Description"	"Axe strikes at the weakest spot, instantly killing unit with low health, and otherwise causing little damage."
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua"										"Mincer"
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description"	"Axe strikes at the weakest spot, causing %damage_true%% from his basic damage."
 		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_true"                      		"%DAMAGE ON BASE DAMAGE:"
 		"DOTA_Tooltip_Ability_axe_culling_blade_lua_great_cleave_damage"                      		"%SPLASH:"
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore"      			"It is favorite reception's Axe."
@@ -906,15 +929,7 @@
 "DOTA_Tooltip_Ability_tb_soul_illusion_incoming_damage" "%ILLUSION DAMAGE TAKEN:"
 "DOTA_Tooltip_Ability_tb_soul_Lore" "Terrorblade for true power ready donate his life."
 
-"DOTA_Tooltip_Ability_item_dickrapier" "Dickrapier"
-"DOTA_Tooltip_Ability_item_dickrapier_Description" "Owner receives more damage."
-"DOTA_Tooltip_Ability_item_dickrapier_bonus_damage" "+$damage"
-"DOTA_Tooltip_Ability_item_dickrapier_Lore" "Dick, I think cock(((( Ok kock so cokc."
-
-"DOTA_Tooltip_Ability_item_god_rapier" "Rapier"
-"DOTA_Tooltip_Ability_item_god_rapier_Description" "Owner receives more damage and true-strike."
-"DOTA_Tooltip_Ability_item_god_rapier_bonus_damage" "+$damage"
-"DOTA_Tooltip_Ability_item_god_rapier_Lore" "So powerful, it cannot have a single owner."
+ 
 
 "DOTA_Tooltip_Ability_item_color_red" "Red"
 "DOTA_Tooltip_Ability_item_color_green" "Green"
@@ -922,13 +937,7 @@
 "DOTA_Tooltip_Ability_item_color_blue" "Blue"
 "DOTA_Tooltip_Ability_item_color_aqua" "Turquoise"
 "DOTA_Tooltip_Ability_item_color_fuchsia" "Magenta"
-
-        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
-        "DOTA_Tooltip_Ability_item_her_Description"                                "The owner increases the health regeneration."
-        "DOTA_Tooltip_Ability_item_her_str"                                        "BONUS STRENGTH:"
-                "DOTA_Tooltip_Ability_item_her_hp"                                        "BONUS HEALTH:"
-                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%BONUS REGENERATION:"
-
+ 
 
 
 	// -----------------Sand king--------------------		
@@ -1053,32 +1062,32 @@
 
 
        "DOTA_Tooltip_ability_juggernaut_first_gate"	"The Gate of the Beginning"
-       "DOTA_Tooltip_ability_juggernaut_first_gate_Description"	"Первые врата из семи доступных Самураю. Открывает способность Blade Fury, которая позволяет крутиться вокруг себя."
-		"DOTA_Tooltip_ability_juggernaut_first_gate_Lore"								"Самые первые врата, самое начало."
+       "DOTA_Tooltip_ability_juggernaut_first_gate_Description"	"The first gate from seven available to Samurai. It opens spell Blade Fury which allows you to spin around yourself."
+		"DOTA_Tooltip_ability_juggernaut_first_gate_Lore"								"The first gate, the very beginning."
 
        "DOTA_Tooltip_ability_juggernaut_fourth_gate"	"The Gate of the Art"
-       "DOTA_Tooltip_ability_juggernaut_fourth_gate_Description"	"Вторые врата из семи доступных Самураю. Открывает способность Blade Dance, которая позволяет наносить удары вдвое сильнее обычных."
-		"DOTA_Tooltip_ability_juggernaut_fourth_gate_Lore"								"Чтобы открыть эти врата, Самураю пришлось побывать в самых изумительных местах этого мира."
+       "DOTA_Tooltip_ability_juggernaut_fourth_gate_Description"	"The second gate from seven available to Samurai. It opens spell Blade Dance, which allows you have to hit enemy have in two times more damage."
+		"DOTA_Tooltip_ability_juggernaut_fourth_gate_Lore"								"To open this gate, the Samurai had to visit the most amazing places in this world."
 
        "DOTA_Tooltip_ability_juggernaut_fifth_gate"	"The Gate of the Limit"
-       "DOTA_Tooltip_ability_juggernaut_fifth_gate_Description"	"Третьи врата из семи доступных Самураю. Открывает способность Spiritual Step, которая позволяет перемещаться к врагу через духовный портал, при этом нанося урон всем, кто попадется на пути."
-		"DOTA_Tooltip_ability_juggernaut_fifth_gate_Lore"								"Эти врата Самурай открыл только с помощью изнурительных тренеровок. Учитель не щадил своего ученика, заставлял его бегать 10 км, 100 раз отжиматься, 100 раз делать пресс и 100 раз приседать, КАЖДЫЙ ДЕНЬ!"
+       "DOTA_Tooltip_ability_juggernaut_fifth_gate_Description"	"The third gate from seven available to Samurai. It opens spell Spiritual Step, which allows you to move to the enemy through a spiritual portal, while dealing damage to everyone who gets in the way."
+		"DOTA_Tooltip_ability_juggernaut_fifth_gate_Lore"								"This gate Samurai opens only with help debilitating training. The teacher did not spare his student, He made him run 10 km, do 100 push-ups, do 100 abs and do 100 squats EVERY DAY!"
 
 
        "DOTA_Tooltip_ability_juggernaut_second_gate"	"The Gate of the Shadows"
-       "DOTA_Tooltip_ability_juggernaut_second_gate_Description"	"Четвёртые врата из семи доступных Самураю. Открывает способность Hidden in shadow, которая позволяет прятаться в собственной тени."
-		"DOTA_Tooltip_ability_juggernaut_second_gate_Lore"								"Врата теней требуют большей концентрации, поэтому чтобы овладеть ими, нужно много медитировать."
+       "DOTA_Tooltip_ability_juggernaut_second_gate_Description"	"The fourth gate from seven available to Samurai. It opens spell Hidden in shadow, which allows him  hide in his own shadow."
+		"DOTA_Tooltip_ability_juggernaut_second_gate_Lore"								"The shadow Gate requires more concentration, so to master it, you need to meditate a lot."
 
        "DOTA_Tooltip_ability_juggernaut_third_gate"	"The Gate of the Pain"
-       "DOTA_Tooltip_ability_juggernaut_third_gate_Description"	"Пятые врата из семи доступных Самураю. Открывает способность Omnislash, которая позволяет обрушить шквал ударов на врага."
-		"DOTA_Tooltip_ability_juggernaut_third_gate_Lore"								"Только всплеск сильных негативных эмоций поможет открыть Врата Боли."
+       "DOTA_Tooltip_ability_juggernaut_third_gate_Description"	"The fifth gate from seven available to Samurai. It opens spell Omnislash, which allows you bring down a barrage of blows on the enemy."
+		"DOTA_Tooltip_ability_juggernaut_third_gate_Lore"								"Only a surge of strong negative emotions will help open the Gates of Pain."
 
        "DOTA_Tooltip_ability_juggernaut_sixth_gate"	"The Gate of the Life"
-       "DOTA_Tooltip_ability_juggernaut_sixth_gate_Description"	"Шестые врата из семи доступных Самураю. Открывает способность Miracle, которая позволяет владельцу не умирать."
-		"DOTA_Tooltip_ability_juggernaut_sixth_gate_Lore"								"Жизнь - это самое дорогое, что у нас есть, и только на грани смерти мы можем осознать это. Врата открываются после того, как ты был на волоске от смерти."
+       "DOTA_Tooltip_ability_juggernaut_sixth_gate_Description"	"The sixth gate from seven available to Samurai. It opens spell Miracle, which allows you don't dying."
+		"DOTA_Tooltip_ability_juggernaut_sixth_gate_Lore"								"Life - is most important what we have and only on the verge of death can we realize this. The gate opens after you were on the verge of death."
   
          "DOTA_Tooltip_ability_juggernaut_seventh_gate"	"<font color='#ff0000'>The Gate of the Deaths</font>"
-       "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>Последние врата из семи доступных Самураю. Открывает способность Death, которая дарует владельцу неземную мощь, но взамен забирает жизнь...</font>""
+       "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>The last gate from seven available to Samurai. It opens spell Death, which gives the owner god's power, but in return takes life...</font>"
  
 
 	// -----------------Hoodwink-------------------

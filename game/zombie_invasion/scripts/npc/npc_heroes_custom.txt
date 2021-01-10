@@ -198,7 +198,7 @@
 		"npc_dota_hero_terrorblade"
 	{
  
- 		"ArmorPhysical"		"3"
+ 		"ArmorPhysical"		"9"
 
 		"Ability1"		"tb_illusion_dd"
 		"Ability2"      "tb_illusion_tank" 

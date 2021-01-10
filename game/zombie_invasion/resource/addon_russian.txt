@@ -76,7 +76,8 @@
 		"npc_jitel_3"                                                       "Бродяга"
 		"npc_boss_pig"                                                   	"Большой Бо"   
         "npc_boss_dead_pig"		                                            "Искаженный Бо"   	
-		
+		"npc_medas"                                                  		"Сундук"
+
 		"npc_base"                                                  		"Homer"
 
 		"npc_classic_pig"                                                  	"Pig"
@@ -411,6 +412,26 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
 
+        "DOTA_Tooltip_Ability_item_dickrapier"                                            "Dickrapier"
+        "DOTA_Tooltip_Ability_item_dickrapier_Description"                                "<h1>Пассивная: Cock</h1>Владелец получает бонусный урон."
+        "DOTA_Tooltip_Ability_item_dickrapier_bonus_damage"                                        "+$damage"
+        "DOTA_Tooltip_Ability_item_dickrapier_Lore" 									  "Владелец этого предмета получает невероятное желание сесть на него."
+
+        "DOTA_Tooltip_Ability_item_god_rapier"                                            "Rapier"
+        "DOTA_Tooltip_Ability_item_god_rapier_Description"                                "<h1>Пассивная: True strike</h1>Владелец не промахивается ни по каким целям."
+        "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage"                                        "+$damage"
+        "DOTA_Tooltip_Ability_item_god_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
+        
+        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
+        "DOTA_Tooltip_Ability_item_her_Description"                                "<h1>Пассивная: Heart of Tarrasque</h1>Владелец увеличивает восстановление здоровья."
+        "DOTA_Tooltip_Ability_item_her_str"                                        "БОНУСНАЯ СИЛА:"
+                "DOTA_Tooltip_Ability_item_her_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
+                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+        "DOTA_Tooltip_Ability_item_her_Lore"                                "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
+
+        "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
+        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите золото и опыт."       
+        "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса."  
 
 
 
@@ -588,15 +609,6 @@
         "DOTA_Tooltip_Ability_tb_soul_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ УРОН:"
 		"DOTA_Tooltip_Ability_tb_astral_Lore" "Не забывай проверять реальность перед глазами, возможно глаза тебя обманывают."      
 
-        "DOTA_Tooltip_Ability_item_dickrapier"                                            "Dickrapier"
-        "DOTA_Tooltip_Ability_item_dickrapier_Description"                                "Владелец получает бонусный урон."
-        "DOTA_Tooltip_Ability_item_dickrapier_bonus_damage"                                        "БОНУСНЫЙ УРОН:"
-        "DOTA_Tooltip_Ability_item_dickrapier_Lore" 									  "Владелец этого предмета получает невероятное желание сесть на него."
-
-        "DOTA_Tooltip_Ability_item_god_rapier"                                            "Rapier"
-        "DOTA_Tooltip_Ability_item_god_rapier_Description"                                "Владелец получает бонусный урон и Тру-страйк."
-        "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage"                                        "БОНУСНЫЙ УРОН:"
-        "DOTA_Tooltip_Ability_item_god_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
 
         "DOTA_Tooltip_Ability_item_color_red"                                            "Красный"
         "DOTA_Tooltip_Ability_item_color_green"                                            "Зелёный"
@@ -605,14 +617,7 @@
         "DOTA_Tooltip_Ability_item_color_aqua"                                            "Бирюзовый"
         "DOTA_Tooltip_Ability_item_color_fuchsia"                                            "Пурпурный"
 
-        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
-        "DOTA_Tooltip_Ability_item_her_Description"                                "Владелец увеличивает восстановление здоровья."
-        "DOTA_Tooltip_Ability_item_her_str"                                        "БОНУСНАЯ СИЛА:"
-                "DOTA_Tooltip_Ability_item_her_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
-                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
 
-        "DOTA_Tooltip_Ability_item_midas"                                            "Midas treasure"
-        "DOTA_Tooltip_Ability_item_midas_Description"                                "Призывает сундук Мидаса, сломав который, вы получите награду."                        
 
 		// -----------------medusa--------------------		
  
@@ -963,7 +968,7 @@
 		"DOTA_Tooltip_ability_tree_dependency_bonus_envasion"					"%БОНУС УКЛОНЕНИЯ:"
  		"DOTA_Tooltip_ability_tree_dependency_Lore"								"Hoodwink всегда любила природу и близость с деревьями навивают ей радостные воспоминания."
  
-		"DOTA_Tooltip_modifier_tree_dependency"					"Proximity with nature"
+		"DOTA_Tooltip_modifier_tree_dependency"					"Proximity with nature "
        "DOTA_Tooltip_modifier_tree_dependency_Description"	"Бонусные %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорость атаки,  %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% урона и  %dMODIFIER_PROPERTY_EVASION_CONSTANT%%% миссов"
 
  
@@ -975,7 +980,7 @@
 		"DOTA_Tooltip_ability_hoodwink_scurry_custom_movement_speed_pct"		"%ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
 		"DOTA_Tooltip_ability_hoodwink_scurry_custom_duration"					"ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:"
  
- 		"DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff"					"Scurry"
+ 		"DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff"					"Scurry "
 		"DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff_Description"		"Передвигается на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% быстрее. Может проходить сквозь существ."
 
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot"					"Sharpshooter"

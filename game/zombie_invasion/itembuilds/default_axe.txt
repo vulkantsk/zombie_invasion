@@ -9,7 +9,7 @@
 	{		
 		"#DOTA_Item_Build_Starting_Items"
 		{
-			"item"		"item_hand_of_midas"					
+			"item"		"item_midas"					
  		  	"item"               "item_clarity"		
 		}
 		
@@ -21,8 +21,9 @@
 		
 		"#DOTA_Item_Build_Core_Items"
 		{ 
-			"item"		"item_travel_boots_2"	
+ 
 			"item"		"item_shield_3"
+			"item"		"item_travel_boots_2"	
 			"item"		"item_assault"
 			"item"		"item_octarine_core"								
 		}

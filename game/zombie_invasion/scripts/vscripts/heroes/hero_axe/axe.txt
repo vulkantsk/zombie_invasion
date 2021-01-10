@@ -60,13 +60,13 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"150"
+		"AbilityCastRange"				"75"
 		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"6 5 4 3"
-		"AbilityManaCost"				"45 60 70 80"
+		"AbilityCooldown"				"7 6 5 4"
+		"AbilityManaCost"				"50"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_true"					"250 280 330 350"
+				"damage_true"					"175 200 225 250"
 								"CalculateSpellDamageTooltip" "0"
 			}
 			"02"
@@ -90,7 +90,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"175"
+				"great_cleave_damage"	"225"
 								"CalculateSpellDamageTooltip" "0"
 			}
 		}
