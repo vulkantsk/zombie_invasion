@@ -433,6 +433,15 @@
         "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите золото и опыт."       
         "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса."  
 
+		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
+		
+		"DOTA_Tooltip_Ability_item_assault_2"				"Assault Cuirass 2"
+		"DOTA_Tooltip_ability_item_assault_2_Description"							"<h1>Пассивная: Assault Aura</h1> Увеличивает броню союзных построек и существ на %aura_positive_armor%, а их скорость атаки — на %aura_attack_speed%. Снижает броню врагов на %aura_negative_armor%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Этот жуткий доспех, выкованный в кузнях нижних пределов, способен укрепить и ускорить целую армию."
+		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_ability_item_assault_2_bonus_armor"							"+$armor"
+ 
+
 
 
 
