@@ -11869,13 +11869,9 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"zero"					"0"
+				"bonuss_armor"					"100"
 			}
-			"02"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"one"			"1"		 
-			}
+ 
 		}
 	}
 
