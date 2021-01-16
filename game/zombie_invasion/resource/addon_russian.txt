@@ -1345,6 +1345,7 @@
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff"						"Rot"	
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff_Description"							"Чем дольше вы нюхаете это, тем хуже вам становится."		
 
+ 
 
 
 		"DOTA_Tooltip_Ability_main_elka"										"Праздник к нам приходит"
@@ -1379,7 +1380,9 @@
 		"DOTA_Tooltip_modifier_ghost_evasion"												"Бестелесность"
 		"DOTA_Tooltip_modifier_ghost_evasion_Description"									"По бестелесным существвам сложно попасть: 100 %% уклонеине"
 
-
+		"DOTA_Tooltip_modifier_zombie_passive_fire"												"Солнечный свет"
+		"DOTA_Tooltip_modifier_zombie_passive_fire_Description"									"Получает урон от света в размере 4.5%% от макс. здоровья "
+ 				 				 
 		
 
 

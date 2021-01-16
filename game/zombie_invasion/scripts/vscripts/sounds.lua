@@ -3,7 +3,7 @@ Sounds = Sounds or {
   	playersStateMusic = {},
   	SoundDuration = {
 
- 
+ 		--[[ 
   		["Akira Yamaoka – Never Forgive Me"] = 137,
   		["Ula - Cannabis"] = 182,
   		 		["Toby Fox – Once Upon a Time"] = 89,  
@@ -51,7 +51,7 @@ Sounds = Sounds or {
  
 ["Argh Ost – Halloween"] = 145,
  
-
+]]
  
 		--Boss theme
 		["Asgore_main_classic"] = 154,
@@ -59,7 +59,7 @@ Sounds = Sounds or {
 
 
 		--New year music
-		--[[ 
+	 
       ["Merry - Christmas Jingle Bells" ] = 135,
        ["Jingle Вells" ] = 133,
        ["Lofi Origin - Jingle Bells Lo Fi Chill" ] = 170,
@@ -89,7 +89,7 @@ Sounds = Sounds or {
 ["Кошмар перед рождеством - Oogie Boogie39s Song"] = 195,
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
-]]
+ 
   	},
 }
 

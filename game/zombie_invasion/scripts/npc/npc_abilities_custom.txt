@@ -97,7 +97,24 @@
     	"IsOnCastBar"                   "0"	
 	}
 	
+ 	"zombie_passive"
+{
+	"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/zombie/zombie_passive"
+		    "AbilityTextureName"            "fire"	 
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"IsOnCastBar"                   "0"	
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dps"			"20"
+			}						
  
+		}
+ 
+}
 
 	"hidden_passive"
 {

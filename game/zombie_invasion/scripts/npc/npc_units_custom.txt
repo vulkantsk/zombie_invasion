@@ -2114,8 +2114,8 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_building"
-//		"Model"						"models/props_frostivus/frostivus_ancient/frostivus_ancient.vmdl"
-		"Model"						"models/props_tree/tree_pine_02_heavysnow_inspector.vmdl"
+ 		"Model"						"models/props_frostivus/frostivus_ancient/frostivus_ancient.vmdl"
+//		"Model"						"models/props_tree/tree_pine_02_heavysnow_inspector.vmdl"
 
 		"ModelScale"				"1.0"
  
@@ -2125,7 +2125,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-//		"Ability1"					  "main_elka"
+ 		"Ability1"					  "main_elka"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""

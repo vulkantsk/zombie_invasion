@@ -4219,3 +4219,111 @@
                 }
         }
 }
+
+"zombie_damage_1"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/zombie_damage_1"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "56"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"zombie_damage_2"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/zombie_damage_2"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "56"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"zombie_dead_1"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/zombie_dead_1"
+                                                }
+                                        }
+										"volume"			{   "value"     "5.000000"  }
+   									     "soundlevel"		{   "value"     "56"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}

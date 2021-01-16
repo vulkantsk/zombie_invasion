@@ -63,6 +63,19 @@ function SetGoldMultiplier(unit, multiplier)
 
 end
 
+function SetGoldUsually(unit, constant)
+
+    unit:SetMaximumGoldBounty(unit:GetMaximumGoldBounty() + constant)
+    unit:SetMinimumGoldBounty(unit:GetMinimumGoldBounty() + constant)
+
+end
+
+function SetExpUsually(unit, constant)
+
+    unit:SetDeathXP(unit:GetDeathXP() + constant) 
+
+end
+
 function SetLevelForSubAbility(main_ability, sub_ability_name, target, level_required, level_to_set)
 	local main_ability_level = main_ability:GetLevel()
 	local sub_ability = target:FindAbilityByName(sub_ability_name)

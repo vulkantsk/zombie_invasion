@@ -1312,7 +1312,9 @@
 		"DOTA_Tooltip_modifier_magic_heart_bonus"											"The power of the magic"
 		"DOTA_Tooltip_modifier_magic_heart_bonus_Description"						"Give buffs."
  
-
+		"DOTA_Tooltip_modifier_zombie_passive_fire"												"Sunlight"
+		"DOTA_Tooltip_modifier_zombie_passive_fire_Description"									"Takes light damage of 4.5% % of max health "
+		
  
 		// ******************** ferm ********************
 
