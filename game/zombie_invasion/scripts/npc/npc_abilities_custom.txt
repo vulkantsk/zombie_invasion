@@ -11834,4 +11834,32 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     } 
 
+
+    "legion_low"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_legion/legion_low"
+		"AbilityTextureName"			"tb/soul"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"MaxLevel"                      "1"
+        "RequiredLevel"                 "35"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"zero"					"0"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"one"			"1"		 
+			}
+		}
+	}
+
 }

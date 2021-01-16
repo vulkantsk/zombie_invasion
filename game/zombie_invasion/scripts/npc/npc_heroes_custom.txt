@@ -1508,4 +1508,65 @@
 
     }
 
+    	"npc_dota_hero_legion_commander"
+	{
+		"override hero"				"npc_dota_hero_legion_commander"
+		"Ability1"					"legion_commander_overwhelming_odds"
+		"Ability2"					"legion_commander_press_the_attack"
+		"Ability3"					"legion_commander_moment_of_courage"
+		"Ability4"					"legion_low"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"legion_commander_duel"
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"15"										// Damage range min.
+		"AttackDamageMax"			"25"										// Damage range max.
+		"AttackRate"				"1.8"									// Speed of attack.
+		"ProjectileSpeed"			"1550"									// Speed of projectile.
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"									// Physical protection.
+		"MagicalResistance"			"10"									// Magical protection (percentage).
+
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"20"										// Base strength
+		"AttributeStrengthGain"		"4"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"10"										// Base intelligence
+		"AttributeIntelligenceGain"	"1.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"20"										// Base agility
+		"AttributeAgilityGain"		"2.5"										// Agility bonus per level.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"				"200"									// Base health.
+		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
+		"StatusMana"				"100"											// Base mana.
+		"StatusManaRegen"			"1"									// Mana regeneration rate.
+
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
 }

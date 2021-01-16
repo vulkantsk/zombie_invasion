@@ -15,7 +15,7 @@
 	transition-duration: .25s;
 	background-size: 100% 100%;
 	transition-timing-function: ease-in-out;
-	vertical-align: top;
+	vertical-align: center;
 	/*transform: translateX(-150px);*/
 	horizontal-align: left;
 /*	margin-left: 1120px;
