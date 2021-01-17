@@ -590,7 +590,7 @@
         "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_duration"                                        "ДЛИТЕЛЬНОСТЬ ИЛЛЮЗИИ:"
         "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_outgoing_tooltip"                                        "%НАНОСИМЫЙ ИЛЛЮЗИЕЙ УРОН:"
         "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ УРОН:"
-        "DOTA_Tooltip_Ability_tb_illusion_Lore"                                            "Опаснее встречи с одним мародёром может быть только встреча сразу с несколькими."
+        "DOTA_Tooltip_Ability_tb_illusion_dd_Lore"                                            "Опаснее встречи с одним мародёром может быть только встреча сразу с несколькими."
 
         "DOTA_Tooltip_Ability_tb_illusion_tank"                                            "<font color='#0099ff'>Conjure Image</font>"
         "DOTA_Tooltip_Ability_tb_illusion_tank_Description"                                "Создает иллюзию героя, которая получает урон."
@@ -625,6 +625,14 @@
         "DOTA_Tooltip_Ability_item_color_blue"                                            "Синый"
         "DOTA_Tooltip_Ability_item_color_aqua"                                            "Бирюзовый"
         "DOTA_Tooltip_Ability_item_color_fuchsia"                                            "Пурпурный"
+
+        //-----------lc-------------
+        "DOTA_Tooltip_Ability_legion_low"                                            "combat excitement"
+        "DOTA_Tooltip_Ability_legion_low_Description"                                "За каждый потерянный процент здоровья герой получает бонусы."
+        "DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "БОНУС БРОНИ:"
+        "DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "БОНУС ЗАЩИТЫ ОТ МАГИИ:"
+        "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Слабость не порок."
+
 
 
 

@@ -11856,7 +11856,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_legion/legion_low"
-		"AbilityTextureName"			"tb/soul"
+		"AbilityTextureName"			"Hero/legion"
 		"FightRecapLevel"				"1"
 		
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -11869,7 +11869,12 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"bonuss_armor"					"100"
+				"bonuss_armor"					"1"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonuss_magic"					"0.5"
 			}
  
 		}

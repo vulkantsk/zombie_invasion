@@ -912,7 +912,7 @@
 "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_duration" "DURATION OF ILLUSION:"
 "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_outgoing_tooltip" "%ILLUSION DAMAGE DEALT:"
 "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_incoming_damage" "%ILLUSION DAMAGE TAKEN:"
-"DOTA_Tooltip_Ability_tb_illusion_Lore" "Mirror Image of Terrorblade."
+"DOTA_Tooltip_Ability_tb_illusion_dd_Lore" "Mirror Image of Terrorblade."
 
 "DOTA_Tooltip_Ability_tb_illusion_tank" "<font color='#0099ff'>Conjure Image</font>"
 "DOTA_Tooltip_Ability_tb_illusion_tank_Description" "Creates the illusion of the hero that deals damage."
@@ -948,6 +948,13 @@
 "DOTA_Tooltip_Ability_item_color_blue" "Blue"
 "DOTA_Tooltip_Ability_item_color_aqua" "Turquoise"
 "DOTA_Tooltip_Ability_item_color_fuchsia" "Magenta"
+
+		//-----------lc--------
+        "DOTA_Tooltip_Ability_legion_low"                                            "combat excitement"
+        "DOTA_Tooltip_Ability_legion_low_Description"                                "For each lost percentage of health, the hero receives bonuses."
+        "DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "BONUS ARMOR:"
+        "DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "BONUS MAGIC RESISTANCE:"
+        "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Weakness is not a vice."
  
 
 
