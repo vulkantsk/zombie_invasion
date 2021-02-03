@@ -158,8 +158,20 @@
 		"DOTA_Item_Build_Early_Game"									"Для первой ночи"
 		"DOTA_Item_Build_Core_Items"									"Для второй ночи"
 		"DOTA_Item_Build_Luxury"										"Для последней ночи"
-		
-		
+
+		"DOTA_Tooltip_ability_item_desolator2"									"Super desolator"
+		"DOTA_Tooltip_ability_item_desolator2_Description"						"<h1>Пассивная: Corruption</h1> Атаки снижают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек."
+		"DOTA_Tooltip_ability_item_desolator2_Lore"								"Этим нечистым оружием пытали политических преступников."
+		"DOTA_Tooltip_ability_item_desolator2_bonus_damage"						"+$damage"			
+		"DOTA_Tooltip_modifier_desolator2_buff"									"Desolator"
+		"DOTA_Tooltip_modifier_desolator2_buff_Description"						"Атака с Desolator снизила броню этого существа на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+
+		"DOTA_Tooltip_ability_item_desolator3"									"Super puper desolator"
+		"DOTA_Tooltip_ability_item_desolator3_Description"						"<h1>Пассивная: Corruption</h1> Атаки снижают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек."
+		"DOTA_Tooltip_ability_item_desolator3_Lore"								"Этим нечистым оружием пытали политических преступников."
+		"DOTA_Tooltip_ability_item_desolator3_bonus_damage"						"+$damage"			
+		"DOTA_Tooltip_modifier_desolator3_buff"									"Desolator"
+		"DOTA_Tooltip_modifier_desolator3_buff_Description"						"Атака с Desolator снизила броню этого существа на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
 
 		"DOTA_Tooltip_Ability_item_shield"				"Щиточек"
 		"DOTA_Tooltip_ability_item_shield_Description"							"<h1>Пассивная: Damage block </h1> Каждая атака врага уменьшается на %damage_block%. "
@@ -176,14 +188,20 @@
 		"DOTA_Tooltip_ability_item_shield_3_health"							"+$health"
 		"DOTA_Tooltip_ability_item_shield_3_Lore"									"Полезная вещь."
 		
-		"DOTA_Tooltip_Ability_item_shield_4"				"Щит Апаллона"
+		"DOTA_Tooltip_Ability_item_shield_4"				"Щит дракона"
 		"DOTA_Tooltip_ability_item_shield_4_Description"							"<h1>Пассивная: Damage block </h1> Каждая атака врага уменьшается на %damage_block%.\n<h1> Аура: Апаллонсоке благословение </h1>Регенирирует всех ближайших союзников на %regen% здоровья в секунду и увеличивает их хп на %health% в радиусе %aura_radius%."
 		"DOTA_Tooltip_ability_item_shield_4_regen"							"+$hp_regen"
 		"DOTA_Tooltip_ability_item_shield_4_health"							"+$health"
-		"DOTA_Tooltip_ability_item_shield_4_Lore"									"Довольно известный щит Апаллона."
+		"DOTA_Tooltip_ability_item_shield_4_Lore"									"Довольно известный щит Дракона."
+
+		"DOTA_Tooltip_Ability_item_shield_5"				"Священный щит"
+		"DOTA_Tooltip_ability_item_shield_5_Description"							"<h1>Пассивная: Damage block </h1> Каждая атака врага уменьшается на %damage_block%.\n<h1> Аура: Апаллонсоке благословение </h1>Регенирирует всех ближайших союзников на %regen% здоровья в секунду и увеличивает их хп на %health% в радиусе %aura_radius%."
+		"DOTA_Tooltip_ability_item_shield_5_regen"							"+$hp_regen"
+		"DOTA_Tooltip_ability_item_shield_5_health"							"+$health"
+		"DOTA_Tooltip_ability_item_shield_5_Lore"									"Щит богов."
 		
 	
-		"DOTA_Tooltip_modifier_item_shield_4"											"Апалонсоке благословение"
+		"DOTA_Tooltip_modifier_item_shield_4"											"Драконье благословение"
 		"DOTA_Tooltip_modifier_item_shield_4_Description"						"Регенирирует всех ближайших союзников и увеличивает их хп."
 		
         "DOTA_Tooltip_Ability_item_regenchick"				"Мед пчёлок"
@@ -422,12 +440,60 @@
         "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage"                                        "+$damage"
         "DOTA_Tooltip_Ability_item_god_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
         
-        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
+        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque 1"
         "DOTA_Tooltip_Ability_item_her_Description"                                "<h1>Пассивная: Heart of Tarrasque</h1>Владелец увеличивает восстановление здоровья."
         "DOTA_Tooltip_Ability_item_her_str"                                        "БОНУСНАЯ СИЛА:"
-                "DOTA_Tooltip_Ability_item_her_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
-                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+        "DOTA_Tooltip_Ability_item_her_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
+        "DOTA_Tooltip_Ability_item_her_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
         "DOTA_Tooltip_Ability_item_her_Lore"                                "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
+
+        "DOTA_Tooltip_Ability_item_crit"                                            "Daedaedalus"
+        "DOTA_Tooltip_Ability_item_crit_Description"                                "<h1>Пассивная: Critical strike</h1> Каждая атака с вероятностью 35% может нанести 475% урона."
+        "DOTA_Tooltip_Ability_item_crit_dmg"                                        "БОНУСНЫЙ УРОН:"
+        "DOTA_Tooltip_Ability_item_crit_Lore"                                "Священное оружие, способное находить слабые месте в броне врага."
+
+        "DOTA_Tooltip_Ability_item_her2"                                            "Heart of Tarrasque 2"
+        "DOTA_Tooltip_Ability_item_her2_Description"                                "<h1>Пассивная: Heart of Tarrasque</h1>Владелец увеличивает восстановление здоровья."
+        "DOTA_Tooltip_Ability_item_her2_str"                                        "БОНУСНАЯ СИЛА:"
+        "DOTA_Tooltip_Ability_item_her2_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
+        "DOTA_Tooltip_Ability_item_her2_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+        "DOTA_Tooltip_Ability_item_her2_Lore"                                "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
+
+
+        "DOTA_Tooltip_Ability_item_her3"                                            "Heart of Tarrasque 3"
+        "DOTA_Tooltip_Ability_item_her3_Description"                                "<h1>Пассивная: Heart of Tarrasque</h1>Владелец увеличивает восстановление здоровья."
+        "DOTA_Tooltip_Ability_item_her3_str"                                        "БОНУСНАЯ СИЛА:"
+        "DOTA_Tooltip_Ability_item_her3_hp"                                        "БОНУСНОЕ ЗДОРОВЬЕ:"
+        "DOTA_Tooltip_Ability_item_her3_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+        "DOTA_Tooltip_Ability_item_her3_Lore"                                "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
+
+        "DOTA_Tooltip_Ability_item_resistance"                                            "Steel cuirass 1"
+        "DOTA_Tooltip_Ability_item_resistance_Description"                                "<h1>Пассивная: Steel Cuirass</h1>Владелец получает дополнительную защиту."
+        "DOTA_Tooltip_Ability_item_resistance_arm"                                        "БОНУСНАЯ БРОНЯ:"
+        "DOTA_Tooltip_Ability_item_resistance_res"                                        "%УМЕНЬШЕНИЕ ВХОДЯЩЕГО УРОНА:"
+        "DOTA_Tooltip_Ability_item_resistance_Lore"                                "Стальной доспех, надёжно защищающий владельца."
+
+        "DOTA_Tooltip_Ability_item_resistance1"                                            "Steel cuirass 2"
+        "DOTA_Tooltip_Ability_item_resistance1_Description"                                "<h1>Пассивная: Steel Cuirass</h1>Владелец получает дополнительную защиту."
+        "DOTA_Tooltip_Ability_item_resistance1_arm"                                        "БОНУСНАЯ БРОНЯ:"
+        "DOTA_Tooltip_Ability_item_resistance1_res"                                        "%УМЕНЬШЕНИЕ ВХОДЯЩЕГО УРОНА:"
+        "DOTA_Tooltip_Ability_item_resistance1_Lore"                                "Стальной доспех, надёжно защищающий владельца."
+
+        "DOTA_Tooltip_Ability_item_lance1"                                            "Bow"
+        "DOTA_Tooltip_Ability_item_lance1_Description"                                "<h1>Активная: bow bow bow</h1>Владелец получает дополнительные 300 скорости атаки на 2 секунды."
+        "DOTA_Tooltip_Ability_item_lance1_ran"                                        "БОНУСНАЯ ДАЛЬНОСТЬ АТАКИ ГЕРОЯМ ДАЛЬНОГО БОЯ:"
+        "DOTA_Tooltip_Ability_item_lance1_agi"                                        "БОНУСНАЯ ЛОВКОСТЬ:"        
+        "DOTA_Tooltip_Ability_item_lance1_str"                                        "БОНУСНАЯ СИЛА:"        
+        "DOTA_Tooltip_Ability_item_lance1_Lore"                                "Надёжный лук, который обязательно поможет в бою."      
+
+        "DOTA_Tooltip_Ability_item_lance2"                                            "battle Bow"
+        "DOTA_Tooltip_Ability_item_lance2_Description"                                "<h1>Активная: bow bow bow</h1>Владелец получает максимальную скорость атаки на 3 секунды."
+        "DOTA_Tooltip_Ability_item_lance2_ran"                                        "БОНУСНАЯ ДАЛЬНОСТЬ АТАКИ ГЕРОЯМ ДАЛЬНОГО БОЯ:"
+        "DOTA_Tooltip_Ability_item_lance2_agi"                                        "БОНУСНАЯ ЛОВКОСТЬ:"        
+        "DOTA_Tooltip_Ability_item_lance2_str"                                        "БОНУСНАЯ СИЛА:"        
+        "DOTA_Tooltip_Ability_item_lance2_Lore"                                "Надёжный лук, который обязательно поможет в бою."     
+
+
 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
         "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите золото и опыт."       
@@ -440,6 +506,15 @@
 		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Этот жуткий доспех, выкованный в кузнях нижних пределов, способен укрепить и ускорить целую армию."
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
 		"DOTA_Tooltip_ability_item_assault_2_bonus_armor"							"+$armor"
+
+		"DOTA_Tooltip_Ability_item_snus"                                            "Бабкин снюс"
+        "DOTA_Tooltip_Ability_item_snus_Description"                                "Вкидываешь пак и кайфуешь."       
+        "DOTA_Tooltip_Ability_item_snus_Lore"                                "Самый крепкий снюс, вашим губкам пизда."  
+//        "DOTA_Tooltip_modifier_item_snus"                               "Отупение"
+//		"DOTA_Tooltip_modifier_item_snus_Description"                   "Кидай кидай эту свою хуйню, может умнее станешь."
+//      "DOTA_Tooltip_modifier_item_snus_god"                               "Вкид"
+//		"DOTA_Tooltip_modifier_item_snus_god_Description"                   "Вкинулся и збс."		
+
  
 
 
