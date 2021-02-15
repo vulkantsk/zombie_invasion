@@ -44,8 +44,7 @@
 
 	"intro_rotate_christmas"
 	{
-		"BaseClass" 					"ability_lua"
-		"ScriptFile"					"abilities/endgame/intro_rotate_christmas"
+		"BaseClass" 					"ability_datadriven"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"		
     	"IsOnCastBar"                   "0"	
 	}
@@ -11868,13 +11867,13 @@
 		{
 			"01"
 			{
-				"var_type"							"FIELD_INTEGER"
-				"bonuss_armor"					"1"
+				"var_type"							"FIELD_FLOAT"
+				"bonuss_armor"					"0.55"
 			}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"bonuss_magic"					"0.5"
+				"bonuss_magic"					"0.4"
 			}
  
 		}

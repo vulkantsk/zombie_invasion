@@ -437,6 +437,187 @@
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
 		"DOTA_Tooltip_ability_item_assault_2_bonus_armor"							"+$armor"
 
+ 		"DOTA_Tooltip_Ability_item_maelstrom_2"				"Maelstrom 2"
+		"DOTA_Tooltip_ability_item_maelstrom_2_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing %chain_damage% magical damage to each. Lightning proc pierces evasion."
+		"DOTA_Tooltip_ability_item_maelstrom_2_Lore"								"A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning."
+		"DOTA_Tooltip_ability_item_maelstrom_2_bonus_damage"						"+$damage"
+
+		"DOTA_Tooltip_Ability_item_maelstrom_3"				"Mjollnir"
+		"DOTA_Tooltip_ability_item_maelstrom_3_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing physical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
+		"DOTA_Tooltip_ability_item_maelstrom_3_Lore"								"Thor's magical hammer, made for him by the dwarves Brok and Eitri."
+		"DOTA_Tooltip_ability_item_maelstrom_3_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_maelstrom_3_bonus_attack_speed"					"+$attack"		
+
+		"DOTA_Tooltip_Ability_item_maelstrom_4"				"Mjollnir 2"
+		"DOTA_Tooltip_ability_item_maelstrom_4_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing physical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
+		"DOTA_Tooltip_ability_item_maelstrom_4_Lore"								"The best version Thor's magical hammer, made for him by the dwarves Brok and Eitri."
+		"DOTA_Tooltip_ability_item_maelstrom_4_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_maelstrom_4_bonus_attack_speed"					"+$attack"		
+
+
+		"DOTA_Tooltip_Ability_item_magic_cape"				"Magic Cape"  
+		"DOTA_Tooltip_Ability_item_magic_cape_Description"						"<h1>Passive: Magical Oppression</h1> All enemies are in radius %debuff_radius% their magic resistance reduced on %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_Lore"								"It is the poorest cape. It is Bought in the city of Magicians for two frogs."
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_agil"					"+$agi"
+		"DOTA_Tooltip_Ability_item_magic_cape_mana_regen"					"+$mana_regen"
+ 
+
+		"DOTA_Tooltip_Ability_item_magic_cape_2"				"Magic Cape 2"
+		"DOTA_Tooltip_Ability_item_magic_cape_2_Description"						"<h1>Passive: Magical Oppression</h1> All enemies are in radius %debuff_radius% their magic resistance reduced on %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_2_Lore"								"It is the richest cape from existing capes in the city of Magicians. It is purchased for 2 Dark Matters."
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_agil"					"+$agi" 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_mana_regen"					"+$mana_regen"
+ 
+
+		"DOTA_Tooltip_Ability_item_magic_cape_3"				"Magic Cape of the cult"
+		"DOTA_Tooltip_Ability_item_magic_cape_3_Description"						"<h1>Passive: Magical Oppression</h1> All enemies are in radius %debuff_radius% their magic resistance reduced on %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_3_Lore"								"The cape of one of the members of the cursed cult..."
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_agil"					"+$agi"   
+		"DOTA_Tooltip_Ability_item_magic_cape_3_mana_regen"					"+$mana_regen"
+ 
+
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier"				"Oppression"
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_Description"				"Magic resistance reduced on %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
+
+
+		"DOTA_Tooltip_Ability_item_unknown_symbol"				"Unknown symbol"
+		"DOTA_Tooltip_Ability_item_unknown_symbol_stats_bonus"					"+$all" 		
+		"DOTA_Tooltip_Ability_item_unknown_symbol_Lore"								"This symbol is similar to the one used by the cult of the damned!"
+
+        "DOTA_Tooltip_Ability_item_magicpier"                                            "Magicpier"
+        "DOTA_Tooltip_Ability_item_magicpier_Description"                                "<h1>Passive: Spell Amplification</h1>Owner receives more magical damage."
+        "DOTA_Tooltip_Ability_item_magicpier_bonus_magic_damage"                                              "%+Spell Amplification"
+        "DOTA_Tooltip_Ability_item_magicpier_Lore" 									  "Dick, I think cock(((( Ok kock so cokc."
+
+        "DOTA_Tooltip_Ability_item_magic_rapier"                                            "Magic Rapier"
+        "DOTA_Tooltip_Ability_item_magic_rapier_Description"                                "<h1>Passive: Spell Amplification</h1>Owner receives more magical damage."
+        "DOTA_Tooltip_Ability_item_magic_rapier_bonus_magic_damage"                                       "%+Spell Amplification"
+        "DOTA_Tooltip_Ability_item_magic_rapier_Lore" 									  "So powerful, it cannot have a single owner."
+
+		"DOTA_Tooltip_ability_item_octarine_core_2"             "Reftarine"
+		"DOTA_Tooltip_ability_item_octarine_core_2_Description"				"<h1>Active: Reset Cooldowns</h1>Resets the cooldowns of all your items and abilities.\n<h1>Passive: Cooldown Reduction</h1>Reduces the cooldown time of all spells and items by %bonus_cooldown_pct%%%."
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_cast"             "+$cast_range"	
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_mana_regen"                "+$mana_regen"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_health"				"+$health"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_health_regen"                "+$hp_regen"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_mana"				"+$mana"
+		"DOTA_Tooltip_ability_item_octarine_core_2_Lore"						"A mixture of octarine and refresher."
+
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_2"			"Veil of Discord 2"
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_Description"					"<h1>Active: Magic Weakness</h1> Cast a %debuff_radius% radius blast that causes enemy heroes to take %spell_amp%%% increased damage from spells.<br><br>Range: %abilitycastrange%<br>Duration: %resist_debuff_duration% seconds. \n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_Lore"						"Improved the headwear of corrupt magi."
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_bonus_all_stats"			"+$all"
+
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier"				"Veil of Discord"
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_Description"	"Granting mana regeneration to allies on %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
+		
+		"DOTA_Tooltip_modifier_veil_active_debuff"				"Magic Weakness"
+		"DOTA_Tooltip_modifier_veil_active_debuff_Description"	"Magic damage increased."
+
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Hidan's mask of Discord"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_Description"					"<h1>Active: Magic Weakness</h1> Cast a %debuff_radius% radius blast that causes enemy heroes to take %spell_amp%%% increased damage from spells.<br><br>Range: %abilitycastrange%<br>Duration: %resist_debuff_duration% seconds. \n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_Lore"						"Rumor has it that this mask is Hidan's own!"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_bonus_all_stats"			"+$all"
+
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3"				"Veil of Discord"
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3_Description"	"Granting mana regeneration to allies on %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
+		
+		"DOTA_Tooltip_modifier_veil_active_debuff_3"				"Magic Weakness"
+		"DOTA_Tooltip_modifier_veil_active_debuff_3_Description"	"Magic damage increased."
+
+		"DOTA_Tooltip_Ability_item_ethereal_blade"			"Ethereal Blade"
+		"DOTA_Tooltip_Ability_item_ethereal_blade_2"			"Ethereal Blade Ultimate Edition"  
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Description"					"<h1>Active: Ether Blast</h1>Converts the target units  in radius %splash_radius% to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.  Lasts for %duration_ally% seconds on allies and %duration% seconds on enemies.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_agility_multiplier%x your primary attribute + %blast_damage_base% as magical damage.<br><br>Range: %abilitycastrange%"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Note3"						"Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_agility"				"+$agi"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_strength"				"+$str"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Lore"						"A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes."
+
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Ethereal Form. Taking %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% increased magic damage and cannot attack or be attacked."
+
+		"DOTA_Tooltip_Ability_item_voodo_mask"				"Voodoo Mask"		  
+		"DOTA_Tooltip_ability_item_voodo_mask_Description"						"<h1>Passive: Spell Lifesteal</h1>%all_lifesteal%%% of spell damage dealt to enemy creeps is returned to the caster as health, regardless of spell damage type."
+		"DOTA_Tooltip_ability_item_voodo_mask_Lore"						"A mask tuned to sip the arcane bindings that pass between caster and foe."
+
+
+		"DOTA_Tooltip_Ability_item_voodo_mask_2"				"Voodoo Mask 2"		
+		"DOTA_Tooltip_ability_item_voodo_mask_2_Description"						"<h1>Passive: Spell Lifesteal</h1>%all_lifesteal%%% of spell damage dealt to enemy creeps is returned to the caster as health, regardless of spell damage type."
+		"DOTA_Tooltip_ability_item_voodo_mask_2_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_voodo_mask_2_bonus_mana"						"+$mana" 
+		"DOTA_Tooltip_ability_item_voodo_mask_2_mana_regen"						 "+$mana_regen"
+		"DOTA_Tooltip_ability_item_voodo_mask_2_Lore"						"A mask tuned to sip the arcane bindings that pass between caster and foe."
+
+		"DOTA_Tooltip_Ability_item_voodo_mask_3"				"Voodoo Mask 3"		
+		"DOTA_Tooltip_ability_item_voodo_mask_3_Description"						"<h1>Passive: Spell Lifesteal</h1>%all_lifesteal%%% of spell damage dealt to enemy creeps is returned to the caster as health, regardless of spell damage type."
+		"DOTA_Tooltip_ability_item_voodo_mask_3_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_voodo_mask_3_bonus_mana"						"+$mana" 
+		"DOTA_Tooltip_ability_item_voodo_mask_3_mana_regen"						 "+$mana_regen"
+		"DOTA_Tooltip_ability_item_voodo_mask_3_Lore"						"A mask tuned to sip the arcane bindings that pass between caster and foe."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir"					"Vladmir's Offering"
+		"DOTA_Tooltip_ability_item_imba_vladmir_Description"							"<h1>Passive: Vladmir's Aura</h1>Grants %vampiric_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies. <br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_Lore"								"An eerie mask that is haunted with the malice of a fallen vampire."
+		"DOTA_Tooltip_Ability_item_imba_vladmir_stat_bonus"					"+$all"
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura"				"Vladmir's Aura"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_Description"	"Gaining %dMODIFIER_PROPERTY_TOOLTIP%%% lifesteal, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% damage, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor, and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir_2"					"Vladmir's Offering 2"
+		"DOTA_Tooltip_ability_item_imba_vladmir_2_Description"							"<h1>Passive: Vladmir's Aura</h1>Grants %vampiric_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies. <br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_2_Lore"								"Better version eerie mask that is haunted with the malice of a fallen vampire."
+		"DOTA_Tooltip_Ability_item_imba_vladmir_2_stat_bonus"					"+$all"
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_2"				"Vladmir's Aura 2"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_2_Description"	"Gaining %dMODIFIER_PROPERTY_TOOLTIP%%% lifesteal, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% damage, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor, and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir_3"					"Vladmir's Offering 3"
+		"DOTA_Tooltip_ability_item_imba_vladmir_3_Description"							"<h1>Passive: Vladmir's Aura</h1>Grants %vampiric_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies. <br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_3_Lore"								"The best version eerie mask that is haunted with the malice of a fallen vampire."
+		"DOTA_Tooltip_Ability_item_imba_vladmir_3_stat_bonus"					"+$all"
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3"				"Vladmir's Aura 3"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3_Description"	"Gaining %dMODIFIER_PROPERTY_TOOLTIP%%% lifesteal, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% damage, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor, and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1379,7 +1560,8 @@
     	"dota_hud_error_milk_bad_target"                    					"Blyat..."    		
     	"dota_hud_error_full_inventory"                    						"Say him to he be less fat"
     	"dota_hud_error_havent_charges"                    						"just end"
-    
+     	"dota_hud_error_use_myself"                    						"You can't use it on yourself"    
+    	"dota_hud_error_use_enemies"                    						"You can't use it on enemies"     
 
        	"dota_hud_error_letter_bad_target"                    					"It can use only on Main christmas tree!"
 		// ******************** Обучалка: ********************

@@ -240,19 +240,21 @@ function EndGame:GoodEndMessages()
 end
 
 function EndGame:ChristmasEnd()
-	
-	 	               		Timers:CreateTimer(2,function()
- EmitGlobalSound("christmas_Bydet")
-  	GameRules:SendCustomMessage("<font color='#58ACFA'>Стекловата - Новый год</font>",0,0)  
-	end)
+
+ InvasionMode:Christmas_penguiun_plus()	
+	 Timers:CreateTimer(0,function()
+  	     GameRules:SendCustomMessage("#christmas_1",0,0)  
+	 end)
+
+     Timers:CreateTimer(2,function()
+         EmitGlobalSound("christmas_Bydet")
+         GameRules:SendCustomMessage("<font color='#58ACFA'>Стекловата - Новый год</font>",0,0)  
+     end)
  
- 	 	               		Timers:CreateTimer(0,function()
  
-  	GameRules:SendCustomMessage("#christmas_1",0,0)  
-	end)
 
   LinkLuaModifier("modifier_intro_rotate_christmas_passive", "abilities/endgame/intro_rotate_christmas", 0)
- InvasionMode:Christmas_penguiun_plus()
+ 
 
  
 local point_for_kunkka = Entities:FindByName(nil, "for_kunkka"):GetAbsOrigin()

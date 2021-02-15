@@ -516,6 +516,330 @@
 //		"DOTA_Tooltip_modifier_item_snus_god_Description"                   "Вкинулся и збс."		
 
  
+		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_enemy"				"Assault Cuirass"
+		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_enemy_Description"	"Броня снижена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
+		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_friend"				"Assault Cuirass"
+		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_friend_Description"	"Броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nСкорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+ 		"DOTA_Tooltip_Ability_item_maelstrom_2"				"Maelstrom 2"
+		"DOTA_Tooltip_ability_item_maelstrom_2_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раза перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому по %chain_damage% физического урона. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_ability_item_maelstrom_2_Lore"								"Молот, выкованный для самих богов, позволяет владельцу подчинить силу молнии."
+		"DOTA_Tooltip_ability_item_maelstrom_2_bonus_damage"						"+$damage"
+  
+		"DOTA_Tooltip_Ability_item_maelstrom_3"				"Mjollnir"
+		"DOTA_Tooltip_Ability_item_maelstrom_3_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому физический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_Ability_item_maelstrom_3_Lore"								"Магический молот Тора, выкованный для него гномами по имени Брок и Эйтри."
+		"DOTA_Tooltip_Ability_item_maelstrom_3_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_Ability_item_maelstrom_3_bonus_attack_speed"					"+$attack"		
+
+		"DOTA_Tooltip_Ability_item_maelstrom_4"				"Mjollnir 2"
+		"DOTA_Tooltip_Ability_item_maelstrom_4_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому физический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_Ability_item_maelstrom_4_Lore"								"Улучшенный магический молот Тора, выкованный для него гномами по имени Брок и Эйтри."
+		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_attack_speed"					"+$attack"	
+
+
+		"DOTA_Tooltip_Ability_item_magic_cape"				"Magic Cape"
+		"DOTA_Tooltip_Ability_item_magic_cape_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_Lore"								"Дешевая магическая накидка. Куплена в городе магов за две лягушки."
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_bonus_agil"					"+$agi"
+		"DOTA_Tooltip_Ability_item_magic_cape_mana_regen"					"+$mana_regen"
+ 
+
+		"DOTA_Tooltip_Ability_item_magic_cape_2"				"Magic Cape 2"
+		"DOTA_Tooltip_Ability_item_magic_cape_2_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_2_Lore"								"Самая дорогая накидка из существующих в городе магов. Куплено за 2 темные материи."
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_agil"					"+$agi" 
+		"DOTA_Tooltip_Ability_item_magic_cape_2_mana_regen"					"+$mana_regen"
+ 
+
+		"DOTA_Tooltip_Ability_item_magic_cape_3"				"Magic Cape of the cult"
+		"DOTA_Tooltip_Ability_item_magic_cape_3_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
+		"DOTA_Tooltip_Ability_item_magic_cape_3_Lore"								"Накидка одного из членов проклятого культа..."
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_int"					"+$int" 
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_str"					"+$str"	 
+		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_agil"					"+$agi"   
+		"DOTA_Tooltip_Ability_item_magic_cape_3_mana_regen"					"+$mana_regen"
+ 
+
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier"				"Oppression"
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_Description"				"Сопротивление магии снижено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
+
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_2"				"Oppression"
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_2_Description"				"Сопротивление магии снижено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
+
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_3"				"Oppression"
+        "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_3_Description"				"Сопротивление магии снижено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
+
+		"DOTA_Tooltip_Ability_item_unknown_symbol"				"Unknown symbol"
+		"DOTA_Tooltip_Ability_item_unknown_symbol_stats_bonus"					"+$all" 		
+		"DOTA_Tooltip_Ability_item_unknown_symbol_Lore"								"Этот символ похож на тот, что использует культ проклятых!"
+
+        "DOTA_Tooltip_Ability_item_magicpier"                                            "Magicpier"
+        "DOTA_Tooltip_Ability_item_magicpier_Description"                                "<h1>Пассивная: Spell Amplification</h1>Владелец получает бонусный магический урон."
+        "DOTA_Tooltip_Ability_item_magicpier_bonus_magic_damage"                                              "%+к урону от заклинаний"
+        "DOTA_Tooltip_Ability_item_magicpier_Lore" 									  "Владелец этого предмета получает невероятное желание сесть на него."
+
+        "DOTA_Tooltip_Ability_item_magic_rapier"                                            "Magic Rapier"
+        "DOTA_Tooltip_Ability_item_magic_rapier_Description"                                "<h1>Пассивная: Spell Amplification</h1>Владелец получает бонусный магический урон."
+        "DOTA_Tooltip_Ability_item_magic_rapier_bonus_magic_damage"                                        "%+к урону от заклинаний"
+        "DOTA_Tooltip_Ability_item_magic_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
+
+		"DOTA_Tooltip_ability_item_octarine_core_2"             "Reftarine"
+		"DOTA_Tooltip_ability_item_octarine_core_2_Description"				"<h1>Активная: Reset</h1>Сбрасывает время перезарядки всех ваших предметов и способностей.\n<h1>Пассивная: Cooldown Reduction</h1>Уменьшает перезарядку всех предметов и способностей на %bonus_cooldown_pct%%%."
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_cast"             "+$cast_range"	
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_mana_regen"                "+$mana_regen"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_health"				"+$health"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_health_regen"                "+$hp_regen"
+		"DOTA_Tooltip_ability_item_octarine_core_2_bonus_mana"				"+$mana"  
+		"DOTA_Tooltip_ability_item_octarine_core_2_Lore"						"Смесь октарина и рефрешера."
+
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_2"			"Veil of Discord 2"
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_Description"					"<h1>Активная: Magic Weakness</h1> Ослабляет вражеских героев в области радиусом %debuff_radius%, отчего они получают на %spell_amp%%% больше урона от заклинаний.<br><br>Дальность применения: %abilitycastrange%<br>Длительность: %resist_debuff_duration% сек. \n\n <h1>Пассивная: Basilius Aura</h1> Увеличивает восстановление маны союзников на %aura_mana_regen%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_Lore"						"Улучшенный головной убор испорченных магов."
+		"DOTA_Tooltip_ability_item_veil_of_discord_2_bonus_all_stats"			"+$all"
+
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier"				"Veil of Discord"
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_Description"	"Восстановление маны союзников увеличена на %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
+		
+		"DOTA_Tooltip_modifier_veil_active_debuff"				"Magic Weakness"
+		"DOTA_Tooltip_modifier_veil_active_debuff_Description"	"Магический урон увеличен."
+
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Hidan's mask of Discord"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_Description"					"<h1>Активная: Magic Weakness</h1> Ослабляет вражеских героев в области радиусом %debuff_radius%, отчего они получают на %spell_amp%%% больше урона от заклинаний.<br><br>Дальность применения: %abilitycastrange%<br>Длительность: %resist_debuff_duration% сек. \n\n <h1>Пассивная: Basilius Aura</h1> Увеличивает восстановление маны союзников на %aura_mana_regen%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_Lore"						"Ходят слухи, что эта маска самого Хидана!"
+		"DOTA_Tooltip_ability_item_veil_of_discord_3_bonus_all_stats"			"+$all"
+
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3"				"Veil of Discord"
+		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3_Description"	"Восстановление маны союзников увеличена на %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
+		
+		"DOTA_Tooltip_modifier_veil_active_debuff_3"				"Magic Weakness"
+		"DOTA_Tooltip_modifier_veil_active_debuff_3_Description"	"Магический урон увеличен."
+
+		"DOTA_Tooltip_Ability_item_ethereal_blade"			"Ethereal Blade"
+		"DOTA_Tooltip_Ability_item_ethereal_blade_2"			"Ethereal Blade Ultimate Edition"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Description"					"<h1>Активная: Ether Blast</h1> Придаёт всем целям в радиусе %splash_radius% бесплотную форму, которая полностью защищает от физического урона, но не позволяет атаковать и увеличивает получаемый магический урон на %ethereal_damage_bonus%%%. Действует %duration_ally% сек. на союзников и %duration% сек. на врагов.<br><br>Также замедляет вражеские цели на %blast_movement_slow%%% и наносит им магический урон в размере %blast_agility_multiplier% * ваш основной атрибут + %blast_damage_base%.<br><br>Дальность применения: %abilitycastrange%"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Note3"						"Использование Town Portal Scroll или Boots of Travel не развеивает бесплотную форму."
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_agility"				"+$agi"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_strength"				"+$str"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Lore"						"Этот мерцающий призрачный меч бьёт и и по физическому, и по магическому слою реальности."
+
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Находится в призрачной форме. Получает увеличенный на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% магический урон, не может атаковать или быть целью атаки."
+
+		"DOTA_Tooltip_Ability_item_voodo_mask"				"Voodoo Mask"		
+		"DOTA_Tooltip_ability_item_voodo_mask_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
+		"DOTA_Tooltip_ability_item_voodo_mask_Lore"						"Маска, отточенная для поглощения магических уз между колдуном и его врагом."
+
+
+		"DOTA_Tooltip_Ability_item_voodo_mask_2"				"Voodoo Mask 2"		
+		"DOTA_Tooltip_ability_item_voodo_mask_2_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
+		"DOTA_Tooltip_ability_item_voodo_mask_2_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_voodo_mask_2_bonus_mana"						"+$mana" 
+		"DOTA_Tooltip_ability_item_voodo_mask_2_mana_regen"						 "+$mana_regen"
+		"DOTA_Tooltip_ability_item_voodo_mask_2_Lore"						"Маска, отточенная для поглощения магических уз между колдуном и его врагом."
+
+		"DOTA_Tooltip_Ability_item_voodo_mask_3"				"Voodoo Mask 3"		
+		"DOTA_Tooltip_ability_item_voodo_mask_3_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
+		"DOTA_Tooltip_ability_item_voodo_mask_3_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_voodo_mask_3_bonus_mana"						"+$mana" 
+		"DOTA_Tooltip_ability_item_voodo_mask_3_mana_regen"						 "+$mana_regen"
+		"DOTA_Tooltip_ability_item_voodo_mask_3_Lore"						"Маска, отточенная для поглощения магических уз между колдуном и его врагом."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir"					"Vladmir's Offering"
+		"DOTA_Tooltip_ability_item_imba_vladmir_Description"							"<h1>Пассивная: Vladmir's Aura</h1>Увеличивает вампиризм союзников на %vampiric_aura%%%, их урон на %damage_aura%%%, броню на %armor_aura% и восстановление маны на %mana_regen_aura%. <br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_Lore"								"Жуткая маска, проклятая злобой павшего вампира."
+		"DOTA_Tooltip_Ability_item_imba_vladmir_stat_bonus"					"+$all"
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura"				"Vladmir's Aura"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir_2"					"Vladmir's Offering 2"
+		"DOTA_Tooltip_Ability_item_imba_vladmir_2_stat_bonus"					"+$all"
+		"DOTA_Tooltip_ability_item_imba_vladmir_2_Description"							"<h1>Пассивная: Vladmir's Aura</h1>Увеличивает вампиризм союзников на %vampiric_aura%%%, их урон на %damage_aura%%%, броню на %armor_aura% и восстановление маны на %mana_regen_aura%. <br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_2_Lore"								"Улчучшенная жуткая маска, проклятая злобой павшего вампира."
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_2"				"Vladmir's Aura 2"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_2_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
+
+		"DOTA_Tooltip_Ability_item_imba_vladmir_3"					"Vladmir's Offering 3"
+		"DOTA_Tooltip_ability_item_imba_vladmir_3_Description"							"<h1>Пассивная: Vladmir's Aura</h1>Увеличивает вампиризм союзников на %vampiric_aura%%%, их урон на %damage_aura%%%, броню на %armor_aura% и восстановление маны на %mana_regen_aura%. <br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_imba_vladmir_3_Lore"								"Самая жуткая маска из всех масок проклятых злобой павшего вампира."
+		"DOTA_Tooltip_Ability_item_imba_vladmir_3_stat_bonus"					"+$all"
+
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3"				"Vladmir's Aura 3"
+		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
+
+		"DOTA_Tooltip_Ability_item_shivas_guard_heal"			"Healing Shiva's Guard"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Description"					"<h1>Активная: Healing Blast</h1> Выпускает лечущую волну, которая исцеляет союзникам %heal% + %heal_max_hp%%  от макс. хп здоровья.<br><br>Радиус: %blast_radius%\n<h1>Пассивная: Healing Aura</h1> Увеличивает хп реген союников на %hp_regen_plus_aura%%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Lore"							"Одна из трех частей могущественного артефакта."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note0"							"Волна распространяется со скоростью в %blast_speed% до максимального размера в %blast_radius%."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note1"							"Хилящая волна следует за владельцем."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note2" 							"Эффект от нескольких Healing Aura не складывается."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_bonus_armor"					"+$armor"
+ 
+		"DOTA_Tooltip_modifier_shiva_heal_aura"				"Healing Aura"
+		"DOTA_Tooltip_modifier_shiva_heal_aura_Description"	"Восстановление здоровья увеличено на %dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom"	"Medallion of Courage"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"Его носитель не боится сражений."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom"	"Medallion of Courage"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"Его носитель не боится сражений."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2"	"Solar medallion"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Lore"						"Медаль одно из людей Солнечного восстания."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3"	"Solar Crest"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Lore"						"Талисман, выкованный во хвалу дневного неба."
+
+		"DOTA_Tooltip_modifier_medallion_active"		"Faith"
+		"DOTA_Tooltip_modifier_medallion_active_Description"		"Броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%, передвижение ускорено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% и атака ускорена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+		"DOTA_Tooltip_Ability_item_bfury_1"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_1_Description"							"<h1>Активная: Chop Tree</h1> Срубает выбранное дерево.<br><br>Дальность применения: %abilitycastrange%\n<h1>Пассивная: Cleave</h1> Атаки героя прорубают жертву, нанося врагам в радиусе %cleave_distance% вокруг неё физический урон(только в ближнем бою).<br><br>• Урон по всем: %cleave_damage_percent_creep%%%<br>"
+		"DOTA_Tooltip_Ability_item_bfury_1_Lore"									"Владелец этого могучего топора может выкашивать врагов целыми рядами."
+		"DOTA_Tooltip_Ability_item_bfury_1_Note0"									"Прорубающий урон проходит сквозь невосприимчивость к магии."
+		"DOTA_Tooltip_Ability_item_bfury_1_Note1"									"Каждый предмет или способность, дарующие прорубающую атаку, наносят урон отдельно друг от друга."
+		"DOTA_Tooltip_Ability_item_bfury_1_bonus_damage"							"+$damage"
+ 
+
+		"DOTA_Tooltip_Ability_item_bfury_2"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_2_Description"							"<h1>Активная: Chop Tree</h1> Срубает выбранное дерево.<br><br>Дальность применения: %abilitycastrange%\n<h1>Пассивная: Cleave</h1> Атаки героя прорубают жертву, нанося врагам в радиусе %cleave_distance% вокруг неё физический урон(только в ближнем бою).<br><br>• Урон по всем: %cleave_damage_percent_creep%%%<br>"
+		"DOTA_Tooltip_Ability_item_bfury_2_Lore"									"Владелец этого могучего топора может выкашивать врагов целыми рядами."
+		"DOTA_Tooltip_Ability_item_bfury_2_Note0"									"Прорубающий урон проходит сквозь невосприимчивость к магии."
+		"DOTA_Tooltip_Ability_item_bfury_2_Note1"									"Каждый предмет или способность, дарующие прорубающую атаку, наносят урон отдельно друг от друга."
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_damage"							"+$damage"
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_health_regen"					"+$hp_regen"
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_mana_regen"						"+$mana_regen"
+
+		"DOTA_Tooltip_Ability_item_bfury_3"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_3_Description"							"<h1>Активная: Chop Tree</h1> Срубает выбранное дерево.<br><br>Дальность применения: %abilitycastrange%\n<h1>Пассивная: Cleave</h1> Атаки героя прорубают жертву, нанося врагам в радиусе %cleave_distance% вокруг неё физический урон(только в ближнем бою).<br><br>• Урон по всем: %cleave_damage_percent_creep%%%<br>"
+		"DOTA_Tooltip_Ability_item_bfury_3_Lore"									"Владелец этого могучего топора может выкашивать врагов целыми рядами."
+		"DOTA_Tooltip_Ability_item_bfury_3_Note0"									"Прорубающий урон проходит сквозь невосприимчивость к магии."
+		"DOTA_Tooltip_Ability_item_bfury_3_Note1"									"Каждый предмет или способность, дарующие прорубающую атаку, наносят урон отдельно друг от друга."
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_damage"							"+$damage"
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_health_regen"					"+$hp_regen"
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_mana_regen"						"+$mana_regen"
+
+		"DOTA_Tooltip_Ability_item_energy_booster_2"			"Energy Booster"
+		"DOTA_Tooltip_ability_item_energy_booster_2_Lore"							"Этот лазурит часто можно найти у волшебников, стремящихся дольше сохранять колдовские силы в бою."
+		"DOTA_Tooltip_ability_item_energy_booster_2_mana_bonus"					"+$mana"
+
+		"DOTA_Tooltip_Ability_item_arcane_boots_2"			"Arcane Boots 2"
+		"DOTA_Tooltip_ability_item_arcane_boots_2_Description"					"<h1>Активная: Replenish Mana</h1> Восстанавливает %replenish_amount% маны всем союзникам вокруг и уменьшает манакост их способностей на %replenish_manacost_reduction%%  в течении %replenish_duration% секунд.<br><br>Радиус: %replenish_radius%\nБонусы к скорости передвижения от нескольких пар ботинок не складываются."
+		"DOTA_Tooltip_ability_item_arcane_boots_2_Lore"						"Магу, что носит эти ботинки, всегда рады в бою."
+		"DOTA_Tooltip_ability_item_arcane_boots_2_bonus_movement"					"+$move_speed"
+		"DOTA_Tooltip_ability_item_arcane_boots_2_bonus_mana"						"+$mana"	
+
+		"DOTA_Tooltip_modifier_arcane_boots_2_mana_reduction"		"Arcane Boots effect"
+		"DOTA_Tooltip_modifier_arcane_boots_2_mana_reduction_Description"		"Манакост способностей снижен на %dMODIFIER_PROPERTY_MANACOST_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_Ability_item_fire_shivas_guard"			"Fire Shiva's Guard"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Description"					"<h1>Активная: Fire Blast</h1> Выпускает огненную волну, которая наносит противникам %damage% магического урона и на %blast_debuff_duration% сек. поджигает их нанося %damage_fire_per_second%.<br><br>Радиус: %blast_radius%\n<h1>Пассивная: Burn</h1>Каждую секунду наносит противникам %damage_radiance% магического урона и ослепляет их, вынуждая промахиваться в %miss_chance%%% случаев.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Lore"							"Одна из трех частей могущественного артефакта."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Note0"							"Волна распространяется со скоростью в %blast_speed% до максимального размера в %blast_radius%."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Note1"							"Огенная волна следует за владельцем."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_damage"				"+$damage"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_armor"					"+$armor"
+
+		"DOTA_Tooltip_modifier_imba_radiance_debuff"		"Burn Damage"
+		"DOTA_Tooltip_modifier_imba_radiance_debuff_Description"		"Получает 75 урона в секунду и промахивается в %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%% случаев."
+
+		"DOTA_Tooltip_modifier_fire_shiva_fire"		"Fire Blast"
+		"DOTA_Tooltip_modifier_fire_shiva_fire_Description"		"Цель горит получая урон."
+
+		"DOTA_Tooltip_Ability_item_freez_shivas_guard"			"Shiva's Guard"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Description"					"<h1>Активная: Arctic Blast</h1> Выпускает морозную волну, которая наносит противникам %damage% магического урона и на %slow_duration_tooltip% сек. снижает их скорость передвижения на %move_speed_acitve%%%.<br><br>Радиус: %blast_radius%\n<h1>Пассивная: Freezing Aura</h1>Снижает скорость атаки противников на %aura_as_reduction%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Lore"							"Одна из трех частей могущественного артефакта."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note0"							"Волна распространяется со скоростью в %blast_speed% до максимального размера в %blast_radius%."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note1"							"Морозная волна следует за владельцем."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note2" 							"Эффект от нескольких Freezing Aura не складывается."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_str"				"+$str"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_agi"				"+$agi"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_health"				"+$health"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_mana"				"+$mana"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_armor"					"+$armor"
+
+		"DOTA_Tooltip_modifier_item_freez_shivas_aura_debuff"		"Freezing Aura"
+		"DOTA_Tooltip_modifier_item_freez_shivas_aura_debuff_Description"		"Скорость атаки снижена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
+
+ 		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff"		"Arctic Blast"
+		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff_Description"		"Передвижение снижено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, а скорость атаки на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1535,7 +1859,8 @@
     	"dota_hud_error_full_inventory"                    						"Он жирный, нахуй ты еще пихаешь что то"
     	"dota_hud_error_havent_charges"                    						"It просто брбрббр-кончилась"
     	"dota_hud_error_bad_target"                    						"НЕВЕРНО ВЫБРАНА ЦЕЛЬ"
-    
+    	"dota_hud_error_use_myself"                    						"Нельзя использовать на себя"    
+    	"dota_hud_error_use_enemies"                    						"Нельзя использовать на врагов"  
 
     	"dota_hud_error_letter_bad_target"                    					"Письмо можно использовать только на главную елку!"
 		// ******************** Обучалка: ********************

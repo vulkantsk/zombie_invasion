@@ -29,7 +29,7 @@ function wraith_king_wraithfire_blast_lua:OnProjectileHit( hTarget, vLocation )
 		local stun_duration = self:GetSpecialValueFor( "blast_stun_durationn" )
 		local base_dmg = self:GetSpecialValueFor("base_dmg")
 		local str_dmg = self:GetSpecialValueFor("str_dmg")/100
-		local stun_damage = caster:GetAttackDamage() * str_dmg + base_dmg 
+		local stun_damage = caster:GetAverageTrueAttackDamage(caster) * str_dmg + base_dmg 
 		local dot_duration = self:GetSpecialValueFor( "blast_dot_durationn" )
 
 		-- apply initial damage

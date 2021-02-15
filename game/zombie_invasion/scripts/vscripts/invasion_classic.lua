@@ -50,7 +50,10 @@ function InvasionMode:InvasionMap()
 	GameRules:SetShowcaseTime( 0.0 )	
  
  
- 
+ 	GameRules:GetGameModeEntity():SetCustomBuybackCostEnabled( true )
+	GameRules:GetGameModeEntity():SetBuybackEnabled( true )
+	PlayerResource:SetCustomBuybackCost(0,1000)
+
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
   	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
 	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
@@ -271,7 +274,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 	local npc = EntIndexToHScript(data.entindex)
 	    local name = npc:GetUnitName()
  
- 
+ --[[
      if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
@@ -284,7 +287,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 end
  
- 
+ ]]
   
 end
 
@@ -338,6 +341,8 @@ function InvasionMode:InvasionGameStart()
 
 --15 минута, 2я ночь
 	Timers:CreateTimer(900,function()
+	  local putin = Entities:FindByName(nil, 'NPC_base')
+	 UpgradeUnitStats(putin, 1.5)
 	    InvasionMode:ZombieNight2()  
 		EmitGlobalSound("invasion.Night")
 		return nil
@@ -345,12 +350,16 @@ function InvasionMode:InvasionGameStart()
 
 --25 минута, 3я ночь
 	Timers:CreateTimer(1500,function()
+	 local putin = Entities:FindByName(nil, 'NPC_base')
+	 UpgradeUnitStats(putin, 1.5)
 	    InvasionMode:ZombieNight3()  
 		EmitGlobalSound("invasion.Night")
 		return nil
 	end)
 	
 	Timers:CreateTimer(2100,function()
+	 local putin = Entities:FindByName(nil, 'NPC_base')
+	 UpgradeUnitStats(putin, 1.5)
 	    InvasionMode:ZombieNight4()  
 		EmitGlobalSound("invasion.Night")
 		return nil
@@ -358,19 +367,22 @@ function InvasionMode:InvasionGameStart()
 
  --40 минута, конец 4ей ночи, день
  	Timers:CreateTimer(2400,function()
+ 		--[[
  if Christmas_night == 0 then 
         InvasionMode:UsuallyEnd() 
  else 
   InvasionMode:ChristmasEnd()    
  
  end
+ ]]
+         InvasionMode:UsuallyEnd() 
  end)
 end
 
 function InvasionMode:UsuallyEnd()  
  -- Обычнй конец
  	Timers:CreateTimer(0,function()
-	         		--[[ 
+	         
 	    xuitat3 = RandomInt(1,3)
         print(xuitat3)
 		if xuitat3 == 1 then
@@ -383,10 +395,10 @@ function InvasionMode:UsuallyEnd()
 	 	    EmitGlobalSound("Sergey")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - АМ ФП</font>", 0, 0) 
         end	
-                 ]]
+              
          
-        	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
-		    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
+ --       	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
+	--	    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
 		     
 	end)  
 	
@@ -441,7 +453,7 @@ function InvasionMode:UsuallyEnd()
 	end)
 	
 	Timers:CreateTimer(50,function()
- --[[ 
+ 
 				if xuitat3 == 1 then
 	 	    StopGlobalSound("Invasion.Castaways")    
  
@@ -452,8 +464,8 @@ function InvasionMode:UsuallyEnd()
 	 	    StopGlobalSound("Sergey")
  
         end	
-	 ]]
-	  StopGlobalSound("Bobby Helms - Jingle bell")
+	 
+	--  StopGlobalSound("Bobby Helms - Jingle bell")
 	end)
 end
  
@@ -1437,12 +1449,16 @@ pig_count = pig_count+1
 end
 
  
-	if 	killedEntity:GetUnitName() == "npc_undying"		then 	GiveGoldPlayers(550)
-	   elseif killedEntity:GetUnitName() == "npc_undying_2"		then 	GiveGoldPlayers(650)
+	if 	killedEntity:GetUnitName() == "npc_undying"		then 	GiveGoldPlayers(350)
+	   elseif killedEntity:GetUnitName() == "npc_seerdying"		then 	GiveGoldPlayers(250)
+	   elseif killedEntity:GetUnitName() == "npc_undying_2"		then 	GiveGoldPlayers(450)
+	   elseif killedEntity:GetUnitName() == "npc_seerdying_2"		then 	GiveGoldPlayers(350)
        elseif killedEntity:GetUnitName() == "npc_flash_golem"		then 	GiveGoldPlayers(1250)
-       elseif killedEntity:GetUnitName() == "npc_undying_3"		then 	GiveGoldPlayers(800)
+       elseif killedEntity:GetUnitName() == "npc_undying_3"		then 	GiveGoldPlayers(600)
+       elseif killedEntity:GetUnitName() == "npc_seerdying_3"		then 	GiveGoldPlayers(400)
        elseif killedEntity:GetUnitName() == "npc_flash_golem_2"		then 	GiveGoldPlayers(1550)
-        elseif killedEntity:GetUnitName() == "npc_undying_4"		then 	GiveGoldPlayers(1125)      
+        elseif killedEntity:GetUnitName() == "npc_undying_4"		then 	GiveGoldPlayers(825)      
+        elseif killedEntity:GetUnitName() == "npc_seerdying_4"		then 	GiveGoldPlayers(550) 
 	   elseif killedEntity:GetUnitName() == "npc_flash_golem_3"		then 	GiveGoldPlayers(2230)
 	     elseif killedEntity:GetUnitName() == "npc_classic_new_years"		then 	GiveGoldPlayers(25)
        elseif killedEntity:GetUnitName() == "npc_classic_new_years_ancient"		then 	GiveGoldPlayers(3100)
@@ -1465,7 +1481,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
-   	--[[
+ 
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
   		    "Ula - Cannabis",
@@ -1473,15 +1489,7 @@ function InvasionMode:ThemeMusic()
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
     	},
-    	  ]]
-     	 
-   [1] = {
- "Merry - Christmas Jingle Bells",  
-  "Jingle Вells" ,
-  "Lofi Origin - Jingle Bells Lo Fi Chill",
-  },
-  
-    	--[[
+ 
     	[2] = {
   		    "Серега пират - АМ ФП", 
   		    "Life - Larson",
@@ -1491,15 +1499,7 @@ function InvasionMode:ThemeMusic()
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
   		    "Boulevard of Broken Dreams - Green Day", 		
     	},
-  	]]
-    	       
-    	[2] = {
-  		    "Aurélie - Jingle Bells", 
-  		    "Ансамбль Детские Песни - Три белых коня",
-  		    "Дискотека Авария - Новогодняя",
  
-    	},
-    		--[[
     	  
     	[3] = {
   		    "Lana Del Rey - Summertime Sadness (smoke remix)",
@@ -1513,8 +1513,31 @@ function InvasionMode:ThemeMusic()
   		    "John  Newman - Fire In Me",
   		    "iSpy - KYLE feat. Lil Yachty",
     	},
-    		]]
-     	  
+    		 
+ 
+  	   	     
+     	[4] = {
+		"RSAC - NBA",
+		"Daved Guetta - Would I Lie To You",
+		 "Sia - Chandelier",
+		"Does It Matter - Janieck",	  			
+    	},
+        }	 
+     	--[[  	         	 
+   [1] = {
+ "Merry - Christmas Jingle Bells",  
+  "Jingle Вells" ,
+  "Lofi Origin - Jingle Bells Lo Fi Chill",
+  },
+  
+  	       
+    	[2] = {
+  		    "Aurélie - Jingle Bells", 
+  		    "Ансамбль Детские Песни - Три белых коня",
+  		    "Дискотека Авария - Новогодняя",
+ 
+    	},
+
      	[3] = {
   		    "Дима Билан - Новый Год с новой строчки",
   		    "ABBA - Happy New Year",
@@ -1522,14 +1545,7 @@ function InvasionMode:ThemeMusic()
   		    "WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS",
     	},
     
- 	   	    	--[[
-     	[4] = {
-		"RSAC - NBA",
-		"Daved Guetta - Would I Lie To You",
-		 "Sia - Chandelier",
-		"Does It Matter - Janieck",	  			
-    	},
-    	]]
+ 
      	   	     
      	[4] = {
 		"Jinggle bells - Remix",
@@ -1537,11 +1553,10 @@ function InvasionMode:ThemeMusic()
  		
     	},
      
-    }
- 
+   ]] 
  	night_music =
  	{
- --[[
+ 
  		[1] = {
 			"Undertale - Respite",
 		},
@@ -1557,7 +1572,7 @@ function InvasionMode:ThemeMusic()
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
  		},
- ]]
+ --[[
  
  		[1] = {
 			"Кошмар перед рождеством - End Title",
@@ -1573,7 +1588,7 @@ function InvasionMode:ThemeMusic()
 	 		"Кошмар перед рождеством - Making Christmas",
  
  		},
- 
+  ]]
  	}
  	local last_music = nil
 
@@ -1588,25 +1603,32 @@ function InvasionMode:ThemeMusic()
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
 	    	print("night time")
+ 
+	     --[[ 	
       local allBuildings = Entities:FindAllByClassname('npc_dota_building')
     for i = 1, #allBuildings, 1 do
+     
         local building = allBuildings[i]
         building:AddNewModifier(building, nil, "modifier_invulnerable", {}) 
  
 end
+ ]]
 	    else
 	    	music = day_music[current_day]
 	    	time_until_end = 300 - day_time
 	    	print("day time")
- 
+ --[[ 
      local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+
     for i = 1, #allBuildings, 1 do
         local building = allBuildings[i]
         building:RemoveModifierByName('modifier_invulnerable')
  
 end
+ ]]
 	    end
 
+ 
 		print("time until night = "..time_until_end)
 		if last_music then
 			Sounds:RemoveGlobalLoopingSound( last_music )

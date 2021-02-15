@@ -729,6 +729,9 @@
 		"Rolelevels"				"3,1"
 		"ArmorPhysical"		"3"
 
+		"AttributeBaseStrength"		"16"
+		"AttributeStrengthGain"		"1.7000"
+
 		"AttackRange"				"200"							
 "Ability1" "jugger"
 "Ability2" "jugger_2"

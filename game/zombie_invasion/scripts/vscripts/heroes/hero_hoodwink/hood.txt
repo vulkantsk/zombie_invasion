@@ -107,12 +107,12 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"attack_speed"					"30 70 115 165"
+				"attack_speed"					"30 60 105 140"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_damage"					"15 40 85 130"
+				"bonus_damage"					"15 40 85 120"
 								"LinkedSpecialBonus"			"special_hoodwink"
 			}
  			"04"
@@ -257,7 +257,7 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "trigger_chance"			"12"
+			     "trigger_chance"			"10"
 		    }
 		}
 	}

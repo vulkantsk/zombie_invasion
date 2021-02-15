@@ -11,6 +11,12 @@
     "item_helm_of_the_dominator_2"          "REMOVE"
 	"item_dust"							"REMOVE"
 	"item_travel_boots"                       "REMOVE"
+     "item_vladmir"                       "REMOVE"
+	"item_medallion_of_courage"                       "REMOVE"
+     "item_solar_crest"                       "REMOVE"
+     "item_bfury"                               "REMOVE"
+	"item_guardian_greaves"                               "REMOVE"
+    "item_shivas_guard"                               "REMOVE"
 
 	"item_recipe_abyssal_blade"							"REMOVE"
 	"item_abyssal_blade"							"REMOVE"
@@ -25,36 +31,13 @@
 	//============================================================================================================
 
 //4
-	"item_recipe_guardian_greaves"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"230"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vmdl"
-		
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"650"	
-		"ItemShopTags"					""
-		
-		// Recipe
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemRecipe"					"1"
-		"ItemResult"					"item_guardian_greaves"
-
-		"ItemRequirements"
-		{
-			"01"						"item_mekansm;item_arcane_boots"
-		}
-	}
+ 
+ 
 	
 	//=================================================================================================================
 	// Guardian Greaves
 	//=================================================================================================================
-	"item_guardian_greaves"
-	{
- 			"ItemIsNeutralDrop"				"1"
-	}
+ 
 
 	"item_overwhelming_blink"
 	{
@@ -348,77 +331,7 @@
 		"ItemCost"						"100"
 	}
 
-	//=================================================================================================================
-	// Battlefury
-	//=================================================================================================================
-	"item_bfury"
-	{
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"3500"
-
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"25"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"bonus_health_regen"	"7.5"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"bonus_mana_regen"		"3.75"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"50"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"quelling_bonus"			"24"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"quelling_bonus_ranged"	"7"
-			}			
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_starting_width"			"150"
-			}			
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_ending_width"			"360"
-			}			
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_distance"			"650"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cast_range_tooltip"			"350"
-			}
-			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cast_range_ward"			"450"
-			}					
-		}
-	}
+ 
 
 	"item_recipe_basher"
 	{

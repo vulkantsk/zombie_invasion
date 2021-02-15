@@ -97,26 +97,27 @@
 		"item"		"item_tranquil_boots"
 		"item"		"item_medallion_of_courage"
 		"item"		"item_arcane_boots"
+		"item"      "item_arcane_boots_2"
 		"item"		"item_ancient_janggo"
 		"item"		"item_mekansm"					
 		"item"		"item_vladmir"	
 		"item"		"item_pipe"			
-		"item"		"item_guardian_greaves"
+		"item"		"item_medallion_of_courage_custom_3"
+		"item"      "item_imba_vladmir_3"
 	}
 				
 	"magics"			
 	{
-		"item"		"item_veil_of_discord"		
+		"item"		"item_veil_of_discord_2"		
 		"item"		"item_aether_lens"
-		"item"		"item_necronomicon"
-		"item"		"item_dagon"
-		"item"		"item_cyclone"
+		"item"		"item_magic_cape_3"
+		"item"      "item_voodo_mask_3"
 		"item"		"item_solar_crest"
-		"item"		"item_rod_of_atos"
 		"item"		"item_orchid"	
 		"item"		"item_ultimate_scepter"
 		"item"		"item_refresher"
 		"item"		"item_octarine_core"
+		"item"      "item_magic_rapier"
 	}
 		
 	// Level 3 - Purple Recipes	
@@ -129,30 +130,31 @@
 		"item"		"item_crimson_guard"		
 		"item"		"item_black_king_bar"
 		"item"		"item_lotus_orb"		
-		"item"		"item_shivas_guard"
+		"item"		"item_freez_shivas_guard"
+		"item"		"item_fire_shivas_guard"
+		"item"		"item_shivas_guard_heal"
 		"item"		"item_bloodstone"
 		"item"		"item_manta"
 		"item"		"item_hurricane_pike"	
 		"item"		"item_assault"
 		"item"		"item_her"	
+
 	}
 			
 	"weapons"
 	{	
 		"item"		"item_lesser_crit"	
 		"item"		"item_armlet"
-		"item"		"item_basher"	
-		"item"		"item_bfury"
-		"item"		"item_ethereal_blade"
+		"item"		"item_bfury_2"
+		"item"		"item_ethereal_blade_2"
 		"item"		"item_silver_edge"
 		"item"		"item_radiance"
 		"item"		"item_monkey_king_bar" 	
 		"item"		"item_greater_crit"
-		"item"		"item_butterfly"
-		"item"		"item_rapier"
-		"item"		"item_abyssal_blade"	
+		"item"		"item_rapier"	
 		"item"		"item_bloodthorn"
-					
+		"item"	    "item_maelstrom_4"
+
 					
 	}
 		

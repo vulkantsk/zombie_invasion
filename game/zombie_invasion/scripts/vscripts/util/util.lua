@@ -26,6 +26,81 @@ function GetMultipleBountyBonus(hUnit)
 	return bonus
 end 
 
+-- Autoattack lifesteal
+function CDOTA_BaseNPC:GetLifesteal()
+	local lifesteal = 0
+	local multiplier = 0
+
+	for _, parent_modifier in pairs(self:FindAllModifiers()) do
+		if parent_modifier.GetModifierLifesteal and parent_modifier:GetModifierLifesteal() then
+			lifesteal = lifesteal + parent_modifier:GetModifierLifesteal()
+		end
+	end
+
+	for _, parent_modifier in pairs(self:FindAllModifiers()) do
+		if parent_modifier.GetModifierLifestealAmplify and parent_modifier:GetModifierLifestealAmplify() then
+			multiplier = multiplier + parent_modifier:GetModifierLifestealAmplify()
+		end
+	end
+
+	if lifesteal ~= 0 and multiplier ~= 0 then
+		lifesteal = lifesteal * (multiplier / 100)
+	end
+
+	return lifesteal
+end
+
+function CDOTA_BaseNPC:IsSameTeam(unit)
+	return (self:GetTeamNumber() == unit:GetTeamNumber())
+end
+
+function ChangeAttackProjectileImba(unit)
+
+	local particle_deso = "particles/items_fx/desolator_projectile.vpcf"
+	local particle_skadi = "particles/items2_fx/skadi_projectile.vpcf"
+	local particle_lifesteal = "particles/item/lifesteal_mask/lifesteal_particle.vpcf"
+	local particle_deso_skadi = "particles/item/desolator/desolator_skadi_projectile_2.vpcf"
+	local particle_clinkz_arrows = "particles/units/heroes/hero_clinkz/clinkz_searing_arrow.vpcf"
+	local particle_dragon_form_green = "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_corrosive.vpcf"
+	local particle_dragon_form_red = "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_fire.vpcf"
+	local particle_dragon_form_blue = "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
+	local particle_terrorblade_transform = "particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf"
+
+	-- If the unit has a Desolator and a Skadi, use the special projectile
+	if unit:HasModifier("modifier_item_imba_desolator") or unit:HasModifier("modifier_item_imba_desolator_2") then
+		if unit:HasModifier("modifier_item_imba_skadi") then
+			unit:SetRangedProjectileName(particle_deso_skadi)
+		-- If only a Desolator, use its attack projectile instead
+		else
+			unit:SetRangedProjectileName(particle_deso)
+		end
+	-- If only a Skadi, use its attack projectile instead
+	elseif unit:HasModifier("modifier_item_imba_skadi") then
+		unit:SetRangedProjectileName(particle_skadi)
+
+	-- If the unit has any form of lifesteal, use the lifesteal projectile
+	elseif unit:HasModifier("modifier_imba_morbid_mask") or unit:HasModifier("modifier_imba_mask_of_madness") or unit:HasModifier("modifier_imba_satanic") or unit:HasModifier("modifier_item_imba_vladmir") or unit:HasModifier("modifier_item_imba_vladmir_blood") then		
+		unit:SetRangedProjectileName(particle_lifesteal)	
+
+	-- If it's one of Dragon Knight's forms, use its attack projectile instead
+	elseif unit:HasModifier("modifier_dragon_knight_corrosive_breath") then
+		unit:SetRangedProjectileName(particle_dragon_form_green)
+	elseif unit:HasModifier("modifier_dragon_knight_splash_attack") then
+		unit:SetRangedProjectileName(particle_dragon_form_red)
+	elseif unit:HasModifier("modifier_dragon_knight_frost_breath") then
+		unit:SetRangedProjectileName(particle_dragon_form_blue)
+
+	-- If it's a metamorphosed Terrorblade, use its attack projectile instead
+	elseif unit:HasModifier("modifier_terrorblade_metamorphosis") then
+		unit:SetRangedProjectileName(particle_terrorblade_transform)
+
+	-- Else, default to the base ranged projectile
+	else
+--		print(unit:GetKeyValue("ProjectileModel"))
+		unit:SetRangedProjectileName(unit:GetKeyValue("ProjectileModel"))
+	end
+end
+
  
  function PopupNumbers(target, pfx, color, lifetime, number, presymbol, postsymbol)
     local pfxPath = string.format("particles/msg_fx/msg_%s.vpcf", pfx)
@@ -52,6 +127,8 @@ end
     ParticleManager:SetParticleControl(pidx, 3, color)
 end
 
+ 
+
 function PopupCriticalDamage(target, amount)
     PopupNumbers(target, "crit", Vector(255, 0, 0), 1.0, amount, nil, 4)
 end
@@ -74,6 +151,31 @@ function SetExpUsually(unit, constant)
 
     unit:SetDeathXP(unit:GetDeathXP() + constant) 
 
+end
+
+
+function UpgradeUnitStats(unit, multiplier)
+    if not unit:IsAlive() then
+        return
+    end
+
+    
+        local new_armor = unit:GetPhysicalArmorBaseValue() * multiplier
+        local max_hp = unit:GetMaxHealth() * multiplier
+        local min_dmg = unit:GetBaseDamageMin() * multiplier
+        local max_dmg = unit:GetBaseDamageMax() * multiplier
+
+        if max_hp <= 1 then
+            max_hp = 1
+        end
+        unit:SetBaseMaxHealth(max_hp)
+        unit:SetMaxHealth(max_hp)
+        unit:SetHealth(max_hp)
+
+        unit:SetPhysicalArmorBaseValue(new_armor)
+        unit:SetBaseDamageMin(min_dmg)
+        unit:SetBaseDamageMax(max_dmg)
+ 
 end
 
 function SetLevelForSubAbility(main_ability, sub_ability_name, target, level_required, level_to_set)
@@ -114,6 +216,8 @@ function table.length(tbl)
 	return count
 end 
 
+ 
+
 function CDOTA_BaseNPC:FilterModifiers(callback)
 	local list = {}
 	if not callback then print('[FilterModifiers] Error! Callback not found') return list end
@@ -152,6 +256,60 @@ function CDOTA_BaseNPC:AddStackModifier(data)
 		self:SetModifierStackCount( data.modifier, data.ability, (data.count or 1) )
 	end
 	return self:GetModifierStackCount( data.modifier, data.ability )
+end
+
+function IsHeroOrCreep(unit)
+	if unit.IsCreep and unit:IsCreep() then
+		return true
+	elseif unit.IsHero and unit:IsHero() then
+		return true
+	end
+	return false
+end
+
+
+function RollPseudoRandom(base_chance, entity)
+	local chances_table = { {5, 0.38},
+							{10, 1.48},
+							{15, 3.22},
+							{16, 3.65},
+							{17, 4.09},
+							{19, 5.06},
+							{20, 5.57},
+							{21, 6.11},
+							{22, 6.67},
+							{24, 7.85},
+							{25, 8.48},
+							{27, 9.78},
+							{30, 11.9},
+							{35, 15.8},
+							{40, 20.20},
+							{50, 30.20},
+							{60, 42.30},
+							{70, 57.10},
+							{100, 100}
+						  }
+
+	entity.pseudoRandomModifier = entity.pseudoRandomModifier or 0
+	local prngBase
+	for i = 1, #chances_table do
+		if base_chance == chances_table[i][1] then		  
+			prngBase = chances_table[i][2]
+		end	 
+	end
+
+	if not prngBase then
+		print("The chance was not found! Make sure to add it to the table or change the value.")
+		return false
+	end
+	
+	if RollPercentage( prngBase + entity.pseudoRandomModifier ) then
+		entity.pseudoRandomModifier = 0
+		return true
+	else
+		entity.pseudoRandomModifier = entity.pseudoRandomModifier + prngBase		
+		return false
+	end
 end
 
 function DealDamage(source, target, damage, dType, flags, ability)
