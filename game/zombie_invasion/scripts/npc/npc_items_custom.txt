@@ -395,29 +395,6 @@
 			"01"						"item_shield_3;item_headdress"
 		}
 	}
-
-		"item_recipe_shield_5"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                     "item_datadriven"
- 		"AbilityTextureName" 			"custom_folder/item_recipe"
-		"Model"							"models/props_gameplay/recipe.vmdl"
-		
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"500"	
-		"ItemShopTags"					""
-		
-		// Recipe
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemRecipe"					"1"
-		"ItemResult"					"item_shield_5"
-		"ItemRequirements"
-		{
-			"01"						"item_shield_4;item_chainmail;item_chainmail;item_platemail"
-		}
-	}
 	
     "item_shield_4"
     {
@@ -462,7 +439,7 @@
                 "aura_radius"          "750"
             }
         }
-       
+
         "Modifiers"
         {
             "modifier_item_shield_4"
@@ -470,7 +447,7 @@
 				"Passive" "0"  
 				"IsHidden" "0"  
 				"TextureName" "shield"
-               
+
                 "Properties"
                 {
 
@@ -478,13 +455,13 @@
 					"MODIFIER_PROPERTY_HEALTH_BONUS"                    "%health"
                 }
             }
-			
+
 			            "modifier_item_shield_4_4"
             {
 				"Passive" "1"  
 				"IsHidden" "1"  
 
-               
+
                 "Properties"
                 {
                     "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"         "%damage_block"
@@ -494,7 +471,7 @@
 			{
 				"Passive"				"1"
 				"IsHidden"				"1"
-				
+
 				"Aura" 					"modifier_item_shield_4"
 				"Aura_Radius" 			"%aura_radius"
 				"Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -504,7 +481,31 @@
 			}
         }
     }
+	
+ 
+ 		"item_recipe_shield_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+ 		"AbilityTextureName" 			"custom_folder/item_recipe"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_shield_5"
+		"ItemRequirements"
+		{
+			"01"						"item_shield_4;item_chainmail;item_chainmail;item_platemail"
+		}
+	}
+	
         "item_shield_5"
     {
         // General
@@ -512,20 +513,20 @@
         "BaseClass"                     "item_datadriven"
         "AbilityTextureName"             "item_solar_crest"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
- 
+
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemShopTags"                  "block"
         "ItemQuality"                   "rare"
         "ItemCost"                      "225"
 				"SideShop"						"1"
- 
+
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilitySpecial"
         {
- 
+
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
@@ -551,7 +552,7 @@
        
         "Modifiers"
         {
-            "modifier_item_shield_4"
+            "modifier_item_shield_5"
             {
 				"Passive" "0"  
 				"IsHidden" "0"  
@@ -559,29 +560,27 @@
                
                 "Properties"
                 {
-
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"           "%regen"
 					"MODIFIER_PROPERTY_HEALTH_BONUS"                    "%health"
                 }
             }
 			
-			            "modifier_item_shield_4_4"
+			            "modifier_item_shield_5_5"
             {
 				"Passive" "1"  
 				"IsHidden" "1"  
-
                
                 "Properties"
                 {
                     "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"         "%damage_block"
                 }
             }
-						"modifier_item_shield_4_aura"
+						"modifier_item_shield_5_aura"
 			{
 				"Passive"				"1"
 				"IsHidden"				"1"
 				
-				"Aura" 					"modifier_item_shield_4"
+				"Aura" 					"modifier_item_shield_5"
 				"Aura_Radius" 			"%aura_radius"
 				"Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 				"Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -591,9 +590,7 @@
         }
     }
 	
- 
- 
-	
+
 	"item_tpscroll"
 	{
 		// General
@@ -8143,7 +8140,6 @@
 			"01"						"item_vitality_booster;item_reaver"
 		}
 	}
-	
  
 
 		"item_her"
@@ -8172,38 +8168,22 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"rg"	"2.00"
-			}												
+			}
 		}
 	}
 
-<<<<<<< Updated upstream
-		"item_recipe_her2"
-=======
-	"item_midas"
-	{
-		"BaseClass"          "item_lua"
-		"ScriptFile"         "items/new_items/item_midas"
-		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName" "midas_2"
-
-		"ItemCost"						"500"
-		"ItemAliases"					"midas"
-		"AbilityCastPoint"				"1.5"
-		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"0"		
-	}
+ 
 
  
 	
  
  
 
-	"item_recipe_assault_2"
->>>>>>> Stashed changes
+	"item_recipe_her2"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_datadriven" 		
+ 		"BaseClass"						"item_datadriven" 	
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
 		
@@ -8222,17 +8202,16 @@
 		}
 	}
 
-<<<<<<< Updated upstream
 		"item_her2"
-	{
+{       
 		"BaseClass"          "item_lua"
 		"ScriptFile"         "items/new_items/item_her2"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName" "item_heart"
-
-		"ItemCost"						"7500"
+				"ItemCost"						"7500"
 		"ItemAliases"					"dickrapier"
-
+	
+	//special
 				"AbilitySpecial"
 		{
 			"01"
@@ -8251,7 +8230,7 @@
 				"rg"	"3.0"
 			}												
 		}
-	}
+}
 
 	"item_pipe3"
 	{
@@ -8289,94 +8268,14 @@
 				"duration"	"10"
 			}														
 		}
-	}
+	}				
+
 	"item_pipe2"
 	{
 		"BaseClass"          "item_lua"
 		"ScriptFile"         "items/new_items/item_pipe2"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" "midas_2"
-=======
-"item_assault_2"
-{       
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-    "BaseClass"						"item_lua"
-		"AbilityTextureName"           "Assault_Cuirass_2"
- 
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
- 
-	"ScriptFile"                    "items/new_items/item_assault_2"
-	
-	// Stats
-	//-------------------------------------------------------------------------------------------------------------
-	
-	// Item Info
-	//-------------------------------------------------------------------------------------------------------------
-	"ItemCost"						"7750"
-	"ItemStackable"					"0"
-	
-	"ItemPermanent"					"0"
-	"ItemKillable"                  "1"
-	"ItemSellable"                  "1"
-	"ItemDroppable"                 "1"
-	"ItemPurchasable"				"1"
-
-	
-	//special
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_armor"			"17"
-		}
-		"02"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_aspeed"			"75"
-		}
-		"03"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_health"			"375"
-		}
- 
-		
-		//aura
-		
-		"05"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_armor_aura"		"8"
-		}
-		"06"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_aspeed_aura"		"55"
-		}
-		"07"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"friend_radius"			"1200"
-		}
-		//aura disarm
-		
-		"08"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"disarmor_aura"			"-8"
-		}
-		"09"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"enemy_radius"			"1200"
-		}
-	}
-}
-
-
->>>>>>> Stashed changes
 
 		"ItemCost"						"500"
 		"ItemAliases"					"midas"
@@ -8408,19 +8307,21 @@
 			}														
 		}
 	}
-	"item_recipe_her3"
+
+		"item_recipe_her3"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
+
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8429,9 +8330,9 @@
 		{
 			"01"						"item_her2;item_her"
 		}
-	}
+	}		
 
-	"item_her3"
+"item_her3"
 	{
 		"BaseClass"          "item_lua"
 		"ScriptFile"         "items/new_items/item_her3"
@@ -8468,12 +8369,12 @@
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8516,12 +8417,12 @@
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"200"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8564,12 +8465,12 @@
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"200"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8614,12 +8515,12 @@
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8679,12 +8580,12 @@
 		"BaseClass"						"item_datadriven" 		
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8736,7 +8637,7 @@
 			}														
 		}
 	}
-	
+
 	"item_midas"
 	{
 		"BaseClass"          "item_lua"
@@ -8758,12 +8659,12 @@
  		"BaseClass"						"item_datadriven" 	
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"2650"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8773,7 +8674,7 @@
 			"01"						"item_assault;item_moon_shard;item_platemail"
 		}
 	}
-	
+
 
 
 	"item_recipe_desolator2"
@@ -8783,12 +8684,12 @@
  		"BaseClass"						"item_datadriven" 	
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8806,14 +8707,14 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	        "item_desolator"
 
-		
+
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
 		"ItemSellable"                  "1"
 		"ItemDroppable"                 "1"
 		"ItemPurchasable"				"1"
 		"ItemBaseLevel"					"2"
-		
+
 		"AbilitySpecial"
 		{
 			"01"
@@ -8841,12 +8742,12 @@
  		"BaseClass"						"item_datadriven" 	
 		"Model"							"models/props_gameplay/recipe.vmdl"
 				"AbilityTextureName" 			"custom_folder/item_recipe"
-		
+
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"	
 		"ItemShopTags"					""
-		
+
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -8864,14 +8765,14 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	        "item_desolator"
 
-		
+
 		"ItemPermanent"					"0"
 		"ItemKillable"                  "1"
 		"ItemSellable"                  "1"
 		"ItemDroppable"                 "1"
 		"ItemPurchasable"				"1"
 		"ItemBaseLevel"					"2"
-		
+
 		"AbilitySpecial"
 		{
 			"01"
@@ -8891,7 +8792,7 @@
 			}
 		}
 	}
- 
+
 	"item_assault_2"
 	{
 		// General
@@ -8909,7 +8810,7 @@
 		"ItemAliases"					"ac;assault cuirass"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
-		
+
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -8946,7 +8847,6 @@
 			}			
 		}
 	}
-
 
 	//============================================================================================================
 	// New Year
@@ -9426,5 +9326,9 @@
  
 	}
 
+
+ 
+
+ 
 
 }
