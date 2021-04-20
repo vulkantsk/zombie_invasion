@@ -14,6 +14,8 @@ modifier_main_elka = {}
 
 function modifier_main_elka:OnIntervalThink(enemy)
 
+if not IsServer() then return end
+
 local bitch = self:GetCaster():FindModifierByName("modifier_item_letter"):GetStackCount()
   
      

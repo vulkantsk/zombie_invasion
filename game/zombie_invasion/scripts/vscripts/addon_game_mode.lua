@@ -19,6 +19,8 @@ require( 'constant_links' )
 --require( 'invasion_td' )
 require("end_game")
  
+require("zpr/req")
+ 
 if InvasionMode == nil then
 	InvasionMode = class({})
 end
@@ -174,9 +176,11 @@ end
 
 
 function Activate()
+	zprInit()
 	--GameRules.GameMode = GameMode()
 	InvasionMode:InvasionMap()
 --	InvasionMode:InitInvasionMode()
+	
 end
 
  
