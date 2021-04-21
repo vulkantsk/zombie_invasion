@@ -9331,7 +9331,7 @@
     {       
         "BaseClass"                     "item_datadriven"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "items/totem"
+        "AbilityTextureName"            "totem"
         "ItemStackable"                 "0"
         "ItemKillable"                  "1"
         "ItemSellable"                  "1"
