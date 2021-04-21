@@ -9327,7 +9327,18 @@
 	}
 
 
- 
+                "item_totem_upgrade"
+    {       
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "items/totem"
+        "ItemStackable"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "0"
+        "ItemPermanent"                 "0"
+    }   
 
  
 
