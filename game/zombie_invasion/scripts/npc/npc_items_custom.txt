@@ -9340,6 +9340,433 @@
         "ItemPermanent"                 "0"
     }   
 
- 
+        "item_recipe_bloodstone2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "100"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_bloodstone2"
+        "ItemRequirements"
+        {
+            "01"                            "item_bloodstone;item_totem_upgrade"
+        }
+    }
+    
+"item_bloodstone2"
+    {
+        "BaseClass"                     "item_bloodstone"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "FightRecapLevel"               "2"
+        "ItemBaseLevel"                 "2"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "85.0"
+        "AbilityTextureName"            "Upgrade_items/bloodstone_2"  
+        "ItemCost"                      "5250"
+        "ItemShopTags"                  "regen_health;regen_mana;mana_pool;health_pool"
+        "ItemQuality"                   "epic"
+        "ItemAliases"                   "bs;bloodstone"
+        "ItemInitialCharges"            "14"
+        "ItemDisplayCharges"            "1"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AllowedInBackpack"             "0"
+        "ShouldBeSuggested"             "1"
+        "ItemDroppable"                 "1"
+        
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_health"          "425 800"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_mana"            "425 800"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"           "16 32"
+            }   
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "mana_regen_multiplier"     "100"
+            }       
+            "05"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spell_amp"             "16 32"
+            }   
+            "06"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spell_lifesteal_amp"           "30"
+            }   
+            "07"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "hero_lifesteal"        "3"
+            }           
+            "08"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "creep_lifesteal"       "3"
+            }
+            "09"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "regen_per_charge"      "0.2"
+            }
+            "10"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "amp_per_charge"        "0.35"
+            }
+            "11"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "death_charges"             "0"
+            }
+            "12"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "kill_charges"          "1"
+            }
+            "13"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "charge_range"          "1600"
+            }
+            "14"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "initial_charges_tooltip" "14"
+            }
+            "15"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "restore_duration" "2.0"
+            }
+            "16"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "mana_cost_percentage" "30"
+            }
+        }
+    }
+
+"item_recipe_octarine_core2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "5000"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_octarine_core2"
+        "ItemRequirements"
+        {
+            "01"                            "item_octarine_core;item_totem_upgrade"
+        }
+    }
+    
+
+"item_octarine_core2"
+    {
+        "BaseClass"                     "item_octarine_core"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemBaseLevel"                 "2"
+        "AbilityTextureName"            "Upgrade_items/octarin_2"
+
+        "ItemCost"                      "9500"
+        "ItemStackable"                 "0"
+        
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "1"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_cooldown"        "25 35"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "cast_range_bonus"          "250"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_health"          "425 850"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_mana"            "425 850"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "bonus_mana_regen"      "3 6"
+            }
+        }
+    }   
+
+"item_recipe_veil_of_discord2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "5000"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_veil_of_discord2"
+        "ItemRequirements"
+        {
+            "01"                            "item_veil_of_discord;item_totem_upgrade;"
+        }
+    }
+    
+
+"item_veil_of_discord2"
+    {
+        "BaseClass"                     "item_veil_of_discord"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+        "ItemBaseLevel"                 "2"
+        "AbilityTextureName"            "Upgrade_items/veil_2"
+        "AbilityCooldown"               "25"
+        "AbilityCastRange"              "1000"
+        "AbilityCastPoint"              "0.0"
+        "AbilityManaCost"               "50"
+
+        "ItemCost"                      "9500"
+        "ItemStackable"                 "0"
+        
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "1"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_all_stats"       "4 15"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "aura_mana_regen"       "2 4"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "aura_radius"           "1200"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spell_amp"             "18 36"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "debuff_radius"         "600"
+            }
+            "06"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "resist_debuff_duration"    "16.0"
+            }
+        }
+    }   
+
+"item_recipe_desolator2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "5000"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_desolator2"
+        "ItemRequirements"
+        {
+            "01"                            "item_desolator;item_totem_upgrade;"
+        }
+    }
+
+"item_desolator2"
+    {       
+        "BaseClass"                     "item_desolator"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "Upgrade_items/desolator_2"
+
+        "ItemCost"                      "9500"
+        "ItemStackable"                 "0"
+        
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "1"
+        "ItemBaseLevel"                 "2"
+        
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_damage"          "50 150"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "corruption_armor"      "-7 -15"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "corruption_duration"   "5.0"
+            }
+        }
+    }
+
+
+"item_recipe_greater_crit2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "5000"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_greater_crit2"
+        "ItemRequirements"
+        {
+            "01"                            "item_greater_crit;item_totem_upgrade;"
+        }
+    }
+    
+
+"item_greater_crit2"
+    {
+        "BaseClass"                     "item_greater_crit"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemBaseLevel"                 "2"
+        "AbilityTextureName"            "Upgrade_items/greater_crit2"
+
+        "ItemCost"                      "9500"
+        "ItemStackable"                 "0"
+        
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "1"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_damage"          "88 176"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "crit_chance"           "30"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "crit_multiplier"       "225 250"
+            }
+        }
+    }   
+
+"item_recipe_kaya2"
+    {
+        "AbilityTextureName"                "recipe"                
+        "Model"                             "models/props_gameplay/recipe.vmdl"
+        "BaseClass"                         "item_datadriven"
+        
+        "ItemCost"                          "5000"  
+        "ItemShopTags"                      "artifacts"
+        
+        "ItemRecipe"                        "1"
+        "ItemResult"                        "item_kaya2"
+        "ItemRequirements"
+        {
+            "01"                            "item_kaya;item_totem_upgrade;"
+        }
+    }
+    
+
+"item_kaya2"
+    {
+        "BaseClass"                     "item_kaya"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemBaseLevel"                 "2"
+        "AbilityTextureName"            "Upgrade_items/kaya_2"
+
+        "ItemCost"                      "9500"
+        "ItemStackable"                 "0"
+        
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+        "ItemPurchasable"               "1"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_intellect"           "16 32"
+            }   
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spell_amp"                 "16 32"
+            }       
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "mana_regen_multiplier"     "24 48"
+            }           
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spell_lifesteal_amp"       "24 26"
+            }   
+        }
+    }   
+
+}
+
 
 }
