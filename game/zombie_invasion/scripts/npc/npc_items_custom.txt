@@ -9768,5 +9768,165 @@
 
 }
 
+"item_expiriance_aura"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"						"item_lua"
+		"AbilityTextureName"			"scroll_2"
+		"ScriptFile"					"items/other/book_exp"
+		"ItemPurchasable"				"0"
+		"AbilityCooldown"				"300.0"
+		"ItemDroppable" 				"1"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"500"
+		"ItemInitialCharges"			"1"
+		"AbilityTextureName"            "other/book_exp"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"radius"				"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"exp"					"100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"300"
+			}
+		}
+	}
+"item_armor_aura"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "scroll_4"
+        "ScriptFile"                    "items/other/book_armor"
+        "ItemPurchasable"               "0"
+        "AbilityCooldown"               "300.0"
+        "ItemDroppable"                 "1"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "500"
+        "ItemInitialCharges"            "1"
+        "AbilityTextureName"            "other/book_armor"
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "radius"                "1000"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "armor"                 "10"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "300"
+            }
+        }
+    }
+"item_base_damage_aura"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "scroll_6"
+        "ScriptFile"                    "items/other/book_base_damage"
+        "ItemPurchasable"               "0"
+        "AbilityCooldown"               "300.0"
+        "ItemDroppable"                 "1"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "500"
+        "ItemInitialCharges"            "1"
+        "AbilityTextureName"            "other/book_base_damage"
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "radius"                "1000"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "dmg"                   "30"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "300"
+            }
+        }
+    }   
+"item_attack_speed_aura"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "scroll_1"
+        "ScriptFile"                    "items/other/book_attack_speed"
+        "ItemPurchasable"               "0"
+        "AbilityCooldown"               "300.0"
+        "ItemDroppable"                 "1"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "500"
+        "ItemInitialCharges"            "1"
+        "AbilityTextureName"            "other/book_attack_speed"
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "radius"                "1000"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "attack_speed"          "80"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "300"
+            }
+        }
+    }       
+"item_hp_aura"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "scroll_5"
+        "ScriptFile"                    "items/other/book_hp"
+        "ItemPurchasable"               "0"
+        "AbilityCooldown"               "300.0"
+        "ItemDroppable"                 "1"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "500"
+        "ItemInitialCharges"            "1"
+        "AbilityTextureName"            "other/book_hp"
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "radius"                "1000"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "attack_speed"          "2"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "300"
+            }
+        }
+    }       
 
 }
