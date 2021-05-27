@@ -1958,5 +1958,45 @@
 		"DOTA_Tooltip_ability_item_hp_aura_dur"																							"Длительность:"
 		"DOTA_Tooltip_modifier_item_hp_aura"																							"Бафф свитка регенерации"
 		"DOTA_Tooltip_modifier_item_hp_aura_Description"																				"Регенерация увеличена"
+	
+	    "npc_dota_hero_pudge"			"Meat boy"
+
+
+		"DOTA_Tooltip_ability_meatboy_more_meat"									"More meat"
+		"DOTA_Tooltip_ability_meatboy_more_meat_Description"						"Больше мяса , еще больше !!!"
+		"DOTA_Tooltip_ability_meatboy_more_meat_dmg_proc"							"УРОНА ДЛЯ СРАБАТЫВАНИЯ :"
+		"DOTA_Tooltip_ability_meatboy_more_meat_hp_per_stack"						"БОНУС ЗДОРОВЬЯ :"
+		"DOTA_Tooltip_modifier_meatboy_more_meat"									"MORE MEAT !!!"
+		"DOTA_Tooltip_modifier_meatboy_more_meat_Description"						"MORE MEAT !!!"
+
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram"									"Bloody chakram"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_Description"						"Губительная кровавая пила режет себя и врагов !"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_radius"							"РАДИУС :"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_base_dmg"							"БАЗОВЫЙ УРОН :"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_hp_cost"							"%УРОН ОТ ЗДОРОВЬЯ :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_bath"									"Blood bath"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_Description"						"Герой создает кровавую лужу , наносящую урон врагам и лечущую союзников!"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_duration"							"ДЛИТЕЛЬНОСТЬ :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_radius"							"РАДИУС :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_base_dmg"							"БАЗОВЫЙ УРОН :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_hp_dmg"							"%УРОН ОТ ЗДОРОВЬЯ :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_power"									"Blood power"
+		"DOTA_Tooltip_ability_meatboy_blood_power_Description"						"Теряя свое здоровье, герой впадает в ярость , увеличивая скорость атаки !"
+		"DOTA_Tooltip_ability_meatboy_blood_power_duration"							"ДЛИТЕЛЬНОСТЬ :"
+		"DOTA_Tooltip_ability_meatboy_blood_power_hp_proc"							"%ПОТЕРЯ ЗДОРОВЬЯ :"
+		"DOTA_Tooltip_ability_meatboy_blood_power_as_bonus"							"БОНУС СКОРОСТИ АТАКИ :"
+
+		"DOTA_Tooltip_ability_meatboy_meat_power"									"Meat power"
+		"DOTA_Tooltip_ability_meatboy_meat_power_Description"						"Напрягая каждую мышцу своего тела, повышает зеленый урон от текущего здоровья !"
+		"DOTA_Tooltip_ability_meatboy_meat_power_duration"							"ДЛИТЕЛЬНОСТЬ :"
+		"DOTA_Tooltip_ability_meatboy_meat_power_hp_dmg"							"%УРОНА ОТ ТЕКУЩЕГО ЗДОРОВЬЯ :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_rage"									"Blood rage"
+		"DOTA_Tooltip_ability_meatboy_blood_rage_Description"						"Атаки наносят урон , зависящий от максимального здоровья ! "
+		"DOTA_Tooltip_ability_meatboy_blood_rage_trigger_chance"					"%ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_meatboy_blood_rage_hp_dmg"							"%УРОНА ОТ ЗДОРОВЬЯ:"
+
 	}
 }

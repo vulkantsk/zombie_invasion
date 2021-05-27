@@ -1654,5 +1654,46 @@
 		"DOTA_Tooltip_ability_item_hp_aura_dur"																							"DURATION:"
 		"DOTA_Tooltip_modifier_item_hp_aura"																							"Scroll of Regeneration Buff"
 		"DOTA_Tooltip_modifier_item_hp_aura_Description"																				"Health regeneration increased"
+	
+	    //Meatboy
+
+		"npc_dota_hero_pudge"			"Meat boy"
+
+		"DOTA_Tooltip_ability_meatboy_more_meat"									"More meat"
+		"DOTA_Tooltip_ability_meatboy_more_meat_Description"						"MORE MEAT MORE !!!"
+		"DOTA_Tooltip_ability_meatboy_more_meat_dmg_proc"							"DAMAGE PROC :"
+		"DOTA_Tooltip_ability_meatboy_more_meat_hp_per_stack"						"HP BONUS :"
+		"DOTA_Tooltip_modifier_meatboy_more_meat"									"MORE MEAT !!!"
+		"DOTA_Tooltip_modifier_meatboy_more_meat_Description"						"MORE MEAT !!!"
+
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram"									"Bloody chakram"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_Description"						"A destructive blood saw cuts both hero and enemies around him!"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_radius"							"RADIUS :"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_base_dmg"							"BASE DMG :"
+		"DOTA_Tooltip_ability_meatboy_bloody_chakram_hp_cost"							"%HEALTH DMG :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_bath"									"Blood bath"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_Description"						"The hero performs a bloody ritual to create a bloody circle, which deals damage to enemies and heals allies!"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_duration"							"DYRATION :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_radius"							"RADIUS :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_base_dmg"							"BASE DMG :"
+		"DOTA_Tooltip_ability_meatboy_blood_bath_hp_dmg"							"%HEALTH DMG :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_power"									"Blood power"
+		"DOTA_Tooltip_ability_meatboy_blood_power_Description"						"Losing a percentage of his maximum health, the hero falls into a rage, increasing his attack speed!"
+		"DOTA_Tooltip_ability_meatboy_blood_power_duration"							"DURATION :"
+		"DOTA_Tooltip_ability_meatboy_blood_power_hp_proc"							"%HEALTH LOST PROC :"
+		"DOTA_Tooltip_ability_meatboy_blood_power_as_bonus"							"BONUS AS :"
+
+		"DOTA_Tooltip_ability_meatboy_meat_power"									"Meat power"
+		"DOTA_Tooltip_ability_meatboy_meat_power_Description"						"Straining every muscle of his body, hero increases damage based on current health!"
+		"DOTA_Tooltip_ability_meatboy_meat_power_duration"							"DURATION :"
+		"DOTA_Tooltip_ability_meatboy_meat_power_hp_dmg"							"%CURRENT HEALTH DMG :"
+
+		"DOTA_Tooltip_ability_meatboy_blood_rage"									"Blood rage"
+		"DOTA_Tooltip_ability_meatboy_blood_rage_Description"						"Hero's attacks deal extra damage based on his maximum health! "
+		"DOTA_Tooltip_ability_meatboy_blood_rage_trigger_chance"					"%TRIGGER CHANCE:"
+		"DOTA_Tooltip_ability_meatboy_blood_rage_hp_dmg"							"%HEALTH DMG:"
+
 	}
 }
