@@ -9340,7 +9340,7 @@
         "ItemPermanent"                 "0"
     }   
 
-        "item_recipe_bloodstone2"
+    "item_recipe_bloodstone2"
     {
         "AbilityTextureName"                "recipe"                
         "Model"                             "models/props_gameplay/recipe.vmdl"
@@ -9765,41 +9765,39 @@
             }   
         }
     }   
-
-}
-
-"item_expiriance_aura"
-	{
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
-        "BaseClass"						"item_lua"
-		"AbilityTextureName"			"scroll_2"
-		"ScriptFile"					"items/other/book_exp"
-		"ItemPurchasable"				"0"
-		"AbilityCooldown"				"300.0"
-		"ItemDroppable" 				"1"
-		"ItemStackable"					"1"
-		"ItemStackableMax"				"500"
-		"ItemInitialCharges"			"1"
-		"AbilityTextureName"            "other/book_exp"
+    
+    "item_expiriance_aura"
+    {
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "scroll_2"
+        "ScriptFile"                    "items/other/book_exp"
+        "ItemPurchasable"               "0"
+        "AbilityCooldown"               "300.0"
+        "ItemDroppable"                 "1"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "500"
+        "ItemInitialCharges"            "1"
+        "AbilityTextureName"            "other/book_exp"
         "AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"radius"				"1000"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"exp"					"100"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"300"
-			}
-		}
-	}
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "radius"                "1000"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "exp"                   "100"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "300"
+            }
+        }
+    }
 "item_armor_aura"
     {
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"       
