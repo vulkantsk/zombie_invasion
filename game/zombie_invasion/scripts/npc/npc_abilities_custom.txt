@@ -10,6 +10,7 @@
 #base "../vscripts/heroes/hero_troll/troll.txt"
 #base "../vscripts/heroes/hero_samurai/samurai.txt"
 #base "../vscripts/heroes/hero_hoodwink/hood.txt"
+#base "portal/abilities.txt"
 
 "DOTAAbilities"
 {

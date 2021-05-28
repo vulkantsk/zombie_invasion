@@ -124,11 +124,13 @@ function modifier_pudge_rot_lua:OnIntervalThink()
                 target:FindModifierByName("modifier_pudge_rot_lua_debuff"):SetDuration(1, true)
             end
 
+         debuff = self:GetParent():FindModifierByName("modifier_pudge_rot_lua_debuff")
+
 		if self:GetCaster():IsAlive() then
 			local damage = {
 				victim = self:GetParent(),
 				attacker = self:GetCaster(),
-				damage = flDamagePerTick *  (self:GetParent():FindModifierByName("modifier_pudge_rot_lua_debuff"):GetStackCount()/2),
+				damage = flDamagePerTick *  ((debuff and debuff:GetStackCount() or 1)/2),
 				damage_type = DAMAGE_TYPE_MAGICAL,
 				ability = self:GetAbility()
 			}
