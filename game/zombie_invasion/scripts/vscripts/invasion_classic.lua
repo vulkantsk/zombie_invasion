@@ -86,11 +86,18 @@ end
 	local newState = GameRules:State_Get()
 	if newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		InvasionMode:InvasionGameStart()
-	end
-	if newState == DOTA_GAMERULES_STATE_POST_GAME then
+	elseif newState == DOTA_GAMERULES_STATE_POST_GAME then
 		local presentTime = GameRules:GetDOTATime(false,false)
 		if presentTime < 1479 then
 			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
+		end
+	elseif newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
+		for id = 0, 24 do
+			local player = PlayerResource:GetPlayer( id )
+
+			if player and not PlayerResource:HasSelectedHero( id ) then
+				player:MakeRandomHeroSelection()
+			end
 		end
 	end
  

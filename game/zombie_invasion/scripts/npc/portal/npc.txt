@@ -1,0 +1,144 @@
+"" {
+	"npc_invasion_portal_wd" {
+		"BaseClass" "npc_dota_creature"
+		"vscripts" "ai/ai_portal_wd.lua"
+		"Model" "models/heroes/witchdoctor/witchdoctor.vmdl"
+
+		"Ability1" "invasion_portal_wd_heal"
+		"Ability2" "invasion_portal_wd_maledict"
+		"Ability3" "invasion_portal_wd_death_ward"
+
+		"StatusHealth" "1800"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackRange" "700"
+		"AttackDamageMin" "40"
+		"AttackDamageMax" "50"
+
+		"ProjectileModel" "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"ProjectileSpeed" "1200"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "370"
+	}
+
+	"npc_invasion_portal_wd_zombie" {
+		"BaseClass" "npc_dota_creature"
+		"Model" "models/heroes/undying/undying.vmdl"
+
+		"StatusHealth" "3000"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRange" "150"
+		"AttackDamageMin" "90"
+		"AttackDamageMax" "110"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "420"
+	}
+
+	"npc_invasion_portal_warlock" {
+		"BaseClass" "npc_dota_creature"
+		"Model" "models/heroes/warlock/warlock.vmdl"
+
+		"Ability1" "invasion_portal_warlock_portal"
+
+		"StatusHealth" "1800"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackRange" "900"
+		"AttackDamageMin" "40"
+		"AttackDamageMax" "50"
+
+		"ProjectileModel" "particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
+		"ProjectileSpeed" "1200"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "370"
+	}
+
+	"npc_invasion_portal_warlock_golem" {
+		"BaseClass" "npc_dota_creature"
+		"Model" "models/heroes/warlock/warlock_demon.vmdl"
+
+		"StatusHealth" "3000"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRange" "150"
+		"AttackDamageMin" "90"
+		"AttackDamageMax" "110"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "420"
+	}
+
+	"npc_invasion_portal_necr" {
+		"BaseClass" "npc_dota_creature"
+		"vscripts" "ai/ai_portal_wd.lua"
+		"Model" "models/heroes/necrolyte/necrolyte.vmdl"
+
+		"Ability1" "necrolyte_death_pulse"
+		"Ability2" "necrolyte_sadist"
+		"Ability3" "necrolyte_heartstopper_aura"
+		"Ability4" "necrolyte_reapers_scythe"
+
+		"StatusHealth" "1800"
+		"StatusMana" "2000"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackRange" "900"
+		"AttackDamageMin" "40"
+		"AttackDamageMax" "50"
+
+		"ProjectileModel" "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"ProjectileSpeed" "1200"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "370"
+	}
+
+	"npc_invasion_portal_veno" {
+		"BaseClass" "npc_dota_creature"
+		"vscripts" "ai/ai_portal_wd.lua"
+		"Model" "models/heroes/venomancer/venomancer.vmdl"
+		"SoundSet" "Hero_Venomancer"
+		"IdleSoundLoop" "Hero_Venomancer.IdleLoop"
+
+		"Ability1" "venomancer_venomous_gale"
+		"Ability2" "venomancer_poison_sting"
+		"Ability3" "venomancer_plague_ward"
+		"Ability4" "venomancer_poison_nova"
+
+		"StatusHealth" "1800"
+		"StatusMana" "2000"
+
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackRange" "800"
+		"AttackDamageMin" "40"
+		"AttackDamageMax" "50"
+
+		"ProjectileModel" "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
+		"ProjectileSpeed" "900"
+
+		"ArmorPhysical" "10"
+		"MagicalResistance" "25"
+
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "370"
+	}
+}

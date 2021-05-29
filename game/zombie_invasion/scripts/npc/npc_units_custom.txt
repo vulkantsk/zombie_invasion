@@ -2,6 +2,7 @@
 
 #base "monsters/npc_classic_monsters.kv"
 #base "monsters/npc_armageddon_monsters.kv"
+#base "portal/npc.txt"
 
 "DOTAUnits"
 {

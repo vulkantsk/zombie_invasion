@@ -16,7 +16,13 @@ function modifier_main_elka:OnIntervalThink(enemy)
 
 if not IsServer() then return end
 
-local bitch = self:GetCaster():FindModifierByName("modifier_item_letter"):GetStackCount()
+	local modifier = self:GetCaster():FindModifierByName("modifier_item_letter")
+
+	if not modifier then
+		return
+	end
+
+	local bitch = modifier:GetStackCount()
   
      
      		local units = FindUnitsInRadius(

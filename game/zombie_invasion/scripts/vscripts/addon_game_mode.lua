@@ -71,7 +71,7 @@ function Precache( context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_bane", context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_night_stalker", context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_doom_bringer", context )
-		PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix", context)
 
 
 	PrecacheResource( "particle", "particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf", context )
