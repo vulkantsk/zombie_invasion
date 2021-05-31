@@ -1,3 +1,7 @@
+function flag_value( a, b )
+	return a == 0 and b or a
+end
+
 function find_units_by_ability( ability )
 	local caster = ability:GetCaster()
 	local range = ability:GetCastRange( caster:GetAbsOrigin(), nil )
@@ -11,8 +15,8 @@ function find_units_by_ability( ability )
 		caster:GetAbsOrigin(),
 		nil,
 		range,
-		ability:GetAbilityTargetTeam(),
-		ability:GetAbilityTargetType(),
+		flag_value( ability:GetAbilityTargetTeam(), DOTA_UNIT_TARGET_TEAM_ENEMY ),
+		flag_value( ability:GetAbilityTargetType(), DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC ),
 		ability:GetAbilityTargetFlags(),
 		FIND_CLOSEST,
 		false
@@ -93,6 +97,10 @@ function generic_ai( unit, abilities )
 		local time = cast_ability( ability )
 
 		if time then
+			if unit:IsRealHero() then
+				print( "kekw", time )
+			end
+
 			return time
 		end
 	end
@@ -111,10 +119,6 @@ end
 
 function has_behavior( behavior, has )
 	return bit.band( behavior, has ) == has
-end
-
-function thinker( unit, method )
-	-- body
 end
 
 function cast_ability_position( ability, pos )

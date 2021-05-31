@@ -23,11 +23,23 @@
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "94" }
+				"Wearable2" { "ItemDef" "95" }
+				"Wearable3" { "ItemDef" "96" }
+				"Wearable4" { "ItemDef" "97" }
+			}
+		}
 	}
 
 	"npc_invasion_portal_wd_zombie" {
 		"BaseClass" "npc_dota_creature"
-		"Model" "models/heroes/undying/undying.vmdl"
+		"Model" "models/heroes/undying/undying_minion.vmdl"
+		"ModelScale" "2.1"
 
 		"StatusHealth" "3000"
 
@@ -65,6 +77,20 @@
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "239" }
+				"Wearable2" { "ItemDef" "240" }
+				"Wearable3" { "ItemDef" "241" }
+				"Wearable4" { "ItemDef" "242" }
+				"Wearable5" { "ItemDef" "243" }
+				"Wearable6" { "ItemDef" "244" }
+				"Wearable7" { "ItemDef" "245" }
+			}
+		}
 	}
 
 	"npc_invasion_portal_warlock_golem" {
@@ -97,6 +123,7 @@
 
 		"StatusHealth" "1800"
 		"StatusMana" "2000"
+		"StatusManaRegen" "20"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackRange" "900"
@@ -118,6 +145,16 @@
 			{
 				"1" { "Item" "item_shivas_guard" }
 			}
+
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "211" }
+				"Wearable2" { "ItemDef" "212" }
+				"Wearable3" { "ItemDef" "213" }
+				"Wearable4" { "ItemDef" "214" }
+				"Wearable5" { "ItemDef" "508" }
+				"Wearable6" { "ItemDef" "659" }
+			}
 		}
 	}
 
@@ -132,9 +169,11 @@
 		"Ability2" "venomancer_poison_sting"
 		"Ability3" "venomancer_plague_ward"
 		"Ability4" "venomancer_poison_nova"
+		"Ability5" "invasion_portal_veno_infest"
 
 		"StatusHealth" "1800"
 		"StatusMana" "2000"
+		"StatusManaRegen" "20"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackRange" "800"
@@ -149,5 +188,16 @@
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "291" }
+				"Wearable2" { "ItemDef" "292" }
+				"Wearable3" { "ItemDef" "293" }
+				"Wearable4" { "ItemDef" "294" }
+			}
+		}
 	}
 }

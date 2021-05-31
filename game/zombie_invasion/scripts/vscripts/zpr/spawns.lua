@@ -27,7 +27,7 @@ function ZSpawn:init()
 end
 
 function ZSpawn:InitUnit( unit )
-	local time = math.floor( GameRules:GetDOTATime( false, false ) / 60 ) + 1
+	local time = math.ceil( GameRules:GetDOTATime( false, false ) / 60 )
 	unit:SetBaseDamageMax( unit:GetBaseDamageMax() * time )
 	unit:SetBaseDamageMin( unit:GetBaseDamageMin() * time )
 	unit:SetBaseMaxHealth( unit:GetBaseMaxHealth() * time )
