@@ -45,6 +45,7 @@
 
 	"npc_invasion_portal_warlock" {
 		"BaseClass" "npc_dota_creature"
+		"vscripts" "ai/ai_portal_warlock.lua"
 		"Model" "models/heroes/warlock/warlock.vmdl"
 
 		"Ability1" "invasion_portal_warlock_portal"
@@ -86,7 +87,7 @@
 
 	"npc_invasion_portal_necr" {
 		"BaseClass" "npc_dota_creature"
-		"vscripts" "ai/ai_portal_wd.lua"
+		"vscripts" "ai/ai_generic.lua"
 		"Model" "models/heroes/necrolyte/necrolyte.vmdl"
 
 		"Ability1" "necrolyte_death_pulse"
@@ -102,7 +103,7 @@
 		"AttackDamageMin" "40"
 		"AttackDamageMax" "50"
 
-		"ProjectileModel" "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"ProjectileModel" "particles/units/heroes/hero_necrolyte/necrolyte_base_attack.vpcf"
 		"ProjectileSpeed" "1200"
 
 		"ArmorPhysical" "10"
@@ -110,11 +111,19 @@
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
+
+		"Creature"
+		{
+			"EquippedItems"
+			{
+				"1" { "Item" "item_shivas_guard" }
+			}
+		}
 	}
 
 	"npc_invasion_portal_veno" {
 		"BaseClass" "npc_dota_creature"
-		"vscripts" "ai/ai_portal_wd.lua"
+		"vscripts" "ai/ai_generic.lua"
 		"Model" "models/heroes/venomancer/venomancer.vmdl"
 		"SoundSet" "Hero_Venomancer"
 		"IdleSoundLoop" "Hero_Venomancer.IdleLoop"

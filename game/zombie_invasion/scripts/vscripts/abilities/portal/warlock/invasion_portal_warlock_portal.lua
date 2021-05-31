@@ -1,6 +1,6 @@
 LinkLuaModifier(
 	"modifier_invasion_portal_warlock_portal",
-	"abilities/warlock/modifier_invasion_portal_warlock_portal",
+	"abilities/portal/warlock/modifier_invasion_portal_warlock_portal",
 	LUA_MODIFIER_MOTION_NONE
 )
 
