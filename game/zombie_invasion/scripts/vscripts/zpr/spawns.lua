@@ -11,8 +11,10 @@ if ZSpawn == nil then
 	ZSpawn.spawnDelayMax = 3
 	
 	ZSpawn.units_list = {
-		"npc_invasion_portal_wd",
-		--"npc_invasion_portal_warlock"
+		--"npc_invasion_portal_wd",
+		--"npc_invasion_portal_warlock",
+		--"npc_invasion_portal_necr",
+		"npc_invasion_portal_veno"
 	}
 end
 
@@ -25,7 +27,7 @@ function ZSpawn:init()
 end
 
 function ZSpawn:InitUnit( unit )
-	local time = math.floor( GameRules:GetDOTATime( false, false ) / 60 ) + 1
+	local time = math.ceil( GameRules:GetDOTATime( false, false ) / 60 )
 	unit:SetBaseDamageMax( unit:GetBaseDamageMax() * time )
 	unit:SetBaseDamageMin( unit:GetBaseDamageMin() * time )
 	unit:SetBaseMaxHealth( unit:GetBaseMaxHealth() * time )

@@ -77,8 +77,11 @@ function InvasionMode:InvasionMap()
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
 	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(InvasionMode, 'OnItemPickedUp'), self)
 
-	AddFOWViewer(DOTA_TEAM_BADGUYS, Entities:FindByName( nil, "dota_shop"):GetAbsOrigin(), 1000, -1, false)
+	local shop = Entities:FindByName( nil, "dota_shop")
 
+	if shop then
+		AddFOWViewer(DOTA_TEAM_BADGUYS, shop:GetAbsOrigin(), 1000, -1, false)
+	end
 end
 
 
@@ -901,9 +904,8 @@ end
 
  
 function InvasionMode:SpawnFlash(unit_name)
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
+	local point = nil
+	local unit = nil
  
 	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
 	unit = CreateUnitByName(unit_name, point, true, nil, nil, DOTA_TEAM_BADGUYS)
