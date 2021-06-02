@@ -54,8 +54,8 @@ function modifier_storm_overload:OnAttackLanded(keys)
 				local particle	=	"particles/units/heroes/hero_stormspirit/stormspirit_overload_discharge.vpcf"
 				-- Ability paramaters
 				local radius 		=	ability:GetSpecialValueFor("radius") 
-				local base_damage = self:GetSpecialValueFor("base_damage")
-				local int_damage = self:GetSpecialValueFor("int_damage")*parent:GetIntellect()
+				local base_damage = ability:GetSpecialValueFor("base_damage")
+				local int_damage = ability:GetSpecialValueFor("int_damage")*parent:GetIntellect()
 				local damage = base_damage + int_damage
 --				local slow_duration	=	ability:GetSpecialValueFor("slow_duration")
 				local current_mana  = parent:GetMana()

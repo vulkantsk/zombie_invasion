@@ -1,7 +1,7 @@
 LinkLuaModifier("modifier_shapeshift_model_lua", "heroes/hero_lycan/modifiers/modifier_shapeshift_model_lua.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_shapeshift_bonus", "heroes/hero_lycan/modifiers/modifier_shapeshift_bonus", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier( "modifier_lycan_boss_shapeshift_transform", "modifiers/modifier_lycan_boss_shapeshift_transform", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_lycan_boss_shapeshift", "modifiers/modifier_lycan_boss_shapeshift", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_lycan_boss_shapeshift_transform", "heroes/hero_lycan/modifiers/modifier_lycan_boss_shapeshift_transform", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_lycan_boss_shapeshift", "heroes/hero_lycan/modifiers/modifier_lycan_boss_shapeshift", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_lycan_shapeshift_custom_passive", "heroes/hero_lycan/shapeshift_custom", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_lycan_shapeshift_custom", "heroes/hero_lycan/shapeshift_custom", LUA_MODIFIER_MOTION_NONE )
 
@@ -63,11 +63,15 @@ modifier_lycan_shapeshift_custom = class({
 })
 
 function modifier_lycan_shapeshift_custom:OnCreated()
-	local caster = self:GetCaster()
+	if IsClient() then
+		return
+	end
+
+	local caster = self:GetParent()
 	local ability = self:GetAbility()
 	local aura_interval = ability:GetSpecialValueFor("aura_interval")
 
-	caster:EmitSound("lycan_lycan_ability_shapeshift_"..RandomInt(1, 6))
+	caster:EmitSound( "lycan_lycan_ability_shapeshift_"..RandomInt(1, 6) )
 	caster:AddNewModifier(caster, ability, "modifier_shapeshift_model_lua", {})
 
 	local effect = "particles/units/heroes/hero_lycan/lycan_shapeshift_cast.vpcf"
@@ -82,7 +86,10 @@ function modifier_lycan_shapeshift_custom:OnCreated()
 end
 
 function modifier_lycan_shapeshift_custom:OnDestroy()
-	local caster = self:GetCaster()
+	if IsClient() then
+		return
+	end
+	local caster = self:GetParent()
 	local effect = "particles/units/heroes/hero_lycan/lycan_shapeshift_revert.vpcf"
 	local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, caster)
 	ParticleManager:ReleaseParticleIndex(pfx)
@@ -105,5 +112,3 @@ function modifier_lycan_shapeshift_custom:OnIntervalThink()
 		end
 	end
 end
-
-

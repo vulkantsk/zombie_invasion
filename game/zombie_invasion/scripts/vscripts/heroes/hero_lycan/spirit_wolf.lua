@@ -21,8 +21,6 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 	local hp_per_strenght = ability:GetSpecialValueFor("hp_per_str")
 	local model_scale = ability:GetSpecialValueFor("summon_scale")
 	local fv = caster:GetForwardVector()
-		-- Set the unit name, concatenated with the level number
-	local unit_name = "npc_dota_spirit_wolf1"
 
 
 	-- Check if the wolf is alive, heals and spawns them near the caster if it is
@@ -63,7 +61,7 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 		end
 --]]
 		-- Create the unit and make it controllable
-		caster.wolf = CreateUnitByName(unit_name, origin, true, caster, caster, caster:GetTeamNumber())
+		caster.wolf = CreateUnitByName( "npc_dota_spirit_wolf1", origin, true, caster, caster, caster:GetTeamNumber())
 		caster.wolf:SetControllableByPlayer(player, true)
 		caster.wolf:SetUnitCanRespawn(true)
 		caster.wolf:SetForwardVector(fv)
