@@ -6,7 +6,7 @@ function find_units_by_ability( ability )
 	local caster = ability:GetCaster()
 	local range = ability:GetCastRange( caster:GetAbsOrigin(), nil )
 
-	if range <= 0 then
+	if not range or range <= 0 then
 		return
 	end
 

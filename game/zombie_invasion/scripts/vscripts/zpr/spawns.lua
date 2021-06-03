@@ -5,15 +5,15 @@ if ZSpawn == nil then
 	
 	ZSpawn.RESPAWN_DELAY = 10
 	ZSpawn.SPAWNER_NAME = "zspawn_point"
-	ZSpawn.UNIT_TEAM = DOTA_TEAM_NEUTRALS
+	ZSpawn.UNIT_TEAM = DOTA_TEAM_BADGUYS
 	ZSpawn.nowNight = true
 	ZSpawn.spawnDelayMin = 2
 	ZSpawn.spawnDelayMax = 3
 	
 	ZSpawn.units_list = {
-		--"npc_invasion_portal_wd",
-		--"npc_invasion_portal_warlock",
-		--"npc_invasion_portal_necr",
+		"npc_invasion_portal_wd",
+		"npc_invasion_portal_warlock",
+		"npc_invasion_portal_necr",
 		"npc_invasion_portal_veno"
 	}
 end
@@ -31,6 +31,7 @@ function ZSpawn:InitUnit( unit )
 	unit:SetBaseDamageMax( unit:GetBaseDamageMax() * time )
 	unit:SetBaseDamageMin( unit:GetBaseDamageMin() * time )
 	unit:SetBaseMaxHealth( unit:GetBaseMaxHealth() * time )
+	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
 end
 
 function ZSpawn:FillSpawners()

@@ -87,8 +87,6 @@ function modifier_meepo_dig_deeper:OnCreated(keys)
 end
 
 function modifier_meepo_dig_deeper:OnIntervalThink()
-
-
 	local allies = self.parent:FindFriendlyUnitsInRadius(self.self_point, self.radius, nil)
 
 	for _,ally in pairs(allies) do

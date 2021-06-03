@@ -91,11 +91,6 @@ end
 -- Keeps track of the targets health
 function AphoticShieldHealth( event )
 	local target = event.target
-
-	if target:HasModifier("modifier_kill")
-		then print("HasModifier = true")
-		else print("HasModifier = false")
-	end
 	
 	if target.tarhetWithKillModifier 
 	then

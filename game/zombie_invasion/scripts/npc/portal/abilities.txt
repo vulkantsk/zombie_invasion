@@ -88,4 +88,16 @@
 		"AbilityCastRange" "450 500 550 600"
 		"AbilityCastPoint" "0"
 	}
+
+	"invasion_portal_necr_leader" {
+		"BaseClass" "ability_lua"
+		"ScriptFile" "abilities/portal/necr/invasion_portal_necr_leader"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityTextureName" "undying_tombstone_zombie_deathstrike"
+		"AbilityCastRange" "3000"
+		"MaxLevel" "1"
+	}
 }

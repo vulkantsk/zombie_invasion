@@ -3,20 +3,21 @@
 ]]
 
 -- Required files to be visible from anywhere
- require ("item_drop")
-require( 'timers' )
-require( 'sounds' )
-require('util/util');
-require( 'invasion_classic' )
-require( 'invasion_armageddon' )
-require( 'triggers' )
-require( 'modifiers_links' )
-require( 'constant_links' )
---require( 'invasion_in_the_forest' )
---require( 'invasion_in_the_city' )
---require( 'scorched_earth' )
+require( "bases/npc" )
+require( "item_drop" )
+require( "timers" )
+require( "sounds" )
+require( "util/util" );
+require( "invasion_classic" )
+require( "invasion_armageddon" )
+require( "triggers" )
+require( "modifiers_links" )
+require( "constant_links" )
+--require( "invasion_in_the_forest" )
+--require( "invasion_in_the_city" )
+--require( "scorched_earth" )
 --require("statcollection/init")
---require( 'invasion_td' )
+--require( "invasion_td" )
 require("end_game")
  
 require("zpr/req")
