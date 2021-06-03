@@ -89,7 +89,7 @@ function Spawn( data )
 			nil,
 			team
 		)
-		zombie:SetHealth( 1 )
+		zombie:SetHealth( zombie:GetMaxHealth() * 0.2 )
 		zombie:AddNewModifier( thisEntity, nil, "modifier_portal_wd_zombie_invul", nil )
 		thisEntity.zombie = zombie
 

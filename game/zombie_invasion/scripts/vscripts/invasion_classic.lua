@@ -116,7 +116,7 @@ function InvasionMode:OnItemPickedUp(keys)
 	local itemEntity = EntIndexToHScript(keys.ItemEntityIndex)
 	local player = keys.PlayerID
 	local itemname = keys.itemname
-		local owner = EntIndexToHScript( keys.HeroEntityIndex )
+	local owner = EntIndexToHScript( keys.HeroEntityIndex or -1 )
 	
 	--r = RandomInt(200, 400)
 	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
@@ -130,7 +130,8 @@ function InvasionMode:OnItemPickedUp(keys)
 	LinkLuaModifier("modifier_mana_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
 	LinkLuaModifier("modifier_mana1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)		
+	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
+	LinkLuaModifier("modifier_portal_unit_vision", "modifiers/modifier_portal_unit_vision", LUA_MODIFIER_MOTION_NONE)	
 
 	if itemname == "item_bonus_health" then
      EmitSoundOn("present", owner) 

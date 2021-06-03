@@ -60,8 +60,8 @@ function modifier_mystic_dragon_frost_nova:OnAttackLanded(keys)
 				-- Ability paramaters
 				local radius 		=	ability:GetSpecialValueFor("radius") 
 				local proc_chance 	=	ability:GetSpecialValueFor("proc_chance") 
-				local duration = self:GetSpecialValueFor("duration")
-				local int_damage = self:GetSpecialValueFor("int_mult")*parent:GetIntellect()/100
+				local duration = ability:GetSpecialValueFor("duration")
+				local int_damage = ability:GetSpecialValueFor("int_mult")*parent:GetIntellect()/100
 				local damage = int_damage
 
 
