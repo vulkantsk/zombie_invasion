@@ -1640,13 +1640,11 @@
 "npc_dota_hero_meepo"
 	{
 		"override_hero"				"npc_dota_hero_meepo"
-		"Ability1"		"meepo_dig_deeper"
+		
 		"Ability2"		"meepo_digger_elixir"
 		"Ability3"		"meepo_master_shovel"
 		"Ability4"		"inherit_meepo_buff"
-//		"Ability3"		"meepo_geostrike_custom"
 		"Ability5"		"meepo_down_up"
-//		"Ability5"		"holdout_gladiators_unite"
 		"Ability6"		"meepo_earth_power"
 		"Ability7"					"generic_hidden"
 		"Ability8"					"generic_hidden"
