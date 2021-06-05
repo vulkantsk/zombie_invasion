@@ -24,7 +24,7 @@ function find_units_by_ability( ability )
 end
 
 function cast_ability( ability )
-	if not ability or not ability:IsFullyCastable() then
+	if not ability or not ability:IsFullyCastable() or ability:GetLevel() < 1 then
 		return
 	end
 

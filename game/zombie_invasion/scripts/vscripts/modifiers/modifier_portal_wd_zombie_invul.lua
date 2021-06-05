@@ -24,6 +24,8 @@ function modifier_portal_wd_zombie_invul:OnHealReceived()
 	local parent = self:GetParent()
 
 	if parent:GetHealth() == parent:GetMaxHealth() then
+		local point = Entities:FindByName( nil, "final_point" ):GetAbsOrigin()
+		parent:MoveToPositionAggressive( point )
 		self:Destroy()
 	end
 end

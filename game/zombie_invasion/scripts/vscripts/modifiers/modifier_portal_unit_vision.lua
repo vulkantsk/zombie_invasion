@@ -4,6 +4,10 @@ function modifier_portal_unit_vision:IsHidden()
 	return true
 end
 
-function modifier_portal_unit_vision:CheckState()
-	return { [MODIFIER_STATE_PROVIDES_VISION] = true }
+function modifier_portal_unit_vision:DeclareFunctions()
+	return { MODIFIER_PROPERTY_PROVIDES_FOW_POSITION }
+end
+
+function modifier_portal_unit_vision:GetModifierProvidesFOWVision()
+	return 1
 end

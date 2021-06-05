@@ -22,10 +22,6 @@ local function NowTrueNight()
 	return not GameRules:IsDaytime() and not GameRules:IsTemporaryNight() and not GameRules:IsNightstalkerNight()
 end
 
-function ZSpawn:init()
-	ZSpawn:FillSpawners()
-end
-
 function ZSpawn:InitUnit( unit )
 	local time = math.ceil( GameRules:GetDOTATime( false, false ) / 60 )
 	unit:SetBaseDamageMax( unit:GetBaseDamageMax() * time )
@@ -34,7 +30,7 @@ function ZSpawn:InitUnit( unit )
 	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
 end
 
-function ZSpawn:FillSpawners()
+function ZSpawn:Init()
 	local spawners = Entities:FindAllByName(self.SPAWNER_NAME)
 	for _,spawner in pairs(spawners) do
 		if spawner then
@@ -47,7 +43,6 @@ function ZSpawn:FillSpawners()
 	if not self.timer and #self.spawners > 0 then
 		self.timer = Timers:CreateTimer( 0, function()
 			self:OnTimer()
-
 			return 0
 		end)
 	end

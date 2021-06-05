@@ -13,6 +13,10 @@
 		"DOTA_GameMode_15" 				"Invasion zombie"	
 		
 		"Game_notification_win"         "<font color='#ff9900'>Write your opinion in workshop! </font>"
+
+		"difficulty_description_normal" ""
+		"difficulty_description_medium" ""
+		"difficulty_description_hard" ""
 		
        // ******************** Messages ********************
 	   
