@@ -29,7 +29,14 @@ local function Think()
 		return
 	end
 
-	if thisEntity.zombie and not thisEntity.zombie:IsNull() then
+	local attack = false
+
+	if not thisEntity.zombie or thisEntity.zombie:IsNull() or not thisEntity.zombie:IsAlive() then
+		attack = true
+		thisEntity.zombie = nil
+	elseif not thisEntity.zombie:HasModifier( "modifier_portal_wd_zombie_invul" ) then
+		attack = true
+	else
 		local zombiePos = thisEntity.zombie:GetAbsOrigin()
 		local diff = pos - zombiePos
 		local zombieRange = diff:Length2D()
@@ -52,13 +59,15 @@ local function Think()
 		false
 	)
 
-	if #enemies < 1 then
-		return
-	end
-
 	target = enemies[1]
 
 	if not target then
+		if attack and not thisEntity:GetAttackTarget() then
+			thisEntity:MoveToPositionAggressive( Entities:FindByName( nil, "final_point" ):GetAbsOrigin() )
+
+			return 0.9
+		end
+
 		return
 	end
 
@@ -96,7 +105,7 @@ function Spawn( data )
 		ZSpawn:InitUnit( zombie )
 
 		thisEntity:SetContextThink( "", function()
-			return Think() or 0.1
+			return Think() or 0.3
 		end, 0.1 )
 	end )
 end

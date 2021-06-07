@@ -18,9 +18,9 @@ require( "constant_links" )
 --require( "scorched_earth" )
 --require("statcollection/init")
 --require( "invasion_td" )
-require("end_game")
- 
-require("zpr/req")
+require( "end_game" )
+require( "zpr/req" )
+require( "difficulty" )
  
 if InvasionMode == nil then
 	InvasionMode = class({})

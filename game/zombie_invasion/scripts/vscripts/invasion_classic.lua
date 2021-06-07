@@ -77,11 +77,28 @@ function InvasionMode:InvasionMap()
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
 	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(InvasionMode, 'OnItemPickedUp'), self)
 
+	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_health_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_mana_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_mana", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_damage", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_spell", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
+	LinkLuaModifier("modifier_health1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_health_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_mana_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
+	LinkLuaModifier("modifier_mana1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
+	LinkLuaModifier("modifier_portal_unit_vision", "modifiers/modifier_portal_unit_vision", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_invasion_difficulty", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE)	
+
 	local shop = Entities:FindByName( nil, "dota_shop")
 
 	if shop then
 		AddFOWViewer(DOTA_TEAM_BADGUYS, shop:GetAbsOrigin(), 1000, -1, false)
 	end
+
+	Difficulty:Init()
 end
 
 
@@ -102,8 +119,9 @@ end
 				player:MakeRandomHeroSelection()
 			end
 		end
-	end
- 
+	elseif newState == DOTA_GAMERULES_STATE_HERO_SELECTION then
+		Difficulty:OnHeroSelectionState()
+	end 
 end
 
 function InvasionMode:OnItemPickedUp(keys)
@@ -118,20 +136,7 @@ function InvasionMode:OnItemPickedUp(keys)
 	local itemname = keys.itemname
 	local owner = EntIndexToHScript( keys.HeroEntityIndex or -1 )
 	
-	--r = RandomInt(200, 400)
-	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
-	LinkLuaModifier("modifier_health_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_mana_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
-	LinkLuaModifier("modifier_mana", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_damage", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_spell", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
-	LinkLuaModifier("modifier_health1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
-	LinkLuaModifier("modifier_health_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_mana_regen1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
-	LinkLuaModifier("modifier_mana1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
-	LinkLuaModifier("modifier_portal_unit_vision", "modifiers/modifier_portal_unit_vision", LUA_MODIFIER_MOTION_NONE)	
+	--r = RandomInt(200, 400)	
 
 	if itemname == "item_bonus_health" then
      EmitSoundOn("present", owner) 
@@ -283,7 +288,9 @@ end
 function InvasionMode:InvasionOnNPCSpawn(data)
  
 	local npc = EntIndexToHScript(data.entindex)
-	    local name = npc:GetUnitName()
+	local name = npc:GetUnitName()
+
+	Difficulty:NPC( npc )
  
  --[[
      if npc:IsRealHero() and npc.FirstSpawned == nil then

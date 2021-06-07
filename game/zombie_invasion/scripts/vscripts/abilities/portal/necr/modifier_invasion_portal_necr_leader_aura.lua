@@ -1,6 +1,6 @@
 modifier_invasion_portal_necr_leader_aura = {}
 
-function modifier_invasion_portal_necr_leader_aura:DeclareFunction()
+function modifier_invasion_portal_necr_leader_aura:DeclareFunctions()
 	return {
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
