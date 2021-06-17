@@ -46,7 +46,7 @@
  
 
  
-	"npc_dota_hero_dragon_knight"		"0"
+	"npc_dota_hero_dragon_knight"		"1"
  
 	"npc_dota_hero_spectre"				"0" 
 	"npc_dota_hero_tiny"				"1"
@@ -64,12 +64,13 @@
 
 	"npc_dota_hero_invoker"				"0"
 	"npc_dota_hero_tinker"				"0" 
-
+    "npc_dota_hero_huskar"				"1"
  
 	"npc_dota_hero_earthshaker"			"0"
-	"npc_dota_hero_omniknight"			"0"
+	"npc_dota_hero_omniknight"			"1"
 	"npc_dota_hero_keeper_of_the_light"	"0" 
 	"npc_dota_hero_crystal_maiden"		"0"
+	"npc_dota_hero_snapfire"            "1"
  
 
 	"npc_dota_hero_bounty_hunter"		"0"
@@ -82,7 +83,7 @@
 	"npc_dota_hero_alchemist"			"0"
  
 	"npc_dota_hero_witch_doctor"		"0"
-	"npc_dota_hero_dark_seer"			"0"
+	"npc_dota_hero_dark_seer"			"1"
 	"npc_dota_hero_techies"				"0"
 	"npc_dota_hero_queenofpain"			"0"
 	"npc_dota_hero_abaddon"				"0"
@@ -97,22 +98,24 @@
  
 	"npc_dota_hero_rattletrap"			"0"
 	"npc_dota_hero_death_prophet"		"0"
-	"npc_dota_hero_disruptor"			"0"
+	"npc_dota_hero_disruptor"			"1"
 	"npc_dota_hero_doom_bringer"		"0"
 	"npc_dota_hero_earth_spirit"		"0"
 	"npc_dota_hero_elder_titan"			"0"
 	"npc_dota_hero_enigma"				"0"
 	"npc_dota_hero_faceless_void"		"0"
-	"npc_dota_hero_huskar"				"0"
+	"npc_dota_hero_monkey_king"		"1"
+	
 
- 
+    
+    "npc_dota_hero_pangolier"	"1" 
 	"npc_dota_hero_legion_commander"	"1" 
-	"npc_dota_hero_leshrac"				"0"
+	"npc_dota_hero_leshrac"				"1"
 	"npc_dota_hero_lich"				"0"
-	"npc_dota_hero_life_stealer"		"0"
+	"npc_dota_hero_life_stealer"		"1"
 	"npc_dota_hero_lina"				"0"
  
-	"npc_dota_hero_lone_druid"			"0"
+	"npc_dota_hero_lone_druid"			"1"
 
 	"npc_dota_hero_magnataur"			"0"
 	"npc_dota_hero_meepo"				"1" 
@@ -122,7 +125,7 @@
 	"npc_dota_hero_furion"				"0"
 	"npc_dota_hero_night_stalker"		"0"
 	"npc_dota_hero_nyx_assassin"		"0"
-	"npc_dota_hero_ogre_magi"			"0"
+	"npc_dota_hero_ogre_magi"			"1"
 	"npc_dota_hero_oracle"				"1"
 	"npc_dota_hero_phantom_lancer"		"0"
 	"npc_dota_hero_phoenix"				"0"
@@ -140,11 +143,11 @@
 	"npc_dota_hero_spirit_breaker"		"0"
 	"npc_dota_hero_storm_spirit"		"1"
 	"npc_dota_hero_shadow_demon"		"0"
-	"npc_dota_hero_shadow_shaman"		"0"
+	"npc_dota_hero_shadow_shaman"		"1"
 	"npc_dota_hero_templar_assassin"	"0"
  
  
-	"npc_dota_hero_treant"				"0"
+	"npc_dota_hero_treant"				"1"
  
 	"npc_dota_hero_tusk"				"0"
 	"npc_dota_hero_undying"				"0"
