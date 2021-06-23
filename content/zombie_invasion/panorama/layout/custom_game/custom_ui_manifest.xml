@@ -1,7 +1,8 @@
 <root>
 	<Panel>
-		<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
-		<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/difficulty.xml" />
-		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/my_hud.xml" />	
+		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
+		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/difficulty.xml" />
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/my_hud.xml" />
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/hud/hud.xml" />		
 	</Panel>
 </root>

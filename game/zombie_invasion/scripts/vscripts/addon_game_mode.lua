@@ -182,6 +182,9 @@ function Activate()
 	InvasionMode:InvasionMap()
 --	InvasionMode:InitInvasionMode()
 	
+	--
+	GameRules:GetGameModeEntity():SetFreeCourierModeEnabled(true)
+	--
 end
 
  

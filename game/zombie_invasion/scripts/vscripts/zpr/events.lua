@@ -4,6 +4,7 @@ end
 
 function ZEvent:init()
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(ZEvent, 'OnStateChanged'), self)
+	ListenToGameEvent('npc_spawned', Dynamic_Wrap(ZEvent, 'OnNpcSpawned'), self)
 end
 
 function ZEvent:OnStateChanged()
@@ -11,5 +12,12 @@ function ZEvent:OnStateChanged()
 	
 	if state == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		ZSpawn:Cycle()
+	end
+end
+
+function ZEvent:OnNpcSpawned(kv)
+	local npc = EntIndexToHScript(kv.entindex)
+	if npc and npc:GetUnitName() == "npc_dota_courier" then
+		npc:AddNewModifier(npc, nil, "modifier_invulnerable", nil)
 	end
 end
