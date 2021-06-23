@@ -1,0 +1,37 @@
+<root>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/hud/hud.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/hud/hud.js"/>
+    </scripts>
+
+	<Panel hittest="false" class="root">
+		<Panel id="QPanel" class="hide">
+			<Panel id="QHead">
+				<Label id="quest_name" class="qtext" text="sobaka"/>
+			</Panel>
+			<Panel id="QContent">
+				<Panel id="QDesc">
+					<Label id="quest_desc" class="qtext" text="sobaka idet gulyat s toboy"/>
+				</Panel>
+				<Panel id="QReward">
+					<Panel class="qrewardpanel">
+						<Label id="quest_req" class="qtext" text="nado resov: 10"/>
+					</Panel>
+					<Panel class="qrewardpanel">
+						<Label id="quest_gold" class="qtext" text="dadut gold: 10"/>
+					</Panel>
+					<Panel class="qrewardpanel">
+						<Label id="quest_exp" class="qtext" text="dadut exp: 10"/>
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="QFoot">
+				<Button id="QClose" onactivate="CloseQuest();">
+					<Label class="qtext" text="OK"/>
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

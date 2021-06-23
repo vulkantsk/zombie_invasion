@@ -33,6 +33,18 @@
 				"Wearable3" { "ItemDef" "96" }
 				"Wearable4" { "ItemDef" "97" }
 			}
+			
+			"ItemDrops"
+			{
+				"Totem"
+				{
+					"Item"
+					{
+						"1"       "item_totem_upgrade"
+					}
+					"Chance"      "100"
+				}
+			}
 		}
 	}
 
@@ -53,6 +65,21 @@
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "420"
+		
+		"Creature"
+		{
+			"ItemDrops"
+			{
+				"Totem"
+				{
+					"Item"
+					{
+						"1"       "item_totem_upgrade"
+					}
+					"Chance"      "100"
+				}
+			}
+		}
 	}
 
 	"npc_invasion_portal_warlock" {
@@ -89,6 +116,18 @@
 				"Wearable5" { "ItemDef" "243" }
 				"Wearable6" { "ItemDef" "244" }
 				"Wearable7" { "ItemDef" "245" }
+			}
+			
+			"ItemDrops"
+			{
+				"Totem"
+				{
+					"Item"
+					{
+						"1"       "item_totem_upgrade"
+					}
+					"Chance"      "100"
+				}
 			}
 		}
 	}
@@ -159,6 +198,18 @@
 				"Wearable5" { "ItemDef" "508" }
 				"Wearable6" { "ItemDef" "659" }
 			}
+			
+			"ItemDrops"
+			{
+				"Totem"
+				{
+					"Item"
+					{
+						"1"       "item_totem_upgrade"
+					}
+					"Chance"      "100"
+				}
+			}
 		}
 	}
 
@@ -201,6 +252,18 @@
 				"Wearable2" { "ItemDef" "292" }
 				"Wearable3" { "ItemDef" "293" }
 				"Wearable4" { "ItemDef" "294" }
+			}
+			
+			"ItemDrops"
+			{
+				"Totem"
+				{
+					"Item"
+					{
+						"1"       "item_totem_upgrade"
+					}
+					"Chance"      "100"
+				}
 			}
 		}
 	}
