@@ -102,278 +102,369 @@
 
 	"npc_seerdying_2"	
 	{
-		// General
-		//----------------------------------------------------------------
-		
-		"vscripts"		"ai/ai_undyindg.lua"
-		"Model"						"models/heroes/undying/undying.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Undying"
-		"GameSoundsFile"			"soundevents/game_sounds_undying.vsndevts"
-		"Level"						"1"
-		"ModelScale" 				"1.0"
-		"UseNeutralCreepBehavior"	"0"
+	// General
+	//
+	"vscripts"					"ai/ai_leshrac.lua"
+	"BaseClass"					"npc_dota_creature"
+	"Model"						"models/heroes/leshrac/leshrac.vmdl"	// Model.
+	"SoundSet"					"Hero_leshrac"					// Name of sound set.
+	"IsBossMonster"				"1"
+	"ModelScale"				"1.4"
+	"Level"						"8"
+	"MinimapIcon"							"minimap_death"
+	"MinimapIconSize"						"550"
+	
+	// Abilities
+	//----------------------------------------------------------------
+	
+	"Ability1"					"custom_thundercall"			// Ability 1.
+	"Ability2"					"npc_leshrac_split_earth"			// Ability 2.
+	"Ability3"					"custom_leshrac_diabolic_edict"			// Ability 3.
+	"Ability4"					""			// Ability 4.
+	"Ability5"					""			// Ability 5.
+	"Ability6"					""			// Ability 6 - Extra.
+	"Ability7"					""			// Ability 7 - Extra.
+	"Ability8"					""			// Ability 8 - Extra.
 
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					"necronomicon_warrior_sight"
-		"Ability2"					"zombie_passive"
-		"Ability3"					"blood_effect"	
-		"Ability4"					"attack_of_deactivating"
-		
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"25"			// Physical protection.
+	"MagicalResistance"			"35"		// Magical protection.
 
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"32"
-		"MagicalResistance"         "45"
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"			"250"		// Damage range min.
+	"AttackDamageMax"			"450"		// Damage range max.
+	"AttackRate"				"1.5"		// Speed of attack.
+	"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"1000"		// Range within a target can be acquired.
+	"AttackRange"				"500"		// Range within a target can be attacked.
+	"ProjectileModel"			"particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"						// Particle system model for projectile.
+	"ProjectileSpeed"			"800"			// Speed of projectile.
 
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"370"
-		"AttackDamageMax"			"430"
-		"AttackRate"				"1.05"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"5000"
-		"AttackRange"				"180"
-	     
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"3000"		// Experience earn.
+	"BountyGoldMin"				"800"		// Gold earned min.
+	"BountyGoldMax"				"1100"		// Gold earned max.
 
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"70"
+	"HealthBarOffset"			"160"
+	"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"	
 
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"260"
-		"BountyGoldMin"				"200"	
-		"BountyGoldMax"				"230"	
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+	"MovementSpeed"				"295"		// Speed
+	"MovementTurnRate"			"0.5"		// Turning rate.
 
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"225"	
-		
+	
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+	"VoiceFile"					"soundevents/voscripts/game_sounds_vo_leshrac.vsndevts"
 
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"2550"
-		"StatusHealthRegen"			"25"
-		"StatusMana"				"350"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"9500"		// Base health.
+	"StatusHealthRegen"			"90"		// Health regeneration rate.
+	"StatusMana"				"20000"			// Base mana.
+	"StatusManaRegen"			"500"			// Mana regeneration rate.
 
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"1400"		// Range of vision at night time.
 
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		
-		"Creature"
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"   "1"
+		"CanRespawn"				"0"
+		"States"
 		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+				//"RoamDistance"		"700.0"
+			}
+		}
+
+		"DefaultState"				"Invade"
 		
-					"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "14963" }
-                     "Wearable1" { "ItemDef"                      "18379" }
- 
- 				
-				}
- 		
-			
+		"OffensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"custom_thundercall"
+				"Radius"			"500"
+			}
+			"Ability2"				
+			{
+				"Name"				"npc_leshrac_split_earth"
+			}
+			"Ability3"				
+			{
+				"Name"				"custom_leshrac_diabolic_edict"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1"	{ "ItemDef"	"8110" }
+			"Wearable2" { "ItemDef" "8111" }
+			"Wearable3" { "ItemDef" "8112" }
+			"Wearable4" { "ItemDef" "8113" }
+			"Wearable5" { "ItemDef" "7596" }			
 		}
 	}
+}
 	
 
 	"npc_seerdying_3"	
 	{
 		// General
 		//----------------------------------------------------------------
-		
-		"vscripts"		"ai/ai_undyindg.lua"
-		"Model"						"models/heroes/undying/undying.vmdl"
+		"vscripts"					"ai/ai_npc_witch.lua"
+		"Model"						"models/heroes/death_prophet/death_prophet.vmdl"
 		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Undying"
-		"GameSoundsFile"			"soundevents/game_sounds_undying.vsndevts"
-		"Level"						"1"
-		"ModelScale" 				"1.0"
-		"UseNeutralCreepBehavior"	"0"
+		"SoundSet"					"n_creep_Ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"30"
+		"ModelScale" 				"1.7"
+		"IsAncient"					"1"
+		"ConsideredHero"			"1"
+		"CanBeDominated"            "0"
+		"IsBossMonster"				"1"
+		"MinimapIcon"				"minimap_death"
+		"MinimapIconSize"			"550"
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"necronomicon_warrior_sight"
-		"Ability2"					"ghoul_crazy_look"
-		"Ability3"					"blood_effect"	
-		"Ability4"					"attack_of_deactivating"
-		"Ability5"		"zombie_passive"
-		
+		"Ability1"					""
+		"Ability2"					"death_prophet_exorcism"
+		"Ability3"					"rupture_custom"
+		"Ability4"					""
+		"Ability5"					""
+		"Ability6"					""
+		"Ability7"					""
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"50"
-		"MagicalResistance"         "50"
-
+		"ArmorPhysical"				"15"			// Physical protection.
+		"MagicalResistance"         "25"
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"540"
-		"AttackDamageMax"			"650"
-		"AttackRate"				"0.65"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"5000"
-		"AttackRange"				"180"
-	     
-
+		"AttackDamageMin"			"1500"		// Damage range min.
+		"AttackDamageMax"			"2500"		// Damage range max.
+		"AttackRate"				"1"		// Speed of attack.
+		"AttackAnimationPoint"		"0.2"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"600"		// Range within a target can be attacked.
+		"ProjectileSpeed" 			"900"
+		"ProjectileModel" 			"particles/neutral_fx/ghost_base_attack.vpcf"
 		// Bounds
 		//----------------------------------------------------------------
 		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
+		"HealthBarOffset"			"250"
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"460"
-		"BountyGoldMin"				"420"	
-		"BountyGoldMax"				"450"	
+		"BountyXP"					"8000"		// Experience earn.
+		"BountyGoldMin"				"900"		// Gold earned min.
+		"BountyGoldMax"				"1400"		// Gold earned max.
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"225"	
-		
+		"MovementSpeed"				"325"		// Speed.
+
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"3750"
-		"StatusHealthRegen"			"30"
-		"StatusMana"				"350"	
-		"StatusManaRegen"			"0.0"		 
-		
+		"StatusHealth"				"10500"		// Base health.
+		"StatusHealthRegen"			"120"		// Health regeneration rate.
+		"StatusMana"				"1000"			// Base mana.
+		"StatusManaRegen"			"100.0"		// Mana regeneration rate.
+
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
+		"VisionDaytimeRange"		"1600"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
 
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		
+		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+ 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
 		"Creature"
 		{
-		
-					"AttachWearables"
+
+
+			"AttachWearables"
+			{
+			    "Wearable1" { "ItemDef" "168" }
+			    "Wearable2" { "ItemDef" "169" }
+			}
+			"DisableResistance"		"50"
+			"DefaultState"			"Invade"
+				"States"
 				{
-					"Wearable1" { "ItemDef" "14963" }
-                     "Wearable1" { "ItemDef"                      "18379" }
- 
- 				
+					"Invade"
+					{
+						"Name"				"Invade"
+						"Aggression"		"50.0" //cast offensive spells whenever
+						"Avoidance"			"0.0" //dont flee
+						"Support"			"0.0" //start buffing
+					}
 				}
- 		
-			
+			"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"				"death_prophet_exorcism"
+					"AOE"				"1"
+					"Radius"			"600"
+					"MinimumTargets"	"1"
+				}
+				"Ability2"
+				{
+					"Name"			"witch_doctor_maledict"
+				}
+			}
+
+			//Level Up
+			"HPGain"					"50"
+			"DamageGain"				"2"
+			"ArmorGain"					"0.25"
+			"MagicResistGain"			"0.1"
+			"MoveSpeedGain"				"1"
+			"BountyGain"				"3"
+			"XPGain"					"15"
+			"ItemDrops"
+            {
+
+
+                "StatTomes"
+                {
+                    "Item"
+                    {
+  //                      "1"             "item_roshan_legs"
+                    }
+                    "Chance"            "100"
+                }
+			}
 		}
 	}
 	
 	"npc_seerdying_4"	
 	{
-		// General
-		//----------------------------------------------------------------
-		
-		"vscripts"		"ai/ai_undyindg.lua"
-		"Model"						"models/heroes/undying/undying.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Undying"
-		"GameSoundsFile"			"soundevents/game_sounds_undying.vsndevts"
-		"Level"						"1"
-		"ModelScale" 				"1.0"
-		"UseNeutralCreepBehavior"	"0"
+    "Model"                                 "models/heroes/witchdoctor/witchdoctor.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_WitchDoctor"
+    "GameSoundsFile"						"soundevents/game_sounds_heroes/game_sounds_witchdoctor.vsndevts"
+    "Level"                                 "5"
+    "ModelScale"                            "1.35"
+    "CanBeDominated"						"0"
+    "ConsideredHero"						"1"
+    "HasInventory"							"1"
+	"MinimapIcon"							"minimap_death"
+	"MinimapIconSize"						"550"
 
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					"necronomicon_warrior_sight"
-		"Ability2"					"ghoul_crazy_look"
-		"Ability3"					"blood_effect"	
-		"Ability4"					"attack_of_deactivating"
-				"Ability5"		"zombie_passive"
+    "precache"
+    {
+        "model"					            "models/heroes/witchdoctor/witchdoctor_ward.vmdl"
+        "particle_folder"		            "particles/units/heroes/hero_witchdoctor"
+    }
 
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"65"
-		"MagicalResistance"         "60"
+    "Ability1"					            "custom_paralyzing_cask"
+    "Ability2"					            "custom_maledict"
+    "Ability3"					            "custom_death_ward"
+	"Ability4"					            "custom_paralyzing_cask_wrapper"
+	"Ability5"					            "custom_maledict_wrapper"
 
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1115"
-		"AttackDamageMax"			"1212"
-		"AttackRate"				"0.5"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"5000"
-		"AttackRange"				"180"
-	     
+    "ArmorPhysical"                         "5"
+    "AttackCapabilities"            		"DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "200"
+    "AttackDamageMax"                       "300"
+    "AttackRate"                            "0.8"
+    "AttackAnimationPoint"         		    "0.4"
+    "AttackAcquisitionRange"       		    "1600"
+    "AttackRange"                           "550"
+    "ProjectileModel"                       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+    "ProjectileSpeed"                       "1000"
+    "RingRadius"                            "150"
+    "HealthBarOffset"                       "300"
+    "BountyXP"                              "1500"
+    "BountyGoldMin"                         "500"
+    "BountyGoldMax"                         "500"
+    "MovementCapabilities"          		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "330"
+	"StatusHealth"							"8000"
+	"StatusHealthRegen"						"90"
+	"StatusMana"							"12000"
+	"StatusManaRegen"						"500"
+    "VisionDaytimeRange"            		"1600"
+    "VisionNighttimeRange"          		"1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"						"DOTA_COMBAT_CLASS_ATTACK_HERO"
+    "CombatClassDefend"						"DOTA_COMBAT_CLASS_DEFEND_HERO"
+    "UnitRelationshipClass"         		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"860"
-		"BountyGoldMin"				"620"	
-		"BountyGoldMax"				"850"	
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"225"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"5250"
-		"StatusHealthRegen"			"45"
-		"StatusMana"				"350"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		
-		"Creature"
-		{
-		
-					"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "14963" }
-                     "Wearable1" { "ItemDef"                      "18379" }
- 
- 				
-				}
- 	
-			
-		}
-	}
+    "Creature"
+    {
+		"DisableClumpingBehavior"   "1"
+        "OffensiveAbilities"
+        {
+            "Ability4"
+            {
+                "Name"               "custom_paralyzing_cask_wrapper"
+            }
+            "Ability5"
+            {
+                "Name"               "custom_maledict_wrapper"
+                "AOE"                "1"
+                "Radius"             "300"
+                "MinimumTargets"     "1"
+            }
+            "Ability3"
+            {
+                "Name"               "custom_death_ward"
+                "AOE"                "1"
+                "Radius"             "300"
+                "MinimumTargets"     "1"
+            }
+        }
+        "EquippedItems"
+        {
+            "Ultimate Scepter"       	{ "Item"        "item_ultimate_scepter" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "14975"  }
+            "2" { "ItemDef"     "12328"  }
+            "3" { "ItemDef"     "9679"  }
+        }
+    }
+}
 	
 	
 

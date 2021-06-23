@@ -9927,4 +9927,276 @@
         }
     }       
 
+"item_up_ability_tower"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/abil"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"AbilityCastRange"              "700"
+		"ItemCost"						"1500"
+		"Model" 						"models/gameplay/attrib_tome_xp.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"add_ability_passive"
+			}
+		}
+	}
+	
+	"item_up_ability_tower2"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/abil"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"AbilityCastRange"              "700"
+		"ItemCost"						"2000"
+		"Model" 						"models/gameplay/attrib_tome_xp.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"add_ability_passive2"
+			}
+		}
+	}
+
+	"item_up_ability_tower3"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/abil"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"AbilityCastRange"              "700"
+		"ItemCost"						"2500"
+		"Model" 						"models/gameplay/attrib_tome_xp.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"add_ability_passive3"
+			}
+		}
+	}
+	
+	"item_up_ability_tower4"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/abil"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"AbilityCastRange"              "700"
+		"ItemCost"						"3000"
+		"Model" 						"models/gameplay/attrib_tome_xp.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"add_ability_passive4"
+			}
+		}
+	}
+	
+	"item_up_hp_tower"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/hp"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemCost"						"3000"
+		"ItemSellable"					"0"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemInitialCharges"			"1"
+		"Model" 						"models/book.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1100"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"up_hp"
+			}
+		}
+	}
+	
+	"item_up_dmg_tower"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/dmg"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemCost"						"3000"
+		"ItemSellable"					"0"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemInitialCharges"			"1"
+		"Model" 						"models/book.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1100"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"up_dmg"
+			}
+		}
+	}
+	
+	"item_up_armor_tower"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/armor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemCost"						"3000"
+		"ItemSellable"					"0"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemInitialCharges"			"1"
+		"Model" 						"models/book.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1100"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"up_armor"
+			}
+		}
+	}
+	
+	"item_up_speed_tower"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"tower/speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"ItemDroppable" 				"1"
+		"ItemPurchasable" 				"1"
+		"ItemCost"						"3000"
+		"ItemSellable"					"0"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemInitialCharges"			"1"
+		"Model" 						"models/book.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1100"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"items/tower/up_ability.lua"
+				"Function"		"up_speed"
+			}
+		}
+	}
+
 }

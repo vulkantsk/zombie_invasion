@@ -89,90 +89,112 @@
 
 	"npc_base"
 	{
-		// General
-		//----------------------------------------------------------------
+		"vscripts"                  "ai/ai_spots.lua"
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/shopkeeper_dire/shopkeeper_dire.vmdl"
+		"SoundSet"					"Hero_Tiny"
+		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 		"ModelScale"				"1"
-		"Level"						"10"
-		"HealthBarOffset"			"140"
-		"HasInventory"				"0"
-		"ConsideredHero"			"0"
-		"IsNeutralUnitType"         "1"
-        "HasInventory"              "1"
-        "IsAncient"                 "1"
-
-		"UnitLabel"					"npc_base"
-		
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					""
-		"Ability2"					"hommer_cry"
-		"Ability3"					"neutral_spell_immunity"
+		"Level"						"1"
+		"HasInventory"				"1"
+		"IsAncient"					"1"
+		//"ConsideredHero"            "1"
+		"CanRespawn"				"0"
+        "IsBossMonster"                     "1"
+                  
+		"Ability1"					"tower_ability"			
+		"Ability2"					"hommer_cry"			
+		"Ability3"					"neutral_spell_immunity"			
 		"Ability4"					""
-
+		"Ability5"					""
+		"Ability6"					""
+		"Ability7"                  ""
+		"Ability8"                  ""	
 		
-		// Armor
-		//----------------------------------------------------------------
+
 		"ArmorPhysical"				"10"
 		"MagicalResistance"			"25"
-		
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"0"
-		"AttackDamageMax"			"0"
-		
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"				"0.0"
-		"BountyGoldMax"				"0.0"
-		
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
-		"RingRadius"				"70"
-		"CollisionSize"				"1"
-		
-		
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"				"0"
-		
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"3000"
-		"StatusHealthRegen"			"3"
-		"StatusMana"				"0"
-		"StatusManaRegen"			"0"
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
-		
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
-	
-		"Creature"
-		{
- 
- 
-								"EquippedItems"
-			{
-				"1"            	{"Item"        "item_panic_button"}
- 
 
-			}
-		}	
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"70"
+		"AttackDamageMax"			"80"
+		"AttackRate"				"1.0"
+		"AttackAnimationPoint"		"0.1"
+		"AttackAcquisitionRange"	"900"
+		"AttackRange"				"200"
+
+		"RingRadius"				"70"
+		"HealthBarOffset"			"500"
+
+		"BountyXP"					"2500"
+		"BountyGoldMin"				"1500"
+		"BountyGoldMax"				"2200"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"450"
+		"MovementTurnRate"			"0.5"
+
+		"StatusHealth"				"3000"
+		"StatusHealthRegen"			"70"
+		"StatusMana"				"60000"
+		"StatusManaRegen"			"1000.0"
 		
-	}	
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"500"
+
+		"TeamName"					"DOTA_TEAM_BADGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{	
+		"DisableResistance"			"95.0"
+
+			"OffensiveAbilities"
+			{
+				"Ability4"
+				{
+					"Name"				"custom_earth_splitter"
+				}
+				
+				"Ability1"				
+				{
+					"Name"				"medusa_mystic_snake"
+					"AOE"                "1"
+					"Radius"             "600"
+					"MinimumTargets"     "1"
+				}
+			
+				"Ability2"
+				{
+					"Name"				"ursa_overpower"
+				}
+				
+				"Ability3"
+				{
+					"Name"				"ursa_enrage"
+				}
+				
+				"Ability6"
+				{
+					"Name"				"lich_sinister_gaze"
+				}
+			}
+			"ItemDrops"
+            {
+                "Consumables"
+                {
+                "Item"
+                    {
+                        "1"				"item_mithril_hammer"
+
+                    }
+                    "Chance"            "100"
+				}
+			}
+		}
+	}
 	"npc_end_antimage"	
 	{
 		// General
@@ -3581,5 +3603,7 @@
 		"VisionNighttimeRange"		"750"		// Range of vision at night time.
 
 	}
+
+
 
 }
