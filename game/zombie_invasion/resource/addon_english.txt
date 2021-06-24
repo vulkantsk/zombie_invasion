@@ -2915,5 +2915,34 @@
 
 		"DOTA_Tooltip_ability_roshan_create_aegis"					"Aegis handicraft"
 		"DOTA_Tooltip_ability_roshan_create_aegis_Description"		"Roshan's Son shares his father's curse with his teammates!"
+	
+	    "scroll_7"																														"Secrets of Necromancy: Common Tome Of Abilities"
+		"DOTA_Tooltip_Ability_item_up_ability_tower"																					"<font color='#96ffee'>Common Tome Of Abilities</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower_description"																		"When applied to the Homer, it grants a random <font color='#96ffee'>Common</font> level 1 ability."
+		
+		"scroll_8"																														"Secrets of Necromancy: Rare Tome Of Abilities"
+		"DOTA_Tooltip_Ability_item_up_ability_tower2"																					"<font color='#00ff4c'>Rare Tome Of Abilities</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower2_description"																		"When applied to the Homer, it grants a random <font color='#00ff4c'>Rare</font> level 1 ability."	
+		
+		"scroll_9"																														"Secrets of Necromancy: Epic Tome Of Abilities"
+		"DOTA_Tooltip_Ability_item_up_ability_tower3"																					"<font color='#ffa600'>Legendary Tome Of Abilities</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower3_description"																		"When applied to the Homer, it grants a random <font color='#ffa600'>Legendary</font> level 1 ability."
+		
+		"scroll_10"																														"Secrets of Necromancy: Legendary Tome Of Abilities"
+		"DOTA_Tooltip_Ability_item_up_ability_tower4"																					"<font color='#d400ff'>Epic Tome Of Abilities</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower4_description"																		"When applied to the Homer, it grants a random <font color='#d400ff'>Epic</font> level 1 ability."
+		
+		"DOTA_Tooltip_Ability_item_up_hp_tower" 																						"Secrets of Necromancy: Scroll Of Life Energy"
+		"DOTA_Tooltip_Ability_item_up_hp_tower_description" 																			"When applied to the Homer, this increases his health and mana stats."
+		 
+		"DOTA_Tooltip_Ability_item_up_dmg_tower" 																						"Secrets of Necromancy: Scroll Of Power"
+		"DOTA_Tooltip_Ability_item_up_dmg_tower_description" 																			"When applied to the Homer, this increases his damage."
+		 
+		"DOTA_Tooltip_Ability_item_up_armor_tower" 																						"Secrets of Necromancy: Scroll Of Armor"
+		"DOTA_Tooltip_Ability_item_up_armor_tower_description" 																			"When applied to the Homer, this increases his armor."
+		 
+		"DOTA_Tooltip_Ability_item_up_speed_tower" 																						"Secrets of Necromancy: Speed Scroll"
+		"DOTA_Tooltip_Ability_item_up_speed_tower_description" 																			"When applied to the Homer, this increases his speed."
+
 	}
 }

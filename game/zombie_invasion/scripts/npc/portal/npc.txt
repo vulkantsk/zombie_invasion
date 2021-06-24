@@ -3,6 +3,7 @@
 		"BaseClass" "npc_dota_creature"
 		"vscripts" "ai/ai_portal_wd.lua"
 		"Model" "models/heroes/witchdoctor/witchdoctor.vmdl"
+        "MinimapIcon"				"minimap_death"
 
 		"Ability1" "invasion_portal_wd_heal"
 		"Ability2" "invasion_portal_wd_maledict"
@@ -52,7 +53,7 @@
 		"BaseClass" "npc_dota_creature"
 		"Model" "models/heroes/undying/undying_minion.vmdl"
 		"ModelScale" "2.1"
-
+        "MinimapIcon"				"minimap_death"
 		"StatusHealth" "3000"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -64,7 +65,7 @@
 		"MagicalResistance" "25"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed" "420"
+		"MovementSpeed" "0"
 		
 		"Creature"
 		{
@@ -84,10 +85,18 @@
 
 	"npc_invasion_portal_warlock" {
 		"BaseClass" "npc_dota_creature"
-		"vscripts" "ai/ai_portal_warlock.lua"
+		"vscripts" "ai/ai_warlock"
 		"Model" "models/heroes/warlock/warlock.vmdl"
+        "MinimapIcon"				"minimap_death"
 
-		"Ability1" "invasion_portal_warlock_portal"
+		"Ability1" "warlock_spawn_infernal"
+		"Ability2"					"imba_warlock_upheaval"
+		"Ability3"					"creature_noregen_aura"
+		"Ability4"					""
+		"Ability5"					"true_strike_datadriven"			// Ability 4.
+		"Ability6"					""
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
 
 		"StatusHealth" "1800"
 
@@ -135,6 +144,7 @@
 	"npc_invasion_portal_warlock_golem" {
 		"BaseClass" "npc_dota_creature"
 		"Model" "models/heroes/warlock/warlock_demon.vmdl"
+        "MinimapIcon"				"minimap_death"
 
 		"StatusHealth" "3000"
 
@@ -154,6 +164,7 @@
 		"BaseClass" "npc_dota_creature"
 		"vscripts" "ai/ai_generic.lua"
 		"Model" "models/heroes/necrolyte/necrolyte.vmdl"
+        "MinimapIcon"				"minimap_death"
 
 		"Ability1" "necrolyte_death_pulse"
 		"Ability2" "invasion_portal_necr_leader"
@@ -219,6 +230,7 @@
 		"Model" "models/heroes/venomancer/venomancer.vmdl"
 		"SoundSet" "Hero_Venomancer"
 		"IdleSoundLoop" "Hero_Venomancer.IdleLoop"
+        "MinimapIcon"				"minimap_death"
 
 		"Ability1" "venomancer_venomous_gale"
 		"Ability2" "venomancer_poison_sting"

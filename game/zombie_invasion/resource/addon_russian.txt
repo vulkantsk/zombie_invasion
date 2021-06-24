@@ -3249,6 +3249,34 @@
 
 		"DOTA_Tooltip_ability_roshan_create_aegis"					"Create aegis"
 		"DOTA_Tooltip_ability_roshan_create_aegis_Description"		"Создаёт уникальный предмет дарующий вторую жизнь владельцу !"
+        
+        "scroll_7"																														"Тайны некромантии: Том Способностей"
+		"DOTA_Tooltip_Ability_item_up_ability_tower"																					"<font color='#96ffee'>Обычный Том Способностей</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower_description"																		"При применении на Homer дарует случайную <font color='#96ffee'>обычную</font> способность 1 уровня."
+		
+		"scroll_8"																														"Тайны некромантии: Редкий Том Способностей"
+		"DOTA_Tooltip_Ability_item_up_ability_tower2"																					"<font color='#00ff4c'>Редкий Том Способностей</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower2_description"																		"При применении на Homer дарует случайную <font color='#00ff4c'>редкую</font> способность 1 уровня."	
+		
+		"scroll_9"																														"Тайны некромантии: Эпический Том Способностей"
+		"DOTA_Tooltip_Ability_item_up_ability_tower3"																					"<font color='#ffa600'>Легендарный Том Способностей</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower3_description"																		"При применении на Homer дарует случайную <font color='#ffa600'>легендарную</font> способность 1 уровня."
+		
+		"scroll_10"																														"Тайны некромантии: Легендарный Том Способностей"
+		"DOTA_Tooltip_Ability_item_up_ability_tower4"																					"<font color='#d400ff'>Эпический Том Способностей</font>"
+		"DOTA_Tooltip_Ability_item_up_ability_tower4_description"																		"При применении на Homer дарует случайную <font color='#d400ff'>эпическую</font> способность 1 уровня."
+			
+		"DOTA_Tooltip_Ability_item_up_hp_tower"																							"Тайны некромантии: Свиток Жизненной Энергии"
+		"DOTA_Tooltip_Ability_item_up_hp_tower_description"																				"При применении на Homer увеличивает показатели здоровья и маны."
+						
+		"DOTA_Tooltip_Ability_item_up_dmg_tower"																						"Тайны некромантии: Свиток Мощи"
+		"DOTA_Tooltip_Ability_item_up_dmg_tower_description"																			"При применении на Homer увеличивает урон."
+		
+		"DOTA_Tooltip_Ability_item_up_armor_tower"																						"Тайны некромантии: Свиток Брони"
+		"DOTA_Tooltip_Ability_item_up_armor_tower_description"																			"При применении на Homer увеличивает броню."
+		
+		"DOTA_Tooltip_Ability_item_up_speed_tower"																						"Тайны некромантии: Свиток Скорости"
+		"DOTA_Tooltip_Ability_item_up_speed_tower_description"																			"При применении на Homer увеличивает скорость атаки."
 
 	}
 }

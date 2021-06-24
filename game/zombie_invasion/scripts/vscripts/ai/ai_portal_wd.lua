@@ -63,7 +63,7 @@ local function Think()
 
 	if not target then
 		if attack and not thisEntity:GetAttackTarget() then
-			thisEntity:MoveToPositionAggressive( Entities:FindByName( nil, "final_point" ):GetAbsOrigin() )
+			thisEntity:MoveToPositionAggressive( Entities:FindByName( nil, "" ):GetAbsOrigin() )
 
 			return 0.9
 		end

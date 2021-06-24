@@ -246,8 +246,8 @@ function up_hp(event)
 			local health2 = target:GetMaxHealth()	
 			local mana2 = target:GetMaxMana()
 			
-			target:SetMaxHealth(health2 + 2000)	
-			target:SetBaseMaxHealth(health + 2000)	
+			target:SetMaxHealth(health2 + 500)	
+			target:SetBaseMaxHealth(health + 500)	
 			target:SetMaxMana(mana2 + 200)	
 			
 			EmitSoundOnClient("General.LevelUp.Bonus", PlayerResource:GetPlayer(playerID))
@@ -286,8 +286,8 @@ function up_dmg(event)
 			
 				local mindmg = target:GetBaseDamageMin()
 				local maxdmg = target:GetBaseDamageMax()	
-				target:SetBaseDamageMin(mindmg + 100)
-				target:SetBaseDamageMax(maxdmg + 100)
+				target:SetBaseDamageMin(mindmg + 20)
+				target:SetBaseDamageMax(maxdmg + 20)
 				EmitSoundOnClient("General.LevelUp.Bonus", PlayerResource:GetPlayer(playerID))
 				local new_charges = item:GetCurrentCharges() - 1
 				event.ability:SetCurrentCharges(new_charges)
@@ -309,7 +309,7 @@ function up_armor(event)
 			if  target_name == "NPC_base" then
 			
 				local arm = target:GetPhysicalArmorBaseValue()
-				target:SetPhysicalArmorBaseValue(arm + 5)	
+				target:SetPhysicalArmorBaseValue(arm + 2)	
 				EmitSoundOnClient("General.LevelUp.Bonus", PlayerResource:GetPlayer(playerID))
 				local new_charges = item:GetCurrentCharges() - 1
 				event.ability:SetCurrentCharges(new_charges)
