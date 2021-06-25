@@ -18,6 +18,29 @@
 		"difficulty_description_medium" ""
 		"difficulty_description_hard" ""
 		
+		//guide
+		"htpbtn"				"How to Play"
+		
+		"guide_basic"			"Basics"
+		"basic1"				"Gameplay"
+		"basic1_text"			"Суть игры заключается в сдерживании волн зомби и защиты Homer."
+		"basic2"				"Phases"
+		"basic2_text"			"В игре есть разделение на ночную и дневную фазу. Каждая из них длится 5 минут. Если игроков меньше, то дневная фаза для будет дольше. Во время дневной фазы, вам лучше сосредоточится на фарме и выполнении квестов, во время ночи, вам лучше всем защищать Homer."
+		"basic3"				"Zombies"
+		"basic3_text"			"С каждой ночью зомби становится сильнее, так что вам лучше как следует к этому подготовиться."
+		
+		"guide_advanced"		"Advanced"
+		"advanced1"				"Quests"
+		"advanced1_text"		"Выполняйте квесты у Цмочки, Кункевича и Бродяги. Они дают очень ценные награды за них, что очень сильно поможет вам сдерживать волны зомби."
+		"advanced2"				"aaa"
+		"advanced2_text"		"bbb"
+		"advanced3"				""
+		"advanced3_text"		""	
+		
+		"next"					"Next"
+		"previous"				"Previous"
+		//
+		
        // ******************** Messages ********************
 	   
 	   "big_bo_1"                                                   "<font color='#20B2AA'>Dirt begin to spread </font>"

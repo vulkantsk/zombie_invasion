@@ -1,7 +1,20 @@
+//--constants
+var GUIDE_BASIC_PAGE_COUNT = 3
+var GUIDE_ADVANCED_PAGE_COUNT = 2
+//--
+
+//--variables
+var selectedPage = null
+var selectedPageId = 1
+var selectedGuide = ""
+//--
+
+//--init
 (function () {	
 	GameEvents.Subscribe( "zpr_show_quest", OnShowQuest);
 	//$.Schedule(0.3, function(){uhax(hax())})
 })();
+//--
 
 //hack
 /*
@@ -24,7 +37,7 @@ function uhax(parent)
 */
 //
 
-//CGE
+//--CGE
 function OnShowQuest(data)
 {
 	$("#quest_name").text = $.Localize("DOTA_Tooltip_ability_" + data["an"])
@@ -34,11 +47,75 @@ function OnShowQuest(data)
 	$("#quest_gold").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") + " " + data["rg"]
 	$("#QPanel").SetHasClass("hide", false)
 }
-//
+//--
 
-//btns
+//--btns
 function CloseQuest()
 {
 	$("#QPanel").SetHasClass("hide", true)
 }
-//
+//--
+
+//--guide
+function ToggleHTPPanel() {
+	$("#HTPPanel").ToggleClass("hide");
+	BasicGuide()
+}
+
+function GuideOpenPage(page, previous) {
+    if (previous != null) {
+	    previous.SetHasClass("hide", true)
+	}
+	
+	page.SetHasClass("hide", false)
+	selectedPage = page
+}
+
+function GuideNextPage() {
+    if (selectedPageId < GetSelectedGuideMaxPagesCount()) {
+        selectedPageId = selectedPageId + 1
+		GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage)
+		
+		UpdatePageNumbDisplayer()
+	}
+	
+}
+
+function GuidePreviousPage() {
+    if (selectedPageId > 1) {
+	    selectedPageId = selectedPageId - 1
+		GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage)
+		
+		UpdatePageNumbDisplayer()
+	}
+}
+
+function UpdatePageNumbDisplayer() {
+    $("#PageNumb").text = selectedPageId + "/" + GetSelectedGuideMaxPagesCount()
+}
+
+function BasicGuide() {	
+    $("#basicguidebtn").SetHasClass("guideSelected", true)
+	$("#advancedguidebtn").SetHasClass("guideSelected", false)
+	
+	selectedGuide = "basic"
+	selectedPageId = 1
+	GuideOpenPage($("#basic1"), selectedPage)
+	UpdatePageNumbDisplayer()
+}
+
+function AdvancedGuide() {
+    $("#basicguidebtn").SetHasClass("guideSelected", false)
+	$("#advancedguidebtn").SetHasClass("guideSelected", true)
+	
+	selectedGuide = "advanced"
+	selectedPageId = 1
+	GuideOpenPage($("#advanced1"), selectedPage)
+	UpdatePageNumbDisplayer()
+}
+
+function GetSelectedGuideMaxPagesCount(){
+	if (selectedGuide == "basic") return GUIDE_BASIC_PAGE_COUNT 
+	if (selectedGuide == "advanced") return GUIDE_ADVANCED_PAGE_COUNT
+}
+//--

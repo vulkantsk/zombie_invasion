@@ -33,5 +33,61 @@
 				</Button>
 			</Panel>
 		</Panel>
+		
+		<Button hittest="true" id="HTPBtn" onactivate="ToggleHTPPanel()" onmouseover="DOTAShowTextTooltip(#htpbtn)" onmouseout="DOTAHideTextTooltip();">
+            <Label class="classText" text="?"/>
+        </Button>
+		
+		<Panel id="HTPPanel" class="hide">
+			<Panel id="GuideSelect">
+		        <Button hittest="true" id="guide_basic" class="guideTopBtns" onactivate="BasicGuide()">
+                    <Label id="basicguidebtn" class="classText guideText" text="#guide_basic"/>
+                </Button>
+				<Button hittest="true" id="guide_advanced" class="guideTopBtns" onactivate="AdvancedGuide()">
+                    <Label id="advancedguidebtn" class="classText guideText" text="#guide_advanced"/>
+                </Button>
+			</Panel>
+			<Panel id="pages">
+			    <Panel id="basic1" class="guidePage hide">
+				    <Label text="#basic1" class="guideHeader classText"/>
+					<Label text="#basic1_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/basic1.png" class="guideImage"/>
+			    </Panel>
+				<Panel id="basic2" class="guidePage hide">
+				    <Label text="#basic2" class="guideHeader classText"/>
+					<Label text="#basic2_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/basic2.png" class="guideImage"/>
+			    </Panel>
+				<Panel id="basic3" class="guidePage hide">
+				    <Label text="#basic3" class="guideHeader classText"/>
+					<Label text="#basic3_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/basic3.png" class="guideImage"/>
+			    </Panel>
+				
+			    <Panel id="advanced1" class="guidePage hide">
+				    <Label text="#advanced1" class="guideHeader classText"/>
+					<Label text="#advanced1_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/advanced1.png" class="guideImage"/>
+			    </Panel>
+				<Panel id="advanced2" class="guidePage hide">
+				    <Label text="#advanced2" class="guideHeader classText"/>
+					<Label text="#advanced2_text" class="guidePageText"/>
+			    </Panel>
+				<Panel id="advanced3" class="guidePage hide">
+				    <Label text="#advanced3" class="guideHeader classText"/>
+					<Label text="#advanced3_text" class="guidePageText"/>
+			    </Panel>
+			</Panel>
+			
+			<Panel id="pagesBtns">
+			    <Button class="pagesBtn" onactivate="GuidePreviousPage()">
+				    <Label text="#previous" class="classText guideText" />
+				</Button>
+				<Label id="PageNumb" class="classText" text="0/0"/>
+				<Button class="pagesBtn" onactivate="GuideNextPage()">
+				    <Label text="#next" class="classText guideText" />
+				</Button>
+			</Panel>
+		</Panel>
 	</Panel>
 </root>
