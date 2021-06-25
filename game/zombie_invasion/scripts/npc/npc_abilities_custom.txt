@@ -22274,4 +22274,120 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 
+"crushing_leap"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/monsters/crushing_leap.lua"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"			
+	    "AbilityTextureName"            "ursa_earthshock"
+	    "MaxLevel"                      "1"		
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"           	"9"
+		"AbilityCastRange"				"2000"
+		"AbilityManaCost"				"0"
+		"AbilityCastPoint"				"0.5"
+		
+		// Special
+		//--------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aoe_radius"			"400"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_duration"			"5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"200"
+			}																	
+		}					    
+	}
+
+"sizzling_ray"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/monsters/sizzling_ray.lua"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+	    "AbilityTextureName"            "phoenix_sun_ray"
+	    "MaxLevel"                      "1"		
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"           	"10"
+		"AbilityCastRange"				"2000"
+		"AbilityManaCost"				"0"
+		"AbilityCastPoint"				"0.5"
+		
+		// Special
+		//--------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"8"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"150"
+			}																	
+		}					    
+	}
+"exhausting_fireball"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/monsters/exhausting_fireball.lua"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+	    "AbilityTextureName"            "invoker_exort"
+	    "MaxLevel"                      "1"		
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"           	"15"
+		"AbilityCastRange"				"2000"
+		"AbilityManaCost"				"0"
+		"AbilityCastPoint"				"0.5"
+		
+		// Special
+		//--------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"10"
+			}																	
+		}					    
+	}
+
+"duplicate_teleport"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/monsters/duplicate_teleport.lua"			
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
+	    "AbilityTextureName"            "vengefulspirit_nether_swap"
+	    "MaxLevel"                      "1"		
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"           	"15"
+		"AbilityCastRange"				"2000"
+		"AbilityManaCost"				"0"
+		"AbilityCastPoint"				"0.5"					    
+	}		
+
 }
