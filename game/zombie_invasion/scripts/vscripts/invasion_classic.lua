@@ -342,13 +342,69 @@ function InvasionMode:spawn_greevil()
 	unit:SetForwardVector(RandomVector(1))
 end
 
+--
+DEFAULT_DAYTIME = 300
+DEFAULT_NIGHTTIME = 300 -- лучше не менять, в этом костыльном говне это значение прописано ещё раз 1000
+currentNight = 0
+
+function InvasionMode:NextNight()
+	local time = DEFAULT_DAYTIME + (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)	
+	InvasionMode:NightTimer(time)
+end
+
+function InvasionMode:NightTimer(time)
+	local timeLeft = time
+	Timers:CreateTimer(1.0, function()
+		timeLeft = timeLeft - 1		
+		CustomGameEventManager:Send_ServerToAllClients( "zpr_time", {time = timeLeft} )
+		
+		GameRules:SetTimeOfDay(0.3)
+		
+		if timeLeft <= 0 then
+			EmitGlobalSound("Invasion.Night")
+			GameRules:SetTimeOfDay(0.8)
+			currentNight = currentNight + 1
+
+			if currentNight == 1 then
+				InvasionMode:ZombieNight1()
+			elseif currentNight == 2 then
+				local putin = Entities:FindByName(nil, 'NPC_base')
+				UpgradeUnitStats(putin, 1.5)
+				InvasionMode:ZombieNight2()  
+			elseif currentNight == 3 then
+				local putin = Entities:FindByName(nil, 'NPC_base')
+				UpgradeUnitStats(putin, 1.5)
+				InvasionMode:ZombieNight3()  
+			elseif currentNight == 4 then
+				local putin = Entities:FindByName(nil, 'NPC_base')
+				UpgradeUnitStats(putin, 1.5)
+				InvasionMode:ZombieNight4()  
+				
+				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+					InvasionMode:UsuallyEnd() 
+				end)
+				return nil;
+			end
+			
+			Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+				InvasionMode:NextNight()
+			end)
+			
+			return nil;
+		end
+		
+		return 1.0
+	end)
+end
+--
 
 function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
  	InvasionMode:ThemeMusic()
  
- 
+	InvasionMode:NextNight()
+ --[[
 --5 минута, 1я ночь
 	Timers:CreateTimer(300,function()
         InvasionMode:ZombieNight1()  
@@ -383,18 +439,10 @@ function InvasionMode:InvasionGameStart()
 		return nil
 	end)
 
- --40 минута, конец 4ей ночи, день
  	Timers:CreateTimer(2400,function()
- 		--[[
- if Christmas_night == 0 then 
-        InvasionMode:UsuallyEnd() 
- else 
-  InvasionMode:ChristmasEnd()    
- 
- end
- ]]
          InvasionMode:UsuallyEnd() 
- end)
+	end)
+	--]]
 end
 
 function InvasionMode:UsuallyEnd()  

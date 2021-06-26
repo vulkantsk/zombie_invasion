@@ -1,23 +1,24 @@
 //--constants
-var GUIDE_BASIC_PAGE_COUNT = 3
-var GUIDE_ADVANCED_PAGE_COUNT = 2
+const GUIDE_BASIC_PAGE_COUNT = 3;
+const GUIDE_ADVANCED_PAGE_COUNT = 2;
 //--
 
 //--variables
-var selectedPage = null
-var selectedPageId = 1
-var selectedGuide = ""
+var selectedPage = null;
+var selectedPageId = 1;
+var selectedGuide = "";
+var time = '00:00';
 //--
 
 //--init
 (function () {	
 	GameEvents.Subscribe( "zpr_show_quest", OnShowQuest);
-	//$.Schedule(0.3, function(){uhax(hax())})
+	GameEvents.Subscribe( "zpr_time", OnTime);
+	$.Schedule(0.3, function(){uhax(hax())})
 })();
 //--
 
 //hack
-/*
 function hax()
 {
 	var parent = $.GetContextPanel().GetParent();
@@ -28,13 +29,12 @@ function hax()
 }
 function uhax(parent)
 {
-	
+	parent.FindChildTraverse("GameTime").text = time;
 	
 	$.Schedule(0.5, function () {
 		uhax(parent)
 	})
 }
-*/
 //
 
 //--CGE
@@ -46,6 +46,11 @@ function OnShowQuest(data)
 	$("#quest_exp").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_reward_exp") + " " + data["re"]
 	$("#quest_gold").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") + " " + data["rg"]
 	$("#QPanel").SetHasClass("hide", false)
+}
+
+function OnTime(data)
+{
+    time = SecondsToMinsNSecs(data["time"])
 }
 //--
 
@@ -117,5 +122,18 @@ function AdvancedGuide() {
 function GetSelectedGuideMaxPagesCount(){
 	if (selectedGuide == "basic") return GUIDE_BASIC_PAGE_COUNT 
 	if (selectedGuide == "advanced") return GUIDE_ADVANCED_PAGE_COUNT
+}
+//--
+
+//--utils
+function SecondsToMinsNSecs(seconds)
+{
+	var mins = Math.floor(seconds/60);
+	var secs = Math.floor(seconds%60);
+	
+	if (mins < 10) {mins = "0"+mins}
+	if (secs < 10) {secs = "0"+secs}
+	
+	return mins + ":" + secs;
 }
 //--
