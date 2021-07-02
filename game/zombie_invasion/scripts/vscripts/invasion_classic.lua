@@ -348,7 +348,7 @@ DEFAULT_NIGHTTIME = 300 -- лучше не менять, в этом косты�
 currentNight = 0
 
 function InvasionMode:NextNight()
-	local time = DEFAULT_DAYTIME + (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)	
+	local time = DEFAULT_DAYTIME --+ (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)	
 	InvasionMode:NightTimer(time)
 end
 
