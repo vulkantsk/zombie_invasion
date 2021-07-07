@@ -6,6 +6,7 @@ end
 ItemDrop.item_drop = {
 --		{items = {"item_branches"}, chance = 5, duration = 5, limit = 3, units = {} },
 		{items = {"item_meat"}, chance = 35, duration = 300, units = {"npc_classic_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_meat"}, chance = 100, duration = 300, units = {"npc_classic_big_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_milk"}, chance = 35, duration = 300, units = {"npc_classic_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_zombie_skin"}, chance = 1,  units = {"npc_classic_half_zombie"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_eggs"}, chance = 20, duration = 300, units = {"npc_classic_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
@@ -22,20 +23,7 @@ ItemDrop.item_drop = {
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_undying_heart"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов
         
-        {items = {"item_up_speed_tower"}, chance = 1, duration = 300, units = {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_armor_tower"}, chance = 1, duration = 300, units =  {"npc_classic_pig", "npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_dmg_tower"}, chance = 1, duration = 300, units =  {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_ability_tower4"}, chance = 1, duration = 300, units =  {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_ability_tower3"}, chance = 1, duration = 300, units =  {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_ability_tower2"}, chance = 1, duration = 300, units =  {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
-        {items = {"item_up_ability_tower"}, chance = 1, duration = 300, units =  {"npc_classic_necr", "npc_classic_big_zombie", "npc_classic_zombie", "npc_classic_skelet", 
-        "npc_classic_skeleton_king", "npc_classic_pudge", "npc_classic_pudge2", "npc_classic_pudge3", "npc_classic_pudge4", "npc_classic_pudge5"}},
+ 
  
 		{items = {"item_saxar_svekla"}, units ={"npc_dota_bochok_saxara"}},
 		{items = {"item_magic_heart"}, units ={"npc_dota_bochok_saxara"}},

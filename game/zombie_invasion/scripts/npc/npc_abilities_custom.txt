@@ -6411,15 +6411,15 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"8 7 6 4"
+		"AbilityCooldown"				"5"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"100 150 200 250"
+		"AbilityDamage"					"250"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 130 160 200"
+		"AbilityManaCost"				"250"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -6433,7 +6433,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"					"60 80 100 200"
+				"heal"					"250"
 				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_4"
 			}
 			"03"
@@ -6445,6 +6445,59 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 	
+
+	"necrolyte_death_pulse_big"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Baseclass"					"necrolyte_death_pulse"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Necrolyte.DeathPulse"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.5"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"350"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"350"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"area_of_effect"		"600"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal"					"350"
+				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_4"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"400"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
   	"necrolyte_heartstopper_aura_2"
 	{
 		// General
@@ -6496,6 +6549,56 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	
+  	"necrolyte_heartstopper_aura_big"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"necrolyte_heartstopper_aura"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		
+				
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aura_radius"			"700"		// If you change this, also change the AbilityCastRange above
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage"		"4.0" 
+				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_2"
+			} 	
+			"03"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"health_regen"	"3.5 4.5 5.5 6.5"
+			}		
+			"04"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"mana_regen"	"3.5 4.5 5.5 6.5"
+			}	
+			"05"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"regen_duration"		"0"
+			}			
+			"06"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"hero_multiplier" "0"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
  	//=================================================================================================================
 	// Centaur Khan: Endurance Aura
 	//=================================================================================================================
@@ -8302,7 +8405,99 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
+
+    "pudge_chakram"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "AbilityTextureName"            "meatboy/bloody_chakram"
+
+        "RequiredLevel"                 "1"
+        "LevelsBetweenUpgrades"         "1"
+        "MaxLevel"                      "1"
+
+
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+            "soundfile"         "soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
+            "particle"          "particles/econ/items/pudge/pudge_ti6_immortal/pudge_meathook_witness_impact_ti6_water.vpcf"
+            "particle"          "particles/units/heroes/hero_pudge/pudge_meathook_impact_droplets.vpcf"
+        }
+
+        "AbilityManaCost"               "50"
+        "AbilityCooldown"               "4.0"
+        "AbilityCastRange"              "%radius"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "radius"                    "300"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_dmg"                  "450"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "hp_cost"                   "7.25"
+            }
+        }
+
+        "OnSpellStart"
+        {
+            "RunScript"
+            {
+                "ScriptFile"        "abilities/zombie/pudge_chakram"
+                "Function"          "PudgeChakram"
+            }
+        }
+
+    }
 	
+
+        "grim_health"
+    {
+    	"BaseClass"           "ability_lua"
+    	"ScriptFile"          "abilities/zombie/grim_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    	"AbilityTextureName"  "oracle/buff"
+    	"MaxLevel"            "4"
+    	"LevelsBetweenUpgrades" "2"
+    	"RequiredLevel" "1"
+
+    	"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.01"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"				"50 45 40 35"
+		"AbilityManaCost" "100 150 200 250"
+
+    	"AbilitySpecial"
+    	{
+         	"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"heal"							"1200"
+			}
+ 
+			
+    	}  
+    }
+
     //=================================================================================================================
     // Dead Bo
     //=================================================================================================================
@@ -10195,7 +10390,150 @@
 		}	}
 }
 
+	"respawn_pig"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_pig" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_pig"
+				"Function"		"RespawnPig"
+			}
+		}
+	}	
 
+
+	"respawn_sheep"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_sheep" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_sheep"
+				"Function"		"RespawnSheep"
+			}
+		}
+	}	
+
+	"respawn_half_zombie"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_half_zombie" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_half_zombie"
+				"Function"		"RespawnHalfZombie"
+			}
+		}
+	}	
+
+	"respawn_fish"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_fish" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_fish"
+				"Function"		"RespawnFish"
+			}
+		}
+	}	
+
+	"respawn_zombie"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_zombie" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_zombie"
+				"Function"		"RespawnZombie"
+			}
+		}
+	}	
+
+	"respawn_necr"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_necr" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_necr"
+				"Function"		"RespawnNecr"
+			}
+		}
+	}	
 
 	"respawn_weak"
 	{
@@ -10212,78 +10550,12 @@
 		}
 	}	
 
-	"respawn_strong"
-	{
-		"BaseClass"             		"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	 
-		"OnCreated" //Когда юнит появляется
-		{
-			"RunScript" //Запускается скрипт
-			{
-				"ScriptFile"	"abilities/respawn" 
-				"Function"		"Respoint"
-			}
-		}
-		
-		"OnOwnerDied"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"abilities/respawn"
-				"Function"		"RespawnStrong"
-			}
-		}
-	}	
-	
-		"respawn_zombie_big"
-	{
-		"BaseClass"             		"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	 
-		"OnCreated" //Когда юнит появляется
-		{
-			"RunScript" //Запускается скрипт
-			{
-				"ScriptFile"	"abilities/respawn_zombie_big" 
-				"Function"		"Respoint"
-			}
-		}
-		
-		"OnOwnerDied"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"abilities/respawn_zombie_big"
-				"Function"		"RespawnStrong"
-			}
-		}
-	}
+ 
+
+ 
 	
 	
-		"respawn_fish"
-	{
-		"BaseClass"             		"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	 
-		"OnCreated" //Когда юнит появляется
-		{
-			"RunScript" //Запускается скрипт
-			{
-				"ScriptFile"	"abilities/respawn_fish" 
-				"Function"		"Respoint"
-			}
-		}
-		
-		"OnOwnerDied"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"abilities/respawn_fish"
-				"Function"		"RespawnStrong"
-			}
-		}
-	}
+ 
 
 		"respawn_death"
 	{
@@ -12276,64 +12548,7 @@
         }
 
     }
-    "meatboy_bloody_chakram"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                     "ability_datadriven"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
-        "AbilityTextureName"            "meatboy/bloody_chakram"
-
-        "RequiredLevel"                 "1"
-        "LevelsBetweenUpgrades"         "3"
-        "MaxLevel"                      "7"
-
-
-        // Precache
-        //-------------------------------------------------------------------------------------------------------------
-        "precache"
-        {
-            "soundfile"         "soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
-            "particle"          "particles/econ/items/pudge/pudge_ti6_immortal/pudge_meathook_witness_impact_ti6_water.vpcf"
-            "particle"          "particles/units/heroes/hero_pudge/pudge_meathook_impact_droplets.vpcf"
-        }
-
-        "AbilityManaCost"               "50"
-        "AbilityCooldown"               "5 5 5 5 4.5 4.0 3.5"
-        "AbilityCastRange"              "%radius"
-
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "radius"                    "300"
-            }
-            "02"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "base_dmg"                  "50 100 150 200 300 400 500"
-            }
-            "03"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "hp_cost"                   "2.25"
-            }
-        }
-
-        "OnSpellStart"
-        {
-            "RunScript"
-            {
-                "ScriptFile"        "heroes/hero_meatboy/bloody_chakram"
-                "Function"          "BloodyChakram"
-            }
-        }
-
-    }
+ 
 "meatboy_blood_bath"
 {
     // General

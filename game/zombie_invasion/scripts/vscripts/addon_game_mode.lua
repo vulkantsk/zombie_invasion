@@ -162,8 +162,9 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_pudge.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_antimage.vsndevts", context )
-
-
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts", context )
+ 
+          
 
 	---------------------------------------
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_grimstroke", context )
