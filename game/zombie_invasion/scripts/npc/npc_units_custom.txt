@@ -102,7 +102,7 @@
 		"CanRespawn"				"0"
         "IsBossMonster"                     "1"
                   
-		"Ability1"					"tower_ability"			
+		"Ability1"					"homer_aura"			
 		"Ability2"					"hommer_cry"			
 		"Ability3"					"neutral_spell_immunity"			
 		"Ability4"					""
@@ -115,7 +115,8 @@
 		"ArmorPhysical"				"10"
 		"MagicalResistance"			"25"
 
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"			"70"
 		"AttackDamageMax"			"80"
 		"AttackRate"				"1.0"
@@ -124,7 +125,7 @@
 		"AttackRange"				"200"
 
 		"RingRadius"				"70"
-		"HealthBarOffset"			"500"
+		"HealthBarOffset"			"150"
 
 		"BountyXP"					"2500"
 		"BountyGoldMin"				"1500"
@@ -141,8 +142,8 @@
 		"VisionDaytimeRange"		"500"
 		"VisionNighttimeRange"		"500"
 
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1498,9 +1499,9 @@
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/kunkka/kunkka.vmdl"
-		"ModelScale"				"1"
+		"ModelScale"				"1.1"
 		"Level"						"10"
-		"HealthBarOffset"			"140"
+		"HealthBarOffset"			"150"
 		"HasInventory"				"0"
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
@@ -1510,7 +1511,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test01"
-		"Ability2"					"intro_rotate_christmas"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1569,13 +1570,13 @@
 		{
 			"AttachWearables"
 				{
+					"Wearable1" { "ItemDef" "6487" }
+					"Wearable1" { "ItemDef" "4016" }
+					"Wearable1" { "ItemDef" "6179" }
 					"Wearable1" { "ItemDef" "5470" }
-					"Wearable1" { "ItemDef" "4119" }
-					"Wearable1" { "ItemDef" "4121" }
-					"Wearable1" { "ItemDef" "4033" }
 					"Wearable1" { "ItemDef" "10" }
 					"Wearable1" { "ItemDef" "357" }
-					"Wearable1" { "ItemDef" "5254" }
+					"Wearable1" { "ItemDef" "5321" }
  				
 				}
 		}	
@@ -1589,7 +1590,7 @@
 		"Model"						"models/heroes/crystal_maiden/crystal_maiden.vmdl"
 		"ModelScale"				"1"
 		"Level"						"10"
-		"HealthBarOffset"			"140"
+		"HealthBarOffset"			"150"
 		"HasInventory"				"0"
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
@@ -1598,8 +1599,8 @@
 		
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  "quest_test_woman01"
-		"Ability2"					"intro_rotate_christmas"
+		"Ability1"					  "quest_test_crystal"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1677,7 +1678,7 @@
 		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
 		"ModelScale"				"1"
 		"Level"						"10"
-		"HealthBarOffset"			"140"
+		"HealthBarOffset"			"150"
 		"HasInventory"				"0"
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
@@ -1690,7 +1691,7 @@
 		"Ability2"					"quest_brodyaga_test02"
 		"Ability3"					"quest_brodyaga_test04"
 		"Ability4"					"quest_brodyaga_test03"
-	    "Ability5"	             	"intro_rotate_christmas"
+	    "Ability5"	             	""
 
 		
 		// Armor
@@ -1753,7 +1754,273 @@
 				}
 		}	
 	}
+
+			"npc_jitel_4"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/lina/lina.vmdl"
+		"ModelScale"				"1"
+		"Level"						"10"
+		"HealthBarOffset"			"150"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+		"IsNeutralUnitType"         "1"
+		"CanBeDominated"            "0"
+ 		"IsAncient"                 "1"
+        "UnitLabel"         "healing_ward"		
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  "quest_test_lina"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+        "ProjectileModel"     "" // Particle system model for projectile.
+        "ProjectileSpeed"     "900"   // Speed of projectile.		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+ 
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"
+				{
+ 
+ 
+					"Wearable1" { "ItemDef" "6707" }
+					"Wearable1" { "ItemDef" "6339" }	
+					"Wearable1" { "ItemDef" "6598" }
+					"Wearable1" { "ItemDef" "5940" }
+				}
+				
+				
+		}	
+	}
 	
+			"npc_jitel_5"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/omniknight/omniknight.vmdl"
+		"ModelScale"				"1"
+		"Level"						"5"
+		"HealthBarOffset"			"150"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+		"IsNeutralUnitType"         "1"
+		"CanBeDominated"            "0"
+ 		"IsAncient"                 "1"
+        "UnitLabel"         "healing_ward"		
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  "quest_test_old_men"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"
+				{
+ 
+					"Wearable1" { "ItemDef" "45" }
+					"Wearable1" { "ItemDef" "46" }
+					"Wearable1" { "ItemDef" "7093" }	
+ 
+				}
+				
+				
+		}	
+	}
+
+
+			"npc_jitel_6"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/dragon_knight_persona/dk_persona_base.vmdl"
+		"ModelScale"				"0.75"
+		"Level"						"5"
+		"HealthBarOffset"			"150"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+		"IsNeutralUnitType"         "1"
+		"CanBeDominated"            "0"
+ 		"IsAncient"                 "1"
+        "UnitLabel"         "healing_ward"		
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  "quest_test_david"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"
+		"StatusHealthRegen"			"50"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"
+				{
+ 
+					"Wearable1" { "ItemDef" "762" }
+					"Wearable1" { "ItemDef" "763" }	
+ 
+				}
+				
+				
+		}	
+	}
+
+
 		"npc_dota_campfire_quest"
 	{
 		// General
@@ -2063,6 +2330,31 @@
 		"VisionNighttimeRange"		"600"		// Range of vision at night time.
 	}	
 	
+ 		"npc_toxin_sign"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_mines"
+		"Model"						"models/items/techies/ti8_techies_subterranean_sapper_squad_sign/ti8_techies_subterranean_sapper_squad_sign.vmdl"
+ 
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+
+		"BountyXP" "0" // Experience earn.
+		"BountyGoldMin" "0" // Gold earned min.
+		"BountyGoldMax" "120" // Gold earned max.
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+
+		"MinimapIconSize"           "1"
+		"RingRadius"				"10"
+		"HealthBarOffset"			"20000"
+
+	}
+
+
 	//============================================================================================================
 	// New Year
 	//============================================================================================================

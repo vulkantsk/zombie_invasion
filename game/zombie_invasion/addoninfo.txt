@@ -6,7 +6,7 @@
 	"HeroGuidesSupported" "1"
 	"invasion_refresh"
 	{
-					"MaxPlayers"                    "4"
+					"MaxPlayers"                    "5"
 	}
  
 

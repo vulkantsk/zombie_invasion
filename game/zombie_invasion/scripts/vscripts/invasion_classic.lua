@@ -38,7 +38,7 @@ function InvasionMode:InvasionMap()
      
   
 	
-	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 4 )
+	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
 	GameRules:SetSameHeroSelectionEnabled(false)
@@ -369,15 +369,15 @@ function InvasionMode:NightTimer(time)
 				InvasionMode:ZombieNight1()
 			elseif currentNight == 2 then
 				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.5)
+				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight2()  
 			elseif currentNight == 3 then
 				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.5)
+				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight3()  
 			elseif currentNight == 4 then
 				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.5)
+				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight4()  
 				
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
@@ -404,45 +404,11 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
- --[[
---5 минута, 1я ночь
-	Timers:CreateTimer(300,function()
-        InvasionMode:ZombieNight1()  
-		EmitGlobalSound("Invasion.Night")
-	return nil
-	end)
+ 	
+ 
+ 
+ 
 
-
---15 минута, 2я ночь
-	Timers:CreateTimer(900,function()
-	  local putin = Entities:FindByName(nil, 'NPC_base')
-	 UpgradeUnitStats(putin, 1.5)
-	    InvasionMode:ZombieNight2()  
-		EmitGlobalSound("invasion.Night")
-		return nil
-	end)
-
---25 минута, 3я ночь
-	Timers:CreateTimer(1500,function()
-	 local putin = Entities:FindByName(nil, 'NPC_base')
-	 UpgradeUnitStats(putin, 1.5)
-	    InvasionMode:ZombieNight3()  
-		EmitGlobalSound("invasion.Night")
-		return nil
-	end)
-	
-	Timers:CreateTimer(2100,function()
-	 local putin = Entities:FindByName(nil, 'NPC_base')
-	 UpgradeUnitStats(putin, 1.5)
-	    InvasionMode:ZombieNight4()  
-		EmitGlobalSound("invasion.Night")
-		return nil
-	end)
-
- 	Timers:CreateTimer(2400,function()
-         InvasionMode:UsuallyEnd() 
-	end)
-	--]]
 end
 
 function InvasionMode:UsuallyEnd()  
@@ -583,9 +549,6 @@ end
 		GameRules:SendCustomMessage('<font color="#58ACFA">PROTOCOL "The end of the world" WAS STARTED</font>', 0, 0)
 	end)
  
-	
- 
- 
 end
 
 
@@ -661,8 +624,20 @@ function InvasionMode:ZombieNight1()
             end
 		 self:SpawnZombie("npc_undying",1)
 	end)
-	
+
+	Timers:CreateTimer(225,function()
+		local zombie_boss_1 =  RandomInt(1,2)
+		if zombie_boss_1 == 1 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_half_zombie",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
+		elseif zombie_boss_1 == 2 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_big_zombie",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_big_zombie", 1)
+	     end
+	end) 
+
  
+  
  
 end
  
@@ -723,8 +698,9 @@ end
 		 self:SpawnZombie("npc_undying_2",1)
 	end)
 	
-	Timers:CreateTimer(260,function()
-		 self:SpawnFlash("npc_flash_golem")
+	Timers:CreateTimer(225,function()
+		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_suicide", 1)
 	end) 
 	
  
@@ -979,6 +955,18 @@ function InvasionMode:SpawnGhost(unit_name, unit_count)
 	end
 end
 
+function InvasionMode:SpawnBoss(unit_name, unit_count)
+ 
+
+	for i=1, unit_count do
+		local point =  Entities:FindByName( nil, "golem_spawner"):GetAbsOrigin()
+		local unit = CreateUnitByName(unit_name, point, true, nil, nil, DOTA_TEAM_BADGUYS)
+ 	unit:SetForwardVector(RandomVector(1))
+	end
+end
+ 
+
+
 --спавны
 function InvasionMode:InvasionSpawnMoobs()
 	local point = nil
@@ -1013,12 +1001,9 @@ function InvasionMode:InvasionSpawnMoobs()
 	unit.respawn = false	
 	unit:SetForwardVector(RandomVector(1))
 
-	point = Entities:FindByName( nil, "boss_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_boss_mutant", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-
-
+ 
+		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
+		--  InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
 end
 
  
@@ -1111,18 +1096,6 @@ function InvasionMode:spawn_tombs_4()
 	unit:SetForwardVector(RandomVector(1))
 end	
 
- function InvasionMode:spawnsvini() -- Вызывание свина 
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-
-
-	--bosses
-	point = Entities:FindByName( nil, "boss_spawner_3"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_boss_pig", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
 
  function InvasionMode:spawngulya() -- Вызывание свина 
 	local point = nil  -- отвечает за то, где появиться свинья
@@ -1139,7 +1112,7 @@ end
  
 
 function GiveGoldPlayers( gold )
-	for index=0 ,4 do
+	for index=0 ,5 do
 		if PlayerResource:HasSelectedHero(index) then
 			local player = PlayerResource:GetPlayer(index)
 			local hero = PlayerResource:GetSelectedHeroEntity(index)
@@ -1489,23 +1462,8 @@ end
 if killedEntity:GetUnitName() == "npc_classic_pig" then
  
 pig_count = pig_count+1
-    if pig_count == 30 then
-	    GameRules:SendCustomMessage("#big_bo_1",0,0)
-	end
-    if pig_count == 60 then
-	    GameRules:SendCustomMessage("#big_bo_2",0,0)
-	end
-    if pig_count == 80 then
-	    GameRules:SendCustomMessage("#big_bo_3",0,0)
-	end
-    if pig_count == 115 then
-	    GameRules:SendCustomMessage("#big_bo_4",0,0)
-	end
-    if pig_count == 120 then
-	    
-	        InvasionMode:spawnsvini()
-	        EmitGlobalSound("Invasion.HommerWin")
-	 end
+ 
+ 
     if pig_count == 650 then		 
 	        InvasionMode:spawngulya()		      
 	        EmitGlobalSound("vurdalak")		
@@ -1533,14 +1491,6 @@ end
  
 
 end
- 
-function InvasionMode:CreateDrop (itemName, pos)
-   local newItem = CreateItem(itemName, nil, nil)
-   newItem:SetPurchaseTime(0)
-   CreateItemOnPositionSync(pos, newItem)
-   newItem:LaunchLoot(false, 300, 0.75, pos + RandomVector(RandomFloat(50, 350)))
-end
-
  
 
 function InvasionMode:ThemeMusic()
@@ -1707,7 +1657,7 @@ end
 	    local midle_music = music[1]
 	    local midle_music_len = Sounds:GetSoundDuration(music[1])
 	    local available_music = {}
-
+ 
 	--    local time_until_end = 600 - GameRules:GetTimeOfDay()
 	    for _,sound in pairs(music) do
 	    	local music_len = Sounds:GetSoundDuration(sound)
@@ -1736,6 +1686,7 @@ end
 	    		end
 	    	end
 	    	current_music = available_music[RandomInt(1, #available_music)]
+
 	    else
 	    	return time_until_end+1
 	    end
@@ -1746,6 +1697,7 @@ end
  
  
 	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
+ 
 	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
 	    last_music = current_music 
 

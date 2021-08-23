@@ -52,7 +52,7 @@ end
 ------------------------------------------------------------
 
 modifier_quest_template = class({
-    IsHidden                 = function(self) return false end,
+    IsHidden                 = function(self) return true end,
     IsPurgable                 = function(self) return false end,
     IsDebuff                 = function(self) return false end,
     IsBuff                  = function(self) return true end,
@@ -103,7 +103,7 @@ function modifier_quest_template:OnIntervalThink()
     local heroes = FindUnitsInRadius(parent:GetTeamNumber(),
                                     parent:GetAbsOrigin(),
                                     nil,
-                                    350,
+                                    180,
                                     DOTA_UNIT_TARGET_TEAM_BOTH,
                                     DOTA_UNIT_TARGET_HERO,
                                     DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NO_INVIS,

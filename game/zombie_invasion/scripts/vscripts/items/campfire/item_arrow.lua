@@ -1,124 +1,10 @@
 
-LinkLuaModifier( "modifier_item_arrow", "items/campfire/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
+ 
 LinkLuaModifier( "modifier_item_arrow_fire", "items/campfire/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_campfire_quest", "items/campfire/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
+ 
 
-item_zombie_skin = class({})
-
-
-function item_zombie_skin:GetIntrinsicModifierName()
-	return "modifier_item_arrow"
-end
-item_arrow_full = class({})
-
-function item_arrow_full:GetIntrinsicModifierName()
-	return "modifier_item_arrow"
-end
-
-item_arrow_fire = class({})
-
-function item_arrow_fire:GetIntrinsicModifierName()
-	return "modifier_item_arrow"
-end
-
-function item_arrow_fire:GetAOERadius()
-	return self:GetSpecialValueFor("radius")
-end
-
-function item_arrow_fire:OnSpellStart()
-	local point = self:GetCursorPosition()
---[[
-	local dummy = CreateUnitByName("npc_dota_thinker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
-	dummy:AddNewModifier(self:GetCaster(), self, "modifier_kill", {duration = 3})
-
-	local info = {
-		EffectName = "particles/units/heroes/hero_huskar/huskar_burning_spear.vpcf",
-		Ability = self,
-		iMoveSpeed = 800,
-		Source = self:GetCaster(),
-		Target = dummy,
-		iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_ATTACK_2
-	}
-
-	ProjectileManager:CreateTrackingProjectile( info )
-]]
-	local caster = self:GetCaster()
-	local radius = self:GetSpecialValueFor("radius")
-	local duration = self:GetSpecialValueFor("duration")
-
-	local enemies = FindUnitsInRadius(caster:GetTeam(), 
-									point, 
-									caster, 
-									radius, 
-									DOTA_UNIT_TARGET_TEAM_BOTH, 
-									DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO, 
-									DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 
-									FIND_ANY_ORDER, false)
-	
-	for i=1,#enemies do
-		EmitSoundOn( "Hero_Huskar.Burning_Spear", enemy )
-		local enemy = enemies[i]
-		DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, nil, ability)
-		enemy:AddNewModifier(caster, self, "modifier_item_arrow_fire", {duration = duration})
-			
-	end
-end
-
-function DealDamage(source, target, damage, dType, flags, ability)
-    local dTable = {
-        victim = target,
-        attacker = source,
-        damage = damage,
-        damage_type = dType,
-        damage_flags = flags,
-        ability = ability
-    }
-    ApplyDamage(dTable)
-end
-
-
-function item_arrow_fire:OnProjectileHit(hTarget, vLocation)
-	if hTarget ~= nil and ( not hTarget:TriggerSpellAbsorb( self ) )  then
-		local caster = self:GetCaster()
-		local radius = self:GetSpecialValueFor("radius")
-		local duration = self:GetSpecialValueFor("duration")
-
-		EmitSoundOn( "Hero_Huskar.Burning_Spear", hTarget )
-		local enemies = FindUnitsInRadius(caster:GetTeam(), 
-										hTarget:GetAbsOrigin(), 
-										nil, 
-										radius, 
-										DOTA_UNIT_TARGET_TEAM_BOTH, 
-										DOTA_UNIT_TARGET_BASIC, 
-										DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 
-										FIND_ANY_ORDER, false)
-		
-		for i=1,#enemies do
-			local enemy = enemies[i]
-			DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, nil, ability)
-			enemy:AddNewModifier(caster, self, "modifier_item_arrow_fire", {duration = duration})
-				
-		end
-	end
- end 
---------------------------------------------------------------------------------
-
-modifier_item_arrow = class({
-	IsHidden 				= function(self) return true end,
-	IsPurgable 				= function(self) return false end,
-	IsDebuff 				= function(self) return false end,
-	IsBuff                  = function(self) return true end,
-	RemoveOnDeath 			= function(self) return true end,
-	DeclareFunctions		= function(self) return 
-		{
-			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-		} end,
-})
-
-function modifier_item_arrow:GetModifierPreAttack_BonusDamage()
-	return self:GetAbility():GetSpecialValueFor("physical_armor_bonus")
-end
-
+ 
 modifier_item_arrow_fire = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
@@ -183,7 +69,7 @@ function modifier_campfire_quest:OnIntervalThink()
 	local ability = self:GetAbility()
 	local radius = ability:GetSpecialValueFor("radius")
 	local duration = ability:GetSpecialValueFor("duration")
-	
+	 
 	local units = FindUnitsInRadius(caster:GetTeam(), 
 									caster:GetAbsOrigin(), 
 									nil, 
@@ -201,83 +87,139 @@ function modifier_campfire_quest:OnIntervalThink()
 		local item2 = nil
 		local item3 = nil
 		local item4 = nil
-		local index = 1
-		local pindex = 1
-		local sindex = 1
+		local item5 = nil
+		local item6 = nil
+		local item7 = nil
+		local item8 = nil
 
-		if unit:IsRealHero() then
+ 
+ 
 			for k=0,9 do
 				local item = unit:GetItemInSlot(k)
+				local item_2 = unit:GetItemInSlot(k)
+				local item_3 = unit:GetItemInSlot(k)
+				local item_4 = unit:GetItemInSlot(k)
 
+				local item_5 = unit:GetItemInSlot(k)
+				local item_6 = unit:GetItemInSlot(k)
+				local item_7 = unit:GetItemInSlot(k)	
+				local item_8 = unit:GetItemInSlot(k)								
+                if item_2 then 
+					local item_name = item_2:GetName()
+					if item_name == "item_testo" then 
+                        item2 = item_2
+ 
+                    end
+				end
 
 				if item then
  
 					local item_name = item:GetName()
+					if item_name == "item_trash" then 
+                        item1 = item
  
-
-					if item_name == "item_tvorog" or item_name == "item_testo" or item_name == "item_corica_2" or item_name == "item_saxar" then
---						print("find item = "..item_name)
-						if index == 1 then
-							item1 = item
-							index = index + 1
-						elseif index == 2 then
-							item2 = item
-							index = index + 1
-						elseif index == 3 then
-							item3 = item
-							index = index + 1
-						elseif index == 4 then
-							item4 = item
-							index = index + 1
-						end
-						if index == 5 then
-							local newItem = CreateItem( "item_pirog", nil, nil )
-							CreateItemOnPositionSync( caster:GetAbsOrigin(), newItem )				
-							unit:RemoveItem(item1)	
-							unit:RemoveItem(item2)	
-							unit:RemoveItem(item3)	
-							unit:RemoveItem(item4)	
-						end
-					end
-					
-					if item_name == "item_pirog_dps" or item_name == "item_undying_heart"  then
---						print("find item = "..item_name)
-						if pindex == 1 then
-							item1 = item
-							pindex = pindex + 1
-						elseif pindex == 2 then
-							item2 = item
-							pindex = pindex + 1
-						end
-						if pindex == 3 then
-							local newItem = CreateItem( "item_pirog_tank", nil, nil )
-							CreateItemOnPositionSync( caster:GetAbsOrigin(), newItem )				
-							unit:RemoveItem(item1)	
-							unit:RemoveItem(item2)	
-						end
-					end
-					
-					if item_name == "item_pirog_dps" or item_name == "item_magic_heart"  then
---						print("find item = "..item_name)
-						if sindex == 1 then
-							item1 = item
-							sindex = sindex + 1
-						elseif sindex == 2 then
-							item2 = item
-							sindex = sindex + 1
-						end
-						if sindex == 3 then
-							local newItem = CreateItem( "item_pirog_magic", nil, nil )
-							CreateItemOnPositionSync( caster:GetAbsOrigin(), newItem )				
-							unit:RemoveItem(item1)	
-							unit:RemoveItem(item2)	
-						end
-					end
+                    end
 				end
-				
+
+                if item_3 then 
+					local item_name = item_3:GetName()
+					if item_name == "item_tvorog" then 
+                        item3 = item_3
+ 
+                    end
+				end
+
+                if item_4 then 
+					local item_name = item_4:GetName()
+					if item_name == "item_totem_upgrade" then 
+                            item4 = item_4
+                         end
+		      end
+
+                if item_5 then 
+					local item_name = item_5:GetName()
+					if item_name == "item_pirog" then 
+                            item5 = item_5
+                         end
+		      end
+
+                if item_6 then 
+					local item_name = item_6:GetName()
+					if item_name == "item_magic_heart" then 
+                            item6 = item_6
+                         end
+		      end
+
+                if item_7 then 
+					local item_name = item_7:GetName()
+					if item_name == "item_undying_heart" then 
+                            item7 = item_7
+                         end
+		      end
+
+                if item_8 then 
+					local item_name = item_8:GetName()
+					if item_name == "item_dps_heart" then 
+                            item8 = item_8
+                         end
+		      end		      		      
 			end	
-		end				
+	
+	     if unit:HasItemInInventory("item_trash" ) and unit:HasItemInInventory("item_testo" ) and unit:HasItemInInventory("item_totem_upgrade" ) and unit:HasItemInInventory("item_tvorog" ) then 
+  
+    local newItem = CreateItem("item_pirog", nil, nil)  
+
+         newItem:SetPurchaseTime(0)
+         CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+
+         unit:RemoveItem(item4)
+        unit:RemoveItem(item3) 
+         unit:RemoveItem(item2)
+        unit:RemoveItem(item1)
+        end
+         
+         if unit:HasItemInInventory("item_pirog" ) and unit:HasItemInInventory("item_undying_heart" ) then 
+
+    local newItem = CreateItem("item_pirog_tank", nil, nil) 
+
+         newItem:SetPurchaseTime(0)
+         CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+
+               unit:RemoveItem(item5)
+               unit:RemoveItem(item7) 
+
+         end
+  
+         if unit:HasItemInInventory("item_pirog" ) and unit:HasItemInInventory("item_magic_heart" ) then 
+         	
+    local newItem = CreateItem("item_pirog_magic", nil, nil) 
+
+         newItem:SetPurchaseTime(0)
+         CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+
+               unit:RemoveItem(item5)
+               unit:RemoveItem(item6) 
+
+         end
+
+         if unit:HasItemInInventory("item_pirog" ) and unit:HasItemInInventory("item_dps_heart" ) then 
+         	
+    local newItem = CreateItem("item_pirog_dps", nil, nil) 
+
+         newItem:SetPurchaseTime(0)
+         CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+
+               unit:RemoveItem(item5)
+               unit:RemoveItem(item8) 
+
+         end
+
 	end	
 end
+
 
 

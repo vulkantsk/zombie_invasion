@@ -6,15 +6,20 @@ end
 ItemDrop.item_drop = {
 --		{items = {"item_branches"}, chance = 5, duration = 5, limit = 3, units = {} },
 		{items = {"item_meat"}, chance = 35, duration = 300, units = {"npc_classic_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_meat"}, chance = 100, duration = 300, units = {"npc_classic_big_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_meat"}, chance = 53, duration = 300, units = {"npc_classic_big_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_milk"}, chance = 35, duration = 300, units = {"npc_classic_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_zombie_skin"}, chance = 1,  units = {"npc_classic_half_zombie"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_milk"}, chance = 53, duration = 300, units = {"npc_classic_big_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_zombie_skin"}, chance = 15, duration = 300, units = {"npc_classic_half_zombie"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_zombie_skin"}, chance = 23, duration = 300,  units = {"npc_classic_big_half_zombie"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_eggs"}, chance = 20, duration = 300, units = {"npc_classic_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_eggs"}, chance = 35, duration = 300, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_bone"}, chance = 20, duration = 300, units = {"npc_classic_skelet"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_bone"}, chance = 100, duration = 300, units = {"npc_classic_skeleton_king"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		--{items = {"item_flask"}, chance = 25, duration = 10},-- global drop 25%   --имхо вообще не рулит...залочивает слот. выкинь-подбери - нееее!!! так не пойдет!!!
-		{items = {"item_corica"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
+		{items = {"item_eggs"}, chance = 30, duration = 300, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_necr_heart"}, chance = 20, duration = 300, units = {"npc_classic_necr"}}, 
+		{items = {"item_necr_heart"}, chance = 30, duration = 300, units = {"npc_classic_big_necr"}}, 		 
+		{items = {"item_ess_pudge"}, chance = 13, limit = 4, units = {"npc_classic_pudge", "npc_classic_big_pudge"}}, 
+ 	
+ 
+
+		{items = {"item_magic_heart"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold_pig"}, units ={"npc_boss_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_big_meat"}, units ={"npc_boss_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов
@@ -22,11 +27,10 @@ ItemDrop.item_drop = {
 		{items = {"item_dead_golova"}, units ={"npc_boss_dead_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_undying_heart"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-        
+		{items = {"item_tres_jo"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов       
  
+  
  
-		{items = {"item_saxar_svekla"}, units ={"npc_dota_bochok_saxara"}},
-		{items = {"item_magic_heart"}, units ={"npc_dota_bochok_saxara"}},
 		--все что ниже нахимичил ЕНОТ. А енотов бить нельзя кста!!!=)
 --		{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
  --	{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },

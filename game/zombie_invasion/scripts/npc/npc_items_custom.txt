@@ -1992,44 +1992,7 @@
 			}		
 		}	
 	}
-	
-	"item_saxar"  //A dummy item that is used to take up item slots in the SwapToItem() Lua function.
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
- 
- 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_saxar.lua"
-		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
- 
-		"AbilityTextureName"			"saxar"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"	
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-
-		// Ability
-		//-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "8"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemQuality"					"artifact"	
-		"ItemCost"                      "0" 
-		"ItemDroppable"					"1" 
-		"ItemPurchasable"				"0" 
-		"ItemSellable"					"0" 
-		"ItemKillable"					"0" 
-		"ItemInitialCharges"			"0"	
-		"ItemStackable" 				"0"
-		"ItemPermanent" 				"0"	
-		"SideShop" 						"0"
-		
- 
-		
-	}
+	 
 	
 		"item_bone"
 	{
@@ -2135,6 +2098,183 @@
 		"SideShop" 						"0"
 	}
 	
+
+	"item_milk"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_milk.lua"
+		"AbilityTextureName"			"custom_folder/milk" 
+		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
+		"Model"							"models/props_gameplay/bottle_mango001.vmdl"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"200"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+	} 
+
+
+	"item_necr_heart"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"Model"							"models/props_gameplay/heart001.vmdl"
+		"AbilityTextureName"			"Creep_items/necr_heart"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "260" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"15"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_damage"			"12"
+ 
+			}	
+        }
+	}
+	
+
+
+
+		"item_zombie_skin"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"skin_zombie"
+
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemCost"						"240"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"armor_bonus"			"3"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"health_bonus"			"125"
+ 
+			}				
+		}
+	   "Modifiers"
+        {
+            "modifier_item_shield"
+            {
+                "Passive"           "1"
+                "IsHidden"          "1"
+			
+ 
+               
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
+					 "MODIFIER_PROPERTY_HEALTH_BONUS"         "%health_bonus"
+                }
+            }
+        }
+	}
+
+	"item_ess_pudge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_ess_pudge.lua"
+ 
+		"AbilityTextureName"			"quest_drop/pudge_ess"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_atr"			"8"
+ 
+			}	
+ 
+        }
+	}
+	
+
+
 		"item_lifesteal_2"
 	{
 		// General
@@ -2431,69 +2571,7 @@
 		"ItemPermanent" 				"0"	
 		"SideShop" 						"0"
 	}
-	
-		"item_corica"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_corica.lua"
-		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
  
-		"AbilityTextureName"			"corica"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"	
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-
-		// Ability
-		//-------------------------------------------------------------------------------------------------------------
- 
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemQuality"					"artifact"	
-		"ItemCost"                      "1" 
-		"ItemDroppable"					"1" 
-		"ItemPurchasable"				"0" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
-		"ItemInitialCharges"			"0"	
-		"ItemStackable" 				"0"
-		"ItemPermanent" 				"0"	
-		"SideShop" 						"0"
-	}
-	
-		"item_corica_2"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_datadriven"
- 
- 
-		"AbilityTextureName"			"corica_2"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
- 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
- 
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemQuality"					"artifact"	
-		"ItemCost"                      "1" 
-		"ItemDroppable"					"1" 
-		"ItemPurchasable"				"0" 
-		"ItemSellable"					"0" 
-		"ItemKillable"					"1" 
-		"ItemInitialCharges"			"0"	
-		"ItemStackable" 				"0"
-		"ItemPermanent" 				"0"	
-		"SideShop" 						"0"
-	}
 	
 "item_eggs"
 	{
@@ -2660,8 +2738,11 @@
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_pirog_dps"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"pies/pie_dps" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"pie_dps" 
 
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
@@ -2695,29 +2776,18 @@
 				"bonus_model"		"20"
 			}				
 		}
-		"Modifiers"
-		{
-			"modifier_name"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-	
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT" "%base_atack"
-				    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%bonus_agility" 
-					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE" "%bonus_dps"
-				}
-			}
-		}
+ 
 	}
 	
  	"item_pirog_tank"
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_pirog_tank"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"pies/pie_tank" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"pie_tank" 
 
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
@@ -2778,8 +2848,11 @@
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_pirog_magic"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"pies/pie_magic" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"pie_magic" 
 
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
@@ -2835,43 +2908,7 @@
 			}
 		}
 	}
-	
-	"item_milk"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_milk.lua"
-		"AbilityTextureName"			"custom_folder/milk" 
-		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
-		"Model"							"models/props_gameplay/bottle_mango001.vmdl"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-
-		// Ability
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"			"200"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemQuality"					"artifact"	
-		"ItemCost"                      "1" 
-		"ItemDroppable"					"1" 
-		"ItemPurchasable"				"0" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
-		"ItemInitialCharges"			"1"	
-		"ItemStackable" 				"1"
-		"ItemPermanent" 				"0"	
-		"SideShop" 						"0"
-	} 
-
+	 
 	"item_bag_of_gold"
 	{
 		// General
@@ -3896,6 +3933,57 @@
 		}
 	}
 	
+	"item_dps_heart"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"  
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"		 			
+		"AbilityTextureName"			"dps_heart" 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"  
+		"ItemQuality"					"artifact"	
+		"ItemAliases"					"undying heart"
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_bonus"			"85"
+			"CalculateSpellDamageTooltip" "0"
+			}
+
+ 
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_dps_heart_bonus"
+			{
+				"Passive" "1"  
+				"IsHidden" "1"  
+				"TextureName" "item_bloodstone"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" 		"%damage_bonus"
+ 
+				}
+			}
+
+ 
+
+		}
+	}
 
 	"item_magic_heart"
 	{
@@ -3908,13 +3996,13 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"  
-		"ItemQuality"					"common"	
+		"ItemQuality"					"artifact"	
 		"ItemAliases"					"undying heart"
-		"ItemCost"                      "1" 
+		"ItemCost"                      "0" 
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
 
 		"AbilitySpecial"
 		{
@@ -3980,13 +4068,13 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"  
-		"ItemQuality"					"common"	
+		"ItemQuality"					"artifact"	
 		"ItemAliases"					"undying heart"
-		"ItemCost"                      "1" 
+		"ItemCost"                      "0" 
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
+		"ItemSellable"					 "0" 
+		"ItemKillable"					"0" 
 
 		"AbilitySpecial"
 		{
@@ -4041,12 +4129,230 @@
 	}
  	
 
+
+ 	"item_gril"
+	{
+		"BaseClass"						"item_lua"											
+		"ScriptFile"					"items/item_gril"
+		"AbilityTextureName"			"grill" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityChannelTime"			"1.5"
+
+		"AbilityCooldown"				"35.0"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+ 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_atribute"		"4"
+			}						
+ 												
+		}
+ 
+	}
+
+ 	"item_shovel"
+	{
+		"BaseClass"						"item_lua"											
+		"ScriptFile"					"items/item_shovel"
+		"AbilityTextureName"			"item_trusty_shovel" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityChannelTime"			"1"
+		"AbilityCastAnimation"			"ACT_DOTA_GENERIC_CHANNEL_1"
+				"Model"							"models/props_gameplay/neutral_box.vmdl"
+				
+		"AbilityCooldown"				"47.5"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+ 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"gold_min"		"145"
+			}						
+ 			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"gold_max"		"325"
+			}						
+ 
+  			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"		"675"
+			}						 										
+		}
+ 
+	}
+
+ 	"item_rom"
+	{
+		"BaseClass"						"item_lua"											
+		"ScriptFile"					"items/item_rom"
+		"AbilityTextureName"			"drink_pirate" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCastAnimation"			"ACT_DOTA_GENERIC_CHANNEL_1"
+				"Model"							"models/props_gameplay/neutral_box.vmdl"
+
+		"AbilityCastPoint"				"0.15"
+
+		"AbilityCooldown"				"55.0"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+ 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"buff_duration"		"15"
+			}						
+ 			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"		"165"
+												"CalculateSpellDamageTooltip" "0"
+			}						
+ 
+  			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_speed"		"12"
+			}		
+  			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_attack_time"		"1.3"
+			}		
+  			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_anti_damage"		"15"
+												"CalculateSpellDamageTooltip" "0"
+			}		
+  			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_spell_damage"		"45"
+												"CalculateSpellDamageTooltip" "0"
+			}						 										
+  			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"strenght"		"18"
+			}
+		}
+ 
+	}
+
+
+ 	"item_truba"
+	{
+		"BaseClass"						"item_lua"											
+		"ScriptFile"					"items/item_truba"
+		"AbilityTextureName"			"truba" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCastAnimation"			"ACT_DOTA_GENERIC_CHANNEL_1"
+				"Model"							"models/props_gameplay/neutral_box.vmdl"
+
+		"AbilityCastPoint"				"0.1"
+
+		"AbilityCooldown"				"80.0"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+ 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"buff_duration"		"12"
+			}						
+ 			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_attac_speed"		"30"
+								 
+			}						
+ 
+  			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_speed"		"18"
+			}		
+  			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_regen"		"8.5"
+			}			
+  			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"		"4"
+					 						 
+			}						 										
+  			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_stat"		"14"
+			}
+  			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"buff_radius"		"1100"
+			}
+		}
+ 
+	}
+
+		"item_tres_jo"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"quest_drop/amulet"
+
+		"ItemCost"						"5500"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					"artifact"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+	}
+
  	"item_tvorog"
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_tvorog"
 		"AbilityTextureName"			"tvorog" 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
@@ -4056,36 +4362,60 @@
 		"ItemPermanent"					"0"
 		"ItemKillable"					"1"
 		"IsTempestDoubleClonable"				"0"		
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_health"		"0"
-			}						
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_regen"		"0"
-			}												
-		}
-		"Modifiers"
-		{
-			"modifier_name"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-	
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_BONUS" "%bonus_health"
-				    "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "%bonus_regen" 
-				}
-			}
-		}
+ 
 	}
+
+                "item_totem_upgrade"
+    {       
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "totem"
+        "ItemStackable"                 "0"
+        "ItemKillable"                  "1"
+        "ItemSellable"                  "1"
+        "ItemDroppable"                 "1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+        "ItemPurchasable"               "0"
+        "ItemPermanent"                 "0"
+    }   
+
+		"item_testo"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"testo"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+	}
+
 	
+		"item_trash"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_urn_of_shadows"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+	}
+
+ 
+ 	
 		"item_pirog"
 	{
 		"BaseClass"						"item_datadriven"														
@@ -4291,166 +4621,9 @@
 		}
 	}
 	
-		"item_testo"
-	{
-		"BaseClass"						"item_datadriven"														
  
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"testo"
-
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
-		"ItemSellable"					"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"					"1"
-		"IsTempestDoubleClonable"				"0"		
-	}
-
- 
-	
-		"item_zombie_skin"
-	{
-		"BaseClass"						"item_datadriven"														
- 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"skin_zombie"
-
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
-		"ItemSellable"					"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"					"1"
-		"IsTempestDoubleClonable"				"0"		
-		
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"armor_bonus"			"7"
- 
-			}	
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"health_bonus"			"350"
- 
-			}				
-		}
-	   "Modifiers"
-        {
-            "modifier_item_shield"
-            {
-                "Passive"           "1"
-                "IsHidden"          "1"
-			
- 
-               
-                "Properties"
-                {
-                    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
-					 "MODIFIER_PROPERTY_HEALTH_BONUS"         "%health_bonus"
-                }
-            }
-        }
-	}
-	
-		"item_saxar_svekla"
-	{
-		"BaseClass"						"item_datadriven"														
- 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"svekla"
-
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
-		"ItemSellable"					"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"					"1"
-		"IsTempestDoubleClonable"				"0"		
-		
-		"AbilitySpecial"
-		{
- 
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"health_bonus"			"150"
- 
-			}				
-		}
-	   "Modifiers"
-        {
-            "modifier_item_shield"
-            {
-                "Passive"           "1"
-                "IsHidden"          "1"
-			
- 
-               
-                "Properties"
-                {
- 
-					 "MODIFIER_PROPERTY_HEALTH_BONUS"         "%health_bonus"
-                }
-            }
-        }
-	}
-	
-		"item_zombie_skin"
-	{
-		"BaseClass"						"item_datadriven"														
- 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"skin_zombie"
-
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
-		"ItemSellable"					"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"					"1"
-		"IsTempestDoubleClonable"				"0"		
-		
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"armor_bonus"			"7"
- 
-			}	
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"health_bonus"			"350"
- 
-			}				
-		}
-	   "Modifiers"
-        {
-            "modifier_item_shield"
-            {
-                "Passive"           "1"
-                "IsHidden"          "1"
-			
- 
-               
-                "Properties"
-                {
-                    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
-					 "MODIFIER_PROPERTY_HEALTH_BONUS"         "%health_bonus"
-                }
-            }
-        }
-	}
+	 
+	 
 	
 		"item_unknown_symbol"
 	{
@@ -4999,35 +5172,7 @@
 			}
 		}
 	}
-
-	"item_pudge_essence"
-	{
-		"BaseClass"                     "item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityTextureName"			"mask_of_madness_5"
-		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vmdl"
-		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
-
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"                  "1"
-		"ItemSellable"                  "0"
-		"ItemDroppable"                 "1"
-
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"		"abilities/hero_change.lua"
-				"Function"			"GiveNewHero"
-				"hero_name"			"npc_dota_hero_pudge"
-			}
-		}
-	}
+ 
 
 	"item_dickrapier"
 	{
@@ -6496,6 +6641,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"chain_damage_self"			"135"
+								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
 			{
@@ -6591,6 +6737,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"chain_damage_self"			"175"
+								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
 			{
@@ -9327,19 +9474,8 @@
 	}
 
 
-                "item_totem_upgrade"
-    {       
-        "BaseClass"                     "item_datadriven"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "totem"
-        "ItemStackable"                 "0"
-        "ItemKillable"                  "1"
-        "ItemSellable"                  "1"
-        "ItemDroppable"                 "1"
-        "ItemPurchasable"               "0"
-        "ItemPermanent"                 "0"
-    }   
 
+ 
     "item_recipe_bloodstone2"
     {
         "AbilityTextureName"                "recipe"                
@@ -10014,10 +10150,11 @@
 		}
 	}
 	
-	"item_up_ability_tower4"
+	"item_legendery_tom"
 	{
-		"BaseClass"             		"item_datadriven"
+		"BaseClass"             		"item_lua"
 		"AbilityTextureName"			"tower/abil"
+        "ScriptFile"                    "items/tower/item_legendery_tom"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
@@ -10033,27 +10170,22 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/tower/up_ability.lua"
-				"Function"		"add_ability_passive4"
-			}
-		}
+ 
 	}
 	
 	"item_up_hp_tower"
 	{
-		"BaseClass"             		"item_datadriven"
+		"BaseClass"             		"item_lua"
 		"AbilityTextureName"			"tower/hp"
+        "ScriptFile"                    "items/item_up_hp_tower"
+        "ItemPurchasable"               "0"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
 		"AbilityCastPoint"				"0"
 		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
 		"ItemDroppable" 				"1"
-		"ItemPurchasable" 				"1"
+		"ItemPurchasable" 				"0"
 		"ItemCost"						"3000"
 		"ItemSellable"					"0"
 		"ItemStackable"					"1"
@@ -10069,17 +10201,10 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"1100"
+				"health"			"1850"
 			}
 		}
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/tower/up_ability.lua"
-				"Function"		"up_hp"
-			}
-		}
+ 
 	}
 	
 	"item_up_dmg_tower"

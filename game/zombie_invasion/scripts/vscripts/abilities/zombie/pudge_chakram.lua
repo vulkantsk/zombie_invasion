@@ -32,7 +32,7 @@ function PudgeChakram( keys )
 	
 	for i=1,#enemies do
 		local enemy = enemies[i]
-		DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION, ability)
+		DealDamage(caster, enemy, damage, DAMAGE_TYPE_PURE, DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION, ability)
 --		local effect = "particles/units/heroes/hero_pudge/pudge_meathook_impact_droplets.vpcf"
 		local effect = "particles/units/heroes/hero_pudge/pudge_meathook_impact.vpcf"
 		local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, enemy)

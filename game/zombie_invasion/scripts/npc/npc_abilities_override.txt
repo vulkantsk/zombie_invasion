@@ -26,6 +26,11 @@
 	"item_hand_of_midas" "REMOVE"
 	"item_rapier" "REMOVE"
 	"item_heart" "REMOVE"
+	"item_urn_of_shadows" "REMOVE"
+	"item_blink" "REMOVE"
+	"item_arcane_blink" "REMOVE"
+	"item_swift_blink" "REMOVE"
+	"item_overwhelming_blink" "REMOVE"
 	//============================================================================================================
 	// items
 	//============================================================================================================
@@ -38,33 +43,7 @@
 	// Guardian Greaves
 	//=================================================================================================================
  
-
-	"item_overwhelming_blink"
-	{
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
-	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
-	}
-	"item_swift_blink"
-	{
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-			"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
-	}
-	"item_arcane_blink"
-	{
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-			"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
-	}
-		"item_blink"
-	{
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-			"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
-					"ItemCost"						"1000"
-	}
-
+ 
 
 	"item_ring_of_health"
 	{

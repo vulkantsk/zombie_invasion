@@ -71,6 +71,10 @@
 	   "ending_8"                                                  "<font color='#58ACFA'>Zombies more didn't go to the village .</font>"
 	   "ending_9"                                                  "<font color='#58ACFA'>But of course it for the next time)))</font>"
 
+	   "Game_notification_boss_spawn_big_zombie"				"<font color='#FF0000'>SUPER BIG ZOMBIE </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
+	   "Game_notification_boss_spawn_half_zombie"				"<font color='#FF0000'>SPINOGRYZ </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
+	   "Game_notification_boss_spawn_suicide"				" <font color='#FF0000'>HARMLESS </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
+
        // ******************** Messages Christmas ********************
        	   "christmas_1"                                                  "<font color='#deaa88'>The Celebration continues!</font>"
 	   "christmas_night_1"			                                    	"<font color='#fffacd'>You have a day to end your does  !</font>"	
@@ -90,19 +94,14 @@
 	    "npc_end_bear"	                                        "Virtus bear"
 	    "npc_test"	                                        	"test"
 
-	    "npc_dota_bochok_saxara"	                                        "Sugar box"
-		"npc_classic_pudge5"	                                            "Budge"
-		"npc_classic_pudge4"	                                            "Budge"
-		"npc_classic_pudge3"	                                            "Budge"
-		"npc_classic_pudge2"	                                            "Budge"
-		"npc_classic_pudge"		                                            "Budge"
 		"npc_classic_skeleton_king"		                                    "Skeleton king"
 		"npc_classic_skelet"		                                        "Skeleton4ik" 
-		"npc_stronger_chicken"	                                            "Chicken???"
-		"npc_classic_chicken"                                               "Chicken???"
 		"npc_jitel"                                                         "Kunnka"
 		"npc_jitel_2"                                                       "Crystal Maiden" 
 		"npc_jitel_3"                                                       "Tramp"
+	    "npc_jitel_4"                                                       "Lina"
+	    "npc_jitel_5"                                                       "Old men"
+	    "npc_jitel_6"                                                       "Deni"
 		"npc_boss_pig"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Strange Bo"   			
 		"npc_medas"                                                  		"Treasure"
@@ -110,31 +109,40 @@
 		"npc_base"                                                  		"Homer"
 
 		"npc_classic_pig"                                                  	"Pig"
+		"npc_classic_big_pig"                                                  	"Big Pig"
 		"npc_classic_sheep"                                                 "Sheep"
-		"npc_classic_half_zombie"                                           "Half Zombie"		
+		"npc_classic_big_sheep"                                                 "BigSheep"
+		"npc_classic_half_zombie"                                           "Half Zombie"	
+		"npc_classic_big_half_zombie"                                           "Big Half Zombie"	
+		"npc_stronger_chicken"	                                            "Chicken???"
+		"npc_classic_chicken"                                               "Chicken???"	
 		"npc_classic_zombie"                                                "Zombie"
 		"npc_classic_big_zombie"                                            "Big Zombie"
+		"npc_classic_necr"	                                                    "Necr"
+		"npc_classic_big_necr"	                                                    "Big Necr"
+		"npc_classic_pudge"		                                            "Pudge"
+		"npc_classic_big_pudge"		                                            "Big Pudge"
+        "npc_classic_grim"		                                            "Thing"
+        "npc_classic_big_grim"		                                            "Big Thing"
+
 		"npc_classic_ghoul"                                         		"Ghoul"
 		"npc_classic_ghost"                                         		"Ghost"
 
 		"npc_classic_wave_zombie"                                           "Zombie"
 		"npc_classic_wave_big_zombie"                                		"Big Zombie"
 		"npc_classic_wave_ghoul"                                     		"Ghoul"
-
-		"npc_classic_wave_ghoul"                                     		"Ghoul"
-
+        "npc_classic_wave_pudge"                                            "Mini Pudge" 
 		"npc_classic_wave_ghost"                                         		"Ghost"
 		"npc_classic_wave_ghost_2"                                     		"Ghost"
 		"npc_classic_wave_ghost_3"                                     		"Ghost"
 		"npc_classic_wave_ghost_boss"                                     		"Boss Ghost"
 		
-        "npc_classic_wave_pudge"                                            "Mini Budge"
+ 
 				
 		"npc_classic_witch"                                         		"Dead Witch"
 		"npc_boss_mutant"                                         			"Mutant"
 		
 		"npc_last_boss"                                                         "Scary zombie"
-		"npc_classic_necr"	                                                    "Necr"
 		"npc_tombstone_flash_1"                                                 "Tombstone"
 		"npc_tombstone_flash_2"                                                 "Tombstone"
 		"npc_tombstone_flash_3"                                                 "Tombstone"				
@@ -154,6 +162,11 @@
 		"npc_tombstone2"                                                	"Tombstone"
 		"npc_tombstone3"                                                	"Tombstone"
 		"npc_tombstone4"                                                	"Tombstone"
+
+		"npc_wave_boss_half_zombie"                                         			"Spinogryz"
+		"npc_wave_boss_big_zombie"                                         			"Super Big Zombie"
+		"npc_wave_boss_suicide"                                         		"Harmless"
+		"npc_wave_boss_undying"                                         		"Hungry"
 
 
 
@@ -289,12 +302,7 @@
 		"DOTA_Tooltip_Ability_item_hurricane_pike_range_duration"	""
 		"DOTA_Tooltip_Ability_item_hurricane_pike_cast_range_enemy"	""
 		"DOTA_Tooltip_Ability_item_hurricane_pike_max_attacks"	""
- 
-		"DOTA_Tooltip_Ability_item_undying_heart"						"Undying Heart"
-		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Still pulsating."
-		"DOTA_Tooltip_Ability_item_undying_heart_bonus_health_regen"	"%+$hp_regen"
-		"DOTA_Tooltip_Ability_item_undying_heart_physical_armor_bonus"	"ARMOR:"
-		
+ 	
 		"DOTA_Tooltip_Ability_item_dead_golova"						"<font color='#ff9900'> Head of Bo </font>"
 		"DOTA_Tooltip_Ability_item_dead_golova_Description"			"<h1>Mmmmmmm...</h1>It is head of Big Bo affected by corruption. Looks like Heart of tarrasque."
 		"DOTA_Tooltip_Ability_item_dead_golova_all_bonus"	"+$all"
@@ -306,12 +314,20 @@
 		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
 		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
 		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+MAX. HP"
-
-	    "DOTA_Tooltip_Ability_item_magic_heart"						"<font color='#ff0000'> Magic Heart </font>"
-		"DOTA_Tooltip_Ability_item_magic_heart_Description"			"Still pulsating.\n There are rumors, that if combinate it with the Dps pie then will be something..."
-		"DOTA_Tooltip_Ability_item_magic_heart_bonus_mana_regen"	"%+$mana_regen"
-		"DOTA_Tooltip_Ability_item_magic_heart_mana_bonus"	"MANA:"
  
+		"DOTA_Tooltip_Ability_item_undying_heart"						"<font color='#ff0000'> Undying Heart </font>"
+		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Still throbbing, however, mixing it with the pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+		"DOTA_Tooltip_Ability_item_undying_heart_bonus_health_regen"	"%+$hp_regen"
+		"DOTA_Tooltip_Ability_item_undying_heart_physical_armor_bonus"	"+$armor"
+	
+	    "DOTA_Tooltip_Ability_item_magic_heart"						"<font color='#ff0000'> Magic Heart </font>"
+		"DOTA_Tooltip_Ability_item_magic_heart_Description"			"Just a Dragon's heart, however, mixing it with a pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+		"DOTA_Tooltip_Ability_item_magic_heart_bonus_mana_regen"	"%+$mana_regen"
+		"DOTA_Tooltip_Ability_item_magic_heart_mana_bonus"	"+$mana:"
+  
+ 	    "DOTA_Tooltip_Ability_item_dps_heart"						"<font color='#ff0000'> What..??? </font>"
+		"DOTA_Tooltip_Ability_item_dps_heart_Description"			"An incomprehensible mixture of everything, however, mixing it with a pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+		"DOTA_Tooltip_Ability_item_dps_heart_damage_bonus"      	"+$damage"
 		
 		"DOTA_Tooltip_Ability_item_big_meat"						"Meat of Big Bo"
 		"DOTA_Tooltip_Ability_item_big_meat_Description"			"<h1>Active: Nam-nam </h1> Give you listed characteristics \n So big and fatty."
@@ -320,8 +336,9 @@
 
 		"DOTA_Tooltip_Ability_item_zombie_skin"						"Skin of zombie"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Description"			"So awful and... aghh."
-		"DOTA_Tooltip_Ability_item_zombie_skin_armor_bonus"	"ARMOR: "
-		"DOTA_Tooltip_Ability_item_zombie_skin_health_bonus"	"HEALTH: "
+		"DOTA_Tooltip_Ability_item_zombie_skin_Note0"			"Health and Armor are not depending from number of skins."
+		"DOTA_Tooltip_Ability_item_zombie_skin_armor_bonus"	"+$armor"
+		"DOTA_Tooltip_Ability_item_zombie_skin_health_bonus"	"+$health"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Lore"						"Eeeeeeewwwwww..."
 		
 		"DOTA_Tooltip_Ability_item_eggs"						"Egg????"
@@ -343,18 +360,12 @@
 		
 		"DOTA_Tooltip_modifier_veteran_grow"												"MORE BONES!!!!!"
 		"DOTA_Tooltip_modifier_veteran_grow_Description"									"You feel... Oh my god Billy what is doing in your ass?"
+ 
 		
-		"DOTA_Tooltip_Ability_item_saxar_svekla"						"Sugar beet"
-		"DOTA_Tooltip_Ability_item_saxar_svekla_Description"			"From it doing sugar."
-		"DOTA_Tooltip_Ability_item_saxar_svekla_health_bonus"	"For what is here health?: "
-		"DOTA_Tooltip_Ability_item_saxar_svekla_Lore"						"Budges seem likes beet."
-		
-		"DOTA_Tooltip_Ability_item_saxar"						"Sugar"
-		"DOTA_Tooltip_Ability_item_saxar_Description"			"<h1>Active: Playing with sugar</h1> You play with sugar.\n<h1>Passive: Ingredients</h1> Use for cooking pie."
-		
+ 
 		"DOTA_Tooltip_Ability_item_pirog"						"Pie"
-		"DOTA_Tooltip_Ability_item_pirog_Description"			"Give it Crystal Maiden."
-		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Brand-name pie Crystal Maiden."
+		"DOTA_Tooltip_Ability_item_pirog_Description"			"This pie was created from trash it smell not bad.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Something is missing."
 		
 		"DOTA_Tooltip_Ability_item_pirog_dps"						"Dps pie"
 		"DOTA_Tooltip_Ability_item_pirog_dps_Description"			"<h1>Active: Nam-nam</h1> You eat pie."  
@@ -362,7 +373,12 @@
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"AGILITY: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%DAMAGE: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"For the best dps men. It can be other pie if you combinate it with something."
+
  
+ 		"DOTA_Tooltip_modifier_item_pirog_dps"					"Dps pie"
+		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"You stay more powerful!"
+
+
  		"DOTA_Tooltip_Ability_item_pirog_tank"						"Tank pie"
 		"DOTA_Tooltip_Ability_item_pirog_tank_Description"			"<h1>Active: Nam-nam</h1> You eat pie."  
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_health"	"HEALTH: "		
@@ -370,7 +386,10 @@
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_armor"	"ARMOR: "
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_derjat"	"%MAGIC RESIST: "
 		"DOTA_Tooltip_Ability_item_pirog_tank_Lore"						"For the best tank."
-		
+	
+	 		"DOTA_Tooltip_modifier_item_pirog_tank"					"Tank pie"
+		"DOTA_Tooltip_modifier_item_pirog_tank_Description"		"You stay more powerful!"	
+
  		"DOTA_Tooltip_Ability_item_pirog_magic"						"Pie of mag"
 		"DOTA_Tooltip_Ability_item_pirog_magic_Description"			"<h1>Active: Nam-nam</h1> You eat pie."  
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana"	"MANA: "		
@@ -378,7 +397,11 @@
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_manacost"	"%MANACOST REDUCTION": "
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_dps"	"%SPELL AMPLIFICATION: "
 		"DOTA_Tooltip_Ability_item_pirog_magic_Lore"						"For the best mag."
-		
+
+ 
+ 		"DOTA_Tooltip_modifier_item_pirog_magic"					"Pie of mag"
+		"DOTA_Tooltip_modifier_item_pirog_magic_Description"		"You stay more powerful!"	
+
 		"DOTA_Tooltip_Ability_item_napitok"						"The strange tincture"
 		"DOTA_Tooltip_Ability_item_napitok_Description"			"<h1>Active: Hip-hip</h1> Drinking on a binge."  
 		"DOTA_Tooltip_Ability_item_napitok_bonus_dps"	"%DAMAGE: "
@@ -388,17 +411,18 @@
 		"DOTA_Tooltip_Ability_item_dust_2_Description"			"<h1>Active: DDust</h1> Dastit."  
 		
 		"DOTA_Tooltip_Ability_item_tvorog"						"Curd"
-		"DOTA_Tooltip_Ability_item_tvorog_Description"			"<h1>Active: Nam-nam</h1> You eat curd(but for what?).\n<h1>Passive: Ingredient</h1> Use for cooking pie. "
-		"DOTA_Tooltip_Ability_item_tvorog_bonus_health"	"MANA ON FOREVER: "
-		"DOTA_Tooltip_Ability_item_tvorog_bonus_regen"	"REGEN MANA ON FOREVOR: "
+		"DOTA_Tooltip_Ability_item_tvorog_Description"			"<h1>Active: Nam-nam</h1> You eat curd(but for what?).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
 		"DOTA_Tooltip_Ability_item_tvorog_Lore"       "Where is sense?"
 		
 		"DOTA_Tooltip_Ability_item_testo"						"Dough"
-		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> Use for cooking pie. "
-		
-		"DOTA_Tooltip_Ability_item_corica_2"						"Bank with cinnamon"
-		"DOTA_Tooltip_Ability_item_corica_2_Description"			"Сinnamon(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> Use for cooking pie. "
-		
+		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
+
+         "DOTA_Tooltip_ability_item_totem_upgrade"																					"Upgrade totem"
+		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Help upgrade you items.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+
+		"DOTA_Tooltip_Ability_item_trash"						"A strange-smelling thing"
+		"DOTA_Tooltip_Ability_item_trash_Description"			"Does it smell strange??.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
+ 
 		"DOTA_Tooltip_Ability_item_bewstheaks"							"Steak"
 		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Active: Nam-nam</h1>Regeneration very big number of health.\n Very.\n More.\n(1000)"
 		"DOTA_Tooltip_Ability_item_bewstheaks_Lore"       "Kunnka like to cook steaks!"
@@ -613,13 +637,165 @@
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3"				"Vladmir's Aura 3"
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3_Description"	"Gaining %dMODIFIER_PROPERTY_TOOLTIP%%% lifesteal, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% damage, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor, and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
 
+
+		"DOTA_Tooltip_Ability_item_shivas_guard_heal"			"Healing Shiva's Guard"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Description"					"<h1>Active: Healing Blast</h1> Emits a healing wave that heals allies on %heal% + %heal_max_hp%%  from max health.<br><br>Radius: %blast_radius%\n<h1>Passive: Healing Aura</h1> Increases health regen allies on %hp_regen_plus_aura%%.<br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Lore"							"One from three powerful artifacts."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note0"							"The wave extends at a speed of %blast_speed% to a max size of %blast_radius%."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note1"							"The healing Blast follows its caster."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_Note2" 							"Multiple instances of Healing Aura do not stack."
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_ability_item_shivas_guard_heal_bonus_armor"					"+$armor"
+ 
+		"DOTA_Tooltip_modifier_shiva_heal_aura"				"Healing Aura"
+		"DOTA_Tooltip_modifier_shiva_heal_aura_Description"	"Health regen Increases on %dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom"	"Medallion of Courage"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Active: Faith</h1>When cast on an ally, grants them %bonus_armor% armor, %target_attack_speed% attack speed, and %target_movement_speed%%% movement speed.<br><br>Range: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"A talisman forged to honor the daytime sky."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2"	"Solar medallion"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Description"					"<h1>Active: Faith</h1>When cast on an ally, grants them %bonus_armor% armor, %target_attack_speed% attack speed, and %target_movement_speed%%% movement speed.<br><br>Range: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Lore"						"A talisman forged to honor the daytime sky."
+
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3"	"Solar Crest"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Description"					"<h1>Active: Faith</h1>When cast on an ally, grants them %bonus_armor% armor, %target_attack_speed% attack speed, and %target_movement_speed%%% movement speed.<br><br>Range: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_all_stats"				"+$all"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_mana_regen_pct"		"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Lore"						"A talisman forged in the praise of the daytime sky."
+
+		"DOTA_Tooltip_modifier_medallion_active"		"Faith"
+		"DOTA_Tooltip_modifier_medallion_active_Description"		"Armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%, movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+		"DOTA_Tooltip_Ability_item_bfury_1"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_1_Description"							"<h1>Active: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)"
+		"DOTA_Tooltip_Ability_item_bfury_1_Lore"									"The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+		"DOTA_Tooltip_Ability_item_bfury_1_Note0"									"Cleave damage goes through spell immunity."
+		"DOTA_Tooltip_Ability_item_bfury_1_Note1"									"If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+		"DOTA_Tooltip_Ability_item_bfury_1_bonus_damage"							"+$damage"
  
 
+		"DOTA_Tooltip_Ability_item_bfury_2"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_2_Description"							"<h1>Active: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)"
+		"DOTA_Tooltip_Ability_item_bfury_2_Lore"									"The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+		"DOTA_Tooltip_Ability_item_bfury_2_Note0"									"Cleave damage goes through spell immunity."
+		"DOTA_Tooltip_Ability_item_bfury_2_Note1"									"If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_damage"							"+$damage"
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_health_regen"					"+$hp_regen"
+		"DOTA_Tooltip_Ability_item_bfury_2_bonus_mana_regen"						"+$mana_regen"
+
+		"DOTA_Tooltip_Ability_item_bfury_3"				"Battle Fury"
+		"DOTA_Tooltip_ability_item_bfury_3_Description"							"<h1>Active: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)"
+		"DOTA_Tooltip_Ability_item_bfury_3_Lore"									"The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+		"DOTA_Tooltip_Ability_item_bfury_3_Note0"									"Cleave damage goes through spell immunity."
+		"DOTA_Tooltip_Ability_item_bfury_3_Note1"									"If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_damage"							"+$damage"
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_health_regen"					"+$hp_regen"
+		"DOTA_Tooltip_Ability_item_bfury_3_bonus_mana_regen"						"+$mana_regen"
+
+		"DOTA_Tooltip_Ability_item_energy_booster_2"			"Energy Booster"
+		"DOTA_Tooltip_ability_item_energy_booster_2_Lore"							"This lapis lazuli can often be found in wizards who seek to preserve their magical powers longer in battle."
+		"DOTA_Tooltip_ability_item_energy_booster_2_mana_bonus"					"+$mana"
+
+		"DOTA_Tooltip_Ability_item_arcane_boots_2"			"Arcane Boots 2"
+		"DOTA_Tooltip_ability_item_arcane_boots_2_Description"					"<h1>Active: Replenish Mana</h1> Restores %replenish_amount% mana to all allies around and reduces the manacost of their abilities by %replenish_manacost_reduction%%  during %replenish_duration% second.<br><br>Radius: %replenish_radius%\nMovement speed bonuses from multiple pairs of boots do not stack."
+		"DOTA_Tooltip_ability_item_arcane_boots_2_Lore"						"Magi equipped with these boots are valued in battle."
+		"DOTA_Tooltip_ability_item_arcane_boots_2_bonus_movement"					"+$move_speed"
+		"DOTA_Tooltip_ability_item_arcane_boots_2_bonus_mana"						"+$mana"	
+
+		"DOTA_Tooltip_modifier_arcane_boots_2_mana_reduction"		"Arcane Boots effect"
+		"DOTA_Tooltip_modifier_arcane_boots_2_mana_reduction_Description"		"The manacost of abilities is reduced by %dMODIFIER_PROPERTY_MANACOST_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_Ability_item_fire_shivas_guard"			"Fire Shiva's Guard"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Description"					"<h1>Active: Fire Blast</h1> Emits a fire wave that deals %damage% magic damage and on %blast_debuff_duration% sec. sets them on fire by inflicting %damage_fire_per_second% damage per second.<br><br>Radius: %blast_radius%\n<h1>Passive: Burn</h1>Deals damage to opponents every second %damage_radiance% magical damage  and blinds them, forcing you to miss in %miss_chance%%% cases.<br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Lore"							"One from three powerful artifacts."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Note0"							"The wave extends at a speed of %blast_speed% to a max size of %blast_radius%."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_Note1"							"The Fire Blast follows its caster."
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_damage"				"+$damage"
+		"DOTA_Tooltip_ability_item_fire_shivas_guard_bonus_armor"					"+$armor"
+
+		"DOTA_Tooltip_modifier_imba_radiance_debuff"		"Burn Damage"
+		"DOTA_Tooltip_modifier_imba_radiance_debuff_Description"		"Takes 75 damage per second and misses in %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%% cases."
+
+		"DOTA_Tooltip_modifier_fire_shiva_fire"		"Fire Blast"
+		"DOTA_Tooltip_modifier_fire_shiva_fire_Description"		"The target burns while taking damage."
+
+		"DOTA_Tooltip_Ability_item_freez_shivas_guard"			"Shiva's Guard"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Description"					"<h1>Active: Arctic Blast</h1> Emits a freezing wave that deals %damage% магического урона and on %slow_duration_tooltip% sec. on slows their movement by %move_speed_acitve%%%.<br><br>Radius: %blast_radius%\n<h1>Passive: Freezing Aura</h1>Reduces the attack speed of all enemies by %aura_as_reduction%.<br><br>Radius: %aura_radius%"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Lore"							"One from three powerful artifacts."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note0"							"The wave extends at a speed of %blast_speed% to a max size of %blast_radius%."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note1"							"The Arctic Blast follows its caster."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_Note2" 							"Multiple instances of Freezing Aura do not stack."
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_str"				"+$str"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_agi"				"+$agi"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_health"				"+$health"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_mana"				"+$mana"
+		"DOTA_Tooltip_ability_item_freez_shivas_guard_bonus_armor"					"+$armor"
+
+		"DOTA_Tooltip_modifier_item_freez_shivas_aura_debuff"		"Freezing Aura"
+		"DOTA_Tooltip_modifier_item_freez_shivas_aura_debuff_Description"		"Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
+
+ 		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff"		"Arctic Blast"
+		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff_Description"		"Movement speed slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% and attack speed on %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
 
 
+		"DOTA_Tooltip_Ability_item_necr_heart"			"Necr's heart"
+		"DOTA_Tooltip_ability_item_necr_heart_Description"					"<h1>Passive: Heartstopper Aura</h1> For every Heart Necrophos, you get %hit_damage% damage per second."
+		"DOTA_Tooltip_ability_item_necr_heart_Lore"							"A foul-smelling heart, looks like a human one."
+		"DOTA_Tooltip_ability_item_necr_heart_bonus_damage"				"+$damage"
+ 
+		"DOTA_Tooltip_Ability_item_gril"			"Kunnka's Grill"
+		"DOTA_Tooltip_ability_item_gril_Description"					"<h1>Active: Cock</h1> It Cooks a kunnka's steak from one piece of meat!"
+		"DOTA_Tooltip_ability_item_gril_Lore"							"IT IS!!!!! LEGENDARY KUNNKA'S GRILL!!"
+		"DOTA_Tooltip_ability_item_gril_bonus_atribute"				"+$all"
 
+		"DOTA_Tooltip_Ability_item_up_hp_tower" 																						"Secrets of Necromancy: Scroll Of Life Energy"
+		"DOTA_Tooltip_Ability_item_up_hp_tower_description" 																			"<h1>Active: Health up</h1> When applied to the Homer, this increases his health on %health%."
+		"DOTA_Tooltip_Ability_item_up_hp_tower_Lore"							"A secret scroll stolen from necromancers."
 
+		"DOTA_Tooltip_Ability_item_shovel"			"Magic shovel"
+		"DOTA_Tooltip_ability_item_shovel_Description"					"<h1>Active: Dig</h1> Shovel can dig from any place gold, In the amount of from %gold_min% from %gold_max%. It is also good at digging treasures marked with a cross"
+		"DOTA_Tooltip_ability_item_shovel_Lore"							"Kunkka found this shovel somewhere."
+		"DOTA_Tooltip_ability_item_shovel_bonus_health"				"+$health"
 
+		"DOTA_Tooltip_Ability_item_rom"			"Strong Rum"
+		"DOTA_Tooltip_ability_item_rom_Description"					"<h1>Active: Hip-hip</h1> Drinking rum, the hero receives %bonus_damage% damage, %bonus_speed% % additional. movement speed, reducing the base attack speed by %bonus_attack_time%, reduces incoming damage by %bonus_anti_damage%% and increases additional magic damage by %bonus_spell_damage%%."
+		"DOTA_Tooltip_ability_item_rom_Lore"							"It is so strange that after rum there is no after effect."
+		"DOTA_Tooltip_ability_item_rom_strenght"				"+$str"
+ 
+		"DOTA_Tooltip_modifier_rom_effect"		"Опьянен"
+		"DOTA_Tooltip_modifier_rom_effect_Description"		"Вы пьяный!"
+
+		"DOTA_Tooltip_Ability_item_truba"			"Tube"
+		"DOTA_Tooltip_ability_item_truba_Description"					"<h1>Active: Tu-tu-tu</h1> Plays Kunkevich's favorite melody while increasing the movement speed of %bonus_speed%% and armor by %bonus_armor to all closest allies within a radius of %buff_radius% %."
+		"DOTA_Tooltip_ability_item_truba_Lore"							"Это любимый музыкальный инструмент Куннки."
+		"DOTA_Tooltip_ability_item_truba_bonus_attac_speed"				"+$attack"	 
+		"DOTA_Tooltip_ability_item_truba_bonus_regen"				"+$hp_regen"
+		"DOTA_Tooltip_ability_item_truba_bonus_stat"				"+$all"
+
+		"DOTA_Tooltip_modifier_item_truba_effect"		"Inspiration!"
+		"DOTA_Tooltip_modifier_item_truba_effect_Description"		"You were inspired by the melody and now move %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% faster and have %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%% armor."
+
+		"DOTA_Tooltip_Ability_item_tres_jo"			"Joe's Amulet"
+		"DOTA_Tooltip_ability_item_tres_jo_Description"					"The legendary Amulet of Joe."
+		"DOTA_Tooltip_ability_item_tres_jo_Lore"							"There is a myth that if this amulet falls into the wrong hands, anything can happen..."
+
+		"DOTA_Tooltip_Ability_item_ess_pudge"			"Essence of Pudge"
+		"DOTA_Tooltip_ability_item_ess_pudge_Description"					"Essence of Pudge(yes yes it is Essence of Pudge)."
+		"DOTA_Tooltip_ability_item_ess_pudge_Lore"							"The cult of the damned has worked worked here..."
+		"DOTA_Tooltip_ability_item_ess_pudge_bonus_damage"				"+$all"
 
 
  
@@ -678,81 +854,56 @@
 
 
 // ******************** квесты ********************
-		"DOTA_Tooltip_Ability_quest_test01"										"Swinish case"
-		"DOTA_Tooltip_Ability_quest_test01_Description"							"Ohhh... how I want to meat. Hey, men can you give me meat? There is pig so close kill their and give me meat."
+ 
+ 		"DOTA_Tooltip_Ability_quest_test01"										"Oh meat meat meat..."
+		"DOTA_Tooltip_Ability_quest_test01_Description"							"Tere-zizizi)) Did you come here to hear my story? What? Don't you  want? no, I know what you want. But I'm very very hungry. Bring me a couple of pieces of meat, they are... you know where. If I'll explain such simple things to you, I'll put anchor in my ass. "
 		"DOTA_Tooltip_Ability_quest_test01_value_required"     							"NUMBER OF MEATS:"
 		"DOTA_Tooltip_Ability_quest_test01_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test01_reward_gold"                 		"GOLD:"
  
- 		"DOTA_Tooltip_Ability_quest_test02"										"Cemetery"
-		"DOTA_Tooltip_Ability_quest_test02_Description"							"There is cemetery. It is gossip, there is so many zombie. Can you bring me a skin of zombie?"
-		"DOTA_Tooltip_Ability_quest_test02_value_required"     							"NUMBER OF SKIN:"
+ 		"DOTA_Tooltip_Ability_quest_test02"										"Strange phenomena"
+		"DOTA_Tooltip_Ability_quest_test02_Description"							"I knew you wanted to listen Tere-zizizi)) Once, my team and I landed on an island, it was not on any of our maps. What we just didn't see there... And blood, and animated skeletons, and giant beetles, but what most alarmed - People in robes... But then we decided not to stay long on that island seven feet under the keel and set off. At the moment, something is also happening on this island, and Captain Kunkevich WILL DEFINITELY find OUT. ( bring the zombie skins from the cemetery pls Tere-zizizi)) ) "
+		"DOTA_Tooltip_Ability_quest_test02_value_required"     							"NUMBER OF SKINS:"
 		"DOTA_Tooltip_Ability_quest_test02_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test02_reward_gold"                 		"GOLD:"
 		
- 		"DOTA_Tooltip_Ability_quest_test03"										"Legend of Big Bo"
-		"DOTA_Tooltip_Ability_quest_test03_Description"							"I don't know you hear legend of Big Bo or not but I will not talk you about it. The only thing what you must know is '...every pig was killed do pain him'. Right now you must go to bring me meat."
-		"DOTA_Tooltip_Ability_quest_test03_value_required"     							"NUMBER OF MEAT:"
+ 		"DOTA_Tooltip_Ability_quest_test03"										"The Legend of Big Bo"
+		"DOTA_Tooltip_Ability_quest_test03_Description"							"This island is still famous for its meat Tere-zizizi)) I think you take the hint. Find me the meat of Big Bo, because the more meat - the better life is!"
+		"DOTA_Tooltip_Ability_quest_test03_value_required"     							"NUMBER OF MEATS:"
 		"DOTA_Tooltip_Ability_quest_test03_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test03_reward_gold"                 		"GOLD:"
 		
- 		"DOTA_Tooltip_Ability_quest_test04"										"Bone bone bone"
-		"DOTA_Tooltip_Ability_quest_test04_Description"							"It is your last quest, you must bring me bone of skelet they are close with zombie. Use thing which I gave you it helps you to kill these fuck skeletons."
-		"DOTA_Tooltip_Ability_quest_test04_value_required"     							"NUMBER OF BONES:"
+ 		"DOTA_Tooltip_Ability_quest_test04"										"Joe's Treasure"
+		"DOTA_Tooltip_Ability_quest_test04_Description"							"Okay, I don't really care what happens on this island at all. I'm only here for one thing - Joe's amulet. A legendary treasure about which legends are made up. But (another pirate phrase) I've eaten too much meat and I can't move, find this treasure for me. Take the shovel I gave you and look for crosses on the map Tere-zizizi))"
+		"DOTA_Tooltip_Ability_quest_test04_value_required"     							"NUMBER OF TRASURES:"
 		"DOTA_Tooltip_Ability_quest_test04_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test04_reward_gold"                 		"GOLD:"
-		
-		"DOTA_Tooltip_Ability_quest_test_woman01"										"Milky case"
-		"DOTA_Tooltip_Ability_quest_test_woman01_Description"							"Hi men you are just in time. I want to cook pie but I don't have milk. Can you bring me 10 milks? Sheeps are close if that."
-		"DOTA_Tooltip_Ability_quest_test_woman01_value_required"     							"NUMBER OF MILK:"
-		"DOTA_Tooltip_Ability_quest_test_woman01_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_test_woman01_reward_gold"                 		"GOLD:"
-  
- 		"DOTA_Tooltip_Ability_quest_test_woman02"										"Eggs for pie"
-		"DOTA_Tooltip_Ability_quest_test_woman02_Description"							"Thank you that you decide to help me with pie. Right now I need egg, chickens in pond have it. Do you think it is so strange that their are in pond? You don't see their else they are very strange... But it isn't the most important go to my eggs!! "
-		"DOTA_Tooltip_Ability_quest_test_woman02_value_required"     							"NUMBER OF EGGS:"
-		"DOTA_Tooltip_Ability_quest_test_woman02_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_test_woman02_reward_gold"                 		"GOLD:"
-  
- 		"DOTA_Tooltip_Ability_quest_test_woman03"										"Old friend"
-		"DOTA_Tooltip_Ability_quest_test_woman03_Description"							"A long time ago the very strange women steal my cinnamon. I until don't know what happened with my cinnamon. Can you back me it?."
-		"DOTA_Tooltip_Ability_quest_test_woman03_value_required"     							"NUMBER OF CINNAMON:"
-		"DOTA_Tooltip_Ability_quest_test_woman03_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_test_woman03_reward_gold"                 		"GOLD:"
-		
- 		"DOTA_Tooltip_Ability_quest_test_woman04"										"Sugar Budge"
-		"DOTA_Tooltip_Ability_quest_test_woman04_Description"							"I need in last ingredient. In the lower part of the forest are Budge they very like sugar beet. Reach their warehouse and take sugar beet."
-		"DOTA_Tooltip_Ability_quest_test_woman04_value_required"     							"NUMBER OF BEETS:"
-		"DOTA_Tooltip_Ability_quest_test_woman04_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_test_woman04_reward_gold"                 		"GOLD:"
-		
- 		"DOTA_Tooltip_Ability_quest_test_woman05"										"The pie"
-		"DOTA_Tooltip_Ability_quest_test_woman05_Description"							"It is the end. Take all ingredients which I gave you and come to campfire and what turn out give me. I add my signature spice."
-		"DOTA_Tooltip_Ability_quest_test_woman05_value_required"     							"NUMBER OF PIES:"
-		
-		"DOTA_Tooltip_Ability_quest_brodyaga_test01"										"Don't waste meat vain"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test01_Description"							"Give me meat and I will give you the steak it looks like steak Kunnka.\n <font color='#ff9900'>This quest you can complete a lot of many times. For complete quest You will have: Steak</font>"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test01_value_required"     							"NUMBER OF MEATS:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test01_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test01_reward_gold"                 		"GOLD:"
-	
-		"DOTA_Tooltip_Ability_quest_brodyaga_test02"										"Milk, Milk, MMMIIIIIIILLLLLKKK!"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test02_Description"							"Do you drink milkshake? NOOOO??? Then bring me milk and I do it for you.\n <font color='#ff9900'>This quest you can complete a lot of many times. For complete quest You will have: Milkshake</font>"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test02_value_required"     							"NUMBER OF MILKS:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test02_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test02_reward_gold"                 		"GOLD:"
-		
- 		"DOTA_Tooltip_Ability_quest_brodyaga_test04"										"Awful skin..."
-		"DOTA_Tooltip_Ability_quest_brodyaga_test04_Description"							"If you have skin of zombie give it me. I will put it at my home like I kill their everybody.\n <font color='#ff9900'>This quest you can complete a lot of many times. For complete quest You will have: BONUS ALLSTATS +10</font>"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test04_value_required"     							"NUMBER OF SKIN:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test04_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test04_reward_gold"                 		"GOLD:"
-		
- 		"DOTA_Tooltip_Ability_quest_brodyaga_test03"										"Bone it's not Bone"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test03_Description"							"I like to do something from bones and so can you bring me a few bones? I will do you something cool.\n <font color='#ff9900'>This quest you can complete a lot of many times. For complete quest You will have: Mask of the Cult of the damned</font>"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test03_value_required"     							"NUMBER OF BONES:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test03_reward_exp"                 		"EXPERIENCE:"
-		"DOTA_Tooltip_Ability_quest_brodyaga_test03_reward_gold"                 		"GOLD:"
+ 
+	 	"DOTA_Tooltip_Ability_quest_test_crystal"										"Essences??"
+		"DOTA_Tooltip_Ability_quest_test_crystal_Description"							"Hello, who has brought to our region. I heard that you came here to protect the village, I will help you. There are a lot of people in our village who know how to cook some  things. If you combine them on the fire next to me, you will get a pie. And already if this pie is mixed with something like this... You'll find out for yourself, in any case, I can give you one of these pieces. So could you please get me 4 essences of Pudges, they are located in the most terrible forest, do not go there unprepared."
+		"DOTA_Tooltip_Ability_quest_test_crystal_value_required"     							"NUMBER OF ESSENCES:"
+		"DOTA_Tooltip_Ability_quest_test_crystal_reward_exp"                 		"EXPERIENCE:"
+		"DOTA_Tooltip_Ability_quest_test_crystal_reward_gold"                 		"GOLD:"	
+ 
+ 		"DOTA_Tooltip_Ability_quest_test_david"										"A heartfelt offering"
+		"DOTA_Tooltip_Ability_quest_test_david_Description"							"Have you heard Kunkevich's stories? They are so fascinating, and how can such a great person live in our village! Ah, you're here for my *the name is classified*, then good. Just bring me 5 Necromancer hearts, they are walking around in this Scary Forest. In the meantime, I'll listen to Kunka's stories further!"
+		"DOTA_Tooltip_Ability_quest_test_david_value_required"     							"NUMBER OF HEARTS:"
+		"DOTA_Tooltip_Ability_quest_test_david_reward_exp"                 		"EXPERIENCE:"
+		"DOTA_Tooltip_Ability_quest_test_david_reward_gold"                 		"GOLD:"
+		 
+ 		"DOTA_Tooltip_Ability_quest_test_lina"										"Strange hens - strange eggs"
+		"DOTA_Tooltip_Ability_quest_test_lina_Description"							"Argh, why did the fuck cookies burn out again????? I hate this worl... Stop, Who are you? Anyway, get out of here. You say you know my sister and you want me to make you my signature dough? HA, I just don't cook for all sorts of cranks, maybe I'll think if you bring me a couple of eggs from this lake. BUT I ONLY WILL THINK! I don't promise anything."
+		"DOTA_Tooltip_Ability_quest_test_lina_value_required"     							"NUMBER OF EGGS:"
+		"DOTA_Tooltip_Ability_quest_test_lina_reward_exp"                 		"EXPERIENCE:"
+		"DOTA_Tooltip_Ability_quest_test_lina_reward_gold"                 		"GOLD:"
+
+ 		"DOTA_Tooltip_Ability_quest_test_old_men"										"Fresh milk"
+		"DOTA_Tooltip_Ability_quest_test_old_men_Description"							"Hello young man, do you want something? How many times? Do you want me to cook my firmov cottage cheese for you? Z radistyu! Just could you please give me some milk, it falls from the sheep I'm grazing"
+		"DOTA_Tooltip_Ability_quest_test_old_men_value_required"     							"NUMBER OF MILK:"
+		"DOTA_Tooltip_Ability_quest_test_old_men_reward_exp"                 		"EXPERIENCE:"
+		"DOTA_Tooltip_Ability_quest_test_old_men_reward_gold"                 		"GOLD:"
+
+
 		
 		"DOTA_Tooltip_modifier_quest_template"												"Wait..."
 		"DOTA_Tooltip_modifier_quest_template_Description"									"Not wait."
@@ -1407,6 +1558,11 @@
 		"DOTA_Tooltip_Ability_range_magick_attack_5_damage_max"				"MAX DAMAGE:"	
 
 
+		"DOTA_Tooltip_Ability_suicide_boys"												"Suicide squad!"
+		"DOTA_Tooltip_Ability_suicide_boys_Description"									"HE IS CRAZZZZZZZYYY!!!! IT IS SUICIDE AND BOOM!!!"		
+		"DOTA_Tooltip_Ability_suicide_boys_damage"											"DAMAGE:"
+		"DOTA_Tooltip_Ability_suicide_boys_radius"										"RADIUS:"	
+
 		"DOTA_Tooltip_Ability_mutant_dismemberment"							"Dismemberment"
 		"DOTA_Tooltip_Ability_mutant_dismemberment_Description"				"It leaves torn wounds on the body of its enemy, which increases the damage that enters it."
 
@@ -1504,7 +1660,12 @@
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff"						"Rot"	
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff_Description"							"How longer you are smelling it, then more you feel so bad."		
 
-
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave"										"Decay"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_Description"							"Голодный крадет у врагов силу при этом сам становится сильнее."
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_decay_duration"     							"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_steal"     							"КРАДЕТ СИЛЫ:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_health_up"     							"ХП ЗА ЕД. СИЛЫ:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_steal_damage"     							"УРОН ЗА ЕД. СИЛЫ:"
 
 
 
@@ -1555,6 +1716,9 @@
 
 		// ******************** modifiers ********************
 
+        "DOTA_Tooltip_modifier_rot_effect"								"The stink!"
+		"DOTA_Tooltip_modifier_rot_effect_Description"						"There's such a stench in this place, it's just awful."
+
 		"DOTA_Tooltip_modifier_laceration"									"Laceration"
 		"DOTA_Tooltip_modifier_laceration_Description"						"You have an open ragged wound that increases the damage you receive."
 
@@ -1589,6 +1753,8 @@
     	"dota_hud_error_havent_charges"                    						"just end"
      	"dota_hud_error_use_myself"                    						"You can't use it on yourself"    
     	"dota_hud_error_use_enemies"                    						"You can't use it on enemies"     
+        "dota_hud_error_gril_not_meat"                    						"Grill needs meat"  
+        "dota_hud_error_pirog"                    						"You have eated pie"  
 
        	"dota_hud_error_letter_bad_target"                    					"It can use only on Main christmas tree!"
 		// ******************** Обучалка: ********************
@@ -1598,8 +1764,7 @@
 		"head_blood"					"What are you doing? Do you want to know something about the custom? Suck my dick!"		
 		"Info1"						"Info 1"
 		"Info2"						" "	    
-         "DOTA_Tooltip_ability_item_totem_upgrade"																					"Upgrade totem"
-		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Help upgrade you items"
+ 
 
         "DOTA_Tooltip_ability_item_veil_of_discord2"																					"Totem Veil of Discord"
 		"DOTA_Tooltip_ability_item_veil_of_discord2_Description"																		"<h1>Active: Magic Weakness</h1> Cast a %debuff_radius% radius blast that causes enemy heroes to take %spell_amp%%% increased damage from spells.<br><br>Range: %abilitycastrange%<br>Duration: %resist_debuff_duration% seconds. \n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%"
@@ -1681,1263 +1846,7 @@
 		"DOTA_Tooltip_ability_item_hp_aura_dur"																							"DURATION:"
 		"DOTA_Tooltip_modifier_item_hp_aura"																							"Scroll of Regeneration Buff"
 		"DOTA_Tooltip_modifier_item_hp_aura_Description"																				"Health regeneration increased"
-	
-	    //Meatboy
-
-		"npc_dota_hero_pudge"			"Meat boy"
-
-		"DOTA_Tooltip_ability_meatboy_more_meat"									"More meat"
-		"DOTA_Tooltip_ability_meatboy_more_meat_Description"						"MORE MEAT MORE !!!"
-		"DOTA_Tooltip_ability_meatboy_more_meat_dmg_proc"							"DAMAGE PROC :"
-		"DOTA_Tooltip_ability_meatboy_more_meat_hp_per_stack"						"HP BONUS :"
-		"DOTA_Tooltip_modifier_meatboy_more_meat"									"MORE MEAT !!!"
-		"DOTA_Tooltip_modifier_meatboy_more_meat_Description"						"MORE MEAT !!!"
-
-		"DOTA_Tooltip_ability_meatboy_bloody_chakram"									"Bloody chakram"
-		"DOTA_Tooltip_ability_meatboy_bloody_chakram_Description"						"A destructive blood saw cuts both hero and enemies around him!"
-		"DOTA_Tooltip_ability_meatboy_bloody_chakram_radius"							"RADIUS :"
-		"DOTA_Tooltip_ability_meatboy_bloody_chakram_base_dmg"							"BASE DMG :"
-		"DOTA_Tooltip_ability_meatboy_bloody_chakram_hp_cost"							"%HEALTH DMG :"
-
-		"DOTA_Tooltip_ability_meatboy_blood_bath"									"Blood bath"
-		"DOTA_Tooltip_ability_meatboy_blood_bath_Description"						"The hero performs a bloody ritual to create a bloody circle, which deals damage to enemies and heals allies!"
-		"DOTA_Tooltip_ability_meatboy_blood_bath_duration"							"DYRATION :"
-		"DOTA_Tooltip_ability_meatboy_blood_bath_radius"							"RADIUS :"
-		"DOTA_Tooltip_ability_meatboy_blood_bath_base_dmg"							"BASE DMG :"
-		"DOTA_Tooltip_ability_meatboy_blood_bath_hp_dmg"							"%HEALTH DMG :"
-
-		"DOTA_Tooltip_ability_meatboy_blood_power"									"Blood power"
-		"DOTA_Tooltip_ability_meatboy_blood_power_Description"						"Losing a percentage of his maximum health, the hero falls into a rage, increasing his attack speed!"
-		"DOTA_Tooltip_ability_meatboy_blood_power_duration"							"DURATION :"
-		"DOTA_Tooltip_ability_meatboy_blood_power_hp_proc"							"%HEALTH LOST PROC :"
-		"DOTA_Tooltip_ability_meatboy_blood_power_as_bonus"							"BONUS AS :"
-
-		"DOTA_Tooltip_ability_meatboy_meat_power"									"Meat power"
-		"DOTA_Tooltip_ability_meatboy_meat_power_Description"						"Straining every muscle of his body, hero increases damage based on current health!"
-		"DOTA_Tooltip_ability_meatboy_meat_power_duration"							"DURATION :"
-		"DOTA_Tooltip_ability_meatboy_meat_power_hp_dmg"							"%CURRENT HEALTH DMG :"
-
-		"DOTA_Tooltip_ability_meatboy_blood_rage"									"Blood rage"
-		"DOTA_Tooltip_ability_meatboy_blood_rage_Description"						"Hero's attacks deal extra damage based on his maximum health! "
-		"DOTA_Tooltip_ability_meatboy_blood_rage_trigger_chance"					"%TRIGGER CHANCE:"
-		"DOTA_Tooltip_ability_meatboy_blood_rage_hp_dmg"							"%HEALTH DMG:"
-        
-        //Meepo	
-		"npc_dota_hero_meepo"	"Digger"
-		"DOTA_Tooltip_ability_inherit_meepo_buff"									"Digger buff"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_Description"						"No one took Digger seriously until he united all the Kobolds to fight. Now he inspires them in war!"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_dmg_bonus"						"%BONUS DMG :"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_as_bonus"						"BONUS AS :"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_evasion_bonus"						"%EVASION :"
-		"DOTA_Tooltip_modifier_inherit_meepo_buff"								"Digger buff"
-		"DOTA_Tooltip_modifier_inherit_meepo_buff_Description"					"Is leader of the Kobolds."
-
-		"DOTA_Tooltip_Ability_meepo_dig_deeper"                         			"Dig deeper"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_Description"           				"Digger does what he can do best - digs the earth and moves under it!"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_cast_range"                        	"CAST RANGE:"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_tunnel_duration"                   	"TUNNEL DURATION:"
-
-		"DOTA_Tooltip_Ability_meepo_digger_elixir"                         			"Digger elixir"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_Description"           				"Digger is drinking this strange elixir for powerup his muscles!"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_buff_duration"                        	"DURATION:"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_bonus_dmg"                        	"%BONUS DAMAGE:"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_bonus_as"                        	"BONUS AS:"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir"                            	"Digger elixir"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir_Description"                	"Powerup!"
-
-		"DOTA_Tooltip_Ability_meepo_master_shovel"                         			"Master shovel"
-		"DOTA_Tooltip_ability_meepo_master_shovel_Description"           				"Big and dirty shovel. Would be used like a greatsword? May be..."
-		"DOTA_Tooltip_ability_meepo_master_shovel_cleave_radius"                        	"CLEAVE RADIUS:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_cleave_damage_pct"                        	"%CLEAVE:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_crit_chance"                        	"%CRIT CHANCE:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_crit_mult"                        	"%CRIT MULTIPLIER:"
-
-		"DOTA_Tooltip_Ability_meepo_earth_power"                         			"Earth power"
-		"DOTA_Tooltip_ability_meepo_earth_power_Description"           				"<h1>Active: Earth armor</h1>Reduces incoming damage for a short duration\n <h1>Passive: Earth power</h1>Increase your strength on percent!"
-		"DOTA_Tooltip_ability_meepo_earth_power_bonus_str_pct"                      "%STR BONUS:"
-		"DOTA_Tooltip_ability_meepo_earth_power_buff_duration"                      "DURATION:"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir"                            	"Digger elixir"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir_Description"                	"Powerup!"
-
-		"DOTA_Tooltip_Ability_meepo_earth_power_buff"                         			"Earth armor"
-		"DOTA_Tooltip_ability_meepo_earth_power_buff_Description"           				"Reduces incoming damage"
-
-		"DOTA_Tooltip_Ability_meepo_down_up"                         			"Down and up!"
-		"DOTA_Tooltip_ability_meepo_down_up_Description"           				"To the ground and back, it is very natural!"
-
-		"DOTA_Tooltip_ability_holdout_gladiators_unite"	"Together we stand!"
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_Description"	"Meepo inspires his allies to unite against enemy forces giving them bonus armor, attack damage and lifesteal based on number of heroes in an area around him! "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_duration"				"DURATION: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_radius"				"RADIUS: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_bonus_armor_per_hero"	"ARMOR PER HERO: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_bonus_damage_per_hero"	"DMG PER HERO: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_lifesteal_per_hero"	"%LIFESTEAL PER HERO: "
-
-		"DOTA_Tooltip_modifier_arc_warden_tempest_double"		"Tempest Double"
-		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"A complete clone of Meepo that can use spells and items ."
-
-//Centaur
-		"npc_dota_hero_centaur"	"Centaur"
-		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
-		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"The mightiest Centaur to ever walk this world. His presence and glory inspires all Centaurs on the field of battle!"
-		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%DMG BONUS :"
-		"DOTA_Tooltip_ability_inherit_centaur_buff_hp_bonus"						"%HP BONUS :"
-		"DOTA_Tooltip_ability_inherit_centaur_buff_magical_resist"						"%MAG RESIST:"
-		"DOTA_Tooltip_modifier_inherit_centaur_buff"								"Centaur buff"
-		"DOTA_Tooltip_modifier_inherit_centaur_buff_Description"					"Is leader of the centaurs."
-
-		"DOTA_Tooltip_ability_centaur_stampede_custom"									"Stampede"
-		"DOTA_Tooltip_ability_centaur_stampede_custom_Description"						"Centaur goes into a vicious charge causing him to move through units, increasing his resistance to physical damage and health regeneration!"
-		"DOTA_Tooltip_ability_centaur_stampede_custom_buff_duration"					"DURATION:"
-		"DOTA_Tooltip_ability_centaur_stampede_custom_ms_bonus"							"BONUS MS:"
-		"DOTA_Tooltip_ability_centaur_stampede_custom_dmg_resist"						"%PHYSYCAL DMG BLOCK:"
-		"DOTA_Tooltip_ability_centaur_stampede_custom_hp_regen_pct"						"%HP REGENERATION:"
-
-		"DOTA_Tooltip_ability_centaur_double_edge_custom"									"Double edge"
-		"DOTA_Tooltip_ability_centaur_double_edge_custom_Description"						"Centaur strikes a mighty blow, damaging both himself and an area around the target. Deals extra damage based on his strength."
-		"DOTA_Tooltip_ability_centaur_double_edge_custom_radius"							"RADIUS:"
-		"DOTA_Tooltip_ability_centaur_double_edge_custom_base_dmg"							"BASE DMG:"
-		"DOTA_Tooltip_ability_centaur_double_edge_custom_str_dmg"							"%STR DMG:"
-		"DOTA_Tooltip_modifier_centaur_double_edge_custom"								"Double edge"
-		"DOTA_Tooltip_modifier_centaur_double_edge_custom_Description"					"It hurts you a lot more than it hurts me."
-
-		"DOTA_Tooltip_ability_centaur_counter_stomp"									"Counter Stomp"
-		"DOTA_Tooltip_ability_centaur_counter_stomp_Description"						"Centaur gains a chance to trigger a War Stomp on each enemy attack. Stomp deals extra damage based on Centaur's strength."
-		"DOTA_Tooltip_ability_centaur_counter_stomp_radius"								"RADIUS:"
-		"DOTA_Tooltip_ability_centaur_counter_stomp_trigger_chance"						"TRIGGER CHANCE:"
-		"DOTA_Tooltip_ability_centaur_counter_stomp_stun_duration"						"STUN DURATION:"
-		"DOTA_Tooltip_ability_centaur_counter_stomp_base_dmg"							"BASE DMG:"
-		"DOTA_Tooltip_ability_centaur_counter_stomp_str_dmg"							"%STR DMG:"
-			
-		"DOTA_Tooltip_ability_centaur_infinite_strength"									"Infinite Strength"
-		"DOTA_Tooltip_ability_centaur_infinite_strength_Description"						"Centaur becomes stronger with every enemy that falls to his blade or his hooves."
-		"DOTA_Tooltip_ability_centaur_infinite_strength_bonus_str"							"STR BONUS :"
-		"DOTA_Tooltip_ability_centaur_infinite_strength_stack_bonus_str"					"STR PER STACK :"
-		"DOTA_Tooltip_modifier_centaur_infinite_strength"									"Infinite strength"
-		"DOTA_Tooltip_modifier_centaur_infinite_strength_Description"						"Stronger stronger stronger !"
-	
-		"DOTA_Tooltip_ability_centaur_dispersion"									"Reflection"
-		"DOTA_Tooltip_ability_centaur_dispersion_Description"						"Centaur returns a percentage of damage dealt to him."
-		"DOTA_Tooltip_ability_centaur_dispersion_damage_reflection_pct"				"% DMG REFLECTION: "
-
-		"DOTA_Tooltip_ability_special_bonus_unique_centaur_3"		"+15% Return Strength Damage"
-
-//Ursa
-		"npc_dota_hero_ursa"	"Ursa"
-		"DOTA_Tooltip_ability_inherit_ursa_buff"									"Ursa buff"
-		"DOTA_Tooltip_ability_inherit_ursa_buff_Description"						"Ursa's appereance cause enemies to run in fear before his strength as well as inspiring hellbears to follow them!"
-		"DOTA_Tooltip_ability_inherit_ursa_buff_hp_bonus"							"%BONUS HP :"
-		"DOTA_Tooltip_ability_inherit_ursa_buff_armor_bonus"						"BONUS ARMOR :"
-		"DOTA_Tooltip_ability_unherit_ursa_buff_magical_resist"						"%MAG RESIST :"
-		"DOTA_Tooltip_modifier_inherit_ursa_buff"								"Ursa buff"
-		"DOTA_Tooltip_modifier_inherit_ursa_buff_Description"					"Ruler of the Ursine"
-		
-		"DOTA_Tooltip_ability_ursa_earthshock_custom"									"Earthshock"
-		"DOTA_Tooltip_ability_ursa_earthshock_custom_Description"						"Ursa slams the earth, causing a powerful shock to damage and slow all enemy units nearby."
-		"DOTA_Tooltip_ability_ursa_earthshock_custom_damage"							"DAMAGE:"
-		"DOTA_Tooltip_ability_ursa_earthshock_custom_shock_radius"						"RADIUS:"
-		"DOTA_Tooltip_ability_ursa_earthshock_custom_debuff_duration"					"DEBUFF DURATION:"
-		"DOTA_Tooltip_ability_ursa_earthshock_custom_as_ms_slow"						"%SLOW:"
-		"DOTA_Tooltip_modifier_ursa_earthshock_custom"									"Earthshock"
-		"DOTA_Tooltip_modifier_ursa_earthshock_custom_Description"						"Attack and movement slowed"
-		
-		"DOTA_Tooltip_ability_ursa_overpower_custom"									"Overpower"
-		"DOTA_Tooltip_ability_ursa_overpower_custom_Description"						"Using his skill in combat, Ursa gains increased attack speed for a number of subsequent attacks!"
-		"DOTA_Tooltip_ability_ursa_overpower_custom_buff_duration"						"DURATION:"
-		"DOTA_Tooltip_ability_ursa_overpower_custom_as_bonus"							"AS BONUS:"
-		"DOTA_Tooltip_modifier_ursa_overpower_custom"									"Overpower"
-		"DOTA_Tooltip_modifier_ursa_overpower_custom_Description"						"Attack speed increased"
-		
-		"DOTA_Tooltip_ability_ursa_fury_swipes_custom"									"Fury swipes"
-		"DOTA_Tooltip_ability_ursa_fury_swipes_custom_Description"						"Ursa's claws dig deeper wounds in the enemy, causing consecutive attacks to the same enemy to deal more damage."
-		"DOTA_Tooltip_ability_ursa_fury_swipes_custom_stack_duration"					"DURATION:"
-		"DOTA_Tooltip_ability_ursa_fury_swipes_custom_stack_damage"						"DMG PER STACK:"
-		"DOTA_Tooltip_modifier_ursa_fury_swipes_custom_debuff"							"Fury swipes"
-		"DOTA_Tooltip_modifier_ursa_fury_swipes_custom_debuff_Description"				"Ursa attacks deal bonus damage"
-		
-		"DOTA_Tooltip_ability_ursa_enrage_custom"										"Enrage"
-		"DOTA_Tooltip_ability_ursa_enrage_custom_Description"							"Ursa goes into a frenzy, multiplying his Fury Swipes damage and causing him to take %damage_reduction%%% less damage. Removes any existing debuffs."
-		"DOTA_Tooltip_ability_ursa_enrage_custom_dmg_multiplier"						"FURY SWIPES MULTIPLIER:"
-		"DOTA_Tooltip_ability_ursa_enrage_custom_damage_reduction"						"INCOMING DAMAGE REDUCTION:"
-		"DOTA_Tooltip_ability_ursa_enrage_custom_buff_duration"							"DURATION:"
-		"DOTA_Tooltip_modifier_ursa_enrage_custom"										"Enrage"
-		"DOTA_Tooltip_modifier_ursa_enrage_custom_Description"							"On rage"
-		
-		"DOTA_Tooltip_ability_ursa_overpower_ultimate"									"True Rage"
-		"DOTA_Tooltip_ability_ursa_overpower_ultimate_Description"						"Ursa removes any debuffs and gets additional attack speed as his rage takes control over him!"
-		"DOTA_Tooltip_ability_ursa_overpower_ultimate_buff_interval"					"INTERVAL:"
-		"DOTA_Tooltip_ability_ursa_overpower_ultimate_buff_duration"					"DURATION:"
-	    
-        //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord"
-
-		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
-		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"The greatest commander of the Troll army. He is able to instill fear in opponents and inspire soldiers to fight to their last breath!"
-		"DOTA_Tooltip_ability_inherit_troll_buff_evasion_bonus"						"%EVASION:"
-		"DOTA_Tooltip_ability_inherit_troll_buff_hp_bonus"							"%BONUS HP :"
-		"DOTA_Tooltip_ability_inherit_troll_buff_magical_resist"						"%MAGIC RESIST :"
-		"DOTA_Tooltip_ability_inherit_troll_buff_armor_bonus"						"BONUS ARMOR:"
-		"DOTA_Tooltip_modifier_inherit_troll_buff"								"Warlord buff"
-		"DOTA_Tooltip_modifier_inherit_troll_buff_Description"					"Is the leader of Trolls ."
-
-		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_datadriven"					"Berserker's Rage"
-		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_datadriven_Description"		"His rage empowers his attacks and its accuracy!"
-		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_datadriven_Lore"				"Like his anger, Troll Warlord's supply of axes is infinite."
-		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_datadriven_accuracy_perc"	"%ACCURACY:"
-		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_datadriven_bonus_damage"	"BONUS DMG:"
-
-
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven"				"Whirling Axes (Melee)"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_Description"	"Troll hurls two axes around him in a close range area of effect, damaging enemy units and causing them to miss some attacks."
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_Lore"			"Keep your enemies close."
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_damage"			"DAMAGE:"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_max_range"		"RADIUS:"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_blind_duration"	"BLIND DURATION:"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_blind_pct"		"%MISS CHANCE:"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_whirl_duration"	"WHIRL DURATION:"
-		"DOTA_Tooltip_ability_troll_warlord_whirling_axes_melee_datadriven_armor_reduction"	"ARMOR REDUCTION:"
-
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven"						"Battle Trance"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_Description"			"True madness allows you to attack with greater speed and trigger bash on every attack!"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_Lore"					"An adrenaline rush of pure hatred quickens your blades."
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_trance_duration"		"TRANCE DURATION:"
-
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_attack_const"	"ATTACK CONST:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_bash_duration"	"STUN DURATION:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_datadriven_bonus_damage"	"STUN DMG:"
-
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass"						"Battle Trance(Mass)"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_Description"			"True madness allows you and your allies to attack with greater speed and trigger bash on every attack!"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_Lore"					"An adrenaline rush of pure hatred quickens the blades of Troll and his allies."
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_trance_duration"		"TRANCE DURATION:"
-//		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_attack_speed"			"ATTACK SPEED:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_attack_const"	"ATTACK CONST:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_bash_duration"	"STUN DURATION:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_bonus_damage"	"STUN DMG:"
-		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
-	 
-	    //Tiny
-		"npc_dota_hero_tiny"	"Tiny"
-
-		"DOTA_Tooltip_ability_inherit_tiny_buff"									"Tiny buff"
-		"DOTA_Tooltip_ability_inherit_tiny_buff_Description"						"Tiny inspires creatures of his own kind, from a smallest rocks to huge boulders!"
-		"DOTA_Tooltip_ability_inherit_tiny_buff_as_bonus"						"BONUS AS :"
-		"DOTA_Tooltip_ability_inherit_tiny_buff_hp_bonus"						"%BONUS HP :"
-		"DOTA_Tooltip_ability_inherit_tiny_buff_armor_bonus"						"BONUS ARMOR :"
-		"DOTA_Tooltip_modifier_inherit_tiny_buff"								"Tiny buff"
-		"DOTA_Tooltip_modifier_inherit_tiny_buff_Description"					"Is leader of the Golems."
-
-		"DOTA_Tooltip_ability_tiny_trample"								"Trample"
-		"DOTA_Tooltip_ability_tiny_trample_Description"					"Tiny rushes forward, trampling enemy units with his craggy mass.  He gains bonus movement speed and phased movement. Each trampled enemy takes damage based, on Tiny's attack damage and get stunned."
-		"DOTA_Tooltip_ability_tiny_trample_attack_factor_tooltip"		"%ATTACK DAMAGE:"
-		"DOTA_Tooltip_ability_tiny_trample_bonus_movespeed_pct"			"%BONUS MOVEMENT SPEED:"
-		"DOTA_Tooltip_ability_tiny_trample_duration"					"TRAMPLE DURATION:"
-		"DOTA_Tooltip_ability_tiny_trample_stun_duration"				"STUN DURATION:"
-
-		"DOTA_Tooltip_modifier_tiny_trample"	"Trample"
-		"DOTA_Tooltip_modifier_tiny_trample_Description"	"Stunned"
-		
-		"DOTA_Tooltip_ability_tiny_grow_custom"	"Shape change"
-		"DOTA_Tooltip_ability_tiny_grow_custom_Description"	"Tiny can control his body weight, gaining bonus armor or speed. I wish I had that power! "
-		"DOTA_Tooltip_ability_tiny_grow_custom_bonus_damage"	"BONUS DMG:"
-		"DOTA_Tooltip_ability_tiny_grow_custom_bonus_armor"	"ARMORFORM BONUS ARMOR:"
-		"DOTA_Tooltip_ability_tiny_grow_custom_status_resistance"	"ARMORFORM STATUS RESIST:"
-		"DOTA_Tooltip_ability_tiny_grow_custom_attack_const"	"SPEEDFORM BAT:"
-		"DOTA_Tooltip_ability_tiny_grow_custom_bonus_ms"	"SPEEDFORM BONUS MS:"
-
-		"DOTA_Tooltip_ability_tiny_rage"									"Stone rage"
-		"DOTA_Tooltip_ability_tiny_rage_Description"						"Stone rage increases Tiny's attack speed, granting him magic immunity!"
-		"DOTA_Tooltip_ability_tiny_rage_attack_speed_bonus"					"BONUS AS: "
-		"DOTA_Tooltip_ability_tiny_rage_duration"							"DURATION: "
-        
-        //Wyvern
-		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
-
-		"DOTA_Tooltip_ability_inherit_wyvern_buff"									"Mystic dragon buff"
-		"DOTA_Tooltip_ability_inherit_wyvern_buff_Description"						"The eldest wurm joins the Roshan war. Auroth enlightens allied dragons with knowledge on the battlefield!"
-		"DOTA_Tooltip_ability_inherit_wyvern_buff_evasion_bonus"						"%EVASION :"
-		"DOTA_Tooltip_ability_inherit_wyvern_buff_hp_bonus"						"%BONUS HP :"
-		"DOTA_Tooltip_ability_inherit_wyvern_buff_armor_bonus"						"BONUS ARMOR :"
-
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield"									"Ice shield"
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield_Description"						"Mystic Dragon creates an ice shield around an ally, which grants them additional health regen and blocks incoming damage, based on Auroth's intelligence."
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield_duration"						"DURATION"
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield_hp_reg"							"HP REG"
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield_damage_absorb"					"DMG BLOCK"
-		"DOTA_Tooltip_ability_mystic_dragon_ice_shield_damage_per_int"					"BLOCK DMG PER INT"
-
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova"									"Frost Nova"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_Description"						"Mystic Dragon's attacks have a chance to explode as a frost nova, slowing targeted unit's movement and attack speed and dealing damage to them, based on Auroth's intelligence."
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_proc_chance"						"%PROC CHANCE"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_int_mult"						"%INT DMG"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_duration"						"DURATION"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_radius"							"RADIUS"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_movespeed_slow"					"%MS SLOW"
-		"DOTA_Tooltip_ability_mystic_dragon_frost_nova_attackspeed_slow"				"AS SLOW"
-
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost"								"Chainy & frosty"
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost_Description"					"A combination of the greatest forms of ice sorcery, known in this world. Auroth conjures a frost orb, which bounces to nearest targets. Enemies, damaged by orb, take damage and become rooted."
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost_damage"							"DMG"
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost_jumps"							"JUMPS"
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost_root_duration"					"FREEZE DURATION"
-		"DOTA_Tooltip_ability_mystic_dragon_chain_frost_jump_range"						"JUMP RANGE"
-
-		"DOTA_Tooltip_ability_mystic_dragon_endless_wisdom"									"Endless wisdom"
-		"DOTA_Tooltip_ability_mystic_dragon_endless_wisdom_Description"						"While her hoard is full of treasures from all parts of the world, the most precious one is her archive. As the eldest wurm, Auroth can certainly be known as the wisest creature among the Seven Planes."
-		"DOTA_Tooltip_ability_mystic_dragon_endless_wisdom_grow_int"						"INT PER STACK"
-		"DOTA_Tooltip_ability_mystic_dragon_endless_wisdom_stack_interval"					"STACK INTERVAL"
-		"DOTA_Tooltip_modifier_mystic_dragon_endless_wisdom_buff"					"Endless wisdom"
-		"DOTA_Tooltip_modifier_mystic_dragon_endless_wisdom_buff_Description"		"She knows more answers, than you have questions..."
-
-		"DOTA_Tooltip_ability_mystic_dragon_frost_soul"									"Frost soul"
-                "DOTA_Tooltip_ability_mystic_dragon_frost_soul_Lore"			"Damn, you're so cold, Just like the lies that you've told, The side of you nobody knows, And everyone loves you..."
-		"DOTA_Tooltip_ability_mystic_dragon_frost_soul_Description"						"The perfection of ice sorcery. Auroth freezes the heart of targeted enemy unit, dealing damage over time and negating its health regeneration."
-		"DOTA_Tooltip_ability_mystic_dragon_frost_soul_duration"						"DURATION: "
-		"DOTA_Tooltip_ability_mystic_dragon_frost_soul_max_hp_dmg"					"% HP/SEC: "
-
-		"DOTA_Tooltip_Ability_item_special_mark"                         			"<font color=\"#7FFFD4\">Wyvern helm</font>"
-		"DOTA_Tooltip_ability_item_special_mark_Description"           			"A mysterious artifact from her hoard, given to the most trustful of her allies. ~Keep on dancing tonight on the edge of time~"
-		"DOTA_Tooltip_ability_item_special_mark_bonus_dmg"                        	"BONUS DMG:"
-		"DOTA_Tooltip_ability_item_special_mark_bonus_str"                        	"BONUS STR:"
-		"DOTA_Tooltip_ability_item_special_mark_bonus_agi"                        	"BONUS AGI:"
-		"DOTA_Tooltip_ability_item_special_mark_bonus_int"                        	"BONUS INT:"
-
-		"DOTA_Tooltip_Ability_item_special_mark_upgrade"                         			"<font color=\"#7FFFD4\">Wyvern helm</font>"
-		"DOTA_Tooltip_ability_item_special_mark_upgrade_Description"           			"Auroth's getting a taste of Savage Amusement... "
-		"DOTA_Tooltip_ability_item_special_mark_upgrade_bonus_dmg"                        	"BONUS DMG:"
-		"DOTA_Tooltip_ability_item_special_mark_upgrade_bonus_str"                        	"BONUS STR:"
-		"DOTA_Tooltip_ability_item_special_mark_upgrade_bonus_agi"                        	"BONUS AGI:"
-		"DOTA_Tooltip_ability_item_special_mark_upgrade_bonus_int"                        	"BONUS INT:"
-
-//Lycan
-		"npc_dota_hero_lycan"	"Lycan"
-
-		"DOTA_Tooltip_ability_inherit_lycan_buff"									"Lycan buff"
-		"DOTA_Tooltip_ability_inherit_lycan_buff_Description"						"Even the mightiest wolves admire the Lycanthrope's power as he gives a part of it to all of his kind. Lycan inspires all wolves on the battlefield!"
-		"DOTA_Tooltip_ability_inherit_lycan_buff_dmg_bonus"						"%BONUS DMG :"
-		"DOTA_Tooltip_ability_inherit_lycan_buff_as_bonus"						"%BONUS AS :"
-		"DOTA_Tooltip_ability_inherit_lycan_buff_armor_bonus"						"BONUS ARMOR :"
-		"DOTA_Tooltip_modifier_inherit_lycan_buff"								"Lycan buff"
-		"DOTA_Tooltip_modifier_inherit_lycan_buff_Description"					"Is leader of the Wolves ."
-
-		"npc_dota_spirit_wolf1"	"Spirit Wolf"
-		"npc_dota_spirit_wolf2"	"Spirit Wolf"
-		"npc_dota_spirit_wolf3"	"Spirit Wolf"
-		"npc_dota_spirit_wolf4"	"Spirit Wolf"
-		"npc_dota_spirit_wolf5"	"Spirit Wolf"
-		"npc_dota_spirit_wolf6"	"Spirit Wolf"
-		"npc_dota_spirit_wolf7"	"Spirit Wolf"
-
-
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom"				"Spirit wolf"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_Lore"			"The Lycan’s companion is one with his spirit, coming to his side at his call."
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_Description"		"Lycan calls for his wolf companion. If the wolf dies, the hero will take damage in the amount of %backlash_damage%% from his maximum health."
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_summon_hp"		"BASE HP:"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_summon_dmg"		"BASE DMG:"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_summon_armor"	"BASE ARMOR:"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_summon_bat"		"BAT:"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_hp_per_str"		"HP PER STR:"
-		"DOTA_Tooltip_ability_lycan_spirit_wolf_custom_dmg_per_str"		"DMG PER STR:"
-	
-		"DOTA_Tooltip_ability_lycan_summon_wolves_beowolf"				"Wolf's bite"
-		"DOTA_Tooltip_ability_lycan_summon_wolves_beowolf_Description"	"A wolf's bite can deal critical damage and heal wolf for a part of damage dealt!"
-		"DOTA_Tooltip_ability_lycan_summon_wolves_beowolf_crit_min"		"%CRITICAL MIN:"
-		"DOTA_Tooltip_ability_lycan_summon_wolves_beowolf_crit_max"		"%CRITICAL MAX:"
-		"DOTA_Tooltip_ability_lycan_summon_wolves_beowolf_lifesteal"	"%CRITICAL LIFESTEAL:"
-	
-		"DOTA_Tooltip_Ability_lycan_open_wounds"                         		"Open wounds"
-		"DOTA_Tooltip_ability_lycan_open_wounds_Description"           			"Decrease target movement speed and heal from all dealing damage ."
-		"DOTA_Tooltip_ability_lycan_open_wounds_slow_ms"                        "%SLOW MS:"
-		"DOTA_Tooltip_ability_lycan_open_wounds_heal_percent"                   "%LIFESTEAL:"
-		"DOTA_Tooltip_ability_lycan_open_wounds_debuff_duration"                "DURATION:"
-		"DOTA_Tooltip_modifier_lycan_open_wounds"                            	"Open wounds"
-		"DOTA_Tooltip_modifier_lycan_open_wounds_Description"                	"Open wounds"
-
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom"	"Shapeshift"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_Lore"	"Forever a slave to his lycanthropy, Banehallow has come to accept his curse, and embrace his own savagery.<br> Active : Partial Shapeshift <br> Lycan can turn into a weaker wolf-form during the day!"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_Description"	"Every night Lycan turns into his true form. During the duration of this ability, Lycan and all creatures under his control have an increased movement speed, cannot be slowed and get a chance in %crit_chance%%% to make a critical attack, causing %crit_multiplier%%% damage."
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_crit_chance"	"%CRIT CHANCE:"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_crit_multiplier"	"%CRIT MULT:"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_speed"		"NIGHT MS BONUS:"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_duration"		"DURATION:"
-		"DOTA_Tooltip_ability_lycan_shapeshift_custom_halfspeed"	"DAY MS BONUS:"
-
-
-	"DOTA_Tooltip_modifier_lycan_shapeshift_custom"	"Shapeshift"
-	"DOTA_Tooltip_modifier_lycan_shapeshift_custom_Description"	"Gain haste and critical strike"
-	"DOTA_Tooltip_modifier_lycan_shapeshift_custom_speed"	"Shapeshift"
-	"DOTA_Tooltip_modifier_lycan_shapeshift_custom_speed_Description"	"Hasted."
-
-	"DOTA_Tooltip_ability_lycan_true_form"							"Human Form"
-	"DOTA_Tooltip_ability_lycan_true_form_Description"				"Return to Human form.\n\nUpgradable by Aghanim's Scepter."
-	"DOTA_Tooltip_ability_lycan_true_form_transformation_time"		"TRANSFORM TIME:"
-	"DOTA_Tooltip_ability_lycan_true_form_aghanim_description"		"Allows Spirit Wolf to attack at any range from Lycan, and to survive if Lycan dies."
-
-	"DOTA_Tooltip_Ability_lycan_feral_impulse_custom"                         			"Feral impulse"
-	"DOTA_Tooltip_ability_lycan_feral_impulse_custom_Description"           				"Feral impulse increase damage and regeneration your own units."
-	"DOTA_Tooltip_ability_lycan_feral_impulse_custom_aura_radius"                        	"RADIUS:"
-	"DOTA_Tooltip_ability_lycan_feral_impulse_custom_bonus_damage"                        	"%BONUS DAMAGE:"
-	"DOTA_Tooltip_ability_lycan_feral_impulse_custom_bonus_hp_regen"                        	"BONUS REGENERATION:"
-	"DOTA_Tooltip_modifier_lycan_feral_impulse_custom_passive"                            	"Feral impulse"
-	"DOTA_Tooltip_modifier_lycan_feral_impulse_custom_passive_Description"                	"Damage and regeneration increased!"
-
-	"DOTA_Tooltip_ability_lycan_ultimate_shapeshift"									"True wolf "
-	"DOTA_Tooltip_ability_lycan_ultimate_shapeshift_Description"						"Now Shapeshift's passive ability works day and night, when activated Shapeshift gives a bonus to all allies in the radius !"
-	"DOTA_Tooltip_ability_lycan_ultimate_shapeshift_radius"							"BUFF RADIUS: "
-	"DOTA_Tooltip_ability_lycan_ultimate_shapeshift_duration"						"DURATION: "
-	
-//Meepo	
-		"npc_dota_hero_meepo"	"Digger"
-		"DOTA_Tooltip_ability_inherit_meepo_buff"									"Digger buff"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_Description"						"No one took Digger seriously until he united all the Kobolds to fight. Now he inspires them in war!"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_dmg_bonus"						"%BONUS DMG :"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_as_bonus"						"BONUS AS :"
-		"DOTA_Tooltip_ability_inherit_meepo_buff_evasion_bonus"						"%EVASION :"
-		"DOTA_Tooltip_modifier_inherit_meepo_buff"								"Digger buff"
-		"DOTA_Tooltip_modifier_inherit_meepo_buff_Description"					"Is leader of the Kobolds."
-
-		"DOTA_Tooltip_Ability_meepo_dig_deeper"                         			"Dig deeper"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_Description"           				"Digger does what he can do best - digs the earth and moves under it!"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_cast_range"                        	"CAST RANGE:"
-		"DOTA_Tooltip_ability_meepo_dig_deeper_tunnel_duration"                   	"TUNNEL DURATION:"
-
-		"DOTA_Tooltip_Ability_meepo_digger_elixir"                         			"Digger elixir"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_Description"           				"Digger is drinking this strange elixir for powerup his muscles!"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_buff_duration"                        	"DURATION:"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_bonus_dmg"                        	"%BONUS DAMAGE:"
-		"DOTA_Tooltip_ability_meepo_digger_elixir_bonus_as"                        	"BONUS AS:"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir"                            	"Digger elixir"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir_Description"                	"Powerup!"
-
-		"DOTA_Tooltip_Ability_meepo_master_shovel"                         			"Master shovel"
-		"DOTA_Tooltip_ability_meepo_master_shovel_Description"           				"Big and dirty shovel. Would be used like a greatsword? May be..."
-		"DOTA_Tooltip_ability_meepo_master_shovel_cleave_radius"                        	"CLEAVE RADIUS:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_cleave_damage_pct"                        	"%CLEAVE:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_crit_chance"                        	"%CRIT CHANCE:"
-		"DOTA_Tooltip_ability_meepo_master_shovel_crit_mult"                        	"%CRIT MULTIPLIER:"
-
-		"DOTA_Tooltip_Ability_meepo_earth_power"                         			"Earth power"
-		"DOTA_Tooltip_ability_meepo_earth_power_Description"           				"<h1>Active: Earth armor</h1>Reduces incoming damage for a short duration\n <h1>Passive: Earth power</h1>Increase your strength on percent!"
-		"DOTA_Tooltip_ability_meepo_earth_power_bonus_str_pct"                      "%STR BONUS:"
-		"DOTA_Tooltip_ability_meepo_earth_power_buff_duration"                      "DURATION:"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir"                            	"Digger elixir"
-		"DOTA_Tooltip_modifier_meepo_digger_elixir_Description"                	"Powerup!"
-
-		"DOTA_Tooltip_Ability_meepo_earth_power_buff"                         			"Earth armor"
-		"DOTA_Tooltip_ability_meepo_earth_power_buff_Description"           				"Reduces incoming damage"
-
-		"DOTA_Tooltip_Ability_meepo_down_up"                         			"Down and up!"
-		"DOTA_Tooltip_ability_meepo_down_up_Description"           				"To the ground and back, it is very natural!"
-
-		"DOTA_Tooltip_ability_holdout_gladiators_unite"	"Together we stand!"
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_Description"	"Meepo inspires his allies to unite against enemy forces giving them bonus armor, attack damage and lifesteal based on number of heroes in an area around him! "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_duration"				"DURATION: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_radius"				"RADIUS: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_bonus_armor_per_hero"	"ARMOR PER HERO: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_bonus_damage_per_hero"	"DMG PER HERO: "
-		"DOTA_Tooltip_ability_holdout_gladiators_unite_lifesteal_per_hero"	"%LIFESTEAL PER HERO: "
-
-		"DOTA_Tooltip_modifier_arc_warden_tempest_double"		"Tempest Double"
-		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"A complete clone of Meepo that can use spells and items ."
-	    
-	    //Storm
-		"npc_dota_hero_storm_spirit"		"Storm"
-
-		"DOTA_Tooltip_Ability_storm_wisdom_power"                         			"Wisdom power"
-		"DOTA_Tooltip_ability_storm_wisdom_power_Description"           			"Storm Spirit calls upon the blessings of the Ancient Arts. Storm Spirit gains knowledge for every enemy he kills. Storm Spirit gains mana regen for every enemy killed."
-		"DOTA_Tooltip_ability_storm_wisdom_power_stat_per_kill"                     "STACK MANAREGEN:"
-		"DOTA_Tooltip_modifier_storm_wisdom_power"                            	"Wisdom power"
-		"DOTA_Tooltip_modifier_storm_wisdom_power_Description"                	"Gives addititional manaregen"
-
-		"DOTA_Tooltip_Ability_storm_thunder_strike"                         			"Thunder strike"
-		"DOTA_Tooltip_ability_storm_thunder_strike_Description"           				"Calls down a bolt of lightning to strike an enemy unit, causing damage based on hero's intelligence!"
-		"DOTA_Tooltip_ability_storm_thunder_strike_base_damage"                        	"DAMAGE:"
-		"DOTA_Tooltip_ability_storm_thunder_strike_int_damage"                        	"INT DAMAGE:"
-
-		"DOTA_Tooltip_Ability_storm_vortex_ball"                         			"Vortex ball"
-		"DOTA_Tooltip_ability_storm_vortex_ball_Description"           				"A vortex that pulls enemies to target point and stuns them!"
-		"DOTA_Tooltip_ability_storm_vortex_ball_radius"                       	 	"RADIUS:"
-		"DOTA_Tooltip_ability_storm_vortex_ball_pull_duration"                      "DURATION:"
-		"DOTA_Tooltip_modifier_storm_vortex_ball_pull"                            	"name"
-		"DOTA_Tooltip_modifier_storm_vortex_ball_pull_Description"                	"desc"
-
-		"DOTA_Tooltip_Ability_storm_overload"                         		"Overload"
-		"DOTA_Tooltip_ability_storm_overload_Description"           		"Accumulates an electric charge that is released with the next attack, dealing damage to nearby enemies!"
-		"DOTA_Tooltip_ability_storm_overload_radius"                        "RADIUS:"
-		"DOTA_Tooltip_ability_storm_overload_base_damage"                   "BASE DAMAGE:"
-		"DOTA_Tooltip_ability_storm_overload_int_damage"                    "INT DAMAGE:"
-		"DOTA_Tooltip_ability_storm_overload_bonus_range"                   "BONUS RANGE:"
-		"DOTA_Tooltip_modifier_storm_overload"                            	"Overload"
-		"DOTA_Tooltip_modifier_storm_overload_Description"                	"Attack overloaded"
-
-		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_cast_range"                     "CAST RANGE:"
-
-		"DOTA_Tooltip_Ability_storm_arcane_power"                         		"Arcane power"
-		"DOTA_Tooltip_ability_storm_arcane_power_Description"           		"Storm Spirit calls upon the blessing of the ancients to grant him immeasurable amounts of Arcane Power. This allows him to gain an advantage on the battlefield."
-		"DOTA_Tooltip_ability_storm_arcane_power_reduce_cd"                     "%COOLDOWN REDUCTION:"
-		"DOTA_Tooltip_ability_storm_arcane_power_reduce_mp"                     "%MANACOST REDUCTION:"
-		"DOTA_Tooltip_modifier_storm_arcane_power"                            	"Arcane power"
-		"DOTA_Tooltip_modifier_storm_arcane_power_Description"                	"Reduce mana and cooldown"
-	
-		"DOTA_Tooltip_Ability_item_special_storm"                         			"<font color=\"#7FFFD4\">Storm shoulder</font>"
-		"DOTA_Tooltip_ability_item_special_storm_Description"           			"Mysterious item from alternative universe..."
-		"DOTA_Tooltip_ability_item_special_storm_bonus_manareg"                        	"BONUS MANAREGEN:"
-		"DOTA_Tooltip_ability_item_special_storm_bonus_str"                        	"BONUS STR:"
-		"DOTA_Tooltip_ability_item_special_storm_bonus_agi"                        	"BONUS AGI:"
-		"DOTA_Tooltip_ability_item_special_storm_bonus_int"                        	"BONUS INT:"
-
-		"DOTA_Tooltip_Ability_item_special_storm_upgrade"                         			"<font color=\"#7FFFD4\">Storm shoulder</font>"
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_Description"           			"Even more mysterious item from alternative universe... "
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_manareg"                        	"BONUS MANAREGEN:"
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_str"                        	"BONUS STR:"
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_agi"                        	"BONUS AGI:"
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_int"                        	"BONUS INT:"
-        
-
-        //Snapfire
-		"npc_dota_hero_snapfire"		"Snapfire"
  
- 		"DOTA_Tooltip_ability_snapfire_rocket_flare"							"Rocket flare"
-		"DOTA_Tooltip_ability_snapfire_rocket_flare_Description"				"Launches a lighting rocket that reduces the armor of enemies in the area."
-		"DOTA_Tooltip_ability_snapfire_rocket_flare_duration"				"DURATION:"
-		"DOTA_Tooltip_ability_snapfire_rocket_flare_radius"					"RADIUS:"
-		"DOTA_Tooltip_ability_snapfire_rocket_flare_armor_decrease"			"ARMOR REDUCTION:"
- 		"DOTA_Tooltip_modifier_snapfire_rocket_flare"							"Rocket flare"
-		"DOTA_Tooltip_modifier_snapfire_rocket_flare_Description"				"Your armor is reduced!"
- 
- 		"DOTA_Tooltip_ability_snapfire_gunner_on"							"Gunner on"
-		"DOTA_Tooltip_ability_snapfire_gunner_on_Description"				"<h1> Active: Gunner on </h1> Goes into machine gun mode, delivering a series of quick shoots! \n <h1> Passive: Lil shredder</h1> Periodically attacks a random target in a radius."
-		"DOTA_Tooltip_ability_snapfire_gunner_on_attack_radius"				"ATTACK RADIUS:"
- 		"DOTA_Tooltip_ability_snapfire_gunner_on_attack_interval"			"ATTACK INTERVAL:"
- 		"DOTA_Tooltip_ability_snapfire_gunner_on_buffed_attacks"			"NUMBER OF ATTACKS:"
- 		"DOTA_Tooltip_ability_snapfire_gunner_on_buff_duration"				"DURATION:"
- 		"DOTA_Tooltip_modifier_snapfire_gunner_on"							"Gunner on"
-		"DOTA_Tooltip_modifier_snapfire_gunner_on_Description"				"FIRE! FIRE! FIRE!"
- 
- 		"DOTA_Tooltip_ability_snapfire_firesnap_cookies"							"Firesnap cookies"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_Description"				"Feeds an ally, healing his wounds and strengthening his power!"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_buff_duration"				"BUFF DURATION:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_range_buffer"				"RANGE OF APPLICATION:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_cookies_count"				"NUMBER OF COOKIES:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_base_heal"				"BASIC HEALING:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_heal_pct"				"%HEALING:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_bonus_dmg"				"%DAMAGE PER COOKIE:"
-		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_bonus_ms"				"%MOVEMENT SPEED PER COOKIE:"
- 		"DOTA_Tooltip_modifier_snapfire_firesnap_cookies"							"Firesnap cookies"
-		"DOTA_Tooltip_modifier_snapfire_firesnap_cookies_Description"				"You are pumped!"
-  
- 		"DOTA_Tooltip_ability_snapfire_mortimer_kiss"							"Mortimer kiss"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_Description"			"Mortimer can always support Snapfire with his fire!"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_trigger_count"			"NUMBER OF ATTACKS TO ACTIVATION:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_trigger_radius"			"RADIUS OF OPERATION:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_impact_radius"				"RADIUS OF IMPACT:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_damage_per_impact"				"DAMAGE PER HIT:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_burn_ground_duration"		"BURNING DURATION:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_burn_damage"				"BURNING DAMAGE:"
-		"DOTA_Tooltip_modifier_snapfire_mortimer_kiss_passive"							"Mortimer kiss"
-		"DOTA_Tooltip_modifier_snapfire_mortimer_kiss_passive_Description"				"YOU ARE UNDER FIRE!"
-  
- 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss"							"Mortimer ultra kiss"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_Description"				"Gathers all his mana to make one powerful shot!"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_mana_convert_damage"			"%MANA TO DAMAGE:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_impact_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_damage_per_impact"				"DAMAGE PER HIT:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_ground_duration"		"BURNING DURATION:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_damage"				"BURNING DAMAGE:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_move_slow_pct"			"%MOVEMENT SPEED SLOW:"
-		"DOTA_Tooltip_modifier_snapfire_mortimer_ultra_kiss"							"Ultra kiss"
-		"DOTA_Tooltip_modifier_snapfire_mortimer_ultra_kiss_Description"				"Mortimer ultra kiss"
-  
- 		"DOTA_Tooltip_ability_snapfire_combat_feel"							"Combat feel"
-		"DOTA_Tooltip_ability_snapfire_combat_feel_Description"				"Strengthens your allies!"
-		"DOTA_Tooltip_ability_snapfire_combat_feel_aura_radius"				"AURA RADIUS:"
-		"DOTA_Tooltip_ability_snapfire_combat_feel_bonus_dmg"				"%DAMAGE BONUS:"
-		"DOTA_Tooltip_ability_snapfire_combat_feel_bomus_spell"				"%STRENGTHENING SPELL DAMAGE:"
- 		"DOTA_Tooltip_modifier_snapfire_combat_feel"							"Combat feel"
-		"DOTA_Tooltip_modifier_snapfire_combat_feel_Description"				"UNLIMITED POWER!!!"
-
-        //Leshrac
-
-		"npc_dota_hero_leshrac"			"Leshrac"
-	
-		"DOTA_Tooltip_ability_inherit_leshrac_buff"									"Leshrac buff"
-		"DOTA_Tooltip_ability_inherit_leshrac_buff_Description"						"The force of this planet itself, Leshrac inspires centaurs to fight till their last breath."
-		"DOTA_Tooltip_ability_inherit_leshrac_buff_dmg_bonus"						"%DMG BONUS :"
-		"DOTA_Tooltip_ability_inherit_leshrac_buff_as_bonus"						"AS BONUS :"
-		"DOTA_Tooltip_modifier_inherit_leshrac_buff"								"Leshrac buff"
-		"DOTA_Tooltip_modifier_inherit_leshrac_buff_Description"					"Is a leader of centaurs."
-
-		"DOTA_Tooltip_ability_leshrac_buff"									"Leshrac buff"
-		"DOTA_Tooltip_ability_leshrac_buff_Description"						"Centaurs become more powerfull ."
-		"DOTA_Tooltip_ability_leshrac_buff_dmg_bonus"						"%DMG BONUS :"
-		"DOTA_Tooltip_ability_leshrac_buff_as_bonus"						"AS BONUS :"
-		"DOTA_Tooltip_modifier_leshrac_buff"								"Leshrac buff"
-		"DOTA_Tooltip_modifier_leshrac_buff_Description"					"Is a leader of centaurs."
-		
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body"								"Spirit and body"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac is a creature living in two worlds at once - <font color='#FFD700'>bodily</font> and <font color='#00BFFF'>spiritual</font>. By choosing a preference for a particular form, he gets its buffs. Having received lethal damage in one form, it switches the hero to another, restores 25% HP and disables this skill for a while."
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_heal_pct"						"%HEALING HP:"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_disable_time"					"DISABLE TIME:"
-		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form"						"Spirit form"
-		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form_Description"				"Leshrac is in Spiritual Form."
-		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_body_form"						"Body form"
-		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_body_form_Description"				"Leshrac is in bodily form."
-
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form"						"Breaking the veil (spirit)"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_Description"			"The hero surrounds himself with magical explosions that damage enemies. The fewer enemies nearby, the more damage they will take. In spirit form, the skill deals more damage."
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_duration"				"DURATION:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_explosion_count"			"EXPLOSIONS:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_explosion_damage"			"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_spirit_form_spirit_form_damage_mult_pct"	"%BONUS DAMAGE:"
-		"DOTA_Tooltip_modifier_leshrac_breaking_the_veil_spirit_form"						"Breaking the veil (spirit)"
-		"DOTA_Tooltip_modifier_leshrac_breaking_the_veil_spirit_form_Description"			"Explosions!"
-
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form"						"Breaking the veil (body)"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_Description"				"The hero surrounds himself with magical explosions that damage enemies. The fewer enemies nearby, the more damage they will take. In bodily form, the skill has a chance to stun the target."
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_duration"				"DURATION:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_explosion_count"			"EXPLOSIONS:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_explosion_damage"			"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_body_form_stun_radius"		"STUN RADIUS:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_body_form_stun_chance"		"STUN CHANCE:"
-		"DOTA_Tooltip_ability_leshrac_breaking_the_veil_body_form_body_form_stun_duration"		"STUN DURATION:"
-		"DOTA_Tooltip_modifier_leshrac_breaking_the_veil_body_form"						"Breaking the veil (body)"
-		"DOTA_Tooltip_modifier_leshrac_breaking_the_veil_body_form_Description"				"Explosions!"
-
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form"						"Chain lightning (spirit)"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_Description"				"The hero summons lightning to attack the selected unit, deals damage, slows down and then jumps at nearby enemies. Each subsequent target will take more damage. In spirit form, reduces the magic resistance of affected enemies."
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_damage"				"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_damage_increase_pct"			"%BONUS DAMAGE PER STRIKE:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_bounces"				"BOUNCES:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_spirit_form_mag_res_reduction_pct"	"%MAGIC RESISTANCE REDUCTION:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_as_slow_pct"				"%ATTACK SPEED SLOW:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_ms_slow_pct"				"%MOVEMENT SPEED SLOW:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_spirit_form_forms_debuff_duration"		"DEBUFF DURATION:"
-
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form"						"Chain lightning (body)"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_Description"				"The hero summons lightning to attack the selected unit, deals damage, slows down and then jumps at nearby enemies. Each subsequent target will take more damage. In bodily form, reduces the armor of affected enemies."
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_damage"					"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_damage_increase_pct"			"%BONUS DAMAGE PER STRIKE:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_bounces"				"BOUNCES:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_body_form_armor_reduction_pct"		"%ARMOR REDUCTION:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_as_slow_pct"				"%ATTACK SPEED SLOW:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_ms_slow_pct"				"%MOVEMENT SPEED SLOW:"
-		"DOTA_Tooltip_ability_leshrac_chain_lightning_body_form_forms_debuff_duration"			"DEBUFF DURATION:"
-	
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame"								"Ethereal flame"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_Description"					"Creates waves of energy around itself, which once per second inflict damage on nearby enemy units and restore the owner's HP. The skill costs mana per second. Deals more damage in spiritual form, while in bodily form it increases health regeneration."
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_mana_spend_per_sec"				"MANA PER SECOND:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_damage"						"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_damage_to_heal_pct"				"%DAMAGE TO HEALING:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_spirit_form_damage_boost_pct"			"%SPIRIT FORM DAMAGE BOOST:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_body_form_heal_boost"				"%BODY FORM HEALING BOOST:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_damage_interval"					"DAMAGE INTERVA:"
-		"DOTA_Tooltip_ability_leshrac_ethereal_flame_damage_radius"					"RADIUS:"
-		"DOTA_Tooltip_modifier_leshrac_ethereal_flame"								"Ethereal flame"
-		"DOTA_Tooltip_modifier_leshrac_ethereal_flame_Description"					"Losts mana per second."
-			
-		"DOTA_Tooltip_ability_leshrac_anomaly"									"Anomaly"
-		"DOTA_Tooltip_ability_leshrac_anomaly_Description"						"When activated, each used spell summons spikes that attack and stun enemies. In <font color='#00BFFF'>spirit form</font> the thorns deal increased damage. In <font color='#FFD700'>body form</font> the stun duration is longer.\n<font color='#00BFFF'>SPIRIT FORM. Passively increases physical damage reduction %spirit_form_physical_damage_reduction_pct%%  and amplification of abilities from intelligence - %spirit_form_int_to_spell_amp%% INT TO SPELL AMP.</font>\n<font color='#FFD700'>BODY FORM. Passively increases resistance to magic damage %body_form_mag_damage_reduction_pct%%  and amplification of abilities from strength - %body_form_str_to_spell_amp%% STR TO SPELL AMP.</font>"
-		"DOTA_Tooltip_ability_leshrac_anomaly_damage"							"DAMAGE:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_radius"							"RADIUS:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_spirit_form_damage_boost_pct"				"%SPIRIT FORM DAMAGE BOOST:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_body_form_stun_duration_boost"				"BODY FORM STUN DURATION BOOST:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_stun_duration"						"STUN DURATION:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_stun_radius"						"STUN RADIUS:"
-		"DOTA_Tooltip_ability_leshrac_anomaly_duration"							"DURATION:"
-		"DOTA_Tooltip_modifier_leshrac_anomaly_passive"								"Anomaly"
-		"DOTA_Tooltip_modifier_leshrac_anomaly_passive_Description"					"Leshrac gains passive skill bonuses."
-		"DOTA_Tooltip_modifier_leshrac_anomaly"									"Anomaly"
-		"DOTA_Tooltip_modifier_leshrac_anomaly_Description"						"Each skill used summons thorns under enemies."
-
-		"DOTA_Tooltip_ability_leshrac_resonance"								"Resonance"
-		"DOTA_Tooltip_ability_leshrac_resonance_Description"						"Leshrac has a chance to deal increased damage when casting spells."
-		"DOTA_Tooltip_ability_leshrac_resonance_magic_crit_chance"					"CRITICAL HIT CHANCE:"
-		"DOTA_Tooltip_ability_leshrac_resonance_magic_crit_mult_pct"					"%CRITICAL DAMAGE:"
-        
-        //Huskar
-		"npc_dota_hero_huskar"	"Huskar"
-
-		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
-		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
-		"DOTA_Tooltip_ability_inherit_huskar_buff_dmg_bonus"						"%BONUS DMG :"
-		"DOTA_Tooltip_ability_inherit_huskar_buff_as_bonus"						"BONUS AS :"
-		"DOTA_Tooltip_modifier_inherit_huskar_buff_fervor"								"Huskar buff"
-		"DOTA_Tooltip_modifier_inherit_huskar_buffr_Description"					"Is king of the Trolls ."
-
-		"DOTA_Tooltip_ability_huskar_inherit_vitality"									"Inherit vitality"
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_Description"						"The innate vitality of trolls provides additional health and regeneration. Collecting the souls of fallen warrior temporarily increases the bonus."
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_bonus_health"						"HEALTH BONUS:"
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_bonus_regen"						"REGEN BONUS:"
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_bonus_health_stack"				"STACK HEALTH BONUS:"
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_bonus_regen_stack"				"STACK REGEN BONUS:"
-		"DOTA_Tooltip_ability_huskar_inherit_vitality_buff_duration"					"DURATION:"
-		"DOTA_Tooltip_modifier_huskar_inherit_vitality_passive"									"Inherit vitality"
-		"DOTA_Tooltip_modifier_huskar_inherit_vitality_passive_Description"						"Number of captured souls"
-
-		"DOTA_Tooltip_ability_huskar_fire_spear"									"Fire spear"
-		"DOTA_Tooltip_ability_huskar_fire_spear_Description"						"Huskar sets his spears aflame, dealing damage over time with his regular attack."
-		"DOTA_Tooltip_ability_huskar_fire_spear_fire_duration"						"DURATION:"
-		"DOTA_Tooltip_ability_huskar_fire_spear_dmg_per_sec"						"DPS:"
-		"DOTA_Tooltip_modifier_huskar_fire_spear_counter"							"Fire spear"
-		"DOTA_Tooltip_modifier_huskar_fire_spear_counter_Description"				"Much too young to die!!!"
-
-		"DOTA_Tooltip_ability_huskar_double_spear"									"Double spear"
-		"DOTA_Tooltip_ability_huskar_double_spear_Description"						"Huskar has a chance to trigger an additional attack!"
-		"DOTA_Tooltip_ability_huskar_double_spear_trigger_chance"					"TRIGGER CHANCE:"
-
-		"DOTA_Tooltip_ability_huskar_summon_dazzle"									"Summon Dazzle"
-		"DOTA_Tooltip_ability_huskar_summon_dazzle_Description"						"Once again, Dazzle joins Huskar in his battle!"
-		"DOTA_Tooltip_ability_huskar_summon_dazzle_summon_duration"					"DURATION:"
-		"DOTA_Tooltip_ability_huskar_summon_dazzle_interval"						"HEAL INTERVAL:"
-		"DOTA_Tooltip_ability_huskar_summon_dazzle_heal_pct"						"%HEAL:"
-	    
-	    //Ogre Magi
-		"npc_dota_hero_ogre_magi"	"Ogre Magi"
-		"DOTA_Tooltip_ability_inherit_ogre_buff"								"Ogre buff"
-		"DOTA_Tooltip_ability_inherit_ogre_buff_Description"					"A naive, but still the greatest Ogre hero. Burning down entire armies, he inspires all Ogres in combat! "
-		"DOTA_Tooltip_ability_inherit_ogre_buff_dmg_bonus"					"%BONUS DMG:"
-		"DOTA_Tooltip_ability_inherit_ogre_buff_armor_bonus"					"BONUS ARMOR :"
-		"DOTA_Tooltip_ability_inherit_ogre_buff_hp_bonus"					"%BONUS HP:"
-
-		"DOTA_Tooltip_modifier_inherit_ogre_buff"								"Ogre buff"
-		"DOTA_Tooltip_modifier_inherit_ogre_buff_Description"					"Is a leader of the Ogres."
-
-		"DOTA_Tooltip_ability_ogre_magi_greed"								"Greed"
-		"DOTA_Tooltip_ability_ogre_magi_greed_Description"					"Ogres are stupid, but they never give up an extra coin."
-		"DOTA_Tooltip_ability_ogre_magi_greed_bonus_gold_pct"					"%INCREASE GOLD PRODUCTION:"
-
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new"							"Fireblast"
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_Description"				"Strikes an enemy with a wave of fire that deals damage, stuns, and jumps at nearby targets. Additional hits deal 50% less damage. Can hit the main target multiple times."
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_damage"					"DAMAGE:"
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_bounces"					"NUMBER OF BOUNCES:"
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_stun_duration"				"STUN DURATION:"
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_bounce_range"				"BOUNCES RADIUS:"
-		"DOTA_Tooltip_ability_ogre_magi_fireblast_new_bounce_networth_to_damage_pct"		"%BONUS DAMAGE FROM NETWORTH:"
-
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new"							"Ignite"
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_Description"					"Coats area with volatile chemicals, causing fire. All enemies caught in the flame will take damage and lose magic resistance every second."
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_damage_per_sec"				"DAMAGE PER SECOND:"
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_damage_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_magic_red_per_stack"				"%REDUCING MAG RESIST PER STACK:"
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_networth_to_damage_pct"			"%EXTRA DAMAGE PER SECOND:"
-		"DOTA_Tooltip_ability_ogre_magi_ignite_new_debuff_duration"				"DURATION:"
-		"DOTA_Tooltip_modifier_ogre_magi_ignite_new_debuff"						"Ignite"
-		"DOTA_Tooltip_modifier_ogre_magi_ignite_new_debuff_Description"				"Each stack grants a reduction to the target's magic resist."
-		
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak"							"Flamebreak"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_Description"					"Throws a bottle of burning oil that explodes at the target location, dealing explosion damage and setting enemies on fire, dealing damage per second and increasing incoming damage to the target."
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_damage"					"HIT DAMAGE:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_damage_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_damage_per_sec"				"DAMAGE PER SECOND:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_debuff_duration"				"BURNING DURATION:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_networth_to_damage_pct"			"%BONUS HIT DAMAGE FROM NETWORTH:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_networth_to_damage_per_sec_pct"		"%BONUS DPS FROM NETWORTH:"
-		"DOTA_Tooltip_ability_ogre_magi_flamebreak_incoming_damage_increase"			"%INCREASED DAMAGE INPUT:"
-		"DOTA_Tooltip_modifier_ogre_magi_flamebreak"							"Flamebreak"
-		"DOTA_Tooltip_modifier_ogre_magi_flamebreak_Description"				"Deals damage per second and increases incoming damage."
-
-		"DOTA_Tooltip_ability_ogre_magi_jackpot"							"Jackpot"
-		"DOTA_Tooltip_ability_ogre_magi_jackpot_Description"					"The greed of the ogres knows no bounds, and their love of fortune is even worse. Ogre Magi spins the roulette wheel for a random amount of gold in between."
-		"DOTA_Tooltip_ability_ogre_magi_jackpot_min_gold"					"MINIMUM GOLD:"
-		"DOTA_Tooltip_ability_ogre_magi_jackpot_max_gold"					"MAXIMUM GOLD:"
-		
-		"DOTA_Tooltip_ability_ogre_magi_multicast_new"							"Multicast"
-		"DOTA_Tooltip_ability_ogre_magi_multicast_new_Description"				"Allows the hero's abilities and items to trigger multiple times in a single cast.<font color='#FFD700'> Jackpot's chance of triggering multicast is 2 times lower!</font>"
-		"DOTA_Tooltip_ability_ogre_magi_multicast_new_x2_chance"				"%CHANCE X2:"
-		"DOTA_Tooltip_ability_ogre_magi_multicast_new_x3_chance"				"%CHANCE X3:"
-		"DOTA_Tooltip_ability_ogre_magi_multicast_new_x4_chance"				"%CHANCE X4:"
-		"DOTA_Tooltip_modifier_multicast_new"								"Multicast"
-		"DOTA_Tooltip_modifier_multicast_new_Description"					"Allows the hero's abilities and items to trigger multiple times in a single cast."	
-  
-
-        //Druid
-		"npc_dota_hero_lone_druid"	"Lone Druid"
-		"DOTA_Tooltip_ability_inherit_druid_buff"									"Druid buff"
-		"DOTA_Tooltip_ability_inherit_druid_buff_Description"						"Half-blooded and thrown to bears as a child. The bears had mercy and raised him. Now he fights among them!"
-		"DOTA_Tooltip_ability_inherit_druid_buff_dmg_bonus"						"%DMG :"
-		"DOTA_Tooltip_ability_inherit_druid_buff_as_bonus"						"AS BONUS :"
-		"DOTA_Tooltip_ability_inherit_druid_buff_evasion_bonus"						"EVASION :"
-		"DOTA_Tooltip_modifier_inherit_druid_buff"								"Druid buff"
-		"DOTA_Tooltip_modifier_inherit_druid_buff_Description"					"A leader of the Bears."
-
-		"DOTA_Tooltip_Ability_lone_druid_spirit_link_custom"                                      	"Spirit link"
-		"DOTA_Tooltip_ability_lone_druid_spirit_link_custom_Description"                          	"Links Lone Druid and the Spirit Bear, increasing the attack and movement speed of both!"
-		"DOTA_Tooltip_ability_lone_druid_spirit_link_custom_bonus_as"                          		"%AS BONUS:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_link_custom_bonus_ms"                          		"%MS BONUS:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_link_custom_buff_duration"                          "DURATION:"
-		"DOTA_Tooltip_modifier_modifier_lone_druid_spirit_link_buff"                              "Spirit link"
-		"DOTA_Tooltip_modifier_modifier_lone_druid_spirit_link_buff_Description"                  "Strong link to his spirit ally! "
-
-		"DOTA_Tooltip_Ability_lone_druid_savage_roar_custom"                                    "Savage roar"
-		"DOTA_Tooltip_ability_lone_druid_savage_roar_custom_Description"                        "Lone Druid roars fiercely lowering nearby enemies' armor and attackspeed!"
-		"DOTA_Tooltip_ability_lone_druid_savage_roar_custom_radius"                          	"RADIUS:"
-		"DOTA_Tooltip_ability_lone_druid_savage_roar_custom_duration"                         	"DURATION:"
-		"DOTA_Tooltip_ability_lone_druid_savage_roar_custom_as_debuff"                          "AS DECREASE:"
-		"DOTA_Tooltip_ability_lone_druid_savage_roar_custom_armor_debuff"                       "ARMOR DECREASE:"
-		"DOTA_Tooltip_modifier_modifier_lone_druid_savage_roar_debuff"                              "Savage roar"
-		"DOTA_Tooltip_modifier_modifier_lone_druid_savage_roar_debuff_Description"                  "Enemy is roared and savaged!!!"
-
-		"DOTA_Tooltip_ability_lone_druid_true_form_speed_loss"						"BASE SPEED BONUS:"
-		
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven"				"Spirit bear"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_Lore"			"The Druid’s companion is one with his spirit, coming to his call at any time."
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_Description"	"Calls for the mighty bear. If the bear dies, the hero will take damage in the amount of %backlash_damage%% from his maximum health."
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_summon_hp"		"BASE HP:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_summon_dmg"		"BASE DMG:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_summon_armor"	"BASE ARMOR:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_summon_bat"		"BAT:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_hp_per_str"		"HP PER STR:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_dmg_per_agi"	"DMG PER AGI:"
-		
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven"	"Summon Spirit Wolf"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_Lore"	"Lycan's lifetime companion is one with his spirit and heart, coming to his aid at any time."
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_Description"	"Summons a mighty wolf to help, if the wolf dies, Lycan will receive a% backside damage from its maximum health, as the level increases, the wolf gains the Return abilities. The attributes of items that give strength, agility, or intelligence do not affect the wolf. \n\n<font color='#00FF40'> <br> A wolf is able to wear items beginning at the 7th level of ability </font> "
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_bear_hp"	"HEALTH:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_bear_armor"	"ARMOR:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_datadriven_bear_bat"	"WOLF BAT:"
-
-		"DOTA_Tooltip_ability_deep_wound_ultimate"	"Deep wound"
-		"DOTA_Tooltip_ability_deep_wound_ultimate_Description"	"Being in the form of a wolf, Lycan has a chance to open a deep wound in the enemy's body, increasing all incoming damage!"
-		"DOTA_Tooltip_ability_deep_wound_ultimate_duration"				"DURATION: "
-		"DOTA_Tooltip_ability_deep_wound_ultimate_bonus_damage_taken"	"%BONUS DMG: "
-		"DOTA_Tooltip_ability_deep_wound_ultimate_proc_chance"			"%PROC CHANCE: "
-		"DOTA_Tooltip_ability_modifier_deep_wound_ultimate"	"Deep wound"
-		"DOTA_Tooltip_ability_modifier_deep_wound_ultimate_Description"	"Wounded! "
-
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_resist"									"Bear resistance"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_resist_Description"						"Bear skin increases resistance to magic and effects."
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_resist_magic_resist"						"%MAGIS RESIST:"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_resist_status_resist"						"%STATUS RESIST:"
-
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_vitality"									"Bear vitality"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_vitality_Description"						"Bear vitality increases the regeneration of health!"
-		"DOTA_Tooltip_ability_lone_druid_spirit_bear_vitality_regen_pct"						"%MAX HP REGEN:"
-	
-        //Pangolier
-
-		"npc_dota_hero_pangolier"			"PangoLier"
-
-		"DOTA_Tooltip_ability_pangolier_greed"								"Bandit Greed"
-		"DOTA_Tooltip_ability_pangolier_greed_Description"					"With each kill, Pangolier earns base bonus gold and extra bonus gold. If Pangolier kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold."
-		"DOTA_Tooltip_ability_pangolier_greed_Lore"							"Don't tell Alchemist I copied his homework!"
-		"DOTA_Tooltip_ability_pangolier_greed_duration"						"RECENT KILL WINDOW:"
-		"DOTA_Tooltip_ability_pangolier_greed_bonus_gold"					"BASE BONUS GOLD:"
-		"DOTA_Tooltip_ability_pangolier_greed_bonus_bonus_gold"				"EXTRA BONUS GOLD:"		
-		"DOTA_Tooltip_ability_pangolier_greed_bonus_gold_cap"				"MAX BONUS GOLD PER KILL:"
-		"DOTA_Tooltip_ability_pangolier_greed_bounty_multiplier"    "BOUNTY RUNE MULTIPLIER:"
-
-		"DOTA_Tooltip_ability_pangolier_gyroscuter"						"SONIC  !"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_Description"			"Pangolier curls into a magic-immune ball and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction."
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_Lore"					"Dota 2 but keep rollin' rollin'..."
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_cast_time_tooltip"	"TRANSFORM TIME:"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_forward_move_speed"	"ROLL SPEED:"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_hit_radius"			"RADIUS:"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_knockback_radius"		"KNOCKBACK DISTANCE:"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_stun_duration"		"STUN DURATION:"
-		"DOTA_Tooltip_ability_pangolier_gyroscuter_duration"				"DURATION:"
-
-		
-		"DOTA_Tooltip_modifier_pangolier_gyroscuter"							"SONIC !"
-		"DOTA_Tooltip_modifier_pangolier_gyroscuter_Description"				"Naturally Magnificent!"
-		"DOTA_Tooltip_modifier_pangolier_gyroscuter_stunned"					"Rolling Thunder Stun"
-		"DOTA_Tooltip_modifier_pangolier_gyroscuter_stunned_Description"		"Stunned by SONIC!"
-
-		"DOTA_Tooltip_ability_special_bonus_unique_pangolier_3"			"+500 Swashbuckle Damage"
-		"DOTA_Tooltip_ability_special_bonus_unique_pangolier_4"			"-5s Swashbuckle Cooldown"
-		"DOTA_Tooltip_ability_special_bonus_unique_pangolier_5"			"-10s Rolling Thunder"
-        
-        //Monkey king
-		"npc_dota_hero_monkey_king"			"Monkey king"
- 
-
-		"DOTA_Tooltip_Ability_monkey_king_mischief_custom"                         			"Mischief"
-		"DOTA_Tooltip_ability_monkey_king_mischief_custom_Description"           				"The Monkey King's agility allows him to do a critical damage and to evade attacks"
-		"DOTA_Tooltip_ability_monkey_king_mischief_custom_crit_chance"                        	"%CRIT CHANCE:"
-		"DOTA_Tooltip_ability_monkey_king_mischief_custom_dodge_chance"                        	"%DODGE CHANCE:"
-		"DOTA_Tooltip_ability_monkey_king_mischief_custom_crit_multiplier"                        	"%CRIT MULTIPLIER:"
-	
-		"DOTA_Tooltip_Ability_monkey_king_boundless_strike_custom"                         			"Boundless strike"
-		"DOTA_Tooltip_ability_monkey_king_boundless_strike_custom_Description"           				"Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with a critical hit based on his attack. Has True Strike."
-		"DOTA_Tooltip_ability_monkey_king_boundless_strike_custom_strike_range"                        	"STRIKE RANGE:"
-		"DOTA_Tooltip_ability_monkey_king_boundless_strike_custom_crit_multiplier"                        	"%CRIT MULTIPLIER:"
-
-		"DOTA_Tooltip_Ability_monkey_king_power_jump"                         			"Power jump"
-		"DOTA_Tooltip_ability_monkey_king_power_jump_Description"           			"Deals damage around the hero, increasing his attack speed!"
-		"DOTA_Tooltip_ability_monkey_king_power_jump_jump_range"                        "JUMP RANGE:"
-		"DOTA_Tooltip_ability_monkey_king_power_jump_bonus_as"                        	"AS BONUS:"
-		"DOTA_Tooltip_ability_monkey_king_power_jump_buff_duration"                     "BUFF DURATION:"
-		"DOTA_Tooltip_modifier_monkey_king_power_jump_buff"                            	"Power jump buff"
-		"DOTA_Tooltip_modifier_monkey_king_power_jump_buff_Description"                	"Attackspeed increased"
-	
-		"DOTA_Tooltip_Ability_monkey_king_jingu_mastery_custom"                         			"Jingu mastery"
-		"DOTA_Tooltip_ability_monkey_king_jingu_mastery_custom_Description"           				"Monkey King's attacks has a chance to awake a power of Jingu Bang"
-		"DOTA_Tooltip_ability_monkey_king_jingu_mastery_custom_trigger_chance"                        	"%TRIGGER CHANCE:"
-		"DOTA_Tooltip_ability_monkey_king_jingu_mastery_custom_lifesteal_pct"                        	"%LIFESTEAL:"
-		"DOTA_Tooltip_ability_monkey_king_jingu_mastery_custom_bonus_dmg"                        	"BONUS DMG:"
-		"DOTA_Tooltip_modifier_monkey_king_jingu_mastery_custom_buff"                            	"Jingu mastery"
-		"DOTA_Tooltip_modifier_monkey_king_jingu_mastery_custom_buff_Description"                	"Attack damage increased"
-	
-		"DOTA_Tooltip_Ability_monkey_king_immortal_secret"                         			"Mystery of immortality"
-		"DOTA_Tooltip_ability_monkey_king_immortal_secret_Description"           				"<h1>Active: Immortal strength</h1><br>When activated Monkey King become one with nature - increases his model and awakes true destructive power. <br><br><h1>Passive: Immortality</h1><br>When Monkey King receives fatal damage, he becomes invulnerable for a short period and restores percentage of his maximum health after the effect."
-		"DOTA_Tooltip_ability_monkey_king_immortal_secret_hit_count"                        	"HIT COUNT:"
-		"DOTA_Tooltip_ability_monkey_king_immortal_secret_immortal_duration"                        	"IMMORTALITY DURATION:"
-		"DOTA_Tooltip_ability_monkey_king_immortal_secret_immortal_regen_pct"                        	"%IMMORTALITY REGEN:"
-		"DOTA_Tooltip_ability_monkey_king_immortal_secret_immortal_cooldown"                        	"IMMORTALITY COOLDOWN:"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret"                            	"Immortal"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret_Description"                	"You are immortal"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret_buff"                            	"Immortal strength"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret_buff_Description"                	"Fenomenal cosmic power!"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret_cooldown"                            	"Immortality cooldown"
-		"DOTA_Tooltip_modifier_monkey_king_immortal_secret_cooldown_Description"                	"You aren't immortal"
-	
-		"DOTA_Tooltip_Ability_monkey_king_wukongs_command_custom"                         			"Wukongs command"
-		"DOTA_Tooltip_ability_monkey_king_wukongs_command_custom_Description"           				"Summon invulnerable soldiers which will fight on the side of the King"
-		"DOTA_Tooltip_ability_monkey_king_wukongs_command_custom_spawn_duration"                        	"SPAWN DURATION:"
-		"DOTA_Tooltip_ability_monkey_king_wukongs_command_custom_unit_count"                        	"UNIT COUNT:"
-        
-        //Renegade
-
-		"npc_dota_hero_life_stealer"			"Renegade"
-		"npc_dota_hero_life_stealer_bio"		"Renegade - an ambitious creep who decided to betray Dire and join Roshan in search of unlimited power!"
-
-		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
-		"DOTA_Tooltip_ability_renegade_backtrack_Description"						"The Renegade's agility allows you to dodge any source of incoming damage!"
-		"DOTA_Tooltip_ability_renegade_backtrack_dodge_chance_pct"					"%DODGE CHANCE :"
-
-		
-		"DOTA_Tooltip_ability_renegade_blade_dance"					"Blade dance"
-		"DOTA_Tooltip_ability_renegade_blade_dance_Description"		"Renegade leaps towards an enemy unit, and then perform a row of quick attacks. Renegade in invulnerable for the duration."
-		"DOTA_Tooltip_ability_renegade_blade_dance_bounce_distance"		"JUMP DISTANCE:"
-		"DOTA_Tooltip_ability_renegade_blade_dance_count"		"ATTACK COUNT:"
-
-		
-		"DOTA_Tooltip_ability_renegade_assasin_mark"					"Assasin mark"
-		"DOTA_Tooltip_ability_renegade_assasin_mark_Description"		"Renegade choose an enemy unit. Grants additional attack speed to every unit which attack the target"
-		"DOTA_Tooltip_ability_renegade_assasin_mark_debuff_duration"	"DEBUFF DURATION:"
-		"DOTA_Tooltip_ability_renegade_assasin_mark_buff_duration"	"BUFF DURATION:"
-		"DOTA_Tooltip_ability_renegade_assasin_mark_attack_speed"	"AS BONUS:"
-		"DOTA_Tooltip_modifier_renegade_assasin_mark_debuff"						"Assasin mark"
-		"DOTA_Tooltip_modifier_renegade_assasin_mark_debuff_Description"			"Increases attack speed of a unit."
-
-		
-		"DOTA_Tooltip_ability_renegade_endless_sharpening"					"Endless sharpening"
-		"DOTA_Tooltip_ability_renegade_endless_sharpening_Description"		"The bloodthirsty Renegade's blade grants Renegade extra damage based on a number of killed enemies."
-		"DOTA_Tooltip_ability_renegade_endless_sharpening_stack_bonus_dmg"	"DMG PER KILL:"
-		"DOTA_Tooltip_modifier_damage_heap_collector"						"Endless sharpening"
-		"DOTA_Tooltip_modifier_damage_heap_collector_Description"			"Grants additional damage"
-
-		
-		"DOTA_Tooltip_ability_renegade_coup_de_grace_datadriven"					"Coup de grace"
-		"DOTA_Tooltip_ability_renegade_coup_de_grace_datadriven_Description"		"Years of practice made Renegade a perfect assassin, being able to crush his enemy with one blow! <br> The active ability increases trigger chance to 100% for the next attack."
-		"DOTA_Tooltip_ability_renegade_coup_de_grace_datadriven_crit_bonus"				"%DMG MULTIPLIER:"
-		"DOTA_Tooltip_ability_renegade_coup_de_grace_datadriven_crit_chance"				"%PROC CHANCE:"
-		"DOTA_Tooltip_ability_renegade_coup_de_grace_datadriven_duration"				"DURATION:"
-		"DOTA_Tooltip_modifier_coup_de_grace_crit_active"						"Coup de grace"
-		"DOTA_Tooltip_modifier_coup_de_grace_crit_active_Description"			"Red number incoming!"
-
-		"DOTA_Tooltip_ability_renegade_renegade_rage"					"Renegade rage"
-		"DOTA_Tooltip_ability_renegade_renegade_rage_Description"		"Endless Rage of the Renegade grants him additional attack damage!"
-		"DOTA_Tooltip_ability_renegade_renegade_rage_bonus_dmg"				"% DMG BONUS:"
-		"DOTA_Tooltip_modifier_renegade_renegade_rage"						"Rage"
-		"DOTA_Tooltip_modifier_renegade_renegade_rage_Description"			"Blood calls for blood!"
-
-		//Spartacus
-
-		"npc_dota_hero_omniknight"			"Spartacus"
-		"npc_dota_hero_omniknight_bio"		"Spartacus - the leader of the revolutionaries, who decided to break out of the vicious circle of senseless and merciless war. "
-		
-
-	
-		"DOTA_Tooltip_ability_spartacus_call_of_allies"					"Call of allies"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_Description"		"When he receives a certain percentage of his maximum health, Spartacus calls his Partners in Crime to fight on his side!"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_health_trigger"		"%HP FOR TRIGGER:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_summon_duration"		"DURATION:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_str_dmg"		"%STR TO DMG:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_base_armor"		"BASE ARMOR:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_base_dmg"		"BASE DMG:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_base_hp"		"BASE HP:"
-		"DOTA_Tooltip_ability_spartacus_call_of_allies_health_pct"		"%HERO MAX HP:"
-
-		
-		"DOTA_Tooltip_ability_spartacus_clap"					"Strong clap"
-		"DOTA_Tooltip_ability_spartacus_clap_Description"		"Spartacus slams the ground, dealing damage, decreasing attack speed and armor of each targeted enemy! "
-		"DOTA_Tooltip_ability_spartacus_clap_radius"	"RADIUS:"
-		"DOTA_Tooltip_ability_spartacus_clap_duration"	"DURATION:"
-		"DOTA_Tooltip_ability_spartacus_clap_damage"	"DMG:"
-		"DOTA_Tooltip_ability_spartacus_clap_armor_debuff"	"ARMOR DECREASE:"
-		"DOTA_Tooltip_ability_spartacus_clap_attack_speed_slow"	"AS SLOW:"
-		"DOTA_Tooltip_modifier_spartacus_clap"						"Kappa Clap"
-		"DOTA_Tooltip_modifier_spartacus_clap_Description"			"Clapped"
-
-		
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls"					"Fire of souls"
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls_Description"		"Encourages his brothers in arms, increasing their armor and health regeneration!"
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls_duration"		"DURATION:"
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls_radius"		"RADIUS:"
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls_armor_bonus"	"ARMOR BONUS :"
-		"DOTA_Tooltip_ability_spartacus_fire_of_souls_regen_bonus"	"REGENERATION BONUS:"
-		"DOTA_Tooltip_modifier_spartacus_fire_of_souls"						"Fire of souls"
-		"DOTA_Tooltip_modifier_spartacus_fire_of_souls_Description"			"Extra armor and health regeneration"
-
-		
-		"DOTA_Tooltip_ability_spartacus_sword_of_vengance"					"Sword of vengance"
-		"DOTA_Tooltip_ability_spartacus_sword_of_vengance_Description"		"Spartacus has a chance to deal extra damage and disarm targeted unit on each attack!"
-		"DOTA_Tooltip_ability_spartacus_sword_of_vengance_trigger_chance"				"%PROC CHANCE:"
-		"DOTA_Tooltip_ability_spartacus_sword_of_vengance_ability_damage"				"DMG:"
-		"DOTA_Tooltip_ability_spartacus_sword_of_vengance_debuff_duration"				"DISARM DURATION:"
-
-		"DOTA_Tooltip_ability_spartacus_elite_squad"					"Elite squad"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_Description"		"Spartacus summons an elite squad of the most experienced warriors from his legions!"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_summon_duration"			"SUMMON DURATION:"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_count_soldier"				"SOLDIERS:"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_count_mage"					"MAGES:"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_count_siege"				"CATAPULT:"
-		"DOTA_Tooltip_ability_spartacus_elite_squad_count_commander"			"COMMANDERS :"
-
-		"DOTA_Tooltip_ability_commander_aura"					"Commander aura"
-		"DOTA_Tooltip_ability_commander_aura_Description"		"Encourages allies, increasing their attack speed!"
-		"DOTA_Tooltip_ability_commander_aura_bonus_attack_speed"			"BONUS AS:"
-		"DOTA_Tooltip_ability_commander_aura_radius"			"RADIUS:"
-
-		"npc_dota_spartacus_summon"					"Soldier"
-		"npc_dota_spartacus_soldier1"				"Experienced soldier"
-		"npc_dota_spartacus_soldier2"				"Elite soldier"
-		"npc_dota_spartacus_mage1"					"Mage"
-		"npc_dota_spartacus_mage2"					"Elite mage"
-		"npc_dota_spartacus_siege"					"Catapult"
-		"npc_dota_spartacus_commander"				"Commander"
-
-		"DOTA_Tooltip_ability_spartacus_leader_blood"					"Leader's blood"
-		"DOTA_Tooltip_ability_spartacus_leader_blood_Description"		"Spartacus heals all his allies in an area around the hero for a part of damage he recieves!"
-		"DOTA_Tooltip_ability_spartacus_leader_blood_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_spartacus_leader_blood_dmg_convert"			"%DMG CONVERT:"
-
-		//Disruptor
-		"npc_dota_hero_disruptor"		"Disruptor"
-
-		"DOTA_Tooltip_ability_inherit_disruptor_buff"                         			"Disruptor buff"
-		"DOTA_Tooltip_ability_inherit_disruptor_buff_Description"           			"The leader of the Oglodi and the master of the thunderstorm inspires thunder lizards and leads them to victory!"
-		"DOTA_Tooltip_ability_inherit_disruptor_buff_dmg_bonus"                        	"%BONUS DMG:"
-		"DOTA_Tooltip_ability_inherit_disruptor_buff_as_bonus"                        	"BONUS ATTACKSPEED:"
-
-		"DOTA_Tooltip_Ability_disruptor_thunder_enchant"                         			"Thunder enchant"
-		"DOTA_Tooltip_ability_disruptor_thunder_enchant_Description"           			"Summons a thundercloud above himself or an ally. Cloud charges target's attacks to deal additional magic damage in an area of effect!"
-		"DOTA_Tooltip_ability_disruptor_thunder_enchant_buff_duration"                  "DURATION:"
-		"DOTA_Tooltip_ability_disruptor_thunder_enchant_strike_dmg"                     "THUNDER DAMAGE:"
-		"DOTA_Tooltip_ability_disruptor_thunder_enchant_radius"                        	"RADIUS:"
-		"DOTA_Tooltip_modifier_disruptor_thunder_enchant"                            	"Thunder enchant"
-		"DOTA_Tooltip_modifier_disruptor_thunder_enchant_Description"                	"Every attack trigger thunder strike !"
-
-		"DOTA_Tooltip_Ability_disruptor_glimpse_custom"                         			"Glimpse"
-		"DOTA_Tooltip_ability_disruptor_glimpse_custom_Description"           				"Playing with electricity may cause unexpected results. Teleports a targeted unit to target point!"
-		"DOTA_Tooltip_ability_disruptor_glimpse_custom_cast_range"                        	"CAST RANGE:"
-
-		"DOTA_Tooltip_Ability_disruptor_glimpse_custom_active"                         			"Glimpse active"
-		"DOTA_Tooltip_ability_disruptor_glimpse_custom_active_Description"           				"Here we go again!"
-		"DOTA_Tooltip_ability_disruptor_glimpse_custom_active_cast_range"                        	"CAST RANGE:"
-
-
-		"DOTA_Tooltip_Ability_disruptor_static_storm_custom"                         			"Static storm"
-		"DOTA_Tooltip_ability_disruptor_static_storm_custom_Description"           				"Creates a static storm that deals damage and reduces magic resistance of all enemy creatures in an area of effect. Damage increases with the duration of the ability!"
-		"DOTA_Tooltip_ability_disruptor_static_storm_custom_radius"                        	"RADIUS:"
-		"DOTA_Tooltip_ability_disruptor_static_storm_custom_duration"                        	"DURATION:"
-		"DOTA_Tooltip_ability_disruptor_static_storm_custom_max_damage"                        	"MAX DAMAGE:"
-		"DOTA_Tooltip_ability_disruptor_static_storm_custom_reduce_mag_resist"                        	"%REDUCE MAGIC RESIST:"
-
-		"DOTA_Tooltip_Ability_disruptor_thunder_power"                         			"Thunder power"
-		"DOTA_Tooltip_ability_disruptor_thunder_power_Description"           				"Disruptors charges targeted ally with thunder power, increasing their stats and outcoming damage!"
-		"DOTA_Tooltip_ability_disruptor_thunder_power_buff_duration"                        "DURATION:"
-		"DOTA_Tooltip_ability_disruptor_thunder_power_bonus_stats"                        	"BONUS STATS:"
-		"DOTA_Tooltip_ability_disruptor_thunder_power_bonus_out_dmg"                        "%BONUS OUTGOING DAMAGE:"
-		"DOTA_Tooltip_modifier_disruptor_thunder_power"                            	"Thunder power"
-		"DOTA_Tooltip_modifier_disruptor_thunder_power_Description"                	"Gain power of thunder"
-
-		"DOTA_Tooltip_Ability_disruptor_glimpself"                         			"Glimpself"
-		"DOTA_Tooltip_ability_disruptor_glimpself_Description"           				"Disruptor becomes a master of electricity spells!"
-		"DOTA_Tooltip_ability_disruptor_glimpself_reduce_cd"                        	"%COOLDOWN REDUCTION:"
-
-		//Ward master
-		"npc_dota_hero_shadow_shaman"		"Ward master"
-
- 		"DOTA_Tooltip_ability_rasta_buff_ward"							"Ward buff"
-		"DOTA_Tooltip_ability_rasta_buff_ward_Description"				"CHANNELED - Ward master focuses his magic to strengthen the ward increasing its attack speed."
-		"DOTA_Tooltip_ability_rasta_buff_ward_buff_duration"				"MAX DURATION:"
-		"DOTA_Tooltip_ability_rasta_buff_ward_bonus_attack_speed"			"BONUS AS:"
-
- 		"DOTA_Tooltip_ability_rasta_serpent_ward"							"Serpent ward"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_Description"				"Summons a serpent ward to attack enemy units and structures. The ward is invalnerable."
-		"DOTA_Tooltip_ability_rasta_serpent_ward_ward_duration"			"WARD DURATION:"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_ward_health"				"WARD HEALTH:"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_ward_damage"				"WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_int_dmg"					"%INT WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_splash_radius"				"SPLASH RADIUS:"
-		"DOTA_Tooltip_ability_rasta_serpent_ward_splash_pct"				"%SPLASH:"
-
- 		"DOTA_Tooltip_ability_rasta_healing_ward"							"Healling ward"
-		"DOTA_Tooltip_ability_rasta_healing_ward_Description"				"Summons a Healing ward which heals all nearby allied units - basic heal plus heal based on their max health. It also increases the armor of all allies."
-		"DOTA_Tooltip_ability_rasta_healing_ward_ward_duration"			"WARD DURATION:"
-		"DOTA_Tooltip_ability_rasta_healing_ward_ward_health"				"WARD HEALTH:"
-		"DOTA_Tooltip_ability_rasta_healing_ward_aura_radius"				"AURA RADIUS:"
-		"DOTA_Tooltip_ability_rasta_healing_ward_aura_armor"				"BONUS ARMOR:"
-		"DOTA_Tooltip_ability_rasta_healing_ward_aura_regen"				"BONUS REGEN:"
-		"DOTA_Tooltip_ability_rasta_healing_ward_aura_regen_pct"			"%BONUS REGEN:"
-		"DOTA_Tooltip_modifier_rasta_healing_ward_aura"					"Healing aura"
-		"DOTA_Tooltip_modifier_rasta_healing_ward_aura_description"		"Regeneration increased"
-
- 		"DOTA_Tooltip_ability_rasta_poison_ward"							"Poison ward"
-		"DOTA_Tooltip_ability_rasta_poison_ward_Description"				"Summons a plague ward to attack enemy units and structures. The ward is immune to magic and decrease armor of enemy when attack. "
-		"DOTA_Tooltip_ability_rasta_poison_ward_ward_duration"			"WARD DURATION:"
-		"DOTA_Tooltip_ability_rasta_poison_ward_ward_health"				"WARD HEALTH:"
-		"DOTA_Tooltip_ability_rasta_poison_ward_ward_damage"				"WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_poison_ward_int_dmg"					"%INT WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_poison_ward_debuff_duration"			"DEBUFF DURATION:"
-		"DOTA_Tooltip_ability_rasta_poison_ward_debuff_armor"				"DECREASE ARMOR:"
-		"DOTA_Tooltip_modifier_rasta_poison_ward_debuff"					"Poison debuff"
-		"DOTA_Tooltip_modifier_rasta_poison_ward_debuff_description"		"Armor reduced"
-
- 		"DOTA_Tooltip_ability_rasta_nether_ward"							"Nether ward"
-		"DOTA_Tooltip_ability_rasta_nether_ward_Description"				"Ward master places a Nether ward at the target location. The ward burns enemies in radius dealing base damage plus the damage from intelligence."
-		"DOTA_Tooltip_ability_rasta_nether_ward_ward_duration"			"WARD DURATION:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_ward_health"				"WARD HEALTH:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_ward_damage"				"WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_int_dmg"					"%INT WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_aura_radius"				"AURA RADIUS:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_aura_damage"				"AURA DMG:"
-		"DOTA_Tooltip_ability_rasta_nether_ward_aura_int_dmg"				"%INT DMG:"
-		"DOTA_Tooltip_modifier_rasta_nether_ward_aura"					"Nether aura"
-		"DOTA_Tooltip_modifier_rasta_nether_ward_aura_description"		"You are netherd"
-
- 		"DOTA_Tooltip_ability_rasta_death_ward"							"Death ward"
-		"DOTA_Tooltip_ability_rasta_death_ward_Description"				"Summons strong deadly ward to attack enemies. Attacks several enemies."
-		"DOTA_Tooltip_ability_rasta_death_ward_ward_duration"			"WARD DURATION:"
-		"DOTA_Tooltip_ability_rasta_death_ward_ward_health"				"WARD HEALTH:"
-		"DOTA_Tooltip_ability_rasta_death_ward_ward_damage"				"WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_death_ward_int_dmg"					"%INT WARD DMG:"
-		"DOTA_Tooltip_ability_rasta_death_ward_arrow_count"				"TARGET COUNT:"
-
-		"npc_dota_rasta_serpent_ward"		"Serpent ward"
-		"npc_dota_rasta_poison_ward"		"Poison ward"
-		"npc_dota_rasta_healing_ward"		"Healling ward"
-		"npc_dota_rasta_nether_ward"		"Nether ward"
-		"npc_dota_rasta_death_ward"			"Death ward"
-
-		//Antares
-		"npc_dota_hero_dragon_knight"		"Antares"
-
-		"DOTA_Tooltip_Ability_inherit_antares_buff"                         			"Dragon Emperor buff"
-		"DOTA_Tooltip_ability_inherit_antares_buff_Description"           				"The incredible power of the Dragon Emperor strengthens his entire army!"
-		"DOTA_Tooltip_ability_inherit_antares_buff_dmg_bonus"                        	"%DMG BONUS:"
-		"DOTA_Tooltip_ability_inherit_antares_buff_armor_bonus"                        	"ARMOR BONUS:"
-		"DOTA_Tooltip_ability_inherit_antares_buff_hp_bonus"                        	"%HEALTH BONUS:"
-		"DOTA_Tooltip_ability_inherit_antares_buff_as_bonus"                        	"ATTACKSPEED BONUS:"
-
-	
-		"DOTA_Tooltip_Ability_antares_dragon_breathe"                         			"Dragon breath"
-		"DOTA_Tooltip_ability_antares_dragon_breathe_Description"           				"The Dragon Emperor spews flames, inflicting huge damage and scaring enemies!"
-		"DOTA_Tooltip_ability_antares_dragon_breathe_wave_distance"                     "DISTANCE:"
-		"DOTA_Tooltip_ability_antares_dragon_breathe_base_dmg"                        	"BASE DMG:"
-		"DOTA_Tooltip_ability_antares_dragon_breathe_damage_pct"                        "%STR DAMAGE:"
-		"DOTA_Tooltip_ability_antares_dragon_breathe_fear_duration"                     "FEAR DURATION:"
-	
-		"DOTA_Tooltip_Ability_antares_dragon_blood"                         			"Dragon blood"
-		"DOTA_Tooltip_ability_antares_dragon_blood_Description"           				"The Dragon Emperor is enraged and destroying all his enemies!"
-		"DOTA_Tooltip_ability_antares_dragon_blood_bonus_str_as"                        	"ATTACKSPEED PER STR:"
-
-		"DOTA_Tooltip_Ability_antares_dragon_skin"                         			"Dragon skin"
-		"DOTA_Tooltip_ability_antares_dragon_skin_Description"           				"There are legends - that the dragon scales cannot be pierced even with the sharpest blade!"
-		"DOTA_Tooltip_ability_antares_dragon_skin_bonus_armor"                        	"BONUS ARMOR:"
-		"DOTA_Tooltip_ability_antares_dragon_skin_bonus_regen"                        	"BONUS REGEN:"
-		"DOTA_Tooltip_ability_antares_dragon_skin_bonus_regen_pct"                        	"%BONUS REGEN:"
-
-		"DOTA_Tooltip_Ability_antares_dragon_form"                         			"True Dragon form"
-		"DOTA_Tooltip_ability_antares_dragon_form_Description"           				"Antares releases all his strength, turning into a powerful dragon, sweeping away everything in his path!"
-		"DOTA_Tooltip_ability_antares_dragon_form_form_duration"                        	"FORM DURATION:"
-		"DOTA_Tooltip_ability_antares_dragon_form_attack_range_bonus"                       "BONUS ATTACK RANGE:"
-		"DOTA_Tooltip_ability_antares_dragon_form_splash_radius"                        	"SPLASH RADIUS:"
-		"DOTA_Tooltip_ability_antares_dragon_form_splash_pct"                        		"%SPLASH PCT:"
-		"DOTA_Tooltip_ability_antares_dragon_form_"                        	":"
-		"DOTA_Tooltip_modifier_antares_dragon_form"                            	"True Dragon form"
-		"DOTA_Tooltip_modifier_antares_dragon_form_Description"                	"The true form of the Dragon Emperor!"
-
-		"DOTA_Tooltip_Ability_antares_fear_aura"                         			"Fear aura"
-		"DOTA_Tooltip_ability_antares_fear_aura_Description"           				"The Dragon Emperor ceases to suppress his aura, from which all his enemies are horrified and lose some of their strength!"
-		"DOTA_Tooltip_ability_antares_fear_aura_aura_radius"                        	"RADIUS:"
-		"DOTA_Tooltip_ability_antares_fear_aura_decrease_dmg"                        	"%DECREASE DMG:"
-		"DOTA_Tooltip_modifier_antares_fear_aura_debuff"                            	"Fear aura"
-		"DOTA_Tooltip_modifier_antares_fear_aura_debuff_Description"                	"Fear aura"
-
-	
-		"DOTA_Tooltip_Ability_item_special_antares"                         			"<font color=\"#7FFFD4\">Antares weapon</font>"
-		"DOTA_Tooltip_ability_item_special_antares_Description"           			"Mystic weapon from alternative universe..."
-		"DOTA_Tooltip_ability_item_special_antares_bonus_dmg"                        	"+$DAMAGE"
-		"DOTA_Tooltip_ability_item_special_antares_bonus_str"                        	"+$STR"
-		"DOTA_Tooltip_ability_item_special_antares_bonus_agi"                        	"+$AGI"
-		"DOTA_Tooltip_ability_item_special_antares_bonus_int"                        	"+$INT"
-
-		"DOTA_Tooltip_Ability_item_special_antares_upgrade_1"                         			"<font color=\"#7FFFD4\">Antares weapon</font>"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_1_Description"           			"Mystic weapon from alternative universe... "
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_1_bonus_dmg"                        	"+$damage"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_1_bonus_str"                        	"+$str"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_1_bonus_agi"                        	"+$agi"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_1_bonus_int"                        	"+$int"
-
-		"DOTA_Tooltip_Ability_item_special_antares_upgrade_2"                         			"<font color=\"#7FFFD4\">Antares weapon</font>"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_2_Description"           			"Mystic weapon from alternative universe... "
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_2_bonus_dmg"                        	"+$damage"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_2_bonus_str"                        	"+$str"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_2_bonus_agi"                        	"+$agi"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_2_bonus_int"                        	"+$int"
-
-		"DOTA_Tooltip_Ability_item_special_antares_upgrade_3"                         			"<font color=\"#7FFFD4\">Antares weapon</font>"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_3_Description"           			"Mystic weapon from alternative universe... "
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_3_bonus_dmg"                        	"+$damage"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_3_bonus_str"                        	"+$str"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_3_bonus_agi"                        	"+$agi"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_3_bonus_int"                        	"+$int"
-
-		"DOTA_Tooltip_Ability_item_special_antares_upgrade_4"                         			"<font color=\"#7FFFD4\">Antares weapon</font>"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_4_Description"           			"Mystic weapon from alternative universe... "
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_4_bonus_dmg"                        	"+$damage"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_4_bonus_str"                        	"+$str"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_4_bonus_agi"                        	"+$agi"
-		"DOTA_Tooltip_ability_item_special_antares_upgrade_4_bonus_int"                        	"+$int"
-
-		//Roshan Son
-
-		"npc_dota_hero_treant"			"Roshan Son"
-		
-		"DOTA_Tooltip_ability_creature_fire_breath"								"Fire breath"
-		"DOTA_Tooltip_ability_creature_fire_breath_projectile_count"			"WAVE COUNT :"
-		"DOTA_Tooltip_ability_creature_fire_breath_damage"						"WAVE DMG :"
-		"DOTA_Tooltip_ability_creature_fire_breath_radius"						"WAVE RADIUS :"
-
-		"DOTA_Tooltip_ability_roshan_clap_datadriven"									"Roshan slam"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_Description"	"A powerful blow to the ground deals damage to nearby enemies and slows.<font color='#DBA900'><br> Deals extra damage based on GROW UP stacks! </font>"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_radius"			"RADIUS :"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_damage"			"DMG :"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_damage_per_stack"			"DMG PER STACK :"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_duration"			"SLOW DURATION :"
-		"DOTA_Tooltip_ability_roshan_clap_datadriven_attack_speed_slow"			"%SLOW :"
-
-		"DOTA_Tooltip_ability_roshan_summon_clone"									"Roshan clone"
-		"DOTA_Tooltip_ability_roshan_summon_clone_Description"		"Summon the clone of Roshan .<font color='#DBA900'><br>The clone gets stronger every minute! </font>"
-		"DOTA_Tooltip_ability_roshan_summon_clone_duration"			"DURATION :"
-		
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven"									"GROW UP"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_Description"	"Roshan's son becomes stronger every minute! <font color='#DBA900'><br>Passive: Strong attack <br> Roshan has a chance to attack with immense power, inflicting critical damage and stunning the target! Critical damage is based on the Roshan Son's strength! </font>"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_Lore"			"Stronger, the longer I'm pushed to the limit..."
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_grow_interval"			"GROW INTERVAL :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_grow_str"				"GROW STR :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_grow_armor"			"GROW ARMOR :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_grow_model"			"%GROW MODEL :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_crit_chance"			"%CHANCE PROC :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_crit_per_str"			"%CRIT MULT PER STR :"
-		"DOTA_Tooltip_ability_roshan_inherit_buff_datadriven_stun_duration"			"STUN DURATION :"
-
-		"DOTA_Tooltip_ability_roshan_create_aegis"					"Aegis handicraft"
-		"DOTA_Tooltip_ability_roshan_create_aegis_Description"		"Roshan's Son shares his father's curse with his teammates!"
 	
 	    "scroll_7"																														"Secrets of Necromancy: Common Tome Of Abilities"
 		"DOTA_Tooltip_Ability_item_up_ability_tower"																					"<font color='#96ffee'>Common Tome Of Abilities</font>"
@@ -2955,8 +1864,7 @@
 		"DOTA_Tooltip_Ability_item_up_ability_tower4"																					"<font color='#d400ff'>Epic Tome Of Abilities</font>"
 		"DOTA_Tooltip_Ability_item_up_ability_tower4_description"																		"When applied to the Homer, it grants a random <font color='#d400ff'>Epic</font> level 1 ability."
 		
-		"DOTA_Tooltip_Ability_item_up_hp_tower" 																						"Secrets of Necromancy: Scroll Of Life Energy"
-		"DOTA_Tooltip_Ability_item_up_hp_tower_description" 																			"When applied to the Homer, this increases his health and mana stats."
+ 
 		 
 		"DOTA_Tooltip_Ability_item_up_dmg_tower" 																						"Secrets of Necromancy: Scroll Of Power"
 		"DOTA_Tooltip_Ability_item_up_dmg_tower_description" 																			"When applied to the Homer, this increases his damage."

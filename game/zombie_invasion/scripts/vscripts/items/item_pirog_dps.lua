@@ -3,17 +3,46 @@ LinkLuaModifier("modifier_item_pirog_dps", "items/item_pirog_dps", LUA_MODIFIER_
 item_pirog_dps = class({})
  
 
+
+function item_pirog_dps:CastFilterResultTarget(target)
+	--print("Error")
+	if IsServer() then
+		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_magic") then
+			return UF_FAIL_CUSTOM
+		end
+
+ 
+
+		return UF_SUCCESS
+	end
+end
+
+
+function item_pirog_dps:GetCustomCastErrorTarget(target)
+	--print("Error")
+	if IsServer() then
+ 
+		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_magic") then
+			return "#dota_hud_error_pirog"
+		end
+ 
+
+		return UF_SUCCESS
+	end
+end
+
 function item_pirog_dps:OnSpellStart()
 	local caster = self:GetCaster()
+	local target = self:GetCursorTarget()
 
-	caster:AddNewModifier(caster, self, "modifier_item_pirog_dps", nil)
-	caster:EmitSound("eating")
+	target:AddNewModifier(target, self, "modifier_item_pirog_dps", nil)
+	target:EmitSound("eating")
 	caster:RemoveItem(self)
 end
 
 
 modifier_item_pirog_dps = class({
-	IsHidden 				= function(self) return true end,
+	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,
@@ -51,3 +80,7 @@ function modifier_item_pirog_dps:GetModifierBonusStats_Agility()
 	return self.bonus_value1
 end
 
+
+function modifier_item_pirog_dps:GetTexture()
+	return "item_pie_dps"
+end

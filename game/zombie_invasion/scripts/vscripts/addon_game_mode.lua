@@ -43,6 +43,10 @@ function Precache( context )
 	PrecacheModel("models/heroes/life_stealer/life_stealer.vmdl", context) -- ghoul
 	PrecacheModel("models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl", context) -- ghost
 	PrecacheModel("models/heroes/undying/undying_flesh_golem.vmdl", context) -- undying mutant
+	
+	PrecacheModel("models/structures/village_building_1.vmdl", context) -- ghoul
+	PrecacheModel("models/structures/village_building_2.vmdl", context) -- ghost
+	PrecacheModel("models/structures/village_tower_1.vmdl", context) -- undying mutant
 
 
 	PrecacheModel("models/props_structures/radiant_tower001.vmdl", context) -- tower
@@ -133,6 +137,7 @@ function Precache( context )
 
 	
 	---------------------------------sounds-------------------------------
+	PrecacheResource("soundfile", "soundevents/invasion_sounds_items.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/invasion_sounds_custom.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context )
 
@@ -152,6 +157,7 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context )		
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context )

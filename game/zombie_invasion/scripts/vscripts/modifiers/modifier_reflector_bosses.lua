@@ -43,7 +43,7 @@ function modifier_reflector_bosses:OnTakeDamage(data)
 	        ApplyDamage({
 	            victim = data.attacker,
 	            attacker = self:GetParent(),
-	            damage = data.damage*3,
+	            damage = data.damage*1.5,
 	            damage_type = DAMAGE_TYPE_PURE,
 	            ability = self
 	           })
