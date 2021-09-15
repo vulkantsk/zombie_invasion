@@ -39,7 +39,7 @@ modifier_doom_passive = class({
 local doom = 0 
 function modifier_doom_passive:OnTakeDamage( keys )
  if doom == 0 then
-    if self:GetCaster():GetHealth() < self:GetCaster():GetMaxHealth() * 0.1  then
+    if self:GetCaster():GetHealth() < self:GetCaster():GetMaxHealth() * 0.2  then
         local caster = self:GetCaster()
         local ability = self:GetAbility()
  

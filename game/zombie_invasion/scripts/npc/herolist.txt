@@ -5,39 +5,34 @@
 
 "CustomHeroList"
 {
-	"npc_dota_hero_tidehunter"			"1"
-	"npc_dota_hero_wisp"				"1"
+	"npc_dota_hero_tidehunter"			"0"
+	"npc_dota_hero_wisp"				"0"
 	"npc_dota_hero_bristleback"			"1" 
 	"npc_dota_hero_rubick"				"1"
 	"npc_dota_hero_jakiro"				"1"
 	"npc_dota_hero_medusa"				"1" 
- 	"npc_dota_hero_phantom_assassin"	"1"
+ 	"npc_dota_hero_phantom_assassin"	"0"
 	"npc_dota_hero_axe"					"1"
- 	"npc_dota_hero_dazzle"				"1"
- 	"npc_dota_hero_oracle"				"1"
+ 	"npc_dota_hero_dazzle"				"0"
 	"npc_dota_hero_clinkz"				"1"
 	"npc_dota_hero_troll_warlord"		"1"
 	"npc_dota_hero_ursa"				"1" 
 	"npc_dota_hero_sand_king"			"1"
-	"npc_dota_hero_skywrath_mage"		"1"
+	"npc_dota_hero_skywrath_mage"		"0"
 	"npc_dota_hero_juggernaut"			"1"
-	"npc_dota_hero_terrorblade"			"1"
     "npc_dota_hero_hoodwink"	    	"1"
- 
+	"npc_dota_hero_skeleton_king"		"1" 
 	 
 
-//  Admin Heroo
-	"npc_dota_hero_skeleton_king"		"1"
-
-
+ 
 
 // Almost ready
 "npc_dota_hero_lion"				"0"
 	"npc_dota_hero_shredder"			"0"
 	"npc_dota_hero_sven"				"0" 
 	"npc_dota_hero_antimage"			"0"
- 
-
+	"npc_dota_hero_terrorblade"			"0" 
+ 	"npc_dota_hero_oracle"				"0"
 // useless
 "npc_dota_hero_techies"			    "0"
 	"npc_dota_hero_gyrocopter"			"0"

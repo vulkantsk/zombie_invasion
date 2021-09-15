@@ -34,10 +34,25 @@ end
 function item_pirog_dps:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
-
+			local player = caster:GetPlayerOwnerID()
+			local hero   = PlayerResource:GetSelectedHeroEntity(player)
+			local point = target:GetAbsOrigin() 
+			local team = caster:GetTeam()
 	target:AddNewModifier(target, self, "modifier_item_pirog_dps", nil)
 	target:EmitSound("eating")
 	caster:RemoveItem(self)
+	if target:GetUnitName() == "npc_boss_pig" then 
+		InvasionMode:Bo_plus()
+		print(Pig_bo_kill)
+			 target:ForceKill(true)
+			target:AddNoDraw()
+			local unit = CreateUnitByName( "npc_boss_pig_pet", point, true, nil, nil, team )
+				unit:AddNewModifier(unit, self, "modifier_item_pirog_dps", nil)		 
+			unit:SetOwner(hero)
+			unit:SetControllableByPlayer(player, true)
+
+ 
+	end
 end
 
 

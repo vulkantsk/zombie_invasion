@@ -13,12 +13,12 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"            "bristleback_viscous_nasal_goo"
-		"MaxLevel"						"4"
+		"MaxLevel"						"7"
 		"RequiredLevel"					"1"
-		"LevelsBetweenUpgrades"			"4"
+ 
 
-		"AbilityCooldown"				"12 11 10 9"
-		"AbilityManaCost"				"45 50 60 65"
+		"AbilityCooldown"				"14 13 12 11 10 9 8 7"
+		"AbilityManaCost"				"35 40 45 50 55 60 65"
 		"AbilityCastRange"				"500"
 		"AbilityCastPoint"				"0.3"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
@@ -33,7 +33,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"debuff_duration"		"3.5 4.0 4.5 5.0"
+				"debuff_duration"		"5.0"
 			}
 			"03"
 			{
@@ -44,9 +44,114 @@
 			"04"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"interval_dmg"		"20 35 40 50"
+				"interval_dmg"		"12 24 36 48 60 72 84"
 			}
 
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"reduced_armor"		"1 1.1 1.2 1.3 1.4 1.5 1.6"
+			}
+
+		}
+	}
+
+		"bristleback_quill_spray"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5549"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Bristleback.QuillSpray"
+		"MaxLevel"						"7"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"AbilityCastRange"				"650"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"5.0 4.5  4.0 3.5 3.0 2.5 2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"10 15 20 25 30 35 40"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"700"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"quill_base_damage"		"20.0 30.0 40.0 50.0 60.0 70.0 80.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"quill_stack_damage"	"5.0 7.0 9.0 11.0 13.0 15.0 17.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_bristleback_2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"quill_stack_duration"	"14000.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_damage"			"322322.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"2400"
+			}
+		}
+	}
+
+	"bristleback_bristleback"
+	{		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+				"MaxLevel"						"7"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"side_damage_reduction"			"10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"back_damage_reduction"			"10 15 20 25 30 35 40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"side_angle"					"110"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"back_angle"					"70"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"quill_release_threshold"				"150"
+			}
 		}
 	}
 
@@ -66,14 +171,15 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0"
 		"AbilityCastRange"				"0"
-		
+			 			"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"18"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50 75 125"
+		"AbilityManaCost"				"30 50 70"
 		
 		"AbilityDuration"				"3.5 4.5 5.5"
 		
@@ -84,7 +190,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_speed_bonus"	"15"
+				"movement_speed_bonus"	"15 22 30"
 			}
 			"02"
 			{

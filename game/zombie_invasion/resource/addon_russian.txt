@@ -76,6 +76,12 @@
 	   "Game_notification_boss_spawn_big_zombie"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'СУПЕР БОЛЬШОЙ ЗОМБИ' </font><font color='#DBA901'>будьте на готове!</font>"
 	   "Game_notification_boss_spawn_half_zombie"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'СПИНОГРЫЗ' </font><font color='#DBA901'>будьте на готове!</font>"
 	   "Game_notification_boss_spawn_suicide"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'БЕЗВРЕДНЫЙ' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "Game_notification_boss_spawn_undying"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ГОЛОДНЫЙ' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "Game_notification_boss_spawn_necr"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'MR. НЕКРОФОС' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "Game_notification_boss_spawn_meatgolem"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ЖИРНИЧ' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "Game_notification_boss_spawn_ghost"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ЗАБЛУДШАЯ' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "Game_notification_boss_spawn_pudge"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>будьте на готове!</font>"
+ 	   "Game_notification_portal_boss"				"<font color='#DBA901'>ТОТЕМНЫЙ БОСС ПОЯВИЛСЯ НА КАРТЕ!</font>"
 
        // ******************** Messages Christmas ********************
        	   "christmas_1"                                                  "<font color='#deaa88'>Прадник продолжается!</font>"
@@ -101,7 +107,8 @@
 	    "npc_jitel_4"                                                       "Лина"
 	    "npc_jitel_5"                                                       "Старик"
 	    "npc_jitel_6"                                                       "Дени"
-		"npc_boss_pig"                                                   	"Большой Бо"   
+		"npc_boss_pig"                                                   	"Большой Бо" 
+		"npc_boss_pig_pet"                                                   	"Большой Бо"   
         "npc_boss_dead_pig"		                                            "Искаженный Бо"   	
 		"npc_medas"                                                  		"Сундук"
 
@@ -167,6 +174,11 @@
 		"npc_wave_boss_big_zombie"                                         			"Супер Большой Зомби"
 		"npc_wave_boss_suicide"                                         		"Безвредный"
 		"npc_wave_boss_undying"                                         		"Голодный"
+		"npc_wave_boss_necr"                                         		"Mr. Некрофос"
+		"npc_wave_boss_meat_golem"                                         		"Жирнич"
+		"npc_wave_boss_ghost"                                         		"Заблудшая"
+		"npc_wave_boss_pudge"                                         		"P.U.D.G.E."
+		"npc_wave_boss_mini_pudge"                                         		"Мини пудж"
 
 		"npc_penguin"                                                         "Пингвин"
 		"npc_penguin_2"	                                                    "Пингвин"
@@ -390,7 +402,7 @@
 		"DOTA_Tooltip_Ability_item_pirog_dps_base_atack"	"БАЗОВАЯ СКОРОСТЬ АТАКИ: "		
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"ЛОВКОСТЬ: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%УРОН: "
-		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"Для истинных дпсеров. Может стать  другим пирогом если смешать с каким-либо ингридиентом"
+		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"Для истинных дпсеров."
  
  		"DOTA_Tooltip_modifier_item_pirog_dps"					"Пирог дпсера"
 		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"Вы стали намного сильнее!"
@@ -433,7 +445,8 @@
 		"DOTA_Tooltip_Ability_item_testo_Description"			"Тесто тестенное.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
 
          "DOTA_Tooltip_ability_item_totem_upgrade"																					"Тотем улучшения"
-		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Помогает улучшить предметы.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое."
+ 		"DOTA_Tooltip_Ability_item_totem_upgrad_Description"			"<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "        
+		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Помогает улучшить предметы."
 
 
 		"DOTA_Tooltip_Ability_item_trash"						"Странно пахнущая штука"
@@ -1213,6 +1226,7 @@
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_debuff_duration"                        	"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval"                        	"ИНТЕРВАЛ:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval_dmg"                        	"УРОН ЗА ИНТЕРВАЛ:"
+		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_reduced_armor"                        	"БРОНИ ЗА ИНТЕРВАЛ:"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom"                            	"Vicious goo debuff"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom_Description"                	"Теряет броню с течением времени"
 
@@ -1822,7 +1836,8 @@
 		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_health_up"     							"ХП ЗА ЕД. СИЛЫ:"
 		"DOTA_Tooltip_Ability_undying_decay_boss_wave_steal_damage"     							"УРОН ЗА ЕД. СИЛЫ:"
   
-
+		"DOTA_Tooltip_Ability_bo_eat"										"<font color='#c10020'>ХОЧУ КУШАТЬ!</font>"
+		"DOTA_Tooltip_Ability_bo_eat_Description"							"Бо очень хочеть кушать, но что попало он не ест, он любит пироги... Особенно дпсера."
 
 		"DOTA_Tooltip_Ability_main_elka"										"Праздник к нам приходит"
 		"DOTA_Tooltip_Ability_main_elka_Description"							"Дедушка мороз нынче, не очень любит людные места. Но если как следует его попросить, то может он и придет:)"

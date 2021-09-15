@@ -74,6 +74,12 @@
 	   "Game_notification_boss_spawn_big_zombie"				"<font color='#FF0000'>SUPER BIG ZOMBIE </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
 	   "Game_notification_boss_spawn_half_zombie"				"<font color='#FF0000'>SPINOGRYZ </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
 	   "Game_notification_boss_spawn_suicide"				" <font color='#FF0000'>HARMLESS </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
+	   "Game_notification_boss_spawn_undying"				"<font color='#FF0000'>'HUNGRY' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
+	   "Game_notification_boss_spawn_necr"				"<font color='#FF0000'>'MR. NECR' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
+	   "Game_notification_boss_spawn_meatgolem"				"<font color='#FF0000'>'FAT' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
+	   "Game_notification_boss_spawn_ghost"				"<font color='#FF0000'>'THE LOST ONE' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
+	   "Game_notification_boss_spawn_pudge"				"<font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
+ 	   "Game_notification_portal_boss"				"<font color='#DBA901'>THE TOTEM BOSS APPEARED ON THE MAP!</font>"
 
        // ******************** Messages Christmas ********************
        	   "christmas_1"                                                  "<font color='#deaa88'>The Celebration continues!</font>"
@@ -102,7 +108,8 @@
 	    "npc_jitel_4"                                                       "Lina"
 	    "npc_jitel_5"                                                       "Old men"
 	    "npc_jitel_6"                                                       "Deni"
-		"npc_boss_pig"                                                   	"Big Bo"   
+		"npc_boss_pig"                                                   	"Big Bo"  
+		"npc_boss_pig_pet"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Strange Bo"   			
 		"npc_medas"                                                  		"Treasure"
 
@@ -167,7 +174,11 @@
 		"npc_wave_boss_big_zombie"                                         			"Super Big Zombie"
 		"npc_wave_boss_suicide"                                         		"Harmless"
 		"npc_wave_boss_undying"                                         		"Hungry"
-
+		"npc_wave_boss_necr"                                         		"Mr. Necr"
+		"npc_wave_boss_meat_golem"                                         		"Fat"
+		"npc_wave_boss_ghost"                                         		"The Lost One"
+		"npc_wave_boss_pudge"                                         		"P.U.D.G.E."
+		"npc_wave_boss_mini_pudge"                                         		"Mini pudge"
 
 
 
@@ -372,7 +383,7 @@
 		"DOTA_Tooltip_Ability_item_pirog_dps_base_atack"	"BASE ATACK SPEED: "		
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"AGILITY: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%DAMAGE: "
-		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"For the best dps men. It can be other pie if you combinate it with something."
+		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"For the best dps men."
 
  
  		"DOTA_Tooltip_modifier_item_pirog_dps"					"Dps pie"
@@ -418,7 +429,8 @@
 		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
 
          "DOTA_Tooltip_ability_item_totem_upgrade"																					"Upgrade totem"
-		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Help upgrade you items.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
+		"DOTA_Tooltip_Ability_item_testo_Description"			"<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "         
+		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Help upgrade you items."
 
 		"DOTA_Tooltip_Ability_item_trash"						"A strange-smelling thing"
 		"DOTA_Tooltip_Ability_item_trash_Description"			"Does it smell strange??.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
@@ -1189,6 +1201,7 @@
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_debuff_duration"                        	"DURATION:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval"                        	"INTERVAL:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval_dmg"                        	"INTERVAL DMG:"
+		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_reduced_armor"                        	"INTERVAL ARMOR:"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom"                            	"Vicious goo debuff"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom_Description"                	"Take damage and lose armour"
 
@@ -1668,7 +1681,8 @@
 		"DOTA_Tooltip_Ability_undying_decay_boss_wave_steal_damage"     							"УРОН ЗА ЕД. СИЛЫ:"
 
 
-
+		"DOTA_Tooltip_Ability_bo_eat"										"<font color='#c10020'>I WANT TO EAT!</font>"
+		"DOTA_Tooltip_Ability_bo_eat_Description"							"Bo really wants to eat, but he doesn't eat anything, He likes pie... especially pie of dps."
 
 
 		"DOTA_Tooltip_Ability_main_elka"										"The holiday is coming to us"

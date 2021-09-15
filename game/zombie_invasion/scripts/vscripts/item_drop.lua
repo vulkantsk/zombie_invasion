@@ -18,11 +18,13 @@ ItemDrop.item_drop = {
 		{items = {"item_ess_pudge"}, chance = 13, limit = 4, units = {"npc_classic_pudge", "npc_classic_big_pudge"}}, 
  	
  
-
+		{items = {"npc_invasion_portal_wd"}, units ={"item_totem_upgrade"}},      -- если указан units - то итем может упасть тольк с этих юнитов
+		{items = {"npc_invasion_portal_warlock"}, units ={"item_totem_upgrade"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
+		{items = {"npc_invasion_portal_necr"}, units ={"item_totem_upgrade"}},      -- если указан units - то итем может упасть тольк с этих юнитов
+		{items = {"npc_invasion_portal_veno"}, units ={"item_totem_upgrade"}},      -- если указан units - то итем может упасть тольк с этих юнитов
+				
 		{items = {"item_magic_heart"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-		{items = {"item_bag_of_gold_pig"}, units ={"npc_boss_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
-		{items = {"item_big_meat"}, units ={"npc_boss_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold"}, units ={"npc_boss_dead_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_dead_golova"}, units ={"npc_boss_dead_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
@@ -69,13 +71,25 @@ function ItemDrop:SpawnItems()
 end
 
 function ItemDrop:OnEntityKilled( keys )
-	local killedUnit = EntIndexToHScript( keys.entindex_killed )
-	local name = killedUnit:GetUnitName()
-	local team = killedUnit:GetTeam()
+ 
+ 
+local hVictim = nil
+local hAttacker = nil
+if keys.entindex_killed ~= nil then
+hVictim = EntIndexToHScript( keys.entindex_killed )
+ItemDrop:RollItemDrop(hVictim)
+end
+if keys.entindex_attacker ~= nil then
+hAttacker = EntIndexToHScript( keys.entindex_attacker )
+end
 
-	if team ~= DOTA_TEAM_GOODGUYS and name ~= "npc_dota_thinker" then
-		ItemDrop:RollItemDrop(killedUnit)
-	end
+if hVictim == nil then
+return
+end
+
+if hVictim:IsReincarnating() then
+return
+end
 
 end
 

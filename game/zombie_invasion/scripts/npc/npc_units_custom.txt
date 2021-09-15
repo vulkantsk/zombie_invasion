@@ -134,7 +134,7 @@
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
 		"MovementSpeed"				"0"
 
-		"StatusHealth"				"3000"
+		"StatusHealth"				"3250"
 		"StatusHealthRegen"			"6"
 		"StatusMana"				"60000"
 		"StatusManaRegen"			"1000.0"
@@ -151,48 +151,14 @@
 		{	
 		"DisableResistance"			"95.0"
 
-			"OffensiveAbilities"
+	
+			"EquippedItems"
 			{
-				"Ability4"
-				{
-					"Name"				"custom_earth_splitter"
-				}
-				
-				"Ability1"				
-				{
-					"Name"				"medusa_mystic_snake"
-					"AOE"                "1"
-					"Radius"             "600"
-					"MinimumTargets"     "1"
-				}
-			
-				"Ability2"
-				{
-					"Name"				"ursa_overpower"
-				}
-				
-				"Ability3"
-				{
-					"Name"				"ursa_enrage"
-				}
-				
-				"Ability6"
-				{
-					"Name"				"lich_sinister_gaze"
-				}
-			}
-			"ItemDrops"
-            {
-                "Consumables"
-                {
-                "Item"
-                    {
-                        "1"				"item_mithril_hammer"
+				"1"            	{"Item"        "item_panic_button"}
+ 
 
-                    }
-                    "Chance"            "100"
-				}
-			}
+			}			 
+			 
 		}
 	}
 	"npc_end_antimage"	

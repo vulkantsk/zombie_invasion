@@ -78,6 +78,19 @@ function modifier_bristleback_viscous_goo_custom:OnCreated()
 		local ability = self:GetAbility()
 		local interval = ability:GetSpecialValueFor("interval")
 		self:StartIntervalThink(interval)
+
+	self.reduced_armor = self:GetAbility():GetSpecialValueFor( "reduced_armor" )	
+
+	end
+end
+
+function modifier_bristleback_viscous_goo_custom:OnRefresh()
+	if IsServer() then
+		local ability = self:GetAbility()
+		local interval = ability:GetSpecialValueFor("interval")
+		self:StartIntervalThink(interval)
+
+	self.reduced_armor = self:GetAbility():GetSpecialValueFor( "reduced_armor" )	
 	end
 end
 
@@ -92,7 +105,7 @@ function modifier_bristleback_viscous_goo_custom:OnIntervalThink()
 end
 
 function modifier_bristleback_viscous_goo_custom:GetModifierPhysicalArmorBonus()
-	return self:GetStackCount()*(-1)
+	return self:GetStackCount()*(-(self.reduced_armor))
 end
 
 function modifier_bristleback_viscous_goo_custom:GetEffectName()

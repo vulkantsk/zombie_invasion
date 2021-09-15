@@ -9,18 +9,18 @@
 		"Ability2" "invasion_portal_wd_maledict"
 		"Ability3" "invasion_portal_wd_death_ward"
 
-		"StatusHealth" "1800"
+		"StatusHealth" "4100"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackRange" "700"
-		"AttackDamageMin" "40"
-		"AttackDamageMax" "50"
+		"AttackDamageMin" "325"
+		"AttackDamageMax" "345"
 
 		"ProjectileModel" "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"ProjectileSpeed" "1200"
 
-		"ArmorPhysical" "10"
-		"MagicalResistance" "25"
+		"ArmorPhysical" "26"
+		"MagicalResistance" "30"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
@@ -34,18 +34,7 @@
 				"Wearable3" { "ItemDef" "96" }
 				"Wearable4" { "ItemDef" "97" }
 			}
-			
-			"ItemDrops"
-			{
-				"Totem"
-				{
-					"Item"
-					{
-						"1"       "item_totem_upgrade"
-					}
-					"Chance"      "100"
-				}
-			}
+ 
 		}
 	}
 
@@ -54,33 +43,20 @@
 		"Model" "models/heroes/undying/undying_minion.vmdl"
 		"ModelScale" "2.1"
         "MinimapIcon"				"minimap_death"
-		"StatusHealth" "3000"
+		"StatusHealth" "4500"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackRange" "150"
-		"AttackDamageMin" "90"
-		"AttackDamageMax" "110"
+		"AttackDamageMin" "600"
+		"AttackDamageMax" "650"
 
-		"ArmorPhysical" "10"
-		"MagicalResistance" "25"
+		"ArmorPhysical" "38"
+		"MagicalResistance" "35"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "0"
 		
-		"Creature"
-		{
-			"ItemDrops"
-			{
-				"Totem"
-				{
-					"Item"
-					{
-						"1"       "item_totem_upgrade"
-					}
-					"Chance"      "100"
-				}
-			}
-		}
+ 
 	}
 
 	"npc_invasion_portal_warlock" {
@@ -98,18 +74,18 @@
 		"Ability7"					""			// Ability 7 - Extra.
 		"Ability8"					""			// Ability 8 - Extra.
 
-		"StatusHealth" "1800"
+		"StatusHealth" "4250"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackRange" "900"
-		"AttackDamageMin" "40"
-		"AttackDamageMax" "50"
+		"AttackDamageMin" "375"
+		"AttackDamageMax" "390"
 
 		"ProjectileModel" "particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
 		"ProjectileSpeed" "1200"
 
-		"ArmorPhysical" "10"
-		"MagicalResistance" "25"
+		"ArmorPhysical" "32"
+		"MagicalResistance" "30"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
@@ -127,17 +103,7 @@
 				"Wearable7" { "ItemDef" "245" }
 			}
 			
-			"ItemDrops"
-			{
-				"Totem"
-				{
-					"Item"
-					{
-						"1"       "item_totem_upgrade"
-					}
-					"Chance"      "100"
-				}
-			}
+ 
 		}
 	}
 
@@ -172,7 +138,7 @@
 		"Ability4" "necrolyte_heartstopper_aura"
 		"Ability5" "necrolyte_reapers_scythe"
 
-		"StatusHealth" "1800"
+		"StatusHealth" "3800"
 		"StatusMana" "2000"
 		"StatusManaRegen" "20"
 
@@ -184,8 +150,8 @@
 		"ProjectileModel" "particles/units/heroes/hero_necrolyte/necrolyte_base_attack.vpcf"
 		"ProjectileSpeed" "1200"
 
-		"ArmorPhysical" "10"
-		"MagicalResistance" "25"
+		"ArmorPhysical" "26"
+		"MagicalResistance" "30"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed" "370"
@@ -210,17 +176,7 @@
 				"Wearable6" { "ItemDef" "659" }
 			}
 			
-			"ItemDrops"
-			{
-				"Totem"
-				{
-					"Item"
-					{
-						"1"       "item_totem_upgrade"
-					}
-					"Chance"      "100"
-				}
-			}
+ 
 		}
 	}
 
@@ -238,23 +194,23 @@
 		"Ability4" "venomancer_poison_nova"
 		"Ability5" "invasion_portal_veno_infest"
 
-		"StatusHealth" "1800"
+		"StatusHealth" "4200"
 		"StatusMana" "2000"
 		"StatusManaRegen" "20"
 
 		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackRange" "800"
-		"AttackDamageMin" "40"
-		"AttackDamageMax" "50"
+		"AttackDamageMin" "345"
+		"AttackDamageMax" "360"
 
 		"ProjectileModel" "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed" "900"
 
-		"ArmorPhysical" "10"
-		"MagicalResistance" "25"
+		"ArmorPhysical" "28"
+		"MagicalResistance" "30"
 
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed" "370"
+		"MovementSpeed" "420"
 
 		"Creature"
 		{
@@ -266,17 +222,7 @@
 				"Wearable4" { "ItemDef" "294" }
 			}
 			
-			"ItemDrops"
-			{
-				"Totem"
-				{
-					"Item"
-					{
-						"1"       "item_totem_upgrade"
-					}
-					"Chance"      "100"
-				}
-			}
+ 
 		}
 	}
 }

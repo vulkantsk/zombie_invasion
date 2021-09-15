@@ -1,15 +1,37 @@
 "DOTAAbilities"
 {
-	"sven_great_cleave_lua"
+
+"axe_berserkers_call"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_lua"
-		"AbilityTextureName"					"sven_great_cleave_lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"					"5007"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"ScriptFile"					"heroes/hero_axe/rubilka/sven_great_cleave_lua"
-				
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Axe.Berserkers_Call"
+		"MaxLevel"						"7"
+		"HasScepterUpgrade"               "1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.4"
+ 		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_1"
+		"AbilityCastGestureSlot"		"DEFAULT"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"0 0 0 0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80"	
+		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -17,14 +39,19 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"great_cleave_radius"	"300.0"
+				"radius"				"300 325 350 375 400 425 450"
+				"LinkedSpecialBonus"		"special_bonus_unique_axe_2"
 			}
-			
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"20 35 50 65"
+				"bonus_armor"			"15 20 25 30 35 40 45"
 			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2.0 2.3 2.5 2.7 3.0 3.2 3.5"
+			}	
 		}
 	}
 
@@ -37,8 +64,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_axe/rubilka/axe_culling_blade_lua"
 		"AbilityTextureName"			"Hero/kAxe/axe_culling_blade"
-		"FightRecapLevel"				"2"
-		"MaxLevel"						"4"
+		"MaxLevel"						"7"
  "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 		"precache"
 		{
@@ -65,8 +91,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"7 6 5 4"
-		"AbilityManaCost"				"50"
+		"AbilityCooldown"				"8.0 7.5 7.0 6.5 5.0"
+		"AbilityManaCost"				"45"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -78,7 +104,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_true"					"175 200 225 250"
+				"damage_true"					"120 200 280 360 440 520 600"
 								"CalculateSpellDamageTooltip" "0"
 			}
 			"02"
@@ -90,11 +116,59 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"225"
+				"great_cleave_damage"	"100 125 150 175 200 225 250"
 								"CalculateSpellDamageTooltip" "0"
 			}
 		}
 	}
+
+
+	"axe_counter_helix"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5009"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"Hero_Axe.CounterHelix"
+
+        "HasShardUpgrade"               "1"
+     		"MaxLevel"						"7"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.01"
+		
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"40 65 95 125 155 185 215"
+				"LinkedSpecialBonus"		"special_bonus_unique_axe_4"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"275"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"trigger_chance"			"10 11 12 13 14 15 16"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"cooldown"					"0.01"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
 
 		//=================================================================================================================
 	// Dragon Knight: Dragon Blood (Lua version)
@@ -199,6 +273,9 @@
 			"particle"	"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf"
  
 		}
+					"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
@@ -227,7 +304,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"4.0 4.5 5.0"
+				"duration"					"5.0 6.0 7.0"
 			}
 			"02"
 			{
@@ -237,7 +314,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"status_resistance"			"50 60 70"
+				"status_resistance"			"60"
 			}
 			"04"
 			{

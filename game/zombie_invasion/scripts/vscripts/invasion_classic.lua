@@ -15,6 +15,7 @@ exp={150,200,275,375,450,  500,550,615,780,715,
   
   }
 
+Pig_bo_kill = 0
 xp=0
 for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
@@ -90,8 +91,9 @@ function InvasionMode:InvasionMap()
 	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
 	LinkLuaModifier("modifier_portal_unit_vision", "modifiers/modifier_portal_unit_vision", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_portal_despawn_unit", "modifiers/modifier_portal_despawn_unit", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_invasion_difficulty", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE)	
-
+ 
 	local shop = Entities:FindByName( nil, "dota_shop")
 
 	if shop then
@@ -255,6 +257,11 @@ end
  
 end
 
+  function InvasionMode:Bo_plus()
+ Pig_bo_kill = Pig_bo_kill + 1
+ 
+end
+
   function InvasionMode:Christmas_penguiun_plus()
  Christmas_penguin = Christmas_penguin + 1
  
@@ -404,7 +411,7 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
- 	
+      InvasionMode:PortalBoss()  	
  
  
  
@@ -697,12 +704,20 @@ end
 	Timers:CreateTimer(210,function()
 		 self:SpawnZombie("npc_undying_2",1)
 	end)
-	
+	 
 	Timers:CreateTimer(225,function()
+		local zombie_boss_2 =  RandomInt(1,3)
+		if zombie_boss_2 == 1 then 
 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
 		  InvasionMode:SpawnBoss("npc_wave_boss_suicide", 1)
-	end) 
-	
+		elseif zombie_boss_2 == 2 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_necr",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_necr", 1)
+		elseif zombie_boss_2 == 3 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem", 1)		  
+	     end
+	end) 	
  
 
 end
@@ -766,11 +781,21 @@ function InvasionMode:ZombieNight3()
 	end)
 	
  
+ 	Timers:CreateTimer(225,function()
+		local zombie_boss_3 =  RandomInt(1,3)
+		if zombie_boss_3 == 1 then 
+		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_ghost",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_ghost", 1)
+		elseif zombie_boss_3 == 2 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_pudge",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_pudge", 1)
+		elseif zombie_boss_3 == 3 then 
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_undying",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_undying", 1)		  
+	     end
+	end) 	
  
  
- 	Timers:CreateTimer(260,function()
-		 self:SpawnFlash("npc_flash_golem_2")
-	end) 
 	
 
  
@@ -924,6 +949,61 @@ function InvasionMode:ChristmasNight()
 end
 
 
+ function InvasionMode:PortalBoss()  
+ -- Новогодний конец
+ 
+ 
+	
+  local boss_list = {
+		"npc_invasion_portal_wd",
+		"npc_invasion_portal_warlock",
+		"npc_invasion_portal_necr",
+		"npc_invasion_portal_veno"
+	}
+   	Timers:CreateTimer(1202, function()
+          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
+      	local spawners = Entities:FindAllByName("zspawn_point")
+ 		local spawner = spawners[RandomInt(1, #spawners)]     	
+         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
+      end) 
+    	Timers:CreateTimer(1502, function()
+          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
+      	local spawners = Entities:FindAllByName("zspawn_point")
+ 		local spawner = spawners[RandomInt(1, #spawners)]     	
+         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         		UpgradeUnitStats(unit, 1.5)
+         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
+      end) 
+     	Timers:CreateTimer(1802, function()
+          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
+      	local spawners = Entities:FindAllByName("zspawn_point")
+ 		local spawner = spawners[RandomInt(1, #spawners)]     	
+         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         		UpgradeUnitStats(unit, 2.0)
+         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
+      end) 
+    	Timers:CreateTimer(2102, function()
+          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
+      	local spawners = Entities:FindAllByName("zspawn_point")
+ 		local spawner = spawners[RandomInt(1, #spawners)]     	
+         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         		UpgradeUnitStats(unit, 2.5)
+         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
+      end) 
+ 
+               	
+ end
+  
+
 function InvasionMode:SpawnZombie(unit_name, unit_count)
 	local points = Entities:FindAllByName("zombie_spawner")
 
@@ -1002,8 +1082,7 @@ function InvasionMode:InvasionSpawnMoobs()
 	unit:SetForwardVector(RandomVector(1))
 
  
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
-		--  InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
+	 
 end
 
  
@@ -1124,6 +1203,13 @@ end
  
       local pig_count = 0
  
+ function InvasionMode:CreateDrop (itemName, pos)
+   local newItem = CreateItem(itemName, nil, nil)
+   newItem:SetPurchaseTime(0)
+   CreateItemOnPositionSync(pos, newItem)
+   newItem:LaunchLoot(false, 300, 0.75, pos + RandomVector(RandomFloat(50, 350)))
+end
+
 function InvasionMode:InvasionEntityKilled (data)
     local time = GameRules:GetDOTATime(false, false)
 	local killedEntity = EntIndexToHScript(data.entindex_killed)
@@ -1140,7 +1226,14 @@ function InvasionMode:InvasionEntityKilled (data)
 		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 		EmitGlobalSound("Invasion.HommerWin")
 	end	
-	
+
+   if Pig_bo_kill == 0 then 
+	if killedEntity:GetUnitName() == "npc_boss_pig" then		 
+              self:CreateDrop("item_bag_of_gold_pig", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 200)) )
+              self:CreateDrop("item_big_meat", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 200)) )
+ 
+	end	
+end 
 --*************************************** NIGHT SPAWN ***************************************
  
  
