@@ -1985,7 +1985,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1250"
+		"ItemCost"						"4600"
 		"ItemShopTags"					""
 
 		// Recipe
@@ -1994,7 +1994,7 @@
 		"ItemResult"					"item_imba_haste_boots"
 		"ItemRequirements"
 		{
-			"01"						"item_phase_boots;item_lifesteal_2"
+			"01"						"item_phase_boots"
 		}
 	}
 	

@@ -680,7 +680,7 @@ end
 		 return 50
 		 end
 	end)
-
+--[[ 
 	Timers:CreateTimer(90, function()
 	     while wave_2 <  29 do 
 		     self:SpawnZombie("npc_seerdying_2",1)
@@ -688,7 +688,7 @@ end
 		 end
 	end)	
 	
- 
+ ]]
 
  	Timers:CreateTimer(140,function()
  			 		   print(zombie_count_2)
@@ -755,14 +755,14 @@ function InvasionMode:ZombieNight3()
 		 return 40
 		 end
 	end)
- 
+ --[[
  	Timers:CreateTimer(90, function()
 	     while wave_3 <  29 do 
 		     self:SpawnZombie("npc_seerdying_3",1)
 		 return 90
 		 end
 	end)	
-	
+]]	
 
  	Timers:CreateTimer(140,function()
  			 		   print(zombie_count_3)
@@ -856,14 +856,14 @@ function InvasionMode:ZombieNight3()
 		 return 35
 		 end
 	end)
- 
+ --[[
   	Timers:CreateTimer(90, function()
 	     while wave_4 <  29 do 
 		     self:SpawnZombie("npc_seerdying_4",1)
 		 return 90
 		 end
 	end)	
-	
+]]	
  	Timers:CreateTimer(140,function()
  			 		   print(zombie_count_4)
  		   if zombie_count_4 < 105 then 
