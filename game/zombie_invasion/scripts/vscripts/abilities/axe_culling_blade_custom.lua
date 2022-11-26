@@ -2,6 +2,9 @@ axe_culling_blade_custom = class({})
 
 LinkLuaModifier("modifier_autocast_culling_blade", "modifiers/modifier_autocast_culling_blade.lua", LUA_MODIFIER_MOTION_NONE )
 
+
+ 
+
 function axe_culling_blade_custom:GetCastAnimation()  
     return ACT_DOTA_CAST_ABILITY_4  
 end

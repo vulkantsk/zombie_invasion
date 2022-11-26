@@ -41,6 +41,7 @@
 	    "item"       "item_shield"
 		"item"		"item_ring_of_protection"
 		"item"		"item_stout_shield"
+		"item"		"item_midas"
 		"item"		"item_quelling_blade"
 		"item"		"item_blight_stone"
 		"item"		"item_blades_of_attack"
@@ -81,7 +82,6 @@
 		"item"		"item_power_treads"
 		"item"		"item_oblivion_staff"
 		"item"		"item_pers"
-		"item"		"item_midas"
 		"item"		"item_travel_boots"		
 		"item"		"item_moon_shard"		
  		"item"	    "item_imba_haste_boots"	
@@ -137,7 +137,7 @@
 		"item"		"item_manta"
 		"item"		"item_hurricane_pike"	
 		"item"		"item_assault"
-		"item"		"item_her"	
+		"item"		"item_heart"	
 
 	}
 			

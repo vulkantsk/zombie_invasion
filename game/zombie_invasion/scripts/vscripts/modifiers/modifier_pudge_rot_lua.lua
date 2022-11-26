@@ -58,26 +58,26 @@ function modifier_pudge_rot_lua:OnCreated( kv )
 
  
  
- 
 
 	if IsServer() then
  
    
 		if self:GetParent() == self:GetCaster() then
 			EmitSoundOn( "Hero_Pudge.Rot", self:GetCaster() )
-			local nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_pudge/pudge_rot.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-			ParticleManager:SetParticleControl( nFXIndex, 1, Vector( self.rot_radius, 1, self.rot_radius ) )
-			self:AddParticle( nFXIndex, false, false, -1, false, false )
+			self.nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_pudge/pudge_rot.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+			ParticleManager:SetParticleControl( self.nFXIndex, 1, Vector( self.rot_radius, 1, self.rot_radius ) )
+			self:AddParticle( self.nFXIndex, false, false, -1, false, false )
  
 		else
-			local nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_pudge/pudge_rot_recipient.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
-			self:AddParticle( nFXIndex, false, false, -1, false, false )
+			local nFXIndex_2 = ParticleManager:CreateParticle( "particles/units/heroes/hero_pudge/pudge_rot_recipient.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+			self:AddParticle( nFXIndex_2, false, false, -1, false, false )
  
 		end
   
 		self:StartIntervalThink( self.rot_tick )
 		self:OnIntervalThink()
 	end
+ 
 end
 
  
@@ -118,25 +118,29 @@ function modifier_pudge_rot_lua:OnIntervalThink()
 		local flDamagePerTick =   self.rot_tick * self.rot_damage   
 
 			   	 if not target:HasModifier("modifier_pudge_rot_lua_debuff") then
-                target:AddNewModifier(caster, self:GetAbility(), "modifier_pudge_rot_lua_debuff", {duration = 1})
+                target:AddNewModifier(caster, self:GetAbility(), "modifier_pudge_rot_lua_debuff", {duration = 6})
                  else
                 target:FindModifierByName("modifier_pudge_rot_lua_debuff"):IncrementStackCount()
-                target:FindModifierByName("modifier_pudge_rot_lua_debuff"):SetDuration(1, true)
+                target:FindModifierByName("modifier_pudge_rot_lua_debuff"):SetDuration(6, true)
             end
 
          debuff = self:GetParent():FindModifierByName("modifier_pudge_rot_lua_debuff")
 
 		if self:GetCaster():IsAlive() then
+ 
 			local damage = {
 				victim = self:GetParent(),
 				attacker = self:GetCaster(),
-				damage = flDamagePerTick *  ((debuff and debuff:GetStackCount() or 1)/2),
+				damage = flDamagePerTick *  (debuff:GetStackCount()/10),
 				damage_type = DAMAGE_TYPE_MAGICAL,
 				ability = self:GetAbility()
 			}
 
 			ApplyDamage( damage )
+		else 
+				  ParticleManager:DestroyParticle(self.nFXIndex, false)
 		end
+				 
 	end
 end
 

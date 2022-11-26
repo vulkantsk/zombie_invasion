@@ -8,6 +8,8 @@ Difficulty = Difficulty or {
 	leader = "normal"
 }
 
+Difficulter = 0 
+
 function Difficulty:Init()
 	CustomGameEventManager:RegisterListener( "invasion_select_difficulty", function( _, data )
 		self:Select( data )
@@ -65,5 +67,8 @@ function Difficulty:NPC( npc )
 	local s = self.leader == "medium" and 1 or 2
 
 	local modifier = npc:AddNewModifier( npc, nil, "modifier_invasion_difficulty", nil )
+ 
 	modifier:SetStackCount( s )
+
+	Difficulter = s / 2
 end

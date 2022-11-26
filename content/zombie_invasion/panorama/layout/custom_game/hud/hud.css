@@ -1,235 +1,218 @@
-.root
-{
-	width: 100%;
-	height: 100%;
+.root {
+  width: 100%;
+  height: 100%;
 }
 
-.hide
-{
-	visibility: collapse;
+.hide {
+  visibility: collapse;
 }
 
 //quests
-#QPanel
-{
-	margin-bottom: 369px;
-	align: left center;
-	width: 300px;
-	height: 500px;
-	background-color: #000000D0;
-	flow-children: down;
-	border-radius: 1% / 1%;
+#QPanel {
+  margin-bottom: 369px;
+  align: left center;
+  width: 300px;
+  height: 500px;
+  background-color: #000000d0;
+  flow-children: down;
+  border-radius: 1% / 1%;
 }
 
-.qtext
-{
-	color: white;
-	text-overflow: shrink;
-	margin: 5px;
-	text-shadow: 2px 2px 4px 1.5 #FFFFFF03;
-	text-align: center;
-	align: middle center;
+.qtext {
+  color: white;
+  text-overflow: shrink;
+  margin: 5px;
+  text-shadow: 5px 4px 6px 3 #ffffff03;
+  text-align: center;
+  align: middle center;
 }
 
-#QHead
-{
-	width: 100%;
-	height: 10%;
-	background-color: #000000D8;
+#QHead {
+  width: 100%;
+  height: 10%;
+  background-color: #000000d8;
 }
 
-#QHead Label
-{
-	align: middle center;
-	font-size: 64px;
+#QHead Label {
+  align: middle center;
+  font-size: 64px;
 }
 
-#QContent
-{
-	width: 100%;
-	height: 80%;
-	flow-children: down;
+#QContent {
+  width: 100%;
+  height: 80%;
+  flow-children: down;
 }
 
-#QDesc
-{
-	width: 100%;
-	height: 60%;
+#QDesc {
+  width: 100%;
+  height: 60%;
 }
 
-#QReward
-{
-	width: 100%;
-	height: 40%;
-	flow-children: down;
+#QReward {
+  width: 100%;
+  height: 40%;
+  flow-children: down;
 }
 
-.qrewardpanel
-{
-	margin: 5px;
-	horizontal-align: middle;
-	width: 100%;
-	height: 25%;
+.qrewardpanel {
+  margin: 5px;
+  horizontal-align: middle;
+  width: 100%;
+  height: 25%;
 }
 
-#QContent Label
-{
-	align: middle top;
-	font-size: 22px;
-	text-overflow: shrink;
+#QContent Label {
+  align: middle top;
+  font-size: 22px;
+  text-overflow: shrink;
 }
 
-#QFoot
-{
-	width: 100%;
-	height: 10%;
+#QFoot {
+  width: 100%;
+  height: 10%;
 }
 
-#QClose
-{
-	align: middle center;
-	background-color: green;
-	width: 50%;
-	height: 90%;
-	margin: 5px;
+#QClose {
+  align: middle center;
+  background-color: green;
+  width: 50%;
+  height: 90%;
+  margin: 5px;
+  border-radius: 5%;
+}
+#QClose:hover {
+  wash-color: #bbbbbb;
 }
 
-#QClose Label
-{
-	font-size: 64px;
+#QClose Label {
+  font-size: 64px;
 }
 //--
 
 //--guide
-#HTPBtn
-{
-	align: left center	;
-	width: 60px;
-	height: 60px;
-	margin-top: 70px;
-	background-color: black;
-	border-radius: 2px;	
-	border: 1px solid #bbbbbb;
+#HTPBtn {
+  align: left center;
+  width: 60px;
+  height: 60px;
+  margin-top: 70px;
+  background-color: black;
+  border-radius: 2px;
+  border: 1px solid #bbbbbb;
 }
 
 #HTPBtn Label {
-	color: #bbbbbb;
-	font-size: 80px;
-	text-align: center;
+  color: #bbbbbb;
+  font-size: 80px;
+  text-align: center;
 }
 
 #HTPBtn:hover {
-	wash-color: #bbbbbb;
+  wash-color: #bbbbbb;
 }
 
-.classText
-{
-	align: center center;
-	font-size: 20px;
-	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
-	color: #bbbbbb;
-	text-overflow: shrink;
-	margin: 5px;
+.classText {
+  align: center center;
+  font-size: 20px;
+  font-family: Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+  color: #bbbbbb;
+  text-overflow: shrink;
+  margin: 5px;
 }
 
-#HTPPanel 
-{
-	width: 650px;
-	height: 700px;
-	background-color: #0F0F0FEB;
-	align: middle center;
-	margin-bottom: 235px;
-	flow-children: down;
-	border-radius: 2% / 2%;
+#HTPPanel {
+  width: 650px;
+  height: 700px;
+  background-color: #0f0f0feb;
+  align: middle center;
+  margin-bottom: 235px;
+  flow-children: down;
+  border-radius: 2% / 2%;
 }
 
-#GuideSelect
-{
-	align: middle top;
-	margin-top: 10px;
-    width: 100%;
-	height: 50px;
-	flow-children: right;
+#GuideSelect {
+  align: middle top;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  flow-children: right;
 }
 
-.guideTopBtns
-{
-	width: 32%;
-	height: 100%;
-	margin-left: 5px;
-	margin-right: 5px;
+.guideTopBtns {
+  width: 32%;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.guideText:hover
-{
-	font-size: 22px;
+.guideText:hover {
+  font-size: 22px;
 }
 
-.guideSelected
-{
-	color: white;
-	font-size: 22px;
+.guideSelected {
+  color: white;
+  font-size: 22px;
 }
 
 #pages {
-	margin-top: 10px;
-	
-	width: 100%;
-	height: 85%;
-	
-	flow-children: none;
+  margin-top: 10px;
+
+  width: 100%;
+  height: 85%;
+
+  flow-children: none;
 }
 
 .guidePage {
-	margin-left: 5px;
-	margin-right: 5px;
-	width: 100%;
-	height: 100%;
-	
-	flow-children: down;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%;
+  height: 100%;
+
+  flow-children: down;
 }
 
 #pagesBtns {
-	width: 100%;
-	height: 100%;
-	
-	flow-children: right;
+  width: 100%;
+  height: 100%;
+
+  flow-children: right;
 }
 
 .pagesBtn {
-	width: 50%;
-	height: 100%;
-	align: middle center;
+  width: 50%;
+  height: 100%;
+  align: middle center;
 }
 
 .guideHeader {
-	align: middle top;
-	font-size: 32px;
+  align: middle top;
+  font-size: 32px;
 }
 
 .guidePageText {
-	margin-top: 5px;
-	margin-bottom: 5px;
-    align: middle top;
-	color: white;
-	font-size: 20px;
-	text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align: middle top;
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .guideImage {
-	align: middle top;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	width: 90%;
-	height: 60%;
+  align: middle top;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 60%;
 }
 
 #guide_basic {
-	align: left center;
+  align: left center;
 }
 
 #guide_advanced {
-	align: right center;
+  align: right center;
 }
 
 //--

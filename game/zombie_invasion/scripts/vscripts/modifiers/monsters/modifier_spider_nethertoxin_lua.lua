@@ -32,6 +32,7 @@ function modifier_spider_nethertoxin_lua:OnCreated( kv )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
     
+    local spell_amp = self:GetCaster():GetSpellAmplification(false)
 
 	self.owner = kv.isProvidedByAura~=1
 
@@ -41,7 +42,7 @@ function modifier_spider_nethertoxin_lua:OnCreated( kv )
 		self.damageTable = {
 			victim = self:GetParent(),
 			attacker = self:GetCaster(),
-			damage = damage,
+			damage = ( damage * (spell_amp + 1) )/2,
 			damage_type = self:GetAbility():GetAbilityDamageType(),
 			ability = self:GetAbility(), --Optional.
 		}

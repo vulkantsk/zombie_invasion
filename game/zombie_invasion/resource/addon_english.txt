@@ -14,9 +14,9 @@
 		
 		"Game_notification_win"         "<font color='#ff9900'>Write your opinion in workshop! </font>"
 
-		"difficulty_description_normal" ""
-		"difficulty_description_medium" ""
-		"difficulty_description_hard" ""
+		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
+		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 50%</font>! (Damage, Spell damage, Health and Armor)"
+		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 100%</font>! (Damage, Spell damage, Health and Armor)"
 		
 		//guide
 		"htpbtn"				"How to Play"
@@ -100,25 +100,29 @@
 	    "npc_end_bear"	                                        "Virtus bear"
 	    "npc_test"	                                        	"test"
 
-		"npc_classic_skeleton_king"		                                    "Skeleton king"
-		"npc_classic_skelet"		                                        "Skeleton4ik" 
+ 
 		"npc_jitel"                                                         "Kunnka"
 		"npc_jitel_2"                                                       "Crystal Maiden" 
 		"npc_jitel_3"                                                       "Tramp"
 	    "npc_jitel_4"                                                       "Lina"
 	    "npc_jitel_5"                                                       "Old men"
 	    "npc_jitel_6"                                                       "Deni"
+	    "npc_jitel_7"                                                       "Undertaker"
+	    "npc_guard"                                                       "Guard"
 		"npc_boss_pig"                                                   	"Big Bo"  
 		"npc_boss_pig_pet"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Strange Bo"   			
 		"npc_medas"                                                  		"Treasure"
+		"npc_cemetery_skelet"		                                        "Skeleton" 
+	    "npc_gate"                                                       "Gate"
+	    "npc_grave"                                                       "Grave"
 
 		"npc_base"                                                  		"Homer"
 
 		"npc_classic_pig"                                                  	"Pig"
 		"npc_classic_big_pig"                                                  	"Big Pig"
 		"npc_classic_sheep"                                                 "Sheep"
-		"npc_classic_big_sheep"                                                 "BigSheep"
+		"npc_classic_big_sheep"                                                 "Big Sheep"
 		"npc_classic_half_zombie"                                           "Half Zombie"	
 		"npc_classic_big_half_zombie"                                           "Big Half Zombie"	
 		"npc_stronger_chicken"	                                            "Chicken???"
@@ -131,6 +135,10 @@
 		"npc_classic_big_pudge"		                                            "Big Pudge"
         "npc_classic_grim"		                                            "Thing"
         "npc_classic_big_grim"		                                            "Big Thing"
+		"npc_classic_skelet"		                                        "Skeleton" 
+		"npc_classic_big_skelet"		                                        "Big Skeleton" 
+		"npc_classic_skeleton_king"		                                    "Skeleton"
+ 		"npc_classic__big_skeleton_king"		                                    "Big Skeleton"
 
 		"npc_classic_ghoul"                                         		"Ghoul"
 		"npc_classic_ghost"                                         		"Ghost"
@@ -192,7 +200,7 @@
 		"npc_mini_elka_4"	                                                	"mini christmas tree"
 		"npc_mini_elka_5"	                                                	"mini christmas tree"
 		"npc_mini_elka_6"	                                                	"mini christmas tree"
-		"npc_main_elka"	                                                	"Main christmas tree"
+		"npc_main_elka"	                                                	"Building"
 		"npc_greevil"                                                	"Golden greevil"
 		"npc_classic_new_years"                                                	"Frozen zombie"
 		"npc_classic_new_years_lich"                                                	"Chilling Horror"
@@ -319,12 +327,7 @@
 		"DOTA_Tooltip_Ability_item_dead_golova_all_bonus"	"+$all"
 		"DOTA_Tooltip_Ability_item_dead_golova_Lore"			"If corruption can change big pig is MONSTER, what will be with powerful creature?."
 
-		"DOTA_Tooltip_Ability_item_heart_2"						"<font color='#0000ff'> Infinity light </font>"		
-		"DOTA_Tooltip_ability_item_heart_2_Description"							"<h1>Passive: Regeneration Amplification</h1>Increases passive regen on %base_regen%%.\n<h1>Passive: Tarrasque Breath</h1> Increases strength nearest heroes on %aura_str%."
-		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Corruption and Light."
-		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
-		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
-		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+MAX. HP"
+ 
  
 		"DOTA_Tooltip_Ability_item_undying_heart"						"<font color='#ff0000'> Undying Heart </font>"
 		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Still throbbing, however, mixing it with the pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
@@ -363,17 +366,23 @@
 		"DOTA_Tooltip_Ability_item_corica_Description"			"<h1>Active: Nam-nam</h1> Do you really want to eat cinnamon?"
 		"DOTA_Tooltip_Ability_item_corica_Lore"						"Was stolen from a women from the village."
 		
-		"DOTA_Tooltip_Ability_item_bone"						"Bones"
-		"DOTA_Tooltip_Ability_item_bone_Description"			"<h1>Active: Chric-Chric </h1>Crunching, like toilet in my house."
-		"DOTA_Tooltip_Ability_item_bone_bonus_dmg"	"DAMAGE ON FOREVER:"
-		"DOTA_Tooltip_Ability_item_bone_bonus_hp"	"HEALTH ON FOREVER:"
-		"DOTA_Tooltip_Ability_item_bone_Lore"						"senoB"
+		"DOTA_Tooltip_Ability_item_bone"						"Remains"
+		"DOTA_Tooltip_Ability_item_bone_Description"			"<h1>Active: Crunch-crunch </h1>You're putting the remains inside you????"
+		"DOTA_Tooltip_Ability_item_bone_bonus_regen"	"HEALTH REGEN FOREVER:"
+		"DOTA_Tooltip_Ability_item_bone_bonus_hp"	"HEALTH FOREVER:"
+		"DOTA_Tooltip_Ability_item_bone_Lore"						"Smelly remains of former villagers..."
 		
-		"DOTA_Tooltip_modifier_veteran_grow"												"MORE BONES!!!!!"
-		"DOTA_Tooltip_modifier_veteran_grow_Description"									"You feel... Oh my god Billy what is doing in your ass?"
+		"DOTA_Tooltip_modifier_bone"												"Remains"
+		"DOTA_Tooltip_modifier_bone_Description"									"You feel a surge of strength in the form of %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% health and %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%% health regen"
  
-		
+		"DOTA_Tooltip_Ability_item_skeleton_key"						"Key"
+		"DOTA_Tooltip_Ability_item_skeleton_key_Description"			"<h1>Active: Click-Click </h1>He gives the key to the owner, it seems that the guard was talking about some kind of key..."
+		"DOTA_Tooltip_Ability_item_skeleton_key_Lore"						"The key smells like graves" 		
  
+
+		"DOTA_Tooltip_Ability_item_sumon_boss"						"Thing?"
+		"DOTA_Tooltip_Ability_item_sumon_boss_Description"			"<h1>Active: Click-Click </h1>If you click this thing in the right place, which resembles the Illuminati, then..."
+
 		"DOTA_Tooltip_Ability_item_pirog"						"Pie"
 		"DOTA_Tooltip_Ability_item_pirog_Description"			"This pie was created from trash it smell not bad.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked."
 		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Something is missing."
@@ -429,7 +438,7 @@
 		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
 
          "DOTA_Tooltip_ability_item_totem_upgrade"																					"Upgrade totem"
-		"DOTA_Tooltip_Ability_item_testo_Description"			"<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "         
+		"DOTA_Tooltip_Ability_item_totem_upgrade_Description"			"<font color='#c10020'>Drops from totem bosses that appear on the map every 5 minutes!</font>\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "         
 		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Help upgrade you items."
 
 		"DOTA_Tooltip_Ability_item_trash"						"A strange-smelling thing"
@@ -481,12 +490,11 @@
         "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage" "+$damage"
         "DOTA_Tooltip_Ability_item_god_rapier_Lore" "So powerful, it cannot have a single owner."
 
-        "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque"
-        "DOTA_Tooltip_Ability_item_her_Description"                                "<h1>Passive: Heart of Tarrasque</h1>The owner increases the health regeneration."
-        "DOTA_Tooltip_Ability_item_her_str"                                        "BONUS STRENGTH:"
-                "DOTA_Tooltip_Ability_item_her_hp"                                        "BONUS HEALTH:"
-                        "DOTA_Tooltip_Ability_item_her_rg"                                        "%BONUS REGENERATION:"
-        "DOTA_Tooltip_Ability_item_her_Lore"                                "Preserved heart of an extinct monster, it bolsters the bearer's fortitude."
+		"DOTA_Tooltip_Ability_item_heart_2"				"Totem Heart of Tarrasque"
+		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Preserved heart of an extinct monster, it bolsters the bearer's fortitude."
+		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
+		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+Max Health Regen"
 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
         "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Active: Summon the Treasure</h1>It summon Midas's treasure and if you break treasure then you will have exp and gold."       
@@ -494,7 +502,7 @@
 
 		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
 
-		"DOTA_Tooltip_Ability_item_assault_2"				"Assault Cuirass 2"
+		"DOTA_Tooltip_Ability_item_assault_2"				"Totem Cuirass"
 		"DOTA_Tooltip_ability_item_assault_2_Description"							"<h1>Passive: Assault Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%"
 		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed."
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
@@ -583,7 +591,7 @@
 		"DOTA_Tooltip_modifier_veil_active_debuff"				"Magic Weakness"
 		"DOTA_Tooltip_modifier_veil_active_debuff_Description"	"Magic damage increased."
 
- 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Hidan's mask of Discord"
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Totem's mask of Discord"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_Description"					"<h1>Active: Magic Weakness</h1> Cast a %debuff_radius% radius blast that causes enemy heroes to take %spell_amp%%% increased damage from spells.<br><br>Range: %abilitycastrange%<br>Duration: %resist_debuff_duration% seconds. \n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_Lore"						"Rumor has it that this mask is Hidan's own!"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_bonus_all_stats"			"+$all"
@@ -837,6 +845,9 @@
 
 
 
+		"DOTA_Tooltip_Ability_item_candy"							"Candy"
+		"DOTA_Tooltip_Ability_item_candy_Description"				"<h1>Active: Put it in a pumpkin</h1>This candy was always puted in the main pumpkin. They say that the more sweets, then more buffs!"
+		"DOTA_Tooltip_Ability_item_candy_Lore"							"Candy is cool!"	
 
 
 
@@ -916,6 +927,11 @@
 		"DOTA_Tooltip_Ability_quest_test_old_men_reward_gold"                 		"GOLD:"
 
 
+ 		"DOTA_Tooltip_Ability_quest_test_meepo"										"The key to the remains"
+		"DOTA_Tooltip_Ability_quest_test_meepo_Description"							"Hey Dude! Don't you want to make some money  and get a key? I have a job for you. Skeletons rise from the graves at night. Such creepy creatures! So kill them, and what's left of them bring me."
+		"DOTA_Tooltip_Ability_quest_test_meepo_value_required"     							"NUMBER OF REMAINS:"
+		"DOTA_Tooltip_Ability_quest_test_meepo_reward_exp"                 		"EXPERIENCE:"
+		"DOTA_Tooltip_Ability_quest_test_meepo_reward_gold"                 		"GOLD:"
 		
 		"DOTA_Tooltip_modifier_quest_template"												"Wait..."
 		"DOTA_Tooltip_modifier_quest_template_Description"									"Not wait."
@@ -923,6 +939,117 @@
 
 		// ******************** HERO ABILITIES ********************
 
+
+		// -----------------alchemist--------------------  
+
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Create Totem"
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Creates a unique item <font color='#ffd700'> Upgrade totem</font>, but spending gold at the same time."
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "The alchemist has succeeded so much in his business that now he can even make a Totem out of gold!" 
+
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_throw"					"Unstable Concoction Throw"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_throw_Description"		"Throw it before it blows up!"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Lore"					"A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential."		
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom"						"Unstable Concoction"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Description"			"Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After %brew_time% seconds, the brew reaches its maximum damage and stun time. However, after %brew_explosion% seconds, the concoction will explode on Alchemist himself if not thrown."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note0"					"While brewing, this ability is replaced by Unstable Concoction Throw.  Alchemist can move and act normally while brewing."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note1"					"A timer above Alchemist's head will indicate the remaining brew time. This timer is visible to enemies."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note2"					"You can deny yourself with this skill."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"					"Unstable Concoction cannot be disjointed."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"					"Once thrown, Unstable Concoction stops brewing."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"				"MAX STUN:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"				"MAX DAMAGE:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"					"EXPLOSION RADIUS:"
+
+        // -------------luna ----------
+ 		"DOTA_Tooltip_Ability_luna_night_buff"                                            "Improved Moon Blessing"
+        "DOTA_Tooltip_Ability_luna_night_buff_Description"                                "The moon plead the goddess and  the goddess gives Luna and her allies: damage, attack speed and magic damage."
+		"DOTA_Tooltip_ability_luna_night_buff_bonus_damage"								"BONUS DAMAGE:"
+		"DOTA_Tooltip_ability_luna_night_buff_attack_speed"					"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_luna_night_buff_spell_damage"					"%ADDITIONAL SPELL DAMAGE:"
+		"DOTA_Tooltip_ability_luna_night_buff_duration"								"DURATION:"
+        "DOTA_Tooltip_Ability_luna_night_buff_Lore"                                "The moon goddess hears the moon and gives her her blessing" 
+
+		"DOTA_Tooltip_modifier_luna_night_buff"						"Improved Moon Blessing"
+		"DOTA_Tooltip_modifier_luna_night_buff_Description"			"You are blessed by the moon goddess!"
+
+        // -------------dark seer ----------
+
+ 		"DOTA_Tooltip_ability_ability_ion_shell"										"Ion Shell"
+		"DOTA_Tooltip_ability_ability_ion_shell_Description"							"Imposes a thorny shield on the selected creature, which increases the creature's health and regeneration. If used on yourself, then everything enemies in radius take damage."
+		"DOTA_Tooltip_ability_ability_ion_shell_Lore"									"The Dark Seer slices holes into the 'Land Behind the Wall,' causing prismatic energy to seep forth."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note0"								"Deals small amounts of damage in %tick_interval% second intervals."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note1"								"Doesn't damage the target it is cast on."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note2"								"If cast on a unit that already has Ion Shell, the new Shell replaces the old one."
+		"DOTA_Tooltip_ability_ability_ion_shell_radius"								"RADIUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_duration"								"DURATION:"
+		"DOTA_Tooltip_ability_ability_ion_shell_damage_per_second"					"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_health"								"HEALTH BONUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_regen"					"REGENERATION BONUS:"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_unit"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_unit_Description"			"Increases target health by %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_hero"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_hero_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+	     "DOTA_Tooltip_ability_ability_surge"											"Surge"
+		"DOTA_Tooltip_ability_ability_surge_Description"								"Charges friendly creatures with energy that briefly increases the speed of movement and allows you to pass through creatures. The speed limit is removed from the target and it is impossible to slow it down."
+		"DOTA_Tooltip_ability_ability_surge_Lore"										"Ish'Kafel once used his speed of mind to navigate the maze between the walls."
+		"DOTA_Tooltip_ability_ability_surge_Note0"									"Units with Surge cannot be slowed unless the Surge effect is removed."
+		"DOTA_Tooltip_ability_ability_surge_duration"									"DURATION:"
+		"DOTA_Tooltip_ability_ability_surge_speed_boost"									"MOVE SPEED BONUS:"
+		"DOTA_Tooltip_ability_ability_surge_abilitycastrange"									"RADIUS:"
+
+		"DOTA_Tooltip_modifier_ability_surge"							"Surge"
+		"DOTA_Tooltip_modifier_ability_surge_Description"				"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%"
+
+	     "DOTA_Tooltip_ability_ability_seer_punch"											"ONE PUNCH!!"
+		"DOTA_Tooltip_ability_ability_seer_punch_Description"								"Dark seer gathers all his strength to hit a small area, while dealing huge damage and stunning his opponents on %AbilityDuration% second."
+		"DOTA_Tooltip_ability_ability_seer_punch_Lore"										"Dark seer apparently revised the anime and fancied himself a Saitama."
+		"DOTA_Tooltip_ability_ability_seer_punch_damage"									"DAMAGE:"
+		"DOTA_Tooltip_ability_ability_seer_punch_punch_radius"									"RADIUS:"
+
+ 		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Passively hanging on the owner. Deals damage to enemies around, as well as increases her health and regeneration. If you apply a normal shield, it will immediately reset."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"The Dark Seer slices holes into the 'Land Behind the Wall,' causing prismatic energy to seep forth."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Deals small amounts of damage in %tick_interval% second intervals."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_radius"								"RADIUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_duration"								"DURATION:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_damage_per_second"					"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_health"								"HEALTH BONUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_regen"					"REGENERATION BONUS:"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_golden"						"Ion Shell Golden"
+		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+
+		// -----------------sniper--------------------		
+
+        "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
+        "DOTA_Tooltip_Ability_rocket_shots_Description"                                "After numerous training sessions, Sniper learned to shoot at an unrealistically high speed for a short time!"
+        "DOTA_Tooltip_Ability_rocket_shots_bonus_speed_atack"                                        "BASE ATTACK SPEED:"
+        "DOTA_Tooltip_Ability_rocket_shots_duration"                                        "DURATION:"
+        "DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "At the training ground and not such antics happen."
+
+		"DOTA_Tooltip_modifier_rocket_shots_haste"                            	"Rocket shots"
+		"DOTA_Tooltip_modifier_rocket_shots_haste_Description"                	"You attack unrealistically fast!"
+
+		"DOTA_Tooltip_ability_ability_sniper_assassinate"										"Assassinate"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Description"							"Sniper locks onto a targets enemies units and, after a short aiming duration, fires a devastating shot that deals damage at long range and mini-stuns the target."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Lore"									"In order to fulfill the prophecy and return to his home town, Kardel must make another shot as perfect as the one on the day of his ancient test."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note0"									"Crosshair effect is only visible to allies."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note1"									"Invisibility doesn't disjoint the projectile."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note2"									""
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_abilitycastrange"						"CAST RANGE:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_abilitycastpoint"						"AIM DURATION:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_damage"						"%CRITICAL DAMAGE:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_splash_radius"						"RADIUS:"
+
+		"DOTA_Tooltip_modifier_ability_sniper_assassinate"					"Assassinate"
+		"DOTA_Tooltip_modifier_ability_sniper_assassinate_Description"		"Sniper's taking aim at your head!"				
 		// -----------------medusa--------------------		
  
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom"										"Like Robin Hood"
@@ -958,42 +1085,71 @@
 
 		
 		// -----------------axe--------------------			
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom"										"Berserker's Call"
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_Description"							"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor and movement speed during the duration. For every enemy that fell under this scream, curse rage that causes carrier periodic damage and slows down as long as it does not fall down, or him will kill the enemy."
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_radius"          					"RADIUS:"
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_duration"          					"DURATION:"
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_damage_per_second"          			"DAMAGE PER SECOND:"				
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_slow"          						"%SLOWDOWN:"
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom_speed_bonus"          				"SPEED BONUS:"
+		"DOTA_Tooltip_ability_ability_berserkers_call"										"Berserker's Call"
+		"DOTA_Tooltip_ability_ability_berserkers_call_Description"							"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration."
+		"DOTA_Tooltip_ability_ability_berserkers_call_Lore"									"Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe."
+		"DOTA_Tooltip_ability_ability_berserkers_call_radius"								"RADIUS:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_bonus_armor"							"ADDITIONAL ARMOR:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_duration"								"DURATION:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_description"						"Each hit creep gives armor, and the duration of the positive effect increases."
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_armor"					"ARMOR FOR CREEP:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_duration"					"DURATION OF POSITIVE EFFECT:"  
 
-		"DOTA_Tooltip_Ability_axe_culling_blade_lua"										"Mincer"
-		"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description"	"Axe strikes at the weakest spot, causing %damage_true%% from his basic damage."
-		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_true"                      		"%DAMAGE ON BASE DAMAGE:"
-		"DOTA_Tooltip_Ability_axe_culling_blade_lua_great_cleave_damage"                      		"%SPLASH:"
-		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore"      			"It is favorite reception's Axe."
+		"DOTA_Tooltip_modifier_ability_berserkers_call_debuff_cmd"					"Berserker's Call"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_debuff_cmd_Description"		"You are forced to attack Axe"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_buff_armor"			"Броня от Berserker's Call"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_buff_armor_Description"	"%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% additional armor"
 
-		"DOTA_Tooltip_ability_ursa_enrage_lua"										"Enrage"
-		"DOTA_Tooltip_ability_ursa_enrage_lua_Description"							"Axe fall in rage, getting on %damage_reduction%%% less damage and resistance to the effects on %damage_reduction%%   . Removes all negative effects. \n\nDISPEL TYPE: Strong Dispel "
-		"DOTA_Tooltip_ability_ursa_enrage_lua_aghanim_description"							"Reduces cooldown and allows Ursa to use Enrage while disabled."
-		"DOTA_Tooltip_Ability_ursa_enrage_lua_duration"                      		"DURATION:"
- 		"DOTA_Tooltip_Ability_ursa_enrage_lua_damage_reduction"                      		"%DAMAGE REDUCTION:"
-  		"DOTA_Tooltip_Ability_ursa_enrage_lua_status_resistance"                      		"%STATUS RESISTANCE:"
-		"DOTA_Tooltip_ability_ursa_enrage_lua_cooldown_scepter"					            "SCEPTER COOLDOWN:"
-		"DOTA_Tooltip_ability_ursa_enrage_lua_Lore"											"When Axe fall in rage, nobody is living..."
+		"DOTA_Tooltip_ability_ability_battle_hunger"										"Battle Hunger"
+		"DOTA_Tooltip_ability_ability_battle_hunger_Description"							"Infuriates the enemy by dealing damage to him. The damage from the victim's attacks is reduced."
+		"DOTA_Tooltip_ability_ability_battle_hunger_Lore"									"Ordinary heroes can't resist Mogul Khan's rage, and it cripples them until they take it out on someone."
+		"DOTA_Tooltip_ability_ability_battle_hunger_duration"								"DURATION:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_damage_reduction"									"%REDUCING ATTACK DAMAGE:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_damage_per_second"						"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_abilitycastrange"						"RANGE OF APPLICATION:"
 
+		"DOTA_Tooltip_modifier_imba_battle_hunger_debuff_dot" "Battle Hunger"
+		"DOTA_Tooltip_modifier_imba_battle_hunger_debuff_dot_Description" "Takes damage per second, attack damage is reduced by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%." 
+		"DOTA_Tooltip_modifier_imba_battle_hunger_buff" "Battle Hunger"
+		"DOTA_Tooltip_modifier_imba_battle_hunger_buff_Description" "Heals every second, the damage from attacks is increased by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
  
-  		"DOTA_Tooltip_modifier_ursa_enrage_lua"				"ENRAGE"
-		"DOTA_Tooltip_modifier_ursa_enrage_lua_Description"	"AAAGGRRRRRHHHHHHH..."
 
-		"DOTA_Tooltip_Ability_axe_solo"										"Forever alone"      
-		"DOTA_Tooltip_Ability_axe_solo_Description"	             " Axe already was solo in his adventures he was used to relying on himself. He feel myself strong in solitude, and if allies come to him  in radius %radius%, then all bafs decrease <font color='#ffffff'>in 2 times</font>."		
-		"DOTA_Tooltip_Ability_axe_solo_bonus_strength_false"                      		"STRENGTH IN ALONE:"
-		"DOTA_Tooltip_Ability_axe_solo_bonus_armor_false"                      		"ARMOR IN ALONE:"
- 		"DOTA_Tooltip_Ability_axe_solo_bonus_regen_false"                      		"REGENERATION IN ALONE:"
-		"DOTA_Tooltip_ability_axe_solo_Lore"      			"Be alone, it is way..."	
+		"DOTA_Tooltip_ability_ability_counter_helix"										"Counter Helix"
+		"DOTA_Tooltip_ability_ability_counter_helix_Description"							"When attacked, Axe has a chance to perform a helix counter attack, dealing pure damage to all nearby enemies."
+		"DOTA_Tooltip_ability_ability_counter_helix_Note0"									"Triggered when the attack on the owner of the ability is completed."
+		"DOTA_Tooltip_ability_ability_counter_helix_Lore"									"Mogul Khan — his own army."
+		"DOTA_Tooltip_ability_ability_counter_helix_damage"									"DAMAGE:"
+		"DOTA_Tooltip_ability_ability_counter_helix_radius"									"RADIUS:"
+		"DOTA_Tooltip_ability_ability_counter_helix_trigger_chance"							"%CHANCE OF A COUNTERATTACK:"
+
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua" "Culling Blade"
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description" "The hero finds the weak point of all enemies within the radius of %splash_radius% from the main target and deals them pure damage."
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_attack" "%BASE DAMAGE DAMAGE:"
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage" "DAMAGE:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore" "Ax's favorite technique in all his wanderings."
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_scepter_description" "Each time an ability is used or an enemy is killed, Axe's base damage increases by %duration_scepter%  second."
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_base" "DAMAGE PER USE:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_kill" "DAMAGE PER KILL:"
+ 
+		"DOTA_Tooltip_modifier_scepter_culling_blade" "Culling Blade"
+		"DOTA_Tooltip_modifier_scepter_culling_blade_Description" "Base damage increased by %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%%"
+
+		"DOTA_Tooltip_Ability_axe_solo" "Forever alone"
+		"DOTA_Tooltip_Ability_axe_solo_Description"	             " Axe already was solo in his adventures he was used to relying on himself. He feel myself strong in solitude, and if allies come to him  in radius %radius%, then all bafs decrease <font color='#ffffff'>in 0.25 times</font>."	
+		"DOTA_Tooltip_Ability_axe_solo_bonus_strength" "STRENGTH IN ALONE:"
+		"DOTA_Tooltip_Ability_axe_solo_bonus_armor" "ARMOR IN ALONE:"
+		"DOTA_Tooltip_Ability_axe_solo_bonus_regen" "REGENERATION IN ALONE:"
+		"DOTA_Tooltip_ability_axe_solo_Lore" "Be alone, it is way..."
  
   		"DOTA_Tooltip_modifier_axe_solo"				"FOREVER  ALONE"
 		"DOTA_Tooltip_modifier_axe_solo_Description"	"It show nearly allies."
+ 
+ 		"DOTA_Tooltip_Ability_special_axe_battle_ally"											"Battle Hunger can be applied to allies"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_call_radius"											 "+{s:bonus_radius} Berserker's Call AoE"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_culling_cooldown"											"-{s:value} second cooldown from Culling Blade"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_helix_damage"											"+{s:bonus_damage} Counter Helix Damage"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_helix_chance"											   "+{s:bonus_trigger_chance}% Counter Helix Chance"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_culling_damage"											   "+{s:bonus_damage_attack}% Culling Blade damage base"
  
 	
 		// -----------------timber--------------------	
@@ -1142,16 +1298,14 @@
 
 		
 		// -----------------sven--------------------
-				"DOTA_Tooltip_Ability_sven_splash"										"Great Cleave"
-		"DOTA_Tooltip_Ability_sven_splash_Description"							"Sven attacks with great force, breaking through all nearby enemies."
-				"DOTA_Tooltip_ability_sven_splash_Lore"									"Vigil knights always war with Evil and so Sven come to here."
-		"DOTA_Tooltip_Ability_sven_splash_great_cleave_damage"					"%CLEAVE DAMAGE:"	
 
-		"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven"										"Coup de Grace"
-		"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_Description"							"Sven refines her combat abilities, gaining a chance of delivering a devastating critical strike to enemy units."
-				"DOTA_Tooltip_renegade_coup_de_grace_datadriven_Lore"									"Last hit..."
-		"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_crit_chance"				"%CRITICAL CHANCE:"
-		"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_crit_bonus"					"%CRITICAL DAMAGE:"	
+        "DOTA_Tooltip_Ability_sven_shield" "Sven's Shield"
+        "DOTA_Tooltip_Ability_sven_shield_Description" "Sven blocks all incoming damage, after which his shield collapses and goes to recharge."
+        "DOTA_Tooltip_ability_sven_shield_Lore" "After wandering alone for a long time, Sven had a shield that began to protect him from the rest of the world."
+        "DOTA_Tooltip_Ability_sven_shield_damage_absorb" "ABSORBS DAMAGE:"
+
+        "DOTA_Tooltip_modifier_sven_shield" "Sven's Shield"
+        "DOTA_Tooltip_modifier_sven_shield_Description" "Absorbs all incoming damage!"
  
 		// -----------------RUBICK--------------------	
 		"DOTA_Tooltip_Ability_rubick_meditation"											"Meditation"
@@ -1518,12 +1672,10 @@
 
 	// -----------------Wisp--------------------
 
-		"DOTA_Tooltip_Ability_wisp_sueside"											"Sacrifice"
-		"DOTA_Tooltip_Ability_wisp_sueside_Description"								"Io dies, granting all allies immortality and increased combat characteristics."
-		"DOTA_Tooltip_Ability_wisp_sueside_Lore"								"If sacrifice is the only option for making friends, then the Magic Ball uses it."
-		"DOTA_Tooltip_Ability_wisp_sueside_duration"        								"DURATION:"
-		"DOTA_Tooltip_Ability_wisp_sueside_hp_reg"                                        "BONUS HEALTH REGENERATION:"
-		"DOTA_Tooltip_Ability_wisp_sueside_bonus_dmg"                                        "DAMAGE BONUS:"   
+		"DOTA_Tooltip_Ability_blessed_walking"											"Blessed walking"
+		"DOTA_Tooltip_Ability_blessed_walking_Description"								"For each unit of movement, Wisp replenishes his health. The related hero also gets a heal."
+		"DOTA_Tooltip_Ability_blessed_walking_Lore"								"*Health Replenishment Sounds*"
+		"DOTA_Tooltip_Ability_blessed_walking_movement_damage_pct"        								"MOVE DAMAGE:" 
 
 		"DOTA_Tooltip_Ability_ability_wisp_teleport"											"Spatial jump"
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_Description"								"Opens a dark gap near the targeted allied creature. After a short delay, the owner of the ability and all allied heroes around him teleport to this gap. The ability will begin to recharge even if it is canceled or if the teleport target dies."
@@ -1674,24 +1826,45 @@
 		"DOTA_Tooltip_modifier_pudge_rot_lua_debuff_Description"							"How longer you are smelling it, then more you feel so bad."		
 
 		"DOTA_Tooltip_Ability_undying_decay_boss_wave"										"Decay"
-		"DOTA_Tooltip_Ability_undying_decay_boss_wave_Description"							"Голодный крадет у врагов силу при этом сам становится сильнее."
-		"DOTA_Tooltip_Ability_undying_decay_boss_wave_decay_duration"     							"ДЛИТЕЛЬНОСТЬ:"
-		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_steal"     							"КРАДЕТ СИЛЫ:"
-		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_health_up"     							"ХП ЗА ЕД. СИЛЫ:"
-		"DOTA_Tooltip_Ability_undying_decay_boss_wave_steal_damage"     							"УРОН ЗА ЕД. СИЛЫ:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_Description"							"A hungry person steals power from enemies while becoming stronger himself."
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_decay_duration"     							"DURATION:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_steal"     							"STEAL STRENGTH:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_str_health_up"     							"HP PER UNIT OF STRENGTH:"
+		"DOTA_Tooltip_Ability_undying_decay_boss_wave_steal_damage"     							"DAMAGE PER UNIT OF STRENGTH:"
 
 
 		"DOTA_Tooltip_Ability_bo_eat"										"<font color='#c10020'>I WANT TO EAT!</font>"
 		"DOTA_Tooltip_Ability_bo_eat_Description"							"Bo really wants to eat, but he doesn't eat anything, He likes pie... especially pie of dps."
 
+		"DOTA_Tooltip_Ability_guard_key"										"The key to the tomb"
+		"DOTA_Tooltip_Ability_guard_key_Description"							"The guard looks like someone has lost some key."
+
 
 		"DOTA_Tooltip_Ability_main_elka"										"The holiday is coming to us"
 		"DOTA_Tooltip_Ability_main_elka_Description"							"Santa today don't like place with big number of people. But if you as follow will ask then maybe he come:)"
 
+		"DOTA_Tooltip_Ability_main_pumpkin"										"Creepy Halloween!"
+		"DOTA_Tooltip_Ability_main_pumpkin_Description"							"CANDIES, CANDIES, CANDIES. I NEED MORE CANDIES!" 
 
- 		"DOTA_Tooltip_modifier_item_letter"												"Letters under christmas tree"
-		"DOTA_Tooltip_modifier_item_letter_Description"									"Than more here letters more chance to appear Santa"
-		
+		"DOTA_Tooltip_ability_Bo_greater_bash"							"Greater Bash"
+		"DOTA_Tooltip_ability_Bo_greater_bash_Lore"						"The signature strike of Bo's ghostly ball and chain."
+		"DOTA_Tooltip_ability_Bo_greater_bash_Description"				"Gives a chance to stun and knockback an enemy unit on an attack. Deals a percentage of movement speed as damage. Deals 1.5x damage to creeps."
+		"DOTA_Tooltip_ability_Bo_greater_bash_Note0"					"Does not stack with Skull Basher."
+		"DOTA_Tooltip_ability_Bo_greater_bash_abilitydraft_note"		"In Ability Draft, <b>does</b> stack with Skull Basher."
+		"DOTA_Tooltip_ability_Bo_greater_bash_chance_pct"				"%CHANCE TO BASH:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_damage"					"%MOVEMENT SPEED AS DAMAGE:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_knockback_duration"		"KNOCKBACK DURATION:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_duration"					"STUN DURATION:"
+
+		"DOTA_Tooltip_Ability_bo_eat_creeps"										"Eat"
+		"DOTA_Tooltip_ability_bo_eat_creeps_Lore"						"Bo always liked to eat!"
+		"DOTA_Tooltip_ability_bo_eat_creeps_Description"				"Bo eats the specified creep and regenerates his health."
+		"DOTA_Tooltip_ability_bo_eat_creeps_regen"				"REGENERATION:"
+		"DOTA_Tooltip_ability_bo_eat_creeps_devour_time"				"DURATION:"
+
+
+ 
+
 		// ******************** MODIFIERS ********************
 		
  		"DOTA_Tooltip_modifier_no_heal"												"NO HEALING"
@@ -1715,8 +1888,35 @@
  
 		"DOTA_Tooltip_modifier_zombie_passive_fire"												"Sunlight"
 		"DOTA_Tooltip_modifier_zombie_passive_fire_Description"									"Takes light damage of 4.5% % of max health "
-		
- 
+	
+
+
+
+
+
+		"DOTA_Tooltip_modifier_halloween_spell"											"Need more magic damage"
+		"DOTA_Tooltip_modifier_halloween_spell_Description"						"Your magic damage increased by %dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%"
+
+		"DOTA_Tooltip_modifier_halloween_experience"											"Need more experience"
+		"DOTA_Tooltip_modifier_halloween_experience_Description"						"You get on %dMODIFIER_PROPERTY_EXP_RATE_BOOST%%% more experience"
+
+		"DOTA_Tooltip_modifier_halloween_magic_resist"											"Need more magic resist"
+		"DOTA_Tooltip_modifier_halloween_magic_resist_Description"						"Magic resist is increased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%"
+
+		"DOTA_Tooltip_modifier_halloween_health"											"Need more health"
+		"DOTA_Tooltip_modifier_halloween_health_Description"						"Your health is increased by %dMODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE%%%"
+
+		"DOTA_Tooltip_modifier_halloween_damage"											"Need more damage"
+		"DOTA_Tooltip_modifier_halloween_damage_Description"						"Your damage is increased by %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%%"
+
+		"DOTA_Tooltip_modifier_halloween_gold"											"Need more gold"
+		"DOTA_Tooltip_modifier_halloween_gold_Description"						"You get on %dMODIFIER_PROPERTY_GOLD_RATE_BOOST%%% more gold"
+
+  		"DOTA_Tooltip_modifier_item_letter"												"Letters under christmas tree"
+		"DOTA_Tooltip_modifier_item_letter_Description"									"Than more here letters more chance to appear Santa"
+	
+		"DOTA_Tooltip_modifier_item_candy"												"Trick or treat?"  
+		"DOTA_Tooltip_modifier_item_candy_Description"									"The more candies, then better!"
 		// ******************** ferm ********************
 
 		"DOTA_Tooltip_Ability_item_milk"									"Milk"
@@ -1769,8 +1969,10 @@
     	"dota_hud_error_use_enemies"                    						"You can't use it on enemies"     
         "dota_hud_error_gril_not_meat"                    						"Grill needs meat"  
         "dota_hud_error_pirog"                    						"You have eated pie"  
+        "dota_hud_error_key"                    						"It don't want the key"   
 
        	"dota_hud_error_letter_bad_target"                    					"It can use only on Main christmas tree!"
+       	"dota_hud_error_candy_bad_target"                    					"It can use only on Main pumpkin tree!"
 		// ******************** Обучалка: ********************
 
 

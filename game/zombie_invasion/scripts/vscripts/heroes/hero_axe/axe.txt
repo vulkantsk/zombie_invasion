@@ -1,19 +1,20 @@
 "DOTAAbilities"
 {
 
-"axe_berserkers_call"
+	"ability_berserkers_call"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5007"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_axe/berserkers_call/berserkers_call"
+        "AbilityTextureName"            "axe_berserkers_call"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Axe.Berserkers_Call"
-		"MaxLevel"						"7"
-		"HasScepterUpgrade"               "1"
 
+     		"MaxLevel"						"7"
+
+        "HasShardUpgrade"               "1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.4"
@@ -22,7 +23,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12"
+		"AbilityCooldown"				"18 17 16 15 14 13 12"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
@@ -30,145 +31,140 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80"	
+		"AbilityManaCost"				"60 70 80 90 100 110 120"	
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"300 325 350 375 400 425 450"
-				"LinkedSpecialBonus"		"special_bonus_unique_axe_2"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"15 20 25 30 35 40 45"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"2.0 2.3 2.5 2.7 3.0 3.2 3.5"
-			}	
+				"radius"					
+				{
+					"value"				"325"
+			    	"special_bonus_unique_axe_call_radius"	    "+100"
+				}
+				"bonus_armor"			
+				{
+					"value"				"30"
+				}
+				"duration"				"2.0 2.4 2.8 3.2 3.6 4.0 4.4"
+				"shard_armor"				
+				{
+					"value"				"2.5"
+					"RequiresShard"		"1"
+				}
+				"shard_duration"			
+				{
+					"value"	"7.5"
+			     	"RequiresShard"		"1"
+				}
+ 
 		}
 	}
-
-	"axe_culling_blade_lua"
+ 
+"ability_battle_hunger"
 	{
-		// Ability Technical Aspect
-		// base script folder	: scripts/vscripts
-		// base texture folder	: resource/flash3/images/spellicons
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_axe/rubilka/axe_culling_blade_lua"
-		"AbilityTextureName"			"Hero/kAxe/axe_culling_blade"
-		"MaxLevel"						"7"
- "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
-			"particle"	"particles/units/heroes/hero_axe/axe_culling_blade.vpcf"
-			"particle"	"particles/units/heroes/hero_axe/axe_culling_blade_kill.vpcf"
-			"particle"	"particles/units/heroes/hero_axe/axe_cullingblade_sprint.vpcf"
-		}
-		
-		// Ability General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_axe/battle_hunger/battle_hunger"
+        "AbilityTextureName"            "axe_battle_hunger"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Axe.Battle_Hunger"
 
-		// Ability Casting
+     		"MaxLevel"						"7"
+
+		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"75"
+ 		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_2"
+		"AbilityCastGestureSlot"		"DEFAULT"
 		"AbilityCastPoint"				"0.3"
 
-		// Ability Resource
+		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"8.0 7.5 7.0 6.5 5.0"
-		"AbilityManaCost"				"45"
+		"AbilityCooldown"				"16 15 14 13 12 11 10"
 
-		// Damage
+		// Cost
 		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"35 45 55 65 75 85 95"		
+		
+		// Cast Range
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"750"
 
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.1"	// Primarily about the damage
+		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_true"					"120 200 280 360 440 520 600"
-								"CalculateSpellDamageTooltip" "0"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"great_cleave_radius"	"150.0"
-			}
-			
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"100 125 150 175 200 225 250"
-								"CalculateSpellDamageTooltip" "0"
-			}
-		}
+				"duration"					
+				{
+					"value"				"10.0"
+				}
+				"damage_per_second"			
+				{
+					"value"				"25 45 65 85 105 125 145"
+				}
+				"damage_reduction"				
+				{
+					"value"				"10 15 20 25 30 35 40"					
+					"CalculateSpellDamageTooltip"	"0"
+				}
+		}		
 	}
 
-
-	"axe_counter_helix"
+		"ability_counter_helix"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5009"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_axe/counter_helix/counter_helix"
+        "AbilityTextureName"            "axe_counter_helix"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilitySound"					"Hero_Axe.CounterHelix"
 
-        "HasShardUpgrade"               "1"
      		"MaxLevel"						"7"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0.01"
+		"AbilityCooldown"				"0.3"
 		
 	
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"40 65 95 125 155 185 215"
-				"LinkedSpecialBonus"		"special_bonus_unique_axe_4"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"275"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"trigger_chance"			"10 11 12 13 14 15 16"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"cooldown"					"0.01"
-			}
+				"damage"					
+				{
+					"value"				"40 65 95 125 155 185 215"
+			    	"special_bonus_unique_axe_helix_damage"	    "+150"
+					 
+				}
+
+				"radius"	 				"275"
+			 
+				"trigger_chance"				
+				{
+					"value"				"14 15 16 17 18 19 20"
+			    	"special_bonus_unique_axe_helix_chance"	    "+20"
+					 
+				}
+				"cooldown"				
+				{
+					"value"				"0.3"
+				}
+				 
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
-
+ 
 
 		//=================================================================================================================
 	// Dragon Knight: Dragon Blood (Lua version)
@@ -192,7 +188,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
+        "AbilityCastRange"              "475"
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 
@@ -207,123 +203,178 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonuss_strength"			"100"
+				"bonus_strength"			"50"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonuss_regen"					"20"
+				"bonus_regen"					"25"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonuss_armor"					"60"
+				"bonus_armor"					"30"
 			}
  			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_model"			"80"
+				"bonus_model"			"40"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"radius"					"550"
-			}
-
-
-
-
-
-
-
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_strength_false"			"50"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"  
-				"bonus_regen_false"					"10"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_INTEGER"  
-				"bonus_armor_false"					"30"
+				"radius"					"475"
 			}
 		
       }
 		
 	}
+ 
 
-	"ursa_enrage_lua"
+
+	"axe_culling_blade_lua"
 	{
 		// Ability Technical Aspect
 		// base script folder	: scripts/vscripts
 		// base texture folder	: resource/flash3/images/spellicons
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_axe/ursa_energy/ursa_enrage_lua"
-		"AbilityTextureName"			"Hero/kAxe/energy"
-		"FightRecapLevel"				"1"
+		"ScriptFile"					"heroes/hero_axe/rubilka/axe_culling_blade_lua"
+		"AbilityTextureName"			"axe_culling_blade"
 		"MaxLevel"						"3"
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
-			"particle"	"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf"
- 
-		}
-					"LevelsBetweenUpgrades"			"10"	
+		"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
+        "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+ 
+ 		 "HasScepterUpgrade"             "1"
 
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-
-		"HasScepterUpgrade"				"1"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"0"
+		"AbilityCastRange"				"75"
+		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50 40 30"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"15.0 12.5 10.0"
+		"AbilityManaCost"				"40 60 80"
 
-		// Damage
-		//-------------------------------------------------------------------------------------------------------------
-
+ 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage"					
+				{
+					"value"				"250 425 600"
+				}
+				"damage_attack"			
+				{
+					"value"				"150 225 300"
+				"special_bonus_unique_axe_culling_damage"	"+50"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+				"splash_radius"				"125"
+				"duration_scepter"				
+				{
+					"value"				"60"
+				}
+				"bonus_base"			
+				{
+					"value"	"25"
+					"RequiresScepter"			"1"
+				}
+				"bonus_kill"		
+				{
+					"value"		"30"
+					"RequiresScepter"			"1"
+				}
+ 
+		}			 
+		 
+	}
+
+	"special_bonus_unique_axe_helix_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_axe_helix_chance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_axe_culling_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_axe_culling_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"5.0 6.0 7.0"
+				"value"				"3"
+				"ad_linked_abilities"			"axe_culling_blade_lua"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
 			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_reduction"			"80"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"status_resistance"			"60"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"cooldown_scepter"			"30 24 18"
-			}
-		}
+		}	
+ 
 	}
 
+	"special_bonus_unique_axe_call_radius"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
  
+	}
 
+	"special_axe_battle_ally"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
 }

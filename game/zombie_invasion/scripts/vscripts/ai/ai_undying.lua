@@ -12,6 +12,8 @@ function Spawn( entityKeyValues )
 	hTomb3Ability = thisEntity:FindAbilityByName( "tombestone_und_3" )
 	hTomb4Ability = thisEntity:FindAbilityByName( "tombestone_und_4" )
 
+	hTombClockAbility = thisEntity:FindAbilityByName( "tombestone_und_clock" )
+ 
  	hSpawner = Entities:FindByName( nil, "final_point" )
  
 	thisEntity:SetContextThink( "NeutralAutoCasterThink", NeutralAutoCasterThink, 1 )
@@ -29,16 +31,14 @@ function NeutralAutoCasterThink()
 	
 	if #enemies == 0 then
 		return MoveToTarget()
+	else 
+         AttackMove(npc, enemy)	
 	end	
 
-	if thisEntity:GetUnitName() == "npc_undying" then
+	if thisEntity:GetUnitName() == "npc_undying_1" then
 		if hTomb1Ability ~= nil and hTomb1Ability:IsFullyCastable() then
 			for i=1, #enemies do
-				local enemy = enemies[i]
-				if enemy:IsRealHero() and enemy:GetHealthPercent() <= 100  then 
-					 CastTomb1()
-	
-				end		
+				CastTomb1()	 
 			end
 		end
 	end
@@ -79,8 +79,47 @@ function NeutralAutoCasterThink()
 		end
 	end
 
-	return 0.5	
+	 if thisEntity:GetUnitName() == "npc_undying_4" then
+		if hTomb4Ability ~= nil and hTomb4Ability:IsFullyCastable() then
+			for i=1, #enemies do
+				local enemy = enemies[i]
+				if enemy:IsRealHero() and enemy:GetHealthPercent() <= 100  then 
+					 CastTomb4()
+	
+				end		
+			end
+		end
+	end
+ 
+	 if thisEntity:GetUnitName() == "npc_undying_clock" then
+		if hTomb4Ability ~= nil and hTomb4Ability:IsFullyCastable() then
+			for i=1, #enemies do
+				local enemy = enemies[i]
+				if enemy:IsRealHero() and enemy:GetHealthPercent() <= 100  then 
+					 CastTombClock()
+	
+				end		
+			end
+		end
+	end
+	return 1.0	
 end
+
+function AttackMove( unit, enemy )
+	if enemy == nil then
+		return
+	end
+--	print("ATTACK MOVE")
+	ExecuteOrderFromTable({
+		UnitIndex = unit:entindex(),				--индекс кастера
+		OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,	-- тип приказа атака
+		Position = enemy:GetOrigin(),				-- пощиция врага
+		Queue = false,
+	})
+
+	return 1
+end
+
 
 function CastTomb1()
 	ExecuteOrderFromTable({
@@ -133,4 +172,14 @@ function MoveToTarget()
 		Position = hSpawner:GetOrigin()
 	})
 	return 1
+end
+
+function CastTombClock()
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+		AbilityIndex = hTombClockAbility:entindex(),
+	})
+
+	return 1.00
 end

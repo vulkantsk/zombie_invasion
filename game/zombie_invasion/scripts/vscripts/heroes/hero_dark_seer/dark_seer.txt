@@ -1,0 +1,258 @@
+"DOTAAbilities"
+{
+ 
+  	"dark_seer_vacuum"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5255"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Dark_Seer.Vacuum"
+        "MaxLevel"                      "7"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"450"
+		"AbilityCastPoint"				"0.4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"60 90 120 150 180 210 240"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"350 400 450 500 550 600 650"
+				"LinkedSpecialBonus"	"special_bonus_unique_dark_seer_2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"60 120 180 240 300 360 420"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius_tree"				"150"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	
+"ability_ion_shell"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dark_seer/ion_shell/ion_shell"
+		"AbilityTextureName"			"dark_seer_ion_shell"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+		
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.4 0.4 0.4 0.4"
+
+		"AbilityCooldown"				"9"
+		"AbilityManaCost"				"65 85 105 125 145 165 185"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_per_second"		"20 35 55 70 90 105 125"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_interval"				"0.1"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health"				"125 225 325 425 525 625 725"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_regen"				"3.0 6.0 9.0 12.0 15.0 18.0 21.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"25"
+			}
+
+		}
+	}
+
+"ability_surge"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dark_seer/surge/surge"
+		"AbilityTextureName"			"dark_seer_surge"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"  
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+
+		"AbilityCastPoint"				"0.4"
+
+		"AbilityCooldown"				"16 15 14 13 12 11 10"
+		"AbilityManaCost"				"50 60 70 80 90 100 110"
+
+        "AbilityCastRange"              "375"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3 3.5 4 4.5 5 5.5 6"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed_boost"				"250"
+			}
+ 
+		}
+	}
+
+     "ability_seer_punch"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_dark_seer/seer_punch/seer_punch"
+        "AbilityTextureName"            "dark_seer_normal_punch"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"   
+ 
+ 
+			"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "150"
+        "AbilityCastPoint"              "0.48"
+        "AbilityCastAnimation"      "ACT_DOTA_ATTACK"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "25 20 15"
+
+        "AbilityDuration"               "0.65"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "125 215 305"
+        
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"   "0.0"   // Modifier just does damage
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "damage"            "1200 2400 3600" 
+            }
+             "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "punch_radius"            "180"
+				"CalculateSpellDamageTooltip" "0" 
+            }
+             
+        }
+    }
+
+"ability_ion_shell_golden"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dark_seer/ion_shell_golden/ion_shell_golden"
+		"AbilityTextureName"			"dark_seer/golden_shell"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"35"		
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastRange"				"500"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"325"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_per_second"		"185"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_interval"				"0.1"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health"				"1075"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_regen"				"42.0"
+			}
+			 
+			 
+		}
+	}
+}

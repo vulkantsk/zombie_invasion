@@ -44,12 +44,8 @@ if hGriHealAbility ~= nil and hGriHealAbility:IsFullyCastable() then
  
 	end
 
-	local search_radius = 1300						-- радиус поиска зависит от того, имеет ли юнит агр
-	if npc.agro then
-		search_radius = npc.fMaxDist * 3			-- расшираяется
-	else
-		search_radius = npc.fMaxDist				-- становится обычным
-	end
+	local search_radius = 1800						-- радиус поиска зависит от того, имеет ли юнит агр
+ 
 	
 	-- Как далеко юнит находится от своей точки спавна ?
 	local fDist = ( npc:GetOrigin() - npc.vInitialSpawnPos ):Length2D()

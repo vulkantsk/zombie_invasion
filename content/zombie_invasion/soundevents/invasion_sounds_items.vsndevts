@@ -203,7 +203,7 @@
                                                         "value0"                "sounds/items/quest/lufi"
                                                 }
                                         }
-                                                                                "volume"                        {   "value"     "55.000000"  }
+                                                                                "volume"                        {   "value"     "15.000000"  }
                                                                              "soundlevel"               {   "value"     "56"  }
                                                                                 "pitch"                 {       "value"         "1.000000" }
                                        "chan_type"
@@ -220,3 +220,39 @@
         }
 }
   
+"open_gate"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/items/quest/open_gate"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "5.000000"  }
+                                                                             "soundlevel"               {   "value"     "54"  }
+                                                                                "pitch"                 {       "value"         "1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+    

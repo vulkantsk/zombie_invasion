@@ -7,133 +7,142 @@ const GUIDE_ADVANCED_PAGE_COUNT = 2;
 var selectedPage = null;
 var selectedPageId = 1;
 var selectedGuide = "";
-var time = '00:00';
+var time = "00:00";
 //--
 
 //--init
-(function () {	
-	GameEvents.Subscribe( "zpr_show_quest", OnShowQuest);
-	GameEvents.Subscribe( "zpr_time", OnTime);
-	$.Schedule(0.3, function(){uhax(hax())})
+(function () {
+  GameEvents.Subscribe("zpr_show_quest", OnShowQuest);
+  //-- GameEvents.Subscribe("zpr_time", OnTime);
+  $.Schedule(0.3, function () {
+    uhax(hax());
+  });
 })();
 //--
 
 //hack
-function hax()
-{
-	var parent = $.GetContextPanel().GetParent();
-	while(parent.id != "Hud")
-		parent = parent.GetParent();
+function hax() {
+  var parent = $.GetContextPanel().GetParent();
+  while (parent.id != "Hud") parent = parent.GetParent();
 
-	return parent;
+  return parent;
 }
-function uhax(parent)
-{
-	parent.FindChildTraverse("GameTime").text = time;
-	
-	$.Schedule(0.5, function () {
-		uhax(parent)
-	})
+function uhax(parent) {
+  //-- parent.FindChildTraverse("GameTime").text = time;
+
+  $.Schedule(0.5, function () {
+    uhax(parent);
+  });
 }
 //
 
 //--CGE
-function OnShowQuest(data)
-{
-	$("#quest_name").text = $.Localize("DOTA_Tooltip_ability_" + data["an"])
-	$("#quest_desc").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_Description")
-	$("#quest_req").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_value_required") + " " + data["rq"]
-	$("#quest_exp").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_reward_exp") + " " + data["re"]
-	$("#quest_gold").text = $.Localize("DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") + " " + data["rg"]
-	$("#QPanel").SetHasClass("hide", false)
+function OnShowQuest(data) {
+  $("#quest_name").text = $.Localize("#DOTA_Tooltip_ability_" + data["an"]);
+  $("#quest_desc").text = $.Localize(
+    "#DOTA_Tooltip_ability_" + data["an"] + "_Description"
+  );
+  $("#quest_req").text =
+    $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_value_required") +
+    " " +
+    data["rq"];
+  $("#quest_exp").text =
+    $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_exp") +
+    " " +
+    data["re"];
+  $("#quest_gold").text =
+    $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") +
+    " " +
+    data["rg"];
+  $("#QPanel").SetHasClass("hide", false);
 }
 
-function OnTime(data)
-{
-    time = SecondsToMinsNSecs(data["time"])
+function OnTime(data) {
+  time = SecondsToMinsNSecs(data["time"]);
 }
 //--
 
 //--btns
-function CloseQuest()
-{
-	$("#QPanel").SetHasClass("hide", true)
+function CloseQuest() {
+  $("#QPanel").SetHasClass("hide", true);
 }
 //--
 
 //--guide
 function ToggleHTPPanel() {
-	$("#HTPPanel").ToggleClass("hide");
-	BasicGuide()
+  $("#HTPPanel").ToggleClass("hide");
+  BasicGuide();
 }
 
 function GuideOpenPage(page, previous) {
-    if (previous != null) {
-	    previous.SetHasClass("hide", true)
-	}
-	
-	page.SetHasClass("hide", false)
-	selectedPage = page
+  if (previous != null) {
+    previous.SetHasClass("hide", true);
+  }
+
+  page.SetHasClass("hide", false);
+  selectedPage = page;
 }
 
 function GuideNextPage() {
-    if (selectedPageId < GetSelectedGuideMaxPagesCount()) {
-        selectedPageId = selectedPageId + 1
-		GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage)
-		
-		UpdatePageNumbDisplayer()
-	}
-	
+  if (selectedPageId < GetSelectedGuideMaxPagesCount()) {
+    selectedPageId = selectedPageId + 1;
+    GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage);
+
+    UpdatePageNumbDisplayer();
+  }
 }
 
 function GuidePreviousPage() {
-    if (selectedPageId > 1) {
-	    selectedPageId = selectedPageId - 1
-		GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage)
-		
-		UpdatePageNumbDisplayer()
-	}
+  if (selectedPageId > 1) {
+    selectedPageId = selectedPageId - 1;
+    GuideOpenPage($("#" + selectedGuide + selectedPageId), selectedPage);
+
+    UpdatePageNumbDisplayer();
+  }
 }
 
 function UpdatePageNumbDisplayer() {
-    $("#PageNumb").text = selectedPageId + "/" + GetSelectedGuideMaxPagesCount()
+  $("#PageNumb").text = selectedPageId + "/" + GetSelectedGuideMaxPagesCount();
 }
 
-function BasicGuide() {	
-    $("#basicguidebtn").SetHasClass("guideSelected", true)
-	$("#advancedguidebtn").SetHasClass("guideSelected", false)
-	
-	selectedGuide = "basic"
-	selectedPageId = 1
-	GuideOpenPage($("#basic1"), selectedPage)
-	UpdatePageNumbDisplayer()
+function BasicGuide() {
+  $("#basicguidebtn").SetHasClass("guideSelected", true);
+  $("#advancedguidebtn").SetHasClass("guideSelected", false);
+
+  selectedGuide = "basic";
+  selectedPageId = 1;
+  GuideOpenPage($("#basic1"), selectedPage);
+  UpdatePageNumbDisplayer();
 }
 
 function AdvancedGuide() {
-    $("#basicguidebtn").SetHasClass("guideSelected", false)
-	$("#advancedguidebtn").SetHasClass("guideSelected", true)
-	
-	selectedGuide = "advanced"
-	selectedPageId = 1
-	GuideOpenPage($("#advanced1"), selectedPage)
-	UpdatePageNumbDisplayer()
+  $("#basicguidebtn").SetHasClass("guideSelected", false);
+  $("#advancedguidebtn").SetHasClass("guideSelected", true);
+
+  selectedGuide = "advanced";
+  selectedPageId = 1;
+  GuideOpenPage($("#advanced1"), selectedPage);
+  UpdatePageNumbDisplayer();
 }
 
-function GetSelectedGuideMaxPagesCount(){
-	if (selectedGuide == "basic") return GUIDE_BASIC_PAGE_COUNT 
-	if (selectedGuide == "advanced") return GUIDE_ADVANCED_PAGE_COUNT
+function GetSelectedGuideMaxPagesCount() {
+  if (selectedGuide == "basic") return GUIDE_BASIC_PAGE_COUNT;
+  if (selectedGuide == "advanced") return GUIDE_ADVANCED_PAGE_COUNT;
 }
 //--
 
 //--utils
-function SecondsToMinsNSecs(seconds)
-{
-	var mins = Math.floor(seconds/60);
-	var secs = Math.floor(seconds%60);
-	
-	if (mins < 10) {mins = "0"+mins}
-	if (secs < 10) {secs = "0"+secs}
-	
-	return mins + ":" + secs;
+function SecondsToMinsNSecs(seconds) {
+  var mins = Math.floor(seconds / 60);
+  var secs = Math.floor(seconds % 60);
+
+  if (mins < 10) {
+    mins = "0" + mins;
+  }
+  if (secs < 10) {
+    secs = "0" + secs;
+  }
+
+  return mins + ":" + secs;
 }
 //--

@@ -97,6 +97,7 @@
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
+	
 		"AbilitySpecial"
 		{
 			"01"
@@ -131,26 +132,22 @@
         "MaxLevel"                        "7"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_reset_time"				"6 9 12 15 18 21 24"
-				"LinkedSpecialBonus"			"special_bonus_unique_ursa_4"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
+				"bonus_reset_time"				
+				{
+					"value"						"6 9 12 15 18 21 24"
+					"special_bonus_unique_ursa_4" "+16"
+				}
 				"bonus_reset_time_roshan"		"6"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_per_stack"				"5 8 10 13 15 18 20"
-				"LinkedSpecialBonus"			"special_bonus_unique_ursa"
-			}
+				"damage_per_stack"				
+				{
+					"value"					"5 8 10 13 15 18 20"
+					"special_bonus_unique_ursa"			"+5"
+				}
 		}
+
+	 
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}		
 
@@ -258,12 +255,11 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"value"				"2"
-				"ad_linked_ability"			"ursa_overpower"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+				"ad_linked_abilities"			"ursa_overpower"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
 			}
 		}
 	}
-
-		"special_bonus_unique_ursa"
+	"special_bonus_unique_ursa"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -279,7 +275,7 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"value"				"5"
-				"ad_linked_ability"			"ursa_fury_swipes"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+				"ad_linked_abilities"			"ursa_fury_swipes"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
 			}
 		}
 	}

@@ -31,8 +31,11 @@ function modifier_axe_solo:OnIntervalThink()
 
 		for _, hero in pairs( units ) do
 
-				count = count + 1
-			
+            if hero == self:GetCaster() then 
+
+                 else
+				     count = count + 1
+	        end
 		end
       self:GetCaster():CalculateStatBonus(true)
 		self:SetStackCount( count )
@@ -43,8 +46,8 @@ end
 function modifier_axe_solo:OnCreated( kv )
 	-- references
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
-	self.armor = self:GetAbility():GetSpecialValueFor( "bonuss_armor" )
-	self.strength = self:GetAbility():GetSpecialValueFor( "bonuss_strength" )	
+	self.armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
+	self.strength = self:GetAbility():GetSpecialValueFor( "bonus_strength" )	
 	self.model = self:GetAbility():GetSpecialValueFor( "bonus_model" )
 	self.regen = self:GetAbility():GetSpecialValueFor( "bonuss_regen" )	
 		self:StartIntervalThink( 0.2 )
@@ -78,24 +81,24 @@ end
 
 function modifier_axe_solo:GetModifierConstantHealthRegen()
 	if not self:GetParent():PassivesDisabled() then
-		return self.regen/(self:GetStackCount() + 1)
+		return self.regen * (1 - (0.25 * self:GetStackCount()))
 	end
 end
 
 function modifier_axe_solo:GetModifierModelScale()
 	if not self:GetParent():PassivesDisabled() then
-		return self.model/(self:GetStackCount() + 1)
+		return self.model * (1 - (0.25 * self:GetStackCount()))
 	end
 end
 
 function modifier_axe_solo:GetModifierBonusStats_Strength()
 	if not self:GetParent():PassivesDisabled() then
-		return self.strength/(self:GetStackCount() + 1)
+		return self.strength * (1 - (0.25 * self:GetStackCount()))
 	end
 end
 
 function modifier_axe_solo:GetModifierPhysicalArmorBonus()
 	if not self:GetParent():PassivesDisabled() then
-		return self.armor/(self:GetStackCount() + 1)
-			end
+		return  self.armor * (1 - (0.25 * self:GetStackCount()))
+	end
 end

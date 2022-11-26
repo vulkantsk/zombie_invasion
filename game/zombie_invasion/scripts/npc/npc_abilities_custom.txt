@@ -13,7 +13,16 @@
 #base "../vscripts/heroes/hero_clinkz/clinkz.txt"
 #base "../vscripts/heroes/hero_rubick/rubick.txt"
 #base "../vscripts/heroes/hero_medusa/medusa.txt"
-
+#base "../vscripts/heroes/hero_sky/sky.txt"
+#base "../vscripts/heroes/hero_alchemist/alchemist.txt"
+#base "../vscripts/heroes/hero_crystal/crystal.txt"
+#base "../vscripts/heroes/hero_wisp/wisp.txt"
+#base "../vscripts/heroes/hero_sniper/sniper.txt"
+#base "../vscripts/heroes/hero_dark_seer/dark_seer.txt"
+#base "../vscripts/heroes/hero_luna/luna.txt"    
+#base "../vscripts/heroes/hero_enigma/enigma.txt"    
+          
+ 
 #base "portal/abilities.txt"
 
 "DOTAAbilities"
@@ -86,10 +95,11 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"					"ability_datadriven"
+		"BaseClass"					"ability_lua"
+		"ScriptFile"					"abilities/zombie/Boss/wave_boss_aura"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"		"nevermore_necromastery"
-	    	"IsOnCastBar"                   "1"	
+	    	"IsOnCastBar"                   "0"	
 
  		"AbilitySpecial"
 		{
@@ -99,36 +109,6 @@
 				"speed"			"-550"
 			}						
  
-		}
-
-		"Modifiers"
-		{
-
- 
-
-	        "modifier_wave_boss_aura_2"
-	        {
-	            "Passive"    "1"
-	            "IsHidden"   "1"
-
-	            "Aura" 			"modifier_wave_boss_aura_3"
-	            "Aura_Radius" 	"9999"
-	            "Aura_Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-	            "Aura_Types" 	"DOTA_UNIT_TARGET_ALL"
-	        }
-
-			"modifier_wave_boss_aura_3"
-			{	
-				"IsHidden"      		"0"
-				"IsDebuff"      		"1"
-				"TextureName"			"nevermore_necromastery"				
-				"IsPurgable"	"0"
-				"Properties"
-			{
-				"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"			"%speed"
- 
-			}			
-			}
 		}
 	}
 	
@@ -307,7 +287,7 @@
             "01"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "damage"                    "2450"
+                "damage"                    "1350"
             }
             "02"
             {
@@ -399,7 +379,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "lunge_damage"          "5550"
+                "lunge_damage"          "1450"
             }
             "02"
             {
@@ -1049,12 +1029,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "350"
+                "reward_exp"                "160"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "200"
+                "reward_gold"                "180"
             }
         }
 
@@ -1093,7 +1073,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "450"
+                "reward_exp"                "400"
             }
             "03"
             {
@@ -1137,12 +1117,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "900"
+                "reward_exp"                "525"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "500"
+                "reward_gold"                "425"
             }
         }
 
@@ -1181,12 +1161,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "1100"
+                "reward_exp"                "1250"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "650"
+                "reward_gold"                "675"
             }
         }
 
@@ -1227,12 +1207,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "350"
+                "reward_exp"                "1325"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "250"
+                "reward_gold"                "825"
             }
         }
 
@@ -1274,12 +1254,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "350"
+                "reward_exp"                "175"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "250"
+                "reward_gold"                "80"
             }
         }
 
@@ -1320,12 +1300,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "350"
+                "reward_exp"                "625"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "250"
+                "reward_gold"                "315"
             }
         }
 
@@ -1345,6 +1325,50 @@
        
     }
 
+    "quest_test_meepo"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/eggs"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "4"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "650"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "400"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_bone"
+                "reward_item"    "item_skeleton_key"
+                "particle"        "1"
+               // "next_quest"    "quest_test_woman02"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
 
    		    "quest_test_lina"
     {
@@ -1366,12 +1390,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "350"
+                "reward_exp"                "450"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "250"
+                "reward_gold"                "415"
             }
         }
 
@@ -1422,6 +1446,38 @@
 		}
 	}
 
+ 
+	
+	"blood_effect"
+	{
+		"BaseClass"                 "ability_datadriven"
+		"AbilityTextureName"      	"bloodseeker_rupture"
+		"MaxLevel"            		"1"
+
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+			
+
+		"Modifiers"
+		{		
+			"modifier_blood_on_take_damage"
+		    { 
+				"Passive"	"1"
+				"IsHidden"  "1"			
+				"OnTakeDamage"
+				{
+		         
+					"AttachEffect"
+		            {
+		                "EffectName" "particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_blood04.vpcf"
+		                "EffectAttachType" "follow_origin"
+		                "Target" "CASTER"
+		            }				
+				
+				}
+				
+		    }
+		}
+	}
 
 	"range_magick_attack"
 	{
@@ -1735,12 +1791,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rot_tick"				"0.2"
+				"rot_tick"				"0.25"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_slow"				"-10"
+				"rot_slow"				"-25"
 			}
 			"04"
 			{
@@ -1780,12 +1836,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rot_tick"				"0.2"
+				"rot_tick"				"0.25"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_slow"				"-10"
+				"rot_slow"				"-25"
 			}
 			"04"
 			{
@@ -1826,12 +1882,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rot_tick"				"0.2"
+				"rot_tick"				"0.25"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_slow"				"-10"
+				"rot_slow"				"-25"
 			}
 			"04"
 			{
@@ -1873,12 +1929,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rot_tick"				"0.2"
+				"rot_tick"				"0.25"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_slow"				"-10"
+				"rot_slow"				"-25"
 			}
 			"04"
 			{
@@ -1888,7 +1944,50 @@
 		}
 	}
 
+	"pudge_rot_tomb_clock"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------														
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"					"pudge_rot"
+		"ScriptFile"						"abilities/zombie/pudge_rot_lua"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0 0 0 0"
 
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rot_radius"			"800"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"rot_tick"				"0.25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rot_slow"				"-25"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rot_damage"				"40"
+			}
+		}
+	}
+ 
 
 "tombestone_flash_1"
 {
@@ -2143,6 +2242,49 @@
 
 }
 
+
+"tombestone_und_clock"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"undying_tombstone"
+	"RequiredLevel"					"1"
+ 
+	"MaxLevel"						"1"
+
+		"AbilityCastAnimation"			"ACT_DOTA_UNDYING_TOMBSTONE"
+		"AbilityCastGestureSlot"		"DEFAULT"
+	"AbilityCastPoint"				"0.5"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"120"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"50"
+
+	
+ 
+
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"abilities/zombie/xuita_post.lua"
+			"Function"		"tombstone_night_clock"
+		}
+
+	}
+
+}
+ 
+
 	"ghoul_crazy_look"
 	{
 		"BaseClass" 					"ability_datadriven"
@@ -2271,6 +2413,30 @@
 
 
 
+	"ghost_speed"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/ghost_speed"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "vengefulspirit_wave_of_terror"
+	    "MaxLevel"                      "1"	
+
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min"	"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max"	"150"
+			}
+
+		}
+
+	}
 
 	"mutant_dismemberment"
 	{
@@ -3132,321 +3298,14 @@
 
 
 	
-	//============================================================================================================
-	//	SVEN
-	//============================================================================================================	
+	 
+ 
 	
-	"special_bonus_24_crit_2"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"6851"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"crit_chance"				"20"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"crit_multiplier"				"150" 
-			}
-		}
-	}
-	
-	"special_bonus_movement_speed_25"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5919"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"value"				"80"
-			}
-		}
-	}
-	
-	"special_bonus_magic_resistance_80"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"6965"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"value"				"70"
-			}
-		}
-	}
-	
-	"special_bonus_lifesteal_15"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"6289"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"value"				"18"
-			}
-		}
-	}
-	
-	"special_bonus_unique_sven_4"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"7112"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"value"				"1.25"
-				"ad_linked_ability"			"sven_storm_bolt"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
-			}
-		}
-	}
-	
-	"special_bonus_unique_sven_2"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"6910"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"value"				"75"
-				"ad_linked_ability"			"sven_gods_strength"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
-			}
-		}
-	}
-	
-	"special_bonus_strength_7"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"6115"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"value"				"12"
-			}
-		}
-	}
-	
-	"sven_gods_strength"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5097"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_Sven.GodsStrength"
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
- 		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_4"
-		"AbilityCastGestureSlot"		"DEFAULT"
-		"AbilityCastPoint"				"0.3 0.3 0.3"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"65"
-		"AbilityDuration"				"35.0"
-	
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"75 100 150"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"gods_strength_damage"		"140 180 225"	
-				"LinkedSpecialBonus"		"special_bonus_unique_sven_2"	
-			}
-		}	
-	}
-
-
-	"sven_warcry"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5096"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-		"AbilitySound"					"Hero_Sven.WarCry"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_3"
-		"AbilityCastGestureSlot"		"DEFAULT"
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"19 17 15 12"
-	
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"45"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"movespeed"			"12 20 26 32"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_armor"		"3 6 9 12"		
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"		"1350"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"duration"		"8"
-			}
-		}
-	}
-	
-	"tower_ability"
+		"tower_ability"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/tower.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	}
-	
-	"sven_storm_bolt"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5094"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_Sven.StormBoltImpact"
-
-		"HasScepterUpgrade"				"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"750"
-		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16 14 12 10"
-
-		// Damage.
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"125 160 220 290"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"65 75 85 95"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bolt_speed"			"1000"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"bolt_stun_duration"	"1.75 2 2.25 2.5"
-				"LinkedSpecialBonus"		"special_bonus_unique_sven_4"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bolt_aoe"			"255"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"vision_radius"		"225"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"cast_range_bonus_scepter"		"1500"		
-				"RequiresScepter"			"1"
-			}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 	
 	//============================================================================================================
@@ -5633,7 +5492,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                "50"
+                "damage"                "60"
             }
             "02"
             {
@@ -5643,7 +5502,7 @@
             "03"
             {
                 "var_type"              "FIELD_FLOAT"
-                "duration"              "6"
+                "duration"              "4"
             }
         }
     }
@@ -5692,7 +5551,7 @@
             "03"
             {
                 "var_type"              "FIELD_FLOAT"
-                "duration"              "6"
+                "duration"              "5"
             }
         }
     }
@@ -5731,7 +5590,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                "315"
+                "damage"                "205"
             }
             "02"
             {
@@ -5781,7 +5640,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                "650"
+                "damage"                "310"
             }
             "02"
             {
@@ -5795,7 +5654,35 @@
             }
         }
     }
-		
+
+	"zombie_suic"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/zombie_suic"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "techies_suicide"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+	    "MaxLevel"                      "1"	
+ 
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"		"250"
+ 
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_basic"		"225"
+			}
+		}
+	}
+
 	//=================================================================================================================
 	// Ability: Skeleton King
 	//=================================================================================================================
@@ -6676,6 +6563,59 @@
 		}				
 	}
 
+	"zombie_tombstone"
+{
+	"BaseClass"						"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName"			"undying_tombstone"
+	"AbilitySpecial"
+	{
+		"01"
+        {
+			"var_type"              "FIELD_INTEGER"
+			"attacks_need"          "4 6 8 10 12"
+        }
+ 
+			
+	}
+
+	"Modifiers"
+	{
+		"modifier_zombie_tombstone_passive"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			
+			"OnCreated"
+			{
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/zombie/zombie_tombstone"
+					"Function"		"OnCreated"
+				}	
+			}
+			"OnAttacked"
+			{
+
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/zombie/zombie_tombstone"
+					"Function"		"OnAttacked"
+				}				
+			}
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
+				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
+				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE"		"1"
+			}			
+		}
+ 	
+	} 
+}
+
+
+
 	"tidehunter_anchor_smash"
 	{
 		// General
@@ -7282,7 +7222,7 @@
             "02"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "base_dmg"                  "525d"
+                "base_dmg"                  "525"
             }
             "03"
             {
@@ -8709,100 +8649,7 @@
 		}	}
 }
 
-	"golden_mine_passive_2"
-{
-	"BaseClass"						"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilityTextureName"			"undying_tombstone"
-	"AbilitySpecial"
-	{
-		"01"
-        {
-			"var_type"              "FIELD_INTEGER"
-			"attacks_need"          "8"
-        }
-		"02"
-        {
-			"var_type"              "FIELD_FLOAT"
-			"xp"            "500"
-        }
-		"03"
-        {
-			"var_type"              "FIELD_FLOAT"
-			"gold"          "250"
-        }
-			
-	}
-
-	"Modifiers"
-	{
-		"modifier_golden_mine_passive"
-		{
-			"Passive"			"1"
-			"IsHidden"			"1"
-			
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/golden_mine"
-					"Function"		"OnCreated"
-				}	
-			}
-			"OnAttacked"
-			{
-				"ApplyModifier"
-				{
-					"Target"
-					{
-						"Center"		"ATTACKER"
-						"Types"			"DOTA_UNIT_TARGET_HERO"
-						"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-					}	
-					"ModifierName"		"modifier_golden_mine_buff"
-					"Duration"			"0"
-				}
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/golden_mine"
-					"Function"		"OnAttacked"
-				}				
-			}
-			"Properties"
-			{
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE"		"1"
-			}			
-		}
-		"modifier_golden_mine_buff"
-		{
-			"Passive"			"0"
-			"IsHidden"			"0"
-
-			"ThinkInterval"		"0.5"
-			"OnIntervalThink"
-			{
-				"GrantXPGold"
-				{
-					"Target"
-					{
-						"Center"		"TARGET"
-						"Types"			"DOTA_UNIT_TARGET_HERO"
-						"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-					}	
-					"XPAmount"		"0"
-					"GoldAmount"	"0"
-					"ReliableGold"	"1"
-					"PlayAlert"		"1"
-				}
-			}
-		}	}
-}
-
-
+ 
 
 	"golden_mine_passive_3"
 {
@@ -8814,7 +8661,7 @@
 		"01"
         {
 			"var_type"              "FIELD_INTEGER"
-			"attacks_need"          "15"
+			"attacks_need"          "12"
         }
 		"02"
         {
@@ -8907,7 +8754,7 @@
 		"01"
         {
 			"var_type"              "FIELD_INTEGER"
-			"attacks_need"          "25"
+			"attacks_need"          "16"
         }
 		"02"
         {
@@ -9001,7 +8848,7 @@
 		"01"
         {
 			"var_type"              "FIELD_INTEGER"
-			"attacks_need"          "35"
+			"attacks_need"          "20"
         }
 		"02"
         {
@@ -9442,6 +9289,53 @@
 		}
 	}	
 
+	"respawn_skelet"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_skelet" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_skelet"
+				"Function"		"RespawnSkelet"
+			}
+		}
+	}	
+
+	"respawn_skelet_2"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	 
+		"OnCreated" //Когда юнит появляется
+		{
+			"RunScript" //Запускается скрипт
+			{
+				"ScriptFile"	"abilities/respawn/respawn_skelet_2" 
+				"Function"		"Respoint"
+			}
+		}
+		
+		"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/respawn/respawn_skelet_2"
+				"Function"		"RespawnSkelet"
+			}
+		}
+	}
 
 	"respawn_grim"
 	{
@@ -9823,41 +9717,7 @@
 
 
 
-    	"ability_wisp_teleport"
-    {
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_wisp/ability_wisp_teleport"
-		"AbilityTextureName"			"wisp/ability_wisp_teleport"
-		"FightRecapLevel"				"2"
-		"MaxLevel"						"3"
-
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-
-		"AbilityCastRange"				"0"
-		"AbilityCastPoint"				"0.6"
-
-		"AbilityCooldown"				"100 80 60	"
-		"AbilityManaCost"				"100 200 300"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"600"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"teleport_delay"				"2 2 2"
-			}
-		}
-	}
+     
 
 		"ad_special_bonus_gold_750_r"
 	{
@@ -9879,106 +9739,7 @@
 		}
 	}
 
-	"ability_wisp_teleport_cancel"
-	{
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_wisp/ability_wisp_teleport"
-		"AbilityTextureName"			"wisp/ability_wisp_teleport_cancel"
-		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-
-		"AbilityType"						"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-
-		"AbilityCastPoint"				"0"
-		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_4"
-		"AbilityCastGestureSlot"		"DEFAULT"
-	}
-
-	"wisp_spirits"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5486"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"AbilitySound"					"Hero_Wisp.Spirits.Cast"
-        "HasScepterUpgrade"			"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0"
-  		"AbilityCastAnimation"			"ACT_INVALID"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"26.0 24.0 22.0 20.0"
-		"AbilityDuration"				"19.0 19.0 19.0 19.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"120 130 140 150"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"creep_damage"				"10 20 30 40"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"hero_damage"				"30 50 70 90"
-				"LinkedSpecialBonus"		"special_bonus_unique_wisp"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"revolution_time"			"5.0 5.0 5.0 5.0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"min_range"					"200"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"max_range"					"700"
-				"LinkedSpecialBonus"		"special_bonus_unique_wisp_3"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"hero_hit_radius"			"110"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"explode_radius"			"360"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"hit_radius"				"150 150 150 150"
-			}
-			"09"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"spirit_movement_rate"		"250 250 250 250"
-			}
-			"10"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"spirit_duration"			"19.0 19.0 19.0 19.0"
-			}
-		}
-	}	
+ 
 
 	"wisp_sueside"
 {
@@ -10168,36 +9929,6 @@
         }
     }
 
-    "sky_bolt"
-    {
-    	"BaseClass"           "ability_lua"
-    	"ScriptFile"          "heroes/hero_sky/sky_bolt"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-    	"AbilityTextureName"  "sky/cris"
-    	"MaxLevel"            "1"
-    	"LevelsBetweenUpgrades" "1"
-    	"RequiredLevel" "35"
-
-    	"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.5"
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"				"40"
-		"AbilityManaCost" "1000"
-
-    	"AbilitySpecial"
-    	{
-         	"01"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage"							"2500"
-			}	
-    	}  
-    }
  
 
 	"pa_skill"
@@ -10491,6 +10222,558 @@
 			}
 		}
 	}
+	//============================================================================================================
+	// Halloween
+	//============================================================================================================
+		"main_pumpkin"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/halloween/main_pumpkin"
+		"AbilityTextureName"			"new_year/pumpkin"
+		"FightRecapLevel"				"1"
+				"RequiredLevel"					"1"
+		"MaxLevel" "1"
+
+ 
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+	}
+
+		"main_pumpkin_aura"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/halloween/main_pumpkin_aura"
+		"AbilityTextureName"			"new_year/elka_2"
+		"FightRecapLevel"				"1"
+				"RequiredLevel"					"1"
+		"MaxLevel" "1"
+	    	"IsOnCastBar"                   "0"	
+ 
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+	}
+
+ 	"haloween_golem_flaming_fists"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"warlock_golem_flaming_fists"													 
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"3"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage"				"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"			"350"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+
+	"pudge_meat_hook_fly"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"pudge_meat_hook" 
+		"MaxLevel"                      "1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Pudge.AttackHookExtend"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+ 		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"425"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"425"
+				"LinkedSpecialBonus"			"special_bonus_unique_pudge_7"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hook_speed"			"2050.0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hook_width"		"100"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hook_distance"		"500"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"vision_radius"		"500 500 500 500"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"vision_duration"	"4.0 4.0 4.0 4.0"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"golem_fireball"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Baseclass"					"black_dragon_fireball"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"300"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"425"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"6.0"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burn_interval"			"0.5"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}	
+
+		"skelet_boss"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/halloween/skelet_boss"
+		"AbilityTextureName"			"new_year/pumpkin"
+		"FightRecapLevel"				"1"
+				"RequiredLevel"					"1"
+		"MaxLevel" "1"
+
+ 
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+	}
+
+	//=================================================================================================================
+	// Ability: Skeleton King
+	//=================================================================================================================
+	"skeleton_king_hellfire_blast_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"skeleton_king_hellfire_blast"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_SkeletonKing.Hellfire_Blast"
+		"MaxLevel"                      "1"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"525"
+		"AbilityCastPoint"				"0.35 0.35 0.35 0.35"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"1725"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.5"	// Applies two modifiers
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_speed"			"1000"
+			}			
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_stun_duration"	"2.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_11"
+	
+			}			
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_dot_duration"	"4.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_7"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_slow"			"-20"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_dot_damage"		"275"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_3"
+			}			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	
+	//=================================================================================================================
+	// Ability: Skeleton King Vampiric Aura (Vampiric Spirit)
+	//=================================================================================================================
+	"skeleton_king_vampiric_aura_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"skeleton_king_vampiric_aura"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"MaxLevel"                      "1"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"70 80 90 100"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura"			"25"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"skeleton_duration"			"60"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_skeleton_charges"		"2 4 6 8"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spawn_interval"			"0.25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reincarnate_time"			"3"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"gold_bounty"						"5"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"xp_bounty"						"5"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+		
+	//=================================================================================================================
+	// Ability: Skeleton King Mortal Strike
+	//=================================================================================================================
+	"skeleton_king_mortal_strike_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"skeleton_king_mortal_strike"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilitySound"					"Hero_SkeletonKing.CriticalStrike"
+		"MaxLevel"                      "1"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"5.5 5 4.5 4"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_mult"					"285"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	
+	//=================================================================================================================
+	// Ability: Skeleton King Reincarnation
+	//=================================================================================================================
+	"skeleton_king_reincarnation_boss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"skeleton_king_reincarnation"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"2"
+
+		"HasShardUpgrade"			"1"
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Hero_SkeletonKing.Reincarnate"
+		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		"MaxLevel"                      "1"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"180"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1000000"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Slow isn't the main function of this ability.
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reincarnate_time"		"3.0 3.0 3.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_radius"			"900"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"-75"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackslow"			"-75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"			"5.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_duration"		"7"
+				"RequiresScepter"			"1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"	"1200"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius_tooltip_scepter"	"1200"
+				"RequiresScepter"			"1"
+			}
+		}
+	}
+
+	"skelet_mini"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/halloween/skelet_mini"
+ 
+ 
+		"MaxLevel"						"1"
+ 
+		"AbilityCooldown"				"35"
+ 
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+ 
+ 
+	 
+	}
+
+	"skelet_fury_swipes"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Baseclass"							"ursa_fury_swipes"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_reset_time"				"6"
+				"LinkedSpecialBonus"			"special_bonus_unique_ursa_4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_reset_time_roshan"		"6"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_stack"				"10"
+				"LinkedSpecialBonus"			"special_bonus_unique_ursa"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}		
+
+	"skelet_reincarnation"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/halloween/skelet_reincarnation"
+ 
+ 
+		"MaxLevel"						"1"
+ 
+		"AbilityCooldown"				"10000000"
+ 
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+ 
+ 
+	 
+	}
 
 	//============================================================================================================
 	// New Year
@@ -10668,7 +10951,7 @@
 			"States"
 			{
 				"MODIFIER_STATE_INVULNERABLE"			"MODIFIER_STATE_VALUE_ENABLED"
- 
+ 				"MODIFIER_STATE_NO_HEALTH_BAR"			"MODIFIER_STATE_VALUE_ENABLED"
 			}
 		}
 	}
@@ -10969,7 +11252,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"325"
+				"damage_min"			"415"
 			}
 			"02"
 			{
@@ -11038,6 +11321,17 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     } 
 
+		   "guard_key"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/quest/guard_key"
+		"AbilityTextureName"			"Quest/Guard_key"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    } 
 
     "legion_low"
 	{
@@ -15331,73 +15625,7 @@
 		}
 	}
  
-
-	//=================================================================================================================
-	// Dark Seer: Ion Shell
-	//=================================================================================================================
-	"dark_seer_ion_shell"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5256"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_Dark_Seer.Ion_Shield_Start"
-		"RequiredLevel"					"1"
-		"LevelsBetweenUpgrades"			"3"
-		"MaxLevel"						"9"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"200"
-		"AbilityCastPoint"				"0.4 "
-
-		// Time
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50 100 200 400 800 1600 1800"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityModifierSupportValue"	"0.0"	// just does damage
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"250"
-				"LinkedSpecialBonus"	"special_bonus_unique_dark_seer_5"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_per_second"		"30 60 120 150 180 200 210"
-				"LinkedSpecialBonus"	"special_bonus_unique_dark_seer"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"15"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"tick_interval"				"0.1"
-			}		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
-	}
+ 
 //=================================================================================================================
 	// Furion: Wrath of Nature
 	//=================================================================================================================
@@ -21637,7 +21865,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"block_dps"				"95"
+			"block_dps"				"85"
 		}
 	}
 }
@@ -22190,6 +22418,5 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
-
-
+ 
 }

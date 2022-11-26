@@ -1,0 +1,305 @@
+"DOTAAbilities"
+{
+
+	"ability_malefice"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_enigma/malefice/malefice"
+		"AbilityTextureName"			"enigma_malefice"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+	
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"22 21 20 19 18 17 16"
+		"AbilityManaCost"				"100 120 140 160 180 200 220"
+
+		"AbilityValues"
+		{
+				"tick_rate"					
+				{
+					"value"				"2.0 2.0 2.0 2.0"
+				}
+				"stun_duration"			
+				{
+					"value"				"0.4 0.5 0.6 0.7 0.8 0.9 1.0"
+				}
+				"damage"				"60 90 120 150 180 210 240"
+				"duration"				
+				{
+					"value"				"4.0 4.0 4.0 4.0"
+					"special_bonus_unique_enigma_malefice_stuns"                  "+2"
+				}
+				"tooltip_stuns"			
+				{
+					"value"	"3"
+					"special_bonus_unique_enigma_malefice_stuns"                 "+1"
+				}
+ 
+		}
+
+	}
+
+	"ability_demonic_conversion"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_enigma/demonic_conversion/demonic_conversion"
+		"AbilityTextureName"			"enigma_demonic_conversion"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+
+ 		 "HasScepterUpgrade"             "1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"60 57 54 51 49 47 45"
+ 
+		"AbilityManaCost"				"90 120 150 180 210 240 270"
+
+		"AbilityValues"
+		{
+				"spawn_count"					
+				{
+					"value"				"1"
+					"special_bonus_unique_enigma_demonic_conversion_number"                  "+1"
+				}
+				"split_attack_count"			
+				{
+					"value"				"6"
+				}
+				"eidolon_hp_tooltip"				
+				{
+					"value"				"120 150 180 210 240 270 300"
+				}
+				"eidolon_dmg_tooltip"			
+				{
+					"value"	"12 18 24 30 36 42 50"
+				}
+ 				"eidalon_duration"			
+				{
+					"value"	"35"
+				}
+				"bonus_str"			
+				{
+					"value"	"8"
+					"RequiresScepter"			"1"
+				}
+				"bonus_ag"		
+				{
+					"value"		"0.75"
+					"RequiresScepter"			"1"
+				}
+ 				"bonus_int"		
+				{
+					"value"		"1.15"
+					"RequiresScepter"			"1"
+				}
+		}
+	}
+
+	"ability_midnight_pulse"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_enigma/midnight_pulse/midnight_pulse"
+		"AbilityTextureName"			"enigma_midnight_pulse"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.7"
+
+		"AbilityCooldown"				"40"
+		"AbilityManaCost"				"35 55 75 105 135 165 195"
+
+ 
+		"AbilityValues"
+		{
+				"radius"					
+				{
+					"value"				"450"
+					"special_bonus_unique_enigma_pulse_radius"                   "+150"
+				}
+				"damage_base"			
+				{
+					"value"				"10 18 24 32 40 48 56"
+				}
+				"damage_percent"			
+				{
+					"value"				"1"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_enigma_pulse_damage"     "+0.5"
+				}
+				"duration"				"8"
+ 
+ 
+		}
+				"AbilityCastAnimation"			"ACT_DOTA_MIDNIGHT_PULSE"
+	}
+
+    "enigma_eyes"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_enigma/enigma_eyes/enigma_eyes"
+		"AbilityTextureName"			"Hero/Enigma/eyes"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"35"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCooldown"				"90"
+		"AbilityManaCost"				"215"
+ 
+		"AbilityValues"
+		{
+ 				"duration"				"25"
+
+				"damage_per_stack"			
+				{
+					"value"				"8"
+ 					"CalculateSpellDamageTooltip"	"0"
+				}
+ 
+ 
+ 
+		}
+ 
+	}
+
+ 	 	"ability_black_hole"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_enigma/black_hole/black_hole"
+		"AbilityTextureName"			"enigma_black_hole"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+ 
+        "HasShardUpgrade"               "1"
+        
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"275"
+		"AbilityCastPoint"				"0.3"
+		"AbilityChannelTime"			"4.0"
+
+		"AbilityCooldown"				"140 130 120"
+		"AbilityManaCost"				"275 375 475"
+ 
+		"AbilityValues"
+		{
+				"far_damage"					
+				{
+					"value"				"100 250 500"
+				}
+				"near_damage"					
+				{
+					"value"				"100 250 500"
+				}
+				"far_radius"				"420"
+				"pull_radius"				"420"
+				"pull_speed"				"30"
+				"near_radius"				"200"
+ 				"tick_rate"				    "0.1"
+ 				"duration"				    "4.0"
+				"vision_radius"			"800"
+				"pull_rotate_speed"		"0.25"
+				"animation_rate"		"0.2"				
+		}
+	}
+
+	"special_bonus_unique_enigma_black_hole_dead"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_pulse_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_pulse_radius"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_demonic_conversion_number"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_malefice_stuns"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_demonic_conversion_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"10"
+				"ad_linked_abilities"			"ability_demonic_conversion"			 
+			}
+		}	
+	}
+}

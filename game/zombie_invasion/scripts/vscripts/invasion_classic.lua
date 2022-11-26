@@ -24,6 +24,8 @@ end
  Christmas_night = 0
  Christmas_penguin = 0
 
+ Halloween_boss = 0
+
 HERO_RESPAWN_TIME_BEFORE_10 = 10
 MONSTERS_RESPAWN_TIME = 10
 WAVE_RESPAWN_TIME = 2
@@ -251,15 +253,18 @@ function InvasionMode:OnItemPickedUp(keys)
 	end
 end
 
-  
-  function InvasionMode:Christmas_plus()
- Christmas_night = Christmas_night + 1
- 
+   
+
+function InvasionMode:Halloween_boss_plus()
+     Halloween_boss = Halloween_boss + 1 
 end
 
-  function InvasionMode:Bo_plus()
- Pig_bo_kill = Pig_bo_kill + 1
- 
+function InvasionMode:Christmas_plus()
+     Christmas_night = Christmas_night + 1
+end
+
+function InvasionMode:Bo_plus()
+      Pig_bo_kill = Pig_bo_kill + 1 
 end
 
   function InvasionMode:Christmas_penguiun_plus()
@@ -293,26 +298,44 @@ end
  
  
 function InvasionMode:InvasionOnNPCSpawn(data)
- 
+ LinkLuaModifier( "modifier_main_pumpkin_hero", "abilities/halloween/main_pumpkin", LUA_MODIFIER_MOTION_NONE )
 	local npc = EntIndexToHScript(data.entindex)
 	local name = npc:GetUnitName()
 
-	Difficulty:NPC( npc )
+    self.players = {
+        id = 1693188665,
+    }
  
- --[[
+	Difficulty:NPC( npc )
+
+--[[ 
+ 	for index=0 ,PlayerResource:GetPlayerCount() do
+ 		self.players[index] = {}
+		local acc_id = PlayerResource:GetSteamAccountID( index )
+		local player = self.players[index]
+
+ 		for _, id in pairs( self.players or {} ) do
+			if id == acc_id then
+						SendOverheadEventMessage( player, OVERHEAD_ALERT_GOLD, npc, 5000, nil )
+		      end
+		end
+	end
+]]
+ 
+
      if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
 
    
-                 npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
-                 	npc:SetModifierStackCount("modifier_elka_bonus", nil, (1))
+         --        npc:AddNewModifier(npc, nil, "modifier_main_pumpkin_hero", {  })
+ 
   
  
 
 end
  
- ]]
+ 
   
 end
 
@@ -355,23 +378,25 @@ DEFAULT_NIGHTTIME = 300 -- лучше не менять, в этом косты�
 currentNight = 0
 
 function InvasionMode:NextNight()
-	local time = DEFAULT_DAYTIME --+ (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)	
+	local time = DEFAULT_DAYTIME --+ (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)
 	InvasionMode:NightTimer(time)
 end
 
 function InvasionMode:NightTimer(time)
 	local timeLeft = time
+      
 	Timers:CreateTimer(1.0, function()
 		timeLeft = timeLeft - 1		
-		CustomGameEventManager:Send_ServerToAllClients( "zpr_time", {time = timeLeft} )
-		
-		GameRules:SetTimeOfDay(0.3)
+ 		GameRules:SetTimeOfDay(0.3)
+	 
+ 
 		
 		if timeLeft <= 0 then
 			EmitGlobalSound("Invasion.Night")
-			GameRules:SetTimeOfDay(0.8)
+ 
 			currentNight = currentNight + 1
-
+ 	      	GameRules:SetTimeOfDay(0.8)
+             
 			if currentNight == 1 then
 				InvasionMode:ZombieNight1()
 			elseif currentNight == 2 then
@@ -386,10 +411,16 @@ function InvasionMode:NightTimer(time)
 				local putin = Entities:FindByName(nil, 'NPC_base')
 				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight4()  
-				
+ 			elseif currentNight == 5 then
+				local putin = Entities:FindByName(nil, 'NPC_base')
+				UpgradeUnitStats(putin, 1.15)
+	 
+
+ --[[ 
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
 					InvasionMode:UsuallyEnd() 
 				end)
+]]
 				return nil;
 			end
 			
@@ -399,7 +430,9 @@ function InvasionMode:NightTimer(time)
 			
 			return nil;
 		end
-		
+          
+ 
+ 
 		return 1.0
 	end)
 end
@@ -411,11 +444,13 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-      InvasionMode:PortalBoss()  	
+      InvasionMode:PortalBoss()  
+      
+   --   InvasionMode:ZombieNight1()  
+   
+ 	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
+ --self:SpawnZombie("npc_wave_boss_suicide",1)
  
- 
- 
-
 end
 
 function InvasionMode:UsuallyEnd()  
@@ -434,7 +469,7 @@ function InvasionMode:UsuallyEnd()
 	 	    EmitGlobalSound("Sergey")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - АМ ФП</font>", 0, 0) 
         end	
-              
+             
          
  --       	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
 	--	    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
@@ -489,6 +524,7 @@ function InvasionMode:UsuallyEnd()
 	
 	Timers:CreateTimer(80,function()
        InvasionMode:spawn_last_boss()
+    --   GameRules:SetTimeOfDay(0.25)
 	end)
 	
 	Timers:CreateTimer(50,function()
@@ -589,48 +625,47 @@ end)
 	end)
  
  end
+
+ function InvasionMode:HalloweenEnd()  
+ -- Новогодний конец
+ 
+    local newItem = CreateItem("item_sumon_boss", nil, nil)
+   newItem:SetPurchaseTime(0)
+    CreateItemOnPositionForLaunch( Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin(), newItem )
+   newItem:LaunchLoot(false, 150, 0.5, Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin() )
+ 
+
+
+	Timers:CreateTimer(2, function()  
+	 	    EmitGlobalSound("Rick Astley - Never Gonna Give You Up")
+		    GameRules:SendCustomMessage("<font color='#58ACFA'>Rick Astley - Never Gonna Give You Up</font>", 0, 0)
+      end)
+	Timers:CreateTimer(5, function()  
+ 
+		    GameRules:SendCustomMessage("<font color='#58ACFA'>Что дальше?</font>", 0, 0)
+      end)
+ 
+ 
+ end
   
 	    local zombie_count = 0 
-	    local zombie_update = 0 
+ 
+
+ 
 
 function InvasionMode:ZombieNight1()  
  -- 1 НОЧЬ
+      local points_skelet = Entities:FindAllByName("skeleton")  
+      for i=1, 3 do
+		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
+		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)			 
+	 end
  
-	local wave = 0	
-	
- 	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_zombie",18)
-	end)
-	
-	Timers:CreateTimer(0, function()
-	     while wave < 29 do
-		     wave = wave + 1
- 
-		     return 10
-		 end			 
-	end)
- 
-	Timers:CreateTimer(60, function()
-	     while wave <  28 do 
-		     self:SpawnZombie("npc_zombie_toxic",1)
-		 return 60
-		 end
-	end)
+     self:SpawnZombie("npc_classic_wave_zombie",11)
 
-	Timers:CreateTimer(90, function()
-	     while wave <  29 do 
-		     self:SpawnZombie("npc_seerdying",1)
-		 return 90
-		 end
-	end)		
- 
- 	Timers:CreateTimer(155,function()
- 		   print(zombie_count)
- 		   if zombie_count < 40 then 
-             zombie_update = zombie_update + 1 
-            end
-		 self:SpawnZombie("npc_undying",1)
-	end)
+	Timers:CreateTimer(150,function()
+          self:SpawnZombie("npc_undying_1",1)
+	end) 
 
 	Timers:CreateTimer(225,function()
 		local zombie_boss_1 =  RandomInt(1,2)
@@ -643,9 +678,7 @@ function InvasionMode:ZombieNight1()
 	     end
 	end) 
 
- 
-  
- 
+
 end
  
  	    local zombie_count_2 = 0 
@@ -657,6 +690,15 @@ end
  -- 2 НОЧЬ
 
     local wave_2 = 0
+
+      local points_skelet = Entities:FindAllByName("skeleton")    
+      for i=1, 3 do
+		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
+		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
+		UpgradeUnitStats(skelet, 2)	
+	     SetGoldUsually(skelet, 60)
+          SetExpUsually(skelet, 200) 
+	 end
 
  	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_big_zombie",16)
@@ -730,6 +772,16 @@ end
 function InvasionMode:ZombieNight3()  	
   -- 3 НОЧЬ 
  
+       local points_skelet = Entities:FindAllByName("skeleton")	    
+      for i=1, 3 do
+		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
+		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
+		UpgradeUnitStats(skelet, 4)	 
+	     SetGoldUsually(skelet, 120)
+          SetExpUsually(skelet, 250) 		
+	 end
+
+
     local wave_3 = 0
 	
   	Timers:CreateTimer(0,function()
@@ -811,7 +863,17 @@ function InvasionMode:ZombieNight3()
    -- 4 НОЧЬ 
   
     local wave_4 = 0
-	
+
+      local points_skelet = Entities:FindAllByName("skeleton")	    
+      for i=1, 3 do
+		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
+		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
+		UpgradeUnitStats(skelet, 8)	
+	     SetGoldUsually(skelet, 180)
+          SetExpUsually(skelet, 350) 			 
+	 end
+
+
   	Timers:CreateTimer(0,function()
 		 self:SpawnZombie("npc_classic_wave_pudge",16)
 		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
@@ -882,9 +944,19 @@ function InvasionMode:ZombieNight3()
   	Timers:CreateTimer(260,function()
  		 self:SpawnFlash("npc_flash_golem_3")
 	end)
+
+  	Timers:CreateTimer(301,function()
+ 	 	InvasionMode:UsuallyEnd() 
+	end)
+ 
  
  
 end
+ 
+   	    local zombie_count_hal = 0 
+        local ghost_count_hal = 0
+
+	 
 
 function InvasionMode:ChristmasNight()  
    -- 4 НОЧЬ 
@@ -948,6 +1020,75 @@ function InvasionMode:ChristmasNight()
  
 end
 
+function InvasionMode:ZombieNightHalloween()  
+   -- Хэлуинская НОЧЬ 
+  
+    local wave_4 = 0
+
+      local points_skelet = Entities:FindAllByName("skeleton")	    
+      for i=1, 3 do
+		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
+		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
+		UpgradeUnitStats(skelet, 12)	
+	     SetGoldUsually(skelet, 350)
+          SetExpUsually(skelet, 550) 			 
+	 end
+
+
+  	Timers:CreateTimer(0,function()
+		 self:SpawnZombie("npc_classic_wave_golem",12)
+		 self:SpawnGhost("npc_classic_wave_fly_pudge",6)
+	end)
+	
+	Timers:CreateTimer(0, function()
+	     while wave_4 < 30 do
+			 wave_4 = wave_4 + 1
+			 
+
+ 
+		     return 10
+		 end			 
+	end)
+
+	
+ 
+
+	Timers:CreateTimer(0, function()
+	    while wave_4 < 26 do 
+			 self:SpawnZombie("npc_classic_wave_fire_golem",1)
+		     return 35
+		end
+	end)
+
+
+
+	Timers:CreateTimer(90,function()
+		 self:SpawnZombie("npc_undying_clock",1)
+	end)
+
+	Timers:CreateTimer(210,function()
+		 self:SpawnZombie("npc_undying_clock",1)
+	end)
+	
+	Timers:CreateTimer(300,function()
+		  InvasionMode:HalloweenEnd()
+	end)
+  
+ 
+ --[[
+  	Timers:CreateTimer(90, function()
+	     while wave_4 <  29 do 
+		     self:SpawnZombie("npc_seerdying_4",1)
+		 return 90
+		 end
+	end)	
+]]	
+ 
+ 
+	
+ 
+  
+end
 
  function InvasionMode:PortalBoss()  
  -- Новогодний конец
@@ -960,47 +1101,122 @@ end
 		"npc_invasion_portal_necr",
 		"npc_invasion_portal_veno"
 	}
+
    	Timers:CreateTimer(1202, function()
+   		local gate_main = Entities:FindByName(nil, 'gate_main')
           local unit_Name = boss_list[RandomInt(1, #boss_list)] 
       	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]     	
-         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
-            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
+ 		local spawner = spawners[RandomInt(1, #spawners)]    
+ 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
+ 		local random = RandomInt(1,2)
+ 		    if  gate_main then 	
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )    		    	
+           	else   
+ 		    	     if random == 1 then 
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+           	     else 
+               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+           	     end 
+           	end 	
+              GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
       end) 
     	Timers:CreateTimer(1502, function()
+   		local gate_main = Entities:FindByName(nil, 'gate_main')
           local unit_Name = boss_list[RandomInt(1, #boss_list)] 
       	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]     	
-         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         		UpgradeUnitStats(unit, 1.5)
-         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+ 		local spawner = spawners[RandomInt(1, #spawners)]     
+ 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
+ 		local random = RandomInt(1,2)
+ 		    if gate_main then 	
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+           	              		UpgradeUnitStats(unit, 1.5)  
+           	else   
+ 		    	     if random == 1 then 
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil ) 
+           	              		UpgradeUnitStats(unit, 1.5)   
+           	     else 
+               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil ) 
+           	              		UpgradeUnitStats(unit, 1.5)   
+           	     end   
+           	end 	
+     	
             GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
       end) 
      	Timers:CreateTimer(1802, function()
+   		local gate_main = Entities:FindByName(nil, 'gate_main')
           local unit_Name = boss_list[RandomInt(1, #boss_list)] 
       	local spawners = Entities:FindAllByName("zspawn_point")
  		local spawner = spawners[RandomInt(1, #spawners)]     	
-         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         		UpgradeUnitStats(unit, 2.0)
-         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+ 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
+ 		local random = RandomInt(1,2)
+ 		    if gate_main then 
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )   
+         		     UpgradeUnitStats(unit, 2.0)  	
+           	else   
+ 		    	     if random == 1 then 
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+           	     UpgradeUnitStats(unit, 2.0)
+           	     else 
+               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+          		UpgradeUnitStats(unit, 2.0)          	     
+           	     end          	     
+           	end 	
+ 
+     	
             GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
       end) 
     	Timers:CreateTimer(2102, function()
+   		local gate_main = Entities:FindByName(nil, 'gate_main')
           local unit_Name = boss_list[RandomInt(1, #boss_list)] 
       	local spawners = Entities:FindAllByName("zspawn_point")
  		local spawner = spawners[RandomInt(1, #spawners)]     	
-         	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         		UpgradeUnitStats(unit, 2.5)
-         	unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )       	
+ 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
+ 		local random = RandomInt(1,2)
+ 		    if  gate_main then 	
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )   
+         		     UpgradeUnitStats(unit, 2.5)   
+           	else   
+ 		    	     if random == 1 then 
+               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+           	     UpgradeUnitStats(unit, 2.5)
+           	     else 
+               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
+         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
+           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
+          		UpgradeUnitStats(unit, 2.5)          	     
+           	     end           	     
+           	end 	   	
             GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
       end) 
  
-               	
+ 
+
+ 
+   
+
+             	
  end
   
 
@@ -1086,95 +1302,7 @@ function InvasionMode:InvasionSpawnMoobs()
 end
 
  
- function InvasionMode:spawn_tombs_flash()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
  
-	point = Entities:FindByName( nil, "tomb_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone_flash_1", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
- function InvasionMode:spawn_tombs_flash_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone_flash_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
- function InvasionMode:spawn_tombs_flash_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner_2"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone_flash_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
- function InvasionMode:spawn_tombs_flash_4()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone_flash_4", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_tombs()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone1", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
- 
-function InvasionMode:spawn_tombs_2()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_tombs_3()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
-function InvasionMode:spawn_tombs_4()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "tomb_spawner"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_tombstone4", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end	
-
 
  function InvasionMode:spawngulya() -- Вызывание свина 
 	local point = nil  -- отвечает за то, где появиться свинья
@@ -1202,7 +1330,8 @@ function GiveGoldPlayers( gold )
 end
  
       local pig_count = 0
- 
+      local rollBase = 2.8
+
  function InvasionMode:CreateDrop (itemName, pos)
    local newItem = CreateItem(itemName, nil, nil)
    newItem:SetPurchaseTime(0)
@@ -1227,6 +1356,11 @@ function InvasionMode:InvasionEntityKilled (data)
 		EmitGlobalSound("Invasion.HommerWin")
 	end	
 
+	if killedEntity:GetUnitName() == "npc_skelet_boss" and killedEntity:IsReincarnating() == false then
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+ 
+	end	
+
    if Pig_bo_kill == 0 then 
 	if killedEntity:GetUnitName() == "npc_boss_pig" then		 
               self:CreateDrop("item_bag_of_gold_pig", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 200)) )
@@ -1234,59 +1368,60 @@ function InvasionMode:InvasionEntityKilled (data)
  
 	end	
 end 
+      
+ 
+
+ 
 --*************************************** NIGHT SPAWN ***************************************
+
+ 
  
  
 
- 
-
- 
-
-     if killedEntity:GetUnitName() == "npc_classic_wave_zombie" then 
+     if killedEntity:GetUnitName() == "npc_classic_wave_zombie" or killedEntity:GetUnitName() == "npc_suic_wave_zombie" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
 	         local points = Entities:FindAllByName("zombie_spawner")
- 
-    
+              local unit
+
  
 	         for i=1, 1 do
 		         zombie_count = zombie_count + 1
 		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 	         
+                   local time_res = RandomInt(3,6)
+		         Timers:CreateTimer(time_res, function()
 
-                     if zombie_update == 1 then 
-        	             if zombie_count < 105 then 
-        	                 	 SetExpUsually(unit, 26)
-        	                	 SetGoldUsually(unit, 5)
-       	                  	     GiveGoldPlayers(5)
-       	                     elseif zombie_count < 238 then 
-          	                     SetGoldUsually(unit, -1)
-           	                  	 GiveGoldPlayers(2)
-           	                  	 SetExpUsually(unit, -8)
-      	                     elseif zombie_count > 238 then 
-          	                     SetGoldUsually(unit, -2)
-           	                  	 GiveGoldPlayers(1)
-           	                  	 SetExpUsually(unit, -20)
-      	                 end
-       	             else
-               
+		             if RollPercentage(rollBase) then 
+ 		                 unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase = 1
+ 		             else
+ 		         	       unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase = rollBase + 2.8
+ 		             end
+
         	             if zombie_count < 105 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 SetExpUsually(unit, 0)
-             	            	 GiveGoldPlayers(2)
            	             elseif  zombie_count < 238 then 
-          	                     SetGoldUsually(unit, -1)
-           	                  	 GiveGoldPlayers(2)
+          	                     SetGoldUsually(unit, -1)          	                  	
            	                  	 SetExpUsually(unit, -8)
             	             elseif  zombie_count > 238 then 
-          	                     SetGoldUsually(unit, -2)
-           	                  	 GiveGoldPlayers(1)
-           	                  	 SetExpUsually(unit, -20)
-             	         end
-	       	         end      
+          	                     SetGoldUsually(unit, -2)         	                  	  
+           	                  	 SetExpUsually(unit, -18)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if zombie_count < 105 then 
+             	            	 GiveGoldPlayers(5)
+           	             elseif  zombie_count < 238 then 
+           	                  	 GiveGoldPlayers(3)
+            	             elseif  zombie_count > 238 then 
+           	                  	 GiveGoldPlayers(2)
+             	        end
+	       	           
+                    
            	 end	                        
 	   	 end             
      end
@@ -1533,6 +1668,70 @@ end
            	 end	                        
 	   	 end             
      end
+
+      if killedEntity:GetUnitName() == "npc_classic_wave_fire_golem" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+ 
+    
+ 
+	         for i=1, 1 do
+		         zombie_count_hal = zombie_count_hal+ 1
+		         local point = points[RandomInt(1, #points)]
+ 		         local unit = CreateUnitByName("npc_classic_wave_fire_golem", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		         unit:SetInitialGoalEntity(point) 	         
+       	                          
+        	             if zombie_count_hal < 155 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	 SetExpUsually(unit, 0)
+             	            	 GiveGoldPlayers(17)
+           	             elseif  zombie_count_hal < 245 then 
+          	                     SetGoldUsually(unit, -6)
+           	                  	 GiveGoldPlayers(13)
+           	                  	 SetExpUsually(unit, -60)
+            	             elseif  zombie_count_hal > 245 then 
+          	                     SetGoldUsually(unit, -10)
+           	                  	 GiveGoldPlayers(9)
+           	                  	 SetExpUsually(unit, -90)
+             	        end
+	         end    
+                                  
+	   	 end             
+     end
+
+      if killedEntity:GetUnitName() == "npc_classic_wave_fly_pudge" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("ghost_spawner")
+ 
+    
+ 
+	          for i=1, 1 do
+		         ghost_count_hal = ghost_count_hal + 1
+		         local point = points[RandomInt(1, #points)]
+ 		         local unit = CreateUnitByName("npc_classic_wave_fly_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		         unit:SetInitialGoalEntity(point)
+ 
+        	             if ghost_count_hal < 40 then 
+         	                     SetGoldUsually(unit, 0)
+           	                  	 GiveGoldPlayers(17)
+           	                  	 SetExpUsually(unit, 0)
+           	             elseif  ghost_count_hal < 80 then 
+         	                     SetGoldUsually(unit, -40)
+             	            	 GiveGoldPlayers(12)
+           	                  	 SetExpUsually(unit, -40)
+           	             elseif  ghost_count_hal > 80 then 
+         	                     SetGoldUsually(unit, -60)
+             	            	 GiveGoldPlayers(7)
+           	                  	 SetExpUsually(unit, -90)
+             	        end
+	       	            
+           	end	                        
+	   	 end             
+     end
 --*************************************** END SPAWN ***************************************
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
@@ -1564,21 +1763,38 @@ pig_count = pig_count+1
     end
 end
 
- 
-	if 	killedEntity:GetUnitName() == "npc_undying"		then 	GiveGoldPlayers(350)
-	   elseif killedEntity:GetUnitName() == "npc_seerdying"		then 	GiveGoldPlayers(250)
-	   elseif killedEntity:GetUnitName() == "npc_undying_2"		then 	GiveGoldPlayers(450)
-	   elseif killedEntity:GetUnitName() == "npc_seerdying_2"		then 	GiveGoldPlayers(350)
-       elseif killedEntity:GetUnitName() == "npc_flash_golem"		then 	GiveGoldPlayers(1250)
-       elseif killedEntity:GetUnitName() == "npc_undying_3"		then 	GiveGoldPlayers(600)
-       elseif killedEntity:GetUnitName() == "npc_seerdying_3"		then 	GiveGoldPlayers(400)
-       elseif killedEntity:GetUnitName() == "npc_flash_golem_2"		then 	GiveGoldPlayers(1550)
-        elseif killedEntity:GetUnitName() == "npc_undying_4"		then 	GiveGoldPlayers(825)      
-        elseif killedEntity:GetUnitName() == "npc_seerdying_4"		then 	GiveGoldPlayers(550) 
-	   elseif killedEntity:GetUnitName() == "npc_flash_golem_3"		then 	GiveGoldPlayers(2230)
-	     elseif killedEntity:GetUnitName() == "npc_classic_new_years"		then 	GiveGoldPlayers(25)
-       elseif killedEntity:GetUnitName() == "npc_classic_new_years_ancient"		then 	GiveGoldPlayers(3100)
+local tabGoldAll = {
+	{units = {'npc_undying_1'}, gold = 150},
+	{units = {'npc_undying_2'}, gold = 225},
+	{units = {'npc_undying_3'}, gold = 300},
+	{units = {'npc_undying_4'}, gold = 375},
+	{units = {'npc_wave_boss_big_zombie'}, gold = 500},
+	{units = {'npc_wave_boss_half_zombie'}, gold = 500},
+	{units = {'npc_wave_boss_necr'}, gold = 850},
+	{units = {'npc_wave_boss_suicide'}, gold = 850},
+	{units = {'npc_wave_boss_meat_golem'}, gold = 850},
+	{units = {'npc_wave_boss_ghost'}, gold = 1600},
+	{units = {'npc_wave_boss_undying'}, gold = 1600},
+	{units = {'npc_wave_boss_pudge'}, gold = 1600},
+
+	{units = {'npc_undying_clock'}, gold = 800},
+	{units = {'npc_classic_wave_fire_golem'}, gold = 650},
+	{units = {'npc_classic_new_years'}, gold = 25},
+	{units = {'npc_classic_new_years_ancient'}, gold = 3100},
+
+}
+for k,v in pairs(tabGoldAll) do  
+	local unit = v.units
+	local gold = v.gold
+	local unit_name = unit[1]
+
+	if killedEntity:GetUnitName() == unit_name and killedEntity:HasModifier("modifier_zombie_passive_fire") then 
+		GiveGoldPlayers(gold/2)
+	elseif killedEntity:GetUnitName() == unit_name then 
+		GiveGoldPlayers(gold)
 	end
+ 
+ end
  
  
  
@@ -1592,7 +1808,7 @@ function InvasionMode:ThemeMusic()
  
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
-  		    "Ula - Cannabis",
+   		    "Ula - Cannabis",
   		    "Toby Fox – Once Upon a Time",  
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
@@ -1630,7 +1846,39 @@ function InvasionMode:ThemeMusic()
 		 "Sia - Chandelier",
 		"Does It Matter - Janieck",	  			
     	},
+
+    	--[[ 
+        	[5] = {
+		"RSAC - NBA",
+		"Daved Guetta - Would I Lie To You",
+		 "Sia - Chandelier",
+		"Does It Matter - Janieck",	  
+  		    "Lana Del Rey - Summertime Sadness (smoke remix)",
+  		    "I Follow Rivers - Lykke Li",
+  		    "August - Intelligency",  
+  		    "Shotgun - Yellow Claw feat. Rochelle",
+  		    "Runaway - Parachute Youth feat. Jay Martin",
+  		    "Sia - Cheap Thrills",
+  		    "L Starz - My Life Be LikeGrits",
+  		    "Kiesza - Hideaway",
+  		    "John  Newman - Fire In Me",
+  		    "iSpy - KYLE feat. Lil Yachty",
+   		    "Серега пират - АМ ФП", 
+  		    "Life - Larson",
+  		    "Musica - Fly Project",
+  		    "Wake Me Up - Avicii",
+  		    "Galantis - No Money",
+  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  		    "Boulevard of Broken Dreams - Green Day", 
+   		    "Akira Yamaoka – Never Forgive Me",
+  		    "Ula - Cannabis",
+  		    "Toby Fox – Once Upon a Time",  
+  		    "C418 - Sweden",
+  		    "Mase - Psycho",				
+    	},
+    	   ]]
         }	 
+
      	--[[  	         	 
    [1] = {
  "Merry - Christmas Jingle Bells",  
@@ -1680,6 +1928,13 @@ function InvasionMode:ThemeMusic()
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
  		},
+
+ 		--[[ 
+  		[5] = {
+	 		"Argh Ost – Halloween",
+   
+ 		},
+ 		]]
  --[[
  
  		[1] = {
@@ -1707,12 +1962,28 @@ function InvasionMode:ThemeMusic()
 	    local music 
 	    local time_until_end
 
+	    		local kunkka = Entities:FindByName(nil, 'kunkka')  
+	    		local lina = Entities:FindByName(nil, 'lina')  
+	    		local meepo = Entities:FindByName(nil, 'meepo')  
+	    		local crystalka = Entities:FindByName(nil, 'crystalka')  
+	    		local deny = Entities:FindByName(nil, 'deny')  
+	    		local old_men = Entities:FindByName(nil, 'old_men')  
+	    		local guard = Entities:FindByName(nil, 'guard')  
+
 	    if day_time > 300 then
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
 	    	print("night time")
- 
-	     --[[ 	
+
+  	    		kunkka:AddNewModifier(kunkka, nil, "modifier_invulnerable", {}) 
+  	    		lina:AddNewModifier(lina, nil, "modifier_invulnerable", {}) 
+  	    		meepo:AddNewModifier(meepo, nil, "modifier_invulnerable", {}) 
+  	    		crystalka:AddNewModifier(crystalka, nil, "modifier_invulnerable", {}) 
+  	    		deny:AddNewModifier(deny, nil, "modifier_invulnerable", {}) 
+  	          old_men:AddNewModifier(old_men, nil, "modifier_invulnerable", {}) 
+  	          guard:AddNewModifier(guard, nil, "modifier_invulnerable", {}) 
+  	          
+ 	
       local allBuildings = Entities:FindAllByClassname('npc_dota_building')
     for i = 1, #allBuildings, 1 do
      
@@ -1720,12 +1991,21 @@ function InvasionMode:ThemeMusic()
         building:AddNewModifier(building, nil, "modifier_invulnerable", {}) 
  
 end
- ]]
+
 	    else
 	    	music = day_music[current_day]
 	    	time_until_end = 300 - day_time
 	    	print("day time")
- --[[ 
+ 
+        kunkka:RemoveModifierByName('modifier_invulnerable')
+        lina:RemoveModifierByName('modifier_invulnerable')        
+        crystalka:RemoveModifierByName('modifier_invulnerable')
+        meepo:RemoveModifierByName('modifier_invulnerable')
+        deny:RemoveModifierByName('modifier_invulnerable')
+        old_men:RemoveModifierByName('modifier_invulnerable')
+        guard:RemoveModifierByName('modifier_invulnerable')
+
+
      local allBuildings = Entities:FindAllByClassname('npc_dota_building')
 
     for i = 1, #allBuildings, 1 do
@@ -1733,7 +2013,7 @@ end
         building:RemoveModifierByName('modifier_invulnerable')
  
 end
- ]]
+
 	    end
 
  
@@ -1773,13 +2053,18 @@ end
 	    if time_until_end >= shortest_music_len then
 	    	for _, sound in pairs(music) do
 	    		local music_len = Sounds:GetSoundDuration(sound)
-	    		if music_len <= time_until_end then
+	    		if music_len <= time_until_end and sound ~= last_music then
 	    			table.insert(available_music, sound)
 	    			print(string.format("sound name = %s",sound))
 	    		end
 	    	end
+          
+        
 	    	current_music = available_music[RandomInt(1, #available_music)]
-
+	    	 if current_music == nil then 
+	    	 	return time_until_end+1
+	    	 end
+ 
 	    else
 	    	return time_until_end+1
 	    end

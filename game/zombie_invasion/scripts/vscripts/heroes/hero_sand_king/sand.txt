@@ -290,37 +290,47 @@
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+	"AbilityValues"
 		{
-			"01"
+			"epicenter_radius"	
 			{
-				"var_type"			"FIELD_INTEGER"
-				"epicenter_radius"	"275 325 375 425 475 525 575 625 675 725 775 825 875 925"
+				"value"		"500 525 550 575 600 625 650 675 700 725 750 775 800 825"
+				"special_bonus_unique_sand_king_5"	"+100"
 			}
-			"02"
+			
+			"epicenter_pulses"	
 			{
-				"var_type"			"FIELD_INTEGER"
-				"epicenter_pulses"	"10"
+				"value"		"10"
 				"LinkedSpecialBonus"	"special_bonus_unique_sand_king"
 			}
-			"03"
+			"epicenter_damage"	"475"
+			"epicenter_slow"	
 			{
-				"var_type"			"FIELD_INTEGER"
-				"epicenter_damage"	"475"
-				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_5"
+				"value"			"-30"
 			}
-			"04"
+			"epicenter_slow_as"		
 			{
-				"var_type"			"FIELD_INTEGER"
-				"epicenter_slow"	"-30"
+				"value"			"-30"
 			}
-			"05"
+			"shard_radius"	
 			{
-				"var_type"				"FIELD_INTEGER"
-				"epicenter_slow_as"		"-30"
-				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_3"
+				"value"		"425"
+				"special_bonus_unique_sand_king_5"	"+100"
+				"RequiresShard"	"1"
+			}
+			"shard_move_distance"
+			{
+				"value"				"700.0"
+				"RequiresShard"		"1"
+			}
+			"shard_epicenter_pulse_damage_bonus"
+			{
+				"value"			"10"
+				"RequiresShard"	"1"
 			}
 		}
+
+		 
 	}
 
 }

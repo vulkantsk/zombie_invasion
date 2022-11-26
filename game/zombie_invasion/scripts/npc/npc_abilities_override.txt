@@ -25,7 +25,7 @@
 	"item_wind_waker" "REMOVE"
 	"item_hand_of_midas" "REMOVE"
 	"item_rapier" "REMOVE"
-	"item_heart" "REMOVE"
+ 
 	"item_urn_of_shadows" "REMOVE"
 	"item_blink" "REMOVE"
 	"item_arcane_blink" "REMOVE"
@@ -388,21 +388,7 @@
 		}
 	}
 
-	"item_greater_crit"
-	{
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"60"
-			}
-		}
-
-	}
-	
+ 
 //3
 	"item_black_king_bar"
 	{
@@ -967,44 +953,7 @@
 			}
 		}
 	}
-
-	//============================================================================================================
-	// SVEN
-	//============================================================================================================		
-	"sven_great_cleave"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-				
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{						
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_starting_width"			"150"
-			}			
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_ending_width"			"300"
-			}			
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cleave_distance"			"550"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"15 20 25 30"
-			}
-		}		
-	}
-
+ 
 
 	//============================================================================================================
 	//	EARTHSHAKER  
@@ -1249,60 +1198,7 @@
 		}
 	}
 	
-	"alchemist_chemical_rage"
-		{
-
-			"AbilityTextureName"      		"custom_folder/spectre_rage"
-
-			// Time		
-			//-----------------------------------------------------------------------------------------------------
-			"AbilityCooldown"				"50.0"
-
-			// Cost
-			//-----------------------------------------------------------------------------------------------------
-			"AbilityManaCost"				"50 100 150"
-
-			// Special	
-			//-----------------------------------------------------------------------------------------------------
-			"AbilitySpecial"
-			{
-				"01"
-				{
-					"var_type"				"FIELD_FLOAT"
-					"duration"				"20.0"
-				}
-				"02"
-				{
-					"var_type"				"FIELD_FLOAT"
-					"transformation_time"	"0.35"
-				}
-				"03"
-				{
-					"var_type"				"FIELD_FLOAT"
-					"base_attack_time"		"1.4 1.2 1.0"
-				}
-				"04"
-				{
-					"var_type"				"FIELD_INTEGER"
-					"bonus_health"			"0"
-				}
-				"05"
-				{
-					"var_type"				"FIELD_INTEGER"
-					"bonus_health_regen"	"50 75 100"
-				}
-				"06"
-				{
-					"var_type"				"FIELD_FLOAT"
-					"bonus_mana_regen"		"10.0 20.0 30.0"
-				}
-				"07"
-				{
-					"var_type"				"FIELD_INTEGER"
-					"bonus_movespeed"		"30 40 60"
-				}
-			}
-		}	
+	 
 
 	//=================================================================================================================
 	// DRAGON KNIGHT
@@ -1386,42 +1282,7 @@
 			}
 		}
 	}	
-
-
-	"alchemist_goblins_greed"
-	{
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"duration"				"30"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_gold"			"4 6 8 10"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_bonus_gold"		"4"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_gold_cap"		"10 14 18 22"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bounty_multiplier_tooltip"		"4 5 6 7"
-			}
-		}
-	}
-
+ 
 	//=================================================================================================================
 	// BRISTLEBACK
 	//=================================================================================================================
@@ -1819,117 +1680,7 @@
 
 
 
- 
-	//============================================================================================================
-	// LUNA
-	//============================================================================================================		
-	"luna_moon_glaive"
-	{
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"range"						"700"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bounces"					"1 2 4 6"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_reduction_percent"	"15"
-			}
-		}
-	}
-
-
-	"luna_eclipse"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP  | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"				"2"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.6 0.6 0.6"
-		"AbilityCastRange"				"2500"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"120.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150 200 250"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"beams"						"10 20 30"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"hit_count"					"30"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"beam_interval"				"0.6 0.6 0.6"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"beam_interval_scepter"				"0.3"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration_tooltip"			"3 5 7"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"675 675 675"
-			}	
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"beams_scepter"				"20 30 40"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"hit_count_scepter"			"40"
-			}
-			"09"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration_tooltip_scepter"	"2 4 6"
-			}
-			"10"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"cast_range_tooltip_scepter"	"2500"
-			}
-		}
-	}
-
+  
 
 	//=============================================================================================================
 	//  SNIPER
@@ -3095,281 +2846,7 @@
  
 
 
-	"skywrath_mage_arcane_bolt"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5581"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_SkywrathMage.ArcaneBolt.Cast"
-		"HasScepterUpgrade"			"1"
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"875"
-		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"5.0 4.0 3.0 2.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"90 100 110 120"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bolt_speed"			"500"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bolt_vision"			"325"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"bolt_damage"			"120 235 410 605"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"int_multiplier"		"1.5 1.8 2.3 2.5"
-				"CalculateSpellDamageTooltip"	"1"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"vision_duration"		"3.34"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_radius"		"700"
-				"RequiresScepter"	"1"
-			}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
-	}
-
-	//=================================================================================================================
-	// Skywrath Mage: Concussive Shot
-	//=================================================================================================================
-	"skywrath_mage_concussive_shot"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5582"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_SkywrathMage.ConcussiveShot.Cast"
-		"HasScepterUpgrade"			"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
-		"AbilityCastRange"				"1600"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12 10 8 6"
-
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 100 120 140" 
-
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{ 
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"launch_radius"		"1600"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"slow_radius"		"250"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"speed"				"800 800 800 800"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"damage"			"100 200 350 550"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"slow_duration"		"4.0"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"movement_speed_pct"	"30 35 40 45"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"shot_vision"		"300"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"vision_duration"		"3.34"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_radius"		"700"
-				"RequiresScepter"	"1"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"creep_damage_pct"		"100"
-			}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
-	}
-
-	//=================================================================================================================
-	// Skywrath Mage: Ancient Seal
-	//=================================================================================================================
-	"skywrath_mage_ancient_seal"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5583"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilitySound"					"Hero_SkywrathMage.AncientSeal.Target"
-		"HasScepterUpgrade"			"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700 750 800 850"
-		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 90 100 110"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-30 -40 -50 -60"
-				"LinkedSpecialBonus"	"special_bonus_unique_skywrath_3"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"seal_duration"			"3.0 4.0 5.0 6.0"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_radius"		"700"
-				"RequiresScepter"	"1"
-			}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-	}
-
-	//=================================================================================================================
-	// Skywrath Mage: Mystic Flare
-	//=================================================================================================================
-	"skywrath_mage_mystic_flare"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5584"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"				"2"
-
-		"HasScepterUpgrade"			"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1200"
-		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40.0 30.0 25.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150 250 350"
-			
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"150"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"5 7 9"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"1000 2000 3000"
-				"LinkedSpecialBonus"	"special_bonus_unique_skywrath_5"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"damage_interval"		"0.1"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_radius"		"700"
-				"RequiresScepter"	"1"
-			}
-		}
-	}
+	 
 
 		"clinkz_death_pact"
 	{
@@ -3567,167 +3044,8 @@
 		}			
 	}
 
-		"winter_wyvern_winters_curse"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5654"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"		
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"						"1"
-		"LevelsBetweenUpgrades"			"1"
-		"RequiredLevel"					"1"
-		"AbilitySound"					"Hero_WinterWyvern.WintersCurse.Target"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-				
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{	
-				"var_type"			"FIELD_INTEGER"
-				"radius"			"500"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_reduction"	"100"
-			}
-			"03"
-			{	
-				"var_type"			"FIELD_INTEGER"
-				"damage_amplification"	"0"
-			}
-			"04"
-			{	
-				"var_type"			"FIELD_INTEGER"
-				"bonus_attack_speed"	"999999"
-			}
-			"05"
-			{	
-				"var_type"			"FIELD_FLOAT"
-				"duration"			"5.0"
-			}
-		}
-	}
-
-	"crystal_maiden_freezing_field"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5129"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"						"1"
-		"LevelsBetweenUpgrades"			"1"
-		"RequiredLevel"					"1"
-		"AbilitySound"					"hero_Crystal.freezingField.wind"
-
-		"HasScepterUpgrade"			"1"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityChannelTime"			"10"
-		"AbilityCastPoint"				"0"
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30"
-		"AbilityDuration"				"10.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityModifierSupportValue"	"0.35"	// Primarily about the damage
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"			"1550"
-			}		
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"explosion_radius"	"300"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"20"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"explosion_interval"	"0.1"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"movespeed_slow"	"-30"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"attack_slow"	"-60"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"slow_duration"		"1.0"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"explosion_min_dist"	"195"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"explosion_max_dist"	"785"
-			}
-			"10"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"damage"			"1000"
-				"LinkedSpecialBonus"	"special_bonus_unique_crystal_maiden_3"
-			}
-			"11"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"scepter_delay"	"1.75"
-				"RequiresScepter"		"1"
-			}
-		}
-	}
+		 
+ 
 
 		"lich_frost_nova"
 	{
@@ -4119,6 +3437,25 @@
 		}
 	}
 
+	"special_bonus_spell_amplify_25"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"6327"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"35"
+			}
+		}
+	}
 
 }
 

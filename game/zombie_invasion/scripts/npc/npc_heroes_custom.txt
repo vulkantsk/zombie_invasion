@@ -3,6 +3,37 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
+
+"npc_dota_hero_alchemist"
+	{
+		"Ability1"		"alchemist_acid_spray"
+		"Ability2"		"alchemist_unstable_concoction_custom"
+		"Ability3"		"alchemist_goblins_greed"
+		"Ability4"		"alchemist_berserk_potion"
+		"Ability5"		"alchemist_good_deal"
+		"Ability6"		"alchemist_chemical_rage"
+		"Ability7"		"alchemist_unstable_concoction_throw"
+		"Ability10"		"special_bonus_attack_speed_15"
+		"Ability11"		"special_bonus_armor_4"
+		"Ability12"		"special_bonus_strength_12"
+		"Ability13"		"special_bonus_agility_20"
+		"Ability14"		"special_bonus_spell_amplify_25"
+		"Ability15"		"special_bonus_attack_damage_75"
+		"Ability16"		"special_bonus_cleave_35"
+		"Ability17"		"special_bonus_hp_regen_80"
+		"ArmorPhysical"		"5"
+		"AttackDamageMin"		"27"
+		"AttackDamageMax"		"33"
+		"AttributeBaseStrength"		"25"
+		"AttributeStrengthGain"		"2.7"
+		"AttributeBaseAgility"		"22"
+		"AttributeAgilityGain"		"1.500000"
+		"AttributeBaseIntelligence"		"25"
+		"AttributeIntelligenceGain"		"1.800000"
+		"MovementSpeed"		"305"
+ 
+	}
+
 	"npc_dota_hero_skeleton_king"
 	{
 		"Model"		"models/items/wraith_king/arcana/wraith_king_arcana.vmdl"
@@ -12,8 +43,8 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"skeleton_king_reincarnation"
 		"Ability6"		"dragon_knight_dragon_blood_lua"
-		"Ability10"		"special_bonus_cleave_25"
-		"Ability11"		"ad_special_bonus_gold_750_r"
+		"Ability10"		"special_bonus_cleave_15"
+		"Ability11"		"special_bonus_agility_8"
 		"Ability12"		"special_bonus_hp_400"
 		"Ability13"		"special_bonus_corruption_3"
 		"Ability14"		"special_bonus_truestrike"
@@ -380,34 +411,26 @@
 	
 	"npc_dota_hero_sven"
 {
-"Model" "models/heroes/sven/sven.vmdl"
-"ModelScale" "0.840000"
+ 
 
-"Ability1" "sven_storm_bolt"
-"Ability2" "sven_splash"
-"Ability3" "sven_warcry"
-"Ability4" "generic_hidden"
-"Ability5" "renegade_coup_de_grace_datadriven"
-"Ability6" "sven_gods_strength"
-"Ability10" "special_bonus_strength_7"
-"Ability11" "special_bonus_mp_regen_250"
-"Ability12" "special_bonus_lifesteal_15"
-"Ability13" "special_bonus_unique_sven_4"
-"Ability14" "special_bonus_movement_speed_25"
-"Ability15" "special_bonus_24_crit_2"
-"Ability16" "special_bonus_unique_sven_2"
-"Ability17" "special_bonus_magic_resistance_80"
+		"Ability1" "sven_storm_bolt"
+		"Ability2" "sven_great_cleave"
+		"Ability3" "sven_warcry"
+		"Ability4" "generic_hidden"
+		"Ability5" "sven_shield"
+		"Ability6" "sven_gods_strength"
+		"Ability10" "special_bonus_strength_8"
+		"Ability11" "special_bonus_mp_regen_150"
+		"Ability12" "special_bonus_movement_speed_15"
+		"Ability13" "special_bonus_armor_6"
+		"Ability14" "special_bonus_all_stats_15"
+		"Ability15" "special_bonus_magic_resistance_15"
+		"Ability16" "special_bonus_unique_sven_8"
+		"Ability17" "special_bonus_agility_40"
 
-"ArmorPhysical" "1"
-"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+"ArmorPhysical" "5"
 "AttackDamageMin" "41"
 "AttackDamageMax" "43"
-"AttackRate" "1.800000"
-"AttackAnimationPoint" "0.400000"
-"AttackAcquisitionRange" "600"
-"AttackRange" "150"
-"ProjectileSpeed" "0"
-"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
 "AttributeBaseStrength" "22"
 "AttributeStrengthGain" "3.200000"
 "AttributeBaseIntelligence" "16"
@@ -415,8 +438,6 @@
 "AttributeBaseAgility" "21"
 "AttributeAgilityGain" "2.00000"
 "MovementSpeed" "325"
-"MovementTurnRate" "0.600000"
-"BoundsHullName" "DOTA_HULL_SIZE_HERO"
 
 }
 
@@ -498,20 +519,20 @@
 
 "AttackRange" "200"
 "AbilityLayout" "4"
-"Ability1" "axe_berserkers_call"
-"Ability2" "axe_culling_blade_lua"
-"Ability3" "axe_counter_helix"
+"Ability1" "ability_berserkers_call"
+"Ability2" "ability_battle_hunger"
+"Ability3" "ability_counter_helix"
 "Ability5" "axe_solo"
-"Ability6" "ursa_enrage_lua"
+"Ability6" "axe_culling_blade_lua"
 "Ability7" ""
-"Ability10" "ad_special_bonus_gold_250_r"
-"Ability11" "special_bonus_armor_5"
-"Ability12" "special_bonus_unique_axe"
-"Ability13" "special_bonus_spell_lifesteal_10"
-"Ability14" "special_bonus_spell_amplify_20"
-"Ability15" "special_bonus_unique_axe_4"
-"Ability16" "special_bonus_all_stats_15"
-"Ability17" "special_bonus_strength_30"
+"Ability10" "special_bonus_attack_base_damage_25"
+"Ability11" "special_bonus_armor_4"
+"Ability12" "special_bonus_unique_axe_call_radius"  
+"Ability13" "special_axe_battle_ally" 
+"Ability14" "special_bonus_unique_axe_helix_damage"
+"Ability15" "special_bonus_unique_axe_culling_damage"
+"Ability16" "special_bonus_unique_axe_culling_cooldown"
+"Ability17" "special_bonus_unique_axe_helix_chance"
 }
 
 	"npc_dota_hero_shredder"
@@ -654,7 +675,7 @@
 		"MovementTurnRate"		"0.500000"
 		"VisionDaytimeRange"		"1800"
 	}
-		
+ 
 //=========================================================================================================
 // HERO MELLE
 //=========================================================================================================
@@ -858,6 +879,70 @@
         "Ability17"        "special_bonus_magic_resistance_35"
     }
 
+"npc_dota_hero_dark_seer"
+	{
+		"Ability1"		"dark_seer_vacuum"
+		"Ability2"		"ability_ion_shell"
+		"Ability3"		"ability_surge"
+		"Ability4"		"generic_hidden"  
+		"Ability5"		"ability_ion_shell_golden"
+		"Ability6"		"ability_seer_punch"
+		"Ability10"		"special_bonus_attack_damage_50"
+		"Ability11"		"special_bonus_armor_5"
+		"Ability12"		"special_bonus_movement_speed_40"
+		"Ability13"		"special_bonus_mp_regen_6"
+		"Ability14"		"special_bonus_all_stats_15"
+		"Ability15"		"special_bonus_intelligence_30"
+		"Ability16"		"special_bonus_spell_lifesteal_6"
+		"Ability17"		"special_bonus_magic_resistance_20"
+		"ArmorPhysical"		"5"
+		"AttackDamageMin"		"33"
+		"AttackDamageMax"		"39"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.590000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"150"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"20"
+		"AttributeStrengthGain"		"3.100000"
+		"AttributeBaseAgility"		"18"
+		"AttributeAgilityGain"		"1.800000"
+		"AttributeBaseIntelligence"		"21"
+		"AttributeIntelligenceGain"		"3.100000"
+		"MovementSpeed"		"295"
+	}
+ 
+ 	"npc_dota_hero_luna"
+	{
+		"Ability1"		"luna_lucent_beam"
+		"Ability2"		"luna_moon_glaive"
+		"Ability3"		"luna_lunar_blessing"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"luna_night_buff"
+		"Ability6"		"luna_eclipse"
+		"Ability10"		"special_bonus_attack_damage_15"
+		"Ability11"		"special_bonus_armor_3"
+		"Ability12"		"special_bonus_attack_range_75"
+		"Ability13"		"special_bonus_agility_10"
+		"Ability14"		"special_bonus_unique_luna_3"
+		"Ability15"		"special_bonus_movement_speed_30"  
+		"Ability16"		"special_bonus_unique_luna_8"
+		"Ability17"		"special_bonus_unique_luna_2"
+
+		"ArmorPhysical"		"2"
+		"AttackDamageMin"		"26"
+		"AttackDamageMax"		"32"
+		"AttackRange"		"330"
+		"AttributeBaseStrength"		"21"
+		"AttributeStrengthGain"		"2.200000"
+		"AttributeBaseAgility"		"24"
+		"AttributeAgilityGain"		"3.400000"
+		"AttributeBaseIntelligence"		"23"
+		"AttributeIntelligenceGain"		"1.90000"
+		"StatusHealthRegen"		"0.5"
+		"MovementSpeed"		"325"
+		"VisionNighttimeRange"		"800"
+	}
  
 	
 //=========================================================================================================
@@ -1002,21 +1087,55 @@
 		"Role"						"Support,Nuker"	
 		"Rolelevels"				"3,3"
 
-		"Ability1"				"winter_wyvern_cold_embrace"
-		"Ability2"				"crystal_maiden_frostbite"
-		"Ability3"				"crystal_maiden_brilliance_aura"
-		"Ability4"				"freezing_field"
-		//"Ability10"		"special_bonus_magic_resistance_15"
-		//"Ability11"		"special_bonus_attack_damage_50"
-		//"Ability12"		"special_bonus_cast_range_125"
-		//"Ability13"		"special_bonus_hp_200"
-		//"Ability14"		"special_bonus_gold_income_20"
-		//"Ability15"		"special_bonus_respawn_reduction_35"
-		//"Ability16"		"special_bonus_unique_crystal_maiden_1"
-		//"Ability17"		"special_bonus_unique_crystal_maiden_2"			
+		"Ability1"					"crystal_maiden_crystal_nova"
+		"Ability2"					"winter_wyvern_cold_embrace"
+		"Ability3"					"crystal_maiden_brilliance_aura"
+		"Ability4"					"generic_hidden"  
+		"Ability5"					"winter_wyvern_winters_curse"
+		"Ability6"					"crystal_maiden_freezing_field"
+
+		"Ability10"		"special_bonus_armor_6"
+		"Ability11"		"special_bonus_attack_damage_100"  
+		"Ability12"		"special_bonus_unique_crystal_maiden_6" 
+		"Ability13"		"special_bonus_unique_crystal_maiden_4"  
+		"Ability14"		"special_bonus_attack_speed_200"
+		"Ability15"		"special_bonus_unique_crystal_maiden_5"
+		"Ability16"		"special_bonus_strength_40"
+		"Ability17"		"special_bonus_unique_crystal_maiden_2"
+ 	
 	}	
  
-
+"npc_dota_hero_sniper"
+	{
+		"GibType"		"default"
+		"Ability1"		"sniper_shrapnel"
+		"Ability2"		"sniper_headshot"
+		"Ability3"		"sniper_take_aim"
+		"Ability4"		"sniper_concussive_grenade"
+		"Ability5"		"rocket_shots"
+		"Ability6"		"ability_sniper_assassinate"
+		"Ability10"		"special_bonus_unique_sniper_2"
+		"Ability11"		"special_bonus_attack_damage_15"
+		"Ability12"		"special_bonus_attack_speed_30"
+		"Ability13"		"special_bonus_hp_regen_20"
+		"Ability14"		"special_bonus_hp_450"
+		"Ability15"		"special_bonus_agility_20"
+		"Ability16"		"special_bonus_attack_range_100"
+		"Ability17"		"special_bonus_strength_40"
+		"ArmorPhysical"		"-1"
+		"AttackDamageMin"		"13"
+		"AttackDamageMax"		"19"
+		"AttackRate"		"1.700000"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"19"
+		"AttributeStrengthGain"		"2.0000"
+		"AttributeBaseIntelligence"		"15"
+		"AttributeIntelligenceGain"		"2.600000"
+		"AttributeBaseAgility"		"27"
+		"AttributeAgilityGain"		"3.20000"
+		"MovementSpeed"		"285"
+ 
+	}
 
 	//=================================================================================================================
 	// HERO: WISP
@@ -1030,15 +1149,15 @@
 		"Ability5"		"wisp_spirits_out"
 		"Ability6"		"ability_wisp_teleport"
 		"Ability7"		"wisp_tether_break"
-		"Ability8"		"wisp_sueside"
+	 	"Ability8"		"blessed_walking"
  
-		"Ability10"		"special_bonus_exp_boost_15"
-		"Ability11"		"special_bonus_unique_wisp_3"
-		"Ability12"		"special_bonus_gold_income_120"
-		"Ability13"		"special_bonus_hp_regen_12"
-		"Ability14"		"special_bonus_mp_regen_10"
-		"Ability15"		"special_bonus_attack_damage_70"
-		"Ability16"		"special_bonus_all_stats_20"
+		"Ability10"		"special_bonus_hp_regen_8"
+		"Ability11"		"special_bonus_mp_regen_8"
+		"Ability12"		"special_bonus_strength_14"
+		"Ability13"		"special_bonus_all_stats_8"
+		"Ability14"		"special_bonus_magic_resistance_15"  
+		"Ability15"		"special_bonus_attack_damage_90"  
+		"Ability16"		"special_bonus_movement_speed_90"
 		"Ability17"		"special_bonus_unique_wisp_4"
 
 		"AttackDamageMin"			"20"										// Damage range min.
@@ -1047,14 +1166,14 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"3"									// Physical protection.
+		"ArmorPhysical"				"0"									// Physical protection.
 		"MagicalResistance"			"25"									// Magical protection (percentage).
 
 
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 
-		"AttributeBaseStrength"		"13"										// Base strength
+		"AttributeBaseStrength"		"18"										// Base strength
 		"AttributeStrengthGain"		"3.6"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"23"										// Base intelligence
 		"AttributeIntelligenceGain"	"2.2"    									// Intelligence bonus per level.
@@ -1069,7 +1188,7 @@
 
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"				"100"									// Base health.
+		"StatusHealth"				"125"									// Base health.
 		"StatusHealthRegen"			"1.0"									// Health regeneration rate.
 		"StatusMana"				"150"											// Base mana.
 		"StatusManaRegen"			"2"									// Mana regeneration rate.
@@ -1328,13 +1447,13 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"skywrath_mage_mystic_flare"
 		"Ability10"		"special_bonus_armor_5"
-		"Ability11"		"special_bonus_unique_skywrath"
+		"Ability11"		"special_bonus_attack_base_damage_100"
 		"Ability12"		"special_bonus_unique_skywrath_2"
-		"Ability13"		"special_bonus_spell_amplify_15"
-		"Ability14"		"special_bonus_respawn_reduction_60"
-		"Ability15"		"special_bonus_unique_skywrath_5"
-		"Ability16"		"special_bonus_mana_reduction_11"
-		"Ability17"		"special_bonus_intelligence_35"
+		"Ability13"		"special_bonus_spell_amplify_15" 	 
+		"Ability14"		"special_bonus_cast_range_125"
+		"Ability15"		"special_bonus_magic_resistance_12"
+		"Ability16"		"special_bonus_strength_40"
+		"Ability17"		"special_bonus_intelligence_25"
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -1419,5 +1538,38 @@
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
 	}
+
+	"npc_dota_hero_enigma"
+	{
+	
+		"Ability1"		"ability_malefice"
+		"Ability2"		"ability_demonic_conversion"
+		"Ability3"		"ability_midnight_pulse"
+		"Ability4"		"enigma_eyes"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"ability_black_hole"
+		"Ability10"		"special_bonus_strength_10"
+		"Ability11"		"special_bonus_intelligence_10"
+		"Ability12"		"special_bonus_unique_enigma_pulse_radius"
+		"Ability13"		"special_bonus_unique_enigma_malefice_stuns"
+		"Ability14"		"special_bonus_unique_enigma_black_hole_dead"
+		"Ability15"		"special_bonus_unique_enigma_demonic_conversion_cooldown"
+		"Ability16"		"special_bonus_unique_enigma_demonic_conversion_number"
+		"Ability17"		"special_bonus_unique_enigma_pulse_damage"
+
+		"ArmorPhysical"		"0"
+
+		"AttackDamageMin"		"24"
+		"AttackDamageMax"		"30"
+
+		"AttributeBaseStrength"		"21"
+		"AttributeStrengthGain"		"2.500000"
+		"AttributeBaseIntelligence"		"19"
+		"AttributeIntelligenceGain"		"3.600000"
+		"AttributeBaseAgility"		"14"
+		"AttributeAgilityGain"		"1.0"
+		"MovementSpeed"		"290"
  
+	}
+
 }

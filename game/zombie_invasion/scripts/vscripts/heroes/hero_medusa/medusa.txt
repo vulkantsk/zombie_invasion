@@ -146,60 +146,33 @@
 		"AbilityCastRange"				"1200"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"65"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"500"
-		
+ 
+ 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"AbilityCastRange"					"1200"
+			"AbilityCooldown"					"90"
+			"AbilityManaCost"					"500"
+			"radius"							"1200"
+			"duration"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"1200"
+				"value"							"6"
+				"special_bonus_unique_medusa"	"+2"
 			}
-			"02"
+			"slow"								"20"
+			"stone_duration"					"1.0"
+			"face_duration"						"2.0"
+			"vision_cone"						"0.08715"		// 85 degree cone
+			"bonus_physical_damage"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"8"
-				"LinkedSpecialBonus"		"special_bonus_unique_medusa"
+				"value"							"45"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_PHYSICAL"
 			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"slow"						"20"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"stone_duration"			"1.0"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"face_duration"				"2.0"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"vision_cone"				"0.08715"		// 85 degree cone
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_physical_damage"		"45"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"speed_boost"		"200"
-			}
-		}
+			"speed_boost"						"200"
+		}	
+ 
 	}
 
 

@@ -1,4 +1,4 @@
-LinkLuaModifier("modifier_veteran_grow", "items/item_bone.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_bone", "items/item_bone.lua", LUA_MODIFIER_MOTION_NONE)
 
 
 
@@ -8,51 +8,20 @@ function SetStacks( keys )
 	local caster = keys.caster
 	local target = keys.target
 	local stacks = ability:GetSpecialValueFor( "stacks" )
-	local StackModifier = "modifier_veteran_grow"
-	local grow_ability = target:FindAbilityByName("adult_grow") 
+	local StackModifier = "modifier_bone"
+ 
 
-	local currentStacks = target:GetModifierStackCount(StackModifier, nil)
-
+	local currentStacks = target:GetModifierStackCount(StackModifier, ability)
+ 
 	if currentStacks == 0 then
-		target:AddNewModifier(caster, nil, StackModifier, {})
-		target:SetModifierStackCount(StackModifier, nil, (currentStacks + stacks))
+		target:AddNewModifier(caster, ability, StackModifier, {})
+		target:SetModifierStackCount(StackModifier, ability, (currentStacks + stacks))
+        target:CalculateStatBonus(true)		
 	else 
-		target:SetModifierStackCount(StackModifier, nil, (currentStacks + stacks))
+		target:SetModifierStackCount(StackModifier, ability, (currentStacks + stacks))
+        target:CalculateStatBonus(true)		
 	end
-	if grow_ability ~= nil then
-		local stack_limit = grow_ability:GetSpecialValueFor( "stack_limit" )
-	
-		if currentStacks+stacks>=stack_limit   then
-			local point = target:GetAbsOrigin()
-			local team = target:GetTeam()
-			local player = target:GetPlayerOwnerID()
-			local hero   = PlayerResource:GetSelectedHeroEntity(player)
-			local name	= ""
-			local child_fw = target:GetForwardVector()
-	
-			if 			target:GetUnitName() == "npc_dota_troll_adult" 	then name = "npc_dota_troll_veteran" 
-			elseif 		target:GetUnitName() == "npc_dota_ogre_adult" 	then name = "npc_dota_ogre_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_dragon_adult" then name = "npc_dota_dragon_veteran" 
-			elseif 		target:GetUnitName() == "npc_dota_kobold_adult" then name = "npc_dota_kobold_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_wolf_adult" 	then name = "npc_dota_wolf_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_centaur_adult"then name = "npc_dota_centaur_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_golem_adult" 	then name = "npc_dota_golem_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_ursa_adult" 	then name = "npc_dota_ursa_veteran" 
-			elseif 		target:GetUnitName() == "npc_dota_satyr_adult" 	then name = "npc_dota_satyr_veteran"
-			elseif 		target:GetUnitName() == "npc_dota_lizard_adult" 	then name = "npc_dota_lizard_veteran"
-			end
-			target:ForceKill(true)
-			target:AddNoDraw()
-			local unit = CreateUnitByName( name, point, true, nil, nil, team )
-			unit:SetOwner(hero)
-			unit:SetControllableByPlayer(player, true)
-			unit:SetForwardVector(child_fw)
-			
-		end
-	end	
-	
-	target:AddNewModifier(target, nil, "modifier_phased", {duration = 0.01})
-	target:SetHealth(target:GetHealth()+ability:GetSpecialValueFor("bonus_hp"))
+ 
 end
 
 
@@ -61,36 +30,50 @@ end
 
  
 -------------------------------------------
-modifier_veteran_grow = modifier_veteran_grow or class({})
-function modifier_veteran_grow:IsDebuff() return false end
-function modifier_veteran_grow:IsBuff() return true end
-function modifier_veteran_grow:IsHidden() return false end
-function modifier_veteran_grow:IsPurgable() return false end
-function modifier_veteran_grow:IsStunDebuff() return false end
-function modifier_veteran_grow:RemoveOnDeath() return false end
+modifier_bone = modifier_bone or class({})
+function modifier_bone:IsDebuff() return false end
+function modifier_bone:IsBuff() return true end
+function modifier_bone:IsHidden() return false end
+function modifier_bone:IsPurgable() return false end
+function modifier_bone:IsStunDebuff() return false end
+function modifier_bone:RemoveOnDeath() return false end
 -------------------------------------------
  
+function modifier_bone:OnCreated( kv )
+	-- references
+  self.bonus_hp = self:GetAbility():GetSpecialValueFor("bonus_hp")
+  self.bonus_regen =  self:GetAbility():GetSpecialValueFor("bonus_regen")
+ 
+   
+end
+ 
+ function modifier_bone:GetTexture()
+	-- references
+return  "item_bones" 
+   
+end
+ 
 
-function modifier_veteran_grow:DeclareFunctions()
+
+function modifier_bone:DeclareFunctions()
 	local decFuns =
 		{
-	 	MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
- --			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+	 	     MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT ,
 			MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS
 		}
 	return decFuns
 end
 
-function modifier_veteran_grow:GetModifierPreAttack_BonusDamage()
-	return self:GetStackCount()*15
+function modifier_bone:GetModifierConstantHealthRegen()
+	return self:GetStackCount() * self.bonus_regen
 end
 
---function modifier_veteran_grow:GetModifierPhysicalArmorBonus()
+--function modifier_bone:GetModifierPhysicalArmorBonus()
 --	return self:GetStackCount()*0.5
 --end
 
-function modifier_veteran_grow:GetModifierExtraHealthBonus()
-	return self:GetStackCount()*25
+function modifier_bone:GetModifierExtraHealthBonus()
+	return self:GetStackCount() * self.bonus_hp
 end
 
 

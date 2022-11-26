@@ -76,7 +76,7 @@ function void_spirit_astral_step_lua:OnSpellStart()
 		)
 
 		-- play effects
-		self:PlayEffects2( enemy )
+	--	self:PlayEffects2( enemy )
 	end
 
 	-- play effects

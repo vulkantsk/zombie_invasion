@@ -54,6 +54,27 @@ function CDOTA_BaseNPC:IsSameTeam(unit)
 	return (self:GetTeamNumber() == unit:GetTeamNumber())
 end
 
+function CDOTA_BaseNPC:FindEnemyUnitsInRadius(position, radius, hData)
+    if not self:IsNull() then
+        local team = self:GetTeamNumber()
+        local data = hData or {}
+        local iTeam = data.team or DOTA_UNIT_TARGET_TEAM_ENEMY
+        local iType = data.type or DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO
+        local iFlag = data.flag or DOTA_UNIT_TARGET_FLAG_NONE
+        local iOrder = data.order or FIND_ANY_ORDER
+        return FindUnitsInRadius(team, position, nil, radius, iTeam, iType, iFlag, iOrder, false)
+    else return {} end
+end
+
+function CDOTA_BaseNPC:HasShard()
+
+	if self:HasModifier("modifier_item_aghanims_shard") then
+		return true
+	else
+        return false 
+	end
+end
+
 function ChangeAttackProjectileImba(unit)
 
 	local particle_deso = "particles/items_fx/desolator_projectile.vpcf"
@@ -152,6 +173,7 @@ function SetExpUsually(unit, constant)
     unit:SetDeathXP(unit:GetDeathXP() + constant) 
 
 end
+
 
 
 function UpgradeUnitStats(unit, multiplier)

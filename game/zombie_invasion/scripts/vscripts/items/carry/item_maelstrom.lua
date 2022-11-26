@@ -299,7 +299,7 @@ function modifier_item_imba_maelstrom_2:GetModifierPreAttack_BonusDamage(keys)
 end
 
 
-function modifier_item_imba_maelstrom_2:GetModifierPreAttack_BonusDamage(keys)
+function modifier_item_imba_maelstrom_2:GetModifierAttackSpeedBonus_Constant(keys)
  
 		return self.bonus_attack_speed
  
@@ -402,7 +402,7 @@ function modifier_item_imba_maelstrom_3:GetModifierPreAttack_BonusDamage(keys)
 end
 
 
-function modifier_item_imba_maelstrom_3:GetModifierPreAttack_BonusDamage(keys)
+function modifier_item_imba_maelstrom_3:GetModifierAttackSpeedBonus_Constant(keys)
  
 		return self.bonus_attack_speed
  

@@ -16,16 +16,16 @@ end
 function modifier_portal_despawn_unit:OnCreated()
  
  
-                      Timers:CreateTimer(9, function()  
+                      Timers:CreateTimer(149, function()  
               self:PlayEffects()
 
         end)
-     		Timers:CreateTimer(10, function()  
+     		Timers:CreateTimer(150, function()  
  
  
-                 
-   self:GetParent():ForceKill(false)
-self:GetParent():AddNoDraw()
+                
+   self:GetParent():Destroy()  
+ 
  
         end)
  

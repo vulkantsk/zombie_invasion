@@ -9,9 +9,9 @@ function Spawn( entityKeyValues )
  
  
 
- 	hSpawner = Entities:FindByName( nil, "for_brodyagi" )
-     local waypoint = Entities:FindByName( nil, "last_boss") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
- 	if waypoint then thisEntity:SetInitialGoalEntity( waypoint ) end-- Посылаем моба на наш d_waypoint19, координаты которого мы записали в переменную 'waypoint'
+ 	hSpawner = Entities:FindByName( nil, "techies_start_point" )
+      
+ 
 
     hSuicideAbility = thisEntity:FindAbilityByName( "suicide_boys" )
 	
@@ -28,10 +28,8 @@ function SuicideThink()
 
 	
 	local npc = thisEntity
-   local waypoint = Entities:FindByName( nil, "last_boss") 		-- Записываем в переменную 'waypoint' координаты бокса d_waypoint19
- 	if waypoint then thisEntity:SetInitialGoalEntity( waypoint ) end-- Посылаем моба на наш d_waypoint19, координаты которого мы записали в переменную 'waypoint'
-
-
+ 
+   MoveToTarget()
  if npc:HasModifier("modifier_homer_3") then 
      return CastSuicide()
  end
@@ -50,14 +48,14 @@ function CastSuicide()
 end
 
 function MoveToTarget()
-	if hSpawner == nil then
-		print ( "Lycan doesn't know where target is" )
-		return
-	end
+ 
+
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_MOVE_TO_POSITION,
-		Position = hSpawner:GetOrigin()
+		Position = hSpawner:GetAbsOrigin()
 	})
 	return 1
 end
+
+ 

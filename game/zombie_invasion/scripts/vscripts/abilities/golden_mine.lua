@@ -20,7 +20,7 @@ end
 function OnCreated( event )
 	local caster = event.caster
 	local ability = event.ability
-	ability.attacks_need = ability:GetSpecialValueFor("attacks_need")
+	ability.attacks_need = ability:GetSpecialValueFor("attacks_need") * (Difficulter + 1)
 	caster:SetBaseMaxHealth(ability.attacks_need)
 	caster:SetMaxHealth(ability.attacks_need)
 	caster:SetHealth(ability.attacks_need)

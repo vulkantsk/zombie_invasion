@@ -6,8 +6,7 @@ function Spawn( entityKeyValues )
 	if IsServer() == false then
 		return
 	end
-
-	   GameRules:SetTimeOfDay(0.75)
+ 
 		hClawLungeAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_lunge" )
 		hClawAttackAbility = thisEntity:FindAbilityByName( "lycan_boss_claw_attack" )  
 		hRaptureAbility = thisEntity:FindAbilityByName( "rupture_custom" )

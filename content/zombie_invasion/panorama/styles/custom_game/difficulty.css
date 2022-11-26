@@ -1,70 +1,80 @@
 .Difficulty {
-	z-index: 1000;
-	vertical-align: center;
-	background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
-	flow-children: down;
-	max-width: 230px;
-	padding: 4px;
+  z-index: 1000;
+  vertical-align: center;
+  background-color: gradient(
+    linear,
+    100% 0%,
+    100% 100%,
+    from(#111111),
+    color-stop(0.01, #202327),
+    color-stop(0.2, #141619ff),
+    to(#000000dd)
+  );
+  flow-children: down;
+  max-width: 280px;
+  padding: 4px;
+  border-radius: 5%;
 }
 
 #Header {
-	horizontal-align: center;
-	text-transform: uppercase;
-	font-size: 25px;
-	color: rgb( 233, 233, 233 );
-	text-shadow: 0px 1px 2px 2.0 #000000;
+  horizontal-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: rgb(233, 233, 233);
+  text-shadow: 0px 1px 2px 2 #000000;
 }
 
 .Difficulty Button {
-	margin: 4px;
-	min-width: 100%;
-	background-image: url( "s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex" );
-	flow-children: right;
+  margin: 5px;
+  min-width: 90%;
+  background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
+  flow-children: right;
+  border-radius: 0%;
 }
 
 .Difficulty Button:hover {
-	background-color: white;
+  background-color: white;
 }
 
 .Difficulty Button.normal {
-	background-color: #82E949;
+  background-color: #82e949;
 }
 
 .Difficulty Button.medium {
-	background-color: rgb( 111, 111, 111 );
+  background-color: rgb(214, 214, 19);
 }
 
 .Difficulty Button.hard {
-	background-color: #ff4e16;
+  background-color: #ff0000;
 }
 
 .Difficulty Button Panel {
-	vertical-align: center;
-	width: 40px;
-	height: 40px;
-	background-size: 100% 100%;
+  vertical-align: center;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
 }
 
 .Difficulty Button.normal Panel {
-	background-image: url("s2r://panorama/images/conduct/behavior_normal_png.vtex");
-	wash-color: green;
+  background-image: url("s2r://panorama/images/conduct/behavior_normal_png.vtex");
+  wash-color: green;
 }
 
 .Difficulty Button.medium Panel {
-	background-image: url("s2r://panorama/images/conduct/behavior_neutral_png.vtex");
-	wash-color: rgb( 33, 33, 33 );
+  background-image: url("s2r://panorama/images/conduct/behavior_neutral_png.vtex");
+  wash-color: rgb(33, 33, 33);
 }
 
-.Difficulty Button.hard	 Panel {
-	background-image: url("s2r://panorama/images/conduct/behavior_bad_png.vtex");
-	wash-color: red;
+.Difficulty Button.hard Panel {
+  background-image: url("s2r://panorama/images/conduct/behavior_bad_png.vtex");
+  wash-color: #c10020;
 }
 
 .Difficulty Button Label {
-	vertical-align: center;
-	font-size: 23px;
-	color: rgb( 222, 222, 222 );
-	text-shadow: 0px 1px 2px 2.0 #000000;
-	text-transform: uppercase;
-	margin-left: 8px;
+  vertical-align: center;
+  font-size: 23px;
+  color: rgb(222, 222, 222);
+  text-shadow: 0px 1px 4px 2 #000000;
+  text-transform: uppercase;
+  margin-left: 8px;
 }

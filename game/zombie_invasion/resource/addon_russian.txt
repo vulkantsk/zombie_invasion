@@ -16,9 +16,9 @@
 		
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
 
-		"difficulty_description_normal" "Враги не имеют увеличенные статы, урон, урон от способностей и защиту. Порталы с босами НЕ появляются"
-		"difficulty_description_medium" "Враги имеют увеличенные статы, урон, урон от способностей и защиту на 20%. Порталы с босами появляются"
-		"difficulty_description_hard" "Враги имеют увеличенные статы, урон, урон от способностей и защиту на 50%. Порталы с босами появляются"
+		"difficulty_description_normal" "СТАТЫ ВРАГОВ НЕ УВЕЛИЧЕНЫ!"
+		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 50%</font>! (Урон, урон от способностей, здоровье и защита)"
+		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 100%</font>! (Урон, урон от способностей, здоровье и защита)"
  		
 		//guide
 		"htpbtn"				"Как Играть"
@@ -34,8 +34,8 @@
 		"guide_advanced"		"Дополнительно"
 		"advanced1"				"Квесты"
 		"advanced1_text"		"Выполняйте квесты у Цмочки, Кункевича и Бродяги. Они дают очень ценные награды за них, что очень сильно поможет вам сдерживать волны зомби."
-		"advanced2"				"aaa"
-		"advanced2_text"		"bbb"
+		"advanced2"				"Пошел нахуй!"
+		"advanced2_text"		"отсюдово"
 		"advanced3"				""
 		"advanced3_text"		""	
 		
@@ -98,8 +98,6 @@
 		
 		// ******************** moobs ********************	
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
-		"npc_classic_skeleton_king"		                                    "Король скелетов"
-		"npc_classic_skelet"		                                        "Скелетик" 
 		"npc_boss_chicken"                                                  "Петух???"
 		"npc_jitel"                                                         "Кункевич"
 		"npc_jitel_2"                                                       "Цмочка" 
@@ -107,10 +105,15 @@
 	    "npc_jitel_4"                                                       "Лина"
 	    "npc_jitel_5"                                                       "Старик"
 	    "npc_jitel_6"                                                       "Дени"
+	    "npc_jitel_7"                                                       "Гробовщик"
+	    "npc_guard"                                                       "Стражник"
 		"npc_boss_pig"                                                   	"Большой Бо" 
 		"npc_boss_pig_pet"                                                   	"Большой Бо"   
         "npc_boss_dead_pig"		                                            "Искаженный Бо"   	
 		"npc_medas"                                                  		"Сундук"
+		"npc_cemetery_skelet"		                                        "Скелет" 		
+	    "npc_gate"                                                       "Ворота"
+	    "npc_grave"                                                       "Могила"
 
 		"npc_base"                                                  		"Homer"
 
@@ -130,6 +133,10 @@
 		"npc_classic_big_pudge"		                                            "Большой Пудж"
         "npc_classic_grim"		                                            "Существо"
         "npc_classic_big_grim"		                                            "Большое Существо"
+		"npc_classic_skelet"		                                        "Скелетик" 
+		"npc_classic_big_skelet"		                                        "Большой Скелетик" 
+		"npc_classic_skeleton_king"		                                    "Скелетище"
+ 		"npc_classic__big_skeleton_king"		                                    "Большой Скелетище"
 
 		"npc_classic_ghoul"                                         		"Ghoul"
 		"npc_classic_ghost"                                         		"Призрак"
@@ -190,7 +197,7 @@
 		"npc_mini_elka_4"	                                                	"Мини-елка"
 		"npc_mini_elka_5"	                                                	"Мини-елка"
 		"npc_mini_elka_6"	                                                	"Мини-елка"
-		"npc_main_elka"	                                                	"Главная Елка"
+		"npc_main_elka"	                                                	"Постройка"
 		"npc_greevil"                                                	"Золотой валенок"
 		"npc_classic_new_years"                                                	"Застывший зомби"
 		"npc_classic_new_years_lich"                                                	"Леденящий кровь Ужас"
@@ -337,15 +344,6 @@
 		"DOTA_Tooltip_Ability_item_dead_golova_all_bonus"	"+$all"
 		"DOTA_Tooltip_Ability_item_dead_golova_Lore"			"Если порча может так сильно изменить большую свинью, что тогда будет с очень сильным существом?."
 
-		"DOTA_Tooltip_Ability_item_heart_2"						"<font color='#0000ff'> Infinity light </font>"		
-		"DOTA_Tooltip_ability_item_heart_2_Description"							"<h1>Пассивная: Regeneration Amplification</h1>Увеличивает всё пассивное восстановление здоровья на %base_regen%%.\n<h1>Пассивная: Tarrasque Breath</h1> Увеличивает силу ближайших героев на %aura_str%."
-		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Смесь порчи и света."
-		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
-		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
-		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+макс. здоровья в секунду"
-		    
- 		"DOTA_Tooltip_modifier_item_heart_2_aura_buff"												"Power"
-		"DOTA_Tooltip_modifier_item_heart_2_aura_buff_Description"									"Power"
  
 		"DOTA_Tooltip_Ability_item_undying_heart"						"<font color='#ff9900'> Undying Heart </font>"
 		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Все еще пульсирует, однако смешав это с пирогом...\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое."
@@ -382,16 +380,18 @@
 		"DOTA_Tooltip_modifier_veteran_grow_water_2"												"Сила яиц"
 		"DOTA_Tooltip_modifier_veteran_grow_water_2_Description"									"Ты чувствуешь, ты чувствуешь?? Этот запах..."
  	
-		"DOTA_Tooltip_Ability_item_bone"						"Кости"
-		"DOTA_Tooltip_Ability_item_bone_Description"			"<h1>Активная: Хруст-Хруст </h1>Хрустит, как буд-то сейчас развалитсья"
-		"DOTA_Tooltip_Ability_item_bone_bonus_dmg"	"УРОНА НАВСЕГДА:"
+		"DOTA_Tooltip_Ability_item_bone"						"Останки"
+		"DOTA_Tooltip_Ability_item_bone_Description"			"<h1>Активная: Хруст-Хруст </h1>Ты засовываешь в себя останки????"
+		"DOTA_Tooltip_Ability_item_bone_bonus_regen"	"РЕГЕН ЗДОРОВЬЯ НАВСЕГДА:"
 		"DOTA_Tooltip_Ability_item_bone_bonus_hp"	"ЗДОРОВЬЕ НАВСЕГДА:"
-		"DOTA_Tooltip_Ability_item_bone_Lore"						"итсоК"
+		"DOTA_Tooltip_Ability_item_bone_Lore"						"Вонючие останки бывших жителей деревни..."
 		
-		"DOTA_Tooltip_modifier_veteran_grow"												"Больше костей"
-		"DOTA_Tooltip_modifier_veteran_grow_Description"									"Ты чувствуешь, как кости наполняют тебя..."
+		"DOTA_Tooltip_modifier_bone"												"Останки"
+		"DOTA_Tooltip_modifier_bone_Description"									"Ты чувствуешь прилив сил в виде %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% здоровья и %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%% регена здоровья"
 		
- 
+		"DOTA_Tooltip_Ability_item_skeleton_key"						"Ключ"
+		"DOTA_Tooltip_Ability_item_skeleton_key_Description"			"<h1>Активная: Клик-Клик </h1>Отдает ключ владельцу, вроде бы стражник говорил о каком-то ключе..."
+		"DOTA_Tooltip_Ability_item_skeleton_key_Lore"						"Ключ пахнет могилами" 
 		
 		"DOTA_Tooltip_Ability_item_pirog"						"Пирог"
 		"DOTA_Tooltip_Ability_item_pirog_Description"			"Хоть и сделан этот пирог из непойми чего, пахнет он довольно вкусно.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
@@ -445,7 +445,7 @@
 		"DOTA_Tooltip_Ability_item_testo_Description"			"Тесто тестенное.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
 
          "DOTA_Tooltip_ability_item_totem_upgrade"																					"Тотем улучшения"
- 		"DOTA_Tooltip_Ability_item_totem_upgrad_Description"			"<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "        
+ 		"DOTA_Tooltip_Ability_item_totem_upgrade_Description"			"<font color='#c10020'>Выпадает с тотемных боссов, которые появляются на карте каждые 5 минут!</font>\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое."        
 		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Помогает улучшить предметы."
 
 
@@ -559,7 +559,7 @@
 
 		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
 		
-		"DOTA_Tooltip_Ability_item_assault_2"				"Assault Cuirass 2"
+		"DOTA_Tooltip_Ability_item_assault_2"				"Totem Cuirass"
 		"DOTA_Tooltip_ability_item_assault_2_Description"							"<h1>Пассивная: Assault Aura</h1> Увеличивает броню союзных построек и существ на %aura_positive_armor%, а их скорость атаки — на %aura_attack_speed%. Снижает броню врагов на %aura_negative_armor%.<br><br>Радиус: %aura_radius%"
 		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Этот жуткий доспех, выкованный в кузнях нижних пределов, способен укрепить и ускорить целую армию."
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
@@ -667,7 +667,7 @@
 		"DOTA_Tooltip_modifier_veil_active_debuff"				"Magic Weakness"
 		"DOTA_Tooltip_modifier_veil_active_debuff_Description"	"Магический урон увеличен."
 
- 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Hidan's mask of Discord"
+ 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Totem's mask of Discord"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_Description"					"<h1>Активная: Magic Weakness</h1> Ослабляет вражеских героев в области радиусом %debuff_radius%, отчего они получают на %spell_amp%%% больше урона от заклинаний.<br><br>Дальность применения: %abilitycastrange%<br>Длительность: %resist_debuff_duration% сек. \n\n <h1>Пассивная: Basilius Aura</h1> Увеличивает восстановление маны союзников на %aura_mana_regen%.<br><br>Радиус: %aura_radius%"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_Lore"						"Ходят слухи, что эта маска самого Хидана!"
 		"DOTA_Tooltip_ability_item_veil_of_discord_3_bonus_all_stats"			"+$all"
@@ -902,6 +902,16 @@
 		"DOTA_Tooltip_ability_item_ess_pudge_bonus_damage"				"+$all"
 
 
+		"DOTA_Tooltip_Ability_item_heart_2"				"Totem Heart of Tarrasque"
+		 "DOTA_Tooltip_ability_item_heart_2_Description"							""
+		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
+		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
+		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+макс. здоровья в секунду"
+
+		"DOTA_Tooltip_Ability_item_sumon_boss"						"Штука?"
+		"DOTA_Tooltip_Ability_item_sumon_boss_Description"			"<h1>Активная: Клик-Клик </h1>Если нажать эту вещь в правильном месте, которое напоминает иллюминат, то тогда..."
+ 
 
 
 
@@ -926,12 +936,13 @@
 
 
 
+		"DOTA_Tooltip_Ability_item_candy"							"Конфета"
+		"DOTA_Tooltip_Ability_item_candy_Description"				"<h1>Активная: Положить в тыкву</h1>Эту конфету всегда клали в главную тыкву. Говорят, что чем больше конфет, тем больше плюшек!"
+		"DOTA_Tooltip_Ability_item_candy_Lore"							"Ох сласти, сласти, сласти - всем мы любим сласти!"	
 
 
 
-
-
-
+ 
 
 		"DOTA_Tooltip_Ability_item_letter"							"Письмо Деду Морозу"
 		"DOTA_Tooltip_Ability_item_letter_Description"				"<h1>Активная: Положить под елку</h1>Это письмо обычно ложили под сааамую главную елку, чтобы Дедушка Мороз принес подарки. Говорят, что если писем было очень много, то Дед Мороз сам приходил выдавать подарки!"
@@ -1028,7 +1039,11 @@
 		"DOTA_Tooltip_Ability_quest_test_old_men_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_old_men_reward_gold"                 		"ЗОЛОТА:"
 
-
+ 		"DOTA_Tooltip_Ability_quest_test_meepo"										"Ключ к останкам"
+		"DOTA_Tooltip_Ability_quest_test_meepo_Description"							"Эй пацан! Не хочешь заработать деньжат, да получить ключик? Есть у меня для тебя одна работёнка. Ночью из могил встают скелеты. Такие жуткие создания! Так вот убей их, а что от них останется принеси мне."
+		"DOTA_Tooltip_Ability_quest_test_meepo_value_required"     							"КОЛИЧЕСТВО ОСТАНКОВ:"
+		"DOTA_Tooltip_Ability_quest_test_meepo_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_meepo_reward_gold"                 		"ЗОЛОТА:"
 
 
 		"DOTA_Tooltip_modifier_quest_template"												"Режим ждуна"
@@ -1036,6 +1051,89 @@
 
 
 		// ******************** HERO ABILITIES ********************
+
+		// -----------------alchemist--------------------  
+
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Create Totem"
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Создает уникальный предмет <font color='#ffd700'> Тотем улучшения</font> , но тратя при этом золото."
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "Алхимик настолько преуспел в своем деле, что теперь из золото может приготовить даже Тотем!" 
+ 
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Lore"					"Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом."		
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom"						"Unstable Concoction"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Description"			"Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивать, тем больше урона она нанесёт и тем дольше будет оглушение. Максимальный эффект достигается после %brew_time% сек., однако если не выбросить колбу через %brew_explosion% секунды, она взорвётся в руках героя, подействовав и на него самого."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note0"					"Во время действия способность заменяется на бросок колбы. Встряхивая смесь, герой может передвигаться и действовать как обычно."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note1"					"Таймер над головой героя показывает время, оставшееся до взрыва. Противники видят этот таймер."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note2"					"Этой способностью можно совершить самоубийство."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"					"Снаряд этой способности нельзя сбить с цели."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"					"После броска действие способности не усиливается."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"				"МАКС. ОГЛУШЕНИЕ:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"				"МАКС. УРОН:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"					"РАДИУС ВЗРЫВА:"
+
+        // -------------luna ----------
+ 		"DOTA_Tooltip_Ability_luna_night_buff"                                            "Improved Moon Blessing"
+        "DOTA_Tooltip_Ability_luna_night_buff_Description"                                "Луна взывает богиню луны и дает себе и союзникам: урон, скорость атаки и урон от магии."
+		"DOTA_Tooltip_ability_luna_night_buff_bonus_damage"								"БОНУСНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_luna_night_buff_attack_speed"					"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_luna_night_buff_spell_damage"					"%ДОП. УРОН ОТ ЗАКЛИНАНИЙ:"
+		"DOTA_Tooltip_ability_luna_night_buff_duration"								"ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_luna_night_buff_Lore"                                "Богиня луны слышит луну и дает ей свое благословение" 
+
+		"DOTA_Tooltip_modifier_luna_night_buff"						"Improved Moon Blessing"
+		"DOTA_Tooltip_modifier_luna_night_buff_Description"			"Вы благословлены богиней луны!"
+
+        // -------------dark seer ----------
+
+ 		"DOTA_Tooltip_ability_ability_ion_shell"										"Ion Shell"
+		"DOTA_Tooltip_ability_ability_ion_shell_Description"							"Накладывает на выбранное существо колючий щит, который увеличивает здоровье и регенерацию существа. Если использовать на себя, тогда ко всему прочему наносит урон всем врагам вокруг."
+		"DOTA_Tooltip_ability_ability_ion_shell_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note1"								"Цель способности не получает от неё урон."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note2"								"Если на цели способности уже есть щит, он заменится новым."
+		"DOTA_Tooltip_ability_ability_ion_shell_radius"								"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_ion_shell_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_damage_per_second"					"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_health"								"БОНУС К ЗДОРОВЬЮ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_regen"					"БОНУС К РЕГЕНЕРАЦИИ:"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_unit"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_unit_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_hero"						"Ion Shell"
+		"DOTA_Tooltip_modifier_ability_ion_shell_hero_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+	     "DOTA_Tooltip_ability_ability_surge"											"Surge"
+		"DOTA_Tooltip_ability_ability_surge_Description"								"Заряжает дружественных существ энергией, ненадолго увеличивающий скорость передвижения и позволяющей проходить сквозь существ. С цели снимается ограничение скорости и её невозможно замедлить."
+		"DOTA_Tooltip_ability_ability_surge_Lore"										"Однажды Иш'Кафэль использовал скорость своего разума, чтобы преодолеть лабиринт между стенами."
+		"DOTA_Tooltip_ability_ability_surge_Note0"									"Цель способности нельзя замедлить, пока не спадёт её эффект."
+		"DOTA_Tooltip_ability_ability_surge_duration"									"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_surge_speed_boost"									"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_surge_abilitycastrange"									"РАДИУС:"
+
+		"DOTA_Tooltip_modifier_ability_surge"							"Surge"
+		"DOTA_Tooltip_modifier_ability_surge_Description"				"Скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%"
+
+	     "DOTA_Tooltip_ability_ability_seer_punch"											"ONE PUNCH!!"
+		"DOTA_Tooltip_ability_ability_seer_punch_Description"								"Dark seer собирает все свои силы, чтобы ударить по небольшой площади, нанося при этом огромный урон и оглушая своих противников на %AbilityDuration% секунд."
+		"DOTA_Tooltip_ability_ability_seer_punch_Lore"										"Dark seer видимо пересмотрел аниме и возомнил себя Сайтамой."
+		"DOTA_Tooltip_ability_ability_seer_punch_damage"									"УРОН:"
+		"DOTA_Tooltip_ability_ability_seer_punch_punch_radius"									"РАДИУС:"
+
+ 		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон врагам вокруг, а также увеличивает здоровье и её регенерацию. Если наложить обычный щит, то он тут же сброситься."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_radius"								"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_damage_per_second"					"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_health"								"БОНУС К ЗДОРОВЬЮ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_regen"					"БОНУС К РЕГЕНЕРАЦИИ:"
+
+		"DOTA_Tooltip_modifier_ability_ion_shell_golden"						"Ion Shell Golden"
+		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
 
 // -------------tide ----------
 
@@ -1098,8 +1196,29 @@
         "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Слабость не порок."
 
 
+		// -----------------sniper--------------------		
 
+        "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
+        "DOTA_Tooltip_Ability_rocket_shots_Description"                                "После многочисленных тренировок Sniper научился на короткое время стрелять с нереально большой скоростью!"
+        "DOTA_Tooltip_Ability_rocket_shots_bonus_speed_atack"                                        "БАЗОВАЯ СКОРОСТЬ АТАКИ:"
+        "DOTA_Tooltip_Ability_rocket_shots_duration"                                        "ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "На полигоне и не такие выходки случаются."
 
+		"DOTA_Tooltip_modifier_rocket_shots_haste"                            	"Rocket shots"
+		"DOTA_Tooltip_modifier_rocket_shots_haste_Description"                	"Атакуешь нереально быстро!"
+
+		"DOTA_Tooltip_ability_ability_sniper_assassinate"										"Assassinate"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Description"							"Герой с огромного расстояния целится во вражеских существ и после небольшой задержки совершает сокрушительный выстрел, ненадолго оглушающий цель."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Lore"									"Чтобы осуществить пророчество и вернуться в родной город, Кардел должен быть уверен, что следующий выстрел будет столь же метким, как и тот, что он совершил в далёкий день своего испытания." 
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note0"									"Значок прицела виден только союзникам."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note1"									"Снаряд этой способности нельзя сбить с цели невидимостью."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_AbilityCastRange"						"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_abilitycastpoint"						"ВРЕМЯ ПОДГОТОВКИ:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_damage"						"%КРИТИЧЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_splash_radius"						"РАДИУС:"
+
+		"DOTA_Tooltip_modifier_ability_sniper_assassinate"					"Assassinate"
+		"DOTA_Tooltip_modifier_ability_sniper_assassinate_Description"		"Sniper целится в твою голову!"		
 		// -----------------medusa--------------------		
  
 		"DOTA_Tooltip_ability_medusa_split_shot_custom"								"Split Shot"
@@ -1227,6 +1346,7 @@
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval"                        	"ИНТЕРВАЛ:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_interval_dmg"                        	"УРОН ЗА ИНТЕРВАЛ:"
 		"DOTA_Tooltip_ability_bristleback_viscous_goo_custom_reduced_armor"                        	"БРОНИ ЗА ИНТЕРВАЛ:"
+
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom"                            	"Vicious goo debuff"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom_Description"                	"Теряет броню с течением времени"
 
@@ -1469,7 +1589,7 @@
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Description"		"Герой готовит смертельный выстрел из своего арбалета. Он наносит вражеским существам урон от урона Hoodwink в размере %damage_pct%%  и оглушает их на %stun_duration% секунду."
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Lore"				"Первый арбалет-самострел Прохвостка нашла по случайности, но теперь она холит и лелеет свой собственный — и, разумеется, некоторые его детали она у кого-то стянула или добыла другим способом."
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_base_dmg"					"БАЗОВЫЙ УРОН:"
-		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct" "%КРИТИЧСЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct" "%КРИТИЧЕСКИЙ УРОН:"
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
 
         "DOTA_Tooltip_ability_hoodwink_anti_armor"	"Powerful crossbow"
@@ -1478,46 +1598,156 @@
        "DOTA_Tooltip_ability_hoodwink_anti_armor_Lore"	"Арбалет Hoodwink всегда был наполнен силой природы, но в последнее время этой силы становится в разы больше."
 
 		// -----------------axe--------------------			
-		"DOTA_Tooltip_Ability_axe_battle_hunger_custom" "Berserker's Call"
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_Description" "Axe отвлекает ближайших вражеских юнитов, заставляя их атаковать его, а также получает бонус к броне и скорости передвижения на время действия способности. На каждого врага, что попал под действие этого крика, накладывается проклятие ярости, которое наносит носителю периодический урон и замедляет до тех пор, пока оно не спадет, либо враг кого-нибудь убьет."
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_radius" "РАДИУС:"
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_duration" "ДЛИТЕЛЬНОСТЬ:"
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_damage_per_second" "УРОН В СЕКУНДУ:"
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_slow" "%ЗАМЕДЛЕНИЕ:"
-"DOTA_Tooltip_Ability_axe_battle_hunger_custom_speed_bonus" "БОНУС СКОРОСТИ:"
+		"DOTA_Tooltip_ability_ability_berserkers_call"										"Berserker's Call"
+		"DOTA_Tooltip_ability_ability_berserkers_call_Description"							"Герой бросает вызов ближайшим врагам, заставляя их атаковать его, а также получает бонус к броне на время действия способности."
+		"DOTA_Tooltip_ability_ability_berserkers_call_Lore"									"Могучий рёв Могул-хана вынуждает врагов вступить в заведомо проигранную схватку."
+		"DOTA_Tooltip_ability_ability_berserkers_call_radius"								"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_bonus_armor"							"ДОП. БРОНЯ:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_description"						"Каждый задетый крип дает броню, а длительность положительного эффекта увеличивается."
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_armor"					"БРОНЯ ЗА КРИПА:"
+		"DOTA_Tooltip_ability_ability_berserkers_call_shard_duration"					"ДЛИТЕЛЬНОСТЬ ПОЛОЖИТЕЛЬНО ЭФФЕКТА:"  
 
-"DOTA_Tooltip_Ability_axe_culling_blade_lua" "Mincer"
-"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description" "Axe наносит удар по слабому месту противника, нанося %damage_true%% от своего базового урона."
-"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_true" "%УРОН ОТ БАЗОВОГО УРОНА:"
-"DOTA_Tooltip_Ability_axe_culling_blade_lua_great_cleave_damage" "%СПЛЭШ:"
-"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore" "Любимый прием акса во всех его странствиях."
+		"DOTA_Tooltip_modifier_ability_berserkers_call_debuff_cmd"					"Berserker's Call"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_debuff_cmd_Description"		"Вы вынуждены атаковать Axe"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_buff_armor"			"Броня от Berserker's Call"
+		"DOTA_Tooltip_modifier_ability_berserkers_call_buff_armor_Description"	"%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% дополнительной брони"
 
-"DOTA_Tooltip_ability_ursa_enrage_lua" "Enrage"
-"DOTA_Tooltip_ability_ursa_enrage_lua_Description" "Axe впадает в ярость, получая на %damage_reduction%%% меньше урона и получая сопротивление эффекта в размере %damage_reduction%% . Снимает все негативные эффекты. \n\nТИП РАЗВЕИВАНИЯ: сильное "
-"DOTA_Tooltip_ability_ursa_enrage_lua_aghanim_description" "Уменьшает перезарядку и позволяет применять эту способность, даже когда герой выведен из строя."
-"DOTA_Tooltip_Ability_ursa_enrage_lua_duration" "ДЛИТЕЛЬНОСТЬ:"
-"DOTA_Tooltip_Ability_ursa_enrage_lua_damage_reduction" "%СНИЖЕНИЕ УРОНА:"
-"DOTA_Tooltip_Ability_ursa_enrage_lua_status_resistance" "%СОПРОТИВЛЕНИЕ ЭФФЕКТАМ:"
-"DOTA_Tooltip_ability_ursa_enrage_lua_cooldown_scepter" "ПЕРЕЗАРЯДКА СО СКИПЕТРОМ:"
-"DOTA_Tooltip_ability_ursa_enrage_lua_Lore" "Когда Axe в ярости, никому не поздоровиться..."
+		"DOTA_Tooltip_ability_ability_battle_hunger"										"Battle Hunger"
+		"DOTA_Tooltip_ability_ability_battle_hunger_Description"							"Приводит врага в бешенство, нанося ему урон. Урон от атак жертвы уменьшается."
+		"DOTA_Tooltip_ability_ability_battle_hunger_Lore"									"Обычные герои не могут сопротивляться ярости Могул-хана, и она калечит их, пока они не выместят ее на ком-нибудь."
+		"DOTA_Tooltip_ability_ability_battle_hunger_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_damage_reduction"									"%СНИЖЕНИЕ УРОНА ОТ АТАК:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_damage_per_second"						"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_ability_battle_hunger_abilitycastrange"						"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
-
-"DOTA_Tooltip_modifier_ursa_enrage_lua" "ENRAGE"
-"DOTA_Tooltip_modifier_ursa_enrage_lua_Description" "AAAGGRRRRRHHHHHHH..."
-
-
-
-"DOTA_Tooltip_Ability_axe_solo" "Forever alone"
-"DOTA_Tooltip_Ability_axe_solo_Description" "Во всех своих путешествиях Axe привык пологаться только на себя. В одиночестве он чувствует себя бесстрашным, но стоит союзнику подойти в радиусе %radius%, то все бафы уменьшаються <font color='#ffffff'>в 2 раза</font>."
-"DOTA_Tooltip_Ability_axe_solo_bonus_strength_false" "СИЛА В ОДИНОЧЕСТВЕ:"
-"DOTA_Tooltip_Ability_axe_solo_bonus_armor_false" "АРМОР В ОДИНОЧЕСТВЕ:"
-"DOTA_Tooltip_Ability_axe_solo_bonus_regen_false" "РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ В ОДИНОЧЕСТВЕ:"
-"DOTA_Tooltip_ability_axe_solo_Lore" "Быть одним, таков путь..."
-
-"DOTA_Tooltip_modifier_axe_solo" "FOREVER ALONE"
-"DOTA_Tooltip_modifier_axe_solo_Description" "Число союзников находящиеся рядом с аксом( сам Axe тоже считается )"
+		"DOTA_Tooltip_modifier_imba_battle_hunger_debuff_dot" "Battle Hunger"
+		"DOTA_Tooltip_modifier_imba_battle_hunger_debuff_dot_Description" "Получает урон в секунду, урон от атак снижена на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%." 
+		"DOTA_Tooltip_modifier_imba_battle_hunger_buff" "Battle Hunger"
+		"DOTA_Tooltip_modifier_imba_battle_hunger_buff_Description" "Хилится каждую секунду, урон от атак повышен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
  
-	
+
+		"DOTA_Tooltip_ability_ability_counter_helix"										"Counter Helix"
+		"DOTA_Tooltip_ability_ability_counter_helix_Description"							"Герой с некоторой вероятностью отвечает на атаки противников, нанося чистый урон всем врагам вокруг себя."
+		"DOTA_Tooltip_ability_ability_counter_helix_shard_description"						"Каждое срабатывание способности применяет на жертв складывающийся эффект, уменьшающий их урон от атак по владельцу способности. Также увеличивает шанс контратаки."
+		"DOTA_Tooltip_ability_ability_counter_helix_Note0"									"Срабатывает при завершении атаки по владельцу способности."
+		"DOTA_Tooltip_ability_ability_counter_helix_Lore"									"Могул-хан — сам себе войско."
+		"DOTA_Tooltip_ability_ability_counter_helix_damage"									"УРОН:"
+		"DOTA_Tooltip_ability_ability_counter_helix_radius"									"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_counter_helix_trigger_chance"							"%ШАНС КОНТРАТАКИ:"
+
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua" "Culling Blade"
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_Description" "Герой находит слабую точку всех врагов в радиусе %splash_radius%  от основной цели и наносит им чистый урон."
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_attack" "%УРОН ОТ БАЗОВОГО УРОНА:"
+		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage" "УРОН:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore" "Любимый прием акса во всех его странствиях."
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_scepter_description" "При каждом использовании способности или убийстве врага, базовый урон Axe вырастает на %duration_scepter%  секунд."
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_base" "УРОН ЗА ИСПОЛЬЗОВАНИЕ:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_kill" "УРОН ЗА УБИЙСТВО:"
+ 
+		"DOTA_Tooltip_modifier_scepter_culling_blade" "Culling Blade"
+		"DOTA_Tooltip_modifier_scepter_culling_blade_Description" "Базовый урон увеличен на %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%%"
+
+		"DOTA_Tooltip_Ability_axe_solo" "Forever alone"
+		"DOTA_Tooltip_Ability_axe_solo_Description" "Во всех своих путешествиях Axe привык пологаться только на себя. В одиночестве он чувствует себя бесстрашным, но стоит союзнику подойти в радиусе %radius%, то все бафы уменьшаються <font color='#ffffff'>в четверть раза</font>."
+		"DOTA_Tooltip_Ability_axe_solo_bonus_strength" "СИЛА В ОДИНОЧЕСТВЕ:"
+		"DOTA_Tooltip_Ability_axe_solo_bonus_armor" "АРМОР В ОДИНОЧЕСТВЕ:"
+		"DOTA_Tooltip_Ability_axe_solo_bonus_regen" "РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ В ОДИНОЧЕСТВЕ:"
+		"DOTA_Tooltip_ability_axe_solo_Lore" "Быть одним, таков путь..."
+
+		"DOTA_Tooltip_modifier_axe_solo" "FOREVER ALONE"
+		"DOTA_Tooltip_modifier_axe_solo_Description" "Число союзников находящиеся рядом с аксом"
+ 
+ 		"DOTA_Tooltip_Ability_special_axe_battle_ally"											"Battle Hunger можно применить на союзников"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_call_radius"											 "+{s:bonus_radius} к радиусу Berserker's Call"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_culling_cooldown"											"-{s:value} сек. перезарядки Culling Blade"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_helix_damage"											"+{s:bonus_damage} к урону от Counter Helix"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_helix_chance"											   "+{s:bonus_trigger_chance}% к шансу Counter Helix"
+		"DOTA_Tooltip_Ability_special_bonus_unique_axe_culling_damage"											   "+{s:bonus_damage_attack}% к урону от базового урона Culling Blade"
+
+
+		// -----------------enigma--------------------	
+
+        "npc_classic_eidolon"                                                             "Эйдолон"
+
+		"DOTA_Tooltip_ability_ability_malefice"											"Malefice"
+		"DOTA_Tooltip_ability_ability_malefice_Description"								"Концентрирует энергию героя на цели, отчего та получает урон и оглушение каждые %tick_rate% сек."
+		"DOTA_Tooltip_ability_ability_malefice_Lore"										"Чуждые гравитационные силы сжимают саму сущность противников, сковывая любое их движение."
+		"DOTA_Tooltip_ability_ability_malefice_stun_duration"							"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_malefice_damage"									"УРОН ЗА СРАБАТЫВАНИЕ:"
+		"DOTA_Tooltip_ability_ability_malefice_tooltip_stuns"							"СРАБАТЫВАНИЙ:"
+
+		"DOTA_Tooltip_modifier_ability_malefice"						"Malefice"
+		"DOTA_Tooltip_modifier_ability_malefice_Description"			"Наносит %dMODIFIER_PROPERTY_TOOLTIP% урона и оглушает на %fMODIFIER_PROPERTY_TOOLTIP% сек. каждые %fMODIFIER_PROPERTY_TOOLTIP% сек."
+ 
+ 		"DOTA_Tooltip_modifier_ability_malefice_stun"						"Malefice"
+		"DOTA_Tooltip_modifier_ability_malefice_stun_Description"			"Оглушен."
+  
+
+		"DOTA_Tooltip_ability_ability_demonic_conversion"								"Demonic Conversion"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_Description"					"Энигма создает из неоткуда свою маленькую копию. Он раздваивается при нескольких ударах, при этом восстанавливая своё здоровье. Раздвоенный эйдолон не может раздвоиться, а тот кто изначально раздвоил, все также двоится."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_Lore"							"Предвечный может притягивать свои сущности из других измерений, создавая в материальном мире троицу тёмных эйдолонов."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_split_attack_count"				"АТАК ДЛЯ РАЗДВОЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_spawn_count"					"ЧИСЛО ЭЙДОЛОНОВ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_hp_tooltip"				"ЗДОРОВЬЕ ЭЙДОЛОНОВ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_dmg_tooltip"			"УРОН ЭЙДОЛОНОВ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidalon_duration"				"ДЛИТЕЛЬНОСТЬ:"
+
+		"DOTA_Tooltip_ability_ability_demonic_conversion_scepter_description"					"Каждый ваш атрибут улучшает характеристики эйдолонов."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_str"			"ЗДОРОВЬЕ ЗА ЕД. СИЛЫ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_ag"			"СКОРОСТЬ АТАКИ ЗА ЕД. ЛОВКОСТИ:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_int"				"УРОН ЗА ЕД. ИНТЕЛЕКТА:"
+
+		"DOTA_Tooltip_modifier_ability_demonic_conversion"					"Demonic Conversion"
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_Description"		"Эта сущность контролируется Enigma."
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats"					"Demonic Conversion"
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats_Description"		"Эта сущность имеет дополнительно %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% здоровья, %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорости атаки и %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%% урона."
+
+		"DOTA_Tooltip_ability_ability_midnight_pulse"									"Midnight Pulse"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Description"						"Наполняет местность тёмным резонансом, который наносит врагам урон, зависящий от их текущего здоровья."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Lore"								"Часть бытия медленно погружается в пустоту."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Note0"								"Разрушает деревья в области действия."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_duration"							"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_damage_percent"						"%УРОН ОТ МАКС. ЗДОРОВЬЯ В СЕК.:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_damage_base"						"УРОН В СЕК.:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_radius"								"РАДИУС:"
+ 
+
+		"DOTA_Tooltip_ability_ability_black_hole"										"Black Hole"
+		"DOTA_Tooltip_ability_ability_black_hole_Description"							"ПРЕРЫВАЕМАЯ — образует воронку, всасывающую всех врагов в зоне действия. При этом они не могут двигаться, атаковать и применять способности."
+		"DOTA_Tooltip_ability_ability_black_hole_Lore"									"Земля содрогается, когда предвечный создаёт всеразрушающую чёрную дыру, способную уничтожать миры."
+		"DOTA_Tooltip_ability_ability_black_hole_far_damage"								"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_ability_black_hole_far_radius"								"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_black_hole_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_black_hole_shard_description"						"Black hole наносит урон от способности Midnight Pulse текущего уровня."
+
+
+		"DOTA_Tooltip_modifier_ability_black_hole_thinker"				"Black Hole"
+		"DOTA_Tooltip_modifier_ability_black_hole_thinker_Description"	"Получает урон каждую секунду, оглушен, притягивается к горизонту событий."
+ 
+		"DOTA_Tooltip_ability_enigma_eyes"										"Evolution"
+		"DOTA_Tooltip_ability_enigma_eyes_Description"							"Энигма деформирует свою сущность. После чего он не может использовать способности и предметы, а каждая его атака настакивает дебаф. Если Enigma или эйдолоны ударят врага с этим дебафом, тогда врагу нанесется чистый урон в размере от кол-во стаков."
+		"DOTA_Tooltip_ability_enigma_eyes_Lore"									"Предвечный всегда стримиться к совершенству."
+		"DOTA_Tooltip_ability_enigma_eyes_damage_per_stack"								"УРОН ЗА СТАК:"
+		"DOTA_Tooltip_ability_enigma_eyes_duration"								"ДЛИТЕЛЬНОСТЬ:"
+  
+		"DOTA_Tooltip_modifier_enigma_eyes"				"Evolution"
+		"DOTA_Tooltip_modifier_enigma_eyes_Description"	"Само бытые..."
+		"DOTA_Tooltip_modifier_enigma_eyes_debuff"				"Evolution"
+		"DOTA_Tooltip_modifier_enigma_eyes_debuff_Description"	"Каждая атака по вам от бездны наносит чистый урон."
+  
+ 
+
+
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_black_hole_dead"											"Black hole при смерти"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_damage"											 "+{s:bonus_damage_percent}% к урону от Midnight Pulse"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_radius"											"+{s:bonus_radius} к радиусу Midnight Pulse"  
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_number"											"+{s:bonus_spawn_count} к числу эйдолонов от Demonic Conversion"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_malefice_stuns"											   "+{s:bonus_tooltip_stuns} к числу срабатываний от Malefice"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_cooldown"											   "-{s:value} сек. перезарядки Demonic Conversion"
+ 
+
 		// -----------------timber--------------------	
 
 		"DOTA_Tooltip_ability_timber_bloody_chakram"									"Bloody chakram"
@@ -1525,7 +1755,7 @@
 		"DOTA_Tooltip_ability_timber_bloody_chakram_radius"							"РАДИУС :"
 		"DOTA_Tooltip_ability_timber_bloody_chakram_base_dmg"							"БАЗОВЫЙ УРОН :"
 		"DOTA_Tooltip_ability_timber_bloody_chakram_hp_cost"							"%УРОН ОТ ЗДОРОВЬЯ :"
- 
+  
 
 		// -----------------clinkz--------------------		
 		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows"									"Searing Arrows"
@@ -1594,31 +1824,38 @@
 
 		
 		// -----------------sven--------------------
-"DOTA_Tooltip_Ability_sven_splash" "Great Cleave"
-"DOTA_Tooltip_Ability_sven_splash_Description" "Sven атакует с огромной силой, прорубаясь сквозь всех ближайших врагов."
-"DOTA_Tooltip_ability_sven_splash_Lore" "Вигильские рыцари всегда боролись со злом и поэтому свен пришел на это поле битвы, чтобы показать силам зла, кто тут хозяин."
-"DOTA_Tooltip_Ability_sven_splash_great_cleave_damage" "%ПРОРУБАЮЩИЙ УРОН:"
 
+        "DOTA_Tooltip_Ability_sven_shield" "Sven's Shield"
+        "DOTA_Tooltip_Ability_sven_shield_Description" "Sven блокирует весь входящий урон, после чего его щит рушиться и уходит на перезарядку."
+        "DOTA_Tooltip_ability_sven_shield_Lore" "После долгих скитаний в одиночестве у Sven появился щит, который начал огрождать его от всего остального мира."
+        "DOTA_Tooltip_Ability_sven_shield_damage_absorb" "ПОГЛОЩАЕТ УРОНА:"
 
-"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven" "Coup de Grace"
-"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_Description" "Герой оттачивает свои боевые способности, получая шанс нанести сокрушительный критический удар по врагу."
-"DOTA_Tooltip_renegade_coup_de_grace_datadriven_Lore" "Последний удар..."
-"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_crit_chance" "%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
-"DOTA_Tooltip_Ability_renegade_coup_de_grace_datadriven_crit_bonus" "%КРИТИЧЕСКИЙ УРОН:"
+        "DOTA_Tooltip_modifier_sven_shield" "Sven's Shield"
+        "DOTA_Tooltip_modifier_sven_shield_Description" "Поглощает весь входящий урон!"
+ 
  
  
 		// -----------------RUBICK--------------------	
+
 		"DOTA_Tooltip_Ability_rubick_meditation"											"Медитация"
 		"DOTA_Tooltip_Ability_rubick_meditation_Description"								"Медитируя, Rubick восполняет силы союзникам вокруг него, но тратит при этом свою ману. Вот такой вот он дурачок."
 		"DOTA_Tooltip_Ability_rubick_meditation_regen"        								"Количество восполняемой союзникам маны/жизни в секунду:"
 		"DOTA_Tooltip_Ability_rubick_meditation_mana_cost_per_second"                 		"Расход маны в секунду:"
 
 		// -----------------WISP--------------------	
+
 		"DOTA_Tooltip_Ability_ability_wisp_teleport"											"Spatial jump"
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_Description"								"Открывает тёмную брешь возле выбранного союзного существа. После небольшой задержки владелец способности и все союзные герои вокруг него телепортируются к этой бреши. Способность начнёт перезаряжаться, даже если отменить её или если цель телепортации умрёт."
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_Lore"								"Волшебный шарик сам решает, куда в следущий миг пойдёт его ко*****"
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_radius"        								"РАДИУС ЗАХВАТА СОЮЗНИКОВ:"
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_teleport_delay"                  		"ЗАДЕРЖКА ПЕРЕД ПЕРЕМЕЩЕНИЕМ:"
+
+
+		"DOTA_Tooltip_Ability_blessed_walking"											"Blessed walking"
+		"DOTA_Tooltip_Ability_blessed_walking_Description"								"За каждую единицу передвижения Wisp восполняет себе здоровье. Связанный герой также получает хил."
+		"DOTA_Tooltip_Ability_blessed_walking_Lore"								"*Звуки восполнения здоровья*"
+		"DOTA_Tooltip_Ability_blessed_walking_movement_damage_pct"        								"ЗДОРОВЬЕ ПРИ ПЕРЕДВИЖЕНИИ:"
+ 
 
 		// -----------------DAZZLE--------------------	
  
@@ -1679,6 +1916,11 @@
 
 
 		// ******************** MOOBS ABILITIES ********************	
+
+		"DOTA_Tooltip_Ability_spider_explode_lua"							"Toxic"
+		"DOTA_Tooltip_Ability_spider_explode_lua_Description"				"При смерти это существо взрывается, оставляя за собой лужу, которая наносит урон и накладывает истощение."
+	   "DOTA_Tooltip_Ability_spider_explode_lua_damage"				"УРОН В СЕКУНДУ:"
+ 
 
 		"DOTA_Tooltip_Ability_range_magick_attack"							"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_Description"				"Автоатаки этого существа наносят магический урон."
@@ -1839,10 +2081,30 @@
 		"DOTA_Tooltip_Ability_bo_eat"										"<font color='#c10020'>ХОЧУ КУШАТЬ!</font>"
 		"DOTA_Tooltip_Ability_bo_eat_Description"							"Бо очень хочеть кушать, но что попало он не ест, он любит пироги... Особенно дпсера."
 
+		"DOTA_Tooltip_Ability_guard_key"										"Ключ от гробницы"
+		"DOTA_Tooltip_Ability_guard_key_Description"							"Стражник выглядит так, как будто потерял какой-то ключ."
+
+
+		"DOTA_Tooltip_Ability_Bo_greater_bash"										"Greater Bash"
+		"DOTA_Tooltip_ability_Bo_greater_bash_Lore"						"Фирменный удар призрачного цепа Бо."
+		"DOTA_Tooltip_ability_Bo_greater_bash_Description"				"Каждая атака может оглушить и оттолкнуть цель. Наносит дополнительный урон, зависящий от скорости передвижения. Урон по крипам в 1,5 раза больше."
+		"DOTA_Tooltip_ability_Bo_greater_bash_Note0"					"Не сочетается с эффектом от предмета Skull Basher."
+		"DOTA_Tooltip_ability_Bo_greater_bash_chance_pct"				"%ШАНС ОГЛУШЕНИЯ:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_damage"					"%МНОЖИТЕЛЬ УРОНА ЗА СКОРОСТЬ:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_knockback_duration"		"ДЛИТЕЛЬНОСТЬ ТОЛЧКА:"
+		"DOTA_Tooltip_ability_Bo_greater_bash_duration"					"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"  
+
+		"DOTA_Tooltip_Ability_bo_eat_creeps"										"Eat"
+		"DOTA_Tooltip_ability_bo_eat_creeps_Lore"						"Бо всегда любил поесть!"
+		"DOTA_Tooltip_ability_bo_eat_creeps_Description"				"Бо сьедает указанного крипа и регенирирует себе здоровье."
+		"DOTA_Tooltip_ability_bo_eat_creeps_regen"				"РЕГЕНИРАЦИЯ:"
+		"DOTA_Tooltip_ability_bo_eat_creeps_devour_time"				"ДЛИТЕЛЬНОСТЬ:"
+
+		"DOTA_Tooltip_Ability_main_pumpkin"										"Жуткий Хэллоуин!"
+		"DOTA_Tooltip_Ability_main_pumpkin_Description"							"КОНФЕТЫ, КОНФЕТЫ, КОНФЕТЫ. МНЕ НУЖНО БОЛЬШЕ КОНФЕТ!" 
+
 		"DOTA_Tooltip_Ability_main_elka"										"Праздник к нам приходит"
-		"DOTA_Tooltip_Ability_main_elka_Description"							"Дедушка мороз нынче, не очень любит людные места. Но если как следует его попросить, то может он и придет:)"
- 
- 
+		"DOTA_Tooltip_Ability_main_elka_Description"							"Дедушка мороз нынче, не очень любит людные места. Но если как следует его попросить, то может он и придет:)" 
 
 		// ******************** MODIFIERS ********************
 		
@@ -1874,11 +2136,29 @@
 		"DOTA_Tooltip_modifier_zombie_passive_fire"												"Солнечный свет"
 		"DOTA_Tooltip_modifier_zombie_passive_fire_Description"									"Получает урон от света в размере 4.5%% от макс. здоровья "
  				 				 
-		
 
 
 
 
+
+		 
+		"DOTA_Tooltip_modifier_halloween_spell"											"Нужно больше маг. урона"
+		"DOTA_Tooltip_modifier_halloween_spell_Description"						"Ваш маг. урон увеличен на %dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%"
+
+		"DOTA_Tooltip_modifier_halloween_experience"											"Нужно больше опыта"
+		"DOTA_Tooltip_modifier_halloween_experience_Description"						"Вы получаете на %dMODIFIER_PROPERTY_EXP_RATE_BOOST%%% больше опыта"
+
+		"DOTA_Tooltip_modifier_halloween_magic_resist"											"Нужно больше маг. резиста"
+		"DOTA_Tooltip_modifier_halloween_magic_resist_Description"						"Маг. резист повышен на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%"
+
+		"DOTA_Tooltip_modifier_halloween_health"											"Нужно больше здоровья"
+		"DOTA_Tooltip_modifier_halloween_health_Description"						"Ваше здоровье увеличено на %dMODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE%%%"
+
+		"DOTA_Tooltip_modifier_halloween_damage"											"Нужно больше урона"
+		"DOTA_Tooltip_modifier_halloween_damage_Description"						"Ваш урон повышен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%%"
+
+		"DOTA_Tooltip_modifier_halloween_gold"											"Нужно больше золота"
+		"DOTA_Tooltip_modifier_halloween_gold_Description"						"Вы получаете на %dMODIFIER_PROPERTY_GOLD_RATE_BOOST%%% больше золота"
 
  		"DOTA_Tooltip_modifier_elka_bonus"												"С НОВЫМ ГОДОМ!"
 		"DOTA_Tooltip_modifier_elka_bonus_Description"									"За каждый стак вы получаете  <font color='#ffffff'>+5%% </font>к получаемому опыту и золоту"
@@ -1887,7 +2167,9 @@
  		"DOTA_Tooltip_modifier_item_letter"												"Письма под елкой"
 		"DOTA_Tooltip_modifier_item_letter_Description"									"Чем больше ты ложешь писем, тем больше Дед Мороз хочет прийти"
  
- 
+ 		"DOTA_Tooltip_modifier_item_candy"												"Сладость или гадость?"
+		"DOTA_Tooltip_modifier_item_candy_Description"									"Чем больше конфет, тем лучше!"
+
 		// ******************** ferm ********************
 
 		"DOTA_Tooltip_Ability_item_milk"									"Молоко"
@@ -1942,8 +2224,10 @@
     	"dota_hud_error_use_enemies"                    						"Нельзя использовать на врагов"  
         "dota_hud_error_gril_not_meat"                    						"Нужен кусок мяска"  
         "dota_hud_error_pirog"                    						"Ты уже съел один из пирогов"         
+        "dota_hud_error_key"                    						"Ему не нужен ключ"     
 
     	"dota_hud_error_letter_bad_target"                    					"Письмо можно использовать только на главную елку!"
+    	"dota_hud_error_candy_bad_target"                    					"Конфеты можно класть только в главную тыкву"
 		// ******************** Обучалка: ********************
 
 

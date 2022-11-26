@@ -23,37 +23,62 @@ function NecroLordThink1()
 	if GameRules:IsGamePaused() == true then	--если игра приостановлена
 		return 1	
 	end
+	local npc = thisEntity
+	if not thisEntity.bInitialized then
+		npc.vInitialSpawnPos = npc:GetOrigin()		-- точка спавна юнита
+		npc.fMaxDist = npc:GetAcquisitionRange()	-- радиус агра 
+		npc.bInitialized = true						-- флаг инициализации
+		npc.agro = false							-- флаг агра
+		
 
+ 
+	end
+
+	local search_radius = 1800						-- радиус поиска зависит от того, имеет ли юнит агр
 
 	local enemies = FindUnitsInRadius( 
-						thisEntity:GetTeamNumber(),	--команда юнита
-						thisEntity:GetOrigin(),		--местоположение юнита
+						npc:GetTeamNumber(),		--команда юнита
+						npc.vInitialSpawnPos,		--местоположение юнита
 						nil,	--айди юнита (необязательно)
-						1250,	--радиус поиска
+						search_radius + 800,	--радиус поиска
 						DOTA_UNIT_TARGET_TEAM_ENEMY,	-- юнитов чьей команды ищем вражеской/дружественной
 						DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	--юнитов какого типа ищем 
-						DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NO_INVIS,	--поиск по флагам
-						FIND_CLOSEST,	--сортировка от ближнего к дальнему или от дальнего к ближнему
+						DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE,	--поиск по флагам
+						FIND_CLOSEST,	--сортировка от ближнего к дальнему 
 						false )
 
-	if #enemies > 0 	then	-- если количество найденных юнитов больше нуля
-		
-			
- 
 
+	if #enemies > 0 	then	-- если количество найденных юнитов больше нуля
+ 
 		if ItemAbility ~= nil and ItemAbility:IsFullyCastable()  then	--если предмет существует и её можно использовать
 			if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.2 ) then 
 				ItemAbilityCast()
 			end
 		end
-		
-
-
+ 
 	end
+ 
+ 
+
+	if #enemies == 0 then	-- если найденных юнитов нету
+			RetreatHome()	-- если юнит под действием агра
+		return 5.0
+	end
+
+	local fDist = ( npc:GetOrigin() - npc.vInitialSpawnPos ):Length2D()
+	if fDist > search_radius then
+		RetreatHome()			-- если юнит слишком далеко, то идет на точку спавна
+		return 3
+	end
+ 	
 	
 	return 0.5
 	
 end
+
+
+ 
+  
 
 function ItemAbilityCast()
 		ExecuteOrderFromTable({
@@ -63,6 +88,16 @@ function ItemAbilityCast()
 			Queue = false,
 		})
 	return 1
+end
+
+function RetreatHome()
+	thisEntity.agro = false	-- снимается действие агра
+
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),
+		OrderType = DOTA_UNIT_ORDER_MOVE_TO_POSITION,
+		Position = thisEntity.vInitialSpawnPos		
+	})
 end
 
 
