@@ -165,7 +165,7 @@
 		"npc_flash_golem"	                                                	"Flash golem"
 		"npc_flash_golem_2"	                                                	"Flash golem"
 		"npc_flash_golem_3"	                                                	"Flash golem"
-	    "npc_undying"	                                                	"Tomber"
+	    "npc_undying_1"	                                                	"Tomber"
 	    "npc_undying_2"	                                                	"Tomber"
 		"npc_undying_3"	                                                	"Tomber"
 	    "npc_undying_4"	                                                	"Tomber"
@@ -217,7 +217,28 @@
 		"DOTA_Item_Build_Core_Items"							"For the second night"
 		"DOTA_Item_Build_Luxury"								"For the last night"
 		
-		
+
+		"DOTA_Tooltip_ability_item_talisman"									"Talisman of mage"
+		"DOTA_Tooltip_ability_item_talisman_Description"						"<h1>Passive: Spell Amplification</h1>The owner's abilities are enhanced along with the mana spent on them."
+		"DOTA_Tooltip_ability_item_talisman_Lore"								"No magician could do without this talisman."
+		"DOTA_Tooltip_ability_item_talisman_reduce_mana_cost"       "%-<font color='#e03e2e'>to reduce mana consumption</font>"
+		"DOTA_Tooltip_ability_item_talisman_bonus_magic_damage"       "%+to spell damage"
+		"DOTA_Tooltip_ability_item_talisman_bonus_int"       "+$int"
+
+		"DOTA_Tooltip_ability_item_magic_staff"									"Staff of mage"
+		"DOTA_Tooltip_ability_item_magic_staff_Description"						"<h1>Passive: Spell Amplification</h1>The owner's abilities are enhanced along with the mana spent on them."
+		"DOTA_Tooltip_ability_item_magic_staff_Lore"								"This staff could only be wielded by strong magicians."
+		"DOTA_Tooltip_ability_item_magic_staff_reduce_mana_cost"       "%-<font color='#e03e2e'>to reduce mana consumption</font>"
+		"DOTA_Tooltip_ability_item_magic_staff_bonus_magic_damage"       "%+to spell damage"
+		"DOTA_Tooltip_ability_item_magic_staff_bonus_int"       "+$int"
+
+		"DOTA_Tooltip_ability_item_magic_stone"									"The Magic Stone"
+		"DOTA_Tooltip_ability_item_magic_stone_Description"						"<h1>Passive: Spell Amplification</h1>The owner's abilities are enhanced along with the mana spent on them."
+		"DOTA_Tooltip_ability_item_magic_stone_Lore"								"A mythical, but not the only magic stone of its kind."
+		"DOTA_Tooltip_ability_item_magic_stone_reduce_mana_cost"       "%-<font color='#e03e2e'>to reduce mana consumption</font>"
+		"DOTA_Tooltip_ability_item_magic_stone_bonus_magic_damage"       "%+to spell damage"
+		"DOTA_Tooltip_ability_item_magic_stone_bonus_int"       "+$int"
+
 
 		"DOTA_Tooltip_Ability_item_shield"				"The worst shield"
 		"DOTA_Tooltip_ability_item_shield_Description"							"<h1>Passive: Damage block </h1> Every attack enemy do less on 15 %damage_block%. "
@@ -514,13 +535,13 @@
 		"DOTA_Tooltip_ability_item_maelstrom_2_bonus_damage"						"+$damage"
 
 		"DOTA_Tooltip_Ability_item_maelstrom_3"				"Mjollnir"
-		"DOTA_Tooltip_ability_item_maelstrom_3_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing physical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
+		"DOTA_Tooltip_ability_item_maelstrom_3_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing magical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
 		"DOTA_Tooltip_ability_item_maelstrom_3_Lore"								"Thor's magical hammer, made for him by the dwarves Brok and Eitri."
 		"DOTA_Tooltip_ability_item_maelstrom_3_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_maelstrom_3_bonus_attack_speed"					"+$attack"		
 
 		"DOTA_Tooltip_Ability_item_maelstrom_4"				"Mjollnir 2"
-		"DOTA_Tooltip_ability_item_maelstrom_4_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing physical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
+		"DOTA_Tooltip_ability_item_maelstrom_4_Description"						"<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing magical damage in size %chain_damage% + %chain_damage_self%% from attack to each. Lightning proc pierces evasion."
 		"DOTA_Tooltip_ability_item_maelstrom_4_Lore"								"The best version Thor's magical hammer, made for him by the dwarves Brok and Eitri."
 		"DOTA_Tooltip_ability_item_maelstrom_4_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_maelstrom_4_bonus_attack_speed"					"+$attack"		
@@ -609,6 +630,8 @@
 		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_agility"				"+$agi"
 		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_strength"				"+$str"
 		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_spell_amp"					"%+Spell Amplification"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_mana_regen_multiplier"		"%+Mana Regen Amplification"
 		"DOTA_Tooltip_ability_item_ethereal_blade_2_Lore"						"A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes."
 
 		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
@@ -942,9 +965,10 @@
 
 		// -----------------alchemist--------------------  
 
- 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Create Totem"
-        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Creates a unique item <font color='#ffd700'> Upgrade totem</font>, but spending gold at the same time."
-        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "The alchemist has succeeded so much in his business that now he can even make a Totem out of gold!" 
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Good deal"
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Turns the alchemist's current gold into damage. If you lose gold, the damage is also reduced."
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal_damage_gold"                                            "%GOLD IN DAMAGE:"        
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "The alchemist has become so greedy that every gold in his account makes him stronger!" 
 
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_throw"					"Unstable Concoction Throw"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_throw_Description"		"Throw it before it blows up!"
@@ -1024,6 +1048,89 @@
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_golden"						"Ion Shell Golden"
 		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+
+
+// -----------------enigma--------------------	
+
+        "npc_classic_eidolon"                                                             "Eidalon"
+
+		"DOTA_Tooltip_ability_ability_malefice"											"Malefice"
+		"DOTA_Tooltip_ability_ability_malefice_Description"								"Focuses Enigma's power on a target, causing it to take damage and become repeatedly stunned for multiple instances.  An instance strikes every %tick_rate% seconds."
+		"DOTA_Tooltip_ability_ability_malefice_Lore"										"Strange gravities pull at the core of those who would oppose you, holding them in place."
+		"DOTA_Tooltip_ability_ability_malefice_stun_duration"							"STUN DURATION:"
+		"DOTA_Tooltip_ability_ability_malefice_damage"									"DAMAGE PER HIT:"
+		"DOTA_Tooltip_ability_ability_malefice_tooltip_stuns"							"INSTANCES:"
+
+		"DOTA_Tooltip_modifier_ability_malefice"						"Malefice"
+		"DOTA_Tooltip_modifier_ability_malefice_Description"			"Наносит %dMODIFIER_PROPERTY_TOOLTIP% урона и оглушает на %fMODIFIER_PROPERTY_TOOLTIP% сек. каждые %fMODIFIER_PROPERTY_TOOLTIP% сек."
+ 
+ 		"DOTA_Tooltip_modifier_ability_malefice_stun"						"Malefice"
+		"DOTA_Tooltip_modifier_ability_malefice_stun_Description"			"Stuned."
+  
+
+		"DOTA_Tooltip_ability_ability_demonic_conversion"								"Demonic Conversion"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_Description"					"Enigma creates its own little copy out of nowhere. It bifurcates with several blows, while restoring its health. A forked eidolon cannot split, and the one who initially split, still doubles."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_Lore"							"Enigma is capable of drawing aspects of himself from other dimensions - the result is a trio of dark eidolons that hunt the corporeal plane."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_split_attack_count"				"ATTACKS TO MULTIPLY:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_spawn_count"					"SPAWN COUNT:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_hp_tooltip"				"EIDOLON HP:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_dmg_tooltip"			"EIDOLON DAMAGE:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_eidalon_duration"				"DURATION:"
+
+		"DOTA_Tooltip_ability_ability_demonic_conversion_scepter_description"					"Each of your attributes improves the characteristics of eidolons."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_str"			"HP PER STRENGTH:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_ag"			"ATTACK SPEED PER AGILITY:"
+		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_int"				"DAMAGE PER INTELLIGENCE:"
+
+		"DOTA_Tooltip_modifier_ability_demonic_conversion"					"Demonic Conversion"
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_Description"		"Эта сущность контролируется Enigma."
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats"					"Demonic Conversion"
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats_Description"		"Эта сущность имеет дополнительно %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% здоровья, %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорости атаки и %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%% урона."
+
+		"DOTA_Tooltip_ability_ability_midnight_pulse"									"Midnight Pulse"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Description"						"Steeps an area in dark resonance, damaging enemy units based on their max HP."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Lore"								"A section of the world slowly descends into the void."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_Note0"								"This ability destroys trees in its area."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_duration"							"DURATION:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_damage_percent"						"%DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_damage_base"						"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_midnight_pulse_radius"								"RADIUS:"
+ 
+
+		"DOTA_Tooltip_ability_ability_black_hole"										"Black Hole"
+		"DOTA_Tooltip_ability_ability_black_hole_Description"							"CHANNELED - Summons a vortex that sucks in nearby enemy units.  Enemies affected by Black Hole cannot move, attack, or cast spells."
+		"DOTA_Tooltip_ability_ability_black_hole_Lore"									"The ground trembles as Enigma channels his ultimate vortex of destruction, a singularity with the power to end worlds."
+		"DOTA_Tooltip_ability_ability_black_hole_far_damage"								"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_ability_black_hole_far_radius"								"DURATION:"
+		"DOTA_Tooltip_ability_ability_black_hole_duration"								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_black_hole_shard_description"						"Black hole deals damage from the Midnight Pulse ability of the current level."
+
+
+		"DOTA_Tooltip_modifier_ability_black_hole_thinker"				"Black Hole"
+		"DOTA_Tooltip_modifier_ability_black_hole_thinker_Description"	"Takes damage every second, stunned, attracted to the event horizon."
+ 
+		"DOTA_Tooltip_ability_enigma_eyes"										"Evolution"
+		"DOTA_Tooltip_ability_enigma_eyes_Description"							"Enigma deforms its essence. After that, he can't use abilities and items, and each of his attacks hits a debuff. If Enigma or Eidolons hit an enemy with this debuff, then the enemy is dealt net damage in the amount of the number of stacks."
+		"DOTA_Tooltip_ability_enigma_eyes_Lore"									"Eternal always strive for perfection."
+		"DOTA_Tooltip_ability_enigma_eyes_damage_per_stack"								"DAMAGE PER STACK:"
+		"DOTA_Tooltip_ability_enigma_eyes_duration"								"DURATION:"
+  
+		"DOTA_Tooltip_modifier_enigma_eyes"				"Evolution"
+		"DOTA_Tooltip_modifier_enigma_eyes_Description"	"what..."
+		"DOTA_Tooltip_modifier_enigma_eyes_debuff"				"Evolution"
+		"DOTA_Tooltip_modifier_enigma_eyes_debuff_Description"	"Each attack on you from the abyss deals pure damage."
+  
+ 
+
+
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_black_hole_dead"											"Black hole при смерти"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_damage"											 "+{s:bonus_damage_percent}% к урону от Midnight Pulse"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_radius"											"+{s:bonus_radius} к радиусу Midnight Pulse"  
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_number"											"+{s:bonus_spawn_count} к числу эйдолонов от Demonic Conversion"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_malefice_stuns"											   "+{s:bonus_tooltip_stuns} к числу срабатываний от Malefice"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_cooldown"											   "-{s:value} сек. перезарядки Demonic Conversion"
+ 
 
 
 		// -----------------sniper--------------------		
@@ -1704,13 +1811,13 @@
  
 
 		"DOTA_Tooltip_Ability_ghost_elusive_1"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_1_Description"					"This creature has no flesh. You will miss in %miss%%  case on him."
+		"DOTA_Tooltip_Ability_ghost_elusive_1_Description"					"This creature has no flesh. You will miss in %miss%%  case on him.\n<font color='#ffff00'>If you open the gate, then you will not miss these creatures</font>"
 
 		"DOTA_Tooltip_Ability_ghost_elusive_2"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_2_Description"					"This creature has no flesh. You will miss in %miss%%  case on him."
+		"DOTA_Tooltip_Ability_ghost_elusive_2_Description"					"This creature has no flesh. You will miss in %miss%%  case on him.\n<font color='#ffff00'>If you open the gate, then you will not miss these creatures</font>"
 
 		"DOTA_Tooltip_Ability_ghost_elusive_3"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_3_Description"					"This creature has no flesh. You will miss in %miss%%  case on him."
+		"DOTA_Tooltip_Ability_ghost_elusive_3_Description"					"This creature has no flesh. You will miss in %miss%%  case on him.\n<font color='#ffff00'>If you open the gate, then you will not miss these creatures</font>"
 
 		"DOTA_Tooltip_Ability_range_magick_attack_4"							"Magick Damage"
 		"DOTA_Tooltip_Ability_range_magick_attack_4_Description"				"Auto-attacks of this creature do magic damage."

@@ -59,6 +59,8 @@ function Difficulty:OnHeroSelectionState()
 	end
 end
 
+LinkLuaModifier( "modifier_nothing_dif", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE )
+
 function Difficulty:NPC( npc )
 	if self.leader == "normal" or npc:GetTeam() == DOTA_TEAM_GOODGUYS then
 		return
@@ -67,8 +69,11 @@ function Difficulty:NPC( npc )
 	local s = self.leader == "medium" and 1 or 2
 
 	local modifier = npc:AddNewModifier( npc, nil, "modifier_invasion_difficulty", nil )
+
  
+  
 	modifier:SetStackCount( s )
 
 	Difficulter = s / 2
+	local modifier_empt = npc:AddNewModifier( npc, nil, "modifier_nothing_dif", nil )
 end

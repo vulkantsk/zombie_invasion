@@ -79,6 +79,8 @@ end
      return self.mana_regen
  end
 
+ 
+
  function modifier_voodo_mask_passive:OnTakeDamage( keys )
 	if keys.attacker == self:GetParent() and not keys.unit:IsBuilding() and not keys.unit:IsOther() then		
 		-- Spell lifesteal handler
@@ -101,9 +103,13 @@ end
 			end
 			
 			if keys.unit:IsCreep() then
-				keys.attacker:Heal(math.max(keys.damage, 0) * self:GetAbility():GetSpecialValueFor("all_lifesteal") * 0.01, keys.attacker)
+			    local multi = self.multiputi or 1
+ 
+				keys.attacker:Heal(math.max(keys.damage, 0) * (self:GetAbility():GetSpecialValueFor("all_lifesteal") * multi) * 0.01, keys.attacker)
 			else
-				keys.attacker:Heal(math.max(keys.damage, 0) * self:GetAbility():GetSpecialValueFor("all_lifesteal") * 0.01, keys.attacker)
+			    local multi = self.multiputi or 1
+	 
+				keys.attacker:Heal(math.max(keys.damage, 0) * (self:GetAbility():GetSpecialValueFor("all_lifesteal") * multi) * 0.01, keys.attacker)				
 			end
 		end
 	end

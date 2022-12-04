@@ -114,6 +114,7 @@ function modifier_ability_ion_shell:OnIntervalThink()
 		0,
 		false
 	)
+ 
 
 	for _,enemy in pairs(enemies) do
 		if enemy ~= self.parent then
@@ -222,10 +223,23 @@ function modifier_ability_ion_shell_unit:OnCreated( kv )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
  
+ 	self.abilityDamageType = self:GetAbility():GetAbilityDamageType()
+	self.abilityTargetTeam = self:GetAbility():GetAbilityTargetTeam()
+	self.abilityTargetType = self:GetAbility():GetAbilityTargetType()
+	self.abilityTargetFlags = self:GetAbility():GetAbilityTargetFlags()
+
+	self.damageTable = {
+		attacker = self:GetCaster(),
+		damage = damage*tick,
+		damage_type = self.abilityDamageType,
+		ability = self:GetAbility(),
+	}
+
 	if not IsServer() then
 		return
 	end
-
+		self:OnIntervalThink()
+	self:StartIntervalThink( tick )
 	self:PlayEffects1()
 end
 
@@ -248,6 +262,31 @@ end
 
 function modifier_ability_ion_shell_unit:GetModifierConstantHealthRegen()
 	return self.bonus_regen
+end
+
+
+function modifier_ability_ion_shell_unit:OnIntervalThink()
+	local enemies = FindUnitsInRadius(
+		self.team,
+		self.parent:GetOrigin(),
+		nil,
+		self.radius,
+		DOTA_UNIT_TARGET_TEAM_ENEMY,
+		self.abilityTargetType,
+		self.abilityTargetFlags,
+		0,
+		false
+	)
+ 
+
+	for _,enemy in pairs(enemies) do
+		if enemy ~= self.parent then
+			self.damageTable.victim = enemy
+			ApplyDamage( self.damageTable )
+
+			self:PlayEffects2( enemy )
+		end
+	end
 end
 
 function modifier_ability_ion_shell_unit:PlayEffects1()
@@ -280,6 +319,31 @@ function modifier_ability_ion_shell_unit:PlayEffects1()
 	EmitSoundOn( "Hero_Dark_Seer.Ion_Shield_lp", self.parent )
 end
 
+function modifier_ability_ion_shell_unit:PlayEffects2( target )
+	local particle_cast = "particles/units/heroes/hero_dark_seer/dark_seer_ion_shell_damage.vpcf"
+
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_POINT_FOLLOW, target )
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		0,
+		self.parent,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(0,0,0),
+		true
+	)
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		1,
+		target,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(0,0,0),
+		true
+	)
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+end
+
 modifier_ability_ion_shell_hero = {}
 
 function modifier_ability_ion_shell_hero:DeclareFunctions()
@@ -302,11 +366,15 @@ end
 function modifier_ability_ion_shell_hero:IsPurgable()
 	return true
 end
+ 
+ 
+ 
+ 
 
 function modifier_ability_ion_shell_hero:OnCreated( kv )
 	self.caster = self:GetCaster()
 	self.parent = self:GetParent()
-	self.team = self.caster:GetTeamNumber()
+	self.team = self.parent:GetTeamNumber()
     	 
 
 	self.bonus_health = self:GetAbility():GetSpecialValueFor( "bonus_health" )
@@ -315,10 +383,24 @@ function modifier_ability_ion_shell_hero:OnCreated( kv )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
  
+
+	self.abilityDamageType = self:GetAbility():GetAbilityDamageType()
+	self.abilityTargetTeam = self:GetAbility():GetAbilityTargetTeam()
+	self.abilityTargetType = self:GetAbility():GetAbilityTargetType()
+	self.abilityTargetFlags = self:GetAbility():GetAbilityTargetFlags()
+
+	self.damageTable = {
+		attacker = self:GetCaster(),
+		damage = damage*tick,
+		damage_type = self.abilityDamageType,
+		ability = self:GetAbility(),
+	}
+
 	if not IsServer() then
 		return
 	end
-
+	self:StartIntervalThink( tick )
+		self:OnIntervalThink()
 	self:PlayEffects1()
 end
 
@@ -342,6 +424,31 @@ end
 function modifier_ability_ion_shell_hero:GetModifierConstantHealthRegen()
 	return self.bonus_regen
 end
+
+function modifier_ability_ion_shell_hero:OnIntervalThink()
+	local enemies = FindUnitsInRadius(
+		self.team,
+		self.parent:GetOrigin(),
+		nil,
+		self.radius,
+		DOTA_UNIT_TARGET_TEAM_ENEMY,
+		self.abilityTargetType,
+		self.abilityTargetFlags,
+		0,
+		false
+	)
+ 
+
+	for _,enemy in pairs(enemies) do
+		if enemy ~= self.parent then
+			self.damageTable.victim = enemy
+			ApplyDamage( self.damageTable )
+
+			self:PlayEffects2( enemy )
+		end
+	end
+end
+
 
 function modifier_ability_ion_shell_hero:PlayEffects1()
 
@@ -371,4 +478,29 @@ function modifier_ability_ion_shell_hero:PlayEffects1()
 
 	EmitSoundOn( "Hero_Dark_Seer.Ion_Shield_Start", self.parent )
 	EmitSoundOn( "Hero_Dark_Seer.Ion_Shield_lp", self.parent )
+end
+
+function modifier_ability_ion_shell_hero:PlayEffects2( target )
+	local particle_cast = "particles/units/heroes/hero_dark_seer/dark_seer_ion_shell_damage.vpcf"
+
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_POINT_FOLLOW, target )
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		0,
+		self.parent,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(0,0,0),
+		true
+	)
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		1,
+		target,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(0,0,0),
+		true
+	)
+	ParticleManager:ReleaseParticleIndex( effect_cast )
 end

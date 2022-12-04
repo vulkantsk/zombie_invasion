@@ -1528,12 +1528,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_min"			"70"
+				"damage_min"			"425"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_max"			"110"
+				"damage_max"			"500"
 			}						
 		}
 
@@ -2527,89 +2527,47 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+	 
+
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"radius"				"700 700 700"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"spirits"				"12"
-				"LinkedSpecialBonus"	"special_bonus_unique_death_prophet"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+				"spirits"				
+				{
+					"value"					"12"
+					"LinkedSpecialBonus"	"special_bonus_unique_death_prophet"
+				}
 				"spirit_speed"			"525"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"max_distance"			"2000"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"give_up_distance"		"1200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"min_damage"			"45"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"max_damage"			"50"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"heal_percent"			"20"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"average_damage"		"50"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_FLOAT"
+				"max_distance"			"2000 2000 2000"
+				"give_up_distance"		"1200 1200 1200"
+				"min_damage"			"180"
+				"max_damage"			"240"
+				"heal_percent"			"25"
+				"average_damage"		"61"
 				"ghost_spawn_rate"	"0.35"
-			}
- 			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_movespeed_slow"	"100"
-				"RequiresScepter"			"1"
-			}
-			"12"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"scepter_movespeed_debuff_duration"	"0.3"
-				"RequiresScepter"			"1"
-			}
-			"13"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_spirit_life_duration"	"20"
-				"RequiresScepter"			"1"
-			}
-			"14"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_spirit_bonus_damage"	"50"
-				"RequiresScepter"			"1"
-				"CalculateSpellDamageTooltip"	"0"
-			}	
-			"15"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"movement_bonus"				"15"
-			}
+				"scepter_movespeed_slow"
+				{
+					"value"				"100"
+					"RequiresScepter"			"1"
+				}
+				"scepter_movespeed_debuff_duration"	
+				{
+					"value"				"0.3"
+					"RequiresScepter"			"1"
+				}
+				"scepter_spirit_life_duration"	
+				{
+					"value"				"20"
+					"RequiresScepter"			"1"
+				}
+				"scepter_spirit_bonus_damage"	
+				{	
+					"value"					"50"
+					"RequiresScepter"			"1"
+					"CalculateSpellDamageTooltip"	"0"
+				}	
+				"movement_base"					"12 16 20"
+				"movement_bonus"				"8 12 16"
 		}
 	}	
 
@@ -2651,37 +2609,55 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityModifierSupportValue"	"0.0"	// All about the damage
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"health_drain"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"health_drain"					"120"
+				"value"					"300"
 				"CalculateSpellDamageTooltip"	"1"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_MAGICAL"
 			}
-			"02"
+			"tick_rate"					"0.25 0.25 0.25"
+			"drain_buffer"				"200"
+			"shard_damage_pct_from_ward"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"scepter_health_drain"			"200 300 400"
-				"RequiresScepter"		"1"
+				"value"				"70"
+				"RequiresShard"		"1"
 			}
-			"03"
+			"bonus_heal_pct"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"tick_rate"					"0.25 0.25 0.25"
+				"value"					"0"
+				"special_bonus_unique_pugna_1"			"+20"
 			}
-			"04"
+			"spell_amp_drain_rate"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"drain_buffer"				"200"
+				"value"						"0"
+				"special_bonus_scepter"		"+8"
 			}
-			"05"
+			"spell_amp_drain_max"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"scepter_cooldown"			"0"
-				"RequiresScepter"		"1"
+				"value"						"0"
+				"special_bonus_scepter"		"+75"
+			}
+			"spell_amp_drain_rate_ward"
+			{
+				"value"						"0"
+				"special_bonus_scepter"		"+4"
+			}
+			"spell_amp_drain_duration"
+			{
+				"value"						"0"
+				"special_bonus_scepter"		"+8"
+			}			
+			"max_spell_amp_drain_pct"
+			{
+				"value"						"0"
+				"special_bonus_scepter"		"+100"
+			}	
+			"AbilityCooldown"				
+			{
+				"value"						"10"		
+				"special_bonus_scepter"		"-50%"
 			}
 		}
 	}
@@ -6573,7 +6549,7 @@
 		"01"
         {
 			"var_type"              "FIELD_INTEGER"
-			"attacks_need"          "4 6 8 10 12"
+			"attacks_need"          "4 5 6 7 8"
         }
  
 			
@@ -8033,7 +8009,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"19"
+				"armor_reduction"		"14"
 			}
 			"05"
 			{
@@ -8418,41 +8394,7 @@
 
  
 
-	
-		"abyssal_underlord_atrophy_aura_1"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"							"abyssal_underlord_atrophy_aura"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
-		
-		"MaxLevel"				"1"
-
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"900"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"3550"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_reduction_pct"			"25"
-			}
-
-
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-	}
-	
+ 
 		
 		"abyssal_underlord_atrophy_aura_2"
 	{
@@ -8468,59 +8410,30 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"900"
+		"AbilityCastRange"				"3550"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"radius"						"3550"
+			"damage_reduction_pct"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"3550"
+				"value"		"35"
+				"special_bonus_unique_underlord_3"	"+15"
 			}
-			"02"
+			"bonus_damage_from_creep"		"0"
+			"bonus_damage_from_hero"		"0"
+			"bonus_damage_duration"			"0"
+			"bonus_shared_by_allies_pct"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_reduction_pct"			"35"
+				"special_bonus_unique_underlord_9"	"+50"
 			}
-
-
 		}
+
+ 
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	
-		"nevermore_dark_lord_1"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"					"nevermore_dark_lord"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"OnCastbar"					"0"
-		"MaxLevel"                  "1"
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"900"
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"presence_armor_reduction"		"-17"
-				"LinkedSpecialBonus"			"special_bonus_unique_nevermore_5"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"presence_radius"				"3550"
-			}
-		}
-	}
+ 
 	
 			"nevermore_dark_lord_2"
 	{
@@ -8545,7 +8458,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"presence_armor_reduction"		"-25"
+				"presence_armor_reduction"		"-15"
 				"LinkedSpecialBonus"			"special_bonus_unique_nevermore_5"
 			}
 			"02"
@@ -21648,32 +21561,19 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"0"
 			
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+ 
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_steps"			"-50 -40 -40 -30 -30 -20 -20 -10"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"heal_percent"			"25"
-				"LinkedSpecialBonus"	"special_bonus_unique_lifestealer_2"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_tooltip"			"80"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"duration"				"6"
-			}
+				"slow_steps"			"-50 -50 -40 -30 -20 -10 -10 -10"
+				"heal_percent"			"25"
+				"max_health_as_damage_pct"	"2"
+				"damage_threshold"		"500"
+				"spread_radius"			"700"
+				"slow_tooltip"			"50"
+				
 		}
+
 	}
  
 	"suicide_boys"
@@ -21742,7 +21642,7 @@
 
 		// Casting		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"8"
+		"AbilityCooldown"				"6"
 		"AbilityCastPoint"				"0.6"
 		"AbilityManaCost"               "0"
 
@@ -21752,12 +21652,12 @@
  			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"			"12"
+				"duration"			"8"
 			}
  			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"125"
+				"damage"			"250"
 			}
  			"03"
 			{
@@ -21772,7 +21672,7 @@
  			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"move_speed"			"40"
+				"move_speed"			"80"
 			}  
 
 		}
@@ -21816,12 +21716,13 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"decay_damage"					"100"
+				"decay_damage"					"500"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str_steal"						"4"
+				"str_steal"						"8"
+				"CalculateSpellDamageTooltip"	"1"
 			}	
 			"03"
 			{
@@ -21837,12 +21738,14 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str_health_up"					"20"
+				"str_health_up"					"1000"
+				"CalculateSpellDamageTooltip"	"1"
 			}		
 			"06"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"steal_damage"				"20"
+				"steal_damage"				"100"
+				"CalculateSpellDamageTooltip"	"1"
 			 
 			}		
 		}
@@ -21865,7 +21768,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"block_dps"				"85"
+			"block_dps"				"50"
 		}
 	}
 }

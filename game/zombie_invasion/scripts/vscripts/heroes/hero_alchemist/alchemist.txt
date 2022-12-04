@@ -166,7 +166,32 @@
 		 
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
-	
+
+	"alchemist_good_deal"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"             		"heroes/hero_alchemist/totem/alchemist_good_deal"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"            "alchemist/alchemist_goblins_greed_png"
+		"RequiredLevel"                 "35"
+		"MaxLevel"                      "1"
+ 
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_gold"	
+			{ 
+				"value"		"1.5"	 
+				"CalculateSpellDamageTooltip"	"0"
+            }
+		}
+
+ 
+	}  
+
 	//=================================================================================================================
 	// Alchemist: Chemical Rage
 	//=================================================================================================================
@@ -238,22 +263,7 @@
  
 	}
 
-	"alchemist_good_deal"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"             		"ability_lua"
-		"ScriptFile"             		"heroes/hero_alchemist/totem/alchemist_good_deal"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"            "alchemist/alchemist_goblins_greed_png"
-		"RequiredLevel"                 "35"
-		"MaxLevel"                      "1"
-		"AbilityCastPoint"			"1.5"
-		"AbilityCooldown"				"240.0"
-		"AbilityGoldCost"				"9999"
-
- 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
-	}  
+ 
 
 
 }

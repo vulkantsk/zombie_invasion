@@ -27,10 +27,13 @@
 	"item_rapier" "REMOVE"
  
 	"item_urn_of_shadows" "REMOVE"
-	"item_blink" "REMOVE"
+ 
 	"item_arcane_blink" "REMOVE"
 	"item_swift_blink" "REMOVE"
 	"item_overwhelming_blink" "REMOVE"
+	"item_maelstrom"           "REMOVE"
+	"item_voodoo_mask"           "REMOVE"
+	"item_bloodstone"          "REMOVE"
 	//============================================================================================================
 	// items
 	//============================================================================================================
@@ -43,7 +46,53 @@
 	// Guardian Greaves
 	//=================================================================================================================
  
- 
+ 	"item_blink"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"99999"
+		"AbilityOvershootCastRange"     "960"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.0"
+		"AbilityManaCost"				"0"
+		"AbilitySharedCooldown"			"blink"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2250"
+		"ItemShopTags"					"teleport"
+		"ItemQuality"					"component"
+		"ItemAliases"					"blink dagger"
+		//"SideShop"						"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+				"ItemPurchasable"				"0"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range"			"999999"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blink_damage_cooldown"	"0.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range_clamp"		"960"
+			}
+		}
+	}
 
 	"item_ring_of_health"
 	{
@@ -520,21 +569,9 @@
 		}
 	}
 
-//2
+ 
 
-
-	"item_courier"
-	{
-		"ItemPurchasable"				"1"
-		"ItemDroppable"					"1"
-	}
-
-	"item_flying_courier"
-	{
-		"ItemPurchasable"				"1"
-		"ItemDroppable"					"1"
-	}
-
+ 
 
 	
 	//=================================================================================================================

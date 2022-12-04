@@ -141,6 +141,7 @@
 		"npc_classic_ghoul"                                         		"Ghoul"
 		"npc_classic_ghost"                                         		"Призрак"
 
+        "npc_suic_wave_zombie"                                              "Зомби"
 		"npc_classic_wave_zombie"                                           "Зомби"
 		"npc_classic_wave_big_zombie"                                		"Большой Зомби"
 
@@ -168,7 +169,7 @@
 	    "npc_seerdying_2"	                                                	"Провидец"
 		"npc_seerdying_3"	                                                	"Провидец"
 	    "npc_seerdying_4"	                                                	"Провидец"
-	    "npc_undying"	                                                	"Томбист"
+	    "npc_undying_1"	                                                	"Томбист"
 	    "npc_undying_2"	                                                	"Томбист"
 		"npc_undying_3"	                                                	"Томбист"
 	    "npc_undying_4"	                                                	"Томбист"
@@ -215,6 +216,68 @@
 		"DOTA_Item_Build_Early_Game"									"Для первой ночи"
 		"DOTA_Item_Build_Core_Items"									"Для второй ночи"
 		"DOTA_Item_Build_Luxury"										"Для последней ночи"
+
+		"DOTA_Tooltip_Ability_item_ethereal_blade"			"Ethereal Blade"
+		"DOTA_Tooltip_ability_item_ethereal_blade_spell_lifesteal_amp"			""
+
+		"DOTA_Tooltip_Ability_item_ethereal_blade_2"			"Ethereal Blade Ultimate Edition"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Description"					"<h1>Активная: Ether Blast</h1> Придаёт всем целям в радиусе %splash_radius% бесплотную форму, которая полностью защищает от физического урона, но не позволяет атаковать и увеличивает получаемый магический урон на %ethereal_damage_bonus%%%. Действует %duration_ally% сек. на союзников и %duration% сек. на врагов.<br><br>Также замедляет вражеские цели на %blast_movement_slow%%% и наносит им магический урон в размере %blast_agility_multiplier% * ваш основной атрибут + %blast_damage_base%.<br><br>Дальность применения: %abilitycastrange%"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Note3"						"Использование Town Portal Scroll или Boots of Travel не развеивает бесплотную форму."
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_agility"				"+$agi"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_strength"				"+$str"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_intellect"			"+$int"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_spell_amp"					"%+к урону от заклинаний"
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_mana_regen_multiplier"		"%+к усилению восстановления маны"
+
+		"DOTA_Tooltip_ability_item_ethereal_blade_2_Lore"						"Этот мерцающий призрачный меч бьёт и и по физическому, и по магическому слою реальности."
+
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
+		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Находится в призрачной форме. Получает увеличенный на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% магический урон, не может атаковать или быть целью атаки."
+
+
+        "DOTA_Tooltip_Ability_item_bloodstone_max"				"Bloodstone"
+		"DOTA_Tooltip_ability_item_bloodstone_max_Description"						"<h1>Активное: Bloodpact</h1> Увеличивает вампиризм заклинаниями от этого предмета в %lifesteal_multiplier% раза. По окончании эффекта превращает %mana_multiplier%%  нанесённого урона в ману. Длительность: %buff_duration% сек."
+		"DOTA_Tooltip_ability_item_bloodstone_max_Lore"								"Багрянец этого камня легко приметить даже в разгаре битвы: он будто бы наделяет владельца безграничными жизненными и духовными силами."
+		"DOTA_Tooltip_ability_item_bloodstone_max_Note0"							"%debuff_duration% секунд после применения владелец утомлён, из-за чего он не получает эффекта от повторного применения этого предмета."
+		"DOTA_Tooltip_ability_item_bloodstone_max_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_bloodstone_max_bonus_mana"						"+$mana"
+		"DOTA_Tooltip_ability_item_bloodstone_max_all_lifesteal"					"%+$spell_lifesteal"
+
+		"DOTA_Tooltip_modifier_bloodstone_max"							"Bloodpact"
+		"DOTA_Tooltip_modifier_bloodstone_max_Description"				"Наносите урон!"
+
+		"DOTA_Tooltip_modifier_bloodstone_max_lock"							"Утомление"
+		"DOTA_Tooltip_modifier_bloodstone_max_lock_Description"				"На это существо не действует заклинание Bloodpact."
+
+        "DOTA_Tooltip_Ability_item_bloodstone_max_2"				"Bloodstone"
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_Description"						"<h1>Активное: Bloodpact</h1> Увеличивает вампиризм заклинаниями от этого предмета в %lifesteal_multiplier% раза. По окончании эффекта превращает %mana_multiplier%%  нанесённого урона в ману. Длительность: %buff_duration% сек."
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_Lore"								"Багрянец этого камня легко приметить даже в разгаре битвы: он будто бы наделяет владельца безграничными жизненными и духовными силами."
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_Note0"							"%debuff_duration% секунд после применения владелец утомлён, из-за чего он не получает эффекта от повторного применения этого предмета."
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_bonus_health"						"+$health"
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_bonus_mana"						"+$mana"
+		"DOTA_Tooltip_ability_item_bloodstone_max_2_all_lifesteal"					"%+$spell_lifesteal"
+ 
+
+		"DOTA_Tooltip_ability_item_talisman"									"Talisman of mage"
+		"DOTA_Tooltip_ability_item_talisman_Description"						"<h1>Пассивная: Spell Amplification</h1>Способности владельца усиливаются вместе с затраченной манной на них."
+		"DOTA_Tooltip_ability_item_talisman_Lore"								"Без этого талисмана не обходился ни один маг."
+		"DOTA_Tooltip_ability_item_talisman_reduce_mana_cost"       "%-<font color='#e03e2e'>к уменьшению расхода маны</font>"
+		"DOTA_Tooltip_ability_item_talisman_bonus_magic_damage"       "%+к урону от заклинаний"
+		"DOTA_Tooltip_ability_item_talisman_bonus_int"       "+$int"
+
+		"DOTA_Tooltip_ability_item_magic_staff"									"Staff of mage"
+		"DOTA_Tooltip_ability_item_magic_staff_Description"						"<h1>Пассивная: Spell Amplification</h1>Способности владельца усиливаются вместе с затраченной манной на них."
+		"DOTA_Tooltip_ability_item_magic_staff_Lore"								"Этим посохом могли влодеть только сильные маги."
+		"DOTA_Tooltip_ability_item_magic_staff_reduce_mana_cost"       "%-<font color='#e03e2e'>к уменьшению расхода маны</font>"
+		"DOTA_Tooltip_ability_item_magic_staff_bonus_magic_damage"       "%+к урону от заклинаний"
+		"DOTA_Tooltip_ability_item_magic_staff_bonus_int"       "+$int"
+
+		"DOTA_Tooltip_ability_item_magic_stone"									"The Magic Stone"
+		"DOTA_Tooltip_ability_item_magic_stone_Description"						"<h1>Пассивная: Spell Amplification</h1>Способности владельца усиливаются вместе с затраченной манной на них."
+		"DOTA_Tooltip_ability_item_magic_stone_Lore"								"Мифический, но не единственный магический камень в своем роде."
+		"DOTA_Tooltip_ability_item_magic_stone_reduce_mana_cost"       "%-<font color='#e03e2e'>к уменьшению расхода маны</font>"
+		"DOTA_Tooltip_ability_item_magic_stone_bonus_magic_damage"       "%+к урону от заклинаний"
+		"DOTA_Tooltip_ability_item_magic_stone_bonus_int"       "+$int"
 
 		"DOTA_Tooltip_ability_item_desolator2"									"Super desolator"
 		"DOTA_Tooltip_ability_item_desolator2_Description"						"<h1>Пассивная: Corruption</h1> Атаки снижают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек."
@@ -580,18 +643,18 @@
 		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_friend_Description"	"Броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nСкорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
  		"DOTA_Tooltip_Ability_item_maelstrom_2"				"Maelstrom 2"
-		"DOTA_Tooltip_ability_item_maelstrom_2_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раза перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому по %chain_damage% физического урона. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_ability_item_maelstrom_2_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раза перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому по %chain_damage% магического урона. От атаки с цепной молнией нельзя уклониться."
 		"DOTA_Tooltip_ability_item_maelstrom_2_Lore"								"Молот, выкованный для самих богов, позволяет владельцу подчинить силу молнии."
 		"DOTA_Tooltip_ability_item_maelstrom_2_bonus_damage"						"+$damage"
   
 		"DOTA_Tooltip_Ability_item_maelstrom_3"				"Mjollnir"
-		"DOTA_Tooltip_Ability_item_maelstrom_3_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому физический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_Ability_item_maelstrom_3_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому магический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
 		"DOTA_Tooltip_Ability_item_maelstrom_3_Lore"								"Магический молот Тора, выкованный для него гномами по имени Брок и Эйтри."
 		"DOTA_Tooltip_Ability_item_maelstrom_3_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_Ability_item_maelstrom_3_bonus_attack_speed"					"+$attack"		
 
 		"DOTA_Tooltip_Ability_item_maelstrom_4"				"Mjollnir 2"
-		"DOTA_Tooltip_Ability_item_maelstrom_4_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому физический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
+		"DOTA_Tooltip_Ability_item_maelstrom_4_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раз перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому магический урон в размере %chain_damage% + %chain_damage_self%%  от атаки. От атаки с цепной молнией нельзя уклониться."
 		"DOTA_Tooltip_Ability_item_maelstrom_4_Lore"								"Улучшенный магический молот Тора, выкованный для него гномами по имени Брок и Эйтри."
 		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_attack_speed"					"+$attack"	
@@ -678,18 +741,7 @@
 		"DOTA_Tooltip_modifier_veil_active_debuff_3"				"Magic Weakness"
 		"DOTA_Tooltip_modifier_veil_active_debuff_3_Description"	"Магический урон увеличен."
 
-		"DOTA_Tooltip_Ability_item_ethereal_blade"			"Ethereal Blade"
-		"DOTA_Tooltip_Ability_item_ethereal_blade_2"			"Ethereal Blade Ultimate Edition"
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_Description"					"<h1>Активная: Ether Blast</h1> Придаёт всем целям в радиусе %splash_radius% бесплотную форму, которая полностью защищает от физического урона, но не позволяет атаковать и увеличивает получаемый магический урон на %ethereal_damage_bonus%%%. Действует %duration_ally% сек. на союзников и %duration% сек. на врагов.<br><br>Также замедляет вражеские цели на %blast_movement_slow%%% и наносит им магический урон в размере %blast_agility_multiplier% * ваш основной атрибут + %blast_damage_base%.<br><br>Дальность применения: %abilitycastrange%"
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_Note3"						"Использование Town Portal Scroll или Boots of Travel не развеивает бесплотную форму."
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_agility"				"+$agi"
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_strength"				"+$str"
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_bonus_intellect"				"+$int"
-		"DOTA_Tooltip_ability_item_ethereal_blade_2_Lore"						"Этот мерцающий призрачный меч бьёт и и по физическому, и по магическому слою реальности."
-
-		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
-		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Находится в призрачной форме. Получает увеличенный на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% магический урон, не может атаковать или быть целью атаки."
-
+ 
 		"DOTA_Tooltip_Ability_item_voodo_mask"				"Voodoo Mask"		
 		"DOTA_Tooltip_ability_item_voodo_mask_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
 		"DOTA_Tooltip_ability_item_voodo_mask_Lore"						"Маска, отточенная для поглощения магических уз между колдуном и его врагом."
@@ -1054,9 +1106,10 @@
 
 		// -----------------alchemist--------------------  
 
- 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Create Totem"
-        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Создает уникальный предмет <font color='#ffd700'> Тотем улучшения</font> , но тратя при этом золото."
-        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "Алхимик настолько преуспел в своем деле, что теперь из золото может приготовить даже Тотем!" 
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Good deal"
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Превращает текущее золото алхимика в урон. При потере золота, урон также уменьшается."
+ 		"DOTA_Tooltip_Ability_alchemist_good_deal_damage_gold"                                            "%ЗОЛОТО В УРОН:"        
+        "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "Алхимик стал настолько жадным, что каждое золото у него на счету, делает его сильнее!" 
  
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Lore"					"Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом."		
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom"						"Unstable Concoction"
@@ -1727,7 +1780,7 @@
  
 		"DOTA_Tooltip_ability_enigma_eyes"										"Evolution"
 		"DOTA_Tooltip_ability_enigma_eyes_Description"							"Энигма деформирует свою сущность. После чего он не может использовать способности и предметы, а каждая его атака настакивает дебаф. Если Enigma или эйдолоны ударят врага с этим дебафом, тогда врагу нанесется чистый урон в размере от кол-во стаков."
-		"DOTA_Tooltip_ability_enigma_eyes_Lore"									"Предвечный всегда стримиться к совершенству."
+		"DOTA_Tooltip_ability_enigma_eyes_Lore"									"Предвечный всегда стримится к совершенству."
 		"DOTA_Tooltip_ability_enigma_eyes_damage_per_stack"								"УРОН ЗА СТАК:"
 		"DOTA_Tooltip_ability_enigma_eyes_duration"								"ДЛИТЕЛЬНОСТЬ:"
   
@@ -1960,13 +2013,14 @@
 		"DOTA_Tooltip_Ability_ghoul_devourer_Description"					"Каждый удар этого существа восстанавливает ему здоровье."
 
 		"DOTA_Tooltip_Ability_ghost_elusive_1"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_1_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему."
+		"DOTA_Tooltip_Ability_ghost_elusive_1_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему.\n<font color='#ffff00'>Если открыть ворота, то вы не промахиваетесь по этим существам</font>"
 
 		"DOTA_Tooltip_Ability_ghost_elusive_2"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_2_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему."
+		"DOTA_Tooltip_Ability_ghost_elusive_2_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему.
+		\n<font color='#ffff00'>Если открыть ворота, то вы не промахиваетесь по этим существам</font>"
 
 		"DOTA_Tooltip_Ability_ghost_elusive_3"								"Devourer"
-		"DOTA_Tooltip_Ability_ghost_elusive_3_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему."
+		"DOTA_Tooltip_Ability_ghost_elusive_3_Description"					"Это существо не имеет плоти. Вы будете промахиваться в %miss%%  случаях по нему.\n<font color='#ffff00'>Если открыть ворота, то вы не будите промахиваетесь по этим существам</font>"
 
 
 
@@ -2236,19 +2290,6 @@
 		"Info1"						"Info 1"
 		"Info2"						" "	    
  
-        "DOTA_Tooltip_ability_item_bloodstone2"																			"Totem Bloodstone"
-		"DOTA_Tooltip_ability_item_bloodstone2_Description"																"<h1>Активная: Bloodpact</h1> Превращает %mana_cost_percentage%%% от максимального запаса маны в здоровье в течение %restore_duration% сек.\n <h1>Пассивная: Mana Battery</h1>Каждый заряд увеличивает восстановление маны на %regen_per_charge% и урон от способностей на %amp_per_charge%%%. Изначально предмет имеет %initial_charges_tooltip% зарядов. Получает %kill_charges% заряд за каждое убийство рядом. При смерти владельца теряет %death_charges% заряда."
-		"DOTA_Tooltip_ability_item_bloodstone2_Lore"																	"Багрянец этого камня легко приметить даже в разгаре битвы: он будто бы наделяет владельца безграничными жизненными и духовными силами."
-		"DOTA_Tooltip_ability_item_bloodstone2_bonus_health"															"+$health"
-		"DOTA_Tooltip_ability_item_bloodstone2_bonus_mana"																"+$mana"
-		"DOTA_Tooltip_ability_item_bloodstone2_bonus_intellect"															"+$int"
-		"DOTA_Tooltip_ability_item_bloodstone2_bonus_health_regen"														"+$hp_regen"
-		"DOTA_Tooltip_ability_item_bloodstone2_spell_amp"																"%+к урону от заклинаний"
-		"DOTA_Tooltip_ability_item_bloodstone2_hero_lifesteal"															"%+к вампиризму заклинаниями (от героев)"
-		"DOTA_Tooltip_ability_item_bloodstone2_creep_lifesteal"															"%+к вампиризму заклинаниями (от крипов)"
-		"DOTA_Tooltip_ability_item_bloodstone2_mana_regen_multiplier"													"%+к усилению восстановления маны"
-		"DOTA_Tooltip_ability_item_bloodstone2_spell_lifesteal_amp"														"%+к усилению вампиризма от заклинаний"
-        
         "DOTA_Tooltip_ability_item_greater_crit2"								"Totem Daedalus"
 		"DOTA_Tooltip_ability_item_greater_crit2_Description"					"<h1>Пассивная: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона."
 		"DOTA_Tooltip_ability_item_greater_crit2_Note0" 						"Постройкам дополнительный урон не наносится."

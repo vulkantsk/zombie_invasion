@@ -1202,8 +1202,8 @@
                                                        "value0"        "sounds/Ula Cannabis.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1241,8 +1241,8 @@
                                                                        "value0"        "sounds/Does It Matter Janieck.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1280,8 +1280,8 @@
                                                                  "value0"        "sounds/I Follow Rivers Lykke Li.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1319,8 +1319,8 @@
                                                          "value0"        "sounds/August Intelligency.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1362,8 +1362,8 @@
                                                         "value0"                "sounds/Jackie Chan"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1400,8 +1400,8 @@
                                                       "value0"        "sounds/Life Larson.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1440,8 +1440,8 @@
                                                           "value0"        "sounds/iSpy KYLE.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1480,8 +1480,8 @@
                                                           "value0"        "sounds/Musica Fly Project.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1520,8 +1520,8 @@
                                                           "value0"        "sounds/Shotgun.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1557,8 +1557,8 @@
                                                           "value0"        "sounds/Wake Me Up Avicii.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1597,8 +1597,8 @@
                                                           "value0"        "sounds/Would I Lie To You.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -1639,8 +1639,8 @@
                                                         "value0"        "sounds/Runaway.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2454,8 +2454,8 @@
                                                            "value0"        "sounds/Sia - Cheap Thrills.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2490,8 +2490,8 @@
                                                            "value0"        "sounds/Sia - Chandelier.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2528,8 +2528,8 @@
                                                          "value0"        "sounds/RSAC - NBA.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2568,8 +2568,8 @@
                                                            "value0"        "sounds/L Starz - My Life Be LikeGrits.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2606,8 +2606,8 @@
                                                            "value0"        "sounds/Galantis - No Money.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2644,8 +2644,8 @@
                                                             "value0"        "sounds/Kiesza - Hideaway.vsnd"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -2783,11 +2783,11 @@
                     }
 					"volume_min"
 					{
-							"value"         "1.500000"
+							"value"         "2.500000"
 					}
 					"volume_max"
 					{
-							"value"         "1.500000"
+							"value"         "2.500000"
 					}
 					"pitch_min"
 					{
@@ -3216,8 +3216,8 @@
                                                         "value0"                "sounds/Merry-Christmas_Jingle_Bells"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3252,8 +3252,8 @@
                                                         "value0"                "sounds/Jingle_bells"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3288,8 +3288,8 @@
                                                         "value0"                "sounds/Lofi Origin - Jingle Bells Lo Fi Chill"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3326,8 +3326,8 @@
                                                         "value0"                "sounds/Dima_Bilan_-_Novogodnyaya_Novyjj_god_s_novojj_strochki"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3362,8 +3362,8 @@
                                                         "value0"                "sounds/Jingle Bells"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3399,8 +3399,8 @@
                                                         "value0"                "sounds/Jinggle bells - Remix"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3436,8 +3436,8 @@
                                                         "value0"                "sounds/ABBA - Happy New Year"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3473,8 +3473,8 @@
                                                         "value0"                "sounds/Wham - Last Christmas"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3510,8 +3510,8 @@
                                                         "value0"                "sounds/O Liebert - Jinggle Bells"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.400000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3527,42 +3527,7 @@
         }
 }
 
-
-"WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS"   
-{
-        "operator_stacks"
-        {
-                "update_stack"
-                {
-                        "reference_operator"
-                        {
-                                "operator"              "sos_reference_stack"
-                                "reference_stack"               "src1_3d"
-                                "operator_variables"
-                                {
-                                        "vsnd_files"
-                                        {
-                                                "value"
-                                                {
-                                                        "value0"                "sounds/WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS"
-                                                }
-                                        }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
-										"pitch"       		{  	"value"   	"1.000000" }
-                                       "chan_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                        "memory_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                }
-                        }
-                }
-        }
-}
+ 
 
 
 "Ансамбль Детские Песни - Три белых коня"   
@@ -3584,8 +3549,8 @@
                                                         "value0"                "sounds/three_konya"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3621,8 +3586,8 @@
                                                         "value0"                "sounds/padal_sneg"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3657,8 +3622,8 @@
                                                         "value0"                "sounds/Diskoteka Avariya - Novogodnyaya"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3693,8 +3658,8 @@
                                                         "value0"                "sounds/Dinah Washington - Silent Night"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3729,8 +3694,8 @@
                                                         "value0"                "sounds/Oogie Boogie39s Song"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3765,8 +3730,8 @@
                                                         "value0"                "sounds/Making Christmas"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3801,8 +3766,8 @@
                                                         "value0"                "sounds/End Title"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3837,8 +3802,8 @@
                                                         "value0"                "sounds/Christmas Eve Montage"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -3873,8 +3838,8 @@
                                                         "value0"                "sounds/Bobby_Helms_-_Jingle_bell"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.700000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4348,8 +4313,8 @@
                                                         "value0"                "sounds/Rick Astley - Never Gonna Give You Up"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
-   									     "soundlevel"		{   "value"     "24"  }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
                                         {
@@ -4367,3 +4332,400 @@
 
  
  
+"a-ha - Take On Me"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/a-ha - Take On Me"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+ 
+"Bangers Only, fawlin, Preston Pablo, Chill Only - Circles"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Bangers Only, fawlin, Preston Pablo, Chill Only - Circles"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+ 
+"AJR - World's Smallest Violin"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/AJR - World's Smallest Violin"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Bee Gees - Stayin' Alive"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Bee Gees - Stayin' Alive"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Daft Punk - Get Lucky"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Daft Punk - Get Lucky"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Earth Wind And Fire - Let's Groove"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Earth Wind And Fire - Let's Groove"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.850000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Earth Wind And Fire - September"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Earth Wind And Fire - September"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Grover Washington, Jr, Bill Withers - Just The Two Of Us"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Grover Washington, Jr, Bill Withers - Just The Two Of Us"
+                                                }
+                                        }
+										"volume"			{   "value"     "1.25000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Redbone - Come and Get Your Love"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Redbone - Come and Get Your Love"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Серега пират - Мой байк"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Serega-baik"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.750000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Серега пират - Я взлетаю вверх"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Serega-verx"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}

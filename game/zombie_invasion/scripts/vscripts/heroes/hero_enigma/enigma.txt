@@ -21,7 +21,7 @@
 		"AbilityCastPoint"				"0.3"
 
 		"AbilityCooldown"				"22 21 20 19 18 17 16"
-		"AbilityManaCost"				"100 120 140 160 180 200 220"
+		"AbilityManaCost"				"50 60 70 80 90 100 110"
 
 		"AbilityValues"
 		{
@@ -33,7 +33,11 @@
 				{
 					"value"				"0.4 0.5 0.6 0.7 0.8 0.9 1.0"
 				}
-				"damage"				"60 90 120 150 180 210 240"
+				"damage"			
+				{
+					"value"				"60 90 120 150 180 210 240"
+				"CalculateSpellDamageTooltip"	"1"
+				}
 				"duration"				
 				{
 					"value"				"4.0 4.0 4.0 4.0"
@@ -66,7 +70,7 @@
 
 		"AbilityCooldown"				"60 57 54 51 49 47 45"
  
-		"AbilityManaCost"				"90 120 150 180 210 240 270"
+		"AbilityManaCost"				"90 95 100 105 110 115 120"
 
 		"AbilityValues"
 		{
@@ -81,11 +85,11 @@
 				}
 				"eidolon_hp_tooltip"				
 				{
-					"value"				"120 150 180 210 240 270 300"
+					"value"				"80 110 150 190 230 270 310"
 				}
 				"eidolon_dmg_tooltip"			
 				{
-					"value"	"12 18 24 30 36 42 50"
+					"value"	"20 30 40 50 60 70 80"
 				}
  				"eidalon_duration"			
 				{
@@ -103,7 +107,7 @@
 				}
  				"bonus_int"		
 				{
-					"value"		"1.15"
+					"value"		"1.20"
 					"RequiresScepter"			"1"
 				}
 		}
@@ -138,7 +142,7 @@
 				}
 				"damage_base"			
 				{
-					"value"				"10 18 24 32 40 48 56"
+					"value"				"20 30 40 50 60 70 80"
 				}
 				"damage_percent"			
 				{
@@ -175,7 +179,7 @@
 
 				"damage_per_stack"			
 				{
-					"value"				"8"
+					"value"				"10"
  					"CalculateSpellDamageTooltip"	"0"
 				}
  

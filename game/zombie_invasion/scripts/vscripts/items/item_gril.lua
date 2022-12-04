@@ -102,7 +102,7 @@ end
  
          newItem:SetPurchaseTime(0)
          CreateItemOnPositionSync(hCaster:GetAbsOrigin(), newItem)
-         newItem:LaunchLoot(false, 300, 0.75, hCaster:GetAbsOrigin() + RandomVector(RandomFloat(50, 350)))
+         newItem:LaunchLoot(false, 150, 0.75, hCaster:GetAbsOrigin() + RandomVector(RandomFloat(50, 350)))
 
  
  	EmitSoundOn( "grill_end", hCaster )

@@ -6,12 +6,20 @@ Sounds = Sounds or {
  	 
   		["Akira Yamaoka – Never Forgive Me"] = 137,
   		["Ula - Cannabis"] = 182,
-  		 		["Toby Fox – Once Upon a Time"] = 89,  
   		["C418 - Sweden"] = 217,
-  		["Mase - Psycho"] = 192,  
-		
+  		["Mase - Psycho"] = 192, 
 
- 
+  		["a-ha - Take On Me"] = 113,  		
+  		["AJR - World's Smallest Violin"] = 70,  
+  		["Bangers Only, fawlin, Preston Pablo, Chill Only - Circles"] = 192,  
+  		["Bee Gees - Stayin' Alive"] = 128,
+  		["Earth Wind And Fire - Let's Groove"] = 91,
+  		["Earth Wind And Fire - September"] = 80,
+  		["Grover Washington, Jr, Bill Withers - Just The Two Of Us"] = 60,
+  		["Redbone - Come and Get Your Love"] = 65,
+  		["Серега пират - Мой байк"] = 93,
+  		["Серега пират - Я взлетаю вверх"] = 153,
+
          
 
      	["Серега пират - АМ ФП"] = 130,  
@@ -75,7 +83,6 @@ Sounds = Sounds or {
 		["Дима Билан - Новый Год с новой строчки" ] = 201,
         ["ABBA - Happy New Year" ] = 261,
                 ["O Liebert - Jinggle Bells"] = 237,
-               ["WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS"] = 155,
 
 
 	 	["Jinggle bells - Remix"] = 246,

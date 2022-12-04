@@ -53,8 +53,7 @@ function item_ethereal_blade_2:OnSpellStart()
 	self.duration_ally				=	self:GetSpecialValueFor("duration_ally")
 	self.ethereal_damage_bonus		=	self:GetSpecialValueFor("ethereal_damage_bonus")
 	self.projectile_speed			=	self:GetSpecialValueFor("projectile_speed")
-	self.tooltip_range				=	self:GetSpecialValueFor("tooltip_range")
-	
+ 
 	if not IsServer() then return end
 	
 	local target			= self:GetCursorTarget()
@@ -154,7 +153,7 @@ function modifier_item_imba_ethereal_blade_ethereal:OnCreated()
 	self.parent						= self:GetParent()
 	
 	self.ethereal_damage_bonus		= self.ability:GetSpecialValueFor("ethereal_damage_bonus")
-	self.luminate_radius			= self.ability:GetSpecialValueFor("luminate_radius")
+ 
 
 	self.blast_movement_slow				=	self:GetAbility():GetSpecialValueFor("blast_movement_slow")
 	self.realms_grasp_turn_rate_reduction	= 	self:GetAbility():GetSpecialValueFor("realms_grasp_turn_rate_reduction")
@@ -163,11 +162,7 @@ function modifier_item_imba_ethereal_blade_ethereal:OnCreated()
 	self:StartIntervalThink(FrameTime())
 end
 
-function modifier_item_imba_ethereal_blade_ethereal:OnIntervalThink()
-	if not IsServer() then return end
-
-	AddFOWViewer(self.caster:GetTeam(), self.parent:GetAbsOrigin(), self.luminate_radius, FrameTime(), false) 
-end
+ 
 
 function modifier_item_imba_ethereal_blade_ethereal:OnRefresh()
 	self:OnCreated()
@@ -196,7 +191,7 @@ function modifier_item_imba_ethereal_blade_ethereal:DeclareFunctions()
 		-- IMBAfication: Extrasensory
 		MODIFIER_PROPERTY_IGNORE_CAST_ANGLE,
 		MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE,
-		MODIFIER_PROPERTY_CASTTIME_PERCENTAGE 
+		  
     }
 	
 	return decFuncs
@@ -210,9 +205,7 @@ function modifier_item_imba_ethereal_blade_ethereal:GetModifierTurnRate_Percenta
 	return self.realms_grasp_turn_rate_reduction
 end
 
-function modifier_item_imba_ethereal_blade_ethereal:GetModifierPercentageCasttime()
-	return self.realms_grasp_cast_time_lag
-end
+ 
 	
 
 function modifier_item_imba_ethereal_blade_ethereal:GetModifierMagicalResistanceDecrepifyUnique()
@@ -244,6 +237,8 @@ function modifier_item_imba_ethereal_blade:DeclareFunctions()
 		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
 		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+		MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE,
     }
 end
 
@@ -262,5 +257,17 @@ end
 function modifier_item_imba_ethereal_blade:GetModifierBonusStats_Intellect()
 	if self:GetAbility() then
 		return self:GetAbility():GetSpecialValueFor("bonus_intellect")
+	end
+end
+
+function modifier_item_imba_ethereal_blade:GetModifierSpellAmplify_Percentage()
+	if self:GetAbility() then
+		return self:GetAbility():GetSpecialValueFor("spell_amp")
+	end
+end
+
+function modifier_item_imba_ethereal_blade:GetModifierMPRegenAmplify_Percentage()
+	if self:GetAbility() then
+		return self:GetAbility():GetSpecialValueFor("spell_amp")
 	end
 end

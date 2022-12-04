@@ -92,8 +92,6 @@ function InvasionMode:InvasionMap()
 	LinkLuaModifier("modifier_mana1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
-	LinkLuaModifier("modifier_portal_unit_vision", "modifiers/modifier_portal_unit_vision", LUA_MODIFIER_MOTION_NONE)
-	LinkLuaModifier("modifier_portal_despawn_unit", "modifiers/modifier_portal_despawn_unit", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_invasion_difficulty", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE)	
  
 	local shop = Entities:FindByName( nil, "dota_shop")
@@ -444,8 +442,7 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-      InvasionMode:PortalBoss()  
-      
+  
    --   InvasionMode:ZombieNight1()  
    
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
@@ -1090,134 +1087,7 @@ function InvasionMode:ZombieNightHalloween()
   
 end
 
- function InvasionMode:PortalBoss()  
- -- Новогодний конец
- 
- 
-	
-  local boss_list = {
-		"npc_invasion_portal_wd",
-		"npc_invasion_portal_warlock",
-		"npc_invasion_portal_necr",
-		"npc_invasion_portal_veno"
-	}
-
-   	Timers:CreateTimer(1202, function()
-   		local gate_main = Entities:FindByName(nil, 'gate_main')
-          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
-      	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]    
- 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
- 		local random = RandomInt(1,2)
- 		    if  gate_main then 	
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )    		    	
-           	else   
- 		    	     if random == 1 then 
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-           	     else 
-               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-           	     end 
-           	end 	
-              GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
-      end) 
-    	Timers:CreateTimer(1502, function()
-   		local gate_main = Entities:FindByName(nil, 'gate_main')
-          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
-      	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]     
- 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
- 		local random = RandomInt(1,2)
- 		    if gate_main then 	
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-           	              		UpgradeUnitStats(unit, 1.5)  
-           	else   
- 		    	     if random == 1 then 
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil ) 
-           	              		UpgradeUnitStats(unit, 1.5)   
-           	     else 
-               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil ) 
-           	              		UpgradeUnitStats(unit, 1.5)   
-           	     end   
-           	end 	
-     	
-            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
-      end) 
-     	Timers:CreateTimer(1802, function()
-   		local gate_main = Entities:FindByName(nil, 'gate_main')
-          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
-      	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]     	
- 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
- 		local random = RandomInt(1,2)
- 		    if gate_main then 
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )   
-         		     UpgradeUnitStats(unit, 2.0)  	
-           	else   
- 		    	     if random == 1 then 
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-           	     UpgradeUnitStats(unit, 2.0)
-           	     else 
-               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-          		UpgradeUnitStats(unit, 2.0)          	     
-           	     end          	     
-           	end 	
- 
-     	
-            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
-      end) 
-    	Timers:CreateTimer(2102, function()
-   		local gate_main = Entities:FindByName(nil, 'gate_main')
-          local unit_Name = boss_list[RandomInt(1, #boss_list)] 
-      	local spawners = Entities:FindAllByName("zspawn_point")
- 		local spawner = spawners[RandomInt(1, #spawners)]     	
- 		local spawner_2 = Entities:FindByName(nil, 'zspawn_point_2') 
- 		local random = RandomInt(1,2)
- 		    if  gate_main then 	
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )   
-         		     UpgradeUnitStats(unit, 2.5)   
-           	else   
- 		    	     if random == 1 then 
-               	local unit = CreateUnitByName( unit_Name, spawner:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-           	     UpgradeUnitStats(unit, 2.5)
-           	     else 
-               	local unit = CreateUnitByName( unit_Name, spawner_2:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS )
-         	          unit:AddNewModifier( unit, nil, "modifier_portal_unit_vision", nil )
-           	     unit:AddNewModifier( unit, nil, "modifier_portal_despawn_unit", nil )  
-          		UpgradeUnitStats(unit, 2.5)          	     
-           	     end           	     
-           	end 	   	
-            GameRules:SendCustomMessage("#Game_notification_portal_boss",0,0)
-      end) 
- 
- 
-
- 
-   
-
-             	
- end
+  
   
 
 function InvasionMode:SpawnZombie(unit_name, unit_count)
@@ -1809,7 +1679,6 @@ function InvasionMode:ThemeMusic()
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
-  		    "Toby Fox – Once Upon a Time",  
   		    "C418 - Sweden",
   		    "Mase - Psycho",		
     	},
@@ -1821,7 +1690,12 @@ function InvasionMode:ThemeMusic()
   		    "Wake Me Up - Avicii",
   		    "Galantis - No Money",
   	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 		
+  		    "Boulevard of Broken Dreams - Green Day", 
+  		    "a-ha - Take On Me",	
+  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",
+              "Серега пират - Мой байк",
     	},
  
     	  
@@ -1836,6 +1710,9 @@ function InvasionMode:ThemeMusic()
   		    "Kiesza - Hideaway",
   		    "John  Newman - Fire In Me",
   		    "iSpy - KYLE feat. Lil Yachty",
+  		    "AJR - World's Smallest Violin",
+  		    "Earth Wind And Fire - Let's Groove",
+  		    "Redbone - Come and Get Your Love",
     	},
     		 
  
@@ -1844,7 +1721,9 @@ function InvasionMode:ThemeMusic()
 		"RSAC - NBA",
 		"Daved Guetta - Would I Lie To You",
 		 "Sia - Chandelier",
-		"Does It Matter - Janieck",	  			
+		"Does It Matter - Janieck",	
+		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
+		"Серега пират - Я взлетаю вверх",  			
     	},
 
     	--[[ 
@@ -1898,7 +1777,6 @@ function InvasionMode:ThemeMusic()
   		    "Дима Билан - Новый Год с новой строчки",
   		    "ABBA - Happy New Year",
   		    "O Liebert - Jinggle Bells",  
-  		    "WELCOME TO THE CUM ZONE - ONLY CUM INSIDE ANIME GIRLS",
     	},
     
  

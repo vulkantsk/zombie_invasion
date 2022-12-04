@@ -56,3 +56,9 @@ end
 function modifier_invasion_difficulty:GetModifierPhysicalArmorBonus()
 	return math.floor( self:GetParent():GetPhysicalArmorBaseValue() * self:GetMult() )
 end
+
+modifier_nothing_dif = {}
+
+function modifier_nothing_dif:IsHidden()
+	return true
+end
