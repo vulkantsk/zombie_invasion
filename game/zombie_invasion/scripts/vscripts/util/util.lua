@@ -75,6 +75,17 @@ function CDOTA_BaseNPC:HasShard()
 	end
 end
 
+function GiveExperiencePlayers( experience )
+	for index=0 ,PlayerResource:GetPlayerCount() do
+		if PlayerResource:HasSelectedHero(index) then
+			local player = PlayerResource:GetPlayer(index)
+			local hero = PlayerResource:GetSelectedHeroEntity(index)
+			hero:AddExperience(experience, 0, false, true )
+		end
+	end
+end
+
+
 function ChangeAttackProjectileImba(unit)
 
 	local particle_deso = "particles/items_fx/desolator_projectile.vpcf"
@@ -469,3 +480,5 @@ function CDOTA_BaseNPC:StopMotionControllers(bForceDestroy)
 		end
 	end
 end
+ 
+ 

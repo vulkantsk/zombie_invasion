@@ -46,14 +46,20 @@ function OnShowQuest(data) {
     $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_value_required") +
     " " +
     data["rq"];
-  $("#quest_exp").text =
-    $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_exp") +
-    " " +
-    data["re"];
-  $("#quest_gold").text =
-    $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") +
-    " " +
-    data["rg"];
+  if (data["rg"] === 0 && data["re"] === 0) {
+    $("#quest_exp").text = "";
+    $("#quest_gold").text = "";
+  } else {
+    $("#quest_exp").text =
+      $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_exp") +
+      " " +
+      data["re"];
+    $("#quest_gold").text =
+      $.Localize("#DOTA_Tooltip_ability_" + data["an"] + "_reward_gold") +
+      " " +
+      data["rg"];
+  }
+
   $("#QPanel").SetHasClass("hide", false);
 }
 

@@ -74,6 +74,7 @@ function modifier_ability_ion_shell_golden:OnDestroy()
 end
 
 function modifier_ability_ion_shell_golden:OnIntervalThink()
+if not self:GetParent():PassivesDisabled() then 
 	local enemies = FindUnitsInRadius(
 		self.team,
 		self.parent:GetOrigin(),
@@ -99,13 +100,18 @@ end
 		end
 	end
 end
+end
 
 function modifier_ability_ion_shell_golden:GetModifierHealthBonus()
-	return self.bonus_health
+	if not self:GetParent():PassivesDisabled() then
+	    return self.bonus_health
+    end
 end
 
 function modifier_ability_ion_shell_golden:GetModifierConstantHealthRegen()
-	return self.bonus_regen
+     if not self:GetParent():PassivesDisabled() then
+	    return self.bonus_regen
+     end
 end
 
 function modifier_ability_ion_shell_golden:PlayEffects1()

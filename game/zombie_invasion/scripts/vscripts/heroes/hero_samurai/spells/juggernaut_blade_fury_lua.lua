@@ -29,4 +29,4 @@ function juggernaut_blade_fury_lua:OnSpellStart()
 	end
 end
 
-  
+ 

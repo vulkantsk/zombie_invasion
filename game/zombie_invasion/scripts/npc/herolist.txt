@@ -12,7 +12,7 @@
 	"npc_dota_hero_rubick"				"1"
 	"npc_dota_hero_jakiro"				"1"
 	"npc_dota_hero_medusa"				"1" 
- 	"npc_dota_hero_phantom_assassin"	"0"
+ 	"npc_dota_hero_phantom_assassin"	"1"
 	"npc_dota_hero_axe"					"1"
  	"npc_dota_hero_dazzle"				"0"
 	"npc_dota_hero_clinkz"				"1"

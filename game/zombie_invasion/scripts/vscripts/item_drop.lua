@@ -19,13 +19,7 @@ ItemDrop.item_drop = {
 		{items = {"item_bone"}, chance = 30, duration = 20, units = {"npc_classic_skelet"}},  
 		{items = {"item_bone"}, chance = 100, duration = 20, units = {"npc_classic_skeleton_king"}},  
 		{items = {"item_ess_pudge"}, chance = 13, limit = 4, units = {"npc_classic_pudge", "npc_classic_big_pudge"}}, 
- 	 
- 
-		{items = {"item_totem_upgrade"}, units ={"npc_invasion_portal_wd"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-		{items = {"item_totem_upgrade"}, units ={"npc_invasion_portal_warlock"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
-		{items = {"item_totem_upgrade"}, units ={"npc_invasion_portal_necr"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-		{items = {"item_totem_upgrade"}, units ={"npc_invasion_portal_veno"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-				
+ 			
 		{items = {"item_magic_heart"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold"}, units ={"npc_classic_witch"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_bag_of_gold"}, units ={"npc_boss_dead_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
@@ -40,7 +34,7 @@ ItemDrop.item_drop = {
 
 -- ***********************************     НОВЫЙ ГОД   ***************************
 --		{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
- --	{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
+  {items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
  
  --  ***********************************  ХЭЛУИН    ***********************************
   	--	{items = {"item_candy"}, chance = 5, duration = 25}, 
@@ -48,7 +42,13 @@ ItemDrop.item_drop = {
 
 ItemDrop.secret_items = {
 --	["point_name"] = "item_name",
- 
+ ["secret_1"] = "item_bonus_health1",
+ ["secret_2"] = "item_bag_of_gold_pig", 
+ ["secret_3"] = "item_bonus_damage1",
+ ["secret_4"] = "item_bonus_spell1",
+ ["secret_5"] = "item_bonus_health1",
+ ["secret_6"] = "item_bonus_damage1",
+ ["secret_7"] = "item_bonus_spell1",
 
 }
 function ItemDrop:InitGameMode()
@@ -67,11 +67,14 @@ end
 function ItemDrop:SpawnItems()
 	local items = self.secret_items
 	for point_name,item_name in pairs(items) do
-		local point = Entities:FindByName(nil, point_name)
-		if point then
-			point = point:GetAbsOrigin()
-			local newItem = CreateItem( item_name, nil, nil )
-			local drop = CreateItemOnPositionSync( point, newItem )
+		local points = Entities:FindAllByName(point_name)
+		if points then
+			for i=1,#points do
+				  local point = points[i]
+			    point = point:GetAbsOrigin()
+			    local newItem = CreateItem( item_name, nil, nil )
+			    local drop = CreateItemOnPositionSync( point, newItem )
+		  end
 		else
 			print("point with name "..point_name.." dont exist !")
 		end

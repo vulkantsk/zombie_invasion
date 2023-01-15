@@ -84,10 +84,24 @@
  	   "Game_notification_portal_boss"				"<font color='#DBA901'>ТОТЕМНЫЙ БОСС ПОЯВИЛСЯ НА КАРТЕ!</font>"
 
        // ******************** Messages Christmas ********************
-       	   "christmas_1"                                                  "<font color='#deaa88'>Прадник продолжается!</font>"
-	   "christmas_night_1"			                                    	"<font color='#fffacd'>У вас есть еще день, чтобы закончить дела в этом году!</font>"	
-	   "christmas_night_2"			                                    	"<font color='#fffacd'>Предвестник рождества приближается!</font>"		   
-	   "christmas_night_3"                                                    "<font color='#deaa88'>Через пару минут появиться сообщение о приближение грявола. Он появиться около Главной елки в деревне, вы должны будите его бить до того момента пока он не отдаст подарки, удачи:)</font>"
+       	   "sf_eg1"                                                  "<font color='#c10020'>ДОВОЛЬНО</font>"
+       	   "sf_eg2"                                                  "<font color='#c10020'>Я УЖЕ ВДОВОЛЬ НАИГРАЛСЯ С ВАМИ</font>" 
+       	   "sf_eg3"                                                  "<font color='#c10020'>И ВСЕ РАНЫ КОТОРЫЕ ВЫ МНЕ ОСТАВИЛИ...</font>"
+       	   "sf_eg4"                                                  "<font color='#c10020'>НИЧЕГО МНЕ НЕ СДЕЛАЛИ АХААХАХАХААХ</font>"
+       	   "sf_eg5"                                                  "<font color='#c10020'>А ТЕПЕРЬ...</font>"
+       	   "sf_eg6"                                                  "<font color='#c10020'>Я ХОЧУ В ПОЛНОЙ МЕРЕ НАСЛАДИТЬСЯ ВАШИМИ СТРАДАНИЯМИ</font>"
+       	   "sf_eg7"                                                  "<font color='#c10020'>УБИВ ВСЕХ ТЕХ, КОГО ВЫ ЗАЩИЩАЛИ</font>"
+       	   "sf_eg8"                                                  "<font color='#c10020'>ЧТО?</font>"
+       	   "sf_eg9"                                                  "<font color='#c10020'>ЧТО????</font>"
+       	   "sf_eg10"                                                  "<font color='#c10020'>ЧТО ПРОИСХОДИТ????</font>"
+       	   "sf_eg11"                                                  "<font color='#c10020'>НЕЕЕЕЕЕЕТ......</font>"
+
+       	   "pn_eg1"                                                  "<font color='#58ACFA'>Еблан?</font>"
+       	   "pn_eg2"                                                  "<font color='#58ACFA'>Неужели не знал, что когда пингвинов становится пять</font>"
+       	   "pn_eg3"                                                  "<font color='#58ACFA'>То их ничто не остановит</font>"
+       	   "pn_eg4"                                                  "<font color='#58ACFA'>Good bye, my love:3</font>"
+
+       	   "christmas_1"                                                  "<font color='#deaa88'>Праздник продолжается!</font>"
 
 		// ******************** heroes ********************
 
@@ -188,10 +202,11 @@
 		"npc_wave_boss_pudge"                                         		"P.U.D.G.E."
 		"npc_wave_boss_mini_pudge"                                         		"Мини пудж"
 
-		"npc_penguin"                                                         "Пингвин"
+		"npc_penguin_1"                                                         "Пингвин"
 		"npc_penguin_2"	                                                    "Пингвин"
 		"npc_penguin_3"                                                 "Пингвин"
 		"npc_penguin_4"                                                 "Пингвин"
+		"npc_jitel_penguin"                                                 "Пингвин"
 		"npc_mini_elka_1"                                                 "Мини-елка"				
 		"npc_mini_elka_2"                                                 "Мини-елка"
 		"npc_mini_elka_3"	                                                	"Мини-елка"
@@ -206,6 +221,7 @@
 		"npc_classic_new_years_ancient"                                                	"Частица льда древнейших времён"
 		"npc_classic_new_years_seer"                                                	"Глаза зимы"
 		"npc_christmas_boss"	                                                	"Крампус"
+		"npc_nevermore_boss"                                                          "Элементаль хаоса"
 		"npc_classic_mini_crampus" 	                                                	"Крампусёнок"
         "npc_classic_doom_crampus" 	                                                	"Отродье Ада"
 
@@ -515,9 +531,7 @@
 		"DOTA_Tooltip_Ability_item_trash"						"Странно пахнущая штука"
 		"DOTA_Tooltip_Ability_item_trash_Description"			"Аъъъъъ странно пахнет?.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
  
-		"DOTA_Tooltip_Ability_item_bewstheaks"							"Бифштекс"
-		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Активная: Ам ням</h1>Восстанавливает много здоровья.\n Очень.\n Много.\n(1000)"
-		"DOTA_Tooltip_Ability_item_bewstheaks_Lore"       "Кункевич всегда любил готовить Бифштексы!"
+ 
 		
 		"DOTA_Tooltip_Ability_item_milk_shake"							"Милкшейк"
 		"DOTA_Tooltip_Ability_item_milk_shake_Description"				"<h1>Активная: Хлюп-Хлюп</h1>Восстанавливает много маны.\n Очень.\n Много.\n(1000)"
@@ -588,17 +602,33 @@
         "DOTA_Tooltip_Ability_item_her3_rg"                                        "%БОНУСНОЕ ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
         "DOTA_Tooltip_Ability_item_her3_Lore"                                "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
 
-        "DOTA_Tooltip_Ability_item_resistance"                                            "Steel cuirass 1"
+        "DOTA_Tooltip_Ability_item_resistance"                                            "Steel cuirass"
         "DOTA_Tooltip_Ability_item_resistance_Description"                                "<h1>Пассивная: Steel Cuirass</h1>Владелец получает дополнительную защиту."
-        "DOTA_Tooltip_Ability_item_resistance_arm"                                        "БОНУСНАЯ БРОНЯ:"
-        "DOTA_Tooltip_Ability_item_resistance_res"                                        "%УМЕНЬШЕНИЕ ВХОДЯЩЕГО УРОНА:"
+        "DOTA_Tooltip_Ability_item_resistance_arm"                                        "+$armor"
+        "DOTA_Tooltip_Ability_item_resistance_res"                                        "%+ к уменьшению входящего урона"
         "DOTA_Tooltip_Ability_item_resistance_Lore"                                "Стальной доспех, надёжно защищающий владельца."
 
-        "DOTA_Tooltip_Ability_item_resistance1"                                            "Steel cuirass 2"
-        "DOTA_Tooltip_Ability_item_resistance1_Description"                                "<h1>Пассивная: Steel Cuirass</h1>Владелец получает дополнительную защиту."
-        "DOTA_Tooltip_Ability_item_resistance1_arm"                                        "БОНУСНАЯ БРОНЯ:"
-        "DOTA_Tooltip_Ability_item_resistance1_res"                                        "%УМЕНЬШЕНИЕ ВХОДЯЩЕГО УРОНА:"
-        "DOTA_Tooltip_Ability_item_resistance1_Lore"                                "Стальной доспех, надёжно защищающий владельца."
+         "DOTA_Tooltip_Ability_item_blademail"                                            "Blade mail"
+		"DOTA_Tooltip_ability_item_blademail_Description"						"<h1>Активное: Damage Return</h1>Увеличивает возвращение урона от всех источников на %active_reflection_pct%%%. Длится %duration% сек.\n\n<h1>Пассивное: Damage Return</h1>Возвращает %passive_reflection_constant% + %passive_reflection_pct%%% урона от каждой атаки атакующим вас существам." 
+		"DOTA_Tooltip_ability_item_blademail_Lore"								"Острый, как лезвие бритвы, панцирь — выбор самоотверженных мучеников."
+		"DOTA_Tooltip_ability_item_blademail_Note0"							"Урон возвращается в изначальном количестве, до его уменьшения."
+		"DOTA_Tooltip_ability_item_blademail_Note1"							"Не отражает урон от других Blade Mail и схожих способностей."
+		"DOTA_Tooltip_ability_item_blademail_Note2"							"Возвращаемый урон имеет тот же тип, что и полученный."
+		"DOTA_Tooltip_ability_item_blademail_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_blademail_bonus_armor"						"+$armor"
+
+         "DOTA_Tooltip_Ability_item_blademail_2"                                            "Steel mail"
+		"DOTA_Tooltip_ability_item_blademail_2_Description"						"<h1>Активное: Damage Return</h1>Увеличивает возвращение урона от всех источников на %active_reflection_pct%%%. Длится %duration% сек.\n\n<h1>Пассивное: Damage Return</h1>Возвращает %passive_reflection_constant% + %passive_reflection_pct%%% урона от каждой атаки атакующим вас существам." 
+		"DOTA_Tooltip_ability_item_blademail_2_Lore"								"Улучшенный острый, как лезвие бритвы, панцирь — выбор самоотверженных мучеников."
+		"DOTA_Tooltip_ability_item_blademail_2_Note0"							"Урон возвращается в изначальном количестве, до его уменьшения."
+		"DOTA_Tooltip_ability_item_blademail_2_Note1"							"Не отражает урон от других Blade Mail и схожих способностей."
+		"DOTA_Tooltip_ability_item_blademail_2_Note2"							"Возвращаемый урон имеет тот же тип, что и полученный."
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_armor"						"+$armor"
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_resistance"						"%+ к уменьшению входящего урона"
+
+		"DOTA_Tooltip_modifier_item_blademail"					"Отражение атак от Blade Mail"
+		"DOTA_Tooltip_modifier_item_blademail_Description"		"Возвращает урон атакующим существам."
 
         "DOTA_Tooltip_Ability_item_lance1"                                            "Bow"
         "DOTA_Tooltip_Ability_item_lance1_Description"                                "<h1>Активная: bow bow bow</h1>Владелец получает дополнительные 300 скорости атаки на 2 секунды."
@@ -617,7 +647,7 @@
 
 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
-        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите золото и опыт."       
+        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите от %gold_min% до %gold_max% золота."       
         "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса."  
 
 		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
@@ -1035,7 +1065,7 @@
 		"DOTA_Tooltip_ability_item_bonus_damage1_Description"							"<h1>Активная: С новым годом!</h1> Дает 40 урона навсегда!"	
 
 		"DOTA_Tooltip_Ability_item_bonus_spell1"				"Подарок"
-		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Активная: С новым годом!</h1> Дает 20% усиления заклинаний навсегда!"			
+		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Активная: С новым годом!</h1> Дает 10% усиления заклинаний навсегда!"			
 
 "DOTA_Tooltip_modifier_greevil" "Число подарков"
 "DOTA_Tooltip_Ability_greevil" "Подарки!"
@@ -1097,7 +1127,13 @@
 		"DOTA_Tooltip_Ability_quest_test_meepo_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_meepo_reward_gold"                 		"ЗОЛОТА:"
 
+ 		"DOTA_Tooltip_Ability_quest_test_pinguin"										"Спасти новый год!"
+		"DOTA_Tooltip_Ability_quest_test_pinguin_Description"							"Йоу хоу хоу! Люди, кто-нибудь, помогите найти моих 4 братьев! Как только я остановился в этой деревне, так в первый же день они и пропали. Все кто осмелиться мне помочь, полезайте в эту иглу, она перенесет в вас в те места, где возможно были мои братья. Но при использовании иглы возможны побочные действия."
+		"DOTA_Tooltip_Ability_quest_test_pinguin_value_required"     							"КОЛИЧЕСТВО ПИНГВИНОВ:"
+		"DOTA_Tooltip_Ability_quest_test_pinguin_reward_exp"                 		""
+		"DOTA_Tooltip_Ability_quest_test_pinguin_reward_gold"                 		""
 
+ 
 		"DOTA_Tooltip_modifier_quest_template"												"Режим ждуна"
 		"DOTA_Tooltip_modifier_quest_template_Description"									"Ждет..."
 
@@ -1418,49 +1454,74 @@
 
  		// -----------------Phantom assasin--------------------	
 
-
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017"	"Stifling Dagger"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_Description"	"Бросает в выбранную область шквал кинжалов, поражающих первую цель на пути. Кинжалы замедляют скорость передвижения врага и наносят физический урон в размере %base_damage%+%attack_factor_tooltip%%% от атаки Phantom Assassin, а также накладывают эффекты предметов и способностей."
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_Note0"	"Эффекты атаки срабатывают с обычной для них вероятностью."
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_Lore"	"Первый навык, изучаемый Сёстрами вуали, часто предвещает скорый удар."
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_move_slow"	"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_duration"	"ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_base_damage"	"БАЗОВЫЙ УРОН:"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_attack_factor_tooltip"	"%УРОН ОТ АТАКИ:"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_dagger_count"	"КОЛИЧЕСТВО КИНЖАЛОВ:"
-        "DOTA_Tooltip_ability_phantom_assassin_stifling_dagger_nb2017_dagger_range"	"ДАЛЬНОСТЬ БРОСКА:"
-
- 		"DOTA_Tooltip_ability_phantom_assassin_adrenaline"                        "Adrenaline"
-		"DOTA_Tooltip_ability_phantom_assassin_adrenaline_Description"            "Чувствуя огромный прилив адреналина ,проходит сквозь героев и увеличивает скорость передвижения ! "
-		"DOTA_Tooltip_ability_phantom_assassin_adrenaline_duration"               "ДЛИТЕЛЬНОСТЬ:"
-		"DOTA_Tooltip_ability_phantom_assassin_adrenaline_ms_bonus"               "%БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
- 
-
-        "DOTA_Tooltip_Ability_pa_gds"                                            "God strength"
-        "DOTA_Tooltip_Ability_pa_gds_Description"                                "Фантомка концентрирует свою неконтролируемую силу, получая бонус к урону на 6 секунд."
-        "DOTA_Tooltip_Ability_pa_gds_dmg"                                        "МНОЖИТЕЛЬ УРОНА:"
-
-		"DOTA_Tooltip_modifier_pa_gds"			"God strength"
-		"DOTA_Tooltip_modifier_pa_gds_Description"	"Божественный урон"	
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger"							"Stifling Dagger"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Description"				"Бросает кинжал, который замедляет скорость передвижения врага, наносит ему физический урон в размере %base_damage% + %attack_factor_tooltip%%% от атаки героя, а также накладывает эффекты предметов и способностей."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note0"								"Эффекты атаки срабатывают с обычной для них вероятностью."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note1"					"Не замедляет врагов, невосприимчивых к магии."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note2"					"Способность даёт обзор вокруг кинжала во время полёта и после попадания по цели."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Lore"					"Первый навык, изучаемый Сёстрами вуали, часто предвещает скорый удар."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_move_slow"				"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_duration"				"ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_base_damage"				"БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_attack_factor_tooltip"   "%УРОН ОТ АТАКИ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_abilitycastrange"           "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
  
-        "DOTA_Tooltip_Ability_pa_skill"                                            "Blur"
-        "DOTA_Tooltip_Ability_pa_skill_Description"                                "Фантомка получает бонус уклонения и скорости бега."
-        "DOTA_Tooltip_Ability_pa_skill_miss"                                        "%БОНУС УКЛОНЕНИЯ:"
-        "DOTA_Tooltip_Ability_pa_skill_ms"                                        "%БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
-        
- 		"DOTA_Tooltip_ability_riki_dance"                            								"Dance Strike"
-        "DOTA_Tooltip_ability_riki_dance_Description"                								"Телепортируется за спину всех врагов находящихся между точкой и Phantom assasin.\n Наносит часть от полного урона. Может накладывать модификаторы атаки."
-        "DOTA_Tooltip_ability_riki_dance_Lore"                       								"Ловкое движение скрытного убийцы делает ее неотвратимой."
-        "DOTA_Tooltip_ability_riki_dance_damage"      												"%УРОН:"
-        "DOTA_Tooltip_ability_riki_dance_range"														"ДАЛЬНОСТЬ:"
-        "DOTA_Tooltip_ability_riki_dance_width"														"РАДИУС В КОТОРОМ БЬЕТ ВРАГОВ:"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_stifling_dagger_target_debuff"				"Stifling Dagger"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_stifling_dagger_target_debuff_Description" "Скорость передвижения снижена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_blur_smoke"				"Blur"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_blur_smoke_Description"	"Размывает свои очертания, пропадая из виду противника."
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_phantom_strike"				"Phantom Strike"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_phantom_strike_Description"	"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%. Имеет бонусный вампиризм."
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike"							"Phantom Strike"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_Description"				"Герой телепортируется к выбранному существу и, если это противник, получает дополнительные скорость атаки и вампиризм."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_Lore"						"Шёлковая вуаль Мортред — это последнее, что увидит её несчастная цель."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_duration"					"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_bonus_attack_speed"		"ДОП. СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_abilitycastrange"			"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_bonus_lifesteal"			"%ВАМПИРИЗМ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_scepter_description" "Вызывают на помощь одну из своих сестер, которая будет атаковать цель применения. Иллюзия живет %duration% сек."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_illusion_outgoing_tooltip"			"%НАНОСИМЫЙ ИЛЛЮЗИЕЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_AbilityCooldown"			"ПЕРЕЗАРЯДКА:"
  
- 		"DOTA_Tooltip_ability_phantom_assassin_blur_2"									"Blur"
-		"DOTA_Tooltip_ability_phantom_assassin_blur_2_Description"						"Герой сосредотачивается на себе, что позволяет ему уклоняться от атак.\n\nСочетается с другими источниками уклонения по закону убывающей полезности."
-		"DOTA_Tooltip_ability_phantom_assassin_blur_2_Lore"								"Медитация позволяет Сёстрам вуали опережать противников в бою."
-		"DOTA_Tooltip_ability_phantom_assassin_blur_2_bonus_evasion"						"%УКЛОНЕНИЕ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur"									"Blur"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Description"						"Применение способности размоет очертания владельца, даруя дополнительную ловкость, универсальные уклонения от любого типа урона и позволяет ему ходить сквозь существ. \n\nТИП РАЗВЕИВАНИЯ: нормальное."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Lore"								"Медитация позволяет Сёстрам вуали опережать противников в бою."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_chance_miss"						"%УНИВЕРСАЛЬНОЕ УКЛОНЕНИЕ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_bonus_agility_base"					"ЛОВКОСТЬ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_duration"							"ДЛИТЕЛЬНОСТЬ:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives"				"Fan of Knives"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_Description"   "Выпускает вокруг героя %times% кинжала с разной переодичностью."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_min_int"		"МИНИМАЛЬНЫЙ ИНТЕРВАЛ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_max_int"		"МАКСИМАЛЬНЫЙ ИНТЕРВАЛ:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife"				"More knife!"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_Description"   "При использовании Stifling Dagger, есть шанс, что спустя %interval% сек. выпуститься второй кинжал.\n\nЭто переключаемая способность, при нажатии, вы получите другой бонус."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_Note0"   "Кинжал выпущенный этой способностью, так же имеет шанс выпустить после себя еще один кинжал."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_chanche_dager"		"%ШАНС:"
+ 		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_interval"		"ИНТЕРВАЛ:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit"				"More Grace!"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_Description"   "Улучшает способнеость Coup de Grace.\n\nЭто переключаемая способность, при нажатии, вы получите другой бонус."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_bonus_chance"		"%ДОПОЛНИТЕЛЬНЫЙ ШАНС КРИТ. УРОНА:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_bonus_crit"		"%ДОПОЛНИТЕЛЬНЫЙ КРИТ. УРОН:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace"							"Coup de Grace"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_Description"				"Герой оттачивает свои боевые навыки, получая шанс совершить сокрушительную критическую атаку по врагу. Способность Stifling Dagger также получает такой шанс."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_Lore"						"Погибнуть от судьбоносного удара Мортред — честь для её врагов."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_chance"				"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_bonus"				"%КРИТИЧЕСКИЙ УРОН:"
+
  
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_stifling_dagger_triple"	"Stifling Dagger по трём целям"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_phantom_strike_duration"											 "+{s:bonus_duration} сек. действия Phantom Strike"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_stifling_dagger_cooldown"											"-{s:bonus_AbilityCooldown} сек. перезарядки Stifling Dagger"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_blur_agility"											"+{s:bonus_bonus_agility_base} к ловкости от Blur"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_phantom_stifling_dagger_damage"											   "+{s:bonus_attack_factor_tooltip}% к урону от Stifling Dagger"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_blur_duration"											   "+{s:bonus_duration} сек. действия Blur"
 
 	// -----------------Sand king--------------------		
 
@@ -2217,6 +2278,10 @@
  		"DOTA_Tooltip_modifier_elka_bonus"												"С НОВЫМ ГОДОМ!"
 		"DOTA_Tooltip_modifier_elka_bonus_Description"									"За каждый стак вы получаете  <font color='#ffffff'>+5%% </font>к получаемому опыту и золоту"
 
+ 		"DOTA_Tooltip_modifier_frozen_zombie_attack_enemy"												"Frost attack"
+		"DOTA_Tooltip_modifier_frozen_zombie_attack_enemy_Description"									"Ваша скорость атаки замедлена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% ед. а скорость передвежения на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
+
+ 
 
  		"DOTA_Tooltip_modifier_item_letter"												"Письма под елкой"
 		"DOTA_Tooltip_modifier_item_letter_Description"									"Чем больше ты ложешь писем, тем больше Дед Мороз хочет прийти"
@@ -2227,10 +2292,15 @@
 		// ******************** ferm ********************
 
 		"DOTA_Tooltip_Ability_item_milk"									"Молоко"
-		"DOTA_Tooltip_Ability_item_milk_Description"						"<h1>Активная: Хлюп-Хлюп</h1> Восстанавливает немного маны."
+		"DOTA_Tooltip_Ability_item_milk_Description"						"<h1>Активная: Хлюп-Хлюп</h1> Восстанавливает %mana% маны."
+
 
 		"DOTA_Tooltip_Ability_item_meat"							"Мяско"
-		"DOTA_Tooltip_Ability_item_meat_Description"				"<h1>Активная: Ам ням</h1> Восстанавливает немного здоровья."
+		"DOTA_Tooltip_Ability_item_meat_Description"				"<h1>Активная: Ам ням</h1> Восстанавливает %heal% здоровья."
+
+		"DOTA_Tooltip_Ability_item_bewstheaks"							"Бифштекс"
+		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Активная: Ам ням</h1>Восстанавливает %heal% здоровья."
+		"DOTA_Tooltip_Ability_item_bewstheaks_Lore"       "Кункевич всегда любил готовить Бифштексы!"
 
 		"DOTA_Tooltip_Ability_item_bag_of_gold"								"Золото"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_Description"					"Содержит немножко золота." 

@@ -11,10 +11,10 @@ Sounds = Sounds or {
 
   		["a-ha - Take On Me"] = 113,  		
   		["AJR - World's Smallest Violin"] = 70,  
-  		["Bangers Only, fawlin, Preston Pablo, Chill Only - Circles"] = 192,  
-  		["Bee Gees - Stayin' Alive"] = 128,
+  		["Bangers Only, fawlin, Preston Pablo, Chill Only - Circles"] = 195,  
+  		["Bee Gees - Stayin' Alive"] = 130,
   		["Earth Wind And Fire - Let's Groove"] = 91,
-  		["Earth Wind And Fire - September"] = 80,
+  		["Earth Wind And Fire - September"] = 82,
   		["Grover Washington, Jr, Bill Withers - Just The Two Of Us"] = 60,
   		["Redbone - Come and Get Your Love"] = 65,
   		["Серега пират - Мой байк"] = 93,
@@ -89,6 +89,15 @@ Sounds = Sounds or {
 	 	["Wham! - Last Christmas"] = 265,
 		["Bobby Helms - Jingle bell"] = 128,
 
+	 	["Andy Williams - It's the Most Wonderful Time of the Year"] = 152,
+	 	["Andy Williams - Winter Wonderland"] = 128,
+		["Bing Crosby - It's Beginning to Look a Lot Like Christmas"] = 105,
+	 	["Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town"] = 158,
+	 	["Brenda Lee - Rockin' Around The Christmas Tree"] = 123,
+		["Пётр Ильич Чайковский - Марш из балета Щелкунчик"] = 143,
+	 	["П.Чайковский - Pas de Deux"] = 103,
+	 	["Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!"] = 63,
+		["Michael Buble - Holly Jolly Christmas"] = 119,
 
 
 ["Кошмар перед рождеством - End Title"] = 298,

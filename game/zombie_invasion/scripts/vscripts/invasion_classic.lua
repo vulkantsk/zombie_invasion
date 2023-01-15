@@ -27,16 +27,13 @@ end
  Halloween_boss = 0
 
 HERO_RESPAWN_TIME_BEFORE_10 = 10
-MONSTERS_RESPAWN_TIME = 10
-WAVE_RESPAWN_TIME = 2
-MEAT_DROP_PERC = 35
-MILK_DROP_PERC = 35
-SKIN_DROP_PERC = 1
-EGG_DROP_PERC = 20
-EGG_STRONG_DROP_PERC = 30
-BONE_DROP_PERC = 20
-BONE_STRONG_DROP_PERC = 40
-BOSS_DROP_PERC = 100
+
+Penguin_save_1 = 0
+Penguin_save_2 = 0
+Penguin_save_3 = 0 
+Penguin_save_4 = 0
+ 
+ 
 function InvasionMode:InvasionMap()
      
   
@@ -142,8 +139,10 @@ function InvasionMode:OnItemPickedUp(keys)
 
 	if itemname == "item_bonus_health" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_health", {  })
-               			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
+               local modif = owner:AddNewModifier(owner, nil, "modifier_health", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)
+               owner:CalculateStatBonus(true)
+               local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
@@ -151,7 +150,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_health_regen" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_health_regen", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_health_regen", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -160,7 +160,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana_regen" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_mana_regen", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_mana_regen", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)               
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -169,7 +170,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_mana", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_mana", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)  
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -178,7 +180,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_damage" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_damage", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_damage", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)     
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -187,7 +190,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_spell" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_spell", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_spell", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)   
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -196,7 +200,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory		
     elseif itemname == "item_bonus_health_regen1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_health_regen1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_health_regen1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)    
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -205,7 +210,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana_regen1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_mana_regen1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_mana_regen1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)  
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -214,7 +220,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_mana1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_mana1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)  
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -223,7 +230,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_damage1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_damage1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_damage1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)   
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -232,7 +240,8 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_spell1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_spell1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_spell1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1) 
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -241,7 +250,9 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory	
     elseif itemname == "item_bonus_health1" then
      EmitSoundOn("present", owner) 
-               owner:AddNewModifier(owner, nil, "modifier_health1", {  })
+               local modif = owner:AddNewModifier(owner, nil, "modifier_health1", {  })
+               modif:SetStackCount(modif:GetStackCount() + 1)  
+               owner:CalculateStatBonus(true)   
                			local effect = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/cm_arcana_pup_lvlup_godray.vpcf"
 			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, owner)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
@@ -296,7 +307,7 @@ end
  
  
 function InvasionMode:InvasionOnNPCSpawn(data)
- LinkLuaModifier( "modifier_main_pumpkin_hero", "abilities/halloween/main_pumpkin", LUA_MODIFIER_MOTION_NONE )
+-- LinkLuaModifier( "modifier_main_pumpkin_hero", "abilities/halloween/main_pumpkin", LUA_MODIFIER_MOTION_NONE )
 	local npc = EntIndexToHScript(data.entindex)
 	local name = npc:GetUnitName()
 
@@ -324,7 +335,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
      if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
         npc.FirstSpawned = true
-
+        npc:AddItemByName("item_tpscroll")
    
          --        npc:AddNewModifier(npc, nil, "modifier_main_pumpkin_hero", {  })
  
@@ -349,14 +360,26 @@ function InvasionMode:spawn_last_boss()
 end
 
 function InvasionMode:spawn_christmas_boss()
-	local point = nil  -- отвечает за то, где появиться свинья
+	local point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
 	local unit = nil  -- Кто появиться
-	
+	local heroes =  
+         FindUnitsInRadius(
+            DOTA_TEAM_BADGUYS, -- int, your team number
+            point, -- point, center point
+            nil,    -- handle, cacheUnit. (not known)
+            -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
+            DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
+            DOTA_UNIT_TARGET_HERO, -- int, type filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            0,  -- int, order filter
+            false   -- bool, can grow cache
+        )
+ 	local random = heroes[RandomInt(1,#heroes)]
  
-	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_christmas_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
+    
+     point = random:GetAbsOrigin()
+	unit = CreateUnitByName("npc_nevermore_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+ 
 end
  
 function InvasionMode:spawn_greevil()
@@ -374,19 +397,25 @@ end
 DEFAULT_DAYTIME = 300
 DEFAULT_NIGHTTIME = 300 -- лучше не менять, в этом костыльном говне это значение прописано ещё раз 1000
 currentNight = 0
+current_day = 0
 
 function InvasionMode:NextNight()
 	local time = DEFAULT_DAYTIME --+ (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)
 	InvasionMode:NightTimer(time)
-end
 
+     if Penguin_save_1 == 2 and  Penguin_save_2 == 2 and Penguin_save_3 == 2 and Penguin_save_4 == 2 then
+	     InvasionMode:ChristmasMusic()
+          InvasionMode:ChristmasNight()  
+     end
+end
+ 
 function InvasionMode:NightTimer(time)
-	local timeLeft = time
-      
+	local timeLeft = time   
 	Timers:CreateTimer(1.0, function()
 		timeLeft = timeLeft - 1		
  		GameRules:SetTimeOfDay(0.3)
-	 
+	     
+	      
  
 		
 		if timeLeft <= 0 then
@@ -408,17 +437,23 @@ function InvasionMode:NightTimer(time)
 			elseif currentNight == 4 then
 				local putin = Entities:FindByName(nil, 'NPC_base')
 				UpgradeUnitStats(putin, 1.15)
-				InvasionMode:ZombieNight4()  
- 			elseif currentNight == 5 then
-				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.15)
-	 
+				InvasionMode:ZombieNight4() 
 
- --[[ 
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
-					InvasionMode:UsuallyEnd() 
+                    if Penguin_save_1 == 2 and  Penguin_save_2 == 2 and Penguin_save_3 == 2 and Penguin_save_4 == 2 then
+                         return nil
+                    else
+                        InvasionMode:UsuallyEnd()
+                    end
+					  
 				end)
-]]
+ 			elseif currentNight == 5  then
+				local putin = Entities:FindByName(nil, 'NPC_base')
+				UpgradeUnitStats(putin, 2.0)
+ 
+  
+ 
+ 
 				return nil;
 			end
 			
@@ -436,14 +471,264 @@ function InvasionMode:NightTimer(time)
 end
 --
 
+  local one_par_pen = 0   
+
+ 
+   local ping_tweday = 0    
+   local ping_thrday = 0  
+   local ping_chtday = 0  
+
+  cicle_dead = 0
+function InvasionMode:ChristmasPeng()
+    local point = Entities:FindByName( nil, "slide_penguin_pr")  
+    local ring_particle = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
+    local ring_particle_2 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
+    local ring_particle_3 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
+    local ring_particle_4 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
+
+    local patrol_guards_1 = {
+
+			{	
+				unit_name = "npc_patrol_guard_ogre", 
+				spawn_points = {"path_corner_patrol_1_1","path_corner_patrol_1_3","path_corner_patrol_1_5","path_corner_patrol_1_7",}
+			},
+ 
+          }
+
+    local	cycle_guards_1 = {
+			{	unit_name = "npc_patrol_kobold", 
+				spawn_interval = 1.3,
+				spawn_points = {"path_corner_cycle_1_1","path_corner_cycle_1_3","path_corner_cycle_1_5"}
+			},
+			{	unit_name = "npc_patrol_roshan", 
+				spawn_interval = 5.0,
+				spawn_points = {"path_corner_cycle_1_7"}
+			}, 
+			 
+		}
+
+    local patrol_guards_2 = {
+
+			{	
+				unit_name = "npc_patrol_fish", 
+				spawn_points = {"path_corner_patrol_2_13","path_corner_patrol_2_15","path_corner_patrol_2_17","path_corner_patrol_2_20","path_corner_patrol_2_21"}
+			},
+			{	
+				unit_name = "npc_patrol_wolf", 
+				spawn_points = {"path_corner_patrol_2_9","path_corner_patrol_2_12","path_corner_patrol_2_33"}
+			},
+			{	
+				unit_name = "npc_patrol_guard_ogre", 
+				spawn_points = {"path_corner_patrol_2_3","path_corner_patrol_2_7","path_corner_patrol_2_31"}
+			},
+			{	
+				unit_name = "npc_patrol_guard_beast", 
+				spawn_points = {"path_corner_patrol_2_23","path_corner_patrol_2_29","path_corner_patrol_2_6"}
+			},   
+			{	
+				unit_name = "npc_patrol_kobold", 
+				spawn_points = {"path_corner_patrol_2_28","path_corner_patrol_2_35"}
+			},   
+        
+
+          }
+
+
+    local	cycle_guards_2 = {
+			{	unit_name = "npc_patrol_guard_beast", 
+				spawn_interval = 3.5,
+				spawn_points = {"path_corner_cycle_2_1","path_corner_cycle_2_3","path_corner_cycle_2_5"}
+			},
+ 
+			
+		}
+
+    local patrol_guards_3 = {
+
+			{	
+				unit_name = "npc_patrol_zomb", 
+				spawn_points = {"path_corner_patrol_3_4","path_corner_patrol_3_11",}
+			},
+ 			{	
+				unit_name = "npc_patrol_half_zomb_slow", 
+				spawn_points = {"path_corner_patrol_3_9"}
+			},
+ 			{	
+				unit_name = "npc_patrol_big_zomb", 
+				spawn_points = {"path_corner_patrol_3_8"}
+			},
+          }
+
+
+    local	cycle_guards_3 = {
+			{	unit_name = "npc_patrol_half_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_3_1"}
+			},
+ 			{	unit_name = "npc_patrol_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_3_3"}
+			},
+			{	unit_name = "npc_patrol_big_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_3_5"}
+			},
+			
+		}
+
+    local patrol_guards_4 = {
+
+			{	
+				unit_name = "npc_patrol_pudge", 
+				spawn_points = {"path_corner_patrol_4_110","path_corner_patrol_4_109",
+				"path_corner_patrol_4_108","path_corner_patrol_4_107","path_corner_patrol_4_106",
+				"path_corner_patrol_4_105","path_corner_patrol_4_104","path_corner_patrol_4_103",
+			     "path_corner_patrol_4_102","path_corner_patrol_4_101","path_corner_patrol_4_100"}
+			},
+
+ 			{	
+				unit_name = "npc_patrol_zomb", 
+				spawn_points = {"path_corner_patrol_4_1"}
+			},
+ 			 	
+
+ 			{	
+				unit_name = "npc_patrol_big_zomb", 
+				spawn_points = {"path_corner_patrol_4_3","path_corner_patrol_4_5"}
+			}, 
+          }
+ 
+
+    local	cycle_guards_4 = {
+			{	unit_name = "npc_patrol_zomb", 
+				spawn_interval = 1.75,
+				spawn_points = {"path_corner_cycle_4_1","path_corner_cycle_4_3","path_corner_cycle_4_5","path_corner_cycle_4_7",
+				"path_corner_cycle_4_9","path_corner_cycle_4_11"}
+			},
+			{	unit_name = "npc_patrol_big_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_4_13","path_corner_cycle_4_19"}
+			},
+			{	unit_name = "npc_patrol_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_4_17"}
+			},
+ 			{	unit_name = "npc_patrol_half_zomb", 
+				spawn_interval = 3.0,
+				spawn_points = {"path_corner_cycle_4_15"}
+			},   
+ 			{	unit_name = "npc_patrol_undying", 
+				spawn_interval = 5.0,
+				spawn_points = {"path_corner_cycle_4_22"}
+			},   
+			 
+			
+		}
+
+ 
+	Timers:CreateTimer(0,function()
+
+     if current_day == 1 and Penguin_save_1 == 0 and one_par_pen == 0 then 
+ 
+     	one_par_pen = one_par_pen + 1
+	     ParticleManager:SetParticleControl(ring_particle, 0, point:GetAbsOrigin()) 
+
+          SpawnUnitsNewYear(patrol_guards_1,cycle_guards_1)
+
+	elseif current_day == 2 and Penguin_save_2 == 0 and one_par_pen == 0 then
+          if ring_particle then 
+          	DeleteUnitsNewYear(patrol_guards_1,cycle_guards_1)
+          	ParticleManager:DestroyParticle(ring_particle, false)
+          	ring_particle = nil
+          end
+	     one_par_pen = one_par_pen + 1
+	     ping_tweday = ping_tweday + 1
+	     ParticleManager:SetParticleControl(ring_particle_2, 0, point:GetAbsOrigin()) 
+          
+	Timers:CreateTimer(5,function()
+	     SpawnUnitsNewYear(patrol_guards_2,cycle_guards_2)
+	 end)
+	elseif current_day == 3 and Penguin_save_3 == 0 and one_par_pen == 0 then
+          if ring_particle_2 then 
+          	DeleteUnitsNewYear(patrol_guards_2,cycle_guards_2)
+          	ParticleManager:DestroyParticle(ring_particle_2, false)
+          	ring_particle_2 = nil
+          end
+	     one_par_pen = one_par_pen + 1
+	     ping_thrday = ping_thrday + 1
+	     ParticleManager:SetParticleControl(ring_particle_3, 0, point:GetAbsOrigin()) 
+          
+          Timers:CreateTimer(5,function()
+
+	         SpawnUnitsNewYear(patrol_guards_3,cycle_guards_3)
+	    end)
+	elseif current_day == 4 and Penguin_save_4 == 0 and one_par_pen == 0 then
+		if ring_particle_3 then 
+			DeleteUnitsNewYear(patrol_guards_3,cycle_guards_3)
+          	ParticleManager:DestroyParticle(ring_particle_3, false)
+          	ring_particle_3 = nil
+          end
+	     one_par_pen = one_par_pen + 1
+	     ping_chtday = ping_chtday + 1
+	     ParticleManager:SetParticleControl(ring_particle_4, 0, point:GetAbsOrigin()) 
+          
+
+          Timers:CreateTimer(5,function()
+	     SpawnUnitsNewYear(patrol_guards_4,cycle_guards_4)
+	     end)
+	elseif current_day == 5  then
+		if ring_particle_4 then 
+			DeleteUnitsNewYear(patrol_guards_4,cycle_guards_4)
+          	ParticleManager:DestroyParticle(ring_particle_4, false)
+          	ring_particle_4 = nil
+          end		
+	end
+ 
+     if current_day == 2 and Penguin_save_1 == 0 and ping_tweday == 0 then 
+     	one_par_pen = one_par_pen - 1
+     elseif current_day == 3 and Penguin_save_2 == 0 and ping_thrday == 0 then
+          print('dodo') 
+     	one_par_pen = one_par_pen - 1
+     elseif current_day == 4 and Penguin_save_3 == 0 and ping_chtday == 0 then           
+     	one_par_pen = one_par_pen - 1
+     end
+
+ 	if Penguin_save_1 == 1 and one_par_pen == 1 or Penguin_save_2 == 1 and one_par_pen == 1 or Penguin_save_3 == 1 and one_par_pen == 1 or Penguin_save_4 == 1 and one_par_pen == 1 then 
+		one_par_pen = one_par_pen - 1
+		
+		if ring_particle then 
+			DeleteUnitsNewYear(patrol_guards_1,cycle_guards_1)
+		     ParticleManager:DestroyParticle(ring_particle, false)
+		     ring_particle = nil
+		elseif ring_particle_2 then 
+			DeleteUnitsNewYear(patrol_guards_2,cycle_guards_2)
+			ParticleManager:DestroyParticle(ring_particle_2, false)
+
+			ring_particle_2 = nil
+		elseif ring_particle_3 then 
+			DeleteUnitsNewYear(patrol_guards_3,cycle_guards_3)
+			ParticleManager:DestroyParticle(ring_particle_3, false)
+			ring_particle_3 = nil
+		elseif ring_particle_4 then 
+			DeleteUnitsNewYear(patrol_guards_4,cycle_guards_4)
+			ParticleManager:DestroyParticle(ring_particle_4, false)
+			ring_particle_4 = nil
+          end
+          
+     end
+     return 1
+     end)
+end
+
 function InvasionMode:InvasionGameStart()
 
 	InvasionMode:InvasionSpawnMoobs()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
+ 
+      InvasionMode:ChristmasPeng()
   
-   --   InvasionMode:ZombieNight1()  
    
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
@@ -455,7 +740,7 @@ function InvasionMode:UsuallyEnd()
  	Timers:CreateTimer(0,function()
 	         
 	    xuitat3 = RandomInt(1,3)
-        print(xuitat3)
+         
 		if xuitat3 == 1 then
 	 	    EmitGlobalSound("Invasion.Castaways")
 		    GameRules:SendCustomMessage("<font color='#58ACFA'>The Castaways – Liar Liar</font>", 0, 0) 
@@ -588,40 +873,21 @@ end
 	Timers:CreateTimer(15,function()
 		GameRules:SendCustomMessage('<font color="#58ACFA">PROTOCOL "The end of the world" WAS STARTED</font>', 0, 0)
 	end)
+
+ 	Timers:CreateTimer(30,function()
+		 EmitGlobalSound("christmas_boss_begin")
+	end)
+
+ 
+ 	Timers:CreateTimer(40,function()
+ 		GameRules:SetTimeOfDay(0.8)
+		 InvasionMode:spawn_christmas_boss()
+	end)
+
  
 end
 
-
- function InvasionMode:ChristmasEnd()  
- -- Новогодний конец
-InvasionMode:ChristmasMusic()
-   		EmitGlobalSound("ho_ho_ho")
-	Timers:CreateTimer(0, function() GameRules:SendCustomMessage("#christmas_night_1",0,0) end)
-	Timers:CreateTimer(90, function() GameRules:SendCustomMessage("#christmas_night_3",0,0) end)
-	Timers:CreateTimer(210, function() GameRules:SendCustomMessage("#christmas_night_2",0,0) end)
-
  
-	Timers:CreateTimer(225, function()  
- InvasionMode:spawn_greevil()
-end)
-	Timers:CreateTimer(300,function()
-  		 InvasionMode:ChristmasNight()       
-	end)  
-
-	Timers:CreateTimer(602,function()
-	EmitGlobalSound("christmas_ne_Bydet")
-	InvasionMode:ChristmassEror()
-	end)
-
- 
-	Timers:CreateTimer(634,function()
-	EmitGlobalSound("christmas_boss_begin")
-	end)
- 	Timers:CreateTimer(646,function()
-   InvasionMode:spawn_christmas_boss()
-	end)
- 
- end
 
  function InvasionMode:HalloweenEnd()  
  -- Новогодний конец
@@ -942,9 +1208,7 @@ function InvasionMode:ZombieNight3()
  		 self:SpawnFlash("npc_flash_golem_3")
 	end)
 
-  	Timers:CreateTimer(301,function()
- 	 	InvasionMode:UsuallyEnd() 
-	end)
+ 
  
  
  
@@ -952,68 +1216,28 @@ end
  
    	    local zombie_count_hal = 0 
         local ghost_count_hal = 0
-
+ local zombie_count_new = 0
+   local ghost_count_new = 0 
 	 
 
 function InvasionMode:ChristmasNight()  
-   -- 4 НОЧЬ 
-  
+ 
     local wave_4 = 0
 	
-  	Timers:CreateTimer(0,function()
+  	Timers:CreateTimer(300,function()
 		 self:SpawnZombie("npc_classic_new_years",8)
 		 self:SpawnGhost("npc_classic_new_years_lich",1)
 	end)
-	
-	Timers:CreateTimer(0, function()
-	     while wave_4 < 29 do
-			 wave_4 = wave_4 + 1
-			 
-			 local unit_count = 4
-		     self:SpawnZombie("npc_classic_new_years", unit_count)
-		     return 10
-		 end			 
+ 
+
+	Timers:CreateTimer(600,function()
+		GameRules:SetTimeOfDay(0.3)
 	end)
 
-		Timers:CreateTimer(0, function()
-	    while wave_4 < 29 do 
- 
- 
-			  self:SpawnGhost("npc_classic_new_years_lich",1)
-		     return 25
-		end
+	Timers:CreateTimer(602,function()
+	    EmitGlobalSound("christmas_ne_Bydet")
+	    InvasionMode:ChristmassEror()
 	end)
-
- 			 
-		    
-
-	Timers:CreateTimer(0, function()
-	    while wave_4 < 29 do 
- 
- 
-			 self:SpawnGhost("npc_classic_new_years_winterwyvern",1)
-		     return 30
-		end
-	end)
-
-
- 
-
- 
-  	Timers:CreateTimer(90, function()
-	     while wave_4 <  29 do 
-		     self:SpawnZombie("npc_classic_new_years_seer",1)
-		 return 90
-		 end
-	end)	
-	
- 
-    	Timers:CreateTimer(90, function()
-	     while wave_4 <  29 do 
-		     self:SpawnZombie("npc_classic_new_years_ancient",1)
-		 return 50
-		 end
-	end) 
  
 end
 
@@ -1201,6 +1425,7 @@ end
  
       local pig_count = 0
       local rollBase = 2.8
+      local rollBase_ghost = 2.8
 
  function InvasionMode:CreateDrop (itemName, pos)
    local newItem = CreateItem(itemName, nil, nil)
@@ -1214,9 +1439,12 @@ function InvasionMode:InvasionEntityKilled (data)
 	local killedEntity = EntIndexToHScript(data.entindex_killed)
  
  	if killedEntity:IsRealHero() and killedEntity:IsReincarnating() == false then
- 		if killedEntity:GetLevel() <= 10 then 
-		killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )
-	else 
+
+ 	if killedEntity:HasModifier("modifier_survior_passive") then 
+		killedEntity:SetTimeUntilRespawn( 2 )
+	elseif killedEntity:GetLevel() <= 10 then 
+          killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )
+	else  
 		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		
 	end
 	end
@@ -1228,8 +1456,14 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_skelet_boss" and killedEntity:IsReincarnating() == false then
 		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
- 
 	end	
+	if killedEntity:GetUnitName() == "npc_EdgardBs" then
+	    for i=1,2 do
+	         local unit = CreateUnitByName("npc_EdgardBs", killedEntity:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+	    end 
+     GameRules:SendCustomMessage("<font color='#c10020'>)))</font>", 0, 0)
+	end	
+ 
 
    if Pig_bo_kill == 0 then 
 	if killedEntity:GetUnitName() == "npc_boss_pig" then		 
@@ -1602,6 +1836,104 @@ end
            	end	                        
 	   	 end             
      end
+
+
+     if killedEntity:GetUnitName() == "npc_classic_new_years" or killedEntity:GetUnitName() == "npc_classic_new_years_ancient" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         zombie_count_new = zombie_count_new + 1
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(3,6)
+		         Timers:CreateTimer(time_res, function()
+
+		             if RollPercentage(rollBase) then 
+ 		                 unit = CreateUnitByName("npc_classic_new_years_ancient", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase = 1
+ 		             else
+ 		         	       unit = CreateUnitByName("npc_classic_new_years", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase = rollBase + 0.5
+ 		             end
+
+        	             if zombie_count_new < 105 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	 SetExpUsually(unit, 0)
+           	             elseif  zombie_count_new < 238 then 
+          	                     SetGoldUsually(unit, -20)          	                  	
+           	                  	 SetExpUsually(unit, -90)
+            	             elseif  zombie_count_new > 238 then 
+          	                     SetGoldUsually(unit, -30)         	                  	  
+           	                  	 SetExpUsually(unit, -130)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if zombie_count_new < 105 then 
+             	            	 GiveGoldPlayers(20)
+           	             elseif  zombie_count_new < 238 then 
+           	                  	 GiveGoldPlayers(15)
+            	             elseif  zombie_count_new > 238 then 
+           	                  	 GiveGoldPlayers(10)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
+
+
+     if killedEntity:GetUnitName() == "npc_classic_new_years_lich" or killedEntity:GetUnitName() == "npc_classic_new_years_winterwyvern" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("ghost_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         ghost_count_new = ghost_count_new + 1
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(15,25)
+		         Timers:CreateTimer(time_res, function()
+
+		             if RollPercentage(rollBase_ghost) then 
+ 		                 unit = CreateUnitByName("npc_classic_new_years_winterwyvern", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_ghost = 10
+ 		             else
+ 		         	       unit = CreateUnitByName("npc_classic_new_years_lich", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_ghost = rollBase_ghost + 15
+ 		             end
+
+        	             if ghost_count_new < 8 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	 SetExpUsually(unit, 0)
+           	             elseif  ghost_count_new < 14 then 
+          	                     SetGoldUsually(unit, -20)          	                  	
+           	                  	 SetExpUsually(unit, -90)
+            	             elseif  ghost_count_new > 14 then 
+          	                     SetGoldUsually(unit, -30)         	                  	  
+           	                  	 SetExpUsually(unit, -130)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if ghost_count_new < 8 then 
+             	            	 GiveGoldPlayers(60)
+           	             elseif  ghost_count_new < 8 then 
+           	                  	 GiveGoldPlayers(40)
+            	             elseif  ghost_count_new > 14 then 
+           	                  	 GiveGoldPlayers(30)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
 --*************************************** END SPAWN ***************************************
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
@@ -1675,7 +2007,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
- 
+ 	--[[  	
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
@@ -1725,7 +2057,7 @@ function InvasionMode:ThemeMusic()
 		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
 		"Серега пират - Я взлетаю вверх",  			
     	},
-
+    ]]
     	--[[ 
         	[5] = {
 		"RSAC - NBA",
@@ -1756,13 +2088,16 @@ function InvasionMode:ThemeMusic()
   		    "Mase - Psycho",				
     	},
     	   ]]
-        }	 
+        
 
-     	--[[  	         	 
+ 
+
    [1] = {
  "Merry - Christmas Jingle Bells",  
   "Jingle Вells" ,
   "Lofi Origin - Jingle Bells Lo Fi Chill",
+  "Andy Williams - Winter Wonderland",
+  "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
   },
   
   	       
@@ -1770,27 +2105,32 @@ function InvasionMode:ThemeMusic()
   		    "Aurélie - Jingle Bells", 
   		    "Ансамбль Детские Песни - Три белых коня",
   		    "Дискотека Авария - Новогодняя",
- 
+  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+  		    "Michael Buble - Holly Jolly Christmas",
     	},
 
      	[3] = {
   		    "Дима Билан - Новый Год с новой строчки",
   		    "ABBA - Happy New Year",
+  		    "Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
   		    "O Liebert - Jinggle Bells",  
+  		    "Andy Williams - It's the Most Wonderful Time of the Year",
     	},
     
  
      	   	     
      	[4] = {
+     	"Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
+     	"П.Чайковский - Pas de Deux",
 		"Jinggle bells - Remix",
 		"Wham! - Last Christmas",
  		
     	},
      
-   ]] 
+    }	 
  	night_music =
  	{
- 
+  --[[
  		[1] = {
 			"Undertale - Respite",
 		},
@@ -1806,14 +2146,14 @@ function InvasionMode:ThemeMusic()
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
  		},
-
+  ]]
  		--[[ 
   		[5] = {
 	 		"Argh Ost – Halloween",
    
  		},
  		]]
- --[[
+ 
  
  		[1] = {
 			"Кошмар перед рождеством - End Title",
@@ -1829,24 +2169,25 @@ function InvasionMode:ThemeMusic()
 	 		"Кошмар перед рождеством - Making Christmas",
  
  		},
-  ]]
+ 
  	}
  	local last_music = nil
 
 	Timers:CreateTimer(0,function()
 	    local time = GameRules:GetDOTATime(false, false)
 	    local day_time = GameRules:GetDOTATime(false, false)%600
-	    local current_day =  math.floor(time/600)+1
+	    current_day =  math.floor(time/600)+1
 	    local music 
 	    local time_until_end
 
 	    		local kunkka = Entities:FindByName(nil, 'kunkka')  
 	    		local lina = Entities:FindByName(nil, 'lina')  
-	    		local meepo = Entities:FindByName(nil, 'meepo')  
+	    		local meepo = Entities:FindByName(nil, 'miner')  
 	    		local crystalka = Entities:FindByName(nil, 'crystalka')  
 	    		local deny = Entities:FindByName(nil, 'deny')  
 	    		local old_men = Entities:FindByName(nil, 'old_men')  
 	    		local guard = Entities:FindByName(nil, 'guard')  
+	    		local ping = Entities:FindByName(nil, 'ping')  
 
 	    if day_time > 300 then
 	    	music = night_music[current_day]
@@ -1859,7 +2200,14 @@ function InvasionMode:ThemeMusic()
   	    		crystalka:AddNewModifier(crystalka, nil, "modifier_invulnerable", {}) 
   	    		deny:AddNewModifier(deny, nil, "modifier_invulnerable", {}) 
   	          old_men:AddNewModifier(old_men, nil, "modifier_invulnerable", {}) 
-  	          guard:AddNewModifier(guard, nil, "modifier_invulnerable", {}) 
+  	                  if guard then 
+           guard:AddNewModifier(guard, nil, "modifier_invulnerable", {}) 
+              else 
+
+             end
+  	          ping:AddNewModifier(ping, nil, "modifier_invulnerable", {}) 
+              
+  	           
   	          
  	
       local allBuildings = Entities:FindAllByClassname('npc_dota_building')
@@ -1881,8 +2229,12 @@ end
         meepo:RemoveModifierByName('modifier_invulnerable')
         deny:RemoveModifierByName('modifier_invulnerable')
         old_men:RemoveModifierByName('modifier_invulnerable')
-        guard:RemoveModifierByName('modifier_invulnerable')
+        if guard then 
+            guard:RemoveModifierByName('modifier_invulnerable')
+        else 
 
+        end
+        ping:RemoveModifierByName('modifier_invulnerable')
 
      local allBuildings = Entities:FindAllByClassname('npc_dota_building')
 
@@ -1966,10 +2318,25 @@ end
     { 	
  
      	[5] = {
-		"Bobby Helms - Jingle bell",
-		"Wham! - Last Christmas",
-		"Aurélie - Jingle Bells",
- 		"Дима Билан - Новый Год с новой строчки",
+  	"Дима Билан - Новый Год с новой строчки",
+  	"ABBA - Happy New Year",
+  	"Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
+  	"O Liebert - Jinggle Bells",  
+  	"Andy Williams - It's the Most Wonderful Time of the Year",
+     "Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
+     "П.Чайковский - Pas de Deux",
+	"Jinggle bells - Remix",
+	"Wham! - Last Christmas",
+	 "Aurélie - Jingle Bells", 
+  	"Ансамбль Детские Песни - Три белых коня",
+  	"Дискотека Авария - Новогодняя",
+  	"Brenda Lee - Rockin' Around The Christmas Tree",
+  	"Michael Buble - Holly Jolly Christmas",
+  	"Merry - Christmas Jingle Bells",  
+    "Jingle Вells" ,
+    "Lofi Origin - Jingle Bells Lo Fi Chill",
+    "Andy Williams - Winter Wonderland",
+    "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
     	},
     }
  
@@ -1977,7 +2344,7 @@ end
  	{
  
  		[5] = {
-	 		"Кошмар перед рождеством - Making Christmas",
+	 		"Пётр Ильич Чайковский - Марш из балета Щелкунчик",
  
  		},
 

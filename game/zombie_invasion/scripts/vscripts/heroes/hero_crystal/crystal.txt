@@ -29,7 +29,7 @@
 				"value"										"14 13 12 11 10 9 8"
 				"special_bonus_unique_crystal_maiden_5"		"-3"
 			}
-			"AbilityManaCost"				"80 100 120 140 160 180 200"
+			"AbilityManaCost"				"90 130 170 210 250 290 330"
 			"radius"
 			{
 				"value"										"425"
@@ -41,7 +41,7 @@
 			"vision_duration"				"6.0"
 			"nova_damage"
 			{
-				"value"										"70 140 210 280 350 420 490"
+				"value"										"120 240 360 480 600 720 840"
 				"special_bonus_unique_crystal_maiden_2"		"+240"
 			}
 		}		
@@ -187,8 +187,8 @@
 			"explosion_max_dist"			"785"
 			"damage"
 			{
-				"value"										"105 170 250"
-				"special_bonus_unique_crystal_maiden_3"		"+100"
+				"value"										"120 240 360"
+				"special_bonus_unique_crystal_maiden_3"		"+120"
 			}
 			"frostbite_delay" // negative means don't apply.
 			{

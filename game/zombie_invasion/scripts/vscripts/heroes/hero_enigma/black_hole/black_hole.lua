@@ -215,9 +215,7 @@ function modifier_ability_black_hole_thinker:OnDestroy()
 end
 
 function modifier_ability_black_hole_thinker:OnIntervalThink()
-	local pulse = self:GetCaster():FindAbilityByName("ability_midnight_pulse") 
-    local pulse_max = pulse:GetSpecialValueFor("damage_percent")
-    local pulse_base = pulse:GetSpecialValueFor("damage_base")
+ 
     local black_base = self:GetAbility():GetSpecialValueFor( "near_damage" )
 
          local spell_amp = self:GetCaster():GetSpellAmplification(false)
@@ -237,13 +235,19 @@ function modifier_ability_black_hole_thinker:OnIntervalThink()
 	for _,enemy in pairs(enemies) do
 		if self:GetCaster():IsAlive() then 
 		     self.damageTable.victim = enemy
-		     if self:GetCaster():HasShard() then 
+		     if self:GetCaster():HasShard() and self:GetCaster():FindAbilityByName("ability_midnight_pulse")   then 
+		     		local pulse = self:GetCaster():FindAbilityByName("ability_midnight_pulse")  
+                         local pulse_max = pulse:GetSpecialValueFor("damage_percent")  
+                         local pulse_base = pulse:GetSpecialValueFor("damage_base")  
 		          self.damageTable.damage = black_base + ( enemy:GetMaxHealth()*  pulse_max/100 ) + pulse_base
 		     end
 		      ApplyDamage( self.damageTable )
 		else 
 		     self.damageTableDead.victim = enemy
-	          if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then 
+	          if self:GetCaster():HasModifier("modifier_item_aghanims_shard")  then 
+	          		local pulse = self:GetCaster():FindAbilityByName("ability_midnight_pulse")  
+                         local pulse_max = pulse:GetSpecialValueFor("damage_percent")  
+                         local pulse_base = pulse:GetSpecialValueFor("damage_base")  
 		          self.damageTableDead.damage = ( enemy:GetMaxHealth()*  pulse_max/100 ) +  ((black_base + pulse_base) * (spell_amp + 1) )
 		     end
 		      ApplyDamage( self.damageTableDead )

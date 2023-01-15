@@ -58,13 +58,14 @@ function item_bewstheaks:OnSpellStart()
 	local hItem = self
 	local itemName = self:GetAbilityName()
 	local newItem = nil
-
+    local heal_meat = self:GetSpecialValueFor("heal")
+    
 	if hTarget == hCaster then
 		hCaster:EmitSound("eating")
-		hCaster:Heal(1000,hCaster)
+		hCaster:Heal(heal_meat,hCaster)
 	else
 		hTarget:EmitSound("eating")
-		hTarget:Heal(1000,hCaster)
+		hTarget:Heal(heal_meat,hCaster)
 	end
 
 	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then

@@ -1,0 +1,316 @@
+"DOTAAbilities"
+{
+
+"ability_phantom_assassin_stifling_dagger"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/stifling_dagger/stifling_dagger.lua"
+        "AbilityTextureName"            "phantom_assassin_stifling_dagger"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+		"MaxLevel" "7"
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "600 700 800 900 1000 1100 1200"
+        "AbilityCastPoint"              "0.3"
+ 
+    
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "30 30 30 35 35 40"
+
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+           "move_slow"           "-50"
+           "dagger_speed"        "1200"
+           "duration"              "2.5"
+           "base_damage"           "65" 
+
+			"attack_factor"					
+			{
+				"value"				"-75 -65 -55 -45 -35 -25 -15"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+25"
+			}
+			"attack_factor_tooltip"					
+			{
+				"value"				"25 35 45 55 65 75 85"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+25"
+			}
+
+			"AbilityCooldown"			
+			{
+				"value"						"6"		
+				"special_bonus_unique_assassin_stifling_dagger_cooldown"		"-2"
+			}  			       
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    } 	 
+
+    "ability_phantom_assassin_phantom_strike"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/phantom_strike/phantom_strike.lua"
+        "AbilityTextureName"            "phantom_assassin_phantom_strike"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CUSTOM"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+		"MaxLevel" "7"
+	    "HasScepterUpgrade"              "1"
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1000 1000 1000 1000"
+        "AbilityCastPoint"              "0.25"
+ 
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "40 40 45 45 50 50"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+			"duration"					
+			{
+				"value"				"2.0"
+			    "special_bonus_unique_assassin_phantom_strike_duration"	    "+0.75"
+			}
+           "bonus_lifesteal"           "10 12 14 17 19 22 25"
+           "bonus_attack_speed"    "80 100 120 140 160 180 200"
+			"illusion_outgoing_tooltip"			
+			{
+				"value"	"60"
+				"RequiresScepter"			"1"
+			}    
+			"illusion_outgoing_damage"			
+			{
+				"value"	"-40"
+				"RequiresScepter"			"1"
+			} 
+			"AbilityCooldown"			
+			{
+				"value"						"14 13 12 11 10 9 8"		
+				"RequiresScepter"			"1"
+				"special_bonus_scepter"		"-3"
+			}       
+			       
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+
+    "ability_phantom_assassin_blur"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/blur/blur.lua"
+        "AbilityTextureName"            "phantom_assassin_blur"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+ 
+		"MaxLevel" "7"
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "30"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "60 60 60 65 65 70"
+    
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+ 				"duration"					
+				{
+					"value"				"6"
+			    	"special_bonus_unique_assassin_blur_duration"	    "+4"
+				}
+				"bonus_agility_base"					
+				{
+					"value"				"12 16 20 24 28 32 36"
+			    	"special_bonus_unique_assassin_blur_agility"	    "+40"
+				}
+				"chance_miss"			"17 20 23 26 29 32 35"
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+    "ability_phantom_assassin_fan_of_knives"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/fan_of_knives/fan_of_knives.lua"
+        "AbilityTextureName"            "phantom_assassin_fan_of_knives"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        
+        "MaxLevel"                    "1"
+		"IsGrantedByShard"			"1"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "950"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0.4"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "120"
+    
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+ 				"min_int"					"2.3"
+				"max_int"			"3.8"
+				"times"			"3"
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+    }
+
+    "ability_phantom_assassin_togle_knife"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/togle_knife/togle_knife.lua"
+        "AbilityTextureName"            "Hero/pa/ability_phantom_assassin_togle_knife"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        
+		"RequiredLevel"					"35"
+		"MaxLevel" "1"
+
+        "AbilityCooldown"               "5"
+        "AbilityCastPoint"              "0.4"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+ 				"chanche_dager"					"33"
+				"interval"			"1.25"
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+
+    "ability_phantom_assassin_togle_crit"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/togle_knife/togle_knife.lua"
+        "AbilityTextureName"            "Hero/pa/ability_phantom_assassin_togle_crit"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        
+		"RequiredLevel"					"35"
+		"MaxLevel" "1"
+        "AbilityCooldown"               "5"
+        "AbilityCastPoint"              "0.4"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+ 				"bonus_chance"					"7"
+				"bonus_crit"			"75"
+	 
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+
+    "ability_phantom_assassin_coup_de_grace"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_phantoma_assasin/coup_de_grace/coup_de_grace.lua"
+        "AbilityTextureName"            "phantom_assassin_coup_de_grace"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+				 "crit_chance"               "15"
+				 "crit_bonus"                "200 325 450"
+        }
+    }
+
+	"special_bonus_unique_assassin_stifling_dagger_triple"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+	"special_bonus_unique_assassin_phantom_strike_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+	"special_bonus_unique_assassin_stifling_dagger_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+	"special_bonus_unique_assassin_blur_agility"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+	"special_bonus_unique_assassin_phantom_stifling_dagger_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+	"special_bonus_unique_assassin_blur_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+}

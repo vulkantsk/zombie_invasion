@@ -31,16 +31,28 @@
 	"item_arcane_blink" "REMOVE"
 	"item_swift_blink" "REMOVE"
 	"item_overwhelming_blink" "REMOVE"
-	"item_maelstrom"           "REMOVE"
+ 
 	"item_voodoo_mask"           "REMOVE"
 	"item_bloodstone"          "REMOVE"
+	"item_blade_mail"              "REMOVE"
 	//============================================================================================================
 	// items
 	//============================================================================================================
 
 //4
  
- 
+	"item_tpscroll"
+	{
+		"ItemRequirements"				"0"
+		"ItemPurchasable"				"0"
+		"ItemCost"				"0"		
+		"ShouldBeSuggested"				"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisplayCharges"			"0"
+		"ItemHideCharges"				"1"
+		"ItemSellable"					"0"
+	} 
 	
 	//=================================================================================================================
 	// Guardian Greaves
@@ -341,14 +353,14 @@
 	{
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"900"
+		"ItemCost"						"1200"
 	}	
 
 	"item_claymore"
 	{
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1100"
+		"ItemCost"						"1400"
 	}
 
 	"item_quelling_blade"
@@ -394,21 +406,12 @@
 
 	}
 
-	"item_monkey_king_bar"
+	"item_quelling_blade"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"135"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+		"ItemCost"						"250"
+ 
 
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"4850"
-		"ItemShopTags"					"damage;attack_speed;hard_to_tag"
-		"ItemQuality"					"epic"
-		"ItemAliases"					"mkb;monkey king bar"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ShouldBeSuggested"				"1"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -417,25 +420,22 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"10"
+				"damage_bonus"			"20"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"60"
+				"damage_bonus_ranged"	"10"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_chance"			"50"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_chance_damage"			"125"
+				"quelling_range_tooltip"			"350"
 			}
 		}
 	}
+
+ 
 
  
 //3
@@ -2990,12 +2990,13 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 
-		"lich_chain_frost"
+ 
+	"lich_chain_frost"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"					"5137"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3003,9 +3004,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"MaxLevel"						"1"
-		"LevelsBetweenUpgrades"			"1"
-		"RequiredLevel"					"1"
+		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Lich.ChainFrost"
 
 		"AbilityDraftUltShardAbility"		"lich_ice_spire"
@@ -3019,7 +3018,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20.0"
+		"AbilityCooldown"				"20"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -3031,56 +3030,32 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"damage"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"1950"
+				"value"		"1500"
+				"special_bonus_unique_lich_7" "+100"
 			}
-			"02"
+			"bonus_jump_damage"		
 			{
-				"var_type"				"FIELD_INTEGER"
-				"jumps"					"7"
+				"value"			"7"
+				"CalculateSpellDamageTooltip" "1"
 			}
-			"03"
+			"jumps"					"7"
+			"jump_range"			"600"
+			"slow_movement_speed"	"-65"
+			"slow_attack_speed"		"-65"
+			"slow_duration"			"2.5"
+			"projectile_speed"		"850"
+			"vision_radius"			"800"
+			"initial_projectile_speed"		"1050"
+			"has_unlimited_jumps"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"jump_range"			"600"
-			}			
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_movement_speed"	"-65"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_attack_speed"		"-65"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"slow_duration"			"4.5"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"1350"
-			}
-			"08"
-			{	
-				"var_type"				"FIELD_INTEGER"
-				"vision_radius"			"800"
-			}			
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_jump_damage"		"150"
+				"special_bonus_unique_lich_5"	"+1"
 			}
 		}			
 	}
-
 		 
  
 

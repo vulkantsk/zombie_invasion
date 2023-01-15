@@ -5,7 +5,7 @@
 
 	<Panel class="AddonLoadingRoot">
 		<Panel id="CustomBg">
-			<Image id="image_bg" class="ImageBg" src="file://{images}/custom_game/loading_screen/loadscreen.png" scaling="stretch-to-fit-y-preserve-aspect" />
+			<Image id="image_bg" class="ImageBg" src="file://{images}/custom_game/loading_screen/loadscreen_2.png" scaling="stretch-to-fit-y-preserve-aspect" />
 		</Panel>
 
 	</Panel>

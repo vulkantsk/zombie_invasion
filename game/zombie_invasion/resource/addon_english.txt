@@ -3,6 +3,7 @@
 	"Language"		"English"
 	"Tokens"
 	{		
+	    "npc_EdgardBs"        "npc_Edgard"
         "music_toggle"                                              "Turns on / off music in the game"
 		"sss"                                               	""
 
@@ -86,6 +87,24 @@
 	   "christmas_night_1"			                                    	"<font color='#fffacd'>You have a day to end your does  !</font>"	
 	   "christmas_night_2"			                                    	"<font color='#fffacd'>The harbinger of Christmas is coming!</font>"	
 	   "christmas_night_3"                                                    "<font color='#deaa88'>Throw few minutes message will appear  about coming Greevil. He appears around Main-Christmas tree before the moment while he will give you presents. Good luck:)</font>"	   
+
+       	   "sf_eg1"                                                  "<font color='#c10020'>RATHER</font>"
+       	   "sf_eg2"                                                  "<font color='#c10020'>I'VE HAD ENOUGH OF PLAYING WITH YOU</font>" 
+       	   "sf_eg3"                                                  "<font color='#c10020'>AND ALL THE WOUNDS YOU LEFT ME...</font>"
+       	   "sf_eg4"                                                  "<font color='#c10020'>THEY DIDN'T DO ANYTHING TO ME AHAAHAHAHAHAH</font>"
+       	   "sf_eg5"                                                  "<font color='#c10020'>AND NOW...</font>"
+       	   "sf_eg6"                                                  "<font color='#c10020'>I WANT TO FULLY ENJOY YOUR SUFFERING</font>"
+       	   "sf_eg7"                                                  "<font color='#c10020'>BY KILLING ALL THOSE YOU PROTECTED</font>"
+       	   "sf_eg8"                                                  "<font color='#c10020'>WHAT?</font>"
+       	   "sf_eg9"                                                  "<font color='#c10020'>WHAT????</font>"
+       	   "sf_eg10"                                                  "<font color='#c10020'>WHAT IS HAPPENING????</font>"
+       	   "sf_eg11"                                                  "<font color='#c10020'>NOOOOOOO......</font>"
+
+       	   "pn_eg1"                                                  "<font color='#58ACFA'>are you ok?</font>"
+       	   "pn_eg2"                                                  "<font color='#58ACFA'>Didn't you know that when there are five penguins</font>"
+       	   "pn_eg3"                                                  "<font color='#58ACFA'>Then nothing will stop them</font>"
+       	   "pn_eg4"                                                  "<font color='#58ACFA'>Good bye, my love:3</font>"
+
 	   	   
 		// ******************** heroes ********************
 
@@ -189,11 +208,13 @@
 		"npc_wave_boss_mini_pudge"                                         		"Mini pudge"
 
 
+ 
+ 
 
-		"npc_penguin"                                                         "Penguin"
+		"npc_penguin_1"                                                         "Penguin"
 		"npc_penguin_2"	                                                    "Penguin"
 		"npc_penguin_3"                                                 "Penguin"
-		"npc_penguin_4"                                                 "Penguin"
+		"npc_penguin_4"                                                 "Penguin"		"npc_jitel_penguin"                                                 "Penguin"
 		"npc_mini_elka_1"                                                 "mini christmas tree"				
 		"npc_mini_elka_2"                                                 "mini christmas tree"
 		"npc_mini_elka_3"	                                                	"mini christmas tree"
@@ -208,6 +229,7 @@
 		"npc_classic_new_years_ancient"                                                	"A particle of ice from ancient times"
 		"npc_classic_new_years_seer"                                                	"Winter eyes"	
 		"npc_christmas_boss"	                                                	"Krampus"
+		"npc_nevermore_boss"                                                          "Chaos Elemental"
 		"npc_classic_mini_crampus" 	                                                	"mini-krampus"
         "npc_classic_doom_crampus" 	                                                	"Spawn of Hell"
 		// ******************** Предметы********************
@@ -466,7 +488,7 @@
 		"DOTA_Tooltip_Ability_item_trash_Description"			"Does it smell strange??.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then Something will be cooked. "
  
 		"DOTA_Tooltip_Ability_item_bewstheaks"							"Steak"
-		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Active: Nam-nam</h1>Regeneration very big number of health.\n Very.\n More.\n(1000)"
+		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Active: Nam-nam</h1>Regeneration %heal% health."
 		"DOTA_Tooltip_Ability_item_bewstheaks_Lore"       "Kunnka like to cook steaks!"
 		
 		"DOTA_Tooltip_Ability_item_milk_shake"							"Milkshake"
@@ -501,15 +523,33 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
 
-        "DOTA_Tooltip_Ability_item_dickrapier" "Dickrapier"
-        "DOTA_Tooltip_Ability_item_dickrapier_Description" "<h1>Passive: Cock</h1>Owner receives more damage."
-        "DOTA_Tooltip_Ability_item_dickrapier_bonus_damage" "+$damage"
-        "DOTA_Tooltip_Ability_item_dickrapier_Lore" "Dick, I think cock(((( Ok kock so cokc."
+        "DOTA_Tooltip_Ability_item_resistance"                                            "Steel cuirass"
+        "DOTA_Tooltip_Ability_item_resistance_Description"                                "<h1>Passive: Steel Cuirass</h1>The owner gets additional protection."
+        "DOTA_Tooltip_Ability_item_resistance_arm"                                        "+$armor"
+        "DOTA_Tooltip_Ability_item_resistance_res"                                        "%+ to reduce incoming damage"
+        "DOTA_Tooltip_Ability_item_resistance_Lore"                                "Steel armor that reliably protects the wearer."
 
-        "DOTA_Tooltip_Ability_item_god_rapier" "Rapier"
-        "DOTA_Tooltip_Ability_item_god_rapier_Description" "<h1>Passive: True strike</h1>Owner receives more damage and true-strike."
-        "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage" "+$damage"
-        "DOTA_Tooltip_Ability_item_god_rapier_Lore" "So powerful, it cannot have a single owner."
+         "DOTA_Tooltip_Ability_item_blademail"                                            "Blade mail"
+		"DOTA_Tooltip_ability_item_blademail_Description"						"<h1>Active: Damage Return</h1>For %duration% seconds, the damage returned from all sources is increased by %active_reflection_pct%%%.\n\n<h1>Passive: Damage Return</h1>Everytime you are attacked, you return %passive_reflection_constant% damage plus %passive_reflection_pct%%% of the attack damage dealt to you." 
+		"DOTA_Tooltip_ability_item_blademail_Lore"								"A razor-sharp coat of mail, it is the choice of selfless martyrs in combat."
+		"DOTA_Tooltip_ability_item_blademail_Note0"							"Damage Return is calculated before any kind of reduction."
+		"DOTA_Tooltip_ability_item_blademail_Note1"							"Damage Return doesn't reflect damage from other forms of Blade Mail."
+		"DOTA_Tooltip_ability_item_blademail_Note2"							"Returned damage type is the same as it was received."
+		"DOTA_Tooltip_ability_item_blademail_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_blademail_bonus_armor"						"+$armor"
+
+         "DOTA_Tooltip_Ability_item_blademail_2"                                            "Steel mail"
+		"DOTA_Tooltip_ability_item_blademail_2_Description"						"<h1>Active: Damage Return</h1>For %duration% seconds, the damage returned from all sources is increased by %active_reflection_pct%%%.\n\n<h1>Passive: Damage Return</h1>Everytime you are attacked, you return %passive_reflection_constant% damage plus %passive_reflection_pct%%% of the attack damage dealt to you." 
+		"DOTA_Tooltip_ability_item_blademail_2_Lore"								"A razor-sharp coat of mail, it is the choice of selfless martyrs in combat."
+		"DOTA_Tooltip_ability_item_blademail_2_Note0"							"Damage Return is calculated before any kind of reduction."
+		"DOTA_Tooltip_ability_item_blademail_2_Note1"							"Damage Return doesn't reflect damage from other forms of Blade Mail."
+		"DOTA_Tooltip_ability_item_blademail_2_Note2"							"Returned damage type is the same as it was received."
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_armor"						"+$armor"
+		"DOTA_Tooltip_ability_item_blademail_2_bonus_resistance"						"%+ to reduce incoming damage"
+
+		"DOTA_Tooltip_modifier_item_blademail"					"Blade Mail Reflection"
+		"DOTA_Tooltip_modifier_item_blademail_Description"		"Returning damage to attacking units."
 
 		"DOTA_Tooltip_Ability_item_heart_2"				"Totem Heart of Tarrasque"
 		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Preserved heart of an extinct monster, it bolsters the bearer's fortitude."
@@ -887,17 +927,35 @@
 		"DOTA_Tooltip_ability_item_bonus_health_Description"							"<h1>Active: Happy new year!</h1> It gives 20 hp on forever!"
 		
 		"DOTA_Tooltip_Ability_item_bonus_health_regen"				"Present"
-		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 0.45 hp regen on forever!"
+		"DOTA_Tooltip_ability_item_bonus_health_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 2 hp regen on forever!"
 
 		"DOTA_Tooltip_Ability_item_bonus_mana_regen"				"Present"
-		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 0.45 mana regen on forever!"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 1 mana regen on forever!"
 
 		"DOTA_Tooltip_Ability_item_bonus_mana"				"Present"
 		"DOTA_Tooltip_ability_item_bonus_mana_Description"							"<h1>Active: Happy new year!</h1> It gives 20 mana on forever!"
 
-		"DOTA_Tooltip_Ability_item_bonus_damage"				"Present"
-		"DOTA_Tooltip_ability_item_bonus_damage_Description"							"<h1>Active: Happy new year!</h1> It gives 4 damage on forever!"	
+		"DOTA_Tooltip_Ability_item_bonus_damage1"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_damage1_Description"							"<h1>Active: Happy new year!</h1> It gives 40 damage on forever!"	
 
+		"DOTA_Tooltip_Ability_item_bonus_health1"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_health1_Description"							"<h1>Active: Happy new year!</h1> It gives 20 hp on forever!"
+		
+		"DOTA_Tooltip_Ability_item_bonus_health1_regen"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_health1_regen_Description"							"<h1>Active: Happy new year!</h1> It gives 20 hp regen on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana_regen1"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_mana_regen1_Description"							"<h1>Active: Happy new year!</h1> It gives 10 mana regen on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_mana1"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_mana1_Description"							"<h1>Active: Happy new year!</h1> It gives 200 mana on forever!"
+
+		"DOTA_Tooltip_Ability_item_bonus_damage1"				"Present"
+		"DOTA_Tooltip_ability_item_bonus_damage1_Description"							"<h1>Active: Happy new year!</h1> It gives 40 damage on forever!"	
+
+
+		"DOTA_Tooltip_Ability_item_bonus_spell1"				"Подарок"
+		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Active: Happy new year!</h1> Gives 10% spell boost forever!"			
 
 // ******************** квесты ********************
  
@@ -955,7 +1013,13 @@
 		"DOTA_Tooltip_Ability_quest_test_meepo_value_required"     							"NUMBER OF REMAINS:"
 		"DOTA_Tooltip_Ability_quest_test_meepo_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test_meepo_reward_gold"                 		"GOLD:"
-		
+
+ 		"DOTA_Tooltip_Ability_quest_test_pinguin"										"Save the New Year!"
+		"DOTA_Tooltip_Ability_quest_test_pinguin_Description"							"Yo ho ho! People, someone, help me find my 4 brothers! As soon as I stopped in this village, they disappeared on the very first day. Everyone who dares to help me, get into this needle, it will take you to the places where my brothers may have been. But when using a needle, side effects are possible."
+		"DOTA_Tooltip_Ability_quest_test_pinguin_value_required"     							"NUMBER OF PENGUINS:"
+		"DOTA_Tooltip_Ability_quest_test_pinguin_reward_exp"                 		""
+		"DOTA_Tooltip_Ability_quest_test_pinguin_reward_gold"                 		""
+
 		"DOTA_Tooltip_modifier_quest_template"												"Wait..."
 		"DOTA_Tooltip_modifier_quest_template_Description"									"Not wait."
 
@@ -2027,10 +2091,10 @@
 		// ******************** ferm ********************
 
 		"DOTA_Tooltip_Ability_item_milk"									"Milk"
-		"DOTA_Tooltip_Ability_item_milk_Description"						"<h1>Active: Hip-hip</h1> Regenerate few mana."
+		"DOTA_Tooltip_Ability_item_milk_Description"						"<h1>Active: Hip-hip</h1> Regenerate %mana% mana."
 
 		"DOTA_Tooltip_Ability_item_meat"							"Meat"
-		"DOTA_Tooltip_Ability_item_meat_Description"				"<h1>Active: Nam-nam</h1> Regenerate few health."
+		"DOTA_Tooltip_Ability_item_meat_Description"				"<h1>Active: Nam-nam</h1> Regenerate %heal% health."
 
 		"DOTA_Tooltip_Ability_item_bag_of_gold"								"Gold"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_Description"					"It have gold." 
@@ -2171,6 +2235,11 @@
 		"DOTA_Tooltip_modifier_item_hp_aura_Description"																				"Health regeneration increased"
  
 	
+
+ 		"DOTA_Tooltip_modifier_frozen_zombie_attack_enemy"												"Frost attack"
+		"DOTA_Tooltip_modifier_frozen_zombie_attack_enemy_Description"									"Your attack speed is slowed down by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% units. and the transfer rate by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
+
+
 	    "scroll_7"																														"Secrets of Necromancy: Common Tome Of Abilities"
 		"DOTA_Tooltip_Ability_item_up_ability_tower"																					"<font color='#96ffee'>Common Tome Of Abilities</font>"
 		"DOTA_Tooltip_Ability_item_up_ability_tower_description"																		"When applied to the Homer, it grants a random <font color='#96ffee'>Common</font> level 1 ability."

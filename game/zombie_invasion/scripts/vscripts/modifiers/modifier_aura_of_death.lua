@@ -96,7 +96,7 @@ end
 
 function modifier_aura_of_death_debuff:OnCreated(data)
 	if IsServer() then
-		self.burnDmg = 50
+		self.burnDmg = 30
 		self.attacker = self:GetCaster() or nil	
 
 		self:StartIntervalThink(1.0) 

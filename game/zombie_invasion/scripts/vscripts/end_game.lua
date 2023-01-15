@@ -246,7 +246,7 @@ function EndGame:ChristmasEnd()
   	     GameRules:SendCustomMessage("#christmas_1",0,0)  
 	 end)
 
-     Timers:CreateTimer(2,function()
+     Timers:CreateTimer(0.1,function()
          EmitGlobalSound("christmas_Bydet")
          GameRules:SendCustomMessage("<font color='#58ACFA'>Стекловата - Новый год</font>",0,0)  
      end)
@@ -255,7 +255,9 @@ function EndGame:ChristmasEnd()
 
   LinkLuaModifier("modifier_intro_rotate_christmas_passive", "abilities/endgame/intro_rotate_christmas", 0)
  
-
+    local jitels = {
+    	"crystalka","deny","kunkka","old_men","miner","lina"
+    }
  
 local point_for_kunkka = Entities:FindByName(nil, "for_kunkka"):GetAbsOrigin()
 local point_for_crystal = Entities:FindByName(nil, "for_crystal"):GetAbsOrigin()
@@ -264,29 +266,40 @@ local point_for_penguins_1 = Entities:FindByName(nil, "for_penguins_1"):GetAbsOr
 local point_for_penguins_2 = Entities:FindByName(nil, "for_penguins_2"):GetAbsOrigin()
 local point_for_putin = Entities:FindByName(nil, "putin"):GetAbsOrigin() 
 
+
  	local point_for_rotate = Entities:FindByName(nil, "pudge_end_point")
  
-	local crystalka = Entities:FindByName(nil, 'crystalka')   
-	local brodyaga = Entities:FindByName(nil, 'brodyaga')    
-	local kunkka = Entities:FindByName(nil, 'kunkka')  
-	local putin = Entities:FindByName(nil, 'NPC_base')   
 
- 	local penguin = Entities:FindAllByName('penguin')   
- 	 	local penguin_2 = Entities:FindAllByName('penguin_2')          
+local for_penguins_11 = Entities:FindByName(nil, "for_penguins_11"):GetAbsOrigin()
+local for_penguins_22 = Entities:FindByName(nil, "for_penguins_22"):GetAbsOrigin()
+local for_penguins_33 = Entities:FindByName(nil, "for_penguins_33"):GetAbsOrigin()
+local for_penguins_44 = Entities:FindByName(nil, "for_penguins_44"):GetAbsOrigin()
+local for_penguins_55 = Entities:FindByName(nil, "for_penguins_55"):GetAbsOrigin()
+
+local penguin_1 = Entities:FindByName(nil, 'penguin_1')   
+local penguin_2 = Entities:FindByName(nil, 'penguin_2')    
+local penguin_3 = Entities:FindByName(nil, 'penguin_3')  
+local penguin_4 = Entities:FindByName(nil, 'penguin_4')   
+local ping = Entities:FindByName(nil, 'ping')
+
  	Timers:CreateTimer(0, function()  
- 
- 	kunkka:AddNewModifier(kunkka, nil, "modifier_intro_rotate_christmas_passive", {})
- 	crystalka:AddNewModifier(crystalka, nil, "modifier_intro_rotate_christmas_passive", {})
-  	brodyaga:AddNewModifier(brodyaga, nil, "modifier_intro_rotate_christmas_passive", {})
-   	putin:AddNewModifier(putin, nil, "modifier_intro_rotate_christmas_passive", {})
+ GameRules:SetTimeOfDay(0.3)
+ MoveToPoint(penguin_1, for_penguins_11) 
+ MoveToPoint(penguin_2, for_penguins_22) 
+ MoveToPoint(penguin_3, for_penguins_33) 
+ MoveToPoint(penguin_4, for_penguins_44) 
+ MoveToPoint(ping, for_penguins_55) 
 
-  kunkka:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
-    brodyaga:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
-      crystalka:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
-
-      MoveToPoint(kunkka, point_for_kunkka)    
-       MoveToPoint(brodyaga, for_brodyagi)      
-      MoveToPoint(crystalka, point_for_crystal)   
+   for i,name in ipairs(jitels) do  
+    local unit = Entities:FindByName(nil, name)
+    local point = Entities:FindByName(nil, "for_"..name):GetAbsOrigin() 
+    if unit then 
+         unit:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
+         MoveToPoint(unit, point) 
+    else
+          
+    end
+ end      
     end)
  
  
@@ -294,49 +307,14 @@ local point_for_putin = Entities:FindByName(nil, "putin"):GetAbsOrigin()
 
  
 
-	Timers:CreateTimer(90, function()  
-			   GameRules:SetTimeOfDay(0.75)
-
-  kunkka:RemoveGesture(ACT_DOTA_VICTORY) 
-  brodyaga:RemoveGesture(ACT_DOTA_VICTORY) 
-    crystalka:RemoveGesture(ACT_DOTA_VICTORY) 
-
-					kunkka:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
-					brodyaga:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
-					crystalka:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
-         PuitnThink(putin)
-    end)
+	Timers:CreateTimer(88, function()  
+				GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)  	
+  end)
        
 
- 		for i = 1, 	 #penguin do
- 			local pingin = penguin[i]
- 			   		Timers:CreateTimer(0, function()  
-			 
  
-   
-        MoveToPoint(pingin, point_for_penguins_1)    
-   	    pingin:AddAbility("intro_rotate_christmas")	
-   	      end)
-   		Timers:CreateTimer(90, function()  
-					pingin:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
  
-    end)
-     end
-  		for i = 1, 	 #penguin_2 do
- 			local pingin_2 = penguin_2[i]  
- 					   		Timers:CreateTimer(0, function()  
-             MoveToPoint(pingin_2, point_for_penguins_2)  
-   	    pingin_2:AddAbility("intro_rotate_christmas")	
-   	      end)
-   	 	Timers:CreateTimer(90, function()  
-					pingin_2:CastPointSkill("intro_rotate_christmas",point_for_rotate:GetAbsOrigin())
- 
-    end)
-     end
-   	 	Timers:CreateTimer(134, function()  
-				GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
- 
-    end)   			 
+ 		 
 
 end
 

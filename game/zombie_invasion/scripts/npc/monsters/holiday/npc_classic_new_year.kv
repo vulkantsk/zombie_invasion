@@ -1,0 +1,831 @@
+// Units File
+
+"DOTAUnits"
+{
+ 	"npc_nevermore_boss"	
+	{
+		// General
+		//----------------------------------------------------------------
+		
+ 		"vscripts"                  "ai/winter/ping/ai_sf.lua"
+		
+		"Model"						"models/heroes/shadow_fiend/shadow_fiend_arcana.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Roshan"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"35"
+		"ModelScale" 				"1.7"
+		"ConsideredHero"			"1"
+		"IsBossMonster"				"1"	
+		"UseNeutralCreepBehavior" 	"0"
+ 
+		"HasInventory"              "1"
+		
+		"MinimapIcon"				"minimap_roshancamp"
+		"MinimapIconSize"			"950"
+
+		// Abilities
+		//----------------------------------------------------------------
+     	"Ability1"					"sf_shadowraze1"		
+ 		"Ability2"					"sf_shadowraze2"
+ 		"Ability3"					"intro_rotate_christmas"
+ 		"Ability4"					"sf_necromastery"
+ 		"Ability5"					"sf_blink"
+  		"Ability6"					"sf_requiem"  
+   		"Ability7"					"sf_dark_lord"
+    	"Ability8"					"ghoul_crazy_look"
+    	"Ability9"					"sf_dead"
+    	"Ability10"					"christmas_boss_music"    	 
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"70"			// Physical protection.
+		"MagicalResistance"         "25"
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"1560"					
+		"AttackDamageMax"			"1650"	
+		"AttackDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AttackRate"				"1.8"
+		"AttackAnimationPoint"		"0.4"				// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"1300"	
+		"AttackRange"				"550"
+		"ProjectileModel"			"particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
+		"ProjectileSpeed"			"1550"			// Speed of projectile.		
+
+        "BaseAttackSpeed"			"160"	  
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"120"
+		"HealthBarOffset"			"495"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"50000"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"		// Speed.	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"85000"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		"StatusMana"				"20000"			// Base mana.
+		"StatusManaRegen"			"50.0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1000"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1000"		// Range of vision at night time.
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+		
+
+ 
+			
+			"DisableResistance"			"60.0"
+ 			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "6996" }  
+					"Wearable2" { "ItemDef" "8259" }  
+ 
+ 				
+				}
+
+			"EquippedItems"
+			{
+ 
+				"1"            	{"Item"        "item_shivas_guard_christmas_boss"}
+				"2"            	{"Item"        "item_sange_last"}
+
+			}				
+ 
+		
+ 
+		}
+	}
+	
+	"npc_patrol_guard_ogre"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/creeps/neutral_creeps/n_creep_ogre_med/n_creep_ogre_med.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_half_zomb"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/undying/undying_minion_torso.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"260"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_half_zomb_slow"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/undying/undying_minion_torso.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"150"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+	"npc_patrol_zomb"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/undying/undying_minion.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"400"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_big_zomb"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/undying/undying_minion.vmdl"	// Model.
+		"ModelScale"				"1.6"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_guard_beast"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/creeps/neutral_creeps/n_creep_beast/n_creep_beast.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"350"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_wolf"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/lycan/ultimate/frostivus2018_lycan_winter_snow_wolf_shapeshift/frostivus2018_lycan_winter_snow_wolf_shapeshift.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"550"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_pudge"
+	{
+
+		"vscripts"		"ai/winter/ping/ai_pudge.lua"
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/pudge/pudge.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"UseNeutralCreepBehavior" 	"0"		
+
+		"Ability1"		"invul_unit"
+		"Ability2"		"pudge_meat_hook_no"
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+		//----------------------------------------------------------------
+		"Creature"
+		{
+
+ 			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "47" }  
+					"Wearable2" { "ItemDef" "258" }  
+ 					"Wearable3" { "ItemDef" "259" }  				
+ 					"Wearable4" { "ItemDef" "260" }				 
+					"Wearable5" { "ItemDef" "261" }  
+ 					"Wearable6" { "ItemDef" "262" }  				
+               }
+		}
+	}
+
+
+	"npc_patrol_fish"
+	{
+
+		"vscripts"		"ai/winter/ping/ai_fish.lua"
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/hex/fish_hex/fish_hex.vmdl"	// Model.
+		"ModelScale"				"1"
+		"UseNeutralCreepBehavior" 	"0"		
+
+		"Ability1"		"invul_unit"
+		"Ability2"		"fish_pounce"
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"400"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_patrol_kobold"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/creeps/neutral_creeps/n_creep_kobold/kobold_c/n_creep_kobold_c.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"410"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+
+	"npc_patrol_undying"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/undying/flesh_golem/undying_frankenstein_ability/undying_frankenstein_ability.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+
+	"npc_patrol_roshan"
+	{
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/creeps/roshan_halloween/roshan_greeviled.vmdl"	// Model.
+		"ModelScale"				"1"
+
+		"Ability1"		"invul_unit"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"10"
+		"AttackDamageMax"			"20"
+		"AttackRate"				"1"	
+		"AttackAnimationPoint"		"0.2"
+		"ProjectileSpeed"			"1550"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"
+		"MagicalResistance"			"25"									// 
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"1.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"	
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"									// Speed.
+		"MovementTurnRate"			"0.5"									// 
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+
+	"npc_dota_fire_trap1"
+	{
+		"vscripts"					"ai/winter/ping/ai_fire_trap_1"
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props/traps/barking_dog/barking_dog.vmdl"
+		"ModelScale"				"1"
+
+		"Ability1"					"breathe_fire_alt"
+		"Ability2"					"trap_unselectable"			// Ability 2.
+
+		"StatusHealth" 				"1"
+		"StatusHealthRegen" 		"0"
+		"RingRadius"				"50"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0"			// Turning rate.
+
+		"VisionDaytimeRange"		"100"		// Range of vision during day light.
+		"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+	}
+	"npc_dota_fire_trap2"
+	{
+		"vscripts"					"ai/winter/ping/ai_fire_trap_2"
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props/traps/barking_dog/barking_dog.vmdl"
+		"ModelScale"				"1"
+
+		"Ability1"					"breathe_fire_alt"
+		"Ability2"					"trap_unselectable"			// Ability 2.
+
+		"StatusHealth" 				"1"
+		"StatusHealthRegen" 		"0"
+		"RingRadius"				"50"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0"			// Turning rate.
+
+		"VisionDaytimeRange"		"100"		// Range of vision during day light.
+		"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+	}
+	"npc_dota_fire_trap3"
+	{
+		"vscripts"					"ai/winter/ping/ai_fire_trap_3"
+
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props/traps/barking_dog/barking_dog.vmdl"
+		"ModelScale"				"1"
+
+		"Ability1"					"breathe_fire_alt"
+		"Ability2"					"trap_unselectable"			// Ability 2.
+
+		"StatusHealth" 				"1"
+		"StatusHealthRegen" 		"0"
+		"RingRadius"				"50"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0"			// Turning rate.
+
+		"VisionDaytimeRange"		"100"		// Range of vision during day light.
+		"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+	}
+
+	"npc_dota_fire_trap_ward"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props/traps/barking_dog/barking_dog.vmdl"// Model.
+		"Level"						"1"
+		"VisbibleInPortraitOnly"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+
+		"Ability1"					"breathe_fire"			// Ability 1.
+		"Ability2"					"trap_unselectable"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0.25"			// Turning rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+	}
+
+	"npc_dota_cell_trap"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props_structures/ancient_trigger001.vmdl"// Model.
+		"Level"						"1"
+		"ModelScale"				"0.75"
+
+		// Abilities
+		//----------------------------------------------------------------
+
+		"Ability1"					"cell_toss"			// Ability 1.
+		"Ability2"					"trap_unselectable"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0.25"			// Turning rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+	}
+	"npc_dota_cell_trap"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props_structures/ancient_trigger001.vmdl"// Model.
+		"Level"						"1"
+		"ModelScale"				"0.75"
+
+		// Abilities
+		//----------------------------------------------------------------
+
+		"Ability1"					"cell_toss"			// Ability 1.
+		"Ability2"					"trap_unselectable"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0.25"			// Turning rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+	}	
+}

@@ -58,6 +58,8 @@ modifier_quest_template = class({
     IsBuff                  = function(self) return true end,
     RemoveOnDeath             = function(self) return true end,
     GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
+    GetEffectName           = function(self) return 'particles/generic_gameplay/generic_has_quest.vpcf' end,
+    GetEffectAttachType     = function(self) return PATTACH_OVERHEAD_FOLLOW end,
 })
 
 function modifier_quest_template:OnCreated()
@@ -75,14 +77,7 @@ function modifier_quest_template:OnCreated()
         self.current_quest  = ability:GetName()
         self.next_quest      = ability.next_quest
         self.reusable          = ability.reusable
-
-        if self.particle == 1 then
-            local parent = self:GetParent()
-            local effect = "particles/generic_gameplay/generic_has_quest.vpcf"
-            local pfx = ParticleManager:CreateParticle(effect, PATTACH_OVERHEAD_FOLLOW, parent)
-            self:AddParticle(pfx, true, false, 111, false, false)
-
-        end
+ 
         print(self.value_required)
         print(self.reward_exp)
         print(self.reward_gold)

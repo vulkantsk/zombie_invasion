@@ -16,7 +16,7 @@ modifier_item_resistance = class({
 
  
 function modifier_item_resistance:GetModifierIncomingDamage_Percentage()
-	return self:GetAbility():GetSpecialValueFor("res")
+	return -self:GetAbility():GetSpecialValueFor("res")
 end
 
 function modifier_item_resistance:GetModifierPhysicalArmorBonus()

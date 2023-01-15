@@ -50,6 +50,7 @@ function item_meat:GetCustomCastErrorTarget(hTarget)
 		return UF_SUCCESS
 	end
 end
+ 
 
 function item_meat:OnSpellStart()
 	--print("OnSpellStart")
@@ -58,13 +59,13 @@ function item_meat:OnSpellStart()
 	local hItem = self
 	local itemName = self:GetAbilityName()
 	local newItem = nil
-
+    local heal_meat = self:GetSpecialValueFor("heal")
 	if hTarget == hCaster then
 		hCaster:EmitSound("DOTA_Item.Cheese.Activate")
-		hCaster:Heal(100,hCaster)
+		hCaster:Heal(heal_meat,hCaster)
 	else
 		hTarget:EmitSound("DOTA_Item.Cheese.Activate")
-		hTarget:Heal(100,hCaster)
+		hTarget:Heal(heal_meat,hCaster)
 	end
 
 	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then

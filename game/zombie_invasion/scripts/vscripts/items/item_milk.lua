@@ -52,13 +52,13 @@ function item_milk:OnSpellStart()
 	local hItem = self
 	local itemName = self:GetAbilityName()
 	local newItem = nil
-
+    local mana = self:GetSpecialValueFor("mana")
 	if hTarget == hCaster then
 		hCaster:EmitSound("Item.MoonShard.Consume")
-		hCaster:GiveMana(100)
+		hCaster:GiveMana(mana)
 	else
 		hTarget:EmitSound("Item.MoonShard.Consume")
-		hTarget:GiveMana(100)
+		hTarget:GiveMana(mana)
 	end
 
 	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then

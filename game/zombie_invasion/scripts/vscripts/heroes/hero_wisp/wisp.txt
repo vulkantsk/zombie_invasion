@@ -43,7 +43,7 @@
 				}
 				"latch_distance"			"700 700 700 700"
 				"latch_speed"				"1000 1000 1000 1000"
-				"tether_heal_amp"			"0.7 0.8 0.9 1.0 1.1 1.2 1.3"
+				"tether_heal_amp"			"60 70 80 90 100 110 120"
 				"self_bonus"				"0"
 				"slow"				"15 25 35 45"
 				"slow_duration"				"0.2"

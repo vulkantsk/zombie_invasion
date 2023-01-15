@@ -12,7 +12,7 @@ modifier_health = class({
 })
 
 function modifier_health:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_health:OnCreated()
@@ -20,7 +20,7 @@ function modifier_health:OnCreated()
 end
 
 function modifier_health:GetModifierHealthBonus()
-	return  20
+	return  self:GetStackCount() * 20
 end
 
  modifier_health_regen = class({
@@ -36,7 +36,7 @@ end
 })
 
 function modifier_health_regen:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return  MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_health_regen:OnCreated()
@@ -44,7 +44,7 @@ function modifier_health_regen:OnCreated()
 end
 
 function modifier_health_regen:GetModifierConstantHealthRegen()
-	return 2
+	return self:GetStackCount() * 2
 end
 
  
@@ -62,7 +62,7 @@ end
 })
 
 function modifier_mana_regen:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_mana_regen:OnCreated()
@@ -70,7 +70,7 @@ function modifier_mana_regen:OnCreated()
 end
 
 function modifier_mana_regen:GetModifierConstantManaRegen()
-	return 1
+	return self:GetStackCount() *1
 end
 
  modifier_mana = class({
@@ -86,7 +86,7 @@ end
 })
 
 function modifier_mana:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return  MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_mana:OnCreated()
@@ -94,7 +94,7 @@ function modifier_mana:OnCreated()
 end
 
 function modifier_mana:GetModifierManaBonus()
-	return 20
+	return self:GetStackCount() * 20
 end
 
  
@@ -111,7 +111,7 @@ end
 })
 
 function modifier_damage:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_damage:OnCreated()
@@ -119,7 +119,7 @@ function modifier_damage:OnCreated()
 end
 
 function modifier_damage:GetModifierPreAttack_BonusDamage()
-	return 4
+	return self:GetStackCount() * 4
 end
 
  modifier_spell = class({
@@ -135,7 +135,7 @@ end
 })
 
 function modifier_spell:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_spell:OnCreated()
@@ -143,7 +143,7 @@ function modifier_spell:OnCreated()
 end
 
 function modifier_spell:GetModifierSpellAmplify_Percentage()
-	return 2
+	return self:GetStackCount() *  2
 end
 
 
@@ -161,7 +161,7 @@ modifier_health1 = class({
 })
 
 function modifier_health1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_health1:OnCreated()
@@ -169,7 +169,7 @@ function modifier_health1:OnCreated()
 end
 
 function modifier_health1:GetModifierHealthBonus()
-	return  200
+	return self:GetStackCount() *  200
 end
 
  modifier_health_regen1 = class({
@@ -185,7 +185,7 @@ end
 })
 
 function modifier_health_regen1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return  MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_health_regen1:OnCreated()
@@ -193,7 +193,7 @@ function modifier_health_regen1:OnCreated()
 end
 
 function modifier_health_regen1:GetModifierConstantHealthRegen()
-	return 20
+	return self:GetStackCount() * 20
 end
 
  
@@ -211,7 +211,7 @@ end
 })
 
 function modifier_mana_regen1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return  MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_mana_regen1:OnCreated()
@@ -219,7 +219,7 @@ function modifier_mana_regen1:OnCreated()
 end
 
 function modifier_mana_regen1:GetModifierConstantManaRegen()
-	return 10
+	return self:GetStackCount() * 10
 end
 
  modifier_mana1 = class({
@@ -235,7 +235,7 @@ end
 })
 
 function modifier_mana1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_mana1:OnCreated()
@@ -243,7 +243,7 @@ function modifier_mana1:OnCreated()
 end
 
 function modifier_mana1:GetModifierManaBonus()
-	return 200
+	return self:GetStackCount() * 200
 end
 
  
@@ -260,7 +260,7 @@ end
 })
 
 function modifier_damage1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return  MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_damage1:OnCreated()
@@ -268,7 +268,7 @@ function modifier_damage1:OnCreated()
 end
 
 function modifier_damage1:GetModifierPreAttack_BonusDamage()
-	return 40
+	return self:GetStackCount() * 40
 end
 
  modifier_spell1 = class({
@@ -284,7 +284,7 @@ end
 })
 
 function modifier_spell1:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
+    return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function modifier_spell1:OnCreated()
@@ -292,7 +292,7 @@ function modifier_spell1:OnCreated()
 end
 
 function modifier_spell1:GetModifierSpellAmplify_Percentage()
-	return 20
+	return self:GetStackCount() * 10
 end
 
 

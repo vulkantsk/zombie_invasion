@@ -8,7 +8,7 @@ function Spawn( entityKeyValues )
 	end
  
   
-	 		hCtrystalAbility = thisEntity:FindAbilityByName( "crystal_maiden_freezing_field" )
+	 		hCtrystalAbility = thisEntity:FindAbilityByName( "essence_freezing_field" )
    
     
 	thisEntity:SetContextThink( "NeutralAutoCasterThink", NeutralAutoCasterThink, 1 )
@@ -27,7 +27,7 @@ function NeutralAutoCasterThink()
    MoveToTarget()
  end
 	 
-   if #hEnemies > 1 then 
+   if #hEnemies >= 1 then 
  	if hCtrystalAbility ~= nil and hCtrystalAbility:IsFullyCastable() then
  
 		return  CastCrystal()
@@ -36,21 +36,7 @@ end
 	return 0.5
 	
 end
-
  
- 
-
-function ItemAbilityCast( enemy )
-		ExecuteOrderFromTable({
-			UnitIndex = thisEntity:entindex(),	--индекс кастера
-			OrderType = DOTA_UNIT_ORDER_CAST_TARGET,	-- тип приказа
-			AbilityIndex = ItemAbility:entindex(), -- индекс способности
-					TargetIndex = enemy:entindex(),
-			Queue = false,
-		})
-	return 1.5
-end
-
  
  
 function CastClawAttack( enemy )
@@ -74,19 +60,10 @@ function CastCrystal()
 	return 1.00
 end
 
-function CastClawLunge( enemy )
-	ExecuteOrderFromTable({
-		UnitIndex = thisEntity:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-		AbilityIndex = hClawLungeAbility:entindex(),
-		Position = enemy:GetOrigin(),
-	})
-
-	return 0.5
-end
+ 
 
 function MoveToTarget()
-	  	local hSpawner = Entities:FindByName( nil, "tomb_spawner")
+	  	local hSpawner = Entities:FindByName( nil, "techies_start_point")
 	if hSpawner == nil then
 		print ( "Lycan doesn't know where target is" )
 		return

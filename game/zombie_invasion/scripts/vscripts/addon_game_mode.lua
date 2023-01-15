@@ -14,6 +14,8 @@ require( "triggers" )
 require( "modifiers_links" )
 require( "constant_links" )
 
+require('donate')
+require( "zpr/path_graph" )
 --require( "invasion_in_the_forest" )
 --require( "invasion_in_the_city" )
 --require( "scorched_earth" )
@@ -134,13 +136,13 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_night_stalker/nightstalker_crippling_fear_aura.vpcf", context ) -- vampire
 	PrecacheResource( "particle", "particles/items2_fx/soul_ring.vpcf", context ) --modif dung church
 	PrecacheResource( "particle", "particles/items3_fx/lotus_orb_shell.vpcf", context ) --elementalist shield
-
+PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts", context ) 
 	
 	---------------------------------sounds-------------------------------
 	PrecacheResource("soundfile", "soundevents/invasion_sounds_items.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/invasion_sounds_custom.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context )
-
+	PrecacheResource( "soundfile", "soundevents/trigger_sounds.vsndevts", context )
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_bristleback.vsndevts", context )	
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts", context )
@@ -156,10 +158,16 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vo_dark_willow.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vo_windrunner.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lich.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_crystal_maden.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts", context )
+
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vo_nevermore.vsndevts", context )
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_phoenix.vsndevts", context )
 
+ 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_shadow_demon.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts", context )
@@ -179,7 +187,7 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_antimage.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts", context )
- 
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts", context )  
           
 
 	---------------------------------------

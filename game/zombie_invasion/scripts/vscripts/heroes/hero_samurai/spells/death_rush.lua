@@ -42,6 +42,10 @@ function modifier_jugger_miracle_passive:OnTakeDamage( keys )
         return
     end
 
+    if not self:GetAbility():IsCooldownReady() then
+        return
+    end
+
     if self:GetCaster():GetHealth() <= 1 then
         local caster = self:GetCaster()
         local ability = self:GetAbility()
