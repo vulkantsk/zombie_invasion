@@ -8,7 +8,7 @@ function Spawn( entityKeyValues )
 	end
 
  	hSpawner = Entities:FindByName( nil, "final_point" )
- 
+    agro = false
 	thisEntity:SetContextThink( "ZombieThink", ZombieThink, 1 )
 end
 
@@ -23,9 +23,14 @@ function ZombieThink()
 	local enemy = enemies[1]
 	
 	if #enemies == 0 then
+		agro = false
 		return MoveToTarget()
 	else 
-         AttackMove(npc, enemy)	
+		if agro == false then 
+            AttackMove(npc, enemy)	
+            agro = true 
+        end
+          
 	end	
 
 	return 1.0	

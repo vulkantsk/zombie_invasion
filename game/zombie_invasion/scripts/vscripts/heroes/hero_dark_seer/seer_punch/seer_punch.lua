@@ -58,8 +58,6 @@ function ability_seer_punch:OnSpellStart()
 
     self.particle_fx = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_seer/dark_seer_attack_normal_punch.vpcf", PATTACH_ABSORIGIN, caster)
     ParticleManager:SetParticleControl(self.particle_fx, 0, caster:GetAbsOrigin())
-
-
  
  
     for _,enemy in pairs(enemies) do
@@ -86,7 +84,7 @@ function ability_seer_punch:OnSpellStart()
         enemy:AddNewModifier( caster, self, "modifier_knockback", knockbackProperties )
 
         DealDamage(self:GetCaster(), enemy, damage, self:GetAbilityDamageType(), nil, self)
- 
+        
     end
  
  

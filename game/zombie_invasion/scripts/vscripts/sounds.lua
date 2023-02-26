@@ -17,7 +17,7 @@ Sounds = Sounds or {
   		["Earth Wind And Fire - September"] = 82,
   		["Grover Washington, Jr, Bill Withers - Just The Two Of Us"] = 60,
   		["Redbone - Come and Get Your Love"] = 65,
-  		["Серега пират - Мой байк"] = 93,
+  		["Серега пират - Мой байк"] = 95,
   		["Серега пират - Я взлетаю вверх"] = 153,
 
          
@@ -36,7 +36,7 @@ Sounds = Sounds or {
    		["August - Intelligency"] = 91,  
    		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
   		["Runaway - Parachute Youth feat. Jay Martin"] = 89,
-   		["Sia - Cheap Thrills"] = 62,
+   		["Sia - Cheap Thrills"] = 64,
    		["L Starz - My Life Be LikeGrits"] = 40,
   	 	["Kiesza - Hideaway"] = 92,
   	 	["John  Newman - Fire In Me"] = 95,

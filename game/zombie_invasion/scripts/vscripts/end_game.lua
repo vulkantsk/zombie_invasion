@@ -2,6 +2,95 @@ if EndGame == nil then
 	EndGame = class({})
 end
 
+function EndGame:IsItEndGame()
+    local point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
+     EmitGlobalSound("dead")
+        for index=0 ,HeroList:GetHeroCount() do  
+		  		if HeroList:GetHero(index)    then   
+			        local hero = HeroList:GetHero(index)   
+ 			   			 
+                    if not hero:IsAlive() then 
+                        hero:RespawnHero(false, false) 
+                    end 
+                end
+        end	
+
+	local heroes =  
+         FindUnitsInRadius(
+            DOTA_TEAM_BADGUYS, -- int, your team number
+            point, -- point, center point
+            nil,    -- handle, cacheUnit. (not known)
+            -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
+            DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
+            DOTA_UNIT_TARGET_HERO, -- int, type filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            0,  -- int, order filter
+            false   -- bool, can grow cache
+        )
+	Timers:CreateTimer(1,function()    
+    for _,her in pairs(heroes) do 
+    	local point = her
+    	EndGame:SpawnEdgard(1,her)
+    end
+    return 5
+    end)
+
+	Timers:CreateTimer(2,function()    
+		for _, unit in pairs( FindUnitsInRadius(
+			DOTA_TEAM_BADGUYS,
+			Vector(),
+			nil,
+			-1,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+			DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_BUILDING,
+			DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+			FIND_ANY_ORDER,
+			false
+		) ) do
+              
+             if unit:GetUnitName() ~= "npc_Edgard" then 
+             	 self:SpawnEdgard(1,unit)
+		         UTIL_Remove( unit )
+		    end
+            
+		end
+		return 1
+    end)  
+	Timers:CreateTimer(1,function()    
+		for _, unit in pairs( FindUnitsInRadius(
+			DOTA_TEAM_GOODGUYS,
+			Vector(),
+			nil,
+			-1,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+			DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_BUILDING,
+			DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+			FIND_ANY_ORDER,
+			false
+		) ) do
+              
+             if unit:GetUnitName() ~= "npc_Edgard" then 
+             	 self:SpawnEdgard(1,unit)
+		         UTIL_Remove( unit )
+		    end
+            
+		end
+		return 1
+    end)  
+ 
+
+end
+
+function EndGame:SpawnEdgard(unit_count,point)
+ 
+
+	for i=1, unit_count do
+		local unit = CreateUnitByName("npc_Edgard", point:GetAbsOrigin() +RandomVector(RandomInt(0,250)), true, nil, nil, DOTA_TEAM_BADGUYS)
+		local random = RandomFloat(0.1,5)
+		unit:SetModelScale(random)
+	end
+end
+
 function EndGame:GoodEnd()
 	EndGame:GoodEndMessages()
 

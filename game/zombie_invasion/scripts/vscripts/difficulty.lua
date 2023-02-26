@@ -55,7 +55,7 @@ function Difficulty:OnHeroSelectionState()
 			Difficulty:NPC( unit )
 		end
 
-		ZSpawn:Init()
+ 
 	end
 end
 
@@ -69,9 +69,25 @@ function Difficulty:NPC( npc )
 	local s = self.leader == "medium" and 1 or 2
 
 	local modifier = npc:AddNewModifier( npc, nil, "modifier_invasion_difficulty", nil )
-
  
-  
+    local tablUnits = {
+        {unit = {'npc_classic_half_zombie'}, ability = {'slow_zombie_attack'} },
+        {unit = {'npc_classic_wave_ghoul'}, ability = {'ghoul_reincornation'} },
+        {unit = {'npc_classic_wave_ghoul_2'}, ability = {'ghoul_reincornation'} },
+    }
+   
+    for k,v in pairs(tablUnits) do 
+    	local unit = v.unit 
+    	local ability = v.ability
+    	local unit_name = unit[1]
+    	local ability_name = ability[1]
+        
+        if npc:GetUnitName() == unit_name then 
+            npc:AddAbility(ability_name):SetLevel(1)
+        end   
+    end
+ 
+   
 	modifier:SetStackCount( s )
 
 	Difficulter = s / 2

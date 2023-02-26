@@ -9,18 +9,13 @@ require( "timers" )
 require( "sounds" )
 require( "util/util" );
 require( "invasion_classic" )
-require( "invasion_armageddon" )
+require( "invasion_nights" )
 require( "triggers" )
 require( "modifiers_links" )
-require( "constant_links" )
+ 
 
 require('donate')
 require( "zpr/path_graph" )
---require( "invasion_in_the_forest" )
---require( "invasion_in_the_city" )
---require( "scorched_earth" )
---require("statcollection/init")
---require( "invasion_td" )
 require( "end_game" )
 require( "zpr/req" )
 require( "difficulty" )
@@ -137,7 +132,14 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/items2_fx/soul_ring.vpcf", context ) --modif dung church
 	PrecacheResource( "particle", "particles/items3_fx/lotus_orb_shell.vpcf", context ) --elementalist shield
 PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts", context ) 
-	
+		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_warlock.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_pugna.vsndevts", context )
+							
+					
 	---------------------------------sounds-------------------------------
 	PrecacheResource("soundfile", "soundevents/invasion_sounds_items.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/invasion_sounds_custom.vsndevts", context )
@@ -188,7 +190,10 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_legio
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_antimage.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts", context )  
-          
+  	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_slark.vsndevts", context )        
+  	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts", context )        
+PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts", context )        
+
 
 	---------------------------------------
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_grimstroke", context )

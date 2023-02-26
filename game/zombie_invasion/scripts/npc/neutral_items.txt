@@ -16,8 +16,9 @@
 		
 		"items"
 		{
+		   
 			"item_keen_optic"				  "0"
-			 "item_boots"				  "1"
+ 
 			"item_ocean_heart"				  "0"
 			"item_broom_handle"				  "0"
 			"item_trusty_shovel"			  "0"
@@ -48,10 +49,7 @@
 
 		"items"
 		{
-			"item_power_treads"			  "1"
-			 "item_arcane_boots"					  "1"
-			"item_tranquil_boots"				  "1"
-			"item_phase_boots"				  "1"
+ 
 			
 			
 			"item_pupils_gift"				  "0"
@@ -86,7 +84,7 @@
 			"item_quickening_charm"			  "0"
 			"item_black_powder_bag"				  "0"
 			"item_spider_legs"				  "0"
-			 "item_travel_boots_2"					"1"
+ 
 			"item_paladin_sword"			  "0"
 			//"item_orb_of_destruction"		  "0"
 			"item_titan_sliver"				  "0"
@@ -114,7 +112,7 @@
 
 		"items"
 		{
-			"item_arcane_boots_2"			  "1"
+            "item_brassiere"                  "1"
 			"item_spell_prism"				  "0"
 			"item_ascetic_cap"				  "0"
 			"item_heavy_blade"				  "0"

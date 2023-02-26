@@ -4,9 +4,9 @@ function modifier_invasion_difficulty:GetMult()
 	local c = self:GetStackCount()
 
 	if c == 1 then
-		return 0.5
+		return 0.25
 	elseif c == 2 then
-		return 1.0
+		return 0.5
 	end
 
 	return 1.0
@@ -22,7 +22,7 @@ end
 
 
 function modifier_invasion_difficulty:OnCreated()
- 	self:GetParent():CalculateGenericBonuses()
+ 
 end
 
  

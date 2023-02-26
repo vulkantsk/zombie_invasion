@@ -33,7 +33,7 @@
 			"radius"
 			{
 				"value"										"425"
-				"special_bonus_unique_crystal_maiden_6"		"+125"
+				"special_bonus_unique_crystal_maiden_6"		"+150"
 			}
 			"movespeed_slow"				"-20 -25 -30 -35 -40 -45 -50"
 			"attackspeed_slow"				"-20 -25 -30 -35 -40 -45 -50"
@@ -42,7 +42,7 @@
 			"nova_damage"
 			{
 				"value"										"120 240 360 480 600 720 840"
-				"special_bonus_unique_crystal_maiden_2"		"+240"
+				"special_bonus_unique_crystal_maiden_2"		"+350"
 			}
 		}		
  
@@ -89,7 +89,7 @@
 			"02"
 			{	
 				"var_type"			"FIELD_INTEGER"
-				"heal_additive"		"30 45 60 75 90 105 120"
+				"heal_additive"		"50 100 150 200 250 300 350"
 				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_5"
 			}
 			"03"
@@ -114,24 +114,28 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-		        "MaxLevel"                      "7"
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
- 
-	
+		"MaxLevel"                     "7"
 		"AbilityValues"
 		{
-			"AbilityCastPoint"				"0.2"
-			"mana_regen"					"1.0 2.0 3.0 4.0 5.0 6.0 7.0"
-			"self_factor"					"2.0"
-			"mana_per_cast"		
+			"base_mana_regen"					
 			{
-				"value"										"10 20 30 40 50 60 70"
-				"special_bonus_unique_crystal_maiden_4"		"+20"
+				"value"										"1.0 2.0 3.0 4.0 5.0 6.0 7.0"
+				"special_bonus_unique_crystal_maiden_4" 	"+2.0"
 			}
-			"radius"			"1200"
-		}	
- 
+			"proximity_mana_regen_tooltip"					
+			{
+				"value"										"2.0 4.0 6.0 8.0 10.0 12.0 14.0"
+				"special_bonus_unique_crystal_maiden_4" 	"+4.0"
+			}
+			"self_mana_regen_tooltip"					
+			{
+				"value"										"3.0 6.0 9.0 12.0 15.0 18.0 21.0"
+				"special_bonus_unique_crystal_maiden_4" 	"+6.0"
+			}
+			"self_factor"					"3"
+			"proximity_bonus_factor"		"2"
+			"proximity_bonus_radius"		"1200"
+		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	
@@ -173,7 +177,6 @@
 		{
 			"AbilityChannelTime"			"10"
 			"AbilityCastPoint"				"0"
-			"AbilityCooldown"				"90"
 			"AbilityDuration"				"10.0"
 			"AbilityManaCost"				"200 400 600"
 			"radius"						"810"
@@ -185,10 +188,15 @@
 			"slow_duration"					"1.0"
 			"explosion_min_dist"			"195"
 			"explosion_max_dist"			"785"
+			"AbilityCooldown"
+			{
+				"value"										"90"
+				"special_bonus_unique_crystal_maiden_ult_cooldown"		"-30"
+			}
 			"damage"
 			{
 				"value"										"120 240 360"
-				"special_bonus_unique_crystal_maiden_3"		"+120"
+				"special_bonus_unique_crystal_maiden_3"		"+60"
 			}
 			"frostbite_delay" // negative means don't apply.
 			{
@@ -285,3 +293,15 @@
 	}
 
 }
+
+ 
+
+	"special_bonus_unique_crystal_maiden_ult_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}

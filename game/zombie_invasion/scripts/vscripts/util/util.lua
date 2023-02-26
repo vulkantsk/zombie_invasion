@@ -211,6 +211,31 @@ function UpgradeUnitStats(unit, multiplier)
  
 end
 
+function UpgradeWitchStats(unit, armor, hp, damage)
+    if not unit:IsAlive() then
+        return
+    end
+
+    
+        local new_armor = unit:GetPhysicalArmorBaseValue() + armor
+        local max_hp = unit:GetMaxHealth() + hp
+        local min_dmg = unit:GetBaseDamageMin() + damage
+        local max_dmg = unit:GetBaseDamageMax() + damage
+
+        if max_hp <= 1 then
+            max_hp = 1
+        end
+        unit:SetBaseMaxHealth(max_hp)
+        unit:SetMaxHealth(max_hp)
+        unit:SetHealth(max_hp)
+
+        unit:SetPhysicalArmorBaseValue(new_armor)
+        unit:SetBaseDamageMin(min_dmg)
+        unit:SetBaseDamageMax(max_dmg)
+ 
+end
+
+
 function SetLevelForSubAbility(main_ability, sub_ability_name, target, level_required, level_to_set)
 	local main_ability_level = main_ability:GetLevel()
 	local sub_ability = target:FindAbilityByName(sub_ability_name)

@@ -7,8 +7,8 @@ function Spawn( entityKeyValues )
 		return
 	end
 
-		hVoodooAbility = thisEntity:FindAbilityByName( "witch_voodoo" )  
-		hCursedAbility = thisEntity:FindAbilityByName( "witch_cursed_crown" )  
+		hVoodooAbility = thisEntity:FindAbilityByName( "pugna_life_drain_witch" )  
+ 
 
 	thisEntity:SetContextThink( "GhostThink", GhostThink, 1 )
 end
@@ -65,12 +65,7 @@ function GhostThink()
 		end
 	end
 
- 	if   hCursedAbility:IsFullyCastable() then
-        if npc:GetHealth() < npc:GetMaxHealth() * 0.5 then 
-		     return  CastCursed( enemies[ RandomInt( 1, #enemies ) ] )
-		end
-	end
-
+ 
 
 	if #enemies == 0 then	-- если найденных юнитов нету
 		if npc.agro then

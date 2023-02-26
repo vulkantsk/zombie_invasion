@@ -4,8 +4,12 @@
 	"Tokens"
 	{		
 	    "npc_EdgardBs"        "npc_Edgard"
-        "music_toggle"                                              "Turns on / off music in the game"
+        "music_toggle"      
+                                                "Turns on / off music in the game"
 		"sss"                                               	""
+
+	    "donate_list_name_heroes"		"Essence of heroes"
+	    "donate_list_name_artifacts"	"Artifacts"
 
 	    		"dota_game_end_victory_title_radiant"	"The village has protected!"
 		"dota_game_end_victory_title_dire"		"Ah shit, I lose again(("
@@ -16,8 +20,8 @@
 		"Game_notification_win"         "<font color='#ff9900'>Write your opinion in workshop! </font>"
 
 		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
-		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 50%</font>! (Damage, Spell damage, Health and Armor)"
-		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 100%</font>! (Damage, Spell damage, Health and Armor)"
+		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 25%</font>! (Damage, Spell damage, Health and Armor,new abilities)"
+		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 50%</font>! (Damage, Spell damage, Health and Armor,new abilities)"
 		
 		//guide
 		"htpbtn"				"How to Play"
@@ -58,9 +62,7 @@
 	   "laughter_7"			                                    	"<font color='#c10020'>ahppahpaSHPSHAPahpahpPHAAPAHPHAHAPhpHapahpahp</font>"	
 	   "laughter_8"			                                    	"<font color='#c10020'>ahahahhahahahahah</font>"	
 	   
-	   "begining_1"                                                 "<font color='#c10020'>Oh my god...</font>"
-	   "begining_2"                                                 "<font color='#c10020'>How long I waited it...</font>"
-	   "begining_3"                                                 "<font color='#c10020'>FUCK PEOPLE!!</font>"
+ 
 
        "ending_1"                                                  "<font color='#c10020'>Noooo I don't want so............</font>"
 	   "ending_2"                                                  "<font color='#deaa88'>Is it end?</font>"
@@ -81,6 +83,7 @@
 	   "Game_notification_boss_spawn_ghost"				"<font color='#FF0000'>'THE LOST ONE' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
 	   "Game_notification_boss_spawn_pudge"				"<font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
  	   "Game_notification_portal_boss"				"<font color='#DBA901'>THE TOTEM BOSS APPEARED ON THE MAP!</font>"
+	   "Game_notification_boss_spawn_meatgolem_2"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'FAT' </font><font color='#DBA901'>будьте на готове!</font>"
 
        // ******************** Messages Christmas ********************
        	   "christmas_1"                                                  "<font color='#deaa88'>The Celebration continues!</font>"
@@ -205,7 +208,7 @@
 		"npc_wave_boss_meat_golem"                                         		"Fat"
 		"npc_wave_boss_ghost"                                         		"The Lost One"
 		"npc_wave_boss_pudge"                                         		"P.U.D.G.E."
-		"npc_wave_boss_mini_pudge"                                         		"Mini pudge"
+		"npc_wave_boss_mini_pudge"                                         		"pudge"
 
 
  
@@ -494,20 +497,26 @@
 		"DOTA_Tooltip_Ability_item_milk_shake"							"Milkshake"
 		"DOTA_Tooltip_Ability_item_milk_shake_Description"				"<h1>Active: Hip-hip</h1>Regeneration very big number of mana.\n Very.\n More.\n(1000)"
 		"DOTA_Tooltip_Ability_item_milk_shake_Lore"       "Usually milkshake from Tramp."
+ 
 		
-		"DOTA_Tooltip_Ability_item_imba_haste_boots"                                "Haste Boots"
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_Description"                    "<h1>Active: Demonic Haste</h1> Grants the bearer phased movement, %phase_ms%%% movespeed bonus, and increases the move speed limit to %ms_limit%.<font color='#FF7800'> While phased, passing through units drains %drain_damage% health from them and grants it to the caster.</font> Lasts %phase_duration% seconds.\n<font color='#FFD700'>."
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_Note0"                          "Can only pass through each unit once per cast."
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_Note1"                          "Drain deals magical damage to enemies affected."
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_Note2"                          "Hey bro nice dick awesome balls)00))."
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_Lore"                           "These boots was worn the Kunnka!."
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_bonus_movement_speed"           "+$move_speed"
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_bonus_damage"                   "+$damage"
-		"DOTA_Tooltip_Ability_item_imba_haste_boots_bonus_strength"                 "+$str"
+		"DOTA_Tooltip_Ability_item_crystal_boots"                                "Crystal Boots"
+		"DOTA_Tooltip_Ability_item_crystal_boots_Description"                    "<h1>Active: Crystal Haste</h1> Grants the bearer phased movement, %phase_ms%%% movespeed bonus, and increases the move speed limit to %ms_limit%.<font color='#FF7800'> While phased, passing through %en_num% units then caster has 100% chance to %crit_bonus_up%%  critical damage.</font> Lasts %phase_duration% seconds.\n<font color='#FFD700'>\n<h1>Passive: Critical Strike</h1>Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage."
+		"DOTA_Tooltip_Ability_item_crystal_boots_Note0"                          "Через каждого юнита, можно пройти 1 раз за использование."
+		"DOTA_Tooltip_Ability_item_crystal_boots_Lore"                           "These boots was worn the Kunnka!."
+		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_movement_speed"           "+$move_speed"
+		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_damage"                   "+$damage"
+		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_armor"                 "+$armor"
 
-		"DOTA_Tooltip_modifier_imba_haste_boots_buff"                               "Demonic Haste"
-		"DOTA_Tooltip_modifier_imba_haste_boots_buff_Description"                   "Phased, drastically increased move speed, and dealing damage to enemies you pass through."
-		
+		"DOTA_Tooltip_modifier_imba_crystal_boots_buff"                               "Crystal Haste"
+		"DOTA_Tooltip_modifier_imba_crystal_boots_buff_Description"                   "Phased, drastically increased move speed."
+	
+		"DOTA_Tooltip_Ability_item_guardian_greaves_up"		"Guardian Greaves"
+		"DOTA_Tooltip_ability_item_guardian_greaves_up_Description"			"<h1>Passive: Guardian Greaves</h1> Hero's health is %healt_for_use%%  then heal hum on %heal_hp%% , after on %buff_duration% seconds heal %heal_hp_per_second% hp every second.<br>Type of dispelling: <span class=\"GameplayValues GameplayVariable\">strong</span> \The bonuses to the speed of movement from several pairs of shoes do not add up."
+		"DOTA_Tooltip_ability_item_guardian_greaves_up_bonus_movement"			"+$move_speed"
+		"DOTA_Tooltip_ability_item_guardian_greaves_up_bonus_health"				"+$health"	
+		"DOTA_Tooltip_ability_item_guardian_greaves_up_bonus_armor"			"+$armor"		
+		"DOTA_Tooltip_ability_item_guardian_greaves_up_Lore"						"One of the many sacred instruments created for the glory of Omniscience."	
+
 		"DOTA_Tooltip_Ability_item_lifesteal_2"							"Mask of the Cult of the damned"
 		"DOTA_Tooltip_Ability_item_lifesteal_2_Description"				"This mask of one of the Cult of the damned still smell... \n<h1>Passive: Tish-tish</h1> Lifesteal.\n <font color='#ff9900'>If you want it then complete quest from Tramp: Bone it's not Bone</font>"
 		"DOTA_Tooltip_Ability_item_lifesteal_2_lifesteal_percent"				"LIFESTEAL: "
@@ -558,8 +567,12 @@
 		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+Max Health Regen"
 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
-        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Active: Summon the Treasure</h1>It summon Midas's treasure and if you break treasure then you will have exp and gold."       
+        "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Active: Summon the Treasure</h1>It summon Midas's treasure and if you break treasure then you will have gold."       
         "DOTA_Tooltip_Ability_item_midas_Lore"                                "It had once been Midas's own chest."
+
+        "DOTA_Tooltip_Ability_item_midas_donate"                                            "<font color='#ffdc33'>Donate Midas treasure</font>"
+        "DOTA_Tooltip_Ability_item_midas_donate_Description"                                "<h1>Active: Summon the treasure</h1>Active: Summon the Treasure</h1>It summon Midas's treasure and if you break treasure then you will have exp and gold."       
+        "DOTA_Tooltip_Ability_item_midas_donate_Lore"                                "It had once been Midas's own chest."  
 
 		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
 
@@ -839,6 +852,29 @@
 		"DOTA_Tooltip_ability_item_necr_heart_Lore"							"A foul-smelling heart, looks like a human one."
 		"DOTA_Tooltip_ability_item_necr_heart_bonus_damage"				"+$damage"
  
+ 		"DOTA_Tooltip_ability_item_vampire_claw"								"Vampire Claw"
+        "DOTA_Tooltip_ability_item_vampire_claw_Description"                    "<h1>Active: Blood Rivers</h1> Heals %heal_per_charge% health for each charge. Every attack agaisnt creeps  increases charges by %charges_for_attack_creep%. <br><br>Max charges: %max_charges%"
+        "DOTA_Tooltip_ability_item_vampire_claw_bonus_damage"                   "+$damage"
+        "DOTA_Tooltip_ability_item_vampire_claw_bonus_str"                   	"+$str"
+        "DOTA_Tooltip_ability_item_vampire_claw_lifesteal"                   	"%+$lifesteal"
+
+
+		"DOTA_Tooltip_Ability_item_mask_of_madness_2"			"Mask of Madness 2"
+		"DOTA_Tooltip_ability_item_mask_of_madness_2_Description"					"<h1>Active: Berserk</h1>Gives %berserk_bonus_attack_speed% attack speed, %berserk_base_damage%%  from base attack damage and %berserk_bonus_movement_speed% movement speed, but reduces your armor by %berserk_armor_reduction% and silences you.  Lasts %berserk_duration% seconds.\n\n<h1>Passive: Lifesteal</h1>Heals the attacker for a percentage of attack damage dealt."
+		"DOTA_Tooltip_ability_item_mask_of_madness_2_Lore"						"Once this mask is worn, its bearer becomes an uncontrollable aggressive force."
+		"DOTA_Tooltip_ability_item_mask_of_madness_2_bonus_attack_speed"			"+$attack"
+		"DOTA_Tooltip_ability_item_mask_of_madness_2_bonus_damage"				"+$damage"
+		"DOTA_Tooltip_ability_item_mask_of_madness_2_lifesteal_percent"			"%+$lifesteal"
+
+		"DOTA_Tooltip_Ability_item_mask_of_madness_3"			"Mask of Madness 3"
+		"DOTA_Tooltip_ability_item_mask_of_madness_3_Description"					"<h1>Active: Berserk</h1>Gives %berserk_bonus_attack_speed% attack speed, %berserk_base_damage%%  from base attack damage and %berserk_bonus_movement_speed% movement speed, but reduces your armor by %berserk_armor_reduction% and silences you.  Lasts %berserk_duration% seconds.\n\n<h1>Passive: Lifesteal</h1>Heals the attacker for a percentage of attack damage dealt."
+		"DOTA_Tooltip_ability_item_mask_of_madness_3_Lore"						"Once this mask is worn, its bearer becomes an uncontrollable aggressive force."
+		"DOTA_Tooltip_ability_item_mask_of_madness_3_bonus_attack_speed"			"+$attack"
+		"DOTA_Tooltip_ability_item_mask_of_madness_3_bonus_damage"				"+$damage"
+		"DOTA_Tooltip_ability_item_mask_of_madness_3_lifesteal_percent"			"%+$lifesteal"
+
+
+
 		"DOTA_Tooltip_Ability_item_gril"			"Kunnka's Grill"
 		"DOTA_Tooltip_ability_item_gril_Description"					"<h1>Active: Cock</h1> It Cooks a kunnka's steak from one piece of meat!"
 		"DOTA_Tooltip_ability_item_gril_Lore"							"IT IS!!!!! LEGENDARY KUNNKA'S GRILL!!"
@@ -880,11 +916,70 @@
 		"DOTA_Tooltip_ability_item_ess_pudge_Lore"							"The cult of the damned has worked worked here..."
 		"DOTA_Tooltip_ability_item_ess_pudge_bonus_damage"				"+$all"
 
+		"DOTA_Tooltip_Ability_item_desolator_2_custom"				"Desolator 2"
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_Description"						"<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds.\n\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage with %chance_to_stack%% chance an enemy creep dies while affected by Corruption, to a maximum of %max_damage%."
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_Note0"								"Armor reduction works on buildings."
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_bonus_damage"						"+$damage"		
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_Lore"						"The original demonic favorite that served as basis for the beloved mortal design."		
+ 
+		"DOTA_Tooltip_Ability_item_desolator_1"				"Desolator"
+		"DOTA_Tooltip_ability_item_desolator_1_Description"						"<h1>Passive: Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds.\n\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage with %chance_to_stack%% chance an enemy creep dies while affected by Corruption, to a maximum of %max_damage%."
+		"DOTA_Tooltip_ability_item_desolator_1_Lore"							"A wicked weapon, used in torturing political criminals."
+		"DOTA_Tooltip_ability_item_desolator_1_Note0"								"Armor reduction works on buildings."
+		"DOTA_Tooltip_ability_item_desolator_bonus_damage"						"+$damage"	
+
+		"DOTA_Tooltip_Ability_item_sange_and_yasha_2"			"Sange and Yasha 2"
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_Note0"						"Yasha-based movement speed bonuses from multiple items do not stack."
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_Lore"						"Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination."
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_bonus_strength"				"+$str"
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_bonus_agility"				"+$agi"
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_bonus_attack_speed"			"+$attack"
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_movement_speed_percent_bonus"	"%+$move_speed"		
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_status_resistance"					"%+Status Resistance"
+		"DOTA_Tooltip_ability_item_sange_and_yasha_2_hp_regen_amp"							"%+Health Regen and Lifesteal Amp"
+
+		"DOTA_Tooltip_Ability_item_kaya_and_sange_2"			"Kaya and Sange 2"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_Lore"							"Two of three known items of unimaginable power that many believe were crafted at the same enchanter's forge."
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_bonus_damage"							"+$damage"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_bonus_strength"						"+$str"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_bonus_intellect"					"+$int"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_spell_amp"					"%+Spell Amplification"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_mana_regen_multiplier"				"%+Mana Regen Amplification"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_status_resistance"					"%+Status Resistance"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_hp_regen_amp"							"%+Health Regen and Lifesteal Amp"
+		"DOTA_Tooltip_ability_item_kaya_and_sange_2_spell_lifesteal_amp"				"%+Spell Lifesteal Amplification"
+
+		"DOTA_Tooltip_Ability_item_yasha_and_kaya_2"			"Kaya and Yasha 2"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_Lore"					"Yasha and Kaya when paired together share a natural resonance."
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_bonus_intellect"					"+$int"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_spell_amp"					"%+Spell Amplification"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_mana_regen_multiplier"				"%+Mana Regen Amplification"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_bonus_agility"							"+$agi"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_movement_speed_percent_bonus"			"%+$move_speed"
+		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_spell_lifesteal_amp"				"%+Spell Lifesteal Amplification"
+
 
  
+		"DOTA_Tooltip_Ability_item_power_treads_2"                             "Mega Treads"
+		"DOTA_Tooltip_ability_item_power_treads_2_Description"                 "<h1>Active: Switch Attribute</h1> Changes the selected attribute between Strength, Agility and Intelligence.\n<h1><font color='#FF7800'>Passive: Source Boost</font></h1> Grants a specific bonus based on the currently selected attribute: <font color='#cc0000'>Strength</font> grants %str_mode_resist%%  Resistance to Magic, <font color='#00802b'>Agility</font> Tru strike, and <font color='#007acc'>Intelligence</font> Grants %int_mode_amp%%  spell damage. \n\nFlat movement speed bonuses from multiple pairs of boots do not stack.\n<font color='#FFD700'> Item created by Dota IMBA dev team  </font>"
+		"DOTA_Tooltip_ability_item_power_treads_2_Note0"                       "You can have more than one effect applied by getting a second Mega Treads, but not a duplicate of the same effect."
+		"DOTA_Tooltip_ability_item_power_treads_2_Lore"                        "A pair of magic leather boots whose enchantment is flexible enough to cover any situation."
+		"DOTA_Tooltip_ability_item_power_treads_2_bonus_movement_speed"        "+$move_speed"
+		"DOTA_Tooltip_ability_item_power_treads_2_bonus_stat"                  "+$selected_attrib"
+		"DOTA_Tooltip_Ability_item_power_treads_2_bonus_attackspeed"           "+$attack"
 
- 
+ 		"DOTA_Tooltip_ability_item_larks_change"								"<font color='#4285B4'>Essence of slark</font>"
+        "DOTA_Tooltip_ability_item_larks_change_Description"                    "<h1>Active: Change Hero</h1> Changes the current hero to Slark"
 
+		"DOTA_Tooltip_Ability_item_brassiere"					"Naga's brassiere"
+		"DOTA_Tooltip_ability_item_brassiere_Description"							"<h1>Passive: Brassiere's Aura</h1>Increases melee attack for allies by %bonus_attack_range%, their damage by %bonus_damage%, attack speed by %bonus_attack_speed%. <br><br>Radius: %radius%<font color='#c10020'>YOU CAN'T ATTACK!</font>"
+		"DOTA_Tooltip_ability_item_brassiere_Lore"								"Before escaping from the dark reef, Slark decided to grab one souvenir:)."
+		"DOTA_Tooltip_Ability_item_brassiere_stat_bonus_mana_rg"					"+$mana_regen"
+		"DOTA_Tooltip_Ability_item_brassiere_stat_bonus_spell_amp"					"%+Spell Amplification"
+
+		"DOTA_Tooltip_modifier_item_brassiere_aura"		"Excitement?!"
+		"DOTA_Tooltip_modifier_item_brassiere_aura_Description"		"oh my..."
 
 
 
@@ -1395,17 +1490,7 @@
 
 
 		// -----------------clinkz--------------------		
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows"							"Searing Arrows"
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_Description"				"Imbues Clinkz's arrows with fire for extra damage <font color='#70EA72'>and applies spill damage to enemies behind the target</font>."
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_Lore"						"Clinkz simply lights his arrows from his flaming essence for quite the destructive effect."
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_Note0"					"Searing Arrows deal damage to structures."
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_Note1"					"The damage is directly added to Clinkz' attack damage, as physical damage."
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_damage_bonus"				"BONUS DAMAGE:"
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_attack_spill_range"		"<font color='#70EA72'>SPILL ATTACK RANGE:</font>"
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_attack_spill_width"		"<font color='#70EA72'>SPILL ATTACK WIDTH:</font>"
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_searing_arrows_spill_damage_multiplier"	"<font color='#70EA72'>SPILL DAMAGE MULTIPLIER:</font>"
-		
-		"DOTA_Tooltip_ability_frostivus2018_clinkz_burning_army"					"Burning Army"
+  	"DOTA_Tooltip_ability_frostivus2018_clinkz_burning_army"					"Burning Army"
 		"DOTA_Tooltip_ability_frostivus2018_clinkz_burning_army_Description"		"Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons use your current Searing Arrows ability and attack <font color='#70EA72'>any units nearby</font>. Base damage is equal to your hero's base damage. Attack range is equal to your hero's attack range. "
 		"DOTA_Tooltip_ability_frostivus2018_clinkz_burning_army_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_frostivus2018_clinkz_burning_army_range"				"RANGE:"
@@ -1427,6 +1512,11 @@
 		"DOTA_Tooltip_ability_clinkz_windrun_max_charges"                           "SCEPTER CHARGES:"
 		"DOTA_Tooltip_ability_clinkz_windrun_charge_restore_time"                   "SCEPTER REPLENISH TIME:"
 		
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_clinkz_strafe_damage_pct"											"+{s:bonus_damage_pct}% to damage from Burning Barrage"
+		"DOTA_Tooltip_Ability_special_bonus_unique_clinkz_army_count"											 "+{s:bonus_count} to number from Burning Army"
+		"DOTA_Tooltip_Ability_special_bonus_unique_clinkz_strafe_count"											"+{s:bonus_wave_count} to number ow wave from Burning Barrage"  
+ 
+
  
 		// -----------------jackiro--------------------	
 		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
@@ -1484,6 +1574,7 @@
 		"DOTA_Tooltip_Ability_rubick_meditation_regen"        								"Number supply allies Mana / Life per second:"
 		"DOTA_Tooltip_Ability_rubick_meditation_mana_cost_per_second"                 		"Mana consumption per second:""
  
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_rubick_meditation"											"+{s:bonus_regen}% to heal and mana per second from Meditation"  
  		// -----------------Skeleton King--------------------	
 
  		"DOTA_Tooltip_ability_wraith_king_wraithfire_blast_lua"								"Wraithfire Blast"
@@ -1517,6 +1608,9 @@
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_armor"					"ARMOR:"
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_resist"					"STATUS RESIST:"
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_speed_atack"					"BASE ATACK SPEED:"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_skeleton_stronger"											"+{s:bonus_bonus_strength}% to bonus from Be stronger"  
+		"DOTA_Tooltip_Ability_special_bonus_unique_skeleton_vampir"											"+{s:bonus_vampiric_aura}% to vampirism from Vamрiric Aura"  
 
  		// -----------------Bristleback--------------------
 	
@@ -2061,7 +2155,8 @@
 		"DOTA_Tooltip_modifier_zombie_passive_fire_Description"									"Takes light damage of 4.5% % of max health "
 	
 
-
+		"DOTA_Tooltip_modifier_slow_mobs_bonus"						"Dizziness"
+		"DOTA_Tooltip_modifier_slow_mobs_bonus_Description"			"Your movespeed reduced on %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
 
 
 

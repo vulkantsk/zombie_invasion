@@ -1,48 +1,26 @@
 FirstSpawned = {}
 
-DONATE_SET_PREMIUM_1 = {
+
+DONATE_SET_HELPER = {
 	players = {
---		347624347,
+		877002179,
+
 	},
 }
 
-DONATE_SET_PREMIUM_2 = {
-	players = {
---		347624347,
-	},
-}
-
-DONATE_SET_PREMIUM_3 = {
+DONATE_SET_ADMIN = {
 	players = {
 		453736017,
 	},
 }
 
-DONATE_ITEM_TANGOS = {
+DONATE_ITEM_SLARK = {
 	players = {
 --		347624347,
 	},	
 }
 
-DONATE_ITEM_BOOTS = {
-	players = {
---		347624347,
-	},	
-}
-
-DONATE_ITEM_AGANIM = {
-	players = {
---		347624347,
-	},	
-}
-
-DONATE_ITEM_RAPIER = {
-	players = {
---		347624347,
-	},	
-}
-
-DONATE_ITEM_APEX = {
+DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
 	},	
@@ -52,84 +30,29 @@ DONATE_ITEM_APEX = {
 DONATE_ITEMS = {
 	heroes = {
 		{
-			name = "item_clarity",
+			name = "item_larks_change",
 			can_be_bought = true,
-			free_available = true,
 			count = 1,
 			sets ={
-			},
-		},
-		{
-			name = "item_flask",
-			can_be_bought = true,
-			free_available = true,
-			count = 1,
-			sets ={
-			},
-		},
-		{
-			name = "item_bonus_strength10",
-			can_be_bought = true,
-			count = 3,
-			sets ={
-				DONATE_SET_PREMIUM_1,
-				DONATE_SET_PREMIUM_2,
-				DONATE_SET_PREMIUM_3,
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_SLARK,
+				DONATE_SET_HELPER,
 			},
 		},
 
 	},
 	artifacts = {
+
 		{
-			name = "item_ironwood_tree",
-			can_be_bought = true,
+			name = "item_midas_donate",
 			count = 1,
 			sets ={
-				DONATE_ITEM_TANGOS,
-				DONATE_SET_PREMIUM_1,
-				DONATE_SET_PREMIUM_2,
-				DONATE_SET_PREMIUM_3,
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_MIDAS,
+				DONATE_SET_HELPER,
 			},
 		},
-		{
-			name = "item_boots",
-			can_be_bought = true,
-			count = 1,
-			sets ={
-				DONATE_ITEM_BOOTS,
-				DONATE_SET_PREMIUM_1,
-				DONATE_SET_PREMIUM_2,
-				DONATE_SET_PREMIUM_3,
-			},
-		},
-		{
-			name = "item_ultimate_scepter",
-			can_be_bought = true,
-			count = 1,
-			sets ={
-				DONATE_SET_PREMIUM_2,
-				DONATE_SET_PREMIUM_3,
-				DONATE_ITEM_AGANIM,
-			},
-		},
-		{
-			name = "item_rapier",
-			can_be_bought = true,
-			count = 1,
-			sets ={
-				DONATE_ITEM_RAPIER,
-				DONATE_SET_PREMIUM_3,
-			},
-		},
-		{
-			name = "item_apex",
-			can_be_bought = false,
-			count = 1,
-			sets ={
-				DONATE_ITEM_APEX,
-				DONATE_SET_PREMIUM_3,
-			},
-		},
+
 
 	},
 }
@@ -217,6 +140,10 @@ function Donate:PlayerTake( info )
 	end
 end
 
+LinkLuaModifier( "modifier_special_effect_legendary", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_slark_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )
+
+ 
 function Donate:OnNPCSpawned(keys)
 	print("[BAREBONES] NPC Spawned")
 --	DeepPrintTable(keys)
@@ -234,9 +161,11 @@ function Donate:OnNPCSpawned(keys)
 		print( "Current Hero: " .. tostring( name ) )
 --	
 	
---		addModifierBySteamID(DONATE_SET_PREMIUM_1.players,"modifier_special_effect_legendary",steamID,npc)
+		addModifierBySteamID(DONATE_SET_HELPER.players,"modifier_special_effect_legendary",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_slark_skin",steamID,npc)
+
 --		addModifierBySteamID(				
-		
+--[[ 	
 		if not FirstSpawned[playerID] then
 			local point = npc:GetAbsOrigin()
 			local team = npc:GetTeam()
@@ -244,7 +173,9 @@ function Donate:OnNPCSpawned(keys)
 			unit:SetControllableByPlayer(npc:GetPlayerID(), true)
 
 		end
+			]]	
 	end
+
 end
 
 function addModifierBySteamID(enum,modifier_name,steamID,npc)

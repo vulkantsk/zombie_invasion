@@ -20,18 +20,11 @@ xp=0
 for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
-
- Christmas_night = 0
- Christmas_penguin = 0
-
- Halloween_boss = 0
-
+ 
 HERO_RESPAWN_TIME_BEFORE_10 = 10
 
-Penguin_save_1 = 0
-Penguin_save_2 = 0
-Penguin_save_3 = 0 
-Penguin_save_4 = 0
+Witch_killed = 0
+ 
  
  
 function InvasionMode:InvasionMap()
@@ -105,11 +98,7 @@ end
 	local newState = GameRules:State_Get()
 	if newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		InvasionMode:InvasionGameStart()
-	elseif newState == DOTA_GAMERULES_STATE_POST_GAME then
-		local presentTime = GameRules:GetDOTATime(false,false)
-		if presentTime < 1479 then
-			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
-		end
+ 
 	elseif newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
 		for id = 0, 24 do
 			local player = PlayerResource:GetPlayer( id )
@@ -261,26 +250,11 @@ function InvasionMode:OnItemPickedUp(keys)
 		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory				
 	end
 end
-
-   
-
-function InvasionMode:Halloween_boss_plus()
-     Halloween_boss = Halloween_boss + 1 
-end
-
-function InvasionMode:Christmas_plus()
-     Christmas_night = Christmas_night + 1
-end
-
+ 
 function InvasionMode:Bo_plus()
       Pig_bo_kill = Pig_bo_kill + 1 
 end
-
-  function InvasionMode:Christmas_penguiun_plus()
- Christmas_penguin = Christmas_penguin + 1
  
-end
-
 function InvasionMode:OnPlayerLevelUp(keys)
 	print ('[BAREBONES] OnPlayerLevelUp')
 	DeepPrintTable(keys)
@@ -359,6 +333,17 @@ function InvasionMode:spawn_last_boss()
 	unit:SetForwardVector(RandomVector(1))
 end
 
+function InvasionMode:spawn_warlock_boss()
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+	
+ 
+	point = Entities:FindByName( nil, "warlock_point"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_warlock_boss", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit:SetForwardVector(RandomVector(1))
+end
+
+
 function InvasionMode:spawn_christmas_boss()
 	local point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
 	local unit = nil  -- Кто появиться
@@ -382,17 +367,6 @@ function InvasionMode:spawn_christmas_boss()
  
 end
  
-function InvasionMode:spawn_greevil()
-	local point = nil  -- отвечает за то, где появиться свинья
-	local unit = nil  -- Кто появиться
-	
- 
-	point = Entities:FindByName( nil, "npc_portal"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_greevil", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
 --
 DEFAULT_DAYTIME = 300
 DEFAULT_NIGHTTIME = 300 -- лучше не менять, в этом костыльном говне это значение прописано ещё раз 1000
@@ -402,15 +376,11 @@ current_day = 0
 function InvasionMode:NextNight()
 	local time = DEFAULT_DAYTIME --+ (math.abs(PlayerResource:GetPlayerCount() - 4) * 60)
 	InvasionMode:NightTimer(time)
-
-     if Penguin_save_1 == 2 and  Penguin_save_2 == 2 and Penguin_save_3 == 2 and Penguin_save_4 == 2 then
-	     InvasionMode:ChristmasMusic()
-          InvasionMode:ChristmasNight()  
-     end
 end
  
 function InvasionMode:NightTimer(time)
-	local timeLeft = time   
+	local timeLeft = time  
+	local putin = Entities:FindByName(nil, 'NPC_base') 
 	Timers:CreateTimer(1.0, function()
 		timeLeft = timeLeft - 1		
  		GameRules:SetTimeOfDay(0.3)
@@ -427,38 +397,27 @@ function InvasionMode:NightTimer(time)
 			if currentNight == 1 then
 				InvasionMode:ZombieNight1()
 			elseif currentNight == 2 then
-				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight2()  
 			elseif currentNight == 3 then
-				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight3()  
 			elseif currentNight == 4 then
-				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 1.15)
 				InvasionMode:ZombieNight4() 
+			elseif currentNight == 5 then
+				InvasionMode:ZombieNight5() 
+			elseif currentNight == 6 then
+				InvasionMode:ZombieNight6() 
+			elseif currentNight == 7 then
+				InvasionMode:ZombieNight7() 
 
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
-                    if Penguin_save_1 == 2 and  Penguin_save_2 == 2 and Penguin_save_3 == 2 and Penguin_save_4 == 2 then
-                         return nil
-                    else
-                        InvasionMode:UsuallyEnd()
-                    end
-					  
+                        InvasionMode:UsuallyEnd()  
 				end)
- 			elseif currentNight == 5  then
-				local putin = Entities:FindByName(nil, 'NPC_base')
-				UpgradeUnitStats(putin, 2.0)
- 
-  
- 
- 
 				return nil;
 			end
 			
 			Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
 				InvasionMode:NextNight()
+				UpgradeUnitStats(putin, 1.2)
 			end)
 			
 			return nil;
@@ -471,265 +430,16 @@ function InvasionMode:NightTimer(time)
 end
 --
 
-  local one_par_pen = 0   
-
  
-   local ping_tweday = 0    
-   local ping_thrday = 0  
-   local ping_chtday = 0  
-
-  cicle_dead = 0
-function InvasionMode:ChristmasPeng()
-    local point = Entities:FindByName( nil, "slide_penguin_pr")  
-    local ring_particle = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
-    local ring_particle_2 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
-    local ring_particle_3 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
-    local ring_particle_4 = ParticleManager:CreateParticle("particles/ui/ui_sweeping_ring.vpcf", PATTACH_CUSTOMORIGIN, nil)
-
-    local patrol_guards_1 = {
-
-			{	
-				unit_name = "npc_patrol_guard_ogre", 
-				spawn_points = {"path_corner_patrol_1_1","path_corner_patrol_1_3","path_corner_patrol_1_5","path_corner_patrol_1_7",}
-			},
  
-          }
-
-    local	cycle_guards_1 = {
-			{	unit_name = "npc_patrol_kobold", 
-				spawn_interval = 1.3,
-				spawn_points = {"path_corner_cycle_1_1","path_corner_cycle_1_3","path_corner_cycle_1_5"}
-			},
-			{	unit_name = "npc_patrol_roshan", 
-				spawn_interval = 5.0,
-				spawn_points = {"path_corner_cycle_1_7"}
-			}, 
-			 
-		}
-
-    local patrol_guards_2 = {
-
-			{	
-				unit_name = "npc_patrol_fish", 
-				spawn_points = {"path_corner_patrol_2_13","path_corner_patrol_2_15","path_corner_patrol_2_17","path_corner_patrol_2_20","path_corner_patrol_2_21"}
-			},
-			{	
-				unit_name = "npc_patrol_wolf", 
-				spawn_points = {"path_corner_patrol_2_9","path_corner_patrol_2_12","path_corner_patrol_2_33"}
-			},
-			{	
-				unit_name = "npc_patrol_guard_ogre", 
-				spawn_points = {"path_corner_patrol_2_3","path_corner_patrol_2_7","path_corner_patrol_2_31"}
-			},
-			{	
-				unit_name = "npc_patrol_guard_beast", 
-				spawn_points = {"path_corner_patrol_2_23","path_corner_patrol_2_29","path_corner_patrol_2_6"}
-			},   
-			{	
-				unit_name = "npc_patrol_kobold", 
-				spawn_points = {"path_corner_patrol_2_28","path_corner_patrol_2_35"}
-			},   
-        
-
-          }
-
-
-    local	cycle_guards_2 = {
-			{	unit_name = "npc_patrol_guard_beast", 
-				spawn_interval = 3.5,
-				spawn_points = {"path_corner_cycle_2_1","path_corner_cycle_2_3","path_corner_cycle_2_5"}
-			},
- 
-			
-		}
-
-    local patrol_guards_3 = {
-
-			{	
-				unit_name = "npc_patrol_zomb", 
-				spawn_points = {"path_corner_patrol_3_4","path_corner_patrol_3_11",}
-			},
- 			{	
-				unit_name = "npc_patrol_half_zomb_slow", 
-				spawn_points = {"path_corner_patrol_3_9"}
-			},
- 			{	
-				unit_name = "npc_patrol_big_zomb", 
-				spawn_points = {"path_corner_patrol_3_8"}
-			},
-          }
-
-
-    local	cycle_guards_3 = {
-			{	unit_name = "npc_patrol_half_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_3_1"}
-			},
- 			{	unit_name = "npc_patrol_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_3_3"}
-			},
-			{	unit_name = "npc_patrol_big_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_3_5"}
-			},
-			
-		}
-
-    local patrol_guards_4 = {
-
-			{	
-				unit_name = "npc_patrol_pudge", 
-				spawn_points = {"path_corner_patrol_4_110","path_corner_patrol_4_109",
-				"path_corner_patrol_4_108","path_corner_patrol_4_107","path_corner_patrol_4_106",
-				"path_corner_patrol_4_105","path_corner_patrol_4_104","path_corner_patrol_4_103",
-			     "path_corner_patrol_4_102","path_corner_patrol_4_101","path_corner_patrol_4_100"}
-			},
-
- 			{	
-				unit_name = "npc_patrol_zomb", 
-				spawn_points = {"path_corner_patrol_4_1"}
-			},
- 			 	
-
- 			{	
-				unit_name = "npc_patrol_big_zomb", 
-				spawn_points = {"path_corner_patrol_4_3","path_corner_patrol_4_5"}
-			}, 
-          }
- 
-
-    local	cycle_guards_4 = {
-			{	unit_name = "npc_patrol_zomb", 
-				spawn_interval = 1.75,
-				spawn_points = {"path_corner_cycle_4_1","path_corner_cycle_4_3","path_corner_cycle_4_5","path_corner_cycle_4_7",
-				"path_corner_cycle_4_9","path_corner_cycle_4_11"}
-			},
-			{	unit_name = "npc_patrol_big_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_4_13","path_corner_cycle_4_19"}
-			},
-			{	unit_name = "npc_patrol_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_4_17"}
-			},
- 			{	unit_name = "npc_patrol_half_zomb", 
-				spawn_interval = 3.0,
-				spawn_points = {"path_corner_cycle_4_15"}
-			},   
- 			{	unit_name = "npc_patrol_undying", 
-				spawn_interval = 5.0,
-				spawn_points = {"path_corner_cycle_4_22"}
-			},   
-			 
-			
-		}
-
- 
-	Timers:CreateTimer(0,function()
-
-     if current_day == 1 and Penguin_save_1 == 0 and one_par_pen == 0 then 
- 
-     	one_par_pen = one_par_pen + 1
-	     ParticleManager:SetParticleControl(ring_particle, 0, point:GetAbsOrigin()) 
-
-          SpawnUnitsNewYear(patrol_guards_1,cycle_guards_1)
-
-	elseif current_day == 2 and Penguin_save_2 == 0 and one_par_pen == 0 then
-          if ring_particle then 
-          	DeleteUnitsNewYear(patrol_guards_1,cycle_guards_1)
-          	ParticleManager:DestroyParticle(ring_particle, false)
-          	ring_particle = nil
-          end
-	     one_par_pen = one_par_pen + 1
-	     ping_tweday = ping_tweday + 1
-	     ParticleManager:SetParticleControl(ring_particle_2, 0, point:GetAbsOrigin()) 
-          
-	Timers:CreateTimer(5,function()
-	     SpawnUnitsNewYear(patrol_guards_2,cycle_guards_2)
-	 end)
-	elseif current_day == 3 and Penguin_save_3 == 0 and one_par_pen == 0 then
-          if ring_particle_2 then 
-          	DeleteUnitsNewYear(patrol_guards_2,cycle_guards_2)
-          	ParticleManager:DestroyParticle(ring_particle_2, false)
-          	ring_particle_2 = nil
-          end
-	     one_par_pen = one_par_pen + 1
-	     ping_thrday = ping_thrday + 1
-	     ParticleManager:SetParticleControl(ring_particle_3, 0, point:GetAbsOrigin()) 
-          
-          Timers:CreateTimer(5,function()
-
-	         SpawnUnitsNewYear(patrol_guards_3,cycle_guards_3)
-	    end)
-	elseif current_day == 4 and Penguin_save_4 == 0 and one_par_pen == 0 then
-		if ring_particle_3 then 
-			DeleteUnitsNewYear(patrol_guards_3,cycle_guards_3)
-          	ParticleManager:DestroyParticle(ring_particle_3, false)
-          	ring_particle_3 = nil
-          end
-	     one_par_pen = one_par_pen + 1
-	     ping_chtday = ping_chtday + 1
-	     ParticleManager:SetParticleControl(ring_particle_4, 0, point:GetAbsOrigin()) 
-          
-
-          Timers:CreateTimer(5,function()
-	     SpawnUnitsNewYear(patrol_guards_4,cycle_guards_4)
-	     end)
-	elseif current_day == 5  then
-		if ring_particle_4 then 
-			DeleteUnitsNewYear(patrol_guards_4,cycle_guards_4)
-          	ParticleManager:DestroyParticle(ring_particle_4, false)
-          	ring_particle_4 = nil
-          end		
-	end
- 
-     if current_day == 2 and Penguin_save_1 == 0 and ping_tweday == 0 then 
-     	one_par_pen = one_par_pen - 1
-     elseif current_day == 3 and Penguin_save_2 == 0 and ping_thrday == 0 then
-          print('dodo') 
-     	one_par_pen = one_par_pen - 1
-     elseif current_day == 4 and Penguin_save_3 == 0 and ping_chtday == 0 then           
-     	one_par_pen = one_par_pen - 1
-     end
-
- 	if Penguin_save_1 == 1 and one_par_pen == 1 or Penguin_save_2 == 1 and one_par_pen == 1 or Penguin_save_3 == 1 and one_par_pen == 1 or Penguin_save_4 == 1 and one_par_pen == 1 then 
-		one_par_pen = one_par_pen - 1
-		
-		if ring_particle then 
-			DeleteUnitsNewYear(patrol_guards_1,cycle_guards_1)
-		     ParticleManager:DestroyParticle(ring_particle, false)
-		     ring_particle = nil
-		elseif ring_particle_2 then 
-			DeleteUnitsNewYear(patrol_guards_2,cycle_guards_2)
-			ParticleManager:DestroyParticle(ring_particle_2, false)
-
-			ring_particle_2 = nil
-		elseif ring_particle_3 then 
-			DeleteUnitsNewYear(patrol_guards_3,cycle_guards_3)
-			ParticleManager:DestroyParticle(ring_particle_3, false)
-			ring_particle_3 = nil
-		elseif ring_particle_4 then 
-			DeleteUnitsNewYear(patrol_guards_4,cycle_guards_4)
-			ParticleManager:DestroyParticle(ring_particle_4, false)
-			ring_particle_4 = nil
-          end
-          
-     end
-     return 1
-     end)
-end
-
 function InvasionMode:InvasionGameStart()
 
-	InvasionMode:InvasionSpawnMoobs()
+ 
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
- 
-      InvasionMode:ChristmasPeng()
-  
    
+ 
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
@@ -737,93 +447,19 @@ end
 
 function InvasionMode:UsuallyEnd()  
  -- Обычнй конец
- 	Timers:CreateTimer(0,function()
-	         
-	    xuitat3 = RandomInt(1,3)
-         
-		if xuitat3 == 1 then
-	 	    EmitGlobalSound("Invasion.Castaways")
-		    GameRules:SendCustomMessage("<font color='#58ACFA'>The Castaways – Liar Liar</font>", 0, 0) 
-		elseif xuitat3 == 2 then
-	 	    EmitGlobalSound("Daved Guetta - Would I Lie To You")
-		    GameRules:SendCustomMessage("<font color='#58ACFA'>Would I Lie To You - David Guetta, Cedric Gervais, Chris Willis</font>", 0, 0) 		
-		else
-	 	    EmitGlobalSound("Sergey")
-		    GameRules:SendCustomMessage("<font color='#58ACFA'>Серега пират - АМ ФП</font>", 0, 0) 
-        end	
-             
-         
- --       	 	    EmitGlobalSound("Bobby Helms - Jingle bell")
-	--	    GameRules:SendCustomMessage("<font color='#58ACFA'>Bobby Helms - Jingle bell</font>", 0, 0) 
-		     
-	end)  
-	
-	Timers:CreateTimer(48,function()
-		GameRules:SendCustomMessage("#laughter", 0, 0)
+
+	GameRules:SendCustomMessage("#begining_1", 0, 0)
+
+
+	Timers:CreateTimer(8,function()
+		GameRules:SendCustomMessage("#begining_2", 0, 0)
 	end)
 
-	Timers:CreateTimer(49,function()
-		GameRules:SendCustomMessage("#laughter", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_2", 0, 0) 
-														    		 
+	Timers:CreateTimer(16,function()
+		GameRules:SendCustomMessage("#beginend", 0, 0)
+		InvasionMode:spawn_warlock_boss()
 	end)
-	
-	Timers:CreateTimer(50,function()
-		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
-	end)
-	
-	Timers:CreateTimer(51,function()
-	    GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_6", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
-	end)
-	
-	Timers:CreateTimer(52,function()
-		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_4", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_5", 0, 0) 
-	end)
-	
-	Timers:CreateTimer(53,function()
-		GameRules:SendCustomMessage("#laughter_3", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_7", 0, 0) 
-		GameRules:SendCustomMessage("#laughter_8", 0, 0) 
-	end)
-	
-	Timers:CreateTimer(60,function()
-		    EmitGlobalSound("Asgore_Intro_classic")
-	end)
-	
  
-	
-	Timers:CreateTimer(62, function() GameRules:SendCustomMessage("#begining_1",0,0) end)
-	
-	Timers:CreateTimer(70, function() GameRules:SendCustomMessage("#begining_2",0,0) end)
-	
-	Timers:CreateTimer(78, function() GameRules:SendCustomMessage("#begining_3",0,0) end)
-	
-	Timers:CreateTimer(80,function()
-       InvasionMode:spawn_last_boss()
-    --   GameRules:SetTimeOfDay(0.25)
-	end)
-	
-	Timers:CreateTimer(50,function()
- 
-				if xuitat3 == 1 then
-	 	    StopGlobalSound("Invasion.Castaways")    
- 
-		elseif xuitat3 == 2 then
-	 	    StopGlobalSound("Daved Guetta - Would I Lie To You")
- 	
-		else
-	 	    StopGlobalSound("Sergey")
- 
-        end	
-	 
-	--  StopGlobalSound("Bobby Helms - Jingle bell")
-	end)
 end
  
  function InvasionMode:ChristmassEror()  
@@ -910,410 +546,7 @@ end
  
  
  end
-  
-	    local zombie_count = 0 
  
-
- 
-
-function InvasionMode:ZombieNight1()  
- -- 1 НОЧЬ
-      local points_skelet = Entities:FindAllByName("skeleton")  
-      for i=1, 3 do
-		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
-		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)			 
-	 end
- 
-     self:SpawnZombie("npc_classic_wave_zombie",11)
-
-	Timers:CreateTimer(150,function()
-          self:SpawnZombie("npc_undying_1",1)
-	end) 
-
-	Timers:CreateTimer(225,function()
-		local zombie_boss_1 =  RandomInt(1,2)
-		if zombie_boss_1 == 1 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_half_zombie",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
-		elseif zombie_boss_1 == 2 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_big_zombie",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_big_zombie", 1)
-	     end
-	end) 
-
-
-end
- 
- 	    local zombie_count_2 = 0 
-        local ghost_count_2 = 0
-
-	    local zombie_update_2 = 0 
-
- function InvasionMode:ZombieNight2()  
- -- 2 НОЧЬ
-
-    local wave_2 = 0
-
-      local points_skelet = Entities:FindAllByName("skeleton")    
-      for i=1, 3 do
-		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
-		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
-		UpgradeUnitStats(skelet, 2)	
-	     SetGoldUsually(skelet, 60)
-          SetExpUsually(skelet, 200) 
-	 end
-
- 	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_big_zombie",16)
-		 self:SpawnGhost("npc_classic_wave_ghost",8)
-	end)
-	
- 	Timers:CreateTimer(0, function()
-	     while wave_2 < 29 do
-		     wave_2 = wave_2 + 1
- 
-		     return 10
-		 end			 
-	end)
- 
-
- 
-
-	Timers:CreateTimer(50, function()
-	     while wave_2 <  28 do 
-		     self:SpawnZombie("npc_zombie_toxic_2",1)
-		 return 50
-		 end
-	end)
---[[ 
-	Timers:CreateTimer(90, function()
-	     while wave_2 <  29 do 
-		     self:SpawnZombie("npc_seerdying_2",1)
-		 return 100
-		 end
-	end)	
-	
- ]]
-
- 	Timers:CreateTimer(140,function()
- 			 		   print(zombie_count_2)
- 		   if zombie_count_2 < 105 then 
-             zombie_update_2 = zombie_update_2 + 1 
-            end
-	end)
-
-	Timers:CreateTimer(90,function()
-		 self:SpawnZombie("npc_undying_2",1)
-	end)
- 
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_2",1)
-	end)
-	 
-	Timers:CreateTimer(225,function()
-		local zombie_boss_2 =  RandomInt(1,3)
-		if zombie_boss_2 == 1 then 
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_suicide", 1)
-		elseif zombie_boss_2 == 2 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_necr",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_necr", 1)
-		elseif zombie_boss_2 == 3 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem", 1)		  
-	     end
-	end) 	
- 
-
-end
- 	 
- 	    local zombie_count_3 = 0 
-        local ghost_count_3 = 0
-
-	    local zombie_update_3 = 0 
-
-function InvasionMode:ZombieNight3()  	
-  -- 3 НОЧЬ 
- 
-       local points_skelet = Entities:FindAllByName("skeleton")	    
-      for i=1, 3 do
-		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
-		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
-		UpgradeUnitStats(skelet, 4)	 
-	     SetGoldUsually(skelet, 120)
-          SetExpUsually(skelet, 250) 		
-	 end
-
-
-    local wave_3 = 0
-	
-  	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_ghoul",16)
-		 self:SpawnGhost("npc_classic_wave_ghost_2",8)
-	end)
-	
-	Timers:CreateTimer(0, function()
-	     while wave_3 < 30 do
-			 wave_3 = wave_3 + 1
-			 
- 
-		     return 10
-		 end			 
-	end)
-
- 
- 
-
-	Timers:CreateTimer(40, function()
-	     while wave_3 <  28 do 
-		     self:SpawnZombie("npc_zombie_toxic_3",1)
-		 return 40
-		 end
-	end)
- --[[
- 	Timers:CreateTimer(90, function()
-	     while wave_3 <  29 do 
-		     self:SpawnZombie("npc_seerdying_3",1)
-		 return 90
-		 end
-	end)	
-]]	
-
- 	Timers:CreateTimer(140,function()
- 			 		   print(zombie_count_3)
- 		   if zombie_count_3 < 105 then 
-             zombie_update_3 = zombie_update_3 + 1 
-            end
-	end)
-
-
-	Timers:CreateTimer(90,function()
-		 self:SpawnZombie("npc_undying_3",1)
-	end)
-
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_3",1)
-	end)
-	
- 
- 	Timers:CreateTimer(225,function()
-		local zombie_boss_3 =  RandomInt(1,3)
-		if zombie_boss_3 == 1 then 
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_ghost",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_ghost", 1)
-		elseif zombie_boss_3 == 2 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_pudge",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_pudge", 1)
-		elseif zombie_boss_3 == 3 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_undying",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_undying", 1)		  
-	     end
-	end) 	
- 
- 
-	
-
- 
- 
- end
- 
-  	    local zombie_count_4 = 0 
-        local ghost_count_4 = 0
-
-	    local zombie_update_4 = 0 
-
- function InvasionMode:ZombieNight4()  
-   -- 4 НОЧЬ 
-  
-    local wave_4 = 0
-
-      local points_skelet = Entities:FindAllByName("skeleton")	    
-      for i=1, 3 do
-		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
-		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
-		UpgradeUnitStats(skelet, 8)	
-	     SetGoldUsually(skelet, 180)
-          SetExpUsually(skelet, 350) 			 
-	 end
-
-
-  	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_pudge",16)
-		 self:SpawnGhost("npc_classic_wave_ghost_3",8)
-	end)
-	
-	Timers:CreateTimer(0, function()
-	     while wave_4 < 30 do
-			 wave_4 = wave_4 + 1
-			 
- 
-		     return 10
-		 end			 
-	end)
-
-	
- 
-
-	Timers:CreateTimer(0, function()
-	    while wave_4 < 26 do 
-		     local unit_count = 3 * (1 + wave_4%2)
-			 
- 
-			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
-		     return 30
-		end
-	end)
-
-
-	Timers:CreateTimer(260, function()
-	    while wave_4 < 29 do 
-		     local unit_count = 1 * (1 + wave_4%2)
-			 
- 
-			 self:SpawnGhost("npc_classic_wave_ghost_boss",1)
-		     return 30
-		end
-	end)
-
-	Timers:CreateTimer(35, function()
-	     while wave_4 <  28 do 
-		     self:SpawnZombie("npc_zombie_toxic_4",1)
-		 return 35
-		 end
-	end)
- --[[
-  	Timers:CreateTimer(90, function()
-	     while wave_4 <  29 do 
-		     self:SpawnZombie("npc_seerdying_4",1)
-		 return 90
-		 end
-	end)	
-]]	
- 	Timers:CreateTimer(140,function()
- 			 		   print(zombie_count_4)
- 		   if zombie_count_4 < 105 then 
-             zombie_update_4 = zombie_update_4 + 1 
-            end
-	end)
-  
-	
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_4",1)
-	end)
- 
-	
- 
-	
-  	Timers:CreateTimer(260,function()
- 		 self:SpawnFlash("npc_flash_golem_3")
-	end)
-
- 
- 
- 
- 
-end
- 
-   	    local zombie_count_hal = 0 
-        local ghost_count_hal = 0
- local zombie_count_new = 0
-   local ghost_count_new = 0 
-	 
-
-function InvasionMode:ChristmasNight()  
- 
-    local wave_4 = 0
-	
-  	Timers:CreateTimer(300,function()
-		 self:SpawnZombie("npc_classic_new_years",8)
-		 self:SpawnGhost("npc_classic_new_years_lich",1)
-	end)
- 
-
-	Timers:CreateTimer(600,function()
-		GameRules:SetTimeOfDay(0.3)
-	end)
-
-	Timers:CreateTimer(602,function()
-	    EmitGlobalSound("christmas_ne_Bydet")
-	    InvasionMode:ChristmassEror()
-	end)
- 
-end
-
-function InvasionMode:ZombieNightHalloween()  
-   -- Хэлуинская НОЧЬ 
-  
-    local wave_4 = 0
-
-      local points_skelet = Entities:FindAllByName("skeleton")	    
-      for i=1, 3 do
-		local point_skelet = points_skelet[RandomInt(1, #points_skelet)]
-		local skelet = CreateUnitByName("npc_cemetery_skelet", point_skelet:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)		
-		UpgradeUnitStats(skelet, 12)	
-	     SetGoldUsually(skelet, 350)
-          SetExpUsually(skelet, 550) 			 
-	 end
-
-
-  	Timers:CreateTimer(0,function()
-		 self:SpawnZombie("npc_classic_wave_golem",12)
-		 self:SpawnGhost("npc_classic_wave_fly_pudge",6)
-	end)
-	
-	Timers:CreateTimer(0, function()
-	     while wave_4 < 30 do
-			 wave_4 = wave_4 + 1
-			 
-
- 
-		     return 10
-		 end			 
-	end)
-
-	
- 
-
-	Timers:CreateTimer(0, function()
-	    while wave_4 < 26 do 
-			 self:SpawnZombie("npc_classic_wave_fire_golem",1)
-		     return 35
-		end
-	end)
-
-
-
-	Timers:CreateTimer(90,function()
-		 self:SpawnZombie("npc_undying_clock",1)
-	end)
-
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_clock",1)
-	end)
-	
-	Timers:CreateTimer(300,function()
-		  InvasionMode:HalloweenEnd()
-	end)
-  
- 
- --[[
-  	Timers:CreateTimer(90, function()
-	     while wave_4 <  29 do 
-		     self:SpawnZombie("npc_seerdying_4",1)
-		 return 90
-		 end
-	end)	
-]]	
- 
- 
-	
- 
-  
-end
-
-  
-  
-
 function InvasionMode:SpawnZombie(unit_name, unit_count)
 	local points = Entities:FindAllByName("zombie_spawner")
 
@@ -1323,79 +556,15 @@ function InvasionMode:SpawnZombie(unit_name, unit_count)
 		unit:SetInitialGoalEntity(point)
 	end
 end
-
  
-function InvasionMode:SpawnFlash(unit_name)
-	local point = nil
-	local unit = nil
- 
-	point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
-	unit = CreateUnitByName(unit_name, point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-end
-
-function InvasionMode:SpawnGhost(unit_name, unit_count)
-	local points = Entities:FindAllByName("ghost_spawner")
-
-	for i=1, unit_count do
-		local point = points[RandomInt(1, #points)]
-		local unit = CreateUnitByName(unit_name, point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		unit:SetInitialGoalEntity(point)
-	end
-end
 
 function InvasionMode:SpawnBoss(unit_name, unit_count)
- 
-
 	for i=1, unit_count do
-		local point =  Entities:FindByName( nil, "golem_spawner"):GetAbsOrigin()
+		local point =  Entities:FindByName( nil, "boss_spawner"):GetAbsOrigin()
 		local unit = CreateUnitByName(unit_name, point, true, nil, nil, DOTA_TEAM_BADGUYS)
  	unit:SetForwardVector(RandomVector(1))
 	end
 end
- 
-
-
---спавны
-function InvasionMode:InvasionSpawnMoobs()
-	local point = nil
-	local unit = nil
-	--boss_spawner_2
-	--wave_spawner_1
-
-	
-	---city zombie
-	local zombieName = { 
-        "npc_classic_zombie","npc_classic_zombie",
-        "npc_classic_big_zombie","npc_classic_big_zombie","npc_classic_big_zombie",
-        "npc_classic_ghoul","npc_classic_ghoul"
-        } 
---[[
-	for i = 1, 7 do
-		point = Entities:FindByName( nil, "city_spawner_" .. i):GetAbsOrigin()
-		for j = 1, 5 do
-			unit = CreateUnitByName(zombieName[i], point + RandomVector(200), true, nil, nil, DOTA_TEAM_BADGUYS )
-			unit.respawn = true		
-			unit.vSpawnLoc = unit:GetOrigin()
-			unit.team = DOTA_TEAM_BADGUYS			
-			--unit.vSpawnVector = Vector(-1,-1,0)
-			unit:SetForwardVector(RandomVector(1))
-		end
-	end 
-]]
-
-	--bosses
-	point = Entities:FindByName( nil, "boss_spawner_1"):GetAbsOrigin()
-	unit = CreateUnitByName("npc_classic_witch", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-	unit.respawn = false	
-	unit:SetForwardVector(RandomVector(1))
-
- 
-	 
-end
-
- 
  
 
  function InvasionMode:spawngulya() -- Вызывание свина 
@@ -1454,11 +623,26 @@ function InvasionMode:InvasionEntityKilled (data)
 		EmitGlobalSound("Invasion.HommerWin")
 	end	
 
+	if killedEntity:GetUnitName() == "npc_zombie_fort" then
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end	
+
+	if killedEntity:GetUnitName() == "npc_warlock_boss" then
+		if Difficulter == 1 then 
+			 EndGame:IsItEndGame()
+			 GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		else
+		     EndGame:GoodEnd()
+ 
+	     end
+	end	
+	 
+
 	if killedEntity:GetUnitName() == "npc_skelet_boss" and killedEntity:IsReincarnating() == false then
 		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
 	end	
 	if killedEntity:GetUnitName() == "npc_EdgardBs" then
-	    for i=1,2 do
+	    for i=1,50000 do
 	         local unit = CreateUnitByName("npc_EdgardBs", killedEntity:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
 	    end 
      GameRules:SendCustomMessage("<font color='#c10020'>)))</font>", 0, 0)
@@ -1473,13 +657,26 @@ function InvasionMode:InvasionEntityKilled (data)
 	end	
 end 
       
- 
+
+	if killedEntity:GetUnitName() == "npc_witch_boss_1" or killedEntity:GetUnitName() == "npc_witch_boss_2" or killedEntity:GetUnitName() == "npc_witch_boss_3" then
+		Witch_killed = Witch_killed + 1
+          local with_mult = Witch_killed-2
+		local point = Entities:FindByName(nil,"npc_witch_boss_point"):GetAbsOrigin()
+          Timers:CreateTimer(RandomInt(6*60,9*60),function()	
+             if Witch_killed <= 2 then 
+                 local unit = CreateUnitByName("npc_witch_boss_2", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+             elseif Witch_killed >= 3 then
+                 local unit = CreateUnitByName("npc_witch_boss_3", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+                 UpgradeWitchStats(unit, with_mult * 3, with_mult * 4000, with_mult * 300 )
+             end
+          end)
+	end	
+
+  
+
 
  
 --*************************************** NIGHT SPAWN ***************************************
-
- 
- 
  
 
      if killedEntity:GetUnitName() == "npc_classic_wave_zombie" or killedEntity:GetUnitName() == "npc_suic_wave_zombie" then 
@@ -1530,315 +727,101 @@ end
 	   	 end             
      end
  
-      if killedEntity:GetUnitName() == "npc_classic_wave_big_zombie" then 
+      if killedEntity:GetUnitName() == "npc_classic_wave_big_zombie" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic"  then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
 	         local points = Entities:FindAllByName("zombie_spawner")
- 
-    
+              local unit
+
  
 	         for i=1, 1 do
 		         zombie_count_2 = zombie_count_2 + 1
 		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 	           
+                   local time_res = RandomInt(6,15)
+		         Timers:CreateTimer(time_res, function()
 
-      	             if zombie_update_2 == 1 then 
-        	             if zombie_count_2 < 105 then 
-        	                 	 SetExpUsually(unit, 25)
-        	                	 SetGoldUsually(unit, 7)
-       	                  	     GiveGoldPlayers(15)
-       	                     elseif zombie_count_2 < 245 then 
-          	                     SetGoldUsually(unit, -2)
-           	                  	 GiveGoldPlayers(5)
-           	                  	 SetExpUsually(unit, -7)
-      	                     elseif zombie_count_2 > 245 then 
-          	                     SetGoldUsually(unit, -3)
-           	                  	 GiveGoldPlayers(2)
-           	                  	 SetExpUsually(unit, -30)
-      	                 end
-       	             else
-               
-        	             if zombie_count_2 < 155 then 
+		             if RollPercentage(rollBase_2) then 
+ 		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_2 = 1.5
+ 		             else
+                           unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_2 = rollBase_2 + 1.5
+ 		             end
+         	
+        	             if zombie_count_2 < 50 then 
            	                     SetGoldUsually(unit, 0)       	             	
-                             	 SetExpUsually(unit, 0)
-             	            	 GiveGoldPlayers(7)
-           	             elseif  zombie_count_2 < 245 then 
-          	                     SetGoldUsually(unit, -2)
-           	                  	 GiveGoldPlayers(5)
-           	                  	 SetExpUsually(unit, -7)
-            	             elseif  zombie_count_2 > 245 then 
-          	                     SetGoldUsually(unit, -3)
-           	                  	 GiveGoldPlayers(2)
-           	                  	 SetExpUsually(unit, -30)
-             	         end
-	       	         end    
+                             	      SetExpUsually(unit, 0)
+           	             elseif  zombie_count_2 < 110 then 
+          	                     SetGoldUsually(unit, -3)          	                  	
+           	                  	 SetExpUsually(unit, -16)
+            	             elseif  zombie_count_2 > 110 then 
+          	                     SetGoldUsually(unit, -6)         	                  	  
+           	                  	 SetExpUsually(unit, -32)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if zombie_count_2 < 50 then 
+             	            	 GiveGoldPlayers(8)
+           	             elseif  zombie_count_2 < 110 then 
+           	                  	 GiveGoldPlayers(6)
+            	             elseif  zombie_count_2 > 110 then 
+           	                  	 GiveGoldPlayers(4)
+             	        end
+	       	           
+                    
            	 end	                        
 	   	 end             
      end
 
-      if killedEntity:GetUnitName() == "npc_classic_wave_ghost" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("ghost_spawner")
- 
-    
- 
-	         for i=1, 1 do
-		         ghost_count_2 = ghost_count_2 + 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_ghost", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 
-        	             if ghost_count_2 < 40 then 
-         	                     SetGoldUsually(unit, 0)
-           	                  	 GiveGoldPlayers(4)
-           	                  	 SetExpUsually(unit, 0)
-           	             elseif  ghost_count_2 < 80 then 
-         	                     SetGoldUsually(unit, -20)
-             	            	 GiveGoldPlayers(3)
-           	                  	 SetExpUsually(unit, -20)
-           	             elseif  ghost_count_2 > 80 then 
-         	                     SetGoldUsually(unit, -32)
-             	            	 GiveGoldPlayers(2)
-           	                  	 SetExpUsually(unit, -30)
-             	         end
-	       	            
-           	 end	                        
-	   	 end             
-     end
  
       if killedEntity:GetUnitName() == "npc_classic_wave_ghoul" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
 	         local points = Entities:FindAllByName("zombie_spawner")
- 
-    
+              local unit
+
  
 	         for i=1, 1 do
 		         zombie_count_3 = zombie_count_3 + 1
 		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 	           
+                   local time_res = RandomInt(3,8)
+		         Timers:CreateTimer(time_res, function()
 
-      	             if zombie_update_3 == 1 then 
+ 
+                       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 
+         	
         	             if zombie_count_3 < 105 then 
-        	                 	 SetExpUsually(unit, 80)
-        	                	 SetGoldUsually(unit, 20)
-       	                  	     GiveGoldPlayers(35)
-       	                     elseif zombie_count_3 < 245 then 
-          	                     SetGoldUsually(unit, -4)
-           	                  	 GiveGoldPlayers(15)
-           	                  	 SetExpUsually(unit, -35)
-      	                     elseif zombie_count_3 > 245 then 
-          	                     SetGoldUsually(unit, -12)
-           	                  	 GiveGoldPlayers(5)
-           	                  	 SetExpUsually(unit, -60)
-      	                 end
-       	             else
-               
-        	             if zombie_count_3 < 155 then 
            	                     SetGoldUsually(unit, 0)       	             	
-                             	 SetExpUsually(unit, 0)
-             	            	 GiveGoldPlayers(15)
-           	             elseif  zombie_count_3 < 245 then 
-          	                     SetGoldUsually(unit, -4)
-           	                  	 GiveGoldPlayers(15)
-           	                  	 SetExpUsually(unit, -40)
-            	             elseif  zombie_count_3 > 245 then 
-          	                     SetGoldUsually(unit, -12)
-           	                  	 GiveGoldPlayers(5)
-           	                  	 SetExpUsually(unit, -100)
-             	         end
-	       	         end    
-           	 end	                        
-	   	 end             
-     end
+                             	      SetExpUsually(unit, 0)
+           	             elseif  zombie_count_3 < 238 then 
+          	                     SetGoldUsually(unit, -3)          	                  	
+           	                  	 SetExpUsually(unit, -16)
+            	             elseif  zombie_count_3 > 238 then 
+          	                     SetGoldUsually(unit, -6)         	                  	  
+           	                  	 SetExpUsually(unit, -32)
+             	        end                  
 
-      if killedEntity:GetUnitName() == "npc_classic_wave_ghost_2" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("ghost_spawner")
- 
-    
- 
-	         for i=1, 1 do
-		         ghost_count_3 = ghost_count_3 + 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_ghost_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
 		         unit:SetInitialGoalEntity(point)
- 
-        	             if ghost_count_3 < 40 then 
-         	                     SetGoldUsually(unit, 0)
-           	                  	 GiveGoldPlayers(7)
-           	                  	 SetExpUsually(unit, 0)
-           	             elseif  ghost_count_3 < 80 then 
-         	                     SetGoldUsually(unit, -45)
-             	            	 GiveGoldPlayers(6)
-           	                  	 SetExpUsually(unit, -40)
-           	             elseif  ghost_count_3 > 80 then 
-         	                     SetGoldUsually(unit, -32)
-             	            	 GiveGoldPlayers(4)
-           	                  	 SetExpUsually(unit, -85)
-             	         end
-	       	            
-           	 end	                        
-	   	 end             
-     end
-
-      if killedEntity:GetUnitName() == "npc_classic_wave_pudge" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("zombie_spawner")
- 
-    
- 
-	         for i=1, 1 do
-		         zombie_count_4 = zombie_count_4+ 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 	           
-
-      	             if zombie_update_4 == 1 then 
-        	             if zombie_count_4 < 105 then 
-        	                 	 SetExpUsually(unit, 160)
-        	                	 SetGoldUsually(unit, 30)
-       	                  	     GiveGoldPlayers(50)
-       	                     elseif zombie_count_4 < 216 then 
-          	                     SetGoldUsually(unit, -6)
-           	                  	 GiveGoldPlayers(13)
-           	                  	 SetExpUsually(unit, -60)
-      	                     elseif zombie_count_4 > 216 then 
-          	                     SetGoldUsually(unit, -10)
-           	                  	 GiveGoldPlayers(9)
-           	                  	 SetExpUsually(unit, -90)
-      	                 end
-       	             else
-               
-        	             if zombie_count_4 < 155 then 
-           	                     SetGoldUsually(unit, 0)       	             	
-                             	 SetExpUsually(unit, 0)
-             	            	 GiveGoldPlayers(17)
-           	             elseif  zombie_count_4 < 245 then 
-          	                     SetGoldUsually(unit, -6)
-           	                  	 GiveGoldPlayers(13)
-           	                  	 SetExpUsually(unit, -60)
-            	             elseif  zombie_count_4 > 245 then 
-          	                     SetGoldUsually(unit, -10)
-           	                  	 GiveGoldPlayers(9)
-           	                  	 SetExpUsually(unit, -90)
-             	         end
-	       	         end    
-           	 end	                        
-	   	 end             
-     end
-
-      if killedEntity:GetUnitName() == "npc_classic_wave_ghost_3" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("ghost_spawner")
- 
-    
- 
-	         for i=1, 1 do
-		         ghost_count_4 = ghost_count_4 + 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_ghost_3", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 
-        	             if ghost_count_4 < 40 then 
-         	                     SetGoldUsually(unit, 0)
-           	                  	 GiveGoldPlayers(17)
-           	                  	 SetExpUsually(unit, 0)
-           	             elseif  ghost_count_4 < 80 then 
-         	                     SetGoldUsually(unit, -40)
-             	            	 GiveGoldPlayers(12)
-           	                  	 SetExpUsually(unit, -40)
-           	             elseif  ghost_count_4 > 80 then 
-         	                     SetGoldUsually(unit, -60)
-             	            	 GiveGoldPlayers(7)
-           	                  	 SetExpUsually(unit, -90)
-             	         end
-	       	            
-           	 end	                        
-	   	 end             
-     end
-
-      if killedEntity:GetUnitName() == "npc_classic_wave_fire_golem" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("zombie_spawner")
- 
-    
- 
-	         for i=1, 1 do
-		         zombie_count_hal = zombie_count_hal+ 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_fire_golem", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point) 	         
-       	                          
-        	             if zombie_count_hal < 155 then 
-           	                     SetGoldUsually(unit, 0)       	             	
-                             	 SetExpUsually(unit, 0)
-             	            	 GiveGoldPlayers(17)
-           	             elseif  zombie_count_hal < 245 then 
-          	                     SetGoldUsually(unit, -6)
-           	                  	 GiveGoldPlayers(13)
-           	                  	 SetExpUsually(unit, -60)
-            	             elseif  zombie_count_hal > 245 then 
-          	                     SetGoldUsually(unit, -10)
-           	                  	 GiveGoldPlayers(9)
-           	                  	 SetExpUsually(unit, -90)
+ 	              end)    
+        	             if zombie_count_3 < 105 then 
+             	            	 GiveGoldPlayers(8)
+           	             elseif  zombie_count_3 < 238 then 
+           	                  	 GiveGoldPlayers(6)
+            	             elseif  zombie_count_3 > 238 then 
+           	                  	 GiveGoldPlayers(4)
              	        end
-	         end    
-                                  
+	       	           
+                    
+           	 end	                        
 	   	 end             
      end
 
-      if killedEntity:GetUnitName() == "npc_classic_wave_fly_pudge" then 
-     	 if GameRules:IsDaytime() then
-     		 return nil 
-     	 else
-	         local points = Entities:FindAllByName("ghost_spawner")
  
-    
- 
-	          for i=1, 1 do
-		         ghost_count_hal = ghost_count_hal + 1
-		         local point = points[RandomInt(1, #points)]
- 		         local unit = CreateUnitByName("npc_classic_wave_fly_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-		         unit:SetInitialGoalEntity(point)
- 
-        	             if ghost_count_hal < 40 then 
-         	                     SetGoldUsually(unit, 0)
-           	                  	 GiveGoldPlayers(17)
-           	                  	 SetExpUsually(unit, 0)
-           	             elseif  ghost_count_hal < 80 then 
-         	                     SetGoldUsually(unit, -40)
-             	            	 GiveGoldPlayers(12)
-           	                  	 SetExpUsually(unit, -40)
-           	             elseif  ghost_count_hal > 80 then 
-         	                     SetGoldUsually(unit, -60)
-             	            	 GiveGoldPlayers(7)
-           	                  	 SetExpUsually(unit, -90)
-             	        end
-	       	            
-           	end	                        
-	   	 end             
-     end
-
-
-     if killedEntity:GetUnitName() == "npc_classic_new_years" or killedEntity:GetUnitName() == "npc_classic_new_years_ancient" then 
+      if killedEntity:GetUnitName() == "npc_classic_wave_ghoul_2" or killedEntity:GetUnitName() == "npc_classic_wave_ghoul_big"  then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1847,38 +830,135 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_new = zombie_count_new + 1
+		         zombie_count_4 = zombie_count_4 + 1
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(3,8)
+		         Timers:CreateTimer(time_res, function()
+
+		             if RollPercentage(rollBase_4) then   
+ 		                 unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_4 = 1.5
+ 		             else
+                           unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_4 = rollBase_4 + 1.5
+ 		             end
+         	
+        	             if zombie_count_4 < 105 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	      SetExpUsually(unit, 0)
+           	             elseif  zombie_count_4 < 238 then 
+          	                     SetGoldUsually(unit, -4)          	                  	
+           	                  	 SetExpUsually(unit, -20)
+            	             elseif  zombie_count_4 > 238 then 
+          	                     SetGoldUsually(unit, -7)         	                  	  
+           	                  	 SetExpUsually(unit, -45)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if zombie_count_4 < 105 then 
+             	            	 GiveGoldPlayers(9)
+           	             elseif  zombie_count_4 < 238 then 
+           	                  	 GiveGoldPlayers(7)
+            	             elseif  zombie_count_4 > 238 then 
+           	                  	 GiveGoldPlayers(6)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
+ 
+
+      if killedEntity:GetUnitName() == "npc_classic_wave_pudge" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2"  then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         zombie_count_5 = zombie_count_5 + 1
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(6,15)
+		         Timers:CreateTimer(time_res, function()
+
+		             if RollPercentage(rollBase_5) then 
+ 		                 unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_5 = 1.5
+ 		             else
+                           unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_5 = rollBase_5 + 1.5
+ 		             end
+         	
+        	             if zombie_count_5 < 50 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	      SetExpUsually(unit, 0)
+           	             elseif  zombie_count_5 < 110 then 
+          	                     SetGoldUsually(unit, -9)          	                  	
+           	                  	 SetExpUsually(unit, -36)
+            	             elseif  zombie_count_5 > 110 then 
+          	                     SetGoldUsually(unit, -16)         	                  	  
+           	                  	 SetExpUsually(unit, -70)
+             	        end                  
+
+		         unit:SetInitialGoalEntity(point)
+ 	              end)    
+        	             if zombie_count_5 < 50 then 
+             	            	 GiveGoldPlayers(15)
+           	             elseif  zombie_count_5 < 110 then 
+           	                  	 GiveGoldPlayers(12)
+            	             elseif  zombie_count_5 > 110 then 
+           	                  	 GiveGoldPlayers(8)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
+ 
+     if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_classic_wave_pudge_mini" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         zombie_count_6 = zombie_count_6 + 1
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(3,6)
 		         Timers:CreateTimer(time_res, function()
 
-		             if RollPercentage(rollBase) then 
- 		                 unit = CreateUnitByName("npc_classic_new_years_ancient", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 rollBase = 1
+		             if RollPercentage(rollBase_6) then 
+ 		                 unit = CreateUnitByName("npc_classic_wave_pudge_mini", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_6 = 1
  		             else
- 		         	       unit = CreateUnitByName("npc_classic_new_years", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           rollBase = rollBase + 0.5
+ 		         	       unit = CreateUnitByName("npc_classic_wave_pudge_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_6 = rollBase_6 + 2.0
  		             end
 
-        	             if zombie_count_new < 105 then 
+        	             if zombie_count_6 < 105 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 SetExpUsually(unit, 0)
-           	             elseif  zombie_count_new < 238 then 
-          	                     SetGoldUsually(unit, -20)          	                  	
-           	                  	 SetExpUsually(unit, -90)
-            	             elseif  zombie_count_new > 238 then 
-          	                     SetGoldUsually(unit, -30)         	                  	  
-           	                  	 SetExpUsually(unit, -130)
+           	             elseif  zombie_count_6 < 238 then 
+          	                     SetGoldUsually(unit, -9)          	                  	
+           	                  	 SetExpUsually(unit, -32)
+            	             elseif  zombie_count_6 > 238 then 
+          	                     SetGoldUsually(unit, -16)         	                  	  
+           	                  	 SetExpUsually(unit, -55)
              	        end                  
 
 		         unit:SetInitialGoalEntity(point)
  	              end)    
-        	             if zombie_count_new < 105 then 
-             	            	 GiveGoldPlayers(20)
-           	             elseif  zombie_count_new < 238 then 
-           	                  	 GiveGoldPlayers(15)
-            	             elseif  zombie_count_new > 238 then 
-           	                  	 GiveGoldPlayers(10)
+        	             if zombie_count_6 < 105 then 
+             	            	 GiveGoldPlayers(12)
+           	             elseif  zombie_count_6 < 238 then 
+           	                  	 GiveGoldPlayers(8)
+            	             elseif  zombie_count_6 > 238 then 
+           	                  	 GiveGoldPlayers(6)
              	        end
 	       	           
                     
@@ -1886,54 +966,54 @@ end
 	   	 end             
      end
 
-
-     if killedEntity:GetUnitName() == "npc_classic_new_years_lich" or killedEntity:GetUnitName() == "npc_classic_new_years_winterwyvern" then 
+     if killedEntity:GetUnitName() == "npc_classic_wave_greater_zombie" or killedEntity:GetUnitName() == "npc_classic_wave_reflect_zombie" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
-	         local points = Entities:FindAllByName("ghost_spawner")
+	         local points = Entities:FindAllByName("zombie_spawner")
               local unit
 
  
 	         for i=1, 1 do
-		         ghost_count_new = ghost_count_new + 1
+		         zombie_count_7 = zombie_count_7 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(15,25)
+                   local time_res = RandomInt(3,6)
 		         Timers:CreateTimer(time_res, function()
 
-		             if RollPercentage(rollBase_ghost) then 
- 		                 unit = CreateUnitByName("npc_classic_new_years_winterwyvern", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 rollBase_ghost = 10
+		             if RollPercentage(rollBase_7) then 
+ 		                 unit = CreateUnitByName("npc_classic_wave_reflect_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_7 = 1
  		             else
- 		         	       unit = CreateUnitByName("npc_classic_new_years_lich", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           rollBase_ghost = rollBase_ghost + 15
+ 		         	       unit = CreateUnitByName("npc_classic_wave_greater_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_7 = rollBase_7 + 2.0
  		             end
 
-        	             if ghost_count_new < 8 then 
+        	             if zombie_count_7 < 105 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 SetExpUsually(unit, 0)
-           	             elseif  ghost_count_new < 14 then 
-          	                     SetGoldUsually(unit, -20)          	                  	
-           	                  	 SetExpUsually(unit, -90)
-            	             elseif  ghost_count_new > 14 then 
-          	                     SetGoldUsually(unit, -30)         	                  	  
-           	                  	 SetExpUsually(unit, -130)
+           	             elseif  zombie_count_7 < 238 then 
+          	                     SetGoldUsually(unit, -12)          	                  	
+           	                  	 SetExpUsually(unit, -35)
+            	             elseif  zombie_count_7 > 238 then 
+          	                     SetGoldUsually(unit, -24)         	                  	  
+           	                  	 SetExpUsually(unit, -60)
              	        end                  
 
 		         unit:SetInitialGoalEntity(point)
  	              end)    
-        	             if ghost_count_new < 8 then 
-             	            	 GiveGoldPlayers(60)
-           	             elseif  ghost_count_new < 8 then 
-           	                  	 GiveGoldPlayers(40)
-            	             elseif  ghost_count_new > 14 then 
-           	                  	 GiveGoldPlayers(30)
+        	             if zombie_count_7 < 105 then 
+             	            	 GiveGoldPlayers(14)
+           	             elseif  zombie_count_7 < 238 then 
+           	                  	 GiveGoldPlayers(10)
+            	             elseif  zombie_count_7 > 238 then 
+           	                  	 GiveGoldPlayers(7)
              	        end
 	       	           
                     
            	 end	                        
 	   	 end             
      end
+ 
 --*************************************** END SPAWN ***************************************
 
 if killedEntity:GetUnitName() == "npc_last_boss" then
@@ -1975,9 +1055,16 @@ local tabGoldAll = {
 	{units = {'npc_wave_boss_necr'}, gold = 850},
 	{units = {'npc_wave_boss_suicide'}, gold = 850},
 	{units = {'npc_wave_boss_meat_golem'}, gold = 850},
-	{units = {'npc_wave_boss_ghost'}, gold = 1600},
-	{units = {'npc_wave_boss_undying'}, gold = 1600},
-	{units = {'npc_wave_boss_pudge'}, gold = 1600},
+	{units = {'npc_wave_boss_ghost'}, gold = 1400},
+	{units = {'npc_wave_boss_undying'}, gold = 1400},
+	{units = {'npc_wave_boss_pudge'}, gold = 1400},
+	{units = {'npc_wave_boss_meat_golem_2'}, gold = 2000},
+	{units = {'npc_wave_boss_suicide_2'}, gold = 2500},
+	{units = {'npc_wave_boss_undying_2'}, gold = 3000},
+	{units = {'npc_witch_boss_1'}, gold = 1000},
+	{units = {'npc_witch_boss_2'}, gold = 1650},
+	{units = {'npc_witch_boss_3'}, gold = 2500},
+	{units = {'npc_boss_slark'}, gold = 1500},
 
 	{units = {'npc_undying_clock'}, gold = 800},
 	{units = {'npc_classic_wave_fire_golem'}, gold = 650},
@@ -2003,11 +1090,12 @@ for k,v in pairs(tabGoldAll) do
 
 end
  
+ 
 
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
- 	--[[  	
+  	
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
@@ -2047,9 +1135,7 @@ function InvasionMode:ThemeMusic()
   		    "Redbone - Come and Get Your Love",
     	},
     		 
- 
-  	   	     
-     	[4] = {
+     [4] = {
 		"RSAC - NBA",
 		"Daved Guetta - Would I Lie To You",
 		 "Sia - Chandelier",
@@ -2057,7 +1143,38 @@ function InvasionMode:ThemeMusic()
 		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
 		"Серега пират - Я взлетаю вверх",  			
     	},
-    ]]
+  	   	     
+     [5] = {
+		"RSAC - NBA",
+  		"Galantis - No Money",
+  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  		    "Boulevard of Broken Dreams - Green Day", 
+  		    "a-ha - Take On Me",	
+  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",	
+		  		    "C418 - Sweden",		
+    	},
+
+     [6] = {
+  		    "Kiesza - Hideaway",
+  		    "John  Newman - Fire In Me",
+  		    "iSpy - KYLE feat. Lil Yachty",
+  		    "AJR - World's Smallest Violin",
+  		    "Earth Wind And Fire - Let's Groove",
+  		    "Redbone - Come and Get Your Love",
+  		    "Akira Yamaoka – Never Forgive Me",			
+    	},
+     [7] = {
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",
+              "Серега пират - Мой байк",
+		"Серега пират - Я взлетаю вверх",  	
+		  		    "C418 - Sweden",	
+  		    "Runaway - Parachute Youth feat. Jay Martin",
+  		    "Sia - Cheap Thrills",
+    	},
+ 
     	--[[ 
         	[5] = {
 		"RSAC - NBA",
@@ -2090,7 +1207,7 @@ function InvasionMode:ThemeMusic()
     	   ]]
         
 
- 
+ --[[
 
    [1] = {
  "Merry - Christmas Jingle Bells",  
@@ -2126,11 +1243,13 @@ function InvasionMode:ThemeMusic()
 		"Wham! - Last Christmas",
  		
     	},
-     
-    }	 
+        ]] 
+    }	
+
+
  	night_music =
  	{
-  --[[
+ 
  		[1] = {
 			"Undertale - Respite",
 		},
@@ -2145,14 +1264,28 @@ function InvasionMode:ThemeMusic()
 	 		"C418-Key",
 			"Undertale - Respite",
 			"Argh Ost – Halloween",  
- 		},
-  ]]
+          },
+ 		[5] = {
+	 		"C418-Key",
+			"Undertale - Respite",
+			"Argh Ost – Halloween",  
+          },
+ 		[6] = {
+	 		"C418-Key",
+			"Undertale - Respite",
+			"Argh Ost – Halloween",  
+          },
+ 		[7] = {
+	 		"C418-Key",
+			"Undertale - Respite",
+			"Argh Ost – Halloween",  
+          },
  		--[[ 
   		[5] = {
 	 		"Argh Ost – Halloween",
    
  		},
- 		]]
+ 	 
  
  
  		[1] = {
@@ -2169,6 +1302,7 @@ function InvasionMode:ThemeMusic()
 	 		"Кошмар перед рождеством - Making Christmas",
  
  		},
+ 			]]
  
  	}
  	local last_music = nil
@@ -2180,61 +1314,48 @@ function InvasionMode:ThemeMusic()
 	    local music 
 	    local time_until_end
 
-	    		local kunkka = Entities:FindByName(nil, 'kunkka')  
-	    		local lina = Entities:FindByName(nil, 'lina')  
-	    		local meepo = Entities:FindByName(nil, 'miner')  
-	    		local crystalka = Entities:FindByName(nil, 'crystalka')  
-	    		local deny = Entities:FindByName(nil, 'deny')  
-	    		local old_men = Entities:FindByName(nil, 'old_men')  
-	    		local guard = Entities:FindByName(nil, 'guard')  
-	    		local ping = Entities:FindByName(nil, 'ping')  
+    local jitels = {
+    	"crystalka","deny","kunkka","old_men","miner","lina","guard"
+    }
+ 
+  
 
 	    if day_time > 300 then
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
 	    	print("night time")
 
-  	    		kunkka:AddNewModifier(kunkka, nil, "modifier_invulnerable", {}) 
-  	    		lina:AddNewModifier(lina, nil, "modifier_invulnerable", {}) 
-  	    		meepo:AddNewModifier(meepo, nil, "modifier_invulnerable", {}) 
-  	    		crystalka:AddNewModifier(crystalka, nil, "modifier_invulnerable", {}) 
-  	    		deny:AddNewModifier(deny, nil, "modifier_invulnerable", {}) 
-  	          old_men:AddNewModifier(old_men, nil, "modifier_invulnerable", {}) 
-  	                  if guard then 
-           guard:AddNewModifier(guard, nil, "modifier_invulnerable", {}) 
-              else 
+               for i,name in ipairs(jitels) do
+                   local unit = Entities:FindByName(nil,name)    
 
-             end
-  	          ping:AddNewModifier(ping, nil, "modifier_invulnerable", {}) 
-              
-  	           
-  	          
- 	
-      local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+                   if unit then 
+                   	unit:AddNewModifier(unit,nil,"modifier_invulnerable", {})
+                   end
+               end
+ 
+     local allBuildings = Entities:FindAllByClassname('npc_dota_building')
+
     for i = 1, #allBuildings, 1 do
      
         local building = allBuildings[i]
         building:AddNewModifier(building, nil, "modifier_invulnerable", {}) 
  
-end
+    end
 
 	    else
 	    	music = day_music[current_day]
 	    	time_until_end = 300 - day_time
 	    	print("day time")
  
-        kunkka:RemoveModifierByName('modifier_invulnerable')
-        lina:RemoveModifierByName('modifier_invulnerable')        
-        crystalka:RemoveModifierByName('modifier_invulnerable')
-        meepo:RemoveModifierByName('modifier_invulnerable')
-        deny:RemoveModifierByName('modifier_invulnerable')
-        old_men:RemoveModifierByName('modifier_invulnerable')
-        if guard then 
-            guard:RemoveModifierByName('modifier_invulnerable')
-        else 
+               for i,name in ipairs(jitels) do
+                   local unit = Entities:FindByName(nil,name)    
 
-        end
-        ping:RemoveModifierByName('modifier_invulnerable')
+                   if unit then 
+                       unit:RemoveModifierByName('modifier_invulnerable')
+                   end
+               end
+ 
+ 
 
      local allBuildings = Entities:FindAllByClassname('npc_dota_building')
 

@@ -402,3 +402,147 @@
         }
 }
     
+"Slow_mobs_1"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/Slow_mobs_1"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "11.000000"  }
+                                                                             "soundlevel"               {   "value"     "54"  }
+                                                                                "pitch"                 {       "value"         "1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+    
+"Slow_mobs_2"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/Slow_mobs_2"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "11.000000"  }
+                                                                             "soundlevel"               {   "value"     "54"  }
+                                                                                "pitch"                 {       "value"         "1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+    
+"Slow_mobs_3"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/zombie/Slow_mobs_3"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "11.000000"  }
+                                                                             "soundlevel"               {   "value"     "54"  }
+                                                                                "pitch"                 {       "value"         "1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+    
+"murloc"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/items/murloc"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "11.000000"  }
+                                                                             "soundlevel"               {   "value"     "54"  }
+                                                                                "pitch"                 {       "value"         "1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+    

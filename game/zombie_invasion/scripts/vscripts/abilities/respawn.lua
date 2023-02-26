@@ -1,38 +1,35 @@
 UNIT_RESPAWN_TIME = 10
 
-function Respoint (keys )
-	Timers:CreateTimer(0.01,function()	          
-
-		local caster = keys.caster 	--пробиваем IP усопшего
-		caster.respoint = caster:GetAbsOrigin() -- определяем точку спавна
-		caster.fw = caster:GetForwardVector()
-	end)
-end
-
-function RespawnWeak (keys )
-	local caster= keys.caster
-	local caster_position = caster:GetAbsOrigin()
-	local name = caster:GetUnitName()
-	local team = caster:GetTeam()
+function RespawnUnit(keys)
+    
+    local caster = keys.caster  
+    local name = caster:GetUnitName()
+    local team = caster:GetTeam()
 	local respawn_time = UNIT_RESPAWN_TIME
+    local chance_spawn = RandomFloat( 0, 5)
+    local name1,name2,name_for_point
+    local find_big = name:find("_big_")
 
-	Timers:CreateTimer(respawn_time,function()	
-		local unit = CreateUnitByName(name, caster_position, true, nil, nil, team)
-	end)
+    if find_big then 
+         name1,name2 = name:match("(.+)_big_(.+)")
+         name_for_point = name1.. "_" ..name2
+    else
+    	 name1,name2 = name:match("(npc_classic)_(.+)")
+         name_for_point = name
+
+    end
+
+ 
+    local points = Entities:FindAllByName(name_for_point.. "_point")
+    local position = points[RandomInt(1,#points)]:GetAbsOrigin() + RandomVector( RandomFloat( 30, 200))
+ 
+
+    Timers:CreateTimer(respawn_time,function()
+        if chance_spawn < 1 and not name == "npc_classic_warlock" then 
+        	name_for_point = name1.. "_big_" .. name2 
+            local unit = CreateUnitByName(name_for_point,position, true,nil,nil, team)
+        else 
+            local unit = CreateUnitByName(name_for_point,position, true,nil,nil, team)
+        end
+    end)
 end
-
-function RespawnStrong(keys)	
-
-	local caster= keys.caster
-	local position = caster.respoint + RandomVector( RandomFloat( 0, 20))
-	local name = caster:GetUnitName()
-	local team = caster:GetTeam()
-	local respawn_time = UNIT_RESPAWN_TIME
-	
-	Timers:CreateTimer(respawn_time,function()	
-	local unit = CreateUnitByName(name, position , true, nil, nil, team)
-		unit:SetForwardVector(caster.fw)
-	end)
-
-end
-

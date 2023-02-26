@@ -1,0 +1,72 @@
+LinkLuaModifier( "modifier_item_midas_donate", "items/new_items/item_midas_donate", LUA_MODIFIER_MOTION_NONE )
+
+item_midas_donate = class({})
+
+function item_midas_donate:OnAbilityPhaseStart()
+		if IsServer() then
+	    self:GetCaster():StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1)  
+	end
+ 	return true
+end
+
+
+function item_midas_donate:OnAbilityPhaseInterrupted()
+		if IsServer() then
+	    self:GetCaster():RemoveGesture(ACT_DOTA_VICTORY) 
+	end
+ 	return true
+end
+
+function item_midas_donate:OnSpellStart()
+	   self:GetCaster():RemoveGesture(ACT_DOTA_VICTORY) 
+	local caster = self:GetCaster()
+	local point = caster:GetAbsOrigin() + RandomVector( RandomFloat( 150, 150))
+	local gold_min = self:GetSpecialValueFor("gold_min")
+	local gold_max = self:GetSpecialValueFor("gold_max")
+				caster:EmitSound("DOTA_Item.Hand_Of_Midas")
+local treasure = CreateUnitByName("npc_medas", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+            
+            treasure:AddNewModifier(treasure,self,"modifier_item_midas_donate", {})
+            treasure:SetMinimumGoldBounty(gold_min)
+            treasure:SetMaximumGoldBounty(gold_max)
+			local effect = "particles/econ/items/alchemist/alchemist_midas_knuckles/alch_knuckles_lasthit_coins.vpcf"
+			local particle_fx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, treasure)
+			ParticleManager:SetParticleControl(particle_fx, 0, treasure:GetAbsOrigin())
+			ParticleManager:SetParticleControl(particle_fx, 1, treasure:GetAbsOrigin())
+			ParticleManager:ReleaseParticleIndex(particle_fx)
+
+end
+
+modifier_item_midas_donate = {}
+
+
+function modifier_item_midas_donate:IsHidden()
+	return true
+end
+
+function modifier_item_midas_donate:DeclareFunctions()
+	return { MODIFIER_PROPERTY_PROVIDES_FOW_POSITION,
+	MODIFIER_EVENT_ON_ATTACK_LANDED, }
+end
+
+function modifier_item_midas_donate:CheckState()
+    local state = {
+    [MODIFIER_STATE_NO_HEALTH_BAR]=true,     --MODIFIER_STATE_PROVIDES_VISION
+}      
+    return state
+end
+
+function modifier_item_midas_donate:GetModifierProvidesFOWVision()
+	return 1
+end
+ 
+
+function modifier_item_midas_donate:OnAttackLanded(data)
+    if IsClient() then return end
+    if data.target ~= self:GetParent()  then return end
+    local min = self:GetAbility():GetSpecialValueFor("experience_min")
+    local max = self:GetAbility():GetSpecialValueFor("experience_max")
+    local experience = RandomInt(min,max)
+ 
+    data.attacker:AddExperience(experience, 0, false, true)
+end 

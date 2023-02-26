@@ -29,19 +29,19 @@
 	
 		// Special	
 		//-----------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"regen"				"30 60 90 120 150 180 210"
-			}
-
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana_cost_per_second"	"10 15 20 25 30 35 40"
-			}			
+		"regen"
+		{
+					"value"			"30 60 90 120 150 180 210"
+					"special_bonus_unique_rubick_meditation"		"+100%"
+		}
+ 		"mana_cost_per_second"
+		{
+					"value"			"10 15 20 25 30 35 40"
+					"special_bonus_unique_rubick_meditation"		"+100%"
+		}
+ 	
 		}
 	
 	}
@@ -160,13 +160,15 @@
 		"FightRecapLevel"				"1"
 			"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
+
+				"HasScepterUpgrade"			"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12.0"
+		"AbilityCooldown"				"20 12 4"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -194,12 +196,6 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"cast_range_scepter"			"1400"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"cooldown_scepter"			"6 4 2"
-				"RequiresScepter"	"1"
 			}
 			"05"
 			{
@@ -238,6 +234,16 @@
 	}
  
  
+
+	"special_bonus_unique_rubick_meditation"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
 
 
 }

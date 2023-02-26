@@ -23,7 +23,7 @@
     
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "30 30 30 35 35 40"
+        "AbilityManaCost"               "20 20 25 25 30 35"
 
         // Special  
         //-------------------------------------------------------------------------------------------------------------
@@ -32,17 +32,17 @@
            "move_slow"           "-50"
            "dagger_speed"        "1200"
            "duration"              "2.5"
-           "base_damage"           "65" 
+           "base_damage"           "100 130 160 190 220 250 270" 
 
 			"attack_factor"					
 			{
-				"value"				"-75 -65 -55 -45 -35 -25 -15"
-			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+25"
+				"value"				"-70 -60 -50 -40 -30 -20 -10"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+35"
 			}
 			"attack_factor_tooltip"					
 			{
-				"value"				"25 35 45 55 65 75 85"
-			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+25"
+				"value"				"30 40 50 60 70 80 90"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+35"
 			}
 
 			"AbilityCooldown"			
@@ -74,7 +74,7 @@
  
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "40 40 45 45 50 50"
+        "AbilityManaCost"               "30 35 40 45 50 55"
         
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -82,7 +82,7 @@
         {
 			"duration"					
 			{
-				"value"				"2.0"
+				"value"				"2.25"
 			    "special_bonus_unique_assassin_phantom_strike_duration"	    "+0.75"
 			}
            "bonus_lifesteal"           "10 12 14 17 19 22 25"
@@ -125,7 +125,7 @@
         
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "60 60 60 65 65 70"
+        "AbilityManaCost"               "40 45 50 55 60 65"
     
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -138,8 +138,8 @@
 				}
 				"bonus_agility_base"					
 				{
-					"value"				"12 16 20 24 28 32 36"
-			    	"special_bonus_unique_assassin_blur_agility"	    "+40"
+					"value"				"20 25 30 35 40 45 50"
+			    	"special_bonus_unique_assassin_blur_agility"	    "+50"
 				}
 				"chance_miss"			"17 20 23 26 29 32 35"
         }
@@ -225,7 +225,7 @@
         "AbilityValues"
         {
  				"bonus_chance"					"7"
-				"bonus_crit"			"75"
+				"bonus_crit"			"125"
 	 
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
@@ -250,7 +250,7 @@
         "AbilityValues"
         {
 				 "crit_chance"               "15"
-				 "crit_bonus"                "200 325 450"
+				 "crit_bonus"                "225 350 475"
         }
     }
 
