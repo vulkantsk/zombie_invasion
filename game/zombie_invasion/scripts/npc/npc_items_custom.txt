@@ -4954,7 +4954,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"all_lifesteal"		"2.5"
+				"all_lifesteal"		"5"
 			}
  
  
@@ -5444,7 +5444,7 @@
 				"bonus_agility"			"5 12"
 				"bonus_strength"		"5 12"
 				"bonus_intellect"		"20 40"
-				"spell_amp"			"16 32"
+				"spell_amp"			"20 40"
 				"spell_lifesteal_amp"			"0"
 				"mana_regen_multiplier"		"50 75"
 				"blast_movement_slow"	"-80"
@@ -5530,7 +5530,7 @@
 				"bonus_agility"			"5 12"
 				"bonus_strength"		"5 12"
 				"bonus_intellect"		"20 40"
-				"spell_amp"			"16 32"
+				"spell_amp"			"20 40"
 				"mana_regen_multiplier"		"50 75"
 				"blast_movement_slow"	"-80"
 				"duration"				"4.0"
@@ -5592,7 +5592,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
-			"01"
+			"1"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_damage"			"9"
@@ -5709,10 +5709,8 @@
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"chain_cooldown"		"0.2" // Vanilla is 0.2
+				"chain_cooldown"		"0.2" // Vanilla is 0.2x
 			}
-			
- 
  		}
 	}
  
@@ -5771,7 +5769,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_chance"			"20"
+				"chain_chance"			"17"
 			}
 			"03"
 			{
@@ -5801,7 +5799,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"25 50"
+				"chain_damage_self"			"15 30"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
@@ -5898,7 +5896,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"25 50"
+				"chain_damage_self"			"15 30"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
@@ -6066,7 +6064,7 @@
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16.0"
+		"AbilityCooldown"				"12"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -6087,9 +6085,9 @@
 				"bonus_attack_speed"	"20"
 				"lifesteal_percent"		"15"
 				"creep_lifesteal_reduction_pct"	"100"
-				"berserk_bonus_attack_speed"	"100"
-				"berserk_bonus_movement_speed"	"30"
-				"berserk_armor_reduction"	"8"
+				"berserk_bonus_attack_speed"	"60"
+				"berserk_bonus_movement_speed"	"40"
+				"berserk_armor_reduction"	"4"
 				"berserk_duration"		"6.0"
 		}
 	}
@@ -6130,7 +6128,7 @@
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"			 "16"
+		"AbilityCooldown"			 "14"
  
 		"AbilityManaCost"				"30"
 		"ItemCost"						"1775"
@@ -6146,10 +6144,10 @@
 				"bonus_damage"	"50"
 				"bonus_attack_speed"	"37"
 				"lifesteal_pct"		"20"
-				"berserk_base_damage"            "20"
-				"berserk_bonus_attack_speed"	"180"
-				"berserk_bonus_movement_speed"	"30"
-				"berserk_armor_reduction"	"10"
+				"berserk_base_damage"            "10"
+				"berserk_bonus_attack_speed"	"120"
+				"berserk_bonus_movement_speed"	"40"
+				"berserk_armor_reduction"	"6"
 				"berserk_duration"		"6.0"
 		}
  
@@ -6191,7 +6189,7 @@
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"			 "16"
+		"AbilityCooldown"			 "10"
  
 		"AbilityManaCost"				"35"
 		"ItemCost"						"1775"
@@ -6204,11 +6202,11 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"	"110"
+				"bonus_damage"	"75"
 				"bonus_attack_speed"	"50"
 				"lifesteal_pct"		"25"
-				"berserk_base_damage"            "40"
-				"berserk_bonus_attack_speed"	"260"
+				"berserk_base_damage"            "20"
+				"berserk_bonus_attack_speed"	"240"
 				"berserk_bonus_movement_speed"	"30"
 				"berserk_armor_reduction"	"12"
 				"berserk_duration"		"6.0"
@@ -9741,7 +9739,7 @@
 		{
 				"bonus_damage"			"50"
 				"corruption_armor"		"-8"
-				"corruption_duration"	"7.0"
+				"corruption_duration"	"14.0"
 				"bonus_damage_per_kill"	"2"
 				"bonus_damage_per_assist"	"1"
 				"max_damage"			"30"
@@ -9795,11 +9793,11 @@
 		"AbilityValues"
 		{
 				"bonus_damage"			"100"
-				"corruption_armor"		"-16"
-				"corruption_duration"	"7.0"
-				"bonus_damage_per_kill"	"2"
-				"max_damage"			"50"
-				"chance_to_stack"	"10"
+				"corruption_armor"		"-20"
+				"corruption_duration"	"14.0"
+				"bonus_damage_per_kill"	"5"
+				"max_damage"			"25"
+				"chance_to_stack"	"5"
 		}
 	}
 
@@ -9917,12 +9915,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_chance"			"30"
+				"crit_chance"			"45"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_multiplier"		"225"
+				"crit_multiplier"		"250"
 			}
 		}
 	}

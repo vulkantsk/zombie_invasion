@@ -110,7 +110,9 @@
 		"Ability15"					"special_bonus_corruption_3"
 		"Ability16"					"special_bonus_unique_hoodwink_acorn_shot_charges"
 		"Ability17"					"special_hoodwink"
-				"AttackRate"		"1.700000"
+				"BaseAttackSpeed"	"70"
+				"AttackRate"		"1.20000"
+
     } 
 
 		"npc_dota_hero_troll_warlord"
@@ -133,7 +135,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"27"
 		"AttackDamageMax"		"35"
-		"AttackRate"		"1.700000"
+		"AttackRate"		"1.50000"
 		"AttackAcquisitionRange"		"800"
 		"AttackRange"		"500"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
@@ -267,7 +269,8 @@
 		"ArmorPhysical"		"3"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"32"
-		"AttackRate"		"1.700000"
+		"AttackRate"		"1.000000"
+		"BaseAttackSpeed"	"65"
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"21"
