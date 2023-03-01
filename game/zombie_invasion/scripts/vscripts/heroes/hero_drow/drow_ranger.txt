@@ -90,6 +90,7 @@
         "AbilityTextureName"    "drow/drow_marks2"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "ScriptFile"                    "heroes/hero_drow/marksmanship_detection/marksmanship_detection"
+        "RequiredLevel"                 "10"
         "MaxLevel"                        "1"
         // Data driven
         // -------------------------------------------------------------------------------------------------------------
