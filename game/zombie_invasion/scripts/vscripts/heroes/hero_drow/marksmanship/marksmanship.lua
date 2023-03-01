@@ -1,7 +1,7 @@
-LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship", "heroes/drow_ranger/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_proj", "heroes/drow_ranger/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_reduction", "heroes/drow_ranger/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_aura", "heroes/drow_ranger/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship", "heroes/hero_drow/marksmanship/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_proj", "heroes/hero_drow/marksmanship/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_reduction", "heroes/hero_drow/marksmanship/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_marksmanship_aura", "heroes/hero_drow/marksmanship/marksmanship" ,LUA_MODIFIER_MOTION_NONE )
 
 if ability_drow_ranger_marksmanship == nil then
     ability_drow_ranger_marksmanship = class({})
@@ -298,7 +298,7 @@ function modifier_ability_drow_ranger_marksmanship_aura:OnRefresh()
 end
 
 function modifier_ability_drow_ranger_marksmanship_aura:OnIntervalThink()
-    self:GetParent():CalculateStatBonus()
+    self:GetParent():CalculateStatBonus(false)
 end
 
 function modifier_ability_drow_ranger_marksmanship_aura:GetModifierBonusStats_Agility()

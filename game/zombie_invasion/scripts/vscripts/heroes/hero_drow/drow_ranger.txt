@@ -209,41 +209,7 @@
                 "ThinkInterval" "%think_interval"
                 "OnAttackLanded"
                 {
-                    "Random"
-                    {
-                        "OnSuccess"
-                        {
-                            "ActOnTargets"
-                            {
-                                "Target"
-                                {
-                                    "Types" "DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_CUSTOM"
-                                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-                                    "Flags" "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
-                                    "Radius"    "%kill_radius"
-                                    "Center"    "TARGET"
-                                }
-                                "Action"
-                                {
-                                    "RunScript"
-                                    {
-                                        "Target"    "TARGET"
-                                        "ScriptFile"    "scripts/vscripts/hero/hero_drow/kill.lua"
-                                        "Function"  "kill"
-                                    }
-                                }
-                            }
-                            "AttachEffect"
-                            {
-                                "Target"    "TARGET"
-                                "ControlPoints" {}
-                                "ControlPointEntities"  {}
-                                "EffectName"    "particles/abilities/rupture_burst.vpcf"
-                                "EffectAttachType"  "follow_origin"
-                            }
-                        }
-                        "Chance"    "%kill_chance"
-                    }
+ 
                     "CreateBonusAttack"
                     {
                         "Target"
@@ -251,74 +217,16 @@
                             "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_CUSTOM"
                             "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
                             "Center"    "TARGET"
-                            "Radius"    "100"
+                            "Radius"    "275"
                         }
                     }
                 }
                 "Properties"    {}
                 "TextureName"   "drow_ranger_marksmanship"
             }
-            "modifier_marksmanship_effect_datadriven"
-            {
-                "IsPurgable"    "0"
-                "OnCreated"
-                {
-                    "FireEffect"
-                    {
-                        "Target"    "CASTER"
-                        "EffectName"    "particles/units/heroes/hero_drow/drow_marksmanship_start.vpcf"
-                        "EffectAttachType"  "start_at_customorigin"
-                        "ControlPointEntities"
-                        {
-                            "CASTER"    "attach_attack1"
-                        }
-                    }
-                    "AttachEffect"
-                    {
-                        "Target"    "CASTER"
-                        "EffectName"    "particles/units/heroes/hero_drow/drow_marksmanship.vpcf"
-                        "EffectAttachType"  "follow_origin"
-                        "ControlPoints"
-                        {
-                            "02"    "150 150 150"
-                        }
-                    }
-                }
-                "Properties"
-                {
-                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%marksmanship_agility_bonus"
-                }
-                "Passive"   "1"
-                "IsBuff"    "1"
-                "TextureName"   "drow_ranger_marksmanship"
-            }
+ 
         }
-        // Special
-        // -------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"  "FIELD_INTEGER"
-                "marksmanship_agility_bonus"    "20 40 60"
-            }
-            "02"
-            {
-                "var_type"  "FIELD_INTEGER"
-                "radius"    "400"
-            }
-            "03"
-            {
-                "var_type"  "FIELD_INTEGER"
-                "kill_chance"   "20 25 30"
-            }
-            "04"
-            {
-                "var_type"  "FIELD_INTEGER"
-                "kill_radius"   "100"
-            }
-        }
-    }
+     }
 
     // Author: kritth
     // Date: 3.1.2015.
