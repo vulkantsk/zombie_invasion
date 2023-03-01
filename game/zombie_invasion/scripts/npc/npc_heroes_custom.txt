@@ -1611,7 +1611,7 @@
 	{
 		"Ability1"		"ability_drow_ranger_frost_arrows"
 		"Ability2"		"ability_wave_of_terror"
-		"Ability3"		"ability_drow_ranger_multishot"
+		"Ability3"		"ability_devour"
 		"Ability4"		"drow_ranger_marksmanship_datadriven"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"ability_drow_ranger_marksmanship"
@@ -1635,6 +1635,6 @@
 		"AttributeBaseAgility"		"21"
 		"AttributeAgilityGain"		"1.500000"
 		"StatusHealthRegen"		"1.75"
-		"MovementSpeed"		"550"	
+		"MovementSpeed"		"350"	
 	}
 }

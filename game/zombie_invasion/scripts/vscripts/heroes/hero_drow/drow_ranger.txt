@@ -10,7 +10,8 @@
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+        "MaxLevel"                        "7"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -24,7 +25,7 @@
 
         // Damage.
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityDamage"                 "0 0 0 0"
+        "AbilityDamage"                 "20 40 60 80 100 120 140"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
@@ -38,7 +39,7 @@
             "damage"                    
             {
                     "value"             "5 10 15 20"
-                    "special_bonus_unique_drow_range_frost_damage"      "+8000"
+                    "special_bonus_unique_drow_range_frost_damage"      "+80"
             }
 
             "frost_arrows_movement_speed"   "-16 -32 -48 -64"
@@ -46,74 +47,6 @@
  
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
-    }
-    "ability_drow_ranger_multishot"
-    {
-        "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/hero_drow/multishot/multishot"
-        "AbilityTextureName"            "drow_ranger_multishot"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL"
-        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
-        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-        "FightRecapLevel"               "1"
-    
-        // Casting
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"              "0.0"
-        "AbilityChannelTime"            "1.75"
-
-        // Time     
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "26 24 22 20"
-
-        // Cost
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "50 70 90 110"
-
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "arrow_count"               "12"
-            }           
-            "02"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "arrow_damage_pct"          "85 110 135 160"
-                "LinkedSpecialBonus"        "special_bonus_unique_drow_ranger_1"
-            }
-            "03"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "arrow_slow_duration"       "1.25 2 2.75 3.5"
-            }
-            "04"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "arrow_width"                   "90"
-            }
-            "05"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "arrow_speed"                   "1200"
-            }
-            "06"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "arrow_range_multiplier"    "2"
-            }
-            "07"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "arrow_angle"                   "50"
-            }
-        }
-        "AbilityCastAnimation"      "ACT_DOTA_CHANNEL_ABILITY_3"
     }
      "ability_drow_ranger_marksmanship"
     {
@@ -126,7 +59,6 @@
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
-        "HasScepterUpgrade"         "1"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -185,9 +117,10 @@
         // General
         // -------------------------------------------------------------------------------------------------------------
         "BaseClass" "ability_datadriven"
-        "AbilityTextureName"    "drow_ranger_marksmanship"
+        "AbilityTextureName"    "drow/drow_marks2"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "ScriptFile"                    "heroes/hero_drow/marksmanship_detection/marksmanship_detection"
+        "MaxLevel"                        "1"
         // Data driven
         // -------------------------------------------------------------------------------------------------------------
         "precache"
@@ -241,6 +174,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "AbilitySound"                  "Hero_Vengeful_Spirit.WaveOfTerror"
+        "MaxLevel"                        "7"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -249,16 +183,16 @@
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "16 14 12 10"
-        "AbilityDuration"               "8"
+        "AbilityCooldown"               "16 14 12 10 8 6 4"
+        "AbilityDuration"               "8 12 16 20 24"
 
         // Damage.
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityDamage"                 "60 80 100 120"
+        "AbilityDamage"                 "60 80 100 120 140 160 180"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "25 30 35 40"
+        "AbilityManaCost"               "20 25 30 35 40 45 50"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -272,12 +206,12 @@
             "02"
             {
                 "var_type"          "FIELD_INTEGER"
-                "wave_width"        "300"
+                "wave_width"        "400"
             }
             "03"
             {
                 "var_type"          "FIELD_INTEGER"
-                "armor_reduction"   "-3 -4 -5 -6"
+                "armor_reduction"   "-2 -4 -6 -8 -10 -12 -14"
                 "LinkedSpecialBonus"    "special_bonus_unique_vengeful_spirit_4"
             }
             "04"
@@ -301,7 +235,52 @@
         "BaseClass"                     "special_bonus_undefined"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        
+    }    
  
-    }
+    "ability_devour"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/devour/devour"
+        "AbilityTextureName"            "drow/drow_ghoul"
+        "FightRecapLevel"               "1"
+        "MaxLevel"                      "4"
+
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CUSTOM"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+
+        "AbilityCastRange"              "300 300 300 300"
+        "AbilityCastPoint"              "0.3 0.3 0.3 0.3"
+
+        "AbilityCooldown"               "70"
+        "AbilityManaCost"               "40 50 60 70"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_gold"            "50 100 150 200"
+                "LinkedSpecialBonus"    "special_bonus_unique_doom_3"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "devour_time"           "70"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "regen"                 "1 5 9 13"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "creep_level"           "5 10 20 30"
+            }
+        }
+    }    
 }

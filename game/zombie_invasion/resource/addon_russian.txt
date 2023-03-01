@@ -350,7 +350,7 @@
 		"DOTA_Tooltip_ability_item_skadi_2_bonus_health"							"+$health"
 		"DOTA_Tooltip_ability_item_skadi_2_bonus_mana"							"+$mana"
  
-		
+
 
 		"DOTA_Tooltip_Ability_item_bag_of_gold"							"Мешочек золота"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_Description"				"Украденный ведьмой у лепрекона"
@@ -1816,7 +1816,34 @@
   
          "DOTA_Tooltip_ability_juggernaut_seventh_gate"	"<font color='#ff0000'>The Gate of the Deaths</font>"
        "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>Последние врата из семи доступных Самураю. Открывает способность Death, которая дарует владельцу неземную мощь, но взамен забирает жизнь...</font>"
- 
+ 	// -----------------Drow_ranger-------------------
+
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Description" "Добавляет к атакам героя замораживающий эффект, замедляющий передвижение цели на 1,5 секунды и наносящий дополнительный урон." 
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_bonus_damage" "БОНУСНЫЙ УРОН:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_movement_speed" "%ЗАМЕДЛЕНИЕ ВРАГОВ:"
+
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror"	"Wave of terror"
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_Description" "Герой издаёт жуткий клич, ослабляя броню врагов и раскрывая туман войны."
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_armor_reduction" "СНИЖЕНИЕ БРОНИ:"
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_AbilityDuration" "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:"
+
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship" "Marksmanship"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_Description" "Опыт в бою позволяет герою стрелять метче и эффективнее. С каждой атакой есть вероятность выпустить стрелу, игнорирующую базовую броню врага. Также даёт герою и союзникам дальнего боя неподалёку дополнительную ловкость, зависящую от ловкости владельца. Способность не действует, если в радиусе 400 от её владельца есть вражеские герои."
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_agility_multiplier" "%ДОП ЛОВКОСТЬ:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_chance" "%ШАНС СРАБАТЫВАНИЯ:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanshipbonus_damage" "БОНУСНЫЙ УРОН:"
+
+ 		"DOTA_Tooltip_ability_ability_devour" "DEVOUR"
+ 		"DOTA_Tooltip_ability_ability_devour_Description" "Съедает крипа и через пойденное время получает золото за его переваривание."
+ 		"DOTA_Tooltip_ability_ability_devour_bonus_gold" "БОНУСНАЯ ГОЛДА:"
+ 		"DOTA_Tooltip_ability_ability_devour_time" "ВРЕМЯ ДЕЙСТВИЯ:"
+ 		"DOTA_Tooltip_ability_ability_devour_regen" "ДОП РЕГЕНЕРАЦИЯ:"
+ 		"DOTA_Tooltip_ability_ability_devour_creep_level" "УРОВЕНЬ КРИПА:"
+
+ 		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven" "SUPER marksmanship"
+ 		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven_Description" "Каждая атака проводит дополнительную атаку по целям которые были в радиусе 275 от первого удара на них не работают модификаторы атаки."
+
 
 	// -----------------Hoodwink-------------------
 
@@ -1849,7 +1876,7 @@
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct" "%КРИТИЧЕСКИЙ УРОН:"
 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
 
-        "DOTA_Tooltip_ability_hoodwink_anti_armor"	"Powerful crossbow"
+       "DOTA_Tooltip_ability_hoodwink_anti_armor"	"Powerful crossbow"
        "DOTA_Tooltip_ability_hoodwink_anti_armor_Description"	"Силы природы дали Hoodwink возможность наносить урон игнорируя защиту"
         "DOTA_Tooltip_ability_hoodwink_anti_armor_trigger_chance"	"%ШАНС:"
        "DOTA_Tooltip_ability_hoodwink_anti_armor_Lore"	"Арбалет Hoodwink всегда был наполнен силой природы, но в последнее время этой силы становится в разы больше."
@@ -2613,6 +2640,9 @@
 		
 		"DOTA_Tooltip_Ability_item_up_speed_tower"																						"Тайны некромантии: Свиток Скорости"
 		"DOTA_Tooltip_Ability_item_up_speed_tower_description"																			"При применении на Homer увеличивает скорость атаки."
+
+
+
 
 	}
 }

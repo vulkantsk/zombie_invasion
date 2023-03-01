@@ -10,7 +10,7 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 drow_ranger_multishot_lua = class({})
-LinkLuaModifier( "modifier_drow_ranger_multishot_lua", "lua_abilities/drow_ranger_multishot_lua/modifier_drow_ranger_multishot_lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_drow_ranger_multishot_lua", "heroes/hero_drow/multishot/modifier_drow_ranger_multishot_lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -53,11 +53,11 @@ function drow_ranger_multishot_lua:OnProjectileHit_ExtraData( target, location, 
 
 	-- check frost arrow ability
 	if data.frost==1 then
-		local ability = self:GetCaster():FindAbilityByName( "drow_ranger_frost_arrows_lua" )
+		local ability = self:GetCaster():FindAbilityByName( "ability_drow_ranger_frost_arrows" )
 		target:AddNewModifier(
 			self:GetCaster(), -- player source
 			ability, -- ability source
-			"modifier_drow_ranger_frost_arrows_lua", -- modifier name
+			"modifier_ability_drow_ranger_frost_arrows", -- modifier name
 			{ duration = slow } -- kv
 		)
 	end

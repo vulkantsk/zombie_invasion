@@ -1,4 +1,4 @@
-LinkLuaModifier( "modifier_ability_wave_of_terror", "heroes/hero_drow/wave_of_terror" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_wave_of_terror", "heroes/hero_drow/wave_of_terror/wave_of_terror" ,LUA_MODIFIER_MOTION_NONE )
 
 if ability_wave_of_terror == nil then
     ability_wave_of_terror = class({})
