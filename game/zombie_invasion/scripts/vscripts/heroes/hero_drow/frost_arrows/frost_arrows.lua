@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_ability_drow_ranger_frost_arrows", "heroes/drow_ranger/frost_arrows" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_drow_ranger_frost_arrows_slow", "heroes/drow_ranger/frost_arrows" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_frost_arrows", "heroes/hero_drow/frost_arrows/frost_arrows" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_drow_ranger_frost_arrows_slow", "heroes/hero_drow/frost_arrows/frost_arrows" ,LUA_MODIFIER_MOTION_NONE )
 
 if ability_drow_ranger_frost_arrows == nil then
     ability_drow_ranger_frost_arrows = class({})

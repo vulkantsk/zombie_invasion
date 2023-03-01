@@ -32,18 +32,18 @@
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {
-            "01"
+
+            "damage"                    
             {
-                "var_type"                      "FIELD_INTEGER"
-                "frost_arrows_movement_speed"   "-16 -32 -48 -64"
+                    "value"             "5 10 15 20"
+                    "special_bonus_unique_drow_range_frost_damage"      "+8000"
             }
-            "02"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "damage"    "5 10 15 20"
-            }
+
+            "frost_arrows_movement_speed"   "-16 -32 -48 -64"
+
+ 
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
     }
@@ -384,5 +384,16 @@
             }
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+
+        "special_bonus_unique_drow_range_frost_damage"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        
+ 
     }
 }

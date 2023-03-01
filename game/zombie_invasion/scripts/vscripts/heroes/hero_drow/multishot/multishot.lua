@@ -30,7 +30,7 @@ function ability_drow_ranger_multishotOnProjectileHit(Target, Location)
             if abil and abilIsTrained() and not TargetIsMagicImmune() then
                 TargetAddNewModifier(selfGetCaster(), abil, modifier_ability_drow_ranger_frost_arrows_slow, {duration=self.arrow_slow_duration})
             end
-            local damage = ((selfGetCaster()GetBaseDamageMax() + selfGetCaster()GetBaseDamageMin())  2)  100  self.arrow_damage_pct
+            local damage = ((self:GetCaster()GetBaseDamageMax() + self:GetCaster()GetBaseDamageMin())  2)  100  self.arrow_damage_pct
             ApplyDamage({
                 victim = Target,
                 attacker = selfGetCaster(),
@@ -64,7 +64,7 @@ modifier_ability_drow_ranger_multishot = class({
 
 if IsServer() then
 function modifier_ability_drow_ranger_multishotOnCreated(kv)
-    self.arrow_width = selfGetAbility()GetSpecialValueFor(arrow_width)
+    self.arrow_width = self:GetAbility()GetSpecialValueFor(arrow_width)
     self.arrow_speed = selfGetAbility()GetSpecialValueFor(arrow_speed)
     self.arrow_range_multiplier = selfGetAbility()GetSpecialValueFor(arrow_range_multiplier)
     self.arrow_angle = selfGetAbility()GetSpecialValueFor(arrow_angle)
