@@ -1,0 +1,388 @@
+"DOTAAbilities"
+{
+    "ability_drow_ranger_frost_arrows"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/frost_arrows/frost_arrows"
+        "AbilityTextureName"            "drow_ranger_frost_arrows"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "625"
+        "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "0.0 0.0 0.0 0.0"
+        "AbilityDuration"               "1.5"
+
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "0 0 0 0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "12 12 12 12"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "frost_arrows_movement_speed"   "-16 -32 -48 -64"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage"    "5 10 15 20"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    }
+    "ability_drow_ranger_multishot"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/multishot/multishot"
+        "AbilityTextureName"            "drow_ranger_multishot"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "FightRecapLevel"               "1"
+    
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0.0"
+        "AbilityChannelTime"            "1.75"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "26 24 22 20"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50 70 90 110"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "arrow_count"               "12"
+            }           
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "arrow_damage_pct"          "85 110 135 160"
+                "LinkedSpecialBonus"        "special_bonus_unique_drow_ranger_1"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "arrow_slow_duration"       "1.25 2 2.75 3.5"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "arrow_width"                   "90"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "arrow_speed"                   "1200"
+            }
+            "06"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "arrow_range_multiplier"    "2"
+            }
+            "07"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "arrow_angle"                   "50"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CHANNEL_ABILITY_3"
+    }
+     "ability_drow_ranger_marksmanship"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/marksmanship/marksmanship"
+        "AbilityTextureName"            "drow_ranger_marksmanship"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityCastRange"              "400"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "HasScepterUpgrade"         "1"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "chance"    "20 30 40"
+                "LinkedSpecialBonus"        "special_bonus_unique_drow_ranger_3"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "bonus_damage"  "70 80 90"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "03"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "agility_multiplier"        "28 36 44"
+            }
+            "04"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "agility_range"     "1200"
+            }
+            "05"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "split_count_scepter"           "2"
+                "RequiresScepter"       "1"
+            }
+            "06"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "scepter_range"                 "375"
+                "RequiresScepter"       "1"
+            }
+            "07"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage_reduction_scepter"      "50"
+                "RequiresScepter"       "1"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "08"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "disable_range"     "400"
+            }
+        }
+    }
+    "drow_ranger_marksmanship_datadriven"
+    {
+        // General
+        // -------------------------------------------------------------------------------------------------------------
+        "BaseClass" "ability_datadriven"
+        "AbilityTextureName"    "drow_ranger_marksmanship"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ScriptFile"                    "heroes/hero_drow/marksmanship_detection/marksmanship_detection"
+        // Data driven
+        // -------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+            "particle"  "particles/abilities/rupture_burst.vpcf"
+            "particle"  "particles/units/heroes/hero_drow/drow_marksmanship_start.vpcf"
+            "particle"  "particles/units/heroes/hero_drow/drow_marksmanship.vpcf"
+            "particle"  "particles/abilities/rupture_burst.vpcf"
+            "particle"  "particles/units/heroes/hero_drow/drow_marksmanship_start.vpcf"
+            "particle"  "particles/units/heroes/hero_drow/drow_marksmanship.vpcf"
+        }
+        "Modifiers"
+        {
+            "modifier_marksmanship_passive_datadriven"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "IsPurgable"    "0"
+                "ThinkInterval" "%think_interval"
+                "OnAttackLanded"
+                {
+                    "Random"
+                    {
+                        "OnSuccess"
+                        {
+                            "ActOnTargets"
+                            {
+                                "Target"
+                                {
+                                    "Types" "DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_CUSTOM"
+                                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                                    "Flags" "DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+                                    "Radius"    "%kill_radius"
+                                    "Center"    "TARGET"
+                                }
+                                "Action"
+                                {
+                                    "RunScript"
+                                    {
+                                        "Target"    "TARGET"
+                                        "ScriptFile"    "scripts/vscripts/hero/hero_drow/kill.lua"
+                                        "Function"  "kill"
+                                    }
+                                }
+                            }
+                            "AttachEffect"
+                            {
+                                "Target"    "TARGET"
+                                "ControlPoints" {}
+                                "ControlPointEntities"  {}
+                                "EffectName"    "particles/abilities/rupture_burst.vpcf"
+                                "EffectAttachType"  "follow_origin"
+                            }
+                        }
+                        "Chance"    "%kill_chance"
+                    }
+                    "CreateBonusAttack"
+                    {
+                        "Target"
+                        {
+                            "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_CUSTOM"
+                            "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                            "Center"    "TARGET"
+                            "Radius"    "100"
+                        }
+                    }
+                }
+                "Properties"    {}
+                "TextureName"   "drow_ranger_marksmanship"
+            }
+            "modifier_marksmanship_effect_datadriven"
+            {
+                "IsPurgable"    "0"
+                "OnCreated"
+                {
+                    "FireEffect"
+                    {
+                        "Target"    "CASTER"
+                        "EffectName"    "particles/units/heroes/hero_drow/drow_marksmanship_start.vpcf"
+                        "EffectAttachType"  "start_at_customorigin"
+                        "ControlPointEntities"
+                        {
+                            "CASTER"    "attach_attack1"
+                        }
+                    }
+                    "AttachEffect"
+                    {
+                        "Target"    "CASTER"
+                        "EffectName"    "particles/units/heroes/hero_drow/drow_marksmanship.vpcf"
+                        "EffectAttachType"  "follow_origin"
+                        "ControlPoints"
+                        {
+                            "02"    "150 150 150"
+                        }
+                    }
+                }
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%marksmanship_agility_bonus"
+                }
+                "Passive"   "1"
+                "IsBuff"    "1"
+                "TextureName"   "drow_ranger_marksmanship"
+            }
+        }
+        // Special
+        // -------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"  "FIELD_INTEGER"
+                "marksmanship_agility_bonus"    "20 40 60"
+            }
+            "02"
+            {
+                "var_type"  "FIELD_INTEGER"
+                "radius"    "400"
+            }
+            "03"
+            {
+                "var_type"  "FIELD_INTEGER"
+                "kill_chance"   "20 25 30"
+            }
+            "04"
+            {
+                "var_type"  "FIELD_INTEGER"
+                "kill_radius"   "100"
+            }
+        }
+    }
+
+    // Author: kritth
+    // Date: 3.1.2015.
+    // Note: Constraint is that agility never go above 2841
+    "ability_wave_of_terror"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/wave_of_terror/wave_of_terror"
+        "AbilityTextureName"            "vengefulspirit_wave_of_terror"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySound"                  "Hero_Vengeful_Spirit.WaveOfTerror"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1400"
+        "AbilityCastPoint"              "0.3 0.3 0.3 0.3"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "16 14 12 10"
+        "AbilityDuration"               "8"
+
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "60 80 100 120"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "25 30 35 40"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "wave_speed"        "2000.0"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "wave_width"        "300"
+            }
+            "03"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "armor_reduction"   "-3 -4 -5 -6"
+                "LinkedSpecialBonus"    "special_bonus_unique_vengeful_spirit_4"
+            }
+            "04"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "vision_aoe"        "300"
+            }
+            "05"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "vision_duration"   "4"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

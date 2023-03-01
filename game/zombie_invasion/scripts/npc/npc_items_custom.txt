@@ -6143,7 +6143,7 @@
 		{
 				"bonus_damage"	"50"
 				"bonus_attack_speed"	"37"
-				"lifesteal_pct"		"200"
+				"lifesteal_pct"		"20"
 				"berserk_base_damage"            "10"
 				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"40"

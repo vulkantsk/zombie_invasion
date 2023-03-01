@@ -22,7 +22,8 @@
 #base "../vscripts/heroes/hero_luna/luna.txt"    
 #base "../vscripts/heroes/hero_enigma/enigma.txt"    
 #base "../vscripts/heroes/hero_slark/slark.txt"              
- 
+#base "../vscripts/heroes/hero_drow/drow_ranger.txt"
+
 #base "portal/abilities.txt"
 
 "DOTAAbilities"
