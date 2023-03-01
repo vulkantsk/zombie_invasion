@@ -39,7 +39,7 @@
             "damage"                    
             {
                     "value"             "5 10 15 20"
-                    "special_bonus_unique_drow_range_frost_damage"      "+80"
+                    "special_bonus_unique_drow_range_frost_damage"      "+20"
             }
 
             "frost_arrows_movement_speed"   "-16 -32 -48 -64"
@@ -62,54 +62,24 @@
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {
-            "01"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "chance"    "20 30 40"
-                "LinkedSpecialBonus"        "special_bonus_unique_drow_ranger_3"
+            "chance"
+            {       
+                "value"    "20 30 40"
+                "special_bonus_unique_drow_range_marksmanship"        "+8"
             }
-            "02"
-            {
-                "var_type"                      "FIELD_INTEGER"
+                        
                 "bonus_damage"  "70 80 90"
-                "CalculateSpellDamageTooltip"   "0"
-            }
-            "03"
-            {
-                "var_type"                      "FIELD_INTEGER"
+
+
                 "agility_multiplier"        "28 36 44"
-            }
-            "04"
-            {
-                "var_type"                      "FIELD_INTEGER"
+            
+
                 "agility_range"     "1200"
-            }
-            "05"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "split_count_scepter"           "2"
-                "RequiresScepter"       "1"
-            }
-            "06"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "scepter_range"                 "375"
-                "RequiresScepter"       "1"
-            }
-            "07"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "damage_reduction_scepter"      "50"
-                "RequiresScepter"       "1"
-                "CalculateSpellDamageTooltip"   "0"
-            }
-            "08"
-            {
-                "var_type"                      "FIELD_INTEGER"
-                "disable_range"     "400"
-            }
+           
+                "disable_range"     "0"
+            
         }
     }
     "drow_ranger_marksmanship_datadriven"
@@ -196,34 +166,22 @@
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {
-            "01"
-            {
-                "var_type"          "FIELD_FLOAT"
+            
                 "wave_speed"        "2000.0"
-            }
-            "02"
-            {
-                "var_type"          "FIELD_INTEGER"
+            
                 "wave_width"        "400"
-            }
-            "03"
+            "armor_reduction"
             {
-                "var_type"          "FIELD_INTEGER"
-                "armor_reduction"   "-2 -4 -6 -8 -10 -12 -14"
-                "LinkedSpecialBonus"    "special_bonus_unique_vengeful_spirit_4"
+                "value"   "-2 -4 -6 -8 -10 -12 -14"
+                "special_bonus_unique_drow_range_armor"    "-6"
             }
-            "04"
-            {
-                "var_type"          "FIELD_FLOAT"
+            
                 "vision_aoe"        "300"
-            }
-            "05"
-            {
-                "var_type"          "FIELD_FLOAT"
+          
                 "vision_duration"   "4"
-            }
+            
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
@@ -237,6 +195,26 @@
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     }    
  
+
+        "special_bonus_unique_drow_range_marksmanship"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    }    
+
+
+         "special_bonus_unique_drow_range_armor"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    }    
+
     "ability_devour"
     {
         "BaseClass"                     "ability_lua"
@@ -282,5 +260,5 @@
                 "creep_level"           "5 10 20 30"
             }
         }
-    }    
+    } 
 }
