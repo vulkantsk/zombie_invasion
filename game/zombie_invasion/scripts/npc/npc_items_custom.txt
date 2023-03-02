@@ -2594,7 +2594,66 @@
 	
 	"item_basher"
 	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"143"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"AbilityTextureName"			"custom_folder/basher"	
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2875"
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"skull basher"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"		"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_melee"		"75"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_ranged"		"50"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_duration"			"0.2"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_cooldown"			"0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_chance_damage"	"00"
+			}
+		}
 	}
 	"item_ultimate_scepter_2"
 	{
@@ -4298,7 +4357,7 @@
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"3.5"
+		"AbilityCooldown"				"0"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 
 		// Item Info
@@ -4328,12 +4387,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bash_chance_melee"		"15"
+				"bash_chance_melee"		"100"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bash_chance_ranged"		"15"
+				"bash_chance_ranged"		"100"
 			}
 			"05"
 			{
@@ -4343,7 +4402,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"bash_cooldown"			"3.5"
+				"bash_cooldown"			"0"
 			}
 			"07"
 			{
@@ -5928,7 +5987,7 @@
 		"ItemRequirements"
 		{
  
-			"01"						"item_belt_of_strength;item_lifesteal"
+			"01"						"item_belt_of_strength;item_blades_of_attack"
 		}
 	}
 
@@ -5965,10 +6024,10 @@
 		{
 				"bonus_damage"			"15"
 				"bonus_str"	             "10"
-				"lifesteal_pct"				"12" 
+				"lifesteal_pct"				"6" 
 				"charges_for_attack_creep"			"1"
 				"max_charges"			"25"
-				"heal_per_charge"			"20"
+				"heal_per_charge"			"10"
 		}
  
 	}	
