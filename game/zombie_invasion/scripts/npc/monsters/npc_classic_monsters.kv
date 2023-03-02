@@ -6213,6 +6213,112 @@
  
 		}
 	}
-	 
+	"npc_boss_slardar"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/slardar/slardar.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Slardar"
+		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+		"Level"						"12"
+		"ModelScale" 				"1.8"
+		"HasInventory"				"1"
+        "BoundsHullName"         "DOTA_HULL_SIZE_HERO"
+
+ 		"ConsideredHero"			"1"
+		"MinimapIcon"					"minimap_roshancamp"
+		"MinimapIconSize"				"450"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"slardar_bash"
+		"Ability2"					"slardar_slithereen_crush"
+		"Ability3"					"generic_hidden"	
+		"Ability4"					"generic_hidden"
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"80"
+		"MagicalResistance"         "10"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"770"
+		"AttackDamageMax"			"825"
+		"AttackRate"				"2.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"150"
+        "BaseAttackSpeed"			"160"		     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"70"
+		"HealthBarOffset"			"225"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"300"
+		"BountyGoldMin"				"555"	
+		"BountyGoldMax"				"850"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"520"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"75000"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"650"	
+		"StatusManaRegen"			"5.5"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 		
+						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_echo_sabre_2"}
+				"2"            	{"Item"        "item_monkey_king_bar"}
+			}
+
+			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "336" }
+					"Wearable1" { "ItemDef" "6421" }
+					"Wearable1" { "ItemDef" "6417" }
+ 					"Wearable1" { "ItemDef" "5101" }
+  					"Wearable1" { "ItemDef" "6420" }	 				
+				}
+				"OffensiveAbilities"
+			{
+				"Ability2"
+				{
+					"Name"					"slardar_slithereen_crush"										
+				}
+				
+			}
+			
+		}	
+	}
 
 }

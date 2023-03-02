@@ -2602,17 +2602,24 @@
 		"AbilityTextureName"			"custom_folder/basher"	
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0"
+		"AbilityCooldown"				"0.5"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2875"
 		"ItemShopTags"					"damage;str;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"skull basher"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemIsNeutralDrop" 						"1"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -2631,12 +2638,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bash_chance_melee"		"75"
+				"bash_chance_melee"		"60"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bash_chance_ranged"		"50"
+				"bash_chance_ranged"		"40"
 			}
 			"05"
 			{
@@ -2651,7 +2658,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_chance_damage"	"00"
+				"bonus_chance_damage"	"20"
 			}
 		}
 	}
