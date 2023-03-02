@@ -259,7 +259,7 @@
 		"AbilityBehavior"		      	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"Hero/hood/armor"
 		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
+		"RequiredLevel"					"25"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -268,7 +268,7 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "trigger_chance"			"8"
+			     "trigger_chance"			"12"
 		    }
 		}
 	}
