@@ -416,6 +416,9 @@ function InvasionMode:NightTimer(time)
 			end
 			
 			Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+				if randomheroess >= 1 then 
+                     	InvasionMode:RandomHeroes()  
+                    end
 				InvasionMode:NextNight()
 				UpgradeUnitStats(putin, 1.2)
 			end)
@@ -438,10 +441,105 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-   
- 
+     
+     if randomheroess >= 1 then 
+     	InvasionMode:RandomHeroes()  
+     end
+  
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
+ 
+end
+
+function InvasionMode:RandomHeroes()  
+ -- Обычнй конец
+ 	local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+
+ local heroes_name = {	"npc_dota_hero_alchemist",	
+	"npc_dota_hero_tidehunter",
+	"npc_dota_hero_wisp",		
+	"npc_dota_hero_bristleback"		,
+	"npc_dota_hero_rubick"		,
+	"npc_dota_hero_jakiro"		,
+	"npc_dota_hero_medusa"	,
+ 	"npc_dota_hero_phantom_assassin",
+	"npc_dota_hero_axe"	,
+ 	"npc_dota_hero_slark",
+	"npc_dota_hero_clinkz",			
+	"npc_dota_hero_troll_warlord",		
+	"npc_dota_hero_ursa"		,	
+	"npc_dota_hero_sand_king"	,
+	"npc_dota_hero_skywrath_mage"	,
+	"npc_dota_hero_juggernaut"	,
+    "npc_dota_hero_hoodwink"	,
+	"npc_dota_hero_skeleton_king",
+	"npc_dota_hero_sven"		,
+	"npc_dota_hero_crystal_maiden",		"npc_dota_hero_sniper"	,
+	"npc_dota_hero_dark_seer"	,
+	"npc_dota_hero_luna"	,
+	"npc_dota_hero_enigma",
+	"npc_dota_hero_drow_ranger",	
+}
+     for index=0 ,HeroList:GetHeroCount() do  
+		if HeroList:GetHero(index)    then   
+		   	local hero = HeroList:GetHero(index)   
+             	if not hero:IsAlive() then 
+                    hero:RespawnHero(false, false) 
+               end 
+          end
+     end	
+	local heroes =  
+         FindUnitsInRadius(
+            DOTA_TEAM_BADGUYS, -- int, your team number
+            point, -- point, center point
+            nil,    -- handle, cacheUnit. (not known)
+            -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
+            DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
+            DOTA_UNIT_TARGET_HERO, -- int, type filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            0,  -- int, order filter
+            false   -- bool, can grow cache
+        )
+
+     	for _,hero in pairs( heroes ) do
+
+ 
+			local playerID = hero:GetPlayerID()
+			local oldHero = hero--PlayerResource:GetSelectedHeroEntity(playerID)	
+			local newHeroName = heroes_name[RandomInt(1,#heroes_name)]
+			local gold = oldHero:GetGold()
+			local experience = oldHero:GetCurrentXP() 
+ 
+ 	if not PlayerResource:IsValidPlayer(playerID) or not PlayerResource:GetPlayer(playerID) then
+		return
+	end
+
+	if playerID ~= nil and playerID ~= -1 then 
+		hero:ForceKill(false)
+		items_table = {} 
+		for i = 0, 23 do 
+			local item = oldHero:GetItemInSlot( i ) 
+			if item ~= nil then 
+				items_table[item:GetName()] = item:GetCurrentCharges() 
+				item:RemoveSelf() 
+			end 
+		end 
+		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
+		newHero:RespawnHero(false, false) 
+		
+		newHero:SetGold(gold, false)
+		newHero:AddExperience(experience, 0, false, true)
+		for item,stacks in pairs(items_table) do 
+			local item = newHero:AddItemByName(item) 
+			item:UseResources(false, false, true)
+			item:SetCurrentCharges(stacks)
+		end 
+
+	end 
+
+
+     end	
+ 
  
 end
 

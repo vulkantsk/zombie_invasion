@@ -22,7 +22,10 @@
 		"difficulty_description_normal" "СТАТЫ ВРАГОВ НЕ УВЕЛИЧЕНЫ!"
 		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 25%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
 		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 50%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+ 	
+ 			"difficulty_description_randomheroes" "<font color='#ffff00'>После каждой успешно пройденной ночи, вам будут выдавать нового героя!</font>!"
  		
+
 		//guide
 		"htpbtn"				"Как Играть"
 		

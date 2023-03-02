@@ -1,0 +1,13 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/random_heroes.js" />
+	</scripts>
+
+	<styles>
+		<include src="file://{resources}/styles/custom_game/random_heroes.css" />
+	</styles>
+
+	<Panel class="RandomHeroes">
+		<Label id="HeaderRandom" text="Random Heroes" />
+	</Panel>
+</root>

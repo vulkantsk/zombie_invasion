@@ -2,34 +2,26 @@ const diffLabels = {};
 
 const diff_text = (diff) => $.Localize(diff);
 
-const select_difficulty = (diff) => {
-  GameEvents.SendCustomGameEventToServer('invasion_select_difficulty', {
+const select_heroes = (diff) => {
+  GameEvents.SendCustomGameEventToServer('invasion_select_ran_heroes', {
     diff: diff,
   });
-};
-
-const update_difficulty_selections = (data) => {
-  for (let diff in data) {
-    const value = data[diff];
-
-    if (Number(value) > 0) {
-      diffLabels[diff].text = (diff_text(diff) + ' - ' + value).toUpperCase();
-    }
-  }
 };
 
 (() => {
   const parent = $.GetContextPanel();
 
-  for (let diff of ['normal', 'medium', 'hard']) {
+  for (let diff of ['randomheroes']) {
     const button = $.CreatePanel('Button', parent, '');
-    button.AddClass(diff);
+    // button.AddClass(diff);
     const imgPanel = $.CreatePanel('Panel', button, '');
     const label = $.CreatePanel('Label', button, '');
-    label.text = diff_text(diff);
+
+    button.AddClass('but');
 
     button.SetPanelEvent('onactivate', () => {
-      select_difficulty(diff);
+      button.AddClass('on');
+      select_heroes(diff);
     });
 
     button.SetPanelEvent('onmouseover', () => {
@@ -49,10 +41,5 @@ const update_difficulty_selections = (data) => {
     diffLabels[diff] = label;
   }
 
-  parent.GetParent().style.marginLeft = '0px';
-
-  GameEvents.Subscribe(
-    'update_difficulty_selections',
-    update_difficulty_selections
-  );
+  GameEvents.Subscribe('update_heroes_selections', update_heroes_selections);
 })();

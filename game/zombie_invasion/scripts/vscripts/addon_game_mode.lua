@@ -19,7 +19,8 @@ require( "zpr/path_graph" )
 require( "end_game" )
 require( "zpr/req" )
 require( "difficulty" )
- 
+require( "randomheroes" )
+
 if InvasionMode == nil then
 	InvasionMode = class({})
 end
