@@ -414,11 +414,14 @@ function InvasionMode:NightTimer(time)
 				end)
 				return nil;
 			end
-			
-			Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+	
+			Timers:CreateTimer(DEFAULT_NIGHTTIME + 20, function()
 				if randomheroess >= 1 then 
                      	InvasionMode:RandomHeroes()  
                     end
+			end)
+
+			Timers:CreateTimer(DEFAULT_NIGHTTIME , function()
 				InvasionMode:NextNight()
 				UpgradeUnitStats(putin, 1.2)
 			end)
@@ -454,6 +457,7 @@ end
 function InvasionMode:RandomHeroes()  
  -- Обычнй конец
  	local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+ 
 
  local heroes_name = {	"npc_dota_hero_alchemist",	
 	"npc_dota_hero_tidehunter",
@@ -480,14 +484,7 @@ function InvasionMode:RandomHeroes()
 	"npc_dota_hero_enigma",
 	"npc_dota_hero_drow_ranger",	
 }
-     for index=0 ,HeroList:GetHeroCount() do  
-		if HeroList:GetHero(index)    then   
-		   	local hero = HeroList:GetHero(index)   
-             	if not hero:IsAlive() then 
-                    hero:RespawnHero(false, false) 
-               end 
-          end
-     end	
+ 
 	local heroes =  
          FindUnitsInRadius(
             DOTA_TEAM_BADGUYS, -- int, your team number
