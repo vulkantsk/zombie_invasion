@@ -32,12 +32,12 @@ function modifier_cemetry:OnCreated()
     if not IsServer() then return end
     self.parent = self:GetParent()
     self.duration = 60 
-    self.min = 1
-    self.max = 3
+    self.min = 2
+    self.max = 4
 
 
  
-    self:StartIntervalThink( 8.0 )
+    self:StartIntervalThink( 6.5 )
 end
 
 function modifier_cemetry:OnIntervalThink()

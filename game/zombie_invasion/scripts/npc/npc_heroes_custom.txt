@@ -1627,7 +1627,7 @@
 		"AttackDamageMin"		"29"
 		"AttackDamageMax"		"36"
 		"BaseAttackSpeed"		"120"
-		"AttackRate"		"1.400000"
+		"AttackRate"		"1.600000"
 		"AttributeBaseStrength"		"16"
 		"AttributeStrengthGain"		"1.900000"
 		"AttributeBaseIntelligence"		"15"	

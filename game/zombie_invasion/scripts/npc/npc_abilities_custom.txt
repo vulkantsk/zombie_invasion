@@ -1136,7 +1136,7 @@
                 "quest_item"    "item_zombie_skin"
                 "reward_item"    "item_truba"
                 "particle"        "1"
-                "next_quest"    "quest_test04"
+                "next_quest"    "quest_test05"
                 "reusable"        "0"
             }
         }
@@ -1180,7 +1180,7 @@
                 "quest_item"    "item_big_meat"
                 "reward_item"    "item_shovel"
                 "particle"        "1"
-                "next_quest"    "quest_test02"
+                "next_quest"    "quest_test04"
                 "reusable"        "0"
             }
         }
@@ -1224,7 +1224,7 @@
                 "quest_item"    "item_tres_jo"
                 "reward_item"    "item_rom"
                 "particle"        "1"
-                //"next_quest"    "quest_test05"
+                //"next_quest"    "quest_test03"
                 "reusable"        "0"
             }
         }

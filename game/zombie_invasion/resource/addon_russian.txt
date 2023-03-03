@@ -229,6 +229,8 @@
 
 		// ******************** Предметы********************
 		
+		"DOTA_Tooltip_ability_item_cursed_shield" "cursed shield"
+		"DOTA_Tooltip_ability_item_cursed_shield_Description" "С вероятностью в 80% блокирует 350 урона от атак, если владелец — герой ближнего боя, или 450 урона, если герой дальнего боя, также даёт герою +700 к здоровью и 30 восстановления здоровья"
 
 		"DOTA_Item_Build_Starting_Items"								"Начальные предметы"
 		"DOTA_Item_Build_Early_Game"									"Для первой ночи"
