@@ -1397,7 +1397,7 @@
 		"Ability1"		"false_promise_custom"
 		"Ability2"		"death_or_life"
 		"Ability3"		"int"
-		"Ability4"		"arc_warden_tempest_double"
+		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"oracle_time"
 		"Ability10"		"special_bonus_mp_regen_150"

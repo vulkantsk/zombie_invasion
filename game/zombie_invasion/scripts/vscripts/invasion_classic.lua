@@ -479,11 +479,24 @@ function InvasionMode:RandomHeroes()
 	"npc_dota_hero_skeleton_king",
 	"npc_dota_hero_sven"		,
 	"npc_dota_hero_crystal_maiden",		"npc_dota_hero_sniper"	,
+	"npc_dota_hero_oracle"	,
 	"npc_dota_hero_dark_seer"	,
 	"npc_dota_hero_luna"	,
 	"npc_dota_hero_enigma",
 	"npc_dota_hero_drow_ranger",	
+	"npc_dota_hero_lion",
+	"npc_dota_hero_shredder",	
+	"npc_dota_hero_antimage"	,
+	"npc_dota_hero_terrorblade",
+ 	"npc_dota_hero_oracle",
+"npc_dota_hero_techies",
 }
+
+	local modifier_table = {"modifier_item_aghanims_shard","modifier_item_ultimate_scepter_consumed",
+"modifier_item_ultimate_scepter_consumed_alchemist","modifier_item_moon_shard_consumed","modifier_alchemist_scepter_bonus_damage","modifier_tide_health","modifier_veteran_grow_water_2",
+"tome_strenght_modifier",
+"tome_agility_modifier",
+"tome_intelect_modifier","modifier_int_buff",}
  
 	local heroes =  
          FindUnitsInRadius(
@@ -493,7 +506,7 @@ function InvasionMode:RandomHeroes()
             -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
             DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
             DOTA_UNIT_TARGET_HERO, -- int, type filter
-            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_DEAD + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
             0,  -- int, order filter
             false   -- bool, can grow cache
         )
@@ -507,13 +520,23 @@ function InvasionMode:RandomHeroes()
 			local gold = oldHero:GetGold()
 			local experience = oldHero:GetCurrentXP() 
  
- 	if not PlayerResource:IsValidPlayer(playerID) or not PlayerResource:GetPlayer(playerID) then
-		return
-	end
 
 	if playerID ~= nil and playerID ~= -1 then 
-		hero:ForceKill(false)
+		if hero:IsAlive() then 
+		     hero:ForceKill(false)
+	     end
 		items_table = {} 
+		modif_table = {}
+    		for k,v in pairs(modifier_table) do 
+    			local unit = v.unit 
+    			local ability = v.ability
+    			local modif_name = modifier_table[k]
+        
+      		if oldHero:HasModifier(v) then 
+           		modif_table[v] = oldHero:GetModifierStackCount(modif_name,nil)   
+
+       		end   
+    		end  
 		for i = 0, 23 do 
 			local item = oldHero:GetItemInSlot( i ) 
 			if item ~= nil then 
@@ -528,10 +551,12 @@ function InvasionMode:RandomHeroes()
 		newHero:AddExperience(experience, 0, false, true)
 		for item,stacks in pairs(items_table) do 
 			local item = newHero:AddItemByName(item) 
-			item:UseResources(false, false, true)
 			item:SetCurrentCharges(stacks)
 		end 
-
+		for modif,stacks in pairs(modif_table) do 
+			local modif = newHero:AddNewModifier(newHero, nil, modif, {  }) 
+			modif:SetStackCount(stacks)
+		end 
 	end 
 
 

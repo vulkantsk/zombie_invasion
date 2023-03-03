@@ -13,7 +13,7 @@ function WaterSetStacks( keys )
 		local currentStacks = target:GetModifierStackCount(StackModifier, nil)
 
 		if currentStacks == 0 then
-			target:AddNewModifier(caster, nil, StackModifier, {})
+			target:AddNewModifier(caster, ability, StackModifier, {})
 			target:SetModifierStackCount(StackModifier, nil, (currentStacks + stacks))
 		else 
 			target:SetModifierStackCount(StackModifier, nil, (currentStacks + stacks))
@@ -69,7 +69,7 @@ function modifier_veteran_grow_water_2:DeclareFunctions()
 end
 
 function modifier_veteran_grow_water_2:OnCreated()
-	self.value_bonus = ability:GetSpecialValueFor("bonus_value")
+	self.value_bonus = self:GetAbility():GetSpecialValueFor("bonus_value")
 end
 
 function modifier_veteran_grow_water_2:GetModifierSpellAmplify_Percentage()
