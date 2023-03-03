@@ -414,14 +414,12 @@ function InvasionMode:NightTimer(time)
 				end)
 				return nil;
 			end
-	
-			Timers:CreateTimer(DEFAULT_NIGHTTIME + 20, function()
-				if randomheroess >= 1 then 
-                     	InvasionMode:RandomHeroes()  
-                    end
-			end)
+ 
 
 			Timers:CreateTimer(DEFAULT_NIGHTTIME , function()
+								if randomheroess >= 1 then 
+                     	InvasionMode:RandomHeroes()  
+                    end
 				InvasionMode:NextNight()
 				UpgradeUnitStats(putin, 1.2)
 			end)
