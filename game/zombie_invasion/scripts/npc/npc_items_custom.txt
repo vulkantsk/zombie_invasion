@@ -10020,5 +10020,60 @@
 			}
 		}
 	}
+	"item_cursed_shield"
+	{       
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"                     "item_vanguard"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilityTextureName"            "cursed_shield"
+	    
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    
+	    // Item Info
+	    //-------------------------------------------------------------------------------------------------------------
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemIsNeutralDrop" 						"1"
+	    
+	    //special
+	    "AbilitySpecial"
+	    {
+	     	"01"	
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_health"          "700"
+	        }
+	        "02"
+	        {
+	            "var_type"              "FIELD_FLOAT"
+	            "bonus_health_regen"    "30.0"
+	        }
+	        "03"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "block_damage_melee"    "350"
+	        }
+	        "04"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "block_damage_ranged"   "450"
+	        }
+	        "05"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	          	"block_chance"          "80"
+	    	}  		
+	    }
+	}
 
 }
