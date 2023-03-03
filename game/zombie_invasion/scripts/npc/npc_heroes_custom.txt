@@ -544,7 +544,7 @@
 		"SoundSet"		"Hero_Shredder"
 		"ModelScale"		"0.825000"
 	
-		"Ability1"		"timber_bloody_chakram"
+		"Ability1"		"shredder_whirling_death"
 		"Ability2"		"shredder_timber_chain"
 		"Ability3"		"shredder_reactive_armor"
 		"Ability4"		"shredder_chakram_2"

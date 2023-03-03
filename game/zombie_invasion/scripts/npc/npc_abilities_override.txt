@@ -2529,7 +2529,9 @@
 		"FightRecapLevel"				"1"
 		"HasScepterUpgrade"			"1"
 		"AbilitySound"					"Hero_Shredder.Chakram.Cast"
-		"MaxLevel"                      "4"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -2563,12 +2565,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pass_damage"			"200 240 280 320"
+				"pass_damage"			"200 350 500"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_per_second"		"100 120 140 160"
+				"damage_per_second"		"120 200 280"
 			}
 			"05"
 			{
@@ -2618,7 +2620,7 @@
 		"FightRecapLevel"				"1"
 		"IsGrantedByScepter"			"1"
 		"HasScepter/Upgrade"			"1"
-		"MaxLevel"                      "4"
+		"MaxLevel"                      "3"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -2654,13 +2656,13 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pass_damage"			"200 240 280 320"
+				"pass_damage"			"200 350 500"
 				"RequiresScepter"	"1"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_per_second"		"100 120 140 160"
+				"damage_per_second"		"120 200 280"
 				"RequiresScepter"	"1"
 			}
 			"05"

@@ -60,7 +60,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_per_use"			"13 15 17"
+				"damage_per_use"			"125 150 175"
 			}
 			"04"
 			{
@@ -80,7 +80,7 @@
 			"07"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"damage_myself"		"8"
+				"damage_myself"		"4"
 			}
 		}
 	}

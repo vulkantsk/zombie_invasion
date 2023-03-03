@@ -495,7 +495,7 @@ function InvasionMode:RandomHeroes()
 "modifier_item_ultimate_scepter_consumed_alchemist","modifier_item_moon_shard_consumed","modifier_alchemist_scepter_bonus_damage","modifier_tide_health","modifier_veteran_grow_water_2",
 "tome_strenght_modifier",
 "tome_agility_modifier",
-"tome_intelect_modifier","modifier_int_buff",}
+"tome_intelect_modifier","modifier_int_buff","modifier_lion_finger_of_death_lua",}
  
 	local heroes =  
          FindUnitsInRadius(
