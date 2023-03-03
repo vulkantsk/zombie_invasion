@@ -1224,7 +1224,7 @@
                 "quest_item"    "item_tres_jo"
                 "reward_item"    "item_rom"
                 "particle"        "1"
-                //"next_quest"    "quest_test03"
+                //"next_quest"    "quest_test02"
                 "reusable"        "0"
             }
         }
