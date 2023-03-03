@@ -412,7 +412,8 @@ function InvasionMode:NightTimer(time)
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
                         InvasionMode:UsuallyEnd()  
 				end)
-				return nil;
+
+ 
 			end
  
 
