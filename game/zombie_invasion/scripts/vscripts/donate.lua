@@ -3,14 +3,14 @@ FirstSpawned = {}
 
 DONATE_SET_HELPER = {
 	players = {
-		877002179,
-206968098,
+	206968098,
 	},
 }
 
 DONATE_SET_ADMIN = {
 	players = {
 		453736017,
+		877002179,
 
 	},
 }
@@ -55,6 +55,14 @@ DONATE_ITEMS = {
 				DONATE_SET_HELPER,
 			},
 		},
+		{
+			name = "item_admin",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+
 
 
 	},

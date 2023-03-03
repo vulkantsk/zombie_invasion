@@ -2567,7 +2567,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  ""
+		"Ability1"					"quest_test_meepo"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""

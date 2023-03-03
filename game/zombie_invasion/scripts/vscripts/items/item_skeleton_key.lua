@@ -64,7 +64,7 @@ function item_skeleton_key:OnSpellStart()
    	  
 	 end)	 
 	 	    
-   	 Timers:CreateTimer(11,function() 	 
+   	 Timers:CreateTimer(5,function() 	 
                                PlayDustParticle(gate_main, 625 )
 
 	      					   gate_main:ForceKill(true)

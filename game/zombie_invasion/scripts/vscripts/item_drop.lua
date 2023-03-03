@@ -14,13 +14,15 @@ ItemDrop.item_drop = {
 		{items = {"item_eggs"}, chance = 50, duration = 20, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_necr_heart"}, chance = 20, duration = 20, units = {"npc_classic_necr"}}, 
 		{items = {"item_necr_heart"}, chance = 30, duration = 20, units = {"npc_classic_big_necr"}}, 		
-		{items = {"item_bone"}, chance = 30, duration = 20, units = {"npc_classic_skelet"}},  
-		{items = {"item_bone"}, chance = 100, duration = 20, units = {"npc_classic_skeleton_king"}},  
+		{items = {"item_bone"}, chance = 30, duration = 20, units = {"npc_classic_woobleydog2"}},  
+		{items = {"item_bone"}, chance = 15, duration = 20, units = {"npc_classic_woobleydog"}},  
 		{items = {"item_ess_pudge"}, chance = 13, limit = 4, units = {"npc_classic_warlock"}}, 
 		{items = {"item_necr_heart"}, chance = 20, units = {"npc_classic_warlock"}}, 
 		{items = {"item_basher"}, chance = 100, units = {"npc_boss_slardar"}},
- 			
-		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_2"}},  
+
+ 		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_1"}},	
+		{items = {"item_aghanims_shard_roshan"}, max_count = 2, units  ={"npc_witch_boss_2"}},
+
 
 		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_3"}},   
 		{items = {"item_magic_heart"}, units ={"npc_witch_boss_3"}},   
