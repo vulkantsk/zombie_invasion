@@ -4,7 +4,8 @@ FirstSpawned = {}
 DONATE_SET_HELPER = {
 	players = {
 	206968098,
-	203159402
+	203159402,
+	946902506
 	},
 }
 
@@ -21,15 +22,8 @@ DONATE_ITEM_SLARK = {
 --		347624347,
           206968098,
           203159402,
-          432431747
-	},	
-}
-
-
-DONATE_ITEM_SHINOBU = {
-	players = {
---		347624347,
- 
+          432431747,
+          946902506
 	},	
 }
 
@@ -38,6 +32,7 @@ DONATE_ITEM_MIDAS = {
 --		347624347,
 206968098,
 203159402,
+946902506
 
 	},	
 }
@@ -55,15 +50,7 @@ DONATE_ITEMS = {
 				DONATE_SET_HELPER,
 			},
 		},
-		{
-			name = "item_strenobu_change",
-			can_be_bought = true,
-			count = 1,
-			sets ={
-				DONATE_SET_ADMIN,
-			},
-		},
- 
+
 	},
 	artifacts = {
 
