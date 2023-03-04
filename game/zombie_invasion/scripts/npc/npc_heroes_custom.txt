@@ -1670,6 +1670,7 @@
 
 "npc_dota_hero_treant"
 	{
+		"Model"	"models/hero_shinobu/shinobu_01.vmdl"
 		"Ability1"		"shinobu_vampire_blood"
 		"Ability2"		"shinobu_eat_oddity"
 		"Ability3"		"shinobu_kokorowatari"
@@ -1684,6 +1685,20 @@
 		"Ability15"		"special_bonus_unique_treant_2"
 		"Ability16"		"special_bonus_unique_treant_11"
 		"Ability17"		"special_bonus_unique_treant_7"
+
+
+		// "CustomSoundEvents"
+		// {
+		// 	"precache"
+		// 	{
+		// 		"soundevents0"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+		// 	}
+		// 	"ActionMap"
+		// 	{
+		// 		"OnAttack"	"Hero_Juggernaut.Attack"
+		// 	}
+		// }
+
 
 
 		"ArmorPhysical"		"-1"
