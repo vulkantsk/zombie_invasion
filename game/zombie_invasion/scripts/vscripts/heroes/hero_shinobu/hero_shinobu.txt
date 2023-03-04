@@ -437,7 +437,7 @@
 	"shinobu_hide_in_shadows"
 	{
 		"BaseClass"             		"ability_datadriven"
-		"AbilityTextureName"			"shinobu//shinobu_hide_in_shadows"
+		"AbilityTextureName"			"shinobu/shinobu_hide_in_shadows"
 		"MaxLevel" 						"7"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
@@ -534,6 +534,7 @@
 				"IsDebuff"			"1"
 				"IsPurgable"		"0"
 				"Duration"			"%fade_time"
+				"Maxlevel"			"1"
 
 				"OnDestroy"
 				{
