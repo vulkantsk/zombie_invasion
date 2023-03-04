@@ -1825,6 +1825,49 @@
   
          "DOTA_Tooltip_ability_juggernaut_seventh_gate"	"<font color='#ff0000'>The Gate of the Deaths</font>"
        "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>Последние врата из семи доступных Самураю. Открывает способность Death, которая дарует владельцу неземную мощь, но взамен забирает жизнь...</font>"
+    // -----------------Shinobu-----------------------
+
+
+
+
+    	"DOTA_Tooltip_ability_shinobu_vampire_blood" "vampire blood"
+    	"DOTA_Tooltip_ability_shinobu_vampire_blood_Description" "Киссшот Ацеролаорион Хартандерблэйд - легендарный вампир, она не может восстанавливать здоровье любым способом и не имеет пассивной регенерации, но она имеет большой вампиризм и бонусы, основанные на текущем здоровье. 
+    	0% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl1%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl1% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl1%
+    	%hp_mark_pct_lvl2%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl2%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl2% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl2%
+    	%hp_mark_pct_lvl3%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl3%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl3% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl3%
+  		%hp_mark_pct_lvl4%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl4%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl4% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl4%
+		"DOTA_Tooltip_ability_shinobu_vampire_blood_Lore" "Вампирская кровь имеет свои недостатки, но преимуществ гораздо больше."
+		"DOTA_Tooltip_ability_shinobu_vampire_blood_Note0" "Shinobu воскресает с 50% здоровья"
+		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl4_Description" "+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% к скорости атаки
+  		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% к скорости передвижения"
+
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity" "eat oddity"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_Description" "Шинобу телеортируется к выброному юниту, съедает его, получая дополнительное золото и часть его здоровья на определённое время."
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_Lore" "Вампиры никогда не прочь высосать все соки из аппетитного крипа."
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_bonus_gold_pct" "%ДОП ЗДОРОВЬЕ:"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_buff_duration" "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_buff_health_pct" "%УКРАДЕННОЕ ЗДОРОВЬЕ:"
+  		"DOTA_Tooltip_modifier_shinobu_eat_oddity" "Eat Oddity"
+  		"DOTA_Tooltip_modifier_shinobu_eat_oddity_buff_Description" "Максимальное здоровье увеличено на %dMODIFIER_PROPERTY_HEALTH_BONUS%"
+
+		"DOTA_Tooltip_ability_shinobu_kokorowatari" "kokorowatari"  		
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_Description" "Когда Шинобу убивает любого не-героя, она создаёт душу этого юнита. Эта душа неуязвима и длится %soul_duration% секунд. Также увиличивает радиус атаки Шинобу и даёт шанс убить крипа с одного удара."
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_Lore" "Шинобу может превратить жертву в слугу и заставить подчиняться своим приказам, но предпочитает это не использовать."
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_bonus_attack_range" "ДОП. РАДИУС АТАКИ:"
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_chance_to_kill" "%ШАНС НА УБИЙСТВО КРИПА:"
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_soul_duration" "ВРЕМЯ ЖИЗНИ ДУШИ:"
+
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua" "shinobu yumewatari"
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Description" "Шинобу восстанавливает выбранную душу с уровнем ниже %max_ghost_level%. Также увеличивает урон Шинобу."
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Lore" "Хотя Шиноба выглядит, как лоля, на деле она невероятно сильна."
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_bonus_damage" "+$damage"
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_max_ghost_level" "МАКС. УРОВЕНЬ ДУШИ:"
+
+  		"DOTA_Tooltip_ability_shinobu_hide_in_shadows" "hide in shadows"
+  		"DOTA_Tooltip_ability_shinobu_hide_in_shadows_Description" "Шинобу прячется в тени союзных героев, становясь невидимой. Эта невидимость не раскрывается ничем, кроме атак самой Шинобу. Если герой, в тени которого скрывалась Шинобу будет убит, пока она невидима, то она полностью восстановит своё здоровье, станет неуязвимой к заклинаниям."
+
+
+
  	// -----------------Drow_ranger-------------------
 
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
