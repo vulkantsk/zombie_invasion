@@ -1,8 +1,13 @@
 <root>
+	<script>
+//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_RADIANT_TEAM, false );
+		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_DIRE_TEAM, false );
+ 
+	</script>
 	<Panel>
 		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
 		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/difficulty.xml" />
-				<CustomUIElement type="GameSetup" 		layoutfile="file://{resources}/layout/custom_game/random_heroes.xml" />	
+		<CustomUIElement type="GameSetup" 		layoutfile="file://{resources}/layout/custom_game/random_heroes.xml" />	
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/my_hud.xml" />
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/hud/hud.xml" />	
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/donate.xml" />	

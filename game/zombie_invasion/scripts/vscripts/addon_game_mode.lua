@@ -26,12 +26,12 @@ if InvasionMode == nil then
 end
 
  
-
+ 
 
 function Precache( context )
-
+ 
 		print("[BAREBONES] Performing pre-load precache")
-
+PrecacheModel("models/hero_shinobu/shinobu_01.vmdl", context)  
 	---------------------------------model-------------------------------
 	PrecacheModel("models/props_gameplay/pig.vmdl", context) --pig
 	PrecacheModel("models/items/hex/sheep_hex/sheep_hex.vmdl", context) --sheep
@@ -45,8 +45,7 @@ function Precache( context )
 	PrecacheModel("models/structures/village_building_1.vmdl", context) -- ghoul
 	PrecacheModel("models/structures/village_building_2.vmdl", context) -- ghost
 	PrecacheModel("models/structures/village_tower_1.vmdl", context) -- undying mutant
-
-
+ 
 	PrecacheModel("models/props_structures/radiant_tower001.vmdl", context) -- tower
 	PrecacheModel("models/props_structures/tower_upgrade/tower_upgrade.vmdl", context) -- tower
 	PrecacheModel("models/buildings/building_racks_ranged_reference.vmdl", context) -- tower
@@ -222,7 +221,7 @@ end
 
  
 function InvasionMode:InitInvasionMode()
-
+ 
 	local MapName = GetMapName()
 	print(MapName)
 
@@ -230,7 +229,7 @@ function InvasionMode:InitInvasionMode()
 	print("----------------------------------------invasion Start----------------------------------------")	
 	InvasionMode:InvasionMap()
 	end
-
-
-
+ 
 end
+
+ 

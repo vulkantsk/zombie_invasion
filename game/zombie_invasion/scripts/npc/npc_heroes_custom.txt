@@ -1668,9 +1668,10 @@
 		"MovementSpeed"		"350"	
 	}
 
-"npc_dota_hero_treant"
+"npc_dota_hero_shinobu"
 	{
-		"Model"	"models/hero_shinobu/shinobu_01.vmdl"
+	"override_hero"                    "npc_dota_hero_treant"
+		"Model"	"models/development/invisiblebox.vmdl"
 		"Ability1"		"shinobu_vampire_blood"
 		"Ability2"		"shinobu_eat_oddity"
 		"Ability3"		"shinobu_kokorowatari"
@@ -1687,17 +1688,17 @@
 		"Ability17"		"special_bonus_unique_treant_7"
 
 
-		// "CustomSoundEvents"
-		// {
-		// 	"precache"
-		// 	{
-		// 		"soundevents0"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-		// 	}
-		// 	"ActionMap"
-		// 	{
-		// 		"OnAttack"	"Hero_Juggernaut.Attack"
-		// 	}
-		// }
+		  "CustomSoundEvents"
+		  {
+		  	"precache"
+		  	{
+		  		"soundevents0"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+		 	}
+		  	"ActionMap"
+		 	{
+		 		"OnAttack"	"Hero_Juggernaut.Attack"
+		  	}
+		  }
 
 
 
@@ -1716,7 +1717,8 @@
 		"AttributeIntelligenceGain"		"1.800000"
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"285"
-
+  "ItemSlots"
+  { }
 	}
 	
 }

@@ -25,7 +25,9 @@ HERO_RESPAWN_TIME_BEFORE_10 = 10
 
 Witch_killed = 0
  
- 
+  
+model_lookup = {}
+model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
  
 function InvasionMode:InvasionMap()
      
@@ -284,10 +286,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 -- LinkLuaModifier( "modifier_main_pumpkin_hero", "abilities/halloween/main_pumpkin", LUA_MODIFIER_MOTION_NONE )
 	local npc = EntIndexToHScript(data.entindex)
 	local name = npc:GetUnitName()
-
-    self.players = {
-        id = 1693188665,
-    }
+ 
  
 	Difficulty:NPC( npc )
 
@@ -318,7 +317,49 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 end
  
+   Timers:CreateTimer( 0.05, function()
+      -- Setup variables
+       
+      local hero = EntIndexToHScript( data.entindex )
+      local model_name = ""
  
+      -- Check if npc is hero
+      if not hero:IsHero() then return end
+ 
+      -- Getting model name
+      if model_lookup[ hero:GetName() ] ~= nil and hero:GetModelName() ~= model_lookup[ hero:GetName() ] then
+        model_name = model_lookup[ hero:GetName() ]
+      else
+        return nil
+      end
+ 
+      -- Check if it's correct format
+      if hero:GetModelName() ~= "models/development/invisiblebox.vmdl" then return nil end
+ print('lket')
+      -- Never got changed before
+      local toRemove = {}
+      local wearable = hero:FirstMoveChild()
+      while wearable ~= nil do
+        if wearable:GetClassname() == "dota_item_wearable" then
+          table.insert( toRemove, wearable )
+        end
+        wearable = wearable:NextMovePeer()
+      end
+ 
+      -- Remove wearables
+      for k, v in pairs( toRemove ) do
+        v:SetModel( "models/development/invisiblebox.vmdl" )
+        v:RemoveSelf()
+      end
+ 
+      -- Set model
+ --     hero:SetModel( model_name )
+      hero:SetOriginalModel( model_name )
+      hero:MoveToPosition( hero:GetAbsOrigin() )
+ 
+      return nil
+    end
+  )
   
 end
 

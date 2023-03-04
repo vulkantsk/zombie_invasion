@@ -110,7 +110,8 @@
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
 		"npc_dota_hero_terrorblade"                                      "Terrorblyad" 		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 		
-		
+		"npc_dota_hero_treant"                                      "Shinoba" 
+
 		// ******************** moobs ********************	
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
 		"npc_boss_chicken"                                                  "Петух???"

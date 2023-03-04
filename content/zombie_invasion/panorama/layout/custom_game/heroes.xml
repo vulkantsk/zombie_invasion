@@ -1,0 +1,7 @@
+<root>
+ 	 <Panel class="AddonLoadingRoot">
+ 
+			<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_treant.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_treant.png" />
+	 </Panel>
+</root>
