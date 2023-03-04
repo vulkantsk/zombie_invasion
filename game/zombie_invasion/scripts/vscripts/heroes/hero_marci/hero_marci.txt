@@ -1,0 +1,73 @@
+"DOTAAbilities"
+{
+	"marci_evolution"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_marci/evolution.lua"
+		"AbilityTextureName"			"rubick/grand"
+		"MaxLevel" 						"4"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasInnateModifiers"			"1"
+		"LevelsBetweenUpgrades"			"6"
+		"HasScepterUpgrade"				"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_per_minute"	"5 10 20 25"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"max_per_minute_pct" "1"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"per_sec_pct"		"0.25 0.5 0.75 1"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"per_sec"			"2 4 6 8"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_per_creep"		"1 2 3 4"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"max_per_creep_pct"	"0.1"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_to_energy_pct"	"2"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"health_reduction_pct"	"60"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"armor_reduction_pct"	"-50"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"		"500 850 1200 1550"
+			}
+			"11"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"per_sec_multiplier_scepter"	"2"
+			}
+		}
+	}
+}

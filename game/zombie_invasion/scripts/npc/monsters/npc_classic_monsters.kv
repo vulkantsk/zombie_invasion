@@ -6606,5 +6606,295 @@
 			
 		}	
 	}
+	"npc_classic_microchel"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"15"
+		"ModelScale" 				"1"
+		"UseNeutralCreepBehavior"	"1"
 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"microchel_rage"
+		"Ability2"					"respawn"
+		"Ability3"					"microchel_natural_order"	
+		"Ability4"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"48"
+		"MagicalResistance"         "75"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"900"
+		"AttackDamageMax"			"1200"
+		"AttackRate"				"1.4"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"150"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"100"
+		"BountyGoldMin"				"200"	
+		"BountyGoldMax"				"250"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2550"
+		"StatusHealthRegen"			"20"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 				"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"microchel_rage"										
+				}
+				
+			}
+			
+			
+		}
+	}
+	"npc_classic_skelet_ruin"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/creeps/ice_biome/undeadtusk/undead_tuskskeleton_armor01.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"25"
+		"ModelScale" 				"1"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"skelet_ruin_latent_poison"
+		"Ability2"					"respawn"
+		"Ability3"					""	
+		"Ability4"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"48"
+		"MagicalResistance"         "75"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"900"
+		"AttackDamageMax"			"1200"
+		"AttackRate"				"1.4"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"900"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"100"
+		"BountyGoldMin"				"200"	
+		"BountyGoldMax"				"250"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2550"
+		"StatusHealthRegen"			"20"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 				"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"skelet_ruin_latent_poison"										
+				}
+				
+			}
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_freez_shivas_guard"}
+			}
+			
+			
+		}
+	}
+	"npc_classic_Night_Stalker_boss"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/nightstalker/nightstalker_night.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"25"
+		"ModelScale" 				"2.6"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"night_stalker_void"
+		"Ability2"					"respawn"
+		"Ability3"					"Stalker_dispersion"	
+		"Ability4"					"Stalker_howl"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"68"
+		"MagicalResistance"         "85"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"5400"
+		"AttackDamageMax"			"6200"
+		"AttackRate"				"0.9"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"900"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"100"
+		"BountyGoldMin"				"200"	
+		"BountyGoldMax"				"250"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"175000"
+		"StatusHealthRegen"			"1000"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 		
+						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_desolator_2_custom"}
+				"1"            	{"Item"        "item_vampire_claw"}
+			}
+
+			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "336" }
+					"Wearable1" { "ItemDef" "6421" }
+					"Wearable1" { "ItemDef" "6417" }
+ 					"Wearable1" { "ItemDef" "5101" }
+  					"Wearable1" { "ItemDef" "6420" }	 				
+				}
+				"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"night_stalker_void"										
+				}
+				"Ability2"
+				{
+					"Name"					"Stalker_howl"										
+				}
+			}
+			
+		}	
+	}
 }

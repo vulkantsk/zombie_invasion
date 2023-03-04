@@ -6208,11 +6208,11 @@
 		"AbilityValues"
 		{
 				"bonus_damage"	"50"
-				"bonus_attack_speed"	"37"
+				"bonus_attack_speed"	"40"
 				"lifesteal_pct"		"20"
 				"berserk_base_damage"            "10"
 				"berserk_bonus_attack_speed"	"120"
-				"berserk_bonus_movement_speed"	"40"
+				"berserk_bonus_movement_speed"	"25"
 				"berserk_armor_reduction"	"6"
 				"berserk_duration"		"6.0"
 		}
@@ -10074,6 +10074,45 @@
 	          	"block_chance"          "80"
 	    	}  		
 	    }
+	}
+
+	"item_piercing_blade"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_piercing_blade"
+		"AbilityTextureName"			"boss_item/piercing_blade"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		///Item info
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemIsNeutralDrop" 						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"300"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"attack_damage_to_pure_pct"	"12"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+		}
 	}
 
 }

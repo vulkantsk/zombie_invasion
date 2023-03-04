@@ -30,6 +30,7 @@
 	"npc_dota_hero_luna"				"1"
 	"npc_dota_hero_enigma"				"1"
 	"npc_dota_hero_drow_ranger"			"1"
+	"npc_dota_hero_marci"				"0"
 
 // Donate
 	"npc_dota_hero_slark"				"0"

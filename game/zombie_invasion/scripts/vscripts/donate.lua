@@ -4,6 +4,7 @@ FirstSpawned = {}
 DONATE_SET_HELPER = {
 	players = {
 	206968098,
+	203159402
 	},
 }
 
@@ -19,6 +20,8 @@ DONATE_ITEM_SLARK = {
 	players = {
 --		347624347,
           206968098,
+          203159402,
+          432431747
 	},	
 }
 
@@ -27,6 +30,7 @@ DONATE_ITEM_MIDAS = {
 --		347624347,
 206968098,
 203159402,
+
 	},	
 }
 
