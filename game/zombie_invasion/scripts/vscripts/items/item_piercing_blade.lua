@@ -28,8 +28,11 @@ if IsServer() then
 		if attacker ~= self:GetParent() then return end
 		local ability = self:GetAbility()
 		local target = keys.target
+        
+        if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance"), 1, self:GetParent()) then return end
 
 		if attacker:FindAllModifiersByName(self:GetName())[1] ~= self then return end
+     
 
 			ApplyDamage({
 				victim = target,

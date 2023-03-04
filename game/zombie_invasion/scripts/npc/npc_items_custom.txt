@@ -10112,6 +10112,11 @@
 				"attack_damage_to_pure_pct"	"12"
 				"CalculateSpellDamageTooltip"	"0"
 			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"	"12"
+			}
 		}
 	}
 
