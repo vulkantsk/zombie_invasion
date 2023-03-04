@@ -10021,7 +10021,7 @@
 		}
 	}
 
-		"item_dasdadsa"
+		"item_strenobu_change"
 	{
 		"BaseClass"                     "item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
