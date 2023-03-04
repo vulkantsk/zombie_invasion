@@ -53,7 +53,7 @@
 			"09"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal_pct_lvl3"		"30"
+				"lifesteal_pct_lvl3"		"45"
 			}
 			"10"
 			{
@@ -63,7 +63,7 @@
 			"11"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_move_speed_lvl3" "12 15 18 21 24 27 30"
+				"bonus_move_speed_lvl3" "15 20 22 24 26 28 32"
 			}
 			"12"
 			{
@@ -73,17 +73,17 @@
 			"13"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal_pct_lvl4"	"30"
+				"lifesteal_pct_lvl4"	"65"
 			}
 			"14"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_attack_speed_lvl4"	"40 45 50 55 60 65 70"
+				"bonus_attack_speed_lvl4"	"40 45 50 55 60 65 140"
 			}
 			"15"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_move_speed_lvl4"	"30 33 36 39 42 45 48"
+				"bonus_move_speed_lvl4"	"30 33 36 39 42 45 94"
 			}
 		}
 
@@ -271,7 +271,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_gold_pct"		"100 150 200 250 300 350 400"
+				"bonus_gold_pct"		"20 40 60 80 100 120 140"
 			}
 			"02"
 			{
@@ -311,7 +311,7 @@
 	"shinobu_kokorowatari"
 	{
 		"BaseClass"             		"ability_datadriven"
-		"AbilityTextureName"			"shinobu//shinobu_kokorowatari"
+		"AbilityTextureName"			"shinobu/shinobu_kokorowatari"
 		"MaxLevel" 						"7"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -321,17 +321,17 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_attack_range" "22 44 66 88 100 122 144"
+				"bonus_attack_range" "22 44 66 111 122 144 177"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"chance_to_kill"	"1"
+				"chance_to_kill"	"7"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"soul_duration"		"5"
+				"soul_duration"		"7"
 			}
 		}
 
@@ -424,12 +424,12 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"		"10 20 35 50 65 80 95"
+				"bonus_damage"		"50 70 90 110 150 170 220"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"max_ghost_level"	"3 5 8 12 16 20 600"
+				"max_ghost_level"	"3 5 8 12 16 20 35"
 			}
 		}
 	}
