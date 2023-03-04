@@ -731,7 +731,7 @@ function InvasionMode:InvasionEntityKilled (data)
  	if killedEntity:HasModifier("modifier_survior_passive") then 
 		killedEntity:SetTimeUntilRespawn( 2 )
 	elseif killedEntity:GetLevel() <= 10 then 
-          killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )
+          killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )  
 	else  
 		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		
 	end

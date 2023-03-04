@@ -4293,49 +4293,44 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"							"abyssal_underlord_atrophy_aura"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		
-		"HasScepterUpgrade"				"1"
-		
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"900"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 
-		"AbilitySpecial"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+
+		"AbilityValues"
 		{
-			"01"
+			"radius"						"900"
+			"damage_reduction_pct"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"900"
+				"value"		"15 20 25"
+				"special_bonus_unique_underlord_3"	"+15"
+				"CalculateSpellDamageTooltip"		"0"
+				"DamageTypeTooltip"					"DAMAGE_TYPE_NONE"
 			}
-			"02"
+			"bonus_damage_from_creep"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_reduction_pct"			"0"
+				"value"							"5 10 15"
+				"CalculateSpellDamageTooltip"	"0"
 			}
-			"03"
+			"bonus_damage_from_hero"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage_from_creep"		"4 5 6"
+				"value"							"250"
+				"CalculateSpellDamageTooltip"	"0"
 			}
-			"04"
+			"bonus_damage_duration"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage_from_hero"		"30 35 40 45"
+				"value"							"40 50 60"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_NONE"
 			}
-			"05"
+			"bonus_shared_by_allies_pct"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_damage_duration"			"25 30 35"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_damage_duration_scepter"		"30 35 40"
-				"RequiresScepter"	"1"
+				"special_bonus_unique_underlord_9"	"+50"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -4351,13 +4346,13 @@
        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
        "AbilityUnitTargetFlags"		   "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
        "SpellImmunityType"			   "SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"						"4"
+		"MaxLevel"						"7"
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
        "AbilityCastPoint"              "0.25"
-       "AbilityCooldown"               "14"
-       "AbilityManaCost"               "100"
-       "AbilityCastRange"              "300"
+       "AbilityCooldown"               "26 24 22 20 18 16 14"
+       "AbilityManaCost"               "70 75 80 85 90 95 100"
+       "AbilityCastRange"              "250"
        "SpellDispellableType"		   "SPELL_DISPELLABLE_NO"
        
        "precache"
@@ -4377,7 +4372,7 @@
             "02"
             {
                  "var_type"					"FIELD_INTEGER"
-			     "count"			        "4 7 10 13"
+			     "count"			        "4 7 10 13 16 19 22"
  
             } 
             "03"
@@ -4439,7 +4434,6 @@
             }
         }   
     }
-
 	"phantom_assassin_phantom_strike"
 	{
 		// General
@@ -4450,43 +4444,42 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityTextureName"            "Hero/Assasin_strike"
 		"AbilitySound"					"Hero_PhantomAssassin.Strike.Start"
-
+        "MaxLevel"                        "7"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1000 1000 1000 1000"
 		"AbilityCastPoint"				"0.25"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"11 9 7 5"
+		"AbilityCooldown"				"12 11 10 9 8 7 6"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"35 40 45 50"
+		"AbilityManaCost"				"25 30 35 40 45 50 55"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"bonus_attack_speed"	
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"60 75 90 105"
+				"value"													"60 90 120 150 180 210 240"
+				"special_bonus_unique_phantom_assassin_strike_aspd"		"+60"
 			}
-			
-			"02"
+
+			"duration"				
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"6"
+				"value"						"2 2.25 2.5 2.75 3.0 3.25 3.5"
+				"special_bonus_unique_phantom_assassin_4"		"+0.5"
 			}
-			"03"
+			"AbilityCastRange"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"abilitycastrange"			""
-				"LinkedSpecialBonus"		"special_bonus_unique_phantom_assassin_6"				
+				"value"											"1000"
+				"special_bonus_unique_phantom_assassin_6"		"+250"				
 			}
+			"lifesteal_pct"						"5 10 15 20 25 30 35"
+
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
@@ -4497,8 +4490,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass" 					"ability_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"custom_folder/extra_kick"
-		"MaxLevel"						"4"			
+		"AbilityTextureName"			"extra_kick"
+		"MaxLevel"						"7"			
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -4511,12 +4504,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"28 27 26 25"
+				"chance"				"10 12 14 16 18 20 22"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attacks"				"1 2 3 4"
+				"attacks"				"1 1 2 2 3 3 4"
 			}
 		}
 
@@ -9900,10 +9893,10 @@
 	"BaseClass"				"ability_datadriven"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"oracle/int"
-	"MaxLevel"						"4"
+	"MaxLevel"						"7"
 	"LevelsBetweenUpgrades"			"2"
 	"RequiredLevel"					"1"
-
+   
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilitySpecial"
@@ -9911,7 +9904,7 @@
 		"01"
 		{
 			"var_type"							"FIELD_FLOAT"
-			"grow_int"							"0.4 0.6 0.8 1.0"
+			"grow_int"							"0.2 0.4 0.6 0.8 1.0 1.2 1.4"
 //			"grow_int"							"1.5 3.0 4.5 6.0 7.5"
 		}
 
@@ -9981,7 +9974,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
     	"AbilityTextureName"  "oracle/nixnixnix"
-    	"MaxLevel"            "4"
+	"MaxLevel"						"7"
     	"LevelsBetweenUpgrades" "2"
     	"RequiredLevel" "1"
 
@@ -9996,18 +9989,18 @@
          	"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"min_damage"							"50 100 150 200"
+				"min_damage"							"50 100 150 200 250 300 350"
 			}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"max_damage"					"100 200 300 400"
+				"max_damage"					"100 200 300 400 500 600 700"
 
 			}
 				"03"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"bonus_int_damage"					"0.5 1.0 1.5 2.0"
+				"bonus_int_damage"					"0.35 0.7 1.05 1.4 1.75 2.1 2.45"
 			}	
     	}  
     }
@@ -10022,15 +10015,15 @@
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
     	"AbilityTextureName"  "oracle/buff"
-    	"MaxLevel"            "4"
+    	"MaxLevel"            "7"
     	"LevelsBetweenUpgrades" "2"
     	"RequiredLevel" "1"
 
     	"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"0.01"
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"				"50 45 40 35"
-		"AbilityManaCost" "100 150 200 250"
+		"AbilityCooldown"				"60 55 50 45 40 35 30"
+		"AbilityManaCost" "100 150 200 250 300 350 400"
 
     	"AbilitySpecial"
     	{
@@ -10052,12 +10045,12 @@
 			"04"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"mnojitel"							"0.0025 0.003 0.005 0.01"
+				"mnojitel"							"0.0025 0.003 0.0035 0.04 0.0045 0.005 0.0055"
 			}	
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"hp_proc"							"10 20 30 40"
+				"hp_proc"							"10 20 30 40 50 60 70"
 			}	
 			"06"
 			{
@@ -10079,8 +10072,8 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
          "AbilityTextureName"  "oracle/time"
     	"MaxLevel"            "3"
-    	"LevelsBetweenUpgrades" "6"
-    	"RequiredLevel" "6"
+    	"LevelsBetweenUpgrades" "10"
+    	"RequiredLevel" "10"
 		"AbilitySound"					"Hero_Abaddon.BorrowedTime"
 		"AbilityCastRange"				"1000"
 		// Casting
