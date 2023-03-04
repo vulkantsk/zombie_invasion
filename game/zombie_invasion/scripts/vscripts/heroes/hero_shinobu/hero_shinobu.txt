@@ -610,11 +610,7 @@
 						"Target"	"CASTER"
 					}
 
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_shinobu/hide_in_shadows.lua"
-						"Function"		"PurgeAllTruesightModifiers"
-					}
+ 
 				}
 
 				"States"

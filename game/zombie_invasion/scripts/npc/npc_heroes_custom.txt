@@ -1667,4 +1667,41 @@
 		"StatusHealthRegen"		"1.75"
 		"MovementSpeed"		"350"	
 	}
+
+"npc_dota_hero_treant"
+	{
+		"Ability1"		"shinobu_vampire_blood"
+		"Ability2"		"shinobu_eat_oddity"
+		"Ability3"		"shinobu_kokorowatari"
+		"Ability4"		"shinobu_yumewatari_lua"  
+		"Ability5"		"generic_hidden"
+		"Ability6"		"shinobu_hide_in_shadows"
+		"Ability10"		"special_bonus_unique_treant_8"
+		"Ability11"		"special_bonus_unique_treant_12"
+		"Ability12"		"special_bonus_unique_treant_3"
+		"Ability13"		"special_bonus_unique_treant_9"
+		"Ability14"		"special_bonus_unique_treant_13"
+		"Ability15"		"special_bonus_unique_treant_2"
+		"Ability16"		"special_bonus_unique_treant_11"
+		"Ability17"		"special_bonus_unique_treant_7"
+
+
+		"ArmorPhysical"		"-1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"62"
+		"AttackDamageMax"		"70"
+		"AttackRate"		"1.900000"
+		"AttackRange"		"150"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"25"
+		"AttributeStrengthGain"		"3.400000"
+		"AttributeBaseAgility"		"15"
+		"AttributeAgilityGain"		"1.8000000"
+		"AttributeBaseIntelligence"		"20"
+		"AttributeIntelligenceGain"		"1.800000"
+		"StatusManaRegen"	"0.5"
+		"MovementSpeed"		"285"
+
+	}
+	
 }

@@ -25,7 +25,7 @@ function CreateSoul(keys)
 			soul:CreatureLevelUp(target:GetLevel() - 1)
 		end
 		soul.SpawnTime = GameRules:GetGameTime()
-		soul.DeathTime = GameRules:GetGameTime() + ability:GetAbilitySpecial("soul_duration")
+		soul.DeathTime = GameRules:GetGameTime() + ability:GetSpecialValueFor("soul_duration")
 	end
 end
 
@@ -33,7 +33,7 @@ function ChanceToKill(keys)
 	local caster = keys.caster
 	local target = keys.target
 	local ability = keys.ability
-	if not target:IsConsideredHero() and not target:IsMagicImmune() and not target:IsInvulnerable() and RollPercentage(ability:GetAbilitySpecial("chance_to_kill")) then
+	if not target:IsConsideredHero() and not target:IsMagicImmune() and not target:IsInvulnerable() and RollPercentage(ability:GetSpecialValueFor("chance_to_kill")) then
 		target:Kill(ability, caster)
 	end
 end

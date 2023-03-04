@@ -11,6 +11,7 @@ function shinobu_yumewatari_lua:OnSpellStart() if IsServer() then
 
 	if old_soul and old_soul:GetUnitName() == "npc_shinobu_soul" and old_soul:GetTeamNumber() == DOTA_TEAM_NEUTRALS and (old_soul:GetLevel() <= max_ghost_level or max_ghost_level == 0) then
 		old_soul:ForceKill(false)
+		old_soul:AddNoDraw()
 		local caster = self:GetCaster()
 		local soul = CreateUnitByName("npc_shinobu_soul", old_soul:GetAbsOrigin(), true, caster, nil, caster:GetTeam())
 		soul:SetModel(old_soul:GetModelName())

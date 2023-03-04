@@ -1,7 +1,7 @@
 function CheckInvis(keys)
 	local caster = keys.caster
 	local ability = keys.ability
-	local radius = ability:GetAbilitySpecial("ally_radius")
+	local radius = ability:GetSpecialValueFor("ally_radius")
 	local has_ally = false
 	for _,v in ipairs(FindUnitsInRadius(caster:GetTeam(), caster:GetAbsOrigin(), nil, radius, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS, FIND_ANY_ORDER, false)) do
 		if v ~= caster and v:IsRealHero() and not v:IsInvisible() then
@@ -34,11 +34,7 @@ function CheckInvis(keys)
 		end
 	end
 end
-
-function PurgeAllTruesightModifiers(keys)
-	keys.caster:PurgeTruesightModifiers()
-end
-
+ 
 function UpgradeCleanup(keys)
 	local ability = keys.ability
 	if ability.CreatedParticles then
