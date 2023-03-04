@@ -29,11 +29,11 @@ if IsServer() then
 		local ability = self:GetAbility()
 		local target = keys.target
         
-        if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance"), 1, self:GetParent()) then return end
+         
 
 		if attacker:FindAllModifiersByName(self:GetName())[1] ~= self then return end
      
-
+     	if RollPseudoRandomPercentage(self:GetAbility():GetSpecialValueFor("chance"), 1, self:GetParent()) then  
 			ApplyDamage({
 				victim = target,
 				attacker = attacker,
@@ -41,6 +41,6 @@ if IsServer() then
 				damage_type = ability:GetAbilityDamageType(),
 				damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
 			})
-		
+		end
 	end
 end
