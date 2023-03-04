@@ -158,7 +158,9 @@ end
 
 LinkLuaModifier( "modifier_special_effect_legendary", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_slark_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )
-
+LinkLuaModifier( "modifier_special_effect_admin", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_admin2", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_admin3", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
  
 function Donate:OnNPCSpawned(keys)
 	print("[BAREBONES] NPC Spawned")
@@ -179,7 +181,9 @@ function Donate:OnNPCSpawned(keys)
 	
 		addModifierBySteamID(DONATE_SET_HELPER.players,"modifier_special_effect_legendary",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_slark_skin",steamID,npc)
-
+		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin2",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin3",steamID,npc)
 --		addModifierBySteamID(				
 --[[ 	
 		if not FirstSpawned[playerID] then
@@ -193,6 +197,8 @@ function Donate:OnNPCSpawned(keys)
 	end
 
 end
+
+
 
 function addModifierBySteamID(enum,modifier_name,steamID,npc)
 	for _,ID in pairs(enum) do
