@@ -23,6 +23,7 @@
 #base "../vscripts/heroes/hero_enigma/enigma.txt"    
 #base "../vscripts/heroes/hero_slark/slark.txt"              
 #base "../vscripts/heroes/hero_drow/drow_ranger.txt"
+#base "../vscripts/heroes/hero_trent/hero_trent.txt"
 
 #base "portal/abilities.txt"
 
