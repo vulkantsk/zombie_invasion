@@ -27,6 +27,12 @@ DONATE_ITEM_SLARK = {
 	},	
 }
 
+DONATE_ITEM_SHINOBU = {
+	players = {
+
+	},	
+}
+
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -48,6 +54,15 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SLARK,
 				DONATE_SET_HELPER,
+			},
+		},
+		{
+			name = "item_strenobu_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_SHINOBU,
 			},
 		},
 
