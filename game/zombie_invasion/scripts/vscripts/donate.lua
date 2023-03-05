@@ -30,6 +30,7 @@ DONATE_ITEM_SLARK = {
 
 DONATE_ITEM_SHINOBU = {
 	players = {
+		203159402,
 
 	},	
 }
