@@ -4,15 +4,20 @@ FirstSpawned = {}
 DONATE_SET_HELPER = {
 	players = {
 	206968098,
+	946902506,
+	},
+}
+
+DONATE_SET_ULTRA_HELPER = {
+	players = {
 	203159402,
-	946902506
 	},
 }
 
 DONATE_SET_ADMIN = {
 	players = {
 		453736017,
-		877002179,
+		877002179
 
 	},
 }
@@ -55,6 +60,7 @@ DONATE_ITEMS = {
 			can_be_bought = true,
 			count = 1,
 			sets ={
+				DONATE_SET_ULTRA_HELPER,
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SLARK,
 				DONATE_SET_HELPER,
@@ -66,6 +72,7 @@ DONATE_ITEMS = {
 			count = 1,
 			sets ={
 				DONATE_SET_ADMIN,
+				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_SHINOBU,
 			},
 		},
@@ -78,6 +85,7 @@ DONATE_ITEMS = {
 			count = 1,
 			sets ={
 				DONATE_SET_ADMIN,
+				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_MIDAS,
 				DONATE_SET_HELPER,
 			},
@@ -183,6 +191,7 @@ LinkLuaModifier( "modifier_special_effect_slark_skin", "modifiers/donate/modifie
 LinkLuaModifier( "modifier_special_effect_admin", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_admin2", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_admin3", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_legendary2", "modifiers/donate/modifier_special_effect_legendary2", LUA_MODIFIER_MOTION_BOTH )	
  
 function Donate:OnNPCSpawned(keys)
 	print("[BAREBONES] NPC Spawned")
@@ -206,6 +215,7 @@ function Donate:OnNPCSpawned(keys)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin2",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin3",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ULTRA_HELPER.players,"modifier_special_effect_legendary2",steamID,npc)
 --		addModifierBySteamID(				
 --[[ 	
 		if not FirstSpawned[playerID] then

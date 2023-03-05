@@ -111,7 +111,8 @@
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
 		"npc_dota_hero_terrorblade"                                      "Terrorblyad" 		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 		
-		"npc_dota_hero_treant"                                      "Shinoba" 
+		"npc_dota_hero_treant"                                      "Shinoba"
+
 
 		// ******************** moobs ********************	
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
@@ -132,6 +133,8 @@
 	    "npc_gate"                                                       "Ворота"
 	    "npc_grave"                                                       "Могила"
         "npc_shinobu_soul"                                                 "Душа"
+        "npc_gurd_jitel"													"Гурд"
+        "npc_kamen_jitel"													"Место для дерева"
 
 		"npc_base"                                                  		"Homer"
 	    "npc_EdgardBs"        "npc_Edgard"
@@ -267,6 +270,24 @@
 		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
 		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Находится в призрачной форме. Получает увеличенный на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% магический урон, не может атаковать или быть целью атаки."
 		
+
+		"DOTA_Tooltip_ability_item_leaf" "Росток"
+
+		"DOTA_Tooltip_ability_item_leaf_Description" "Гласят легенды, если его где-то посадить то вы сможете получить вечный огонь..."
+		"DOTA_Tooltip_ability_item_leaf_lore" "Это правда!"
+
+		"DOTA_Tooltip_ability_item_pizza1" "Заготовка для пиццы"
+		"DOTA_Tooltip_ability_item_pizza1_Description" "Заготовка пиццы из другого мира прибавляет 10 ко всем атрибутам"
+		"DOTA_Tooltip_ability_item_pizza1_Lore" "Заготовка для пиццы, выглядит не очень питательно."
+
+		"DOTA_Tooltip_ability_item_pizza2" "Пицца из другого мира"
+		"DOTA_Tooltip_ability_item_pizza2_Description" "Съев легендарную яичную пиццу она прибавляет 30 ко всем атрибутам, но из вашего рта начинает пахнуть яйцами.
+		P.s если дать её Гурду возможно что-то случится.."
+		"DOTA_Tooltip_ability_item_pizza2_Lore" "Яичное комбо в одной пицце"
+
+		"DOTA_Tooltip_ability_item_fire" "ВЕЧНЫЙ ОГОНЬ!?"
+		"DOTA_Tooltip_ability_item_fire_Description" "Вечно горящая штука, на запах очень мерзкая."
+		"DOTA_Tooltip_ability_item_fire_Lore" "Горит и горит."
 
         "DOTA_Tooltip_Ability_item_bloodstone_max"				"Bloodstone"
 		"DOTA_Tooltip_ability_item_bloodstone_max_Description"						"<h1>Активное: Bloodpact</h1> Увеличивает вампиризм заклинаниями от этого предмета в %lifesteal_multiplier% раза. По окончании эффекта превращает %mana_multiplier%%  нанесённого урона в ману. Длительность: %buff_duration% сек."
@@ -1177,7 +1198,49 @@
 		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"КОЛИЧЕСТВО :"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"ЗОЛОТА:"
- 
+ 	
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"Гурд"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_01_Description"						"О страник привет, неинтересует ли тебя мой артефакт? Он наполнен силой золота и может сделать тебя сильным! Только знаешь ли я очень оголодал и не могу его призвать, Знаешь всё таки очень трудно что-то сделать в нынешних условиях, Да и еду сложно самому найти, давай лучше сделаем так ты выполнешь пару моих заданий, А я дам тебе артефакт!
+ 		Так вот для начала принеси мне 10 мяса."
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_02"									"Гурд"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_02_Description"						"Такс, теперь мне не хватает творога. Мог бы ты добыть его для меня?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_gold" 						"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_03"									"Гурд"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_03_Description"						"Такс, и вот почти всё готово! Осталось лишь дать мне 2 яйца, случаем не завалялись ли они у тебя в штанах?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_gold" 						"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_04"									"Гурд"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_04_Description"						"Так-с Держи заготовку пиццы но теперь нам не хватает 1 ингридеента Вечного огня! только забыл я что-то где я его закопал пока переберался в этот мир,
+ 		возможно у тебя получится его отыскать и дать мне?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_gold" 						"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_05"									"Гурд"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_05_Description"						"Так-с Теперь можешь вернуть ту заготовку для пиццы и ты получишь артефакт!"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_reward_gold" 						"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kamen" ""
+		"DOTA_Tooltip_Ability_quest_test_kamen_Description" "Такс-с Здесь можно посадить Росток."
+		"DOTA_Tooltip_Ability_quest_test_kamen_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kamen_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kamen_reward_gold" 						"ЗОЛОТА:"
 
  		"DOTA_Tooltip_Ability_quest_test01"										"Ох мясо мясо мясо..."
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Тере-зызызы)) Ты пришел сюда послушать мою историю? Что, всмысле нет, знаю что хочешь. Но я капец як проголодался. Принеси мне пару штук мяса, они падают сам знаешь где, еще объяснять тебе такие простые вещи буду якорь мне в зад. "

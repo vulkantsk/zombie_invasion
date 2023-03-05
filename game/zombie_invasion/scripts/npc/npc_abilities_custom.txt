@@ -1528,6 +1528,264 @@
         }      
        
     }
+     "quest_test_gurd_01"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "10"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "25"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "25"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_meat"
+                "particle"        "1"
+                "next_quest"    "quest_test_gurd_02"
+                "reusable"        "0"
+            }
+        }                 
+    }
+    "quest_test_gurd_02"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "50"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "50"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_tvorog"
+                "particle"        "1"
+                "next_quest"    "quest_test_gurd_03"
+                "reusable"        "0"
+            }
+        }                 
+    }
+    "quest_test_gurd_03"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "2"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "75"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "75"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_eggs"
+                "reward_item"    "item_pizza1"
+                "particle"        "1"
+                "next_quest"    "quest_test_gurd_04"
+                "reusable"        "0"
+            }
+        }
+    }
+        "quest_test_gurd_04"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "100"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "100"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_fire"
+                "particle"        "1"
+                "next_quest"    "quest_test_gurd_05"
+                "reusable"        "0"
+            }
+        }                                  
+    }
+      "quest_test_gurd_05"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "125"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "125"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_pizza1"
+                "reward_item"    "item_pizza2"
+                "particle"        "1"
+                //"next_quest"    "quest_test_woman02"
+                "reusable"        "0"
+            }
+        }                                  
+    }
+      "quest_test_kamen"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/pig_meat"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "40"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "40"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_leaf"
+                "reward_item"    "item_fire"
+                "particle"        "1"
+                //"next_quest"    "quest_test_woman02"
+                "reusable"        "0"
+            }
+        }                                  
+    }
+
+
+
 
 	"blood_effect"
 	{
