@@ -232,6 +232,11 @@
         "npc_classic_doom_crampus" 	                                                	"Отродье Ада"
 
 		// ******************** Предметы********************
+
+		"DOTA_Tooltip_ability_item_strenobu_change" "<font color='#c10020'>KAWAI SHINOBU CHAN"
+		"DOTA_Tooltip_ability_item_strenobu_change_Description" "Меняет выбранного героя на самого кавайного, милого, убийственного SHINOBU"
+		"DOTA_Tooltip_ability_item_strenobu_change_Lore" "p.s ну правда же милаха?"
+
 		
 		"DOTA_Tooltip_ability_item_cursed_shield" "cursed shield"
 		"DOTA_Tooltip_ability_item_cursed_shield_Description" "С вероятностью в 80% блокирует 350 урона от атак, если владелец — герой ближнего боя, или 450 урона, если герой дальнего боя, также даёт герою +700 к здоровью и 30 восстановления здоровья"
@@ -1870,13 +1875,16 @@
   		"DOTA_Tooltip_ability_shinobu_yumewatari_lua" "shinobu yumewatari"
   		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Description" "Шинобу восстанавливает выбранную душу с уровнем ниже %max_ghost_level%. Также увеличивает урон Шинобу."
   		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Lore" "Хотя Шиноба выглядит, как лоля, на деле она невероятно сильна."
-  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_bonus_damage" "+$damage"
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_bonus_damage" "БОНУС К УРОНУ"
   		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_max_ghost_level" "МАКС. УРОВЕНЬ ДУШИ:"
 
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows" "hide in shadows"
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows_Description" "Шинобу прячется в тени союзных героев, становясь невидимой. Эта невидимость не раскрывается ничем, кроме атак самой Шинобу. Если герой, в тени которого скрывалась Шинобу будет убит, пока она невидима, то она полностью восстановит своё здоровье, станет неуязвимой к заклинаниям."
 
-
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity"	"+10% к дополнительному золоту за съеденого крипа eat oddity"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity2" "-10 секунд к перезарядке eat oddity"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+80 к урону способности yumewatari"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_kokorowatari" "+5% к моментальному убийству крипа"
 
  	// -----------------Drow_ranger-------------------
 
