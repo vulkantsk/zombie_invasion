@@ -36,17 +36,15 @@ function InvasionMode:InvasionMap()
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
+ 
 	GameRules:SetSameHeroSelectionEnabled(false)
-	
- 
- 
  
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )	
  
  
  	GameRules:GetGameModeEntity():SetCustomBuybackCostEnabled( true )
-	GameRules:GetGameModeEntity():SetBuybackEnabled( true )
+ 
 	PlayerResource:SetCustomBuybackCost(0,1000)
 
     GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
@@ -459,9 +457,13 @@ function InvasionMode:NightTimer(time)
  
 
 			Timers:CreateTimer(DEFAULT_NIGHTTIME , function()
-								if randomheroess >= 1 then 
+				if randomheroess >= 1 then 
                      	InvasionMode:RandomHeroes()  
                     end
+				if oneDownHeroess >= 1 then 
+                     	InvasionMode:RespawnAllHeroes() 
+                    end
+                     
 				InvasionMode:NextNight()
 				UpgradeUnitStats(putin, 1.2)
 			end)
@@ -488,7 +490,10 @@ function InvasionMode:InvasionGameStart()
      if randomheroess >= 1 then 
      	InvasionMode:RandomHeroes()  
      end
-  
+     if oneDownHeroess >= 1 then 
+     	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
+     end  
+
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
@@ -605,6 +610,33 @@ function InvasionMode:RandomHeroes()
  
 end
 
+function InvasionMode:RespawnAllHeroes()  
+ -- Обычнй конец
+ 	local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+
+	local heroes =  
+         FindUnitsInRadius(
+            DOTA_TEAM_BADGUYS, -- int, your team number
+            point, -- point, center point
+            nil,    -- handle, cacheUnit. (not known)
+            -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
+            DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
+            DOTA_UNIT_TARGET_HERO, -- int, type filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_DEAD + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            0,  -- int, order filter
+            false   -- bool, can grow cache
+        )
+
+     for _,hero in pairs( heroes ) do
+         	
+         	if not hero:IsAlive() then 
+			newHero:RespawnHero(false, false) 
+		end
+ 
+     end	
+ 
+ 
+end
 function InvasionMode:UsuallyEnd()  
  -- Обычнй конец
 
@@ -769,8 +801,28 @@ function InvasionMode:InvasionEntityKilled (data)
  
  	if killedEntity:IsRealHero() and killedEntity:IsReincarnating() == false then
 
- 	if killedEntity:HasModifier("modifier_survior_passive") then 
-		killedEntity:SetTimeUntilRespawn( 2 )
+ 	if oneDownHeroess >= 1 then 
+ 		local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+		killedEntity:SetRespawnsDisabled(true)
+		local heroes =  
+         FindUnitsInRadius(
+            DOTA_TEAM_BADGUYS, -- int, your team number
+            point, -- point, center point
+            nil,    -- handle, cacheUnit. (not known)
+            -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
+            DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
+            DOTA_UNIT_TARGET_HERO, -- int, type filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            0,  -- int, order filter
+            false   -- bool, can grow cache
+        )
+    		  local result = #heroes > 0 and '' or "true"
+            print(#heroes)
+                  print(result)
+           if result ~= '' then 
+           	GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
+           end
+
 	elseif killedEntity:GetLevel() <= 10 then 
           killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )  
 	else  
@@ -808,12 +860,12 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_EdgardBs" then
     		 local jitels = {
-    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base",
+    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base","edgard_ed",
    		 }
  
                for i,name in ipairs(jitels) do
                    local unit = Entities:FindByName(nil,name)    
-
+                   
                    if unit then 
                    	local unit_origin = unit:GetAbsOrigin()
                    	unit:Destroy()

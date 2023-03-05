@@ -23,9 +23,10 @@
 		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 25%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
 		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 50%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
  	
- 			"difficulty_description_randomheroes" "<font color='#ffff00'>После каждой успешно пройденной ночи, вам будут выдавать нового героя!</font>!"
- 		
+ 		"difficulty_description_randomheroes" "<font color='#ffff00'>После каждой успешно пройденной ночи, вам будут выдавать нового героя!</font>!"
+ 		 "difficulty_description_onedown" "<font color='#c10020'>У ВАС ТОЛЬКО ОДНА ЖИЗНЬ</font>(возродиться можно после успешно пройденной ночи)"
 
+ 
 		//guide
 		"htpbtn"				"Как Играть"
 		
