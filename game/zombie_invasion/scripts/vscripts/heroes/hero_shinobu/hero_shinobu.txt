@@ -266,24 +266,26 @@
 		"AbilityCooldown"				"50.0 47.5 45.0 42.5 40.0 37.5 35.0"
 		"AbilityManaCost"				"50"
 		"AbilityCastAnimation"			"ACT_DOTA_ATTACK"
-		"AbilitySpecial"
+		//special
+		//------------------------------------------------------------------
+		"AbilityValues"
 		{
-			"01"
+			"bonus_gold_pct"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_gold_pct"		"20 40 60 80 100 120 140"
+			
+				"value"		"20 40 60 80 100 120 140"
+				"special_bonus_unique_shinobu_eat_oddity" "+20"
 			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
 				"buff_duration"			"30"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"buff_health_pct"		"30 35 40 45 50 55 60"
-			}
-		}
+
+			"AbilityCooldown"
+			{
+				"value"				"50.0 47.5 45.0 42.5 40.0 37.5 35.0"
+			
+				"special_bonus_unique_shinobu_eat_oddity2" "-10"
+			}	
+		}	
 
 		"OnSpellStart"
 		{
@@ -316,23 +318,16 @@
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_range" "22 44 66 111 122 144 177"
-			}
-			"02"
+			"chance_to_kill"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"chance_to_kill"	"7"
+				"value"	"2"
+				"special_bonus_unique_shinobu_shinobu_kokorowatari" "+5"
 			}
-			"03"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"soul_duration"		"7"
-			}
+			"soul_duration"		"7"
 		}
 
 		"Modifiers"
@@ -419,18 +414,15 @@
 		"AbilityManaCost"				"20"
 		"LevelsBetweenUpgrades"			"4"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"bonus_damage"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"		"50 70 90 110 150 170 220"
+				
+				"value"		"50 70 90 110 150 170 220"
+				"special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+80"
 			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
 				"max_ghost_level"	"3 5 8 12 16 20 35"
-			}
 		}
 	}
 
@@ -438,7 +430,7 @@
 	{
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"shinobu/shinobu_hide_in_shadows"
-		"MaxLevel" 						"7"
+		"MaxLevel" 						"1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 
@@ -447,12 +439,12 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"ally_radius"		"300 350 400 450 500 550 600"
+				"ally_radius"		"600"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"fade_time"			"5.0 4.5 4.0 3.5 3.0 2.5 2.0"
+				"fade_time"			"2.5"
 			}
 			"03"
 			{
@@ -642,5 +634,37 @@
 				}
 			}
 		}
+	}
+	"special_bonus_unique_shinobu_eat_oddity"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_shinobu_eat_oddity2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_shinobu_shinobu_yumewatari_lua"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_shinobu_shinobu_kokorowatari"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	}
 }
