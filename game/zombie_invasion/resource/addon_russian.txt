@@ -1881,7 +1881,7 @@
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows" "hide in shadows"
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows_Description" "Шинобу прячется в тени союзных героев, становясь невидимой. Эта невидимость не раскрывается ничем, кроме атак самой Шинобу. Если герой, в тени которого скрывалась Шинобу будет убит, пока она невидима, то она полностью восстановит своё здоровье, станет неуязвимой к заклинаниям."
 
-  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity"	"+10% к дополнительному золоту за съеденого крипа способностью eat oddity"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity"	"+10% к дополнительному золоту за съеденого крипа eat oddity"
   		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity2" "-10 секунд к перезарядке eat oddity"
   		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+80 к урону способности yumewatari"
   		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_kokorowatari" "+5% к моментальному убийству крипа"
