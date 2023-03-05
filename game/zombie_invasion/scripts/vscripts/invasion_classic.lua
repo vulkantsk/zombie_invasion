@@ -581,20 +581,25 @@ function InvasionMode:RandomHeroes()
            		modif_table[v] = oldHero:GetModifierStackCount(modif_name,nil)   
 
        		end   
-    		end  
+    		end   
 		for i = 0, 23 do 
 			local item = oldHero:GetItemInSlot( i ) 
 			if item ~= nil then 
 				items_table[item:GetName()] = item:GetCurrentCharges() 
+
+		 
 				item:RemoveSelf() 
 			end 
 		end 
+ 
+
 		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
 		newHero:RespawnHero(false, false) 
-		
+	 
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
 		for item,stacks in pairs(items_table) do 
+			print(item)
 			local item = newHero:AddItemByName(item) 
 			item:SetCurrentCharges(stacks)
 		end 
@@ -802,6 +807,7 @@ function InvasionMode:InvasionEntityKilled (data)
  	if killedEntity:IsRealHero() and killedEntity:IsReincarnating() == false then
 
  	if oneDownHeroess >= 1 then 
+ 	Timers:CreateTimer(5, function()  
  		local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
 		killedEntity:SetRespawnsDisabled(true)
 		local heroes =  
@@ -817,11 +823,11 @@ function InvasionMode:InvasionEntityKilled (data)
             false   -- bool, can grow cache
         )
     		  local result = #heroes > 0 and '' or "true"
-            print(#heroes)
-                  print(result)
+ 
            if result ~= '' then 
            	GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
            end
+     end)
 
 	elseif killedEntity:GetLevel() <= 10 then 
           killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )  
