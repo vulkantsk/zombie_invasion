@@ -10,7 +10,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5365"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
         "MaxLevel"                      "7"
 		// Casting
@@ -57,7 +57,7 @@
 		"ScriptFile"					"heroes/hero_alchemist/unstable_concoction/unstable_concoction"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityTextureName"			"alchemist_unstable_concoction"
@@ -130,6 +130,13 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"movement_speed"			"900"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_pct"					"100 150 200 250 300 350 400 450"
+				"CalculateSpellDamageTooltip"	"0"
+
 			}
 		}
 	}

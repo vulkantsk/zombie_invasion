@@ -635,7 +635,7 @@ function InvasionMode:RespawnAllHeroes()
      for _,hero in pairs( heroes ) do
          	
          	if not hero:IsAlive() then 
-			newHero:RespawnHero(false, false) 
+			hero:RespawnHero(false, false) 
 		end
  
      end	
@@ -807,9 +807,10 @@ function InvasionMode:InvasionEntityKilled (data)
  	if killedEntity:IsRealHero() and killedEntity:IsReincarnating() == false then
 
  	if oneDownHeroess >= 1 then 
- 	Timers:CreateTimer(5, function()  
+ 
  		local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
 		killedEntity:SetRespawnsDisabled(true)
+		Timers:CreateTimer(5, function()  
 		local heroes =  
          FindUnitsInRadius(
             DOTA_TEAM_BADGUYS, -- int, your team number

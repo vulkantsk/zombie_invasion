@@ -1263,6 +1263,7 @@
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"					"После броска действие способности не усиливается."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"				"МАКС. ОГЛУШЕНИЕ:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"				"МАКС. УРОН:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage_pct"				"%МАКС. УРОН ОТ АТАКИ:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"					"РАДИУС ВЗРЫВА:"
 
         // -------------luna ----------

@@ -81,7 +81,7 @@ function alchemist_unstable_concoction_custom:OnSpellStart()
 	local extra_brew_time = self:GetSpecialValueFor("extra_brew_time")
 	local duration = self.brew_time + extra_brew_time
 	self.stun = self:GetSpecialValueFor("stun")
-	self.damage = self:GetSpecialValueFor("damage")
+	self.damage = self:GetSpecialValueFor("damage") + (self:GetCaster():GetBaseDamageMax() * (self:GetSpecialValueFor("damage_pct") /100))
 	local greed_modifier = caster:FindModifierByName("modifier_imba_goblins_greed_passive")
 	if greed_modifier then
 		local greed_stacks = greed_modifier:GetStackCount()
@@ -123,7 +123,7 @@ function alchemist_unstable_concoction_custom:OnProjectileHit(target, location)
 			if target then
 				location = target:GetAbsOrigin()
 			end
-			local units = FindUnitsInRadius(caster:GetTeam(), location, nil, radius, self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags() - DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO, FIND_ANY_ORDER, false)
+			local units = FindUnitsInRadius(caster:GetTeam(), location, nil, radius, self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), FIND_ANY_ORDER, false)
 
 			local brew_percentage = brew_duration / self.brew_time
 

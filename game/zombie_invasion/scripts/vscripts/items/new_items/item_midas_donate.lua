@@ -52,6 +52,9 @@ end
 function modifier_item_midas_donate:CheckState()
     local state = {
     [MODIFIER_STATE_NO_HEALTH_BAR]=true,     --MODIFIER_STATE_PROVIDES_VISION
+        [MODIFIER_STATE_NO_UNIT_COLLISION]=true,     --MODIFIER_STATE_PROVIDES_VISION
+
+     
 }      
     return state
 end
