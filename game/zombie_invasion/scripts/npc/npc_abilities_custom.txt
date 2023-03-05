@@ -1484,6 +1484,51 @@
        
     }
 
+   		    "quest_test_edgard"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/eggs"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "999999"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "999999"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_color_green"
+                "reward_item"    "item_color_green"
+                "particle"        "1"
+               // "next_quest"    "quest_test_woman02"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+
 	"blood_effect"
 	{
 		"BaseClass"                 "ability_datadriven"
@@ -7920,6 +7965,40 @@
 		{
 
 			"damage_radius"							"250"
+			"stun_duration"
+			{
+				"value"		"1.2"
+			    "CalculateSpellDamageTooltip"	"1"
+			}
+ 
+
+		}
+	}
+
+"smash_of_edgard"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+//		"AbilityTextureName"			"bogduggs_cudgel"
+		"ScriptFile"					"abilities/zombie/Boss/smash_of_mutant"
+
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+ 
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			"damage_radius"							"1500"
 			"stun_duration"
 			{
 				"value"		"1.2"

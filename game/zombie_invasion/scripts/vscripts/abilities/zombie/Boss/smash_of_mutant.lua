@@ -1,4 +1,5 @@
 smash_of_mutant = class({})
+smash_of_edgard = class({})
 LinkLuaModifier( "modifier_smash_of_mutant", "abilities/zombie/boss/smash_of_mutant", LUA_MODIFIER_MOTION_NONE )
 
 ----------------------------------------------------------------------------------------
@@ -15,6 +16,13 @@ end
 function smash_of_mutant:GetIntrinsicModifierName()
 	return "modifier_smash_of_mutant"
 end
+
+function smash_of_edgard:GetIntrinsicModifierName()
+	return "modifier_smash_of_mutant"
+end
+
+
+ 
 
 modifier_smash_of_mutant = class({})
 

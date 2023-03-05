@@ -130,9 +130,11 @@
 		"npc_cemetery_skelet"		                                        "Скелет" 		
 	    "npc_gate"                                                       "Ворота"
 	    "npc_grave"                                                       "Могила"
+        "npc_shinobu_soul"                                                 "Душа"
 
 		"npc_base"                                                  		"Homer"
-
+	    "npc_EdgardBs"        "npc_Edgard"
+	     "npc_Edgard_jitel"        "npc_Edgard"
 		"npc_classic_pig"                                                  	"Свинья"
 		"npc_classic_big_pig"                                                  	"Большая Свинья"
 		"npc_classic_sheep"                                                 "Овца"
@@ -1164,7 +1166,13 @@
 "DOTA_Tooltip_Ability_greevil_Description" "Сколько же подарков вам достанется?"
 
 // ******************** квесты ********************
+ 		"DOTA_Tooltip_Ability_quest_test_edgard"										"npc_Edgard"
+		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"Как-то я очень сильно набухался в таверне и пошел домой. В дом жена меня не пустила, а я ну че, не под дверью же ночевать, пошел в амбар. Лежу, почти отрубился и слышу, что кто-то зашел в амбар. Подумал: Все таки приперлась, на сене конечно удобно спать, но дом есть дом. Поднимаю голову, а там БЕЗГОЛОВЫЙ МУЖИК! Я тогда так пересрался, что решил, больше пить не буду. Встаю с сена, предпренимаю попытки бежать но... "
+		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"КОЛИЧЕСТВО :"
+		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"ЗОЛОТА:"
  
+
  		"DOTA_Tooltip_Ability_quest_test01"										"Ох мясо мясо мясо..."
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Тере-зызызы)) Ты пришел сюда послушать мою историю? Что, всмысле нет, знаю что хочешь. Но я капец як проголодался. Принеси мне пару штук мяса, они падают сам знаешь где, еще объяснять тебе такие простые вещи буду якорь мне в зад. "
 		"DOTA_Tooltip_Ability_quest_test01_value_required"     							"КОЛИЧЕСТВО МЯСА:"

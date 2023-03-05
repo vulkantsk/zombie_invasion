@@ -191,7 +191,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  ""
+		"Ability1"					  "smash_of_edgard"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
@@ -208,8 +208,9 @@
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"			"999999"
 		"AttackDamageMax"			"999999"
-		"AttackRange"				"160"		// Range within a target can be attacked.
-		
+		"AttackRange"				"900"		// Range within a target can be attacked.
+		        "BaseAttackSpeed"			"50"		     
+
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"				"0.0"
@@ -261,6 +262,92 @@
 		}	
 	}
  
+"npc_Edgard_jitel"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/omniknight/omniknight.vmdl"
+		"ModelScale"				"0.8"
+		"Level"						"10"
+		"HealthBarOffset"			"150"
+		"HasInventory"				"0"
+		"ConsideredHero"			"0"
+		"IsNeutralUnitType"         "1"
+		"IsAncient"                 "1"
+ 
+ 
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					  "quest_test_edgard"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+
+		
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0.0"
+		"BountyGoldMax"				"0.0"
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"CollisionSize"				"1"
+		
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+		
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "4507" }
+					"Wearable1" { "ItemDef" "44" }
+ 
+ 
+ 				
+				}
+		}	
+	}
+
 	"npc_base"
 {
 // General
@@ -2875,7 +2962,7 @@
 		"Level"						"1"
 		"IsSummoned"				"1"
 		"Ability1"					"shinobu_soul_unit"
-
+	   "Ability2"					""
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -2906,7 +2993,8 @@
 		//----------------------------------------------------------------
 		"StatusHealth"				"1"		// Base health.
 		"StatusHealthRegen"			"0"		// Health regeneration rate.
-
+		"StatusMana"				"1000"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
 		// Vision
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"

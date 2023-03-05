@@ -20,18 +20,30 @@ function shinobu_yumewatari_lua:OnSpellStart() if IsServer() then
 		soul:SetBaseMaxHealth(old_soul:GetMaxHealth())
 		soul:SetMaxHealth(old_soul:GetMaxHealth())
 		soul:SetHealth(old_soul:GetMaxHealth())
+		soul:SetMaxMana(old_soul:GetMaxMana())
+		soul:SetMana(old_soul:GetMaxMana())
 		soul:SetBaseDamageMin(old_soul:GetBaseDamageMin())
 		soul:SetBaseDamageMax(old_soul:GetBaseDamageMax())
 		soul:SetBaseAttackTime(old_soul:GetBaseAttackTime())
 		soul:SetAttackCapability(old_soul:GetAttackCapability())
+ 
 
 		soul:SetControllableByPlayer(caster:GetPlayerID(), true)
 		soul:SetOwner(caster)
 		soul:RemoveModifierByName("modifier_shinobu_soul_unit")
 		soul:RemoveAbility("shinobu_soul_unit")
+ 		for i=0,9 do 
+			local ability_target = old_soul:GetAbilityByIndex(i)
+			local ability_name = ability_target and ability_target:GetAbilityName() or nil
+      		if ability_name and ability_name ~= "shinobu_soul_unit" then 
+				soul:AddAbility(ability_name):SetLevel(1)
+			end
+     	end
 		if old_soul:GetLevel() > 1 then
 			soul:CreatureLevelUp(old_soul:GetLevel() - 1)
 		end
+
+
 	end
 end end
 

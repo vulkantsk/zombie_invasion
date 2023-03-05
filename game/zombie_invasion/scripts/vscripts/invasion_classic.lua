@@ -536,7 +536,7 @@ function InvasionMode:RandomHeroes()
 "modifier_item_ultimate_scepter_consumed_alchemist","modifier_item_moon_shard_consumed","modifier_alchemist_scepter_bonus_damage","modifier_tide_health","modifier_veteran_grow_water_2",
 "tome_strenght_modifier",
 "tome_agility_modifier",
-"tome_intelect_modifier","modifier_int_buff","modifier_lion_finger_of_death_lua",}
+"tome_intelect_modifier","modifier_int_buff","modifier_lion_finger_of_death_lua","modifier_item_pirog_tank","modifier_item_pirog_magic","modifier_item_pirog_dps","modifier_bone",}
  
 	local heroes =  
          FindUnitsInRadius(
@@ -801,11 +801,28 @@ function InvasionMode:InvasionEntityKilled (data)
 	if killedEntity:GetUnitName() == "npc_skelet_boss" and killedEntity:IsReincarnating() == false then
 		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
 	end	
+
+	if killedEntity:GetUnitName() == "npc_Edgard_jitel" and killedEntity:IsReincarnating() == false then
+		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
+	end	
+
 	if killedEntity:GetUnitName() == "npc_EdgardBs" then
-	    for i=1,50000 do
-	         local unit = CreateUnitByName("npc_EdgardBs", killedEntity:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-	    end 
-     GameRules:SendCustomMessage("<font color='#c10020'>)))</font>", 0, 0)
+    		 local jitels = {
+    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base",
+   		 }
+ 
+               for i,name in ipairs(jitels) do
+                   local unit = Entities:FindByName(nil,name)    
+
+                   if unit then 
+                   	local unit_origin = unit:GetAbsOrigin()
+                   	unit:Destroy()
+                   	local unit_ed = CreateUnitByName("npc_Edgard_jitel", unit_origin, true, nil, nil, DOTA_TEAM_GOODGUYS)
+
+                   end
+               end
+
+          GameRules:SendCustomMessage("<font color='#c10020'>.............................................................</font>", 0, 0)
 	end	
  
 

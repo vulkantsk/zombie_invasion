@@ -17,10 +17,20 @@ function CreateSoul(keys)
 		soul:SetBaseMaxHealth(target:GetMaxHealth())
 		soul:SetMaxHealth(target:GetMaxHealth())
 		soul:SetHealth(target:GetMaxHealth())
+		soul:SetMaxMana(target:GetMaxMana())
+		soul:SetMana(target:GetMaxMana())
 		soul:SetBaseDamageMin(target:GetBaseDamageMin())
 		soul:SetBaseDamageMax(target:GetBaseDamageMax())
 		soul:SetBaseAttackTime(target:GetBaseAttackTime())
 		soul:SetAttackCapability(target:GetAttackCapability())
+
+		for i=0,9 do 
+			local ability_target = target:GetAbilityByIndex(i)
+			local ability_name = ability_target and ability_target:GetAbilityName() or nil
+      		if ability_name and ability_name ~= "respawn" then 
+				soul:AddAbility(ability_name)
+			end
+     	end
 		if target:GetLevel() > 1 then
 			soul:CreatureLevelUp(target:GetLevel() - 1)
 		end
@@ -43,6 +53,7 @@ function UpdateHealthTimer(keys)
 	if caster:IsAlive() then
 		if GameRules:GetGameTime() > caster.DeathTime then
 			caster:ForceKill(false)
+			caster:AddNoDraw()
 		else
 			caster:SetHealth(math.max(caster:GetMaxHealth() * (caster.DeathTime - GameRules:GetGameTime())/(caster.DeathTime - caster.SpawnTime), 1))
 		end
