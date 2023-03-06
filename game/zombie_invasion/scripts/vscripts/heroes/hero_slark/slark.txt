@@ -164,13 +164,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityValues"
 		{
-             "agi_gain"					"3"
-             "chance_per_level_tooltip"		"10"
-			"duration"				
+			"agi_gain"
 			{
-				"value"				"10 20 30 40 50 60 120"
-				"special_bonus_unique_slark_essence_duration"		"+15"
-			} 
+				"value"						"3"
+            	"special_bonus_unique_slark_agi_gain" "+1"
+            }
+             "chance_per_level_tooltip"		"10"
+			"duration"				"10 20 30 40 50 60 120"
 		}
  
 	}
@@ -207,7 +207,7 @@
 	    "AbilityValues"
 		{
         	 "duration"					"16"
-        	 "incom_damage"					"25"
+        	 "incom_damage"					"20"
         	 "damage_roof"                 "250"
         	 "stack_count"                 "5"
 		}
@@ -255,7 +255,7 @@
 			"bonus_bat"				
 			{
 				"value"				"1.2 1.1 1.0"
-				"special_bonus_unique_slark_shadow_bonus_bat"		"-1.0"
+				"special_bonus_unique_slark_shadow_bonus_bat"		"-0.1"
 			} 
 		}
  
@@ -271,7 +271,7 @@
 	
 	}
 
-	"special_bonus_unique_slark_essence_duration"
+	"special_bonus_unique_slark_agi_gain"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------

@@ -1545,6 +1545,7 @@
 		"DOTA_Tooltip_ability_slark_essence_shift_lua_agi_gain"						"ДАЁТ ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_slark_essence_shift_lua_duration"						"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_slark_essence_shift_lua_chance_per_level_tooltip"						"%ШАНС ЗА КАЖДЫЙ УРОВЕНЬ:"
+		"DOTA_Tooltip_ability_special_bonus_unique_slark_agi_gain" "+1 к ловкости от способности Essence Shift"
 
   		"DOTA_Tooltip_modifier_slark_essence_shift_lua"                            	"Essence Shift"
 		"DOTA_Tooltip_modifier_slark_essence_shift_lua_Description"                	"Дает %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS% ловкости."

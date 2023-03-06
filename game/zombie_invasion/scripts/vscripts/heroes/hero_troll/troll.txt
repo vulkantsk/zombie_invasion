@@ -394,7 +394,7 @@
 		"AbilityValues"
 		{
 			"locked_attack_speed"			"734"
-			"pct_damage_per_attack_speed"	"0.1"
+			"pct_damage_per_attack_speed"	"0.3"
 		}
 	}
 	"Troll_inner_beast"
