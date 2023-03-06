@@ -53,12 +53,12 @@
              "pulse_interval"		"0.1"
 			 "chance_scepter"		
 			 {
-				"value"		"5"
+				"value"		"15"
 				"RequiresScepter"			"1"
 			 }
 			 "damage_scepter"		
 			 {
-				"value"		"75"
+				"value"		"80"
 				"RequiresScepter"			"1"
 			 }
 			  
@@ -95,7 +95,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
 		"AbilityCharges"                "2"
-		"AbilityManaCost"				"45 50 55 60 65 70 75"
+		"AbilityManaCost"				"0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@
 				"value"				"2.0"
 				"special_bonus_unique_slark_ponce_hp_regen_pct"		"+2.5"
 			} 
-             "hp_regen"		"60 80 100 120 140 160 180"
+             "hp_regen"		"90 110 130 150 170 190 220"
 
              "pounce_acceleration"	"7000.0"
 
@@ -168,8 +168,8 @@
              "chance_per_level_tooltip"		"10"
 			"duration"				
 			{
-				"value"				"30 40 50 60 70 80 90"
-				"special_bonus_unique_slark_essence_duration"		"+30"
+				"value"				"10 20 30 40 50 60 120"
+				"special_bonus_unique_slark_essence_duration"		"+15"
 			} 
 		}
  
@@ -198,7 +198,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60.0"
+		"AbilityCooldown"				"30.0"
 		"AbilityManaCost"				"125"
  
 		// Special
@@ -206,9 +206,9 @@
 
 	    "AbilityValues"
 		{
-        	 "duration"					"10"
-        	 "incom_damage"					"35"
-        	 "damage_roof"                 "475"
+        	 "duration"					"16"
+        	 "incom_damage"					"25"
+        	 "damage_roof"                 "250"
         	 "stack_count"                 "5"
 		}
  
@@ -248,14 +248,14 @@
 		{
 			"duration"				
 			{
-				"value"				"4.0 4.5 5.0"
+				"value"				"3.0 4.0 5.0"
 				"special_bonus_unique_slark_shadow_duration"		"+1"
 			} 
-             "bonus_regen_pct"			"250"
+             "bonus_regen_pct"			"300"
 			"bonus_bat"				
 			{
-				"value"				"1.2 1.15 1.1"
-				"special_bonus_unique_slark_shadow_bonus_bat"		"-0.15"
+				"value"				"1.2 1.1 1.0"
+				"special_bonus_unique_slark_shadow_bonus_bat"		"-1.0"
 			} 
 		}
  

@@ -394,7 +394,7 @@
 		"AbilityValues"
 		{
 			"locked_attack_speed"			"734"
-			"pct_damage_per_attack_speed"	"0.2"
+			"pct_damage_per_attack_speed"	"0.1"
 		}
 	}
 	"Troll_inner_beast"
@@ -420,8 +420,8 @@
 			"radius"				"1200"
 			"bonus_attack_speed"
 			{
-				"value"									"90 120 150"
-				"special_bonus_unique_beastmaster_4"		"+10"
+				"value"									"90 120 160"
+				"special_bonus_unique_beastmaster_4"		"+40"
 			}
 		}
 	}
