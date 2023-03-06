@@ -1781,12 +1781,15 @@
 
 	// -----------------Troll--------------------
 
-        "DOTA_Tooltip_ability_beastmaster_inner_beast"	"Force of nature"
-       "DOTA_Tooltip_ability_beastmaster_inner_beast_Lore"	"У троля так много природный силы, что он готов ей делиться с союзниками."
-
-        "DOTA_Tooltip_modifier_beastmaster_inner_beast"	"Force of Nature"
+        "DOTA_Tooltip_ability_Troll_inner_beast"	"Force of nature"
+        "DOTA_Tooltip_ability_Troll_inner_beast_radius" "РАДИУС:"
+        "DOTA_Tooltip_ability_Troll_inner_beast_bonus_attack_speed" "БОНУСНАЯ СКОРОСТЬ АТАКИ:"
+        "DOTA_Tooltip_ability_Troll_inner_beast_Lore"	"У троля так много природный силы, что он готов ей делиться с союзниками."
+        "DOTA_Tooltip_modifier_Troll_inner_beast"	"Force of Nature"
  
-
+        "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
+		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
+		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
 
        "DOTA_Tooltip_ability_frostivus2018_troll_warlord_fervor"	"Fervor"
        "DOTA_Tooltip_ability_frostivus2018_troll_warlord_fervor_Description"	"Каждый последующий удар по одной и той же цели увеличивает скорость атаки героя. Если сменить цель, число эффектов уменьшится вдвое."

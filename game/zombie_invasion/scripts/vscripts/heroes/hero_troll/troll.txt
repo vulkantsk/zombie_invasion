@@ -71,7 +71,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"base_attack_time"		"1.45"
+				"base_attack_time"		"1.2"
 			}	
 			"07"
 			{
@@ -378,6 +378,50 @@
 				"RequiresScepter"	"1"
 			}
 			
+		}
+	}
+	"innate_giant_strikes"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"heroes/hero_troll/giant_strikes/giant_strikes"
+		"AbilityTextureName"		"innate_giant_strikes"
+		"MaxLevel"					"1"
+
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"locked_attack_speed"			"734"
+			"pct_damage_per_attack_speed"	"0.2"
+		}
+	}
+	"Troll_inner_beast"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Baseclass"					"beastmaster_inner_beast"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityTextureName"			"battle_trance_mass"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"						"3"	
+		"RequiredLevel"					"10"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"radius"				"1200"
+			"bonus_attack_speed"
+			{
+				"value"									"90 120 150"
+				"special_bonus_unique_beastmaster_4"		"+10"
+			}
 		}
 	}
  }

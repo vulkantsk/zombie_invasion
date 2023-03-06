@@ -135,8 +135,8 @@
 
  		    "vampiric_aura"
 		    {
-					"value"			"6 8 10 12 14 16 18"
-					"special_bonus_unique_skeleton_vampir"		"+7"
+					"value"			"4 6 8 10 12 14 16"
+					"special_bonus_unique_skeleton_vampir"		"+4"
 		    }
  	
 		}
