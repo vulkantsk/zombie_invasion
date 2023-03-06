@@ -385,6 +385,7 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_troll/giant_strikes/giant_strikes"
 		"AbilityTextureName"		"innate_giant_strikes"
+		"RequiredLevel"				"35"
 		"MaxLevel"					"1"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
