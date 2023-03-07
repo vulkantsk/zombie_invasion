@@ -8851,8 +8851,9 @@
 		{
 		    "gold"           "200"
 		    "experience"           "200"
-		    "bonus_all_stats"           "5"
-		    "bonus_attack_speed"           "30"
+		    "bonus_all_stats"           "13"
+		    "bonus_attack_speed"           "53"
+		    "bonus_movespeed"           "20"
 		     
 		}
 		"ItemIsNeutralDrop" 						"1"

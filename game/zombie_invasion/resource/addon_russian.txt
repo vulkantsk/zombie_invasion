@@ -689,12 +689,13 @@
         "DOTA_Tooltip_Ability_item_lance2_str"                                        "БОНУСНАЯ СИЛА:"        
         "DOTA_Tooltip_Ability_item_lance2_Lore"                                "Надёжный лук, который обязательно поможет в бою."     
 
-        "DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>Active hand of midas</font>"
+        "DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>paw of grud</font>"
         "DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Активная: Золотишко!</h1>При применении вы получаете %gold% золота и %experience% опыта."       
         "DOTA_Tooltip_Ability_item_active_midas_Lore"                                "Идея by BaronXX."  
 		"DOTA_Tooltip_ability_item_active_midas_bonus_all_stats"					"+$all"
 		"DOTA_Tooltip_ability_item_active_midas_bonus_attack_speed"					"+$attack"  
-
+		"DOTA_Tooltip_ability_item_active_midas_bonus_movespeed"					"+$move_speed"  
+		
         "DOTA_Tooltip_Ability_item_unactive_midas"                                            "Unactive hand of midas"
         "DOTA_Tooltip_Ability_item_unactive_midas_Description"                                "Эта рука выгляит совсем потухшей..."       
         "DOTA_Tooltip_Ability_item_unactive_midas_Lore"                                "А ей можно подрочить?"  

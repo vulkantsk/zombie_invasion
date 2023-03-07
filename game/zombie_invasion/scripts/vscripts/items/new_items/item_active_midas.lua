@@ -40,7 +40,8 @@ function modifier_item_active_midas:DeclareFunctions()
 	return { 		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
 		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT, }
+		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT, }
 end
 
 function modifier_item_active_midas:OnCreated()
@@ -53,6 +54,7 @@ end
 function modifier_item_active_midas:OnRefresh()
  	self.bonus_all_stats = self:GetAbility():GetSpecialValueFor("bonus_all_stats")
  	self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor("bonus_attack_speed")
+ 	self.bonus_movespeed = self:GetAbility():GetSpecialValueFor("bonus_movespeed")
 
 end
 
@@ -61,3 +63,4 @@ function modifier_item_active_midas:GetModifierBonusStats_Agility() return self.
 function modifier_item_active_midas:GetModifierBonusStats_Strength() return self.bonus_all_stats end
 
 function modifier_item_active_midas:GetModifierAttackSpeedBonus_Constant() return self.bonus_attack_speed end
+ function modifier_item_active_midas:GetModifierMoveSpeedBonus_Constant() return self.bonus_movespeed end
