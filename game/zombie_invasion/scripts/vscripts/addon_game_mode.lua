@@ -204,6 +204,8 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_blood
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts", context )        
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts", context )        
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts", context )        
+    PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts", context )        
+
 
 	---------------------------------------
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_grimstroke", context )

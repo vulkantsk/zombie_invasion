@@ -275,8 +275,8 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"IsAncient"                 "1"
- 
- 
+ 		"MinimapIconSize"				"1"
+         "HealthBarOffset"			"9999"
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_gurd_01"
@@ -323,8 +323,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -360,7 +360,8 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"IsAncient"                 "1"
- 
+  		"MinimapIconSize"				"1"
+         "HealthBarOffset"			"9999"
  
 		// Abilities
 		//----------------------------------------------------------------
@@ -408,8 +409,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
 		
 		// Team
 		//----------------------------------------------------------------

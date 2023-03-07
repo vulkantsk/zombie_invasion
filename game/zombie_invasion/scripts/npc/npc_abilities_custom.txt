@@ -16206,6 +16206,68 @@
 		}
 	}
 }
+
+	"Gurd_summon_wolves"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"lycan_summon_wolves"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySound"					"Hero_Lycan.SummonWolves"
+
+        "HasShardUpgrade"               "1"
+        "MaxLevel"                      "1"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"wolf_index"				"2"
+			"wolf_duration"				"30"
+			"wolf_bat"					"0.9"
+			"wolf_damage"
+			{
+				"value"							"150"
+				"special_bonus_unique_lycan_3"	"+10"
+
+			}
+			"wolf_hp"					
+			{
+				"value"	"750"
+				"special_bonus_unique_lycan_7"	"+200"
+			}
+			"bonus_health"
+			{
+				"value"			"750"
+				"special_bonus_unique_lycan_7"	"+200"
+			}
+			"bonus_damage"
+			{
+				"value"			"150"
+				"special_bonus_unique_lycan_3"	"+10"
+			}
+			"bash_chance"				"15"
+			"bash_duration"				"1.0"
+			"tooltip_wolf_count"			
+			{
+				"value"			"2 2 2 2"
+				"special_bonus_unique_lycan_2" "+2"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
 	"lycan_open_wounds"
 	{
 		// General

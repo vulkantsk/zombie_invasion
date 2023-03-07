@@ -1629,25 +1629,22 @@
 		}	
 	}
 	"item_pizza2"
-	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------				
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
-		"BaseClass"						"item_datadriven"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_pizza2.lua"
 		"AbilityTextureName"			"pizza2"
 		
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		
-		"ItemShopTags"					"damage;str;hard_to_tag"
 		"ItemQuality"					"epic"
-		"ItemAliases"					"skull basher"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
 		"ItemStackable"					"1"
@@ -1660,7 +1657,7 @@
 		"ItemPurchasable"				"0"
 		"ItemInitialCharges"			"1"
 
-		"AbilityCastRange"				"800"
+		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 	
 		"AbilitySpecial"
@@ -1673,58 +1670,7 @@
 		}
 		
 		"ItemCastOnPickup"				"0"
-		"OnSpellStart"
-		{
-			"SpendCharge"
-			{}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"StrengthTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"AgilityTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"IntellectTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}		
-			"FireSound"
-			{
-				"EffectName"			"DOTA_Item.Refresher.Activate"
-				"Target"				"CASTER"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
-				"EffectAttachType" 	"follow_overhead"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}	
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}		
-		}	
+		 
 	}
 	"item_leaf"
 	{
@@ -8843,6 +8789,77 @@
 	}
  
  
+		"item_unactive_midas"
+	{
+		"BaseClass"						"item_datadriven"														
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"Creep_items/midas_un"
+	
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"	
+		"ItemIsNeutralDrop" 						"1"
+		
+  
+	}
+
+		"item_recipe_active_midas"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName" 			"custom_folder/item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"250"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_active_midas"
+		"ItemRequirements"
+		{
+			"01"						"item_unactive_midas;item_midas"
+		}
+	}
+
+		"item_active_midas"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/new_items/item_active_midas"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityTextureName" "item_hand_of_midas"
+
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"	
+		"ItemIsNeutralDrop" 						"1"
+
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"90"
+
+ 
+		"AbilityValues"
+		{
+		    "gold"           "200"
+		    "experience"           "200"
+		    "bonus_all_stats"           "5"
+		    "bonus_attack_speed"           "30"
+		     
+		}
+		"ItemIsNeutralDrop" 						"1"
+		
+  
+	}
+
 
 	"item_midas"
 	{

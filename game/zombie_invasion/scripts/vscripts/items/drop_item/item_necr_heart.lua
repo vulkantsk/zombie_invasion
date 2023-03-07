@@ -2,6 +2,11 @@ if item_necr_heart == nil then
 	item_necr_heart = class({})
  
 end
+
+if item_fire == nil then
+	item_fire = class({})
+ 
+end
 LinkLuaModifier("modifier_necr_heart", "items/drop_item/item_necr_heart", LUA_MODIFIER_MOTION_NONE)
 
 
@@ -9,6 +14,11 @@ LinkLuaModifier("modifier_necr_heart", "items/drop_item/item_necr_heart", LUA_MO
  
 -------------------------------------------
 function item_necr_heart:GetIntrinsicModifierName()
+    return "modifier_necr_heart"
+end
+
+-------------------------------------------
+function item_fire:GetIntrinsicModifierName()
     return "modifier_necr_heart"
 end
 

@@ -17,10 +17,15 @@ ItemDrop.item_drop = {
 		{items = {"item_bone"}, chance = 30, duration = 20, units = {"npc_classic_woobleydog2"}},  
 		{items = {"item_bone"}, chance = 15, duration = 20, units = {"npc_classic_woobleydog"}},  
 		{items = {"item_ess_pudge"}, chance = 13, limit = 4, units = {"npc_classic_warlock"}}, 
-		{items = {"item_necr_heart"}, chance = 20, units = {"npc_classic_warlock"}}, 
+		{items = {"item_necr_heart"}, chance = 20,duration = 20, units = {"npc_classic_warlock"}}, 
 		{items = {"item_basher"}, chance = 100, units = {"npc_boss_slardar"}},
 		{items = {"item_cursed_shield"}, chance = 100, units = {"npc_boss_bear"}},
 		{items = {"item_piercing_blade"}, chance = 100, units = {"npc_classic_Night_Stalker_boss"}},
+		{items = {"item_unactive_midas"}, chance = 100, units = {"npc_boss_Gurd"}},
+		{items = {"item_pizza2"}, chance = 100, units = {"npc_boss_Gurd"}},
+
+
+ 
 
  		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_1"}},	
 		{items = {"item_aghanims_shard_roshan"}, max_count = 2, units  ={"npc_witch_boss_2"}},

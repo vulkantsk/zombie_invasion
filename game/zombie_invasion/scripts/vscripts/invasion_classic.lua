@@ -883,15 +883,18 @@ function InvasionMode:InvasionEntityKilled (data)
 
           GameRules:SendCustomMessage("<font color='#c10020'>.............................................................</font>", 0, 0)
 	end	
- 
+
+	if killedEntity:GetUnitName() == "npc_boss_Gurd" then
+          GameRules:SendCustomMessage("<font color='#c10020'>Пиздец, я в тильте(</font>", 0, 0)
+	end
 
    if Pig_bo_kill == 0 then 
-	if killedEntity:GetUnitName() == "npc_boss_pig" then		 
+		if killedEntity:GetUnitName() == "npc_boss_pig" then		 
               self:CreateDrop("item_bag_of_gold_pig", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 200)) )
               self:CreateDrop("item_big_meat", killedEntity:GetAbsOrigin() + RandomVector(RandomFloat(50, 200)) )
  
-	end	
-end 
+		end	
+	end 
       
 
 	if killedEntity:GetUnitName() == "npc_witch_boss_1" or killedEntity:GetUnitName() == "npc_witch_boss_2" or killedEntity:GetUnitName() == "npc_witch_boss_3" then

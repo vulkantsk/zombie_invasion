@@ -277,11 +277,11 @@
 		"DOTA_Tooltip_ability_item_leaf_lore" "Это правда!"
 
 		"DOTA_Tooltip_ability_item_pizza1" "Заготовка для пиццы"
-		"DOTA_Tooltip_ability_item_pizza1_Description" "Заготовка пиццы из другого мира прибавляет 10 ко всем атрибутам"
+		"DOTA_Tooltip_ability_item_pizza1_Description" "<h1>Активное: Ам-ням</h1>Заготовка пиццы из другого мира прибавляет 10 ко всем атрибутам"
 		"DOTA_Tooltip_ability_item_pizza1_Lore" "Заготовка для пиццы, выглядит не очень питательно."
 
 		"DOTA_Tooltip_ability_item_pizza2" "Пицца из другого мира"
-		"DOTA_Tooltip_ability_item_pizza2_Description" "Съев легендарную яичную пиццу она прибавляет 30 ко всем атрибутам, но из вашего рта начинает пахнуть яйцами.
+		"DOTA_Tooltip_ability_item_pizza2_Description" "<h1>Активное: Ам-ням</h1>Съев легендарную яичную пиццу она прибавляет 30 ко всем атрибутам, но из вашего рта начинает пахнуть яйцами.
 		P.s если дать её Гурду возможно что-то случится.."
 		"DOTA_Tooltip_ability_item_pizza2_Lore" "Яичное комбо в одной пицце"
 
@@ -689,6 +689,15 @@
         "DOTA_Tooltip_Ability_item_lance2_str"                                        "БОНУСНАЯ СИЛА:"        
         "DOTA_Tooltip_Ability_item_lance2_Lore"                                "Надёжный лук, который обязательно поможет в бою."     
 
+        "DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>Active hand of midas</font>"
+        "DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Активная: Золотишко!</h1>При применении вы получаете %gold% золота и %experience% опыта."       
+        "DOTA_Tooltip_Ability_item_active_midas_Lore"                                "Идея by BaronXX."  
+		"DOTA_Tooltip_ability_item_active_midas_bonus_all_stats"					"+$all"
+		"DOTA_Tooltip_ability_item_active_midas_bonus_attack_speed"					"+$attack"  
+
+        "DOTA_Tooltip_Ability_item_unactive_midas"                                            "Unactive hand of midas"
+        "DOTA_Tooltip_Ability_item_unactive_midas_Description"                                "Эта рука выгляит совсем потухшей..."       
+        "DOTA_Tooltip_Ability_item_unactive_midas_Lore"                                "А ей можно подрочить?"  
 
 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas treasure</font>"
