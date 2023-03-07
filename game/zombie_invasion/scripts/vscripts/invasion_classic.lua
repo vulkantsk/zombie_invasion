@@ -1305,7 +1305,9 @@ local tabGoldAll = {
 	{units = {'npc_witch_boss_3'}, gold = 2500},
 	{units = {'npc_boss_slark'}, gold = 1500},
 	{units = {'npc_classic_Night_Stalker_boss'}, gold = 2000},
+	{units = {'npc_boss_Gurd'}, gold = 500},
 
+ 
 	{units = {'npc_undying_clock'}, gold = 800},
 	{units = {'npc_classic_wave_fire_golem'}, gold = 650},
 	{units = {'npc_classic_new_years'}, gold = 25},
