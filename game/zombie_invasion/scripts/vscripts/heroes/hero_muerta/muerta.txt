@@ -64,6 +64,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"					"faceless_void_time_lock"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"		"void1"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
@@ -130,6 +131,7 @@
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Muerta.PierceTheVeil.Cast"
 		"AbilityCastPoint"				"0"
+		"RequiredLevel"					"35"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
 
 		// Time		
@@ -144,11 +146,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"duration"					"6 7 8"
+			"duration"					"8"
 			"transform_duration"		"0.35"
 			"base_damage_pct"			"100"
 			"modelscale"				"30"
-			"bonus_damage"				"50 75 100"
+			"bonus_damage"				"100"
 		}
 	}
 
@@ -164,8 +166,8 @@
 		
 		"AbilityValues"
 		{
-			"armor_tear"					"1"
-			"crit_damage"					"300"
+			"armor_tear"					"0.5"
+			"crit_damage"					"275"
 			"crit_chance_per_negative_armor""1"
 		}
 

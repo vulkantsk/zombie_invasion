@@ -1739,7 +1739,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"24"
 		"AttackDamageMax"		"32"
-		"AttackRate"		"1.7"
+		"AttackRate"		"1.5"
 		"BaseAttackSpeed"		"100"
 		"AttackAnimationPoint"		"0.35"
 		"AttackSpeedActivityModifiers"
@@ -1759,7 +1759,7 @@
 		"AttributeIntelligenceGain"		"3.300000"
 		"AttributeBaseAgility"		"22"
 		"AttributeAgilityGain"		"3.000000"
-		"MovementSpeed"		"595"
+		"MovementSpeed"		"325"
 		"MovementTurnRate"		"0.700000"
 		"MovementSpeedActivityModifiers"
 		{
