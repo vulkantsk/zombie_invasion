@@ -3,11 +3,10 @@
 	//=================================================================================================================
 	// MUERTA: Dead Shot
 	//=================================================================================================================
-	"muerta_dead_shot1"
+	"muerta_dead_shot"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"					"muerta_dead_shot"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_TREE"
@@ -59,7 +58,7 @@
 	//=================================================================================================================
 	// MUERTA: The Calling
 	//=================================================================================================================
-	"faceless_void_time_lock1"
+	"muerta_time_lock"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -78,21 +77,25 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
+				"duration"				"0.65"	
+				"duration_creep"		"2.0"
 				"chance_pct"			"12 16 20 24"
 				"bonus_damage"			
+				{
+					"value"				"15 20 25 30"
+					"LinkedSpecialBonus"	"special_bonus_unique_faceless_void_3"
+				}
 				"delay"			"0.4"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
-	
 	//=================================================================================================================
 	// MUERTA: Gunslinger
 	//=================================================================================================================
-	"muerta_gunslinger1"
+	"muerta_gunslinger"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"					"muerta_gunslinger"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
@@ -116,11 +119,10 @@
 	//=================================================================================================================
 	// MUERTA: Pierce the Veil
 	//=================================================================================================================
-	"muerta_pierce_the_veil1"
+	"muerta_pierce_the_veil"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"							"muerta_pierce_the_veil"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
