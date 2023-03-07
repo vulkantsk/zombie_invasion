@@ -39,7 +39,7 @@
  
 
 // Almost ready
-	"npc_dota_hero_muerta" "1"
+	"npc_dota_hero_muerta" "0"
 	"npc_dota_hero_treant"				"0"
 "npc_dota_hero_lion"				"0"
 	"npc_dota_hero_shredder"			"0"
