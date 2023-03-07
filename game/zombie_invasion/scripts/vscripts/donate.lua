@@ -97,8 +97,20 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 			},
 		},
-
-
+		{
+			name = "item_sheepstick",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+ 		{
+			name = "item_dagon",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
 
 	},
 }
