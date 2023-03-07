@@ -1516,6 +1516,21 @@
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "После нападения на Горгону большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную змею."
 
+		// -----------------Muerta-------------------- 
+
+		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"
+		"DOTA_Tooltip_ability_muerta_time_lock_Description" "Муэрта с шансом повторно атакует свою цель нанося ей дополнительный урон"
+		"DOTA_Tooltip_ability_muerta_time_lock_lore"	"Действительная копия реальности."
+		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_muerta_time_lock_bonus_damage" "БОНУСНЫЙ УРОН:"
+
+		"DOTA_Tooltip_ability_innate_rend" "Muerta call's"
+		"DOTA_Tooltip_ability_innate_rend_Description" "Каждой атакой Muerta снижает броню своим союзникам, также если у противника негативное количество брони герой получает возможность нанести критеческую атаку по нему."
+		"DOTA_Tooltip_ability_innate_rend_lore" "Ты не можешь сражаться если у тебя не хватает силы чтобы защититься."
+		"DOTA_Tooltip_ability_innate_rend_armor_tear" "УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_innate_rend_crit_damage" "КРИТИЧЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_crit_chance_per_negative_armor" "ШАНС КРИТИЧЕСКОЙ АТАКИ ЗА КАЖДОЕ НЕГАТИВНОЕ КОЛИЧЕСТВО БРОНИ:"
+
 		// -----------------slark--------------------  
 		"DOTA_Tooltip_ability_slark_dark_pact_lua"										"Dark Pact"
 		"DOTA_Tooltip_ability_slark_dark_pact_lua_Description"							"После небольшой задержки герой жертвует немного собственной крови, снимая с себя большинство отрицательных эффектов и нанося урон всем врагам поблизости. Сам герой получает %self_damage_pct%%% нанесённого этой способностью урона.\n\nТИП РАЗВЕИВАНИЯ: сильное."
