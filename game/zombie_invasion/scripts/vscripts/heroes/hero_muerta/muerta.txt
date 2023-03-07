@@ -132,7 +132,6 @@
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Muerta.PierceTheVeil.Cast"
 		"AbilityCastPoint"				"0"
-		"RequiredLevel"					"35"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
 
 		// Time		
@@ -160,6 +159,7 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_muerta/rend/rend"
 		"AbilityTextureName"		"innate_rend"
+		"RequiredLevel"					"35"
 		"MaxLevel"					"1"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
