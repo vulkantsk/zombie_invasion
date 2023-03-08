@@ -1845,7 +1845,10 @@
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows" "Hide in Shadows"
   		"DOTA_Tooltip_ability_shinobu_hide_in_shadows_Description" "Shinobu hides herself in shadows of ally heroes, becoming immune to detection. Attacking will reveal Shinobu. If nearby ally dies, while she is hidden, Shinobu recoveres all her health, becomes magic immune, gets bonus damage, movespeed and evasion chance."
 
-
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity"	"+10% to the extra gold for the eaten creepeat oddity"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_eat_oddity2" "-10 sec cooldown eat oddity"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+80 bonus damage yumewatari"
+  		"DOTA_Tooltip_ability_special_bonus_unique_shinobu_shinobu_kokorowatari" "+5% chance oneshot creep"
 
 
         	// -----------------phantom_assassin--------------------	
