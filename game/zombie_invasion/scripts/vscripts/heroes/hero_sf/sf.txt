@@ -1,0 +1,131 @@
+"DOTAAbilities"
+{
+ 	"shotgun_sf"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"7"
+ 
+		"RequiredLevel"					"1"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_sf/shotgun_sf/shotgun_sf"
+
+		"AbilityTextureName"			"medusa_split_shot"
+
+		// Special	
+		//-----------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			"damage_modifier"		"-70 -55 -40 -25"
+			"damage_modifier_tooltip"		"30 45 60 75"
+			"arrow_count"				"3"
+			"split_shot_bonus_range"		"100"
+			"slow_movespeed"                 "-200 -300 -400 -500"
+
+		}
+	}
+
+	"sf_necromastery_hero"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_sf/sf_necromastery_hero/sf_necromastery_hero"
+		"AbilityTextureName"			"nevermore_necromastery"
+		"MaxLevel"						"4"
+
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			"soul_damage"			"1"
+			"soul_max"				"666"
+			"soul_release"			"0.5"
+			"lifesteal_pct"          "100"
+
+		}
+	}
+"sf_devour"
+	{
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_sf/sf_devour/sf_devour"
+		"AbilityTextureName"			"doom_bringer_devour"
+		"MaxLevel"						"4"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"70"
+		"AbilityManaCost"				"40 50 60 70"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"devour_time"			"30"
+
+				"bonus_gold"			"50"
+				"bonus_movespeed"			"25 50 75 100"
+				"bonus_armor"			"25 50 75 100"
+				"bonus_damage"			"25 50 75 100"
+
+
+		}
+	}
+
+	   "sf_demonic"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_sf/sf_demonic/sf_demonic"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "tide/sosat"
+        "MaxLevel"                      "3"
+        "LevelsBetweenUpgrades"         "10"
+        "RequiredLevel"                 "10"
+
+		"AbilityCooldown"				"30"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "dmg_proc"                          "500"
+                "str_per_stack"                      "2 4 6"
+				"bonus_health"			"500 1000 1500"
+				"bonus_armor"			"3 6 9"
+
+        }
+
+    }  
+}
