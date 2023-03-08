@@ -89,7 +89,15 @@
        	   "christmas_1"                                                  "<font color='#deaa88'>The Celebration continues!</font>"
 	   "christmas_night_1"			                                    	"<font color='#fffacd'>You have a day to end your does  !</font>"	
 	   "christmas_night_2"			                                    	"<font color='#fffacd'>The harbinger of Christmas is coming!</font>"	
-	   "christmas_night_3"                                                    "<font color='#deaa88'>Throw few minutes message will appear  about coming Greevil. He appears around Main-Christmas tree before the moment while he will give you presents. Good luck:)</font>"	   
+	   "christmas_night_3"                                                    "<font color='#deaa88'>Throw few minutes message will appear  about coming Greevil. He appears around Main-Christmas tree before the moment while he will give you presents. Good luck:)</font>"
+
+
+	    	"DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>paw of gurd</font>"
+        	"DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Active: gold!</h1>When applied, you get %gold% gold and %experience% experience."       
+        	"DOTA_Tooltip_Ability_item_active_midas_Lore"                                "quest by BaronXX."  
+		"DOTA_Tooltip_ability_item_active_midas_bonus_all_stats"					"+$all"
+		"DOTA_Tooltip_ability_item_active_midas_bonus_attack_speed"					"+$attack"  
+		"DOTA_Tooltip_ability_item_active_midas_bonus_movespeed"					"+$move_speed"  	   
 
        	   "sf_eg1"                                                  "<font color='#c10020'>RATHER</font>"
        	   "sf_eg2"                                                  "<font color='#c10020'>I'VE HAD ENOUGH OF PLAYING WITH YOU</font>" 
@@ -111,6 +119,7 @@
 	   	   
 		// ******************** heroes ********************
 
+		"npc_dota_hero_treant" 							"shinobu"
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
 		"npc_dota_hero_juggernaut"                                      "Samurai" 	
@@ -123,6 +132,8 @@
 	    "npc_test"	                                        	"test"
 
  
+	    "npc_gurd_jitel"													"gurd"
+
 		"npc_jitel"                                                         "Kunnka"
 		"npc_jitel_2"                                                       "Crystal Maiden" 
 		"npc_jitel_3"                                                       "Tramp"
@@ -236,6 +247,42 @@
 		"npc_classic_mini_crampus" 	                                                	"mini-krampus"
         "npc_classic_doom_crampus" 	                                                	"Spawn of Hell"
 		// ******************** Предметы********************
+
+
+		"DOTA_Tooltip_ability_item_strenobu_change" "<font color='#c10020'>KAWAI SHINOBU CHAN"
+		"DOTA_Tooltip_ability_item_strenobu_change_Description" "Changes the chosen hero to the most kawaii, cute, murderous SHINOBU"
+		"DOTA_Tooltip_ability_item_strenobu_change_Lore" "p.s well, is it really cute?"
+
+		
+		"DOTA_Tooltip_ability_item_cursed_shield" "cursed shield"
+		"DOTA_Tooltip_ability_item_cursed_shield_Description" "With a probability of 80% blocks 350 damage from attacks if the owner is a melee hero, or 450 damage if a ranged hero, also gives the hero +700 health and 30 health recovery"
+
+		"DOTA_Tooltip_ability_item_piercing_blade" "piercing blade"
+		"DOTA_Tooltip_ability_item_piercing_blade_Description" "With a probability of 12% turns damage into pure (WORKS ONLY IN PHYSICS)"
+		"DOTA_Tooltip_ability_item_piercing_blade_bonus_damage" "+$damage"
+
+
+
+		"DOTA_Tooltip_ability_item_leaf" "leaf"
+
+		"DOTA_Tooltip_ability_item_leaf_Description" "Legend has it, if you plant it somewhere, then you can get eternal flame..."
+		"DOTA_Tooltip_ability_item_leaf_lore" "it's true!"
+
+		"DOTA_Tooltip_ability_item_pizza1" "Pizza preparation"
+		"DOTA_Tooltip_ability_item_pizza1_Description" "<h1>Active: Am-yum</h1>Pizza preparation from another world adds 10 to all attributes"
+		"DOTA_Tooltip_ability_item_pizza1_Lore" "Pizza preparation, it doesn't look very nutritious."
+
+		"DOTA_Tooltip_ability_item_pizza2" "pizza from other world"
+		"DOTA_Tooltip_ability_item_pizza2_Description" "<h1>Active: Am-yum</h1>After eating the legendary egg pizza, she adds 30 to all attributes, but your mouth starts to smell like eggs.
+		P.s if you give it to Gurd, something may happen.."
+		"DOTA_Tooltip_ability_item_pizza2_Lore" "Egg combo in one pizza"
+
+		"DOTA_Tooltip_ability_item_fire" "ETERNAL FLAME!?"
+		"DOTA_Tooltip_ability_item_fire_Description" "An ever-burning thing, it smells very disgusting."
+		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning."
+
+		
+
 		
 		"DOTA_Item_Build_Starting_Items"						"Starting Items"
 		"DOTA_Item_Build_Early_Game"							"For the first night"
@@ -1053,6 +1100,51 @@
 		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Active: Happy new year!</h1> Gives 10% spell boost forever!"			
 
 // ******************** квесты ********************
+
+
+
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"dneirf"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_01_Description"						"Oh, hello, would you be interested in my artifact? It is filled with the power of gold and can make you strong! Only, you know, I'm very hungry and I can't summon him, You know, it's still very difficult to do something in the current conditions, And it's hard to find food yourself, let's do it this way, you'll do a couple of my tasks, And I'll give you an artifact!
+ 		So first of all, bring me 10 pieces of meat."
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_gold"                 		"gold:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_02"									"dneirf"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_02_Description"						"Dachshund, now I don't have enough cottage cheese. Could you get it for me?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_gold" 						"gold:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_03"									"dneirf"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_03_Description"						"Dachshund, and now almost everything is ready! All that remains is to give me 2 eggs, by any chance are they lying around in your pants?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_gold" 						"gold:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_04"									"dneirf"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_04_Description"						"So, hold the pizza billet, but now we are missing 1 ingredient of Eternal Flame! I just forgot something where I buried it while I moved to this world, maybe you can find it and give it to me?"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_gold" 						"gold:"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_05"									"dneirf"
+ 		"DOTA_Tooltip_Ability_quest_test_gurd_05_Description"						"So now you can return that pizza blank and you'll get an artifact!"
+
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_gurd_05_reward_gold" 						"gold:"
+
+		"DOTA_Tooltip_Ability_quest_test_kamen" ""
+		"DOTA_Tooltip_Ability_quest_test_kamen_Description" "Tax-with Here you can plant a Sprout."
+		"DOTA_Tooltip_Ability_quest_test_kamen_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_kamen_reward_exp"                 		"exp:"
+		"DOTA_Tooltip_Ability_quest_test_kamen_reward_gold" 						"gold:"
  
  		"DOTA_Tooltip_Ability_quest_test01"										"Oh meat meat meat..."
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Tere-zizizi)) Did you come here to hear my story? What? Don't you  want? no, I know what you want. But I'm very very hungry. Bring me a couple of pieces of meat, they are... you know where. If I'll explain such simple things to you, I'll put anchor in my ass. "
@@ -1473,7 +1565,126 @@
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Poisoned by the hero's poisonous scales, enemies attack him with reduced speed."
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "After the attack on the Gorgon, most feel guilty for daring to climb such a beautiful snake."
 
+		// -----------------Muerta-------------------- 
 
+		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"
+		"DOTA_Tooltip_ability_muerta_time_lock_Description" "Muerta re-attacks his target with a chance, dealing additional damage to it"
+		"DOTA_Tooltip_ability_muerta_time_lock_lore"	"A valid copy of reality."
+		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "%chance:"
+		"DOTA_Tooltip_ability_muerta_time_lock_bonus_damage" "bonus damage:"
+
+		"DOTA_Tooltip_ability_innate_rend" "Muerta call's"
+		"DOTA_Tooltip_ability_innate_rend_Description" "With each attack, Muerta reduces the armor of his allies, and if the enemy has a negative amount of armor, the hero gets the opportunity to inflict a critical attack on him."
+		"DOTA_Tooltip_ability_innate_rend_lore" "You can't fight if you don't have the strength to defend yourself."
+		"DOTA_Tooltip_ability_innate_rend_armor_tear" "armor corruption:"
+		"DOTA_Tooltip_ability_innate_rend_crit_damage" "critical damage:"
+		"DOTA_Tooltip_ability_crit_chance_per_negative_armor" "THE CHANCE OF A CRITICAL ATTACK FOR EACH NEGATIVE AMOUNT OF ARMOR:"
+
+		// -----------------Drow_ranger-------------------
+
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Description" "Adds a freezing effect to the hero's attacks, slowing down the movement of the target for 1.5 seconds and causing additional damage." 
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_bonus_damage" "bonus damage:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_movement_speed" "%slow enemy:"
+
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror"	"Wave of terror"
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_Description" "The hero emits a terrible cry, weakening the armor of enemies and revealing the fog of war."
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_armor_reduction" "armor corruption:"
+ 		"DOTA_Tooltip_ability_ability_wave_of_terror_AbilityDuration" "effect duration:"
+
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship" "Marksmanship"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_Description" "Experience in battle allows the hero to shoot more accurately and more effectively. With each attack, there is a chance to release an arrow that ignores the enemy's base armor. It also gives the hero and ranged allies nearby additional dexterity, depending on the dexterity of the owner. The ability does not work if there are enemy heroes within a radius of 400 from its owner."
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_agility_multiplier" "%bonus agility:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_chance" "%chance:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanshipbonus_damage" "bonus damage:"
+
+ 		"DOTA_Tooltip_ability_ability_devour" "DEVOUR"
+ 		"DOTA_Tooltip_ability_ability_devour_Description" "Eats a creep and after a certain time gets gold for digesting it."
+ 		"DOTA_Tooltip_ability_ability_devour_bonus_gold" "bonus gold:"
+ 		"DOTA_Tooltip_ability_ability_devour_time" "skill duration:"
+ 		"DOTA_Tooltip_ability_ability_devour_regen" "bonus regeneration:"
+ 		"DOTA_Tooltip_ability_ability_devour_creep_level" "creep level:"
+
+ 		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven" "SUPER marksmanship"
+ 		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven_Description" "Each attack carries out an additional attack on targets that were within a radius of 275 from the first strike, attack modifiers do not work on them."
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_marksmanship" "+8% to the chance of triggering Marksmanship"
+		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_armor" "-6 armor wave of terror"
+		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_frost_damage" "+20 bonus damage frost arrow"
+
+		// -----------------slark--------------------  
+
+		"DOTA_Tooltip_ability_slark_dark_pact_lua"										"Dark Pact"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_Description"							"After a short delay, the hero donates some of his own blood, removing most of the negative effects and dealing damage to all enemies nearby. The hero himself receives %self_damage_pct%%% of the damage inflicted by this ability.\n\pTYP DISPELLING: strong."
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_Lore"									"In mortal danger, snake-legs are able to quickly regrow lost limbs."
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_radius"								"range:"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_total_damage"							"damage:"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_damage_agility"								"damage from agility:"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_delay"								"delay:"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_scepter_description" "When attacking, there is %chance_scepter%% to cause one wave of Dark pact, which will cause %damage_scepter%% from the ability. Scattering is not applied."
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_chance_scepter" "%chance:"
+		"DOTA_Tooltip_ability_slark_dark_pact_lua_damage_scepter" "%damage from spell:"
+
+ 
+		"DOTA_Tooltip_ability_slark_pounce_lua"										"Pounce"
+		"DOTA_Tooltip_ability_slark_pounce_lua_Description"							"The hero jumps forward, causing fog at the landing site, in which he and his allies restore health"
+		"DOTA_Tooltip_ability_slark_pounce_lua_Lore"								"During the time spent in the Dark Reef, the prisoner became a dangerous killer: aggressive and fearless."
+		"DOTA_Tooltip_ability_slark_pounce_lua_Note0"								"The hero is flying in a jump at a speed of %pounce_speed% or at a distance of %pounce_distance%."
+		"DOTA_Tooltip_ability_slark_pounce_lua_Note2"								"Destroys trees at the landing site."
+		"DOTA_Tooltip_ability_slark_pounce_lua_shadow_duration"						"duration:"
+		"DOTA_Tooltip_ability_slark_pounce_lua_hp_regen_pct"						"%max. health in second:"
+		"DOTA_Tooltip_ability_slark_pounce_lua_hp_regen"						"RESTORING HEALTH:"
+		"DOTA_Tooltip_ability_slark_pounce_lua_radius_shadow"						"range:"
+		"DOTA_Tooltip_ability_slark_pounce_lua_pounce_distance"					"JUMP RANGE:"  
+		"DOTA_Tooltip_ability_slark_pounce_lua_shard_description"						"Increases the jump range and puddle radius. Reduces the recharge time of charges to %AbilityChargeRestoreTime%sec."
+		"DOTA_Tooltip_ability_slark_pounce_lua_shard_radius_shadow"					"range:"
+		"DOTA_Tooltip_ability_slark_pounce_lua_shard_pounce_distance"					"JUMP RANGE:"  
+ 
+ 
+
+ 		"DOTA_Tooltip_modifier_modifier_slark_pounce_shadow_heal"                            	"Pounce"
+		"DOTA_Tooltip_modifier_modifier_slark_pounce_shadow_heal_Description"                	"You regenerate very quickly."
+
+
+        	"DOTA_Tooltip_ability_slark_essence_shift_lua"								"Essence Shift"
+		"DOTA_Tooltip_ability_slark_essence_shift_lua_Description"					"Depending on the enemy's level, the hero steals dexterity for himself. If the chance to steal dexterity is more than 100%, then you get a guaranteed stack and a chance to get a second stack"
+		"DOTA_Tooltip_ability_slark_essence_shift_lua_Lore"							"The more you hit the enemy, the more you learn about his weaknesses."
+		"DOTA_Tooltip_ability_slark_essence_shift_lua_agi_gain"						"agility for hit:"
+		"DOTA_Tooltip_ability_slark_essence_shift_lua_duration"						"buff duration:"
+		"DOTA_Tooltip_ability_slark_essence_shift_lua_chance_per_level_tooltip"						"%CHANCE FOR ENEMY LEVEL:"
+		"DOTA_Tooltip_ability_special_bonus_unique_slark_agi_gain" "+1 to dexterity from the Essence Shift ability"
+
+  		"DOTA_Tooltip_modifier_slark_essence_shift_lua"                            	"Essence Shift"
+		"DOTA_Tooltip_modifier_slark_essence_shift_lua_Description"                	"Gives %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS% dexterity."
+
+		"DOTA_Tooltip_ability_slark_fish_bait_lua"				"Fish Bait"
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_Description"  "Increases incoming damage to the owner, but for every %damage_roof% damage, gives %stack_count% stack Essence Shift."
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_lore"				"Slark pours a lot of different shit on himself."
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_duration"						"duration:"
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_incom_damage"				"%INCREASE INCOMING DAMAGE:"
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_damage_roof"				"DAMAGE THRESHOLD:"
+		"DOTA_Tooltip_ability_slark_fish_bait_lua_stack_count"				"NUMBER OF STACKS:"
+
+  		"DOTA_Tooltip_modifier_slark_fish_bait"                            	"Fish Bait"
+		"DOTA_Tooltip_modifier_slark_fish_bait_Description"                	"You smell bad..."
+				
+
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua"								"Shadow Dance"
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua_Description"					"Hides the hero in a cloud of shadows, making him invisible. This invisibility is not revealed by anything; attacks, the use of objects and the use of abilities also do not remove invisibility. It also increases the health from all sources of regeneration."
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua_Lore"							"The unknown thirteenth is a very slippery enemy."
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua_duration"						"duration:"
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua_bonus_regen_pct"				"%INCREASED REGENERATION:"
+		"DOTA_Tooltip_ability_slark_shadow_dance_lua_bonus_bat"				"base attack speed:"
+
+  		"DOTA_Tooltip_modifier_slark_shadow_dance_lua"                            	"Shadow Dance"
+		"DOTA_Tooltip_modifier_slark_shadow_dance_lua_Description"                	"Invisible in a cloud of smoke."
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_slark_pounce_duration"											"+{s:bonus_shadow_duration} sec duration Pounce"
+		"DOTA_Tooltip_Ability_special_bonus_unique_slark_dark_damage_agility"											 "+{s:bonus_damage_agility} damage from aguility Dark Pact"
+		"DOTA_Tooltip_Ability_special_bonus_unique_slark_shadow_duration"											"+{s:bonus_duration} sec duration Shadow Dance"
+		"DOTA_Tooltip_Ability_special_bonus_unique_slark_ponce_hp_regen_pct"											"+{s:bonus_hp_regen_pct}% restoration max. health Pounce"
+		"DOTA_Tooltip_Ability_special_bonus_unique_slark_essence_duration"											   "+{s:bonus_duration} sec duration Essence Shift"
+		"DOTA_Tooltip_Ability_special_bonus_unique_slark_shadow_bonus_bat"											   "-{s:bonus_bonus_bat} to reduce the base attack time from Shadow Dance"
 
 		// -----------------Sky--------------------	
 
@@ -1567,6 +1778,149 @@
 
         "DOTA_Tooltip_modifier_sven_shield" "Sven's Shield"
         "DOTA_Tooltip_modifier_sven_shield_Description" "Absorbs all incoming damage!"
+
+        	// -----------------shinobu--------------------
+        	"DOTA_Tooltip_ability_shinobu_vampire_blood" "Vampire Blood"
+
+        	"DOTA_Tooltip_ability_shinobu_vampire_blood_Description" "Kiss-Shot Acerola-Orion Heart-Under-Blade is a legendary vampire, she can't regenerate her health using any item or ability and hasn't passive regeneration, but instead she has lifesteal and bonuses based on her current health.
+
+
+        	0% HP or more: LIFE STEAL:%lifesteal_pct_lvl1%% ATTACK SPEED: %bonus_attack_speed_lvl1% MOVEMENT SPEED: %bonus_move_speed_lvl1%
+
+  		%hp_mark_pct_lvl2%%% HP or more:LIFE STEAL: %lifesteal_pct_lvl2%% ATTACK SPEED: %bonus_attack_speed_lvl2% MOVEMENT SPEED: %bonus_move_speed_lvl2%
+
+		%hp_mark_pct_lvl3%%% HP or more:LIFE STEAL: %lifesteal_pct_lvl3%% ATTACK SPEED: %bonus_attack_speed_lvl3% MOVEMENT SPEED: %bonus_move_speed_lvl3%
+
+ 		%hp_mark_pct_lvl4%%% HP or more:LIFE STEAL: %lifesteal_pct_lvl4%% ATTACK SPEED: %bonus_attack_speed_lvl4% MOVEMENT SPEED: %bonus_move_speed_lvl4%
+        	"
+
+
+        	"DOTA_Tooltip_ability_shinobu_vampire_blood_Lore" "Vampiric blood has its drawbacks, but there are many more advantages."
+        	"DOTA_Tooltip_ability_shinobu_vampire_blood_Note0" "Shinobu respawns with 50% health"
+        	"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl1" "Vampire Blood - Level 1"
+        	"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl1_Description" "
+        	+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed
+  		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% movement speed
+  		"
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl2" "Vampire Blood - Level 2"
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl2" "
+  		+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed
+  		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% movement speed
+  		"	
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl3" "Vampire Blood - Level 3"
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl3_Description" "
+  		+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed
+  		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% movement speed"
+
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl4" "Vampire Blood - Level 4"
+
+  		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl4_Description"	"
+  		+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed
+  		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% movement speed
+  		"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity" "Eat Oddity"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_Description" "Shinobu jumps to a unit, eats it and gains part of it''s health for some time and increased gold."
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_Lore" "Vampires never averse to sucking all the juices out of an appetizing creep."
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_bonus_gold_pct" "%BONUS GOLD:"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_buff_duration" "BUFF DURATION:"
+  		"DOTA_Tooltip_ability_shinobu_eat_oddity_buff_health_pct" "%BONUS HEALTH:"
+  		"DOTA_Tooltip_modifier_shinobu_eat_oddity_buff" "Eat Oddity bonus health"
+  		"DOTA_Tooltip_modifier_shinobu_eat_oddity_buff_Description" "Max Health increased by %dMODIFIER_PROPERTY_HEALTH_BONUS%"
+
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari" "Kokorowatari"
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_Description" "When Shinobu kills non-hero unit, she creates a soul of this unit. This soul is invulnerable and lasts %soul_duration% seconds. Also, increases Shinobu''s attack range and gives her chance to kill creep with one hit."
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_Lore" "Shinobu can turn a victim into a servant and make him obey his orders, but prefers not to use it."
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_bonus_attack_range" "BONUS ATTACK RANGE:"
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_chance_to_kill" "%CHANCE TO KILL CREEP:"
+  		"DOTA_Tooltip_ability_shinobu_kokorowatari_soul_duration" "SOUL DURATION:"
+
+  		"npc_shinobu_soul" "Soul"
+
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua" "Yumewatari"
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Description" "Shinobu ressurects selected soul with level below %max_ghost_level%. Also, increases Shinobu''s attack damage."
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_Lore" "Although Shinoba looks like a loli, in fact she is incredibly strong."
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_bonus_damage" "+$damage"
+  		"DOTA_Tooltip_ability_shinobu_yumewatari_lua_max_ghost_level" "MAX SOUL LEVEL:"
+
+  		"DOTA_Tooltip_ability_shinobu_hide_in_shadows" "Hide in Shadows"
+  		"DOTA_Tooltip_ability_shinobu_hide_in_shadows_Description" "Shinobu hides herself in shadows of ally heroes, becoming immune to detection. Attacking will reveal Shinobu. If nearby ally dies, while she is hidden, Shinobu recoveres all her health, becomes magic immune, gets bonus damage, movespeed and evasion chance."
+
+
+
+
+        	// -----------------phantom_assassin--------------------	
+
+        	"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger"							"Stifling Dagger"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Description"				"Throws a dagger that slows down the enemy's movement speed, inflicts physical damage in the amount of %base_damage% + %attack_factor_tooltip%%% from the hero's attack, and also imposes the effects of items and abilities.."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note0"								"The effects of the attack are triggered with the usual probability for them."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note1"					"Does not slow down enemies immune to magic."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Note2"					"The ability gives an overview around the dagger during the flight and after hitting the target."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_Lore"					"The first skill learned by the Sisters of the Veil often portends an imminent blow."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_move_slow"				"%movement slow:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_duration"				"slow duration:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_base_damage"				"base damage:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_attack_factor_tooltip"   "%ATTACK DAMAGE:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger_abilitycastrange"           "range:"
+
+ 
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_stifling_dagger_target_debuff"				"Stifling Dagger"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_stifling_dagger_target_debuff_Description" "Movement speed is reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_blur_smoke"				"Blur"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_blur_smoke_Description"	"Blurs its outlines, disappearing from the enemy's sight."
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_phantom_strike"				"Phantom Strike"
+		"DOTA_Tooltip_modifier_ability_phantom_assassin_phantom_strike_Description"	"Attack speed increased  %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%. Has a bonus vampirism."
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike"							"Phantom Strike"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_Description"				"The hero teleports to the selected creature and, if it is an opponent, gets additional attack speed and vampirism."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_Lore"						"Mortred's silk veil is the last thing her unfortunate target will see."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_duration"					"Duration:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_bonus_attack_speed"		"increase attack speed:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_abilitycastrange"			"range:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_bonus_lifesteal"			"%vampirism:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_scepter_description" "They call one of their sisters to help, who will attack the target of the application. The illusion lives %duration% sec."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_illusion_outgoing_tooltip"			"%Illusion damage:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_phantom_strike_AbilityCooldown"			"cooldown:"
+ 
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur"									"Blur"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Description"						"The use of the ability will blur the outlines of the owner, granting additional dexterity, universal evasion from any type of damage and allows him to walk through creatures. \n\nTYPE DISPELLING: normal."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Lore"								"Meditation allows the Sisters of the Veil to outrun opponents in battle."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_chance_miss"						"%UNIVERSAL EVASION:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_bonus_agility_base"					"bonus agility:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_duration"							"duration:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives"				"Fan of Knives"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_Description"   "Releases %times% daggers around the hero with different frequency."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_min_int"		"min interval:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_fan_of_knives_max_int"		"max interval:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife"				"More knife!"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_Description"   "When using Stifling Dagger, there is a chance that after %interval% sec. release the second dagger.\n\n is a switchable ability, when pressed, you will get another bonus"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_Note0"   "A dagger released by this ability also has a chance to release another dagger after it."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_chanche_dager"		"%chance:"
+ 		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_knife_interval"		"interval:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit"				"More Grace!"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_Description"   "Improves the ability of Coup de Grace.\n\nThe switchable ability, when pressed, you will receive another bonus."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_bonus_chance"		"%bonus chance crit damage:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_togle_crit_bonus_crit"		"%bonus crit damage:"
+
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace"							"Coup de Grace"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_Description"				"The hero hones his fighting skills, getting a chance to make a crushing critical attack on the enemy. The Stifling Dagger ability also gets that chance."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_Lore"						"To die from Mortred's fateful blow is an honor for her enemies."
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_chance"				"%chance critical hit:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_bonus"				"%critical damage:"
+
+ 
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_stifling_dagger_triple"	"Stifling Dagger for three purposes"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_phantom_strike_duration"											 "+{s:bonus_duration} sec duration Phantom Strike"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_stifling_dagger_cooldown"											"-{s:bonus_AbilityCooldown} sec cooldown Stifling Dagger"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_blur_agility"											"+{s:bonus_bonus_agility_base} bonus agility from Blur"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_phantom_stifling_dagger_damage"											   "+{s:bonus_attack_factor_tooltip}% bonus damage from Stifling Dagger"
+		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_blur_duration"											   "+{s:bonus_duration} sec duration Blur"
+
+
+
  
 		// -----------------RUBICK--------------------	
 		"DOTA_Tooltip_Ability_rubick_meditation"											"Meditation"
@@ -1774,12 +2128,20 @@
 
 	// -----------------Troll--------------------
 
+	"DOTA_Tooltip_ability_Troll_inner_beast"	"Force of nature"
+        "DOTA_Tooltip_ability_Troll_inner_beast_radius" "range:"
+        "DOTA_Tooltip_ability_Troll_inner_beast_bonus_attack_speed" "bonus attack speed"
+        "DOTA_Tooltip_ability_Troll_inner_beast_Lore"	"The troll has so much natural power that he is ready to share it with his allies."
+        "DOTA_Tooltip_modifier_Troll_inner_beast"	"Force of Nature"
 
         "DOTA_Tooltip_ability_beastmaster_inner_beast"	"Force of nature"
        "DOTA_Tooltip_ability_beastmaster_inner_beast_Lore"	"Troll has big number of force nature so He begins to share it."
 
         "DOTA_Tooltip_modifier_beastmaster_inner_beast"	"Force of Nature"
 
+        "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
+	"dota_tooltip_ability_innate_giant_strikes_Description"					"Your attack speed is limited to %locked_attack_speed% and can only be changed by modifications to the Base Attack Time.<br><br>Grants %pct_damage_per_attack_speed%%% additional damage per unit of excess attack speed"
+	"dota_tooltip_ability_innate_giant_strikes_lore"						"Be afraid not of the person who has worked one punch a million times, but of the one who once worked a million punches."
  
        "DOTA_Tooltip_ability_frostivus2018_troll_warlord_fervor"	"Fervor"
  
@@ -2011,6 +2373,7 @@
 
 		"DOTA_Tooltip_Ability_blood"														"BLOOD"
 		"DOTA_Tooltip_Ability_blood_Description"											"а нахуй тут описание если эту способность никто не видит"	
+		
 
 		"DOTA_Tooltip_Ability_necrolyte_heartstopper_aura_2"										"Aura"
 		"DOTA_Tooltip_Ability_necrolyte_heartstopper_aura_2_Description"							"aruA."
