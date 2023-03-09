@@ -36,7 +36,7 @@ function modifier_sf_scary_shape:OnIntervalThink()
 	local modif = caster:FindModifierByName("modifier_sf_necromastery_hero")
     local ability_level = self:GetAbility():GetLevel()
 
-	if modif:GetStackCount() >= 6 then 
+	if modif:GetStackCount() >= 666 then 
 		caster:AddAbility( "sf_scary_shape_active" ):SetLevel(ability_level)
 		caster:SwapAbilities("sf_scary_shape", "sf_scary_shape_active", false, true)
      	caster:RemoveAbility("sf_scary_shape")
@@ -65,7 +65,7 @@ function modifier_sf_scary_shape_active:OnIntervalThink()
 	local caster = self:GetCaster()
 	local modif = caster:FindModifierByName("modifier_sf_necromastery_hero")
     local ability_level = self:GetAbility():GetLevel()
-	if modif:GetStackCount() < 6 then 
+	if modif:GetStackCount() < 666 then 
 		caster:AddAbility( "sf_scary_shape" ):SetLevel(ability_level)
 		caster:SwapAbilities("sf_scary_shape_active", "sf_scary_shape", false, true)
      	caster:RemoveAbility("sf_scary_shape_active") 
@@ -80,8 +80,10 @@ function modifier_sf_scary_shape_active:OnAttackLanded(data)
 
     if attacker == caster then
         local ability = self:GetAbility()
+        local target_armor = target:GetPhysicalArmorValue(false)
 
-        target:AddNewModifier(caster, ability, "modifier_sf_scary_shape_active_debuff", {duration = 1})
+        local modif = target:AddNewModifier(caster, ability, "modifier_sf_scary_shape_active_debuff", {duration = 0.01})
+        modif.target_armor = target_armor
     end
 end
 
@@ -95,12 +97,11 @@ modifier_sf_scary_shape_active_debuff = class({
 
 
 function modifier_sf_scary_shape_active_debuff:OnCreated(data)
- 
 end
 
 
 function modifier_sf_scary_shape_active_debuff:GetModifierPhysicalArmorBonus()
-    return -500 
+    return  -self.target_armor * (self:GetAbility():GetSpecialValueFor("reduced_armor")/100 )
 end
 
  

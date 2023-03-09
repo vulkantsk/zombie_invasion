@@ -13,18 +13,18 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_sf/shotgun_sf/shotgun_sf"
 
-		"AbilityTextureName"			"medusa_split_shot"
+		"AbilityTextureName"			"snapfire_scatterblast"
 
 		// Special	
 		//-----------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
 
-			"damage_modifier"		"-70 -55 -40 -25"
-			"damage_modifier_tooltip"		"30 45 60 75"
-			"arrow_count"				"3"
+			"damage_modifier"		"-60 -50 -40 -30 -20 -10 0"
+			"damage_modifier_tooltip"		"40 50 60 70 80 90 100"
+			"arrow_count"				"100"
 			"split_shot_bonus_range"		"100"
-			"slow_movespeed"                 "-200 -300 -400 -500"
+			"slow_movespeed"                 "-200 -250 -300 -350 -400 -450 -500"
 
 		}
 	}
@@ -38,7 +38,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_sf/sf_necromastery_hero/sf_necromastery_hero"
 		"AbilityTextureName"			"nevermore_necromastery"
-		"MaxLevel"						"4"
+		"MaxLevel"						"7"
 
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@
 			"soul_damage"			"1"
 			"soul_max"				"666"
 			"soul_release"			"0.5"
-			"lifesteal_pct"          "100"
+			"lifesteal_pct"          "3 5 7 9 12 15 17"
 
 		}
 	}
@@ -62,8 +62,9 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_sf/sf_devour/sf_devour"
-		"AbilityTextureName"			"doom_bringer_devour"
-		"MaxLevel"						"4"
+		"AbilityTextureName"			"Hero/sf_devour"
+        "RequiredLevel"                 "5"
+		"MaxLevel"						"7"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -82,7 +83,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"70"
-		"AbilityManaCost"				"40 50 60 70"
+		"AbilityManaCost"				"40 50 60 70 80 90 100"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -93,10 +94,10 @@
 		{
 				"devour_time"			"30"
 
-				"bonus_gold"			"50"
-				"bonus_movespeed"			"25 50 75 100"
-				"bonus_armor"			"25 50 75 100"
-				"bonus_damage"			"25 50 75 100"
+				"bonus_gold"			"50 65 80 95 110 125 140"
+				"bonus_movespeed"			"1 1.5 2 2.5 3 3.5 4"
+				"bonus_armor"			"0.5"
+				"bonus_damage"			"5 10 15 20 25 30 35"
 
 
 		}
@@ -110,7 +111,7 @@
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "tide/sosat"
+        "AbilityTextureName"            "Hero/nevermore_requiem_png"
         "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "15"
@@ -125,7 +126,7 @@
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "nevermore_dark_lord"
+        "AbilityTextureName"            "Hero/nevermore_requiem_demon_png"
         "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "15"
@@ -149,7 +150,7 @@
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sf/sf_demonic/sf_demonic"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "tide/sosat"
+        "AbilityTextureName"            "Hero/sf_demonic"
         "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "10"
@@ -160,7 +161,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-                "dmg_proc"                          "500"
+                "dmg_proc"                          "1500"
                 "str_per_stack"                      "2 4 6"
 				"bonus_health"			"500 1000 1500"
 				"bonus_armor"			"3 6 9"
