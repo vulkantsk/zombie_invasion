@@ -76,6 +76,7 @@ if IsServer() then
 			return self.Energy
 		end
 		parent.GetMaxEnergy = function()
+			print("cool")
 			return self.MaxEnergy
 		end
 		parent.ModifyMaxEnergy = function(_, value)

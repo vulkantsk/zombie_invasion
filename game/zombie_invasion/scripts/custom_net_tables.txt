@@ -3,5 +3,8 @@
 	custom_net_tables =
 	[
 		"donate",
+		"containers_lua",
+		"custom_entity_values",
+		"shared_modifiers",
 	]
 }

@@ -102,6 +102,46 @@
 		}
 	}
 
+
+	   "sf_scary_shape"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "tide/sosat"
+        "MaxLevel"                      "3"
+        "LevelsBetweenUpgrades"         "10"
+        "RequiredLevel"                 "15"
+ 
+    }  
+
+
+	   "sf_scary_shape_active"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "nevermore_dark_lord"
+        "MaxLevel"                      "3"
+        "LevelsBetweenUpgrades"         "10"
+        "RequiredLevel"                 "15"
+
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "reduced_armor"                          "30 50 70"
+
+
+        }
+
+    }  
+
 	   "sf_demonic"
     {
         // General

@@ -26,6 +26,21 @@ function GetMultipleBountyBonus(hUnit)
 	return bonus
 end 
 
+
+function CDOTA_BaseNPC:GetIllusionParent()
+	local modifier_illusion = self:FindModifierByName("modifier_illusion")
+	if modifier_illusion then
+		return modifier_illusion:GetCaster()
+	end
+end
+
+function CEntityInstance:SetNetworkableEntityInfo(key, value)
+	local t = CustomNetTables:GetTableValue("custom_entity_values", tostring(self:GetEntityIndex())) or {}
+	t[key] = value
+	CustomNetTables:SetTableValue("custom_entity_values", tostring(self:GetEntityIndex()), t)
+end
+
+
 -- Autoattack lifesteal
 function CDOTA_BaseNPC:GetLifesteal()
 	local lifesteal = 0
@@ -185,7 +200,10 @@ function SetExpUsually(unit, constant)
 
 end
 
-
+function CDOTA_Buff:GetSharedKey(key)
+	local t = CustomNetTables:GetTableValue("shared_modifiers", self:GetParent():GetEntityIndex() .. "_" .. self:GetName()) or {}
+	return t[key]
+end
 
 function UpgradeUnitStats(unit, multiplier)
     if not unit:IsAlive() then
