@@ -27,6 +27,10 @@ function GetMultipleBountyBonus(hUnit)
 end 
 
 
+function CDOTABaseAbility:AutoStartCooldown()
+	self:StartCooldown(self:GetReducedCooldown())
+end
+
 function CDOTA_BaseNPC:GetIllusionParent()
 	local modifier_illusion = self:FindModifierByName("modifier_illusion")
 	if modifier_illusion then
