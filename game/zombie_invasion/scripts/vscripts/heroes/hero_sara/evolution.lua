@@ -47,7 +47,7 @@ if IsServer() then
 		end
 		self:StartIntervalThink(self.think_interval)
 		self:SetDuration(60, true)
-		self.MaxEnergy = 100
+		self.MaxEnergy = 250
 		self.Energy = self.MaxEnergy
 		local illusionParent = parent:GetIllusionParent()
 		if parent.SavedEnergyStates then
@@ -96,11 +96,11 @@ if IsServer() then
 	end
 	function modifier_sara_evolution:OnAttackLanded(keys)
 		if keys.attacker == self:GetParent() then
-			--keys.attacker:ModifyEnergy(keys.attacker:GetMaxEnergy() * self:GetAbility():GetSpecialValueFor("per_hit_pct") * 0.01)
+			keys.attacker:ModifyEnergy(keys.attacker:GetMaxEnergy() * self:GetAbility():GetSpecialValueFor("per_hit_pct") * 0.01)
 		end
 	end
 	function modifier_sara_evolution:OnDeath(keys)
-		if keys.attacker == self:GetParent() and keys.unit:IsRealCreep() then
+		if keys.attacker == self:GetParent() or keys.unit:IsRealCreep() then
 			local ability = self:GetAbility()
 			local energy = ability:GetSpecialValueFor("max_per_creep") + ability:GetSpecialValueFor("max_per_creep_pct") * keys.attacker:GetMaxEnergy() * 0.01
 			if keys.unit.SpaceDissectionMultiplier then

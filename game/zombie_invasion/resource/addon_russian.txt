@@ -112,7 +112,7 @@
 		"npc_dota_hero_terrorblade"                                      "Terrorblyad" 		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 		
 		"npc_dota_hero_treant"                                      "Shinoba"
-		"npc_arena_hero_sara" 										"Sara"
+		"npc_dota_hero_phantom_lancer" 										"Sara"
 
 
 
@@ -1903,8 +1903,8 @@
 
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection2" "-2.5 к снижению брони от способности space dissection"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection" "-3 секунды перезарядки способности space dissection"
-	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+75 к получаемой энергии каждую минуту"
-	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+450 здоровья от способности evolution"
+	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
+	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
 
 	// -----------------Samurai--------------------
 
