@@ -21,14 +21,16 @@ for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
  
-HERO_RESPAWN_TIME_BEFORE_10 = 10
+HERO_RESPAWN_TIME_BEFORE_10 =	 10
 
 Witch_killed = 0
  
   
 model_lookup = {}
+model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
 model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
- 
+
+
 function InvasionMode:InvasionMap()
      
   

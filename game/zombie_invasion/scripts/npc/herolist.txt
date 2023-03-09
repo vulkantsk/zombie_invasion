@@ -32,7 +32,7 @@
 	"npc_dota_hero_drow_ranger"			"1"
 	"npc_dota_hero_nevermore"			"0"
 	"npc_dota_hero_muerta" "1"
-
+	"npc_dota_hero_phantom_lancer"		"1"
 	"npc_dota_hero_marci"				"0"
 
 
@@ -138,7 +138,6 @@
 	"npc_dota_hero_nyx_assassin"		"0"
 	"npc_dota_hero_ogre_magi"			"0"
  
-	"npc_dota_hero_phantom_lancer"		"0"
 	"npc_dota_hero_phoenix"				"0"
 	"npc_dota_hero_puck"				"0"
 	"npc_dota_hero_pudge"				"0"

@@ -1,15 +1,15 @@
-	LinkLuaModifier("modifier_marci_evolution", "heroes/hero_marci/evolution.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_sara_evolution", "heroes/hero_sara/evolution.lua", LUA_MODIFIER_MOTION_NONE)
 
-marci_evolution = class({
-	GetIntrinsicModifierName = function() return "modifier_marci_evolution" end,
+sara_evolution = class({
+	GetIntrinsicModifierName = function() return "modifier_sara_evolution" end,
 })
 
-modifier_marci_evolution = class({
+modifier_sara_evolution = class({
 	IsPurgable      = function() return false end,
 	DestroyOnExpire = function() return false end,
 })
 
-function modifier_marci_evolution:DeclareFunctions()
+function modifier_sara_evolution:DeclareFunctions()
 	return {
 		MODIFIER_EVENT_ON_ATTACK_LANDED,
 		MODIFIER_EVENT_ON_DEATH,
@@ -20,26 +20,26 @@ function modifier_marci_evolution:DeclareFunctions()
 	}
 end
 
-function modifier_marci_evolution:GetModifierManaBonus()
+function modifier_sara_evolution:GetModifierManaBonus()
 	return self.ManaModifier or self:GetSharedKey("ManaModifier") or 0
 end
 
-function modifier_marci_evolution:OnTooltip()
+function modifier_sara_evolution:OnTooltip()
 	local ability = self:GetAbility()
 	return ability:GetSpecialValueFor("max_per_minute") + ability:GetSpecialValueFor("max_per_minute_pct") * self:GetParent():GetMaxMana() * 0.01
 end
 
-function modifier_marci_evolution:GetModifierExtraHealthBonus()
+function modifier_sara_evolution:GetModifierExtraHealthBonus()
 	local ability = self:GetAbility()
 	return ability:GetSpecialValueFor("bonus_health") / (1 - ability:GetSpecialValueFor("health_reduction_pct") * 0.01)
 end
 
-function modifier_marci_evolution:GetModifierPhysicalArmorBonus()
+function modifier_sara_evolution:GetModifierPhysicalArmorBonus()
 	return self.armorReduction
 end
 if IsServer() then
-	modifier_marci_evolution.think_interval = 1/30
-	function modifier_marci_evolution:OnCreated()
+	modifier_sara_evolution.think_interval = 1/30
+	function modifier_sara_evolution:OnCreated()
 		local parent = self:GetParent()
 		local ability = self:GetAbility()
 		if ability:GetLevel() == 0 then
@@ -61,7 +61,7 @@ if IsServer() then
 		parent:SetNetworkableEntityInfo("Energy", self.Energy)
 		parent:SetNetworkableEntityInfo("MaxEnergy", self.MaxEnergy)
 		parent.ModifyEnergy = function(_, value, bShowMessage)
-			if value > 0 and parent:HasModifier("modifier_marci_fragment_of_logic_debuff") then
+			if value > 0 and parent:HasModifier("modifier_sara_fragment_of_logic_debuff") then
 				return self.Energy
 			end
 			if bShowMessage then
@@ -84,7 +84,7 @@ if IsServer() then
 			return self.MaxEnergy
 		end
 	end
-	function modifier_marci_evolution:OnDestroy()
+	function modifier_sara_evolution:OnDestroy()
 		local parent = self:GetParent()
 		if IsValidEntity(parent) then
 			--For illusions and RecreateAbility function
@@ -94,12 +94,12 @@ if IsServer() then
 			}
 		end
 	end
-	function modifier_marci_evolution:OnAttackLanded(keys)
+	function modifier_sara_evolution:OnAttackLanded(keys)
 		if keys.attacker == self:GetParent() then
 			--keys.attacker:ModifyEnergy(keys.attacker:GetMaxEnergy() * self:GetAbility():GetSpecialValueFor("per_hit_pct") * 0.01)
 		end
 	end
-	function modifier_marci_evolution:OnDeath(keys)
+	function modifier_sara_evolution:OnDeath(keys)
 		if keys.attacker == self:GetParent() and keys.unit:IsCreep() then
 			local ability = self:GetAbility()
 			local energy = ability:GetSpecialValueFor("max_per_creep") + ability:GetSpecialValueFor("max_per_creep_pct") * keys.attacker:GetMaxEnergy() * 0.01
@@ -109,7 +109,7 @@ if IsServer() then
 			keys.attacker:ModifyMaxEnergy(energy)
 		end
 	end
-	function modifier_marci_evolution:OnIntervalThink()
+	function modifier_sara_evolution:OnIntervalThink()
 		local parent = self:GetParent()
 		local ability = self:GetAbility()
 		if self:GetRemainingTime() <= 0 then
@@ -132,10 +132,10 @@ if IsServer() then
 		self.armorReduction = ability:GetSpecialValueFor("armor_reduction_pct") * (parent:GetPhysicalArmorValue(false) - (self.armorReduction or 0)) * 0.01
 	end
 else
-	function modifier_marci_evolution:OnCreated()
+	function modifier_sara_evolution:OnCreated()
 		self:StartIntervalThink(0.1)
 	end
-	function modifier_marci_evolution:OnIntervalThink()
+	function modifier_sara_evolution:OnIntervalThink()
 		local parent = self:GetParent()
 		local ability = self:GetAbility()
 		self.armorReduction = ability:GetSpecialValueFor("armor_reduction_pct") * (parent:GetPhysicalArmorValue(false) - (self.armorReduction or 0)) * 0.01

@@ -26,6 +26,7 @@
 #base "../vscripts/heroes/hero_shinobu/hero_shinobu.txt"
 #base "../vscripts/heroes/hero_muerta/muerta.txt"
 #base "../vscripts/heroes/hero_sf/sf.txt"
+#base "../vscripts/heroes/hero_sara/sara.txt"
 
 
 #base "portal/abilities.txt"

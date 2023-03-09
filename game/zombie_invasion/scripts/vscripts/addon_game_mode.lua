@@ -31,7 +31,8 @@ end
 function Precache( context )
  
 		print("[BAREBONES] Performing pre-load precache")
-PrecacheModel("models/hero_shinobu/shinobu_01.vmdl", context)  
+	PrecacheModel("models/hero_shinobu/shinobu_01.vmdl", context)
+	PrecacheModel("models/units/sara/sara.vmdl", context)  
 	---------------------------------model-------------------------------
 	PrecacheModel("models/props_gameplay/pig.vmdl", context) --pig
 	PrecacheModel("models/items/hex/sheep_hex/sheep_hex.vmdl", context) --sheep
