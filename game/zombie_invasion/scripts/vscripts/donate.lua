@@ -87,6 +87,16 @@ DONATE_ITEMS = {
 			},
 		},
 
+		{
+			name = "item_sara_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_SET_ULTRA_HELPER,
+			},
+		},
+
 	},
 	artifacts = {
 
