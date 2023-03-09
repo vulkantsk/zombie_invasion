@@ -528,4 +528,63 @@ function CDOTA_BaseNPC:StopMotionControllers(bForceDestroy)
 	end
 end
  
- 
+function CDOTA_BaseNPC_Hero:GetTotalHealthReduction()
+	local pct = self:GetModifierStackCount("modifier_kadash_immortality_health_penalty", self)
+	local mod = self:FindModifierByName("modifier_stegius_brightness_of_desolate_effect")
+	if mod then
+		pct = pct + mod:GetAbility():GetAbilitySpecial("health_decrease_pct")
+	end
+
+	local sara_evolution = self:FindAbilityByName("sara_evolution")
+	if sara_evolution then
+		local dec = sara_evolution:GetSpecialValueFor("health_reduction_pct")
+		return dec + ((100-dec) * pct * 0.01)
+	end
+	return pct
+end
+
+
+
+function CDOTA_BaseNPC_Hero:CalculateHealthReduction()
+	self:CalculateStatBonus(true)
+	local pct = self:GetTotalHealthReduction()
+	self:SetMaxHealth(pct >= 100 and 1 or self:GetMaxHealth() - pct * (self:GetMaxHealth()/100))
+end
+
+function CDOTABaseAbility:PerformPrecastActions()
+	if self:IsCooldownReady() and self:IsOwnersManaEnough() then
+		self:PayManaCost()
+		self:AutoStartCooldown()
+		--self:UseResources(true, true, true) -- not works with items?
+		return true
+	end
+	return false
+end
+
+function CDOTABaseAbility:GetReducedCooldown()
+	local biggestReduction = 0
+	local unit = self:GetCaster()
+	for k,v in pairs(COOLDOWN_REDUCTION_MODIFIERS) do
+		if unit:HasModifier(k) then
+			biggestReduction = math.max(biggestReduction, type(v) == "function" and v(unit) or v)
+		end
+	end
+	return self:GetCooldown(math.max(self:GetLevel() - 1, 1)) * (100 - biggestReduction) * 0.01
+end
+
+COOLDOWN_REDUCTION_MODIFIERS = {
+	modifier_octarine_unique_cooldown_reduction = function(unit)
+		return GetAbilitySpecial(unit:HasModifier("modifier_item_refresher_core") and "item_refresher_core" or "item_octarine_core_arena", "bonus_cooldown_pct")
+	end,
+	--TODO Make it work without that table, rewrite modifier_octarine_unique_cooldown_reduction in modifier_lua
+	modifier_arena_rune_arcane = function(unit)
+		return unit:FindModifierByName("modifier_arena_rune_arcane"):GetModifierPercentageCooldown()
+	end,
+	modifier_talent_cooldown_reduction_pct = function(unit)
+		return unit:FindModifierByName("modifier_talent_cooldown_reduction_pct"):GetModifierPercentageCooldown()
+	end
+}
+
+function CDOTA_BaseNPC:IsRealCreep()
+	return self.SSpawner ~= nil and self.SpawnerType ~= nil
+end

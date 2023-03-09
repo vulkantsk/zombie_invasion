@@ -76,7 +76,6 @@ if IsServer() then
 			return self.Energy
 		end
 		parent.GetMaxEnergy = function()
-			print("cool")
 			return self.MaxEnergy
 		end
 		parent.ModifyMaxEnergy = function(_, value)
@@ -101,7 +100,7 @@ if IsServer() then
 		end
 	end
 	function modifier_sara_evolution:OnDeath(keys)
-		if keys.attacker == self:GetParent() and keys.unit:IsCreep() then
+		if keys.attacker == self:GetParent() and keys.unit:IsRealCreep() then
 			local ability = self:GetAbility()
 			local energy = ability:GetSpecialValueFor("max_per_creep") + ability:GetSpecialValueFor("max_per_creep_pct") * keys.attacker:GetMaxEnergy() * 0.01
 			if keys.unit.SpaceDissectionMultiplier then
@@ -126,7 +125,7 @@ if IsServer() then
 		local maxMana = parent:GetMaxMana() - (self.ManaModifier or 0)
 		local previous = self.ManaModifier
 		self.ManaModifier = self.MaxEnergy - maxMana
-		self:SetSharedKey("ManaModifier", self.ManaModifier)
+		self:GetSharedKey("ManaModifier", self.ManaModifier)
 		if parent:IsAlive() then
 			parent:CalculateHealthReduction()
 		end
