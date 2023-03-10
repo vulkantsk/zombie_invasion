@@ -107,7 +107,9 @@ Sounds = Sounds or {
 ["Кошмар перед рождеством - Oogie Boogie39s Song"] = 195,
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
- 
+
+["Kordhell - Murder In My Mind"] = 145, 
+
   	},
 }
 

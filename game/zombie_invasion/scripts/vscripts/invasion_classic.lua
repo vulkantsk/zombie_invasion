@@ -1495,7 +1495,7 @@ function InvasionMode:ThemeMusic()
  	{
  
  		[1] = {
-			"Undertale - Respite",
+			"Kordhell - Murder In My Mind",
 		},
 
  		[2] = {
@@ -1707,9 +1707,16 @@ end
  
  	night_music =
  	{
+
+
+ 		[1] = {
+	 		"Kordhell - Murder In My Mind",
+ 
+ 		},
  
  		[5] = {
 	 		"Пётр Ильич Чайковский - Марш из балета Щелкунчик",
+	 		"Kordhell - Murder In My Mind",
  
  		},
 
