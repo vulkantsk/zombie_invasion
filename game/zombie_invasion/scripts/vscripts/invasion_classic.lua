@@ -1495,19 +1495,22 @@ function InvasionMode:ThemeMusic()
  	{
  
  		[1] = {
-			"Kordhell - Murder In My Mind",
+			"Undertale - Respite",
 		},
 
  		[2] = {
-	 		"C418-Key",
+	 		"Unknown - mne malo malo malo tebya",
+	 		"CMH Lida - STIKER",
  		},
  		[3] = {
-			"Argh Ost – Halloween",
+			"plenka - No",
+			"Josh A - So Tired",
+
  		},
  		[4] = {
-	 		"C418-Key",
-			"Undertale - Respite",
-			"Argh Ost – Halloween",  
+	 		"evan wheel -  emptines",
+	 		"slowbarry - myortvyj vnutri",
+
           },
  		[5] = {
 	 		"C418-Key",
@@ -1520,9 +1523,7 @@ function InvasionMode:ThemeMusic()
 			"Argh Ost – Halloween",  
           },
  		[7] = {
-	 		"C418-Key",
-			"Undertale - Respite",
-			"Argh Ost – Halloween",  
+			"Kordhell - Murder In My Mind",  
           },
  		--[[ 
   		[5] = {
@@ -1709,13 +1710,14 @@ end
  	{
 
 
- 		[1] = {
-	 		"Kordhell - Murder In My Mind",
- 
- 		},
+
  
  		[5] = {
 	 		"Пётр Ильич Чайковский - Марш из балета Щелкунчик",
+ 
+ 		},
+
+ 		[7] = {
 	 		"Kordhell - Murder In My Mind",
  
  		},

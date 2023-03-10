@@ -108,8 +108,22 @@ Sounds = Sounds or {
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
 
-["Kordhell - Murder In My Mind"] = 145, 
+["Kordhell - Murder In My Mind"] = 145,
 
+["Unknown - mne malo malo malo tebya"] = 163,
+
+["plenka - No"] = 197,
+
+["evan wheel -  emptines"] = 146,
+
+["slowbarry - myortvyj vnutri"] = 157,
+
+["Josh A - So Tired"] = 126,
+
+["CMH Lida - STIKER"] = 136,
+
+
+ 
   	},
 }
 

@@ -5,6 +5,6 @@
  function item_test:OnSpellStart()
 	--print("OnSpellStart")
 --	local sound = "Slow_mobs_1"
-  EmitGlobalSound ("Kordhell - Murder In My Mind")
+  EmitGlobalSound ("CMH Lida - STIKER")
 
 end
