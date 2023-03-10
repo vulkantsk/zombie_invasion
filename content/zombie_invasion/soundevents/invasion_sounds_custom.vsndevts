@@ -5120,6 +5120,298 @@
                 }
         }
 }
+"Unknown - mne malo malo malo tebya"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/Unknown - mne malo malo malo tebya"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+
+"benedixhion - toxin"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/benedixhion - toxin"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+
+
+"benedixhion - Go2Hell"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/benedixhion - Go2Hell"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+"AZAZLO - SSC Tuatara"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/AZAZLO - SSC Tuatara"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+"AZAZLO - SSC Tuatara"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/AZAZLO - SSC Tuatara"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+
+"AZAZLO - Revolver"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/AZAZLO - Revolver"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+"convolk - soldier freestyle"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/convolk - soldier freestyle"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
+"Babymetal - Gimme Chocolate"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/Babymetal - Gimme Chocolate"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+
+}
 "plenka - No"   
 {
         "operator_stacks"
@@ -5172,6 +5464,41 @@
                                                 "value"
                                                 {
                                                         "value0"                "sounds/evan wheel -  emptines"
+                                                }
+                                        }
+										"volume"			{   "value"     "0.900000"  }
+   									     "soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"t1de sadkawaii - Regret"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/t1de sadkawaii - Regret"
                                                 }
                                         }
 										"volume"			{   "value"     "0.900000"  }

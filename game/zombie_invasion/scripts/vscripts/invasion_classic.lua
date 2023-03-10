@@ -1495,7 +1495,8 @@ function InvasionMode:ThemeMusic()
  	{
  
  		[1] = {
-			"Undertale - Respite",
+			"Babymetal - Gimme Chocolate",
+			"t1de sadkawaii - Regret",
 		},
 
  		[2] = {
@@ -1513,17 +1514,16 @@ function InvasionMode:ThemeMusic()
 
           },
  		[5] = {
-	 		"C418-Key",
-			"Undertale - Respite",
-			"Argh Ost – Halloween",  
+	 		"benedixhion - toxin",
+			"benedixhion - Go2Hell",  
           },
  		[6] = {
-	 		"C418-Key",
-			"Undertale - Respite",
-			"Argh Ost – Halloween",  
+	 		"AZAZLO - SSC Tuatara",
+			"AZAZLO - Revolver",
           },
  		[7] = {
-			"Kordhell - Murder In My Mind",  
+			"Kordhell - Murder In My Mind",
+			"convolk - soldier freestyle", 
           },
  		--[[ 
   		[5] = {

@@ -110,17 +110,31 @@ Sounds = Sounds or {
 
 ["Kordhell - Murder In My Mind"] = 145,
 
-["Unknown - mne malo malo malo tebya"] = 160,
+["Unknown - mne malo malo malo tebya"] = 150,
 
-["plenka - No"] = 197,
+["plenka - No"] = 180,
 
-["evan wheel -  emptines"] = 146,
+["evan wheel -  emptines"] = 130,
 
-["slowbarry - myortvyj vnutri"] = 157,
+["slowbarry - myortvyj vnutri"] = 143,
 
-["Josh A - So Tired"] = 103,
+["Josh A - So Tired"] = 93,
 
-["CMH Lida - STIKER"] = 130,
+["CMH Lida - STIKER"] = 120,
+
+["t1de sadkawaii - Regret"] = 140,
+
+["Babymetal - Gimme Chocolate"] = 140,
+
+["benedixhion - toxin"] = 140,
+
+["benedixhion - Go2Hell"] = 140,
+
+["AZAZLO - SSC Tuatara"] = 140,
+
+["AZAZLO - Revolver"] = 140,
+
+["convolk - soldier freestyle"] = 140
 
 
  
