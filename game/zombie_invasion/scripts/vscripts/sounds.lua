@@ -110,7 +110,7 @@ Sounds = Sounds or {
 
 ["Kordhell - Murder In My Mind"] = 145,
 
-["Unknown - mne malo malo malo tebya"] = 163,
+["Unknown - mne malo malo malo tebya"] = 160,
 
 ["plenka - No"] = 197,
 
@@ -118,9 +118,9 @@ Sounds = Sounds or {
 
 ["slowbarry - myortvyj vnutri"] = 157,
 
-["Josh A - So Tired"] = 126,
+["Josh A - So Tired"] = 103,
 
-["CMH Lida - STIKER"] = 136,
+["CMH Lida - STIKER"] = 130,
 
 
  
