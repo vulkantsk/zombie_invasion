@@ -126,7 +126,7 @@
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "Hero/nevermore_requiem_demon_png"
+        "AbilityTextureName"            "nevermore_requiem_demon"
         "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "15"

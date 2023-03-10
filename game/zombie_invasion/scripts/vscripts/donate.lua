@@ -41,6 +41,13 @@ DONATE_ITEM_SHINOBU = {
 	},	
 }
 
+DONATE_ITEM_SARA = {
+	players = {
+		1075207684,
+
+	},	
+}
+
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -94,6 +101,7 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_SET_ULTRA_HELPER,
+				DONATE_ITEM_SARA,
 			},
 		},
 
