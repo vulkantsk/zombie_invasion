@@ -5,8 +5,6 @@
  function item_test:OnSpellStart()
 	--print("OnSpellStart")
 --	local sound = "Slow_mobs_1"
-  if randomheroess >= 1 then 
- InvasionMode:RandomHeroes()
- end  
- 
+  EmitGlobalSound ("Kordhell - Murder In My Mind")
+
 end
