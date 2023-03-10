@@ -1901,7 +1901,7 @@
 	"DOTA_Tooltip_modifier_sara_fragment_of_logic_debuff_Description" "Невозможно восстановить энергию."
 	"DOTA_Tooltip_ability_sara_fragment_of_logic_Lore" "Неважно, насколько сильным будет твой удар — тебе потребуется нечто большее, чтобы меня убить."
 
-	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection2" "-2.5 к снижению брони от способности space dissection"
+	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection2" "+2.5 к снижению брони от способности space dissection"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection" "-3 секунды перезарядки способности space dissection"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
