@@ -47,7 +47,7 @@ if IsServer() then
 		end
 		self:StartIntervalThink(self.think_interval)
 		self:SetDuration(60, true)
-		self.MaxEnergy = 250
+		self.MaxEnergy = 0
 		self.Energy = self.MaxEnergy
 		local illusionParent = parent:GetIllusionParent()
 		if parent.SavedEnergyStates then
