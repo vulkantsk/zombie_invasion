@@ -1522,7 +1522,62 @@
 		"DOTA_Tooltip_Ability_enchantress_untouchable"											"Poison"
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "После нападения на Горгону большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную змею."
+		// -----------------sf--------------------		
+ 
+		"DOTA_Tooltip_ability_shotgun_sf"								"Shotgun"
+		"DOTA_Tooltip_ability_shotgun_sf_Description"					"Герой расщепляет свои снаряды, атакуя несколько целей, но при этом передвигаясь медленее.\n\nНа дополнительные цели действуют эффекты атаки, такие как критический урон."
+		"DOTA_Tooltip_Ability_shotgun_sf_damage"     							""
+		"DOTA_Tooltip_Ability_shotgun_sf_damage_modifier_tooltip"     							"%НАНОСИМЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_shotgun_sf_slow_movespeed"     							"ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_shotgun_sf_Lore"							"Идея BaronXX"
+		"DOTA_Tooltip_ability_shotgun_sf_Note0"							"Дополнительными целями считаются ближайшие противники, не считая основной цели."
+		"DOTA_Tooltip_ability_shotgun_sf_Note1"							"Если эта способность включена при создании иллюзий, она будет действовать и у них."
 
+		"DOTA_Tooltip_ability_sf_necromastery_hero"									"Necromastery"		
+		"DOTA_Tooltip_ability_sf_necromastery_hero_Description"						"Герой крадёт душу каждого убитого врага, получая бонус к атаке. После смерти выпускает 50%% от них."
+		"DOTA_Tooltip_ability_sf_necromastery_hero_Lore"								"Идея BaronXX"
+		"DOTA_Tooltip_ability_sf_necromastery_hero_Note0"								"Добивание союзников и нейтральных крипов также даёт бонус к атаке."
+		"DOTA_Tooltip_ability_sf_necromastery_hero_soul_max"			"МАКС. ДУШ:"
+		"DOTA_Tooltip_ability_sf_necromastery_hero_soul_damage"		"УРОНА ЗА ДУШУ:"
+		"DOTA_Tooltip_ability_sf_necromastery_hero_lifesteal_pct"		"%ВАМПИРИЗМ:"
+
+ 		"DOTA_Tooltip_modifier_sf_necromastery_hero"                            	"Necromastery"
+		"DOTA_Tooltip_modifier_sf_necromastery_hero_Description"                	"Моя коллекция"
+		 
+
+		"DOTA_Tooltip_ability_sf_devour"							"Devour"
+		"DOTA_Tooltip_ability_sf_devour_Description"				"Пожирает очень слабого крипа и начинает переваривать. После переваривания получает навсегда армор, мс и урон. Длительность действия %devour_time% сек."
+		"DOTA_Tooltip_ability_sf_devour_Lore"						"Идея BaronXX"
+		"DOTA_Tooltip_ability_sf_devour_Note0"					"За сожранного крипа даётся не только дополнительное золото, но и награда за его убийство."
+		"DOTA_Tooltip_ability_sf_devour_bonus_gold"				"ДОП. ЗОЛОТО:"
+		"DOTA_Tooltip_ability_sf_devour_bonus_armor"					"ДОП. БРОНЯ:"
+		"DOTA_Tooltip_ability_sf_devour_bonus_movespeed"					"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_sf_devour_bonus_damage"					"ДОП. УРОН:"
+
+ 		"DOTA_Tooltip_modifier_sf_devour"                            	"Devour"
+		"DOTA_Tooltip_modifier_sf_devour_Description"                	"Hamburge"
+ 		"DOTA_Tooltip_modifier_sf_devour_endless"                            	"Devour"
+		"DOTA_Tooltip_modifier_sf_devour_endless_Description"                	"Вы наели на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% мса, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% армора и %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE% урона."
+ 
+
+		"DOTA_Tooltip_ability_sf_demonic"							"Demonic Enhancement"
+		"DOTA_Tooltip_ability_sf_demonic_Description"				"При каждом получение %dmg_proc% урона, получает силу навсегда."
+		"DOTA_Tooltip_ability_sf_demonic_Lore"						"Идея BaronXX"
+		"DOTA_Tooltip_ability_sf_demonic_str_per_stack"				"СИЛЫ ЗА СТАК:"
+		"DOTA_Tooltip_ability_sf_demonic_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_ability_sf_demonic_bonus_health"					"+$health"
+
+ 		"DOTA_Tooltip_modifier_sf_demonic"                            	"Demonic Enhancement"
+		"DOTA_Tooltip_modifier_sf_demonic_Description"                	"У вас %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS% доп. силы"
+		  
+		"DOTA_Tooltip_ability_sf_scary_shape"							"..."
+		"DOTA_Tooltip_ability_sf_scary_shape_Description"				"Ты пока не достоин этого заклинания..."
+		"DOTA_Tooltip_ability_sf_scary_shape_Lore"						"Идея BaronXX"
+
+		"DOTA_Tooltip_ability_sf_scary_shape_active"							"Scary Shape"
+		"DOTA_Tooltip_ability_sf_scary_shape_active_Description"				"АХАХАХАХА Будучи настоящим демоном, вы урезаете аромор противников в процентах. Но учтите, это могущество можно легко потерять."
+		"DOTA_Tooltip_ability_sf_scary_shape_active_reduced_armor"					"%СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_sf_scary_shape_active_Lore"						"Идея BaronXX"
 		// -----------------Muerta-------------------- 
 
 		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"

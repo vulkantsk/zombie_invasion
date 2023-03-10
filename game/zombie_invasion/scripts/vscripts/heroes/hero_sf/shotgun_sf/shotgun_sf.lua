@@ -48,7 +48,7 @@ function shotgun_sf:OnProjectileHit( target, location )
 end
 
 modifier_shotgun_sf = class({
-	IsHidden 				= function(self) return false end,
+	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,

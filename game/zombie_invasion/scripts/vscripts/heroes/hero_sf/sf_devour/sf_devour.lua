@@ -123,7 +123,7 @@ end
  
 
 modifier_sf_devour_endless = class({
-	IsHidden 				= function(self) return true end,
+	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,
