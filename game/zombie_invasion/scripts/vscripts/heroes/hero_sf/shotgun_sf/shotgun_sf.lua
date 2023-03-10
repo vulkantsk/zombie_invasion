@@ -14,6 +14,7 @@ LinkLuaModifier( "modifier_shotgun_sf", "heroes/hero_sf/shotgun_sf/shotgun_sf", 
 
 --------------------------------------------------------------------------------
 -- Passive Modifier
+ 
 
 function shotgun_sf:OnToggle()
 	local caster = self:GetCaster()
@@ -24,8 +25,7 @@ function shotgun_sf:OnToggle()
 		end
 end
 
-
-
+ 
 
 --------------------------------------------------------------------------------
 -- Projectile
@@ -88,6 +88,7 @@ function modifier_shotgun_sf:OnRefresh( kv )
 
 end
 
+ 
 function modifier_shotgun_sf:OnRemoved()
 end
 

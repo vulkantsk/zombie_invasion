@@ -4,7 +4,8 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"						"7"
@@ -15,6 +16,8 @@
 
 		"AbilityTextureName"			"snapfire_scatterblast"
 
+        "HasShardUpgrade"               "1"
+
 		// Special	
 		//-----------------------------------------------------------------------------------------------------
 		"AbilityValues"
@@ -24,8 +27,11 @@
 			"damage_modifier_tooltip"		"40 50 60 70 80 90 100"
 			"arrow_count"				"100"
 			"split_shot_bonus_range"		"100"
-			"slow_movespeed"                 "-200 -250 -300 -350 -400 -450 -500"
-
+			"slow_movespeed"				
+			{
+				"value"				"-200 -250 -300 -350 -400 -450 -500"
+				"special_bonus_shard"		"-100%"
+			}
 		}
 	}
 
@@ -50,11 +56,20 @@
 		"AbilityValues"
 		{
 
-			"soul_damage"			"1"
+			"soul_damage"					
+			{
+				"value"				"1"  
+			    "special_bonus_unique_sf_necrom_damage"	    "+0.5"
+					 
+			}
 			"soul_max"				"666"
 			"soul_release"			"0.5"
-			"lifesteal_pct"          "3 5 7 9 12 15 17"
-
+			"lifesteal_pct"					
+			{
+				"value"				"2 4 6 8 10 12 14"  
+			    "special_bonus_unique_sf_necrom_life"	    "+10"
+					 
+			}
 		}
 	}
 "sf_devour"
@@ -82,8 +97,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"70"
-		"AbilityManaCost"				"40 50 60 70 80 90 100"
+		"AbilityManaCost"				"40 55 70 85 100 115 130"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -99,7 +113,12 @@
 				"bonus_armor"			"0.5"
 				"bonus_damage"			"5 10 15 20 25 30 35"
 
-
+				"AbilityCooldown"					
+				{
+					"value"				"70"
+			    	"special_bonus_unique_sf_devour_cooldown"	    "-20"
+					 
+				}
 		}
 	}
 
@@ -155,8 +174,7 @@
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "10"
 
-		"AbilityCooldown"				"30"
-
+ 		 "HasScepterUpgrade"             "1"
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
@@ -165,8 +183,51 @@
                 "str_per_stack"                      "2 4 6"
 				"bonus_health"			"500 1000 1500"
 				"bonus_armor"			"3 6 9"
-
+				"AbilityCooldown"					
+				{
+					"value"				"30"
+			    	"special_bonus_unique_sf_demonic_cooldown"	    "-5"
+					"RequiresScepter"			"1"
+					"special_bonus_scepter"		"-10"					 
+				}
         }
 
     }  
+
+ 	"special_bonus_unique_sf_demonic_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+ 	"special_bonus_unique_sf_devour_cooldown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+ 	"special_bonus_unique_sf_necrom_life"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+ 	"special_bonus_unique_sf_necrom_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
 }

@@ -1533,6 +1533,9 @@
 		"DOTA_Tooltip_ability_shotgun_sf_Note0"							"Дополнительными целями считаются ближайшие противники, не считая основной цели."
 		"DOTA_Tooltip_ability_shotgun_sf_Note1"							"Если эта способность включена при создании иллюзий, она будет действовать и у них."
 
+		"DOTA_Tooltip_ability_shotgun_sf_shard_description"						"Теперь способность не замедляет тебя."
+		"DOTA_Tooltip_ability_shotgun_sf_slow_movespeed"					"ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+
 		"DOTA_Tooltip_ability_sf_necromastery_hero"									"Necromastery"		
 		"DOTA_Tooltip_ability_sf_necromastery_hero_Description"						"Герой крадёт душу каждого убитого врага, получая бонус к атаке. После смерти выпускает 50%% от них."
 		"DOTA_Tooltip_ability_sf_necromastery_hero_Lore"								"Идея BaronXX"
@@ -1567,6 +1570,9 @@
 		"DOTA_Tooltip_ability_sf_demonic_bonus_armor"					"+$armor"
 		"DOTA_Tooltip_ability_sf_demonic_bonus_health"					"+$health"
 
+		"DOTA_Tooltip_ability_sf_demonic_scepter_description" "Уменьшает перезарядку способности."
+		"DOTA_Tooltip_ability_sf_demonic_AbilityCooldown" "ПЕРЕЗАРЯДКА:"
+
  		"DOTA_Tooltip_modifier_sf_demonic"                            	"Demonic Enhancement"
 		"DOTA_Tooltip_modifier_sf_demonic_Description"                	"У вас %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS% доп. силы"
 		  
@@ -1578,6 +1584,12 @@
 		"DOTA_Tooltip_ability_sf_scary_shape_active_Description"				"АХАХАХАХА Будучи настоящим демоном, вы урезаете аромор противников в процентах. Но учтите, это могущество можно легко потерять."
 		"DOTA_Tooltip_ability_sf_scary_shape_active_reduced_armor"					"%СНИЖЕНИЕ БРОНИ:"
 		"DOTA_Tooltip_ability_sf_scary_shape_active_Lore"						"Идея BaronXX"
+
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_sf_devour_cooldown"											"-{s:bonus_AbilityCooldown} сек. перезарядки Devour"
+		"DOTA_Tooltip_Ability_special_bonus_unique_sf_necrom_life"											 "+{s:bonus_lifesteal_pct}% к вампиризму от Necromastery"
+		"DOTA_Tooltip_Ability_special_bonus_unique_sf_demonic_cooldown"											"-{s:bonus_AbilityCooldown} сек. перезарядки Demonic Enhancement"
+		"DOTA_Tooltip_Ability_special_bonus_unique_sf_necrom_damage"											"+{s:bonus_soul_damage} к урону за душу от Necromastery"
+
 		// -----------------Muerta-------------------- 
 
 		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"

@@ -536,7 +536,7 @@ function InvasionMode:RandomHeroes()
 	"npc_dota_hero_antimage"	,
 	"npc_dota_hero_terrorblade",
  	"npc_dota_hero_oracle",
-"npc_dota_hero_techies",
+"npc_dota_hero_techies", "npc_dota_hero_phantom_lancer", "npc_dota_hero_muerta", "npc_dota_hero_nevermore","npc_dota_hero_treant",
 }
 
 	local modifier_table = {"modifier_item_aghanims_shard","modifier_item_ultimate_scepter_consumed",

@@ -845,12 +845,12 @@
 		m_vMaterialRemapList = 
 		[
 			{
-				m_sSearchMaterial = "imported material 01.vmat"
-				m_sReplaceMaterial = "materials/models/units/sara/sara.vmat"
+				m_sSearchMaterial = "*"
+				m_sReplaceMaterial = "materials/models/units/sara.vmat"
 			},
 			{
-				m_sSearchMaterial = ""
-				m_sReplaceMaterial = "materials/models/units/sara_color.png"
+				m_sSearchMaterial = "*"
+				m_sReplaceMaterial = "materials/models/units/sara.vmat"
 			},
 		]
 	}
