@@ -145,7 +145,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"energy_to_damage_pct" "16 20 24 28 33 44"
+				"energy_to_damage_pct" "7 9 11 13 15 16 20"
 			}
 			"04"
 			{
@@ -208,7 +208,7 @@
 		"AbilityTextureName"			"sara_fragment_of_logic"
 		"MaxLevel" 						"4"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityCooldown"				"7.0 5.5 3.5 0"
+		"AbilityCooldown"				"15.0 12.0 9.5 7.0"
 		"HasScepterUpgrade"				"1"
 
 		"AbilitySpecial"
@@ -221,12 +221,12 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"energy_pct"		"5.0 7.0 9.0 11.0"
+				"energy_pct"		"10.0 8.0 6.0 4.0"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"debuff_duration"	"0"
+				"debuff_duration"	"3"
 			}
 			"04"
 			{
