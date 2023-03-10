@@ -1418,7 +1418,11 @@ function InvasionMode:ThemeMusic()
   		    "Runaway - Parachute Youth feat. Jay Martin",
   		    "Sia - Cheap Thrills",
     	},
- 
+
+ 	[8] = {
+  		    "GigaChad Theme",
+
+    	},
     	--[[ 
         	[5] = {
 		"RSAC - NBA",

@@ -48,7 +48,9 @@ Sounds = Sounds or {
 	 	["Daved Guetta - Would I Lie To You"] = 38,
 	 	["Sia - Chandelier"] = 107,
 	 	["Does It Matter - Janieck"] = 65,
- 
+
+
+ 		["GigaChad Theme"] = 187,
 
 
  
@@ -63,7 +65,7 @@ Sounds = Sounds or {
  
 		--Boss theme
 		["Asgore_main_classic"] = 154,
-			["christmas_boss_theme"] = 187,	
+			["GigaChad Theme"] = 187,	
 
 -- Just
 ["Rick Astley - Never Gonna Give You Up"] = 213,	

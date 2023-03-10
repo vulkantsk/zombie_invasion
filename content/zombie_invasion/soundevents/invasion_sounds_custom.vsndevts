@@ -3888,7 +3888,7 @@
 
  
 
-"christmas_boss_begin"   
+"GigaChad Theme"   
 {
         "operator_stacks"
         {
@@ -3904,7 +3904,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/christmas_boss_begin"
+                                                        "value0"                "sounds/GigaChad Theme"
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
@@ -3925,7 +3925,7 @@
 }
 
 
-"christmas_boss_theme"   
+"GigaChad Theme"   
 {
         "operator_stacks"
         {
@@ -3941,7 +3941,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/christmas_boss_theme"
+                                                        "value0"                "sounds/GigaChad Theme"
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
