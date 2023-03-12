@@ -11,6 +11,8 @@ DONATE_SET_HELPER = {
 DONATE_SET_ULTRA_HELPER = {
 	players = {
 	203159402,
+	1235732566
+
 	},
 }
 
@@ -30,14 +32,16 @@ DONATE_ITEM_SLARK = {
           432431747,
           946902506,
           1007936248,
-          432665237
+          432665237,
+          1235732566
 	},	
 }
 
 DONATE_ITEM_SHINOBU = {
 	players = {
 		203159402,
-		206968098
+		206968098,
+		1235732566
 
 	},	
 }

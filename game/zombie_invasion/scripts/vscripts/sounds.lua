@@ -31,7 +31,7 @@ Sounds = Sounds or {
   		["Boulevard of Broken Dreams - Green Day"] = 75,
 		
  
-  		["Lana Del Rey - summertime Sadness (smoke remix)"] = 63,
+  		["Summertime"] = 63,
   		["I Follow Rivers - Lykke Li"] = 55,
    		["August - Intelligency"] = 91,  
    		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
@@ -134,9 +134,9 @@ Sounds = Sounds or {
 
 ["benedixhion - Go2Hell"] = 150,
 
-["AZAZLO - SSC Tuatara"] = 180,
+["AZAZLO - SSC Tuatara"] = 174,
 
-["AZAZLO - Revolver"] = 120,
+["AZAZLO - Revolver"] = 116,
 
 ["convolk - soldier freestyle"] = 160
 

@@ -1387,7 +1387,7 @@ function InvasionMode:ThemeMusic()
  
     	  
     	[3] = {
-  		    "Lana Del Rey - Summertime Sadness (smoke remix)",
+  		    "Summertime",
   		    "I Follow Rivers - Lykke Li",
   		    "August - Intelligency",  
   		    "Shotgun - Yellow Claw feat. Rochelle",
