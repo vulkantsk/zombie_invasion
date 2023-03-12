@@ -8752,7 +8752,7 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_heart"
+		"ItemResult"					"item_heart_2"
 		"ItemRequirements"
 		{
 			"01"						"item_dead_golova;item_heart"

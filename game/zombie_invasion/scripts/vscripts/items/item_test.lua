@@ -5,6 +5,6 @@
  function item_test:OnSpellStart()
 	--print("OnSpellStart")
 --	local sound = "Slow_mobs_1"
-  EmitGlobalSound ("GigaChad Theme")
+  EmitGlobalSound ("amekudeku - Drow Ranger")
 
 end

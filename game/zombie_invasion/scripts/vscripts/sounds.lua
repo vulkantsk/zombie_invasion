@@ -31,7 +31,7 @@ Sounds = Sounds or {
   		["Boulevard of Broken Dreams - Green Day"] = 75,
 		
  
-  		["Lana Del Rey - Summertime Sadness (smoke remix)"] = 63,
+  		["Lana Del Rey - summertime Sadness (smoke remix)"] = 63,
   		["I Follow Rivers - Lykke Li"] = 55,
    		["August - Intelligency"] = 91,  
    		["Shotgun - Yellow Claw feat. Rochelle"] = 72,
@@ -53,6 +53,8 @@ Sounds = Sounds or {
  		["GigaChad Theme"] = 187,
 
 
+
+["amekudeku - Drow Ranger"] = 95,
  
 
 ["C418-Key"] = 184,
@@ -110,33 +112,33 @@ Sounds = Sounds or {
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
 
-["Kordhell - Murder In My Mind"] = 145,
+["Kordhell - Murder In My Mind"] = 134,
 
-["Unknown - mne malo malo malo tebya"] = 150,
+["Unknown - mne malo malo malo tebya"] = 163,
 
-["plenka - No"] = 180,
+["plenka - No"] = 196,
 
-["evan wheel -  emptines"] = 130,
+["evan wheel -  emptines"] = 147,
 
 ["slowbarry - myortvyj vnutri"] = 143,
 
-["Josh A - So Tired"] = 93,
+["Josh A - So Tired"] = 96,
 
-["CMH Lida - STIKER"] = 120,
+["CMH Lida - STIKER"] = 133,
 
-["t1de sadkawaii - Regret"] = 140,
+["t1de sadkawaii - Regret"] = 100,
 
-["Babymetal - Gimme Chocolate"] = 140,
+["Babymetal - Gimme Chocolate"] = 200,
 
-["benedixhion - toxin"] = 140,
+["benedixhion - toxin"] = 130,
 
-["benedixhion - Go2Hell"] = 140,
+["benedixhion - Go2Hell"] = 154,
 
-["AZAZLO - SSC Tuatara"] = 140,
+["AZAZLO - SSC Tuatara"] = 182,
 
-["AZAZLO - Revolver"] = 140,
+["AZAZLO - Revolver"] = 124,
 
-["convolk - soldier freestyle"] = 140
+["convolk - soldier freestyle"] = 160
 
 
  

@@ -1500,7 +1500,7 @@ function InvasionMode:ThemeMusic()
  
  		[1] = {
 			"Babymetal - Gimme Chocolate",
-			"t1de sadkawaii - Regret",
+			"Josh A - So Tired",
 		},
 
  		[2] = {
@@ -1509,7 +1509,7 @@ function InvasionMode:ThemeMusic()
  		},
  		[3] = {
 			"plenka - No",
-			"Josh A - So Tired",
+			"t1de sadkawaii - Regret",
 
  		},
  		[4] = {
