@@ -6435,7 +6435,7 @@
 		"ItemResult"					"item_satanic"
 		"ItemRequirements"
 		{
-			"01"						"item_vampire_claw;item_claymore;item_reaver"
+			"01"						"item_vampire_claw;item_reaver"
 		}
 	}
  
@@ -6466,7 +6466,7 @@
 		"AbilityValues"
 		{
 				"bonus_strength"		"40"
-				"bonus_damage"			"55"
+				"bonus_damage"			"35"
 				"lifesteal_percent"		"25"
 				"creep_lifesteal_reduction_pct"	"100"
 				"unholy_lifesteal_percent"	"150"
@@ -8737,6 +8737,69 @@
 			}
 		}
 	}
+	"item_recipe_heart_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"baseclass"							"item_recipe_heart"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"700"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_heart"
+		"ItemRequirements"
+		{
+			"01"						"item_dead_golova;item_heart"
+		}
+	}
+	
+	//=================================================================================================================
+	// Heart
+	//=================================================================================================================
+	"item_heart_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"baseclass"						"item_heart"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"Upgrade_items/heart_2"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5100"
+		"ItemShopTags"					"str;regen_health;health_pool"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"hot;heart of tarrasque"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+	         "ItemBaseLevel"                 "2"		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"45 105"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"325 950"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"health_regen_pct"		"1.2 2.4"
+			}
+		}
+	}
 
  
  
@@ -9144,6 +9207,84 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_negative_armor"	"-5 -10"
+			}				
+		}
+	}
+	"item_recipe_assault_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_recipe_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3500"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_assault_2"
+		"ItemRequirements"
+		{
+			"01"						"item_platemail;item_assault"
+		}
+	}
+	//=================================================================================================================
+	// Assault Cuirass 2
+	//=================================================================================================================
+	"item_assault_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"baseclass"							"item_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastRange"				"1200"
+		"AbilityTextureName" "Assault_Cuirass_2"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5125"
+		"ItemShopTags"					"attack_speed;armor;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"ac;assault cuirass"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+         "ItemBaseLevel"                 "2"		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"30 70"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"10 20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"1200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_attack_speed"		"30 55"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_positive_armor"	"5 12"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_negative_armor"	"-5 -22"
 			}				
 		}
 	}
@@ -10426,21 +10567,85 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"240"
+				"bonus_damage"			"175"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_chance"			"55"
+				"crit_chance"			"20"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_multiplier"		"250"
+				"crit_multiplier"		"200"
 			}
 		}
 	}
+	"item_recipe_greater_crit2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_recipe_greater_crit"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_greater_crit2"
+		"ItemRequirements"
+		{
+			"01"						"item_greater_crit;item_greater_crit"
+		}
+	}
 
+	"item_greater_crit2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"baseclass"							"item_greater_crit"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"greater_crit_png"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"11550"
+		"ItemShopTags"					"damage;crit"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"daedalus"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"350"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"30"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_multiplier"		"275"
+			}
+			
+			"ItemResult"					"item_greater_crit2"
+			"ItemRequirements"
+			{
+			"01"						"item_greater_crit;item_greater_crit"
+			}
+	    }
+	}
  
   
 	"item_larks_change"

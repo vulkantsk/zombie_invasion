@@ -719,7 +719,7 @@
 
 		"DOTA_Tooltip_Ability_item_recipe_assault_2"					"Assault Cuirass 2 Recipe"
 		
-		"DOTA_Tooltip_Ability_item_assault_2"				"Totem Cuirass"
+		"DOTA_Tooltip_Ability_item_assault_2"				"Assault Cuirass 2"
 		"DOTA_Tooltip_ability_item_assault_2_Description"							"<h1>Пассивная: Assault Aura</h1> Увеличивает броню союзных построек и существ на %aura_positive_armor%, а их скорость атаки — на %aura_attack_speed%. Снижает броню врагов на %aura_negative_armor%.<br><br>Радиус: %aura_radius%"
 		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Этот жуткий доспех, выкованный в кузнях нижних пределов, способен укрепить и ускорить целую армию."
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
@@ -1071,7 +1071,7 @@
 		"DOTA_Tooltip_ability_item_ess_pudge_bonus_damage"				"+$all"
 
 
-		"DOTA_Tooltip_Ability_item_heart_2"				"Totem Heart of Tarrasque"
+		"DOTA_Tooltip_Ability_item_heart_2"				"MEGA Heart of Tarrasque"
 		 "DOTA_Tooltip_ability_item_heart_2_Description"							""
 		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца."
 		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
@@ -2854,7 +2854,7 @@
 		"Info1"						"Info 1"
 		"Info2"						" "	    
  
-        "DOTA_Tooltip_ability_item_greater_crit2"								"Totem Daedalus"
+        "DOTA_Tooltip_ability_item_greater_crit2"								"Daedalus 2"
 		"DOTA_Tooltip_ability_item_greater_crit2_Description"					"<h1>Пассивная: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона."
 		"DOTA_Tooltip_ability_item_greater_crit2_Note0" 						"Постройкам дополнительный урон не наносится."
 		"DOTA_Tooltip_ability_item_greater_crit2_Lore"							"Оружие невероятной мощи, с которым нелегко управиться даже самому сильному воину."
