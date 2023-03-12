@@ -66,7 +66,7 @@ Sounds = Sounds or {
  
  
 		--Boss theme
-		["Asgore_main_classic"] = 154,
+		["Amekudeku - Drow Rangerr"] = 1,
 			["GigaChad Theme"] = 187,	
 
 -- Just

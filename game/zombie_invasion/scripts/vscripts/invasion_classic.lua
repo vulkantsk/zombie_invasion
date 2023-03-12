@@ -24,7 +24,7 @@ end
 HERO_RESPAWN_TIME_BEFORE_10 =	 10
 
 Witch_killed = 0
- 
+  
   
 model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
@@ -95,7 +95,8 @@ function InvasionMode:InvasionMap()
 	Difficulty:Init()
 end
 
-
+Drow_was_picked = 0
+ 
  function InvasionMode:InvasionMapGameRulesStateChange(data)
 	local newState = GameRules:State_Get()
 	if newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
@@ -108,9 +109,31 @@ end
 			if player and not PlayerResource:HasSelectedHero( id ) then
 				player:MakeRandomHeroSelection()
 			end
+			--	EmitGlobalSound("amekudeku - Drow Ranger")
+	
 		end
 	elseif newState == DOTA_GAMERULES_STATE_HERO_SELECTION then
+
 		Difficulty:OnHeroSelectionState()
+	Timers:CreateTimer( 0.01, function()
+    		for id=0, PlayerResource:GetPlayerCount() - 1 do
+  
+ 			local hero_name   = PlayerResource:GetSelectedHeroName(id)
+
+      		if hero_name == "npc_dota_hero_drow_ranger" then 
+      			Drow_was_picked = Drow_was_picked + 1
+      			EmitGlobalSound("amekudeku - Drow Ranger")
+      			return nil
+      		end
+
+    		end
+
+    		if newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
+    			return nil 
+    		end
+   		 return 1
+ 	end)
+ 		 
 	end 
 end
 
@@ -1494,6 +1517,13 @@ function InvasionMode:ThemeMusic()
         ]] 
     }	
 
+    if Drow_was_picked == 1 then 
+    		day_music = {
+    			[1] = {
+    				"Amekudeku - Drow Rangerr",
+    			},
+    		}
+    	end
 
  	night_music =
  	{
