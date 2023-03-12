@@ -233,7 +233,8 @@ LinkLuaModifier( "modifier_special_effect_admin", "modifiers/donate/modifier_spe
 LinkLuaModifier( "modifier_special_effect_admin2", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_admin3", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_legendary2", "modifiers/donate/modifier_special_effect_legendary2", LUA_MODIFIER_MOTION_BOTH )	
- 
+LinkLuaModifier( "modifier_special_effect_sf_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )	
+
 function Donate:OnNPCSpawned(keys)
 	print("[BAREBONES] NPC Spawned")
 --	DeepPrintTable(keys)
@@ -257,6 +258,8 @@ function Donate:OnNPCSpawned(keys)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin2",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin3",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ULTRA_HELPER.players,"modifier_special_effect_legendary2",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_sf_skin",steamID,npc)
+		 
 --		addModifierBySteamID(				
 --[[ 	
 		if not FirstSpawned[playerID] then

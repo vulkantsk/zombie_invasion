@@ -112,7 +112,14 @@ end
 
 function modifier_sf_necromastery_hero:PlayEffects( target )
 	-- Get Resources
-	local projectile_name = "particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf"
+	local projectile_name
+    if self:GetCaster():HasModifier("modifier_special_effect_sf_skin") then 
+         projectile_name = "particles/heroes/azzazel/nevermore_necro_souls.vpcf"
+    else 
+         projectile_name = "particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf"
+    end
+
+	   
 
 	-- CreateProjectile
 	local info = {

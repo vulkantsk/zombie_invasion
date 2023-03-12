@@ -59,7 +59,6 @@
 			 "damage_scepter"		
 			 {
 				"value"		"80"
-				"CalculateSpellDamageTooltip"	"0"
 				"RequiresScepter"			"1"
 			 }
 			  

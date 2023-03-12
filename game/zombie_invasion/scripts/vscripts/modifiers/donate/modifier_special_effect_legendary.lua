@@ -42,4 +42,12 @@ modifier_special_effect_slark_skin = class({
 })
 
  
+
+ modifier_special_effect_sf_skin = class({
+	IsHidden 				= function(self) return true end,
+	IsPurgable 				= function(self) return false end,
+	RemoveOnDeath 			= function(self) return false end,
+    AllowIllusionDuplicate 	= function(self) return true end,
+    GetAttributes           = function(self) return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end,
+})
  

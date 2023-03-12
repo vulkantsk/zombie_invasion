@@ -1136,7 +1136,10 @@
 
  		"DOTA_Tooltip_ability_item_larks_change"								"<font color='#4285B4'>Essence of slark</font>"
         "DOTA_Tooltip_ability_item_larks_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на Slark"
- 
+
+ 		"DOTA_Tooltip_ability_item_sf_change"								"<font color='#fff'>Essence of Azzazel</font>"
+        "DOTA_Tooltip_ability_item_sf_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на Azzazel"
+  
 
 		"DOTA_Tooltip_Ability_item_brassiere"					"Naga's brassiere"
 		"DOTA_Tooltip_ability_item_brassiere_Description"							"<h1>Пассивная: Brassiere's Aura</h1>Увеличивает атаку в ближнем бою для союзников на %bonus_attack_range%, их урон на %bonus_damage%, скорость атаки на %bonus_attack_speed%. <br><br>Радиус: %radius%<br><br><font color='#c10020'>ВЫ НЕ МОЖЕТЕ АТАКОВАТЬ!</font>"

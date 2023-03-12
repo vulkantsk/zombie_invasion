@@ -10735,7 +10735,7 @@
 	{
 		"BaseClass"                     "item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"slark"
+		"AbilityTextureName"			"sf_donate"
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 

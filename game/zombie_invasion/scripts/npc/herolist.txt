@@ -37,7 +37,7 @@
 
 // Donate
 	"npc_dota_hero_slark"				"0"
- 	"npc_dota_hero_nevermore"			"1"
+ 	"npc_dota_hero_nevermore"			"0"
  
 
 // Almost ready
