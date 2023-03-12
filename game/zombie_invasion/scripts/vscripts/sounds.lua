@@ -112,19 +112,19 @@ Sounds = Sounds or {
 
 ["Кошмар перед рождеством - Making Christmas"] = 235,
 
-["Kordhell - Murder In My Mind"] = 134,
+["Kordhell - Murder In My Mind"] = 130,
 
-["Unknown - mne malo malo malo tebya"] = 163,
+["Unknown - mne malo malo malo tebya"] = 160,
 
 ["plenka - No"] = 196,
 
 ["evan wheel -  emptines"] = 147,
 
-["slowbarry - myortvyj vnutri"] = 143,
+["slowbarry - myortvyj vnutri"] = 140,
 
 ["Josh A - So Tired"] = 96,
 
-["CMH Lida - STIKER"] = 133,
+["CMH Lida - STIKER"] = 130,
 
 ["t1de sadkawaii - Regret"] = 100,
 
@@ -132,11 +132,11 @@ Sounds = Sounds or {
 
 ["benedixhion - toxin"] = 130,
 
-["benedixhion - Go2Hell"] = 154,
+["benedixhion - Go2Hell"] = 150,
 
-["AZAZLO - SSC Tuatara"] = 182,
+["AZAZLO - SSC Tuatara"] = 180,
 
-["AZAZLO - Revolver"] = 124,
+["AZAZLO - Revolver"] = 120,
 
 ["convolk - soldier freestyle"] = 160
 
