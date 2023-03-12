@@ -1279,7 +1279,7 @@ if killedEntity:GetUnitName() == "npc_classic_pig" then
 pig_count = pig_count+1
  
  
-    if pig_count == 650 then		 
+    if pig_count == 250 then		 
 	        InvasionMode:spawngulya()		      
 	        EmitGlobalSound("vurdalak")		
 		 
