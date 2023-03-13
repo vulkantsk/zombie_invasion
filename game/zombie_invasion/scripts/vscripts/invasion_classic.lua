@@ -1522,6 +1522,82 @@ function InvasionMode:ThemeMusic()
     			[1] = {
     				"Amekudeku - Drow Rangerr",
     			},
+    	[2] = {
+  		    "Серега пират - АМ ФП", 
+  		    "Life - Larson",
+  		    "Musica - Fly Project",
+  		    "Wake Me Up - Avicii",
+  		    "Galantis - No Money",
+  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  		    "Boulevard of Broken Dreams - Green Day", 
+  		    "a-ha - Take On Me",	
+  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",
+              "Серега пират - Мой байк",
+    	},
+ 
+    	  
+    	[3] = {
+  		    "Summertime",
+  		    "I Follow Rivers - Lykke Li",
+  		    "August - Intelligency",  
+  		    "Shotgun - Yellow Claw feat. Rochelle",
+  		    "Runaway - Parachute Youth feat. Jay Martin",
+  		    "Sia - Cheap Thrills",
+  		    "L Starz - My Life Be LikeGrits",
+  		    "Kiesza - Hideaway",
+  		    "John  Newman - Fire In Me",
+  		    "iSpy - KYLE feat. Lil Yachty",
+  		    "AJR - World's Smallest Violin",
+  		    "Earth Wind And Fire - Let's Groove",
+  		    "Redbone - Come and Get Your Love",
+    	},
+    		 
+     [4] = {
+		"RSAC - NBA",
+		"Daved Guetta - Would I Lie To You",
+		 "Sia - Chandelier",
+		"Does It Matter - Janieck",	
+		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
+		"Серега пират - Я взлетаю вверх",  			
+    	},
+  	   	     
+     [5] = {
+		"RSAC - NBA",
+  		"Galantis - No Money",
+  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  		    "Boulevard of Broken Dreams - Green Day", 
+  		    "a-ha - Take On Me",	
+  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",	
+		  		    "C418 - Sweden",		
+    	},
+
+     [6] = {
+  		    "Kiesza - Hideaway",
+  		    "John  Newman - Fire In Me",
+  		    "iSpy - KYLE feat. Lil Yachty",
+  		    "AJR - World's Smallest Violin",
+  		    "Earth Wind And Fire - Let's Groove",
+  		    "Redbone - Come and Get Your Love",
+  		    "Akira Yamaoka – Never Forgive Me",			
+    	},
+     [7] = {
+  		    "Bee Gees - Stayin' Alive",
+  		    "Earth Wind And Fire - September",
+              "Серега пират - Мой байк",
+		"Серега пират - Я взлетаю вверх",  	
+		  		    "C418 - Sweden",	
+  		    "Runaway - Parachute Youth feat. Jay Martin",
+  		    "Sia - Cheap Thrills",
+    	},
+
+ 	[8] = {
+  		    "GigaChad Theme",
+
+    	},
     		}
     	end
 
