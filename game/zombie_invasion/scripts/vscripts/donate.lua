@@ -58,6 +58,7 @@ DONATE_ITEM_SARA = {
 DONATE_ITEM_AZZAZEL = {
 	players = {
  		843653621,
+ 		1083089806,
 
 	},	
 }
