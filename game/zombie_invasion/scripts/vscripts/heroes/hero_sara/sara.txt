@@ -206,6 +206,7 @@
 		"ScriptFile"					"heroes/hero_sara/fragment_of_logic.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"sara_fragment_of_logic"
+		"RequiredLevel"                 "10"
 		"MaxLevel" 						"4"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityCooldown"				"15.0 12.0 9.5 7.0"
