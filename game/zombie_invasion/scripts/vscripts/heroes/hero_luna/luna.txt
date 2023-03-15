@@ -93,7 +93,7 @@
 			"bounces"							"1 2 3 4 5 6 7"
 			"damage_reduction_percent"
 			{
-				"value"							"60 56 52 48 44 40 36"
+				"value"							"52 48 44 40 36 24 18"
 				"special_bonus_unique_luna_7"	"-8"
 			}
 		}

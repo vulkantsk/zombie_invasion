@@ -92,18 +92,18 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"creep_damage"				"15 30 45 60 75 90 105"
+				"creep_damage"				"18 32 48 64 79 94 115"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"hero_damage"				"70 140 210 280 350 410 480"
+				"hero_damage"				"100 210 320 440 550 660 770"
 				"LinkedSpecialBonus"		"special_bonus_unique_wisp"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"revolution_time"			"5.0 5.0 5.0 5.0"
+				"revolution_time"			"5.0 4.0 3.0 2.5"
 			}
 			"04"
 			{
@@ -119,7 +119,7 @@
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"hero_hit_radius"			"110"
+				"hero_hit_radius"			"140"
 			}
 			"07"
 			{
@@ -139,7 +139,7 @@
 			"10"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"spirit_duration"			"19.0 19.0 19.0 19.0"
+				"spirit_duration"			"19.0 21.0 24.0 27.0"
 			}
 		}
 	}	
@@ -173,7 +173,7 @@
 		"AbilityValues"
 		{
 				"bonus_attack_speed"		"40 60 80 100 120 140 160"
-				"bonus_spell_amp"		"15 25 35 45 55 65 75"
+				"bonus_spell_amp"		"25 35 45 55 65 75 85"
 				"hp_regen"			
 				{
 					"value"			"0.5 0.6 0.7 0.8 0.9 1.0 1.1"
@@ -182,7 +182,7 @@
 				"duration"			"8"
 				"shard_bonus_spell_amp"
 				{
-					"value"			"25"
+					"value"			"45"
 					"RequiresShard"	"1"
 				}
 				"shard_bonus_spell_lifesteal"
