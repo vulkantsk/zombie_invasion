@@ -82,7 +82,7 @@ if not self:GetParent():PassivesDisabled() then
 		self.radius,
 		DOTA_UNIT_TARGET_TEAM_ENEMY,
 		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_CREEP,
-		DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO,
+		DOTA_UNIT_TARGET_FLAG_NO_INVIS,
 		0,
 		false
 	)
