@@ -62,7 +62,6 @@
 				"value"			"1.0 1.25 1.5 1.75 2.0 2.25 2.5"
 				"special_bonus_unique_sara_space_dissection2"	"+2.5"
 			}
-				"var_type"			"FIELD_FLOAT"
 				"disarmor_duration"	"7"
 				"energy_pct"		"10"
 				"energy_to_disarmor_bosses_pct"	"1.3"

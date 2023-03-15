@@ -45,10 +45,11 @@ if IsServer() then
 				if unit:IsConsideredHero() and not unit:IsIllusion() then
 					local energy = parent:GetEnergy()
 					local cost = energy * ability:GetSpecialValueFor("energy_pct") * 0.01
+
 					if energy >= cost then
 						local duration = ability:GetSpecialValueFor("disarmor_duration")
 						local modifier = unit:AddNewModifier(parent, ability, "modifier_sara_space_dissection_armor_reduction", {duration = duration})
-						local stacks = math.round(cost * ability:GetSpecialValueFor(unit:IsBoss() and "energy_to_disarmor_bosses_pct" or "energy_to_disarmor_pct") * 0.01)
+						local stacks = math.round(cost * ability:GetSpecialValueFor("energy_to_disarmor_pct") * 0.01)
 						modifier:SetStackCount(modifier:GetStackCount() + stacks)
 						if not parent:HasScepter() then
 							Timers:CreateTimer(duration, function()
@@ -59,7 +60,7 @@ if IsServer() then
 						end
 						parent:ModifyEnergy(-cost)
 					end
-				elseif unit:IsRealCreep() then
+				elseif unit:IsCreep() then
 					unit.SpaceDissectionMultiplier = ability:GetSpecialValueFor(parent:HasScepter() and "creep_energy_multiplier_scepter" or "creep_energy_multiplier")
 					if not parent:HasScepter() then
 						unit:SetDeathXP(0)
