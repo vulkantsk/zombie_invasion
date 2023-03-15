@@ -273,7 +273,7 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"IsAncient"                 "1"
- 
+ 		"ConsideredHero"			"1"
  
 		// Abilities
 		//----------------------------------------------------------------
