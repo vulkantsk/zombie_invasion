@@ -10858,4 +10858,97 @@
 		}
 	}
 
+	"item_kefteme"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/donate/item_kefteme"
+		"AbilityTextureName"			"boss_item/piercing_blade"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCooldown"				"5.0"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemCost"						"500"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+
+
+		"AbilityValues"
+		{
+			"duration"           "9"
+			"move_bonus"           "800"
+			"move_limit"           "800"
+			"attack_speed__bonus"           "90"
+
+
+			"atribut__bonus"           "1.5"
+			"outdamage__bonus"           "1.5"
+		}
+	}
+
+
+	"item_piggy_bank"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/donate/item_piggy_bank"
+		"AbilityTextureName"			"boss_item/piercing_blade"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+ 
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemCost"						"500"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+
+
+		"AbilityCooldown"				"2.5"
+		"AbilityGoldCost"               "1000"
+
+		"AbilityValues"
+		{
+			"attack__bonus"           "50"
+ 			
+		}
+	}
+
+	"item_maikl"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/donate/item_maikl"
+		"AbilityTextureName"			"piercing_blade"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemCost"						"500"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+
+ 
+
+		"AbilityValues"
+		{
+			"chance"           "0.77"
+ 			"bonus_agility"           "1"
+
+		}
+	}
+
+
 }
