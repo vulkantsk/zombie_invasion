@@ -10858,11 +10858,34 @@
 		}
 	}
 
+		"item_recipe_kefteme"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName" 			"custom_folder/item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kefteme"
+		"ItemRequirements"
+		{
+			"01"						"item_color_fuchsia;item_travel_boots_2"
+		}
+	}
+
 	"item_kefteme"
 	{
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/donate/item_kefteme"
-		"AbilityTextureName"			"boss_item/piercing_blade"
+		"AbilityTextureName"			"kefteme"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
@@ -10892,12 +10915,74 @@
 		}
 	}
 
+		"item_golda"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"golddog"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemPurchasable"				"1" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"0"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_damage"			"12"
+ 
+			}	
+        }
+	}
+
+		"item_recipe_piggy_bank"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName" 			"custom_folder/item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_piggy_bank"
+		"ItemRequirements"
+		{
+			"01"						"item_unactive_midas;item_golda"
+		}
+	}
 
 	"item_piggy_bank"
 	{
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/donate/item_piggy_bank"
-		"AbilityTextureName"			"boss_item/piercing_blade"
+		"AbilityTextureName"			"donate_mashine"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
  
@@ -10926,7 +11011,7 @@
 	{
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/donate/item_maikl"
-		"AbilityTextureName"			"piercing_blade"
+		"AbilityTextureName"			"prax"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
  
@@ -10944,7 +11029,7 @@
 
 		"AbilityValues"
 		{
-			"chance"           "0.77"
+			"chance"           "0.777"
  			"bonus_agility"           "1"
 
 		}

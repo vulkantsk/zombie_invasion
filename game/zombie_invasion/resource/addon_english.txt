@@ -92,6 +92,23 @@
 	   "christmas_night_3"                                                    "<font color='#deaa88'>Throw few minutes message will appear  about coming Greevil. He appears around Main-Christmas tree before the moment while he will give you presents. Good luck:)</font>"
 
 
+
+	   	"DOTA_Tooltip_Ability_item_golda"										"Бесконечные деньги"
+        "DOTA_Tooltip_Ability_item_golda_Description"							"Если соединить с чем-то то возможно получится что-то интересное.."
+
+        "DOTA_Tooltip_Ability_item_piggy_bank"									"<font color='#8b00ff'>ДОНАТ МАШИНА ДЛЯ BARONXXX</font>"
+        "DOTA_Tooltip_Ability_item_piggy_bank_Description"						"За каждые 1000$ вы получаете %attack__bonus% к урону"
+        "DOTA_Tooltip_Ability_item_piggy_bank_lore"								"барончиксиксиксикс кис-кис-кис"
+
+        "DOTA_Tooltip_Ability_item_kefteme"                                            "<font color='#ffdc33'>КЕФТЕМЕ ОТ АНЯНЯ</font>"
+        "DOTA_Tooltip_Ability_item_kefteme_Description"							"При использовании герой получает %attack_speed__bonus% скорости атаки и его скорость передвижения равна %move_bonus% на %duration% секунд"
+        "DOTA_Tooltip_Ability_item_kefteme_Lore" 								"anynya milaxajest'"
+        "DOTA_Tooltip_Ability_item_kefteme_Note0"								"Пассивно: Герой получает 1.5 ко всем атрибутам и 1.5% к всему исходящему урону." 
+
+        "DOTA_Tooltip_Ability_item_maikl"										"Сущность SLARK"
+        "DOTA_Tooltip_Ability_item_maikl_Description"							"Прах Сларка и слёзы Майкла позволяет герою получать %bonus_agility% бонус к ловкости с шансом 0.777% "
+
+
 	    	"DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>paw of gurd</font>"
         	"DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Active: gold!</h1>When applied, you get %gold% gold and %experience% experience."       
         	"DOTA_Tooltip_Ability_item_active_midas_Lore"                                "quest by BaronXX."  

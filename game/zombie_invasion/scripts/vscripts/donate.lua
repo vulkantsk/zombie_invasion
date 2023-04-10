@@ -69,6 +69,28 @@ DONATE_ITEM_AZZAZEL = {
 	},	
 }
 
+DONATE_ITEM_COLOR = {
+	players = {
+ 		1075207684
+
+	},	
+}
+
+DONATE_ITEM_GOLDA = {
+	players = {
+ 		203159402
+
+	},	
+}
+
+DONATE_ITEM_MAIKL = {
+	players = {
+ 		206968098
+
+	},	
+}
+
+
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -141,6 +163,41 @@ DONATE_ITEMS = {
 				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_MIDAS,
 				DONATE_SET_HELPER,
+			},
+		},
+		{
+			name = "item_color_fuchsia",
+			count = 1,
+			sets ={
+				
+			},
+		},
+		{
+			name = "item_golda",
+			count = 1,
+			sets ={
+				
+			},
+		},
+		{
+			name = "item_kefteme",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_piggy_bank",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_maikl",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
 			},
 		},
 		{
