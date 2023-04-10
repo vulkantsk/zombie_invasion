@@ -69,16 +69,18 @@ DONATE_ITEM_AZZAZEL = {
 	},	
 }
 
-DONATE_ITEM_COLOR = {
+DONATE_ITEM_COLOR_FUCHSIA = {
 	players = {
- 		1075207684
+ 		1075207684,
+ 		877002179
 
 	},	
 }
 
 DONATE_ITEM_GOLDA = {
 	players = {
- 		203159402
+ 		203159402,
+ 		877002179
 
 	},	
 }
@@ -169,6 +171,7 @@ DONATE_ITEMS = {
 			name = "item_color_fuchsia",
 			count = 1,
 			sets ={
+				DONATE_ITEM_COLOR_FUCHSIA,
 				
 			},
 		},
@@ -176,6 +179,7 @@ DONATE_ITEMS = {
 			name = "item_golda",
 			count = 1,
 			sets ={
+				DONATE_ITEM_GOLDA,
 				
 			},
 		},
@@ -198,6 +202,7 @@ DONATE_ITEMS = {
 			count = 1,
 			sets ={
 				DONATE_SET_ADMIN,
+				DONATE_ITEM_MAIKL,
 			},
 		},
 		{
