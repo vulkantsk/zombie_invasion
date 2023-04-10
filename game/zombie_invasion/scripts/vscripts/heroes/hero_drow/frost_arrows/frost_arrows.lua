@@ -40,6 +40,7 @@ modifier_ability_drow_ranger_frost_arrows = class({
             MODIFIER_EVENT_ON_ATTACK_FAIL,
             MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
             MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY,
+            MODIFIER_EVENT_ON_DEATH,
 
             MODIFIER_EVENT_ON_ORDER,
 
@@ -53,6 +54,47 @@ modifier_ability_drow_ranger_frost_arrows = class({
 
 
 --------------------------------------------------------------------------------
+
+function modifier_ability_drow_ranger_frost_arrows:OnDeath(data)
+    if not self:GetParent():HasShard() then return end
+    if IsServer() then
+        local parent = self:GetParent()
+        local killer = data.attacker
+        local killed_unit = data.unit
+
+      
+        if killer == parent and killed_unit then
+        local radius = 500
+
+ 
+
+        local units = FindUnitsInRadius(
+            parent:GetTeam(),
+            killed_unit:GetAbsOrigin(),
+            nil,
+            radius,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+            DOTA_UNIT_TARGET_FLAG_NONE,
+            FIND_CLOSEST,
+            false
+        )
+
+
+    for _,unit in pairs(units) do
+        DealDamage(parent, unit, parent:GetAttackDamage(), self:GetAbility():GetAbilityDamageType(), self:GetAbility():GetAbilityTargetFlags(), self:GetAbility())
+    end
+
+ 
+    caster:EmitSound("Hero_Techies.Suicide")
+    local nfx = ParticleManager:CreateParticle('particles/units/heroes/hero_techies/techies_suicide.vpcf', PATTACH_POINT_FOLLOW, caster)
+    ParticleManager:SetParticleControl(nfx, 0, caster:GetAbsOrigin())
+    ParticleManager:SetParticleControl(nfx, 1, Vector(radius/2, 0, 0))
+    ParticleManager:SetParticleControl(nfx, 2, Vector(radius, 1, 1))
+        end
+    end
+end
+
 
 function modifier_ability_drow_ranger_frost_arrows:GetModifierPreAttack_BonusDamage(k) 
     if IsServer() then
