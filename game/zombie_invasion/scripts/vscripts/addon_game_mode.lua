@@ -139,6 +139,8 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_legio
 		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_pugna.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts", context )
 							
 					
 	---------------------------------sounds-------------------------------

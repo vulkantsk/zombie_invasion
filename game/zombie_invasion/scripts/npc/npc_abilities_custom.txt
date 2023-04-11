@@ -27,7 +27,7 @@
 #base "../vscripts/heroes/hero_muerta/muerta.txt"
 #base "../vscripts/heroes/hero_sf/sf.txt"
 #base "../vscripts/heroes/hero_sara/sara.txt"
-
+#base "../vscripts/heroes/hero_sargatanas/sargatanas.txt"
 
 #base "portal/abilities.txt"
 
