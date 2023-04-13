@@ -1,8 +1,8 @@
-ability_devour = {}
+star_devour = {}
 
-LinkLuaModifier( "modifier_ability_devour", "heroes/hero_sargatanas/devour", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_star_devour", "heroes/hero_sargatanas/star_devour", LUA_MODIFIER_MOTION_NONE )
 
-function ability_devour:CastFilterResultTarget( hTarget )
+function star_devour:CastFilterResultTarget( hTarget )
 	local nResult = UnitFilter(
 		hTarget,
 		DOTA_UNIT_TARGET_TEAM_ENEMY,
@@ -17,7 +17,7 @@ function ability_devour:CastFilterResultTarget( hTarget )
 	return UF_SUCCESS
 end
 
-function ability_devour:OnSpellStart()
+function star_devour:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 	local duration = self:GetSpecialValueFor( "devour_time" )
@@ -25,7 +25,7 @@ function ability_devour:OnSpellStart()
 	caster:AddNewModifier(
 		caster,
 		self,
-		"modifier_ability_devour",
+		"modifier_star_devour",
 		{ duration = duration }
 	)
 
@@ -85,7 +85,7 @@ function ability_devour:OnSpellStart()
 	EmitSoundOn( "Hero_DoomBringer.DevourCast", target )
 end
 
-function ability_devour:OnUpgrade()
+function star_devour:OnUpgrade()
 	if self:GetLevel() == 1 then
 		if not self:GetAutoCastState() then
 			self:ToggleAutoCast()
@@ -105,41 +105,49 @@ function ability_devour:OnUpgrade()
 	end
 end
 
-modifier_ability_devour = {}
+modifier_star_devour = {}
 
-function modifier_ability_devour:IsHidden()
+function modifier_star_devour:CheckState()
+	local state = {
+		[MODIFIER_STATE_DISARMED] = true,
+	}
+
+	return state
+end
+
+function modifier_star_devour:IsHidden()
 	return false
 end
 
-function modifier_ability_devour:IsDebuff()
+function modifier_star_devour:IsDebuff()
 	return false
 end
 
-function modifier_ability_devour:IsPurgable()
+function modifier_star_devour:IsPurgable()
 	return false
 end
 
-function modifier_ability_devour:GetAttributes()
+function modifier_star_devour:GetAttributes()
 	return MODIFIER_ATTRIBUTE_MULTIPLE
 end
 
-function modifier_ability_devour:RemoveOnDeath()
+function modifier_star_devour:RemoveOnDeath()
 	return false
 end
 
-function modifier_ability_devour:OnCreated( kv )
+function modifier_star_devour:OnCreated( kv )
 	self.bonus_gold = self:GetAbility():GetSpecialValueFor( "bonus_gold" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "regen" )
 end
 
-function modifier_ability_devour:OnDestroy()
+function modifier_star_devour:OnDestroy()
 	if not IsServer() then return end
 	if self:GetParent():IsAlive() then
 		PlayerResource:ModifyGold( self:GetParent():GetPlayerOwnerID(), self.bonus_gold, false, DOTA_ModifyGold_Unspecified )
 	end
 end
 
-function modifier_ability_devour:DeclareFunctions()
+function modifier_star_devour:DeclareFunctions()
 	local funcs = {
 		MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
 	}
@@ -147,6 +155,6 @@ function modifier_ability_devour:DeclareFunctions()
 	return funcs
 end
 
-function modifier_ability_devour:GetModifierConstantHealthRegen()
+function modifier_star_devour:GetModifierConstantHealthRegen()
 	return self.bonus_regen
 end

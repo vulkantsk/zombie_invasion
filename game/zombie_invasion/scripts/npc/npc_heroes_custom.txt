@@ -1858,7 +1858,7 @@
   
  
 
-		"Ability1"		"ability_devour"
+		"Ability1"		"star_devour"
 		"Ability2"		"ability_hellstep"
 		"Ability3"		"ability_firecleave"
 		"Ability4"		"generic_hidden"
