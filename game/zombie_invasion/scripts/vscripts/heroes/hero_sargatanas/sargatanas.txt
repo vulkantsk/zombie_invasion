@@ -162,10 +162,12 @@
                 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {                       
+            "str_dmg"              "1"
+             "str_hp"              "1000"
+
  
-        
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }

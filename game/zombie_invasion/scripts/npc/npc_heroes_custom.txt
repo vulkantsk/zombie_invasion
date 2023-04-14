@@ -683,28 +683,7 @@
 // HERO MELLE
 //=========================================================================================================
 
-"npc_dota_hero_bloodseeker"
-	{
-		"override_hero"			"npc_dota_hero_bloodseeker"
-		"Role"					"Carry,Nuker"
-		"Rolelevels"			"2,3"
-
-		"AttackRange"		"200"		
-		"Ability1"				"bloodseeker_bloodrage"
-		"Ability2"				"bloodseeker_blood_bath"
-		"Ability3"				"bloodseeker_thirst"
-		"Ability4"				"generic_hidden"
-		"Ability5"				"generic_hidden"
-		"Ability6"				"broodmother_insatiable_hunger"
-		//"Ability10"		"special_bonus_armor_5"
-		//"Ability11"		"special_bonus_attack_damage_25"
-		//"Ability12"		"special_bonus_attack_speed_30"
-		//"Ability13"		"special_bonus_hp_250"
-		//"Ability14"		"special_bonus_respawn_reduction_30"
-		//"Ability15"		"special_bonus_all_stats_10"
-		//"Ability16"		"special_bonus_unique_bloodseeker"
-		//"Ability17"		"special_bonus_lifesteal_30"						
-	}
+ 
 
 
 "npc_dota_hero_bounty_hunter"
@@ -1861,7 +1840,7 @@
 		"Ability1"		"star_devour"
 		"Ability2"		"ability_hellstep"
 		"Ability3"		"ability_firecleave"
-		"Ability4"		"generic_hidden"
+		"Ability4"		"ability_hell_summon"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"generic_hidden"
         "Ability10"        "generic_hidden"
