@@ -109,8 +109,13 @@ function modifier_ability_hellstep_thinker:OnCreated()
         ParticleManager:SetParticleControl(fx, 1, self:GetParent():GetAbsOrigin())
         ParticleManager:SetParticleControl(fx, 2, Vector(self.radius,0,0))
         self:AddParticle(fx, false, false, 0, false, false)
-        particleManager:Destroy()
+ 
     end
+end
+ 
+function modifier_ability_hellstep_thinker:OnDestroy()
+   --         ParticleManager:DestroyParticle( self.fx, true )
+
 end
 
 --------------------------------------------------------------------------------
