@@ -11029,7 +11029,7 @@
 
 		"AbilityValues"
 		{
-			"chance"           "0.777"
+			"chance"           "1.0"
  			"bonus_agility"           "1"
 
 		}

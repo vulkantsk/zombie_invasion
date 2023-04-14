@@ -106,6 +106,7 @@ function modifier_ability_hellstep_thinker:OnCreated()
 
         local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_dragon_knight/dragon_knight_shard_fireball.vpcf", PATTACH_CUSTOMORIGIN, self:GetCaster())
         ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
+        ParticleManager:SetParticleControl(fx, 1, self:GetParent():GetAbsOrigin())
         ParticleManager:SetParticleControl(fx, 2, Vector(self.radius,0,0))
         self:AddParticle(fx, false, false, 0, false, false)
         particleManager:Destroy()

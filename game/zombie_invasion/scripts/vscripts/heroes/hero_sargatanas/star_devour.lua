@@ -1,6 +1,8 @@
 star_devour = {}
 
 LinkLuaModifier( "modifier_star_devour", "heroes/hero_sargatanas/star_devour", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_star_devour_stack", "heroes/hero_sargatanas/star_devour", LUA_MODIFIER_MOTION_NONE )
+
 
 function star_devour:CastFilterResultTarget( hTarget )
 	local nResult = UnitFilter(
@@ -13,6 +15,7 @@ function star_devour:CastFilterResultTarget( hTarget )
 	if nResult ~= UF_SUCCESS then
 		return nResult
 	end
+	 
 
 	return UF_SUCCESS
 end
@@ -138,12 +141,27 @@ end
 function modifier_star_devour:OnCreated( kv )
 	self.bonus_gold = self:GetAbility():GetSpecialValueFor( "bonus_gold" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "regen" )
+	self.max_stack = self:GetAbility():GetSpecialValueFor("max_stack")
 end
 
 function modifier_star_devour:OnDestroy()
 	if not IsServer() then return end
 	if self:GetParent():IsAlive() then
 		PlayerResource:ModifyGold( self:GetParent():GetPlayerOwnerID(), self.bonus_gold, false, DOTA_ModifyGold_Unspecified )
+
+		if self:GetParent():HasModifier("modifier_star_devour_stack") then 
+			local modif = self:GetParent():FindModifierByName("modifier_star_devour_stack")
+			if modif:GetStackCount() == self.max_stack then 
+				modif:SetStackCount(self.max_stack)
+			else
+				modif:IncrementStackCount()
+			end
+		else 
+			local modif = self:GetParent():AddNewModifier(self:GetParent(),self:GetAbility(),"modifier_star_devour_stack", {})
+
+				modif:SetStackCount(1)
+ 
+		end
 	end
 end
 
@@ -158,3 +176,11 @@ end
 function modifier_star_devour:GetModifierConstantHealthRegen()
 	return self.bonus_regen
 end
+
+modifier_star_devour_stack = class({
+	IsHidden 				= function(self) return false end,
+	IsPurgable 				= function(self) return false end,
+	IsDebuff 				= function(self) return false end,
+	IsBuff                  = function(self) return true end,
+	RemoveOnDeath 			= function(self) return false end,
+})
