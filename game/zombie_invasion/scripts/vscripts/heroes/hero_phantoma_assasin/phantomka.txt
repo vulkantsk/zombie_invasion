@@ -36,13 +36,13 @@
 
 			"attack_factor"					
 			{
-				"value"				"-70 -50 -30 -10 10 30 50"
-			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+125"
+				"value"				"-70 -40 -10 10 40 70 100"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+250"
 			}
 			"attack_factor_tooltip"					
 			{
-				"value"				"30 50 70 90 110 130 150"
-			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+125"
+				"value"				"30 60 90 110 140 170 200"
+			    "special_bonus_unique_assassin_phantom_stifling_dagger_damage"	    "+250"
 			}
 
 			"AbilityCooldown"			
@@ -160,7 +160,7 @@
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "15"
+        "AbilityCooldown"               "8"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@
         {
  				"min_int"					"1.0"
 				"max_int"			"2.3"
-				"times"			"5"
+				"times"			"6"
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
     }
