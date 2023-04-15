@@ -1,5 +1,6 @@
 LinkLuaModifier( "modifier_ability_hellstep", "heroes/hero_sargatanas/hellstep.lua" ,LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_hellstep_thinker", "heroes/hero_sargatanas/hellstep.lua" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_overheating", "heroes/hero_sargatanas/modifier_overheating.lua" ,LUA_MODIFIER_MOTION_NONE )
 
 if ability_hellstep== nil then
     ability_hellstep = class({})
@@ -133,10 +134,11 @@ modifier_ability_hellstep = class({
             [MODIFIER_STATE_PASSIVES_DISABLED] = true
         }
     end,
+    GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
     GetEffectName           = function(self) return "particles/generic_gameplay/generic_break.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_OVERHEAD_FOLLOW end,
 })
-
+ 
 
 --------------------------------------------------------------------------------
 
@@ -147,7 +149,7 @@ function modifier_ability_hellstep:OnCreated()
     self.duration = self:GetAbility():GetSpecialValueFor("duration")
     self.damage_mid_per_tick = (self.max_damage - self.min_damage) / (self.duration / 0.4)
     self.damage_per_tick = 0.05*math.ceil(100*self.damage_mid_per_tick)
-
+    self.stack_overhell = self:GetAbility():GetSpecialValueFor("stack_overhell")
     self.ticks = 1
 
     self.time_old = GameRules:GetGameTime()
@@ -174,10 +176,11 @@ function modifier_ability_hellstep:OnIntervalThink()
     ApplyDamage({
         victim = self:GetParent(),
         attacker = self:GetCaster(),
-        damage = damage,
+        damage = damage * self:GetParent():DamageHell(),
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility()
     })
+    self:GetParent():ModifierStackInc("modifier_overheating", self.stack_overhell,8,self.stack_overhell,self:GetAbility())
     EmitSoundOn("Hero_Viper.NetherToxin.Damage", self:GetParent())
 end
 end

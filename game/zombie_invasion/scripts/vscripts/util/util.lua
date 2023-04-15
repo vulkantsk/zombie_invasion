@@ -296,8 +296,26 @@ function table.length(tbl)
 	return count
 end 
 
- 
+function CDOTA_BaseNPC:DamageHell() 
+	if self:HasModifier("modifier_overheating") then 
+		local modif = self:FindModifierByName("modifier_overheating")
+		return modif:GetStackCount()/100 + 1 
+	else 
+		return 1 
+	end
 
+end
+
+function CDOTA_BaseNPC:ModifierStackInc(modifier, setStack,dur,beginStack,ability)
+	if self:HasModifier(modifier) then 
+		local modif = self:FindModifierByName(modifier)
+		modif:SetStackCount(modif:GetStackCount() + setStack)
+		modif:SetDuration(dur, true)
+	else
+		local modif = self:AddNewModifier(self,ability,modifier,{duration = dur})
+		modif:SetStackCount(beginStack)
+	end
+end
 function CDOTA_BaseNPC:FilterModifiers(callback)
 	local list = {}
 	if not callback then print('[FilterModifiers] Error! Callback not found') return list end
