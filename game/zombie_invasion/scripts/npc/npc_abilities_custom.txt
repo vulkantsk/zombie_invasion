@@ -28,7 +28,7 @@
 #base "../vscripts/heroes/hero_sf/sf.txt"
 #base "../vscripts/heroes/hero_sara/sara.txt"
 #base "../vscripts/heroes/hero_sargatanas/sargatanas.txt"
-#base "../vscripts/heroes/hero_sargatanas/summons/summons_abilities/creeps.txt"
+#base "../vscripts/heroes/hero_sargatanas/summons/summon_abilities/creeps.txt"
 #base "portal/abilities.txt"
 
 "DOTAAbilities"

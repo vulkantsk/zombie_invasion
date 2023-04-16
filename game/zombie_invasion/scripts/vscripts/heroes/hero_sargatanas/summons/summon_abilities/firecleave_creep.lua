@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_ability_firecleave_creep", "heroes/hero_sargatanas/summons/summons_abilities/stack" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_firecleave_creep_fire", "heroes/hero_sargatanas/summons/summons_abilities/stack" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_firecleave_creep", "heroes/hero_sargatanas/summons/summons_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_firecleave_creep_fire", "heroes/hero_sargatanas/summons/summons_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
 
 
 if ability_firecleave_creep == nil then
@@ -7,8 +7,8 @@ if ability_firecleave_creep == nil then
 end
 
 --------------------------------------------------------------------------------
-
-function ability_firecleave:GetIntrinsicModifierName()
+    
+function modifier_ability_firecleave_creep:GetIntrinsicModifierName()
     return "modifier_ability_firecleave_creep"
 end
 
@@ -36,12 +36,6 @@ function modifier_ability_firecleave_creep:OnRefresh()
     self:OnCreated()
 end 
 
-function modifier_ability_firecleave_creep:OnCreated()
-    self.cleave_starting_width = self:GetAbility():GetSpecialValueFor("cleave_starting_width")
-    self.cleave_ending_width = self:GetAbility():GetSpecialValueFor("cleave_ending_width")
-    self.cleave_distance = self:GetAbility():GetSpecialValueFor("cleave_distance")
-    self.great_cleave_damage = self:GetAbility():GetSpecialValueFor("great_cleave_damage")
-end
 
 function modifier_ability_firecleave_creep:OnAttackLanded(k)
     local caster = self:GetParent()
@@ -49,9 +43,7 @@ function modifier_ability_firecleave_creep:OnAttackLanded(k)
     local attacker = k.attacker
     local duration = self:GetAbility():GetSpecialValueFor("duration")
     if caster == attacker and not caster:PassivesDisabled() then
-        target:AddNewModifier(caster,self:GetAbility(),"modifier_ability_firecleave_creep_fire",{duration = duration})
-        local fx = "particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave_gods_strength_crit_b.vpcf"
-        DoCleaveAttack(caster, target, self:GetAbility(), self.great_cleave_damage, self.cleave_starting_width, self.cleave_ending_width, self.cleave_distance, fx)
+        target:AddNewModifier(caster,self:GetAbility(),"modifier_ability_firecleave_creep",{duration = duration})
     end
 end
 
