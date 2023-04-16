@@ -5,6 +5,7 @@
 #base "monsters/npc_armageddon_monsters.kv"
 #base "portal/npc.txt"
 #base "monsters/holiday/npc_classic_new_year.kv"
+#base "scripts/vscripts/heroes/hero_sargatanas/summons/summons.kv"
 "DOTAUnits"
 {
 	"Version"	"1"

@@ -38,7 +38,7 @@ end
 function ability_hell_summon:UnitnameHell() 
 	local ability_lvl = self:GetLevel()
 	if ability_lvl == 1 then 
-		return "npc_boss_slardar"
+		return "spirit_summon_sargatanas"
 	elseif ability_lvl == 2 then
 		return "modifier_hell_summon_portal"
 	elseif ability_lvl == 3 then
