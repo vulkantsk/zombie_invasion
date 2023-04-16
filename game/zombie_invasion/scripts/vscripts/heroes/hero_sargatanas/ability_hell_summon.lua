@@ -40,16 +40,14 @@ function ability_hell_summon:UnitnameHell()
 	if ability_lvl == 1 then 
 		return "npc_spirit_sargatanas_hell_summon"
 	elseif ability_lvl == 2 then
-		return "modifier_hell_summon_portal"
+		return "npc_golem_sargatanas_hell_summon"
 	elseif ability_lvl == 3 then
-		return "npc_dota_clinkz_skeleton_archer_frostivus2018"
+		return "npc_scorpion_sargatanas_hell_summon"
 	elseif ability_lvl == 4 then
-		return "npc_medas"
+		return "npc_dragon_sargatanas_hell_summon"
 	elseif ability_lvl == 5 then
+		return "npc_kaban_sargatanas_hell_summon"
 
-	elseif ability_lvl == 6 then
-
-	elseif ability_lvl == 7 then
 
 	end
 end
