@@ -1841,7 +1841,7 @@
 		"Ability2"		"ability_hellstep"
 		"Ability3"		"ability_firecleave"
 		"Ability4"		"ability_hell_summon"
-		"Ability5"		"generic_hidden"
+		"Ability5"		"ability_sunflame"
 		"Ability6"		"generic_hidden"
         "Ability10"        "generic_hidden"
         "Ability11"        "generic_hidden" 

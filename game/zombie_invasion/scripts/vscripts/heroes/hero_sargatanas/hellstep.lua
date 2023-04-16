@@ -24,6 +24,8 @@ function ability_hellstep:OnSpellStart()
     projectile_direction.z = 0
     projectile_direction = projectile_direction:Normalized()
 
+    GridNav:DestroyTreesAroundPoint(point, self:GetSpecialValueFor("radius"), true)
+
     local info = {
         Ability = self,
         EffectName = "",
@@ -68,8 +70,7 @@ modifier_ability_hellstep_thinker = class({
     RemoveOnDeath           = function(self) return true end,
 })
 
-
---------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
 
 function modifier_ability_hellstep_thinker:IsAura()
     return true
@@ -84,7 +85,7 @@ function modifier_ability_hellstep_thinker:GetAuraRadius()
 end
 
 function modifier_ability_hellstep_thinker:GetAuraSearchTeam()    
-    return DOTA_UNIT_TARGET_TEAM_ENEMY
+    return DOTA_UNIT_TARGET_TEAM_ENEMY + DOTA_UNIT_TARGET_TEAM_FRIENDLY
 end
 
 function modifier_ability_hellstep_thinker:GetAuraDuration()    
@@ -109,6 +110,7 @@ function modifier_ability_hellstep_thinker:OnCreated()
         ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
         ParticleManager:SetParticleControl(fx, 1, self:GetParent():GetAbsOrigin())
         ParticleManager:SetParticleControl(fx, 2, Vector(self.radius,0,0))
+ 
         self:AddParticle(fx, false, false, 0, false, false)
  
     end
@@ -129,6 +131,12 @@ modifier_ability_hellstep = class({
     IsDebuff                = function(self) return true end,
     IsBuff                  = function(self) return false end,
     RemoveOnDeath           = function(self) return true end,
+        DeclareFunctions        = function(self) return 
+        {
+            MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+            MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+
+        } end,
     CheckState              = function(self)
         return {
             [MODIFIER_STATE_PASSIVES_DISABLED] = true
@@ -139,10 +147,14 @@ modifier_ability_hellstep = class({
     GetEffectAttachType     = function(self) return PATTACH_OVERHEAD_FOLLOW end,
 })
  
+ 
 
 --------------------------------------------------------------------------------
 
 function modifier_ability_hellstep:OnCreated()
+    self.bonus_damage = self:GetAbility():GetSpecialValueFor("bonus_damage")
+    self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor("bonus_attack_speed")
+
     self.min_damage = self:GetAbility():GetSpecialValueFor("min_damage")
     self.max_damage = self:GetAbility():GetSpecialValueFor("max_damage")
     self.max_duration = self:GetAbility():GetSpecialValueFor("max_duration")
@@ -162,8 +174,18 @@ function modifier_ability_hellstep:OnCreated()
         self:AddParticle(self.fx, false, false, -1, false, false)
     end
 end
+ 
+ function modifier_ability_hellstep:GetModifierAttackSpeedBonus_Constant()
+    if self:GetParent():GetTeamNumber() == self:GetCaster():GetTeamNumber() then 
+        return self.bonus_attack_speed
+    end
+end
 
-if IsServer() then
+function modifier_ability_hellstep:GetModifierPreAttack_BonusDamage()
+    if self:GetParent():GetTeamNumber() == self:GetCaster():GetTeamNumber() then 
+        return self.bonus_damage
+    end
+end
 function modifier_ability_hellstep:OnIntervalThink()
     local time_now = GameRules:GetGameTime()
 
@@ -180,7 +202,10 @@ function modifier_ability_hellstep:OnIntervalThink()
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility()
     })
-    self:GetParent():ModifierStackInc("modifier_overheating", self.stack_overhell,8,self.stack_overhell,self:GetAbility())
+
+    if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then 
+        self:GetParent():ModifierStackInc("modifier_overheating", self.stack_overhell,8,self.stack_overhell,self:GetAbility())
+    end
     EmitSoundOn("Hero_Viper.NetherToxin.Damage", self:GetParent())
 end
-end
+ 
