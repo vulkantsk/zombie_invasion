@@ -4,7 +4,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_sargatanas/star_devour.lua"
-		"AbilityTextureName"			"doom_bringer_devour"
+		"AbilityTextureName"			"devour_sargatanas"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
  
@@ -45,7 +45,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/hellstep.lua"
-        "AbilityTextureName"            "viper_nethertoxin"
+        "AbilityTextureName"            "hellstep"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
@@ -91,7 +91,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/firecleave.lua"
-        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityTextureName"            "firecleave"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"   
@@ -138,7 +138,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/sunflame.lua"
-        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityTextureName"            "sunflame"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
@@ -192,7 +192,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/ability_hell_summon.lua"
-        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityTextureName"            "hell_summon"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
          
@@ -212,7 +212,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/ability_metamorphosis.lua"
-        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityTextureName"            "revolve_metamorphosis"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
                 
