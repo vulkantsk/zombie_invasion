@@ -50,7 +50,9 @@
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
 
-        // Casting
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+         // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastPoint"              "0.2"
         "AbilityCastRange"              "900"
@@ -216,10 +218,16 @@
                 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {                       
- 
-        
+            "duration"           "5"
+            "bonus_resistance"             "1"
+            "max_resistance"            "15"
+            "radius"                      "500"
+
+            "armor_ag"                      "0.2"
+            "attack_speed_ag"                      "0.35"
+
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }

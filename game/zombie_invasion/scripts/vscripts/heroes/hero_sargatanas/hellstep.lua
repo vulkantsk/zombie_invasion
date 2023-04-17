@@ -1,5 +1,6 @@
 LinkLuaModifier( "modifier_ability_hellstep", "heroes/hero_sargatanas/hellstep.lua" ,LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_hellstep_thinker", "heroes/hero_sargatanas/hellstep.lua" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_hellstep_aura", "heroes/hero_sargatanas/hellstep.lua" ,LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_overheating", "heroes/hero_sargatanas/modifier_overheating.lua" ,LUA_MODIFIER_MOTION_NONE )
 
 if ability_hellstep== nil then
@@ -12,7 +13,24 @@ function ability_hellstep:GetAOERadius()
     return self:GetSpecialValueFor("radius")
 end
 
+function ability_hellstep:GetBehavior()
+    if self:GetCaster():HasModifier("modifier_ability_metamorphosis") then 
+         return DOTA_ABILITY_BEHAVIOR_UNIT_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
+    else  
+        return DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_AOE
+    end
+end
+
 function ability_hellstep:OnSpellStart()
+    if self:GetCaster():HasModifier("modifier_ability_metamorphosis") then 
+    self:GetCaster():AddNewModifier(
+        self:GetCaster(),
+        self,
+        "modifier_ability_hellstep_aura",
+        { duration = self:GetSpecialValueFor("duration") }
+    )
+         
+    else
     local caster = self:GetCaster()
     local point = self:GetCursorPosition()
     local projectile_speed = self:GetSpecialValueFor("projectile_speed")
@@ -47,6 +65,7 @@ function ability_hellstep:OnSpellStart()
     }
 
     ProjectileManager:CreateLinearProjectile( info )
+end
 end
 
 function ability_hellstep:OnProjectileHit(Target, Location)
@@ -100,11 +119,13 @@ function modifier_ability_hellstep_thinker:GetAuraSearchFlags()
     return DOTA_UNIT_TARGET_FLAG_NONE
 end
 
+
 function modifier_ability_hellstep_thinker:OnCreated()
     self.radius = self:GetAbility():GetSpecialValueFor("radius")
 
     if IsServer() then
         EmitSoundOn("Hero_DragonKnight.BreathFire", self:GetParent())
+
 
         local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_dragon_knight/dragon_knight_shard_fireball.vpcf", PATTACH_CUSTOMORIGIN, self:GetCaster())
         ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
@@ -112,7 +133,7 @@ function modifier_ability_hellstep_thinker:OnCreated()
         ParticleManager:SetParticleControl(fx, 2, Vector(self.radius,0,0))
  
         self:AddParticle(fx, false, false, 0, false, false)
- 
+        
     end
 end
  
@@ -121,6 +142,65 @@ function modifier_ability_hellstep_thinker:OnDestroy()
 
 end
 
+modifier_ability_hellstep_aura = class({
+    IsHidden                = function(self) return false end,
+    IsPurgable              = function(self) return false end,
+    IsDebuff                = function(self) return false end,
+    IsBuff                  = function(self) return true end,
+    RemoveOnDeath           = function(self) return true end,
+
+})
+
+ 
+function modifier_ability_hellstep_aura:OnCreated( kv )
+    self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
+        EmitSoundOn( "Hero_DragonKnight.BreathFire", self:GetParent() )
+        self.nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_doom_bringer/doom_scorched_earth.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+    ParticleManager:SetParticleControl( self.nFXIndex, 1, Vector( self.radius, 0, 0 ) )
+
+end
+
+function modifier_ability_hellstep_aura:OnRefresh( kv )
+    self:OnCreated( kv )
+end
+
+function modifier_ability_hellstep_aura:IsAura()
+    return true
+end
+
+function modifier_ability_hellstep_aura:GetModifierAura()
+    return "modifier_ability_hellstep"
+end
+
+function modifier_ability_hellstep_aura:GetAuraRadius()
+    return self.radius
+end
+
+function modifier_ability_hellstep_aura:GetAuraDuration()
+    return 0.5
+end
+
+function modifier_ability_hellstep_aura:GetAuraSearchTeam()
+    return DOTA_UNIT_TARGET_TEAM_ENEMY + DOTA_UNIT_TARGET_TEAM_FRIENDLY
+end
+
+function modifier_ability_hellstep_aura:GetAuraSearchType()
+    return DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC
+end
+
+function modifier_ability_hellstep_aura:GetAuraSearchFlags()
+    return DOTA_UNIT_TARGET_FLAG_NONE
+end
+
+ 
+
+function modifier_ability_hellstep_aura:OnDestroy()
+        ParticleManager:DestroyParticle(self.nFXIndex, true)
+        StopSoundOn( "Hero_DragonKnight.BreathFire", self:GetParent() )
+ end
+         
+ 
+ 
 --------------------------------------------------------------------------------
 
 
@@ -143,8 +223,6 @@ modifier_ability_hellstep = class({
         }
     end,
     GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
-    GetEffectName           = function(self) return "particles/generic_gameplay/generic_break.vpcf" end,
-    GetEffectAttachType     = function(self) return PATTACH_OVERHEAD_FOLLOW end,
 })
  
  
