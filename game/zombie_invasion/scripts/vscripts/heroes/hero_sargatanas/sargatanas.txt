@@ -6,7 +6,7 @@
 		"ScriptFile"					"heroes/hero_sargatanas/star_devour.lua"
 		"AbilityTextureName"			"devour_sargatanas"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"4"
+		"MaxLevel"						"5"
  
 		"AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
@@ -32,7 +32,7 @@
 
 				"regen"					"1 5 9 13"
 			
-				"creep_level"			"4 5 6 6"
+				"creep_level"			"5 10 15 20"
 
                 "max_stack"           "5"
 
@@ -52,6 +52,7 @@
 
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "MaxLevel"                        "9"
          // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastPoint"              "0.2"
@@ -71,18 +72,18 @@
         "AbilityValues"
         {
 
-                "min_damage"            "5"
-                "max_damage"            "10"
+                "min_damage"            "5 10 15 20 25 30 35 40 45"
+                "max_damage"            "10 15 20 25 30 35 40 45 55"
 
-                "max_duration"          "4"
+                "max_duration"          "6"
                 "radius"        "400"
 
                 "duration"          "8"
                 "projectile_speed"  "2000"
                 "stack_overhell"          "1 2 3 4 5 6 7"
 
-                "bonus_damage"                        "200"
-                "bonus_attack_speed"                 "150"
+                "bonus_damage"                        "40 60 80 100 120 140 160 180 200"
+                "bonus_attack_speed"                 "15 30 45 60 75 90 115 130 145"
     
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
@@ -94,7 +95,8 @@
         "AbilityTextureName"            "firecleave"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"   
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
+        "MaxLevel"                        "7"
                 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -119,12 +121,12 @@
             "04"
             {
                 "var_type"              "FIELD_INTEGER"
-                "great_cleave_damage"   "30 50 70 90"
+                "great_cleave_damage"   "10 20 30 40 50 60 70"
             }
             "05"
             {
                 "var_type"              "FIELD_INTEGER"
-                "fire_damage"   "30 50 70 90"
+                "fire_damage"   "2 4 8 16 32 64 64"
             }
             "06"
             {
@@ -144,7 +146,9 @@
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
-        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO" 
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "MaxLevel"                        "7"
+
         
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -173,29 +177,29 @@
             "05"
             {
                 "var_type"              "FIELD_INTEGER"
-                "stack_overhell"                 "5 6 7 8"
+                "stack_overhell"                 "5 6 7 8 9 10 11"
             }      
             "06"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                 "150"
+                "damage"                 "40 60 80 100 120 140 160"
             } 
  
             "07"
             {
                 "var_type"              "FIELD_INTEGER"
-                "unduced"                 "10"
+                "unduced"                 "2 4 6 8 10 12 14"
             }     
             "08"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage_meta"                 "400"
+                "damage_meta"                 "800"
             } 
  
             "09"
             {
                 "var_type"              "FIELD_INTEGER"
-                "unduced_meta"                 "100"
+                "unduced_meta"                 "36"
             }  
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
@@ -209,12 +213,14 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
          
          "LinkedAbility"                 "star_devour"
+
+        "AbilityCooldown"               "30.0"
        
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {                       
-            "str_dmg"              "10"
+            "str_dmg"              "0.5"
              "str_hp"              "10"
 
  
@@ -227,20 +233,51 @@
         "AbilityTextureName"            "revolve_metamorphosis"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "MaxLevel"                        "4"
+        "LevelsBetweenUpgrades"         "5"    
+        "RequiredLevel"                 "10"
                 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
-        {                       
-            "duration"           "5"
+        {   
+
+            "duration"                    
+                {
+                    "value"             "5 10 15 20"
+                    "special_sargatanas_meta"     "+10"
+                }  
             "bonus_resistance"             "1"
-            "max_resistance"            "15"
+            "max_resistance"                    
+                {
+                    "value"             "6 8 10 12"
+                    "special_sargatanas_meta"     "+6"
+                }   
+
             "radius"                      "500"
 
-            "armor_ag"                      "0.2"
+            "armor_ag"                      "0.2 0.4 0.6 0.8"
             "attack_speed_ag"                      "0.35"
 
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+
+    "special_sargatanas_meta"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    }
+    
+    "special_sargatanas_meta2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     }
 }

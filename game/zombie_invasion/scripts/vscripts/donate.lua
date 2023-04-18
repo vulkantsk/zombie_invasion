@@ -72,6 +72,13 @@ DONATE_ITEM_AZZAZEL = {
 	},	
 }
 
+DONATE_ITEM_SARGATANAS = {
+	players = {
+ 		
+
+	},	
+}
+
 DONATE_ITEM_COLOR_FUCHSIA = {
 	players = {
  		1075207684,
@@ -123,6 +130,15 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SLARK,
 				DONATE_SET_HELPER,
+			},
+		},
+		{
+			name = "item_sargatanas_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_SARGATANAS,
 			},
 		},
 		{

@@ -4,7 +4,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_sargatanas/summons/summon_abilities/firecleave_creep.lua"
-        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityTextureName"            "firecleave"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"   
@@ -15,7 +15,7 @@
         {                       
                 "fire_damage"   "30 50 70 90"
 
-                "duration"   "8"
+                "duration"   "3"
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
