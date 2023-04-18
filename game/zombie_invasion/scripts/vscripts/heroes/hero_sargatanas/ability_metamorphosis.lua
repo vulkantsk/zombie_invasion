@@ -167,7 +167,7 @@ modifier_ability_metamorphosis_burn = class({
  			MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
  			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
         } end,
-    GetEffectName           = function(self) return "particles/units/heroes/hero_doom_bringer/doom_bringer_doom_aura.vpcf" end,
+    GetEffectName           = function(self) return "particles/econ/courier/courier_golden_doomling/courier_golden_doomling_ambient.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
 })
 

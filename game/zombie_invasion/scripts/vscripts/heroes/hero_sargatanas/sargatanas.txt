@@ -169,22 +169,34 @@
             {
                 "var_type"              "FIELD_INTEGER"
                 "speed"                 "800"
-            }    
+            }   
             "05"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "stack_overhell"                 "5 6 7 8"
+            }      
+            "06"
             {
                 "var_type"              "FIELD_INTEGER"
                 "damage"                 "150"
             } 
-            "06"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "stack_overhell"                 "5 6 7 8"
-            }     
+ 
             "07"
             {
                 "var_type"              "FIELD_INTEGER"
                 "unduced"                 "10"
-            }                  
+            }     
+            "08"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "damage_meta"                 "400"
+            } 
+ 
+            "09"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "unduced_meta"                 "100"
+            }  
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
@@ -202,8 +214,8 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {                       
-            "str_dmg"              "1"
-             "str_hp"              "1000"
+            "str_dmg"              "10"
+             "str_hp"              "10"
 
  
         }

@@ -3,7 +3,7 @@
 	"ability_firecleave_creep"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/hero_sargatanas/summons/summons_abilities/firecleave_creep.lua"
+        "ScriptFile"                    "heroes/hero_sargatanas/summons/summon_abilities/firecleave_creep.lua"
         "AbilityTextureName"            "sven_great_cleave"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"

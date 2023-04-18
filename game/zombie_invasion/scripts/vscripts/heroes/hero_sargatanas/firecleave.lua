@@ -72,7 +72,13 @@ function modifier_ability_firecleave_fire:OnCreated()
 end
 
 function modifier_ability_firecleave_fire:OnIntervalThink()
-    local damage = self:GetAbility():GetSpecialValueFor("fire_damage")
+    local damage
+
+    if self:GetCaster():HasModifier("modifier_ability_metamorphosis") then 
+        damage = self:GetAbility():GetSpecialValueFor("fire_damage") * 2
+    else
+        damage = self:GetAbility():GetSpecialValueFor("fire_damage")
+    end
     local damageTable = {
         victim = self:GetParent(),
         attacker = self:GetCaster(),

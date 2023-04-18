@@ -217,11 +217,7 @@ modifier_ability_hellstep = class({
             MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
 
         } end,
-    CheckState              = function(self)
-        return {
-            [MODIFIER_STATE_PASSIVES_DISABLED] = true
-        }
-    end,
+ 
     GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 })
  

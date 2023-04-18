@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_ability_firecleave_creep", "heroes/hero_sargatanas/summons/summons_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_firecleave_creep_fire", "heroes/hero_sargatanas/summons/summons_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_firecleave_creep", "heroes/hero_sargatanas/summons/summon_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_firecleave_creep_fire", "heroes/hero_sargatanas/summons/summon_abilities/firecleave_creep" ,LUA_MODIFIER_MOTION_NONE )
 
 
 if ability_firecleave_creep == nil then
@@ -8,7 +8,7 @@ end
 
 --------------------------------------------------------------------------------
     
-function modifier_ability_firecleave_creep:GetIntrinsicModifierName()
+function ability_firecleave_creep:GetIntrinsicModifierName()
     return "modifier_ability_firecleave_creep"
 end
 
@@ -32,9 +32,7 @@ modifier_ability_firecleave_creep = class({
 
 --------------------------------------------------------------------------------
 
-function modifier_ability_firecleave_creep:OnRefresh()
-    self:OnCreated()
-end 
+ 
 
 
 function modifier_ability_firecleave_creep:OnAttackLanded(k)
@@ -43,7 +41,9 @@ function modifier_ability_firecleave_creep:OnAttackLanded(k)
     local attacker = k.attacker
     local duration = self:GetAbility():GetSpecialValueFor("duration")
     if caster == attacker and not caster:PassivesDisabled() then
-        target:AddNewModifier(caster,self:GetAbility(),"modifier_ability_firecleave_creep",{duration = duration})
+        target:AddNewModifier(caster,self:GetAbility(),"modifier_ability_firecleave_creep_fire",{duration = duration})
+        target:ModifierStackInc("modifier_overheating", 1,8,1,self:GetAbility())
+
     end
 end
 
@@ -57,6 +57,8 @@ modifier_ability_firecleave_creep_fire = class({
     AllowIllusionDuplicate  = function(self) return false end,
     GetEffectName           = function(self) return "particles/econ/items/huskar/huskar_2021_immortal/huskar_2021_immortal_burning_spear_debuff_flame_circulate.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
+        GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
+
 })
 
 function modifier_ability_firecleave_creep_fire:OnCreated()

@@ -12,12 +12,22 @@ function ability_sunflame:OnSpellStart()
 	if target then point = target:GetOrigin() end
 
 	local value1 = self:GetSpecialValueFor("some_value")
-		local damage = self:GetSpecialValueFor( "damage" )
-	local unduced = (self:GetSpecialValueFor( "unduced" )/100) + 1
+	local damage    
+	local unduced   
+	local projectile_name 
 
+	if self:GetCaster():HasModifier("modifier_ability_metamorphosis") then 
+		projectile_name = "particles/heroes/dragon_knight_breathe_fire_meta.vpcf"
+		damage = self:GetSpecialValueFor( "damage_meta" )
+		unduced =(self:GetSpecialValueFor( "unduced_meta" )/100) + 1 		
+	else
+		projectile_name = "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+		damage = self:GetSpecialValueFor( "damage" )
+		unduced =(self:GetSpecialValueFor( "unduced" )/100) + 1
+	end
+	 
 	-- load projectile
-	local projectile_name = "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
-	local projectile_distance = self:GetSpecialValueFor( "range" )
+ 	local projectile_distance = self:GetSpecialValueFor( "range" )
 	local projectile_start_radius = self:GetSpecialValueFor( "start_radius" )
 	local projectile_end_radius = self:GetSpecialValueFor( "end_radius" )
 	local projectile_speed = self:GetSpecialValueFor( "speed" )
