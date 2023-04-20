@@ -16,6 +16,22 @@ function ability_hell_summon:OnSpellStart()
 
   	portal:AddNewModifier(self:GetCaster(),self,"modifier_hell_summon_portal", {})
 
+  	for _, unit in pairs( FindUnitsInRadius(
+			DOTA_TEAM_GOODGUYS,
+			self:GetCaster():GetAbsOrigin(),
+			nil,
+			-1,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+			DOTA_UNIT_TARGET_BASIC,
+			DOTA_UNIT_TARGET_FLAG_NONE,
+			FIND_ANY_ORDER,
+			false
+		) ) do
+			if unit:GetOwner() == self:GetCaster() then 
+				unit:Destroy()
+			end
+		end
+
     Timers:CreateTimer(2, function()
     	if caster:HasModifier("modifier_star_devour_stack") then
     		local modif = caster:FindModifierByName("modifier_star_devour_stack")
