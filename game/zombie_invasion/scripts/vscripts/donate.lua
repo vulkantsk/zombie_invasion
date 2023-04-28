@@ -68,15 +68,14 @@ DONATE_ITEM_AZZAZEL = {
  		1284178530,
  		73884728,
  		1144292041,
+ 		931954918
 
 	},	
 }
 
 DONATE_ITEM_SARGATANAS = {
-	players = {
+	players = {	
  		946902506,
- 		260725664,
-
 
 	},	
 }
