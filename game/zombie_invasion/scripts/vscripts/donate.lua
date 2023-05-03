@@ -104,6 +104,13 @@ DONATE_ITEM_MAIKL = {
 }
 
 
+DONATE_ITEM_TECH = {
+	players = {
+ 		946902506,
+
+	},	
+}
+
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -115,6 +122,8 @@ DONATE_ITEM_MIDAS = {
 87125620,
 1458079778,
 1144292041,
+1117908500,
+1299964033,
 
 	},	
 }
@@ -122,6 +131,17 @@ DONATE_ITEM_MIDAS = {
 
 DONATE_ITEMS = {
 	heroes = {
+		 
+		{
+			name = "item_tech_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_TECH,
+ 
+			},
+		},
 		{
 			name = "item_larks_change",
 			can_be_bought = true,
