@@ -139,6 +139,11 @@
         "npc_shinobu_soul"                                                 "Душа"
         "npc_gurd_jitel"													"Гурд"
         "npc_kamen_jitel"													"Место для дерева"
+        "npc_kot_rofl1"														"Серебрянка"
+        "npc_kot_rofl2"														"Горелый"
+        "npc_kot_rofl3"														"Пестролистая"
+        "npc_kot_rofl4"														"Крутобок"
+        "npc_kot_glavniy"													"Огнезвёзд"
 
 		"npc_base"                                                  		"Homer"
 	    "npc_EdgardBs"        "npc_Edgard"
@@ -489,6 +494,17 @@
 		"DOTA_Tooltip_Ability_item_dps_heart_Description"			"Непонятная смесь из всего, однако смешав это с пирогом...\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
 		"DOTA_Tooltip_Ability_item_dps_heart_damage_bonus"	"+$damage"
  
+		"DOTA_Tooltip_Ability_item_zvezda"							"Звезда предков"
+		"DOTA_Tooltip_Ability_item_zvezda_Description"				"Звезда предков: артефакт, дарованный предками великих котов основателей, положившим начало новой жизни. Говорят, лишь истинный воитель, чей разум не опьянён собственной силой и властью может полностью раскрыть могущество данного артефакта."
+		"DOTA_Tooltip_Ability_item_zvezda_stats_agility_bonus"		"БОНУСНАЯ ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_intellect_bonus"	"БОНУСНЫЙ ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_zvezda_attackspeed_bonus"		"ДОП.СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_Ability_item_zvezda_baseattack_bonusdamage"	"БОНУСНЫЙ БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_item_zvezda_evasion"					"ДОП.УКЛОНЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_zvezda_movespeed_bonus"			"ДОП.СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_strength_bonus"		"БОНУСНАЯ СИЛА:"
+
+
 
 		 
 		"DOTA_Tooltip_Ability_item_big_meat"						"Мясо большого Бо"
@@ -701,6 +717,11 @@
         "DOTA_Tooltip_Ability_item_lance2_agi"                                        "БОНУСНАЯ ЛОВКОСТЬ:"        
         "DOTA_Tooltip_Ability_item_lance2_str"                                        "БОНУСНАЯ СИЛА:"        
         "DOTA_Tooltip_Ability_item_lance2_Lore"                                "Надёжный лук, который обязательно поможет в бою."     
+
+        "DOTA_Tooltip_Ability_item_law_frog"											"<font color='#0c5705'>Лягушачья лапка"
+        "DOTA_Tooltip_Ability_item_law_frog_Description"											"Красивая лапка лягушки"
+        "DOTA_Tooltip_Ability_item_law_frog_Lore"                                "На запах просто омерзительно"  
+
 
         "DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>paw of gurd</font>"
         "DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Активная: Золотишко!</h1>При применении вы получаете %gold% золота и %experience% опыта."       
@@ -1240,6 +1261,46 @@
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"ЗОЛОТА:"
  	
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Ты кто такой? Я тебя раньше не видел. Но в тебе чувствуется дух воителя, возможно из тебя выйдет хороший воин, но тебе сперва надо доказать, что ты что-то можешь. Я понимаю, что ты начинающий воитель, поэтому принесика мне пару лапок лягушек, уж эти “чудовища” должны быть тебе по зубам."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     Я смотры ты осилил этих “ужасных созданий”, ну что, пора переходить на следующий уровень охоты. Каждый воин должен уметь прокормить себя и своё племя, поэтому принеси мне мясо жирных чудовищ, которые сидят у двуногих в загонах."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      ТЫ ЧТО МНЕ ПРИНЁС!!!! Я ПРОСИЛ ТЕБЯ МЯСО А НЕ ГОРЕЛУЮ ЕДУ ДВУНОГИХ!!!! ЧЕМ Я ПОТВОЕМУ БУДУ КОРМИТЬ ПЛЕМЯ!!! БРЫСЬ ОТСЮДА И НЕ ВОЗРАЩАЙСЯ БЕЗ НОРМАЛЬНОГО МЯСА!!!!"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Ну наконец-то вернулся, мясо вроде свежее. Бывает, во времена голых деревьев, когда дичи в лесу становится мало, мы питаемся рыбой, но только в крайнем случае. Ты должен доказать, что умеешь плавать и ловить рыбу, чтоб племя могло выжить даже когда наступит голод."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Вот и ты, нам нужна срочно твоя помощь. Мы выяснили, что к нам приближаются волки из леса, иди и убей их, защити нас."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"ЗОЛОТА:"
+
+
+
+
+
  		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"Гурд"
  		"DOTA_Tooltip_Ability_quest_test_gurd_01_Description"						"О страник привет, неинтересует ли тебя мой артефакт? Он наполнен силой золота и может сделать тебя сильным! Только знаешь ли я очень оголодал и не могу его призвать, Знаешь всё таки очень трудно что-то сделать в нынешних условиях, Да и еду сложно самому найти, давай лучше сделаем так ты выполнешь пару моих заданий, А я дам тебе артефакт!
  		Так вот для начала принеси мне 10 мяса."
@@ -2872,6 +2933,10 @@
 		"DOTA_Tooltip_Ability_item_bewstheaks"							"Бифштекс"
 		"DOTA_Tooltip_Ability_item_bewstheaks_Description"				"<h1>Активная: Ам ням</h1>Восстанавливает %heal% здоровья."
 		"DOTA_Tooltip_Ability_item_bewstheaks_Lore"       "Кункевич всегда любил готовить Бифштексы!"
+
+		"DOTA_Tooltip_Ability_item_fish"							"Селёдка"
+		"DOTA_Tooltip_Ability_item_fish_Description"				"склизкая штука"
+		"DOTA_Tooltip_Ability_item_fish_Lore"       "Нага любила эту рыбу"
 
 		"DOTA_Tooltip_Ability_item_bag_of_gold"								"Золото"
 		"DOTA_Tooltip_Ability_item_bag_of_gold_Description"					"Содержит немножко золота." 

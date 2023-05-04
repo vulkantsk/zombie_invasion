@@ -25,6 +25,8 @@ ItemDrop.item_drop = {
 		{items = {"item_unactive_midas"}, chance = 100, units = {"npc_boss_Gurd"}},
 		{items = {"item_pizza2"}, chance = 100, units = {"npc_boss_Gurd"}},
 		{items = {"item_big_meat"}, chance = 100, units = {"npc_boss_pig"}},
+		{items = {"item_law_frog"}, chance = 20, units = {"npc_classic_frog"}},
+		{items = {"item_fish"}, chance = 100, units = {"npc_boss_slardar"}},
 
  
 

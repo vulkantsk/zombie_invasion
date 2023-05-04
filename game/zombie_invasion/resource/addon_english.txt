@@ -109,6 +109,13 @@
         "DOTA_Tooltip_Ability_item_maikl_Description"							"Прах Сларка и слёзы Майкла позволяет герою получать %bonus_agility% бонус к ловкости с шансом 0.777% "
 
 
+
+
+        	"DOTA_Tooltip_Ability_item_law_frog"											"<font color='#0c5705'>paw of frog"
+        "DOTA_Tooltip_Ability_item_law_frog_Description"											"cute frog paw"
+        "DOTA_Tooltip_Ability_item_active_midas_Lore"                                "bad smell"  
+
+
 	    	"DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>paw of gurd</font>"
         	"DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Active: gold!</h1>When applied, you get %gold% gold and %experience% experience."       
         	"DOTA_Tooltip_Ability_item_active_midas_Lore"                                "quest by BaronXX."  
@@ -148,7 +155,11 @@
 	    "npc_end_bear"	                                        "Virtus bear"
 	    "npc_test"	                                        	"test"
 
- 
+ 	"npc_kot_rofl1"														"Silverpaw"
+        "npc_kot_rofl2"														"Ravenpaw"
+        "npc_kot_rofl3"														"Blossomfall"
+        "npc_kot_rofl4"														"Graystripe"
+        "npc_kot_glavniy"													"Firestar"
 	    "npc_gurd_jitel"													"gurd"
 
 		"npc_jitel"                                                         "Kunnka"
@@ -1116,8 +1127,57 @@
 		"DOTA_Tooltip_Ability_item_bonus_spell1"				"Подарок"
 		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Active: Happy new year!</h1> Gives 10% spell boost forever!"			
 
+		"DOTA_Tooltip_Ability_item_zvezda"							"Звезда предков"
+		"DOTA_Tooltip_Ability_item_zvezda_Description"				"Звезда предков: артефакт, дарованный предками великих котов основателей, положившим начало новой жизни. Говорят, лишь истинный воитель, чей разум не опьянён собственной силой и властью может полностью раскрыть могущество данного артефакта."
+		"DOTA_Tooltip_Ability_item_zvezda_stats_agility_bonus"		"БОНУСНАЯ ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_intellect_bonus"	"БОНУСНЫЙ ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_zvezda_attackspeed_bonus"		"ДОП.СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_Ability_item_zvezda_baseattack_bonusdamage"	"БОНУСНЫЙ БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_item_zvezda_evasion"					"ДОП.УКЛОНЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_zvezda_movespeed_bonus"			"ДОП.СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_strength_bonus"		"БОНУСНАЯ СИЛА:"
+
+		"DOTA_Tooltip_Ability_item_fish"							"fish"
+		"DOTA_Tooltip_Ability_item_fish_Description"				"stink"
+		"DOTA_Tooltip_Ability_item_fish_Lore"       "naga love this fish"
+
 // ******************** квесты ********************
 
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Ты кто такой? Я тебя раньше не видел. Но в тебе чувствуется дух воителя, возможно из тебя выйдет хороший воин, но тебе сперва надо доказать, что ты что-то можешь. Я понимаю, что ты начинающий воитель, поэтому принесика мне пару лапок лягушек, уж эти “чудовища” должны быть тебе по зубам."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     Я смотры ты осилил этих “ужасных созданий”, ну что, пора переходить на следующий уровень охоты. Каждый воин должен уметь прокормить себя и своё племя, поэтому принеси мне мясо жирных чудовищ, которые сидят у двуногих в загонах."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      ТЫ ЧТО МНЕ ПРИНЁС!!!! Я ПРОСИЛ ТЕБЯ МЯСО А НЕ ГОРЕЛУЮ ЕДУ ДВУНОГИХ!!!! ЧЕМ Я ПОТВОЕМУ БУДУ КОРМИТЬ ПЛЕМЯ!!! БРЫСЬ ОТСЮДА И НЕ ВОЗРАЩАЙСЯ БЕЗ НОРМАЛЬНОГО МЯСА!!!!"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Ну наконец-то вернулся, мясо вроде свежее. Бывает, во времена голых деревьев, когда дичи в лесу становится мало, мы питаемся рыбой, но только в крайнем случае. Ты должен доказать, что умеешь плавать и ловить рыбу, чтоб племя могло выжить даже когда наступит голод."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"Огнезвёзд"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Вот и ты, нам нужна срочно твоя помощь. Мы выяснили, что к нам приближаются волки из леса, иди и убей их, защити нас."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"КОЛИЧЕСТВО"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"ЗОЛОТА:"
 
 
 

@@ -126,7 +126,7 @@
             "05"
             {
                 "var_type"              "FIELD_INTEGER"
-                "fire_damage"   "2 4 8 16 32 64 64"
+                "fire_damage"   "2 4 8 16 32 64 128"
             }
             "06"
             {
