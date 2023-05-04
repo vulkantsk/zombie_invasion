@@ -735,6 +735,7 @@
 		"AttributeBaseStrength"		"16"
 		"AttributeStrengthGain"		"1.7000"
 
+		"AttackRate"		"1.300000"
 		"AttackRange"				"200"							
 "Ability1" "jugger"
 "Ability2" "jugger_2"
