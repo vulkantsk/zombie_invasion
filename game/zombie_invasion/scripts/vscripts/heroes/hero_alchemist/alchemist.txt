@@ -171,7 +171,7 @@
 		{
 			"duration"				"36"
 			"bonus_gold"			"4"
-			"bonus_bonus_gold"		"1 1 1 1 1 2 2 2"
+			"bonus_bonus_gold"		"1 1 1 2 2 3 3 4"
 			"bonus_gold_cap"		"12 15 18 21 24 27 30 33"
 			"bounty_multiplier"		"5.0"
 		}

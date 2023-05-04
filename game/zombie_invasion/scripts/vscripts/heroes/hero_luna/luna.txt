@@ -93,7 +93,7 @@
 			"bounces"							"1 2 3 4 5 6 7"
 			"damage_reduction_percent"
 			{
-				"value"							"52 48 44 40 36 24 18"
+				"value"							"52 48 44 40 36 18 8"
 				"special_bonus_unique_luna_7"	"-8"
 			}
 		}
@@ -119,8 +119,8 @@
 				"radius"			"1200"
 				"bonus_damage"			
 				{
-					"value"			"15 30 40 55 65 80 90"
-					"special_bonus_unique_luna_3"	"+35"
+					"value"			"20 40 60 80 100 120 140"
+					"special_bonus_unique_luna_3"	"+60"
 				}
 				"bonus_night_vision"		
 				{
@@ -157,7 +157,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_speed"					"30 45 60 75"
+				"attack_speed"					"60 75 90 105"
 			}
 			"02"
 			{
@@ -213,8 +213,8 @@
 			
 			"beams"
 			{
-				"value"					"10 20 30"
-				"special_bonus_scepter"	"+0 +3 +6"
+				"value"					"15 30 45"
+				"special_bonus_scepter"	"+3 +6 +10"
 			}
 			"beam_interval"
 			{
@@ -288,13 +288,13 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"				"245"
+				"bonus_damage"				"375"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_speed"				"125"
+				"attack_speed"				"245"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"04"

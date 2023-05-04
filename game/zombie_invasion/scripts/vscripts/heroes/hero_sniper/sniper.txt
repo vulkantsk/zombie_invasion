@@ -53,7 +53,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"shrapnel_damage"		"20 35 50 65 80 95 110"
+				"shrapnel_damage"		"40 60 80 120 195 220 240"
 				"LinkedSpecialBonus"	"special_bonus_unique_sniper_1"
 			}
 			"04"
@@ -64,7 +64,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_delay"			"1.2"
+				"damage_delay"			"0.8"
 			}
 			"06"
 			{
@@ -102,10 +102,10 @@
 		{
 			"damage"
 			{
-				"value"	"20 50 70 100 120 150 170"
-				"special_bonus_unique_sniper_headshot_damage"	"+50"
+				"value"	"20 40 80 100 120 140 160"
+				"special_bonus_unique_sniper_headshot_damage"	"+160"
 			}
-			"proc_chance"					"40"
+			"proc_chance"					"40 45 50 55 60 65 70"
 			"knockback_distance"
 			{
 				"value"					"10"
@@ -265,7 +265,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"  
-				"bonus_speed_atack"					"0.65"
+				"bonus_speed_atack"					"0.35"
 			}
 		
 			"02"
