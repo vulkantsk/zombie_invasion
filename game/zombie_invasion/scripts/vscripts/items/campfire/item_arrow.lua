@@ -169,7 +169,7 @@ function modifier_campfire_quest:OnIntervalThink()
 
          newItem:SetPurchaseTime(0)
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
-         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
          unit:RemoveItem(testo)
         unit:RemoveItem(trash) 
@@ -183,7 +183,7 @@ function modifier_campfire_quest:OnIntervalThink()
 
          newItem:SetPurchaseTime(0)
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
-         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
                unit:RemoveItem(pirog)
                unit:RemoveItem(tank_heart)   
@@ -196,7 +196,7 @@ function modifier_campfire_quest:OnIntervalThink()
 
          newItem:SetPurchaseTime(0)
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
-         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
                unit:RemoveItem(pirog)
                unit:RemoveItem(mag_heart) 
@@ -209,7 +209,7 @@ function modifier_campfire_quest:OnIntervalThink()
 
          newItem:SetPurchaseTime(0)
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
-         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)))
+         newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
                unit:RemoveItem(pirog)
                unit:RemoveItem(dps_heart) 

@@ -40,19 +40,24 @@ function modifier_ability_firecleave:OnCreated()
     self.cleave_starting_width = self:GetAbility():GetSpecialValueFor("cleave_starting_width")
     self.cleave_ending_width = self:GetAbility():GetSpecialValueFor("cleave_ending_width")
     self.cleave_distance = self:GetAbility():GetSpecialValueFor("cleave_distance")
-    self.great_cleave_damage = self:GetAbility():GetSpecialValueFor("great_cleave_damage")
-end
+ 
+ end
 
 function modifier_ability_firecleave:OnAttackLanded(k)
-    local caster = self:GetParent()
+     local caster = self:GetParent()
     local target = k.target
     local attacker = k.attacker
     local duration = self:GetAbility():GetSpecialValueFor("duration")
     if caster == attacker and not caster:PassivesDisabled() then
+        self.great_cleave_damage = (self:GetAbility():GetSpecialValueFor("great_cleave_damage")/100) * self:GetCaster():GetAttackDamage()
         target:AddNewModifier(caster,self:GetAbility(),"modifier_ability_firecleave_fire",{duration = duration})
         local fx = "particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave_gods_strength_crit_b.vpcf"
         DoCleaveAttack(caster, target, self:GetAbility(), self.great_cleave_damage, self.cleave_starting_width, self.cleave_ending_width, self.cleave_distance, fx)
+ 
+
     end
+ 
+
 end
 
 
