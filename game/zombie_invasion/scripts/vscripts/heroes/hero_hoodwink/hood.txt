@@ -268,7 +268,7 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "trigger_chance"			"12"
+			     "trigger_chance"			"33"
 		    }
 		}
 	}
