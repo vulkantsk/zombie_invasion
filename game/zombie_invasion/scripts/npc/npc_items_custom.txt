@@ -1941,43 +1941,98 @@
 	}
 	"item_fish"
 	{
+		/"item_pizza1"
+	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
+	{
 		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
-		"AbilityTextureName"			"fish"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
- 
-
+		//-------------------------------------------------------------------------------------------------------------				
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"pizza1"
+		
+	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemCost"                      "0" 
-		"ItemPurchasable"				"1" 
-		"ItemSellable"					"1"
-		"ItemInitialCharges"			"1"	 
-		"ItemKillable"					"0" 
-		"ItemStackable" 				"1"
-		"ItemPermanent" 				"0"	
+		
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"skull basher"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemStackable"					"1"
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemStackable"					"1"
+		"ItemPurchasable"				"0"
+		"ItemInitialCharges"			"1"
+	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"			"0"
- 
-			}	
-			"02"
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"20"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge"
+			{}
+			"RunScript"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"hit_damage"			"0"
- 
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"StrengthTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"AgilityTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"IntellectTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}		
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
+				"EffectAttachType" 	"follow_overhead"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
+				"EffectAttachType" 	"follow_origin"
 			}	
-        }
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}		
+		}	
 	}
 	
 		"item_bone"
