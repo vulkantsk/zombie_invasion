@@ -1940,15 +1940,13 @@
         }
 	}
 	"item_fish"
-	{
-		/"item_pizza1"
 	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------				
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"pizza1"
+		"AbilityTextureName"			"fish"
 		
 	
 		// Item Info
