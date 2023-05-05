@@ -1923,6 +1923,7 @@
 		"ItemKillable"					"1" 
 		"ItemStackable" 				"1"
 		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
 		"AbilitySpecial"
 		{
 			"01"
@@ -11264,6 +11265,7 @@
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
 		"ItemCost"						"500"
+		"SideShop" 						"0"
 		"ItemPurchasable"				"0"
 		"ItemQuality"					""
 		"ItemSellable"					"0"
