@@ -1270,7 +1270,7 @@
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"ЗОЛОТА:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     Я смотры ты осилил этих “ужасных созданий”, ну что, пора переходить на следующий уровень охоты. Каждый воин должен уметь прокормить себя и своё племя, поэтому принеси мне мясо жирных чудовищ, которые сидят у двуногих в загонах."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     Я смотры ты осилил этих “ужасных созданий”, ну что, пора переходить на следующий уровень охоты. Каждый воин должен уметь прокормить себя и своё племя, поэтому принеси мне СЪЕДОБНОГО МЯСА жирных чудовищ, которые сидят у двуногих в загонах."
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"КОЛИЧЕСТВО"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"ОПЫТА:"
