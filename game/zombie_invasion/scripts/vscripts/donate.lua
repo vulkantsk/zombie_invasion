@@ -28,6 +28,7 @@ DONATE_SET_ADMIN = {
 DONATE_SET_ZOMBIE = {
 	players = {
 		946902506,
+		260725664,
 		
 		
 
