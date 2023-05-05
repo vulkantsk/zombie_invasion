@@ -1920,7 +1920,7 @@
 		"ItemPurchasable"				"1" 
 		"ItemSellable"					"1"
 		"ItemInitialCharges"			"1"	 
-		"ItemKillable"					"0" 
+		"ItemKillable"					"1" 
 		"ItemStackable" 				"1"
 		"ItemPermanent" 				"0"	
 		"AbilitySpecial"

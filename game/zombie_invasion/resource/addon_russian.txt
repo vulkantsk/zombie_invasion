@@ -143,7 +143,7 @@
         "npc_kot_rofl2"														"Горелый"
         "npc_kot_rofl3"														"Пестролистая"
         "npc_kot_rofl4"														"Крутобок"
-        "npc_kot_glavniy"													"Огнезвёзд"
+        "npc_kot_glavniy_jitel"													"Огнезвёзд"
 
 		"npc_base"                                                  		"Homer"
 	    "npc_EdgardBs"        "npc_Edgard"
