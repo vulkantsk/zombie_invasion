@@ -976,7 +976,7 @@ function InvasionMode:InvasionEntityKilled (data)
            	                  	 SetExpUsually(unit, -18)
              	        end                  
 
-		         unit:SetInitialGoalEntity(point)
+		   
  	              end)    
         	             if zombie_count < 105 then 
              	            	 GiveGoldPlayers(5)
@@ -1024,7 +1024,7 @@ function InvasionMode:InvasionEntityKilled (data)
            	                  	 SetExpUsually(unit, -32)
              	        end                  
 
-		         unit:SetInitialGoalEntity(point)
+	 
  	              end)    
         	             if zombie_count_2 < 50 then 
              	            	 GiveGoldPlayers(8)
@@ -1068,8 +1068,7 @@ function InvasionMode:InvasionEntityKilled (data)
           	                     SetGoldUsually(unit, -6)         	                  	  
            	                  	 SetExpUsually(unit, -32)
              	        end                  
-
-		         unit:SetInitialGoalEntity(point)
+ 
  	              end)    
         	             if zombie_count_3 < 105 then 
              	            	 GiveGoldPlayers(8)
@@ -1118,7 +1117,7 @@ function InvasionMode:InvasionEntityKilled (data)
            	                  	 SetExpUsually(unit, -45)
              	        end                  
 
-		         unit:SetInitialGoalEntity(point)
+		  
  	              end)    
         	             if zombie_count_4 < 105 then 
              	            	 GiveGoldPlayers(9)
@@ -1167,7 +1166,7 @@ function InvasionMode:InvasionEntityKilled (data)
            	                  	 SetExpUsually(unit, -70)
              	        end                  
 
-		         unit:SetInitialGoalEntity(point)
+		         
  	              end)    
         	             if zombie_count_5 < 50 then 
              	            	 GiveGoldPlayers(15)
@@ -1214,8 +1213,7 @@ function InvasionMode:InvasionEntityKilled (data)
           	                     SetGoldUsually(unit, -16)         	                  	  
            	                  	 SetExpUsually(unit, -55)
              	        end                  
-
-		         unit:SetInitialGoalEntity(point)
+ 
  	              end)    
         	             if zombie_count_6 < 105 then 
              	            	 GiveGoldPlayers(12)
@@ -1262,8 +1260,7 @@ function InvasionMode:InvasionEntityKilled (data)
           	                     SetGoldUsually(unit, -24)         	                  	  
            	                  	 SetExpUsually(unit, -60)
              	        end                  
-
-		         unit:SetInitialGoalEntity(point)
+ 
  	              end)    
         	             if zombie_count_7 < 105 then 
              	            	 GiveGoldPlayers(14)
