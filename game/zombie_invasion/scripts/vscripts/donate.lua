@@ -4,7 +4,6 @@ FirstSpawned = {}
 DONATE_SET_HELPER = {
 	players = {
 	206968098,
-	946902506,
 	},
 }
 
@@ -20,6 +19,34 @@ DONATE_SET_ADMIN = {
 	players = {
 		453736017,
 		877002179
+
+		
+
+	},
+}
+
+DONATE_SET_ZOMBIE = {
+	players = {
+		946902506,
+		
+		
+
+	},
+}
+
+DONATE_SET_PLARGET = {
+	players = {
+		
+		
+		
+
+	},
+}
+
+DONATE_SET_NASQREAL = {
+	players = {
+		
+		
 
 	},
 }
@@ -141,6 +168,7 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_TECH,
+				DONATE_SET_ZOMBIE,
  
 			},
 		},
@@ -153,6 +181,8 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SLARK,
 				DONATE_SET_HELPER,
+				DONATE_SET_ZOMBIE,
+				DONATE_SET_PLARGET,
 			},
 		},
 		{
@@ -162,6 +192,7 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SARGATANAS,
+				DONATE_SET_ZOMBIE,
 			},
 		},
 		{
@@ -172,6 +203,8 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_SHINOBU,
+				DONATE_SET_ZOMBIE,
+				DONATE_SET_NASQREAL,
 			},
 		},
 
@@ -183,6 +216,8 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_AZZAZEL,
+				DONATE_SET_ZOMBIE,
+				DONATE_SET_PLARGET,
 			},
 		},
 
@@ -194,6 +229,8 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_SARA,
+				DONATE_SET_ZOMBIE,
+				DONATE_SET_NASQREAL,
 			},
 		},
 
@@ -208,6 +245,9 @@ DONATE_ITEMS = {
 				DONATE_SET_ULTRA_HELPER,
 				DONATE_ITEM_MIDAS,
 				DONATE_SET_HELPER,
+				DONATE_SET_ZOMBIE,
+				DONATE_SET_PLARGET,
+				DONATE_SET_NASQREAL,
 			},
 		},
 		{
@@ -362,7 +402,10 @@ LinkLuaModifier( "modifier_special_effect_admin", "modifiers/donate/modifier_spe
 LinkLuaModifier( "modifier_special_effect_admin2", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_admin3", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_special_effect_legendary2", "modifiers/donate/modifier_special_effect_legendary2", LUA_MODIFIER_MOTION_BOTH )	
-LinkLuaModifier( "modifier_special_effect_sf_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )	
+LinkLuaModifier( "modifier_special_effect_sf_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_zombie", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier( "modifier_special_effect_zombie2", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH )	
+LinkLuaModifier( "modifier_special_effect_zombie3", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH )	
 
 function Donate:OnNPCSpawned(keys)
 	print("[BAREBONES] NPC Spawned")
@@ -381,6 +424,9 @@ function Donate:OnNPCSpawned(keys)
 		print( "Current Hero: " .. tostring( name ) )
 --	
 	
+		addModifierBySteamID(DONATE_SET_ZOMBIE.players,"modifier_special_effect_zombie",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ZOMBIE.players,"modifier_special_effect_zombie2",steamID,npc)
+		addModifierBySteamID(DONATE_SET_ZOMBIE.players,"modifier_special_effect_zombie3",steamID,npc)
 		addModifierBySteamID(DONATE_SET_HELPER.players,"modifier_special_effect_legendary",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_slark_skin",steamID,npc)
 		addModifierBySteamID(DONATE_SET_ADMIN.players,"modifier_special_effect_admin",steamID,npc)
