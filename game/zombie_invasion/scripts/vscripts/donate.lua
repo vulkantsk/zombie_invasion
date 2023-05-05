@@ -29,7 +29,8 @@ DONATE_SET_ZOMBIE = {
 	players = {
 		946902506,
 		260725664,
-		
+		1419334429,
+		203159402
 		
 
 	},
@@ -112,7 +113,8 @@ DONATE_ITEM_SARGATANAS = {
 DONATE_ITEM_COLOR_FUCHSIA = {
 	players = {
  		--1075207684,
- 		877002179
+ 		877002179,
+ 		203159402
 
 	},	
 }
@@ -136,6 +138,7 @@ DONATE_ITEM_MAIKL = {
 DONATE_ITEM_TECH = {
 	players = {
  		946902506,
+ 		203159402
 
 	},	
 }
