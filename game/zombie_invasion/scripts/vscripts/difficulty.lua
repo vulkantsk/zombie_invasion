@@ -59,17 +59,22 @@ function Difficulty:OnHeroSelectionState()
 	end
 end
 
-LinkLuaModifier( "modifier_nothing_dif", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE )
-
+ 
 function Difficulty:NPC( npc )
 	if self.leader == "normal" or npc:GetTeam() == DOTA_TEAM_GOODGUYS then
 		return
 	end
 
 	local s = self.leader == "medium" and 1 or 2
-
-	local modifier = npc:AddNewModifier( npc, nil, "modifier_invasion_difficulty", nil )
+	local result = ((s * 0.25) + 1)
  
+        npc:SetMaxHealth(npc:GetMaxHealth() * result)	
+        npc:SetHealth(npc:GetMaxHealth())
+
+        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() * result)
+        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result )
+        npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
+
     local tablUnits = {
         {unit = {'npc_classic_half_zombie'}, ability = {'slow_zombie_attack'} },
         {unit = {'npc_classic_wave_ghoul'}, ability = {'ghoul_reincornation'} },
@@ -88,8 +93,6 @@ function Difficulty:NPC( npc )
     end
  
    
-	modifier:SetStackCount( s )
-
+ 
 	Difficulter = s / 2
-	local modifier_empt = npc:AddNewModifier( npc, nil, "modifier_nothing_dif", nil )
-end
+ end
