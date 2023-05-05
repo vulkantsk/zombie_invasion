@@ -892,7 +892,7 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_EdgardBs" then
     		 local jitels = {
-    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base","edgard_ed",
+    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base","edgard_ed","glavniykit","roflkit1","roflkit2","roflkit3","roflkit4","gurdik"
    		 }
  
                for i,name in ipairs(jitels) do
