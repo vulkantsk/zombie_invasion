@@ -16,6 +16,15 @@
   background-color: #000000d0;
   flow-children: down;
   border-radius: 1% / 1%;
+  opacity: 1;
+  transform: translateX(0%) translateY(0px);
+  transition-property: opacity, transform;
+  transition-duration: 0.35s;
+}
+#QPanel.hide {
+  visibility: visible;
+  transform: translateX(-50%) translateY(0px);
+  opacity: 0;
 }
 
 .qtext {
