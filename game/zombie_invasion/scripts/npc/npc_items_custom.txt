@@ -1916,11 +1916,12 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemCost"                      "0" 
-		"ItemPurchasable"				"1" 
-		"ItemSellable"					"1"
-		"ItemInitialCharges"			"1"	 
+		"ItemCost"                      "260" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"1" 
 		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
 		"ItemStackable" 				"1"
 		"ItemPermanent" 				"0"	
 		"SideShop" 						"0"
@@ -11206,9 +11207,9 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemCost"                      "0" 
-		"ItemPurchasable"				"1" 
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemCost"                      "9999999" 
+		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"1" 
 		"ItemStackable" 				"1"
