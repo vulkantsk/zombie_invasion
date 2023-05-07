@@ -2,7 +2,10 @@ Difficulty = Difficulty or {
 	diffs = {
 		normal = 0,
 		medium = 0,
-		hard = 0
+		hard = 0,
+		demon = 0,
+		impossible = 0,
+
 	},
 	players = {},
 	leader = "normal"
@@ -40,7 +43,7 @@ function Difficulty:OnHeroSelectionState()
 
 	print( "Difficulty selected - " .. self.leader  )
 
-	if self.leader == "medium" or self.leader == "hard" then
+	if self.leader == "medium" or self.leader == "hard" or self.leader == "demon" or self.leader == "impossible" then
 		for _, unit in pairs( FindUnitsInRadius(
 			DOTA_TEAM_GOODGUYS,
 			Vector(),
@@ -65,7 +68,18 @@ function Difficulty:NPC( npc )
 		return
 	end
 
-	local s = self.leader == "medium" and 1 or 2
+	local s
+
+	if self.leader == "medium" then 
+		s = 1 
+	elseif self.leader == "hard" then
+		s = 2 
+	elseif self.leader == "demon" then
+		s = 4 
+	elseif self.leader == "impossible" then
+		s = 12 
+	end		
+ 
 	local result = ((s * 0.25) + 1)
  
         npc:SetMaxHealth(npc:GetMaxHealth() * result)	

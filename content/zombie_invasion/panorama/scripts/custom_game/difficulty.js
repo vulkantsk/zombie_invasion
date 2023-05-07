@@ -21,7 +21,7 @@ const update_difficulty_selections = (data) => {
 (() => {
   const parent = $.GetContextPanel();
 
-  for (let diff of ['normal', 'medium', 'hard']) {
+  for (let diff of ['normal', 'medium', 'hard', 'demon', 'impossible']) {
     const button = $.CreatePanel('Button', parent, '');
     button.AddClass(diff);
     const imgPanel = $.CreatePanel('Panel', button, '');

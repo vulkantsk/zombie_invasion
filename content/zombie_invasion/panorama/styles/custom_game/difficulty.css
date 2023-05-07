@@ -14,6 +14,7 @@
   max-width: 280px;
   padding: 4px;
   border-radius: 5%;
+  margin-bottom: 120px;
 }
 
 #Header {
@@ -48,6 +49,14 @@
   background-color: #ff0000;
 }
 
+.Difficulty Button.demon {
+  background-color: #ff00f2;
+}
+
+.Difficulty Button.impossible {
+  background-color: #000000;
+}
+
 .Difficulty Button.randomheroes {
   background-color: #000000;
 }
@@ -74,6 +83,15 @@
   wash-color: #c10020;
 }
 
+.Difficulty Button.demon Panel {
+  background-image: url('s2r://panorama/images/conduct/behavior_bad_png.vtex');
+  wash-color: #920f8c;
+}
+
+.Difficulty Button.impossible Panel {
+  background-image: url('s2r://panorama/images/conduct/behavior_bad_png.vtex');
+  wash-color: #3f050e;
+}
 .Difficulty Button.randomheroes Panel {
   background-image: url('s2r://panorama/images/conduct/behavior_bad_png.vtex');
   wash-color: #c10020;
