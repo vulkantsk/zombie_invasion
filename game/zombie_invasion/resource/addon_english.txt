@@ -22,6 +22,53 @@
 		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
 		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 25%</font>! (Damage, Spell damage, Health and Armor,new abilities)"
 		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 50%</font>! (Damage, Spell damage, Health and Armor,new abilities)"
+		"difficulty_description_demon" "<font color='#ff0000'>You will suffer</font>!"
+		"difficulty_description_impossible" "<font color='#000000'>HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
+		</font>!"
 		
 		//guide
 		"htpbtn"				"How to Play"
@@ -1127,15 +1174,15 @@
 		"DOTA_Tooltip_Ability_item_bonus_spell1"				"Подарок"
 		"DOTA_Tooltip_ability_item_bonus_spell1_Description"							"<h1>Active: Happy new year!</h1> Gives 10% spell boost forever!"			
 
-		"DOTA_Tooltip_Ability_item_zvezda"							"Звезда предков"
-		"DOTA_Tooltip_Ability_item_zvezda_Description"				"Звезда предков: артефакт, дарованный предками великих котов основателей, положившим начало новой жизни. Говорят, лишь истинный воитель, чей разум не опьянён собственной силой и властью может полностью раскрыть могущество данного артефакта."
-		"DOTA_Tooltip_Ability_item_zvezda_stats_agility_bonus"		"БОНУСНАЯ ЛОВКОСТЬ:"
-		"DOTA_Tooltip_Ability_item_zvezda_stats_intellect_bonus"	"БОНУСНЫЙ ИНТЕЛЛЕКТ:"
-		"DOTA_Tooltip_Ability_item_zvezda_attackspeed_bonus"		"ДОП.СКОРОСТЬ АТАКИ:"
-		"DOTA_Tooltip_Ability_item_zvezda_baseattack_bonusdamage"	"БОНУСНЫЙ БАЗОВЫЙ УРОН:"
-		"DOTA_Tooltip_Ability_item_zvezda_evasion"					"ДОП.УКЛОНЕНИЯ:"
-		"DOTA_Tooltip_Ability_item_zvezda_movespeed_bonus"			"ДОП.СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
-		"DOTA_Tooltip_Ability_item_zvezda_stats_strength_bonus"		"БОНУСНАЯ СИЛА:"
+		"DOTA_Tooltip_Ability_item_zvezda"							"FIRE STAR"
+		"DOTA_Tooltip_Ability_item_zvezda_Description"				"Ancestral Star: An artifact bestowed by the ancestors of the great founding cats, which marked the beginning of a new life. They say that only a true warrior whose mind is not intoxicated by his own strength and power can fully reveal the power of this artifact."
+		"DOTA_Tooltip_Ability_item_zvezda_stats_agility_bonus"		"BONUS.AGI:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_intellect_bonus"	"BONUS.INT:"
+		"DOTA_Tooltip_Ability_item_zvezda_attackspeed_bonus"		"BONUS.ATTACK SPEED:"
+		"DOTA_Tooltip_Ability_item_zvezda_baseattack_bonusdamage"	"BONUS.BASE DAMAGE:"
+		"DOTA_Tooltip_Ability_item_zvezda_evasion"					"BONUS.EVASION:"
+		"DOTA_Tooltip_Ability_item_zvezda_movespeed_bonus"			"BONUS.MOVEMENTSPEED:"
+		"DOTA_Tooltip_Ability_item_zvezda_stats_strength_bonus"		"BONUS.STR:"
 
 		"DOTA_Tooltip_Ability_item_fish"							"fish"
 		"DOTA_Tooltip_Ability_item_fish_Description"				"stink"
@@ -1144,40 +1191,40 @@
 // ******************** квесты ********************
 
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Ты кто такой? Я тебя раньше не видел. Но в тебе чувствуется дух воителя, возможно из тебя выйдет хороший воин, но тебе сперва надо доказать, что ты что-то можешь. Я понимаю, что ты начинающий воитель, поэтому принесика мне пару лапок лягушек, уж эти “чудовища” должны быть тебе по зубам."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Who are you? I haven't seen you before. But you feel the spirit of a warrior, perhaps you will make a good warrior, but first you need to prove that you can do something. I understand that you are a novice warrior, so bring me a pair of frog legs, these “monsters" should be in your teeth."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"КОЛИЧЕСТВО"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"ЗОЛОТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     Я смотры ты осилил этих “ужасных созданий”, ну что, пора переходить на следующий уровень охоты. Каждый воин должен уметь прокормить себя и своё племя, поэтому принеси мне мясо жирных чудовищ, которые сидят у двуногих в загонах."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     I see you have mastered these “terrible creatures”, well, it's time to move on to the next level of hunting. Every warrior should be able to feed himself and his tribe, so bring me the Cooked meat of fat monsters that sit in the two-legged pens."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"КОЛИЧЕСТВО"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"ЗОЛОТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      ТЫ ЧТО МНЕ ПРИНЁС!!!! Я ПРОСИЛ ТЕБЯ МЯСО А НЕ ГОРЕЛУЮ ЕДУ ДВУНОГИХ!!!! ЧЕМ Я ПОТВОЕМУ БУДУ КОРМИТЬ ПЛЕМЯ!!! БРЫСЬ ОТСЮДА И НЕ ВОЗРАЩАЙСЯ БЕЗ НОРМАЛЬНОГО МЯСА!!!!"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      WHAT HAVE YOU BROUGHT ME!!!! I ASKED YOU FOR MEAT, NOT BURNT BIPEDAL FOOD!!!! WHAT AM I GOING TO FEED THE TRIBE WITH?!! GET OUT OF HERE AND DON'T COME BACK WITHOUT NORMAL MEAT!!!!"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"КОЛИЧЕСТВО"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"ЗОЛОТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Ну наконец-то вернулся, мясо вроде свежее. Бывает, во времена голых деревьев, когда дичи в лесу становится мало, мы питаемся рыбой, но только в крайнем случае. Ты должен доказать, что умеешь плавать и ловить рыбу, чтоб племя могло выжить даже когда наступит голод."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Well, finally back, the meat seems fresh. Sometimes, in times of bare trees, when there is little game in the forest, we eat fish, but only as a last resort. You have to prove that you can kill slardar so that the tribe can survive even when famine comes."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"КОЛИЧЕСТВО"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"ЗОЛОТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"Огнезвёзд"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Вот и ты, нам нужна срочно твоя помощь. Мы выяснили, что к нам приближаются волки из леса, иди и убей их, защити нас."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Here you are, we need your help urgently. We found out that wolves from the forest are approaching us, go and kill them, protect us and give 7 bones."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"КОЛИЧЕСТВО"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"ЗОЛОТА:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"GOLD:"
 
 
 
