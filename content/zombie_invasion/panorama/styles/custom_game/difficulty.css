@@ -84,12 +84,12 @@
 }
 
 .Difficulty Button.demon Panel {
-  background-image: url('s2r://panorama/images/conduct/behavior_bad_png.vtex');
+  background-image: url('file://panorama/images/difficult/demon.png');
   wash-color: #920f8c;
 }
 
 .Difficulty Button.impossible Panel {
-  background-image: url('s2r://panorama/images/conduct/behavior_bad_png.vtex');
+  background-image: url('file://panorama/images/difficult/impossibles.png');
   wash-color: #3f050e;
 }
 .Difficulty Button.randomheroes Panel {
