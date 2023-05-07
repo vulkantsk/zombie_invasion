@@ -2363,7 +2363,7 @@
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
 		"ItemQuality"					""
-		"ItemSellable"					"1"
+		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"					"0"
