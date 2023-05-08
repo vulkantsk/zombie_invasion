@@ -5,6 +5,5 @@
  function item_test:OnSpellStart()
 	--print("OnSpellStart")
 --	local sound = "Slow_mobs_1"
-  EmitGlobalSound ("amekudeku - Drow Ranger")
-
+EndGame:DemonEnd()
 end

@@ -71,15 +71,14 @@ end
 function modifier_sf_necromastery_hero:KillLogic( params )
 	local target = params.unit
 	local attacker = params.attacker
-	if not attacker == self:GetParent() and target == self:GetParent() and attacker:IsAlive() then return end
+	if attacker == self:GetParent()   and target and attacker:IsAlive() then   
 		if target:IsIllusion() and target:IsBuilding() then return	end
-     		
- 
  
 	-- logic
 	if not self:GetParent():PassivesDisabled() then
 		self:AddStack( 1 )
 		self:PlayEffects( target )
+	end
 	end
 end
 

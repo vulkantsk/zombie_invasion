@@ -84,6 +84,7 @@
 	   "Game_notification_boss_spawn_pudge"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>будьте на готове!</font>"
  	   "Game_notification_portal_boss"				"<font color='#DBA901'>ТОТЕМНЫЙ БОСС ПОЯВИЛСЯ НА КАРТЕ!</font>"
 	   "Game_notification_boss_spawn_meatgolem_2"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ЖИРНИЧ' </font><font color='#DBA901'>будьте на готове!</font>"
+	   "sdfgdgfsdgfhsdgsfxdgsf"  							"Я ебус собак"
 
        // ******************** Messages Christmas ********************
        	   "sf_eg1"                                                  "<font color='#c10020'>ДОВОЛЬНО</font>"

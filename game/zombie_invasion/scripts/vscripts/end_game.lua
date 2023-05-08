@@ -81,6 +81,86 @@ function EndGame:IsItEndGame()
 
 end
 
+LinkLuaModifier("modifier_wake_up", "modifiers/modifier_wake_up", 0)
+LinkLuaModifier("modifier_sleep", "modifiers/modifier_sleep", 0)
+
+
+function EndGame:DemonEnd()
+    local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+ 		
+ 	for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   
+      			 
+            if not hero:IsAlive() then 
+                hero:RespawnHero(false, false) 
+            end   
+                  	
+            hero:AddNewModifier(hero, nil, "modifier_wake_up", {})
+            hero:SetBuyBackDisabledByReapersScythe(true)
+ 
+         end
+ 		end
+    end	
+
+
+	Timers:CreateTimer(5,function()
+ 		for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   
+      			 
+            if not hero:IsAlive() then 
+                hero:RespawnHero(false, false) 
+            end   
+ 			hero:AddNewModifier(hero, nil, "modifier_sleep", {duration = 5})
+            for i = 0, 23 do 
+				local item = hero:GetItemInSlot( i ) 
+				if item ~= nil then 
+					item:RemoveSelf() 
+				end 
+			end 
+			hero:SetGold(0,false)
+         end
+ 		end
+    	end	 
+    	for _, unit in pairs( FindUnitsInRadius(
+			DOTA_TEAM_BADGUYS,
+			Vector(),
+			nil,
+			-1,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+			DOTA_UNIT_TARGET_BASIC,
+			DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+			FIND_ANY_ORDER,
+			false
+		) ) do
+              
+             if unit:GetUnitName() == "npc_classic_pig" or unit:GetUnitName() == "npc_classic_sheep" then 
+				unit:SetTeam(DOTA_TEAM_GOODGUYS)
+		    end
+            
+		end 	      
+	end)
+ 
+ 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#sdfgdgfsdgfhsdgsfxdgsf",0,0) end)
+
+ 
+  	
+end
+
+
 function EndGame:SpawnEdgard(unit_count,point)
  
 

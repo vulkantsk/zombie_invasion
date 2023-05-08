@@ -518,7 +518,7 @@ function InvasionMode:InvasionGameStart()
      if oneDownHeroess >= 1 then 
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
-
+EndGame:DemonEnd()
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
@@ -875,7 +875,7 @@ function InvasionMode:InvasionEntityKilled (data)
 		if Difficulter == 1 then 
 			 EndGame:IsItEndGame()
 			 GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
-		else
+		elseif Difficulter == 2 then
 		     EndGame:GoodEnd()
  
 	     end

@@ -81,7 +81,7 @@ function Difficulty:NPC( npc )
 	end		
  
 	local result = ((s * 0.25) + 1)
- 
+ 		npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
         npc:SetMaxHealth(npc:GetMaxHealth() * result)	
         npc:SetHealth(npc:GetMaxHealth())
 
