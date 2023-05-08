@@ -5,5 +5,5 @@
  function item_test:OnSpellStart()
 	--print("OnSpellStart")
 --	local sound = "Slow_mobs_1"
-EndGame:ImpossibleEnd()
+	EmitGlobalSound("after_sleep")
 end

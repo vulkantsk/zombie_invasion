@@ -111,8 +111,9 @@ function EndGame:DemonEnd()
     end	
 
 
-	Timers:CreateTimer(5,function()
+	Timers:CreateTimer(7,function()
 		GameRules:SetTimeOfDay(0.8)
+		EmitGlobalSound("after_sleep")
 
  		for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
@@ -127,7 +128,7 @@ function EndGame:DemonEnd()
             if not hero:IsAlive() then 
                 hero:RespawnHero(false, false) 
             end   
- 			hero:AddNewModifier(hero, nil, "modifier_sleep", {duration = 5})
+ 			hero:AddNewModifier(hero, nil, "modifier_sleep", {duration = 20})
             for i = 0, 23 do 
 				local item = hero:GetItemInSlot( i ) 
 				if item ~= nil then 
