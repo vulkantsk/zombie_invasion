@@ -8,6 +8,7 @@ modifier_powelvolya = class({
          {
             MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
             MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+            MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
          } end, 
     GetEffectName           = function(self) return "particles/econ/items/omniknight/omni_2021_immortal/omni_2021_immortal_buff_model.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end, 
@@ -24,4 +25,9 @@ end
 
 function modifier_powelvolya:GetModifierPhysicalArmorBonus() 
     return 200000
+end
+
+
+ function modifier_powelvolya:GetModifierAttackSpeedBonus_Constant() 
+    return 700
 end

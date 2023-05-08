@@ -4197,7 +4197,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "penguins"
-		"Ability2"					""
+		"Ability2"					"intro_rotate"
 		"Ability3"					""
 		"Ability4"					""
 

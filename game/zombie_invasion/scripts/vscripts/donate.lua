@@ -29,7 +29,8 @@ DONATE_SET_ZOMBIE = {
 	players = {
 		946902506,
 		260725664,
-		203159402
+		203159402,
+		146211461,
 		
 
 	},
@@ -37,7 +38,7 @@ DONATE_SET_ZOMBIE = {
 
 DONATE_SET_PLARGET = {
 	players = {
-		
+		976302096,
 		
 		
 

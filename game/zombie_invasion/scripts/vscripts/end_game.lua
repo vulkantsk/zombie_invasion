@@ -88,9 +88,7 @@ LinkLuaModifier("modifier_sleep", "modifiers/modifier_sleep", 0)
 
 function EndGame:DemonEnd()
     local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
-    local homer = Entities:FindByName(nil,"NPC_base")
-
-     UTIL_Remove(homer)
+ 
  	for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
 
@@ -114,6 +112,8 @@ function EndGame:DemonEnd()
 
 
 	Timers:CreateTimer(5,function()
+		GameRules:SetTimeOfDay(0.8)
+
  		for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
 
@@ -154,18 +154,38 @@ function EndGame:DemonEnd()
 				unit:SetTeam(DOTA_TEAM_GOODGUYS)
 		    end
             
-		end 	      
+		end 
+
+    local jitels = {
+    	"crystalka","deny","kunkka","old_men","lina", "NPC_base"
+    }
+ 
+  for i,name in ipairs(jitels) do 
+ 
+    local unit = Entities:FindByName(nil, name)
+	local point = Entities:FindByName(nil, "jitel_" ..name):GetAbsOrigin()
+
+    if unit then 
+         unit:SetAbsOrigin(point)
+         FindClearSpaceForUnit(unit, point, false)
+ 
+    else
+          
+    end
+ end     
+
 	end)
  
-
+	Timers:CreateTimer(60,function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
   	
 end
 
 
 function EndGame:ImpossibleEnd()
 
-    local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
- 
+  
  	for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
 
@@ -188,7 +208,7 @@ function EndGame:ImpossibleEnd()
     end	
 
 
-	Timers:CreateTimer(5,function()
+	Timers:CreateTimer(7,function()
  		for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
 
@@ -203,13 +223,8 @@ function EndGame:ImpossibleEnd()
                 hero:RespawnHero(false, false) 
             end   
  			hero:AddNewModifier(hero, nil, "modifier_sleep", {})
-            for i = 0, 23 do 
-				local item = hero:GetItemInSlot( i ) 
-				if item ~= nil then 
-					item:RemoveSelf() 
-				end 
-			end 
-			hero:SetGold(0,false)
+
+
          end
  		end
     	end	 
@@ -234,19 +249,19 @@ function EndGame:ImpossibleEnd()
  	
  
 
- 	Timers:CreateTimer(15, function()  	   
+ 	Timers:CreateTimer(12, function()  
+ 
+ 	InvasionMode:ZombieNightUnreal()  	 
+ 
  	   	GameRules:SetTimeOfDay(0.8)
- 	   	InvasionMode:ZombieNightUnreal()  
+ 	   	 
 	end)
 
  
  	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#imp1",0,0) end)
 
  	Timers:CreateTimer(12, function() GameRules:SendCustomMessage("#imp2",0,0) end)
-
- 	Timers:CreateTimer(25, function() GameRules:SendCustomMessage("#imp3",0,0) end)
- 	
- 	Timers:CreateTimer(52, function() GameRules:SendCustomMessage("#imp4",0,0) end)
+ 
  
   	
 end
@@ -292,7 +307,12 @@ for index=0 ,HeroList:GetHeroCount() do
  		end
     	end
  end)
-			Timers:CreateTimer(24, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
+
+ 	Timers:CreateTimer(20, function() GameRules:SendCustomMessage("#imp3",0,0) end)
+ 	
+ 	Timers:CreateTimer(30, function() GameRules:SendCustomMessage("#imp4",0,0) end)
+
+			Timers:CreateTimer(32, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
 		
 
 end

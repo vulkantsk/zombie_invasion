@@ -879,8 +879,8 @@ function InvasionMode:InvasionEntityKilled (data)
 	end	
 
 	if killedEntity:GetUnitName() == "npc_warlock_boss" then
-		print(Difficulter)
-		if Difficulter == 1 then 
+		StopGlobalSound("GigaChad Theme")
+		if Difficulter <= 1  then 
        EndGame:GoodEnd()
 		elseif Difficulter == 2 then
 		 
