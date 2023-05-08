@@ -53,7 +53,7 @@ function modifier_jugger_miracle_passive:OnTakeDamage( keys )
       
         caster:AddNewModifier(caster, ability, "modifier_jugger_miracle", { duration = duration})
                   self:GetCaster():Purge( false, true, false, true, true )
-        ability:UseResources(true, true, true)
+        ability:UseResources(true, true, true,true)
    
     end
 end

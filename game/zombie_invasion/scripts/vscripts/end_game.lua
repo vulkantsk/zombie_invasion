@@ -4,6 +4,7 @@ end
 
 function EndGame:IsItEndGame()
     local point = Entities:FindByName( nil, "last_boss"):GetAbsOrigin()
+
      EmitGlobalSound("dead")
         for index=0 ,HeroList:GetHeroCount() do  
 		  		if HeroList:GetHero(index)    then   
@@ -87,7 +88,9 @@ LinkLuaModifier("modifier_sleep", "modifiers/modifier_sleep", 0)
 
 function EndGame:DemonEnd()
     local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
- 		
+    local homer = Entities:FindByName(nil,"NPC_base")
+
+     UTIL_Remove(homer)
  	for index=0 ,HeroList:GetHeroCount() do  
  		if HeroList:GetHero(index)    then   
 
@@ -161,6 +164,133 @@ function EndGame:DemonEnd()
 end
 
 
+function EndGame:ImpossibleEnd()
+
+    local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
+ 
+ 	for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   
+      			 
+            if not hero:IsAlive() then 
+                hero:RespawnHero(false, false) 
+            end   
+                  	
+            hero:AddNewModifier(hero, nil, "modifier_wake_up", {})
+            hero:SetBuyBackDisabledByReapersScythe(true)
+ 
+         end
+ 		end
+    end	
+
+
+	Timers:CreateTimer(5,function()
+ 		for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   
+      			 
+            if not hero:IsAlive() then 
+                hero:RespawnHero(false, false) 
+            end   
+ 			hero:AddNewModifier(hero, nil, "modifier_sleep", {})
+            for i = 0, 23 do 
+				local item = hero:GetItemInSlot( i ) 
+				if item ~= nil then 
+					item:RemoveSelf() 
+				end 
+			end 
+			hero:SetGold(0,false)
+         end
+ 		end
+    	end	 
+    	for _, unit in pairs( FindUnitsInRadius(
+			DOTA_TEAM_BADGUYS,
+			Vector(),
+			nil,
+			-1,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+			DOTA_UNIT_TARGET_BASIC,
+			DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+			FIND_ANY_ORDER,
+			false
+		) ) do
+              
+            if unit:GetUnitName() == "npc_classic_pig" or unit:GetUnitName() == "npc_classic_sheep" then 
+				unit:SetTeam(DOTA_TEAM_GOODGUYS)
+		    end
+            
+		end 	      
+	end)
+ 	
+ 
+
+ 	Timers:CreateTimer(15, function()  	   
+ 	   	GameRules:SetTimeOfDay(0.8)
+ 	   	InvasionMode:ZombieNightUnreal()  
+	end)
+
+ 
+ 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#sdfgdgfsdgfhsdgsfxdgsf",0,0) end)
+
+ 
+  	
+end
+
+LinkLuaModifier("modifier_powelvolya", "modifiers/modifier_powelvolya", 0)
+
+
+function EndGame:ImposHomer()
+ 
+ 	for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   			 hero:Kill(self,hero)
+             hero:SetBuyBackDisabledByReapersScythe(true)
+ 
+         end
+ 		end
+    end	
+ 
+Timers:CreateTimer(2, function()
+for index=0 ,HeroList:GetHeroCount() do  
+ 		if HeroList:GetHero(index)    then   
+
+ 		local hero = HeroList:GetHero(index)   
+
+ 		local playerID = hero:GetPlayerID()
+
+ 		if playerID ~= nil and playerID ~= -1 then 
+   
+      			 
+            if hero:IsAlive() then 
+            	hero:Kill(self,hero)
+			end
+                hero:RespawnHero(false, false) 
+                hero:AddNewModifier(hero, nil, "modifier_powelvolya", {})
+ 
+         end
+ 		end
+    	end
+ end)
+
+end
 function EndGame:SpawnEdgard(unit_count,point)
  
 

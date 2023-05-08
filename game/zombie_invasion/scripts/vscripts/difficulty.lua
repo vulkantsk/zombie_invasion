@@ -108,5 +108,6 @@ function Difficulty:NPC( npc )
  
    
  
-	Difficulter = s / 2
+	_G.Difficulter = s  
+	print(Difficulter)
  end

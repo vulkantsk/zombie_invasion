@@ -193,6 +193,15 @@ end
 
 
 
+ function InvasionMode:ZombieNightUnreal()  
+
+ 
+    self:SpawnZombie("npc_classic_wave_greater_zombie",11)
+ 
+
+end
+
+
 
 
 

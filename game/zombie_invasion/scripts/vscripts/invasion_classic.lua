@@ -24,7 +24,7 @@ end
 HERO_RESPAWN_TIME_BEFORE_10 =	 10
 
 Witch_killed = 0
-  
+Boss_killed = 0 
   
 model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
@@ -446,9 +446,12 @@ function InvasionMode:NightTimer(time)
 	local timeLeft = time  
 	local putin = Entities:FindByName(nil, 'NPC_base') 
 	Timers:CreateTimer(1.0, function()
-		timeLeft = timeLeft - 1		
- 		GameRules:SetTimeOfDay(0.3)
-	     
+		timeLeft = timeLeft - 1	
+		if Boss_killed == 1  then 
+			return nil
+		else
+ 			GameRules:SetTimeOfDay(0.3)
+	     end
 	      
  
 		
@@ -518,7 +521,7 @@ function InvasionMode:InvasionGameStart()
      if oneDownHeroess >= 1 then 
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
-EndGame:DemonEnd()
+ 
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
@@ -863,8 +866,12 @@ function InvasionMode:InvasionEntityKilled (data)
 	end
 
 	if killedEntity:GetUnitName() == "NPC_base" then
+		if Boss_killed >= 1 then 
+			EndGame:ImposHomer()
+		else 
 		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 		EmitGlobalSound("Invasion.HommerWin")
+		end
 	end	
 
 	if killedEntity:GetUnitName() == "npc_zombie_fort" then
@@ -872,13 +879,21 @@ function InvasionMode:InvasionEntityKilled (data)
 	end	
 
 	if killedEntity:GetUnitName() == "npc_warlock_boss" then
+		print(Difficulter)
 		if Difficulter == 1 then 
-			 EndGame:IsItEndGame()
-			 GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+       EndGame:GoodEnd()
 		elseif Difficulter == 2 then
-		     EndGame:GoodEnd()
- 
+		 
+		     			 EndGame:IsItEndGame()
+			 GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		elseif  Difficulter == 4 then
+Boss_killed = Boss_killed + 1 
+EndGame:DemonEnd()
+		elseif Difficulter == 12 then
+		Boss_killed = Boss_killed + 1 
+	EndGame:ImpossibleEnd()
 	     end
+
 	end	
 	 
 
