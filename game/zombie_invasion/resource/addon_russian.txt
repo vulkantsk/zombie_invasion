@@ -140,7 +140,11 @@
 	   "Game_notification_boss_spawn_pudge"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>будьте на готове!</font>"
  	   "Game_notification_portal_boss"				"<font color='#DBA901'>ТОТЕМНЫЙ БОСС ПОЯВИЛСЯ НА КАРТЕ!</font>"
 	   "Game_notification_boss_spawn_meatgolem_2"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ЖИРНИЧ' </font><font color='#DBA901'>будьте на готове!</font>"
-	   "sdfgdgfsdgfhsdgsfxdgsf"  							"Я ебус собак"
+
+	   "imp1"  							"<font color='#c10020>Неужели всё это нереально?</font>"
+	   "imp2"  							"<font color='#c10020>Но если это так.. То я должен выбраться от сюда.</font>"
+	   "imp3"							"<font color='#c10020>Я не смог спасти деревню тут, но я обязательно смогу спасти её в реальности!</font>"
+	   "imp4"							"<font color='#DBA901>COMING SOON TO ZOMBIE INVASION 2.</font>"
 
        // ******************** Messages Christmas ********************
        	   "sf_eg1"                                                  "<font color='#c10020'>ДОВОЛЬНО</font>"
@@ -172,6 +176,7 @@
 		"npc_dota_hero_treant"                                      "Shinoba"
 		"npc_dota_hero_phantom_lancer" 										"Sara"
 		"npc_dota_hero_bloodseeker"			"Sargatanas"
+
 
 
 
@@ -300,6 +305,8 @@
 		"npc_classic_mini_crampus" 	                                                	"Крампусёнок"
         "npc_classic_doom_crampus" 	                                                	"Отродье Ада"
 
+        "npc_bane_xyecoc"																"КОШМАР"
+
 		// ******************** Предметы********************
 
 		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
@@ -345,6 +352,14 @@
 		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal"				"Ether Blast"
 		"DOTA_Tooltip_modifier_item_imba_ethereal_blade_ethereal_Description"	"Находится в призрачной форме. Получает увеличенный на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% магический урон, не может атаковать или быть целью атаки."
 		
+		"DOTA_Tooltip_modifier_wake_up"											"ПРОСНИСЬ!!!!!!!!!!"
+		"DOTA_Tooltip_modifier_wake_up_description"								"ВЫ ПЫТАЕТЕСЬ ПРОСНУТЬСЯ"
+
+		"DOTA_Tooltip_modifier_sleep"											"ВЫ ВО СНЕ"
+		"DOTA_Tooltip_modifier_sleep_description"								"ЭТО ВСЁ НЕРЕАЛЬНО"
+
+		"DOTA_Tooltip_modifier_powelvolya"											"ТВОЯ СИЛА ВОЛИ"
+		"DOTA_Tooltip_modifier_powelvolya_description"								"ТЫ ДОЛЖЕН СРАЖАТЬСЯ!"
 
 		"DOTA_Tooltip_ability_item_leaf" "Росток"
 

@@ -17,6 +17,10 @@ modifier_sleep = class({
 })
  
 
+ function modifier_sleep:GetTexture()
+    return "modifier_son"
+end
+
  function modifier_sleep:OnCreated() 
  
  

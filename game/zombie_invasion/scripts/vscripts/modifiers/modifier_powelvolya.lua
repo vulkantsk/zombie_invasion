@@ -13,6 +13,10 @@ modifier_powelvolya = class({
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end, 
 })
  
+  function modifier_powelvolya:GetTexture()
+    return "modifier_son"
+end
+
 
  function modifier_powelvolya:GetModifierBaseAttack_BonusDamage() 
     return 20000

@@ -11,6 +11,10 @@ modifier_wake_up = class({
  
 })
  
+  function modifier_wake_up:GetTexture()
+    return "modifier_son"
+end
+
 
  function modifier_wake_up:OnCreated() 
  

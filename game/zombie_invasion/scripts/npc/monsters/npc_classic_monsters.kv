@@ -6985,4 +6985,79 @@
 			
 		}	
 	}
+	"npc_creep_impossible"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/undying/idol_of_ruination/ruin_wight_minion_gold.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"25"
+		"ModelScale" 				"2.6"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""	
+		"Ability4"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"60"
+		"MagicalResistance"         "85"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"5400"
+		"AttackDamageMax"			"6200"
+		"AttackRate"				"0.9"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"400"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"100"
+		"BountyGoldMin"				"200"	
+		"BountyGoldMax"				"250"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"175000"
+		"StatusHealthRegen"			"100"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	}
 }

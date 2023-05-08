@@ -157,9 +157,7 @@ function EndGame:DemonEnd()
 		end 	      
 	end)
  
- 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#sdfgdgfsdgfhsdgsfxdgsf",0,0) end)
 
- 
   	
 end
 
@@ -242,8 +240,13 @@ function EndGame:ImpossibleEnd()
 	end)
 
  
- 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#sdfgdgfsdgfhsdgsfxdgsf",0,0) end)
+ 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#imp1",0,0) end)
 
+ 	Timers:CreateTimer(12, function() GameRules:SendCustomMessage("#imp2",0,0) end)
+
+ 	Timers:CreateTimer(25, function() GameRules:SendCustomMessage("#imp3",0,0) end)
+ 	
+ 	Timers:CreateTimer(52, function() GameRules:SendCustomMessage("#imp4",0,0) end)
  
   	
 end
@@ -289,6 +292,8 @@ for index=0 ,HeroList:GetHeroCount() do
  		end
     	end
  end)
+			Timers:CreateTimer(24, function() GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS) end)
+		
 
 end
 function EndGame:SpawnEdgard(unit_count,point)
