@@ -500,7 +500,7 @@
 		"Ability16"		"special_bonus_hp_800"
 		"Ability17"		"special_bonus_corruption_3"
 
-
+		"AttackRate"		"0.900000"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"21"
 		"AttributeStrengthGain"		"1.320000"

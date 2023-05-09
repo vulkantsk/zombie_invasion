@@ -23,11 +23,10 @@
 
 			"stack_damage"					
 			{
-				"value"				"1"  
+				"value"				"2 4 8 16 32 64 128"  
 					 
 			}
-			"stack_attackspeed"		"10"
-			"stack_max"				"666"
+			"stack_attackspeed"		"4 6 8 10 12 14 16"
 		}
 	}
 

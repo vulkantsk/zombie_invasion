@@ -40,12 +40,16 @@ function modifier_demon_style:GetModifierProcAttack_Feedback( params )
         -- filter enemy
         local target = params.target   
 
-        self:AddStack( 5, 1 )
+        self:AddStack( 17, 1 )
     end
 end
 
     function modifier_demon_style:GetModifierPreAttack_BonusDamage()
         return self:GetStackCount() * self.stack_damage
+    end
+
+    function modifier_demon_style:GetModifierAttackSpeedBonus_Constant()
+        return self:GetStackCount() * self.stack_attackspeed
     end
 
     -- Helper
