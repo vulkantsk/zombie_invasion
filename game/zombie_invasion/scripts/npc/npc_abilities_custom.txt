@@ -8298,7 +8298,7 @@
             "06"
             {
                 "var_type"                  "FIELD_FLOAT"
-                "knockback_distance"        "250"
+                "knockback_distance"        "0"
             }       
             "07"
             {
