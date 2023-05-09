@@ -108,6 +108,11 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
+				"bonus_armor"				"3 5 7 9 14 18 24"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
 				"duration"				"25"
 			}
 
@@ -246,6 +251,11 @@
 				"bonus_health"				"2750"
 			}
 			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_armor"				"47"
+			}
+			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"bonus_regen"				"49.0"

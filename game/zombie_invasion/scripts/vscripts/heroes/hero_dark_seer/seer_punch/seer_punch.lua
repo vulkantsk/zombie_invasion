@@ -19,7 +19,7 @@ function ability_seer_punch:OnAbilityPhaseStart()
     if IsServer() then
             local caster = self:GetCaster()
         self.particle_fx2 = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_seer/dark_seer_punch_glove_attack.vpcf", PATTACH_ABSORIGIN, caster)
-    ParticleManager:SetParticleControl(self.particle_fx2, 0, caster:GetAbsOrigin())
+    ParticleManager:SetParticleControl(self.particle_fx2, 1, caster:GetAbsOrigin())
 
     end
     return true
@@ -57,7 +57,7 @@ function ability_seer_punch:OnSpellStart()
  
 
     self.particle_fx = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_seer/dark_seer_attack_normal_punch.vpcf", PATTACH_ABSORIGIN, caster)
-    ParticleManager:SetParticleControl(self.particle_fx, 0, caster:GetAbsOrigin())
+    ParticleManager:SetParticleControl(self.particle_fx, 1, caster:GetAbsOrigin())
  
  
     for _,enemy in pairs(enemies) do

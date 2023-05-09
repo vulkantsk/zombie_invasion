@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+	"demon_style"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/demonslayer/demon_style/demon_style"
+		"AbilityTextureName"			"nevermore_necromastery"
+		"MaxLevel"						"7"
+
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			"stack_damage"					
+			{
+				"value"				"1"  
+					 
+			}
+			"stack_attackspeed"		"10"
+			"stack_max"				"666"
+		}
+	}
+
+}

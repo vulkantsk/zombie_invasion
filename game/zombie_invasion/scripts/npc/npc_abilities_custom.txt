@@ -30,6 +30,7 @@
 #base "../vscripts/heroes/hero_sargatanas/sargatanas.txt"
 #base "../vscripts/heroes/hero_sargatanas/summons/summon_abilities/creeps.txt"
 #base "portal/abilities.txt"
+#base "../vscripts/heroes/hero_demonslayer/demonslayer.txt"
 
 "DOTAAbilities"
 {
@@ -1286,7 +1287,7 @@
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "80"
+                "reward_gold"                "120"
             }
         }
 
@@ -1417,12 +1418,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "450"
+                "reward_exp"                "700"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "415"
+                "reward_gold"                "615"
             }
         }
 
@@ -1552,12 +1553,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "25"
+                "reward_exp"                "270"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "25"
+                "reward_gold"                "240"
             }
         }
 
@@ -1594,12 +1595,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "25"
+                "reward_exp"                "333"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "25"
+                "reward_gold"                "155"
             }
         }
 
@@ -1636,12 +1637,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "25"
+                "reward_exp"                "100"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "25"
+                "reward_gold"                "100"
             }
         }
 
@@ -1678,12 +1679,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "77"
+                "reward_exp"                "1300"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "88"
+                "reward_gold"                "2000"
             }
         }
 
@@ -1720,12 +1721,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "77"
+                "reward_exp"                "333"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "90"
+                "reward_gold"                "222"
             }
         }
 
@@ -1763,12 +1764,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "25"
+                "reward_exp"                "125"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "25"
+                "reward_gold"                "125"
             }
         }
 
@@ -1805,12 +1806,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "50"
+                "reward_exp"                "150"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "50"
+                "reward_gold"                "150"
             }
         }
 
@@ -1847,12 +1848,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "75"
+                "reward_exp"                "175"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "75"
+                "reward_gold"                "175"
             }
         }
 
@@ -1890,12 +1891,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "100"
+                "reward_exp"                "200"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "100"
+                "reward_gold"                "200"
             }
         }
 
@@ -1932,12 +1933,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "125"
+                "reward_exp"                "225"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "125"
+                "reward_gold"                "225"
             }
         }
 
@@ -1975,12 +1976,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "40"
+                "reward_exp"                "160"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "40"
+                "reward_gold"                "200"
             }
         }
 

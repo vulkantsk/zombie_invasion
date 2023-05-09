@@ -1527,13 +1527,14 @@
 		"DOTA_Tooltip_ability_ability_ion_shell_duration"								"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_damage_per_second"					"УРОН В СЕКУНДУ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_health"								"БОНУС К ЗДОРОВЬЮ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_armor"								"БОНУС К БРОНЕ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_regen"					"БОНУС К РЕГЕНЕРАЦИИ:"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell"						"Ion Shell"
-		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS%, регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% и броню на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%" 
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_unit"						"Ion Shell"
-		"DOTA_Tooltip_modifier_ability_ion_shell_unit_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+		"DOTA_Tooltip_modifier_ability_ion_shell_unit_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% и броню на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_hero"						"Ion Shell"
 		"DOTA_Tooltip_modifier_ability_ion_shell_hero_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
@@ -1556,17 +1557,18 @@
 		"DOTA_Tooltip_ability_ability_seer_punch_punch_radius"									"РАДИУС:"
 
  		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
-		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон врагам вокруг, а также увеличивает здоровье и её регенерацию. Если наложить обычный щит, то он тут же сброситься."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон врагам вокруг, а также увеличивает здоровье, регенерацию и броню. Если наложить обычный щит, то он тут же сброситься."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_radius"								"РАДИУС:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_duration"								"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_damage_per_second"					"УРОН В СЕКУНДУ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_health"								"БОНУС К ЗДОРОВЬЮ:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_armor"									"БОНУС К БРОНЕ:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_regen"					"БОНУС К РЕГЕНЕРАЦИИ:"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_golden"						"Ion Shell Golden"
-		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Увеличивает здоровье цели на %dMODIFIER_PROPERTY_HEALTH_BONUS% и регенерацию на %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% и броню на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% "
 
 // -------------tide ----------
 

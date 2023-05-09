@@ -38,7 +38,8 @@ modifier_ability_ion_shell = {}
 function modifier_ability_ion_shell:DeclareFunctions()
 	local funcs = {
             MODIFIER_PROPERTY_HEALTH_BONUS,
-            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT
+            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
 	}
 
 	return funcs
@@ -63,6 +64,7 @@ function modifier_ability_ion_shell:OnCreated( kv )
 
 	self.bonus_health = self:GetAbility():GetSpecialValueFor( "bonus_health" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "bonus_regen" )
+	self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
@@ -134,6 +136,10 @@ function modifier_ability_ion_shell:GetModifierConstantHealthRegen()
 	return self.bonus_regen
 end
 
+function modifier_ability_ion_shell:GetModifierPhysicalArmorBonus()
+	return self.bonus_armor
+end
+
 function modifier_ability_ion_shell:PlayEffects1()
 
 	local hull1 = 40
@@ -194,7 +200,8 @@ modifier_ability_ion_shell_unit = {}
 function modifier_ability_ion_shell_unit:DeclareFunctions()
 	local funcs = {
             MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
-            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT
+            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
 	}
 
 	return funcs
@@ -219,6 +226,7 @@ function modifier_ability_ion_shell_unit:OnCreated( kv )
     	 
 	self.bonus_health = self:GetAbility():GetSpecialValueFor( "bonus_health" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "bonus_regen" )
+	self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
@@ -262,6 +270,10 @@ end
 
 function modifier_ability_ion_shell_unit:GetModifierConstantHealthRegen()
 	return self.bonus_regen
+end
+
+function modifier_ability_ion_shell_unit:GetModifierPhysicalArmorBonus()
+	return self.bonus_armor
 end
 
 
@@ -349,7 +361,8 @@ modifier_ability_ion_shell_hero = {}
 function modifier_ability_ion_shell_hero:DeclareFunctions()
 	local funcs = {
             MODIFIER_PROPERTY_HEALTH_BONUS,
-            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT
+            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
 	}
 
 	return funcs
@@ -379,6 +392,7 @@ function modifier_ability_ion_shell_hero:OnCreated( kv )
 
 	self.bonus_health = self:GetAbility():GetSpecialValueFor( "bonus_health" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "bonus_regen" )
+	self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
@@ -423,6 +437,10 @@ end
 
 function modifier_ability_ion_shell_hero:GetModifierConstantHealthRegen()
 	return self.bonus_regen
+end
+
+function modifier_ability_ion_shell_hero:GetModifierPhysicalArmorBonus()
+	return self.bonus_armor
 end
 
 function modifier_ability_ion_shell_hero:OnIntervalThink()

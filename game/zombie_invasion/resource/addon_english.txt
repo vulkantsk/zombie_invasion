@@ -1388,10 +1388,11 @@
 		"DOTA_Tooltip_ability_ability_ion_shell_duration"								"DURATION:"
 		"DOTA_Tooltip_ability_ability_ion_shell_damage_per_second"					"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_health"								"HEALTH BONUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_bonus_armor"								"ARMOR BONUS:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_regen"					"REGENERATION BONUS:"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell"						"Ion Shell"
-		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
+		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS%, regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% and armor for %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_unit"						"Ion Shell"
 		"DOTA_Tooltip_modifier_ability_ion_shell_unit_Description"			"Increases target health by %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
@@ -1424,6 +1425,7 @@
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_duration"								"DURATION:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_damage_per_second"					"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_health"								"HEALTH BONUS:"
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_armor"								"ARMOR BONUS:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_bonus_regen"					"REGENERATION BONUS:"
 
 		"DOTA_Tooltip_modifier_ability_ion_shell_golden"						"Ion Shell Golden"

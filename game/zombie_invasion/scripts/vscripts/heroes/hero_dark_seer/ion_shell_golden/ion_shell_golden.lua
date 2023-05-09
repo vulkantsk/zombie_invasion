@@ -11,7 +11,8 @@ modifier_ability_ion_shell_golden = {}
 function modifier_ability_ion_shell_golden:DeclareFunctions()
 	local funcs = {
             MODIFIER_PROPERTY_HEALTH_BONUS,
-            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT
+            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
 	}
 
 	return funcs
@@ -36,6 +37,7 @@ function modifier_ability_ion_shell_golden:OnCreated( kv )
 
 	self.bonus_health = self:GetAbility():GetSpecialValueFor( "bonus_health" )
 	self.bonus_regen = self:GetAbility():GetSpecialValueFor( "bonus_regen" )
+	self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage_per_second" )
 	local tick = self:GetAbility():GetSpecialValueFor( "tick_interval" )
@@ -111,6 +113,12 @@ end
 function modifier_ability_ion_shell_golden:GetModifierConstantHealthRegen()
      if not self:GetParent():PassivesDisabled() then
 	    return self.bonus_regen
+     end
+end
+
+function modifier_ability_ion_shell_golden:GetModifierPhysicalArmorBonus()
+     if not self:GetParent():PassivesDisabled() then
+	    return self.bonus_armor
      end
 end
 
