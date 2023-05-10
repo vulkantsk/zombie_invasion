@@ -486,8 +486,8 @@
 
 		"AttackRange"				"200"		
 		"Ability1"					"demon_style"
-		"Ability2"					""
-		"Ability3"					""
+		"Ability2"					"imba_kunkka_tidebringer"
+		"Ability3"					"ability_dark_lord"
 		"Ability4"					"generic_hidden"
 		"Ability5"					"generic_hidden"
 		"Ability6"					""
