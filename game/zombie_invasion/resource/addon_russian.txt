@@ -1929,6 +1929,28 @@
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom"                            	"Vicious goo debuff"
 		"DOTA_Tooltip_modifier_bristleback_viscous_goo_custom_Description"                	"Теряет броню с течением времени"
 
+		"DOTA_Tooltip_ability_ability_quill_spray"							"Quill Spray"
+		"DOTA_Tooltip_ability_ability_quill_spray_abilitydraft_note"		"<span class=\"ADBlue\">Aghanim's Shard:</span> способность <span class=\"ADWhite\"><b>Hairball</b></span> появляется при включении автоматического применения <span class=\"ADWhite\"><b>Quill Spray</b>.</span><br><br><span class=\"ADWarning\"><b>Hairball</b> не будет применять эффекты способности <b>Viscous Nasal Goo</b>, если она не выбрана.</span>"
+		"DOTA_Tooltip_ability_ability_quill_spray_Description"				"Выпускает во все стороны иглы, нанося урон всем врагам вокруг себя. Жертвы получают дополнительный урон за каждое попадание иглами за последние %quill_stack_duration% сек."
+		"DOTA_Tooltip_ability_ability_quill_spray_Lore"						"Честь вышибалы — острый вопрос. Как и его шипы."
+		"DOTA_Tooltip_ability_ability_quill_spray_Note0"					"Урон от этой способности не уменьшается способностями, блокирующими урон."
+		"DOTA_Tooltip_ability_ability_quill_spray_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_quill_spray_quill_base_damage"		"БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_quill_spray_quill_stack_damage"		"ДОПОЛНИТЕЛЬНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_quill_spray_quill_stack_duration"		"ДЛИТЕЛЬНОСТЬ ОДНОГО ЭФФЕКТА:"
+		"DOTA_Tooltip_ability_ability_quill_spray_max_damage"				"МАКСИМАЛЬНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_ability_bristleback"							"Bristleback"
+		"DOTA_Tooltip_ability_ability_bristleback_abilitydraft_note"		"Если не выбрать способность Quill Spray, герой не будет применять её при достижении порога урона."
+		"DOTA_Tooltip_ability_ability_bristleback_Description"				"Герой получает меньше урона от атак со спины и с боков. При получении %quill_release_threshold% урона со спины применяется способность Quill Spray текущего уровня."
+		"DOTA_Tooltip_ability_ability_bristleback_Lore"						"Иногда бывает полезно повернуться спиной к врагу во время битвы."
+		"DOTA_Tooltip_ability_ability_bristleback_Note0"					"Спиной героя считаются 70 градусов от середины его спины."
+		"DOTA_Tooltip_ability_ability_bristleback_Note1"					"Боками героя считаются 110 градусов от середины его спины."
+		"DOTA_Tooltip_ability_ability_bristleback_side_damage_reduction"	"%СНИЖЕНИЕ УРОНА ОТ АТАК С БОКОВ:"
+		"DOTA_Tooltip_ability_ability_bristleback_back_damage_reduction"	"%СНИЖЕНИЕ УРОНА ОТ АТАК В СПИНУ:"
+		"DOTA_Tooltip_ability_ability_bristleback_quill_release_threshold"	"ПОРОГ УРОНА:"
+
+		"DOTA_Tooltip_ability_ability_bristleback_scepter_description"	"Если урон врага превысит %quill_release_threshold_scepter1%, %quill_release_threshold_scepter2%, %quill_release_threshold_scepter3% или  %quill_release_threshold_scepter4% то Bristleback выпустит иглы вместо одного раза - 2,3,4,5 соответственно."
+
 		"DOTA_Tooltip_ability_ability_warpath"								"Warpath"
 		"DOTA_Tooltip_ability_ability_warpath_Description"					"Герой нагоняет на себя ярость каждый раз, когда использует способность, повышая свои скорость передвижения и армор."
 		"DOTA_Tooltip_ability_ability_warpath_Lore"							"«Держи себя в руках», — часто наставляла его мама. Но в битве ярость всегда к месту."
@@ -1942,6 +1964,8 @@
 		"DOTA_Tooltip_modifier_ability_warpath_buff_particle"			"Warрath"
 		"DOTA_Tooltip_modifier_ability_warpath_buff_particle_Description"	"Я злой, нет блин добрый"		
 
+		"DOTA_Tooltip_Ability_special_bonus_unique_brist_quil_damage"											"+{s:bonus_quill_base_damage}% к урону от Quill Spray"
+		"DOTA_Tooltip_Ability_special_bonus_unique_brist_brist_block"											   "+{s:bonus_back_damage_reduction}% к снижению урона от Bristleback"
  		// -----------------Phantom assasin--------------------	
 
 		"DOTA_Tooltip_ability_ability_phantom_assassin_stifling_dagger"							"Stifling Dagger"

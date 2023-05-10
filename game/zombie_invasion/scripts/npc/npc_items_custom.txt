@@ -8591,13 +8591,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{				
-			"bonus_movement"		"65"
-			"bonus_health"			"450"
+			"bonus_movement"		"70"
+			"bonus_health"			"650"
 			"bonus_armor"		"10"
  
 			"healt_for_use"		"20"
-			"heal_hp"		"20"
-			"heal_hp_per_second"		"180"
+			"heal_hp"		"25"
+			"heal_hp_per_second"		"250"
 			"buff_duration"		"5"
 			"debuff_duration"		"30"
 		}

@@ -96,7 +96,7 @@ modifier_bristleback_quill_spray_autocast = class({
 function modifier_bristleback_quill_spray_autocast:OnCreated()
     if IsServer() then
         local ability = self:GetAbility()
-        self:StartIntervalThink(0.5)
+        self:StartIntervalThink(0.2)
         ability:OnSpellStart()
     end
 end
