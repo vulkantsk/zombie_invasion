@@ -847,8 +847,8 @@
 
         "AttackRange"                "200"
         "Ability1"                    "bristleback_viscous_goo_custom"
-        "Ability2"                    "bristleback_quill_spray"
-        "Ability3"                    "bristleback_bristleback"
+        "Ability2"                    "ability_quill_spray"
+        "Ability3"                    "ability_bristleback"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "ability_warpath"
         "Ability6"                    "life_stealer_rage"
