@@ -17,13 +17,15 @@ modifier_chupik = class({
     DeclareFunctions        = function(self) return 
         {
             MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-            MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT
+            MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
+            MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT
         } end,
 })
  
 function modifier_chupik:OnCreated()
     self.bonus_armor = self:GetAbility():GetSpecialValueFor("bonus_armor")
     self.bonus_movespeed = self:GetAbility():GetSpecialValueFor("bonus_movespeed")
+    self.movespeedlimit = self:GetAbility():GetSpecialValueFor("movespeedlimit")
 end
 
 function modifier_chupik:OnRefresh()
@@ -36,4 +38,7 @@ function modifier_chupik:GetModifierPhysicalArmorBonus()
 end
 function modifier_chupik:GetModifierMoveSpeedBonus_Constant() 
     return self.bonus_movespeed
+end
+function modifier_chupik:GetModifierIgnoreMovespeedLimit() 
+    return self.movespeedlimit + self.bonus_movespeed + self:GetParent():GetAgility()
 end
