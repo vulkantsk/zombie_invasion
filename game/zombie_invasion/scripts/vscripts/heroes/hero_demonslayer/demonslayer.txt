@@ -29,5 +29,70 @@
 			"stack_attackspeed"		"4 6 8 10 12 14 16"
 		}
 	}
+	"ability_dark_lord"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_demonslayer/demon_darklord/demon_darkord"
+		"AbilityTextureName"			"nevermore_dark_lord"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"900"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"presence_armor_reduction"		"-3 -4 -5 -6 -9 -12 -16"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"presence_radius"				"900 1000 1200 1400 1600 -1"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Kunkka's Tidebringer
+	//=================================================================================================================
+	"imba_kunkka_tidebringer"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"ability_lua"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"				"kunkka_tidebringer"
+		"ScriptFile"				"components/abilities/heroes/hero_kunkka"
+		"MaxLevel"							"4"
+		"LevelsBetweenUpgrades"				"2"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------		
+		"AbilityCooldown"					"13 10 7 4"	
+
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"						"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
+			"particle"						"particles/units/heroes/hero_kunkka/kunkka_weapon_tidebringer.vpcf"
+			"particle"						"particles/econ/items/kunkka/kunkka_tidebringer_base/kunkka_spell_tidebringer.vpcf"
+			"particle"						"particles/units/heroes/hero_kunkka/kunkka_spell_tidebringer.vpcf"
+			"particle"						"particles/hero/kunkka/torrent_bubbles.vpcf"
+			"particle"						"particles/hero/kunkka/torrent_splash.vpcf"
+		}
+	}
+
 
 }
