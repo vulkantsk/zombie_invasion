@@ -36,7 +36,18 @@
 {
 	"Version"		"1"
 
+"chupakabra"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/chupakabra"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"undying_tombstone_zombie_deathstrike"
 
+	"AbilityValues"
+	{
+	    "bonus_armor"              "5 10 15 20"
+	}
+}
 
 "fort_zombie"
 {
