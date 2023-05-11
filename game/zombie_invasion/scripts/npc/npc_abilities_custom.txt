@@ -46,6 +46,7 @@
 	"AbilityValues"
 	{
 	    "bonus_armor"              "5 10 15 20"
+	    "bonus_movespeed"			"100 200 300 400 10000000"
 	}
 }
 
