@@ -1100,6 +1100,23 @@
  		"DOTA_Tooltip_ability_item_larks_change"								"<font color='#4285B4'>Essence of slark</font>"
         "DOTA_Tooltip_ability_item_larks_change_Description"                    "<h1>Active: Change Hero</h1> Changes the current hero to Slark"
 
+        	"DOTA_Tooltip_ability_item_strenobu_change" "<font color='#c10020'>KAWAI SHINOBU CHAN"
+		"DOTA_Tooltip_ability_item_strenobu_change_Description" "Changes the chosen hero to the most kawaii, cute, murderous SHINOBU"
+		"DOTA_Tooltip_ability_item_strenobu_change_Lore" "p.s she is real cute..?"
+
+		"DOTA_Tooltip_ability_item_sargatanas_change" "<font color='#c12450'>SARGATANAS"
+		"DOTA_Tooltip_ability_item_sargatanas_change_Description" "Changes the selected hero to SARGATANAS"
+		"DOTA_Tooltip_ability_item_sargatanas_change_Lore" "created by Кабан_Пумба."
+
+		"DOTA_Tooltip_ability_item_sf_change"								"<font color='#fff'>Essence of Azzazel</font>"
+        "DOTA_Tooltip_ability_item_sf_change_Description"                    "<h1>Активная: Change Hero</h1>Changes the current hero to Azzazel"
+
+
+		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
+		"DOTA_Tooltip_ability_item_sara_change_Description" "Changes the selected hero to a tough killer SARA"
+		"DOTA_Tooltip_ability_item_sara_change_Lore" "A strong creature."
+
+
 		"DOTA_Tooltip_Ability_item_brassiere"					"Naga's brassiere"
 		"DOTA_Tooltip_ability_item_brassiere_Description"							"<h1>Passive: Brassiere's Aura</h1>Increases melee attack for allies by %bonus_attack_range%, their damage by %bonus_damage%, attack speed by %bonus_attack_speed%. <br><br>Radius: %radius%<font color='#c10020'>YOU CAN'T ATTACK!</font>"
 		"DOTA_Tooltip_ability_item_brassiere_Lore"								"Before escaping from the dark reef, Slark decided to grab one souvenir:)."
@@ -1200,35 +1217,35 @@
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Who are you? I haven't seen you before. But you feel the spirit of a warrior, perhaps you will make a good warrior, but first you need to prove that you can do something. I understand that you are a novice warrior, so bring me a pair of frog legs, these “monsters" should be in your teeth."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"Number of ..:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"GOLD:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     I see you have mastered these “terrible creatures”, well, it's time to move on to the next level of hunting. Every warrior should be able to feed himself and his tribe, so bring me the Cooked meat of fat monsters that sit in the two-legged pens."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"GOLD:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      WHAT HAVE YOU BROUGHT ME!!!! I ASKED YOU FOR MEAT, NOT BURNT BIPEDAL FOOD!!!! WHAT AM I GOING TO FEED THE TRIBE WITH?!! GET OUT OF HERE AND DON'T COME BACK WITHOUT NORMAL MEAT!!!!"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"GOLD:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Well, finally back, the meat seems fresh. Sometimes, in times of bare trees, when there is little game in the forest, we eat fish, but only as a last resort. You have to prove that you can kill slardar so that the tribe can survive even when famine comes."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"GOLD:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Here you are, we need your help urgently. We found out that wolves from the forest are approaching us, go and kill them, protect us and give 7 bones."
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"COUNT"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"GOLD:"
 
