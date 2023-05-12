@@ -2654,8 +2654,12 @@
 		"DOTA_Tooltip_Ability_tech_speed_locked_attack_speed"									"СКОРОСТЬ АТАКИ:"		
 		"DOTA_Tooltip_Ability_tech_speed_pct_damage_per_attack_speed"										"УРОН ЗА ЕД. СКОРОСТИ АТАКИ:"
 
+ 		"DOTA_Tooltip_Ability_imba_centaur_double_edge"												"Crazzzy techies"
+		"DOTA_Tooltip_Ability_imba_centaur_double_edge_Description"									"Течка потек бошкой и теперь взрыва ВООБЩЗЕ НАХУЙ ВСЕХ ДАЖЕ БЛЯТЬ ГОМЕРА НАХУЙ!!!"
+		"DOTA_Tooltip_Ability_imba_centaur_double_edge_damage"									"УРОН:"		
+		"DOTA_Tooltip_Ability_imba_centaur_double_edge_radius"										"РАДИУС:"
    
- 
+  
 
  	
 
