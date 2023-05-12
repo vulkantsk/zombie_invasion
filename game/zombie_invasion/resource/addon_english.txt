@@ -92,6 +92,7 @@
 		"next"					"Next"
 		"previous"				"Previous"
 		//
+
 		
        // ******************** Messages ********************
 	   
@@ -1193,7 +1194,7 @@
 		"DOTA_Tooltip_Ability_item_fish_Description"				"stink"
 		"DOTA_Tooltip_Ability_item_fish_Lore"       "naga love this fish"
 
-// ******************** квесты ********************
+	******************** квесты ********************
 
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
@@ -1714,55 +1715,55 @@
 		// -----------------Sargatanas-------------------
 
   	"DOTA_Tooltip_ability_star_devour" "Hell devour"
-  	"DOTA_Tooltip_ability_star_devour_Description" "Герой может поглатить крипа и получить <font color='#ffffff'>1</font> стак способности <font color='#ffffff'>Hell devour</font>" 
-  	"DOTA_Tooltip_ability_star_devour_creep_level"	"МАКСИМАЛЬНЫЙ УРОВЕНЬ КРИПА:"
-  	"DOTA_Tooltip_ability_star_devour_max_stack"	"МАКСИМАЛЬНОЕ КОЛ-ВО СТАКОВ:"
+  	"DOTA_Tooltip_ability_star_devour_Description" "The hero can absorb the creep and get <font color='#ffffff'>1</font> ability stack <font color='#ffffff'>Hell devour</font>" 
+  	"DOTA_Tooltip_ability_star_devour_creep_level"	"MAX LEVEL CREEP:"
+  	"DOTA_Tooltip_ability_star_devour_max_stack"	"MAX STACK:"
 
 
   	"DOTA_Tooltip_ability_ability_hellstep" 		"Hell step"
-  	"DOTA_Tooltip_ability_ability_hellstep_Description" "Герой извергает из себя поток огня который обжигает тело его противников всё сильнее и сильнее с каждой секундой, также способность увеличивает урон союзников и самого Sargatanas в радиусе способности"
-  	"DOTA_Tooltip_ability_ability_hellstep_min_damage"	"МИН.УРОН:"
-  	"DOTA_Tooltip_ability_ability_hellstep_max_damage"  "МАКС.УРОН:"
-  	"DOTA_Tooltip_ability_ability_hellstep_max_duration" "СЕК.МАКСИМАЛЬНОГО УРОНА:"
-  	"DOTA_Tooltip_ability_ability_hellstep_radius"		"РАДИУС:"
-  	"DOTA_Tooltip_ability_ability_hellstep_duration"	"ДЛИТЕЛЬНОСТЬ"
-  	"DOTA_Tooltip_ability_ability_hellstep_stack_overhell"	"КОЛ-ВО СТАКОВ"
-  	"DOTA_Tooltip_ability_ability_hellstep_bonus_damage"	"БОНУСНЫЙ УРОН:"
-  	"DOTA_Tooltip_ability_ability_hellstep_bonus_attack_speed" "БОНУСНАЯ СКОРОСТЬ АТАКИ:"
+  	"DOTA_Tooltip_ability_ability_hellstep_Description" "The hero spews out a stream of fire that burns the body of his opponents stronger and stronger with every second, and the ability also increases the damage of allies and Sargatanas himself in the radius of the ability"
+  	"DOTA_Tooltip_ability_ability_hellstep_min_damage"	"MIN.DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_hellstep_max_damage"  "MAX.DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_hellstep_max_duration" "SEC.MAX.DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_hellstep_radius"		"RADIUS:"
+  	"DOTA_Tooltip_ability_ability_hellstep_duration"	"DURATION:"
+  	"DOTA_Tooltip_ability_ability_hellstep_stack_overhell"	"STACKS:"
+  	"DOTA_Tooltip_ability_ability_hellstep_bonus_damage"	"BONUS DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_hellstep_bonus_attack_speed" "BONUS ATTACKSPEED:"
 
   	"DOTA_Tooltip_ability_ability_firecleave_creep"		"Fire cleave"
-  	"DOTA_Tooltip_ability_ability_firecleave_creep_fire_damage"	"УРОН ОТ ОГНЯ:"
+  	"DOTA_Tooltip_ability_ability_firecleave_creep_fire_damage"	"FIRE DAMAGE:"
 
   	"DOTA_Tooltip_ability_ability_firecleave"		"Fire cleave"
-  	"DOTA_Tooltip_ability_ability_firecleave_Description" "Герой необузданной мощью атакуя одного противника атакует противников позади и поджигает оригинальную цель атаки"
-  	"DOTA_Tooltip_ability_ability_firecleave_great_cleave_damage" "%ПРОРУБАЮЩИЙ УРОН:"
-  	"DOTA_Tooltip_ability_ability_firecleave_fire_damage"	"УРОН ОТ ОГНЯ:"
-  	"DOTA_Tooltip_ability_ability_firecleave_duration" "ДЛИТЕЛЬНОСТЬ ОГНЯ:"
+  	"DOTA_Tooltip_ability_ability_firecleave_Description" "The hero, attacking one opponent with unbridled power, attacks the opponents behind and sets fire to the original target of the attack"
+  	"DOTA_Tooltip_ability_ability_firecleave_great_cleave_damage" "%CLEAVE DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_firecleave_fire_damage"	"FIRE DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_firecleave_duration" "FIRE DURATION:"
 
   	"DOTA_Tooltip_ability_ability_sunflame" "Sun flame"
-  	"DOTA_Tooltip_ability_ability_sunflame_Description" "Герой извергает из себя потоки демонического огня, который наносит урон и стакает дебаф от перегрева, увеличивая урон от огня"
-  	"DOTA_Tooltip_ability_ability_sunflame_range" "РАДИУС:"
-  	"DOTA_Tooltip_ability_ability_sunflame_stack_overhell" "СТАКОВ ПЕРЕГРЕВА:"
-  	"DOTA_Tooltip_ability_ability_sunflame_damage" "УРОН:"
-  	"DOTA_Tooltip_ability_ability_sunflame_unduced" "%ДОП.УРОНА:"
-  	"DOTA_Tooltip_ability_ability_sunflame_damage_meta" "УРОН ПОД УЛЬТОЙ:"
-  	"DOTA_Tooltip_ability_ability_sunflame_unduced_meta" "%ДОП.УРОНА ПОД УЛЬТОЙ:"
+  	"DOTA_Tooltip_ability_ability_sunflame_Description" "The hero spews streams of demonic fire from himself, which deals damage and blocks the debuff from overheating, increasing fire damage"
+  	"DOTA_Tooltip_ability_ability_sunflame_range" "RADIUS:"
+  	"DOTA_Tooltip_ability_ability_sunflame_stack_overhell" "STACK OVERHELL:"
+  	"DOTA_Tooltip_ability_ability_sunflame_damage" "DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_sunflame_unduced" "%BONUS.DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_sunflame_damage_meta" "ULTIMATE DAMAGE:"
+  	"DOTA_Tooltip_ability_ability_sunflame_unduced_meta" "%BONUS ULTIMATE DAMAGE:"
 
   	"DOTA_Tooltip_ability_ability_hell_summon" "Hell summon"
-  	"DOTA_Tooltip_ability_ability_hell_summon_Description"		"Урон зависит от характеристик персонажа. Сила – хп и дамаг.
-Игрок может управлять призываемыми крипами."
-	"DOTA_Tooltip_ability_ability_hell_summon_str_dmg"	"УРОН ЗА 1 СИЛУ"
-	"DOTA_Tooltip_ability_ability_hell_summon_str_hp"	"ХП ЗА 1 СИЛУ:"
+  	"DOTA_Tooltip_ability_ability_hell_summon_Description"		"The damage depends on the characteristics of the character. Strength – hp and damag.
+The player can control the summoned creeps."
+	"DOTA_Tooltip_ability_ability_hell_summon_str_dmg"	"DAMAGE FOR 1 STR:"
+	"DOTA_Tooltip_ability_ability_hell_summon_str_hp"	"HEALTH FOR 1 STR:"
 
 
 	"DOTA_Tooltip_ability_ability_metamorphosis"	"Revolve metamorphosis"
-	"DOTA_Tooltip_ability_ability_metamorphosis_Description"		"Демон облачается в свою истинную форму усиливая свои скилы и получая меньше урона(процент блока урона зависит от силы демона, но должен быть ограничен каким-то значением)."
-	"DOTA_Tooltip_ability_ability_metamorphosis_duration" "ДЛИТЕЛЬНОСТЬ:"
-	"DOTA_Tooltip_ability_ability_metamorphosis_bonus_resistance" "БОНУСНЫЙ РЕЗИСТ К УРОНУ ЗА СИЛУ:"
-	"DOTA_Tooltip_ability_ability_metamorphosis_max_resistance" "МАКСИМАЛЬНЫЙ РЕЗИСТ К УРОНУ:"
-	"DOTA_Tooltip_ability_ability_metamorphosis_radius" "РАДИУС:"
-	"DOTA_Tooltip_ability_ability_metamorphosis_armor_ag" "АРМОР ЗА АГИЛУ:"
-	"DOTA_Tooltip_ability_ability_metamorphosis_attack_speed_ag" "СКОРОСТЬ АТАКИ ЗА АГИЛУ:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_Description"		"The demon puts on his true form by strengthening his skills and receiving less damage (the percentage of damage block depends on the strength of the demon, but should be limited by some value)."
+	"DOTA_Tooltip_ability_ability_metamorphosis_duration" "DURATION:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_bonus_resistance" "BONUS DAMAGE RESIST:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_max_resistance" "MAX DAMAGE RESIST:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_radius" "RADIUS:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_armor_ag" "ARMOR FOR AGILITY:"
+	"DOTA_Tooltip_ability_ability_metamorphosis_attack_speed_ag" "ATTACK SPEED FOR AGILITY:"
 
 	"DOTA_Tooltip_ability_special_sargatanas_meta2" "+6 к максимальному резисту урона"
 	"DOTA_Tooltip_ability_special_sargatanas_meta" "+10 секунд к действию"
