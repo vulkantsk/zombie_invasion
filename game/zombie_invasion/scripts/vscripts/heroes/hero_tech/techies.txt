@@ -26,10 +26,10 @@
 		"AbilityValues"
 		{
  
-				"duration"				"60"
-				"bonus_health"				"1200 1800 2400 3000 3600 4200 4800"
-				"bonus_damage"		"40 60 80 100 120 140 180"
-				"bonus_armor"		"6 10 14 18 22 26 30"
+				"bonus_health"				"1250 1900 2500 3500 4500 6000 8000"
+				"bonus_damage"		"80 140 200 300 400 500 800"
+				"bonus_armor"		"15 20 25 30 35 40 45"
+				"bonus_regen"        "20 40 60 90 120 150 200"
 		}
    }
 
@@ -59,9 +59,8 @@
 		"AbilityValues"
 		{
  
-				"duration"				"60"
-				"bonus_health"				"200 350 500 650 800 950 1100"
-				"bonus_damage"		"60 100 160 220 300 380 480 "
+				"bonus_health"				"200 350 500 1000 1500 2000 3500"
+				"bonus_damage"		"60 120 180 320 500 680 1000"
 		}
    }
 
@@ -95,8 +94,8 @@
 		{
  
 				"duration"				"40 50 60"
-				"bonus_damage"		"325 1425 3000"
-				"bonus_attack_speed"     "0 100 200"
+				"bonus_damage"		"325 875 1800"
+				"bonus_attack_speed"     "0 50 100"
 				"arrow_count"		"4 6 8"
 				"bonus_range"           "0 200 400"
 		}
@@ -116,7 +115,7 @@
 		"AbilityValues"
 		{
 			"locked_attack_speed"			"700"
-			"pct_damage_per_attack_speed"	"1"
+			"pct_damage_per_attack_speed"	"3"
 		}
 	}
 }

@@ -1680,7 +1680,8 @@
 		//----------------------------------------------------------------
 		"Model"						"models/heroes/rattletrap/rattletrap.vmdl"
 		"ModelScale" 				"1.3"		
-		"BaseClass"					"npc_dota_creature"
+		"BaseClass"					"npc_dota_lone_druid_bear"
+ 
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"
@@ -1691,7 +1692,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"mechanoid_splash"			
-		"Ability2"					"mechanoid_iron_shell"
+		"Ability2"					""
 		"Ability3"					""			
 		"Ability4"					""			
 
@@ -1731,7 +1732,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"1250"		// Base health.
-		"StatusHealthRegen"			"10"		// Health regeneration rate.
+		"StatusHealthRegen"			"0"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
@@ -1772,7 +1773,7 @@
 		//----------------------------------------------------------------
 		"Model"						"models/items/broodmother/spiderling/ti9_cache_brood_mother_of_thousands_spiderling/ti9_cache_brood_mother_of_thousands_spiderling.vmdl"
 		"ModelScale" 				"0.7"		
-		"BaseClass"					"npc_dota_creature"
+		"BaseClass"					"npc_dota_lone_druid_bear"
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"

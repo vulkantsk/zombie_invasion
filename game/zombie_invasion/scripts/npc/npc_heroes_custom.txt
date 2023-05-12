@@ -667,7 +667,7 @@
 		"AttributeStrengthGain"		"2.200000"
 		"AttributeBaseIntelligence"		"25"
 		"AttributeIntelligenceGain"		"3.300000"
-		"AttributeBaseAgility"		"0"
+		"AttributeBaseAgility"		"15"
 		"AttributeAgilityGain"		"1.700000"
 		"StatusManaRegen"	"2.2"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
