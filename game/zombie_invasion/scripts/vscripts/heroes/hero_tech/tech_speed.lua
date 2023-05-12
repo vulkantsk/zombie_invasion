@@ -38,7 +38,7 @@ end
 
 function modifier_tech_speed:GetModifierPreAttack_BonusDamage()
 	local attack_speed = self.parent:GetIncreasedAttackSpeed()
-	local bonus_damage = (attack_speed * self.pct_damage_per_attack_speed * 100) - 700
+	local bonus_damage = (attack_speed * self.pct_damage_per_attack_speed * 100) - (700 * self.pct_damage_per_attack_speed)
 
 	return math.max(bonus_damage, 0)
 end

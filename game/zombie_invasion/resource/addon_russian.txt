@@ -2629,12 +2629,34 @@
  
 
 		// -----------------techies--------------------	
-		"DOTA_Tooltip_Ability_tinker_mechanoid"												"Mechanoid"
-		"DOTA_Tooltip_Ability_tinker_mechanoid_Description"									"Тучис мастерит Механоида, что может танковать волны зомби."
-		"DOTA_Tooltip_Ability_tinker_mechanoid_duration"									"ВРЕМЯ ЖИЗНИ:"		
-		"DOTA_Tooltip_Ability_tinker_mechanoid_damage"										"УРОН:"
-		"DOTA_Tooltip_Ability_tinker_mechanoid_damage_reduction"							"БЛОК УРОНА:"
-		
+		"DOTA_Tooltip_Ability_tech_mehanoid"												"Mechanoid"
+		"DOTA_Tooltip_Ability_tech_mehanoid_Description"									"Тучис мастерит Механоида, что может танковать волны зомби и принимать в себя предметы."
+		"DOTA_Tooltip_Ability_tech_mehanoid_bonus_health"									"ЗДОРОВЬЕ:"		
+		"DOTA_Tooltip_Ability_tech_mehanoid_bonus_damage"										"УРОН:"
+		"DOTA_Tooltip_Ability_tech_mehanoid_bonus_armor"							"АРМОР:"
+		"DOTA_Tooltip_Ability_tech_mehanoid_bonus_regen"							"РЕГЕНИРАЦИЯ ЗДОРОВЬЯ:"
+
+		"DOTA_Tooltip_Ability_tech_mehanoid_attack"												"Mechanoid Spider"
+		"DOTA_Tooltip_Ability_tech_mehanoid_attack_Description"									"Тучис Создает ебнутого паука убийцу который может принимать в себя предметы."
+		"DOTA_Tooltip_Ability_tech_mehanoid_attack_bonus_health"									"ЗДОРОВЬЕ:"		
+		"DOTA_Tooltip_Ability_tech_mehanoid_attack_bonus_damage"										"УРОН:"
+ 
+ 		"DOTA_Tooltip_Ability_tech_mehanoid_turel"												"Turalion"
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_Description"									"Тучис мастерит турель которая ебашит нереально."
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_duration"									"ДЛИТЕЛЬНОСТЬ:"		
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_bonus_damage"										"УРОН:"
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_bonus_attack_speed"										"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_arrow_count"										"ЧИСЛО ЦЕЛЕЙ:"
+		"DOTA_Tooltip_Ability_tech_mehanoid_turel_bonus_range"										"БОНУСНЫЙ РАДИУС:"
+ 
+ 		"DOTA_Tooltip_Ability_tech_speed"												"Crazzzy techies"
+		"DOTA_Tooltip_Ability_tech_speed_Description"									"Тучис возомнил себя тролем киборгом и ОН РЕАЛЬНО ИМ СТАЛ Я В АХУЕ!"
+		"DOTA_Tooltip_Ability_tech_speed_locked_attack_speed"									"СКОРОСТЬ АТАКИ:"		
+		"DOTA_Tooltip_Ability_tech_speed_pct_damage_per_attack_speed"										"УРОН ЗА ЕД. СКОРОСТИ АТАКИ:"
+
+   
+ 
+
  	
 
 		// -----------------antimage--------------------		
