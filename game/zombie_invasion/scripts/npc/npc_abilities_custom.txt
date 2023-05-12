@@ -4399,7 +4399,7 @@
 			"FireSound"
 			{
 				"Target" 				"CASTER"
-				"EffectName"			"balah_babar"
+				"EffectName"			""
 			}
 			"Knockback"
 			{

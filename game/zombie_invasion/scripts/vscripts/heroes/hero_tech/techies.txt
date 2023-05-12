@@ -5,7 +5,7 @@
 		"BaseClass"                 "ability_lua"
 		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid"
 		"MaxLevel"            		"4"
-
+				"AbilityTextureName"			"tech/android_pocket_factory"
 		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
 
 		// Casting
@@ -26,10 +26,10 @@
 		"AbilityValues"
 		{
  
-				"bonus_health"				"1250 1900 2500 3500 4500 6000 8000"
+				"bonus_health"				"1500 2500 3500 5000 8000 12000 16000"
 				"bonus_damage"		"80 140 200 300 400 500 800"
 				"bonus_armor"		"15 20 25 30 35 40 45"
-				"bonus_regen"        "20 40 60 90 120 150 200"
+				"bonus_regen"        "50 75 100 125 150 175 200"
 		}
    }
 
@@ -38,6 +38,7 @@
 		"BaseClass"                 "ability_lua"
 		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid_attack"
 		"MaxLevel"            		"7"
+				"AbilityTextureName"			"tech/android_war_stomp"
 
 		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
 
@@ -59,8 +60,8 @@
 		"AbilityValues"
 		{
  
-				"bonus_health"				"200 350 500 1000 1500 2000 3500"
-				"bonus_damage"		"60 120 180 320 500 680 1000"
+				"bonus_health"				"500 1000 1500 2000 2500 3000 3500"
+				"bonus_damage"		"80 180 300 420 600 800 1200"
 		}
    }
 
@@ -72,6 +73,7 @@
 		"MaxLevel"						"3"
 		"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
+				"AbilityTextureName"			"tech/android_armor"
 
 		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
 
@@ -94,7 +96,7 @@
 		{
  
 				"duration"				"40 50 60"
-				"bonus_damage"		"325 875 1800"
+				"bonus_damage"		"450 875 1800"
 				"bonus_attack_speed"     "0 50 100"
 				"arrow_count"		"4 6 8"
 				"bonus_range"           "0 200 400"
@@ -105,7 +107,7 @@
 	{
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_tech/tech_speed"
-		"AbilityTextureName"		"innate_giant_strikes"
+				"AbilityTextureName"			"tech/4"
 		"RequiredLevel"				"10"
 		"MaxLevel"					"1"
 

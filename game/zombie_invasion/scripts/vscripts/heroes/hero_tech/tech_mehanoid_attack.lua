@@ -16,6 +16,9 @@ function tech_mehanoid_attack:OnSpellStart()
 	elseif caster.mehAttack and IsValidEntity(caster.mehAttack) and not caster.mehAttack:IsAlive() then 
 		FindClearSpaceForUnit(caster.mehAttack, point_for_unit, true)
 		caster.mehAttack:RespawnUnit()
+			caster.mehAttack:SetBaseMaxHealth(bonus_health)
+	caster.mehAttack:SetBaseDamageMin(bonus_damage)	
+	caster.mehAttack:SetBaseDamageMax(bonus_damage)
 	else 
 	caster.mehAttack = CreateUnitByName("npc_mechanoid_attack", point_for_unit, true, nil, nil, DOTA_TEAM_GOODGUYS)
  
