@@ -1211,7 +1211,45 @@
 		"DOTA_Tooltip_Ability_item_fish_Description"				"stink"
 		"DOTA_Tooltip_Ability_item_fish_Lore"       "naga love this fish"
 
-	******************** квесты ********************
+
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"      Who are you? I haven't seen you before. But you feel the spirit of a warrior, perhaps you will make a good warrior, but first you need to prove that you can do something. I understand that you are a novice warrior, so bring me a pair of frog legs, these “monsters should be in your teeth."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"Number of ..:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"     I see you have mastered these “terrible creatures”, well, it's time to move on to the next level of hunting. Every warrior should be able to feed himself and his tribe, so bring me the Cooked meat of fat monsters that sit in the two-legged pens."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"     WHAT HAVE YOU BROUGHT ME!!!! I ASKED YOU FOR MEAT, NOT BURNT BIPEDAL FOOD!!!! WHAT AM I GOING TO FEED THE TRIBE WITH?!! GET OUT OF HERE AND DON'T COME BACK WITHOUT NORMAL MEAT!!!!"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"     Well, finally back, the meat seems fresh. Sometimes, in times of bare trees, when there is little game in the forest, we eat fish, but only as a last resort. You have to prove that you can kill slardar so that the tribe can survive even when famine comes."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"firestar"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"     Here you are, we need your help urgently. We found out that wolves from the forest are approaching us, go and kill them, protect us and give 7 bones."
+
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"Number of .."
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"GOLD:"
+
+
+
 		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_01_Description"						"Oh, hello, would you be interested in my artifact? It is filled with the power of gold and can make you strong! Only, you know, I'm very hungry and I can't summon him, You know, it's still very difficult to do something in the current conditions, And it's hard to find food yourself, let's do it this way, you'll do a couple of my tasks, And I'll give you an artifact!
  		So first of all, bring me 10 pieces of meat."
@@ -1253,43 +1291,6 @@
 		"DOTA_Tooltip_Ability_quest_test_kamen_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kamen_reward_exp"                 		"exp:"
 		"DOTA_Tooltip_Ability_quest_test_kamen_reward_gold" 						"gold:"
-
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Who are you? I haven't seen you before. But you feel the spirit of a warrior, perhaps you will make a good warrior, but first you need to prove that you can do something. I understand that you are a novice warrior, so bring me a pair of frog legs, these “monsters" should be in your teeth."
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"Number of ..:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"EXP:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"GOLD:"
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"firestar"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"---     I see you have mastered these “terrible creatures”, well, it's time to move on to the next level of hunting. Every warrior should be able to feed himself and his tribe, so bring me the Cooked meat of fat monsters that sit in the two-legged pens."
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"Number of .."
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"EXP:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"GOLD:"
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"firestar"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"---      WHAT HAVE YOU BROUGHT ME!!!! I ASKED YOU FOR MEAT, NOT BURNT BIPEDAL FOOD!!!! WHAT AM I GOING TO FEED THE TRIBE WITH?!! GET OUT OF HERE AND DON'T COME BACK WITHOUT NORMAL MEAT!!!!"
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"Number of .."
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"EXP:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"GOLD:"
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"firestar"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"---      Well, finally back, the meat seems fresh. Sometimes, in times of bare trees, when there is little game in the forest, we eat fish, but only as a last resort. You have to prove that you can kill slardar so that the tribe can survive even when famine comes."
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"Number of .."
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"EXP:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"GOLD:"
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"firestar"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"---     Here you are, we need your help urgently. We found out that wolves from the forest are approaching us, go and kill them, protect us and give 7 bones."
-
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"Number of .."
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_exp"                 		"EXP:"
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_reward_gold"                 		"GOLD:"
-
  
  		"DOTA_Tooltip_Ability_quest_test01"										"Oh meat meat meat..."
 		"DOTA_Tooltip_Ability_quest_test01_Description"							"Tere-zizizi)) Did you come here to hear my story? What? Don't you  want? no, I know what you want. But I'm very very hungry. Bring me a couple of pieces of meat, they are... you know where. If I'll explain such simple things to you, I'll put anchor in my ass. "
