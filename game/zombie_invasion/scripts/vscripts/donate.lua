@@ -39,6 +39,7 @@ DONATE_SET_ZOMBIE = {
 DONATE_SET_PLARGET = {
 	players = {
 		976302096,
+		1068322851,
 		
 		
 

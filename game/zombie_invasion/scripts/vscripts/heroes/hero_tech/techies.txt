@@ -1,0 +1,122 @@
+"DOTAAbilities"
+{
+"tech_mehanoid"
+	{		
+		"BaseClass"                 "ability_lua"
+		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid"
+		"MaxLevel"            		"4"
+
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"3.0"
+		"AbilityCastRange"				"300"
+        "MaxLevel"                      "7"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"				
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80 120 160 200 240 280 320"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 
+				"duration"				"60"
+				"bonus_health"				"1200 1800 2400 3000 3600 4200 4800"
+				"bonus_damage"		"40 60 80 100 120 140 180"
+				"bonus_armor"		"6 10 14 18 22 26 30"
+		}
+   }
+
+   "tech_mehanoid_attack"
+	{		
+		"BaseClass"                 "ability_lua"
+		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid_attack"
+		"MaxLevel"            		"7"
+
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"3.0"
+		"AbilityCastRange"				"300"
+        "MaxLevel"                      "7"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"				
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80 120 160 200 240 280 320"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 
+				"duration"				"60"
+				"bonus_health"				"200 350 500 650 800 950 1100"
+				"bonus_damage"		"60 100 160 220 300 380 480 "
+		}
+   }
+
+
+   "tech_mehanoid_turel"
+	{		
+		"BaseClass"                 "ability_lua"
+		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid_turel"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"3.0"
+		"AbilityCastRange"				"300"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60 45 30"				
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"225 500 725"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 
+				"duration"				"40 50 60"
+				"bonus_damage"		"325 1425 3000"
+				"bonus_attack_speed"     "0 100 200"
+				"arrow_count"		"4 6 8"
+				"bonus_range"           "0 200 400"
+		}
+   }
+
+   	"tech_speed"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"heroes/hero_tech/tech_speed"
+		"AbilityTextureName"		"innate_giant_strikes"
+		"RequiredLevel"				"10"
+		"MaxLevel"					"1"
+
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"locked_attack_speed"			"700"
+			"pct_damage_per_attack_speed"	"1"
+		}
+	}
+}

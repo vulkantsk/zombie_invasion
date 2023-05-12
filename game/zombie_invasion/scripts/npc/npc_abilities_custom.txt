@@ -31,6 +31,7 @@
 #base "../vscripts/heroes/hero_sargatanas/summons/summon_abilities/creeps.txt"
 #base "portal/abilities.txt"
 #base "../vscripts/heroes/hero_demonslayer/demonslayer.txt"
+#base "../vscripts/heroes/hero_tech/techies.txt"
 
 "DOTAAbilities"
 {
@@ -4385,7 +4386,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"1800"
+				"radius"				"900"
 			}
 			"03"
 			{
