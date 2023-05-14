@@ -76,8 +76,9 @@ function Precache( context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_night_stalker", context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_doom_bringer", context )
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix", context)
+	PrecacheResource( "particle", "particles/rain_fx/econ_snow.vpcf", context )	
 
-
+ 
 	PrecacheResource( "particle", "particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf", context )
 	PrecacheResource( "particle", "particles/econ/items/bounty_hunter/bounty_hunter_hunters_hoard/bounty_hunter_hoard_track_trail_circle.vpcf", context )	
 	PrecacheResource( "particle", "particles/econ/items/bristleback/bristle_spikey_spray/bristle_spikey_quill_spray_quills.vpcf", context )
@@ -230,6 +231,8 @@ function Activate()
 --	InvasionMode:InitInvasionMode()
 	
 	--
+--	 GameRules:GetGameModeEntity():SetWeatherEffectsDisabled(false)
+-- GameRules:GetGameModeEntity():SetCustomTerrainWeatherEffect( "particles/rain_fx/econ_snow.vpcf" )
 	GameRules:GetGameModeEntity():SetFreeCourierModeEnabled(true)
 	GameRules:GetGameModeEntity():SetDaynightCycleDisabled(true)
 	  -- 
