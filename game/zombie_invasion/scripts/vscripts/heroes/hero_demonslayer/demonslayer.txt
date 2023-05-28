@@ -58,39 +58,101 @@
 			}
 		}
 	}
-	//=================================================================================================================
-	// Kunkka's Tidebringer
-	//=================================================================================================================
-	"imba_kunkka_tidebringer"
+	"demon_absolute_form"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"							"ability_lua"
-		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
-		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
-		"AbilityTextureName"				"kunkka_tidebringer"
-		"ScriptFile"				"components/abilities/heroes/hero_kunkka"
-		"MaxLevel"							"4"
-		"LevelsBetweenUpgrades"				"2"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_demonslayer/demon_absolute_form/demon_absolute_form"
+		"AbilityTextureName"			"nevermore_requiem"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"HasScepterUpgrade"				"1"
 
-		// Time
-		//-------------------------------------------------------------------------------------------------------------		
-		"AbilityCooldown"					"13 10 7 4"	
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET "
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
-		// Precache
-		//-------------------------------------------------------------------------------------------------------------
-		"precache"
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"1.67"
+		"AbilityDuration"				"5.0"
+
+		"AbilityCooldown"				"120 110 100"
+		"AbilityManaCost"				"150 175 200"
+		"AbilityDamage"					"80 120 160"
+
+		"AbilitySpecial"
 		{
-			"soundfile"						"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
-			"particle"						"particles/units/heroes/hero_kunkka/kunkka_weapon_tidebringer.vpcf"
-			"particle"						"particles/econ/items/kunkka/kunkka_tidebringer_base/kunkka_spell_tidebringer.vpcf"
-			"particle"						"particles/units/heroes/hero_kunkka/kunkka_spell_tidebringer.vpcf"
-			"particle"						"particles/hero/kunkka/torrent_bubbles.vpcf"
-			"particle"						"particles/hero/kunkka/torrent_splash.vpcf"
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cast_time_tooltip"	"0"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_radius"	"1000"		
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_reduction_ms"	"-25"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_reduction_damage"	"-50"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_reduction_tooltip"	"-50"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"requiem_slow_duration"	"5.0"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_reduction_radius"	"700"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_soul_conversion"	"2 2 2"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_line_width_start"	"125"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_line_width_end"	"425"
+			}
+			"11"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_line_speed"	"700"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"soul_death_release"	"0.5"
+			}		
+			"13"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"requiem_heal_pct_scepter"	"100"
+			}	
+			"14"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"requiem_damage_pct_scepter"	"40"
+			}		
 		}
 	}
 
