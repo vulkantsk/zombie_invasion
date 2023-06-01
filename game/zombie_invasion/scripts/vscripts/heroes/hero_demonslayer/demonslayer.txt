@@ -29,33 +29,23 @@
 			"stack_attackspeed"		"4 6 8 10 12 14 16"
 		}
 	}
-	"ability_dark_lord"
+	"demon_desolate"
 	{
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_demonslayer/demon_darklord/demon_darkord"
-		"AbilityTextureName"			"nevermore_dark_lord"
-		"FightRecapLevel"				"1"
-		"MaxLevel"						"7"
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"heroes/hero_demonslayer/demon_desolate/demon_desolate"
+		"AbilityTextureName"		"nevermore_requiem"
+		"RequiredLevel"					"1"
+		"MaxLevel"					"7"
 
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-
-		"AbilityCastRange"				"900"
-
-		"AbilitySpecial"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"presence_armor_reduction"		"-3 -4 -5 -6 -9 -12 -16"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"presence_radius"				"900 1000 1200 1400 1600 -1"
-			}
+			"armor_tear"					"1 1.5 2 2.5 3 3.5 4"
+			"lifesteal_pct"					"12 18 24 32 38 44"
+			"crit_damage"					"275"
+			"crit_chance_per_negative_armor" "1"
 		}
 	}
 	"demon_absolute_form"
@@ -63,19 +53,17 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_demonslayer/demon_absolute_form/demon_absolute_form"
 		"AbilityTextureName"			"nevermore_requiem"
-		"FightRecapLevel"				"2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_TrollWarlord.BattleTrance.Cast"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"MaxLevel"						"3"
-		"HasScepterUpgrade"				"1"
-
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET "
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
 		"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"1.67"
-		"AbilityDuration"				"5.0"
+		"AbilityDuration"				"200.0"
 
 		"AbilityCooldown"				"120 110 100"
 		"AbilityManaCost"				"150 175 200"
@@ -83,7 +71,7 @@
 
 		"AbilitySpecial"
 		{
-			"01"
+				"01"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"cast_time_tooltip"	"0"
@@ -153,6 +141,39 @@
 				"var_type"					"FIELD_FLOAT"
 				"requiem_damage_pct_scepter"	"40"
 			}		
+		}
+	}
+	"demon_reflaction"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_demonslayer/demon_reflaction/demon_reflaction"
+		"AbilityTextureName"			"nevermore_requiem"
+		"MaxLevel" 						"7"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityCastPoint"				"0.2 0.2 0.2 0.2 0.2 0.15 0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"				"30.0"
+		"AbilityManaCost"				"150"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_return_pct"	"100 105 110 115 120 125 130"
+				"CalculateSpellDamageTooltip" "0"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"returned_to_heal_pct"	"50"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"2"
+			}
 		}
 	}
 

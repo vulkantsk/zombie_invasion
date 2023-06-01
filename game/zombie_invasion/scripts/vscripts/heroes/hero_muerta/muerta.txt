@@ -170,7 +170,7 @@
 		{
 			"armor_tear"					"0.5"
 			"crit_damage"					"275"
-			"crit_chance_per_negative_armor""1"
+			"crit_chance_per_negative_armor" "1"
 		}
 
 		"precache"
