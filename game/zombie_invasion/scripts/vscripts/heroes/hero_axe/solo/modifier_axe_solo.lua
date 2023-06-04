@@ -20,7 +20,7 @@ function modifier_axe_solo:OnIntervalThink()
 			self:GetParent():GetAbsOrigin(),
 			nil,
 			self.radius,
-			DOTA_UNIT_TARGET_TEAM_BOTH,
+			DOTA_UNIT_TARGET_TEAM_FRIENDLY,
 			DOTA_UNIT_TARGET_HERO,
 			DOTA_UNIT_TARGET_FLAG_INVULNERABLE,
 			FIND_CLOSEST,
