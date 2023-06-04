@@ -4,6 +4,7 @@ FirstSpawned = {}
 DONATE_SET_ALL = {
 	players = {
 	431647330,
+	170695158,
 	},
 }
 
