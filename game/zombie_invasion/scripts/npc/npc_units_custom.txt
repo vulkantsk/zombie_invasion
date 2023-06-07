@@ -4088,13 +4088,14 @@
 	{
 		// General
 		//
-		"BaseClass"					"npc_dota_creep"	// Class of entity of link to.
+		"BaseClass"					"npc_dota_lone_druid_bear"	// Class of entity of link to.
 		"Model"						"models/props_frostivus/frostivus_snowman.vmdl"	// Model.
 		"SoundSet"					"Creep_Good_Range"					// Name of sound set.
 		"ModelScale"				"1.0"
 		"Level"						"1"
 		"vscripts"        "ai/ai_snowman.lua"
 		"UseNeutralCreepBehavior" 	"0"
+ 
  		// Abilities
 		//----------------------------------------------------------------
 		

@@ -61,7 +61,7 @@ end
 function modifier_challenge_debuff:OnIntervalThink() 
 	local interval_dur = self.interval / self:GetAbility():GetSpecialValueFor("duration")
 	local damage = self.full_damage * interval_dur
-	DealDamage(self:GetCaster(), self:GetParent(), damage, DAMAGE_TYPE_PURE, nil, self:GetAbility())
+	DealDamage(self:GetCaster(), self:GetParent(), damage, DAMAGE_TYPE_PURE, self:GetAbility():GetAbilityTargetFlags(), self:GetAbility())
 end
 
 function modifier_challenge_debuff:OnDestroy() 

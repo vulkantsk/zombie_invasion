@@ -151,7 +151,7 @@
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"2.5"
 		
-		"AbilityCooldown"				"80"
+		"AbilityCooldown"				"60"
 		"AbilityManaCost"				"550"
 
         "RequiredLevel"                 "25"
@@ -159,12 +159,12 @@
 
 		"AbilityValues"
 		{
-			"duration"         "8"
+			"duration"         "9"
 
-			"bonus_armor"         "100"
+			"bonus_armor"         "200"
 			"bonus_hp_regen"					
 			{
-				"value"				"100"
+				"value"				"300"
 					 
 			}			
 			"reduce_ms"         "100"
@@ -181,6 +181,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"            "yuki/challenge"
 
         "RequiredLevel"                 "10"
@@ -208,8 +209,8 @@
  			"dmg_per_atr"      "6"
  			"interval"      "0.2"
  			"bonus_main"         "5 7 9 12"
- 			 "dmg_incr"      "100"
- 			 "dmg_reduce"      "50"
+ 			 "dmg_incr"      "50"
+ 			 "dmg_reduce"      "30"
 
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
