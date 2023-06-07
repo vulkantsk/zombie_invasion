@@ -32,6 +32,7 @@
 #base "portal/abilities.txt"
 #base "../vscripts/heroes/hero_demonslayer/demonslayer.txt"
 #base "../vscripts/heroes/hero_tech/techies.txt"
+#base "../vscripts/heroes/hero_yuki-onna/yuki.txt"
 
 "DOTAAbilities"
 {

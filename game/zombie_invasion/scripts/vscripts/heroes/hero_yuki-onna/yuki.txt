@@ -1,0 +1,352 @@
+"DOTAAbilities"
+{
+ 
+"yuki_pohela"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/pohela"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityTextureName"            "ancient_apparition_cold_feet"
+
+     	"MaxLevel"						"7"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 28 26 24 22 20 18"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"70 90 125 160 210 260 400"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"AbilityChannelTime"
+			{
+				"value" "8 9 10 11 12 13 14"
+			}
+			"channel_duration"
+			{
+				"value" "8 9 10 11 12 13 14"
+			}
+			"bonus_resistance"
+			{
+				"value" "15 18 21 24 27 30 33"
+				"special_bonus_unique_yuki_pohela_resistance"    "+7"
+			}
+ 			"reduce_atack_speed"		"10 15 20 25 30 35 40"
+			"debuff_duration"		"1 1.25 1.5 1.75 2 2.5 3"
+ 
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	"yuki_frostshtorm"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/frostshtorm"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityTextureName"            "yuki/froststorm"
+
+
+		"AbilityCastRange"				"675"
+		"AbilityCastPoint"				"0.6"
+
+     	"MaxLevel"						"7"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"35"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"60 100 140 200 260 350 450"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"					"300 325 350 375 400 425 450"
+			}
+			"duration"
+			{
+				"value"					"8"
+				"special_bonus_unique_yuki_frostshtorm_duration"    "+5"			 
+
+			}
+
+
+ 
+			"dmg_reduced"					"20 25 30 35 40 45 50"
+ 
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	"yuki_revenge"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/revenge"
+		"AbilityTextureName"            "yuki/revenge"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+     	"MaxLevel"						"7"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage_per_int"					
+				{
+					"value"				"1 1.25 1.5 1.75 2.0 2.25 2.5"
+					"special_bonus_unique_yuki_revenge_damage"    "+2.5"			 
+					 "CalculateSpellDamageTooltip"	"0"
+
+				}
+
+				"radius"					
+				{
+					"value"				"325 350 375 400 425 450 475"					 
+				}
+ 
+				"int_think"	 				"1"
+			 
+				"heal"				
+				{
+					"value"				"15 30 45 60 90 120 180"		
+					"special_bonus_unique_yuki_revenge_heal"    "+600"			 
+				}
+ 
+				 
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+ 
+ 	"yuki_ritual" 
+ 	{
+ 	        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/ritual"
+        "AbilityTextureName"            "yuki/ritual"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"2.5"
+		
+		"AbilityCooldown"				"80"
+		"AbilityManaCost"				"550"
+
+        "RequiredLevel"                 "25"
+        "MaxLevel"                        "1"
+
+		"AbilityValues"
+		{
+			"duration"         "8"
+
+			"bonus_armor"         "100"
+			"bonus_hp_regen"					
+			{
+				"value"				"100"
+					 
+			}			
+			"reduce_ms"         "100"
+			"reduce_as"         "50"
+		}
+ 	}
+
+ 	"yuki_challenge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/challenge"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityTextureName"            "yuki/challenge"
+
+        "RequiredLevel"                 "10"
+        "MaxLevel"                        "4"
+        "LevelsBetweenUpgrades"			"5"	
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"500 1300 2500 5000"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 			
+ 			"duration"        "6"
+ 			"dmg_per_atr"      "6"
+ 			"interval"      "0.2"
+ 			"bonus_main"         "5 7 9 12"
+ 			 "dmg_incr"      "100"
+ 			 "dmg_reduce"      "50"
+
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	"yuki_snowman"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/snowman"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"            "yuki/snowman"
+
+		"AbilityCastRange"				"400 600 800"
+		"AbilityCastPoint"				"0.8"
+
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 35 30"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"170 320 550"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 			"bonus_health" "500 1500 3000"
+ 			"max_snowman"					
+			{
+				"value"				"2 3 4"
+				"special_bonus_unique_yuki_snowman_max"    "+1"			 
+					 
+			}	
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	 "yuki_snowball"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_yuki-onna/snowball"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+ 		"AbilityTextureName"            "tusk_snowball"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500 800 1100"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"5 4 3"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+ 			
+ 			"radius"                "150"
+ 			"heal"                "100 250 500"
+ 			"slow_as"              "-10 -20 -30"
+ 			"duration"               "2"
+
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+
+	"special_bonus_unique_yuki_revenge_heal"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+
+	"special_bonus_unique_yuki_revenge_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+		"special_bonus_unique_yuki_pohela_resistance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+		"special_bonus_unique_yuki_frostshtorm_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+	}
+		"special_bonus_unique_yuki_snowman_max"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+	}
+
+  
+}
+
+ 
+ 

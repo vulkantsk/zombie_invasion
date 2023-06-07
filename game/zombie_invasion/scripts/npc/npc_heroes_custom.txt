@@ -1305,6 +1305,43 @@
 
 	}
 
+"npc_dota_hero_winter_wyvern"
+	{
+		"Model"		"models/heroes/crystal_maiden/crystal_maiden_arcana.vmdl"
+		"Ability1"		"yuki_pohela"
+		"Ability2"		"yuki_frostshtorm"
+		"Ability3"		"yuki_revenge"
+		"Ability4"		"yuki_ritual"
+		"Ability5"		"yuki_challenge"
+		"Ability6"		"yuki_snowman"
+		"Ability10"		"special_bonus_mana_reduction_8"
+		"Ability11"		"special_bonus_intelligence_15"
+		"Ability12"		"special_bonus_mp_regen_8"
+		"Ability13"		"special_bonus_unique_yuki_snowman_max"
+		"Ability14"		"special_bonus_unique_yuki_frostshtorm_duration"
+		"Ability15"		"special_bonus_unique_yuki_pohela_resistance"
+		"Ability16"		"special_bonus_unique_yuki_revenge_heal"
+		"Ability17"		"special_bonus_unique_yuki_revenge_damage"
+		"ArmorPhysical"		"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"		"0"
+		"AttackDamageMax"		"0"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.250000"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"425"
+		"ProjectileModel"		"particles/units/heroes/hero_winter_wyvern/winter_wyvern_base_attack.vpcf"
+		"ProjectileSpeed"		"700"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"22"
+		"AttributeStrengthGain"		"2.2"
+		"AttributeBaseIntelligence"	"22"
+		"AttributeIntelligenceGain"	"3.2"
+		"AttributeBaseAgility"		"16"
+		"AttributeAgilityGain"		"1.5"
+		"MovementSpeed"		"315"
+ 
+	}
 //=========================================================================================================
 // HERO: undying
 //=========================================================================================================

@@ -167,6 +167,7 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_legio
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lich.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_crystal_maden.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts", context )
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vo_nevermore.vsndevts", context )
 

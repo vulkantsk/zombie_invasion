@@ -25,6 +25,10 @@ function modifier_homer_vampiric_aura:IsAura()
 	return true
 end
 
+function modifier_homer_vampiric_aura:GetEffectName()
+	return "particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf"
+end
+
 function modifier_homer_vampiric_aura:GetModifierAura()
 	return "modifier_homer_vampiric_aura_lifesteal"
 end

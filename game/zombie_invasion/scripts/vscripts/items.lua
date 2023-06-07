@@ -53,6 +53,8 @@ local first = 0
 	end	
 end
 
+DOTA_ABILITY_N
+
 function CreateWoodWall(data)
 
 
