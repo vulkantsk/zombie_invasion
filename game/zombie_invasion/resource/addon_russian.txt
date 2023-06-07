@@ -175,6 +175,7 @@
 		"npc_dota_hero_nevermore"	                                     "Azzazel"
 		"npc_dota_hero_treant"                                      "Shinoba"
 		"npc_dota_hero_phantom_lancer" 										"Sara"
+		"npc_dota_hero_winter_wyvern" 										"Yuki-onna"
 		"npc_dota_hero_bloodseeker"			"Sargatanas"
 
 
@@ -2155,6 +2156,80 @@
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection" "-3 секунды перезарядки способности space dissection"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
+
+	// -----------------Yuki-onna--------------------
+
+		"DOTA_Tooltip_ability_yuki_pohela"	"Pohela"
+		"DOTA_Tooltip_ability_yuki_pohela_Description"	"Pohela концентрирует свою силу льда, покрывая союзника ледяной корочкой, увеличивая его сопротивление к входящему урону и замедляет скорость атаки врагов которые атакуют его."
+		"DOTA_Tooltip_ability_yuki_pohela_AbilityCastRange"		"РАДИУС:"
+		"DOTA_Tooltip_ability_yuki_pohela_AbilityChannelTime"		"ДЛИТЕЛЬНОСТЬ ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_yuki_pohela_debuff_duration"		"ДЛИТЕЛЬНОСТЬ ДЕБАФА:"
+		"DOTA_Tooltip_ability_yuki_pohela_bonus_resistance"		"РЕЗИСТ УРОНА:"
+		"DOTA_Tooltip_ability_yuki_pohela_reduce_atack_speed"		"УМЕНЬШ.СКОРОСТИ АТАКИ:"
+
+		"DOTA_Tooltip_modifier_pohela_buff"	"Pohela buff"
+		"DOTA_Tooltip_modifier_pohela_buff_Description"	"Герой под надёжной защитой^^"
+
+
+		"DOTA_Tooltip_ability_yuki_frostshtorm"	"Frostshtorm"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_Description"	"Герой оскверняет своим льдом область, заходящие в неё наносят меньше урона."
+		"DOTA_Tooltip_ability_yuki_frostshtorm_AbilityCastRange"		"РАДИУС ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_radius"		"РАДИУС"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_duration"		"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_dmg_reduced"		"УМЕНЬШ.УРОНА:"
+
+		"DOTA_Tooltip_ability_yuki_revenge"	"Revenge"
+		"DOTA_Tooltip_ability_yuki_revenge_Description"	"Аура Yuki-onna подмораживает любого противника нанося ему урон в зависимости от своего интеллекта, а также даёт броню и лечит союзника."
+		"DOTA_Tooltip_ability_yuki_revenge_damage_per_int"		"УРОНА ЗА ЕД. ИНТЕЛЛЕКТА:"
+		"DOTA_Tooltip_ability_yuki_revenge_radius"		"РАДИУС"
+		"DOTA_Tooltip_ability_yuki_revenge_heal"		"ЛЕЧЕНИЯ В СЕКУНДУ:"
+
+			"DOTA_Tooltip_modifier_revenge_buff"	"Revenge Aura"
+			"DOTA_Tooltip_modifier_revenge_buff_Description"	"Холод вас согревает."
+
+		"DOTA_Tooltip_ability_yuki_ritual"	"Ritual"
+		"DOTA_Tooltip_ability_yuki_ritual_Description"	"Герой проводит ритуал Холода, увеличиваю всю броню и регенерацию союзных героев в области в 2 раза. Замедляет передвижение врагов до 100 единиц и скорость атаки в 2 раза."
+		"DOTA_Tooltip_ability_yuki_ritual_AbilityCastRange"	"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_yuki_ritual_duration"		"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_armor"		"ДОП.БРОНЯ:%"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_hp_regen"		"ДОП.ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:%"
+
+		"DOTA_Tooltip_modifier_ritual_buff"	"Ritual buff"
+		"DOTA_Tooltip_modifier_ritual_buff_Description"	"Благославлён холодом."
+
+
+		"DOTA_Tooltip_ability_yuki_snowman"	"Snowman"
+		"DOTA_Tooltip_ability_yuki_snowman_Description"	"Yuki-onna Герои ставит милого Снеговичка, который кидается снежками. Снежки хилят союзных героев в области попадания, замедляя скорость атаки вражеских героев."
+		"DOTA_Tooltip_ability_yuki_snowman_bonus_health"	"ЗДОРОВЬЕ:"
+		"DOTA_Tooltip_ability_yuki_snowman_max_snowman"	"МАКС.СНЕГОВИКОВ:"
+		"DOTA_Tooltip_ability_yuki_snowmanl_slow_as"	"ЗАМЕДЛЕНИЕ СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_ability_yuki_snowball"	"Snowball"
+		"DOTA_Tooltip_ability_yuki_snowball_Description" "Снежный шарик><"
+		"DOTA_Tooltip_ability_yuki_snowball_radius"	"РАДИУС:"
+		"DOTA_Tooltip_ability_yuki_snowball_heal"	"ЛЕЧЕНИЕ:"
+		"DOTA_Tooltip_ability_yuki_snowball_slow_as"	"ЗАМЕДЛЕНИЕ СКОРОСТИ АТАКИ:"
+
+		"DOTA_Tooltip_ability_yuki_challenge"	"Challenge from yuki"
+		"DOTA_Tooltip_ability_yuki_challenge_Description"	"Yuki-onna Даёт задание герою, в течение 10 секунд на героя накладывается отрицательные эффекты, из-за которых он не может перемещаться и бить. Ему наносится урон, равный 500-1000% от его силы. Если герой выживает, то навсегда увеличивает свои основные характеристики."
+		"DOTA_Tooltip_ability_yuki_challenge_duration"	"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_per_atr"	"ДМГ ЗА АТРИБУТ:"
+		"DOTA_Tooltip_ability_yuki_challenge_interval"	"ИНТЕРВАЛ ПОЛУЧЕНИЯ УРОНА:"
+		"DOTA_Tooltip_ability_yuki_challenge_bonus_main"	"Бонус к артирбуту:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_incr"	"УВЕЛЕЧЕНИЕ УРОНА:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_reduce"	"СНИЖЕНИЕ ПОЛУЧАЕМОГО:"
+
+
+
+
+
+
+
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_pohela_resistance"	"+7 к резизсту от способности POHELA"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_frostshtorm_duration"	"+5 к длительности FROSTSHTORM"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+2.5 к УРОНУ от способности REVENGE"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_heal"	"+600 к лечению от способности REVENGE"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_snowman_max"	"+1 заряд способности snowman"
+
 
 	// -----------------Samurai--------------------
 
