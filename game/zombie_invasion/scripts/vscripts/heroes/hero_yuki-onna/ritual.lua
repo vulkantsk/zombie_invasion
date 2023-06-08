@@ -53,6 +53,7 @@ end
          {
  			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
  			MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE,
+ 			MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE,
  			MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
  			MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
 
@@ -65,6 +66,7 @@ end
 function modifier_ritual_buff:OnCreated()
 	self.armor = (self:GetAbility():GetSpecialValueFor('bonus_armor') /100) * self:GetParent():GetPhysicalArmorBaseValue()
 	self.hp_regen = self:GetAbility():GetSpecialValueFor('bonus_hp_regen')
+	self.hp_regen_pct = self:GetAbility():GetSpecialValueFor('bonus_hp_regen_pct')
 	self.ms = self:GetAbility():GetSpecialValueFor('reduce_ms')
 	self.as = -( (self:GetAbility():GetSpecialValueFor('reduce_as')/100) * self:GetParent():GetAttackSpeed()) * 100
  
@@ -86,7 +88,16 @@ end
  	if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then 
  		return 
  	else 
- 		return self.hp_regen 
+ 		return self.hp_regen
+ 	end
+ end
+
+
+ function modifier_ritual_buff:GetModifierHealthRegenPercentage()
+ 	if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then 
+ 		return 
+ 	else 
+ 		return self.hp_regen_pct 
  	end
  end
 

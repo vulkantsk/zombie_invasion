@@ -2193,8 +2193,9 @@
 		"DOTA_Tooltip_ability_yuki_ritual_duration"		"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_yuki_ritual_bonus_armor"		"%ДОП.БРОНЯ:"
 		"DOTA_Tooltip_ability_yuki_ritual_bonus_hp_regen"		"%ДОП.ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_hp_regen_pct"		"%ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ОТ МАКС. ЗДОРОВЬЯ:"
 
-		"DOTA_Tooltip_modifier_ritual_buff"	"Ritual buff"
+ 		"DOTA_Tooltip_modifier_ritual_buff"	"Ritual buff"
 		"DOTA_Tooltip_modifier_ritual_buff_Description"	"Благославлён холодом."
 
 

@@ -164,9 +164,10 @@
 			"bonus_armor"         "200"
 			"bonus_hp_regen"					
 			{
-				"value"				"300"
+				"value"				"100"
 					 
 			}			
+			"bonus_hp_regen_pct"          "2"
 			"reduce_ms"         "100"
 			"reduce_as"         "50"
 		}
