@@ -6688,7 +6688,7 @@
 				"bonus_strength"		"40"
 				"bonus_damage"			"35"
 				"lifesteal_percent"		"25"
-				"creep_lifesteal_reduction_pct"	"100"
+				"creep_lifesteal_reduction_pct"	"0"
 				"unholy_lifesteal_percent"	"150"
 				"unholy_lifesteal_total_tooltip"	"175"
 				"unholy_duration"		"6.0"
@@ -6748,14 +6748,14 @@
 				"bonus_damage"	"20"
 				"bonus_attack_speed"	"20"
 				"lifesteal_percent"		"15"
-				"creep_lifesteal_reduction_pct"	"100"
+				"creep_lifesteal_reduction_pct"	"0"
 				"berserk_bonus_attack_speed"	"60"
 				"berserk_bonus_movement_speed"	"40"
 				"berserk_armor_reduction"	"4"
 				"berserk_duration"		"6.0"
 		}
 	}
-
+ 
 	"item_recipe_mask_of_madness_2"
 	{
 		"AbilityTextureName"				"custom_folder/item_recipe"
