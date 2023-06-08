@@ -83,8 +83,7 @@ if modifier_item_blademail_passive == nil then
     modifier_item_blademail_passive = class({})
 end
 
-function modifier_item_blademail_passive:GetAttributes() return MODIFIER_ATTRIBUTE_MULTIPLE end
-
+ 
 function modifier_item_blademail_passive:IsHidden()
     return true
 end
