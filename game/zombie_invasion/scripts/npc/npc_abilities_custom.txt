@@ -5706,7 +5706,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"50"
+				"damage"					"720"
 			}
 			"03"
 			{
@@ -21880,5 +21880,195 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 		"AbilityCastGestureSlot"	"DEFAULT" 
+	}
+	//=================================================================================================================
+	// Venomancer: Noxious Plague
+	//=================================================================================================================
+	"venomancer_noxious_plague"
+	{
+		"ID"			"1105"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySound"					"Hero_Venomancer.PoisonNova"
+		"FightRecapLevel"				"1"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"120 100 80"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"200 300 400"
+
+		"AbilityValues"
+		{
+			"debuff_duration"			"5"
+			"impact_damage"				"900"
+			"health_damage"
+			{
+				"value"							"4 5 6"
+				"special_bonus_unique_venomancer_4" "1.5"
+			}
+			"debuff_radius"				"800"
+			"movement_slow_max"			"50"
+			"attack_slow"
+			{
+				"value"					"0"
+				"special_bonus_unique_venomancer_5"	"+200"
+			}
+
+			"projectile_speed"			"1200"		
+		}
+	}
+	//=================================================================================================================
+	// Enchantress: Untouchable
+	//=================================================================================================================
+	"enchantress_untouchable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5267"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		"AbilityDraftUltScepterAbility"		"enchantress_bunny_hop"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_attack_speed"		"-320"
+				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_3"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_duration"			"2"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	//=================================================================================================================
+	// Venomancer: Poison Sting
+	//=================================================================================================================
+	"venomancer_poison_sting"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5179"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"duration"				"15.0"
+			"damage"
+			{
+				"value"					"200"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"movement_speed"
+			{
+				"value"			"-14"
+				"special_bonus_unique_venomancer_2"		"-8"
+			}	
+			"hp_regen_reduction"
+			{
+				"value"				"40"
+				"special_bonus_unique_venomancer_poisonsting_regen_reduction"	"+20"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	//=================================================================================================================
+	// Death Prophet: Spirit Siphon
+	//=================================================================================================================
+	"death_prophet_spirit_siphon"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5685"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_DeathProphet.SpiritSiphon.Cast"
+
+        "HasShardUpgrade"               "1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_DP_SPIRIT_SIPHON"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCharges"				"40"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage"					
+				{
+					"value"				"25"
+					"special_bonus_unique_death_prophet_3"	"+30"
+				}
+
+				"damage_pct"				"0"
+				"haunt_duration"				"6"
+				"siphon_buffer"			"250"
+				"AbilityChargeRestoreTime"		
+				{
+					"value"					"38"
+					"special_bonus_unique_death_prophet_5" "-22"
+				}
+				"shard_bonus_charges"			
+				{
+					"value"	"1"
+					"RequiresShard"				"1"
+				}
+				"shard_fear_duration"			
+				{
+					"value"		"1.2"
+					"RequiresShard"				"1"
+				}
+				"shard_consecutive_siphon_duration"			
+				{
+					"value"		"3"
+					"RequiresShard"				"1"
+				}
+		}
 	}
 }

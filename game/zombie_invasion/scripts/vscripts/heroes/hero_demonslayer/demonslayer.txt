@@ -44,8 +44,8 @@
 		{
 			"armor_tear"					"1 1.5 2 2.5 3 3.5 4"
 			"lifesteal_pct"					"12 18 24 32 38 44"
-			"crit_damage"					"275"
-			"crit_chance_per_negative_armor" "1"
+			"crit_damage"					"125"
+			"crit_chance_per_negative_armor" "25"
 		}
 	}
 	"demon_absolute_form"
@@ -143,39 +143,98 @@
 			}		
 		}
 	}
-	"demon_reflaction"
+	"demon_aura"
 	{
-		"BaseClass"             		"ability_lua"
-		"ScriptFile"					"heroes/hero_demonslayer/demon_reflaction/demon_reflaction"
-		"AbilityTextureName"			"nevermore_requiem"
-		"MaxLevel" 						"7"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-		"AbilityCastPoint"				"0.2 0.2 0.2 0.2 0.2 0.15 0.1"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"				"30.0"
-		"AbilityManaCost"				"150"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_demonslayer/demon_aura/demon_aura"
+		"AbilityTextureName"			"abyssal_underlord_atrophy_aura"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
+
+		"AbilityCastRange"				"900"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"damage_return_pct"	"100 105 110 115 120 125 130"
-				"CalculateSpellDamageTooltip" "0"
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1200"
 			}
 			"02"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"returned_to_heal_pct"	"50"
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduction_pct"			"15 25 35 48"
 			}
 			"03"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"duration"			"2"
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage_from_creep"		"4 8 16 24 30 34 38"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_damage_duration"			"6 12 18 24 38 42 46"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_damage_duration_scepter"		"70 80 90 100"
+				"RequiresScepter"	"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"permanent_bonus"		"2 3 4 5"
 			}
 		}
 	}
+	"demon_buff"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_demonslayer/demon_buff/demon_buff.lua"
+        "AbilityTextureName"            "sven_gods_strength"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "1"
+        
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"          "ACT_DOTA_OVERRIDE_ABILITY_4"
+        "AbilityCastGestureSlot"        "DEFAULT"
+        "AbilityCastPoint"              "0.3 0.3 0.3"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "20"
+        "AbilityDuration"               "14.0"
+    
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 150 200"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "modifier_demon_buff_health"      "120 180 220 280"        
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "GetModifierMoveSpeedBonus_Percentage"       "70 20 30"      
+            }       
+        }
+    }
 
 
 }

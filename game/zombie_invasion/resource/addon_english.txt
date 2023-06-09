@@ -233,6 +233,22 @@
 		"npc_classic_pig"                                                  	"Pig"
 		"npc_classic_big_pig"                                                  	"Big Pig"
 		"npc_classic_sheep"                                                 "Sheep"
+
+		"npc_classic_frog"                                                 "frog"
+		"npc_boss_slardar"                                                 "MEGA CHICKEN!?"
+		"npc_boss_slark"													"SUPER CHICKEN!?"
+		"npc_classic_woobleydog"                                                 "WOLK"
+		"npc_classic_woobleydog2"                                                 "WOLK"
+		"npc_classic_toxic_veno_boss"						"VENOMOSS"
+		"npc_classic_toxic_veno"						"Mini venom"
+		
+
+
+		"npc_boss_bear"														"BEAR"
+		"npc_classic_skelet_ruin"                                                 "FATHER SKELET"
+		"npc_classic_microchel"                                                 "FATHER SKELET"
+		"npc_classic_Night_Stalker_boss"                                                 "MOTHER BLOODSUCKER"
+		
 		"npc_classic_big_sheep"                                                 "Big Sheep"
 		"npc_classic_half_zombie"                                           "Half Zombie"	
 		"npc_classic_big_half_zombie"                                           "Big Half Zombie"	

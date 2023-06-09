@@ -213,6 +213,19 @@
 	     "npc_Edgard_jitel"        "npc_Edgard"
 		"npc_classic_pig"                                                  	"Свинья"
 		"npc_classic_big_pig"                                                  	"Большая Свинья"
+
+		"npc_classic_frog"                                                 "Лягух"
+		"npc_boss_slardar"                                                 "МЕГА КУРИЦА!?"
+		"npc_boss_slark"													"СУПЕР КУРИЦА!?"
+		"npc_classic_woobleydog"                                                 "Волк"
+		"npc_classic_woobleydog2"                                                 "Волк"
+		"npc_boss_bear"														"Винни пух"
+		"npc_classic_skelet_ruin"                                                 "Отец скелет"
+		"npc_classic_microchel"                                                 "Сын скелет"
+		"npc_classic_Night_Stalker_boss"                                                 "Мать кровосос"
+
+
+
 		"npc_classic_sheep"                                                 "Овца"
 		"npc_classic_big_sheep"                                                 "Большая овца"
 		"npc_classic_half_zombie"                                           "Половина Зомби"		

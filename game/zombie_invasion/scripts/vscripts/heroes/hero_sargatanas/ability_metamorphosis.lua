@@ -44,7 +44,7 @@ function modifier_ability_metamorphosis:IsPurgable()
 end
 
 function modifier_ability_metamorphosis:OnCreated( kv )
-	self.bonus_resistance = self:GetAbility():GetSpecialValueFor( "bonus_resistance" ) * (self:GetParent():GetStrength()/15)
+	self.bonus_resistance = self:GetAbility():GetSpecialValueFor( "bonus_resistance" ) * (self:GetParent():GetStrength()/0.2)
 	self.max_resistance  = self:GetAbility():GetSpecialValueFor( "max_resistance" )
 	self.resistance = math.min(self.bonus_resistance,self.max_resistance)
 	print(self.resistance)

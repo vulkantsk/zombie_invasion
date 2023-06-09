@@ -67,7 +67,7 @@ function modifier_demon_desolate:OnTakeDamage( params )
 			ParticleManager:SetParticleControl(self.lifesteal_pfx, 0, params.attacker:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(self.lifesteal_pfx)
 		 
-			params.attacker:Heal(params.damage * self:GetAbility():GetSpecialValueFor("lifesteal_pct") * 0,05, params.attacker)
+			params.attacker:Heal(params.damage * self:GetAbility():GetSpecialValueFor("lifesteal_pct"), params.attacker)
 		end
 
 end
@@ -95,20 +95,6 @@ function modifier_demon_desolate_tear:OnCreated()
 	ParticleManager:SetParticleControl(self.rend_pfx, 2, Vector(0,0,0))
 end
 
-function modifier_demon_desolate_tear:OnTakeDamage( params )
-	if  params.attacker == self:GetParent() and not params.unit:IsBuilding() and not params.unit:IsOther() and params.unit:GetTeamNumber() ~= self:GetParent():GetTeamNumber() then
-		-- Spell lifesteal handler
- 
-
-			-- Heal and fire the particle			
-			self.lifesteal_pfx = ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, params.attacker)
-			ParticleManager:SetParticleControl(self.lifesteal_pfx, 0, params.attacker:GetAbsOrigin())
-			ParticleManager:ReleaseParticleIndex(self.lifesteal_pfx)
-		 
-			params.attacker:Heal(params.damage * self:GetAbility():GetSpecialValueFor("lifesteal_pct"), params.attacker)
-		end
-
-end
 
 function modifier_demon_desolate_tear:OnStackCountChanged()
 	if self.rend_pfx then
