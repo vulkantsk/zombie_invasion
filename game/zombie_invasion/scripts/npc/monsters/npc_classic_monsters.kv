@@ -6943,7 +6943,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"15000"
-		"StatusHealthRegen"			"100"
+		"StatusHealthRegen"			"10"
 		"StatusMana"				"1500"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -7071,19 +7071,19 @@
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
 		"Level"						"25"
-		"ModelScale" 				"2.6"
+		"ModelScale" 				"1.4"
 		"UseNeutralCreepBehavior"	"1"
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"venomancer_poison_sting"
-		"Ability2"					"venomancer_area_poison"
+		"Ability1"					"zombie_poison_sting_big"
+		"Ability2"					"respawn"
 		"Ability3"					"death_prophet_spirit_siphon"	
 		"Ability4"					"enchantress_untouchable"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"
+		"ArmorPhysical"				"19"
 		"MagicalResistance"         "48"
 
 		// Attack
@@ -7093,7 +7093,7 @@
 		"AttackDamageMin"			"8000"
 		"AttackDamageMax"			"10200"
 		"AttackRate"				"2.0"
-		"AttackAnimationPoint"		"0.4"
+		"AttackAnimationPoint"		"1.4"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"				"400"
 	     
@@ -7106,8 +7106,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"100"
-		"BountyGoldMin"				"200"	
-		"BountyGoldMax"				"250"
+		"BountyGoldMin"				"400"	
+		"BountyGoldMax"				"550"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -7117,8 +7117,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"15000"
-		"StatusHealthRegen"			"100"
+		"StatusHealth"				"20000"
+		"StatusHealthRegen"			"50"
 		"StatusMana"				"1500"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -7140,10 +7140,19 @@
 		"Creature"
 		{
  		
-						"EquippedItems"
+				"OffensiveAbilities"
 			{
-				"1"            	{"Item"        "item_desolator_2_custom"}
-				"1"            	{"Item"        "item_vampire_claw"}
+				"Ability3"
+				{
+					"Name"					"death_prophet_spirit_siphon"										
+				}
+			}
+				"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef"	"9334" }
+				"Wearable2"	{ "ItemDef"	"9335" }
+				"Wearable3"	{ "ItemDef"	"9336" }
+				"Wearable4"	{ "ItemDef"	"9338" }	
 			}
 			
 		}	
@@ -7158,14 +7167,14 @@
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
 		"Level"						"20"
-		"ModelScale" 				"1"
+		"ModelScale" 				"1.2"
 		"UseNeutralCreepBehavior"	"1"
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"venomancer_poison_sting"
+		"Ability1"					"zombie_poison_sting_big"
 		"Ability2"					"respawn"
-		"Ability3"					"death_prophet_spirit_siphon"	
+		"Ability3"					"ghoul_crazy_look"	
 		"Ability4"					""
 
 		// Armor
@@ -7226,22 +7235,20 @@
 		//----------------------------------------------------------------
 		"Creature"
 		{
- 
-			"EquippedItems"
+ 			
+ 						"EquippedItems"
 			{
+				"1"            	{"Item"        "item_desolator_2_custom"}
+				"1"            	{"Item"        "item_vampire_claw"}
 				"1"            	{"Item"        "item_moon_shard"}
 			}
-
-			"OffensiveAbilities"
-			{
-				"Ability3"
-				{
-					"Name"					"death_prophet_spirit_siphon"										
-				}
-			}
+			
 				"AttachWearables"
 			{
-				"Wearable1"	{ "ItemDef"	"8711" }	
+				"Wearable1"	{ "ItemDef"	"13084" }	
+				"Wearable2"	{ "ItemDef"	"13106" }	
+				"Wearable3"	{ "ItemDef"	"13107" }	
+				"Wearable4"	{ "ItemDef"	"13108" }	
 			}
 		}
 	}
@@ -7253,7 +7260,7 @@
 		"Model"						"models/items/venomancer/ward/chomper_ward/chomper_ward.vmdl"	// Model.
 		"SoundSet"					"Hero_VenomancerWard"					// Name of sound set.
 		"Level"						"1"
-		"ModelScale" 				"0.8"
+		"ModelScale" 				"1.2"
 		"SelectionGroup"			"Venomancer_Wards"
 		"UnitLabel"			"plaguewards"
 		"wearable"				"684"
@@ -7262,8 +7269,8 @@
 		//----------------------------------------------------------------
 		"Ability1"					"creep_piercing"			// Ability 1.
 		"Ability2"					"venomancer_area_poison"			// Ability 2.
-		"Ability3"					""			// Ability 3.
-		"Ability4"					""			// Ability 4.
+		"Ability3"					"ghoul_crazy_look"			// Ability 3.
+		"Ability4"					"zombie_poison_sting_big"			// Ability 4.
 		"Ability5"					""			// Ability 5.
 
 		// Armor
