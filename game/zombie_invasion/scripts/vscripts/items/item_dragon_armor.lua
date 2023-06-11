@@ -9,7 +9,7 @@ item_dragon_armor = class({
 
 
 modifier_item_dragon_armor_return = class({
-    isHidden = function() return true end,
+    isHidden = function() return false end,
     IsPurgable = function() return false end,
     IsBuff = function() return true end,
     DeclareFunctions = function() return {
@@ -27,13 +27,12 @@ function modifier_item_dragon_armor_return:OnRefresh()
 end
 
 function modifier_item_dragon_armor_return:OnAttackLanded(params)
-    local victim = params.unit
-    if victim == self:GetParent() and victim:PassivesDisabled() == false and victim:IsRealHero() and not params.attacker:IsOther() then
-        local str_damage = victim:GetStrength() / 100 * self.str_to_damage
-        local damage = self.return_damage + str_to_damage
-        if params.attacker:IsBuilding() then
-            damage = damage / 2
-        end
+ 
+    local victim = params.target
+    if victim == self:GetParent() then
+ 
+        local str_damage = self:GetParent():GetStrength() / 100 * self.str_to_damage
+        local damage = self.return_damage + str_damage
         ApplyDamage({
             victim = params.attacker,
             attacker = victim,
