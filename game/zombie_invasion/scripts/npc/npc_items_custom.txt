@@ -11162,6 +11162,7 @@
 			"return_damage_str"		"100"
 			"aura_radius"			"1200"
 			"bonus_strength"		"150"
+			"bonus_health"			"322"
 			"bonus_armor"			"30"
 			"base_regen"			"2"
 		}
