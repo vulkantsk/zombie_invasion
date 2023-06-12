@@ -11167,6 +11167,42 @@
 			"base_regen"			"2"
 		}
 	}
+	"item_dragon_helmet"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_helmet.lua"
+		"AbilityTextureName"			"dragon_helmet"
+		
+ 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
+		"FightRecapLevel"				"1"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.2"
+
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"100"
+
+		"AbilityDamage"					"700"
+
+		"AbilityValues"
+		{
+			
+				"start_radius"			"150"
+				"end_radius"			"250"	
+				"range"					"750"	
+				"speed"					"1050"		
+				"reduction"				"-45"		
+				"duration"				"11"
+				"bonus_agility"			"40"			
+				"bonus_intellect"		"90"
+				"spell_amp"				"55"
+		}
+	}
 
 		"item_recipe_kefteme"
 	{
