@@ -1,44 +1,48 @@
 LinkLuaModifier("modifier_item_dragon_helmet", "items/item_dragon_helmet", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_item_dragon_helmet_stats", "items/item_dragon_helmet", LUA_MODIFIER_MOTION_NONE)
 
 item_dragon_helmet = class({
+    GetIntrinsicModifierName = function() return "modifier_item_dragon_helmet_stats" end
+})
+
+modifier_item_dragon_helmet_stats = class({
     isHidden = function() return false end,
     IsPurgable = function() return false end,
     IsBuff = function() return true end,
-
+    IsPurgable = function() return false end,
+    RemoveOnDeath = function() return false end,
+    GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end,
     DeclareFunctions = function() return {
         MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
 		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-
     } end
 })
 
-function item_dragon_helmet:IsHidden()		return true end
-function item_dragon_helmet:IsPurgable()		return false end
-function item_dragon_helmet:RemoveOnDeath()	return false end
-function item_dragon_helmet:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
+function modifier_item_dragon_helmet_stats:GetTexture()
+	return "item_dragon_helmet"
+end
 
-
-function item_dragon_helmet:OnCreated()
+function modifier_item_dragon_helmet_stats:OnCreated()
 	self.bonus_agility = self:GetAbility():GetSpecialValueFor("bonus_agility")
 	self.bonus_intellect = self:GetAbility():GetSpecialValueFor("bonus_intellect")
 	self.spell_amp = self:GetAbility():GetSpecialValueFor("spell_amp")	
 end
 
-function item_dragon_helmet:OnRefresh()
+function modifier_item_dragon_helmet_stats:OnRefresh()
     self:OnCreated()
 
 end
 
-function item_dragon_helmet:GetModifierBonusStats_Agility()
+function modifier_item_dragon_helmet_stats:GetModifierBonusStats_Agility()
 	return self.bonus_agility 
 end
 
-function item_dragon_helmet:GetModifierBonusStats_Intellect()
+function modifier_item_dragon_helmet_stats:GetModifierBonusStats_Intellect()
 	return self.bonus_intellect
 end
 
-function item_dragon_helmet:GetModifierSpellAmplify_Percentage() 
+function modifier_item_dragon_helmet_stats:GetModifierSpellAmplify_Percentage() 
     return self.spell_amp
 end
 
@@ -118,11 +122,15 @@ function modifier_item_dragon_helmet:OnCreated( kv )
 end
 
 function modifier_item_dragon_helmet:OnRefresh( kv )
-	self.reduction = self:GetAbility():GetSpecialValueFor( "reduction" )
+	self.reduction = self:GetAbility():GetSpecialValueFor( "reduction" )	
+end
+
+function modifier_item_dragon_helmet:DeclareFunctions()
+	return {
+		MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE,
+	}
 end
 
 function modifier_item_dragon_helmet:GetModifierDamageOutgoing_Percentage()
 	return self.reduction
 end
-
-
