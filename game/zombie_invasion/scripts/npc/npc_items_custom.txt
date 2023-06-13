@@ -11203,6 +11203,30 @@
 				"spell_amp"				"55"
 		}
 	}
+	"item_dragon_sword"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_sword"
+		"AbilityTextureName"			"dragon_sword"
+
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+
+
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+		
+
+		"AbilityValues"
+		{
+			
+				"crit_chance_sword"				"40"
+				"crit_cg_sword"				"300"
+				"bonus_dmg_sword"			"400"
+				"dragon_sword_disarmor"		"2"
+				"disarmor"				"1"
+		}
+	}
 
 		"item_recipe_kefteme"
 	{
