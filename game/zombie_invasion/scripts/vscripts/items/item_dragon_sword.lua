@@ -8,7 +8,7 @@ item_dragon_sword = class({
 
 function item_dragon_sword:OnSpellStart() 
 
-   self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_demon_absolute_form", {duration = 6 } )
+   self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_item_dragon_sword_disarmor", {duration = 6 } )
    
 end
 
@@ -51,7 +51,7 @@ function modifier_item_dragon_sword:DeclareFunctions()
 	return funcs
 end
 function modifier_item_dragon_sword:GetModifierPreAttack_CriticalStrike( params )
-	if IsServer() and (not self:GetParent():PassivesDisabled()) then
+	
 		if params.target:GetTeamNumber()==self:GetParent():GetTeamNumber() then
 			return
 		end
@@ -61,7 +61,7 @@ function modifier_item_dragon_sword:GetModifierPreAttack_CriticalStrike( params 
 			self.record = params.record
 			return self.crit_cg_sword
 		end
-	end
+	
 end
 function modifier_item_dragon_sword:GetModifierProcAttack_Feedback( params )
 	if IsServer() then
@@ -77,7 +77,7 @@ end
 
 modifier_item_dragon_sword_disarmor = modifier_item_dragon_sword_disarmor or class({})
 
-function modifier_item_dragon_sword_disarmor:IsHidden() return true end
+function modifier_item_dragon_sword_disarmor:IsHidden() return false end
 function modifier_item_dragon_sword_disarmor:IsDebuff() return false end
 function modifier_item_dragon_sword_disarmor:IsPurgable() return false end
 function modifier_item_dragon_sword_disarmor:GetAttributes() return MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
@@ -108,7 +108,7 @@ modifier_item_dragon_sword_disarmor_tear = class({})
 function modifier_item_dragon_sword_disarmor_tear:IsHidden() return false end
 function modifier_item_dragon_sword_disarmor_tear:IsDebuff() return true end
 function modifier_item_dragon_sword_disarmor_tear:IsPurgable() return false end
-function modifier_item_dragon_sword_disarmor_tear:GetTexture() return "innates/innate_rend" end
+function modifier_item_dragon_sword_disarmor_tear:GetTexture() return "dragon_helmet" end
 
 function modifier_item_dragon_sword_disarmor_tear:DeclareFunctions()
 	return {

@@ -7,7 +7,7 @@ item_dragon_armor = class({
 
 
 modifier_item_dragon_armor_return = class({
-    isHidden = function() return false end,
+    isHidden = function() return true end,
     IsPurgable = function() return false end,
     IsBuff = function() return true end,
     DeclareFunctions = function() return {
@@ -49,6 +49,11 @@ function modifier_item_dragon_armor_return:OnRefresh()
     self:OnCreated()
 
 end
+
+function modifier_item_dragon_armor_return:GetTexture()
+	return "item_dragon_armor"
+end
+
 
 function modifier_item_dragon_armor_return:OnAttackLanded(params)
  
@@ -97,7 +102,6 @@ function modifier_item_dragon_armor_return:GetModifierPhysicalArmorBonus()
     return self.bonus_armor
 end
 
-
 function modifier_item_dragon_armor_return:IsAura() return true end
 function modifier_item_dragon_armor_return:GetAuraRadius() return self.aura_radius end
 function modifier_item_dragon_armor_return:GetAuraSearchFlags() return DOTA_UNIT_TARGET_FLAG_NONE end
@@ -132,6 +136,16 @@ function modifier_dragon_armor_aura_buff:DeclareFunctions()
 
 	return decFuncs
 end
+
+function modifier_dragon_armor_aura_buff:GetTexture()
+	return "item_dragon_armor"
+end
+
+
+function modifier_dragon_armor_aura_buff:IsHidden()
+	return true
+end
+
 
 function modifier_dragon_armor_aura_buff:GetModifierBonusStats_Strength()
 	return self.aura_str

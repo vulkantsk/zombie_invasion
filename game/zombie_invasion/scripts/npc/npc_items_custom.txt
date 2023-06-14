@@ -1899,6 +1899,7 @@
 			}	
         }
 	}
+
 	"item_law_frog"
 	{
 		// General
@@ -1920,6 +1921,132 @@
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"0"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_damage"			"0"
+ 
+			}	
+        }
+	}
+	"item_alduin_soul"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"quest_stranger"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"0"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_damage"			"0"
+ 
+			}	
+        }
+	}
+	"item_alduin_soul_final"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"alduin_soul_final"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"			"0"
+ 
+			}	
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_damage"			"0"
+ 
+			}	
+        }
+	}
+	"item_dragon_scale_quest"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"dragon_scale_quest"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "1000" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
 		"ItemKillable"					"1" 
 		"ItemInitialCharges"			"1"	
 		"ItemStackable" 				"1"
@@ -2374,43 +2501,43 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"movespeed_bonus"			"70"
+				"movespeed_bonus"			"140"
  
 			}	
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"stats_strength_bonus"			"20"
+				"stats_strength_bonus"			"50"
  
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"stats_agility_bonus"			"20"
+				"stats_agility_bonus"			"50"
  
 			}	
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"stats_intellect_bonus"			"20"
+				"stats_intellect_bonus"			"50"
  
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attackspeed_bonus"			"50"
+				"attackspeed_bonus"			"120"
  
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"baseattack_bonusdamage"			"60"
+				"baseattack_bonusdamage"			"260"
  
 			}	
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"evasion"			"10"
+				"evasion"			"24"
  
 			}					
 		}
@@ -11144,24 +11271,21 @@
 
 		///Item info
 		"ItemShopTags"					"damage;str;hard_to_tag"
-		"ItemQuality"					"epic"
+		"ItemQuality"					"artifact"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ShouldBeSuggested"				"1"
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
+		"ItemQuality"					"artifact"
 		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"					"0"
-		"ItemIsNeutralDrop" 						"1"
+		"ItemPermanent"					"0"
 
 		"AbilityValues"
 		{
-			"return_damage"			"100"
-			"return_damage_str"		"100"
+			"return_damage"			"24"
+			"return_damage_str"		"20"
 			"aura_radius"			"1200"
-			"bonus_strength"		"150"
+			"bonus_strength"		"80"
 			"bonus_health"			"322"
 			"bonus_armor"			"30"
 			"base_regen"			"2"
@@ -11212,8 +11336,13 @@
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 
 
+		"AbilityManaCost"				"125"
+		"ItemCost"						"0"
+		"ItemQuality"					"artifact"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-
+		"ShouldBeSuggested"				"1"
+		"AbilityCooldown"				"30"
 
 		
 
@@ -11227,6 +11356,105 @@
 				"disarmor"				"1"
 		}
 	}
+	"item_dragon_hand"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_hand"
+		"AbilityTextureName"			"dragon_hand"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+		///Item info
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemQuality"					"artifact"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+
+		"AbilityValues"
+		{
+			"bonus_agility"			"70"
+			"bonus_attack_speed"		"220"
+		}
+	}
+	"item_dragon_boots"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_boots"
+		"AbilityTextureName"			"dragon_boots"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		///Item info
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemQuality"					"artifact"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+
+		"AbilityValues"
+		{
+			"bonus_agility"			"20"
+			"bonus_strength"		"20"
+			"bonus_intellect"			"20"
+			"bonus_move_speed"		"40"
+
+
+		}
+	}
+	"item_dragon_shield"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_shield"
+		"AbilityTextureName"			"dragon_shield"
+
+		///Item info
+		"ItemQuality"					"artifact"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"	
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.AphoticShield.Cast"
+		"ItemKillable"					"0"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.4"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0 10.0 8.0 6.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100 105 110 115"
+
+
+
+		"AbilityValues"
+		{
+			"bonus_resistance"			"30"
+			"bonus_armor"		"20"
+			"duration"				"15.0"
+			"damage_absorb"			"555"
+			"radius"				"675"
+			
+		}
+	}
+
+
 
 		"item_recipe_kefteme"
 	{

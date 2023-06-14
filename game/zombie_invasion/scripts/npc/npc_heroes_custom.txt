@@ -1898,7 +1898,7 @@
 		"AttackDamageMax"		"28"
 		"AttackRate"		"1.500000"
 		"AttackRange"		"170"
-		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"18"
 		"AttributeStrengthGain"		"1.400000"
 		"AttributeBaseAgility"		"14"

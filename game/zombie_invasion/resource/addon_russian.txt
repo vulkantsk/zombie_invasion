@@ -990,6 +990,38 @@
 		"DOTA_Tooltip_ability_item_imba_vladmir_Lore"								"Жуткая маска, проклятая злобой павшего вампира."
 		"DOTA_Tooltip_Ability_item_imba_vladmir_stat_bonus"					"+$all"
 
+
+		"DOTA_Tooltip_Ability_item_dragon_armor"					"Dragon armor"
+		"DOTA_Tooltip_ability_item_dragon_armor_Description"							"<h1>Пассивная: Dragon armor</h1>Отражает урон  %return_damage% + %return_damage_str%%% от силы героя <br>"
+		"DOTA_Tooltip_ability_item_dragon_armor_Lore"								"Проклятая броня Дракона."
+		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_strength"					"+$all"
+		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_armor"					"ДОП.БРОНЯ"
+		"DOTA_Tooltip_Ability_item_dragon_armor_base_regen"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_Ability_modifier_item_dragon_armor_return"				"ВЫ ОТРАЗИМЫ"
+		"DOTA_Tooltip_Ability_modifier_item_dragon_armor_return_Description"	"ВЫ ОТРАЖАЕТЕ УРОН"
+		"DOTA_Tooltip_Ability_modifier_dragon_armor_aura_buff"				"БАФФ"
+		"DOTA_Tooltip_Ability_modifier_dragon_armor_aura_buff_Description"				"БАФФ"
+
+		"DOTA_Tooltip_Ability_item_dragon_helmet"			"Dragon helm"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_Description"					"<h1>Активная: Dragon helm</h1> Выпускает огненную волну, которая снижает урон на %reduction%% и наносит урон <br>"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_range"				"РАДИУС:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_reduction"					"%УМЕНЬШЕНИЕ УРОНА:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_bonus_intellecte"				"ДОП.ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_spell_amp"					"%ДОП.МАГ.УРОН:"
+
+		"DOTA_Tooltip_Ability_item_dragon_sword"			"Dragon sword"
+		"DOTA_Tooltip_Ability_item_dragon_sword_Description"					"<h1>Активная: Dragon sword</h1> Ваше оружие заостряется и пробивает броню противника уменьшая её на %disarmor%% <h1>Пассивная: Dragon sword</h1>Даёт вам  %bonus_dmg_sword% урона, а так-же %crit_chance_sword%%% шанс нанести урон в %crit_cg_sword%%%"
+		"DOTA_Tooltip_Ability_item_dragon_sword_range"				"РАДИУС:"
+		"DOTA_Tooltip_Ability_item_dragon_sword_reduction"					"%УМЕНЬШЕНИЕ УРОНА:"
+		"DOTA_Tooltip_Ability_item_dragon_sword_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_intellecte"				"ДОП.ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_dragon_helmet_spell_amp"					"%ДОП.МАГ.УРОН:"
+
+
+
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura"				"Vladmir's Aura"
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
 

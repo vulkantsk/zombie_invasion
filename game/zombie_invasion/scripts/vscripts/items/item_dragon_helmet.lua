@@ -6,7 +6,7 @@ item_dragon_helmet = class({
 })
 
 modifier_item_dragon_helmet_stats = class({
-    isHidden = function() return false end,
+    isHidden = function() return true end,
     IsPurgable = function() return false end,
     IsBuff = function() return true end,
     IsPurgable = function() return false end,
@@ -102,7 +102,7 @@ end
 modifier_item_dragon_helmet = {}
 
 function modifier_item_dragon_helmet:IsHidden()
-	return false
+	return true
 end
 
 function modifier_item_dragon_helmet:IsDebuff()
