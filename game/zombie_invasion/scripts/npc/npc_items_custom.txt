@@ -1989,7 +1989,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"ScriptFile"					"items/item_alduin_soul_final.lua"
 		"AbilityTextureName"			"alduin_soul_final"
 
 		// Behavior
@@ -2006,24 +2006,17 @@
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"0" 
 		"ItemKillable"					"1" 
-		"ItemInitialCharges"			"1"	
-		"ItemStackable" 				"1"
 		"ItemPermanent" 				"0"	
 		"SideShop" 						"0"
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"			"0"
- 
-			}	
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"hit_damage"			"0"
- 
-			}	
+ 			"all_lifesteal"        "200"
+ 			"trigger_chance"         "50"
+ 			"damage_pct"              "100"
+ 			"chance_to_stack"         "50"
+ 			"max_charge"              "20"
+ 			"hp_damage"              "1"
+ 			"radius"              "250"
         }
 	}
 	"item_dragon_scale_quest"

@@ -1,9 +1,10 @@
+LinkLuaModifier('modifier_ability_counter_helix', 'heroes/hero_axe/counter_helix/counter_helix', LUA_MODIFIER_MOTION_NONE)
 ability_counter_helix = class({})
 
 function ability_counter_helix:GetIntrinsicModifierName()
     return 'modifier_ability_counter_helix'
 end 
-LinkLuaModifier('modifier_ability_counter_helix', 'heroes/hero_axe/counter_helix/counter_helix', LUA_MODIFIER_MOTION_NONE)
+ 
 
 modifier_ability_counter_helix = class({
     IsHidden                = function(self) return true end,
