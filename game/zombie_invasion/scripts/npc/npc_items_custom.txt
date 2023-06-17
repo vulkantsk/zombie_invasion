@@ -2016,7 +2016,7 @@
  			"chance_to_stack"         "50"
  			"max_charge"              "20"
  			"hp_damage"              "1"
- 			"radius"              "250"
+ 			"radius"              "950"
         }
 	}
 	"item_dragon_scale_quest"
@@ -11263,15 +11263,13 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 
 		///Item info
-		"ItemShopTags"					"damage;str;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemQuality"					"artifact"
 		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
+		"SideShop" 						"0"
 		"ItemKillable"					"0"
-		"ItemPermanent"					"0"
 
 		"AbilityValues"
 		{
@@ -11297,6 +11295,7 @@
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SideShop" 						"0"
 
 		"AbilityCastRange"				"600"
 		"AbilityCastPoint"				"0.2"
@@ -11330,6 +11329,7 @@
 
 
 		"AbilityManaCost"				"125"
+		"SideShop" 						"0"
 		"ItemCost"						"0"
 		"ItemQuality"					"artifact"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
@@ -11363,6 +11363,7 @@
 		"ItemQuality"					"epic"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemQuality"					"artifact"
+		"SideShop" 						"0"
 		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -11388,6 +11389,7 @@
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemQuality"					"artifact"
 		"ItemSellable"					"0"
+		"SideShop" 						"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"					"0"
@@ -11419,6 +11421,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Abaddon.AphoticShield.Cast"
+		"SideShop" 						"0"
 		"ItemKillable"					"0"
 
 		// Casting

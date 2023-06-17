@@ -7202,18 +7202,18 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"90"
-		"BountyGoldMin"				"150"	
-		"BountyGoldMax"				"170"
+		"BountyGoldMin"				"425"	
+		"BountyGoldMax"				"625"
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"375"	
+		"MovementSpeed"				"475"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"2550"
+		"StatusHealth"				"5550"
 		"StatusHealthRegen"			"20"
 		"StatusMana"				"1500"	
 		"StatusManaRegen"			"0.0"		 
@@ -7249,6 +7249,283 @@
 				"Wearable2"	{ "ItemDef"	"13106" }	
 				"Wearable3"	{ "ItemDef"	"13107" }	
 				"Wearable4"	{ "ItemDef"	"13108" }	
+			}
+		}
+	}
+	"npc_classic_dragon_small"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/creeps/neutral_creeps/n_creep_dragonspawn_b/n_creep_dragonspawn_b.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"20"
+		"ModelScale" 				"1.2"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"huskar_burning_spear"
+		"Ability2"					"respawn"
+		"Ability3"					"ghoul_crazy_look"	
+		"Ability4"					"huskar_berserkers_blood"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"         "12"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"3780"
+		"AttackDamageMax"			"3400"
+		"AttackRate"				"1.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"350"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"90"
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"12550"
+		"StatusHealthRegen"			"20"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 			
+ 						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_desolator_2_custom"}
+				"1"            	{"Item"        "item_vampire_claw"}
+			}
+			"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"huskar_burning_spear"										
+				}
+			}
+		}
+	}
+	"npc_classic_dragon_big"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"20"
+		"ModelScale" 				"1.2"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"huskar_burning_spear"
+		"Ability2"					"respawn"
+		"Ability3"					"ghoul_crazy_look"	
+		"Ability4"					"huskar_berserkers_blood"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"10"
+		"MagicalResistance"         "12"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"4720"
+		"AttackDamageMax"			"5200"
+		"AttackRate"				"1.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"350"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"90"
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"12550"
+		"StatusHealthRegen"			"20"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 			
+ 						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_moon_shard"}
+			}
+			"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"huskar_burning_spear"										
+				}
+			}
+		}
+	}
+	"npc_classic_dragon"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"20"
+		"ModelScale" 				"1.2"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"huskar_burning_spear"
+		"Ability2"					"respawn"
+		"Ability3"					"ghoul_crazy_look"	
+		"Ability4"					"huskar_berserkers_blood"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"14"
+		"MagicalResistance"         "12"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"9000"
+		"AttackDamageMax"			"12000"
+		"AttackRate"				"1.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"350"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"90"
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"12550"
+		"StatusHealthRegen"			"20"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+ 			
+ 						"EquippedItems"
+			{
+				"1"            	{"Item"        "item_moon_shard"}
+			}
+			"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"huskar_burning_spear"										
+				}
 			}
 		}
 	}
@@ -7327,5 +7604,187 @@
 
 		//Inventory
 		"HasInventory"				"0"
+	}
+	"npc_classic_phoenix_boss"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/phoenix/phoenix_bird.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"25"
+		"ModelScale" 				"2.2"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_liquid_fire"
+		"Ability2"					"pudge_meat_hook"
+		"Ability3"					""	
+		"Ability4"					""
+		"Ability5"					""
+		"Ability6"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"30"
+		"MagicalResistance"         "18"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"3400"
+		"AttackDamageMax"			"2200"
+		"AttackRate"				"0.9"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"400"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"100"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"10000"
+		"BountyGoldMin"				"1900"	
+		"BountyGoldMax"				"2100"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"				"525"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"15000"
+		"StatusHealthRegen"			"10"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+				"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"ability_liquid_fire"										
+				}
+				
+			}
+			
+		}	
+	}
+	"npc_classic_alduin_boss"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/dragon_knight_persona/debut/dk_persona_debut_dragon.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"ConsideredHero"			"1"
+		"Level"						"25"
+		"ModelScale" 				"2.2"
+		"UseNeutralCreepBehavior"	"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""	
+		"Ability4"					""
+		"Ability5"					""
+		"Ability6"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"30"
+		"MagicalResistance"         "18"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"3400"
+		"AttackDamageMax"			"2200"
+		"AttackRate"				"0.9"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"400"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"100"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"10000"
+		"BountyGoldMin"				"1900"	
+		"BountyGoldMax"				"2100"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"				"525"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"15000"
+		"StatusHealthRegen"			"10"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+				"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"Name"					"ability_liquid_fire"										
+				}
+				
+			}
+			
+		}	
 	}
 }
