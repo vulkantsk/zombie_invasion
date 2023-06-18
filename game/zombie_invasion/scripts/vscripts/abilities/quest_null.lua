@@ -22,7 +22,7 @@ function modifier_quest_null:OnIntervalThink()
 	if self:GetParent():HasAbility("quest_stranger_1") and not self.spawn_boss then 
         print('32')
         Timers:CreateTimer(8,function()
-          InvasionMode:SpawnBoss("npc_end_techies",1)
+          InvasionMode:SpawnBoss("npc_classic_alduin_boss",1)
 	    end) 
         self.spawn_boss = true 
     end 
