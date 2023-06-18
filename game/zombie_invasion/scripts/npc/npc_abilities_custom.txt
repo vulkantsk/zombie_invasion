@@ -54,6 +54,16 @@
 	}
 }
 
+"quest_null"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/quest_null"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"undying_tombstone_zombie_deathstrike"
+ 
+}
+
+
 "fort_zombie"
 {
 	// General

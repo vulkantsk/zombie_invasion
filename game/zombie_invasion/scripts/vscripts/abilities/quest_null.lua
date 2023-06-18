@@ -12,13 +12,20 @@ modifier_quest_null = class({
 })
 
 
+function modifier_quest_null:OnCreated()
+    self.spawn_boss = false
+    self:StartIntervalThink(1)
+end
 
+function modifier_quest_null:OnIntervalThink()
 
-function modifier_quest_null:OnIntervalThink(1)
-
-	if self:GetParent():HasAbility("quest_stranger_6") then Timers:CreateTimer(8,function()
-		InvasionMode:spawnalduin()
-	end) end 
+	if self:GetParent():HasAbility("quest_stranger_1") and not self.spawn_boss then 
+        print('32')
+        Timers:CreateTimer(8,function()
+          InvasionMode:SpawnBoss("npc_end_techies",1)
+	    end) 
+        self.spawn_boss = true 
+    end 
 
 
 
