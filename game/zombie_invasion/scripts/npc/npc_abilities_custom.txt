@@ -1221,7 +1221,7 @@
             {
                 "ScriptFile"    "abilities/quest/quest_template"
                 "Function"        "OnQuestCreated"
-                "quest_item"    "item_dragon_scale"
+                "quest_item"    "item_dragon_scale_quest"
                 "particle"        "1"
                 "next_quest"    "quest_stranger_5"
                 "reusable"        "0"

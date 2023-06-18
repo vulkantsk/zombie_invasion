@@ -182,6 +182,7 @@
 
 
 		// ******************** moobs ********************	
+		"npc_stranger_jitel"												"Незнакомец"
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
 		"npc_boss_chicken"                                                  "Петух???"
 		"npc_jitel"                                                         "Кункевич"
@@ -850,16 +851,7 @@
 		"DOTA_Tooltip_ability_item_assault_2_Description"							"<h1>Пассивная: Assault Aura</h1> Увеличивает броню союзных построек и существ на %aura_positive_armor%, а их скорость атаки — на %aura_attack_speed%. Снижает броню врагов на %aura_negative_armor%.<br><br>Радиус: %aura_radius%"
 		"DOTA_Tooltip_ability_item_assault_2_Lore"								"Этот жуткий доспех, выкованный в кузнях нижних пределов, способен укрепить и ускорить целую армию."
 		"DOTA_Tooltip_ability_item_assault_2_bonus_attack_speed"					"+$attack"
-		"DOTA_Tooltip_ability_item_assault_2_bonus_armor"							"+$armor"
-
-		"DOTA_Tooltip_Ability_item_snus"                                            "Бабкин снюс"
-        "DOTA_Tooltip_Ability_item_snus_Description"                                "Вкидываешь пак и кайфуешь."       
-        "DOTA_Tooltip_Ability_item_snus_Lore"                                "Самый крепкий снюс, вашим губкам пизда."  
-//        "DOTA_Tooltip_modifier_item_snus"                               "Отупение"
-//		"DOTA_Tooltip_modifier_item_snus_Description"                   "Кидай кидай эту свою хуйню, может умнее станешь."
-//      "DOTA_Tooltip_modifier_item_snus_god"                               "Вкид"
-//		"DOTA_Tooltip_modifier_item_snus_god_Description"                   "Вкинулся и збс."		
-
+		"DOTA_Tooltip_ability_item_assault_2_bonus_armor"							"+$armor"		
  
 		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_enemy"				"Assault Cuirass"
 		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_enemy_Description"	"Броня снижена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
@@ -883,7 +875,6 @@
 		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_Ability_item_maelstrom_4_bonus_attack_speed"					"+$attack"	
 
-
 		"DOTA_Tooltip_Ability_item_magic_cape"				"Magic Cape"
 		"DOTA_Tooltip_Ability_item_magic_cape_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
 		"DOTA_Tooltip_Ability_item_magic_cape_Lore"								"Дешевая магическая накидка. Куплена в городе магов за две лягушки."
@@ -891,7 +882,6 @@
 		"DOTA_Tooltip_Ability_item_magic_cape_bonus_str"					"+$str"	 
 		"DOTA_Tooltip_Ability_item_magic_cape_bonus_agil"					"+$agi"
 		"DOTA_Tooltip_Ability_item_magic_cape_mana_regen"					"+$mana_regen"
- 
 
 		"DOTA_Tooltip_Ability_item_magic_cape_2"				"Magic Cape 2"
 		"DOTA_Tooltip_Ability_item_magic_cape_2_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
@@ -901,7 +891,6 @@
 		"DOTA_Tooltip_Ability_item_magic_cape_2_bonus_agil"					"+$agi" 
 		"DOTA_Tooltip_Ability_item_magic_cape_2_mana_regen"					"+$mana_regen"
  
-
 		"DOTA_Tooltip_Ability_item_magic_cape_3"				"Magic Cape of the Cult"
 		"DOTA_Tooltip_Ability_item_magic_cape_3_Description"						"<h1>Пассивная: Magical Oppression</h1> У всех врагов в радиусе %debuff_radius% снижается сопротивление магии на %aura_resist%%%."
 		"DOTA_Tooltip_Ability_item_magic_cape_3_Lore"								"Накидка одного из членов проклятого культа..."
@@ -909,7 +898,6 @@
 		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_str"					"+$str"	 
 		"DOTA_Tooltip_Ability_item_magic_cape_3_bonus_agil"					"+$agi"   
 		"DOTA_Tooltip_Ability_item_magic_cape_3_mana_regen"					"+$mana_regen"
- 
 
         "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier"				"Oppression"
         "DOTA_Tooltip_modifier_magic_cape_debuff_aura_modifier_Description"				"Сопротивление магии снижено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
@@ -964,12 +952,10 @@
 		
 		"DOTA_Tooltip_modifier_veil_active_debuff_3"				"Magic Weakness"
 		"DOTA_Tooltip_modifier_veil_active_debuff_3_Description"	"Магический урон увеличен."
-
  
 		"DOTA_Tooltip_Ability_item_voodo_mask"				"Voodoo Mask"		
 		"DOTA_Tooltip_ability_item_voodo_mask_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
 		"DOTA_Tooltip_ability_item_voodo_mask_Lore"						"Маска, отточенная для поглощения магических уз между колдуном и его врагом."
-
 
 		"DOTA_Tooltip_Ability_item_voodo_mask_2"				"Voodoo Mask 2"		
 		"DOTA_Tooltip_ability_item_voodo_mask_2_Description"						"<h1>Пассивная: Spell Lifesteal</h1>Даёт магический вампиризм, который восстанавливает здоровье за наносимый заклинаниями урон. <br><br>Восстанавливает здоровье в размере %all_lifesteal%%% от урона."
@@ -990,17 +976,31 @@
 		"DOTA_Tooltip_ability_item_imba_vladmir_Lore"								"Жуткая маска, проклятая злобой павшего вампира."
 		"DOTA_Tooltip_Ability_item_imba_vladmir_stat_bonus"					"+$all"
 
-
 		"DOTA_Tooltip_Ability_item_dragon_armor"					"Dragon armor"
 		"DOTA_Tooltip_ability_item_dragon_armor_Description"							"<h1>Пассивная: Dragon armor</h1>Отражает урон  %return_damage% + %return_damage_str%%% от силы героя <br>"
 		"DOTA_Tooltip_ability_item_dragon_armor_Lore"								"Проклятая броня Дракона."
 		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_strength"					"+$all"
 		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_armor"					"ДОП.БРОНЯ"
 		"DOTA_Tooltip_Ability_item_dragon_armor_base_regen"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
-		"DOTA_Tooltip_Ability_modifier_item_dragon_armor_return"				"ВЫ ОТРАЗИМЫ"
-		"DOTA_Tooltip_Ability_modifier_item_dragon_armor_return_Description"	"ВЫ ОТРАЖАЕТЕ УРОН"
-		"DOTA_Tooltip_Ability_modifier_dragon_armor_aura_buff"				"БАФФ"
-		"DOTA_Tooltip_Ability_modifier_dragon_armor_aura_buff_Description"				"БАФФ"
+
+		"DOTA_Tooltip_Ability_item_dragon_hand"					"Dragon hands"
+		"DOTA_Tooltip_ability_item_dragon_hand_Lore"								"Проклятые латы Дракона."
+		"DOTA_Tooltip_Ability_item_dragon_hand_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_dragon_hand_bonus_attack_speed"					"ДОП.СКОРОСТЬ АТАКИ:"
+
+		"DOTA_Tooltip_Ability_item_dragon_boots"					"Dragon boots"
+		"DOTA_Tooltip_ability_item_dragon_boots_Lore"								"Проклятые ботинк дракона."
+		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_agility"					"+$all"
+		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_move_speed"					"БОНУСНАЯ СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+
+		"DOTA_Tooltip_Ability_item_dragon_shield"					"Dragon shield"
+		"DOTA_Tooltip_Ability_item_dragon_shield_Description"					"<h1>Активная: Dragon shield</h1> Навешивает щит, который впитывает урон на 15 секунд и наносит урон %damage_absorb% <br>"
+		"DOTA_Tooltip_Ability_item_dragon_shield_Lore"								"Проклятый щит."
+		"DOTA_Tooltip_Ability_item_dragon_shield_bonus_resistance"					"ДОП. МАГ. СОПРОТИВЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_item_dragon_shield_bonus_armor"					"ДОП.БРОНЯ:"
+		"DOTA_Tooltip_Ability_item_dragon_shield_duration"					"ДЛИТЕЛЬНОСТЬ ЩИТА:"
+		"DOTA_Tooltip_Ability_item_dragon_shield_damage_absorb"					"УРОН ОТ ЩИТА:"
+		"DOTA_Tooltip_Ability_item_dragon_shield_radius"					"РАДИУС:"	
 
 		"DOTA_Tooltip_Ability_item_dragon_helmet"			"Dragon helm"
 		"DOTA_Tooltip_Ability_item_dragon_helmet_Description"					"<h1>Активная: Dragon helm</h1> Выпускает огненную волну, которая снижает урон на %reduction%% и наносит урон <br>"
@@ -1019,8 +1019,6 @@
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_intellecte"				"ДОП.ИНТЕЛЛЕКТ:"
 		"DOTA_Tooltip_Ability_item_dragon_helmet_spell_amp"					"%ДОП.МАГ.УРОН:"
-
-
 
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura"				"Vladmir's Aura"
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
@@ -1378,7 +1376,48 @@
 		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"КОЛИЧЕСТВО:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"ЗОЛОТА:"
- 	
+
+		"DOTA_Tooltip_Ability_quest_stranger_1"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"Стоять ****, куда пошёл, ты должен мне помочь. Я предрек пришествия Пожирателя Мира, но мне никто не верит. Все думают, что это лишь легенда. Чтобы это докахать принеси мне Древние останки. Думаю они помогут образумить мне деревню. Если принесёшь мне останки, то я тебя отблагодарю"
+		"DOTA_Tooltip_Ability_quest_stranger_1_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_1_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_1_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_2"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_2_Description"							"Чего ты так долго возился! Не мог побыстрее принести их? Теперь я смогу образумить всю деревню и убедить их готовиться к концу света. Я помню о награде, вот тебе мои поножи, носи их с гордостью! Ты должен его остановить Первенца Акатоша, я уже давно не в форме и растерял свою силу сидя с Кункевичем за бутылочкой самогона. В общем, тебе понадобится щит, принеси мне его, а я его улучшу."
+		"DOTA_Tooltip_Ability_quest_stranger_2_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_2_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_2_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_3"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_3_Description"							"Наконец-то, времени осталось мало, тебе нужно ещё оружие. Помнится, я оставлял свой мечь в долине смерти, когда меня сразил Баланар. Ты должен пойти и убить его, забрать у него мой меч и вернуть его мне."
+		"DOTA_Tooltip_Ability_quest_stranger_3_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_3_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_3_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_4"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_4_Description"							"Отлично, теперь тебе нужна нормальная броня, а не те лохмотья, что на тебе одеты. Моя была уничтожена в последней битве, поэтому иди в Жерло Дракона и принеси мне драконью чешую."
+		"DOTA_Tooltip_Ability_quest_stranger_4_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_4_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_4_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_5"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_5_Description"							"Так, вот он, дай минут секунд, сейчас я выкую тебе нормальную броню…… На, носи с гордостью! Тебе нужна последняя вещь, способная осветить даже самую непроглядную тьму, источающую Пожирателем Мира. Найди Звезду Предков у древнего племени  котов, ты должен добиться их уважения, иначе они тебе не отдадут своё сокровище."
+		"DOTA_Tooltip_Ability_quest_stranger_5_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_5_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_5_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_6"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_6_Description"							"Я смотрю ту смог её достать, молодец, я чуствую это будет последняя битва, поэтому принесика мне самогончик от Кунки, а то он не делится, как узнал, что скоро конец света."
+		"DOTA_Tooltip_Ability_quest_stranger_6_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_6_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_6_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_stranger_7"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_7_Description"							"Я в тебе не сомневался. Вот тебе мой шлем, это последнее, что тебе понадобится для победы надо боссом. Теперь осталось последнее задание  - убить Алдуина. Иди и верни его в Совнгард!!!"
+		"DOTA_Tooltip_Ability_quest_stranger_7_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_7_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_7_reward_gold"                 		"ЗОЛОТА:"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Огнезвёзд"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Ты кто такой? Я тебя раньше не видел. Но в тебе чувствуется дух воителя, возможно из тебя выйдет хороший воин, но тебе сперва надо доказать, что ты что-то можешь. Я понимаю, что ты начинающий воитель, поэтому принеси-ка мне пару лапок лягушек, уж эти “чудовища” должны быть тебе по зубам."

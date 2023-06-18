@@ -540,7 +540,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"quest_stranger_1"
-		"Ability2"					""
+		"Ability2"					"quest_null"
 		"Ability3"					""
 		"Ability4"					""
 

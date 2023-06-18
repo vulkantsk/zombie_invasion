@@ -11,8 +11,15 @@ modifier_quest_null = class({
     IsBuff = function() return true end,
 })
 
+
+
+
 function modifier_quest_null:OnIntervalThink(1)
 
-	if quest_stranger_7
+	if self:GetParent():HasAbility("quest_stranger_6") then Timers:CreateTimer(8,function()
+		InvasionMode:spawnalduin()
+	end) end 
+
+
 
 end
