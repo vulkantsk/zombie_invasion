@@ -24,7 +24,7 @@ ItemDrop.item_drop = {
 		{items = {"item_piercing_blade"}, chance = 100, units = {"npc_classic_Night_Stalker_boss"}},
 		{items = {"item_unactive_midas"}, chance = 100, units = {"npc_boss_Gurd"}},
 		{items = {"item_pizza2"}, chance = 100, units = {"npc_boss_Gurd"}},
-		{items = {"item_dragon_scale_quest"}, chance = 100, units = {"npc_dragon"}},
+		{items = {"item_dragon_scale_quest"}, chance = 100, units = {"npc_classic_dragon"}},
 		{items = {"item_pizza2"}, chance = 100, units = {"npc_boss_Gurd"}},
 		{items = {"item_big_meat"}, chance = 100, units = {"npc_boss_pig"}},
 		{items = {"item_law_frog"}, chance = 7, units = {"npc_classic_frog"}},
