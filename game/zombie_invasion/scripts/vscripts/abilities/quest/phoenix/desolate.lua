@@ -38,25 +38,7 @@ function modifier_ability_desolate_lua:OnAttack(k)
         local bonus_damage = self:GetAbility():GetSpecialValueFor("bonus_damage")
         local radius = self:GetAbility():GetSpecialValueFor("radius")
         local blind_duration = self:GetAbility():GetSpecialValueFor("blind_duration")
-
-        local all = FindUnitsInRadius(target:GetTeam(), 
-        caster:GetOrigin(), 
-        nil, 
-        radius,
-        DOTA_UNIT_TARGET_TEAM_FRIENDLY, 
-        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
-        DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES,
-        FIND_ANY_ORDER, 
-        false)
-
-        if #all == 1 and all[1] == target then
-            EmitSoundOn("", attacker)
-
-            local part = ParticleManager:CreateParticle("", PATTACH_CUSTOMORIGIN, target)
-            ParticleManager:SetParticleControl(part, 0, target:GetAbsOrigin() + Vector(0,0,50))
-            ParticleManager:SetParticleControlForward(part, 0, caster:GetForwardVector())
-            ParticleManager:ReleaseParticleIndex(part)
-
+ 
             target:AddNewModifier(caster, self:GetAbility(), "modifier_ability_desolate_debuff_lua", {Duration=blind_duration})
 
             ApplyDamage({
@@ -66,7 +48,7 @@ function modifier_ability_desolate_lua:OnAttack(k)
                 damage_type = self:GetAbility():GetAbilityDamageType(),
                 ability = self:GetAbility()
             })
-        end
+         
     end
 end
 

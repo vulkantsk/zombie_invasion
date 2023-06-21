@@ -821,7 +821,11 @@
         "DOTA_Tooltip_Ability_item_unactive_midas_Description"                                "Эта рука выгляит совсем потухшей..."       
         "DOTA_Tooltip_Ability_item_unactive_midas_Lore"                                "А ей можно подрочить?.."  
 
-
+		
+        "DOTA_Tooltip_Ability_item_adulin"                                            "Призывалка алдуина"
+        "DOTA_Tooltip_Ability_item_adulin_Description"                                "Призывает алдуина"       
+        "DOTA_Tooltip_Ability_item_adulin_Lore"                                "Зачем? а хуй его знает"  
+ 
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas Treasure</font>"
         "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите от %gold_min% до %gold_max% золота."       
         "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса."  
@@ -1922,10 +1926,10 @@
 		"DOTA_Tooltip_ability_lord_true_vampire_lord" "True vampire lord"
 		"DOTA_Tooltip_ability_lord_true_vampire_lord_Description" "Чтобы прокачать эту способность вы должны накопить 100 крови, по другому вы не сможете эволюционировать. \nПервый уровень прокачки дает %attack_pct%%  сделать двойную тычку \n Второй уровень дает %lifesteal_pct%%  вампиризма \n Третий уровень дает %bonus_armor%  армора \n Четвёртый уровень дает %bonus_damage%  урона \n Пятый уровень дает %bonus_resist%%  резиста к урону \n Шестой уровень прокачки увеличивает максимальную кровь на %max_blood%  и дает %blood_per_tick%  каждые %interval%"
 		"DOTA_Tooltip_ability_lord_true_vampire_lord_lore" "..."
-		.
+		
  		"DOTA_Tooltip_Ability_special_bonus_unique_lord_blood_rage_blood_per_kill"											"+{s:bonus_blood_per_kill}% к крови за убийство Blood Rage"
 		"DOTA_Tooltip_Ability_special_bonus_unique_lord_infinity_cooldown"											 "-{s:bonus_AbilityCooldown} сек. перезарядки от Infinity"
-		"DOTA_Tooltip_Ability_special_bonus_unique_lord_kiss_cooldown"											"-{s:bonus_AbilityCooldown} сек. перезарядки от Vampire Kiss"
+		"DOTA_Tooltip_Ability_special_bonus_unique_lord_kiss_cooldown"				 							"-{s:bonus_AbilityCooldown} сек. перезарядки от Vampire Kiss"
 		"DOTA_Tooltip_Ability_special_bonus_unique_lord_kiss_damage"											"+{s:bonus_damage_percent}% к урону Vampire Kiss"
 		"DOTA_Tooltip_Ability_special_bonus_unique_lord_dance_duration"											   "+{s:bonus_duration} сек. к длительности Vampire Dance"
 		// -----------------slark--------------------  

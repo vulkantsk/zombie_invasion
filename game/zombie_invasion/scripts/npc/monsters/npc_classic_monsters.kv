@@ -3436,8 +3436,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1100"
-		"AttackDamageMax"			"1150"
+		"AttackDamageMin"			"5000"
+		"AttackDamageMax"			"10000"
 		"AttackRate"				"1.6"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -3458,13 +3458,13 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"475"	
+		"MovementSpeed"				"450"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"4600"
-		"StatusHealthRegen"			"0"
+		"StatusHealth"				"30000"
+		"StatusHealthRegen"			"1500"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -7715,13 +7715,14 @@
 		"Level"						"25"
 		"ModelScale" 				"2.2"
 		"UseNeutralCreepBehavior"	"1"
+		"HasInventory"				"1"
 
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"ability_desolate"
 		"Ability2"					"ability_reincarnation"
-		"Ability3"					""	
-		"Ability4"					""
+		"Ability3"					"anduin_sekelet"	
+		"Ability4"					"anudin_reduce_damage"
 		"Ability5"					"ability_dispersion"
 		"Ability6"					""
 
@@ -7761,8 +7762,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"15000"
-		"StatusHealthRegen"			"10"
+		"StatusHealth"				"500000"
+		"StatusHealthRegen"			"5000"
 		"StatusMana"				"1500"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -7782,8 +7783,22 @@
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
-		{					
-		
+		{
+ 		
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_bloodstone_max_2"}
+			}
+ 
+					
+			"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"anduin_sekelet"										
+				}
+				
+			}	
 		}	
 	}
 }

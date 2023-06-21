@@ -30,8 +30,9 @@ ItemDrop.item_drop = {
 		{items = {"item_big_meat"}, chance = 100, units = {"npc_boss_pig"}},
 		{items = {"item_law_frog"}, chance = 7, units = {"npc_classic_frog"}},
 		{items = {"item_fish"}, chance = 100, units = {"npc_boss_slardar"}},
-
+		{items = {"item_adulin"}, chance = 100, units = {"npc_classic_alduin_boss"}},
  
+  
 
  		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_1"}},	
 		{items = {"item_aghanims_shard_roshan"}, max_count = 2, units  ={"npc_witch_boss_2"}},

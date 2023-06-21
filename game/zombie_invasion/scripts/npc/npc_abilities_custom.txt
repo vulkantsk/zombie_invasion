@@ -64,6 +64,16 @@
 }
 
 
+"anudin_reduce_damage"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/anudin_reduce_damage"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName" 			"undying_tombstone_zombie_deathstrike"
+ 
+}
+
+
 "fort_zombie"
 {
 	// General
@@ -212,6 +222,14 @@
 		"ScriptFile"					"abilities/endgame/techies_taunt"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"			
     	"IsOnCastBar"                   "0"	
+	}
+
+	"anduin_sekelet"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/anduin_sekelet"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+    	"AbilityCooldown"		        "40"
 	}
 	"techies_attack"
 	{
@@ -22609,8 +22627,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "bonus_damage"          "550"
-                "LinkedSpecialBonus"        "special_bonus_unique_spectre_2"
+                "bonus_damage"          "20000"
             }
             "02"
             {

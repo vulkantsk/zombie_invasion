@@ -81,6 +81,7 @@ DONATE_ITEM_SLARK = {
           1458079778,
           117574050,
           230750542,
+          946902506,
 	},	
 }
 
@@ -204,12 +205,20 @@ DONATE_SET_DAGON = {
 DONATE_ITEM_ALUCARD= {
 	players = {
  		203159402,
+ 		946902506,
+
+	},	
+}
+
+DONATE_ITEM_KEFTEME= {
+	players = {
+ 		946902506,
 
 	},	
 }
 
 
- 
+   
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -372,6 +381,7 @@ DONATE_ITEMS = {
 			count = 1,
 			sets ={
 				DONATE_SET_ADMIN,
+				DONATE_ITEM_KEFTEME,
 			},
 		},
 		{

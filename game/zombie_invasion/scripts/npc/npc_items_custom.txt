@@ -1860,6 +1860,35 @@
 		"ItemCastOnPickup"				"0"
 		 
 	}
+
+	"item_adulin"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------				
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_adulin.lua"
+		"AbilityTextureName"			"item_illusionsts_cape"
+		
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemStackable"					"1"
+		"ItemCost"						"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemPurchasable"				"0"
+		"ItemInitialCharges"			"1"
+
+		 
+	}
 	"item_leaf"
 	{
 		// General
