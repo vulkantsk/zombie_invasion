@@ -1,11 +1,11 @@
 LinkLuaModifier("modifier_item_dragon_boots_stats", "items/item_dragon_boots", LUA_MODIFIER_MOTION_NONE)
 
-item_dragon_hand = class({
+item_dragon_boots = class({
     GetIntrinsicModifierName = function() return "modifier_item_dragon_boots_stats" end
 })
 
 modifier_item_dragon_boots_stats = class({
-    isHidden = function() return false end,
+    isHidden = function() return true end,
     IsPurgable = function() return false end,
     IsBuff = function() return true end,
     IsPurgable = function() return false end,
@@ -27,6 +27,8 @@ end
 function modifier_item_dragon_boots_stats:OnCreated()
 	self.bonus_agility = self:GetAbility():GetSpecialValueFor("bonus_agility")
 	self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor("bonus_attack_speed")
+    self.bonus_intellect = self:GetAbility():GetSpecialValueFor("bonus_intellect")
+    self.bonus_strength = self:GetAbility():GetSpecialValueFor("bonus_strength")
     self.bonus_evasion = self:GetAbility():GetSpecialValueFor("bonus_evasion")
 end
 

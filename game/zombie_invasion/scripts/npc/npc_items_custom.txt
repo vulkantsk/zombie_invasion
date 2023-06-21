@@ -2045,7 +2045,7 @@
  			"chance_to_stack"         "50"
  			"max_charge"              "20"
  			"hp_damage"              "1"
- 			"radius"              "950"
+ 			"radius"              "550"
         }
 	}
 	"item_dragon_scale_quest"
