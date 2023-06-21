@@ -327,6 +327,9 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
      if npc:IsRealHero() and npc.FirstSpawned == nil then
         --
+        if npc:GetUnitName() == 'npc_dota_hero_huskar' then 
+        	npc:SetRenderColor(255, 62 , 67 )
+        end
         npc.FirstSpawned = true
         npc:AddItemByName("item_tpscroll")
    
@@ -519,6 +522,7 @@ function InvasionMode:InvasionGameStart()
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
  
+
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  

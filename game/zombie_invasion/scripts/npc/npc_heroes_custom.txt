@@ -1873,6 +1873,47 @@
 		"MovementTurnRate"		"0.900000"
  
 	}
+
+	"npc_dota_hero_huskar"
+	{
+		"Model"		"models/heroes/muerta/muerta_base.vmdl"
+		"SoundSet"		"Hero_Muerta"
+		"Ability1"		"lord_true_essence"
+		"Ability2"		"lord_blood_rage"
+		"Ability3"		"lord_evolution"
+		"Ability4"		"lord_vampire_kiss"
+		"Ability5"		"lord_vampire_dance"
+		"Ability6"		"lord_true_infiniti"
+		"Ability10"		"special_bonus_hp_200"
+		"Ability11"		"special_bonus_attack_damage_20"
+		"Ability12"		"special_bonus_unique_lord_blood_rage_blood_per_kill"
+		"Ability13"		"special_bonus_attack_damage_50"
+		"Ability14"		"special_bonus_unique_lord_infinity_cooldown"
+		"Ability15"		"special_bonus_unique_lord_kiss_damage"
+		"Ability16"		"special_bonus_unique_lord_dance_duration"
+		"Ability17"		"special_bonus_unique_lord_kiss_cooldown"
+		"ArmorPhysical"		"5"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"60"
+		"AttackDamageMax"		"70"
+		"AttackRate"		"1.600000"
+		"AttackAnimationPoint"		"0.3"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"400"
+		"ProjectileModel"		"particles/units/heroes/hero_muerta/muerta_base_attack.vpcf"
+		"ProjectileSpeed"		"3000"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
+		"AttributeBaseStrength"		"10"
+		"AttributeStrengthGain"		"1.5"
+		"AttributeBaseAgility"		"10"
+		"AttributeAgilityGain"		"1.50000"
+		"AttributeBaseIntelligence"		"18"
+		"AttributeIntelligenceGain"		"1.500000"
+		"MovementSpeed"		"300"
+
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_muerta.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_muerta.vsndevts"
+	}
 	"npc_dota_hero_bloodseeker"
 	{
   

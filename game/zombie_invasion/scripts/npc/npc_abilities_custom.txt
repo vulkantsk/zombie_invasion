@@ -21,6 +21,7 @@
 #base "../vscripts/heroes/hero_dark_seer/dark_seer.txt"
 #base "../vscripts/heroes/hero_luna/luna.txt"    
 #base "../vscripts/heroes/hero_enigma/enigma.txt"    
+#base "../vscripts/heroes/hero_lord/lord.txt"    
 #base "../vscripts/heroes/hero_slark/slark.txt"              
 #base "../vscripts/heroes/hero_drow/drow_ranger.txt"
 #base "../vscripts/heroes/hero_shinobu/hero_shinobu.txt"

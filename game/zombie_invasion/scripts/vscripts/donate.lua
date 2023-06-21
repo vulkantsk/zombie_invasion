@@ -201,6 +201,15 @@ DONATE_SET_DAGON = {
 	},	
 }
 
+DONATE_ITEM_ALUCARD= {
+	players = {
+ 		203159402,
+
+	},	
+}
+
+
+ 
 DONATE_ITEM_MIDAS = {
 	players = {
 --		347624347,
@@ -313,6 +322,17 @@ DONATE_ITEMS = {
 				DONATE_SET_ALL,
 			},
 		},
+		{
+			name = "item_alucard_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_ALUCARD,
+			},
+		},
+
+		 
 
 	},
 	artifacts = {

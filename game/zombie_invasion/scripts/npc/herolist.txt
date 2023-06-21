@@ -33,12 +33,13 @@
 	"npc_dota_hero_muerta" "1"
 	"npc_dota_hero_phantom_lancer"		"0"
 	"npc_dota_hero_marci"				"0"
-
+ 
 
 // Donate
 	"npc_dota_hero_slark"				"0"
  	"npc_dota_hero_nevermore"			"0"
  	"npc_dota_hero_winter_wyvern"		"1"
+    "npc_dota_hero_huskar"				"0"
 
 
 // Almost ready
@@ -76,8 +77,7 @@
 
 	"npc_dota_hero_invoker"				"0"
 	"npc_dota_hero_tinker"				"0" 
-    "npc_dota_hero_huskar"				"0"
- 
+  
 	"npc_dota_hero_earthshaker"			"0"
 	"npc_dota_hero_omniknight"			"0"
 	"npc_dota_hero_keeper_of_the_light"	"0" 

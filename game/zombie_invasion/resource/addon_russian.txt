@@ -177,7 +177,7 @@
 		"npc_dota_hero_phantom_lancer" 										"Sara"
 		"npc_dota_hero_winter_wyvern" 										"Yuki-onna"
 		"npc_dota_hero_bloodseeker"			"Sargatanas"
-
+		"npc_dota_hero_huskar"                                            "Alucard"
 
 
 
@@ -1115,6 +1115,10 @@
 		"DOTA_Tooltip_Ability_item_bfury_3_bonus_health_regen"					"+$hp_regen"
 		"DOTA_Tooltip_Ability_item_bfury_3_bonus_mana_regen"						"+$mana_regen"
 
+		"DOTA_Tooltip_Ability_item_alucard_weapon"				"Alucard Weapon"
+		"DOTA_Tooltip_ability_item_alucard_weapon_Description"							"<h1>Пассивная: Infinity</h1> За каждое убийство Alucard с шансом в %chance_to_stack%%  получает %bonus_damage%  урона.<br>"
+
+ 
 		"DOTA_Tooltip_Ability_item_energy_booster_2"			"Energy Booster"
 		"DOTA_Tooltip_ability_item_energy_booster_2_Lore"							"Этот лазурит часто можно найти у волшебников, стремящихся дольше сохранять колдовские силы в бою."
 		"DOTA_Tooltip_ability_item_energy_booster_2_mana_bonus"					"+$mana"
@@ -1300,7 +1304,9 @@
  		"DOTA_Tooltip_ability_item_sf_change"								"<font color='#fff'>Essence of Azzazel</font>"
         "DOTA_Tooltip_ability_item_sf_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на Azzazel."
   
-
+   		"DOTA_Tooltip_ability_item_alucard_change"								"<font color='#ff2400'>Essence of Alucard</font>"
+        "DOTA_Tooltip_ability_item_alucard_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на Alucard."
+ 
 		"DOTA_Tooltip_Ability_item_brassiere"					"Naga's Brassiere"
 		"DOTA_Tooltip_ability_item_brassiere_Description"							"<h1>Пассивная: Brassiere's Aura</h1>Увеличивает атаку в ближнем бою для союзников на %bonus_attack_range%, их урон на %bonus_damage%, скорость атаки на %bonus_attack_speed%. <br><br>Радиус: %radius%<br><br><font color='#c10020'>ВЫ НЕ МОЖЕТЕ АТАКОВАТЬ!</font>"
 		"DOTA_Tooltip_ability_item_brassiere_Lore"								"Перед тем как сбежать из темного рифа, Сларк решил захватить один сувенир:)."
@@ -1852,6 +1858,76 @@
 		"DOTA_Tooltip_ability_innate_rend_crit_damage" "КРИТИЧЕСКИЙ УРОН:"
 		"DOTA_Tooltip_ability_crit_chance_per_negative_armor" "ШАНС КРИТИЧЕСКОЙ АТАКИ ЗА КАЖДОЕ НЕГАТИВНОЕ КОЛИЧЕСТВО БРОНИ:"
 
+		// -----------------alucard--------------------  
+		"DOTA_Tooltip_ability_lord_true_essence" "True Essence"
+		"DOTA_Tooltip_ability_lord_true_essence_Description" "Alucard постепеннно раскрывает свою сущность"
+		"DOTA_Tooltip_ability_lord_true_essence_lore" "..."
+		"DOTA_Tooltip_ability_lord_true_essence_armor_bonus" "+$armor"
+		"DOTA_Tooltip_ability_lord_true_essence_health_bonus" "+$health"
+		"DOTA_Tooltip_ability_lord_true_essence_damage_bonus" "+$damage"
+		"DOTA_Tooltip_ability_lord_true_essence_hp_regen_bonus" "+$hp_regen"
+		"DOTA_Tooltip_ability_lord_true_essence_ms_bonus" "+$move_speed"
+		"DOTA_Tooltip_ability_lord_true_essence_scepter_description" "Способность становится прожимаемой. При использовании Alucard взмывает в небо и может проходить через все препятствия."
+		"DOTA_Tooltip_ability_lord_true_essence_duration" "ДЛИТЕЛЬНОСТЬ:"
+
+
+		"DOTA_Tooltip_ability_lord_blood_rage" "Blood Rage"
+		"DOTA_Tooltip_ability_lord_blood_rage_Description" "После убийство любого врага, Alucard получает %blood_per_kill%  крови, которую может потом использовать для своих целей. При активации создает кровавую лужу, которая наносит урон врагам и Alucard получает в 2 раза больше крови с них."
+		"DOTA_Tooltip_ability_lord_blood_rage_max_blood" "МАКСИМАЛЬНОЕ КОЛ-ВО КРОВИ:"
+		"DOTA_Tooltip_ability_lord_blood_rage_blood_per_kill" "КРОВЬ ЗА УБИЙСТВО:"
+		"DOTA_Tooltip_ability_lord_blood_rage_duration" "ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_lord_blood_rage_radius" "РАДИУС:"
+		"DOTA_Tooltip_ability_lord_blood_rage_damage_percent" "%УРОН ОТ ТЕКУЩЕГО ХП:"
+		"DOTA_Tooltip_ability_lord_blood_rage_damage" "УРОН:"
+		"DOTA_Tooltip_ability_lord_blood_rage_lore" "..."
+
+		"DOTA_Tooltip_modifier_lord_blood_rage"                            	"Blood Rage"
+		"DOTA_Tooltip_modifier_lord_blood_rage_Description"                	"Как много крови"
+
+		"DOTA_Tooltip_ability_lord_evolution" "Evolution"
+		"DOTA_Tooltip_ability_lord_evolution_Description" "Чтобы прокачать эту способность вы должны накопить 100 крови, по другому вы не сможете эволюционировать. \nПервый уровень прокачки дает %attack_pct%%  сделать двойную тычку \n Второй уровень дает %lifesteal_pct%%  вампиризма \n Третий уровень дает %bonus_armor%  армора \n Четвёртый уровень дает %bonus_damage%  урона \n Пятый уровень дает %bonus_resist%%  резиста к урону"
+		"DOTA_Tooltip_ability_lord_evolution_lore" "..."
+		"DOTA_Tooltip_ability_lord_evolution_shard_description"						"Дает новую ветвь прокачки."
+
+		"DOTA_Tooltip_ability_lord_vampire_kiss" "Vampire Kiss"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_Description" "Если укусить союзника, то тот получит баф до конца своей жалкой жизни. При укусе врага отнимает его текущее хп."
+		"DOTA_Tooltip_ability_lord_vampire_kiss_damage_percent" "%УРОН ОТ ТЕКУЩЕГО ХП:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_lifesteal_pct" "%ВАМПИРИЗМ:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_bonus_armor" "БОНУСНАЯ БРОНЯ:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_bonus_damage" "БОНУСНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_bonus_resist" "%БОНУСНЫЙ РЕЗИСТ К УРОНУ:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_bonus_ms" "БОНУСНАЯ СКОРОСОТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_lord_vampire_kiss_lore" "..."
+
+		"DOTA_Tooltip_modifier_lord_vampire_kiss_buff"                            	"Vampire Kiss"
+		"DOTA_Tooltip_modifier_lord_vampire_kiss_buff_Description"                	"Теперь я вампир???"
+ 
+ 		"DOTA_Tooltip_ability_lord_vampire_dance" "Vampire Dance"
+		"DOTA_Tooltip_ability_lord_vampire_dance_Description" "При использовании Alucard развивает такую быструю скорость, что враги перестают замечать его и он скачеет вокруг врагов стреляя в них. Ночью Alucard получает возможность наносить критические удары."
+		"DOTA_Tooltip_ability_lord_vampire_dance_duration" "ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_lord_vampire_dance_crit_pct" "%КРИТИЧЕСКИЙ УРОН:"		
+		"DOTA_Tooltip_ability_lord_vampire_dance_crit_chance" "%ШАНС:"	
+		"DOTA_Tooltip_ability_lord_vampire_dance_bonus_stat" "БОНУС К АТРИБУТАМ:"	
+
+		"DOTA_Tooltip_ability_lord_vampire_dance_lore" "..."
+
+		 "DOTA_Tooltip_ability_lord_true_infiniti" "Infiniti"
+		"DOTA_Tooltip_ability_lord_true_infiniti_Description" "Если Alucard будет на грани смерти, он воспользуется кровью, что у него осталось и восполнит полностью свое здоровье."
+		"DOTA_Tooltip_ability_lord_true_infiniti_lore" "..."
+	
+		"DOTA_Tooltip_ability_lord_true_lord" "True Lord"
+		"DOTA_Tooltip_ability_lord_true_lord_Description" "Чтобы прокачать эту способность вы должны накопить 100 крови, по другому вы не сможете эволюционировать. \nПервый уровень прокачки дает %attack_pct%%  сделать двойную тычку \n Второй уровень дает %lifesteal_pct%%  вампиризма \n Третий уровень дает %bonus_armor%  армора \n Четвёртый уровень дает %bonus_damage%  урона \n Пятый уровень дает %bonus_resist%%  резиста к урону \n Шестой уровень прокачки увеличивает максимальную кровь на %max_blood%  и дает %blood_per_tick%  каждые %interval%"
+		"DOTA_Tooltip_ability_lord_true_lord_lore" "..."
+	 
+		"DOTA_Tooltip_ability_lord_true_vampire_lord" "True vampire lord"
+		"DOTA_Tooltip_ability_lord_true_vampire_lord_Description" "Чтобы прокачать эту способность вы должны накопить 100 крови, по другому вы не сможете эволюционировать. \nПервый уровень прокачки дает %attack_pct%%  сделать двойную тычку \n Второй уровень дает %lifesteal_pct%%  вампиризма \n Третий уровень дает %bonus_armor%  армора \n Четвёртый уровень дает %bonus_damage%  урона \n Пятый уровень дает %bonus_resist%%  резиста к урону \n Шестой уровень прокачки увеличивает максимальную кровь на %max_blood%  и дает %blood_per_tick%  каждые %interval%"
+		"DOTA_Tooltip_ability_lord_true_vampire_lord_lore" "..."
+		.
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_lord_blood_rage_blood_per_kill"											"+{s:bonus_blood_per_kill}% к крови за убийство Blood Rage"
+		"DOTA_Tooltip_Ability_special_bonus_unique_lord_infinity_cooldown"											 "-{s:bonus_AbilityCooldown} сек. перезарядки от Infinity"
+		"DOTA_Tooltip_Ability_special_bonus_unique_lord_kiss_cooldown"											"-{s:bonus_AbilityCooldown} сек. перезарядки от Vampire Kiss"
+		"DOTA_Tooltip_Ability_special_bonus_unique_lord_kiss_damage"											"+{s:bonus_damage_percent}% к урону Vampire Kiss"
+		"DOTA_Tooltip_Ability_special_bonus_unique_lord_dance_duration"											   "+{s:bonus_duration} сек. к длительности Vampire Dance"
 		// -----------------slark--------------------  
 		"DOTA_Tooltip_ability_slark_dark_pact_lua"										"Dark Pact"
 		"DOTA_Tooltip_ability_slark_dark_pact_lua_Description"							"После небольшой задержки герой жертвует немного собственной крови, снимая с себя большинство отрицательных эффектов и нанося урон всем врагам поблизости. Сам герой получает %self_damage_pct%%% нанесённого этой способностью урона.\n\nТИП РАЗВЕИВАНИЯ: сильное."

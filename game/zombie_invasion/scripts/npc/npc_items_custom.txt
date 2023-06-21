@@ -9351,7 +9351,30 @@
 		}
 	}
  
- 
+	"item_alucard_weapon"
+	{
+		"BaseClass"          "item_lua"
+		"ScriptFile"         "items/item_alucard_weapon"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName" "alucard_weap"
+
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemQuality"					"artifact"	
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemPermanent" 				"0"	
+		"ItemIsNeutralDrop" 						"1"
+
+		"AbilityValues"
+		{
+ 		    "bonus_damage"	         "2"	
+ 		    "chance_to_stack"	         "10"								
+		}
+	}
+
 		"item_unactive_midas"
 	{
 		"BaseClass"						"item_datadriven"														
@@ -11071,6 +11094,35 @@
 			}
 		}
 	}
+
+	"item_alucard_change"
+	{
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"Alucard"
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+
+		"OnSpellStart"
+		{			
+			"SpendCharge" {}
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/hero_change.lua"
+				"Function"			"GiveNewHero"
+				"hero_name"			"npc_dota_hero_huskar"
+			}
+		}
+	}
+
 	"item_sara_change"
 	{
 		"BaseClass"                     "item_datadriven"
