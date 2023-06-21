@@ -11401,11 +11401,11 @@
 
 		"AbilityValues"
 		{
-			"bonus_agility"			"20"
-			"bonus_strength"		"20"
-			"bonus_intellect"			"20"
-			"bonus_move_speed"		"40"
-
+			"bonus_agility"			"50"
+			"bonus_strength"		"50"
+			"bonus_intellect"		"50"
+			"bonus_move_speed"		"90"
+			"bonus_evasion"			"30"
 
 		}
 	}

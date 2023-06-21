@@ -33,7 +33,6 @@
 #base "../vscripts/heroes/hero_demonslayer/demonslayer.txt"
 #base "../vscripts/heroes/hero_tech/techies.txt"
 #base "../vscripts/heroes/hero_yuki-onna/yuki.txt"
-#base "../vscripts/abilities/zombie/Boss/phoenix.txt"
 
 "DOTAAbilities"
 {
@@ -1232,6 +1231,7 @@
                 "ScriptFile"    "abilities/quest/quest_template"
                 "Function"        "OnQuestCreated"
                 "quest_item"    "item_dragon_scale_quest"
+                "reward_item"    "item_dragon_armor"
                 "particle"        "1"
                 "next_quest"    "quest_stranger_5"
                 "reusable"        "0"
@@ -1275,6 +1275,7 @@
                 "ScriptFile"    "abilities/quest/quest_template"
                 "Function"        "OnQuestCreated"
                 "quest_item"    "item_zvezda"
+                "reward_item"    "item_dragon_hand"
                 "particle"        "1"
                 "next_quest"    "quest_stranger_6"
                 "reusable"        "0"
@@ -22484,69 +22485,6 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	//=================================================================================================================
-	// Creature: Fire Breath
-	//=================================================================================================================
-	"creature_fire_breath"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityName"					"creature_fire_breath"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"ogre_magi_fireblast"
-		"MaxLevel"					"1"
-		"precache"
-		{
-			"soundfile"				"sounds/mini_rosh_firebreath.vsnd"
-		}
-		"AbilitySound"					"Creature.FireBreath.Cast"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"10.0"
-		"AbilityChannelTime"			"2.3"
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"500 600 700 800 900"
-		"AbilityCastPoint"				"1.3"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"radius"				"200.0"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"speed"					"1000"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"damage"				"75.0 75.0 75.0 75.0 75.0"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"rotation_angle"		"90.0"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"projectile_count"		"12"
-			}
-		}
-	}
-	//=================================================================================================================
 	// Phoenix: Supernova
 	//=================================================================================================================
 	"phoenix_supernova"
@@ -22593,19 +22531,19 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_per_sec"	"120"
+				"damage_per_sec"	"1200"
 			}
 			
 			"03"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"stun_duration"		"5.6"
+				"stun_duration"		"15.6"
 				"LinkedSpecialBonus"	"special_bonus_unique_phoenix_2"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"max_hero_attacks"	"20"
+				"max_hero_attacks"	"2000"
 				"LinkedSpecialBonus"	"special_bonus_unique_phoenix_1"
 			}
 			"05"
@@ -22620,6 +22558,140 @@
 				"var_type"			"FIELD_INTEGER"
 				"cast_range_tooltip_scepter"	"500"
 				"RequiresScepter"	"1"
+			}
+		}
+	}
+	 "ability_dispersion"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/quest/phoenix/dispersion"
+        "AbilityTextureName"            "dragon_blood"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "damage_reflection_pct" "27"
+                "LinkedSpecialBonus"        "special_bonus_unique_spectre_5"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "min_radius"            "650"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "max_radius"            "700"
+            }           
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+	 "ability_desolate"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/quest/phoenix/desolate"
+        "AbilityTextureName"            "dragon_blood"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_damage"          "550"
+                "LinkedSpecialBonus"        "special_bonus_unique_spectre_2"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "radius"                "1200"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "blind_pct"             "90"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "blind_duration"        "15.0"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+    "ability_reincarnation"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/quest/phoenix/reincarnation"
+		"AbilityTextureName"			"dragon_blood"
+		"FightRecapLevel"				"2"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"2"
+
+		"HasScepterUpgrade"			"1"
+
+		"AbilityManaCost"				"160"
+		"AbilityCooldown"				"2000"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reincarnate_time"		"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_radius"			"900"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed"				"-750"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackslow"			"-750"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"			"15.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_duration"		"7"
+				"RequiresScepter"			"1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"	"1200"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius_tooltip_scepter"	"1200"
+				"RequiresScepter"			"1"
 			}
 		}
 	}

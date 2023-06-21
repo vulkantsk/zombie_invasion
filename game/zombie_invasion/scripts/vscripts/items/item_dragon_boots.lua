@@ -16,6 +16,7 @@ modifier_item_dragon_boots_stats = class({
 		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+        MODIFIER_PROPERTY_EVASION_CONSTANT
     } end
 })
 
@@ -26,6 +27,7 @@ end
 function modifier_item_dragon_boots_stats:OnCreated()
 	self.bonus_agility = self:GetAbility():GetSpecialValueFor("bonus_agility")
 	self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor("bonus_attack_speed")
+    self.bonus_evasion = self:GetAbility():GetSpecialValueFor("bonus_evasion")
 end
 
 function modifier_item_dragon_boots_stats:OnRefresh()
@@ -49,3 +51,6 @@ function modifier_item_dragon_boots_stats:GetModifierMoveSpeedBonus_Percentage()
     return self.bonus_move_speed
 end
 
+function modifier_item_dragon_boots_stats:GetModifierEvasion_Constant()
+    return self.bonus_evasion
+end

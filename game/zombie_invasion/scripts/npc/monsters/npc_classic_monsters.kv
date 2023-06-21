@@ -7620,8 +7620,8 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"ability_liquid_fire"
-		"Ability2"					"pudge_meat_hook"
+		"Ability1"					"phoenix_supernova"
+		"Ability2"					"phoenix_fire"
 		"Ability3"					""	
 		"Ability4"					""
 		"Ability5"					""
@@ -7689,12 +7689,19 @@
 			{
 				"Ability1"
 				{
-					"Name"					"ability_liquid_fire"										
+					"Name"					"phoenix_supernova"										
 				}
+					"AttachWearables"
+				{
+					"Wearable1"	{ "ItemDef"	"14993" }	
+					"Wearable2"	{ "ItemDef"	"7458" }	
+					"Wearable3"	{ "ItemDef"	"13714" }	
+				}
+
 				
 			}
-			
-		}	
+		}
+				
 	}
 	"npc_classic_alduin_boss"	
 	{
@@ -7711,11 +7718,11 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"ability_desolate"
+		"Ability2"					"ability_reincarnation"
 		"Ability3"					""	
 		"Ability4"					""
-		"Ability5"					""
+		"Ability5"					"ability_dispersion"
 		"Ability6"					""
 
 		// Armor
@@ -7727,8 +7734,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"3400"
-		"AttackDamageMax"			"2200"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"2"
 		"AttackRate"				"0.9"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -7775,9 +7782,8 @@
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
-		{
-			
-			
+		{					
+		
 		}	
 	}
 }

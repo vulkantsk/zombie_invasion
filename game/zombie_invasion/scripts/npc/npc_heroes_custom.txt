@@ -488,7 +488,7 @@
 		"Ability1"					"demon_style"
 		"Ability2"					"demon_buff"
 		"Ability3"					"demon_desolate"
-		"Ability4"					"generic_hidden"
+		"Ability4"					"phoenix_fire"
 		"Ability5"					"demon_aura"
 		"Ability6"					"demon_absolute_form"
 		"Ability10"		"special_bonus_strength_6"
