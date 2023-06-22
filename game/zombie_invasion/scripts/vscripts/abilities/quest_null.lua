@@ -14,17 +14,23 @@ modifier_quest_null = class({
 
 function modifier_quest_null:OnCreated()
     self.spawn_boss = false
+    self.music_play = false
     self:StartIntervalThink(1)
 end
 
 function modifier_quest_null:OnIntervalThink()
 
-	if self:GetParent():HasAbility("quest_stranger_6") and not self.spawn_boss then 
+	if self:GetParent():HasAbility("quest_stranger_7") and not self.spawn_boss then 
         Timers:CreateTimer(8,function()
           InvasionMode:SpawnBoss("npc_classic_alduin_boss",1)
 	    end) 
         self.spawn_boss = true 
     end 
+    if self:GetParent():HasAbility("quest_stranger_8") and not self.music_play then 
+          EmitGlobalSound("skyrim")
+        self.music_play = true 
+    end 
+     
 
 
 

@@ -1384,12 +1384,57 @@
                 "quest_item"    "item_alduin_soul"
                 "reward_item"    "item_alduin_soul_final"
                 "particle"        "1"
+                "next_quest"    "quest_stranger_8"
                 "reusable"        "0"
             }
         }      
        
     }
-	
+
+    "quest_stranger_8"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "spellicons/quest_stranger"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "0"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "0"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_color_red"
+                "reward_item"    "item_color_red"
+                "particle"        "1"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+
 	    "quest_test01"
     {
         // General

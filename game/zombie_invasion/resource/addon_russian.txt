@@ -112,7 +112,8 @@
 	   "big_bo_2"                                                   "<font color='#FA8172'>Запахло чем-то отвратительным...</font>"
 	   "big_bo_3"                                                   "<font color='#B22228'>Мурашки идут по твоей коже</font>"
 	   "big_bo_4"                                                   "<font color='#8B0100'>Он почти здесь...</font>"
-	  
+	  	"npc_stranger_jitel"                                         "довакин"
+
 	   "begining_1"                                                 "<font color='#c10020'>Я удивлен, что вы смогли так долго продержаться</font>"
 	   "begining_2"                                                 "<font color='#c10020'>Но в этом и заключается ваша главная ошибка</font>"
 	   "beginend"                                                 "<font color='#c10020'>Я набрался сил и дам вам пизды :3</font>"
