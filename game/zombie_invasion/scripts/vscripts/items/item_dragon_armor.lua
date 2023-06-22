@@ -16,6 +16,7 @@ modifier_item_dragon_armor_return = class({
         MODIFIER_PROPERTY_EXTRA_STRENGTH_BONUS,
         MODIFIER_PROPERTY_HEALTH_BONUS,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+        MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 
     } end
 })
@@ -79,17 +80,6 @@ function modifier_item_dragon_armor_return:OnAttackLanded(params)
     end
 end
 
-
-function modifier_item_dragon_armor_return:OnDestroy()
-	if IsServer() then
-		-- if this is the last heart, remove the unique modifier
-		if not self:GetCaster():HasModifier(self.modifier_self) then
-			self:GetCaster():RemoveModifierByName(self.modifier_unique)
-		end
-	end
-end
-
-
 function modifier_item_dragon_armor_return:GetModifierExtraStrengthBonus()
 	return self.bonus_strength 
 end
@@ -100,6 +90,16 @@ end
 
 function modifier_item_dragon_armor_return:GetModifierPhysicalArmorBonus() 
     return self.bonus_armor
+end
+
+
+function modifier_item_dragon_armor_return:OnDestroy()
+	if IsServer() then
+		-- if this is the last heart, remove the unique modifier
+		if not self:GetCaster():HasModifier(self.modifier_self) then
+			self:GetCaster():RemoveModifierByName(self.modifier_unique)
+		end
+	end
 end
 
 function modifier_item_dragon_armor_return:IsAura() return true end
