@@ -2037,15 +2037,17 @@
 		"ItemKillable"					"1" 
 		"ItemPermanent" 				"0"	
 		"SideShop" 						"0"
+		"ItemIsNeutralDrop"               "1"
+
 		"AbilityValues"
 		{
- 			"all_lifesteal"        "200"
- 			"trigger_chance"         "50"
+ 			"all_lifesteal"        "30"
+ 			"trigger_chance"         "15"
  			"damage_pct"              "100"
- 			"chance_to_stack"         "50"
+ 			"chance_to_stack"         "1"
  			"max_charge"              "20"
- 			"hp_damage"              "1"
- 			"radius"              "950"
+ 			"hp_damage"              "0.3"
+ 			"radius"              "350"
         }
 	}
 	"item_dragon_scale_quest"
@@ -11425,7 +11427,6 @@
 
 		"AbilityValues"
 		{
-			
 				"crit_chance_sword"				"40"
 				"crit_cg_sword"				"300"
 				"bonus_dmg_sword"			"400"

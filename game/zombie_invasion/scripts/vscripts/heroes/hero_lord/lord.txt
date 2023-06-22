@@ -51,11 +51,11 @@
  		"max_blood"                   "100"
  		"blood_per_kill"			
 		{
-			"value"				"20"
+			"value"				"1"
 			"special_bonus_unique_lord_blood_rage_blood_per_kill"	"+100%"	
 		}	
  		"radius"                       "350"
- 		"damage_percent"                "4"
+ 		"damage_percent"                "2"
  		"damage"                "80"
  		"interval"              "0.2"
  	}
@@ -159,7 +159,7 @@
   		"damage_percent"			
 		{
 			"value"	"25"
-			"special_bonus_unique_lord_kiss_damage"	"+7"	
+			"special_bonus_unique_lord_kiss_damage"	"+20"	
 		}
  		 
  		"lifesteal_pct"               "10"

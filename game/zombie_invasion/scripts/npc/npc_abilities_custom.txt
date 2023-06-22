@@ -229,7 +229,7 @@
 		"BaseClass" 					"ability_lua"
 		"ScriptFile"					"abilities/anduin_sekelet"
     	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
-    	"AbilityCooldown"		        "40"
+    	"AbilityCooldown"		        "99999"
 	}
 	"techies_attack"
 	{
