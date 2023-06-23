@@ -1,4 +1,5 @@
 LinkLuaModifier("modifier_lord_true_vampire_lord", "heroes/hero_lord/lord_true_vampire_lord", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_lord_true_vampire_lord_active", "heroes/hero_lord/lord_true_vampire_lord", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
 
@@ -35,6 +36,19 @@ end
  
 function lord_true_vampire_lord:GetIntrinsicModifierName()
 	return "modifier_lord_true_vampire_lord"
+end
+ 
+
+function lord_true_vampire_lord:OnSpellStart()
+    local caster = self:GetCaster()
+    local healthCost = self:GetHealthCost(self:GetLevel())
+    
+     local modif = caster:FindModifierByName("modifier_lord_blood_rage")
+        modif:SetStackCount(modif:GetStackCount() - healthCost)    
+    
+     caster:AddNewModifier(caster,self,"modifier_lord_true_vampire_lord_active", {duration = self:GetSpecialValueFor("duration")})
+     EmitSoundOn("true", caster)
+
 end
 
 
@@ -132,3 +146,56 @@ function modifier_lord_true_vampire_lord:OnTakeDamage( keys )
 end
 
 
+
+
+
+modifier_lord_true_vampire_lord_active = class({
+    IsHidden                = function(self) return false end,
+    IsPurgable              = function(self) return false end,
+    IsDebuff                = function(self) return false end,
+    IsBuff                  = function(self) return true end,
+    RemoveOnDeath           = function(self) return true end,
+})
+ 
+function modifier_lord_true_vampire_lord_active:OnCreated()
+    self.radius = self:GetAbility():GetSpecialValueFor("radius")
+    self.damage = self:GetAbility():GetSpecialValueFor("damage")
+    self.interval = self:GetAbility():GetSpecialValueFor("intervall")
+    self.damage_percent = self:GetAbility():GetSpecialValueFor("damage_percent")
+    self:OnIntervalThink()
+    self:StartIntervalThink(self.interval)
+
+    local particle_cast = "particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf"
+
+    -- Create Particle
+    self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+ 
+
+    ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetAbsOrigin() )
+    ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( self.radius, 0, 0 ) )
+ 
+end
+
+function modifier_lord_true_vampire_lord_active:OnDestroy()
+    ParticleManager:DestroyParticle( self.effect_cast, false )
+end
+
+function modifier_lord_true_vampire_lord_active:OnIntervalThink()
+    local units = FindUnitsInRadius(
+            self:GetParent():GetTeam(),
+            self:GetParent():GetAbsOrigin(),
+            nil,
+            self.radius,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+            FIND_CLOSEST,
+            false
+        )
+        for _, unit in pairs( units ) do
+        local damage = (self.damage + ((self.damage_percent/100) * unit:GetHealth()))*self.interval
+
+        ApplyDamage( { victim = unit, attacker = self:GetParent(), damage = damage,
+                        damage_type = DAMAGE_TYPE_PURE, ability = self:GetAbility()} )
+        end
+end

@@ -112,6 +112,6 @@ function modifier_lord_blood_rage_active:OnIntervalThink()
  		local damage = (self.damage + ((self.damage_percent/100) * unit:GetHealth()))*self.interval
 
         ApplyDamage( { victim = unit, attacker = self:GetParent(), damage = damage,
-                        damage_type = DAMAGE_TYPE_PURE, ability = self:GetAbility()} )
+                        damage_type = DAMAGE_TYPE_MAGICAL, ability = self:GetAbility()} )
 		end
 end

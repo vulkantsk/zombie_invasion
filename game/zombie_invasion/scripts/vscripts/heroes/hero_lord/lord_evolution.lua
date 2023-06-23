@@ -51,7 +51,7 @@ function lord_evolution:OnSpellStart()
 
     local modif = caster:FindModifierByName("modifier_lord_blood_rage")
     modif:SetStackCount(modif:GetStackCount() - healthCost)    
-    if self:GetCaster():HasShard() then 
+    if self:GetCaster():HasShard() and self:GetLevel() == 5 then 
         caster:AddAbility( "lord_true_lord" ):SetLevel(1)
         caster:SwapAbilities( "lord_evolution", "lord_true_lord", false, true )
     else

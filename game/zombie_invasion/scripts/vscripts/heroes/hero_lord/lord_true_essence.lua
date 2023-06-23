@@ -1,12 +1,43 @@
 LinkLuaModifier("modifier_lord_true_essence", "heroes/hero_lord/lord_true_essence", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_true_essence_active", "heroes/hero_lord/lord_true_essence", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
 
 lord_true_essence = class({})
 
+function lord_true_essence:CastFilterResult()
+        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
+            return UF_FAIL_CUSTOM
+        end
+
+        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
+            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
+            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
+                return UF_FAIL_CUSTOM
+            end
+        end
+        return UF_SUCCESS
+end
+  
+
+function lord_true_essence:GetCustomCastError()
+        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
+            return "#dota_hud_error_havent_charges"
+        end
+
+        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
+            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
+            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
+                return "#dota_hud_error_havent_charges"
+            end
+        end
+        return UF_SUCCESS
+end
+ 
+
 function lord_true_essence:GetBehavior()
     if self:GetCaster():HasScepter() then 
-        return DOTA_ABILITY_BEHAVIOR_NO_TARGET
+        return DOTA_ABILITY_BEHAVIOR_TOGGLE
     else 
         return DOTA_ABILITY_BEHAVIOR_PASSIVE
     end
@@ -16,14 +47,16 @@ function lord_true_essence:GetIntrinsicModifierName()
 	return "modifier_lord_true_essence"
 end
 
-function lord_true_essence:OnSpellStart()
+function lord_true_essence:OnToggle()
     local caster = self:GetCaster()
-
-    if caster:HasScepter() then 
-        caster:AddNewModifier(caster,self,'modifier_lord_true_essence_active',{duration = self:GetSpecialValueFor("duration")})
-    end
-        EmitSoundOn( "fly", caster )
+        if self:GetToggleState() then
+            caster:AddNewModifier(caster, self, "modifier_lord_true_essence_active", nil)
+        else
+            caster:RemoveModifierByName("modifier_lord_true_essence_active")
+        end
 end
+
+ 
 
 modifier_lord_true_essence = class({
 	IsHidden 				= function(self) return true end,
@@ -93,9 +126,26 @@ end
   })
 
 function modifier_lord_true_essence_active:OnCreated()
+    self.pay = self:GetAbility():GetSpecialValueFor("pay")
+ 
     self:GetParent():SetMoveCapability( DOTA_UNIT_CAP_MOVE_FLY )
+     EmitSoundOn( "fly", self:GetCaster() )
+    self:OnIntervalThink()
+    self:StartIntervalThink(1)
 end 
  
+function modifier_lord_true_essence_active:OnIntervalThink()
+    local caster = self:GetParent()
+    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
+    modif:SetStackCount(modif:GetStackCount() - self.pay)    
+
+    if modif:GetStackCount() < self.pay then 
+        caster:RemoveModifierByName("modifier_lord_true_essence_active")
+        self:GetAbility():ToggleAbility()
+    end
+
+end
+
 function modifier_lord_true_essence_active:OnDestroy()
     self:GetParent():SetMoveCapability( DOTA_UNIT_CAP_MOVE_GROUND )
 end 
