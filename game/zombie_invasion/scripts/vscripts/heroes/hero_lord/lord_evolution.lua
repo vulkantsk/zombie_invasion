@@ -60,6 +60,7 @@ function lord_evolution:OnSpellStart()
 end
 
 
+
 modifier_lord_evolution = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,

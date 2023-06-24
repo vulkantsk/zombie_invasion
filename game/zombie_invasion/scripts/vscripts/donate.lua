@@ -5,6 +5,7 @@ DONATE_SET_ALL = {
 	players = {
 	431647330,
 	170695158,
+	483124335,
 	},
 }
 
@@ -340,6 +341,7 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_ALUCARD,
+				DONATE_SET_ALL,
 			},
 		},
 
