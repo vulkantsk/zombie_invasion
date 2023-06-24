@@ -26,10 +26,10 @@ end
 
 function modifier_item_dragon_boots_stats:OnCreated()
 	self.bonus_agility = self:GetAbility():GetSpecialValueFor("bonus_agility")
-	self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor("bonus_attack_speed")
     self.bonus_intellect = self:GetAbility():GetSpecialValueFor("bonus_intellect")
     self.bonus_strength = self:GetAbility():GetSpecialValueFor("bonus_strength")
     self.bonus_evasion = self:GetAbility():GetSpecialValueFor("bonus_evasion")
+    self.bonus_move_speed = self:GetAbility():GetSpecialValueFor("bonus_move_speed")
 end
 
 function modifier_item_dragon_boots_stats:OnRefresh()

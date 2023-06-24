@@ -11486,7 +11486,7 @@
 			"bonus_agility"			"50"
 			"bonus_strength"		"50"
 			"bonus_intellect"		"50"
-			"bonus_move_speed"		"90"
+			"bonus_move_speed"		"17"
 			"bonus_evasion"			"30"
 
 		}

@@ -1002,7 +1002,7 @@
 		"DOTA_Tooltip_Ability_item_dragon_boots"					"Dragon boots"
 		"DOTA_Tooltip_ability_item_dragon_boots_Lore"								"Проклятые ботинк дракона."
 		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_agility"					"+$all"
-		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_move_speed"					"БОНУСНАЯ СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_move_speed"					"%БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
 		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_evasion"					"ДОП.УКЛОНЕНИЕ:"
 
 		"DOTA_Tooltip_Ability_item_dragon_shield"					"Dragon shield"
@@ -1030,7 +1030,6 @@
 		"DOTA_Tooltip_Ability_item_dragon_sword_duration"				"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_intellecte"				"ДОП.ИНТЕЛЛЕКТ:"
-		"DOTA_Tooltip_Ability_item_dragon_helmet_spell_amp"					"%ДОП.МАГ.УРОН:"
 
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura"				"Vladmir's Aura"
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_Description"	"Имеет %dMODIFIER_PROPERTY_TOOLTIP%%% вампиризма, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% доп. урона и %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони, а также восстанавливает %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
