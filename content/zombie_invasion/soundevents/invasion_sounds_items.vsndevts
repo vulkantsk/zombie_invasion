@@ -897,7 +897,7 @@
                                                         "value0"                "sounds/skyrim"
                                                 }
                                         }
-                                                                                "volume"                        {   "value"     "20.000000"  }
+                                                                                "volume"                        {   "value"     "5.000000"  }
                                                                              "soundlevel"               {   "value"     "56"  }
                                                                                 "pitch"                 {       "value"         "1.000000" }
                                        "chan_type"
