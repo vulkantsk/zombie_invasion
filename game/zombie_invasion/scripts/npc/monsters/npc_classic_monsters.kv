@@ -2394,123 +2394,6 @@
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
  
 	}
- 
-
-
-	"npc_classic_necr"	
-	{
-		// General
-		//----------------------------------------------------------------
-		"Model"						"models/heroes/necrolyte/necrolyte.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Necrolyte"
-		"GameSoundsFile"			"soundevents/game_sounds_necrolyte.vsndevts"
-		"Level"						"9"
-		"ModelScale" 				"1.0"
-		"UseNeutralCreepBehavior"	"1"
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					"necrolyte_death_pulse"
-		"Ability2"					""
-		"Ability3"					""
-		"Ability4"					"necrolyte_heartstopper_aura_2"	   
-		"Ability5"					"respawn_necr"
-		"Ability6"					"ghoul_crazy_look"
- 
-
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"18"
-		"MagicalResistance"         "35"
-
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"120"
-		"AttackDamageMax"			"140"
-		"AttackRate"				"1.7"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"500"
-		"AttackRange"				"550"
-		"ProjectileModel"			"particles/econ/items/necrolyte/necrophos_sullen_gold/necro_sullen_pulse_enemy_gold.vpcf"
-		"ProjectileSpeed"			"600"			// Speed of projectile.		
-
-	     
-
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"175"
-		"BountyGoldMin"				"140"	
-		"BountyGoldMax"				"155"	
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"170"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"1125"
-		"StatusHealthRegen"			"30.0"
-		"StatusMana"				"800"	
-		"StatusManaRegen"			"20.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"500"
-		"VisionNighttimeRange"		"500"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-		// Creature Data
-		//----------------------------------------------------------------
-		"Creature"
-		{
-			"DefaultState"       "Invade"
-			"States"
-			{
-			    "Invade"
-			    {
-			        "Name"          "Invade"
-			        "Aggression"    "100.0"
-			        "Avoidance"     "0.0"
-			        "Support"       "0.0"
-			        "RoamDistance"  "400.0"
-			    }
-			}
-			
-			"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "7427" }
-					"Wearable1" { "ItemDef" "8043" }
-					"Wearable1" { "ItemDef" "8044" }
-					"Wearable1" { "ItemDef" "8045" }
- 				
-				}
-				
-							"OffensiveAbilities"
-			{
-				"Ability1"
-				{
-					"Name"					"necrolyte_death_pulse"										
-				}
-				
-			}
-		}
-	}
 
 
 	"npc_classic_big_necr"	
@@ -6245,15 +6128,15 @@
  
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
-		"MagicalResistance"         "33"
+		"ArmorPhysical"				"2000"			// Physical protection.
+		"MagicalResistance"         "12"
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"			"7500"
 		"AttackDamageMax"			"9000"
-		"AttackRate"				"4.5"
+		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
 		"AttackRange"				"600"

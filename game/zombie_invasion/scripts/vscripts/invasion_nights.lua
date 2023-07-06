@@ -179,7 +179,27 @@ end
 
 end
 
- function InvasionMode:ZombieNight7()  
+function InvasionMode:NextNight7()
+	local spawn_zmb = 0
+	self:SpawnZombie("npc_classic_necr",14)
+ 
+	Timers:CreateTimer(0, function()
+	     while spawn_zmb < 5 do
+		     spawn_zmb = spawn_zmb + 1
+             self:SpawnZombie("npc_classic_necr",14)     
+		     return 10
+		 end		
+		 return nil	 
+	end) 
+
+ 	Timers:CreateTimer(225,function()
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_viper",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 3)
+	end) 
+end
+
+
+ function InvasionMode:ZombieNight8()  
 
  
     self:SpawnZombie("npc_classic_wave_greater_zombie",11)

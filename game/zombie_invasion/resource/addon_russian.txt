@@ -133,6 +133,7 @@
  
 	   "Game_notification_boss_spawn_big_zombie"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'СУПЕР БОЛЬШОЙ ЗОМБИ' </font><font color='#DBA901'>,будьте наготове!</font>"
 	   "Game_notification_boss_spawn_half_zombie"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'СПИНОГРЫЗ' </font><font color='#DBA901'>,будьте наготове!</font>"
+	   "Game_notification_boss_spawn_viper"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ТОКСИК' </font><font color='#DBA901'>,будьте наготове!</font>"
 	   "Game_notification_boss_spawn_suicide"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'БЕЗВРЕДНЫЙ' </font><font color='#DBA901'>,будьте наготове!</font>"
 	   "Game_notification_boss_spawn_undying"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'ГОЛОДНЫЙ' </font><font color='#DBA901'>,будьте наготове!</font>"
 	   "Game_notification_boss_spawn_necr"				"<font color='#DBA901'>К ВАМ ПРИБЛИЖАЕТСЯ САМ </font><font color='#FF0000'>'MR. НЕКРОФОС' </font><font color='#DBA901'>,будьте наготове!</font>"

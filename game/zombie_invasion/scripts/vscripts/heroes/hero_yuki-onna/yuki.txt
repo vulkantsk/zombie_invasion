@@ -40,7 +40,7 @@
 			}
 			"bonus_resistance"
 			{
-				"value" "8 10 12 14 16 18 20"
+				"value" "8 9 10 11 12 13 14"
 				"special_bonus_unique_yuki_pohela_resistance"    "+7"
 			}
  			"reduce_atack_speed"		"10 15 20 25 30 35 40"
@@ -92,7 +92,7 @@
 
 
  
-			"dmg_reduced"					"20 25 30 35 40 45 50"
+			"dmg_reduced"					"10 15 20 25 30 35 40"
  
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
@@ -115,8 +115,8 @@
 		{
 				"damage_per_int"					
 				{
-					"value"				"1 1.25 1.5 1.75 2.0 2.25 2.5"
-					"special_bonus_unique_yuki_revenge_damage"    "+2.5"			 
+					"value"				"0.11 0.25 0.5 0.75 1.0 1.05 1.15"
+					"special_bonus_unique_yuki_revenge_damage"    "+1.15"			 
 					 "CalculateSpellDamageTooltip"	"0"
 
 				}
@@ -130,8 +130,8 @@
 			 
 				"heal"				
 				{
-					"value"				"15 30 45 60 90 120 180"		
-					"special_bonus_unique_yuki_revenge_heal"    "+600"			 
+					"value"				"15 40 55 110 155 220 340"		
+					"special_bonus_unique_yuki_revenge_heal"    "+560"			 
 				}
  
 				 
@@ -209,7 +209,7 @@
  			"duration"        "6"
  			"dmg_per_atr"      "6"
  			"interval"      "0.2"
- 			"bonus_main"         "5 7 9 12"
+ 			"bonus_main"         "11 14 18 22"
  			 "dmg_incr"      "50"
  			 "dmg_reduce"      "30"
 
@@ -247,7 +247,7 @@
  			"bonus_health" "500 1500 3000"
  			"max_snowman"					
 			{
-				"value"				"2 3 4"
+				"value"				"3 4 5"
 				"special_bonus_unique_yuki_snowman_max"    "+1"			 
 					 
 			}	
@@ -285,7 +285,7 @@
 		{
  			
  			"radius"                "150"
- 			"heal"                "100 250 500"
+ 			"heal"                "190 370 550"
  			"slow_as"              "-10 -20 -30"
  			"duration"               "2"
 

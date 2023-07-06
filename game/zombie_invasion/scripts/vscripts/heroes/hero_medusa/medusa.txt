@@ -106,7 +106,7 @@
 
 		"HasScepterUpgrade"			"0"
 
-		"MaxLevel"						"7"
+		"MaxLevel"						"1"
 		"LevelsBetweenUpgrades"			"2"
 		"RequiredLevel"					"1"
 
@@ -133,8 +133,8 @@
 		//"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"10"
 		"AbilitySound"					"Hero_Medusa.StoneGaze.Cast"
 
 		// Casting
@@ -158,16 +158,16 @@
 			"radius"							"1200"
 			"duration"
 			{
-				"value"							"6"
-				"special_bonus_unique_medusa"	"+2"
+				"value"							"12"
+				"special_bonus_unique_medusa"	"+4"
 			}
-			"slow"								"20"
-			"stone_duration"					"1.0"
+			"slow"								"70"
+			"stone_duration"					"2.0"
 			"face_duration"						"2.0"
 			"vision_cone"						"0.08715"		// 85 degree cone
 			"bonus_physical_damage"
 			{
-				"value"							"45"
+				"value"							"120 240 360"
 				"DamageTypeTooltip"				"DAMAGE_TYPE_PHYSICAL"
 			}
 			"speed_boost"						"200"
@@ -249,7 +249,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"snake_jumps"			"6 12 18"
+				"snake_jumps"			"12 20 44"
 			}
 			"03"
 			{
@@ -259,7 +259,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"snake_damage"			"200 275 350"
+				"snake_damage"			"200 445 575"
 			}
 			"05"
 			{
@@ -269,7 +269,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"snake_scale"			"10 20 30"
+				"snake_scale"			"10 25 40"
 			}
 			"07"
 			{

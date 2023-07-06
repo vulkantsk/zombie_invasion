@@ -91,8 +91,6 @@ function InvasionMode:InvasionMap()
 
 	Difficulty:Init()
 end
-
-Drow_was_picked = 0
  
  function InvasionMode:InvasionMapGameRulesStateChange(data)
 	local newState = GameRules:State_Get()
@@ -116,12 +114,6 @@ Drow_was_picked = 0
     		for id=0, PlayerResource:GetPlayerCount() - 1 do
   
  			local hero_name   = PlayerResource:GetSelectedHeroName(id)
-
-      		if hero_name == "npc_dota_hero_drow_ranger" then 
-      			Drow_was_picked = Drow_was_picked + 1
-      			EmitGlobalSound("amekudeku - Drow Ranger")
-      			return nil
-      		end
 
     		end
 
@@ -472,10 +464,11 @@ function InvasionMode:NightTimer(time)
 			elseif currentNight == 5 then
 				InvasionMode:ZombieNight5() 
 			elseif currentNight == 6 then
-				InvasionMode:ZombieNight6() 
+				InvasionMode:ZombieNight6()
 			elseif currentNight == 7 then
-				InvasionMode:ZombieNight7() 
-
+				InvasionMode:NextNight7()
+			elseif currentNight == 8 then
+				InvasionMode:ZombieNight8() 
 				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
                         InvasionMode:UsuallyEnd()  
 				end)
@@ -510,7 +503,6 @@ end
  
 function InvasionMode:InvasionGameStart()
 
- 
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
@@ -1456,6 +1448,12 @@ function InvasionMode:ThemeMusic()
     	},
 
  	[8] = {
+  		    "part of me call me karizma, три дня дождя",
+  		    "Baur Karbon - отпусти",
+
+    	},
+
+    	[9] = {
   		    "GigaChad Theme",
 
     	},
@@ -1530,89 +1528,6 @@ function InvasionMode:ThemeMusic()
         ]] 
     }	
 
-    if Drow_was_picked == 1 then 
-    		day_music = {
-    			[1] = {
-    				"Amekudeku - Drow Rangerr",
-    			},
-    	[2] = {
-  		    "Серега пират - АМ ФП", 
-  		    "Life - Larson",
-  		    "Musica - Fly Project",
-  		    "Wake Me Up - Avicii",
-  		    "Galantis - No Money",
-  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 
-  		    "a-ha - Take On Me",	
-  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",
-              "Серега пират - Мой байк",
-    	},
- 
-    	  
-    	[3] = {
-  		    "Summertime",
-  		    "I Follow Rivers - Lykke Li",
-  		    "August - Intelligency",  
-  		    "Shotgun - Yellow Claw feat. Rochelle",
-  		    "Runaway - Parachute Youth feat. Jay Martin",
-  		    "Sia - Cheap Thrills",
-  		    "L Starz - My Life Be LikeGrits",
-  		    "Kiesza - Hideaway",
-  		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",
-  		    "AJR - World's Smallest Violin",
-  		    "Earth Wind And Fire - Let's Groove",
-  		    "Redbone - Come and Get Your Love",
-    	},
-    		 
-     [4] = {
-		"RSAC - NBA",
-		"Daved Guetta - Would I Lie To You",
-		 "Sia - Chandelier",
-		"Does It Matter - Janieck",	
-		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
-		"Серега пират - Я взлетаю вверх",  			
-    	},
-  	   	     
-     [5] = {
-		"RSAC - NBA",
-  		"Galantis - No Money",
-  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 
-  		    "a-ha - Take On Me",	
-  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",	
-		  		    "C418 - Sweden",		
-    	},
-
-     [6] = {
-  		    "Kiesza - Hideaway",
-  		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",
-  		    "AJR - World's Smallest Violin",
-  		    "Earth Wind And Fire - Let's Groove",
-  		    "Redbone - Come and Get Your Love",
-  		    "Akira Yamaoka – Never Forgive Me",			
-    	},
-     [7] = {
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",
-              "Серега пират - Мой байк",
-		"Серега пират - Я взлетаю вверх",  	
-		  		    "C418 - Sweden",	
-  		    "Runaway - Parachute Youth feat. Jay Martin",
-  		    "Sia - Cheap Thrills",
-    	},
-
- 	[8] = {
-  		    "GigaChad Theme",
-
-    	},
-    		}
-    	end
 
  	night_music =
  	{
@@ -1644,10 +1559,15 @@ function InvasionMode:ThemeMusic()
 	 		"AZAZLO - SSC Tuatara",
 			"AZAZLO - Revolver",
           },
- 		[7] = {
+          [7] = {
+			"raizhell — pull the trigger",
+			"sacredxii - absolute (prod by sacredxii)", 
+          },
+ 		[8] = {
 			"Kordhell - Murder In My Mind",
 			"convolk - soldier freestyle", 
           },
+
  		--[[ 
   		[5] = {
 	 		"Argh Ost – Halloween",

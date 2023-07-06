@@ -124,6 +124,7 @@
 
 	   "Game_notification_boss_spawn_big_zombie"				"<font color='#FF0000'>SUPER BIG ZOMBIE </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
 	   "Game_notification_boss_spawn_half_zombie"				"<font color='#FF0000'>SPINOGRYZ </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
+	   "Game_notification_boss_spawn_viper"				"<font color='#FF0000'>TOXIC </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
 	   "Game_notification_boss_spawn_suicide"				" <font color='#FF0000'>HARMLESS </font><font color='#DBA901'>IS APPROACHING YOU BE READY! </font>"
 	   "Game_notification_boss_spawn_undying"				"<font color='#FF0000'>'HUNGRY' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"
 	   "Game_notification_boss_spawn_necr"				"<font color='#FF0000'>'MR. NECR' </font><font color='#DBA901'>IS APPROACHING YOU BE READY!</font>"

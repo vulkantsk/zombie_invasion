@@ -131,14 +131,14 @@
 		{
 			"side_damage_reduction"
 			{
-				"value"			"5 5 8 11 14 17 20"
-				"special_bonus_unique_brist_brist_block"    "+5"
+				"value"			"2 2 4 9 14 17 20"
+				"special_bonus_unique_brist_brist_block"    "+4"
 
 			}
 			"back_damage_reduction"
 			{
-				"value"			"10 15 20 25 30 35 40"
-				"special_bonus_unique_brist_brist_block"    "+10"
+				"value"			"4 8 12 14 16 18 20"
+				"special_bonus_unique_brist_brist_block"    "+4"
 			}
 
 			"side_angle"					"110"
@@ -198,7 +198,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"30 50 70"
 		
-		"AbilityDuration"				"3.5 4.5 5.5"
+		"AbilityDuration"				"3.5 4.5 7.5"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------

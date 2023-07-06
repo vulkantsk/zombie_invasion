@@ -80,7 +80,7 @@ function medusa_mystic_snake_dm2017:OnProjectileHit( hTarget, vLocation )
 			hTarget:AddNewModifier( self:GetCaster(), self, "modifier_medusa_stone_gaze_stone", { duration = self.stone_duration } )
 
 			-- Scale up the damage now
-			self.snake_damage = self.snake_damage + ( self.snake_damage * self.snake_scale ) / 100;
+			self.snake_damage = self.snake_damage + (self:GetCaster():GetBaseDamageMax() + ( self.snake_damage * self.snake_scale ) / 100);
 			self.nCurJumpCount = self.nCurJumpCount + 1
 
 			table.insert( self.hHitEntities, hTarget )

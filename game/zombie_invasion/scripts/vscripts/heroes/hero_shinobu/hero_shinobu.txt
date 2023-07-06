@@ -419,10 +419,10 @@
 			"bonus_damage"
 			{
 				
-				"value"		"50 70 90 110 150 170 220"
-				"special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+80"
+				"value"		"70 90 110 150 170 260 320"
+				"special_bonus_unique_shinobu_shinobu_yumewatari_lua" "+300"
 			}
-				"max_ghost_level"	"3 5 8 12 16 20 35"
+				"max_ghost_level"	"7 12 18 22 26 30 35"
 		}
 	}
 

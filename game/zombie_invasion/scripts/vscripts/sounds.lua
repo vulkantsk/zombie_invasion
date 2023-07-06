@@ -31,6 +31,10 @@ Sounds = Sounds or {
   		["Boulevard of Broken Dreams - Green Day"] = 75,
 		
  
+
+  		["part of me call me karizma, три дня дождя"] = 120,
+  		["Baur Karbon - отпусти"] = 120,
+
   		["Summertime"] = 63,
   		["I Follow Rivers - Lykke Li"] = 55,
    		["August - Intelligency"] = 91,  
@@ -53,7 +57,8 @@ Sounds = Sounds or {
  		["GigaChad Theme"] = 187,
 
 
-
+["raizhell — pull the trigger"] = 120,
+["sacredxii - absolute (prod by sacredxii)"] = 95,
 ["amekudeku - Drow Ranger"] = 95,
  
 

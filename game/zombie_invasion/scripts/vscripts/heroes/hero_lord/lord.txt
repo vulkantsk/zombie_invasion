@@ -13,9 +13,9 @@
 
  	"AbilityValues"
  	{
- 		"health_bonus"                   "150 300 450 600 750 900 1050 1200"
+ 		"health_bonus"                   "50 75 250 400 550 700 900 1100"
  		"armor_bonus"               "2 4 6 8 10 12 14 16"
- 		"damage_bonus"               "20 40 60 80 100 120 140 160"
+ 		"damage_bonus"               "5 10 15 80 100 110 140 180"
  		"ms_bonus"               "5 10 15 20 25 30 35 40"
  		"hp_regen_bonus"               "5 10 15 20 25 30 35 40"
 		"pay"			
@@ -34,7 +34,7 @@
 	"ScriptFile"					"heroes/hero_lord/lord_remove_restriction"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	"AbilityTextureName" 			"alucard/res"
-	"AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"  
+	"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
 
 		"IsGrantedByScepter"			"1"
 		"HasScepterUpgrade"				"1"
@@ -46,8 +46,8 @@
  	"AbilityValues"
  	{
  		"radius"                    "300"
- 		"stack"                     "100"
- 		"damage_pct"                     "200"
+ 		"stack"                     "70"
+ 		"damage_pct"                     "140"
   	}
  }
 
@@ -75,7 +75,7 @@
 		}	
  		"radius"                       "350"
  		"damage_percent"                "2"
- 		"damage"                "80"
+ 		"damage"                "60"
  		"interval"              "0.2"
  	}
  } 
@@ -99,7 +99,7 @@
  	"AbilityValues"
  	{
  		"attack_pct"                   "15"
- 		"lifesteal_pct"               "10"
+ 		"lifesteal_pct"               "5"
  		"bonus_armor"                 "10"
  		"bonus_damage"                "175"
  		"bonus_resist"                "15"
@@ -115,8 +115,8 @@
 	"MaxLevel"                       "1"
 	"RequiredLevel"					"1000"
 
-	"AbilityHealthCost"				"200"
-    "AbilityCooldown"               "120"
+	"AbilityHealthCost"				"170"
+    "AbilityCooldown"               "90"
 	"AbilityCastPoint"				"1.2"
 
 
@@ -193,12 +193,12 @@
  		 
  		"lifesteal_pct"               "10"
  		"bonus_armor"                 "5 6 7 8 9 10 11 12"
- 		"bonus_damage"                "50 65 80 110 140 170 230 330"
+ 		"bonus_damage"                "40 65 80 110 140 170 230 270"
  		"bonus_resist"                "10"
  		"bonus_ms"                    "20 22 24 26 28 30 32 34"
  		"AbilityCooldown"			
 		{
-			"value"	"500 480 460 440 420 400 380 360"
+			"value"	"500 480 460 440 420 400 380 240"
 			"special_bonus_unique_lord_kiss_cooldown"	"-100"	
 		}
  	}
@@ -219,7 +219,7 @@
 	"RequiredLevel"					"25"
 
     "AbilityCooldown"               "80 60"
-	"AbilityHealthCost"				"100 50"
+	"AbilityHealthCost"				"140 140"
 
  	"AbilityValues"
  	{

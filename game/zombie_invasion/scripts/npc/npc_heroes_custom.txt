@@ -787,7 +787,7 @@
 		"AttackRange"				"200"				
 		"Ability1"					"tidehunter_gush"
 		"Ability2"					"tidehunter_kraken_shell"
-		"Ability3"					"tidehunter_anchor_smash"
+		"Ability3"					"anchor_smash"
 		"Ability4"					"tidehunter_ravage"
 		"Ability5"					"generic_hidden"
 		"Ability6"					"tide_health"

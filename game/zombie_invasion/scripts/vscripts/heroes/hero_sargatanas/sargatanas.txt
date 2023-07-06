@@ -16,7 +16,7 @@
         "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
          "LinkedAbility"                 "ability_hell_summon"
 
-		"AbilityCharges"                "2"
+		"AbilityCharges"                "3"
 
 		"AbilityCastRange"				"300 300 300 300"
 		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
@@ -37,7 +37,7 @@
                 "max_stack"           "5"
 
 
-				"AbilityChargeRestoreTime" "24 23 22 21 20 19 18"
+				"AbilityChargeRestoreTime" "24 20 18 16 14 12 8"
 			
 		}
 	}
@@ -60,7 +60,7 @@
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "30 30 30 20 20 20 15"
+        "AbilityCooldown"               "30 30 30 20 20 15 7"
         
         // Cost
         //-------------------------------------------------------------------------------------------------------------
@@ -82,8 +82,8 @@
                 "projectile_speed"  "2000"
                 "stack_overhell"          "1 2 3 4 5 6 7"
 
-                "bonus_damage"                        "40 60 80 100 120 140 160 180 200"
-                "bonus_attack_speed"                 "15 30 45 60 75 90 115 130 145"
+                "bonus_damage"                        "40 60 80 100 120 140 160 180 460"
+                "bonus_attack_speed"                 "15 30 45 60 75 90 115 130 245"
     
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
@@ -121,12 +121,12 @@
             "04"
             {
                 "var_type"              "FIELD_INTEGER"
-                "great_cleave_damage"   "10 20 30 40 50 60 70"
+                "great_cleave_damage"   "40 70 90 110 140 180 240"
             }
             "05"
             {
                 "var_type"              "FIELD_INTEGER"
-                "fire_damage"   "2 4 8 16 32 64 128"
+                "fire_damage"   "2 4 8 16 32 64 326"
             }
             "06"
             {
@@ -185,18 +185,18 @@
             "06"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                 "40 80 160 320 640 1280 2560"
+                "damage"                 "160 320 640 1280 2560 5000 12000"
             } 
  
             "07"
             {
                 "var_type"              "FIELD_INTEGER"
-                "unduced"                 "2 4 6 8 10 12 14"
+                "unduced"                 "8 10 12 14 17 21 24"
             }     
             "08"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage_meta"                 "5000"
+                "damage_meta"                 "200000"
             } 
  
             "09"
@@ -223,7 +223,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {                       
-            "str_dmg"              "0.5"
+            "str_dmg"              "1.25"
              "str_hp"              "10"
 
  
@@ -250,7 +250,7 @@
 
             "duration"                    
                 {
-                    "value"             "7 9 14 25"
+                    "value"             "20 24 28 32"
                     "special_sargatanas_meta"     "+10"
                 }  
             "bonus_resistance"             "1"

@@ -34,6 +34,8 @@
 #base "../vscripts/heroes/hero_demonslayer/demonslayer.txt"
 #base "../vscripts/heroes/hero_tech/techies.txt"
 #base "../vscripts/heroes/hero_yuki-onna/yuki.txt"
+#base "../vscripts/heroes/hero_tide/tidehunter.txt"
+
 
 "DOTAAbilities"
 {
@@ -173,7 +175,56 @@
  
 		}
 	}
-	
+
+	  "ability_viper_corrosive_skin"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/zombie/Boss/viper_corrosive_skin"
+        "AbilityTextureName"            "viper_corrosive_skin"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportBonus"       "10"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "duration"                  "1.2"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_attack_speed"        "800"
+                "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_magic_resistance"    "250"
+                "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "damage"                    "3220"
+                "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "max_range_tooltip"                 "2700"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
 
 	"invul_unit"
   	{
