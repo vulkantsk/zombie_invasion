@@ -196,7 +196,7 @@
             "08"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage_meta"                 "200000"
+                "damage_meta"                 "1000 5000 10000 20000 30000 50000"
             } 
  
             "09"
