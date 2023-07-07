@@ -147,10 +147,11 @@
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-        "MaxLevel"                        "7"
+        "RequiredLevel"                 "35"
+        "MaxLevel"                        "1"
 
         "AbilityCooldown"               "14"
-        "AbilityManaCost"               "0 100 200 300 400 500 1000"
+        "AbilityManaCost"               "500"
 
         
         // Special
@@ -180,29 +181,29 @@
             "05"
             {
                 "var_type"              "FIELD_INTEGER"
-                "stack_overhell"                 "5 6 7 8 9 10 11"
+                "stack_overhell"                 "110"
             }      
             "06"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                 "160 320 640 1280 2560 5000 12000"
+                "damage"                 "20000"
             } 
  
             "07"
             {
                 "var_type"              "FIELD_INTEGER"
-                "unduced"                 "8 10 12 14 17 21 24"
+                "unduced"                 "34"
             }     
             "08"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage_meta"                 "1000 5000 10000 20000 30000 50000"
+                "damage_meta"                 "50000"
             } 
  
             "09"
             {
                 "var_type"              "FIELD_INTEGER"
-                "unduced_meta"                 "36"
+                "unduced_meta"                 "67"
             }  
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
