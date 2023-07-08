@@ -35,6 +35,7 @@
 #base "../vscripts/heroes/hero_tech/techies.txt"
 #base "../vscripts/heroes/hero_yuki-onna/yuki.txt"
 #base "../vscripts/heroes/hero_tide/tidehunter.txt"
+#base "../vscripts/heroes/hero_silencer/silencer.txt"
 
 
 "DOTAAbilities"

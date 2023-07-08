@@ -188,6 +188,7 @@
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
 		"npc_boss_chicken"                                                  "Петух???"
 		"npc_jitel"                                                         "Кункевич"
+		"npc_portal"														"Портал"
 		"npc_jitel_2"                                                       "Цмочка" 
 		"npc_jitel_3"                                                       "Бродяга"
 	    "npc_jitel_4"                                                       "Лина"
@@ -196,6 +197,11 @@
 	    "npc_jitel_7"                                                       "Гробовщик"
 	    "npc_guard"                                                       "Стражник"
 		"npc_boss_pig"                                                   	"Большой Бо" 
+		"npc_spirit_sargatanas_hell_summon"									"Огненный дух"
+		"npc_golem_sargatanas_hell_summon"									"Голем"
+		"npc_dragon_sargatanas_hell_summon"									"Тёмный Дракон"
+		"npc_kaban_sargatanas_hell_summon"									"Непревосходимый Кабан"
+		"npc_scorpion_sargatanas_hell_summon"								"Скарапасикс"
 		"npc_boss_pig_pet"                                                   	"Большой Бо"   
         "npc_boss_dead_pig"		                                            "Искаженный Бо"   	
 		"npc_medas"                                                  		"Сундук"
@@ -2608,9 +2614,9 @@
   	"DOTA_Tooltip_ability_ability_sunflame_range" "РАДИУС:"
   	"DOTA_Tooltip_ability_ability_sunflame_stack_overhell" "СТАКОВ ПЕРЕГРЕВА:"
   	"DOTA_Tooltip_ability_ability_sunflame_damage" "УРОН:"
-  	"DOTA_Tooltip_ability_ability_sunflame_unduced" "%ДОП.УРОНА:"
+  	"DOTA_Tooltip_ability_ability_sunflame_unduced" "%УМЕНЬШЕНИЕ УРОНА:"
   	"DOTA_Tooltip_ability_ability_sunflame_damage_meta" "УРОН ПОД УЛЬТОЙ:"
-  	"DOTA_Tooltip_ability_ability_sunflame_unduced_meta" "%ДОП.УРОНА ПОД УЛЬТОЙ:"
+  	"DOTA_Tooltip_ability_ability_sunflame_unduced_meta" "%УМЕНЬШЕНИЕ УРОНА:"
 
   	"DOTA_Tooltip_ability_ability_hell_summon" "Hell summon"
   	"DOTA_Tooltip_ability_ability_hell_summon_Description"		"Урон зависит от характеристик персонажа. Сила – хп и дамаг.
@@ -2628,8 +2634,13 @@
 	"DOTA_Tooltip_ability_ability_metamorphosis_armor_ag" "АРМОР ЗА АГИЛУ:"
 	"DOTA_Tooltip_ability_ability_metamorphosis_attack_speed_ag" "СКОРОСТЬ АТАКИ ЗА АГИЛУ:"
 
-	"DOTA_Tooltip_ability_special_sargatanas_meta2" "+6 к максимальному резисту урона"
-	"DOTA_Tooltip_ability_special_sargatanas_meta" "+10 секунд к действию"
+	"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_max_stack"							"+{s:bonus_max_stack} к количеству стков способности Devour"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_str_dmg"							"+{s:bonus_str_dmg} урона призванных существ способности hell summon"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_duration_1"							"+{s:bonus_duration} длительности способности hellstep"
+
+
 
 
  	// -----------------Drow_ranger-------------------

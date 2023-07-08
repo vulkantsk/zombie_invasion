@@ -32,9 +32,14 @@
 
 				"regen"					"1 5 9 13"
 			
-				"creep_level"			"5 10 15 20"
+				"creep_level"			"1 5 10 15 20"
 
-                "max_stack"           "5"
+
+                "max_stack"
+                {
+                    "value"         "3 3 4 4 5"
+                    "special_bonus_unique_sargatanas_max_stack"  "+5"
+                }
 
 
 				"AbilityChargeRestoreTime" "24 20 18 16 14 12 8"
@@ -78,9 +83,14 @@
                 "max_duration"          "6"
                 "radius"        "400"
 
-                "duration"          "8"
                 "projectile_speed"  "2000"
-                "stack_overhell"          "1 2 3 4 5 6 7"
+                "stack_overhell"          "1 2 3 4 5 6 7 8 9"
+
+                "duration"
+                {
+                    "value"         "6 6 8 8 10 12 14 16 18"
+                    "special_bonus_unique_sargatanas_duration_1"  "+4"
+                }
 
                 "bonus_damage"                        "40 60 80 100 120 140 160 180 460"
                 "bonus_attack_speed"                 "15 30 45 60 75 90 115 130 245"
@@ -218,13 +228,18 @@
          
          "LinkedAbility"                 "star_devour"
 
-        "AbilityCooldown"               "30.0"
+        "AbilityCooldown"               "30 28 26 24 22"
        
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {                       
-            "str_dmg"              "1.25"
+            "str_dmg"
+                {
+                    "value"         "0.25 0.5 0.75 1 1.25"
+                    "special_bonus_unique_sargatanas_str_dmg"  "+0.75"
+                }
+
              "str_hp"              "10"
 
  
@@ -270,7 +285,7 @@
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
 
-    "special_sargatanas_meta"
+    "special_bonus_unique_sargatanas_max_stack"
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
@@ -278,8 +293,7 @@
         "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     }
-    
-    "special_sargatanas_meta2"
+    "special_bonus_unique_sargatanas_duration_1"
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
@@ -287,4 +301,13 @@
         "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     }
+    "special_bonus_unique_sargatanas_str_dmg"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    }
+
 }

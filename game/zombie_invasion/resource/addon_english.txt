@@ -212,6 +212,7 @@
 	    "npc_gurd_jitel"													"Gurd"
 
 		"npc_jitel"                                                         "Kunnka"
+		"npc_portal"							"Portal"
 		"npc_jitel_2"                                                       "Crystal Maiden" 
 		"npc_jitel_3"                                                       "Tramp"
 	    "npc_jitel_4"                                                       "Lina"
@@ -220,6 +221,11 @@
 	    "npc_jitel_7"                                                       "Undertaker"
 	    "npc_guard"                                                       "Guard"
 		"npc_boss_pig"                                                   	"Big Bo"  
+		"npc_kaban_sargatanas_hell_summon"									"KABANPUMBAAAAAAAAAAAAA"
+		"npc_dragon_sargatanas_hell_summon"									"Dark Dragon"
+		"npc_scorpion_sargatanas_hell_summon"					"scorpionix"
+		"npc_spirit_sargatanas_hell_summon"									"fire spirit"
+		"npc_golem_sargatanas_hell_summon"					"Golem"
 		"npc_boss_pig_pet"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Strange Bo"   			
 		"npc_medas"                                                  		"Treasure"
@@ -1840,6 +1846,14 @@ The player can control the summoned creeps."
 	"DOTA_Tooltip_ability_ability_metamorphosis_radius" "RADIUS:"
 	"DOTA_Tooltip_ability_ability_metamorphosis_armor_ag" "ARMOR FOR AGILITY:"
 	"DOTA_Tooltip_ability_ability_metamorphosis_attack_speed_ag" "ATTACK SPEED FOR AGILITY:"
+
+	
+	"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_max_stack"							"+{s:bonus_max_stack} bonus stacks Devour"
+
+	"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_str_dmg"							"+{s:bonus_str_dmg} damage summon units hell summon"
+
+	"DOTA_Tooltip_Ability_special_bonus_unique_sargatanas_duration_1"							"+{s:bonus_duration} duration hellstep"
+
 
 		// -----------------Drow_ranger-------------------
 
