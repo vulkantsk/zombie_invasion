@@ -239,9 +239,9 @@
 		"ScriptFile"					"heroes/hero_sniper/rocket_shots/rocket_shots"
 		"AbilityTextureName"			"gyrocopter_rocket_barrage"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
+		"MaxLevel"						"3"
  	
-		"RequiredLevel"					"35"
+		"RequiredLevel"					"10"
  
 		
 		// Ability General
@@ -254,7 +254,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"3.5"
+		"AbilityCooldown"				 "0"
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
 
@@ -265,13 +265,13 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"  
-				"bonus_speed_atack"					"0.35"
+				"bonus_speed_atack"					"0.45 0.35 0.25"
 			}
 		
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"		"0.55"
+				"duration"		"0.15"
 			}
 
       }

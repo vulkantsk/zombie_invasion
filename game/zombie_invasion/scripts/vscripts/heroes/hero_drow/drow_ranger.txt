@@ -132,9 +132,6 @@
         }
      }
 
-    // Author: kritth
-    // Date: 3.1.2015.
-    // Note: Constraint is that agility never go above 2841
     "ability_wave_of_terror"
     {
         "BaseClass"                     "ability_lua"

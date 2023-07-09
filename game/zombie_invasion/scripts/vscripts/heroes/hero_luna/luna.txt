@@ -261,8 +261,8 @@
 		"ScriptFile"					"heroes/hero_luna/luna_night_buff/luna_night_buff"
 		"AbilityTextureName"			"luna/luna"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"10"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
@@ -283,24 +283,24 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"12"
+				"duration"				"12 16 20"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"				"375"
+				"bonus_damage"				"245 345 550"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_speed"				"245"
+				"attack_speed"				"120 165 245"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spell_damage"				"45"
+				"spell_damage"				"450"
 				"CalculateSpellDamageTooltip" "0"
 			}
 

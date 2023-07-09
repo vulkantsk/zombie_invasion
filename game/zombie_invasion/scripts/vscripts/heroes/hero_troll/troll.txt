@@ -385,16 +385,16 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_troll/giant_strikes/giant_strikes"
 		"AbilityTextureName"		"innate_giant_strikes"
-		"RequiredLevel"				"35"
-		"MaxLevel"					"1"
+		"RequiredLevel"				"10"
+		"MaxLevel"					"3"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"AbilityValues"
 		{
-			"locked_attack_speed"			"734"
-			"pct_damage_per_attack_speed"	"0.3"
+			"locked_attack_speed"			"650 700 734"
+			"pct_damage_per_attack_speed"	"0.1 0.2 0.3"
 		}
 	}
 	"Troll_inner_beast"

@@ -23,7 +23,7 @@
 		"AbilityValues"
 		{
 
-			"damage_modifier"		"-60 -50 -40 -30 -20 -10 0"
+			"damage_modifier"		"-40 -30 -20 -10 0 10 20"
 			"damage_modifier_tooltip"		"40 50 60 70 80 90 100"
 			"arrow_count"				"100"
 			"split_shot_bonus_range"		"100"
@@ -58,8 +58,8 @@
 
 			"soul_damage"					
 			{
-				"value"				"1"  
-			    "special_bonus_unique_sf_necrom_damage"	    "+0.5"
+				"value"				"0.2 0.4 0.6 0.8 1 1.2 1.4"  
+			    "special_bonus_unique_sf_necrom_damage"	    "+0.6"
 					 
 			}
 			"soul_max"				"666"
@@ -67,7 +67,7 @@
 			"lifesteal_pct"					
 			{
 				"value"				"2 4 6 8 10 12 14"  
-			    "special_bonus_unique_sf_necrom_life"	    "+10"
+			    "special_bonus_unique_sf_necrom_life"	    "+12"
 					 
 			}
 		}
@@ -97,7 +97,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"40 55 70 85 100 115 130"
+		"AbilityManaCost"				"150"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -155,7 +155,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-                "reduced_armor"                          "30 50 70"
+                "reduced_armor"                          "40 60 80"
 
 
         }
@@ -181,8 +181,8 @@
         {
                 "dmg_proc"                          "1500"
                 "str_per_stack"                      "2 4 6"
-				"bonus_health"			"500 1000 1500"
-				"bonus_armor"			"3 6 9"
+				"bonus_health"			"250 500 750"
+				"bonus_armor"			"2 4 8"
 				"AbilityCooldown"					
 				{
 					"value"				"30"
