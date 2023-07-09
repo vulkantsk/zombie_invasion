@@ -31,7 +31,7 @@
 	"npc_dota_hero_enigma"				"1"
 	"npc_dota_hero_drow_ranger"			"1"
 	"npc_dota_hero_muerta" 				"1"
-	"npc_dota_hero_silencer"			"1"
+	"npc_dota_hero_silencer"			"0"
  
 
 // Donate

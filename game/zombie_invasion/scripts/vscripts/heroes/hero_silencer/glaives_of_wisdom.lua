@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_ability_glaives_of_wisdom", "heroes/hero_silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_glaives_of_wisdom_orb", "heroes/hero_silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_glaives_of_wisdom", "heroes/silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_glaives_of_wisdom_orb", "heroes/silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
 
 ability_glaives_of_wisdom = {}
 
