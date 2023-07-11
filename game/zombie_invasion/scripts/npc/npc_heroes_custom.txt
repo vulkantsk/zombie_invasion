@@ -390,6 +390,8 @@
 		"Ability15"		"special_bonus_cooldown_reduction_25"
 		"Ability16"		"special_bonus_mp_1000"
 			"Ability17"		"special_bonus_unique_medusa"		
+
+			"ArmorPhysical" "8"
 	}
 	
 "npc_dota_hero_gyrocopter"

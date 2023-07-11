@@ -19,13 +19,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damagee"				"-70 -65 -60 -55 -50 -45 -40"
+				"damagee"				"-40 -35 -30 -25 -10 -5 15"
 			}
 
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"arrow_count"			"4"
+				"arrow_count"			"4 5 6 7 8"
 			}	
 			"03"
 			{
@@ -108,7 +108,7 @@
 
 		"MaxLevel"						"1"
 		"LevelsBetweenUpgrades"			"2"
-		"RequiredLevel"					"1"
+		"RequiredLevel"					"-1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -174,36 +174,33 @@
 		}	
  
 	}
-
-
 	"medusa_mana_shield"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"					"5506"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"		
 		"AbilitySound"					"Hero_Medusa.ManaShield.On"
 		"MaxLevel"						"7"
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0"
+		"RequiredLevel"					"-1"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"damage_per_mana"		
 			{
-				"var_type"				"FIELD_FLOAT"
-				"damage_per_mana"		"0.5 1.0 1.5 2.0 2.5 3.0 3.5"
+				"value"								"7 8 9 10 11"
 			}
-			"02"
+
+			"illusion_damage_per_mana"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"absorption_pct"			"95"
+				"value"								"21 24 28 32 36"
 			}
-		
+
+			"absorption_pct"						"98"
+			"bonus_mana"							"0 50 100 150 200"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
