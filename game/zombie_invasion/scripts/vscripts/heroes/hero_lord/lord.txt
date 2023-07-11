@@ -219,7 +219,7 @@
 	"RequiredLevel"					"25"
 
     "AbilityCooldown"               "80 60"
-	"AbilityHealthCost"				"140 140"
+	"AbilityHealthCost"				"80 100"
 
  	"AbilityValues"
  	{

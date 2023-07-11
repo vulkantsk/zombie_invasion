@@ -114,12 +114,12 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"blade_fury_damage"			"10"
+				"blade_fury_damage"			"75"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"5.0"
+				"duration"					"7.5"
 			}
          	"05"
 			{
@@ -232,7 +232,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"attack_rate_multiplier"	"1.5"
+			"attack_rate_multiplier"	"2.5"
 			"bonus_damage"				"0"
 			"bonus_attack_speed"				"120"
 			"duration"
@@ -306,12 +306,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"blade_dance_crit_chance"	"20"
+				"blade_dance_crit_chance"	"44"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"blade_dance_crit_mult"		"200"
+				"blade_dance_crit_mult"		"245"
 			}
 		}
 	}
@@ -385,7 +385,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"2"
+				"max_charges"			"4"
 			}
 			"03"
 			{
@@ -448,7 +448,7 @@
 		}
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
+		"AbilityCooldown"				"30"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 
 		// Cost
@@ -477,7 +477,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dmg_bonus"					"125"
+				"dmg_bonus"					"525"
 			}
 
 		}
@@ -548,7 +548,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dmg_bonus"					"625"
+				"dmg_bonus"					"2525"
 			}
 			"05"
 			{
@@ -568,12 +568,12 @@
 			"08"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"attack_base"					"0.90"
+				"attack_base"					"0.20"
 			}
 			"09"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"status_resist"					"50"
+				"status_resist"					"90"
 			}
 
 		}

@@ -1515,6 +1515,10 @@
 		"DOTA_Tooltip_modifier_ability_ion_shell_golden_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%%"
 
 
+		"DOTA_Tooltip_Ability_special_bonus_unique_dark_seer_golden_shield"						"+{s:bonus_damage_per_second} damage per sec golden shield"
+		"DOTA_Tooltip_Ability_special_bonus_unique_dark_seer_golden_shield_2"						"+{s:bonus_bonus_health} bonus health golden shield"
+		"DOTA_Tooltip_Ability_special_bonus_unique_dark_seer_ion_shield"						"+{s:bonus_damage_per_second} damage per second Ion Shield"
+
 // -----------------enigma--------------------	
 
         "npc_classic_eidolon"                                                             "Eidolon"

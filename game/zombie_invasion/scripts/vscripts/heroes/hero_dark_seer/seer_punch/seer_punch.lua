@@ -40,7 +40,7 @@ function ability_seer_punch:OnSpellStart()
             local search = self:GetSpecialValueFor("punch_radius")
     local caster = self:GetCaster()
  
-    local damage = self:GetSpecialValueFor("damage")
+    local damage = self:GetSpecialValueFor("damage") + self:GetCaster():GetHealth()
  
         enemies = FindUnitsInRadius(
             caster:GetTeamNumber(), -- int, your team number

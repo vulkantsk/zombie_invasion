@@ -7,7 +7,7 @@
 		"ScriptFile"					"heroes/hero_enigma/malefice/malefice"
 		"AbilityTextureName"			"enigma_malefice"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"7"
+		"MaxLevel"						"5"
 	
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
@@ -27,15 +27,15 @@
 		{
 				"tick_rate"					
 				{
-					"value"				"2.0 2.0 2.0 2.0"
+					"value"				"2.0 2.0 2.0 4.0"
 				}
 				"stun_duration"			
 				{
-					"value"				"0.4 0.5 0.6 0.7 0.8 0.9 1.0"
+					"value"				"0.6 0.7 0.8 0.9 1.0"
 				}
 				"damage"			
 				{
-					"value"				"60 100 140 180 220 260 300"
+					"value"				"140 180 220 260 300"
 				"CalculateSpellDamageTooltip"	"1"
 				}
 				"duration"				
@@ -45,8 +45,8 @@
 				}
 				"tooltip_stuns"			
 				{
-					"value"	"3"
-					"special_bonus_unique_enigma_malefice_stuns"                 "+1"
+					"value"	"4 5 6 7 8"
+					"special_bonus_unique_enigma_malefice_stuns"                 "+2"
 				}
  
 		}
@@ -163,23 +163,23 @@
 		"ScriptFile"					"heroes/hero_enigma/enigma_eyes/enigma_eyes"
 		"AbilityTextureName"			"Hero/Enigma/eyes"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"10"
 
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
-		"AbilityCooldown"				"90"
-		"AbilityManaCost"				"215"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"170"
  
 		"AbilityValues"
 		{
- 				"duration"				"25"
+ 				"duration"				"35"
 
 				"damage_per_stack"			
 				{
-					"value"				"10"
+					"value"				"60 120 240"
  					"CalculateSpellDamageTooltip"	"0"
 				}
  
@@ -195,8 +195,8 @@
 		"ScriptFile"					"heroes/hero_enigma/black_hole/black_hole"
 		"AbilityTextureName"			"enigma_black_hole"
 		"FightRecapLevel"				"2"
-		"MaxLevel"						"3"
-		"LevelsBetweenUpgrades"			"10"	
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades"			"6"	
 		"RequiredLevel"					"10"
  
         "HasShardUpgrade"               "1"
@@ -213,18 +213,18 @@
 		"AbilityCastPoint"				"0.3"
 		"AbilityChannelTime"			"4.0"
 
-		"AbilityCooldown"				"140 130 120"
-		"AbilityManaCost"				"350 600 850"
+		"AbilityCooldown"				"90 60 45"
+		"AbilityManaCost"				"150 280 345"
  
 		"AbilityValues"
 		{
 				"far_damage"					
 				{
-					"value"				"200 400 800"
+					"value"				"900 2400 3800 4500"
 				}
 				"near_damage"					
 				{
-					"value"				"200 400 800"
+					"value"				"1200 1900 2800 3222"
 				}
 				"far_radius"				"420"
 				"pull_radius"				"420"

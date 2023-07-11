@@ -5769,7 +5769,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"all_lifesteal"		"5"
+				"all_lifesteal"		"15"
 			}
  
  
@@ -5831,7 +5831,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_lifesteal"		"10"
+				"all_lifesteal"		"20"
 			}
  			"02"
 			{
@@ -5907,7 +5907,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_lifesteal"		"15"
+				"all_lifesteal"		"30"
 			}
  			"02"
 			{
@@ -7714,8 +7714,7 @@
 		"BaseClass"							"item_lua"	
 		"ScriptFile"					"items/support/item_medallion_of_courage"												 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -7724,7 +7723,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCooldown"				"7.0"
+		"AbilityCooldown"				"14.0"
 		"AbilitySharedCooldown"			"medallion"
 
 		// Precache
@@ -7740,6 +7739,7 @@
 		"ItemShopTags"					"armor;regen_mana;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"medallion of courage"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
 
@@ -7750,7 +7750,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"3"
+				"bonus_armor"			"6"
 			}
 			"02"
 			{
@@ -7771,7 +7771,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"				"7"
+				"duration"				"12"
 			}
 		}
 	}
@@ -7808,8 +7808,8 @@
 		"BaseClass"							"item_lua"	
 		"ScriptFile"					"items/support/item_medallion_of_courage"												 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -7818,7 +7818,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCooldown"				"7.0"
+		"AbilityCooldown"				"12.0"
 		"AbilitySharedCooldown"			"medallion"
 
 		// Precache
@@ -7844,7 +7844,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
+				"bonus_armor"			"16"
 			}
 			"02"
 			{
@@ -7870,7 +7870,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"				"7"
+				"duration"				"12"
 			}
 		}
 	}
@@ -7907,8 +7907,7 @@
 		"BaseClass"							"item_lua"	
 		"ScriptFile"					"items/support/item_medallion_of_courage"												 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -7917,7 +7916,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCooldown"				"7.0"
+		"AbilityCooldown"				"24.0"
 		"AbilitySharedCooldown"			"medallion"
 
 		// Precache
@@ -7933,6 +7932,7 @@
 		"ItemShopTags"					"armor;regen_mana;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"medallion of courage"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
 
@@ -7943,17 +7943,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"9"
+				"bonus_armor"			"32"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"			"145"
+				"bonus_attack_speed"			"245"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_move_speed"			"10"
+				"bonus_move_speed"			"60"
 			}
 
 			"04"
@@ -7964,12 +7964,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"	"18"
+				"bonus_all_stats"	"48"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"				"7"
+				"duration"				"12"
 			}
 		}
 	}
@@ -10789,7 +10789,7 @@
 		"AbilityValues"
 		{
 				"bonus_damage"			"50"
-				"corruption_armor"		"-8"
+				"corruption_armor"		"-12"
 				"corruption_duration"	"14.0"
 				"bonus_damage_per_kill"	"2"
 				"bonus_damage_per_assist"	"1"
@@ -10844,7 +10844,7 @@
 		"AbilityValues"
 		{
 				"bonus_damage"			"100"
-				"corruption_armor"		"-20"
+				"corruption_armor"		"-30"
 				"corruption_duration"	"14.0"
 				"bonus_damage_per_kill"	"5"
 				"max_damage"			"25"
