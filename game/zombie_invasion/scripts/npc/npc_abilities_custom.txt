@@ -198,18 +198,18 @@
             "01"
             {
                 "var_type"                  "FIELD_FLOAT"
-                "duration"                  "1.2"
+                "duration"                  "0.8"
             }
             "02"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "bonus_attack_speed"        "800"
+                "bonus_attack_speed"        "420"
                 "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
             }
             "03"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "bonus_magic_resistance"    "250"
+                "bonus_magic_resistance"    "0"
                 "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
             }
             "04"
