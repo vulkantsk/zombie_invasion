@@ -11,6 +11,8 @@ rollBase_4 = 1.5
 zombie_count_5 = 0 
 rollBase_5 = 1.5
 
+necr_count = 0
+
 zombie_count_6 = 0 
 rollBase_6 = 2.8
 
@@ -181,7 +183,7 @@ end
 
 function InvasionMode:NextNight7()
 	local spawn_zmb = 0
-	self:SpawnZombie("npc_classic_necr",8)
+	self:SpawnZombie("npc_classic_necr",2)
  
 	Timers:CreateTimer(0, function()
 	     while spawn_zmb < 5 do

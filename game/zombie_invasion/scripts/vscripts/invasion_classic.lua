@@ -1188,6 +1188,47 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
+      if killedEntity:GetUnitName() == "npc_classic_necr" or killedEntity:GetUnitName() == "npc_classic_necr"  then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         necr_count = necr_count + 1
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(6,15)
+		         Timers:CreateTimer(time_res, function()
+
+		 		   unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+
+        	             if necr_count < 50 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	      SetExpUsually(unit, 0)
+           	             elseif  necr_count < 110 then 
+          	                     SetGoldUsually(unit, -9)          	                  	
+           	                  	 SetExpUsually(unit, -36)
+            	             elseif  necr_count > 110 then 
+          	                     SetGoldUsually(unit, -16)         	                  	  
+           	                  	 SetExpUsually(unit, -70)
+             	        end                  
+
+		         
+ 	              end)    
+        	             if necr_count < 50 then 
+             	            	 GiveGoldPlayers(15)
+           	             elseif  necr_count < 110 then 
+           	                  	 GiveGoldPlayers(12)
+            	             elseif  necr_count > 110 then 
+           	                  	 GiveGoldPlayers(8)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
  
      if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_classic_wave_pudge_mini" then 
      	 if GameRules:IsDaytime() then
