@@ -93,7 +93,7 @@
 				}
  				"eidalon_duration"			
 				{
-					"value"	"-1"
+					"value"	"20"
 				}
 				"bonus_str"			
 				{
