@@ -76,24 +76,24 @@
 		{
 				"spawn_count"					
 				{
-					"value"				"1"
-					"special_bonus_unique_enigma_demonic_conversion_number"                  "+1"
+					"value"				"1 1 1 2 2 2 3"
+					"special_bonus_unique_enigma_demonic_conversion_number"                  "+2"
 				}
 				"split_attack_count"			
 				{
-					"value"				"6"
+					"value"				"12 11 10 9 8 6 4"
 				}
 				"eidolon_hp_tooltip"				
 				{
-					"value"				"80 110 150 190 230 270 310"
+					"value"				"1"
 				}
 				"eidolon_dmg_tooltip"			
 				{
-					"value"	"20 30 40 50 60 70 80"
+					"value"	"40 59 60 70 80 90 110"
 				}
  				"eidalon_duration"			
 				{
-					"value"	"35"
+					"value"	"-1"
 				}
 				"bonus_str"			
 				{
@@ -146,11 +146,11 @@
 				}
 				"damage_percent"			
 				{
-					"value"				"1"
+					"value"				"0.2"
 				"CalculateSpellDamageTooltip"	"0"
 				"special_bonus_unique_enigma_pulse_damage"     "+1.0"
 				}
-				"duration"				"8"
+				"duration"				"8 10 12 14 16 18 20"
  
  
 		}
@@ -170,17 +170,19 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
-		"AbilityCooldown"				"35"
-		"AbilityManaCost"				"170"
+		"AbilityCooldown"				"55 45 35"
+		"AbilityManaCost"				"120"
  
 		"AbilityValues"
 		{
- 				"duration"				"35"
+ 				"duration"				"20"
 
 				"damage_per_stack"			
 				{
-					"value"				"60 120 240"
+					"value"				"40 80 160"
+					"special_bonus_unique_enigma_eyes" "+40"
  					"CalculateSpellDamageTooltip"	"0"
+
 				}
  
  
@@ -196,8 +198,8 @@
 		"AbilityTextureName"			"enigma_black_hole"
 		"FightRecapLevel"				"2"
 		"MaxLevel"						"4"
-		"LevelsBetweenUpgrades"			"6"	
-		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"5"	
+		"RequiredLevel"					"20"
  
         "HasShardUpgrade"               "1"
         
@@ -220,11 +222,11 @@
 		{
 				"far_damage"					
 				{
-					"value"				"900 2400 3800 4500"
+					"value"				"500 900 1400 1800"
 				}
 				"near_damage"					
 				{
-					"value"				"1200 1900 2800 3222"
+					"value"				"500 700 1000 1200"
 				}
 				"far_radius"				"420"
 				"pull_radius"				"420"
@@ -238,7 +240,54 @@
 		}
 	}
 
+	"ability_enigma_aura"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_enigma/aura_enigma/aura_enigma"
+        "AbilityTextureName"            "enigma_malefice"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+        "MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"1"	
+		"RequiredLevel"					"20"
+        
+        
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1200"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            
+                "bonus_attributes"  "20 40 80 140 160 180 200"
+           
+                "bonus_attack_range"    "100 125 175 200 220 225 230"
+          
+                "aura_radius"       "2000"
+
+                "Pure_reflex"		"35 70 95 120 135 175"
+          
+            
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+
 	"special_bonus_unique_enigma_black_hole_dead"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+	}
+
+	"special_bonus_unique_enigma_eyes"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------

@@ -195,14 +195,15 @@
 		"npc_dota_hero_treant" 							"shinobu"
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		"npc_dota_hero_juggernaut"                                      "Samurai" 	
+		"npc_dota_hero_juggernaut"                                      "Samurai" 
+		"npc_dota_hero_winter_wyvern" 					"Yuki-onna"	
 				 
 		// ******************** moobs ********************	
 	    "npc_end_pudge"	                                        "DAXAK"
 	    "npc_end_techies"	                                    "TPABOMAH"
 	    "npc_end_antimage"	                                    "Perega Sirat"
 	    "npc_end_bear"	                                        "Virtus bear"
-	    "npc_test"	                                        	"test"
+	    "npc_test"	                                        	"test"	
 
  	"npc_kot_rofl1"														"Silverpaw"
         "npc_kot_rofl2"														"Ravenpaw"
@@ -248,6 +249,9 @@
 		"npc_classic_woobleydog2"                                                 "WOLK"
 		"npc_classic_toxic_veno_boss"						"VENOMOSS"
 		"npc_classic_toxic_veno"						"Mini venom"
+		"npc_classic_dragon_big"												"Big fuckdragon"
+		"npc_classic_dragon_small"												"small fuckdragon"
+		"npc_classic_dragon"													"ancient fuckdragon"
 		
 
 
@@ -381,6 +385,9 @@
 		"DOTA_Tooltip_ability_item_fire" "ETERNAL FLAME!?"
 		"DOTA_Tooltip_ability_item_fire_Description" "An ever-burning thing, it smells very disgusting."
 		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning."
+
+		"DOTA_Tooltip_Ability_item_dragon_scale_quest"										"Scale fuckdragon"
+        	"DOTA_Tooltip_Ability_item_dragon_scale_quest_Description"							"Very durable with a soothing texture."
 
 		
 
@@ -1639,6 +1646,16 @@
  
 
 
+		"DOTA_Tooltip_ability_ability_enigma_aura"						"AURA NAMED ENIGMA"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_Description"					"<font color='#ff0000'>PLAY WITH YOUR LIFE</font>
+  		Enigma have power pure damage * 4% + intellect enigma's"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_bonus_attributes"				"Bonus all Attribute:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_bonus_attack_range"				"Bonus attack range:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_Pure_reflex"				"Pure damage per hit:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_aura_radius"				"Aura radius:"
+
+ 		"DOTA_Tooltip_modifier_ability_enigma_aura_buff"				"MATERIAL MADNESS."
+ 		"DOTA_Tooltip_modifier_ability_enigma_aura_buff_Description"				"Bonus all Attributes, pure damage per hit, bonus attack range."
 
  		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_black_hole_dead"											"Black hole on death"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_damage"											 "+{s:bonus_damage_percent}% to damage from Midnight Pulse"
@@ -1646,7 +1663,8 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_number"											"+{s:bonus_spawn_count} to amount of eidolons from Demonic Conversion"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_malefice_stuns"											   "+{s:bonus_tooltip_stuns} to ticks of Malefice"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_cooldown"											   "-{s:value} cooldown of Demonic Conversion"
- 
+ 		
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_eyes"			"+{s:bonus_damage_per_stack} damage evolution"
 
 
 		// -----------------sniper--------------------		
@@ -2481,6 +2499,88 @@ The player can control the summoned creeps."
       "DOTA_Tooltip_modifier_frostivus2018_troll_warlord_fervor"	"Fervor"
  
       "DOTA_Tooltip_modifier_frostivus2018_troll_warlord_fervor_Description"	"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+      // -----------------Crystal-Maiden--------------------
+
+	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_cold_embrace"								"Upgrade cold embrace +2 sec. duration and +100 health regen per second"
+
+
+      // -----------------Yuki-onna--------------------
+
+      		"DOTA_Tooltip_ability_yuki_pohela"	"Pohela"
+		"DOTA_Tooltip_ability_yuki_pohela_Description"	"Pohela Concentrates its ice power by covering an ally with an icy crust, increasing its resistance to incoming damage and slowing down the attack speed of enemies that attack it.."
+		"DOTA_Tooltip_ability_yuki_pohela_AbilityCastRange"		"radius:"
+		"DOTA_Tooltip_ability_yuki_pohela_AbilityChannelTime"		"Pohela duration:"
+		"DOTA_Tooltip_ability_yuki_pohela_debuff_duration"		"debuff duration:"
+		"DOTA_Tooltip_ability_yuki_pohela_bonus_resistance"		"%damage resist:"
+		"DOTA_Tooltip_ability_yuki_pohela_reduce_atack_speed"		"%reduction. attack speed:"
+
+		"DOTA_Tooltip_modifier_pohela_buff"	"Pohela buff"
+		"DOTA_Tooltip_modifier_pohela_buff_Description"	"The hero is protected^^"
+
+
+		"DOTA_Tooltip_ability_yuki_frostshtorm"	"Frostshtorm"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_Description"	"The hero defiles the area with his ice, those entering it cause less damage, and allies receive an increase in damage by half from the decrease."
+		"DOTA_Tooltip_ability_yuki_frostshtorm_AbilityCastRange"		"cast range:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_radius"		"radius"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_duration"		"duration:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_dmg_reduced"		"%reduced.damage:"
+
+		"DOTA_Tooltip_ability_yuki_revenge"	"Revenge"
+		"DOTA_Tooltip_ability_yuki_revenge_Description"	"aura Yuki-onna freezes any enemy causing damage to him depending on his intelligence and heals allies."
+		"DOTA_Tooltip_ability_yuki_revenge_damage_per_int"		"damage for intellect:"
+		"DOTA_Tooltip_ability_yuki_revenge_radius"		"radius"
+		"DOTA_Tooltip_ability_yuki_revenge_heal"		"health in second:"
+
+			"DOTA_Tooltip_modifier_revenge_buff"	"Revenge Aura"
+			"DOTA_Tooltip_modifier_revenge_buff_Description"	"The cold warms you up."
+
+		"DOTA_Tooltip_ability_yuki_ritual"	"Ritual"
+		"DOTA_Tooltip_ability_yuki_ritual_Description"	"The hero performs a Cold ritual, increasing all armor and regeneration of allied heroes in the area. Slows down enemy movement and attack speed."
+		"DOTA_Tooltip_ability_yuki_ritual_AbilityCastRange"	"Cast range:"
+		"DOTA_Tooltip_ability_yuki_ritual_duration"		"duration:"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_armor"		"%bonus armor:"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_hp_regen"		"%bonus.health regen:"
+		"DOTA_Tooltip_ability_yuki_ritual_bonus_hp_regen_pct"		"%health regen per max. health:"
+
+ 		"DOTA_Tooltip_modifier_ritual_buff"	"Ritual buff"
+		"DOTA_Tooltip_modifier_ritual_buff_Description"	"Blessed by the cold."
+
+
+		"DOTA_Tooltip_ability_yuki_snowman"	"Snowman"
+		"DOTA_Tooltip_ability_yuki_snowman_Description"	"Yuki-onna puts a cute Snowman who throws snowballs at allies. Snowballs heal in the radius of all allied heroes and slows down the attack speed of enemy creeps."
+		"DOTA_Tooltip_ability_yuki_snowman_bonus_health"	"Health:"
+		"DOTA_Tooltip_ability_yuki_snowman_max_snowman"	"max.snowmans:"
+		"DOTA_Tooltip_ability_yuki_snowmanl_slow_as"	"reduction attack speed:"
+		"DOTA_Tooltip_ability_yuki_snowball"	"Snowball"
+		"DOTA_Tooltip_ability_yuki_snowball_Description" "snowball><"
+		"DOTA_Tooltip_ability_yuki_snowball_radius"	"radius:"
+		"DOTA_Tooltip_ability_yuki_snowball_heal"	"hp regen:"
+		"DOTA_Tooltip_ability_yuki_snowball_slow_as"	"attack slow:"
+
+		"DOTA_Tooltip_ability_yuki_challenge"	"Challenge from yuki"
+		"DOTA_Tooltip_ability_yuki_challenge_Description"	"Yuki-onna checks the strength of the hero, negative effects are applied to the hero for 10 seconds. It takes damage from its main attribute. If the hero survives, he permanently increases his main characteristic. For each failed test, the damage from it is also reduced by %dmg_reduce%%, and if successful, it increases by %dmg_incr%%%"
+		"DOTA_Tooltip_ability_yuki_challenge_duration"	"challenge duration:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_per_atr"	"damage per attribute:"
+		"DOTA_Tooltip_ability_yuki_challenge_interval"	"damage interval:"
+		"DOTA_Tooltip_ability_yuki_challenge_bonus_main"	"bonus attribute:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_incr"	"increase damage:"
+		"DOTA_Tooltip_ability_yuki_challenge_dmg_reduce"	"damage reduction:"
+
+
+		"DOTA_Tooltip_modifier_challenge_buff"	"Challenge from yuki"
+		"DOTA_Tooltip_modifier_challenge_buff_Description"	"You areeeeee cute."
+
+
+
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_pohela_resistance"	"+7% resist Pohela"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_frostshtorm_duration"	"+5 duration FrostShtorm"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+1.15 damage Revenge"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_heal"	"+600 heal Revenge"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_snowman_max"	"+1 charge snowman"
+
+
+
 
 	// -----------------Samurai--------------------
 

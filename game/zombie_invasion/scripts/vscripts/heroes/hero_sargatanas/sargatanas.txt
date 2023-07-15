@@ -272,7 +272,7 @@
             "bonus_resistance"             "1"
             "max_resistance"                    
                 {
-                    "value"             "40 50 60 70"
+                    "value"             "24 31 39 44"
                     "special_sargatanas_meta"     "+6"
                 }   
 

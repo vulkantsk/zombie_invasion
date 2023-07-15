@@ -232,6 +232,9 @@
 		"npc_classic_skelet_ruin"                                                 "Отец скелет"
 		"npc_classic_microchel"                                                 "Сын скелет"
 		"npc_classic_Night_Stalker_boss"                                                 "Мать кровосос"
+		"npc_classic_dragon_big"												"Большой блякон"
+		"npc_classic_dragon_small"												"Маленький блякон"
+		"npc_classic_dragon"													"Древния блякон"
 
 
 
@@ -2357,6 +2360,10 @@
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
 	"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
 
+	// -----------------Crystal-Maiden--------------------
+
+	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_cold_embrace"								"Улучшает cold embrace +2 сек. действия и +100 хп регена в секунду"
+
 	// -----------------Yuki-onna--------------------
 
 		"DOTA_Tooltip_ability_yuki_pohela"	"Pohela"
@@ -2429,7 +2436,7 @@
 
 		"DOTA_Tooltip_ability_special_bonus_unique_yuki_pohela_resistance"	"+7% к резизсту от способности Pohela"
 		"DOTA_Tooltip_ability_special_bonus_unique_yuki_frostshtorm_duration"	"+5 к длительности FrostShtorm"
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+2.5 к УРОНУ от способности Revenge"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+1.15 к УРОНУ от способности Revenge"
 		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_heal"	"+600 к лечению от способности Revenge"
 		"DOTA_Tooltip_ability_special_bonus_unique_yuki_snowman_max"	"+1 заряд способности snowman"
 
@@ -2856,7 +2863,17 @@
 		"DOTA_Tooltip_modifier_enigma_eyes_debuff"				"Evolution"
 		"DOTA_Tooltip_modifier_enigma_eyes_debuff_Description"	"Каждая атака по вам от бездны наносит чистый урон."
   
- 
+
+  			"DOTA_Tooltip_ability_ability_enigma_aura"						"AURA NAMED ENIGMA"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_Description"					"<font color='#ff0000'>ИГРА СТАВКОЮ В ЖИЗНЬ</font>
+  		Enigma have power pure damage + 4% + intellect enigma's"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_bonus_attributes"				"БОНУС АТРУБУТОВ:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_bonus_attack_range"				"БОНУС ДАЛЬНОСТИ АТАКИ:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_Pure_reflex"				"ЧИСТЫЙ УРОН ЗА УДАР:"
+  		"DOTA_Tooltip_ability_ability_enigma_aura_aura_radius"				"РАДИУС АУРЫ:"
+
+ 		"DOTA_Tooltip_modifier_ability_enigma_aura_buff"				"МАТЕРИАЛЬНОЕ БЕЗУМИЕ."
+ 		"DOTA_Tooltip_modifier_ability_enigma_aura_buff_Description"	"Прибавка ко всем атрибутам, чистого урона и дополнтельная дальность атаки."
 
 
 
@@ -2866,6 +2883,7 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_number"											"+{s:bonus_spawn_count} к числу эйдолонов от Demonic Conversion"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_malefice_stuns"											   "+{s:bonus_tooltip_stuns} к числу срабатываний от Malefice"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_cooldown"											   "-{s:value} сек. перезарядки Demonic Conversion"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_eyes"															"+{s:damage_per_stack}" урона evolution за стак"
  
 
 		// -----------------timber--------------------	

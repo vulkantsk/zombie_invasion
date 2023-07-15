@@ -79,24 +79,25 @@
 				
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{	
-				"var_type"			"FIELD_FLOAT"
+			
 				"duration"			"4.0"
-			}
-			"02"
-			{	
-				"var_type"			"FIELD_INTEGER"
-				"heal_additive"		"50 100 150 200 250 300 350"
-				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_5"
-			}
-			"03"
-			{	
-				"var_type"			"FIELD_FLOAT"
+
+				"duration"					
+				{
+					"value"				"2.2 2.4 2.6 2.8 3 3.5 4"
+			    	"special_bonus_unique_crystal_maiden_cold_embrace"	    "+2"
+				}
+
+				"heal_additive"					
+				{
+					"value"				"50 100 150 200 250 300 350"
+			    	"special_bonus_unique_crystal_maiden_cold_embrace"	    "+100"
+				}
+
+			
 				"heal_percentage"	"1.5 2.0 2.5 3.0 3.5 4.0 4.5"
-			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
@@ -292,10 +293,6 @@
 		}
 	}
 
-}
-
- 
-
 	"special_bonus_unique_crystal_maiden_ult_cooldown"
 	{
 		// General
@@ -305,3 +302,19 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	
 	}
+
+
+	"special_bonus_unique_crystal_maiden_cold_embrace"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	}
+
+
+}
+
+ 
