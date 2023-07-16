@@ -76,7 +76,7 @@
 		{
 				"spawn_count"					
 				{
-					"value"				"1 1 1 2 2 2 3"
+					"value"				"1 1 2 2 2 3 3"
 					"special_bonus_unique_enigma_demonic_conversion_number"                  "+2"
 				}
 				"split_attack_count"			
@@ -93,7 +93,7 @@
 				}
  				"eidalon_duration"			
 				{
-					"value"	"20"
+					"value"	"20 26 32 38 44 60"
 				}
 				"bonus_str"			
 				{
