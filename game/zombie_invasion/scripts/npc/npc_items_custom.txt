@@ -11385,8 +11385,8 @@
 		"AbilityCastRange"				"600"
 		"AbilityCastPoint"				"0.2"
 
-		"AbilityCooldown"				"15"
-		"AbilityManaCost"				"100"
+		"AbilityCooldown"				"11"
+		"AbilityManaCost"				"400"
 
 		"AbilityDamage"					"700"
 
@@ -11399,8 +11399,8 @@
 				"speed"					"1050"		
 				"reduction"				"-45"		
 				"duration"				"11"
-				"bonus_agility"			"40"			
-				"bonus_intellect"		"90"
+				"bonus_agility"			"70"			
+				"bonus_intellect"		"110"
 				"spell_amp"				"55"
 		}
 	}
@@ -11457,8 +11457,8 @@
 
 		"AbilityValues"
 		{
-			"bonus_agility"			"70"
-			"bonus_attack_speed"		"220"
+			"bonus_agility"			"120"
+			"bonus_attack_speed"		"270"
 		}
 	}
 	"item_dragon_boots"
@@ -11505,7 +11505,7 @@
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Abaddon.AphoticShield.Cast"
 		"ItemPurchasable"				"0"
@@ -11519,21 +11519,21 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12.0 10.0 8.0 6.0"
+		"AbilityCooldown"				"55"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 105 110 115"
+		"AbilityManaCost"				"1000"
 
 
 
 		"AbilityValues"
 		{
-			"bonus_resistance"			"30"
-			"bonus_armor"		"20"
+			"bonus_resistance"			"35"
+			"bonus_armor"		"22"
 			"duration"				"15.0"
-			"damage_absorb"			"555"
-			"radius"				"675"
+			"damage_absorb"			"5555"
+			"radius"				"975"
 			
 		}
 	}
