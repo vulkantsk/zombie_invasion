@@ -42,10 +42,12 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         damage_type = DAMAGE_TYPE_PHYSICAL,
         ability = self:GetAbility(), --Optional.
         })
-        end
+
         enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_anchor_smash_passive_reduction', {
         duration = self:GetAbility():GetSpecialValueFor("duration"),
         })
+        end
+ 
         end
 
         local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetParent())
