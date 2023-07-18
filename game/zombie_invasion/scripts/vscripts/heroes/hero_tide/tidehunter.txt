@@ -1,23 +1,23 @@
 "DOTAAbilities"
 {
 
-"anchor_smash"
+"anchor_smash_passive"
 	{
  
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_tide/anchor_smash"
-		"AbilityTextureName"			"slark_dark_pact"
+		"AbilityTextureName"			"tidehunter_anchor_smash"
 		"MaxLevel"						"7"
 
   		"HasScepterUpgrade"             "1"
 
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_PASSIVE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -25,7 +25,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0 9 8 8 7 7 6"
+		"AbilityCooldown"				"10 9 8 8 7 7 6"
 		"AbilityManaCost"				"50 60 70 80 90 100 110"
 
 		// Damage
@@ -36,15 +36,10 @@
 	    "AbilityValues"
 
 		{
-             "chance"					"100"
-             "attack_damage"		"1000.0"
-             "radius"				"325"
-             "reduction_duration"		"30"
-		
-             "damage_reduction"			"100"
-             "total_pulses"			"10"
-             "pulse_interval"		"0.1"
-			  
+			"duration"			"100"
+            "smash_damage"		"1000"
+            "radius"			"375"
+            "armor_reduction"	"-100"
 		}
 		 
 	}

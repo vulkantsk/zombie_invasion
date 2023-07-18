@@ -1818,7 +1818,7 @@
 		"DOTA_Tooltip_Ability_death_or_life_buff_duration"                                          "DURATION:"	
 
 		"DOTA_Tooltip_Ability_int"											"Endless widsom"
-		"DOTA_Tooltip_Ability_int_Description"								"The Oracle gains additional intelligence over time."
+		"DOTA_Tooltip_Ability_int_Description"								"The Silencer gains additional intelligence over time."
 		"DOTA_Tooltip_Ability_int_Lore"							        	"The wisdom of the prophets grows."
 		"DOTA_Tooltip_Ability_int_grow_int"        								"INTELLIGENCE BONUS PER STACK:"
 		"DOTA_Tooltip_Ability_int_stack_interval"                                        "STACK INTERVAL:"

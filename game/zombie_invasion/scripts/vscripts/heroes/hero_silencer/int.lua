@@ -2,6 +2,12 @@ LinkLuaModifier("modifier_int_buff", "heroes/hero_silencer/int", LUA_MODIFIER_MO
 
 --------------------------------------------------------
 ------------------------------------------------------------
+
+int_buff = class({
+    GetIntrinsicModifierName = function() return "modifier_int_buff" end
+})
+
+
 modifier_int_buff = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,

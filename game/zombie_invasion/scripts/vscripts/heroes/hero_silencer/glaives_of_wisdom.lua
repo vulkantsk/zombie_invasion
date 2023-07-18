@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_ability_glaives_of_wisdom", "heroes/silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_glaives_of_wisdom_orb", "heroes/silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_glaives_of_wisdom", "heroes/hero_silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_glaives_of_wisdom_orb", "heroes/hero_silencer/glaives_of_wisdom", LUA_MODIFIER_MOTION_NONE )
 
 ability_glaives_of_wisdom = {}
 
@@ -98,57 +98,6 @@ function modifier_ability_glaives_of_wisdom:OnRefresh( kv )
     if not IsServer() then return end
 end
 
-function modifier_ability_glaives_of_wisdom:DeclareFunctions()
-    return { MODIFIER_EVENT_ON_ATTACK_LANDED }
-end
-
-function modifier_ability_glaives_of_wisdom:OnAttackLanded( params )
-    if not IsServer() then return end
-
-    if params.target:GetTeamNumber() == self:GetParent():GetTeamNumber() then return end
-
-    if params.attacker==self:GetParent() then
-        self:Steal( params.target )
-        return
-    end
-
-    local distance = (params.target:GetOrigin()-self:GetParent():GetOrigin()):Length2D()
-
-    if distance<=self.radius then
-        self:Steal( params.target )
-    end
-end
-
-function modifier_ability_glaives_of_wisdom:Steal( target )
-    local steal = self.steal
-    local target_int = target:GetBaseIntellect()
-    if target_int<=1 then
-        steal = 0
-    elseif target_int-steal<1 then
-        steal = target_int-1
-    end
-
-    self:GetParent():SetBaseIntellect( self:GetParent():GetBaseIntellect() + steal )
-    target:SetBaseIntellect( target_int - steal )
-
-    self:SetStackCount( self:GetStackCount() + steal )
-
-    SendOverheadEventMessage(
-        nil,
-        OVERHEAD_ALERT_MANA_ADD,
-        self:GetParent(),
-        steal,
-        nil
-    )
-    SendOverheadEventMessage(
-        nil,
-        OVERHEAD_ALERT_MANA_LOSS,
-        target,
-        steal,
-        nil
-    )
-end
-
 modifier_ability_glaives_of_wisdom_orb = {}
 
 function modifier_ability_glaives_of_wisdom_orb:IsHidden()
@@ -187,15 +136,12 @@ end
 function modifier_ability_glaives_of_wisdom_orb:OnAttack( params )
     if params.attacker~=self:GetParent() then return end
 
-    if self:ShouldLaunch( params.target ) then
-        self.ability:UseResources( true, false, true )
-
         self.records[params.record] = true
 
         if self.ability.OnOrbFire then
             self.ability:OnOrbFire( params )
         end
-    end
+    
 
     self.cast = false
 end
@@ -258,7 +204,7 @@ function modifier_ability_glaives_of_wisdom_orb:GetModifierProjectileName()
 end
 
 function modifier_ability_glaives_of_wisdom_orb:ShouldLaunch( target )
-    if self.ability:GetAutoCastState() then
+
         if self.ability.CastFilterResultTarget~=CDOTA_Ability_Lua.CastFilterResultTarget then
             if self.ability:CastFilterResultTarget( target )==UF_SUCCESS then
                 self.cast = true
@@ -275,7 +221,6 @@ function modifier_ability_glaives_of_wisdom_orb:ShouldLaunch( target )
                 self.cast = true
             end
         end
-    end
 
     if self.cast and self.ability:IsFullyCastable() and (not self:GetParent():IsSilenced()) then
         return true

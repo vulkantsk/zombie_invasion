@@ -2059,7 +2059,7 @@
 		"DOTA_Tooltip_Ability_death_or_life_buff_duration"                                          "ДЛИТЕЛЬНОСТЬ УСИЛЕНИЯ:"	
 
 		"DOTA_Tooltip_Ability_int"											"Endless Wisdom"
-		"DOTA_Tooltip_Ability_int_Description"								"Оракул получает бонусный интеллект со временем."
+		"DOTA_Tooltip_Ability_int_Description"								"Сайленсер получает бонусный интеллект со временем."
 		"DOTA_Tooltip_Ability_int_Lore"								"Мудрость пророков растёт, как растёт курс доллара."
 		"DOTA_Tooltip_Ability_int_grow_int"        								"ИНТЕЛЛЕКТА ЗА СТАК:"
 		"DOTA_Tooltip_Ability_int_stack_interval"                                        "ИНТЕРВАЛ СТАКА:"

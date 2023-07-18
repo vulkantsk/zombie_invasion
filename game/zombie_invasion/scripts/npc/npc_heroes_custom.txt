@@ -789,7 +789,7 @@
 		"AttackRange"				"200"				
 		"Ability1"					"tidehunter_gush"
 		"Ability2"					"tidehunter_kraken_shell"
-		"Ability3"					"anchor_smash"
+		"Ability3"					"anchor_smash_passive"
 		"Ability4"					"tidehunter_ravage"
 		"Ability5"					"generic_hidden"
 		"Ability6"					"tide_health"
@@ -1420,7 +1420,7 @@
 
 		"Ability1"		"false_promise_custom"
 		"Ability2"		"death_or_life"
-		"Ability3"		"int"
+		"Ability3"		""
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"oracle_time"
@@ -1963,14 +1963,11 @@
 
 	"npc_dota_hero_silencer"
 	{
-  
- 
-
 		"Ability1"		"ability_curse_of_the_silent"
 		"Ability2"		"ability_glaives_of_wisdom"
-		"Ability3"		"arc_warden_magnetic_field"
-		"Ability4"		"modifier_int_buff"
-		"Ability5"		"ability_storm_spirit_overload"
+		"Ability3"		"ability_last_word"
+		"Ability4"		"int"
+		"Ability5"		"arc_warden_magnetic_field"
 		"Ability6"		"ability_global_silence"
         "Ability10"        "special_bonus_attack_speed_20"
         "Ability11"        "special_bonus_attack_damage_20" 
@@ -1994,8 +1991,9 @@
 		"AttributeBaseIntelligence"		"14"
 		"AttributeIntelligenceGain"		"0.500000"
 		"MovementSpeed"		"330"
-		"MovementTurnRate"		"0.420000"
+		"MovementTurnRate"		"0.50000"
 		"StatusHealthRegen"		"4.5"
  
 	}
+	
 }
