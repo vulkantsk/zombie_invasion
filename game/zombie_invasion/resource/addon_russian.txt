@@ -1692,11 +1692,49 @@
 		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "Когда тайда бьют, он становится сильнее."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
-        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС ЗДОРОВЬЯ ЗА СТАК:"
+        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС СИЛЫ ЗА СТАК:"
+        "DOTA_Tooltip_Ability_tide_health_health_per_stack"                                        "БОНУС ЗДОРОВЬЯ ЗА СТАК:"
 
 		"DOTA_Tooltip_modifier_tide_health"												"More health"
 		"DOTA_Tooltip_modifier_tide_health_Description"									"Имеет %dMODIFIER_PROPERTY_HEALTH_BONUS%% бонусного здоровья"
 
+			"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Герой с шансом в 33% наносит <font color='#00e6b0'>Урон способности + урон героя * 7% силы героя.</font>"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Уменьшение брони anchor smash"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"-{s:bonus_dmg_proc} полученного урона для способности MORE HEALTH"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
+
+
+		//---silencer-----
+
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent"											"Curse of the silent"
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_Description"										"SILENCE SILENCE SILENCE."
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_damage"										"УРОН:"
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_radius"										"РАДИУС:"
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_duration"										"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_movespeed"										"УМЕНЬШЕНИЕ СКОРОСТИ:"
+	
+	
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom"											"Glaives of wisdom"
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_intellect_damage_pct"										"%ИНТЕЛЛЕКТ = УРОН:"
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_radius"										"РАДИУС:"
+	
+		"DOTA_Tooltip_Ability_ability_last_word"											"The last word"
+		"DOTA_Tooltip_Ability_ability_last_word_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
+		"DOTA_Tooltip_Ability_ability_last_word_radius"										"РАДИУС:"
+		"DOTA_Tooltip_Ability_ability_last_word_debuff_duration"								"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
+		"DOTA_Tooltip_Ability_ability_last_word_radius"										"ДЛИТЕЛЬНОСТЬ:"
+	
+		"DOTA_Tooltip_Ability_ability_global_silence"											"GLOBAL SILENCE"
+		"DOTA_Tooltip_Ability_ability_global_silence_Description"										"GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL 	SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE."
+		"DOTA_Tooltip_Ability_ability_global_silence_tooltip_duration"										"ДЛИТЕЛЬНОСТЬ ОБЕЗМОВЛИВАНИЯ:"
+	
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval}% интервала срабатывания endless widsom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} интеллекта endless widsom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% урон от глейвов"
 
         //---tb-----
         "DOTA_Tooltip_Ability_tb_illusion_dd"                                            "<font color='#ff4d4d'>Conjure Image</font>"

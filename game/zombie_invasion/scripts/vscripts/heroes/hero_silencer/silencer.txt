@@ -57,8 +57,13 @@
 
 		"AbilityValues"
 		{
-			
-				"intellect_damage_pct"	"24 35 45 55 65 88 100"
+
+				"intellect_damage_pct"				
+				{
+					"value"				"24 35 45 55 65 88 100"
+			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+100"
+					 
+				}
 			
 				"steal_range"		"1600"
 			
@@ -145,19 +150,24 @@
    
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
+	"AbilityValues"
 	{
-		"01"
-		{
-			"var_type"							"FIELD_FLOAT"
-			"grow_int"							"0.2 0.4 0.6 0.8 1.0 1.2 1.4"
-		}
+		
 
-		"02"
-		{
-			"var_type"							"FIELD_FLOAT"
-			"stack_interval"						"70 60 50 40 30 20 10"
-		}
+			"grow_int"				
+			{
+				"value"				"0.2 0.4 0.6 0.8 1.0 1.2 1.4"
+			   	"special_bonus_unique_silencer_grow_int"	    "+0.6"
+				 
+			}
+		
+			"stack_interval"						
+			{
+				"value"				"70 60 50 40 30 20 10"
+			   	"special_bonus_unique_silencer_stack_interval"	    "-4"
+				 
+			}
+		
 
 	}
 
@@ -289,6 +299,7 @@
 		"ScriptFile"					"heroes/hero_silencer/last_word"
 		"AbilityTextureName"			"silencer_last_word"
 		"FightRecapLevel"				"1"
+		"RequiredLevel"					"2"
 		"MaxLevel"						"7"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
@@ -343,5 +354,38 @@
 				"tooltip_duration"		"12.0"
 			}
 		}
+	}
+
+	"special_bonus_unique_silencer_intellect_damage_pct"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_silencer_grow_int"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_silencer_stack_interval"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
 	}
 }
