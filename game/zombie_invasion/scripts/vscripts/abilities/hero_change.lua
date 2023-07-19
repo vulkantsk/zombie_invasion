@@ -26,9 +26,13 @@ function GiveNewHero(keys)
 		
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
+		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 40})
 		for item,stacks in pairs(items_table) do 
 			local item = newHero:AddItemByName(item) 
 			item:SetCurrentCharges(stacks)
 		end 
 	end 
 end
+
+
+modifier_change_hero = class({})
