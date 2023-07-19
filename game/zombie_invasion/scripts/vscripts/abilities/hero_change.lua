@@ -1,3 +1,4 @@
+LinkLuaModifier( "modifier_change_hero", "abilities.hero_change", LUA_MODIFIER_MOTION_NONE )
 
 function GiveNewHero(keys) 
 	local caster = keys.caster 
@@ -35,4 +36,8 @@ function GiveNewHero(keys)
 end
 
 
-modifier_change_hero = class({})
+modifier_change_hero = {}
+
+function modifier_change_hero:IsHidden()
+ 	return false
+ end
