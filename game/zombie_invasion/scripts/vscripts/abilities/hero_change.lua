@@ -7,6 +7,7 @@ function GiveNewHero(keys)
 	local newHeroName = keys.hero_name
 	local gold = oldHero:GetGold()
 	local experience = oldHero:GetCurrentXP() 
+	local abuzer = oldHero:HasModifier("modifier_item_midas_tress_use")
 	print("gold = "..gold.." exp = "..experience)
 	if not PlayerResource:IsValidPlayer(playerID) or not PlayerResource:GetPlayer(playerID) then
 		return
@@ -23,11 +24,12 @@ function GiveNewHero(keys)
 			end 
 		end 
 		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
+ 
 		newHero:RespawnHero(false, false) 
 		
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
-		if newHero:HasModifier("modifier_item_midas_tress_use") then 
+ 		if abuzer then 
 		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 40})
 	end
 		for item,stacks in pairs(items_table) do 
