@@ -635,7 +635,7 @@ function InvasionMode:RandomHeroes()
  
  
 end
-
+ 
 function InvasionMode:RespawnAllHeroes()  
  -- Обычнй конец
  	local point = Entities:FindByName( nil, "techies_start_point"):GetAbsOrigin()
@@ -648,7 +648,7 @@ function InvasionMode:RespawnAllHeroes()
             -1, -- float, radius. or use FIND_UNITS_EVERYWHERE
             DOTA_UNIT_TARGET_TEAM_ENEMY,    -- int, team filter
             DOTA_UNIT_TARGET_HERO, -- int, type filter
-            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_DEAD + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD,  -- int, flag filter
+            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_DEAD + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD + DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO,  -- int, flag filter
             0,  -- int, order filter
             false   -- bool, can grow cache
         )
