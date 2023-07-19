@@ -796,10 +796,10 @@
 		"Ability10"		"special_bonus_mp_regen_150"
 		"Ability11"		"special_bonus_armor_5"
 		"Ability12"		"special_bonus_movement_speed_30"
-		"Ability13"		"special_bonus_unique_tidehunter_4"
-		"Ability14"		"special_bonus_unique_tidehunter"
-		"Ability15"		"special_bonus_hp_regen_30"
-		"Ability16"		"special_bonus_unique_tidehunter_3"
+		"Ability13"		"special_bonus_unique_tide_damage_reduction"
+		"Ability14"		"special_bonus_unique_tide_armor_reduction"
+		"Ability15"		"special_bonus_unique_tide_dmg_proc"
+		"Ability16"		"special_bonus_unique_tide_smash_damage"
 		"Ability17"		"special_bonus_attack_damage_120"				
 	}	
 
@@ -1963,7 +1963,7 @@
 
 	"npc_dota_hero_silencer"
 	{
-		"Ability1"		"ability_curse_of_the_silent"
+		"Ability1"		"silencer_curse_of_the_silent"
 		"Ability2"		"ability_glaives_of_wisdom"
 		"Ability3"		"ability_last_word"
 		"Ability4"		"int"
@@ -1972,11 +1972,11 @@
         "Ability10"        "special_bonus_attack_speed_20"
         "Ability11"        "special_bonus_attack_damage_20" 
         "Ability12"        "special_bonus_armor_7"
-        "Ability13"        ""
-        "Ability14"        ""
+        "Ability13"        "special_bonus_unique_silencer_intellect_damage_pct"
+        "Ability14"        "special_bonus_unique_silencer_grow_int"
         "Ability15"        "special_bonus_strength_35"
         "Ability16"        "special_bonus_agility_20"
-        "Ability17"        ""
+        "Ability17"        "special_bonus_unique_silencer_stack_interval"
 		"ArmorPhysical"		"2"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"37"

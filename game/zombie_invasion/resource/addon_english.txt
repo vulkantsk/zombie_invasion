@@ -2390,13 +2390,57 @@ The player can control the summoned creeps."
  
 	// -----------------TIdehunter--------------------
 
-		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
+	"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "When the tide comes in, it gets stronger."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "SPENT HEALTH TO GET A STACK:"
-        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS HEALTH PER STACK:"
+        "DOTA_Tooltip_Ability_tide_health_health_per_stack"                                        "BONUS HEALTH PER STACK:"
+        "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS STRENGTH PER STACK:"
 
-		"DOTA_Tooltip_modifier_tide_health"												"More health"
-		"DOTA_Tooltip_modifier_tide_health_Description"									"It has %dMODIFIER_PROPERTY_HEALTH_BONUS%% of bonus health"
+	"DOTA_Tooltip_modifier_tide_health"												"More health"
+	"DOTA_Tooltip_modifier_tide_health_Description"									"It has %dMODIFIER_PROPERTY_HEALTH_BONUS%% of bonus health"
+	"DOTA_Tooltip_Ability_anchor_smash_passive_duration"                                        "DEBUFF DURATION:"
+        "DOTA_Tooltip_Ability_anchor_smash_passive_smash_damage"                                        "SMASH DAMAGE:"
+        "DOTA_Tooltip_Ability_anchor_smash_passive_radius"                                        "RADIUS:"
+        "DOTA_Tooltip_Ability_anchor_smash_passive_armor_reduction"                                        "ARMOR REDUCTION:"
+
+
+	"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
+	"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Hero with 33% chance attack in radius and deal <font color='#00e6b0'>SPELL DAMAGE + HERO DAMAGE * 7% STRENGTH.</font>"
+
+	"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} ARMOR REDUCTION"
+	"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
+	"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"+0.2 HEALTH AND STR MORE HEALTH"
+	"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
+
+// -----------------Silencer--------------------
+
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent"											"Curse of the silent"
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_Description"										"SILENCE SILENCE SILENCE."
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_damage"										"DAMAGE:"
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_radius"										"RADIUS:"
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_duration"										"DURATION:"
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_penalty_duration"									"PENALTY DURATION:"
+	"DOTA_Tooltip_Ability_ability_curse_of_the_silent_movespeed"										"MOVEMENT SPEED SLOW:"
+
+
+	"DOTA_Tooltip_Ability_ability_glaives_of_wisdom"											"Glaives of wisdom"
+	"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
+	"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_intellect_damage_pct"										"%intellect = damage:"
+	"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_radius"										"RADIUS:"
+
+	"DOTA_Tooltip_Ability_ability_last_word"											"The last word"
+	"DOTA_Tooltip_Ability_ability_last_word_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
+	"DOTA_Tooltip_Ability_ability_last_word_radius"										"RADIUS:"
+	"DOTA_Tooltip_Ability_ability_last_word_debuff_duration"								"DEBUFF DURATION:"
+	"DOTA_Tooltip_Ability_ability_last_word_radius"										"duration:"
+
+	"DOTA_Tooltip_Ability_ability_global_silence"											"GLOBAL SILENCE"
+	"DOTA_Tooltip_Ability_ability_global_silence_Description"										"GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE."
+	"DOTA_Tooltip_Ability_ability_global_silence_tooltip_duration"										"DURATION OF SILENCE:"
+
+	"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval}% stack inteval endless widsom"
+	"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} intellect endless widsom"
+	"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% damage glaive"
 
 // -----------------Tb--------------------
 "DOTA_Tooltip_Ability_tb_illusion_dd" "<font color='#ff4d4d'>Conjure Image</font>"

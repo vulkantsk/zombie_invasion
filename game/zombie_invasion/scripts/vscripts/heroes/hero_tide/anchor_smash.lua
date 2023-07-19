@@ -22,7 +22,7 @@ end
 
 function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
 
-    if RollPercentage(20) then
+    if RollPercentage(33) then
         local enemies = FindUnitsInRadius(
         self:GetParent():GetTeamNumber(), -- int, your team number
         self:GetParent():GetOrigin(), -- point, center point
@@ -38,8 +38,8 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         ApplyDamage( {
         victim = enemy,
         attacker = self:GetParent(),
-        damage = self.smash_damage,
-        damage_type = DAMAGE_TYPE_PHYSICAL,
+        damage = self.smash_damage + self:GetCaster():GetBaseDamageMax() + (self:GetCaster():GetStrength() * (7 / 100)),
+        damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility(), --Optional.
         })
 
@@ -48,12 +48,12 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         })
         end
  
-        end
-
         local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetParent())
         ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
 
-        EmitSoundOn("Hero_Tidehunter.AnchorSmash", self:GetParent())
+            EmitSoundOn("Hero_Tidehunter.AnchorSmash", self:GetParent())
+        end
+
     end
 
     modifier_anchor_smash_passive_reduction = class({

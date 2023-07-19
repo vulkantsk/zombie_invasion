@@ -16,6 +16,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
@@ -23,25 +24,264 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_INVALID"
 
-		// Ability Resource
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"10 9 8 8 7 7 6"
-		"AbilityManaCost"				"50 60 70 80 90 100 110"
-
-		// Damage
-		//-------------------------------------------------------------------------------------------------------------
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityValues"
 
 		{
-			"duration"			"100"
-            "smash_damage"		"1000"
+			"duration"			"10 12 14 16 18 20 24"
+            "smash_damage"				
+			{
+				"value"				"20 80 120 160 190 235 275"
+			   	"special_bonus_unique_tide_smash_damage"	    "+225"
+				 
+			}
             "radius"			"375"
-            "armor_reduction"	"-100"
+
+            "armor_reduction"				
+			{
+				"value"				"0 -4 -8 -12 -16 -24 -28"
+			   	"special_bonus_unique_tide_armor_reduction"	    "-4"
+				 
+			}
+
 		}
 		 
 	}
+	"tide_health"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_tide/tide_health"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "tide/sosat"
+        "MaxLevel"                      "3"
+        "LevelsBetweenUpgrades"         "10"
+        "RequiredLevel"                 "10"
+
+        "AbilityCastRange"              "%radius"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+           
+				"dmg_proc"				"3225 4565 5225"
+			    	
+
+				"str_per_stack"				
+				{
+					"value"				"0.2 0.4 0.6"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					 
+				}
+
+				"health_per_stack"				
+				{
+					"value"				"0.2 0.4 0.6"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					 
+				}
+          
+            
+
+        }
+
+    }  
+    "tidehunter_kraken_shell"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5119"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySound"					"Hero_Tidehunter.KrakenShell"
+		"MaxLevel"                      "7"
+        "LevelsBetweenUpgrades"         "4"
+        "RequiredLevel"                 "1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"damage_reduction"				
+				{
+					"value"				"45 70 110 135 170 210 245"
+			    	"special_bonus_unique_tide_damage_reduction"	    "+200"
+					 
+				}
+			
+				"damage_cleanse"		"600 550 500 450"
+			
+				"damage_reset_interval"	"5"
+			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+"tidehunter_gush"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5118"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Ability.GushCast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+		"AbilityDuration"				"4.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"60 65 70 75"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"gush_damage"		"125 180 275 335"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"projectile_speed"	"2500"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movement_speed"	"-40 -40 -40 -40"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"negative_armor"		"8 12 16 20"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed_scepter"		"1500"
+				"RequiresScepter"		"1"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aoe_scepter"		"260"
+				"RequiresScepter"		"1"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cooldown_scepter"		"6"
+				"RequiresScepter"		"1"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_scepter"		"1200"
+				"RequiresScepter"		"1"
+			}	
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+			"tidehunter_ravage"
+	{
+
+		"MaxLevel"            "1"
+    	"LevelsBetweenUpgrades" "1"
+    	"RequiredLevel" "35"
+		"AbilityCooldown"				"60.0"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"675"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"175"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"2125"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"				"725"
+			}
+			"03"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"11"
+			}
+		}
+	}
+	"special_bonus_unique_tide_damage_reduction"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_tide_dmg_proc"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_tide_smash_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_tide_armor_reduction"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	
 	
 }
