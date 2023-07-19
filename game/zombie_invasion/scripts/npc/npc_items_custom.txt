@@ -9344,12 +9344,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"res"	"15"
+				"res"	"10"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"arm"	"5"
+				"arm"	"10"
 			}												
 		}
 	}
@@ -9485,17 +9485,23 @@
 		"ScriptFile"         "items/new_items/item_midas"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" "midas_2"
+		"ItemShareability"				"ITEM_NOT_SHAREABLE"
+		"AllowedInBackpack"				"0"
+		"IsTempestDoubleClonable"		"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
 
 		"ItemCost"						"500"
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"1.5"
 		"AbilityCooldown"				"90"
-		"AbilityManaCost"				"0"		
+		"AbilityManaCost"				"200"		
 
 		"AbilityValues"
 		{
 		    "gold_min"           "175"
-		    "gold_max"           "275"
+		    "gold_max"           "200"
 		}
 	}
 
@@ -9505,12 +9511,16 @@
 		"ScriptFile"         "items/new_items/item_midas_donate"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" "midas_2"
+		"ItemShareability"				"ITEM_NOT_SHAREABLE"
+		"ItemSellable"					"0"
+		"ItemKillable"					"0"
+		"AllowedInBackpack"				"0"
+		"IsTempestDoubleClonable"		"0"
+		"ItemDisassembleRule"				"DOTA_ITEM_DISASSEMBLE_NEVER"
 
 		"ItemCost"                      "250" 
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
 		"ItemPermanent" 				"0"	
 		"AbilityCastPoint"				"1.5"
 		"AbilityCooldown"				"90"
@@ -9518,10 +9528,10 @@
 
 		"AbilityValues"
 		{
-		    "gold_min"           "175"
-		    "gold_max"           "275"
+		    "gold_min"           "75"
+		    "gold_max"           "115"
 
-		    "experience_min"           "10"
+		    "experience_min"           "60"
 		    "experience_max"           "100"
 		}
 	}

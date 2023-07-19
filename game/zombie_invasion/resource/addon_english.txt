@@ -1695,8 +1695,8 @@
  
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom"										"Like Robin Hood"
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom_Description"							"Feel like Robin Hood, shooting at several targets at once. \n\nThis ability can't proc unique modifier attack and can't be combined with all the orbs."
-		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damage"     							""
-		"DOTA_Tooltip_Ability_medusa_split_shot_custom_fake_damage"      							"%DAMAGE:"
+		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damage"     							"%FULL MAKE DAMAGE:"
+		"DOTA_Tooltip_Ability_medusa_split_shot_custom_fake_damage"      							"%FAKE DAMAGE:"
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom_arrow_count"                 		"NUMBER OF ARROWS:"
 		
 
