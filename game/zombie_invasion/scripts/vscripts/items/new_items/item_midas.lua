@@ -73,3 +73,7 @@ end
 
 
 modifier_item_midas_tress_use = {}
+
+function modifier_item_midas_tress_use:IsHidden()
+ 	return true
+ end
