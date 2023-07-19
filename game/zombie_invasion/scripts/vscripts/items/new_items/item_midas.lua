@@ -1,5 +1,6 @@
 LinkLuaModifier( "modifier_item_midas_tress", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
-
+LinkLuaModifier( "modifier_item_midas_tress_use", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
+ 
 item_midas = class({})
 
 function item_midas:OnAbilityPhaseStart()
@@ -42,6 +43,7 @@ local treasure = CreateUnitByName("npc_medas", point, true, nil, nil, DOTA_TEAM_
 			ParticleManager:SetParticleControl(particle_fx, 0, treasure:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 1, treasure:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
+			caster:AddNewModifier(caster,self,"modifier_item_midas_tress_use",{duration = 30})
 
 end
 
@@ -69,3 +71,5 @@ function modifier_item_midas_tress:GetModifierProvidesFOWVision()
 	return 1
 end
 
+
+modifier_item_midas_tress_use = {}

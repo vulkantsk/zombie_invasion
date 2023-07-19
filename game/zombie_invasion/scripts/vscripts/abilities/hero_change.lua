@@ -27,7 +27,9 @@ function GiveNewHero(keys)
 		
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
+		if newHero:HasModifier("modifier_item_midas_tress_use") then 
 		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 40})
+	end
 		for item,stacks in pairs(items_table) do 
 			local item = newHero:AddItemByName(item) 
 			item:SetCurrentCharges(stacks)
