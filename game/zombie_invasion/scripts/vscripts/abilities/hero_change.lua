@@ -30,7 +30,7 @@ function GiveNewHero(keys)
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
  		if abuzer then 
-		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 40})
+		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 89})
 	end
 		for item,stacks in pairs(items_table) do 
 			local item = newHero:AddItemByName(item) 
@@ -43,5 +43,10 @@ end
 modifier_change_hero = {}
 
 function modifier_change_hero:IsHidden()
+ 	return true
+ end
+
+function modifier_change_hero:RemoveOnDeath()
  	return false
  end
+

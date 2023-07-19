@@ -55,6 +55,10 @@ function modifier_item_midas_tress:IsHidden()
 	return true
 end
 
+function modifier_item_midas_tress:RemoveOnDeath()
+	return false
+end
+
 function modifier_item_midas_tress:DeclareFunctions()
 	return { MODIFIER_PROPERTY_PROVIDES_FOW_POSITION }
 end
@@ -78,3 +82,7 @@ modifier_item_midas_tress_use = {}
 function modifier_item_midas_tress_use:IsHidden()
  	return true
  end
+
+function modifier_item_midas_tress_use:RemoveOnDeath()
+	return false
+end
