@@ -2409,7 +2409,7 @@ The player can control the summoned creeps."
 
 	"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} ARMOR REDUCTION"
 	"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
-	"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"-{s:bonus_dmg_proc} HEALTH FOR PROC MORE HEALTH"
+	"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"+0.2 HEALTH AND STR MORE HEALTH"
 	"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
 
 // -----------------Silencer--------------------

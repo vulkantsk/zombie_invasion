@@ -66,16 +66,23 @@
         "AbilityValues"
         {
            
-                "dmg_proc"				
+				"dmg_proc"				"3225 4565 5225"
+			    	
+
+				"str_per_stack"				
 				{
-					"value"				"1325 965 725"
-			    	"special_bonus_unique_tide_dmg_proc"	    "-325"
+					"value"				"0.2 0.4 0.6"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					 
+				}
+
+				"health_per_stack"				
+				{
+					"value"				"0.2 0.4 0.6"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
 					 
 				}
           
-                "str_per_stack"                      "2.0 4.0 6.0 8.0"
-
-                "health_per_stack"                      "8.0 10.0 12.0 14.0"
             
 
         }

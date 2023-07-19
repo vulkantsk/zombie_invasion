@@ -610,8 +610,8 @@
 
 		"DOTA_Tooltip_Ability_item_big_meat"						"Мясо большого Бо"
 		"DOTA_Tooltip_Ability_item_big_meat_Description"			"<h1>Активная: Ам-ням</h1> Дает перечисленные характеристики \nТакое жирное и большое."
-		"DOTA_Tooltip_Ability_item_big_meat_bonus_health"	"ЗДОРОВЬЕ НАВСЕГДА: "
-		"DOTA_Tooltip_Ability_item_big_meat_bonus_regen"	"РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ НАВСЕГДА: "
+		"DOTA_Tooltip_Ability_item_big_meat_bonus_health"	"ЗДОРОВЬЕ НАВСЕГДА:"
+		"DOTA_Tooltip_Ability_item_big_meat_bonus_regen"	"РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ НАВСЕГДА:"
 
 		"DOTA_Tooltip_Ability_item_zombie_skin"						"Шкура зомби"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Description"			"Такая противная и... слизкая."
@@ -1703,7 +1703,7 @@
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Уменьшение брони anchor smash"
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"-{s:bonus_dmg_proc} полученного урона для способности MORE HEALTH"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"+0.2 Силы и здоровья MORE HEALTH"
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
 
 
