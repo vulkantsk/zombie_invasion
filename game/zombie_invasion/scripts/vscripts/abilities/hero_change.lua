@@ -1,4 +1,4 @@
-LinkLuaModifier( "modifier_change_hero", "abilities.hero_change", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_change_hero", "abilities/hero_change", LUA_MODIFIER_MOTION_NONE )
 
 function GiveNewHero(keys) 
 	local caster = keys.caster 

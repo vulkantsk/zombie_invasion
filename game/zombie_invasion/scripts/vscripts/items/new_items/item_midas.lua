@@ -43,6 +43,7 @@ local treasure = CreateUnitByName("npc_medas", point, true, nil, nil, DOTA_TEAM_
 			ParticleManager:SetParticleControl(particle_fx, 0, treasure:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 1, treasure:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
+			
 			caster:AddNewModifier(caster,self,"modifier_item_midas_tress_use",{duration = 30})
 
 end
