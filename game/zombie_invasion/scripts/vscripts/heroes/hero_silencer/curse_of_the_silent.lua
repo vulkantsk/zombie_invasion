@@ -93,13 +93,14 @@ function modifier_ability_curse_of_the_silent:OnCreated( kv )
     if not IsServer() then return end
     self.interval = 1
 
-    self.damageTable = {
-        victim = self:GetParent(),
+
+     ApplyDamage( {
+        victim = GetParent(),
         attacker = self:GetCaster(),
-        damage = damage,
+        damage = self.damageTable + (self:GetCaster():GetIntellect() / 100) * 10,
         damage_type = self:GetAbility():GetAbilityDamageType(),
-        ability = self:GetAbility()
-    }
+        ability = self:GetAbility(), --Optional.
+        })
 
     self:StartIntervalThink( self.interval )
 
@@ -126,12 +127,6 @@ function modifier_ability_curse_of_the_silent:OnAbilityFullyCast( params )
 end
 
 function modifier_ability_curse_of_the_silent:OnIntervalThink()
-    if self:GetParent():IsSilenced() then
-        self:SetDuration( self:GetRemainingTime() + self.interval, true )
-        return
-    end
-
-    ApplyDamage( (self.damageTable + (self:GetCaster():GetIntellect() / 100) * 10) )
 
     EmitSoundOn( "Hero_Silencer.Curse_Tick", self:GetParent() )
 end

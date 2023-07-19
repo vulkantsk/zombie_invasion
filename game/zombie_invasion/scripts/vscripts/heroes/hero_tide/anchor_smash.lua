@@ -39,7 +39,7 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         victim = enemy,
         attacker = self:GetParent(),
         damage = self.smash_damage + self:GetCaster():GetBaseDamageMax() + (self:GetCaster():GetStrength() * (7 / 100)),
-        damage_type = DAMAGE_TYPE_PHYSICAL,
+        damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility(), --Optional.
         })
 

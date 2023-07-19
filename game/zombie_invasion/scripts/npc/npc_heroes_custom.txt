@@ -1963,7 +1963,7 @@
 
 	"npc_dota_hero_silencer"
 	{
-		"Ability1"		"ability_curse_of_the_silent"
+		"Ability1"		"silencer_curse_of_the_silent"
 		"Ability2"		"ability_glaives_of_wisdom"
 		"Ability3"		"ability_last_word"
 		"Ability4"		"int"
