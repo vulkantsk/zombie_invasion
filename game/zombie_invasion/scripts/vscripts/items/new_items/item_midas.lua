@@ -26,7 +26,7 @@ function item_midas:OnSpellStart()
 		if self:GetCaster():HasModifier("modifier_change_hero") then 
 				CreateUnitByName("npc_EdgardBs", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 				GameRules:SendCustomMessage("<font color='#c10020'>АХАХАХАХАХАХ ЕБАННЫЙ АБУЗЕР</font>", 0, 0)
-
+				EmitGlobalSound("chto")
 				return
 		end
 

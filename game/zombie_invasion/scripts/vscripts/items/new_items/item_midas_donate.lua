@@ -23,6 +23,12 @@ function item_midas_donate:OnSpellStart()
 	local point = caster:GetAbsOrigin() + RandomVector( RandomFloat( 150, 150))
 	local gold_min = self:GetSpecialValueFor("gold_min")
 	local gold_max = self:GetSpecialValueFor("gold_max")
+			if self:GetCaster():HasModifier("modifier_change_hero") then 
+				CreateUnitByName("npc_EdgardBs", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+				GameRules:SendCustomMessage("<font color='#c10020'>АХАХАХАХАХАХ ЕБАННЫЙ АБУЗЕР</font>", 0, 0)
+				EmitGlobalSound("chto")
+				return
+		end
 				caster:EmitSound("DOTA_Item.Hand_Of_Midas")
 local treasure = CreateUnitByName("npc_medas", point, true, nil, nil, DOTA_TEAM_BADGUYS)
             

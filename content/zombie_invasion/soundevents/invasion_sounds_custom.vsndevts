@@ -1714,7 +1714,7 @@
                                                         "value0"                "sounds/chto"
                                                 }
                                         }
-										"volume"			{   "value"     "10.000000"  }
+										"volume"			{   "value"     "40.000000"  }
    									     "soundlevel"		{   "value"     "100"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
