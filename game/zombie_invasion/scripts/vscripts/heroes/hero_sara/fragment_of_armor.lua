@@ -27,6 +27,7 @@ if IsServer() then
 	function modifier_sara_fragment_of_armor:OnTakeDamage(keys)
 		local unit = self:GetParent()
 		local ability = self:GetAbility()
+		print(ability:GetAbilitySpecial("blocked_damage_pct"))
 		if unit == keys.unit and
 			IsValidEntity(ability) and
 			unit:IsAlive() and
