@@ -629,3 +629,18 @@ function ModifyCreepDamage(keys)
 		})
 	end
 end
+
+function SimpleDamageReflect(victim, attacker, damage, flags, ability, damage_type)
+	if victim:IsAlive() and bit.band(flags, DOTA_DAMAGE_FLAG_REFLECTION) == 0 and attacker:GetTeamNumber() ~= victim:GetTeamNumber() then
+		ApplyDamage({
+			victim = attacker,
+			attacker = victim,
+			damage = damage,
+			damage_type = damage_type,
+			damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION + DOTA_DAMAGE_FLAG_REFLECTION,
+			ability = ability
+		})
+		return true
+	end
+	return false
+end
