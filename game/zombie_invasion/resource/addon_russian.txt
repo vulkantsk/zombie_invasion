@@ -1732,7 +1732,7 @@
 		"DOTA_Tooltip_Ability_ability_global_silence_Description"										"GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL 	SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE."
 		"DOTA_Tooltip_Ability_ability_global_silence_tooltip_duration"										"ДЛИТЕЛЬНОСТЬ ОБЕЗМОВЛИВАНИЯ:"
 	
-		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval}% интервала срабатывания endless widsom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval} интервала срабатывания endless widsom"
 		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} интеллекта endless widsom"
 		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% урон от глейвов"
 
