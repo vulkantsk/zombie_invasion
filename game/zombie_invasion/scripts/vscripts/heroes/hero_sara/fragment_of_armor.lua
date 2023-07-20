@@ -27,7 +27,6 @@ if IsServer() then
 	function modifier_sara_fragment_of_armor:OnTakeDamage(keys)
 		local unit = self:GetParent()
 		local ability = self:GetAbility()
-		print(ability:GetAbilitySpecial("blocked_damage_pct"))
 		if unit == keys.unit and
 			IsValidEntity(ability) and
 			unit:IsAlive() and
@@ -36,7 +35,7 @@ if IsServer() then
 			not unit:PassivesDisabled() and
 			unit.GetEnergy and
 			ability:GetToggleState() and
-			unit:GetEnergy() >= (keys.damage * ability:GetAbilitySpecial("blocked_damage_pct") * 0.01) / ability:GetAbilitySpecial("damage_per_energy") then
+			unit:GetEnergy() >= (keys.damage * ability:GetSpecialValueFor("blocked_damage_pct") * 0.01) / ability:GetSpecialValueFor("damage_per_energy") then
 			SimpleDamageReflect(unit, keys.attacker, keys.damage * ability:GetSpecialValueFor("reflected_damage_pct_scepter") * 0.01, keys.damage_flags, self, keys.damage_type)
 			print("12312suck321")
 		end
