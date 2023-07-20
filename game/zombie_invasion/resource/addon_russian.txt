@@ -2379,7 +2379,7 @@
 		"DOTA_Tooltip_ability_sara_fragment_of_armor_aghanim_description" "Часть урона возвращается нападающим. Урон не отразится, если у Сары не хватило энергии поглотить его."
 		"DOTA_Tooltip_ability_sara_fragment_of_armor_damage_per_energy" "УРОНА НА ЕДИНИЦУ ЭНЕРГИИ:"
 		"DOTA_Tooltip_ability_sara_fragment_of_armor_blocked_damage_pct" "%СНИЖЕНИЕ УРОНА:"
-		"DOTA_Tooltip_ability_sara_fragment_of_armor_reflected_damage_pct_scepter" "%ОТРАЖЕНИЕ УРОНА:"
+		"DOTA_Tooltip_ability_sara_fragment_of_armor_scepter_Description" "Способность отражает %reflected_damage_pct%%% урона, если способна поглотить урон полностью."
 		"DOTA_Tooltip_ability_sara_fragment_of_armor_Lore" "Сара компенсирует свою природную хрупкость ментальным щитом, который блокирует урон за счет энергии ее души."
 
 		"DOTA_Tooltip_ability_sara_fragment_of_logic" "Fragment of Logic"
