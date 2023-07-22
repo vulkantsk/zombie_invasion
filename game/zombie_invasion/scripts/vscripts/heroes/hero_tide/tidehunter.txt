@@ -206,8 +206,8 @@
 	{
 
 		"MaxLevel"            "3"
-    	"LevelsBetweenUpgrades" "10"
-    	"RequiredLevel" "10"
+    	"LevelsBetweenUpgrades" 			"10"
+    	"RequiredLevel" 					"10"
 		"AbilityCooldown"				"90 120 160"
 
 		// Damage.
