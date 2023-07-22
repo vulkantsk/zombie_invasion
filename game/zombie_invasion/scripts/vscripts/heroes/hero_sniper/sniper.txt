@@ -241,7 +241,8 @@
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
  	
-		"RequiredLevel"					"10"
+		"RequiredLevel"					"25"
+		"LevelsBetweenUpgrades"			"5"
  
 		
 		// Ability General
@@ -271,7 +272,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"		"0.15"
+				"duration"		"0.09"
 			}
 
       }

@@ -66,7 +66,7 @@
         "AbilityValues"
         {
            
-				"dmg_proc"				"3225 4565 5225"
+				"dmg_proc"				"5225 4565 3225"
 			    	
 
 				"str_per_stack"				
@@ -205,10 +205,10 @@
 			"tidehunter_ravage"
 	{
 
-		"MaxLevel"            "1"
-    	"LevelsBetweenUpgrades" "1"
-    	"RequiredLevel" "35"
-		"AbilityCooldown"				"60.0"
+		"MaxLevel"            "3"
+    	"LevelsBetweenUpgrades" "10"
+    	"RequiredLevel" "10"
+		"AbilityCooldown"				"90 120 160"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
@@ -225,17 +225,17 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"2125"
+				"radius"			"2125 2400 2760"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"speed"				"725"
+				"speed"				"725 1000 1224"
 			}
 			"03"
 			{	
 				"var_type"			"FIELD_FLOAT"
-				"duration"			"11"
+				"duration"			"6 8 10"
 			}
 		}
 	}

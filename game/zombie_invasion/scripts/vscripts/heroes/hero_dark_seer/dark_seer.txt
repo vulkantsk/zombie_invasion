@@ -85,18 +85,18 @@
 			
 				"damage_per_second"				
 				{
-					"value"				"60 90 120 220 320 710"
+					"value"				"60 90 120 220 320 460"
 			    	"special_bonus_unique_dark_seer_ion_shield"	    "+390"
 					 
 				}
 			
 				"tick_interval"				"0.1"
 			
-				"bonus_health"				"350 400 550 650 750 850 1250"
+				"bonus_health"				"50 150 350 400 550 650 750"
 			
-				"bonus_regen"				"10.5 14.0 17.5 21.0 24.5 50.1 100.4"
+				"bonus_regen"				"3 5 10.5 14.0 17.5 21.0 24.5"
 			
-				"bonus_armor"				"7 9 14 18 21 24 29"
+				"bonus_armor"				"3 7 9 14 18 21 24"
 			
 				"duration"				"25"
 			
@@ -204,7 +204,8 @@
 		"ScriptFile"					"heroes/hero_dark_seer/ion_shell_golden/ion_shell_golden"
 		"AbilityTextureName"			"dark_seer/golden_shell"
 		"MaxLevel"						"3"
-		"RequiredLevel"					"10"		
+		"RequiredLevel"					"20"
+		"LevelsBetweenUpgrades"			"5"			
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -223,22 +224,22 @@
 
 				"damage_per_second"				
 				{
-					"value"				"1400 2700 3220"
-			    	"special_bonus_unique_dark_seer_golden_shield"	    "+780"
+					"value"				"900 1400 2700"
+			    	"special_bonus_unique_dark_seer_golden_shield"	    "+520"
 					 
 				}
 
 				"bonus_health"				
 				{
 					"value"				"1000 2405 3250"
-			    	"special_bonus_unique_dark_seer_golden_shield_2"	    "+750"
+			    	"special_bonus_unique_dark_seer_golden_shield_2"	    "+500"
 					 
 				}
 
 
-				"bonus_armor"				"39 48 59"
+				"bonus_armor"				"24 31 46"
 			
-				"bonus_regen"				"100 120 149.0"
+				"bonus_regen"				"39 67 80"
 			
 			 
 			 
