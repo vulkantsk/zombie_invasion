@@ -1181,7 +1181,7 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
-      if killedEntity:GetUnitName() == "npc_classic_necr"
+      if killedEntity:GetUnitName() == "npc_classic_necr" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
