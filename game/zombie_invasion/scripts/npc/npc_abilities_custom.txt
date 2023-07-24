@@ -1132,6 +1132,139 @@
 	//=================================================================================================================	
 
 
+	"quest_herbalist_1"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest_stranger"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "2750"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "1825"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_brevno"
+                "reward_item"    "item_resist"
+                "particle"        "1"
+                "next_quest"    "quest_herbalist_2"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_herbalist_2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest_stranger"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "100"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "3250"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "2225"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_yad"
+                "reward_item"    "item_bad_glasses"
+                "particle"        "100"
+                "next_quest"    "quest_herbalist_3"
+                "reusable"        "0"
+            }
+        }          
+    }
+    "quest_herbalist_3"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest_stranger"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "3250"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "2225"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_prox_phoenix"
+                "reward_item"    "item_pirog_universal"
+                "particle"        "1"
+                //"next_quest"    ""
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+
+
 
   	   "quest_stranger_1"
     {

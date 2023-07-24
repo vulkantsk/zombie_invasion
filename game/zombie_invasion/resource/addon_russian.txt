@@ -184,6 +184,7 @@
 
 
 		// ******************** moobs ********************	
+		"npc_herbalist_jitel"												"Травник азаз"
 		"npc_stranger_jitel"												"Незнакомец"
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
 		"npc_boss_chicken"                                                  "Петух???"
@@ -391,6 +392,24 @@
 
 		"DOTA_Tooltip_ability_item_leaf_Description" "Легенды гласят, что если его где-то посадить, то вы сможете получить вечный огонь..."
 		"DOTA_Tooltip_ability_item_leaf_lore" "Это правда!"
+
+		"DOTA_Tooltip_ability_item_bad_glasses"										"<font color='#950c02'>Стекло</font>"
+		"DOTA_Tooltip_ability_item_bad_glasses_Description"										"<h1>Пассивная: Делает больно.</h1> Один взгляд на это стекло может вырезать толпу людей, только достойный сможет носить такое сильное оружие в своих руках."
+		"DOTA_Tooltip_ability_item_bad_glasses_bonus_damage_percent"						"%ДОП.УРОНА"
+		"DOTA_Tooltip_ability_item_bad_glasses_health_debuff"								"%УМЕНЬШЕНИЕ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_item_bad_glasses_spell_amplify_bonus"								"%УРОНУ ОТ ЗАКЛИНАНИЙ:"
+
+		"DOTA_Tooltip_ability_item_brevno"													"БРЕВНО"
+		"DOTA_Tooltip_ability_item_brevno_Description"										"Гарантировано лучше чем твоя девушка в постели."
+
+
+		"DOTA_Tooltip_ability_item_resist"													"Шляпа травника"
+		"DOTA_Tooltip_ability_item_resist_Description"										"Защищает от многих болезней."
+		"DOTA_Tooltip_ability_item_resist_magic_resist"										"%Сопротивление магии:"
+
+		"DOTA_Tooltip_ability_item_yad"													"Сгусток яда"
+		"DOTA_Tooltip_ability_item_yad_Description"										"Странно, но это выглядит аппетитно."
+		
 
 		"DOTA_Tooltip_ability_item_pizza1" "Заготовка для пиццы"
 		"DOTA_Tooltip_ability_item_pizza1_Description" "<h1>Активное: Ам-ням</h1>Заготовка пиццы из другого мира прибавляет +10 ко всем атрибутам"
@@ -620,6 +639,11 @@
 		"DOTA_Tooltip_Ability_item_zombie_skin_health_bonus"	"+$health"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Lore"						"Лишь однажды может выпасть с зомби."
 		
+		
+		"DOTA_Tooltip_Ability_item_prox_phoenix"				"Прах феникса"
+		"DOTA_Tooltip_Ability_item_eggs_Description"			"Когда то он светился не так тускло.."
+		"DOTA_Tooltip_Ability_item_prox_phoenix_Lore"			"В теории из него можно сделать вкусный пирог."
+
 		"DOTA_Tooltip_Ability_item_eggs"						"Яйцо????"
 		"DOTA_Tooltip_Ability_item_eggs_Description"			"<h1>Активная: Ам-ням</h1>Если его сьесть, не отравишься?"
 		"DOTA_Tooltip_Ability_item_eggs_bonus"	"%УРОН ОТ ЗАКЛИНАНИЙ:"
@@ -650,9 +674,19 @@
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"ЛОВКОСТЬ: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%УРОН: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"Для истинных дпсеров."
- 
- 		"DOTA_Tooltip_modifier_item_pirog_dps"					"Пирог дпсера"
+		"DOTA_Tooltip_modifier_item_pirog_dps"					"Пирог дпсера"
 		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"Вы стали намного сильнее!"
+
+		"DOTA_Tooltip_Ability_item_pirog_universal"						"Пирог Универсала"
+		"DOTA_Tooltip_Ability_item_pirog_universal_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог." 
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_intellect"	"ИНТЕЛЛЕКТ: "		
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_agility"	"ЛОВКОСТЬ: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_strenght_bonus"	"СИЛА: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_movespeed"	"ДОП.СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_Lore"						"Для истинных уникумов."
+		"DOTA_Tooltip_modifier_item_pirog_universal"					"Пирог универсала"
+		"DOTA_Tooltip_modifier_item_pirog_universal_Description"		"Вы стали намного универсальнее!"
+ 
 
  		"DOTA_Tooltip_Ability_item_pirog_tank"						"Пирог танка"
 		"DOTA_Tooltip_Ability_item_pirog_tank_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог."  
@@ -1403,6 +1437,30 @@
 		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"КОЛИЧЕСТВО:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_1"										"Травник азаз"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_Description"							"@!#$# ПРИ~ВЕТ~ТВ~УЮ ТЕБЯ НИЗНА- КОМЕЦ ЧЕГО ПОЖАЛОВАЛ!? ХОТЯ Я ВСЕГДА РАД ГОСТЯМ И-И-И У МИНЯ ЕСТЬ ПРОСЬБА ДЛЯ ТЕБЯ. В ЛЕСУ ГДЕ ОБИТАЮТ СТРАШНЫЕ СОЗДАНИЯ СО СКЛИЗКИМИ ЛАПКАМИ И ДЛИИИИИННЫМ ЯЗЫЧКОМММ ЕСТЬ ДЕРЕВО (САКУРЫ) Я ХОЧУ ЧТОБЫ ТЫ УБИЛ ЕГО, ОНО ЗАДОЛЖАЛ МНИ ОЧЕНЬ МНОГА ШИШЕК ПРОШУ РАЗБЕРИСЬ С НИМ И Я ДАМ ТЕБЕ МАСОЧКУУУУУУУУ КОТОРУЮ НОСИЛ МОЙ ПРАДЕД ЖИВШИЙ ТУТ РАНЕЕЕЕ))00) ПОКА"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_2"										"Травник азаз"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_Description"							"СПАСИБО ЧТО РАЗДОБЫЛ ЭТО ОБДОЛБИТЕЛЬНОЕ БРЕВНИШО ДЛЯ МЕНЯ НУ ШО Я МОГУ СКАЗАТЬ СПААСИББО И ДА У МЕНЯ ЕЩЁ НЕ ВСЁ СДЕЛАЕШЬ ДЛЯ МЕНЯ ЕЩЁ КОЕ ЧТО? ТУТ МРАЗИ ХОДЯТ УБЕЙ ИХ И ПРИНЕСИ ЭТИ СГУСТКИ ЧТОБЫ Я БЫЛ ДОВОЛЕН И Я ДАМ ТЕБЕ ОСКОЛОК ОТ РАЗБИТОЙ БУТЫЛКИ СОДЕРЖИМОЕ КОТОРОЙ Я ВЫПИЛ 10 МИНУТ НАЗАД"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_3"										"Травник азаз"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_Description"							"УРА ТЫ ВЕРНУЛСЯ И У МЕНЯ ЕСТЬ ЕЩЁ КОЕ-ЧТО ДЛЯ ТЕБЯ ТУТ ОДНА ПТИЦА ПОСТОЯННО ПРОЛЕТАЕТ И СВИСТИТ ЭТО МЕНЯ НЕМНОГО БЕСИТ, ОНА ОНА ОНА ЕЩЁ ТАКАЯ СВЕТИТСЯ ГОРИТ ТЫ ПОНЯЛ ДА? ПРИНЕСИ МНЕ ЕЁ ПЕПЕЛ И Я ПРИГОТОВЛЮ ПИРОГ СПЕЦИАЛЬНО ДЛЯ ТЕБЯ ЧТОБЫ ТЫ НЕ ЖАЛОВАЛСЯ ЧТО Я ТАКОЙ НЕ ГОСТЕПРЕИМНЫЙ ХОТЯ Я НАОБОРОТ ВСЁ ДАВАЙ ИДИ. ПОКА."
+		"DOTA_Tooltip_Ability_quest_herbalist_3_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_gold"                 		"ЗОЛОТА:"
+
+
+
+
+
+
 
 		"DOTA_Tooltip_Ability_quest_stranger_1"										"НЕЗНАКОМЕЦ"
 		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"Стоять ****, куда пошёл, ты должен мне помочь. Я предрек пришествия Пожирателя Мира, но мне никто не верит. Все думают, что это лишь легенда. Чтобы это докахать принеси мне Древние останки. Думаю они помогут образумить мне деревню. Если принесёшь мне останки, то я тебя отблагодарю"

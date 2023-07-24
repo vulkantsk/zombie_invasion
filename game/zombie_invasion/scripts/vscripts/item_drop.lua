@@ -19,8 +19,9 @@ ItemDrop.item_drop = {
 		{items = {"item_ess_pudge"}, chance = 13, limit = 6, units = {"npc_classic_skelet_ruin"}},
 		{items = {"item_bone"}, chance = 20, duration = 12, units = {"npc_classic_dragon_small"}},
 		{items = {"item_bone"}, chance = 25, duration = 12, units = {"npc_classic_dragon_big"}}, 
-		{items = {"item_ess_pudge"}, chance = 10,duration = 20, units = {"npc_classic_skelet_ruin"}}, 
-		{items = {"item_necr_heart"}, chance = 7,duration = 20, units = {"npc_classic_microchel"}}, 
+		{items = {"item_ess_pudge"}, chance = 10, duration = 20, units = {"npc_classic_skelet_ruin"}}, 
+		{items = {"item_necr_heart"}, chance = 7, duration = 20, units = {"npc_classic_microchel"}},
+		{items = {"item_yad"}, chance = 100, duration = 20, units = {"npc_classic_toxic_veno"}},
 		{items = {"item_basher"}, chance = 100, units = {"npc_boss_slardar"}},
 		{items = {"item_cursed_shield"}, chance = 100, units = {"npc_boss_bear"}},
 		{items = {"item_bone"}, min_count = 3, max_count = 4 ,units ={"npc_boss_bear"}},
@@ -33,6 +34,9 @@ ItemDrop.item_drop = {
 		{items = {"item_law_frog"}, chance = 7,daration = 20, units = {"npc_classic_frog"}},
 		{items = {"item_fish"}, chance = 100, units = {"npc_boss_slardar"}},
 		{items = {"item_adulin"}, chance = 100, units = {"npc_classic_alduin_boss"}},
+		{items = {"item_prox_phoenix"}, chance = 100, units = {"npc_classic_phoenix_boss"}},
+		{items = {"item_brevno"}, chance = 100, units = {"npc_derevo_ebanoe"}},
+
  
   
 

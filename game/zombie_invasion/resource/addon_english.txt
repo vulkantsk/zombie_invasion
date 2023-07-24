@@ -559,6 +559,23 @@
 		"DOTA_Tooltip_Ability_item_zombie_skin_health_bonus"	"+$health"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Lore"						"Eeeeeeewwwwww..."
 		
+		"DOTA_Tooltip_ability_item_bad_glasses"										"<font color='#950c02'>Glass</font>"
+		"DOTA_Tooltip_ability_item_bad_glasses_Description"										"<h1>Passive: painfull.</h1> One look at this glass can cut out a crowd of people, only a worthy one will be able to carry such a strong weapon in his hands."
+		"DOTA_Tooltip_ability_item_bad_glasses_bonus_damage_percent"						"%BONUS.DAMAGE"
+		"DOTA_Tooltip_ability_item_bad_glasses_health_debuff"								"%DECREASE HEALTH:"
+		"DOTA_Tooltip_ability_item_bad_glasses_spell_amplify_bonus"								"%SPELL AMPLIFY:"
+
+		"DOTA_Tooltip_ability_item_brevno"													"The log"
+		"DOTA_Tooltip_ability_item_brevno_Description"										"Guaranteed to be better than your girlfriend in bed."
+
+
+		"DOTA_Tooltip_ability_item_resist"													"Hat herbalist"
+		"DOTA_Tooltip_ability_item_resist_Description"										"Protct you from sick."
+
+		"DOTA_Tooltip_ability_item_yad"													"A clot of poison"
+		"DOTA_Tooltip_ability_item_yad_Description"										"STRANGE! BUT it'S looks delicious."
+
+
 		"DOTA_Tooltip_Ability_item_eggs"						"Egg????"
 		"DOTA_Tooltip_Ability_item_eggs_Description"			"<h1>Active: Nam-nam</h1>If I eat it, will I be healthy?"
 		"DOTA_Tooltip_Ability_item_eggs_bonus"	"%SPELL AMPLIFICATION :"
@@ -1290,6 +1307,31 @@
 		"DOTA_Tooltip_Ability_item_dragon_sword_duration"					"duration:"
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_agility"					"bonus agi:"
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_intellecte"				"bonus int:"
+
+		"DOTA_Tooltip_Ability_quest_test_edgard"										"npc_Edgard"
+		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"Как-то я очень сильно набухался в таверне и пошел домой. В дом жена меня не пустила, а я ну че, не под дверью же ночевать, пошел в амбар. Лежу, почти отрубился и слышу, что кто-то зашел в амбар. Подумал: все таки приперлась, на сене конечно удобно спать, но дом есть дом. Поднимаю голову, а там БЕЗГОЛОВЫЙ МУЖИК! Я тогда так пересрался, что решил, больше пить не буду. Встаю с сена, предпренимаю попытки бежать но... "
+		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"COUNT:"
+		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_1"										"herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_Description"							"@!#$# WHEN~VET ~ TV ~ UYU YOU NIZNA- KOMETS WHAT HAVE YOU COME FOR!? ALTHOUGH I'M ALWAYS GLAD TO HAVE GUESTS AND-AND-AND MIN HAS A REQUEST FOR YOU. IN THE FOREST WHERE SCARY CREATURES WITH SLIMY PAWS AND A LONG TONGUE LIVE, THERE IS A TREE (SAKURA) I WANT YOU TO KILL HIM, HE OWES ME A LOT OF BIGWIGS, PLEASE DEAL WITH HIM AND I'LL GIVE YOU A MASK THAT MY GREAT-GRANDFATHER WHO LIVED HERE EARLIER WORE))00) UNTIL"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_2"										"herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_Description"							"THANK YOU FOR GETTING THIS STONED LOG FOR ME, WELL, SHO I CAN SAY THANK YOU AND YES, I STILL HAVE NOT EVERYTHING WILL YOU DO SOMETHING ELSE FOR ME? THERE ARE SCUM WALKING AROUND KILL THEM AND BRING THESE CLOTS SO THAT I AM SATISFIED AND I WILL GIVE YOU A FRAGMENT FROM A BROKEN BOTTLE WHOSE CONTENTS I DRANK 10 MINUTES AGO"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_value_required"     							"COUNT:"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_gold"                 		"GOLD:"
+
+		"DOTA_Tooltip_Ability_quest_herbalist_3"										"herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_Description"							"HOORAY, YOU'RE BACK AND I HAVE SOMETHING ELSE FOR YOU, THERE'S A BIRD CONSTANTLY FLYING BY AND WHISTLING, IT PISSES ME OFF A LITTLE, SHE'S SHE'S STILL GLOWING, BURNING, YOU UNDERSTAND RIGHT? BRING ME HER ASHES AND I'LL MAKE A PIE ESPECIALLY FOR YOU SO THAT YOU DON'T COMPLAIN THAT I'M NOT SO HOSPITABLE, ALTHOUGH I'M ON THE CONTRARY, LET'S GO. BYE."
+		"DOTA_Tooltip_Ability_quest_herbalist_3_value_required"     							"COUNT:"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_gold"                 		"GOLD:"
+
 
 		"DOTA_Tooltip_Ability_quest_stranger_1"										"STRANGER"
 		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"Stand **** where you went, you have to help me. I predicted the coming of the World Eater, but no one believes me. Everyone thinks it's just a legend. To prove it, bring me the Ancient Remains. I think they will help me to reason with the village. If you bring me the remains, I'll thank you"
