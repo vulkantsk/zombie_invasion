@@ -37,7 +37,7 @@
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700 750 800 850 900"
+		"AbilityCastRange"				"-1"
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"0"
 		"AbilitySharedCooldown"			"dagon"
@@ -5722,7 +5722,7 @@
 		"ItemResult"					"item_bloodstone_max_2"
 		"ItemRequirements"
 		{
-			"01"						"item_bloodstone_max;item_soul_booster"
+			"01"						"item_bloodstone_max;item_soul_booster;item_voodo_mask_3"
 		}
 	}
 
@@ -5741,14 +5741,14 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"40.0"
+		"AbilityCooldown"				"30.0"
 		"AbilityManaCost"				"0"
  
  
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
  
-		"ItemCost"						"700"
+		"ItemCost"						"14000"
 		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bs;bloodstone"
@@ -5760,12 +5760,12 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_health"			"550 1100"
-				"bonus_mana"			"550 1100"
-				"all_lifesteal"		     "10 15"
-				"buff_duration"			"6"
-				"debuff_duration"		"40"
-				"lifesteal_multiplier"	"2.5"
+				"bonus_health"			"550 2200"
+				"bonus_mana"			"550 2200"
+				"all_lifesteal"		     "10 45"
+				"buff_duration"			"6 8"
+				"debuff_duration"		"40 20"
+				"lifesteal_multiplier"	"2.5 3.2"
 				"mana_multiplier"	"15 30"
 	
 		}
@@ -6189,7 +6189,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
  
-		"ItemCost"						"700"
+		"ItemCost"						"900"
 		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"magic;magic cape"
@@ -6203,7 +6203,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"all_lifesteal"		"15"
+				"all_lifesteal"		"10"
 			}
  
  
@@ -6222,7 +6222,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"
+		"ItemCost"						"900"
 		"ItemShopTags"					""
 
 		// Recipe
@@ -6251,7 +6251,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
  
-		"ItemCost"						"2030"
+		"ItemCost"						"3000"
 		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"magic;magic cape"
@@ -6298,7 +6298,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1150"
+		"ItemCost"						"900"
 		"ItemShopTags"					""
 
 		// Recipe
@@ -6327,7 +6327,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
  
-		"ItemCost"						"2030"
+		"ItemCost"						"4400"
 		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"magic;magic cape"

@@ -26,6 +26,10 @@ function modifier_item_bad_glasses:OnRefresh()
     self:OnCreated()
 end
 
+function modifier_item_bad_glasses:RemoveOnDeath()
+    return false
+end
+
 function modifier_item_bad_glasses:GetModifierProjectileName()
     return "particles/econ/items/clinkz/clinkz_maraxiform/clinkz_ti9_summon_projectile_lava.vpcf"
 end
