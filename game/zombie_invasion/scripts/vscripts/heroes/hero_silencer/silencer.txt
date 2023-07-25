@@ -13,7 +13,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"MaxLevel"						"7"
+		"MaxLevel"						"4"
 		"RequiredLevel"					"2"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Silencer.Curse.Cast"
@@ -41,10 +41,10 @@
 		{
 			"damage"
 			{
-				"value"							"32 64 107 242 277 320 368"
+				"value"							"107 242 277 320"
 				"special_bonus_unique_silencer"		"+10"
 			}
-			"application_damage"				"64 107 242 277 320 368 428"
+			"application_damage"				"242 277 320 368"
 
 			"radius"			"350"
 			"duration"			"6"

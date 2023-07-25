@@ -446,6 +446,33 @@
 		"DOTA_Tooltip_ability_item_bloodstone_max_2_bonus_mana"						"+$mana"
 		"DOTA_Tooltip_ability_item_bloodstone_max_2_all_lifesteal"					"%+$spell_lifesteal"
  
+		"DOTA_Tooltip_ability_item_Split_medusa"									"Daedalus Stormbow"
+		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>4</font>"
+		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Штормовой лук дэдала способен разрушить саму концепцию этого мира."
+		"DOTA_Tooltip_ability_item_Split_medusa_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_Split_medusa_attack_range_bonus"					"+$attack_range"
+		"DOTA_Tooltip_ability_item_Split_medusa_Attackspeed_bonus"					"+$Attack"
+		"DOTA_Tooltip_ability_item_Split_medusa_agility_bonus"						"+$agi"
+		"DOTA_Tooltip_ability_item_Split_medusa_Intellect_bonus"					"+$int"
+		"DOTA_Tooltip_ability_item_Split_medusa_Health_bonus"						"+$health"
+		"DOTA_Tooltip_ability_item_Split_medusa_Strength_bonus"						"+$str"
+		"DOTA_Tooltip_ability_item_Split_medusa_Regen_bonus"						"+$hp_regen"
+
+
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>7</font>"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Штормовой лук дэдала способен разрушить саму концепцию этого мира."
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_attack_range_bonus"					"+$attack_range"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Attackspeed_bonus"					"+$Attack"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_agility_bonus"						"+$agi"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Intellect_bonus"					"+$int"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Health_bonus"						"+$health"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Strength_bonus"						"+$str"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Regen_bonus"						"+$hp_regen"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_evasion_bonus"						"%+$evasion"
+
+
 
 		"DOTA_Tooltip_ability_item_talisman"									"Talisman of mage"
 		"DOTA_Tooltip_ability_item_talisman_Description"						"<h1>Пассивная: Spell Amplification</h1>Способности владельца усиливаются вместе с затраченной маной на них."
@@ -2755,8 +2782,8 @@
 
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Description" "Добавляет к атакам героя замораживающий эффект, замедляющий передвижение цели на 1,5 секунды и наносящий дополнительный урон." 
- 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_bonus_damage" "БОНУСНЫЙ УРОН:"
- 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_movement_speed" "%ЗАМЕДЛЕНИЕ ВРАГОВ:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_damage" "БОНУСНЫЙ УРОН:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_frost_arrows_movement_speed" "%ЗАМЕДЛЕНИЕ:"
 
  		"DOTA_Tooltip_ability_ability_wave_of_terror"	"Wave of terror"
  		"DOTA_Tooltip_ability_ability_wave_of_terror_Description" "Герой издаёт жуткий клич, ослабляя броню врагов и раскрывая туман войны."
@@ -2767,7 +2794,7 @@
  		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_Description" "Опыт в бою позволяет герою стрелять метче и эффективнее. С каждой атакой есть вероятность выпустить стрелу, игнорирующую базовую броню врага. Также даёт герою и союзникам дальнего боя неподалёку дополнительную ловкость, зависящую от ловкости владельца. Способность не действует, если в радиусе 400 от её владельца есть вражеские герои."
  		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_agility_multiplier" "%ДОП ЛОВКОСТЬ:"
  		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_chance" "%ШАНС СРАБАТЫВАНИЯ:"
- 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanshipbonus_damage" "БОНУСНЫЙ УРОН:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_marksmanship_bonus_damage" "БОНУСНЫЙ УРОН:"
 
  		"DOTA_Tooltip_ability_ability_devour" "DEVOUR"
  		"DOTA_Tooltip_ability_ability_devour_Description" "Съедает крипа и через пройденное время получает золото за его переваривание."

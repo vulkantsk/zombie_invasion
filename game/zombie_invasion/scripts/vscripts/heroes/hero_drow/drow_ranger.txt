@@ -11,7 +11,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
-        "MaxLevel"                        "7"
+        "MaxLevel"                        "1"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -25,7 +25,6 @@
 
         // Damage.
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityDamage"                 "20 40 60 80 100 120 140"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
@@ -38,8 +37,8 @@
 
             "damage"                    
             {
-                    "value"             "5 10 15 20"
-                    "special_bonus_unique_drow_range_frost_damage"      "+80"
+                    "value"             "40"
+                    "special_bonus_unique_drow_range_frost_damage"      "+160"
             }
 
             "frost_arrows_movement_speed"   "-24"
@@ -58,7 +57,10 @@
         "AbilityCastRange"              "400"
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+        "RequiredLevel"                 "6"  
+        "LevelsBetweenUpgrades"         "1"
+        "MaxLevel"                       "14"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -66,14 +68,14 @@
         {
             "chance"
             {       
-                "value"    "12 24 36"
+                "value"    "14 18 20 24 26 28 30 32 34 36 38 40 42 44"
                 "special_bonus_unique_drow_range_marksmanship"        "+8"
             }
                         
-                "bonus_damage"  "40 80 160"
+                "bonus_damage"  "40 80 120 160 200 240 280 320 360 400 440 480 520 560"
 
 
-                "agility_multiplier"        "12 24 36"
+                "agility_multiplier"        "7 10 13 16 19 21 24 27 29 31 35 37 40 44"
             
 
                 "agility_range"     "-1"

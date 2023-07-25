@@ -368,6 +368,33 @@
 
 
 
+		"DOTA_Tooltip_ability_item_Split_medusa"									"Daedalus Stormbow"
+		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>PASSIVE: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>4</font>"
+		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
+		"DOTA_Tooltip_ability_item_Split_medusa_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_Split_medusa_attack_range_bonus"					"+$attack_range"
+		"DOTA_Tooltip_ability_item_Split_medusa_Attackspeed_bonus"					"+$Attack"
+		"DOTA_Tooltip_ability_item_Split_medusa_agility_bonus"						"+$agi"
+		"DOTA_Tooltip_ability_item_Split_medusa_Intellect_bonus"					"+$int"
+		"DOTA_Tooltip_ability_item_Split_medusa_Health_bonus"						"+$health"
+		"DOTA_Tooltip_ability_item_Split_medusa_Strength_bonus"						"+$str"
+		"DOTA_Tooltip_ability_item_Split_medusa_Regen_bonus"						"+$hp_regen"
+
+
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>7</font>"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_bonus_damage"						"+$damage"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_attack_range_bonus"					"+$attack_range"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Attackspeed_bonus"					"+$Attack"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_agility_bonus"						"+$agi"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Intellect_bonus"						"+$int"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Health_bonus"						"+$health"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Strength_bonus"						"+$str"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Regen_bonus"						"+$hp_regen"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_evasion_bonus"						"%+$evasion"
+
+
 		"DOTA_Tooltip_ability_item_leaf" "leaf"
 
 		"DOTA_Tooltip_ability_item_leaf_Description" "Legend says, that if you plant it somewhere, then you can get eternal flame..."

@@ -59,7 +59,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6 7 8 9 10 11 12"
+				"bonus_armor"			"6 8 10 12 14 16 18"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord"
 
 			}

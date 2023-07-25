@@ -117,18 +117,18 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"attack_speed"					"30 45 65 90 110 125 145"
+				"attack_speed"					"65 90 110 125 145 185 220"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_damage"					"15 35 55 75 95 115 135"
+				"bonus_damage"					"35 55 75 95 115 135 180"
 								"LinkedSpecialBonus"			"special_hoodwink"
 			}
  			"04"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_envasion"					"10 15 20 25 30 35 40"
+				"bonus_envasion"					"5 15 25 35 45 65 75"
 			}
  
 		
@@ -258,8 +258,9 @@
 		"ScriptFile"					"heroes/hero_hoodwink/anti_armor/armor_penetration"
 		"AbilityBehavior"		      	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"Hero/hood/armor"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"25"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -268,7 +269,7 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "trigger_chance"			"33"
+			     "trigger_chance"			"44 55 66"
 		    }
 		}
 	}
@@ -288,10 +289,8 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"value"				"195"
+				"value"				"420"
 			}
 		}
 	}
-
- 
 }

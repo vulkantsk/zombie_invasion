@@ -4047,6 +4047,405 @@
 			}
 		}
 	}
+	//=================================================================================================================
+	// Recipe: Dragon Lance
+	//=================================================================================================================
+	"item_recipe_dragon_lance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"234"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dragon_lance"
+		"ItemRequirements"
+		{
+			"01"						"item_blade_of_alacrity;item_belt_of_strength"
+		}
+	}
+	
+	//=================================================================================================================
+	// Dragon Lance
+	//=================================================================================================================
+	"item_dragon_lance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"236"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1900"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"artifact"
+		"ItemAliases"					"dragon lance"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"bonus_agility"			"15"
+				"bonus_strength"		"10"
+				"base_attack_range"		"150"
+		}
+	}
+	//=================================================================================================================
+	// Recipe: Hurricane Pike
+	//=================================================================================================================
+	"item_recipe_hurricane_pike"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"262"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"350"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_hurricane_pike"
+		"ItemRequirements"
+		{
+			"01"						"item_force_staff*;item_dragon_lance"
+		}
+	}
+	
+	//=================================================================================================================
+	// Hurricane Pike
+	//=================================================================================================================
+	"item_hurricane_pike"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"263"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
+		"FightRecapLevel"				"1"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"650"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"19.0"
+		"AbilitySharedCooldown"			"force"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150"
+		"ItemCost"						"4450"
+		"ItemShopTags"					"int;damage;attack_speed;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"fs;force staff"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_intellect"		"15"
+			"bonus_health"	"200"
+			"bonus_agility"			"20"
+			"bonus_strength"		"15"
+			"base_attack_range"		"150"
+			"push_length"			"600"
+			"enemy_length"			"450"
+			"range_duration"		"6"
+			"cast_range_enemy"		"450"
+			"max_attacks"			"5"
+			"bonus_attack_speed"	"100"
+			"push_time"				"0.5"
+			"dizzy_duration"			"0"
+			"dizzy_distance_pct"			"0"
+
+		}
+	}
+	// =================================================================================================================
+	//
+	// =================================================================================================================
+	"item_recipe_Split_medusa"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.0"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"100"
+		"ID"	"1797"
+		"ItemQuality"	"consumable"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"	"0"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_Split_medusa"
+		"ItemRequirements"
+		{
+			"01"	"item_hurricane_pike;item_hyperstone;item_claymore"
+		}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	}
+	"item_Split_medusa"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"bow1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Valve's version of this item uses the ID "135".
+		"ID"	"1795"
+		"ItemQuality"	"epic"
+		"Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl1.vpcf"
+		"ItemCost"	"7850"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"	"damage;attack_speed;hard_to_tag"
+		"ItemAliases"	"bow"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_Split_medusa"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%attack_range_bonus"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%agility_bonus"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%Attackspeed_bonus"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%Intellect_bonus"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%Strength_bonus"
+					"MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS"			"%Health_bonus"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%Regen_bonus"
+				}
+				"States"	{}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/items/multiple_attacks.lua"
+						"Function"	"multiple_attacks"
+					}
+				}
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"60"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_range_bonus"	"130"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Attackspeed_bonus"	"120"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"agility_bonus"	"40"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Intellect_bonus"	"20"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Health_bonus"	"600"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Strength_bonus"	"60"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Regen_bonus"	"9"
+			}
+		}
+	}
+	"item_recipe_war_of_the_crossbow"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"custom_folder/item_recipe"		
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1100"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_war_of_the_crossbow"
+		"ItemRequirements"
+		{
+			"01"						"item_Split_medusa;item_bunch_of_butterfly"
+		}
+	}
+	"item_war_of_the_crossbow"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"bow2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Valve's version of this item uses the ID "135".
+		"ID"	"1620"
+		"ItemCost"	"22775"
+		"ItemQuality"	"epic"
+		"Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"	"damage;attack_speed;hard_to_tag"
+		"ItemAliases"	"bow2"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"precache"
+		{
+			"particle"	"particles/generic_gameplay/damage_flash_creep.vpcf"
+			"soundfile"	"soundevents/game_sounds_items.vsndevts"
+			"particle"	"particles/units/heroes/hero_ember_spirit/ember_spirit_remnant_dash_embers.vpcf"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+			"particle"	"particles/generic_gameplay/damage_flash_creep.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_war_of_the_crossbow"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%bonus_basea_damage"
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%attack_range_bonus"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%agility_bonus"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%Attackspeed_bonus"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%Intellect_bonus"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%Strength_bonus"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"			"%evasion_bonus"
+				}
+				"States"	{}
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"particles/units/heroes/hero_ember_spirit/ember_spirit_remnant_dash_embers.vpcf"
+						"EffectAttachType"	"follow_origin"
+					}
+				}
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/items/multiple_attacks_6.lua"
+						"Function"	"multiple_attacks_6"
+					}
+				}
+				
+			}
+			
+		
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"450"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_range_bonus"	"120"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Attackspeed_bonus"	"280"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"agility_bonus"	"240"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Intellect_bonus"	"170"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Health_bonus"	"1200"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Strength_bonus"	"140"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Regen_bonus"	"18"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"evasion_bonus"	"85"
+			}
+		}
+	}
+	
 	
 	"item_echo_sabre"
 	{
@@ -8574,7 +8973,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"50"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8596,17 +8995,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"55"
+				"bonus_movement_speed"	"95"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage_melee"			"30"
+				"bonus_damage_melee"			"70"
 			}			
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage_range"			"15"
+				"bonus_damage_range"			"45"
 			}			
 			"04"
 			{
@@ -8646,7 +9045,7 @@
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"4"
+				"bonus_armor"			"8"
 			}		
 		}
 	}
@@ -8680,7 +9079,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
 		"AbilityTextureName" 			"item_imba_phase_boots_2"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"ScriptFile"					"items/bots/item_crystal_boots"
 
@@ -8710,9 +9109,9 @@
 
 		"AbilityValues"
 		{
-				"bonus_movement_speed"			"65"
-				"bonus_damage"		"90"
- 				"bonus_armor"			"5"
+				"bonus_movement_speed"			"115"
+				"bonus_damage"		"120"
+ 				"bonus_armor"			"16"
 				"crit_multiplier"		"160"
 				"crit_chance"		"30"
 

@@ -86,7 +86,7 @@
 				"damage_per_second"				
 				{
 					"value"				"60 90 120 220 320 460"
-			    	"special_bonus_unique_dark_seer_ion_shield"	    "+390"
+			    	"special_bonus_unique_dark_seer_ion_shield"	    "+140"
 					 
 				}
 			
@@ -224,15 +224,15 @@
 
 				"damage_per_second"				
 				{
-					"value"				"900 1400 2700"
-			    	"special_bonus_unique_dark_seer_golden_shield"	    "+520"
+					"value"				"720 000 1600"
+			    	"special_bonus_unique_dark_seer_golden_shield"	    "+400"
 					 
 				}
 
 				"bonus_health"				
 				{
 					"value"				"1000 2405 3250"
-			    	"special_bonus_unique_dark_seer_golden_shield_2"	    "+500"
+			    	"special_bonus_unique_dark_seer_golden_shield_2"	    "+250"
 					 
 				}
 

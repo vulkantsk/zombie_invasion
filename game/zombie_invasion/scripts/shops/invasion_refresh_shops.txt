@@ -41,7 +41,9 @@
 		"item"		"item_broadsword"
 		"item"		"item_claymore"				
 		"item"		"item_javelin"
-		"item"		"item_mithril_hammer"	
+		"item"		"item_mithril_hammer"
+		"item"		"item_Split_medusa"
+		"item"		"item_war_of_the_crossbow"
 	}
 			
 	"misc"
@@ -147,6 +149,7 @@
  		"item"		"item_dragon_lance"
 		"item"		"item_sange"
  		"item"		"item_yasha"
+ 		"item"		"item_kaya"
 		"item"		"item_echo_sabre"	
  		"item"		"item_maelstrom"		
  		"item"		"item_desolator_2_custom"
