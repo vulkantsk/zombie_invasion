@@ -17,7 +17,7 @@ end
 
 function modifier_special_effect_legendary:OnCreated()
 
-	local particleName2 = "particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf"
+	local particleName2 = "particles/econ/events/ti10/emblem/ti10_emblem_effect.vpcf"
 	self.pfx2 = ParticleManager:CreateParticle(particleName2,PATTACH_ABSORIGIN_FOLLOW,self:GetParent())
 
 end
