@@ -189,7 +189,7 @@ function InvasionMode:NextNight7()
 	     while spawn_zmb < 6 do
 		     spawn_zmb = spawn_zmb + 1
              self:SpawnZombie("npc_classic_necr",15)     
-		     return 5
+		     return 8
 		 end		
 		 return nil	 
 	end) 
