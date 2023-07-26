@@ -5,7 +5,7 @@ item_pirog_magic = class({})
 function item_pirog_magic:CastFilterResultTarget(target)
 	--print("Error")
 	if IsServer() then
-		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_dps") or target:HasModifier("modifier_item_pirog_universal") then
+		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_dps") or target:HasModifier("modifier_item_pirog_universal") or target:HasModifier("modifier_item_pirog_support") then
 			return UF_FAIL_CUSTOM
 		end
 
@@ -20,7 +20,7 @@ function item_pirog_magic:GetCustomCastErrorTarget(target)
 	--print("Error")
 	if IsServer() then
  
-		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_dps") or target:HasModifier("modifier_item_pirog_universal") then
+		if   target:HasModifier("modifier_item_pirog_tank") or target:HasModifier("modifier_item_pirog_dps") or target:HasModifier("modifier_item_pirog_universal") or target:HasModifier("modifier_item_pirog_support") then
 			return "#dota_hud_error_pirog"
 		end
  

@@ -3061,6 +3061,41 @@
 		}
  
 	}
+	"item_pirog_support"
+	{
+		"BaseClass"						"item_lua"											
+		"ScriptFile"					"items/item_pirog_support"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"pirog_support" 
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+
+		"AbilityValues"
+		{
+			
+				"bonus_intellect"		"325"
+				"bonus_movespeed"		"95"
+			
+				"bonus_amp"		"175"
+			
+		
+				"mana_regen"		"45.5"
+			
+				"model_scale"		"20"
+							
+		}
+ 
+	}
 	
  	"item_pirog_tank"
 	{
@@ -11780,11 +11815,11 @@
 			}
 		}
 	}
-	"item_bad_glasses"
+	"item_quest_cm_shield"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/carry/item_bad_glasses"
-		"AbilityTextureName"			"bad"
+		"ScriptFile"					"items/item_quest_cm_shield"
+		"AbilityTextureName"			"magic/Soul_Refresh"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
@@ -11804,10 +11839,44 @@
 
 		"AbilityValues"
 		{
+				"chance_miss"			"90"
+				"bonus_heal_amp"		"80"
+				"dmg_amp"				"110"
+				"stat_int"				"1000"
+				"bonus_shield"			"1000"
+				"health_reduction"			"-99.999"
+			
+		}
+	}
+	"item_bad_glasses"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/carry/item_bad_glasses"
+		"AbilityTextureName"			"bad"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+		"ItemShopTags"					"damage;str;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"   																	
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemIsNeutralDrop" 						"1"
+
+		"AbilityValues"
+		{
 			
 				"bonus_damage_percent"			"200"
 				"spell_amplify_bonus"			"200"
-				"health_debuff"					"-50"
+				"health_debuff"					"-80"
 			
 		}
 	}
@@ -11826,7 +11895,7 @@
 		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		"SideShop" 						"0"
 		"ItemKillable"					"0"
 
@@ -11852,7 +11921,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
 		"FightRecapLevel"				"1"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"SideShop" 						"0"
@@ -11890,7 +11959,7 @@
 
 		"AbilityManaCost"				"125"
 		"SideShop" 						"0"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		"ItemCost"						"0"
 		"ItemQuality"					"artifact"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
@@ -11924,7 +11993,7 @@
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemQuality"					"artifact"
 		"SideShop" 						"0"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		"ItemSellable"					"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -11951,7 +12020,7 @@
 		"ItemQuality"					"artifact"
 		"ItemSellable"					"0"
 		"SideShop" 						"0"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemKillable"					"0"
@@ -11981,6 +12050,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"ItemPurchasable"				"1"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Abaddon.AphoticShield.Cast"
 		"ItemPurchasable"				"0"
@@ -12127,14 +12197,14 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemIsNeutralDrop" 						"0"
+		"ItemIsNeutralDrop" 			"0"
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"0" 
 		"AllowedInBackpack"				"0"
 		"ItemKillable"					"0" 
 		"ItemStackable" 				"0"
 		"ItemPermanent" 				"0"	
+		"ItemInitialCharges"			"1"	
 		"AbilityValues"
 		{
 			"slow_brevno"			"-45"	

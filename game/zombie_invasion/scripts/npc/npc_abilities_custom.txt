@@ -1834,7 +1834,95 @@
                 "ScriptFile"    "abilities/quest/quest_template"
                 "Function"        "OnQuestCreated"
                 "quest_item"    "item_ess_pudge"
+                "reward_item"    "item_quest_cm_shield"
+                "particle"        "1"
+                "next_quest"    "quest_test_crystal2"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_test_crystal2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/quest_women1"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "25"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "1325"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "825"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_eggs"
                 "reward_item"    "item_dps_heart"
+                "particle"        "1"
+                "next_quest"    "quest_test_crystal3"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_test_crystal3"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/quest_women1"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "1325"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "825"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_magic_heart"
+                "reward_item"    "item_pirog_support"
                 "particle"        "1"
                 //"next_quest"    "quest_test_woman02"
                 "reusable"        "0"

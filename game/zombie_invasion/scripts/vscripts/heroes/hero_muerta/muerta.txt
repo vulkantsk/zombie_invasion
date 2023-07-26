@@ -82,7 +82,7 @@
 		{
 				"duration"				"0"	
 				"duration_creep"		"0"
-				"chance_pct"			"12 16 20 24 28 32 36"
+				"chance_pct"			"4 6 8 10 12 14 16"
 				"bonus_damage"			
 				{
 					"value"				"15 20 25 30"

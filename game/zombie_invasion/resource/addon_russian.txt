@@ -399,8 +399,19 @@
 		"DOTA_Tooltip_ability_item_bad_glasses_health_debuff"								"%УМЕНЬШЕНИЕ ЗДОРОВЬЯ:"
 		"DOTA_Tooltip_ability_item_bad_glasses_spell_amplify_bonus"								"%УРОНУ ОТ ЗАКЛИНАНИЙ:"
 
+
+		"DOTA_Tooltip_ability_item_quest_cm_shield"											"<font color='#4d8fac'>Blessed support shield</font>"
+		"DOTA_Tooltip_ability_item_quest_cm_shield_Description"											"<h1>Пассивная: Благославение богов.</h1> Имеет %chance_miss% шанс на избежания любого урона. Но герой становится слишком слаб и ему остаётся лишь молится."
+		"DOTA_Tooltip_ability_item_quest_cm_shield_dmg_amp"							"%УРОНУ ОТ ЗАКЛИНАНИЙ: "
+		"DOTA_Tooltip_ability_item_quest_cm_shield_stat_int"						"ИНТЕЛЛЕКТ: "
+		"DOTA_Tooltip_ability_item_quest_cm_shield_chance_miss"						"%ШАНС ИЗБЕЖАНИЯ УРОНА: "
+		"DOTA_Tooltip_ability_item_quest_cm_shield_health_reduction"				"%УМЕНЬШЕНИЕ ЗДОРОВЬЯ: "
+		"DOTA_Tooltip_ability_item_quest_cm_shield_bonus_heal_amp"				"%УСИЛЕНИЕ ХП РЕГЕНА: "
+		"DOTA_Tooltip_ability_item_quest_cm_shield_Lore"							"Благославение Атреумусо сокрыто в этом щите."
+
 		"DOTA_Tooltip_ability_item_brevno"													"БРЕВНО"
-		"DOTA_Tooltip_ability_item_brevno_Description"										"Гарантировано лучше чем твоя девушка в постели."
+		"DOTA_Tooltip_ability_item_brevno_Description"										"Гарантировано лучше чем твоя девушка в постели. И весит больше твоей матери."
+		"DOTA_Tooltip_ability_item_brevno_slow_brevno"										"%ЗАМЕДЛЕНИЕ:"
 
 
 		"DOTA_Tooltip_ability_item_resist"													"Шляпа травника"
@@ -1642,6 +1653,18 @@
 		"DOTA_Tooltip_Ability_quest_test_crystal_value_required"     							"КОЛИЧЕСТВО ЭССЕНЦИЙ:"
 		"DOTA_Tooltip_Ability_quest_test_crystal_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_crystal_reward_gold"                 		"ЗОЛОТА:"	
+
+		"DOTA_Tooltip_Ability_quest_test_crystal2"										"Кристалка"
+		"DOTA_Tooltip_Ability_quest_test_crystal2_Description"							"Привет снежинка моя! Я могу дать тебе один артефакт если ты принесёшь мне яйца, их можно добыть у озера, удачки!"
+		"DOTA_Tooltip_Ability_quest_test_crystal2_value_required"     							"КОЛИЧЕСТВО ЯИЦ:"
+		"DOTA_Tooltip_Ability_quest_test_crystal2_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_crystal2_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_crystal3"										"Кристалка"
+		"DOTA_Tooltip_Ability_quest_test_crystal3_Description"							"Здравствуй снова! А я тут пирог готовлю и мне не хватает кое-какого ингридиента, можешь достать сердце духа на едином кладбище?"
+		"DOTA_Tooltip_Ability_quest_test_crystal3_value_required"     							"КОЛИЧЕСТВО СЕРДЕЦ:"
+		"DOTA_Tooltip_Ability_quest_test_crystal3_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_crystal3_reward_gold"                 		"ЗОЛОТА:"
  
  		"DOTA_Tooltip_Ability_quest_test_david"										"Сердечное подношение"
 		"DOTA_Tooltip_Ability_quest_test_david_Description"							"Ты слышал рассказы Кункевича? Они такие увлекательные, и как такой великий человек может жить в нашей деревне! А, ты здесь за моим фирменым *название засекречено*, тогда хорошо. Просто принеси мне 5 сердец Некромантов, они разгуливают в этом Страшном лесу. А я пока дальше послушаю рассказы Куннки!"
@@ -1994,7 +2017,7 @@
 		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"
 		"DOTA_Tooltip_ability_muerta_time_lock_Description" "Муэрта с шансом повторно атакует свою цель нанося ей дополнительный урон"
 		"DOTA_Tooltip_ability_muerta_time_lock_lore"	"Действительная копия реальности."
-		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "%ШАНС СРАБАТЫВАНИЯ:"
 		"DOTA_Tooltip_ability_muerta_time_lock_bonus_damage" "БОНУСНЫЙ УРОН:"
 
 		"DOTA_Tooltip_ability_innate_rend" "Muerta call's"
