@@ -112,8 +112,8 @@
 		{
 			"double_shot_chance"
 			{
-				"value"					"20 30 40 50 60 70 80"
-				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+20"
+				"value"					"5 10 15 20 25 30 35"
+				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+15"
 			}
 			"target_search_bonus_range"	"150"
 		}
