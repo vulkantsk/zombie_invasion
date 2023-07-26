@@ -183,13 +183,13 @@ end
 
 function InvasionMode:NextNight7()
 	local spawn_zmb = 0
-	self:SpawnZombie("npc_classic_necr",10)
+	self:SpawnZombie("npc_classic_necr",8)
  
 	Timers:CreateTimer(0, function()
-	     while spawn_zmb < 10 do
-		     spawn_zmb = spawn_zmb + 2
-             self:SpawnZombie("npc_classic_necr",25)     
-		     return 7
+	     while spawn_zmb < 6 do
+		     spawn_zmb = spawn_zmb + 1
+             self:SpawnZombie("npc_classic_necr",15)     
+		     return 5
 		 end		
 		 return nil	 
 	end) 

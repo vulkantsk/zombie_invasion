@@ -37,7 +37,7 @@
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"-1"
+		"AbilityCastRange"				"100000000"
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"0"
 		"AbilitySharedCooldown"			"dagon"
@@ -12116,7 +12116,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"ScriptFile"					"items/item_brevno"
 		"AbilityTextureName"			"brevno"
 
 		// Behavior
@@ -12128,26 +12128,16 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemIsNeutralDrop" 						"1"
+		"ItemIsNeutralDrop" 						"0"
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"0" 
+		"AllowedInBackpack"				"0"
 		"ItemKillable"					"0" 
 		"ItemStackable" 				"0"
 		"ItemPermanent" 				"0"	
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"			"0"
- 
-			}	
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"hit_damage"			"12"
- 
-			}	
+			"slow_brevno"			"-45"	
         }
 	}
 	"item_resist"
