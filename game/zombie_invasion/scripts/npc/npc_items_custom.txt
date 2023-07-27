@@ -11920,6 +11920,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"FightRecapLevel"				"1"
 		"ItemPurchasable"				"0"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -11959,6 +11960,7 @@
 
 		"AbilityManaCost"				"125"
 		"SideShop" 						"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPurchasable"				"0"
 		"ItemCost"						"0"
 		"ItemQuality"					"artifact"
@@ -11986,6 +11988,7 @@
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 
 		///Item info
 		"ItemShopTags"					"damage;str;hard_to_tag"
@@ -12012,6 +12015,7 @@
 		"AbilityTextureName"			"dragon_boots"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 
 		///Item info
 		"ItemShopTags"					"damage;str;hard_to_tag"
@@ -12040,6 +12044,7 @@
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_dragon_shield"
 		"AbilityTextureName"			"dragon_shield"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 
 		///Item info
 		"ItemQuality"					"artifact"
@@ -12192,6 +12197,7 @@
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
  
 
