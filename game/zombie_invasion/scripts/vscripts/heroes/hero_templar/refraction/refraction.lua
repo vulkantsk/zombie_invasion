@@ -28,9 +28,6 @@ end
 
 function templar_assassin_refraction_custom:GetCooldown(level)
 local bonus = 0
-if self:GetCaster():HasModifier("modifier_templar_assassin_refraction_3") then 
-    bonus = self.cd[self:GetCaster():GetUpgradeStack("modifier_templar_assassin_refraction_3")]
-end
 
     return self.BaseClass.GetCooldown( self, level ) - bonus
 end
@@ -119,13 +116,6 @@ function modifier_templar_assassin_refraction_custom_damage:OnAttackLanded(param
 	self:DecrementStackCount()
 
 
-
-
-	if self:GetParent():HasModifier("modifier_templar_assassin_refraction_2") then 
-		local heal = self:GetAbility().shield_heal[self:GetParent():GetUpgradeStack("modifier_templar_assassin_refraction_2")]*self:GetParent():GetMaxHealth()
-
-		my_game:GenericHeal(self:GetParent(), heal, self:GetAbility())
-	end
 end
 
 function modifier_templar_assassin_refraction_custom_damage:GetTexture()
@@ -143,10 +133,6 @@ function modifier_templar_assassin_refraction_custom_absorb:IsPurgable() return 
 
 function modifier_templar_assassin_refraction_custom_absorb:OnCreated()
 self.instances = self:GetAbility():GetSpecialValueFor("instances")
-
-if self:GetCaster():HasModifier("modifier_templar_assassin_refraction_4") then 
-	self.instances = self.instances + self:GetAbility().shield_charges[self:GetCaster():GetUpgradeStack("modifier_templar_assassin_refraction_4")]
-end
 
 self.damage_threshold = self:GetAbility():GetSpecialValueFor("damage_threshold")
 if not IsServer() then return end
@@ -200,8 +186,7 @@ if not IsServer() then return end
 if self:GetStackCount() <= 0 then
 	self:Destroy()
 
-	if self:GetParent():HasModifier("modifier_templar_assassin_refraction_5") then 
-		local enemies = FindUnitsInRadius( self:GetCaster():GetTeamNumber(), self:GetCaster():GetAbsOrigin(), nil, self:GetAbility().knockback_range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 0, 0, false )
+
 
 		self:GetParent():EmitSound("TA.Shield_break")
 		
@@ -212,7 +197,7 @@ if self:GetStackCount() <= 0 then
 
 		local particle = ParticleManager:CreateParticle("particles/ta_shield_exp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
 		ParticleManager:SetParticleControl(particle, 0, self:GetParent():GetAbsOrigin())
-	end
+	
 end
 end
 
@@ -234,16 +219,10 @@ function modifier_templar_assassin_refraction_custom_absorb:GetModifierTotal_Con
 	ParticleManager:SetParticleControlEnt(particle_2, 2, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, nil, self:GetParent():GetAbsOrigin(), false)
 	ParticleManager:ReleaseParticleIndex(particle_2)
 
+	self:SetStackCount(self:GetStackCount() - 1)
+
 	local update_ui = false
 
-	if self:GetCaster():HasModifier("modifier_templar_assassin_refraction_7") then 
-
-	
-			update_ui = true	
-
-			
-				CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(self:GetParent():GetPlayerOwnerID()), 'Templar_Refraction_shield',  {max = self.instances, charges = self:GetStackCount() - 1, damage = mod:GetStackCount()})
-	end
 	if update_ui then 
 
 		local stack = self:GetStackCount()
