@@ -1998,7 +1998,7 @@
 	"npc_dota_hero_templar_assassin"
 	{
 		"Ability1"		"templar_assassin_refraction_custom"
-		"Ability2"		""
+		"Ability2"		"Meld"
 		"Ability3"		"templar_assassin_psi_blades_custom"
 		"Ability4"		""
 		"Ability5"		""

@@ -1,133 +1,82 @@
-lion_finger_of_death_lua = class({})
-LinkLuaModifier( "modifier_lion_finger_of_death_lua", "heroes/hero_lion/finger/modifier_lion_finger_of_death_lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_meld_damage_deal", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
+--LinkLuaModifier( "modifier_anchor_smash_passive_reduction", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
 
---------------------------------------------------------------------------------
--- Custom KV
--- AOE Radius
-function lion_finger_of_death_lua:GetAOERadius()
- 
-		return self:GetSpecialValueFor( "splash_radius_scepter" )
-	 
 
-	 
-end
+Meld = class({})
 
-function lion_finger_of_death_lua:GetIntrinsicModifierName()
-	return "modifier_lion_finger_of_death_lua"
-end
-
-function lion_finger_of_death_lua:GetCooldown( level )
-	if self:GetCaster():HasScepter() then
-		return self:GetSpecialValueFor( "cooldown_scepter" )
-	end
-
-	return self.BaseClass.GetCooldown( self, level )
-end
-
-function lion_finger_of_death_lua:GetManaCost( level )
-	if self:GetCaster():HasScepter() then
-		return self:GetSpecialValueFor( "mana_cost_scepter" )
-	end
-
-	return self.BaseClass.GetManaCost( self, level )
-end
-
- function lion_finger_of_death_lua:OnOwnerDied()
- 		if IsServer() then       
- 
-end
- end
-
---------------------------------------------------------------------------------
--- Ability Start
-function lion_finger_of_death_lua:OnSpellStart()
+function Meld:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
-	local target = self:GetCursorTarget()
-
-	-- pre-effects
-	local sound_cast = "Hero_Lion.FingerOfDeath"
-	EmitSoundOn( sound_cast, caster )
-
-	-- cancel if linken
-	if target:TriggerSpellAbsorb(self) then
-		self:PlayEffects( target )
-		return 
-	end
+	local point = self:GetCursorPosition()
+	local origin = caster:GetOrigin()
 
 	-- load data
+	local max_range = self:GetSpecialValueFor("meld_damage_deal")
+    local min_blink_range = self:GetSpecialValueFor("radius")
 
-	local delay = self:GetSpecialValueFor("damage_delay")
-	local search = self:GetSpecialValueFor("splash_radius_scepter")
+    local max_range = self:GetSpecialValueFor("blink_range")
+    local min_blink_range = self:GetSpecialValueFor("min_blink_range")
 
-	-- find targets
-	local targets = {}
- 
-		targets = FindUnitsInRadius(
-			caster:GetTeamNumber(),	-- int, your team number
-			target:GetOrigin(),	-- point, center point
-			nil,	-- handle, cacheUnit. (not known)
-			search,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
-			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
-			0,	-- int, flag filter
-			0,	-- int, order filter
-			false	-- bool, can grow cache
-		)
- 
-
-	for _,enemy in pairs(targets) do
-		-- delay
-		enemy:AddNewModifier(
-			caster, -- player source
-			self, -- ability source
-			"modifier_lion_finger_of_death_lua", -- modifier name
-			{ duration = delay } -- kv
-		)
-
-		-- effects
-		self:PlayEffects( enemy )
+	-- determine target position
+	local direction = (point - origin)
+	if direction:Length2D() > max_range then
+		direction = direction:Normalized() * max_range
+    end
+    
+	if direction:Length2D() < min_blink_range then
+		direction = direction:Normalized() * min_blink_range
 	end
+	-- teleport
+    FindClearSpaceForUnit( caster, origin + direction, true )
+    
+	local effect_cast_b = ParticleManager:CreateParticle( "particles/units/heroes/hero_antimage/antimage_blink_end.vpcf", PATTACH_ABSORIGIN, self:GetCaster() )
+	ParticleManager:SetParticleControl( effect_cast_b, 0, self:GetCaster():GetOrigin() )
+	ParticleManager:SetParticleControlForward( effect_cast_b, 0, direction:Normalized() )
+	ParticleManager:ReleaseParticleIndex( effect_cast_b )
+	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), "Hero_TemplarAssassin.Meld", self:GetCaster() )
+
+
+	AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_meld_damage_deal', {
+        duration = self:GetAbility():GetSpecialValueFor("duration"),
+        })
+	end
+
+	if  HasModifier("modifier_meld_damage_deal") then
+
+		local enemies = FindUnitsInRadius(
+        self:GetParent():GetTeamNumber(), -- int, your team number
+        self:GetParent():GetOrigin(), -- point, center point
+        nil, -- handle, cacheUnit. (not known)
+        self.radius, -- float, radius. or use FIND_UNITS_EVERYWHERE
+        DOTA_UNIT_TARGET_TEAM_ENEMY, -- int, team filter
+        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, -- int, type filter
+        self:GetAbility():GetAbilityTargetFlags(), -- int, flag filter
+        0, -- int, order filter
+        false -- bool, can grow cache
+        )
+        for _,enemy in pairs(enemies) do
+        ApplyDamage( {
+        victim = enemy,
+        attacker = self:GetParent(),
+        damage = self.meld_damage_deal,
+        damage_type = self:GetAbility():GetAbilityDamageType(),
+        ability = self:GetAbility(), --Optional.
+        })
+
+        local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetParent())
+        ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
+
+            EmitSoundOn("Hero_TemplarAssassin.PsionicTrap", self:GetParent())
+    
+
+
+
+	end
+
+
 end
-
---------------------------------------------------------------------------------
-function lion_finger_of_death_lua:PlayEffects( target )
-	-- Get Resources
-	local particle_cast = "particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
-	local sound_cast = "Hero_Lion.FingerOfDeathImpact"
-
-	-- load data
-	local caster = self:GetCaster()
-	local direction = (caster:GetOrigin()-target:GetOrigin()):Normalized()
-
-	-- Create Particle
-	-- local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN, caster )
-	local effect_cast = assert(loadfile("heroes/rubick_spell_steal_lua/rubick_spell_steal_lua_arcana"))(self, particle_cast, PATTACH_ABSORIGIN, caster )
-	local attach = "attach_attack1"
-	if caster:ScriptLookupAttachment( "attach_attack2" )~=0 then attach = "attach_attack2" end
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		0,
-		caster,
-		PATTACH_POINT_FOLLOW,
-		attach,
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		1,
-		target,
-		PATTACH_POINT_FOLLOW,
-		"attach_hitloc",
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
-	ParticleManager:SetParticleControl( effect_cast, 2, target:GetOrigin() )
-	ParticleManager:SetParticleControl( effect_cast, 3, target:GetOrigin() + direction )
-	ParticleManager:SetParticleControlForward( effect_cast, 3, -direction )
-	ParticleManager:ReleaseParticleIndex( effect_cast )
-
-	-- Create Sound
-	EmitSoundOn( sound_cast, target )
-end
+modifier_meld_damage_deal = class({})
+function modifier_templar_assassin_psi_blades_custom_attack_cd:IsHidden() return true end
+function modifier_templar_assassin_psi_blades_custom_attack_cd:IsPurgable() return false end
+function modifier_templar_assassin_psi_blades_custom_attack_cd:RemoveOnDeath() return true end
+function modifier_templar_assassin_psi_blades_custom_attack_cd:IsDebuff() return false end

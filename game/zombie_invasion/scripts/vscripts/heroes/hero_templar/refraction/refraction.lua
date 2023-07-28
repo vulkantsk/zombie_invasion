@@ -222,7 +222,7 @@ function modifier_templar_assassin_refraction_custom_absorb:GetModifierTotal_Con
 	self:SetStackCount(self:GetStackCount() - 1)
 
 	local update_ui = false
-
+	
 	if update_ui then 
 
 		local stack = self:GetStackCount()
