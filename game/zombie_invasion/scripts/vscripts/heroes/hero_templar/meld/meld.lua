@@ -36,16 +36,16 @@ function Meld:OnSpellStart()
 	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), "Hero_TemplarAssassin.Meld", self:GetCaster() )
 
 
-	AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_meld_damage_deal', {
+	AddNewModifier(self:GetCaster(), self:GetModifier(), 'modifier_meld_damage_deal', {
         duration = self:GetAbility():GetSpecialValueFor("duration"),
         })
 	end
 
-	if  HasModifier("modifier_meld_damage_deal") then
+	if  self:GetCaster():HasModifier("modifier_meld_damage_deal") then
 
 		local enemies = FindUnitsInRadius(
-        self:GetParent():GetTeamNumber(), -- int, your team number
-        self:GetParent():GetOrigin(), -- point, center point
+        self:GetCaster():GetTeamNumber(), -- int, your team number
+        self:GetCaster():GetOrigin(), -- point, center point
         nil, -- handle, cacheUnit. (not known)
         self.radius, -- float, radius. or use FIND_UNITS_EVERYWHERE
         DOTA_UNIT_TARGET_TEAM_ENEMY, -- int, team filter
@@ -59,18 +59,15 @@ function Meld:OnSpellStart()
         victim = enemy,
         attacker = self:GetParent(),
         damage = self.meld_damage_deal,
-        damage_type = self:GetAbility():GetAbilityDamageType(),
-        ability = self:GetAbility(), --Optional.
+        damage_type = self:GetAbilityDamageType(),
+        ability = self, --Optional.
         })
 
-        local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetParent())
-        ParticleManager:SetParticleControl(fx, 0, self:GetParent():GetAbsOrigin())
+        local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetCaster())
+        ParticleManager:SetParticleControl(fx, 0, self:GetCaster():GetAbsOrigin())
 
-            EmitSoundOn("Hero_TemplarAssassin.PsionicTrap", self:GetParent())
-    
-
-
-
+            EmitSoundOn("Hero_TemplarAssassin.PsionicTrap", self:GetCaster())
+ 
 	end
 
 
