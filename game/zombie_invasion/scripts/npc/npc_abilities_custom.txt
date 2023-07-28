@@ -36,6 +36,8 @@
 #base "../vscripts/heroes/hero_yuki-onna/yuki.txt"
 #base "../vscripts/heroes/hero_tide/tidehunter.txt"	
 #base "../vscripts/heroes/hero_silencer/silencer.txt"
+#base "../vscripts/heroes/hero_templar/templar_assassin.txt"
+
 
 
 "DOTAAbilities"

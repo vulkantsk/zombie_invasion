@@ -1995,5 +1995,39 @@
 		"StatusHealthRegen"		"4.5"
  
 	}
+	"npc_dota_hero_templar_assassin"
+	{
+		"Ability1"		"templar_assassin_refraction_custom"
+		"Ability2"		""
+		"Ability3"		"templar_assassin_psi_blades_custom"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+        "Ability10"        ""
+        "Ability11"        "" 
+        "Ability12"        ""
+        "Ability13"        ""
+        "Ability14"        ""
+        "Ability15"        ""
+        "Ability16"        ""
+        "Ability17"        ""
+		"ArmorPhysical"		"2"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"37"
+		"AttackDamageMax"		"41"
+		"AttackRate"		"1.400000"
+		"AttackRange"		"521"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"18"
+		"AttributeStrengthGain"		"1.400000"
+		"AttributeBaseAgility"		"14"
+		"AttributeAgilityGain"		"2.200000"
+		"AttributeBaseIntelligence"		"14"
+		"AttributeIntelligenceGain"		"0.500000"
+		"MovementSpeed"		"330"
+		"MovementTurnRate"		"0.50000"
+		"StatusHealthRegen"		"4.5"
+ 
+	}
 	
 }

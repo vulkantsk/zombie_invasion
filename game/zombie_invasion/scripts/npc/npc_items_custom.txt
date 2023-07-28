@@ -4436,7 +4436,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"450"
+				"bonus_damage"	"270"
 			}
 			"02"
 			{
@@ -4446,32 +4446,32 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Attackspeed_bonus"	"280"
+				"Attackspeed_bonus"	"240"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agility_bonus"	"240"
+				"agility_bonus"	"220"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Intellect_bonus"	"170"
+				"Intellect_bonus"	"60"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Health_bonus"	"1200"
+				"Health_bonus"	"800"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Strength_bonus"	"140"
+				"Strength_bonus"	"80"
 			}
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Regen_bonus"	"18"
+				"Regen_bonus"	"24"
 			}
 			"09"
 			{
