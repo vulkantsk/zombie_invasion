@@ -1,4 +1,5 @@
-LinkLuaModifier( "modifier_meld_damage_deal", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_meld_damage", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_meld_reduction", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
 --LinkLuaModifier( "modifier_anchor_smash_passive_reduction", "heroes/hero_templar/meld/meld" ,LUA_MODIFIER_MOTION_NONE )
 
 
@@ -9,11 +10,10 @@ function Meld:OnSpellStart()
 	local caster = self:GetCaster()
 	local point = self:GetCursorPosition()
 	local origin = caster:GetOrigin()
+    local radius = self:GetSpecialValueFor("radius")
+    local duration = self:GetSpecialValueFor("duration")
 
 	-- load data
-	local max_range = self:GetSpecialValueFor("meld_damage_deal")
-    local min_blink_range = self:GetSpecialValueFor("radius")
-
     local max_range = self:GetSpecialValueFor("blink_range")
     local min_blink_range = self:GetSpecialValueFor("min_blink_range")
 
@@ -35,45 +35,112 @@ function Meld:OnSpellStart()
 	ParticleManager:ReleaseParticleIndex( effect_cast_b )
 	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), "Hero_TemplarAssassin.Meld", self:GetCaster() )
 
+	local all = FindUnitsInRadius(caster:GetTeam(), 
+    caster:GetOrigin(), 
+    nil, 
+    radius,
+    DOTA_UNIT_TARGET_TEAM_ENEMY, 
+    DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
+    DOTA_UNIT_TARGET_FLAG_NONE,
+    FIND_ANY_ORDER, 
+    false)
 
-	AddNewModifier(self:GetCaster(), self:GetModifier(), 'modifier_meld_damage_deal', {
-        duration = self:GetAbility():GetSpecialValueFor("duration"),
-        })
-	end
+    caster:AddNewModifier(caster, self, "modifier_meld_damage", {})
 
-	if  self:GetCaster():HasModifier("modifier_meld_damage_deal") then
+    for _, unit in ipairs(all) do
+        unit:AddNewModifier(caster, self, "modifier_meld_reduction", {duration=duration})
 
-		local enemies = FindUnitsInRadius(
-        self:GetCaster():GetTeamNumber(), -- int, your team number
-        self:GetCaster():GetOrigin(), -- point, center point
-        nil, -- handle, cacheUnit. (not known)
-        self.radius, -- float, radius. or use FIND_UNITS_EVERYWHERE
-        DOTA_UNIT_TARGET_TEAM_ENEMY, -- int, team filter
-        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, -- int, type filter
-        self:GetAbility():GetAbilityTargetFlags(), -- int, flag filter
-        0, -- int, order filter
-        false -- bool, can grow cache
-        )
-        for _,enemy in pairs(enemies) do
-        ApplyDamage( {
-        victim = enemy,
-        attacker = self:GetParent(),
-        damage = self.meld_damage_deal,
-        damage_type = self:GetAbilityDamageType(),
-        ability = self, --Optional.
-        })
+        caster:PerformAttack(unit, false, true, true, false, false, false, true)
+    end
 
-        local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf", PATTACH_ABSORIGIN, self:GetCaster())
-        ParticleManager:SetParticleControl(fx, 0, self:GetCaster():GetAbsOrigin())
-
-            EmitSoundOn("Hero_TemplarAssassin.PsionicTrap", self:GetCaster())
- 
-	end
-
-
+   
+	
+	local fx = ParticleManager:CreateParticle("particles/econ/items/templar_assassin/templar_assassin_butterfly/templar_assassin_trap_explode_butterfly.vpcf", PATTACH_ABSORIGIN, caster)
+    ParticleManager:SetParticleControl(fx, 0, caster:GetAbsOrigin())
+	
 end
-modifier_meld_damage_deal = class({})
-function modifier_templar_assassin_psi_blades_custom_attack_cd:IsHidden() return true end
-function modifier_templar_assassin_psi_blades_custom_attack_cd:IsPurgable() return false end
-function modifier_templar_assassin_psi_blades_custom_attack_cd:RemoveOnDeath() return true end
-function modifier_templar_assassin_psi_blades_custom_attack_cd:IsDebuff() return false end
+
+modifier_meld_damage = class({
+    IsHidden                = function(self) return true end,
+    IsPurgable              = function(self) return false end,
+    IsPurgeException        = function(self) return false end,
+    IsDebuff                = function(self) return false end,
+    IsBuff                  = function(self) return true end,
+    RemoveOnDeath           = function(self) return true end,
+    DeclareFunctions        = function(self)
+        return {
+            MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+            MODIFIER_PROPERTY_SUPPRESS_CLEAVE
+        }
+    end,
+})
+
+
+
+
+--------------------------------------------------------------------------------
+
+modifier_meld_reduction = class({
+    IsHidden                = function(self) return false end,
+    IsPurgable              = function(self) return true end,
+    IsPurgeException        = function(self) return true end,
+    IsDebuff                = function(self) return true end,
+    IsBuff                  = function(self) return false end,
+    RemoveOnDeath           = function(self) return true end,
+    DeclareFunctions        = function(self)
+        return {
+            MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE
+        }
+    end,
+})
+
+function modifier_meld_reduction:OnCreated()
+    self.damage = self:GetAbility():GetSpecialValueFor("damage")
+end
+
+function modifier_meld_reduction:OnRefresh()
+    self:OnCreated()
+end
+
+function modifier_meld_reduction:GetModifierPreAttack_BonusDamage() return self.damage end
+function modifier_meld_reduction:GetSuppressCleave() return 1 end
+
+
+modifier_meld_reduction = class({
+    IsHidden                = function(self) return false end,
+    IsPurgable              = function(self) return true end,
+    IsPurgeException        = function(self) return true end,
+    IsDebuff                = function(self) return true end,
+    IsBuff                  = function(self) return false end,
+    RemoveOnDeath           = function(self) return true end,
+    DeclareFunctions        = function(self)
+        return {
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+        }
+    end,
+})
+
+
+--------------------------------------------------------------------------------
+
+function modifier_meld_reduction:OnCreated()
+    self.armor_reduction = self:GetAbility():GetSpecialValueFor("armor_reduction")
+
+    if IsServer() then
+        self.fx = ParticleManager:CreateParticle("particles/units/heroes/hero_templar_assassin/templar_assassin_meld.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
+        ParticleManager:SetParticleControlEnt(self.fx, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true)
+        self:AddParticle(self.fx, false, false, -1, false, false)
+    end
+end
+
+function modifier_meld_reduction:OnRefresh()
+    self:OnCreated()
+end
+
+function modifier_meld_reduction:GetModifierPhysicalArmorBonus() return self.armor_reduction end
+
+
+
+
+
+
