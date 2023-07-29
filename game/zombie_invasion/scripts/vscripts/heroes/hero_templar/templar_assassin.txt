@@ -80,6 +80,47 @@
 				"armor_reduction"	"-4 -6 -8 -10 -12 -14 -16"
 		}
 	}
+	"templar_secret"
+	{
+		
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_templar/queen_of_the_secret_techiques/queen_of_the_secret_techiques"
+		"AbilityTextureName"			"templar_secret"
+		"LevelsBetweenUpgrades"			"10"	
+		"MaxLevel"						"3"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"temp_crit_chance"	"50 80 100"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"temp_crit_mult"		"120 140 160"
+			}
+		}
+	}
 
 
 }

@@ -2000,7 +2000,7 @@
 		"Ability1"		"templar_assassin_refraction_custom"
 		"Ability2"		"Meld"
 		"Ability3"		"templar_assassin_psi_blades_custom"
-		"Ability4"		""
+		"Ability4"		"templar_secret"
 		"Ability5"		""
 		"Ability6"		""
         "Ability10"        ""
