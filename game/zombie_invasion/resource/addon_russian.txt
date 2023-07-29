@@ -2242,29 +2242,54 @@
 
 
 
- 		// -----------------Lion--------------------	
+ 		// -----------------Templar Assassin--------------------	
 
-       	"DOTA_Tooltip_ability_lion_finger_of_death_lua"								"Finger of Death"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_Description"					"Разрывает вражеское существо, пытаясь вывернуть его наизнанку. Наносит большой урон, который увеличивается с каждым использованием этой способности."
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_Lore"						"В этой способности столько силы Короля Скелетов!"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_base_dmg"					"УРОН:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_str_dmg"					"%УРОН ОТ СИЛЫ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_blast_stun_durationn"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_blast_dot_damagee"			"УРОН В СЕКУНДУ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_lua_blast_dot_durationn"			"ДЛИТЕЛЬНОСТЬ УРОНА:"
+       	"DOTA_Tooltip_ability_templar_assassin_refraction_custom"								"Refraction"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_Description"					"Cоздаёт защитную и атакующую оболочку, которая увеличивает урон и защищает от получаемоего урона."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_Lore"						"Кавай барьер хуль!"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_instances"					"КОЛ-ВО СТАКОВ:"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_bonus_damage"				"ДОП.УРОН:"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_duration"			"ДЛИТЕЛЬНОСТЬ:"
 
-		"DOTA_Tooltip_ability_lion_finger_of_death"										"Finger of Death"
-		"DOTA_Tooltip_ability_lion_finger_of_death_Description"							"Разрывает вражеское существо, пытаясь вывернуть его наизнанку. Наносит большой урон, который увеличивается с каждым убитым этой способностью врагом."
-		"DOTA_Tooltip_ability_lion_finger_of_death_Lore"								"Изувеченная рука демонолога является источником его великой силы, способной утопить жертв колдовской мощью."
-		"DOTA_Tooltip_ability_lion_finger_of_death_Note0"								"Между применением способности и нанесением урона есть задержка в %damage_delay% сек., что даёт возможность избежать урона."
-		"DOTA_Tooltip_ability_lion_finger_of_death_Note1"								"Урон способности увеличится, если вражеский герой умрёт в течение %grace_period% сек. после получения урона от неё."
-		"DOTA_Tooltip_ability_lion_finger_of_death_damage"								"УРОН:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_damage_scepter"						"УРОН СО СКИПЕТРОМ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_damage_per_kill"						"ДОП. УРОН ЗА УБИЙСТВО:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_mana_cost_scepter"					"РАСХОД МАНЫ СО СКИПЕТРОМ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_cooldown_scepter"					"ПЕРЕЗАРЯДКА СО СКИПЕТРОМ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_splash_radius_scepter"				"ОБЛАСТЬ ДЕЙСТВИЯ СО СКИПЕТРОМ:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_aghanim_description"					"Увеличивает урон и уменьшает перезарядку. Способность действует на существ в небольшой области."
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom"										"Psi blades"
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_Description"							"Разрывает вражеское существо, пронзая его насквозь."
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_Lore"								"Их даже не видят сущности, но они есть.."
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_bonus_attack_range"								"ДАЛЬНОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_creeps_damage"								"%ПРОНЗАЮЩИЙ УРОН:"
+
+
+		"DOTA_Tooltip_ability_Meld"								"Meld"
+		"DOTA_Tooltip_ability_Meld_Description"											"Звуковая волна поражает врагов и наносит им урон и уменьшает их сопротивление из-за давления на их ушные перепонки уменьшая концентрацию и броню"
+		"DOTA_Tooltip_ability_Meld_Lore"											"Создаёт сильнейшую звуковую волну которую подвласно услышать лишь крипам."
+		"DOTA_Tooltip_ability_Meld_blink_range"						"ДАЛЬНОСТЬ ПРЫЖКА:"
+		"DOTA_Tooltip_ability_Meld_meld_damage_deal"					"%УРОН:"
+		"DOTA_Tooltip_ability_Meld_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_Meld_duration"				"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
+		"DOTA_Tooltip_ability_Meld_armor_reduction"					"УМЕНЬШЕНИЕ БРОНИ:"
+
+		"DOTA_Tooltip_ability_templar_secret"								"Templar secret"
+		"DOTA_Tooltip_ability_templar_secret_Description"											"Ассасин очень хорошо знает как можно лучше убивать противников поэтому урон по ним может возрасти"
+		"DOTA_Tooltip_ability_templar_secret_temp_crit_chance"											"%ШАНС:"
+		"DOTA_Tooltip_ability_templar_secret_temp_crit_mult"						"%КРИТ.УРОН:"
+
+
+
+		"DOTA_Tooltip_ability_ability_bedlam"									"Secret friend"
+		"DOTA_Tooltip_ability_ability_bedlam_Description"									"Существо которое темплар призывает себе на помощь."
+		"DOTA_Tooltip_ability_ability_bedlam_Lore"									"Оно милее чем кажется."
+		"DOTA_Tooltip_ability_ability_bedlam_attack_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_bedlam_attack_damage"				"УРОН:"
+		"DOTA_Tooltip_ability_ability_bedlam_attack_interval"					"ИНТЕРВАЛ АТАК:"
+
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_creeps_damage"	"+{s:bonus_creeps_damage}% Урона пробития Psi blade"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_AbilityCooldown_temp"			"-{s:bonus_AbilityCooldown} cек. перезарядки Meld"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_crit_chance"						"+{s:bonus_temp_crit_chance}% к шансу крита Templer secret"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_crit_mult"						"+{s:bonus_temp_crit_mult}% к урону крита Templer secret"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_ability_bedlam"						"+{s:bonus_attack_damage}  к урону Secret friend"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_instances_damage"						"+{s:bonus_bonus_damage} к урону Refraction"
+
+
+
 
  		// -----------------Bristleback--------------------	
 

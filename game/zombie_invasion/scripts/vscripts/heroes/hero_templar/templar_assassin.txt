@@ -19,8 +19,19 @@
 
 		"AbilityValues"
 		{
-			"instances"					"4 6 8 10 12 14 16"
-			"bonus_damage"				"30 60 110 140 170 210 270"
+			"instances"					
+			{
+				"value"					"4 6 8 10 12 14 16"
+				"special_bonus_unique_temp_instances"	"+8"
+
+
+			}
+			"bonus_damage"				
+			{
+				"value"				"30 60 110 140 170 210 270"
+				"special_bonus_unique_temp_instances_damage"	"230"
+
+			}
 			"damage_threshold"			"5"
 			"duration"					"17.0 17.0 17.0 17.0"
 		}
@@ -37,18 +48,22 @@
 		"AbilityUnitTargetFlags"         "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"						"7"
+		"MaxLevel"						"4"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 
 		"AbilityValues"
 		{
-				"bonus_attack_range" 		"80 100 120 140 160 200 240"
+				"bonus_attack_range" 		"120 140 160 240"
 				"attack_spill_range"		"550 600 650 700"
 				"attack_spill_width"		"90"
 				"attack_spill_pct"			"80"
-				"creeps_damage"				"100"
-		}
+				"creeps_damage"				
+				{
+					"value"			"40 60 80 100"
+					"special_bonus_unique_temp_creeps_damage" "+10"
+				}	
+		}			
 	}
 	"Meld"
 	{
@@ -65,12 +80,18 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"						"7"
-		"AbilityCooldown"				"20 18 16 14 12 10 8"
 		"AbilityManaCost"				"90 80 70 60 50 40 30"
 
 
 		"AbilityValues"
 		{
+
+				"AbilityCooldown"
+				{
+					"value"					"20 18 16 14 12 10 8"	
+					"special_bonus_unique_temp_AbilityCooldown_temp"	"-4"
+				}
+
 				"blink_range" 		"400"
 				"min_blink_range"		"100"
 				"meld_damage_deal"		"90"
@@ -87,7 +108,8 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_templar/queen_of_the_secret_techiques/queen_of_the_secret_techiques"
 		"AbilityTextureName"			"templar_secret"
-		"LevelsBetweenUpgrades"			"10"	
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"	
 		"MaxLevel"						"3"
 	
 		
@@ -107,19 +129,148 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"temp_crit_chance"	"50 80 100"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"temp_crit_mult"		"120 140 160"
-			}
+			
+				"temp_crit_chance"	
+				{
+				  "value"	"40 50 60"
+				  "special_bonus_unique_temp_crit_chance" "+15"
+				}
+				"temp_crit_mult"
+				{
+					"value"		"110 120 130"	
+					"special_bonus_unique_temp_crit_mult"	"+30"
+				}
 		}
+	}
+	"ability_bedlam"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "Ability_lua"
+        "ScriptFile"                    "heroes/hero_templar/the_lost_of_assassin/the_lost_of_assassin"
+        "AbilityTextureName"            "dark_willow_bedlam"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"RequiredLevel"					"10"
+		"MaxLevel"						"3"
+		"FightRecapLevel"				"1"
+		"LinkedAbility"					"ability_terrorize"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------		
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastGestureSlot"		"ABSOLUTE"
+
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"attack_damage"			
+				{
+					"value"		"225 345 475"
+					"special_bonus_unique_temp_ability_bedlam"	"225"
+				}
+					
+			
+				"attack_interval"		"0.35 0.25 0.15"
+			
+				"attack_radius"			"600"
+			
+				"attack_targets"			"4"
+			
+				"roaming_radius"			"200"
+			
+				"roaming_seconds_per_rotation"				"1.8"
+			
+				"roaming_duration"		"5.0"
+		}
+	}
+	"special_bonus_unique_temp_ability_bedlam"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_crit_chance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_crit_mult"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_AbilityCooldown_temp"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_creeps_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_instances"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
+	"special_bonus_unique_temp_instances_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
 	}
 
 

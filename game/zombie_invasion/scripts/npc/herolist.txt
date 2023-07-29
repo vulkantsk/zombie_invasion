@@ -36,7 +36,7 @@
 
 // Donate
 	"npc_dota_hero_treant"				"0"
-		"npc_dota_hero_templar_assassin"	"0"
+		"npc_dota_hero_templar_assassin"	"1"
 	"npc_dota_hero_phantom_lancer"		"0"
 	"npc_dota_hero_slark"				"0"
  	"npc_dota_hero_nevermore"			"0"
