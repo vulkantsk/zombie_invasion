@@ -2266,6 +2266,7 @@
 		"DOTA_Tooltip_ability_Meld_radius"					"РАДИУС:"
 		"DOTA_Tooltip_ability_Meld_duration"				"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
 		"DOTA_Tooltip_ability_Meld_armor_reduction"					"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_Meld_shard_description"				"Увеличивает урон и снижение брони"
 
 		"DOTA_Tooltip_ability_templar_secret"								"Templar secret"
 		"DOTA_Tooltip_ability_templar_secret_Description"											"Ассасин очень хорошо знает как можно лучше убивать противников поэтому урон по ним может возрасти"
