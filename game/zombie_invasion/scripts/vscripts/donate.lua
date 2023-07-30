@@ -142,6 +142,7 @@ DONATE_ITEM_SARA = {
 DONATE_ITEM_TEMPLARKA = {
 	players = {
  		462335876,
+ 		877002179
 
 	},	
 }
