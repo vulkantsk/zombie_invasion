@@ -105,8 +105,8 @@
 				"min_blink_range"		"100"
 				"meld_damage_deal"
 				{
-					"value"					"90"
-					"special_bonus_shard"	"+10"
+					"value"					"40 50 60 70"
+					"special_bonus_shard"	"+30"
 				}
 				"radius"			"720"
 				"duration"			"12 14 16 18"
@@ -151,7 +151,7 @@
 			
 				"temp_crit_chance"	
 				{
-				  "value"	"40 50 60"
+				  "value"	"100"
 				  "special_bonus_unique_temp_crit_chance" "+15"
 				}
 				"temp_crit_mult"
@@ -168,12 +168,22 @@
 		"ScriptFile"					"heroes/hero_templar/refusion_trap/refusion_trap"       
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
      	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+     	"AbilityTextureName"			"refusion_trap"
+     	"AbilityCooldown"			"90"
+     	"IsGrantedByScepter"			"1"
+     	"MaxLevel"						"1"
 
      		"AbilityValues"
 		{
-		 	"radius"		 "500"
-		 	"duration"        "5"
-		 	"count"           "2"
+		 	"radius"		 "600"
+		 	"duration"        "9"
+		 	"count"  
+		 	{
+		 		"value"			"2"
+		 		"special_bonus_unique_temp_refusion_trap"		"+2"
+
+		 	}
+		 	
 		}
 
 	}
@@ -240,7 +250,7 @@
  
 	}
 
-	"special_bonus_unique_temp_crit_chance"
+	"special_bonus_unique_temp_refusion_trap"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------

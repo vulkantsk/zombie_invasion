@@ -2008,7 +2008,7 @@
         "Ability12"        "special_bonus_unique_temp_crit_mult"
         "Ability13"        "special_bonus_unique_temp_creeps_damage"
         "Ability14"        "special_bonus_unique_temp_instances_damage"
-        "Ability15"        "special_bonus_unique_temp_crit_chance"
+        "Ability15"        "special_bonus_unique_temp_refusion_trap"
         "Ability16"        "special_bonus_unique_temp_AbilityCooldown_temp"
         "Ability17"        "special_bonus_unique_temp_ability_bedlam"
 		"ArmorPhysical"		"2"

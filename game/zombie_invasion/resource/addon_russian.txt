@@ -705,7 +705,16 @@
 		"DOTA_Tooltip_Ability_item_pirog"						"Пирог"
 		"DOTA_Tooltip_Ability_item_pirog_Description"			"Хоть и сделан этот пирог из непойми чего, пахнет он довольно вкусно.\n<h1>Пассивная: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
 		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Не хватает начинки."
-		
+
+		"DOTA_Tooltip_Ability_item_pirog_support"						"Пирог саппортика"
+		"DOTA_Tooltip_Ability_item_pirog_support_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог."  
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_amp"						"МАГИЧЕСКОЕ УСИЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_intellect"						"ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_movespeed"						"СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_Lore"						"Вкуснее чем любой другой."
+
+
+
 		"DOTA_Tooltip_Ability_item_pirog_dps"						"Пирог дпсера"
 		"DOTA_Tooltip_Ability_item_pirog_dps_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог."  
 		"DOTA_Tooltip_Ability_item_pirog_dps_base_atack"	"БАЗОВАЯ СКОРОСТЬ АТАКИ: "		
@@ -1388,7 +1397,11 @@
 		"DOTA_Tooltip_Ability_item_power_treads_2_bonus_attackspeed"           "+$attack"
 
 
- 		"DOTA_Tooltip_ability_item_larks_change"								"<font color='#4285B4'>Essence of Slark</font>"
+ 		"DOTA_Tooltip_ability_item_change_templar_assassins_creed"								"<font color='#4285B4'>Templar essence of knowledge</font>"
+        "DOTA_Tooltip_ability_item_change_templar_assassins_creed_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на templar assassin."
+        "DOTA_Tooltip_ability_item_change_templar_assassins_creed_Lore"								"Милая снаружи, мёртвая внутри."
+
+        "DOTA_Tooltip_ability_item_larks_change"								"<font color='#4285B4'>Essence of Slark</font>"
         "DOTA_Tooltip_ability_item_larks_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на Slark."
 
  		"DOTA_Tooltip_ability_item_sf_change"								"<font color='#fff'>Essence of Azzazel</font>"
@@ -2244,6 +2257,16 @@
 
  		// -----------------Templar Assassin--------------------	
 
+ 		"npc_templar_trap"																"Кристал всезнания"
+
+ 		"DOTA_Tooltip_ability_refusion_trap"								"Refusion trap"
+		"DOTA_Tooltip_ability_refusion_trap_Description"					"Создаёт кристал который при атаки по нём отражает такой же урон ещё по %count% целям."
+		"DOTA_Tooltip_ability_refusion_trap_Lore"						"Милый всезнающий кристальчик, способен подчинить целую страну."
+		"DOTA_Tooltip_ability_refusion_trap_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_refusion_trap_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_refusion_trap_count"			"КОЛ-ВО ЦЕЛЕЙ ДЛЯ АТАКИ:"
+
+
        	"DOTA_Tooltip_ability_templar_assassin_refraction_custom"								"Refraction"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_Description"					"Cоздаёт защитную и атакующую оболочку, которая увеличивает урон и защищает от получаемоего урона."
 		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_Lore"						"Кавай барьер хуль!"
@@ -2289,6 +2312,7 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_crit_mult"						"+{s:bonus_temp_crit_mult}% к урону крита Templer secret"
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_ability_bedlam"						"+{s:bonus_attack_damage}  к урону Secret friend"
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_instances_damage"						"+{s:bonus_bonus_damage} к урону Refraction"
+		"DOTA_Tooltip_ability_special_bonus_unique_temp_refusion_trap"							"+{s:bonus_count} целей для атаки Refusion trap"
 
 
 		"DOTA_Tooltip_modifier_ability_bedlam"					"Верный друг"

@@ -139,6 +139,12 @@ DONATE_ITEM_SARA = {
 
 	},	
 }
+DONATE_ITEM_TEMPLARKA = {
+	players = {
+ 		462335876,
+
+	},	
+}
 
 DONATE_ITEM_AZZAZEL = {
 	players = {
@@ -245,7 +251,8 @@ DONATE_ITEM_ALUCARD= {
  		984325843,
  		374557086,
  		843653621,
- 		253073709
+ 		253073709,
+ 		462335876
 	},	
 }
 
@@ -306,6 +313,17 @@ DONATE_ITEMS = {
 				DONATE_SET_ZOMBIE,
 				DONATE_SET_ALL,
 				DONATE_SET_SUMER_SEASON
+ 
+			},
+		},
+		{
+			name = "item_change_templar_assassins_creed",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_TEMPLARKA,
+				
  
 			},
 		},

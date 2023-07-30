@@ -89,5 +89,5 @@ end
 
 
 function modifier_templar_secret:GetModifierProjectileName()
-    return "particles/units/heroes/hero_drow/drow_marksmanship_attack.vpcf"
+    return "particles/econ/items/templar_assassin/templar_assassin_butterfly/templar_assassin_meld_attack_butterfly.vpcf"
 end
