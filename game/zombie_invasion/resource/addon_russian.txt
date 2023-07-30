@@ -2256,6 +2256,7 @@
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_Lore"								"Их даже не видят сущности, но они есть.."
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_bonus_attack_range"								"ДАЛЬНОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_creeps_damage"								"%ПРОНЗАЮЩИЙ УРОН:"
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_shard_description"										"Увеличивает дальйность атаки."
 
 
 		"DOTA_Tooltip_ability_Meld"								"Meld"

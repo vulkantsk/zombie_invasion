@@ -55,7 +55,13 @@
 
 		"AbilityValues"
 		{
-				"bonus_attack_range" 		"120 140 160 240"
+				"bonus_attack_range" 
+				{
+					"value"				"120 140 160 240"
+					"special_bonus_shard"				"+40"
+
+
+				}
 				"attack_spill_range"		"550 600 650 700"
 				"attack_spill_width"		"90"
 				"attack_spill_pct"			"80"
