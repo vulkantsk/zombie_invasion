@@ -2289,7 +2289,14 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_instances_damage"						"+{s:bonus_bonus_damage} к урону Refraction"
 
 
+		"DOTA_Tooltip_modifier_ability_bedlam"					"Верный друг"
+		"DOTA_Tooltip_modifier_ability_bedlam_Description"		"Защищает вас от надвигающихся врагов."
 
+		"DOTA_Tooltip_modifier_templar_assassin_refraction_custom_damage"			"УРОН ЩИТА"
+		"DOTA_Tooltip_modifier_templar_assassin_refraction_custom_damage_Description"			"Даёт вам дополнительный урон."
+
+		"DOTA_Tooltip_modifier_templar_assassin_refraction_custom_absorb"			"ОТРАЖЕНИЕ ЩИТА"
+		"DOTA_Tooltip_modifier_templar_assassin_refraction_custom_absorb_Description"			"Блокирует любой урон по вам."
 
  		// -----------------Bristleback--------------------	
 
