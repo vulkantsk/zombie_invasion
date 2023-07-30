@@ -161,6 +161,22 @@
 				}
 		}
 	}
+
+	"refusion_trap"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_templar/refusion_trap/refusion_trap"       
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+     	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+     		"AbilityValues"
+		{
+		 	"radius"		 "500"
+		 	"duration"        "5"
+		 	"count"           "2"
+		}
+
+	}
 	"ability_bedlam"
 	{
 		// General

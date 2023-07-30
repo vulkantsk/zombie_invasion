@@ -4662,5 +4662,74 @@
 		}
  
 	}
-  
+
+
+	"npc_templar_trap"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/moon_shard/moon_shard_002.vmdl"
+		"ModelScale" 				"5.0"		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"CanBeDominated"            "0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"		""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"25"
+		"MagicalResistance"         "50"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"1"		// Damage range min.
+		"AttackDamageMax"			"1"		// Damage range max.
+		"AttackRate"				"0.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.2"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"0"		// Range within a target can be attacked.
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"				"0"		// Speed.	
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1"		// Base health.
+		"StatusHealthRegen"			"0"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}  
 }

@@ -1,133 +1,104 @@
-lion_finger_of_death_lua = class({})
-LinkLuaModifier( "modifier_lion_finger_of_death_lua", "heroes/hero_lion/finger/modifier_lion_finger_of_death_lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier("modifier_refusion_trap_infinity", "heroes/hero_templar/refusion_trap/refusion_trap", LUA_MODIFIER_MOTION_NONE)
 
---------------------------------------------------------------------------------
--- Custom KV
--- AOE Radius
-function lion_finger_of_death_lua:GetAOERadius()
- 
-		return self:GetSpecialValueFor( "splash_radius_scepter" )
-	 
+refusion_trap = {}
 
-	 
-end
-
-function lion_finger_of_death_lua:GetIntrinsicModifierName()
-	return "modifier_lion_finger_of_death_lua"
-end
-
-function lion_finger_of_death_lua:GetCooldown( level )
-	if self:GetCaster():HasScepter() then
-		return self:GetSpecialValueFor( "cooldown_scepter" )
-	end
-
-	return self.BaseClass.GetCooldown( self, level )
-end
-
-function lion_finger_of_death_lua:GetManaCost( level )
-	if self:GetCaster():HasScepter() then
-		return self:GetSpecialValueFor( "mana_cost_scepter" )
-	end
-
-	return self.BaseClass.GetManaCost( self, level )
-end
-
- function lion_finger_of_death_lua:OnOwnerDied()
- 		if IsServer() then       
- 
-end
- end
-
---------------------------------------------------------------------------------
--- Ability Start
-function lion_finger_of_death_lua:OnSpellStart()
-	-- unit identifier
+function refusion_trap:OnSpellStart()
+	local point = self:GetCursorPosition()
 	local caster = self:GetCaster()
-	local target = self:GetCursorTarget()
 
-	-- pre-effects
-	local sound_cast = "Hero_Lion.FingerOfDeath"
-	EmitSoundOn( sound_cast, caster )
+	local unit = CreateUnitByName("npc_templar_trap", point, true, nil, nil, DOTA_TEAM_BADGUYS)  
+	 unit:AddNewModifier(unit, self, "modifier_kill", {duration = self:GetSpecialValueFor("duration")})
 
-	-- cancel if linken
-	if target:TriggerSpellAbsorb(self) then
-		self:PlayEffects( target )
-		return 
-	end
+	unit:AddNewModifier(caster,self,"modifier_refusion_trap_infinity", {})
 
-	-- load data
-
-	local delay = self:GetSpecialValueFor("damage_delay")
-	local search = self:GetSpecialValueFor("splash_radius_scepter")
-
-	-- find targets
-	local targets = {}
- 
-		targets = FindUnitsInRadius(
-			caster:GetTeamNumber(),	-- int, your team number
-			target:GetOrigin(),	-- point, center point
-			nil,	-- handle, cacheUnit. (not known)
-			search,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-			DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
-			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
-			0,	-- int, flag filter
-			0,	-- int, order filter
-			false	-- bool, can grow cache
-		)
- 
-
-	for _,enemy in pairs(targets) do
-		-- delay
-		enemy:AddNewModifier(
-			caster, -- player source
-			self, -- ability source
-			"modifier_lion_finger_of_death_lua", -- modifier name
-			{ duration = delay } -- kv
-		)
-
-		-- effects
-		self:PlayEffects( enemy )
-	end
 end
 
---------------------------------------------------------------------------------
-function lion_finger_of_death_lua:PlayEffects( target )
-	-- Get Resources
-	local particle_cast = "particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
-	local sound_cast = "Hero_Lion.FingerOfDeathImpact"
+modifier_refusion_trap_infinity = class({
+	IsHidden 				= function(self) return true end,
+	IsPurgable 				= function(self) return false end,
+	IsDebuff 				= function(self) return false end,
+	IsBuff                  = function(self) return true end,
+	RemoveOnDeath 			= function(self) return true end,
+    DeclareFunctions        = function(self) return 
+        {
+        	MODIFIER_EVENT_ON_ATTACK_LANDED,
+        	MODIFIER_PROPERTY_MIN_HEALTH
+        } end,	
+    CheckState      = function(self) return 
+        {          
+            [MODIFIER_STATE_NO_HEALTH_BAR] = true, 
+        } end,
+})
 
-	-- load data
-	local caster = self:GetCaster()
-	local direction = (caster:GetOrigin()-target:GetOrigin()):Normalized()
+function modifier_refusion_trap_infinity:GetMinHealth()
+    return 1
+end
 
-	-- Create Particle
-	-- local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN, caster )
-	local effect_cast = assert(loadfile("heroes/rubick_spell_steal_lua/rubick_spell_steal_lua_arcana"))(self, particle_cast, PATTACH_ABSORIGIN, caster )
-	local attach = "attach_attack1"
-	if caster:ScriptLookupAttachment( "attach_attack2" )~=0 then attach = "attach_attack2" end
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		0,
-		caster,
-		PATTACH_POINT_FOLLOW,
-		attach,
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		1,
-		target,
-		PATTACH_POINT_FOLLOW,
-		"attach_hitloc",
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
-	ParticleManager:SetParticleControl( effect_cast, 2, target:GetOrigin() )
-	ParticleManager:SetParticleControl( effect_cast, 3, target:GetOrigin() + direction )
-	ParticleManager:SetParticleControlForward( effect_cast, 3, -direction )
-	ParticleManager:ReleaseParticleIndex( effect_cast )
+function modifier_refusion_trap_infinity:GetAbsoluteNoDamagePure()
+    return 1
+end
 
-	-- Create Sound
-	EmitSoundOn( sound_cast, target )
+function modifier_refusion_trap_infinity:GetAbsoluteNoDamageMagical()
+    return 1
+end
+
+function modifier_refusion_trap_infinity:GetAbsoluteNoDamagePhysical()
+    return 1
+end
+
+function modifier_refusion_trap_infinity:OnAttackLanded(params)
+
+    local victim = params.target
+    local attacker = params.attacker
+
+    if victim == self:GetParent() and attacker == self:GetCaster() then 
+    	local enemies = FindUnitsInRadius(
+        	self:GetCaster():GetTeamNumber(), -- int, your team number
+        	self:GetParent():GetOrigin(), -- point, center point
+        	nil, -- handle, cacheUnit. (not known)
+        	self:GetAbility():GetSpecialValueFor("radius"), -- fsloat, radius. or use FIND_UNITS_EVERYWHERE
+        	DOTA_UNIT_TARGET_TEAM_ENEMY, -- int, team filter
+        	DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, -- int, type filter
+        	self:GetAbility():GetAbilityTargetFlags(), -- int, flag filter
+        	0, -- int, order filter
+        	false -- bool, can grow cache
+        )
+
+        local count = 0
+        for _,enemy in pairs(enemies) do
+        	if enemy ~= self:GetParent() and count < self:GetAbility():GetSpecialValueFor("count") then   
+        	local info = {
+				Target = enemy,
+				Source = self:GetParent(),
+				Ability = self:GetAbility(),	
+				
+				EffectName = self:GetCaster():GetRangedProjectileName(),
+				iMoveSpeed = self:GetCaster():GetProjectileSpeed(),
+				iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_HITLOCATION,		
+	
+				bDodgeable = true,                           -- Optional
+				bIsAttack = true,                                -- Optional
+
+				ExtraData = {},
+			}
+
+        	ProjectileManager:CreateTrackingProjectile( info )
+        	count = count + 1
+       		 end
+        end
+    end
+end
+
+
+function refusion_trap:OnProjectileHit(Target, Location)  
+    if Target ~= nil and not Target:IsInvulnerable() then
+
+ 		 self:GetCaster():PerformAttack(Target, true, true, true, false, false, false, true)
+   
+    end
+    return true
+end
+
+function modifier_refusion_trap_infinity:OnDestroy()  
+    self:GetParent():AddNoDraw()
 end

@@ -2001,7 +2001,7 @@
 		"Ability2"		"Meld"
 		"Ability3"		"templar_assassin_psi_blades_custom"
 		"Ability4"		"templar_secret"
-		//"Ability5"		""
+		"Ability5"		"refusion_trap" 
 		"Ability6"		"ability_bedlam"
         "Ability10"        "special_bonus_attack_speed_20"
         "Ability11"        "special_bonus_agility_10" 

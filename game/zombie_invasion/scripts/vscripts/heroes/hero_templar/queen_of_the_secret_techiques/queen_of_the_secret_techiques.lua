@@ -34,6 +34,7 @@ function modifier_templar_secret:OnCreated( kv )
 	-- references
 	self.temp_crit_chance = self:GetAbility():GetSpecialValueFor( "temp_crit_chance" )
 	self.temp_crit_mult = self:GetAbility():GetSpecialValueFor( "temp_crit_mult" )
+	self.crit = false
 end
 
 function modifier_templar_secret:OnRefresh( kv )
@@ -52,13 +53,15 @@ function modifier_templar_secret:DeclareFunctions()
 	local funcs = {
 		MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
 		MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
-		MODIFIER_PROPERTY_PROJECTILE_NAME,
+				MODIFIER_PROPERTY_PROJECTILE_NAME,
+
 	}
 
 	return funcs
 end
+
+
 function modifier_templar_secret:GetModifierPreAttack_CriticalStrike( params )
-	
 		if params.target:GetTeamNumber()==self:GetParent():GetTeamNumber() then
 			return
 		end
@@ -82,4 +85,9 @@ function modifier_templar_secret:GetModifierProcAttack_Feedback( params )
 			EmitSoundOn( sound_cast, params.target )
 		end
 	end
+end
+
+
+function modifier_templar_secret:GetModifierProjectileName()
+    return "particles/units/heroes/hero_drow/drow_marksmanship_attack.vpcf"
 end
