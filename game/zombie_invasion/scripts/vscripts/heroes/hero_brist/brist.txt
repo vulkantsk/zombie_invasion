@@ -131,14 +131,14 @@
 		{
 			"side_damage_reduction"
 			{
-				"value"			"2 2 4 9 14 17 20"
-				"special_bonus_unique_brist_brist_block"    "+4"
+				"value"			"2 2 4 9 14 17 16"
+				"special_bonus_unique_brist_brist_block"    "+8"
 
 			}
 			"back_damage_reduction"
 			{
 				"value"			"4 8 12 14 16 18 20"
-				"special_bonus_unique_brist_brist_block"    "+4"
+				"special_bonus_unique_brist_brist_block"    "+8"
 			}
 
 			"side_angle"					"110"
