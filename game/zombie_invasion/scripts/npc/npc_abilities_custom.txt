@@ -22611,4 +22611,189 @@
 			}
 		}
 	}
+		"ability_mist_coil"
+	{
+		"ScriptFile"					"abilities/new_abilities_creeps/sheep_mist_coil"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"mobs/mist_coil_sheep"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.25"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9.5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"self_damage"			"10"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"target_damage"			"60"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"120 165 210 255"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"missile_speed"			"1300"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	//=================================================================================================================
+	// Primal Beast: Onslaught
+	//=================================================================================================================
+	"primal_beast_onslaught"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"992"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY" 
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		//"AbilityCastRange"			"2000"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"charge_speed"				"1900"
+			"chargeup_time"				"0.6"
+			"knockback_radius"			"140"
+			"max_distance"				"400"
+			"knockback_distance"		"70"
+			"knockback_damage"
+			{
+				"value"					"55"
+				"special_bonus_unique_primal_beast_onslaught_damage"	"+90"
+			}
+			"knockback_duration"		"0.2"
+			"max_charge_time"			"0.7"
+			"turn_rate"					"70"
+			"base_power"				"0.05"
+			"movement_turn_rate"		"50"
+			"stun_duration"				"0.2"
+		}
+	}
+	//=================================================================================================================
+	// Ability: Snapfire Firesnap Cookie
+	//=================================================================================================================
+	"snapfire_firesnap_cookie"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"6483"	// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Snapfire.FeedCookie.Cast"
+		"HasShardUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"AbilityCooldown"				
+				{
+					"value"		"5"
+					"special_bonus_unique_snapfire_3"	"-4"
+				}
+
+				"projectile_speed"		"1100"
+				"pre_hop_duration"		"0.0"
+				"jump_duration"			
+				{
+					"value"	"0.2" //"0.431 0.484 0.538 0.592" // proportional to horizontal distance
+					"special_bonus_shard"	"+0.2"
+				}
+				"jump_height"			
+				{
+					"value"						"257" //"228 257 285 314" // proportional to horizontal distance
+					"special_bonus_shard"		"+105"
+				}
+				"jump_horizontal_distance"	
+				{
+					"value"						"425" //"400 450 500 550"
+					"special_bonus_shard"		"+175"
+				}
+				"pre_land_anim_time"	"0.14"
+				"landing_gesture_duration"	"0.6"
+				"impact_radius"			"320"
+				"impact_damage"			
+				{
+					"value"					"70 140 210 280"
+					"CalculateSpellDamageTooltip"	"1"
+				}
+				"impact_stun_duration"	"0"
+				"self_cast_delay"		"0"
+				"target_heal"			
+				{
+					"value"			"0"
+					"special_bonus_unique_snapfire_5"	"+125"
+				}
+
+				"shard_damage_multiplier_tooltip" "50"
+		}
+	}
 }

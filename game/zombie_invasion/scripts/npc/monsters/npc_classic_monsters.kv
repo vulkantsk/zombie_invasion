@@ -1256,7 +1256,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					""
-		"Ability2"					""
+		"Ability2"					"primal_beast_onslaught"
 		"Ability3"					""	
 		"Ability4"					"respawn"
 
@@ -1296,7 +1296,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"155"
+		"StatusHealth"				"200"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1325,10 +1325,18 @@
 			    {
 			        "Name"          "Invade"
 			        "Aggression"    "100.0"
-			        "Avoidance"     "20.0"
+			        "Avoidance"     "12.0"
 			        "Support"       "0.0"
 			        "RoamDistance"  "400.0"
 			    }
+			}
+			"OffensiveAbilities"
+			{
+				"Ability2"
+				{
+					"Name"					"primal_beast_onslaught"										
+				}
+				
 			}
 		}
 	}
@@ -1439,7 +1447,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""
+		"Ability1"					"ability_mist_coil"
 		"Ability2"					"respawn"
 		"Ability3"					""	
 		"Ability4"					""
@@ -1453,8 +1461,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"90"
-		"AttackDamageMax"			"120"
+		"AttackDamageMin"			"33"
+		"AttackDamageMax"			"66"
 		"AttackRate"				"2.1"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"300"
@@ -1480,7 +1488,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"115"
+		"StatusHealth"				"178"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1509,10 +1517,18 @@
 			    {
 			        "Name"          "Invade"
 			        "Aggression"    "100.0"
-			        "Avoidance"     "20.0"
+			        "Avoidance"     "15.0"
 			        "Support"       "0.0"
 			        "RoamDistance"  "400.0"
 			    }
+			}
+			"OffensiveAbilities"
+			{
+				"Ability2"
+				{
+					"Name"					"ability_mist_coil"										
+				}
+				
 			}
 		}
 	}
@@ -1682,8 +1698,27 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+
+		"Creature"
+		{
+			"DefaultState"       "Invade"
+			"States"
+			{
+			    "Invade"
+			    {
+			        "Name"          "Invade"
+			        "Aggression"    "100.0"
+			        "Avoidance"     "5.0"
+			        "Support"       "0.0"
+			        "RoamDistance"  "400.0"
+			    }
+			}
+			
+		}
  
 	}
+
 
 	"npc_classic_big_frog"	
 	{

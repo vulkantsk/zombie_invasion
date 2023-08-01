@@ -3731,6 +3731,13 @@
 
 
 
+		// ******************** Крипы: ********************
+
+
+		"DOTA_Tooltip_Ability_ability_mist_coil"											"МАГИЧЕСКИЕ РОГА"
+		"DOTA_Tooltip_Ability_ability_mist_coil_Description"											"Рогатое уёбище наносит урон своему недоброжелателю."	
+		"DOTA_Tooltip_Ability_ability_mist_coil_target_damage"									"УРОН:"
+
 
 	}
 }
