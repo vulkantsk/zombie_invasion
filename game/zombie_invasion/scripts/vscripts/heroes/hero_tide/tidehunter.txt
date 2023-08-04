@@ -202,40 +202,52 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 
-			"tidehunter_ravage"
+	//=================================================================================================================
+	// Tidehunter: Ravage
+	//=================================================================================================================
+	"tidehunter_ravage"
 	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5121"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Ability.Ravage"
 
-		"MaxLevel"            "3"
-    	"LevelsBetweenUpgrades" 			"10"
-    	"RequiredLevel" 					"10"
-		"AbilityCooldown"				"90 120 160"
+		"AbilityDraftUltShardAbility" "tidehunter_arm_of_the_deep"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90.0 120.0 140.0"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"675"
+		"AbilityDamage"					"1250 2350 3450"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"175"
+		"AbilityManaCost"				"125 225 325"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"radius"			"1250"
+			"speed"				"725"
+			"duration"			
 			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"			"2125 2400 2760"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"speed"				"725 1000 1224"
-			}
-			"03"
-			{	
-				"var_type"			"FIELD_FLOAT"
-				"duration"			"6 8 10"
+				"value"					"6.0 8.2 12.4"
+				"special_bonus_unique_tidehunter_7"	"+0.8"
 			}
 		}
 	}
