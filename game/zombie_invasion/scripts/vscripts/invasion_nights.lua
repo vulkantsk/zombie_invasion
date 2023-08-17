@@ -25,99 +25,162 @@ ghost_count_hal = 0
 zombie_count_new = 0
 ghost_count_new = 0 
 
+
 function InvasionMode:ZombieNight1()  
+ 	if GetMapName() == "invasion_refresh" then
+    	self:SpawnZombie("npc_classic_wave_zombie",11)
+	
+		Timers:CreateTimer(150,function()
+    	    self:SpawnZombie("npc_undying_1",1)
+		end) 
+	
+		Timers:CreateTimer(225,function()
+			local zombie_boss_1 =  RandomInt(1,2)
+	
+			if zombie_boss_1 == 1 then 
+ 			    GameRules:SendCustomMessage("#Game_notification_boss_spawn_half_zombie",0,0)
+			    InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
+			elseif zombie_boss_1 == 2 then 
+ 			    GameRules:SendCustomMessage("#Game_notification_boss_spawn_big_zombie",0,0)
+			    InvasionMode:SpawnBoss("npc_wave_boss_big_zombie", 1)
+		    end
+		end) 
+	else			
+
+			local spawn_zmb = 0
+			Timers:CreateTimer(0, function()
+		     while spawn_zmb < 10 do
+			     spawn_zmb = spawn_zmb + 1
+    	         self:SpawnZombie("npc_classic_big_pig_wave",8)     
+			     return 10
+			 end		
+			 Timers:CreateTimer(270, function()
+		 return nil	 
  
-    self:SpawnZombie("npc_classic_wave_zombie",11)
+		end)
+    		 end)
+			Timers:CreateTimer(150,function()
+    		    self:SpawnZombie("npc_boss_pig_wave",1)
+			end) 
+		
+			Timers:CreateTimer(225,function()
+				    InvasionMode:SpawnBoss("npc_boss_pig_pet_wave", 1)
+				
+			end) 
+		
+		
+			
+		
 
-	Timers:CreateTimer(150,function()
-        self:SpawnZombie("npc_undying_1",1)
-	end) 
+	end
 
-	Timers:CreateTimer(225,function()
-		local zombie_boss_1 =  RandomInt(1,2)
-
-		if zombie_boss_1 == 1 then 
- 		    GameRules:SendCustomMessage("#Game_notification_boss_spawn_half_zombie",0,0)
-		    InvasionMode:SpawnBoss("npc_wave_boss_half_zombie", 1)
-		elseif zombie_boss_1 == 2 then 
- 		    GameRules:SendCustomMessage("#Game_notification_boss_spawn_big_zombie",0,0)
-		    InvasionMode:SpawnBoss("npc_wave_boss_big_zombie", 1)
-	    end
-	end) 
 
 end
 
  function InvasionMode:ZombieNight2()  
  -- 2 НОЧЬ
- 
-    local spawn_zmb = 0
-    self:SpawnZombie("npc_classic_wave_big_zombie",3)
- 
+ 	if GetMapName() == "invasion_refresh" then
+    	local spawn_zmb = 0
+    	self:SpawnZombie("npc_classic_wave_big_zombie",3)
+ 	
+		
+ 		Timers:CreateTimer(0, function()
+		     while spawn_zmb < 12 do
+			     spawn_zmb = spawn_zmb + 1
+    	         self:SpawnZombie("npc_classic_wave_big_zombie",1)     
+			     return 10
+			 end		
+			 return nil	 
+		end)
+ 	
+		Timers:CreateTimer(90,function()
+			 self:SpawnZombie("npc_undying_2",1)
+		end)
+ 	
+		Timers:CreateTimer(210,function()
+			 self:SpawnZombie("npc_undying_2",1)
+		end)
+		 
+		Timers:CreateTimer(225,function()
+			local zombie_boss_2 =  RandomInt(1,3)
+			if zombie_boss_2 == 1 then 
+			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_suicide", 1)
+			elseif zombie_boss_2 == 2 then 
+ 			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_necr",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_necr", 1)
+			elseif zombie_boss_2 == 3 then 
+ 			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem", 1)		  
+		     end
+		end) 	
+	else
+
+		local spawn_zmb = 0
 	
  	Timers:CreateTimer(0, function()
-	     while spawn_zmb < 5 do
+	     while spawn_zmb < 9 do
 		     spawn_zmb = spawn_zmb + 1
-             self:SpawnZombie("npc_classic_wave_big_zombie",1)     
+             self:SpawnZombie("npc_Edgard_wave",6)     
+
+             InvasionMode:SpawnBoss("npc_wave_boss_suicide_fun", 1)
 		     return 10
 		 end		
+		 Timers:CreateTimer(270, function()
 		 return nil	 
-	end)
- 
-	Timers:CreateTimer(90,function()
-		 self:SpawnZombie("npc_undying_2",1)
-	end)
- 
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_2",1)
-	end)
-	 
-	Timers:CreateTimer(225,function()
-		local zombie_boss_2 =  RandomInt(1,3)
-		if zombie_boss_2 == 1 then 
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_suicide",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_suicide", 1)
-		elseif zombie_boss_2 == 2 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_necr",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_necr", 1)
-		elseif zombie_boss_2 == 3 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem", 1)		  
-	     end
-	end) 	
- 
 
+	end) 
+		end)
+ 
+end
 end
  	 
 
 function InvasionMode:ZombieNight3()  	
   -- 3 НОЧЬ 
  
-    self:SpawnZombie("npc_classic_wave_ghoul",11)
- 
- 
-
-	Timers:CreateTimer(90,function()
-		 self:SpawnZombie("npc_undying_3",1)
-	end)
-
-	Timers:CreateTimer(210,function()
-		 self:SpawnZombie("npc_undying_3",1)
-	end)
+ 	if GetMapName() == "invasion_refresh" then
+    	self:SpawnZombie("npc_classic_wave_ghoul",11)
+ 	
+ 	
 	
- 
- 	Timers:CreateTimer(225,function()
-		local zombie_boss_3 =  RandomInt(1,3)
-		if zombie_boss_3 == 1 then 
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_ghost",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_ghost", 1)
-		elseif zombie_boss_3 == 2 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_pudge",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_pudge", 1)
-		elseif zombie_boss_3 == 3 then 
- 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_undying",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_undying", 1)		  
-	     end
-	end) 	
+		Timers:CreateTimer(90,function()
+			 self:SpawnZombie("npc_undying_3",1)
+		end)
+	
+		Timers:CreateTimer(210,function()
+			 self:SpawnZombie("npc_undying_3",1)
+		end)
+		
+ 	
+ 		Timers:CreateTimer(225,function()
+			local zombie_boss_3 =  RandomInt(1,3)
+			if zombie_boss_3 == 1 then 
+			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_ghost",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_ghost", 1)
+			elseif zombie_boss_3 == 2 then 
+ 			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_pudge",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_pudge", 1)
+			elseif zombie_boss_3 == 3 then 
+ 			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_undying",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_undying", 1)		  
+		     end
+		end) 	
+	else
+		Timers:CreateTimer(0,function()
+			 self:SpawnZombie("npc_wave_boss_ghost",1)
+		end)
+		Timers:CreateTimer(90,function()
+			 self:SpawnZombie("npc_wave_boss_undying",1)
+		end)
+		Timers:CreateTimer(180,function()
+			 self:SpawnZombie("npc_wave_boss_necr",1)
+		end)
+		Timers:CreateTimer(220,function()
+			 self:SpawnZombie("npc_wave_boss_pudge",1)
+		end)
+	end
+
  
  end
  
@@ -126,20 +189,37 @@ function InvasionMode:ZombieNight3()
 
  function InvasionMode:ZombieNight4()  
    -- 4 НОЧЬ 
- 
-    self:SpawnZombie("npc_classic_wave_ghoul_2",11)
- 
- 
+ 	if GetMapName() == "invasion_refresh" then
+    	self:SpawnZombie("npc_classic_wave_ghoul_2",11)
+ 	
+ 	
+		
+		Timers:CreateTimer(150,function()
+			 self:SpawnZombie("npc_undying_4",1)
+		end)
 	
-	Timers:CreateTimer(150,function()
-		 self:SpawnZombie("npc_undying_4",1)
-	end)
-
- 
- 	Timers:CreateTimer(225,function()
-		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem_2",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem_2", 1)
-	end) 	
+ 	
+ 		Timers:CreateTimer(225,function()
+			  GameRules:SendCustomMessage("#Game_notification_boss_spawn_meatgolem_2",0,0)
+			  InvasionMode:SpawnBoss("npc_wave_boss_meat_golem_2", 1)
+		end) 	
+	else
+		Timers:CreateTimer(0,function()
+			 self:SpawnZombie("npc_classic_wave_ghoul",4)
+			 Timers:CreateTimer(270, function()
+		 return 10	 
+		end)
+		end)
+		Timers:CreateTimer(90,function()
+			 self:SpawnZombie("npc_wave_boss_viper",1)
+		end)
+		Timers:CreateTimer(180,function()
+			 self:SpawnZombie("npc_classic_necr",20)
+			 Timers:CreateTimer(120, function()
+		 return 10	 
+		end)
+		end)
+	end
  
 
 end

@@ -1341,98 +1341,6 @@
 		}
 	}
 
-	"npc_classic_big_pig"	
-	{
-		// General
-		//----------------------------------------------------------------
-		"Model"						"models/props_gameplay/pig.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"n_creep_Melee"
-		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
-		"Level"						"2"
-		"ModelScale" 				"1.3"
-		"UseNeutralCreepBehavior"	"1"
-
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					""
-		"Ability2"					""
-		"Ability3"					""	
-		"Ability4"					"respawn"
-
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"3"
-		"MagicalResistance"         "25"
-
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"87"
-		"AttackDamageMax"			"100"
-		"AttackRate"				"3.7"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"300"
-		"AttackRange"				"90"
-	     
-
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"30"
-		"BountyGoldMin"				"24"	
-		"BountyGoldMax"				"30"	
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"220"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"275"
-		"StatusHealthRegen"			"0.0"
-		"StatusMana"				"0"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"500"
-		"VisionNighttimeRange"		"300"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-		// Creature Data
-		//----------------------------------------------------------------
-		"Creature"
-		{
-			"DefaultState"       "Invade"
-			"States"
-			{
-			    "Invade"
-			    {
-			        "Name"          "Invade"
-			        "Aggression"    "100.0"
-			        "Avoidance"     "20.0"
-			        "Support"       "0.0"
-			        "RoamDistance"  "400.0"
-			    }
-			}
-		}
-	}
-
 	"npc_classic_sheep"	
 	{
 		// General
@@ -1718,6 +1626,10 @@
 		}
  
 	}
+	
+
+
+
 
 
 	"npc_classic_big_frog"	
@@ -7086,6 +6998,7 @@
 		"ConsideredHero"			"1"
 		"Level"						"20"
 		"ModelScale" 				"1.2"
+		"HasInventory"				"1"
 		"UseNeutralCreepBehavior"	"1"
 
 		// Abilities
@@ -7180,6 +7093,7 @@
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
 		"Level"						"20"
+		"HasInventory"				"1"
 		"ModelScale" 				"0.9"
 		"UseNeutralCreepBehavior"	"1"
 
@@ -7273,6 +7187,7 @@
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
 		"Level"						"20"
+		"HasInventory"				"1"
 		"ModelScale" 				"1.2"
 		"UseNeutralCreepBehavior"	"1"
 
@@ -7366,6 +7281,7 @@
 		"ConsideredHero"			"1"
 		"Level"						"20"
 		"ModelScale" 				"1.2"
+		"HasInventory"				"1"
 		"UseNeutralCreepBehavior"	"1"
 
 		// Abilities
@@ -7609,15 +7525,16 @@
 				{
 					"Name"					"phoenix_supernova"										
 				}
-					"AttachWearables"
+
+				
+			}
+
+			"AttachWearables"
 				{
 					"Wearable1"	{ "ItemDef"	"14993" }	
 					"Wearable2"	{ "ItemDef"	"7458" }	
 					"Wearable3"	{ "ItemDef"	"13714" }	
 				}
-
-				
-			}
 		}
 				
 	}
@@ -7718,5 +7635,317 @@
 				
 			}	
 		}	
+	}
+
+	//=================================================================================================================
+	// units: fun mode by nasqreal
+	//=================================================================================================================
+
+
+
+"npc_classic_lina"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"vscripts"                  "ai/mobs/ai_lina.lua"
+		"Model"						"models/heroes/lina/lina.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"3"
+		"ModelScale" 				".9"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"slow_mobs"
+		"Ability2"					""
+		"Ability3"					""	
+		"Ability4"					"respawn"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"5"
+		"MagicalResistance"         "0"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"220"
+		"AttackRate"				"1.8"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"760"
+        "BaseAttackSpeed"			"100"	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"42"
+		"BountyGoldMin"				"27"	
+		"BountyGoldMax"				"32"	
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"375"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"295"
+		"StatusHealthRegen"			"0.0"
+		"StatusMana"				"0"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+
+		"Creature"
+		{
+			"AttachWearables"
+				{
+ 
+ 
+					"Wearable1" { "ItemDef" "6707" }
+					"Wearable1" { "ItemDef" "6339" }	
+					"Wearable1" { "ItemDef" "6598" }
+					"Wearable1" { "ItemDef" "5940" }
+				}
+			
+		}
+ 
+	}
+
+
+
+	"npc_classic_kunnka"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/kunkka/kunkka.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				".9"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					"respawn"
+		"Ability3"					"high_five"	
+		"Ability4"					""
+		"Ability5"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"-12"
+		"MagicalResistance"         "-10"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"-20"
+		"AttackDamageMax"			"-10"
+		"AttackRate"				"1.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"90"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"12"
+		"BountyGoldMin"				"16"	
+		"BountyGoldMax"				"18"	
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"220"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.0"
+		"StatusMana"				"0"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+						"EquippedItems"
+				{
+					"1"            	{"Item"        "item_crystal_boots"}
+				}
+
+
+				"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "6487" }
+					"Wearable1" { "ItemDef" "4016" }
+					"Wearable1" { "ItemDef" "6179" }
+					"Wearable1" { "ItemDef" "5470" }
+					"Wearable1" { "ItemDef" "10" }
+					"Wearable1" { "ItemDef" "357" }
+					"Wearable1" { "ItemDef" "5321" }
+				}
+
+				"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"high_five"										
+				}
+				
+			}				
+		}
+	}
+	"npc_classic_crystalka"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_ranged"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				".9"
+		"HasInventory"				"1"
+		"ConsideredHero"			"0"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					"respawn"
+		"Ability3"					"ability_frostbite"	
+		"Ability4"					""
+		"Ability5"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"-12"
+		"MagicalResistance"         "-10"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"40"
+		"AttackDamageMax"			"50"
+		"AttackRate"				"1.6"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"300"
+		"AttackRange"				"90"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"12"
+		"BountyGoldMin"				"16"	
+		"BountyGoldMax"				"18"	
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"220"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.0"
+		"StatusMana"				"0"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+						"EquippedItems"
+				{
+					"1"            	{"Item"        "item_force_stuff"}
+				}
+
+
+				"AttachWearables"
+				{
+ 
+					"Wearable1" { "ItemDef" "8225" }
+					"Wearable1" { "ItemDef" "8226" }	
+					"Wearable1" { "ItemDef" "8227" }
+					"Wearable1" { "ItemDef" "8229" }
+				}
+
+				"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"ability_frostbite"										
+				}
+				
+			}				
+		}
 	}
 }

@@ -1,14 +1,29 @@
 "AddonInfo"
 
 {
-	maps			"invasion_refresh"
+
+	maps = 
+	[
+		"invasion_refresh",
+		"invasion_refresh_nasqreal_fun_made",
+	]
 	"IsPlayable"	"1"
 	"HeroGuidesSupported" "1"
-	"invasion_refresh"
-	{
-					"MaxPlayers"                    "5"
-	}
+
+	map_options = 
+	[
+		{
+			MaxPlayers = 5
+			map = "invasion_refresh"
+		},
+		{
+			MaxPlayers = 5
+			map = "invasion_refresh_nasqreal_fun_made"
+		},
+	]
+ 
  
 
 
 }
+	

@@ -389,6 +389,17 @@ function InvasionMode:spawn_last_boss()
 	unit:SetForwardVector(RandomVector(1))
 end
 
+function InvasionMode:spawn_nasqreal()
+	local point = nil  -- отвечает за то, где появиться свинья
+	local unit = nil  -- Кто появиться
+	
+ 
+	point = Entities:FindByName( nil, "warlock_point"):GetAbsOrigin()
+	unit = CreateUnitByName("npc_dota_creature_sand_king", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+	unit.respawn = false	
+	unit:SetForwardVector(RandomVector(1))
+end
+
 function InvasionMode:spawn_warlock_boss()
 	local point = nil  -- отвечает за то, где появиться свинья
 	local unit = nil  -- Кто появиться
@@ -460,7 +471,16 @@ function InvasionMode:NightTimer(time)
 			elseif currentNight == 3 then
 				InvasionMode:ZombieNight3()  
 			elseif currentNight == 4 then
+				if GetMapName() == "invasion_refresh" then
+
 				InvasionMode:ZombieNight4() 
+
+				else
+					InvasionMode:ZombieNight4() 
+				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+                        InvasionMode:UsuallyEnd()  
+				end)
+				end
 			elseif currentNight == 5 then
 				InvasionMode:ZombieNight5() 
 			elseif currentNight == 6 then
@@ -658,18 +678,31 @@ function InvasionMode:RespawnAllHeroes()
 end
 function InvasionMode:UsuallyEnd()  
  -- Обычнй конец
+ 	if GetMapName() == "invasion_refresh" then
+		GameRules:SendCustomMessage("#begining_1", 0, 0)
+	
+	
+		Timers:CreateTimer(8,function()
+			GameRules:SendCustomMessage("#begining_2", 0, 0)
+		end)
+	
+		Timers:CreateTimer(16,function()
+			GameRules:SendCustomMessage("#beginend", 0, 0)
+			InvasionMode:spawn_warlock_boss()
+		end)
+	else
+		GameRules:SendCustomMessage("#begining_fun1", 0, 0)
 
-	GameRules:SendCustomMessage("#begining_1", 0, 0)
+		Timers:CreateTimer(8,function()
+			GameRules:SendCustomMessage("#begining_fun2", 0, 0)
+		end)
 
-
-	Timers:CreateTimer(8,function()
-		GameRules:SendCustomMessage("#begining_2", 0, 0)
-	end)
-
-	Timers:CreateTimer(16,function()
-		GameRules:SendCustomMessage("#beginend", 0, 0)
-		InvasionMode:spawn_warlock_boss()
-	end)
+		Timers:CreateTimer(16,function()
+			GameRules:SendCustomMessage("#beginend_fun", 0, 0)
+			InvasionMode:spawn_nasqreal()
+		end)
+	end
+	
  
 end
  

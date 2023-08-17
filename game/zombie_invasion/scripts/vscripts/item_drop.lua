@@ -35,7 +35,9 @@ ItemDrop.item_drop = {
 		{items = {"item_adulin"}, chance = 100, units = {"npc_classic_alduin_boss"}},
 		{items = {"item_prox_phoenix"}, chance = 100, units = {"npc_classic_phoenix_boss"}},
 		{items = {"item_brevno"}, chance = 100, units = {"npc_derevo_ebanoe"}},
-
+		{items = {"item_rom"}, chance = 20, units = {"npc_classic_kunnka"}},
+		{items = {"item_salo"}, chance = 100, units = {"npc_oldmen_bednyaga"}},
+		{items = {"item_error"}, chance = 100, units = {"npc_dota_creature_sand_king"}},
  
   
 
@@ -51,9 +53,9 @@ ItemDrop.item_drop = {
 		{items = {"item_bag_of_gold_mutant"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_undying_heart"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_tres_jo"}, units ={"npc_boss_mutant"}},      -- если указан units - то итем может упасть тольк с этих юнитов       
-		{items = {"item_eggs"}, min_count = 2, max_count = 5 ,units ={"npc_boss_slark"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
+		{items = {"item_eggs"}, min_count = 3, max_count = 6 ,units ={"npc_boss_slark"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 		{items = {"item_brassiere"},chance = 100, units ={"npc_boss_slark"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
-		{items = {"item_zombie_skin"},chance = 5, units ={"npc_classic_half_zombie"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
+		{items = {"item_zombie_skin"},chance = 15, units ={"npc_classic_half_zombie"}},      -- если указан units - то итем может упасть тольк с этих юнитов  
 
   
   

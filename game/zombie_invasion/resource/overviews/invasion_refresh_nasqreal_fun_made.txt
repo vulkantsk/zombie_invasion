@@ -1,0 +1,8 @@
+invasion_refresh_nasqreal_fun_made
+{
+	material materials/overviews/invasion_refresh_nasqreal_fun_made.vmat
+	pos_x -8903
+	pos_y 9156
+	scale 17.500
+}
+

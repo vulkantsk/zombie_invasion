@@ -1889,6 +1889,34 @@
 
 		 
 	}
+	"item_error"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------				
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_error.lua"
+		"AbilityTextureName"			"error"
+		
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"ItemQuality"					"epic"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemStackable"					"1"
+		"ItemCost"						"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemPurchasable"				"0"
+		"ItemInitialCharges"			"1"
+
+		 
+	}
 	"item_leaf"
 	{
 		// General
@@ -4832,17 +4860,21 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCastAnimation"			"ACT_DOTA_GENERIC_CHANNEL_1"
 				"Model"							"models/props_gameplay/neutral_box.vmdl"
-		"ItemIsNeutralDrop" 						"1"
+		"ItemIsNeutralDrop" 						"0"
 		"AbilityCastPoint"				"0.15"
 
 		"AbilityCooldown"				"55.0"
-		"ItemCost"						"0"
-		"ItemPurchasable"				"0"
-		"ItemQuality"					""
-		"ItemSellable"					"0"
+		"ItemCost"                      "1" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"					"0"
  
 		"AbilitySpecial"
 		{
@@ -5209,6 +5241,8 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemStockMax"					"1"
+		"ItemInitialCharges"			"1"
+		"ItemStackable" 				"1"
 		"ItemStockTime"					"0.0"
 		"ItemSupport"					"1"
 		"ItemKillable"					"0"
@@ -12294,6 +12328,175 @@
 		"ItemKillable"					"0" 
 		"ItemStackable" 				"1"
 		"AllowedInBackpack"				"0"
+		"ItemInitialCharges"			"1"	
+		"ItemPermanent" 				"0"	
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"0"
+ 
+				"hit_damage"			"0"
+ 
+			
+        }
+	}
+	"item_super_artefact"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_super_artefact"
+		"AbilityTextureName"			"super_artefact"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+		///Item info
+		"ItemQuality"					"artifact"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemPurchasable"				"0"
+		"SideShop" 						"0"
+		"ItemKillable"					"0"
+
+		"AbilityValues"
+		{
+			"bonus_attack_speed"	"200"
+			"bonus_agility"			"700"
+			"bonus_resistance"		"300"
+			"return_damage"			"2000"
+			"return_damage_str"		"120"
+			"aura_radius"			"2200"
+			"bonus_strength"		"1000"
+			"bonus_health"			"4222"
+			"bonus_armor"			"300"
+			"base_regen"			"2000"
+		}
+	}
+	"item_salo"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"salo"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemStackable" 				"1"
+		"AllowedInBackpack"				"1"
+		"ItemInitialCharges"			"1"	
+		"ItemPermanent" 				"0"	
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"0"
+ 
+				"hit_damage"			"0"
+ 
+			
+        }
+	}
+	"item_artefact1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"artefact1"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemStackable" 				"0"
+		"AllowedInBackpack"				"1"
+		"ItemInitialCharges"			"1"	
+		"ItemPermanent" 				"0"	
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"0"
+ 
+				"hit_damage"			"0"
+ 
+			
+        }
+	}
+	"item_artefact2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"artefact2"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemStackable" 				"0"
+		"AllowedInBackpack"				"1"
+		"ItemInitialCharges"			"1"	
+		"ItemPermanent" 				"0"	
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"0"
+ 
+				"hit_damage"			"0"
+ 
+			
+        }
+	}
+	"item_artefact3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"phoenix_prox"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemStackable" 				"0"
+		"AllowedInBackpack"				"1"
 		"ItemInitialCharges"			"1"	
 		"ItemPermanent" 				"0"	
 		"AbilityValues"
