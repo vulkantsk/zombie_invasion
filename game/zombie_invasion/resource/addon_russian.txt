@@ -118,6 +118,11 @@
 	   "begining_2"                                                 "<font color='#c10020'>Но в этом и заключается ваша главная ошибка</font>"
 	   "beginend"                                                 "<font color='#c10020'>Я набрался сил и дам вам пизды :3</font>"
 
+
+	   "begining_fun1"													"<font color='#c10020'>ЗРЯ ВЫ РЕШИЛИ ДОНИМАТЬ МЕНЯ СВОИМИ "ГДЕ ОБНОВА!?"</font>"
+	   "begining_fun2"													"<font color='#c10020'>СЕЙЧАС Я ПОКАЖУ ВАМ СВОЁ ТВОРЕНИЕ"</font>"
+	   "beginend_fun"													"<font color='#c10020'>УЗРИТЕ SAND KING!"</font>"
+
 	   "warlock_terror"			                                    	"<font color='#c10020'>ЭТО НЕ МОЖЕТ ВСЕ ЗАКОНЧИТЬСЯ ТАК</font>"
 
 	   "warlock_end"			                                    	"<font color='#c10020'>моих сил не хватило...</font>"	
@@ -1495,9 +1500,19 @@
 	"DOTA_Tooltip_Ability_item_super_artefact_bonus_strength"					"ДОП.СИЛА:"
 	"DOTA_Tooltip_Ability_item_super_artefact_bonus_armor"					"ДОП.БРОНЯ"
 	"DOTA_Tooltip_Ability_item_super_artefact_base_regen"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_resistance"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_attack_speed"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_bonus_agility"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
+	"DOTA_Tooltip_Ability_item_super_artefact_bonus_resistance"					"%ДОП.МАГ РЕЗИСТ:"
+	"DOTA_Tooltip_Ability_item_super_artefact_bonus_attack_speed"					"ДОП СКОРОСТЬ АТАКИ:"
+	"DOTA_Tooltip_Ability_item_super_artefact_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
+
+	"DOTA_Tooltip_Ability_item_artefact1"										"Первый артефакт."
+	"DOTA_Tooltip_Ability_item_artefact1_Description"										"Слухи гласят что он полезен."
+
+	"DOTA_Tooltip_Ability_item_artefact2"										"Второй артефакт."
+	"DOTA_Tooltip_Ability_item_artefact2_Description"										"Слухи гласят что он полезен.."
+
+	"DOTA_Tooltip_Ability_item_artefact3"										"Третий артефакт."
+	"DOTA_Tooltip_Ability_item_artefact3_Description"										"Слухи гласят что он полезен..."
+
 
 	"DOTA_Tooltip_Ability_item_salo"									"САЛО!"
 	

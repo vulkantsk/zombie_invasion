@@ -22822,7 +22822,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "160"
+                "reward_exp"                "00"
             }
             "03"
             {
@@ -22841,7 +22841,7 @@
                 "reward_item"    "item_pizza2"
                 "particle"        "1"
                 //"next_quest"    "quest_test03"
-                "reusable"        "0"
+                "reusable"        "1"
             }
         }      
        
@@ -22867,12 +22867,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "322"
+                "reward_exp"                "1700"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "400"
+                "reward_gold"                "1400"
             }
         }
 
@@ -22911,12 +22911,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "322"
+                "reward_exp"                "2322"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "400"
+                "reward_gold"                "1900"
             }
         }
 
@@ -22955,12 +22955,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "322"
+                "reward_exp"                "1322"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "400"
+                "reward_gold"                "2400"
             }
         }
 
@@ -22999,12 +22999,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "322"
+                "reward_exp"                "3322"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "400"
+                "reward_gold"                "1400"
             }
         }
 
