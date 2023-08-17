@@ -49,7 +49,7 @@ function InvasionMode:ZombieNight1()
 
 			local spawn_zmb = 0
 			Timers:CreateTimer(0, function()
-		     while spawn_zmb < 10 do
+		     while spawn_zmb < 22 do
 			     spawn_zmb = spawn_zmb + 1
     	         self:SpawnZombie("npc_classic_big_pig_wave",8)     
 			     return 10
@@ -119,7 +119,7 @@ end
 		local spawn_zmb = 0
 	
  	Timers:CreateTimer(0, function()
-	     while spawn_zmb < 9 do
+	     while spawn_zmb < 16 do
 		     spawn_zmb = spawn_zmb + 1
              self:SpawnZombie("npc_Edgard_wave",6)     
 
