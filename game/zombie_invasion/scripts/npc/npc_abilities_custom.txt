@@ -21239,7 +21239,7 @@
         "MaxLevel"                      "1"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"1"
+		"AbilityCooldown"				"0"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -21258,7 +21258,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage"				"10"
+				"damage"				"228"
 				"LinkedSpecialBonus"	"special_bonus_unique_spirit_breaker_3"
 			}
 			"03"
@@ -21269,22 +21269,22 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"knockback_duration"	"0.5 0.5 0.5 0.5"
+				"knockback_duration"	"0.8"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"knockback_distance"	"120"
+				"knockback_distance"	"220"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"knockback_height"		"50"
+				"knockback_height"		"150"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movespeed_pct"	"17"
+				"bonus_movespeed_pct"	"400"
 			}
 			"08"
 			{
