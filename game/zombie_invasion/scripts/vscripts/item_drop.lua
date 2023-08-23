@@ -35,7 +35,7 @@ ItemDrop.item_drop = {
 		{items = {"item_adulin"}, chance = 100, units = {"npc_classic_alduin_boss"}},
 		{items = {"item_prox_phoenix"}, chance = 100, units = {"npc_classic_phoenix_boss"}},
 		{items = {"item_brevno"}, chance = 100, units = {"npc_derevo_ebanoe"}},
-		{items = {"item_rom"}, chance = 20, units = {"npc_classic_kunnka"}},
+		{items = {"item_rom"}, chance = 5, units = {"npc_classic_kunnka"}},
 		{items = {"item_salo"}, chance = 100, units = {"npc_oldmen_bednyaga"}},
 		{items = {"item_error"}, chance = 100, units = {"npc_dota_creature_sand_king"}},
  

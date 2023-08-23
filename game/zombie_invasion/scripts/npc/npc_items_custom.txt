@@ -12367,9 +12367,9 @@
 			"return_damage"			"2000"
 			"return_damage_str"		"120"
 			"aura_radius"			"2200"
-			"bonus_strength"		"400"
-			"bonus_health"			"1222"
-			"bonus_armor"			"300"
+			"bonus_strength"		"100"
+			"bonus_health"			"622"
+			"bonus_armor"			"50"
 			"base_regen"			"9"
 		}
 	}
