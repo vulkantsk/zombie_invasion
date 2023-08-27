@@ -132,7 +132,7 @@
 			"side_damage_reduction"
 			{
 				"value"			"2 2 4 9 14 17 16"
-				"special_bonus_unique_brist_brist_block"    "+8"
+				"special_bonus_unique_brist_brist_block"    "+4"
 
 			}
 			"back_damage_reduction"
@@ -143,7 +143,9 @@
 
 			"side_angle"					"110"
 			"back_angle"					"70"
-			"quill_release_threshold"				"140 210 360 420 580 720 1050"
+			"quill_release_threshold"				"140 210 360 420 580 620 720"
+
+			"armor_bonus"							"4 7 10 14 18 21 27"
 
 			"quill_release_threshold_scepter1"			
 			{
@@ -188,7 +190,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0"
 		"AbilityCastRange"				"0"
-			 			"LevelsBetweenUpgrades"			"10"	
+		"MaxLevel"							"1"
+			 			"LevelsBetweenUpgrades"			"30"	
 		"RequiredLevel"					"10"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -230,9 +233,9 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_brist/warpath/warpath"
 		"AbilityTextureName"			"bristleback_warpath"
-		"MaxLevel"						"1"
-		"RequiredLevel"					"35"
-		"LevelsBetweenUpgrades"			"35"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -261,7 +264,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"max_stacks"					"14"
+				"max_stacks"					"10"
 			}
 		}
 	}

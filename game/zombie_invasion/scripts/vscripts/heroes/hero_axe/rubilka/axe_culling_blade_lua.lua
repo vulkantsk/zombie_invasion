@@ -44,7 +44,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = duration_scepter } -- kv
+			{ duration = -1 } -- kv
 		)
 	 
 		bonus = bonus_base
@@ -55,7 +55,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = duration_scepter } -- kv
+		{ duration = -1 } -- kv
 	)
 
 	modifier.parent = modif_scept
@@ -66,7 +66,7 @@ function axe_culling_blade_lua:OnSpellStart()
 
         modif_scept:SetStackCount( modif_scept:GetStackCount() + bonus )
 
-        modif_scept:SetDuration( duration_scepter, true )
+        modif_scept:SetDuration( duration_scepter, false )
      
      
      end 
@@ -116,7 +116,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = duration_scepter } -- kv
+			{ duration = -1 } -- kv
 		)
  
 		bonus = bonus_kill
@@ -125,7 +125,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = duration_scepter } -- kv
+		{ duration = -1 } -- kv
 	)
 
 	modifier.parent = modif_scept
@@ -133,7 +133,7 @@ function axe_culling_blade_lua:OnSpellStart()
 
         modif_scept:SetStackCount( modif_scept:GetStackCount() + bonus )
 
-        modif_scept:SetDuration( duration_scepter, true )
+        modif_scept:SetDuration( duration_scepter, false )
      
      	end
      end
@@ -182,7 +182,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = duration_scepter } -- kv
+			{ duration = -1 } -- kv
 		)
  
 		bonus = bonus_kill
@@ -191,7 +191,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = duration_scepter } -- kv
+		{ duration = -1 } -- kv
 	)
 
 	modifier.parent = modif_scept
@@ -199,7 +199,7 @@ function axe_culling_blade_lua:OnSpellStart()
 
         modif_scept:SetStackCount( modif_scept:GetStackCount() + bonus )
 
-        modif_scept:SetDuration( duration_scepter, true )
+        modif_scept:SetDuration( duration_scepter, false )
      
      	end
      end
@@ -285,12 +285,12 @@ end
 -- Modifier Effects
 function modifier_scepter_culling_blade:DeclareFunctions()
 	local funcs = {
-       MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
+       MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 	}
 
 	return funcs
 end
-function modifier_scepter_culling_blade:GetModifierBaseAttack_BonusDamage()
+function modifier_scepter_culling_blade:GetModifierPhysicalArmorBonus()
 	return self:GetStackCount()
 end
  
@@ -340,7 +340,3 @@ end
 function modifier_scepter_culling_blade_stack:OnRemoved()
 end
 
-function modifier_scepter_culling_blade_stack:OnDestroy()
-	if not IsServer() then return end
-	self.parent:RemoveStack( self.bonus )
-end

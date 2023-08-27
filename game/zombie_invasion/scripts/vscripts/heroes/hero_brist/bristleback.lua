@@ -26,6 +26,7 @@ function modifier_ability_bristleback_buff:OnCreated()
 	self.side_angle					= self.ability:GetSpecialValueFor("side_angle")
 	self.back_angle					= self.ability:GetSpecialValueFor("back_angle")
 	self.quill_release_threshold	= self.ability:GetSpecialValueFor("quill_release_threshold")
+	self.armor_bonus				= self.ability:GetSpecialValueFor("armor_bonus")
     self.damageTaken                = self.damageTaken or 0
 
     self.scepter_thr1 = self.ability:GetSpecialValueFor("quill_release_threshold_scepter1")
@@ -43,6 +44,7 @@ function modifier_ability_bristleback_buff:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
         MODIFIER_EVENT_ON_TAKEDAMAGE,
+        MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
     }
 end
 
@@ -176,4 +178,8 @@ function modifier_ability_bristleback_buff:OnTakeDamage( keys )
 			end
 		end
 	end
+end
+
+function modifier_ability_bristleback_buff:GetModifierPhysicalArmorBonus()
+	return self.armor_bonus
 end

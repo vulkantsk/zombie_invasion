@@ -2434,6 +2434,7 @@
 		"DOTA_Tooltip_ability_ability_bristleback_Note1"					"Боками героя считаются 110 градусов от середины его спины."
 		"DOTA_Tooltip_ability_ability_bristleback_side_damage_reduction"	"%СНИЖЕНИЕ УРОНА ОТ АТАК С БОКОВ:"
 		"DOTA_Tooltip_ability_ability_bristleback_back_damage_reduction"	"%СНИЖЕНИЕ УРОНА ОТ АТАК В СПИНУ:"
+		"DOTA_Tooltip_ability_ability_bristleback_armor_bonus"				"БОНУС БРОНИ:"
 		"DOTA_Tooltip_ability_ability_bristleback_quill_release_threshold"	"ПОРОГ УРОНА:"
 
 		"DOTA_Tooltip_ability_ability_bristleback_scepter_description"	"Если урон врага превысит %quill_release_threshold_scepter1%, %quill_release_threshold_scepter2%, %quill_release_threshold_scepter3% или  %quill_release_threshold_scepter4% то Bristleback выпустит иглы вместо одного раза - 2,3,4,5 соответственно."
@@ -3052,11 +3053,11 @@
 		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage" "УРОН:"
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore" "Любимый прием акса во всех его странствиях."
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_scepter_description" "При каждом использовании способности или убийстве врага, базовый урон Axe вырастает на %duration_scepter%  секунд."
-		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_base" "УРОН ЗА ИСПОЛЬЗОВАНИЕ:"
-		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_kill" "УРОН ЗА УБИЙСТВО:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_base" "БРОНИ ЗА ИСПОЛЬЗОВАНИЕ:"
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_kill" "БРОНИ ЗА УБИЙСТВО:"
  
 		"DOTA_Tooltip_modifier_scepter_culling_blade" "Culling Blade"
-		"DOTA_Tooltip_modifier_scepter_culling_blade_Description" "Базовый урон увеличен на %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%%"
+		"DOTA_Tooltip_modifier_scepter_culling_blade_Description" "броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%%"
 
 		"DOTA_Tooltip_Ability_axe_solo" "Forever alone"
 		"DOTA_Tooltip_Ability_axe_solo_Description" "Во всех своих путешествиях Axe привык полагаться только на себя. В одиночестве он чувствует себя бесстрашным, но стоит союзнику подойти в радиусе %radius%, то все баффы уменьшаются <font color='#ffffff'>в четверть раза</font>."
