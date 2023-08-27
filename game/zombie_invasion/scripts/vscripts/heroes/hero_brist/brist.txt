@@ -79,7 +79,7 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"4"
+		"AbilityCooldown"				"4 4 3 3 2.5 2.5 2.5"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -248,18 +248,18 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_per_stack"					"1"
+				"armor_per_stack"					"0.5 1 2.5"
  
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"move_speed_per_stack"				"3"
+				"move_speed_per_stack"				"1 1.5 2"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"stack_duration"				"2.5"
+				"stack_duration"				"3.4"
 			}
 			"04"
 			{
