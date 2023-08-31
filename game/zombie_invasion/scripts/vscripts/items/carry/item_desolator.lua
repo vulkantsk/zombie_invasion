@@ -21,6 +21,7 @@ modifier_item_desolator_custom = class({
     GetAttributes   = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
     DeclareFunctions  = function(self) return {
         MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+        MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
         MODIFIER_EVENT_ON_ATTACK_LANDED,
         MODIFIER_EVENT_ON_DEATH,
     }end,
@@ -32,6 +33,9 @@ end
 
 function modifier_item_desolator_custom:GetModifierPreAttack_BonusDamage()
     return self:GetAbility():GetSpecialValueFor("bonus_damage") +  self:GetAbility():GetCurrentCharges()
+end
+function modifier_item_desolator_custom:GetModifierExtraHealthBonus()
+    return self:GetAbility():GetSpecialValueFor("bonus_health") +  self:GetAbility():GetCurrentCharges() * 25
 end
 
 function modifier_item_desolator_custom:OnAttackLanded(data)
@@ -59,6 +63,7 @@ function modifier_item_desolator_custom:OnDeath(data)
         if killer == parent and killed_unit and killed_unit:HasModifier("modifier_item_desolator_custom_debuff") and RollPercentage(chance) then
             self:GetAbility():SetCurrentCharges(math.min(charges,max_charge))
         end
+        self:GetCaster():CalculateStatBonus(true)
     end
 end
 

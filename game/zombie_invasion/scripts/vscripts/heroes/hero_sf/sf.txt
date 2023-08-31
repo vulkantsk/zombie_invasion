@@ -25,7 +25,7 @@
 
 			"damage_modifier"		"-40 -30 -20 -10 0 10 20"
 			"damage_modifier_tooltip"		"40 50 60 70 80 90 100"
-			"arrow_count"				"100"
+			"arrow_count"				"2 3 4 5 6 7 8"
 			"split_shot_bonus_range"		"100"
 			"slow_movespeed"				
 			{
@@ -66,7 +66,7 @@
 			"soul_release"			"0.5"
 			"lifesteal_pct"					
 			{
-				"value"				"2 4 6 8 10 12 14"  
+				"value"				"8 10 12 14 16 18 20"  
 			    "special_bonus_unique_sf_necrom_life"	    "+12"
 					 
 			}
@@ -108,14 +108,14 @@
 		{
 				"devour_time"			"30"
 
-				"bonus_gold"			"50 65 80 95 110 125 140"
+				"bonus_gold"			"120 140 160 180 200 225 250"
 				"bonus_movespeed"			"1 1.5 2 2.5 3 3.5 4"
 				"bonus_armor"			"0.5"
 				"bonus_damage"			"5 10 15 20 25 30 35"
 
 				"AbilityCooldown"					
 				{
-					"value"				"70"
+					"value"				"120 110 100 90 80 70 60"
 			    	"special_bonus_unique_sf_devour_cooldown"	    "-20"
 					 
 				}
@@ -179,14 +179,14 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-                "dmg_proc"                          "1500"
+                "dmg_proc"                          "900"
                 "str_per_stack"                      "2 4 6"
 				"bonus_health"			"250 500 750"
 				"bonus_armor"			"2 4 8"
 				"AbilityCooldown"					
 				{
-					"value"				"30"
-			    	"special_bonus_unique_sf_demonic_cooldown"	    "-5"
+					"value"				"45"
+			    	"special_bonus_unique_sf_demonic_cooldown"	    "-15"
 					"RequiresScepter"			"1"
 					"special_bonus_scepter"		"-10"					 
 				}

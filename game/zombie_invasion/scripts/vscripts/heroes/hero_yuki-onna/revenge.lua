@@ -86,7 +86,8 @@ function modifier_revenge_buff:OnRefresh()
 end
 
 function modifier_revenge_buff:OnIntervalThink()
- 	local damage = self:GetAbility():GetSpecialValueFor("damage_per_int") * self:GetCaster():GetIntellect()
+	local base_damage = self:GetAbility():GetSpecialValueFor("base_damage")
+ 	local damage = self:GetAbility():GetSpecialValueFor("damage_per_int") * self:GetCaster():GetIntellect() + base_damage
  	local heal = self:GetAbility():GetSpecialValueFor("heal")
  	if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then 
 		DealDamage(self:GetCaster(), self:GetParent(), damage, self:GetAbility():GetAbilityDamageType(), nil, self:GetAbility())

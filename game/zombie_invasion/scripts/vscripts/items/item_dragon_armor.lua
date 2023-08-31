@@ -52,7 +52,7 @@ function modifier_item_dragon_armor_return:OnRefresh()
 end
 
 function modifier_item_dragon_armor_return:GetTexture()
-	return "item_dragon_armor"
+	return "dragon_armor"
 end
 
 
@@ -138,7 +138,7 @@ function modifier_dragon_armor_aura_buff:DeclareFunctions()
 end
 
 function modifier_dragon_armor_aura_buff:GetTexture()
-	return "item_dragon_armor"
+	return "dragon_armor"
 end
 
 

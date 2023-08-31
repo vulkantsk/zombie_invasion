@@ -783,37 +783,37 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"55"
+				"bonus_all_stats"		"90"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"575"
+				"bonus_health"			"725"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"475"
+				"bonus_mana"			"620"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cold_slow_melee"	"-35"
+				"cold_slow_melee"	"-45"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cold_slow_ranged"	"-60"
+				"cold_slow_ranged"	"-70"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"cold_duration"	"1.5"
+				"cold_duration"	"2.5"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_reduction"	"45"
+				"heal_reduction"	"85"
 			}
 		}
 	}
@@ -3994,7 +3994,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"115"
+				"bonus_agility"			"120"
 			}
 			"02"
 			{
@@ -4004,7 +4004,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_evasion"			"55"
+				"bonus_evasion"			"35"
 			}
 			"04"
 			{
@@ -4464,7 +4464,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"270"
+				"bonus_damage"	"160"
 			}
 			"02"
 			{
@@ -4474,12 +4474,12 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Attackspeed_bonus"	"240"
+				"Attackspeed_bonus"	"180"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agility_bonus"	"220"
+				"agility_bonus"	"145"
 			}
 			"05"
 			{
@@ -4489,12 +4489,12 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Health_bonus"	"800"
+				"Health_bonus"	"400"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Strength_bonus"	"80"
+				"Strength_bonus"	"60"
 			}
 			"08"
 			{
@@ -4504,8 +4504,63 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"evasion_bonus"	"85"
+				"evasion_bonus"	"33"
 			}
+		}
+	}
+	//=================================================================================================================
+	// Recipe: Orb of Corrosion
+	//=================================================================================================================
+	"item_recipe_orb_of_corrosion"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"640"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"300"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_orb_of_corrosion"
+		"ItemRequirements"
+		{
+			"01"						"item_orb_of_venom;item_blight_stone;item_fluffy_hat"
+		}
+	}
+	
+	
+
+	//=================================================================================================================
+	// Orb of Corrosion
+	//=================================================================================================================
+	"item_orb_of_corrosion"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"569"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"ItemCost"						"1125"
+		"ItemShopTags"					"hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"ooc;orb of corrosion;corosion;corossion"
+		"ShouldBeInitiallySuggested"	"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"armor"			"9"
+				"slow_melee"			"13"
+				"slow_range"			"4"
+				"damage"			"3"
+				"duration"			"3"
+				"health_bonus"			"300"
 		}
 	}
 	
@@ -6578,17 +6633,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_int"		"18"
+				"bonus_int"		"31"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_str"		"9"
+				"bonus_str"		"18"
 			}			
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agil"		"9"
+				"bonus_agil"		"18"
 			}
 			"04"
 			{
@@ -6667,17 +6722,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_int"		"26"
+				"bonus_int"		"44"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_str"		"15"
+				"bonus_str"		"22"
 			}			
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agil"		"15"
+				"bonus_agil"		"22"
 			}		
 			"04"
 			{
@@ -6694,7 +6749,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_resist"			"-35"
+				"aura_resist"			"-55"
 			}
  
  
@@ -6848,17 +6903,17 @@
 				"bonus_agility"			"5 12"
 				"bonus_strength"		"5 12"
 				"bonus_intellect"		"20 40"
-				"spell_amp"			"20 40"
+				"spell_amp"			"20 60"
 				"mana_regen_multiplier"		"50 75"
 				"blast_movement_slow"	"-80"
 				"duration"				"4.0"
-				"blast_agility_multiplier"			"1.5 2.5"
+				"blast_agility_multiplier"			"1.5 4.5"
 				"blast_damage_base"			"150 300"
 				"duration_ally"				"4.0"
 				"ethereal_damage_bonus"	"-40"
 				"projectile_speed"	"1275"
 				"realms_grasp_turn_rate_reduction"        	"-80"
-				"splash_radius"			"225"
+				"splash_radius"			"245"
 
 		}
  
@@ -6997,12 +7052,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30"
+				"bonus_damage"			"60"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_chance"			"20"
+				"chain_chance"			"25"
 			}
 			"03"
 			{
@@ -7082,22 +7137,22 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30 90"
+				"bonus_damage"			"60 120"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_chance"			"17"
+				"chain_chance"			"33"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage"			"250 385"
+				"chain_damage"			"320 425"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_strikes"			"4" // Vanilla is 4
+				"chain_strikes"			"6" // Vanilla is 4
 			}
 			"05"
 			{
@@ -7107,7 +7162,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"chain_delay"			"0.25" // Vanilla is 0.25
+				"chain_delay"			"0.1" // Vanilla is 0.25
 			}
 			"07"
 			{
@@ -7123,7 +7178,7 @@
  			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"			"80 170"
+				"bonus_attack_speed"			"120 210"
 			}	
  		}
 	}
@@ -7179,22 +7234,22 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30 90"
+				"bonus_damage"			"60 120"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_chance"			"20"
+				"chain_chance"			"33"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage"			"250 385"
+				"chain_damage"			"320 425"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_strikes"			"4" // Vanilla is 4
+				"chain_strikes"			"8" // Vanilla is 4
 			}
 			"05"
 			{
@@ -7204,7 +7259,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"chain_delay"			"0.25" // Vanilla is 0.25
+				"chain_delay"			"0.1" // Vanilla is 0.25
 			}
 			"07"
 			{
@@ -7220,7 +7275,7 @@
  			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"			"80 170"
+				"bonus_attack_speed"			"120 210"
 			}	
  		}
 	}
@@ -7261,7 +7316,7 @@
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"			 "14"
+		"AbilityCooldown"			 "9"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -7281,11 +7336,11 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"			"15"
-				"bonus_str"	             "10"
+				"bonus_damage"			"30"
+				"bonus_str"	             "12"
 				"lifesteal_pct"				"6" 
 				"charges_for_attack_creep"			"1"
-				"max_charges"			"25"
+				"max_charges"			"20"
 				"heal_per_charge"			"10"
 		}
  
@@ -7339,8 +7394,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_strength"		"40"
-				"bonus_damage"			"35"
+				"bonus_strength"		"60"
+				"bonus_damage"			"90"
 				"lifesteal_percent"		"25"
 				"creep_lifesteal_reduction_pct"	"0"
 				"unholy_lifesteal_percent"	"150"
@@ -7521,9 +7576,9 @@
 		"AbilityValues"
 		{
 				"bonus_damage"	"75"
-				"bonus_attack_speed"	"50"
+				"bonus_attack_speed"	"80"
 				"lifesteal_pct"		"25"
-				"berserk_base_damage"            "20"
+				"berserk_base_damage"            "60"
 				"berserk_bonus_attack_speed"	"240"
 				"berserk_bonus_movement_speed"	"30"
 				"berserk_armor_reduction"	"12"
@@ -7605,7 +7660,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_aura"			"2"
+				"armor_aura"			"4"
 			}
 			"05"
 			{
@@ -7620,7 +7675,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stat_bonus"			"11"
+				"stat_bonus"			"22"
 			}
 		}
 	}
@@ -7693,13 +7748,13 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_aura"			"18"
+				"damage_aura"			"44"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_aura"			"4"
+				"armor_aura"			"8"
 			}
 			"05"
 			{
@@ -7714,7 +7769,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stat_bonus"			"22"
+				"stat_bonus"			"33"
 			}
 		}
 	}
@@ -7787,13 +7842,13 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_aura"			"24"
+				"damage_aura"			"144"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_aura"			"6"
+				"armor_aura"			"12"
 			}
 			"05"
 			{
@@ -7808,7 +7863,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"stat_bonus"			"44"
+				"stat_bonus"			"56"
 			}
 		}
 	}
@@ -7876,12 +7931,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"25"
+				"bonus_intellect"		"40"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"10"
+				"bonus_armor"			"20"
 			}
 			"03"
 			{
@@ -7891,12 +7946,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_attack_speed"		"-45"
+				"aura_attack_speed"		"-85"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"			"500"
+				"heal"			"900"
 			}
 			"06"
 			{
@@ -7991,12 +8046,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_int"				"25"
+				"bonus_int"				"55"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"10"
+				"bonus_armor"			"24"
 			}
 			"03"
 			{
@@ -8021,7 +8076,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"500"
+				"damage"				"720"
 			}
 			"08"
 			{
@@ -8031,7 +8086,7 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"	"95"
+				"bonus_damage"	"170"
 			}
 			"10"
 			{
@@ -8041,7 +8096,7 @@
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"interval_radiance"	"1"
+				"interval_radiance"	"0.5"
 			}
 			"12"
 			{
@@ -8115,7 +8170,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_int"				"40"
+				"bonus_int"				"210"
 			}
 			"02"
 			{
@@ -8130,7 +8185,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_as_reduction"		"35"
+				"aura_as_reduction"		"200"
 			}
 			"05"
 			{
@@ -8145,7 +8200,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"700"
+				"damage"				"120"
 			}
 			"08"
 			{
@@ -8534,12 +8589,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30"
+				"bonus_damage"			"45"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"20"
+				"cleave_damage_percent"	"14"
 			}
 			"04"
 			{
@@ -8641,7 +8696,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent_creep"	"60"
+				"cleave_damage_percent_creep"	"45"
 			}			
 			"06"
 			{
@@ -8718,7 +8773,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"145"
+				"bonus_damage"			"200"
 			}
 			"02"
 			{
@@ -8733,12 +8788,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"100"
+				"cleave_damage_percent"	"125"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent_creep"	"100"
+				"cleave_damage_percent_creep"	"125"
 			}		
 			"06"
 			{
@@ -8913,7 +8968,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_stat"				"50"
+				"bonus_stat"				"70"
 			}
 
 			"03"
@@ -8932,6 +8987,16 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"int_mode_amp"		"25"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"all_mode_inc"		"-10"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_stat_all"				"35"
 			}
 		}
 	}
@@ -10148,7 +10213,7 @@
 		"baseclass"							"item_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityCastRange"				"1200"
-		"AbilityTextureName" "Assault_Cuirass_2"
+		"AbilityTextureName" "assault2"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -11265,7 +11330,7 @@
  		"AbilityTextureName"				"custom_folder/item_recipe"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"	
+		"ItemCost"						"100"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -11329,7 +11394,7 @@
 		"ItemResult"					"item_desolator_2_custom"
 		"ItemRequirements"
 		{
-			"01"						"item_desolator_1;item_desolator_1"
+			"01"						"item_desolator_1;item_desolator_1;item_orb_of_corrosion"
 		}
 	}
  
@@ -11344,7 +11409,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"3500"
+		"ItemCost"						"9675"
 		"ItemShopTags"					"damage;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"desolator"
@@ -11360,8 +11425,9 @@
 				"corruption_armor"		"-30"
 				"corruption_duration"	"14.0"
 				"bonus_damage_per_kill"	"5"
-				"max_damage"			"25"
-				"chance_to_stack"	"5"
+				"max_damage"			"200"
+				"chance_to_stack"		"15"
+				"bonus_health"			"625"
 		}
 	}
 
@@ -11479,12 +11545,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_chance"			"20"
+				"crit_chance"			"30"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_multiplier"		"200"
+				"crit_multiplier"		"220"
 			}
 		}
 	}
@@ -11543,7 +11609,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_multiplier"		"275"
+				"crit_multiplier"		"245"
 			}
 			
 			"ItemResult"					"item_greater_crit2"

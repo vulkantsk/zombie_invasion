@@ -22,6 +22,7 @@ LinkLuaModifier( "modifier_imba_power_treads_2", "items/bots/item_power_treads.l
 LinkLuaModifier( "modifier_imba_mega_treads_stat_multiplier_00", "items/bots/item_power_treads.lua", LUA_MODIFIER_MOTION_NONE )	-- Mega Treads strength stat multiplier
 LinkLuaModifier( "modifier_imba_mega_treads_stat_multiplier_01", "items/bots/item_power_treads.lua", LUA_MODIFIER_MOTION_NONE )	-- Mega Treads agility stat multiplier
 LinkLuaModifier( "modifier_imba_mega_treads_stat_multiplier_02", "items/bots/item_power_treads.lua", LUA_MODIFIER_MOTION_NONE )	-- Mega Treads intelligence stat multiplier
+LinkLuaModifier( "modifier_imba_mega_treads_stat_multiplier_03", "items/bots/item_power_treads.lua", LUA_MODIFIER_MOTION_NONE )
 
 -----------------------------------------------------------------------------------------------------------
 --	Item Definition
@@ -52,7 +53,7 @@ function item_power_treads_2:OnSpellStart()
 		end
 
 		-- Remove stat multiplier modifiers (they get reapplied in the item modifier if relevant)
-		for i = 0,2 do
+		for i = 0,3 do
 			local mod = caster:FindModifierByName("modifier_imba_mega_treads_stat_multiplier_0"..i)
 			if mod then caster:RemoveModifierByName("modifier_imba_mega_treads_stat_multiplier_0"..i) end
 		end
@@ -161,7 +162,7 @@ end
 
 function modifier_imba_power_treads_2:OnDestroy()
 	if IsServer() then
-		for i = 0,2 do
+		for i = 0,3 do
 			local parent = self:GetParent()
 			parent:RemoveModifierByName("modifier_imba_mega_treads_stat_multiplier_0"..i)
 		end
@@ -270,4 +271,53 @@ end
 
 function modifier_imba_mega_treads_stat_multiplier_02:GetModifierSpellAmplify_Percentage()
 	return self:GetAbility():GetSpecialValueFor("int_mode_amp")
+end
+
+if modifier_imba_mega_treads_stat_multiplier_03 == nil then modifier_imba_mega_treads_stat_multiplier_03 = class({}) end
+function modifier_imba_mega_treads_stat_multiplier_03:IsHidden() return true end
+function modifier_imba_mega_treads_stat_multiplier_03:IsDebuff() return false end
+function modifier_imba_mega_treads_stat_multiplier_03:IsPurgable() return false end
+function modifier_imba_mega_treads_stat_multiplier_03:RemoveOnDeath() return false end
+
+function modifier_imba_mega_treads_stat_multiplier_03:DeclareFunctions()
+	local funcs = {	MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_CONSTANT,
+	MODIFIER_PROPERTY_STATS_STRENGTH_BONUS, MODIFIER_PROPERTY_STATS_AGILITY_BONUS, MODIFIER_PROPERTY_STATS_INTELLECT_BONUS}
+	return funcs
+end
+
+function modifier_imba_mega_treads_stat_multiplier_03:GetModifierIncomingPhysicalDamageConstant()
+	return self:GetAbility():GetSpecialValueFor("all_mode_inc")
+end
+
+function modifier_imba_mega_treads_stat_multiplier_03:GetModifierBonusStats_Strength()
+	
+
+	local parent = self:GetParent()
+	
+
+	local ability = self:GetAbility()
+	local stats_bonus = ability:GetSpecialValueFor("bonus_stat_all")
+	return stats_bonus
+end
+
+function modifier_imba_mega_treads_stat_multiplier_03:GetModifierBonusStats_Agility()
+	
+
+	local ability = self:GetAbility()
+	local parent = self:GetParent()
+	
+
+	local stats_bonus = ability:GetSpecialValueFor("bonus_stat_all")
+	return stats_bonus
+end
+
+function modifier_imba_mega_treads_stat_multiplier_03:GetModifierBonusStats_Intellect()
+	
+
+	local parent = self:GetParent()
+	
+
+	local ability = self:GetAbility()
+	local stats_bonus = ability:GetSpecialValueFor("bonus_stat_all")
+	return stats_bonus
 end

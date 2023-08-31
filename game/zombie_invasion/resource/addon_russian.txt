@@ -1350,8 +1350,9 @@
 		"DOTA_Tooltip_Ability_item_sumon_boss_Description"			"<h1>Активная: Клик-Клик </h1>Если нажать эту вещь в правильном месте, которое напоминает иллюминат, то тогда..."
  
 		"DOTA_Tooltip_Ability_item_desolator_2_custom"				"Desolator 2"
-		"DOTA_Tooltip_Ability_item_desolator_2_custom_Description"						"<h1>Пассивное: Greater Corruption</h1> Атаки уменьшают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек.\n\n<h1>Пассивное: Soul Stealer</h1> Когда умирает крип, с вероятность в %chance_to_stack%%  ваш урон увеличивается на %bonus_damage_per_kill%. Максимум: %max_damage% урона."
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_Description"						"<h1>Пассивное: Greater Corruption</h1> Атаки уменьшают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек.\n\n<h1>Пассивное: Soul Stealer</h1> Когда умирает крип, с вероятность в %chance_to_stack%%  ваш урон и здоровье увеличится на %bonus_damage_per_kill%. Максимум: %max_damage% урона и здоровья."
 		"DOTA_Tooltip_Ability_item_desolator_2_custom_Note0"								"Снижение брони действует на постройки."
+		"DOTA_Tooltip_Ability_item_desolator_2_custom_bonus_health"						"+$health"	
 		"DOTA_Tooltip_Ability_item_desolator_2_custom_bonus_damage"						"+$damage"		
 		"DOTA_Tooltip_Ability_item_desolator_2_custom_Lore"						"Сие оружие, столь любимое демонами, стало прародителем творения, столь любимого смертными."		
  
@@ -1394,7 +1395,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_power_treads_2"                             "Mega Treads"
-		"DOTA_Tooltip_ability_item_power_treads_2_Description"                 "<h1>Активная: Switch Attribute</h1> Меняет атрибут между Силой, Ловкостью и Интеллектом.\n<h1><font color='#FF7800'>Пассивная: Source Boost</font></h1> Даёт определённый бонус основываясь на текущем атрибуте: \n<font color='#cc0000'>Сила</font> даёт %str_mode_resist%% сопротивления магии; <font color='#00802b'>Ловкость</font> даёт True Strike; <font color='#007acc'>Интеллект</font> даёт %int_mode_amp%% урона от способностей. \n\nБонусы к скорости передвижения от нескольких пар сапог не сочетаются."
+		"DOTA_Tooltip_ability_item_power_treads_2_Description"                 "<h1>Активная: Switch Attribute</h1> Меняет атрибут между Силой, Ловкостью и Интеллектом.\n<h1><font color='#FF7800'>Пассивная: Source Boost</font></h1> Даёт определённый бонус основываясь на текущем атрибуте: \n<font color='#cc0000'>Сила</font> даёт %str_mode_resist%% сопротивления магии; <font color='#00802b'>Ловкость</font> даёт True Strike; <font color='#007acc'>Интеллект</font> даёт %int_mode_amp%% урона от способностей. <font color='#7442c8'>Универсал</font> даёт %all_mode_inc%%  уменьшение входящего урона. \n\nБонусы к скорости передвижения от нескольких пар сапог не сочетаются. \n\nЭффект Универсала даёт атрибутов в два раза меньше. "
 		"DOTA_Tooltip_ability_item_power_treads_2_Note0"                       "Вы можете иметь более одного эффекта, при приобретении вторых сапогов, но одни и те же эффекты не складываются."
 		"DOTA_Tooltip_ability_item_power_treads_2_Lore"                        "Пара сапог, выделанных из жесткой кожи, которая способна изменять свои свойства по желанию владельца."
 		"DOTA_Tooltip_ability_item_power_treads_2_bonus_movement_speed"        "+$move_speed"
@@ -2674,6 +2675,7 @@
 		"DOTA_Tooltip_ability_yuki_revenge_damage_per_int"		"УРОНА ЗА ЕД. ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_yuki_revenge_radius"		"РАДИУС"
 		"DOTA_Tooltip_ability_yuki_revenge_heal"		"ЛЕЧЕНИЯ В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_yuki_revenge_base_damage"		"БАЗОВЫЙ УРОН В СЕКУНДУ:"
 
 			"DOTA_Tooltip_modifier_revenge_buff"	"Revenge Aura"
 			"DOTA_Tooltip_modifier_revenge_buff_Description"	"Холод вас согревает."
@@ -3165,9 +3167,8 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_damage"											 "+{s:bonus_damage_percent}% к урону от Midnight Pulse"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_pulse_radius"											"+{s:bonus_radius} к радиусу Midnight Pulse"  
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_number"											"+{s:bonus_spawn_count} к числу эйдолонов от Demonic Conversion"
-		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_malefice_stuns"											   "+{s:bonus_tooltip_stuns} к числу срабатываний от Malefice"
 		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_demonic_conversion_cooldown"											   "-{s:value} сек. перезарядки Demonic Conversion"
-		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_eyes"															"+{s:damage_per_stack}" урона evolution за стак"
+		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_eyes"															"+{s:bonus_damage_per_stack} урона evolution за стак"
  
 
 		// -----------------timber--------------------	

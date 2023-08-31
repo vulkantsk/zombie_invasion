@@ -126,13 +126,15 @@
 					"value"				"325 350 375 400 425 450 475"					 
 				}
  
-				"int_think"	 				"1"
+				"int_think"	 				"0.5"
 			 
 				"heal"				
 				{
-					"value"				"15 40 55 110 155 220 340"		
+					"value"				"20 40 80 160 240 310 360"		
 					"special_bonus_unique_yuki_revenge_heal"    "+560"			 
 				}
+				"base_damage" 			"45 70 110 165 210 245 290"
+		
  
 				 
 		}
@@ -159,7 +161,7 @@
 
 		"AbilityValues"
 		{
-			"duration"         "9"
+			"duration"         "14"
 
 			"bonus_armor"         "200"
 			"bonus_hp_regen"					
