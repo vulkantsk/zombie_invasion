@@ -1,23 +1,24 @@
 "AddonInfo"
 {
-"maps" "invasion_refresh invasion_refresh_nasqreal_fun_made test"
-"IsPlayable" "1"
-"MinimalPrecache" "0"
-"HeroGuidesSupported" "1"
-"ForceDefaultGuide" "0"
-"EnablePickRules" "1"
-"PenaltiesEnabled" "1"
-"EventGame" "1"
-"DrawCustomTeamHeroesOnMinimap" "1"
-"invasion_refresh"
-{
-"MaxPlayers" "5"
-}
-"invasion_refresh_nasqreal_fun_made"
-{
-"MaxPlayers" "5"
-}
-"test"
-{
-"MaxPlayers" "10"
+	"maps" "invasion_refresh invasion_refresh_nasqreal_fun_made test"
+	"IsPlayable" "1"
+	"MinimalPrecache" "0"
+	"HeroGuidesSupported" "1"
+	"ForceDefaultGuide" "0"
+	"EnablePickRules" "1"
+	"PenaltiesEnabled" "1"
+	"EventGame" "1"
+	"DrawCustomTeamHeroesOnMinimap" "1"
+	"invasion_refresh"
+	{
+	"MaxPlayers" "5"
+	}
+	"invasion_refresh_nasqreal_fun_made"
+	{
+	"MaxPlayers" "5"
+	}
+	"test"
+	{
+	"MaxPlayers" "10"
+	}
 }
