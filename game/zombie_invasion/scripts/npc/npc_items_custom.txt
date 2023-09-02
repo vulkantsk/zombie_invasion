@@ -7654,7 +7654,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_aura"			"12"
+				"damage_aura"			"8"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
@@ -7748,7 +7748,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_aura"			"44"
+				"damage_aura"			"16"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
@@ -7842,7 +7842,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_aura"			"144"
+				"damage_aura"			"24"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
