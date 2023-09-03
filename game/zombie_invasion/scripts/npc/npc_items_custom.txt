@@ -2332,7 +2332,7 @@
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
+		"ItemKillable"					"0" 
 		"ItemInitialCharges"			"1"	
 		"ItemStackable" 				"1"
 		"ItemPermanent" 				"0"	
