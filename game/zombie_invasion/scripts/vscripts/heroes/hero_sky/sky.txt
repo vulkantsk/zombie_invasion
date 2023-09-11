@@ -129,56 +129,42 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
-
-	"ability_skywrath_mage_ancient_seal"
+	"ability_bad_juju"
 	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ScriptFile"					"heroes/hero_sky/ancient_seal"
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_sky/ancient_seal.lua"
 		"AbilityTextureName"			"skywrath_mage_ancient_seal"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilitySound"					"Hero_SkywrathMage.AncientSeal.Target"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_Dazzle.Weave"
 		"HasScepterUpgrade"			"0"
 
+		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700 750 800 850"
-		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
-
-		// Time
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 90 100 110"
-
+		"AbilityCastRange"				"1200"
+		
+		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-30 -45 -60 -5"
-				"LinkedSpecialBonus"	"special_bonus_unique_skywrath_3"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"seal_duration"			"3.0 4.0 5.0 6.0"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"scepter_radius"		"700"
-				"RequiresScepter"	"1"
-			}
+			
+				"cooldown_reduction"		"25 33 50"
+				"armor_reduction"
+				{	
+					"value"			"0.2 0.4 0.6"
+					"special_bonus_unique_sky_juju"	"+0.4"
+				}
+				"duration"					"4 6 8"
+				"radius"					"900 1200 1400"
+			
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
     "sky_bolt"
     {
@@ -233,6 +219,16 @@
  
 	}
 	"special_bonus_unique_sky_promise"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_sky_juju"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
