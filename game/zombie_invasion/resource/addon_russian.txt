@@ -1937,6 +1937,12 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} интеллекта endless widsom"
 		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% урон от глейвов"
 
+		"DOTA_Tooltip_Ability_int"											"Endless Wisdom"
+		"DOTA_Tooltip_Ability_int_Description"								"Сайленсер получает бонусный интеллект со временем."
+		"DOTA_Tooltip_Ability_int_Lore"								"Мудрость пророков растёт, как растёт курс доллара."
+		"DOTA_Tooltip_Ability_int_grow_int"        								"ИНТЕЛЛЕКТА ЗА СТАК:"
+		"DOTA_Tooltip_Ability_int_stack_interval"                                        "ИНТЕРВАЛ СТАКА:"
+
         //---tb-----
         "DOTA_Tooltip_Ability_tb_illusion_dd"                                            "<font color='#ff4d4d'>Conjure Image</font>"
         "DOTA_Tooltip_Ability_tb_illusion_dd_Description"                                "Создает иллюзию героя, которая наносит урон."
@@ -2281,44 +2287,56 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_slark_shadow_bonus_bat"											   "-{s:bonus_bonus_bat} к уменьшению базового времени атаки от Shadow Dance"
 
 
-        //-------------------oracle-----------------------
-		"DOTA_Tooltip_Ability_false_promise_custom"											"False Promise"
-		"DOTA_Tooltip_Ability_false_promise_custom_Description"								"Оракул наносит цели случайный урон, в пределах зависящих от его интеллекта."
+        //-------------------SkyWraith Mage-----------------------
+		"DOTA_Tooltip_Ability_false_promise_custom"											"SkyMage Promise"
+		"DOTA_Tooltip_Ability_false_promise_custom_Description"								"Скай наносит цели случайный урон, в пределах зависящих от его интеллекта."
 		"DOTA_Tooltip_Ability_false_promise_custom_Lore"								"Астральная сфера трещит от мощности, и из неё вырывается чистая энергия, временно разрывая связь врага с его собственным телом."
 		"DOTA_Tooltip_Ability_false_promise_custom_min_damage"        								"МИНИМАЛЬНЫЙ УРОН:"
 		"DOTA_Tooltip_Ability_false_promise_custom_max_damage"                                        "МАКСИМАЛЬНЫЙ УРОН:"
-		"DOTA_Tooltip_Ability_false_promise_custom_bonus_int_damage"                                          "МНОЖИТЕЛЬ ИНТЕЛЛЕКТА:"
-
-		"DOTA_Tooltip_Ability_death_or_life"											"Death or Life?"
-		"DOTA_Tooltip_Ability_death_or_life_Description"								"Оракул проверяет веру врага, усиливая его, или нанося огромный урон."
-		"DOTA_Tooltip_Ability_death_or_life_Lore"								"Как зеркальные залы умножают свет одной свечи, так и разбитые стены вселенной превращают огонёк пророчества в жгучий факел."
-		"DOTA_Tooltip_Ability_death_or_life_kill_chance"        								"%ШАНС ПОЛУЧИТЬ УРОН:"
-		"DOTA_Tooltip_Ability_death_or_life_zzz"                                        "%ШАНС УВЕЛИЧИТЬ УРОН ЦЕЛИ:"
-		"DOTA_Tooltip_Ability_death_or_life_hp_proc"                                          "%УРОН ОТ МАКСИМАЛЬНОГО ЗДОРОВЬЯ:"
-		"DOTA_Tooltip_Ability_death_or_life_buff_duration"                                          "ДЛИТЕЛЬНОСТЬ УСИЛЕНИЯ:"	
-
-		"DOTA_Tooltip_Ability_int"											"Endless Wisdom"
-		"DOTA_Tooltip_Ability_int_Description"								"Сайленсер получает бонусный интеллект со временем."
-		"DOTA_Tooltip_Ability_int_Lore"								"Мудрость пророков растёт, как растёт курс доллара."
-		"DOTA_Tooltip_Ability_int_grow_int"        								"ИНТЕЛЛЕКТА ЗА СТАК:"
-		"DOTA_Tooltip_Ability_int_stack_interval"                                        "ИНТЕРВАЛ СТАКА:"
+		"DOTA_Tooltip_Ability_false_promise_custom_bonus_int_damage"                                          "МНОЖИТЕЛЬ ИНТЕЛЛЕКТА:"	
 
 		"DOTA_Tooltip_Ability_oracle_time"											"Borrowed Time"
-		"DOTA_Tooltip_Ability_oracle_time_Description"								"Оракул обращает весь получаемый урон в лечение."
+		"DOTA_Tooltip_Ability_oracle_time_Description"								"SkyMage обращает весь получаемый урон в лечение."
 		"DOTA_Tooltip_Ability_oracle_time_Lore"								"Эта сила, самая противоестественная из всех сил пророков, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — дает свежие силы."
 		"DOTA_Tooltip_Ability_oracle_time_duration"        								"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_Ability_oracle_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА"
-
-		"DOTA_Tooltip_Ability_arc_warden_tempest_double"											"Double promise"
-		"DOTA_Tooltip_Ability_arc_warden_tempest_double_Description"								"Оракул создаёт свою копию, которая может применять его способности и использовать все предметы, кроме расходуемых и тех, что теряются при смерти. Копия имеет отдельное время перезарядки способностей и предметов."
-		"DOTA_Tooltip_Ability_arc_warden_tempest_double_Lore"								"Искаженный мощью своих соперников, Оракул принимает своего злейшего врага: внутренний хаос."
-		"DOTA_Tooltip_Ability_arc_warden_tempest_double_duration"        								"ДЛИТЕЛЬНОСТЬ:"
 
 
 		"DOTA_Tooltip_Ability_sky_bolt"											"Lighting Strike"
 		"DOTA_Tooltip_Ability_sky_bolt_Description"								"Герой наност коллосальный урон одиночной цели."
 		"DOTA_Tooltip_Ability_sky_bolt_Lore"								"Истина, что таится в моём сердце, будет начертана в вышине."
 		"DOTA_Tooltip_Ability_sky_bolt_damage"        								"УРОН:"
+
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt"				"Arcane bolt"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_Description"				"Урон от этой тучи света слишком огромен чтобы выдержали глаза зомби."
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_Lore"					"Этот свет укажет нам путь."
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_bolt_speed"				"СКОРОСТЬ СНАРЯДА:"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_bolt_damage"						"УРОН СНАРЯДА:"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_int_multiplier"				"УРОН ОТ ИНТЕЛЛЕКТА:"
+
+
+
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot"					"Concussive shot"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_Description"		"Искра, что поражает всех существ по близости нанося им огромный урон и замеляя их."
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_Lore"				"Самое красивое что видел этот свет."
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_damage"				"УРОН:"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_slow_duration"		"ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_movement_speed_pct"					"%ЗАМЕДЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_creep_damage_pct"					"%БОНУС УРОНА ПО КРИПАМ:"
+
+
+
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal"						"Ancient seal"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_Description"			"Снижает сопротивление магии врага Скайраса и затыкая его своим великим эго."
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_Lore"				"Просто заткнись и сдохни - P.S Skywraith"
+
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_resist_debuff"				"%СОПРОТИВЛЕНИЯ МАГИИ"
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_seal_duration"				"ДЛИТЕЛЬНОСТЬ:"
+
+		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_shard_Description"		"Добавляет заряд способности"
+		"DOTA_Tooltip_Ability_special_bonus_unique_sky_bolt"						"+0.2 к урону от интеллекта способности arcane bolt"
+		"DOTA_Tooltip_Ability_special_bonus_unique_sky_concusive"					"+75% урона по крипам способности concussive shot."
+		"DOTA_Tooltip_Ability_special_bonus_unique_sky_promise"						"+0.55 к урону от интеллекта способности skymage promise."
 
 		"DOTA_Tooltip_Ability_grand"											"True Power"
 		"DOTA_Tooltip_Ability_grand_Description"								"Герой сокращает перезарядку способностей, и затраты маны на их использование."
@@ -2359,7 +2377,7 @@
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_Lore"								"Их даже не видят сущности, но они есть.."
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_bonus_attack_range"								"ДАЛЬНОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_creeps_damage"								"%ПРОНЗАЮЩИЙ УРОН:"
-		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_shard_description"										"Увеличивает дальйность атаки."
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_shard_description"										"Увеличивает дальность атаки."
 
 
 		"DOTA_Tooltip_ability_Meld"								"Meld"

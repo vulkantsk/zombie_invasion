@@ -1873,7 +1873,7 @@
  
 		    //-------------------oracle-----------------------
 		"DOTA_Tooltip_Ability_false_promise_custom"											"False promise"
-		"DOTA_Tooltip_Ability_false_promise_custom_Description"								"Oracle deals random damage to the target based on its Intelligence."
+		"DOTA_Tooltip_Ability_false_promise_custom_Description"								"Skymage deals random damage to the target based on its Intelligence."
 		"DOTA_Tooltip_Ability_false_promise_custom_Lore"								"The astral sphere bursts with power, and pure energy bursts out of it, temporarily severing the enemy's connection with his own body."
 		"DOTA_Tooltip_Ability_false_promise_custom_min_damage"        								"MIN DAMAGE:"
 		"DOTA_Tooltip_Ability_false_promise_custom_max_damage"                                        "MAX DAMAGE:"

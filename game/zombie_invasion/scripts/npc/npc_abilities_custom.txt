@@ -10895,26 +10895,20 @@
     	"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"0.01"
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"				"5 4 3 2"
-		"AbilityManaCost" "25 35 45 55"
+		"AbilityCooldown"				"4 3.5 3 2 2.5 1.5 1"
+		"AbilityManaCost" "25 35 45 55 75 95 115"
 
-    	"AbilitySpecial"
+    	"AbilityValues"
     	{
-         	"01"
-			{
-				"var_type"							"FIELD_INTEGER"
+         	
 				"min_damage"							"50 100 150 200 250 300 350"
-			}
-			"02"
-			{
-				"var_type"							"FIELD_FLOAT"
+			
 				"max_damage"					"100 200 300 400 500 600 700"
 
-			}
-				"03"
+			"bonus_int_damage"
 			{
-				"var_type"							"FIELD_FLOAT"
-				"bonus_int_damage"					"0.35 0.7 1.05 1.4 1.75 2.1 2.45"
+				"value"					"0.35 0.7 1.05 1.4 1.75 2.1 2.45"
+				"special_bonus_unique_sky_promise"		"+0.55"
 			}	
     	}  
     }
@@ -10985,11 +10979,10 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
          "AbilityTextureName"  "oracle/time"
-    	"MaxLevel"            "3"
-    	"LevelsBetweenUpgrades" "10"
-    	"RequiredLevel" "10"
+    	"MaxLevel"            "1"
+    	"IsGrantedByScepter"			"1"
 		"AbilitySound"					"Hero_Abaddon.BorrowedTime"
-		"AbilityCastRange"				"1000"
+		"AbilityCastRange"				"700"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
@@ -10997,27 +10990,26 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60.0 50.0 40.0"
+		"AbilityCooldown"				"88.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0 0 0"
+		"AbilityManaCost"				"0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
 
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"3.0 3.0 3.0"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"int_duration"					"0.006 0.008 0.01"
-			}
+			
+				"duration"					"2.0"
+			
+				"int_duration"
+				{
+					"value"				"0.02"
+					"special_bonus_unique_sky_oracle_time"	"+0.3"
+				}
+			
 		}
 	}
 

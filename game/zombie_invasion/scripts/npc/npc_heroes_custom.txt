@@ -1418,7 +1418,7 @@
 		"Model"		"models/heroes/oracle/oracle.vmdl"
 		"ModelScale"		"1.000000"
 
-		"Ability1"		"false_promise_custom"
+		"Ability1"		""
 		"Ability2"		"death_or_life"
 		"Ability3"		""
 		"Ability4"		"generic_hidden"
@@ -1467,19 +1467,19 @@
 		"npc_dota_hero_skywrath_mage"
 	{
  
-		"Ability1"		"skywrath_mage_arcane_bolt"
-		"Ability2"		"skywrath_mage_concussive_shot"
-		"Ability3"		"skywrath_mage_ancient_seal"
-		"Ability4"		"sky_bolt"
-		"Ability5"		"generic_hidden"
-		"Ability6"		"skywrath_mage_mystic_flare"
+		"Ability1"		"ability_skywrath_mage_arcane_bolt"
+		"Ability2"		"ability_skywrath_mage_concussive_shot"
+		"Ability3"		"false_promise_custom"
+		"Ability4"		"pugna_decrepify"
+		"Ability5"		"oracle_time"
+		"Ability6"		"sky_bolt"
 		"Ability10"		"special_bonus_armor_5"
 		"Ability11"		"special_bonus_attack_base_damage_100"
-		"Ability12"		"special_bonus_unique_skywrath_2"
+		"Ability12"		"special_bonus_unique_sky_bolt"
 		"Ability13"		"special_bonus_spell_amplify_15" 	 
 		"Ability14"		"special_bonus_cast_range_125"
-		"Ability15"		"special_bonus_magic_resistance_12"
-		"Ability16"		"special_bonus_strength_40"
+		"Ability15"		"special_bonus_unique_sky_concusive"
+		"Ability16"		"special_bonus_unique_sky_promise"
 		"Ability17"		"special_bonus_intelligence_25"
 
 		// Attack
