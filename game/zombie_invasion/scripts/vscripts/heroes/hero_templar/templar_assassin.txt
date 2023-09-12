@@ -125,7 +125,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_templar/queen_of_the_secret_techiques/queen_of_the_secret_techiques"
 		"AbilityTextureName"			"templar_secret"
-		"LevelsBetweenUpgrades"			"1"
+		"LevelsBetweenUpgrades"			"10"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"	
 		"MaxLevel"						"3"
 	

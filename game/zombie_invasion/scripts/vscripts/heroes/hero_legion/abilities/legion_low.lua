@@ -8,7 +8,7 @@ end
 
 
 
-LinkLuaModifier("modifier_legoin_low", "heroes/hero_legion/legion_low", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_legoin_low", "heroes/hero_legion/abilities/legion_low", LUA_MODIFIER_MOTION_NONE)
 
 legion_low = class({})
 
@@ -47,6 +47,15 @@ function modifier_legoin_low:OnIntervalThink()
 end
 
 function modifier_legoin_low:OnCreated(kv)
+
+    local particle = ParticleManager:CreateParticle("particles/lc_press_burn.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent()) 
+    ParticleManager:SetParticleControl(particle, 0, self:GetParent():GetAbsOrigin())
+
+
+    self.cast = ParticleManager:CreateParticle("particles/units/heroes/hero_legion_commander/legion_commander_press_hands.vpcf", PATTACH_CUSTOMORIGIN, self:GetParent())
+    ParticleManager:SetParticleControlEnt( self.cast, 0, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetParent():GetAbsOrigin(), true )
+    ParticleManager:SetParticleControlEnt( self.cast, 1, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetParent():GetAbsOrigin(), true )
+    ParticleManager:SetParticleControlEnt( self.cast, 2, self:GetParent(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetParent():GetAbsOrigin(), true )
  	self.armor = self:GetAbility():GetSpecialValueFor( "bonuss_armor" )
     self.magic = self:GetAbility():GetSpecialValueFor( "bonuss_magic" )    
  	    self:StartIntervalThink(0.2)

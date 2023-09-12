@@ -129,7 +129,45 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
-	"ability_bad_juju"
+		"sky_time"
+	{
+		"ScriptFile"					"heroes/hero_sky/sky_time"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"abaddon_borrowed_time"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"IsGrantedByScepter"			"1"
+        "HasScepterUpgrade"				"0"
+    	"MaxLevel"            "1"
+		"AbilitySound"					"Hero_Abaddon.BorrowedTime"
+		"AbilityCastRange"				"700"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"88.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			
+				"duration"					"2.0"
+			
+				"int_duration"
+				{
+					"value"				"0.02"
+					"special_bonus_unique_sky_promise"	"+0.03"	
+				}
+		}
+				
+	}
+	"ancient_seal"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------

@@ -1,12 +1,12 @@
-ability_bad_juju = class({})
-LinkLuaModifier( "modifier_ability_bad_juju_passive", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_ability_bad_juju_debuff", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
+ancient_seal = class({})
+LinkLuaModifier( "modifier_ancient_seal_passive", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ancient_seal_debuff", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
 
-function ability_bad_juju:GetIntrinsicModifierName()
-    return 'modifier_ability_bad_juju_passive'
+function ancient_seal:GetIntrinsicModifierName()
+    return 'modifier_ancient_seal_passive'
 end
 
-modifier_ability_bad_juju_passive = class({
+modifier_ancient_seal_passive = class({
     IsHidden    = function() return true end,
     IsPermanent     = function(self) return true end,
 
@@ -19,7 +19,7 @@ modifier_ability_bad_juju_passive = class({
     GetModifierPercentageCooldown = function(self) return self.reductionCooldown end,
 })
 
-function modifier_ability_bad_juju_passive:OnCreated()
+function modifier_ancient_seal_passive:OnCreated()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
     self.reductionCooldown = self.ability:GetSpecialValueFor('cooldown_reduction')
@@ -27,11 +27,11 @@ function modifier_ability_bad_juju_passive:OnCreated()
     self.duration = self.ability:GetSpecialValueFor('duration')
 end
 
-function modifier_ability_bad_juju_passive:OnRefresh()
+function modifier_ancient_seal_passive:OnRefresh()
     self:OnCreated()
 end
 
-function modifier_ability_bad_juju_passive:OnAbilityFullyCast(keys)
+function modifier_ancient_seal_passive:OnAbilityFullyCast(keys)
     if keys.ability and keys.unit == self.parent and not self.parent:PassivesDisabled() and not keys.ability:IsItem() then
 
         local enemies = FindUnitsInRadius(
@@ -49,7 +49,7 @@ function modifier_ability_bad_juju_passive:OnAbilityFullyCast(keys)
         for k,v in pairs(enemies) do 
             v:AddStackModifier({
                 ability = self.ability,
-                modifier = 'modifier_ability_bad_juju_debuff',
+                modifier = 'modifier_ancient_seal_debuff',
                 updateStack = true,
                 duration = self.duration,
                 caster = keys.unit,
@@ -59,7 +59,7 @@ function modifier_ability_bad_juju_passive:OnAbilityFullyCast(keys)
     end
 end
 
-modifier_ability_bad_juju_debuff = class({
+modifier_ancient_seal_debuff = class({
     DeclareFunctions    = function(self)
         return {
             MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
@@ -68,7 +68,7 @@ modifier_ability_bad_juju_debuff = class({
     GetModifierPhysicalArmorBonus = function(self) return self.armor * self:GetStackCount() end,
 })
 
-function modifier_ability_bad_juju_debuff:OnCreated()
+function modifier_ancient_seal_debuff:OnCreated()
     self.armor = -self:GetAbility():GetSpecialValueFor('armor_reduction')
 
     self.nfx = ParticleManager:CreateParticle("particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
@@ -76,13 +76,13 @@ function modifier_ability_bad_juju_debuff:OnCreated()
     ParticleManager:SetParticleControlEnt(self.nfx, 1, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_hitloc", self:GetParent():GetAbsOrigin(), true)
 end
 
-function modifier_ability_bad_juju_debuff:OnDestroy() 
+function modifier_ancient_seal_debuff:OnDestroy() 
     if self.nfx then 
         ParticleManager:DestroyParticle(self.nfx, false)
         ParticleManager:ReleaseParticleIndex(self.nfx)
     end 
 end
 
-function modifier_ability_bad_juju_debuff:OnRefresh()
+function modifier_ancient_seal_debuff:OnRefresh()
     self.armor = -self:GetAbility():GetSpecialValueFor('armor_reduction')
 end

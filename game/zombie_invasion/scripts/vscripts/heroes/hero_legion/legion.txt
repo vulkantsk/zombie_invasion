@@ -1,0 +1,119 @@
+"DOTAAbilities"
+{
+ 	"legion_low"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_legion/abilities/legion_low"
+		"AbilityTextureName"			"Hero/legion"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"MaxLevel"                      "3"
+        "RequiredLevel"                 "10"
+        "LevelsBetweenUpgrades"			"10"
+
+		"AbilityValues"
+		{
+			
+				"bonuss_armor"		
+				{
+					"value" 					"0.25 0.50 0.75"
+					"special_bonus_unique_legion_low"		"+0.25"
+				}
+				"bonuss_magic"
+				{
+					"value"			"0.4 0.6 0.8"
+					"special_bonus_unique_legion_low"		"+0.2"
+				}
+
+			
+ 
+		}
+	}
+	 "press_the_berserk"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_legion/abilities/press_the_berserk.lua"
+        "AbilityTextureName"            "legion_commander_press_the_attack"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "MaxLevel"						"7"
+        "AbilityHealthCost"				"50 100 150 200 250 300 350"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0.2"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "12 11 10 9 8 7 6"
+        
+        // Cast Range
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "800"
+        
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"   "0.1"   // Primarily about the damage
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            
+                "duration"                  "6 7 8 9 10 11 12"
+          
+                "damage_increase_outgoing_pct"      "8 12 16 20 24 28 32"
+         
+                "damage_increase_incoming_pct"      "4 6 8 10 12 14 16"
+
+            	"health_regeneration_bonus"		
+            	{
+            		"value"	"0.2 0.4 0.6 0.8 1 1.2 1.4"
+            		"special_bonus_unique_legion_presstheberserkregeneration"	"+0.6"
+            	}
+
+            	"attack_speed_bonus"		
+            	{
+            		"value"	"70 110 150 190 240 280 320"
+            		"special_bonus_unique_legion_presstheberserkattackspeed"	"+140"
+            	}
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+    "special_bonus_unique_legion_presstheberserkattackspeed"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_legion_presstheberserkregeneration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+		"special_bonus_unique_legion_low"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+}

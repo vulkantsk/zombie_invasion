@@ -2295,11 +2295,11 @@
 		"DOTA_Tooltip_Ability_false_promise_custom_max_damage"                                        "МАКСИМАЛЬНЫЙ УРОН:"
 		"DOTA_Tooltip_Ability_false_promise_custom_bonus_int_damage"                                          "МНОЖИТЕЛЬ ИНТЕЛЛЕКТА:"	
 
-		"DOTA_Tooltip_Ability_oracle_time"											"Borrowed Time"
-		"DOTA_Tooltip_Ability_oracle_time_Description"								"SkyMage обращает весь получаемый урон в лечение."
-		"DOTA_Tooltip_Ability_oracle_time_Lore"								"Эта сила, самая противоестественная из всех сил пророков, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — дает свежие силы."
-		"DOTA_Tooltip_Ability_oracle_time_duration"        								"ДЛИТЕЛЬНОСТЬ"
-		"DOTA_Tooltip_Ability_oracle_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА"
+		"DOTA_Tooltip_Ability_sky_time"											"Skywraith Time"
+		"DOTA_Tooltip_Ability_sky_time_Description"								"SkyMage обращает весь получаемый урон в лечение."
+		"DOTA_Tooltip_Ability_sky_time_Lore"								"Эта сила, самая противоестественная из всех сил пророков, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — дает свежие силы."
+		"DOTA_Tooltip_Ability_sky_time_duration"        								"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_Ability_sky_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА"
 
 
 		"DOTA_Tooltip_Ability_sky_bolt"											"Lighting Strike"

@@ -1423,7 +1423,7 @@
 		"Ability3"		""
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
-		"Ability6"		"oracle_time"
+		"Ability6"		""
 		"Ability10"		"special_bonus_mp_regen_150"
 		"Ability11"		"special_bonus_movement_speed_20"
 		"Ability12"		"special_bonus_gold_income_60"
@@ -1470,8 +1470,8 @@
 		"Ability1"		"ability_skywrath_mage_arcane_bolt"
 		"Ability2"		"ability_skywrath_mage_concussive_shot"
 		"Ability3"		"false_promise_custom"
-		"Ability4"		"ability_bad_juju"
-		"Ability5"		"oracle_time"
+		"Ability4"		"sky_time"
+		"Ability5"		"ancient_seal"
 		"Ability6"		"sky_bolt"
 		"Ability10"		"special_bonus_armor_5"
 		"Ability11"		"special_bonus_intelligence_15"
@@ -1509,26 +1509,26 @@
 	{
 		"override hero"				"npc_dota_hero_legion_commander"
 		"Ability1"					"legion_commander_overwhelming_odds"
-		"Ability2"					"legion_commander_press_the_attack"
+		"Ability2"					"press_the_berserk"
 		"Ability3"					"legion_commander_moment_of_courage"
 		"Ability4"					"legion_low"
 		"Ability5"					"generic_hidden"
-		"Ability6"					"legion_commander_duel"
-		"Ability10"		"special_bonus_unique_legion_commander_6"
-		"Ability11"		"special_bonus_attack_speed_30"
-		"Ability12"		"special_bonus_unique_legion_commander_2"
-		"Ability13"		"special_bonus_unique_legion_commander_3"
-		"Ability14"		"special_bonus_unique_legion_commander"
+		"Ability6"					"legion_commander_duel_lua"
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		"special_bonus_unique_legion_presstheberserkregeneration"
+		"Ability14"		"special_bonus_unique_legion_presstheberserkattackspeed"
 		"Ability15"		"special_bonus_magic_resistance_35"
-		"Ability16"		"special_bonus_unique_legion_commander_5"
+		"Ability16"		""
 		"Ability17"		"special_bonus_hp_500"
 
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
-		"AttackDamageMin"			"15"										// Damage range min.
-		"AttackDamageMax"			"25"										// Damage range max.
-		"AttackRate"				"1.8"									// Speed of attack.
+		"AttackDamageMin"			"31"										// Damage range min.
+		"AttackDamageMax"			"42"										// Damage range max.
+		"AttackRate"				"1.5"									// Speed of attack.
 		"ProjectileSpeed"			"1550"									// Speed of projectile.
 		"AttackAnimationPoint"		"0.35"
 
@@ -1542,7 +1542,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"20"										// Base strength
-		"AttributeStrengthGain"		"4"										// Strength bonus per level.
+		"AttributeStrengthGain"		"3.2"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"10"										// Base intelligence
 		"AttributeIntelligenceGain"	"1.5"										// Intelligence bonus per level.
 		"AttributeBaseAgility"		"20"										// Base agility
