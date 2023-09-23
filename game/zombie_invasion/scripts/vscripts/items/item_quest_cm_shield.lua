@@ -23,7 +23,7 @@ modifier_item_quest_cm_shield = class({
 })
 
 function modifier_item_quest_cm_shield:GetTexture()
-	return "magic/Soul_Refresh"
+	return "items/pie_magic"
 end
 
 function modifier_item_quest_cm_shield:OnCreated()

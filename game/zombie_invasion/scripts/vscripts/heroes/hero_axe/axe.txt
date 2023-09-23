@@ -290,12 +290,12 @@
 				}
 				"bonus_base"			
 				{
-					"value"	"0.2"
+					"value"	"1"
 					"RequiresScepter"			"1"
 				}
 				"bonus_kill"		
 				{
-					"value"		"0.5"
+					"value"		"1"
 					"RequiresScepter"			"1"
 				}
  

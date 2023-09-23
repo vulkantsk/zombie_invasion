@@ -86,7 +86,7 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
-     "legion_duel_arena"
+     "ability_disruptor_kinetic_field"
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_legion/abilities/legion_duel_arena.lua"

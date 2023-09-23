@@ -1,13 +1,13 @@
-LinkLuaModifier( "modifier_legion_duel_arena_thinker", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_legion_duel_arena", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_disruptor_kinetic_field_thinker", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ability_disruptor_kinetic_field", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
 
-if legion_duel_arena == nil then
-    legion_duel_arena = class({})
+if ability_disruptor_kinetic_field == nil then
+    ability_disruptor_kinetic_field = class({})
 end
 
 --------------------------------------------------------------------------------
 
-function legion_duel_arena:OnSpellStart()
+function ability_disruptor_kinetic_field:OnSpellStart()
     local caster = self:GetCaster()
     local point = self:GetCursorPosition()
 
@@ -23,7 +23,7 @@ function legion_duel_arena:OnSpellStart()
 
     AddFOWViewer(caster:GetTeamNumber(), point, radius, delay + duration, true)
 
-    local fx = ParticleManager:CreateParticle("particles/units/heroes/hero_legion_commander/legion_duel_start_ring_rope.vpcf", PATTACH_WORLDORIGIN, nil)
+    local fx = ParticleManager:CreateParticle("particles/econ/items/enigma/enigma_world_chasm/enigma_blackhole_ti5_ring_spiral.vpcf", PATTACH_WORLDORIGIN, nil)
     ParticleManager:SetParticleControl(fx, 0, point)
     ParticleManager:SetParticleControl(fx, 1, Vector(radius, 1, 0))
     ParticleManager:SetParticleControl(fx, 2, Vector(delay, 0, 0))
@@ -32,18 +32,18 @@ function legion_duel_arena:OnSpellStart()
 
     Timers:CreateTimer(delay, function()
 
-        CreateModifierThinker(caster, self, "modifier_legion_duel_arena_thinker", {duration=duration, fx=fx}, point, caster:GetTeam(), false)
+        CreateModifierThinker(caster, self, "modifier_ability_disruptor_kinetic_field_thinker", {duration=duration, fx=fx}, point, caster:GetTeam(), false)
     end)
 end
 
-function legion_duel_arena:GetAOERadius()
+function ability_disruptor_kinetic_field:GetAOERadius()
     return self:GetSpecialValueFor("radius")
 end
 
 --------------------------------------------------------------------------------
 
 
-modifier_legion_duel_arena_thinker = class({
+modifier_ability_disruptor_kinetic_field_thinker = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return false end,
@@ -54,32 +54,32 @@ modifier_legion_duel_arena_thinker = class({
 
 --------------------------------------------------------------------------------
 
-function modifier_legion_duel_arena_thinker:IsAura()
+function modifier_ability_disruptor_kinetic_field_thinker:IsAura()
     return true
 end
 
-function modifier_legion_duel_arena_thinker:GetModifierAura()
-    return "modifier_legion_duel_arena"
+function modifier_ability_disruptor_kinetic_field_thinker:GetModifierAura()
+    return "modifier_ability_disruptor_kinetic_field"
 end
 
-function modifier_legion_duel_arena_thinker:GetAuraRadius()
+function modifier_ability_disruptor_kinetic_field_thinker:GetAuraRadius()
     return 99999
 end
 
-function modifier_legion_duel_arena_thinker:GetAuraSearchTeam()    
+function modifier_ability_disruptor_kinetic_field_thinker:GetAuraSearchTeam()    
     return DOTA_UNIT_TARGET_TEAM_ENEMY
 end
 
-function modifier_legion_duel_arena_thinker:GetAuraSearchType()    
+function modifier_ability_disruptor_kinetic_field_thinker:GetAuraSearchType()    
     return DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC
 end
 
-function modifier_legion_duel_arena_thinker:GetAuraSearchFlags()
+function modifier_ability_disruptor_kinetic_field_thinker:GetAuraSearchFlags()
     return DOTA_UNIT_TARGET_FLAG_NONE
 end
 
 if IsServer() then
-function modifier_legion_duel_arena_thinker:OnCreated(kv)
+function modifier_ability_disruptor_kinetic_field_thinker:OnCreated(kv)
     local caster = self:GetCaster()
     local point = self:GetParent():GetAbsOrigin()
     local radius = self:GetAbility():GetSpecialValueFor("radius")
@@ -87,7 +87,7 @@ function modifier_legion_duel_arena_thinker:OnCreated(kv)
     ParticleManager:DestroyParticle(kv.fx, true)
     ParticleManager:ReleaseParticleIndex(kv.fx)
 
-    self.field_particle = ParticleManager:CreateParticle("particles/units/heroes/hero_disruptor/disruptor_kineticfield.vpcf", PATTACH_WORLDORIGIN, nil)
+    self.field_particle = ParticleManager:CreateParticle("particles/econ/items/legion/legion_weapon_voth_domosh/legion_duel_ring_arcana.vpcf", PATTACH_WORLDORIGIN, nil)
     ParticleManager:SetParticleControl(self.field_particle, 0, point)
     ParticleManager:SetParticleControl(self.field_particle, 1, Vector(radius, 1, 1))
     ParticleManager:SetParticleControl(self.field_particle, 2, Vector(self:GetDuration(), 0, 0))
@@ -104,7 +104,7 @@ end
 --------------------------------------------------------------------------------
 
 
-modifier_legion_duel_arena = class({
+modifier_ability_disruptor_kinetic_field = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return true end,
@@ -121,13 +121,13 @@ modifier_legion_duel_arena = class({
 --------------------------------------------------------------------------------
 
 if IsServer() then
-function modifier_legion_duel_arena:OnCreated(kv)
+function modifier_ability_disruptor_kinetic_field:OnCreated(kv)
     self.activate = false
 
     self:StartIntervalThink(0.03)
 end
 
-function modifier_legion_duel_arena:OnIntervalThink()
+function modifier_ability_disruptor_kinetic_field:OnIntervalThink()
     local thinker = self:GetAuraOwner()
     if not thinker then self.activate = false return end
     local target = self:GetParent()
@@ -159,7 +159,7 @@ function modifier_legion_duel_arena:OnIntervalThink()
     end
 end
 
-function modifier_legion_duel_arena:GetModifierMoveSpeed_Absolute()
+function modifier_ability_disruptor_kinetic_field:GetModifierMoveSpeed_Absolute()
     if self.activate == true then
         return 0.1
     end

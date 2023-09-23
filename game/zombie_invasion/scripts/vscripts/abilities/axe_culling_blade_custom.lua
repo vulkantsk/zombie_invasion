@@ -90,3 +90,15 @@ end
 function axe_culling_blade_custom:IsHiddenWhenStolen()
 	return true
 end
+
+function axe_culling_blade_custom:RemoveOnDeath()
+    return false
+end
+
+function modifier_autocast_culling_blade:RemoveOnDeath()
+    return false
+end
+
+function axe_culling_blade_custom_autocast:RemoveOnDeath()
+    return false
+end
