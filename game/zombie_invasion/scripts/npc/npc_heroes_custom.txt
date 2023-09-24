@@ -1513,7 +1513,7 @@
 		"Ability3"					"legion_commander_moment_of_courage"
 		"Ability4"					"legion_low"
 		"Ability5"					"generic_hidden"
-		"Ability6"					"ability_disruptor_kinetic_field"
+		"Ability6"					"legion_duel_arena"
 		"Ability10"		""
 		"Ability11"		""
 		"Ability12"		""

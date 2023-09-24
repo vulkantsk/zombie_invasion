@@ -86,7 +86,7 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
-     "ability_disruptor_kinetic_field"
+     "legion_duel_arena"
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_legion/abilities/legion_duel_arena.lua"
@@ -118,12 +118,9 @@
         "AbilityValues"
         {
            
-                "radius"                    "340"
-           
-                "formation_time"            "1.2 1.2 1.2 1.2"
-           
-                "duration"                  "2.6 3.2 3.8 4.4"
-           
+                "radius"                    "400"           
+                "stats_per_kill"                    "10"           
+                "duration"                    "10"           
         }
     }
     "special_bonus_unique_legion_presstheberserkattackspeed"
