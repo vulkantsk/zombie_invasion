@@ -57,6 +57,7 @@ function modifier_item_armlet2:DeclareFunctions()
         MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
         MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
         MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
+        MODIFIER_EVENT_ON_TAKEDAMAGE
     }
 end
 
@@ -72,6 +73,26 @@ end
 function modifier_item_armlet2:GetModifierConstantHealthRegen()
     return self:GetAbility():GetSpecialValueFor("bonus_hp_regen")
 end
+
+function modifier_item_armlet2:OnTakeDamage(params)
+    if not IsServer() then return end
+    if self:GetParent() ~= params.attacker then return end
+    if self:GetParent() == params.unit then return end
+    if params.unit:IsBuilding() then return end
+    if params.unit:IsWard() then return end
+    if params.inflictor == nil and not self:GetParent():IsIllusion() and bit.band(params.damage_flags, DOTA_DAMAGE_FLAG_REFLECTION) ~= DOTA_DAMAGE_FLAG_REFLECTION then 
+        local heal = self:GetAbility():GetSpecialValueFor("lifesteal") / 100 * params.damage
+        self:GetParent():Heal(heal, self:GetAbility())
+
+        local particle = "particles/generic_gameplay/generic_lifesteal.vpcf"
+
+       
+
+        local effect_cast = ParticleManager:CreateParticle( particle, PATTACH_ABSORIGIN_FOLLOW, params.attacker )
+        ParticleManager:ReleaseParticleIndex( effect_cast )
+    end
+end
+
 
 modifier_item_armlet2_buff = class({})
 
@@ -100,6 +121,7 @@ function modifier_item_armlet2_buff:DeclareFunctions()
         MODIFIER_PROPERTY_CASTTIME_PERCENTAGE,
         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+        MODIFIER_EVENT_ON_TAKEDAMAGE
     }
 end
 
@@ -125,6 +147,44 @@ end
 
 function modifier_item_armlet2_buff:GetModifierAttackSpeedBonus_Constant()
     return self:GetAbility():GetSpecialValueFor("bonus_attack_speed_active")
+end
+
+function modifier_item_armlet2_buff:OnTakeDamage(params)
+    if not IsServer() then return end
+    if self:GetParent() ~= params.attacker then return end
+    if self:GetParent() == params.unit then return end
+    if params.unit:IsBuilding() then return end
+    if params.unit:IsWard() then return end
+
+    if params.inflictor == nil then
+        if not self:GetParent():IsIllusion() and bit.band(params.damage_flags, DOTA_DAMAGE_FLAG_REFLECTION) ~= DOTA_DAMAGE_FLAG_REFLECTION then
+           
+            local lifesteal = (self:GetAbility():GetSpecialValueFor("lifesteal_active")) / 100
+            self:GetParent():Heal(params.damage * lifesteal, self:GetAbility())
+            local particle = "particles/generic_gameplay/generic_lifesteal.vpcf"
+
+           
+            local effect_cast = ParticleManager:CreateParticle( particle, PATTACH_ABSORIGIN_FOLLOW, params.attacker )
+            
+            ParticleManager:ReleaseParticleIndex( effect_cast )
+        end
+    else
+        if not self:GetParent():IsIllusion() and bit.band(params.damage_flags, DOTA_DAMAGE_FLAG_REFLECTION) ~= DOTA_DAMAGE_FLAG_REFLECTION then
+            local bonus_percentage = 0
+            for _, mod in pairs(self:GetParent():FindAllModifiers()) do
+                if mod.GetModifierSpellLifestealRegenAmplify_Percentage and mod:GetModifierSpellLifestealRegenAmplify_Percentage() then
+                    bonus_percentage = bonus_percentage + mod:GetModifierSpellLifestealRegenAmplify_Percentage()
+                end
+            end
+    
+            local lifesteal = (self:GetAbility():GetSpecialValueFor("magic_lifesteal_active")) / 100
+            local heal = params.damage * lifesteal
+            heal = heal * (bonus_percentage / 100 + 1)
+            self:GetParent():Heal(heal, self:GetAbility())
+            local octarine = ParticleManager:CreateParticle( "particles/items3_fx/octarine_core_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, params.attacker )
+            ParticleManager:ReleaseParticleIndex( octarine )
+        end
+    end
 end
 
 

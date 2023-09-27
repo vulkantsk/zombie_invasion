@@ -12734,7 +12734,7 @@
 			"bonus_damage"			"70"
 			"bonus_attack_speed"	"110"
 			"bonus_armor"			"12"
-			"bonus_hp_regen"		"30"
+			"bonus_hp_regen"		"8"
 			"lifesteal"				"12"
 			"bonus_damage_active"			"220"
 			"movespeed_active"			"90"
