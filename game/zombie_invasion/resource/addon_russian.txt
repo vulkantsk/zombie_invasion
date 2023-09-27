@@ -2363,7 +2363,7 @@
 		"DOTA_Tooltip_Ability_ancient_seal_duration"				"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_Ability_ancient_seal_radius"				"РАДИУС:"
 
-		"DOTA_Tooltip_Ability_special_bonus_unique_sky_juju"						"+{s:bonus_armor_reduction} к уменьшению брони stay sky."
+		"DOTA_Tooltip_Ability_special_bonus_unique_sky_juju"						"+{s:bonus_armor_reduction} к уменьшению брони Ancient seal."
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_shard_Description"		"Добавляет заряд способности"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_bolt"						"+0.2 к урону от интеллекта способности arcane bolt"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_concusive"					"+75% урона по крипам способности concussive shot."
