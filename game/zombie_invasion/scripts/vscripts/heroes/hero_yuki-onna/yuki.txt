@@ -130,10 +130,10 @@
 			 
 				"heal"				
 				{
-					"value"				"20 40 80 160 240 310 360"		
-					"special_bonus_unique_yuki_revenge_heal"    "+560"			 
+					"value"				"5 15 30 60 120 180 240"		
+					"special_bonus_unique_yuki_revenge_heal"    "+160"			 
 				}
-				"base_damage" 			"45 70 110 165 210 245 290"
+				"base_damage" 			"15 30 45 90 110 160 220"
 		
  
 				 

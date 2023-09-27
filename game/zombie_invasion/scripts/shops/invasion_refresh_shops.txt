@@ -31,7 +31,6 @@
 	{
 	    "item"      "item_shield"
 		"item"		"item_ring_of_protection"
-		"item"		"item_stout_shield"
 		"item"		"item_midas"
 		"item"		"item_quelling_blade"
 		"item"		"item_blight_stone"
@@ -44,6 +43,7 @@
 		"item"		"item_mithril_hammer"
 		"item"		"item_Split_medusa"
 		"item"		"item_war_of_the_crossbow"
+		"item"		"item_armlet2"
 	}
 			
 	"misc"

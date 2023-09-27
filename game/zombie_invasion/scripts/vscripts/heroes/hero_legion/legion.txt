@@ -104,7 +104,7 @@
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "FightRecapLevel"               "1"
         "MaxLevel"						"7"
-        "AbilityHealthCost"				"50 100 150 200 250 300 350"
+        "AbilityHealthCost"				"150 200 350 400 550 600 750"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -155,7 +155,8 @@
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "FightRecapLevel"               "1"
-        "LevelsBetweenUpgrades"         "12"
+        "RequiredLevel"                 "10"
+        "LevelsBetweenUpgrades"         "10"
         "MaxLevel"                      "3"
         "HasScepterUpgrade"         "1"
 

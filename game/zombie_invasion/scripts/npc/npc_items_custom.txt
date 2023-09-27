@@ -12690,6 +12690,62 @@
 
 		}
 	}
+	"item_recipe_armlet2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven" 		
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"custom_folder/item_recipe"		
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"300"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_armlet2"
+		"ItemRequirements"
+		{
+			"01"						"item_satanic;item_armlet"
+		}
+	}
 
+
+
+	"item_armlet2"
+	{
+		"BaseClass" 					"item_lua"
+		"ScriptFile" 					"items/item_armlet2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"Model"							"models/props_gameplay/red_box.vmdl" 
+		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"AbilityTextureName"			"armlet2"
+		"ItemCost"						"7850"
+		"AbilityCooldown"				"0"
+		"ItemInitialCharges"			"0"
+		"ItemDisplayCharges"			"0"
+		"ItemSellable"					"1"
+
+		"AbilityValues"
+		{
+			"bonus_damage"			"70"
+			"bonus_attack_speed"	"110"
+			"bonus_armor"			"12"
+			"bonus_hp_regen"		"30"
+			"lifesteal"				"12"
+			"bonus_damage_active"			"220"
+			"movespeed_active"			"90"
+			"cast_point_active"		"15"
+			"bonus_str_active"				"90"
+			"lifesteal_active"	"51"
+			"magic_lifesteal_active"			"40"
+			"armor_active"		"16"
+			"damage_per_second_active"				"200"
+			"bonus_attack_speed_active"				"420"
+		}
+	}
 
 }

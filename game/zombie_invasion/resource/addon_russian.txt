@@ -475,6 +475,16 @@
 		"DOTA_Tooltip_ability_item_Split_medusa_Regen_bonus"						"+$hp_regen"
 
 
+		"DOTA_Tooltip_ability_item_armlet2"											"Band of courage power"
+		"DOTA_Tooltip_ability_item_armlet2_Description"											"<h1>Активная: Band of Devil power </h1> <font color='#6f0035'> если активирован герой получает +%bonus_damage_active% доп.урона, +%movespeed_active% скорости передвижения, +%bonus_str_active% доп.силы, +%lifesteal_active% вампиризма, +%magic_lifesteal_active% маг.вампиризм, +%armor_active% доп.броня, +%bonus_attack_speed_active%, но герой получает +%damage_per_second_active% урона в секунду.</font>" 
+		"DOTA_Tooltip_ability_item_armlet2_Lore"				"Однажды я смогу покорить своих демонов или же нет..?"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_damage"		"+$damage"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_attack_speed"	"+$Attack"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_armor"			"+$armor"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_hp_regen" 		"+$hp_regen"
+		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
+
+
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>7</font>"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Штормовой лук дэдала способен разрушить саму концепцию этого мира."
