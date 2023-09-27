@@ -1986,12 +1986,46 @@
         "DOTA_Tooltip_Ability_item_color_fuchsia"                                            "Пурпурный"
 
         //-----------lc-------------
+        "DOTA_Tooltip_Ability_overwhelming_odds"                                            "overhelming odds"
+        "DOTA_Tooltip_Ability_overwhelming_odds_Description"								"Выпускает град стрел и поражает своих противников."
+        "DOTA_Tooltip_Ability_overwhelming_odds_damage"										"БАЗОВЫЙ УРОН:"
+        "DOTA_Tooltip_Ability_overwhelming_odds_damage_per_unit"							"УРОН ЗА ЮНИТА:"
+        "DOTA_Tooltip_Ability_overwhelming_odds_bonus_attack_speed"					"%ДОП. СКОРОСТЬ АТАКИ:"
+        "DOTA_Tooltip_Ability_overwhelming_odds_duration"									"ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_overwhelming_odds_radius"										"РАДИУС:"
+        "DOTA_Tooltip_Ability_overwhelming_odds_shard_Description"							"За каждое задетое существо получает по +%armorka% броне и увеличвает длительность способности до %shard_duration% секунд"
+
+        "DOTA_Tooltip_Ability_press_the_berserk"											"press the berserk"
+        "DOTA_Tooltip_Ability_press_the_berserk_Description"								"Герой жертвует частью своей крови чтобы получить повышенную регенерацию и скорость атаки на %duration% секунд.<font color='#ff0000'><h1>BERSERK</h1> также увеличвает весь урон по себе %damage_increase_incoming_pct%%% и урона по врагам %damage_increase_outgoing_pct%%%. </font>"
+        "DOTA_Tooltip_Ability_press_the_berserk_Lore"				"Иногда парою сила требует жертв - Легион."
+        "DOTA_Tooltip_Ability_press_the_berserk_duration"					"ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_press_the_berserk_damage_increase_outgoing_pct"					"%ДОП. ИСХОДЯЩИЙ УРОН:"
+        "DOTA_Tooltip_Ability_press_the_berserk_damage_increase_incoming_pct"					"%ДОП. ВХОДЯЩИЙ УРОН:"
+        "DOTA_Tooltip_Ability_press_the_berserk_health_regeneration_bonus"						"%БОНУСНАЯ РЕГЕНЕРАЦИЯ:"
+        "DOTA_Tooltip_Ability_press_the_berserk_attack_speed_bonus"								"%БОНУС СКОРОСТИ АТАКИ:"
+
+        "DOTA_Tooltip_modifier_press_the_berserk"						"Жатва Легиона."
+        "DOTA_Tooltip_modifier_press_the_berserk_Description"						"Ваша кровь горячее, а боль начинает становится всё сильнее."
+
+        "DOTA_Tooltip_Ability_legion_duel_arena"											"legioner challenge"
+        "DOTA_Tooltip_Ability_legion_duel_arena_Description"								"Легион вызывает всех кто находится в кругу на неравную для неё дуэль которая длится %duration%	секунд. Испытывая свои возможности чтобы стать в будущем ещё более сильным легионом."
+        "DOTA_Tooltip_Ability_legion_duel_arena_Lore"										"Я единый Легион."
+        "DOTA_Tooltip_Ability_legion_duel_arena_scepter_Description"					"Увеличивает количество статов получаемых за убийство и длительность."
+        "DOTA_Tooltip_Ability_legion_duel_arena_duration"				"ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_legion_duel_arena_stats_per_kill"				"СТАТЫ ЗА УБИЙСТВО:"
+        "DOTA_Tooltip_Ability_legion_duel_arena_radius"				"РАДИУС:"
+        
         "DOTA_Tooltip_Ability_legion_low"                                            "Combat Excitement"
         "DOTA_Tooltip_Ability_legion_low_Description"                                "За каждый потерянный процент здоровья герой получает бонусы."
         "DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "БОНУС БРОНИ:"
         "DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "БОНУС ЗАЩИТЫ ОТ МАГИИ:"
         "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Слабость не порок."
 
+        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonuss_armor} ко всем эффектам legion low"
+        "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkregeneration"		"+{s:bonus_health_regeneration_bonus} бонус к регенерации BERSERK."
+        "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkattackspeed"		"+{s:bonus_attack_speed_bonus} бонус к скорости атаки BERSERK."
+        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"											"+{s:bonus_damage} урона overhelm odds"
+        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage_per_unit"									"+{s:bonus_damage_per_unit} урона за существо overhelm odds"
 
 		// -----------------sniper--------------------		
 
@@ -2301,7 +2335,6 @@
 		"DOTA_Tooltip_Ability_sky_time_duration"        								"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_Ability_sky_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА"
 
-
 		"DOTA_Tooltip_Ability_sky_bolt"											"Lighting Strike"
 		"DOTA_Tooltip_Ability_sky_bolt_Description"								"Герой наност коллосальный урон одиночной цели."
 		"DOTA_Tooltip_Ability_sky_bolt_Lore"								"Истина, что таится в моём сердце, будет начертана в вышине."
@@ -2314,8 +2347,6 @@
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_bolt_damage"						"УРОН СНАРЯДА:"
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_arcane_bolt_int_multiplier"				"УРОН ОТ ИНТЕЛЛЕКТА:"
 
-
-
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot"					"Concussive shot"
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_Description"		"Искра, что поражает всех существ по близости нанося им огромный урон и замеляя их."
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_Lore"				"Самое красивое что видел этот свет."
@@ -2324,15 +2355,15 @@
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_movement_speed_pct"					"%ЗАМЕДЛЕНИЕ:"
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_creep_damage_pct"					"%БОНУС УРОНА ПО КРИПАМ:"
 
+		"DOTA_Tooltip_Ability_ancient_seal"						"Ancient seal"
+		"DOTA_Tooltip_Ability_ancient_seal_Description"			"Снижает перезарядку магии Скайраса и уменьшает броню недоброжелателей."
+		"DOTA_Tooltip_Ability_ancient_seal_Lore"				"Просто заткнись и сдохни - P.S Skywraith"
+		"DOTA_Tooltip_Ability_ancient_seal_cooldown_reduction"				"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
+		"DOTA_Tooltip_Ability_ancient_seal_armor_reduction"				"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_Ability_ancient_seal_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_ancient_seal_radius"				"РАДИУС:"
 
-
-		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal"						"Ancient seal"
-		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_Description"			"Снижает сопротивление магии врага Скайраса и затыкая его своим великим эго."
-		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_Lore"				"Просто заткнись и сдохни - P.S Skywraith"
-
-		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_resist_debuff"				"%СОПРОТИВЛЕНИЯ МАГИИ"
-		"DOTA_Tooltip_Ability_ability_skywrath_mage_ancient_seal_seal_duration"				"ДЛИТЕЛЬНОСТЬ:"
-
+		"DOTA_Tooltip_Ability_special_bonus_unique_sky_juju"						"+{s:bonus_armor_reduction} к уменьшению брони stay sky."
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_shard_Description"		"Добавляет заряд способности"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_bolt"						"+0.2 к урону от интеллекта способности arcane bolt"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_concusive"					"+75% урона по крипам способности concussive shot."
@@ -2344,14 +2375,11 @@
 		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
 		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
 
-
 		"DOTA_Tooltip_Ability_grand"											"True Power"
 		"DOTA_Tooltip_Ability_grand_Description"								"Герой сокращает перезарядку способностей, и затраты маны на их использование."
 		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
 		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
 		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
-
-
 
  		// -----------------Templar Assassin--------------------	
 
@@ -2363,7 +2391,6 @@
 		"DOTA_Tooltip_ability_refusion_trap_radius"					"РАДИУС:"
 		"DOTA_Tooltip_ability_refusion_trap_duration"				"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_refusion_trap_count"			"КОЛ-ВО ЦЕЛЕЙ ДЛЯ АТАКИ:"
-
 
        	"DOTA_Tooltip_ability_templar_assassin_refraction_custom"								"Refraction"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_custom_Description"					"Cоздаёт защитную и атакующую оболочку, которая увеличивает урон и защищает от получаемоего урона."
@@ -2378,7 +2405,6 @@
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_bonus_attack_range"								"ДАЛЬНОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_creeps_damage"								"%ПРОНЗАЮЩИЙ УРОН:"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_custom_shard_description"										"Увеличивает дальность атаки."
-
 
 		"DOTA_Tooltip_ability_Meld"								"Meld"
 		"DOTA_Tooltip_ability_Meld_Description"											"Звуковая волна поражает врагов и наносит им урон и уменьшает их сопротивление из-за давления на их ушные перепонки уменьшая концентрацию и броню"
@@ -2395,8 +2421,6 @@
 		"DOTA_Tooltip_ability_templar_secret_temp_crit_chance"											"%ШАНС:"
 		"DOTA_Tooltip_ability_templar_secret_temp_crit_mult"						"%КРИТ.УРОН:"
 
-
-
 		"DOTA_Tooltip_ability_ability_bedlam"									"Secret friend"
 		"DOTA_Tooltip_ability_ability_bedlam_Description"									"Существо которое темплар призывает себе на помощь."
 		"DOTA_Tooltip_ability_ability_bedlam_Lore"									"Оно милее чем кажется."
@@ -2411,7 +2435,6 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_ability_bedlam"						"+{s:bonus_attack_damage}  к урону Secret friend"
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_instances_damage"						"+{s:bonus_bonus_damage} к урону Refraction"
 		"DOTA_Tooltip_ability_special_bonus_unique_temp_refusion_trap"							"+{s:bonus_count} целей для атаки Refusion trap"
-
 
 		"DOTA_Tooltip_modifier_ability_bedlam"					"Верный друг"
 		"DOTA_Tooltip_modifier_ability_bedlam_Description"		"Защищает вас от надвигающихся врагов."

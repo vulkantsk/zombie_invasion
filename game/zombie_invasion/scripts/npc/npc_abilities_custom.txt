@@ -23712,6 +23712,69 @@
 		"AnimationIgnoresModelScale"	"1"
 		"IsOnCastBar"	"0"
 	}
+	 "overwhelming_odds"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                            "legion_commander_overwhelming_odds"                                                      // unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "AbilitySound"                  "Hero_LegionCommander.Overwhelming.Location"
+        "MaxLevel"						"7"
+        "HasShardUpgrade"               "1"
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "0"
+        "AbilityCastPoint"              "0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 110 120 130"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {           
+                "damage"                "35 65 95 125 155 195 245"
+                "damage_per_unit"       "14 16 18 20"
+                "bonus_attack_speed_creeps"     "0"
+                "bonus_attack_speed"        "50 75 100 125"
+                "duration"              "5.0"
+                "radius"                
+                {
+                    "value"     "600"
+                    "special_bonus_unique_legion_commander_2" "+150"
+                    "affected_by_aoe_increase"  "1"
+                }
+                "armor_per_creep"   
+                {
+                    "value"                 "1"
+                    "RequiresShard"             "1"
+                }
+                "armor_per_hero"    
+                {
+                    "value"                 "5"
+                    "RequiresShard"         "1"
+                }
+                "shard_duration"    
+                {   
+                    "value"                 "8"
+                    "RequiresShard"     "1"
+                }
+                "AbilityCooldown"
+                {
+                    "value"                     "15"
+                    "special_bonus_unique_legion_commander_9"       "-2"
+                }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    }
 
 
 }

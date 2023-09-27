@@ -1507,20 +1507,19 @@
 
     	"npc_dota_hero_legion_commander"
 	{
-		"override hero"				"npc_dota_hero_legion_commander"
-		"Ability1"					"legion_commander_overwhelming_odds"
+		"Ability1"					"overwhelming_odds"
 		"Ability2"					"press_the_berserk"
 		"Ability3"					"legion_commander_moment_of_courage"
-		"Ability4"					"legion_low"
+		"Ability4"					"legion_duel_arena"
 		"Ability5"					"generic_hidden"
-		"Ability6"					"legion_duel_arena"
-		"Ability10"		""
-		"Ability11"		""
-		"Ability12"		""
+		"Ability6"					"legion_low"
+		"Ability10"		"special_bonus_movement_speed_20"
+		"Ability11"		"special_bonus_unique_legion_low"
+		"Ability12"		"special_bonus_unique_arrow_damage"
 		"Ability13"		"special_bonus_unique_legion_presstheberserkregeneration"
-		"Ability14"		"special_bonus_unique_legion_presstheberserkattackspeed"
+		"Ability14"		"special_bonus_unique_arrow_damage_per_unit"
 		"Ability15"		"special_bonus_magic_resistance_35"
-		"Ability16"		""
+		"Ability16"		"special_bonus_unique_legion_presstheberserkattackspeed"
 		"Ability17"		"special_bonus_hp_500"
 
 

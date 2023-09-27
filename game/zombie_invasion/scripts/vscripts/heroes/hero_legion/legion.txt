@@ -1,30 +1,91 @@
 "DOTAAbilities"
 {
+     "overwhelming_odds"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                            "legion_commander_overwhelming_odds"                                                      // unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "AbilitySound"                  "Hero_LegionCommander.Overwhelming.Location"
+        "MaxLevel"                      "7"
+        "HasShardUpgrade"               "1"
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "0"
+        "AbilityCastPoint"              "0.5"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 110 120 130"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {           
+                "damage"             
+                {
+                    "value"     "35 65 95 125 155 195 245"
+                    "special_bonus_unique_arrow_damage" "+255"
+
+                }
+                "damage_per_unit"    
+                {
+                    "value"                             "14 16 18 20 34 46 68"
+                    "special_bonus_unique_arrow_damage_per_unit"    "+32"
+                }
+                "bonus_attack_speed_creeps" "10 20 30 40 50 60 70"
+                "bonus_attack_speed"        "10 20 30 40 50 60 70"
+                "duration"              "7.0"
+                "radius"                "600"
+                "armorka"           "1 2 3 4 5 6 7"
+                "armor_per_creep"   
+                {
+                    "value"                 "1 2 3 4 5 6 7"
+                    "RequiresShard"             "1"
+                }
+                "shard_duration"    
+                {   
+                    "value"                 "12"
+                    "RequiresShard"     "1"
+                }
+                "AbilityCooldown"   "15"
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    }
+
+
  	"legion_low"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_legion/abilities/legion_low"
-		"AbilityTextureName"			"Hero/legion"
+		"AbilityTextureName"			"legion/legion_low"
 		"FightRecapLevel"				"1"
 		
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"MaxLevel"                      "3"
-        "RequiredLevel"                 "10"
-        "LevelsBetweenUpgrades"			"10"
+		"MaxLevel"                      "4"
+        "RequiredLevel"                 "6"
+        "LevelsBetweenUpgrades"			"6"
 
 		"AbilityValues"
 		{
 			
 				"bonuss_armor"		
 				{
-					"value" 					"0.25 0.50 0.75"
+					"value" 					"0.25 0.50 0.75 1"
 					"special_bonus_unique_legion_low"		"+0.25"
 				}
 				"bonuss_magic"
 				{
-					"value"			"0.4 0.6 0.8"
-					"special_bonus_unique_legion_low"		"+0.2"
+					"value"			"0.4 0.6 0.8 1"
+					"special_bonus_unique_legion_low"		"+0.25"
 				}
 
 			
@@ -90,10 +151,13 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_legion/abilities/legion_duel_arena.lua"
-        "AbilityTextureName"            "disruptor_kinetic_field"
+        "AbilityTextureName"            "legion/duel"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "FightRecapLevel"               "1"
+        "LevelsBetweenUpgrades"         "12"
+        "MaxLevel"                      "3"
+        "HasScepterUpgrade"         "1"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -101,26 +165,41 @@
         "AbilityCastGestureSlot"        "DEFAULT"
         "AbilityCastPoint"              "0.05 0.05 0.05 0.05"
 
-        // Time     
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "19 16 13 10"
+    
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "70 70 70 70"
+        "AbilityManaCost"               "200 300 400"
         
         // Cast Range
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"              "900 900 900 900"
+        "AbilityCastRange"              "100"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
            
-                "radius"                    "400"           
-                "stats_per_kill"                    "10"           
-                "duration"                    "10"           
+                "AbilityCooldown"              
+                { 
+
+                    "value" "120 100 80"
+                    "special_bonus_scepter" "-60 -50 -40"
+                }
+
+                "radius"                    "300 400 600"  
+                      
+                "stats_per_kill"          
+                {
+                    "value"     "2 4 6"
+                    "special_bonus_scepter" "+2 +4 +6"
+                }         
+               
+                "duration"        
+                {
+                    "value"     "6 8 10"
+                    "special_bonus_scepter" "+4 +8 +10"
+                }        
         }
     }
     "special_bonus_unique_legion_presstheberserkattackspeed"
@@ -153,4 +232,24 @@
 		
  
 	}
+    "special_bonus_unique_arrow_damage"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        
+ 
+    }
+    "special_bonus_unique_arrow_damage_per_unit"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "special_bonus_undefined"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        
+ 
+    }
 }

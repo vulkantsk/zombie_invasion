@@ -158,6 +158,8 @@ modifier_legion_duel_arena = class({
     DeclareFunctions        = function(self) return 
         {
             MODIFIER_EVENT_ON_DEATH,
+          
+
         } end,
 })
 
@@ -175,9 +177,37 @@ function modifier_legion_duel_arena:OnDeath(data)
 end
 
 modifier_legion_duel_arena_buff = class({
-    IsHidden                 = function(self) return false end,
+    IsHidden                 = function(self) return true end,
     IsPurgable                 = function(self) return false end,
     IsDebuff                 = function(self) return false end,
     IsBuff                  = function(self) return true end,
     RemoveOnDeath             = function(self) return false end,
+    DeclareFunctions        = function(self) return 
+        {
+            MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+            MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+            MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+
+        } end,
 })
+
+function modifier_legion_duel_arena_buff:GetAttributes()
+    return MODIFIER_ATTRIBUTE_MULTIPLE
+end
+
+function modifier_legion_duel_arena_buff:OnCreated()
+    self.stats_per_kill = self:GetAbility():GetSpecialValueFor("stats_per_kill")
+end
+
+
+function modifier_legion_duel_arena_buff:GetModifierBonusStats_Strength()
+    return self.stats_per_kill 
+end
+
+function modifier_legion_duel_arena_buff:GetModifierBonusStats_Agility()
+    return self.stats_per_kill
+end
+
+function modifier_legion_duel_arena_buff:GetModifierBonusStats_Intellect()
+    return self.stats_per_kill
+end
