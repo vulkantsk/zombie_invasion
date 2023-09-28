@@ -12715,28 +12715,7 @@
 
 
 
-	"item_quill_blade"
-	{
-		"BaseClass" 					"item_datadriven"
-		"ScriptFile" 					"items/farm/item_quill_blade"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
-		"AbilityTextureName"			"armlet2"
-		"ItemCost"						"7850"
-		"AbilityCooldown"				"0"
-		"ItemInitialCharges"			"0"
-		"ItemDisplayCharges"			"0"
-		"ItemSellable"					"1"
 
-		"AbilityValues"
-		{
-			"alternative_cooldown"			"20"
-		}
-	}
 
 
 
