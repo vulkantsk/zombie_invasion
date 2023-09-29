@@ -476,7 +476,7 @@
 
 
 		"DOTA_Tooltip_ability_item_armlet2"											"Band of courage power"
-		"DOTA_Tooltip_ability_item_armlet2_Description"											"<h1>Активная: Band of Devil power </h1> <font color='#6f0035'> если активирован герой получает +%bonus_damage_active% доп.урона, +%movespeed_active% скорости передвижения, +%bonus_str_active% доп.силы, +%lifesteal_active% вампиризма, +%magic_lifesteal_active%%% маг.вампиризм, +%armor_active% доп.броня, +%bonus_attack_speed_active% скорости атаки, но герой получает +%damage_per_second_active% урона в секунду.</font>" 
+		"DOTA_Tooltip_ability_item_armlet2_Description"											"<h1>Активная: Band of Devil power </h1> <font color='#6f0035'> если активирован герой получает +%bonus_damage_active% доп.урона, +%movespeed_active% скорости передвижения, +%bonus_str_active% доп.силы, +%lifesteal_active%%% вампиризма, +%magic_lifesteal_active%%% маг.вампиризм, +%armor_active% доп.броня, +%bonus_attack_speed_active% скорости атаки, но герой получает +%damage_per_second_active% урона в секунду.</font>" 
 		"DOTA_Tooltip_ability_item_armlet2_Lore"				"Однажды я смогу покорить своих демонов или же нет..?"
 		"DOTA_Tooltip_ability_item_armlet2_bonus_damage"		"+$damage"
 		"DOTA_Tooltip_ability_item_armlet2_bonus_attack_speed"	"+$Attack"
