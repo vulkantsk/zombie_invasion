@@ -8096,12 +8096,12 @@
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"interval_radiance"	"0.5"
+				"interval_radiance"	"0.1"
 			}
 			"12"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_radiance"	"130"
+				"damage_radiance"	"66"
 			}
 			"13"
 			{
@@ -8185,7 +8185,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_as_reduction"		"200"
+				"aura_as_reduction"		"60"
 			}
 			"05"
 			{
@@ -8200,7 +8200,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"120"
+				"damage"				"670"
 			}
 			"08"
 			{
@@ -12718,6 +12718,7 @@
 		"BaseClass" 					"item_lua"
 		"ScriptFile" 					"items/item_armlet2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
@@ -12738,7 +12739,7 @@
 			"lifesteal_active"	"31"
 			"magic_lifesteal_active"			"40"
 			"armor_active"		"16"
-			"damage_per_second_active"				"1200"
+			"damage_per_second_active"				"109200"
 			"bonus_attack_speed_active"				"200"
 		}
 

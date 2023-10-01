@@ -109,7 +109,7 @@ end
 
 function modifier_item_armlet2_buff:OnIntervalThink()
     if not IsServer() then return end
-    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.1), 1))
+    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
 end
 
 function modifier_item_armlet2_buff:DeclareFunctions()

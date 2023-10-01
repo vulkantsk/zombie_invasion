@@ -159,11 +159,9 @@
 			
 				"duration"					"2.0"
 			
-				"int_duration"
-				{
-					"value"				"0.002"
-					"special_bonus_unique_sky_promise"	"+0.003"	
-				}
+				"int_duration"				"0.004"
+					
+				
 		}
 				
 	}
