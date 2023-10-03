@@ -19,7 +19,6 @@ end
             MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
             MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
             MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
-             
             } end,
     })
 
@@ -63,10 +62,8 @@ function modifier_demon_style:AddStack( duration, count )
             duration = duration,
         }
     )
- 
     mod.modifier = self
     mod.bonus = count
-    -- Add stack
     self:SetStackCount(self:GetStackCount() + count)
  
 end
@@ -85,8 +82,6 @@ modifier_demon_style_count = class({
 })
  
 function modifier_demon_style_count:OnRemoved()
- 
         self.modifier:RemoveStack(self.bonus)
-   
 end
  

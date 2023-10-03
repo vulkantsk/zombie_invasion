@@ -177,13 +177,13 @@
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		"npc_dota_hero_terrorblade"                                      "Terrorblyad" 		
+		"npc_dota_hero_terrorblade"                                      "Sargatanas" 		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 	
 		"npc_dota_hero_nevermore"	                                     "Azzazel"
 		"npc_dota_hero_treant"                                      "Shinoba"
 		"npc_dota_hero_phantom_lancer" 										"Sara"
 		"npc_dota_hero_winter_wyvern" 										"Yuki-onna"
-		"npc_dota_hero_bloodseeker"			"Sargatanas"
+		"npc_dota_hero_bloodseeker"			"Blood hunter"
 		"npc_dota_hero_huskar"                                            "Alucard"
 
 
@@ -2170,6 +2170,58 @@
 		"DOTA_Tooltip_ability_innate_rend_crit_damage" "КРИТИЧЕСКИЙ УРОН:"
 		"DOTA_Tooltip_ability_crit_chance_per_negative_armor" "ШАНС КРИТИЧЕСКОЙ АТАКИ ЗА КАЖДОЕ НЕГАТИВНОЕ КОЛИЧЕСТВО БРОНИ:"
 
+
+
+
+		// -----------------Blood hunter-------------------- 
+
+			"DOTA_Tooltip_ability_bloodrage"					"Blood rage"
+			"DOTA_Tooltip_ability_bloodrage_Description"		"Blood Hunter разрывает свою жертву на части, поглощая её кровь и получая стаки в колчичестве %stack% на %stack_duration% секунд. За каждый стак герой получает бонусный урон и скорость атаки."
+			"DOTA_Tooltip_ability_bloodrage_Lore"					"Его когти острее любого клинка."
+			"DOTA_Tooltip_ability_bloodrage_bonus_damage"			"ДОП.УРОН:"
+			"DOTA_Tooltip_ability_bloodrage_bonus_attack_speed"		"ДОП.СКОРОСТЬ АТАКИ:"
+			"DOTA_Tooltip_ability_bloodrage_stack_damage"			"УРОН ЗА СТАК:"
+			"DOTA_Tooltip_ability_bloodrage_stack_attackspeed"		"СКОРОСТЬ АТАКИ ЗА СТАК:"
+			"DOTA_Tooltip_ability_bloodrage_duration"				"ДЛИТЕЛЬНОСТЬ:"
+			"DOTA_Tooltip_ability_bloodrage_scepter_Description"	"Герой получает по %stack% стаков."
+
+
+
+
+
+			"DOTA_Tooltip_ability_illusion_of_blood"				"illusion of blood"
+			"DOTA_Tooltip_ability_illusion_of_blood_Description"	"Blood Hunter обращается за помощью к мертвецам, призывая свои копии в мир для защиты себя."
+			"DOTA_Tooltip_ability_illusion_of_blood_Lore"			"Нет ничего лучше чем я - egoist Blood Hunter"
+			"DOTA_Tooltip_ability_illusion_of_blood_images_count"	"КОЛИЧЕСТВО ИЛЛЮЗИЙ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_illusion_duration"	"ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_outgoing_damage"	"УРОН ОТ ИЛЛЮЗИИ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_incoming_damage"	"УРОН ПО ИЛЛЮЗИИ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_magic_resistance"	"%МАГ.СОПР.ИЛЛЮЗИИ:"
+
+			"DOTA_Tooltip_ability_sacrifice_revenge"				"sacrifice revenge"
+			"DOTA_Tooltip_ability_sacrifice_revenge_Description"	"Впадая в ярость Blood hunter показывает свою сущность и его сила вырывается наружу на %duration% секунд."
+			"DOTA_Tooltip_ability_sacrifice_revenge_base_attack_time"		"БАЗОВЫЙ ИНТЕРВАЛ АТАК:"
+			"DOTA_Tooltip_ability_sacrifice_revenge_bonus_armor"	"МНОЖИТЕЛЬ БРОНИ:"
+			"DOTA_Tooltip_ability_sacrifice_revenge_shard_Description"	"Способность также наносит %pure_damage%%% чистого урона"
+
+			"DOTA_Tooltip_ability_ring_of_corrosive"				"ring of corrosive"
+			"DOTA_Tooltip_ability_ring_of_corrosive_Description"	"Blood Hunter проводит ритуал крови, во имя Кровавого братства. Герой создаёт кровавый круг на %duration% секунд, все противники в котором получают каждые %tick_rate% секунды чистый урон, равный %damage% + %damage_mult%%% от своего урона."
+			"DOTA_Tooltip_ability_ring_of_corrosive_radius"		"РАДИУС:"
+
+
+
+
+
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_duration_blood"	"+{s:bonus_duration} секунд длительности bloodrage"
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_count"	"+{s:bonus_images_count} количеству вызываемых иллюзий"
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"	"-{s:bonus_incoming_damage}% входящего урона по иллюзиям"
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_pure_damage_bonus"			"+{s:bonus_pure_damage}% чистого урона sacrifice revenge"
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_sacrifice_revenge_duration"	"+{s:bonus_duration} к длительности sacrifice revenge"
+
+
+			"DOTA_Tooltip_modifier_bloodrage_buff"				"Кровожадность"
+			"DOTA_Tooltip_modifier_bloodrage_buff_Description"				"Вы ощущаете себя животным."
+
 		// -----------------alucard--------------------  
 		"DOTA_Tooltip_ability_lord_true_essence" "True Essence"
 		"DOTA_Tooltip_ability_lord_true_essence_Description" "Alucard постепеннно раскрывает свою сущность"
@@ -2342,8 +2394,8 @@
 		"DOTA_Tooltip_Ability_sky_time"											"Skywraith Time"
 		"DOTA_Tooltip_Ability_sky_time_Description"								"SkyMage обращает весь получаемый урон в лечение."
 		"DOTA_Tooltip_Ability_sky_time_Lore"								"Эта сила, самая противоестественная из всех сил пророков, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — дает свежие силы."
-		"DOTA_Tooltip_Ability_sky_time_duration"        								"ДЛИТЕЛЬНОСТЬ"
-		"DOTA_Tooltip_Ability_sky_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА"
+		"DOTA_Tooltip_Ability_sky_time_duration"        								"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_sky_time_int_duration"                                        "БОНУСНАЯ ДЛИТЕЛЬНОСТЬ ЗА ЕДИНИЦУ ИНТЕЛЛЕКТА: %%"
 
 		"DOTA_Tooltip_Ability_sky_bolt"											"Lighting Strike"
 		"DOTA_Tooltip_Ability_sky_bolt_Description"								"Герой наност коллосальный урон одиночной цели."

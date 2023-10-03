@@ -1,13 +1,9 @@
-LinkLuaModifier( "modifier_warlock_splesh", "abilities/zombie/Boss/warlock_splesh", LUA_MODIFIER_MOTION_NONE )
-warlock_splesh = class({})
- 
+LinkLuaModifier( "modifier_ring_of_corrosive", "heroes/hero_blood_hunter/ring_of_corrosive/ring_of_corrosive", LUA_MODIFIER_MOTION_NONE )
 
---------------------------------------------------------------------------------
--- Custom KV
--- AOE Radius
-function warlock_splesh:OnSpellStart()
+ring_of_corrosive = class({})
+
+function ring_of_corrosive:OnSpellStart()
  
- 	-- unit identifier
 	local caster = self:GetCaster()
 	local point = self:GetCursorPosition()
 
@@ -18,7 +14,7 @@ function warlock_splesh:OnSpellStart()
 	CreateModifierThinker(
 		caster, -- player source
 		self, -- ability source
-		"modifier_warlock_splesh", -- modifier name
+		"modifier_ring_of_corrosive", -- modifier name
 		{ duration = duration }, -- kv
 		point,
 		caster:GetTeamNumber(),
@@ -27,33 +23,33 @@ function warlock_splesh:OnSpellStart()
 
 end 
 
-function warlock_splesh:GetAOERadius()
+function ring_of_corrosive:GetAOERadius()
 	return self:GetSpecialValueFor("radius")
 end
 
-modifier_warlock_splesh = class({})
+modifier_ring_of_corrosive = class({})
 
 --------------------------------------------------------------------------------
 -- Classifications
-function modifier_warlock_splesh:IsHidden()
+function modifier_ring_of_corrosive:IsHidden()
 	return false
 end
 
-function modifier_warlock_splesh:IsDebuff()
+function modifier_ring_of_corrosive:IsDebuff()
 	return true
 end
 
-function modifier_warlock_splesh:IsStunDebuff()
+function modifier_ring_of_corrosive:IsStunDebuff()
 	return false
 end
 
-function modifier_warlock_splesh:IsPurgable()
+function modifier_ring_of_corrosive:IsPurgable()
 	return false
 end
 
 --------------------------------------------------------------------------------
 -- Initializations
-function modifier_warlock_splesh:OnCreated( kv )
+function modifier_ring_of_corrosive:OnCreated( kv )
 	-- references
 	local interval = self:GetAbility():GetSpecialValueFor( "tick_rate" )
 	self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
@@ -79,14 +75,14 @@ function modifier_warlock_splesh:OnCreated( kv )
 	self:PlayEffects()
 end
 
-function modifier_warlock_splesh:OnRefresh( kv )
+function modifier_ring_of_corrosive:OnRefresh( kv )
 	
 end
 
-function modifier_warlock_splesh:OnRemoved()
+function modifier_ring_of_corrosive:OnRemoved()
 end
 
-function modifier_warlock_splesh:OnDestroy()
+function modifier_ring_of_corrosive:OnDestroy()
 	if not IsServer() then return end
 	if not self.thinker then return end
   StopSoundOn(self.sound_cast, self:GetParent())
@@ -98,7 +94,7 @@ end
 
 --------------------------------------------------------------------------------
 -- Interval Effects
-function modifier_warlock_splesh:OnIntervalThink()
+function modifier_ring_of_corrosive:OnIntervalThink()
 	-- find enemies 
 	--[[]]
 	local enemies = FindUnitsInRadius(
@@ -116,7 +112,7 @@ function modifier_warlock_splesh:OnIntervalThink()
 	for _,enemy in pairs(enemies) do
 		-- damage
 	-- precache damage
- local damage_tick = self.damage * self:GetAbility():GetSpecialValueFor( "tick_rate" )
+ local damage_tick = ((self.damage + (self:GetParent():GetAttackDamage() * 3)) * self:GetAbility():GetSpecialValueFor( "tick_rate" ))
 	local damageTable = {
 		victim = enemy,
 		attacker = self:GetCaster(),
@@ -134,7 +130,7 @@ function modifier_warlock_splesh:OnIntervalThink()
 end
  
 
-function modifier_warlock_splesh:DeclareFunctions()
+function modifier_ring_of_corrosive:DeclareFunctions()
 	local funcs = {
 		MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE,
 	}
@@ -142,50 +138,58 @@ function modifier_warlock_splesh:DeclareFunctions()
 	return funcs
 end
 
-function modifier_warlock_splesh:GetModifierHPRegenAmplify_Percentage()  
+function modifier_ring_of_corrosive:GetModifierHPRegenAmplify_Percentage()  
 	return -self.hp_degen
 end
 
 --------------------------------------------------------------------------------
 -- Aura Effects
-function modifier_warlock_splesh:IsAura()
+function modifier_ring_of_corrosive:IsAura()
 	return self.thinker
 end
 
-function modifier_warlock_splesh:GetModifierAura()
-	return "modifier_warlock_splesh"
+function modifier_ring_of_corrosive:GetModifierAura()
+	return "modifier_ring_of_corrosive"
 end
 
-function modifier_warlock_splesh:GetAuraRadius()
+function modifier_ring_of_corrosive:GetAuraRadius()
 	return self.radius
 end
 
-function modifier_warlock_splesh:GetAuraDuration()
+function modifier_ring_of_corrosive:GetAuraDuration()
 	return 0.5
 end
 
-function modifier_warlock_splesh:GetAuraSearchTeam()
+function modifier_ring_of_corrosive:GetAuraSearchTeam()
 	return DOTA_UNIT_TARGET_TEAM_ENEMY
 end
 
-function modifier_warlock_splesh:GetAuraSearchType()
+function modifier_ring_of_corrosive:GetAuraSearchType()
 	return DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC
 end
 
-function modifier_warlock_splesh:GetAuraSearchFlags()
+function modifier_ring_of_corrosive:GetAuraSearchFlags()
 	return 0
 end
 
 --------------------------------------------------------------------------------
 -- Graphics & Animations
  
-function modifier_warlock_splesh:PlayEffects()
+function modifier_ring_of_corrosive:PlayEffects()
 	-- Get Resources
-	local particle_cast = "particles/units/heroes/hero_warlock/warlock_upheaval.vpcf"
+	local particle_cast = "particles/units/heroes/hero_bloodseeker/bloodseeker_bloodritual_ring_lv.vpcf"
  
 
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+	ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
+	ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 1, 1 ) )
+
+	local particle_cast2 = "particles/units/heroes/hero_bloodseeker/bloodseeker_spell_bloodbath_bubbles_.vpcf"
+ 
+
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast2, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 	ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
 	ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 1, 1 ) )
 

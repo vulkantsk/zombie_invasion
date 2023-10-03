@@ -8102,6 +8102,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"damage_radiance"	"66"
+				"CalculateSpellDamageTooltip"            "1"
 			}
 			"13"
 			{
@@ -11728,7 +11729,7 @@
 			{
 				"ScriptFile"		"abilities/hero_change.lua"
 				"Function"			"GiveNewHero"
-				"hero_name"			"npc_dota_hero_bloodseeker"
+				"hero_name"			"npc_dota_hero_terrorblade"
 			}
 		}
 	}

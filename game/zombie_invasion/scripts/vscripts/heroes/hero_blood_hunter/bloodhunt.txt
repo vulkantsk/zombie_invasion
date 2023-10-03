@@ -1,0 +1,240 @@
+"DOTAAbilities"
+{
+
+ 	"bloodrage"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_blood_hunter/bloodrage/bloodrage"
+		"AbilityTextureName"			"bloodrage"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+		"RequiredLevel"					"1"
+
+		"HasScepterUpgrade"			"1"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityHealthCost"				"20 40 60 120 240 300 360 420"
+ 
+		"AbilityValues"
+		{
+				"AbilityCooldown"		"20"
+
+ 				"duration"				
+ 				{
+ 					"value"				"12 14 16 18 20 22 24"
+ 					"special_bonus_unique_blood_hunter_duration_blood"	"+6"
+ 				}
+				"stack_damage"			"6 12 18 24 32 48 52"  
+				"stack_attackspeed"		"10 15 20 35 40 45 50"
+				"bonus_damage"			"20 40 60 80 100 120 140"
+				"bonus_attack_speed"	"25 55 70 95 115 135 165"
+				"stack"					
+				{
+					"value"			"2"
+					"special_bonus_scepter"	"+3"
+				}
+				"stack_duration"		"20"
+		}
+ 
+	}
+	"illusion_of_blood"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"                     "Ability_lua"
+        "ScriptFile"                    "heroes/hero_blood_hunter/Illusion_of_blood/Illusion_of_blood"
+        "AbilityTextureName"            "illusions_of_blood"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"						"5"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"AbilityCastRange"				"1200"
+		"HasScepterUpgrade"			"0"
+		"AbilitySound"					"Hero_ChaosKnight.Phantasm"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.4 0.4 0.4"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityHealthCost"				"30"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"125 200 275"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"images_count"				
+				{
+					"value"							"2"
+					"special_bonus_unique_blood_hunter_blood_of_illusions_count" "+2"
+
+				}
+			
+				"illusion_duration"			"30"
+			
+				"outgoing_damage"			"150 200 250 300 350"
+			
+				"incoming_damage"
+				{
+					"value"			"175 250 275 325 375"	
+					"special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"	"-25"
+
+
+				}			
+				"invuln_duration"		"0.2"
+			
+				"vision_radius"			"400"
+			
+				"magic_resistance"			"75"
+		}
+	}
+	"sacrifice_revenge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_blood_hunter/sacrifice_revenge/sacrifice_revenge"
+        "AbilityTextureName"            "sacrifice_revenge"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"
+		"AbilitySound"					"Hero_Alchemist.ChemicalRage.Cast"
+		"HasShardUpgrade"               "1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+
+		// Time			
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"115"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityHealthCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"duration"				
+				{
+					"value"															"25"
+					"special_bonus_unique_blood_hunter_sacrifice_revenge_duration"	"+15"
+
+				}
+			
+				"transformation_time"	"0.2"
+			
+				"base_attack_time"		"0.9 0.7 0.5"
+		
+				"bonus_armor"	"2 3 4"
+			
+				"pure_damage"
+				{
+					"value"		"1"
+					"special_bonus_shard"	"25 50 75"
+					"special_bonus_unique_blood_hunter_pure_damage_bonus"	"+125"
+				}
+			
+			
+		}
+	}
+	"ring_of_corrosive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_blood_hunter/ring_of_corrosive/ring_of_corrosive"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityTextureName"			"ring_of_corrosive"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+ 		"MaxLevel"						"3"
+ 		"RequiredLevel"					"25"
+ 		"LevelsBetweenUpgrades"			"5"
+		"AbilityCooldown"				"210"
+		"AbilityHealthCost"				"666"
+
+		"AbilityValues"
+		{
+				"duration"			"12 16 20"
+			
+				"damage"			"666"
+				"damage_mult"		"300"
+				"radius"			"600"
+			
+				"tick_rate"			"0.25"
+		}
+
+	}
+	"special_bonus_unique_blood_hunter_duration_blood"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_blood_hunter_blood_of_illusions_count"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_blood_hunter_pure_damage_bonus"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_blood_hunter_sacrifice_revenge_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+}
+
+ 

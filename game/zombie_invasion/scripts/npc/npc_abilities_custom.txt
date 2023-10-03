@@ -38,6 +38,7 @@
 #base "../vscripts/heroes/hero_silencer/silencer.txt"
 #base "../vscripts/heroes/hero_templar/templar_assassin.txt"
 #base "../vscripts/heroes/hero_legion/legion.txt"
+#base "../vscripts/heroes/hero_blood_hunter/bloodhunt.txt"
 
 
 

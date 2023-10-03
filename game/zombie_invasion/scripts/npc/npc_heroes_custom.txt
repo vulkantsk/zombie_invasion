@@ -228,25 +228,39 @@
  
 	}
 
-		"npc_dota_hero_terrorblade"
+		"npc_dota_hero_bloodseeker"
 	{
  
  		"ArmorPhysical"		"9"
 
-		"Ability1"		"tb_illusion_dd"
-		"Ability2"      "tb_illusion_tank" 
-		"Ability3"      "tb_astral"  
-		"Ability4"		"terrorblade_metamorphosis"
-		"Ability5"		"tb_soul"
-		"Ability6"		"tb_swap"
-		"Ability10"		"special_bonus_movement_speed_15"
-		"Ability11"		"special_bonus_evasion_16"
-		"Ability12"		"special_bonus_hp_250"
-		"Ability13"		"special_bonus_attack_speed_25"
-		"Ability14"		"special_bonus_all_stats_8"
-		"Ability15"		"special_bonus_corruption_5"
-		"Ability16"		"special_bonus_lifesteal_30"
-		"Ability17"		"special_bonus_unique_terrorblade_3"		
+		"Ability1"		"bloodrage"
+		"Ability2"      "" 
+		"Ability3"      "illusion_of_blood"  
+		"Ability4"		"sacrifice_revenge"
+		"Ability5"		""
+		"Ability6"		"ring_of_corrosive"
+		"Ability10"		"special_bonus_hp_125"
+		"Ability11"		"special_bonus_attack_damage_20"
+		"Ability12"		"special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"
+		"Ability13"		""
+		"Ability14"		"special_bonus_unique_blood_hunter_blood_of_illusions_count"
+		"Ability15"		"special_bonus_unique_blood_hunter_sacrifice_revenge_duration"
+		"Ability16"		"special_bonus_unique_blood_hunter_pure_damage_bonus"
+		"Ability17"		"special_bonus_unique_blood_hunter_duration_blood"
+		"AttackDamageMin"		"33"
+		"AttackDamageMax"		"36"
+		"AttackRate"		"1.600000"
+		"BaseAttackSpeed"	"65"
+		"AttackRange"		"150"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"21"
+		"AttributeStrengthGain"		"1.20000"
+		"AttributeBaseAgility"		"23"
+		"AttributeAgilityGain"		"0.30000"
+		"AttributeBaseIntelligence"		"15"
+		"AttributeIntelligenceGain"		"1.400000"
+		"StatusHealthRegen"		"0.25"
+		"MovementSpeed"		"305"		
  
 	}
 
@@ -1922,7 +1936,7 @@
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_muerta.vsndevts"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_muerta.vsndevts"
 	}
-	"npc_dota_hero_bloodseeker"
+	"npc_dota_hero_terrorblade"
 	{
   
  

@@ -33,6 +33,7 @@
 	"npc_dota_hero_muerta" 				"1"
 	"npc_dota_hero_silencer"			"1"
 	"npc_dota_hero_legion_commander"	"1" 
+	"npc_dota_hero_bloodseeker"			"1"
  
 
 // Donate
@@ -58,9 +59,9 @@
 "npc_dota_hero_techies"			    "0"
 	"npc_dota_hero_gyrocopter"			"0"
 
-	"npc_dota_hero_bloodseeker"			"0"
+
 	"npc_dota_hero_ember_spirit"		"0"
- 
+
 
      "npc_dota_hero_lycan"               "0"
 	"npc_dota_hero_dragon_knight"		"0"
