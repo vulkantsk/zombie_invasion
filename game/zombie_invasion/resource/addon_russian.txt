@@ -2185,7 +2185,11 @@
 			"DOTA_Tooltip_ability_bloodrage_duration"				"ДЛИТЕЛЬНОСТЬ:"
 			"DOTA_Tooltip_ability_bloodrage_scepter_Description"	"Герой получает по %stack% стаков."
 
-
+			"DOTA_Tooltip_ability_bloodstained_memory"				"bloodstained memory"
+			"DOTA_Tooltip_ability_bloodstained_memory_Description"	"Сила находится в сознании твоего предрасудка и Blood Hunter знает как эту силу вызволить наружу."
+			"DOTA_Tooltip_ability_bloodstained_memory_healthbonus"				"ДОП. ЗДОРОВЬЕ ЗА СТАК:"
+			"DOTA_Tooltip_ability_bloodstained_memory_movespeed"			"СКОРОСТЬ ВОСПРИЯТИЯ РЕАЛЬНОСТИ ЗА СТАК:"
+			"DOTA_Tooltip_ability_bloodstained_memory_Lore"					"Нет ничего сильнее моего разума -- Blood Hunter."
 
 
 
@@ -2200,18 +2204,20 @@
 
 			"DOTA_Tooltip_ability_sacrifice_revenge"				"sacrifice revenge"
 			"DOTA_Tooltip_ability_sacrifice_revenge_Description"	"Впадая в ярость Blood hunter показывает свою сущность и его сила вырывается наружу на %duration% секунд."
+			"DOTA_Tooltip_ability_sacrifice_revenge_Lore"			"Всегда нужно чем-то жертвовать, Blood Hunter это знал с рождения."
 			"DOTA_Tooltip_ability_sacrifice_revenge_base_attack_time"		"БАЗОВЫЙ ИНТЕРВАЛ АТАК:"
 			"DOTA_Tooltip_ability_sacrifice_revenge_bonus_armor"	"МНОЖИТЕЛЬ БРОНИ:"
 			"DOTA_Tooltip_ability_sacrifice_revenge_shard_Description"	"Способность также наносит %pure_damage%%% чистого урона"
 
 			"DOTA_Tooltip_ability_ring_of_corrosive"				"ring of corrosive"
 			"DOTA_Tooltip_ability_ring_of_corrosive_Description"	"Blood Hunter проводит ритуал крови, во имя Кровавого братства. Герой создаёт кровавый круг на %duration% секунд, все противники в котором получают каждые %tick_rate% секунды чистый урон, равный %damage% + %damage_mult%%% от своего урона."
+			"DOTA_Tooltip_ability_ring_of_corrosive_Lore"			"Безобидный круг в который лучше не ступать."
 			"DOTA_Tooltip_ability_ring_of_corrosive_radius"		"РАДИУС:"
 
 
 
 
-
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_bloodstained_memory_speed"	"+{s:bonus_movespeed} к скорости восприятия реальности"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_duration_blood"	"+{s:bonus_duration} секунд длительности bloodrage"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_count"	"+{s:bonus_images_count} количеству вызываемых иллюзий"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"	"-{s:bonus_incoming_damage}% входящего урона по иллюзиям"
@@ -2221,6 +2227,9 @@
 
 			"DOTA_Tooltip_modifier_bloodrage_buff"				"Кровожадность"
 			"DOTA_Tooltip_modifier_bloodrage_buff_Description"				"Вы ощущаете себя животным."
+			"DOTA_Tooltip_modifier_bloodstained_memory"				"Кровавые воспоминания"
+			"DOTA_Tooltip_modifier_bloodstained_memory_Description"				"Ваш разум быстрее скорости света."
+
 
 		// -----------------alucard--------------------  
 		"DOTA_Tooltip_ability_lord_true_essence" "True Essence"

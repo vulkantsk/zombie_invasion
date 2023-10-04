@@ -39,6 +39,29 @@
 		}
  
 	}
+	"bloodstained_memory"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_blood_hunter/bloodstained_memory/bloodstained_memory"
+		"AbilityTextureName"			"bloodstained_memory"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+		"RequiredLevel"					"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+ 
+		"AbilityValues"
+		{
+				"healthbonus"			"10 20 30 40 50 60 70"
+				"movespeed"	
+				{
+					"value"			"70 90 110 130 160 190 210"
+					"special_bonus_unique_blood_hunter_bloodstained_memory_speed"	"+40"
+
+				}
+		}
+ 
+	}
 	"illusion_of_blood"
 	{
 		// General
@@ -184,6 +207,16 @@
 				"tick_rate"			"0.25"
 		}
 
+	}
+	"special_bonus_unique_blood_hunter_bloodstained_memory_speed"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
 	}
 	"special_bonus_unique_blood_hunter_duration_blood"
 	{
