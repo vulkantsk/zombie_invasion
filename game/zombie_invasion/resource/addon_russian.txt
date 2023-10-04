@@ -2198,8 +2198,8 @@
 			"DOTA_Tooltip_ability_illusion_of_blood_Lore"			"Нет ничего лучше чем я - egoist Blood Hunter"
 			"DOTA_Tooltip_ability_illusion_of_blood_images_count"	"КОЛИЧЕСТВО ИЛЛЮЗИЙ:"
 			"DOTA_Tooltip_ability_illusion_of_blood_illusion_duration"	"ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:"
-			"DOTA_Tooltip_ability_illusion_of_blood_outgoing_damage"	"УРОН ОТ ИЛЛЮЗИИ:"
-			"DOTA_Tooltip_ability_illusion_of_blood_incoming_damage"	"УРОН ПО ИЛЛЮЗИИ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_outgoing_damage"	"%УРОН ОТ ИЛЛЮЗИИ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_incoming_damage"	"%УРОН ПО ИЛЛЮЗИИ:"
 			"DOTA_Tooltip_ability_illusion_of_blood_magic_resistance"	"%МАГ.СОПР.ИЛЛЮЗИИ:"
 
 			"DOTA_Tooltip_ability_sacrifice_revenge"				"sacrifice revenge"
@@ -2227,6 +2227,8 @@
 
 			"DOTA_Tooltip_modifier_bloodrage_buff"				"Кровожадность"
 			"DOTA_Tooltip_modifier_bloodrage_buff_Description"				"Вы ощущаете себя животным."
+			"DOTA_Tooltip_modifier_sacrifice_revenge_buff"					"Безумие"
+			"DOTA_Tooltip_modifier_sacrifice_revenge_buff_Description"					"В своей истинной форме"
 			"DOTA_Tooltip_modifier_bloodstained_memory"				"Кровавые воспоминания"
 			"DOTA_Tooltip_modifier_bloodstained_memory_Description"				"Ваш разум быстрее скорости света."
 
