@@ -499,7 +499,7 @@
 		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
 
 		"DOTA_Tooltip_ability_item_last_standing_shield"			"standing shield"
-		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Активная: last block stand </h1>действует радиусом в %radius% на всех ближайщих союзником блокирует %damage_block% урона с шансом в %damage_block_chance%%%, также увеличвает скорость передвижение на %bonus_movespeed% и скорость атаки на %bonus_attack_speed%"
+		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Активная: last block stand </h1>действует радиусом в %radius% на всех ближайщих союзником блокирует %damage_block% урона с шансом в %damage_block_chance%%%, также увеличвает скорость передвижение на %bonus_movespeed% и скорость атаки на %bonus_attack_speed% длительностью в 20 секунд."
 		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"Сила лишь во мне и точка - это было выгравленно до покупки."
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_health"							"+$health"
