@@ -8502,7 +8502,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"32"
+				"bonus_armor"			"24"
 			}
 			"02"
 			{
@@ -10097,7 +10097,7 @@
 	"item_midas2"
 	{
 		"BaseClass"          "item_lua"
-		"ScriptFile"         "items/new_items/item_midas"
+		"ScriptFile"         "items/new_items/item_midas2"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" "midas_2"
 		"ItemShareability"				"ITEM_NOT_SHAREABLE"
@@ -10143,7 +10143,7 @@
 	"item_midas3"
 	{
 		"BaseClass"          "item_lua"
-		"ScriptFile"         "items/new_items/item_midas"
+		"ScriptFile"         "items/new_items/item_midas3"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" "midas_2"
 		"ItemShareability"				"ITEM_NOT_SHAREABLE"
@@ -12978,7 +12978,7 @@
 		"AbilityCastRange"	"1200"
 		"AbilityValues"
 		{
-			"bonus_armor" 			"40"
+			"bonus_armor" 			"27"
 			"bonus_stats" 			"32"
 			"bonus_hp_regen" 		"30"
 			"bonus_health" 			"750"

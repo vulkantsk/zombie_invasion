@@ -1840,6 +1840,18 @@
 		"DOTA_Tooltip_Ability_quest_test_old_men_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_old_men_reward_gold"                 		"ЗОЛОТА:"
 
+		"DOTA_Tooltip_Ability_quest_test_old_men2"										"Свiже молоко"
+		"DOTA_Tooltip_Ability_quest_test_old_men2_Description"							"Здравсiвуйте молодой человек, вы чего-то хотiли? що що ще раз? Хочете щоб я вам приготовил свой фiрмовий творог? З радiстю! Только не могли бы вы дiстати менi немного молока, оно падает с овець яких я пасу"
+		"DOTA_Tooltip_Ability_quest_test_old_men2_value_required"     							"КОЛИЧЕСТВО МОЛОКА:"
+		"DOTA_Tooltip_Ability_quest_test_old_men2_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_old_men2_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_test_old_men3"										"Свiже молоко"
+		"DOTA_Tooltip_Ability_quest_test_old_men3_Description"							"Здравсiвуйте молодой человек, вы чего-то хотiли? що що ще раз? Хочете щоб я вам приготовил свой фiрмовий творог? З радiстю! Только не могли бы вы дiстати менi немного молока, оно падает с овець яких я пасу"
+		"DOTA_Tooltip_Ability_quest_test_old_men3_value_required"     							"КОЛИЧЕСТВО МОЛОКА:"
+		"DOTA_Tooltip_Ability_quest_test_old_men3_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_test_old_men3_reward_gold"                 		"ЗОЛОТА:"
+
  		"DOTA_Tooltip_Ability_quest_test_meepo"										"Ключ к останкам"
 		"DOTA_Tooltip_Ability_quest_test_meepo_Description"							"Эй пацан! Не хочешь заработать деньжат, да получить ключик? Есть у меня для тебя одна работёнка. Ночью из могил встают скелеты. Такие жуткие создания! Так вот убей их, а что от них останется принеси мне."
 		"DOTA_Tooltip_Ability_quest_test_meepo_value_required"     							"КОЛИЧЕСТВО ОСТАНКОВ:"

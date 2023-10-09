@@ -1094,7 +1094,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_3 = zombie_count_3 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,4)
+                   local time_res = RandomInt(6,12)
 		         Timers:CreateTimer(time_res, function()
 
  
@@ -1107,7 +1107,7 @@ end
                            unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           rollBase_3 = rollBase_3 + 2.5
+                           rollBase_3 = rollBase_3 + 1.5
  		             end
  
          	
@@ -1149,7 +1149,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_4 = zombie_count_4 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,8)
+                   local time_res = RandomInt(8,16)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_4) then
@@ -1203,7 +1203,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_5 = zombie_count_5 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(6,15)
+                   local time_res = RandomInt(10,18)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_5) then 
@@ -1257,7 +1257,7 @@ end
 	         for i=1, 1 do
 		         necr_count = necr_count + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(6,15)
+                   local time_res = RandomInt(11,15)
 		         Timers:CreateTimer(time_res, function()
 
 		 		   if RollPercentage(rollBase_65) then 
@@ -1310,7 +1310,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_6 = zombie_count_6 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,6)
+                   local time_res = RandomInt(9,13)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_6) then 
@@ -1362,7 +1362,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_7 = zombie_count_7 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,6)
+                   local time_res = RandomInt(9,16)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_7) then 
