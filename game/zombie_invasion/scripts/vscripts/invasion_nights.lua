@@ -4,6 +4,7 @@ zombie_count_2 = 0
 rollBase_2 = 1.5
 
 zombie_count_3 = 0 
+rollBase_3 = 1.5
 
 zombie_count_4 = 0 
 rollBase_4 = 1.5
@@ -11,6 +12,7 @@ rollBase_4 = 1.5
 zombie_count_5 = 0 
 rollBase_5 = 1.5
 
+rollBase_65 = 1.5
 necr_count = 0
 
 zombie_count_6 = 0 
@@ -28,8 +30,8 @@ ghost_count_new = 0
 
 function InvasionMode:ZombieNight1()  
  	if GetMapName() == "invasion_refresh" then
-    	self:SpawnZombie("npc_classic_wave_zombie",11)
-	
+    	self:SpawnZombie("npc_classic_wave_zombie",6)
+		self:SpawnZombie("npc_classic_wave_zombie_down",3)
 		Timers:CreateTimer(150,function()
     	    self:SpawnZombie("npc_undying_1",1)
 		end) 
@@ -81,7 +83,8 @@ end
  -- 2 НОЧЬ
  	if GetMapName() == "invasion_refresh" then
     	local spawn_zmb = 0
-    	self:SpawnZombie("npc_classic_wave_big_zombie",3)
+    	self:SpawnZombie("npc_suic_wave_zombie",2)
+    	self:SpawnZombie("npc_classic_wave_big_zombie",6)
  	
 		
  		Timers:CreateTimer(0, function()
@@ -140,7 +143,7 @@ function InvasionMode:ZombieNight3()
   -- 3 НОЧЬ 
  
  	if GetMapName() == "invasion_refresh" then
-    	self:SpawnZombie("npc_classic_wave_ghoul",11)
+    	self:SpawnZombie("npc_classic_wave_ghoul",6)
  	
  	
 	
@@ -199,7 +202,7 @@ function InvasionMode:ZombieNight3()
  function InvasionMode:ZombieNight4()  
    -- 4 НОЧЬ 
  	if GetMapName() == "invasion_refresh" then
-    	self:SpawnZombie("npc_classic_wave_ghoul_2",11)
+    	self:SpawnZombie("npc_classic_wave_ghoul_2",6)
  	
  	
 		
@@ -237,7 +240,7 @@ function InvasionMode:ZombieNight5()
 
  
     local spawn_zmb = 0
-    self:SpawnZombie("npc_classic_wave_pudge",3)
+    self:SpawnZombie("npc_classic_wave_pudge",2)
  
 	
  	Timers:CreateTimer(0, function()
@@ -260,7 +263,7 @@ end
  function InvasionMode:ZombieNight6()  
 
  
-    self:SpawnZombie("npc_classic_wave_pudge_2",11)
+    self:SpawnZombie("npc_classic_wave_pudge_2",6)
  
  	Timers:CreateTimer(225,function()
  		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_undying",0,0)

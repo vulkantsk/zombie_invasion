@@ -249,8 +249,10 @@
 		"npc_classic_half_zombie"                                           "Половина Зомби"		
 		"npc_classic_big_half_zombie"                                           "Пол Большого зомби"	
 		"npc_stronger_chicken"	                                            "Курица???"
+		"npc_wave_zombie_toxic"												"сисяд"
 		"npc_classic_chicken"                                               "Большая Курица???"	
 		"npc_classic_zombie"                                                "Зомби"
+		"npc_classic_wave_zombie_down"										"Полупокер"
 		"npc_classic_big_zombie"                                            "Большой Зомби"
 		"npc_classic_necr"	                                                    "Некр"
 		"npc_classic_big_necr"	                                                    "Большой Некр"
@@ -463,7 +465,7 @@
 		"DOTA_Tooltip_ability_item_bloodstone_max_2_all_lifesteal"					"%+$spell_lifesteal"
  
 		"DOTA_Tooltip_ability_item_Split_medusa"									"Daedalus Stormbow"
-		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>4</font>"
+		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>3</font>"
 		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Штормовой лук дэдала способен разрушить саму концепцию этого мира."
 		"DOTA_Tooltip_ability_item_Split_medusa_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_Split_medusa_attack_range_bonus"					"+$attack_range"
@@ -475,6 +477,18 @@
 		"DOTA_Tooltip_ability_item_Split_medusa_Regen_bonus"						"+$hp_regen"
 
 
+		"DOTA_Tooltip_ability_item_world_order_amulet"				"World order amulet"
+		"DOTA_Tooltip_ability_item_world_order_amulet_Description"	"<h1>Пассивная: World order </h1>Амулет даёт вам и вашим союзникам-питомцам преймущество в боях увеличвая урон на %damage_per_level%, броню на %armor_per_level% и скорость атаки на %attack_speed_per_level% за уровень героя."
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_strength"		"+$str"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_agility"		"+$agi"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_int"		"+$int"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_armor"		"+$armor"
+
+
+		"DOTA_Tooltip_modifier_item_world_order_amulet_aura"				"Амулетное безумие"
+		"DOTA_Tooltip_modifier_item_world_order_amulet_aura_Description"	"Герой благославлён амулетом удачи"
+
+
 		"DOTA_Tooltip_ability_item_armlet2"											"Band of courage power"
 		"DOTA_Tooltip_ability_item_armlet2_Description"											"<h1>Активная: Band of Devil power </h1> <font color='#6f0035'> если активирован герой получает +%bonus_damage_active% доп.урона, +%movespeed_active% скорости передвижения, +%bonus_str_active% доп.силы, +%lifesteal_active%%% вампиризма, +%magic_lifesteal_active%%% маг.вампиризм, +%armor_active% доп.броня, +%bonus_attack_speed_active% скорости атаки, но герой получает +%damage_per_second_active% урона в секунду.</font>" 
 		"DOTA_Tooltip_ability_item_armlet2_Lore"				"Однажды я смогу покорить своих демонов или же нет..?"
@@ -484,9 +498,42 @@
 		"DOTA_Tooltip_ability_item_armlet2_bonus_hp_regen" 		"+$hp_regen"
 		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
 
+		"DOTA_Tooltip_ability_item_last_standing_shield"			"standing shield"
+		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Активная: last block stand </h1>действует радиусом в %radius% на всех ближайщих союзником блокирует %damage_block% урона с шансом в %damage_block_chance%%%, также увеличвает скорость передвижение на %bonus_movespeed% и скорость атаки на %bonus_attack_speed%"
+		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"Сила лишь во мне и точка - это было выгравленно до покупки."
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_stats"							"+$all"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_hp_regen"					"+$hp_regen"
+
+
+	
+		"DOTA_Tooltip_modifier_item_last_standing_shield_aura"					"Благославение Анха"
+		"DOTA_Tooltip_modifier_item_last_standing_shield_aura_Description"		"Герой под защитой Анха."
+
+
+
+		"DOTA_Tooltip_ability_item_sad_shield"				"Smell shield"
+		"DOTA_Tooltip_ability_item_sad_shield_Description"	"<h1>Пассивная: Smell shell block </h1>блокирует %damage_block% урона с шансом в %damage_block_chance%%%"
+		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Вонючий, но правда полезный.. Правда!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_sad_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_sad_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_modifier_item_sad_shield"				"Smelled"
+		"DOTA_Tooltip_modifier_item_sad_shield_Description"	"Вонючий, но им можно пользоваться блокирует <font color='#ffd0cb'>20</font> урона с шансом в 60%%%"
+
+		"DOTA_Tooltip_ability_item_poor_shield"				"happor shield"
+		"DOTA_Tooltip_ability_item_poor_shield_Description"	"<h1>Пассивная: Smell shell block </h1>блокирует %damage_block% урона с шансом в %damage_block_chance%%%"
+		"DOTA_Tooltip_ability_item_poor_shield_Lore"			"Вонючий, но правда полезный.. Правда!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_agility"						"+$agi"
+		"DOTA_Tooltip_modifier_item_poor_shield"			"Щиточек"
+		"DOTA_Tooltip_modifier_item_poor_shield_Description"	"Практичный в боях блокирует <font color='#ffd0cb'>120</font> урона с шансом в 60%%%"
+
+
 
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
-		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>7</font>"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Ваши способности поражение цели увеличиваются многократно. Целей для атаки: <font color='#ffc0cb'>4</font>"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Штормовой лук дэдала способен разрушить саму концепцию этого мира."
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_attack_range_bonus"					"+$attack_range"
@@ -938,7 +985,13 @@
  
         "DOTA_Tooltip_Ability_item_midas"                                            "<font color='#ffdc33'>Midas Treasure</font>"
         "DOTA_Tooltip_Ability_item_midas_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите от %gold_min% до %gold_max% золота."       
-        "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса."  
+        "DOTA_Tooltip_Ability_item_midas2_Lore"                                "Некогда это был сундук самого Мидаса." 
+        "DOTA_Tooltip_Ability_item_midas2"                                            "<font color='#ffdc33'>Midas Treasure 2</font>"
+        "DOTA_Tooltip_Ability_item_midas2_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите от %gold_min% до %gold_max% золота."       
+        "DOTA_Tooltip_Ability_item_midas3_Lore"                                "Некогда это был сундук самого Мидаса."
+        "DOTA_Tooltip_Ability_item_midas3"                                            "<font color='#ffdc33'>Midas Treasure 3</font>"
+        "DOTA_Tooltip_Ability_item_midas3_Description"                                "<h1>Активная: Призвать сундук</h1>Призывает сундук Мидаса, сломав который, вы получите от %gold_min% до %gold_max% золота."       
+        "DOTA_Tooltip_Ability_item_midas_Lore"                                "Некогда это был сундук самого Мидаса." 
 
         "DOTA_Tooltip_Ability_item_golda"										"Бесконечные деньги"
         "DOTA_Tooltip_Ability_item_golda_Description"							"Если соединить с чем-то, то, возможно, получится что-то интересное.."
@@ -1722,7 +1775,7 @@
 		"DOTA_Tooltip_Ability_quest_test_gurd_05_reward_gold" 						"ЗОЛОТА:"
 
 		"DOTA_Tooltip_Ability_quest_test_kamen" ""
-		"DOTA_Tooltip_Ability_quest_test_kamen_Description" "Такс-с, здесь можно посадить Росток."
+		"DOTA_Tooltip_Ability_quest_test_kamen_Description" "Такс-с, здесь можно посадить Росток, возможно стоит спросить у торговца имеется ли он в арсенале?"
 		"DOTA_Tooltip_Ability_quest_test_kamen_value_required"						"КОЛИЧЕСТВО:"
 		"DOTA_Tooltip_Ability_quest_test_kamen_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_test_kamen_reward_gold" 						"ЗОЛОТА:"

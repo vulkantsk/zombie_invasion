@@ -179,7 +179,7 @@
 			"AbilityChannelTime"			"10"
 			"AbilityCastPoint"				"0"
 			"AbilityDuration"				"10.0"
-			"AbilityManaCost"				"200 400 600"
+			"AbilityManaCost"				"500 800 1200"
 			"radius"						"810"
 			"explosion_radius"				"320"
 			"bonus_armor"					"20"
@@ -196,8 +196,8 @@
 			}
 			"damage"
 			{
-				"value"										"120 240 360"
-				"special_bonus_unique_crystal_maiden_3"		"+60"
+				"value"										"620 940 1260"
+				"special_bonus_unique_crystal_maiden_3"		"+1980"
 			}
 			"frostbite_delay" // negative means don't apply.
 			{

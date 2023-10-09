@@ -173,13 +173,6 @@ function modifier_amaliels_cuirass_aura_enemy:IsHidden()
 	return false
 end
 
---------------------------------------------------------------------------------
-
-function modifier_amaliels_cuirass_aura_enemy:IsDebuff()
-	return true
-end
-
- 
 
 --------------------------------------------------------------------------------
 

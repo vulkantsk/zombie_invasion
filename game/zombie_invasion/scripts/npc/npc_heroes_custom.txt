@@ -800,7 +800,7 @@
 		"Rolelevels"				"3,2"
 		"ArmorPhysical"		"5"
 
-		"AttackRange"				"200"				
+		"AttackRange"				"175"				
 		"Ability1"					"tidehunter_gush"
 		"Ability2"					"tidehunter_kraken_shell"
 		"Ability3"					"anchor_smash_passive"
@@ -809,12 +809,12 @@
 		"Ability6"					"tide_health"
 		"Ability10"		"special_bonus_mp_regen_150"
 		"Ability11"		"special_bonus_armor_5"
-		"Ability12"		"special_bonus_movement_speed_30"
+		"Ability12"		"special_bonus_attack_damage_120"
 		"Ability13"		"special_bonus_unique_tide_damage_reduction"
 		"Ability14"		"special_bonus_unique_tide_armor_reduction"
 		"Ability15"		"special_bonus_unique_tide_dmg_proc"
-		"Ability16"		"special_bonus_unique_tide_smash_damage"
-		"Ability17"		"special_bonus_attack_damage_120"				
+		"Ability16"		"special_bonus_unique_tidehunter_7"
+		"Ability17"		"special_bonus_unique_tide_smash_damage"				
 	}	
 
 "npc_dota_hero_spectre"
@@ -1547,7 +1547,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"6"									// Physical protection.
+		"ArmorPhysical"				"12"									// Physical protection.
 		"MagicalResistance"			"12"									// Magical protection (percentage).
 
 
@@ -1555,7 +1555,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"24"										// Base strength
-		"AttributeStrengthGain"		"2.1"										// Strength bonus per level.
+		"AttributeStrengthGain"		"1.8"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"14"										// Base intelligence
 		"AttributeIntelligenceGain"	"1.5"										// Intelligence bonus per level.
 		"AttributeBaseAgility"		"16"										// Base agility
@@ -1569,7 +1569,7 @@
 
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"				"200"									// Base health.
+		"StatusHealth"				"100"									// Base health.
 		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
 		"StatusMana"				"100"											// Base mana.
 		"StatusManaRegen"			"1"									// Mana regeneration rate.

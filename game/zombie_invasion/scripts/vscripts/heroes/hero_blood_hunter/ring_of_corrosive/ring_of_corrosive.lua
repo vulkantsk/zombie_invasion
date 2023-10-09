@@ -112,7 +112,7 @@ function modifier_ring_of_corrosive:OnIntervalThink()
 	for _,enemy in pairs(enemies) do
 		-- damage
 	-- precache damage
- local damage_tick = ((self.damage + (self:GetParent():GetAttackDamage() * 3)) * self:GetAbility():GetSpecialValueFor( "tick_rate" ))
+ local damage_tick = ((self.damage * (self:GetParent():GetBaseDamageMax() * 3)) * self:GetAbility():GetSpecialValueFor( "tick_rate" ))
 	local damageTable = {
 		victim = enemy,
 		attacker = self:GetCaster(),

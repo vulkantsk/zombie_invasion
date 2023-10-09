@@ -976,8 +976,8 @@ EndGame:DemonEnd()
  
 --*************************************** NIGHT SPAWN ***************************************
  
-
-     if killedEntity:GetUnitName() == "npc_classic_wave_zombie" or killedEntity:GetUnitName() == "npc_suic_wave_zombie" then 
+	if currentNight == 1 then
+     if killedEntity:GetUnitName() == "npc_classic_wave_zombie" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -987,21 +987,23 @@ EndGame:DemonEnd()
  
 	         for i=1, 1 do
 		         zombie_count = zombie_count + 1
-		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,6)
-		         Timers:CreateTimer(time_res, function()
 
-		             if RollPercentage(rollBase) then 
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(4,6)
+		         Timers:CreateTimer(time_res, function()
+		             if RollPercentage(rollBase) then
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase = 1
- 		             else
+ 		             else 
  		         	       unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           rollBase = rollBase + 2.8
- 		             end
-
+ 		         	       unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase = rollBase + 2.8 
+ 		            end
         	             if zombie_count < 105 then 
            	                     SetGoldUsually(unit, 0)       	             	
-                             	 SetExpUsually(unit, 0)
+                             	 	 SetExpUsually(unit, 0)
+                             	 	 SetExpUsually(unit, 0)
            	             elseif  zombie_count < 238 then 
           	                     SetGoldUsually(unit, -1)          	                  	
            	                  	 SetExpUsually(unit, -8)
@@ -1024,8 +1026,11 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
+end
  
-      if killedEntity:GetUnitName() == "npc_classic_wave_big_zombie" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic"  then 
+
+ 	 if currentNight == 2 then
+      if killedEntity:GetUnitName() == "npc_classic_wave_big_zombie" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1041,9 +1046,12 @@ EndGame:DemonEnd()
 
 		             if RollPercentage(rollBase_2) then 
  		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_2 = 1.5
  		             else
                            unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_2 = rollBase_2 + 1.5
  		             end
          	
@@ -1072,9 +1080,10 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
+end
 
- 
-      if killedEntity:GetUnitName() == "npc_classic_wave_ghoul" then 
+ 	if currentNight == 3 then
+       if killedEntity:GetUnitName() == "npc_classic_wave_ghoul" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1085,11 +1094,21 @@ EndGame:DemonEnd()
 	         for i=1, 1 do
 		         zombie_count_3 = zombie_count_3 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(3,8)
+                   local time_res = RandomInt(3,4)
 		         Timers:CreateTimer(time_res, function()
 
  
-                       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		         	if RollPercentage(rollBase_3) then 
+ 		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_3 = 1.5
+ 		             else
+                           unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_3 = rollBase_3 + 2.5
+ 		             end
  
          	
         	             if zombie_count_3 < 105 then 
@@ -1116,8 +1135,9 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
+end
 
- 
+ 	if currentNight == 4 then
       if killedEntity:GetUnitName() == "npc_classic_wave_ghoul_2" or killedEntity:GetUnitName() == "npc_classic_wave_ghoul_big"  then 
      	 if GameRules:IsDaytime() then
      		 return nil 
@@ -1132,11 +1152,15 @@ EndGame:DemonEnd()
                    local time_res = RandomInt(3,8)
 		         Timers:CreateTimer(time_res, function()
 
-		             if RollPercentage(rollBase_4) then   
- 		                 unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             if RollPercentage(rollBase_4) then
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 
  		                 rollBase_4 = 1.5
  		             else
+ 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 		     
                            rollBase_4 = rollBase_4 + 1.5
  		             end
          	
@@ -1165,8 +1189,9 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
+end
  
-
+	if currentNight == 5 then
       if killedEntity:GetUnitName() == "npc_classic_wave_pudge" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2"  then 
      	 if GameRules:IsDaytime() then
      		 return nil 
@@ -1183,9 +1208,13 @@ EndGame:DemonEnd()
 
 		             if RollPercentage(rollBase_5) then 
  		                 unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_5 = 1.5
  		             else
                            unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 
                            rollBase_5 = rollBase_5 + 1.5
  		             end
          	
@@ -1214,7 +1243,10 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
-      if killedEntity:GetUnitName() == "npc_classic_necr" then 
+end
+
+	if currentNight == 6 then
+      if killedEntity:GetUnitName() == "npc_classic_necr" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1228,7 +1260,17 @@ EndGame:DemonEnd()
                    local time_res = RandomInt(6,15)
 		         Timers:CreateTimer(time_res, function()
 
-		 		   unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		 		   if RollPercentage(rollBase_65) then 
+ 		                 unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_65 = 1.5
+ 		             else
+                           unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 
+                           rollBase_65 = rollBase_65 + 1.5
+ 		             end
 
         	             if necr_count < 50 then 
            	                     SetGoldUsually(unit, 0)       	             	
@@ -1255,7 +1297,8 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
- 
+end
+ if currentNight == 7 then
      if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_classic_wave_pudge_mini" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
@@ -1271,10 +1314,14 @@ EndGame:DemonEnd()
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_6) then 
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             	  unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 unit = CreateUnitByName("npc_classic_wave_pudge_mini", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_6 = 1
  		             else
+ 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_pudge_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_6 = rollBase_6 + 2.0
  		             end
 
@@ -1302,7 +1349,8 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
-
+end
+ if currentNight == 8 then
      if killedEntity:GetUnitName() == "npc_classic_wave_greater_zombie" or killedEntity:GetUnitName() == "npc_classic_wave_reflect_zombie" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
@@ -1318,9 +1366,13 @@ EndGame:DemonEnd()
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_7) then 
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 unit = CreateUnitByName("npc_classic_wave_reflect_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_7 = 1
  		             else
+ 		             	  unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_greater_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_7 = rollBase_7 + 2.0
  		             end
@@ -1349,7 +1401,7 @@ EndGame:DemonEnd()
            	 end	                        
 	   	 end             
      end
- 
+ end
 --*************************************** END SPAWN ***************************************
 
 if killedEntity:GetUnitName() == "npc_last_boss" then

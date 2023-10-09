@@ -188,8 +188,9 @@
 		"ScriptFile"             		"heroes/hero_alchemist/totem/alchemist_good_deal"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"            "alchemist/alchemist_goblins_greed_png"
-		"RequiredLevel"                 "35"
-		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"			"10"
+		"RequiredLevel"                 "15"
+		"MaxLevel"                      "3"
  
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -197,7 +198,7 @@
 		{
 			"damage_gold"	
 			{ 
-				"value"		"1.5"	 
+				"value"		"1.5 3 4.5"	 
 				"CalculateSpellDamageTooltip"	"0"
             }
 		}
@@ -243,7 +244,7 @@
 		{
 			"duration"				"30"
 			"transformation_time"	"0.35"
-			"base_attack_time"		"1.1 1.0 0.9"
+			"base_attack_time"		"0.9 0.7 0.5"
 			"bonus_health"			"0"
 			"bonus_health_regen"
 			{

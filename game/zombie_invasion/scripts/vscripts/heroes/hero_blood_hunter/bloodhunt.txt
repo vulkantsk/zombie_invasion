@@ -23,13 +23,13 @@
 
  				"duration"				
  				{
- 					"value"				"12 14 16 18 20 22 24"
- 					"special_bonus_unique_blood_hunter_duration_blood"	"+6"
+ 					"value"				"10 11 12 13 14 15 16"
+ 					"special_bonus_unique_blood_hunter_duration_blood"	"+4"
  				}
-				"stack_damage"			"6 12 18 24 32 48 52"  
+				"stack_damage"			"4 8 12 16 20 24 28"  
 				"stack_attackspeed"		"10 15 20 35 40 45 50"
 				"bonus_damage"			"20 40 60 80 100 120 140"
-				"bonus_attack_speed"	"25 55 70 95 115 135 165"
+				"bonus_attack_speed"	"25 40 55 70 95 115 135 155"
 				"stack"					
 				{
 					"value"			"2"
@@ -41,7 +41,7 @@
 	}
 	"bloodstained_memory"
 	{
-		"BaseClass"						"ability_lua"
+		"BaseClass"							"ability_lua"
 		"ScriptFile"					"heroes/hero_blood_hunter/bloodstained_memory/bloodstained_memory"
 		"AbilityTextureName"			"bloodstained_memory"
 		"FightRecapLevel"				"1"
@@ -52,11 +52,11 @@
  
 		"AbilityValues"
 		{
-				"healthbonus"			"20 40 60 80 100 120 140"
+				"healthbonus"			"40 60 80 100 120 140 160"
 				"movespeed"	
 				{
-					"value"			"6 11 16 21 36 41 47 60"
-					"special_bonus_unique_blood_hunter_bloodstained_memory_speed"	"+40"
+					"value"			"2 4 6 8 10 12 14 16"
+					"special_bonus_unique_blood_hunter_bloodstained_memory_speed"	"+14"
 
 				}
 		}
@@ -86,7 +86,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityHealthCost"				"60"
+		"AbilityHealthCost"				"30"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -106,11 +106,11 @@
 			
 				"illusion_duration"			"30"
 			
-				"outgoing_damage"			"150 200 250 300 350"
+				"outgoing_damage"			"200 225 275 300 350"
 			
 				"incoming_damage"
 				{
-					"value"			"125 150 175 200 225"	
+					"value"			"200"	
 					"special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"	"-25"
 
 
@@ -165,7 +165,7 @@
 			
 				"transformation_time"	"0.2"
 			
-				"base_attack_time"		"0.9 0.7 0.5"
+				"base_attack_time"		"0.9 0.8 0.7"
 		
 				"bonus_armor"	"2 3 4"
 			

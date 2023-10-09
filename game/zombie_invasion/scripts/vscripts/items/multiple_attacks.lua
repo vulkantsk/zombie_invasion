@@ -12,7 +12,7 @@ function multiple_attacks(keys)
 				caster:PerformAttack(unit,true,false,true,false,true,false,true)
 				count = count + 1
 			end
-			if count > 2 then
+			if count > 1 then
 				break
 			end
 		end

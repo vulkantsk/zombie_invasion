@@ -160,7 +160,8 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_muerta/rend/rend"
 		"AbilityTextureName"		"innate_rend"
-		"RequiredLevel"					"35"
+		"RequiredLevel"					"15"
+		"LevelsBetweenUpgrades"			"10"
 		"MaxLevel"					"1"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
@@ -168,8 +169,8 @@
 		
 		"AbilityValues"
 		{
-			"armor_tear"					"0.5"
-			"crit_damage"					"275"
+			"armor_tear"					"0.2 0.4 0.6"
+			"crit_damage"					"115"
 			"crit_chance_per_negative_armor" "1"
 		}
 

@@ -45,12 +45,12 @@
 				}
 				"bonus_armor"			
 				{
-					"value"				"30"
+					"value"				"10 30 50 70 90 110 130"
 				}
-				"duration"				"2.0 2.4 2.8 3.2 3.6 4.0 4.4"
+				"duration"				"2.0 3.2 4.8 5.6 6.6 7.2 8.1"
 				"shard_armor"				
 				{
-					"value"				"2.5"
+					"value"				"12.5"
 					"RequiresShard"		"1"
 				}
 				"shard_duration"			
@@ -179,8 +179,9 @@
 		"ScriptFile"					"heroes/hero_axe/solo/axe_solo"
 		"AbilityTextureName"			"Hero/kAxe/solo_1"
 		"FightRecapLevel"				"1"
-				"RequiredLevel"					"35"
-		"MaxLevel" "1"
+				"RequiredLevel"					"15"
+				"LevelsBetweenUpgrades"			"10"
+		"MaxLevel" "3"
 
  
 		
@@ -203,27 +204,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_strength"			"50"
+				"bonus_strength"			"50 100 150"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_regen"					"25"
+				"bonus_regen"					"25 50 75"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_armor"					"30"
+				"bonus_armor"					"30 60 90"
 			}
  			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_model"			"40"
+				"bonus_model"			"40 60 80"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"radius"					"475"
+				"radius"					"475 325 240"
 			}
 		
       }

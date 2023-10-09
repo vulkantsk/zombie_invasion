@@ -1644,12 +1644,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "160"
+                "reward_exp"                "60"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "180"
+                "reward_gold"                "60"
             }
         }
 
@@ -1688,12 +1688,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "400"
+                "reward_exp"                "120"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "350"
+                "reward_gold"                "200"
             }
         }
 
@@ -1732,12 +1732,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "525"
+                "reward_exp"                "115"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "425"
+                "reward_gold"                "125"
             }
         }
 
@@ -1776,12 +1776,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "1250"
+                "reward_exp"                "240"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "675"
+                "reward_gold"                "225"
             }
         }
 
@@ -1822,12 +1822,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "1325"
+                "reward_exp"                "320"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "825"
+                "reward_gold"                "425"
             }
         }
 
@@ -1866,12 +1866,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "1325"
+                "reward_exp"                "360"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "825"
+                "reward_gold"                "455"
             }
         }
 
@@ -1910,12 +1910,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "1325"
+                "reward_exp"                "550"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "825"
+                "reward_gold"                "625"
             }
         }
 
@@ -1957,12 +1957,144 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "175"
+                "reward_exp"                "55"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "100"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_milk"
+                "reward_item"    "item_tvorog"
+                "particle"        "1"
+                "next_quest"    "quest_test_old_men2"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_test_old_men2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/quest_women1"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "20"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "105"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
                 "reward_gold"                "120"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_milk"
+                "reward_item"    "item_tvorog"
+                "particle"        "1"
+                "next_quest"    "quest_test_old_men3"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_test_old_men3"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/quest_women1"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "30"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "320"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "220"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_milk"
+                "reward_item"    "item_tvorog"
+                "particle"        "1"
+                "next_quest"    "quest_test_old_men3"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+    "quest_test_old_men3"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/quest_women1"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "30"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "320"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "220"
             }
         }
 
@@ -1981,6 +2113,7 @@
         }      
        
     }
+
 
 
  		    "quest_test_david"
@@ -2651,12 +2784,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "160"
+                "reward_exp"                "0"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "200"
+                "reward_gold"                "0"
             }
         }
 
@@ -6764,17 +6897,17 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "damage"                "125"
+                "damage"                "90"
             }
             "02"
             {
                 "var_type"              "FIELD_INTEGER"
-                "radius"                "230"
+                "radius"                "165"
             }
             "03"
             {
                 "var_type"              "FIELD_FLOAT"
-                "duration"              "5"
+                "duration"              "4"
             }
         }
     }
@@ -22616,7 +22749,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"target_damage"			"100"
+				"target_damage"			"42"
 				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
 			}
 			"03"
@@ -22675,7 +22808,7 @@
 			"knockback_distance"		"70"
 			"knockback_damage"
 			{
-				"value"					"120"
+				"value"					"65"
 				"special_bonus_unique_primal_beast_onslaught_damage"	"+90"
 			}
 			"knockback_duration"		"0.2"

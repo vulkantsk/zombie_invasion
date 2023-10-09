@@ -15,7 +15,7 @@ end
         RemoveOnDeath           = function(self) return true end,
         DeclareFunctions        = function(self) return 
             {
-            MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
+            MODIFIER_PROPERTY_HEALTH_BONUS,
             MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
             MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
             } end,
@@ -26,6 +26,12 @@ end
 function modifier_bloodstained_memory:OnCreated()
     self.healthbonus = self:GetAbility():GetSpecialValueFor("healthbonus")
     self.movespeed = self:GetAbility():GetSpecialValueFor("movespeed")
+    self:StartIntervalThink(1)
+end
+
+function modifier_bloodstained_memory:OnIntervalThink()
+    if not IsServer() then return end
+    self:OnCreated()
 end
 
 function modifier_bloodstained_memory:OnRefresh()
@@ -37,8 +43,8 @@ function modifier_bloodstained_memory:GetModifierIgnoreMovespeedLimit()
     return 1
 end
 
-    function modifier_bloodstained_memory:GetModifierExtraHealthBonus()
-        return self.healthbonus * (self:GetParent():FindModifierByName("modifier_bloodrage_buff"):GetStackCount() + (0.25 / self.GetParent():GetHealth()))
+    function modifier_bloodstained_memory:GetModifierHealthBonus()
+        return self.healthbonus * self:GetParent():FindModifierByName("modifier_bloodrage_buff"):GetStackCount()
     end
 
     function modifier_bloodstained_memory:GetModifierMoveSpeedBonus_Constant()

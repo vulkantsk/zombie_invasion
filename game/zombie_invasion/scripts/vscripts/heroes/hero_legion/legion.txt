@@ -32,7 +32,7 @@
                 "damage"             
                 {
                     "value"     "35 65 95 125 155 195 245"
-                    "special_bonus_unique_arrow_damage" "+255"
+                    "special_bonus_unique_arrow_damage" "+355"
 
                 }
                 "damage_per_unit"    
@@ -79,8 +79,8 @@
 			
 				"bonuss_armor"		
 				{
-					"value" 					"0.25 0.50 0.75 1"
-					"special_bonus_unique_legion_low"		"+0.25"
+					"value" 					"0.15 0.20 0.25 0.30"
+					"special_bonus_unique_legion_low"		"+0.15"
 				}
 				"bonuss_magic"
 				{
@@ -184,16 +184,16 @@
                 "AbilityCooldown"              
                 { 
 
-                    "value" "120 100 80"
-                    "special_bonus_scepter" "-60 -50 -40"
+                    "value" "300 180 120"
+                    "special_bonus_scepter" "-80 -60 -40"
                 }
 
                 "radius"                    "300 400 600"  
                       
                 "stats_per_kill"          
                 {
-                    "value"     "2 4 6"
-                    "special_bonus_scepter" "+2 +4 +6"
+                    "value"     "1 2 3"
+                    "special_bonus_scepter" "+1 +2 +3"
                 }         
                
                 "duration"        

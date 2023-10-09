@@ -58,7 +58,7 @@
         "AbilityTextureName"            "tide/sosat"
         "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "10"
-        "RequiredLevel"                 "10"
+        "RequiredLevel"                 "15"
 
         "AbilityCastRange"              "%radius"
         // Special
@@ -66,20 +66,20 @@
         "AbilityValues"
         {
            
-				"dmg_proc"				"5225 4565 3225"
+				"dmg_proc"				"2250 1252 980"
 			    	
 
 				"str_per_stack"				
 				{
-					"value"				"0.2 0.4 0.6"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					"value"				"0.1 0.2 0.3"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.1"
 					 
 				}
 
 				"health_per_stack"				
 				{
-					"value"				"0.2 0.4 0.6"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					"value"				"0.1 0.2 0.3"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.1"
 					 
 				}
           
@@ -106,12 +106,12 @@
 			
 				"damage_reduction"				
 				{
-					"value"				"45 70 110 135 170 210 245"
-			    	"special_bonus_unique_tide_damage_reduction"	    "+200"
+					"value"				"45 70 110 190 240 270 325"
+			    	"special_bonus_unique_tide_damage_reduction"	    "+400"
 					 
 				}
 			
-				"damage_cleanse"		"600 550 500 450"
+				"damage_cleanse"		"90 120 140 180"
 			
 				"damage_reset_interval"	"5"
 			
@@ -247,7 +247,7 @@
 			"duration"			
 			{
 				"value"					"6.0 8.2 12.4"
-				"special_bonus_unique_tidehunter_7"	"+0.8"
+				"special_bonus_unique_tidehunter_7"	"+12.6"
 			}
 		}
 	}

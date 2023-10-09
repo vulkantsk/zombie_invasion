@@ -6,7 +6,6 @@
 		"item"		"item_clarity"	
 		"item"		"item_flask" 
 		"item"		"item_ward_observer"
-		"item"		"item_leaf"
 		"item"		"item_tome_of_knowledge"
 		"item"		"item_color_red"
 		"item"		"item_color_green"
@@ -33,17 +32,15 @@
 		"item"		"item_ring_of_protection"
 		"item"		"item_midas"
 		"item"		"item_quelling_blade"
+		"item"		"item_sad_shield"
+		"item"		"item_poor_shield"
 		"item"		"item_blight_stone"
 		"item"		"item_blades_of_attack"
 		"item"		"item_chainmail"
 		"item"		"item_quarterstaff"
 		"item"		"item_broadsword"
 		"item"		"item_claymore"				
-		"item"		"item_javelin"
 		"item"		"item_mithril_hammer"
-		"item"		"item_Split_medusa"
-		"item"		"item_war_of_the_crossbow"
-		"item"		"item_armlet2"
 	}
 			
 	"misc"
@@ -66,19 +63,13 @@
 		"item"		"item_null_talisman"
 		"item"		"item_wraith_band"
 		"item"		"item_bracer"
-		 "item"		"item_vambrace"
-		 "item"       "item_vampire_claw"
-		"item"		"item_crystal_boots"
-		"item"		"item_power_treads_2"
-		"item"		"item_pers"
-		"item"		"item_travel_boots"		
-		"item"		"item_moon_shard"		
- 		"item"	    "item_imba_haste_boots"	
+		"item"       "item_vampire_claw"		
 	}
 
 	// Level 2 - Blue Recipes
 	"support"
 	{
+		"item"		"item_ultimate_scepter"
 		"item"		"item_ring_of_basilius"
 		"item"		"item_iron_talon"	
 		"item"		"item_headdress"
@@ -92,19 +83,21 @@
 		"item"		"item_vladmir"		
 		"item"		"item_medallion_of_courage_custom_3"
 		"item"      "item_imba_vladmir_3"
+		"item"      "item_guardian_greaves_up"
 	}
 				
 	"magics"			
 	{
-		"item"		"item_veil_of_discord_2"		
+		"item"		"item_veil_of_discord_2"	
+		"item"		"item_ethereal_blade_2"	
 		"item"		"item_aether_lens"
 		"item"		"item_magic_cape_3"
 		"item"      "item_voodo_mask_3"
 		"item"		"item_solar_crest"	
-		"item"		"item_ultimate_scepter"
 		"item"		"item_refresher"
 		"item"		"item_octarine_core"
 		"item"      "item_magic_stone"
+		"item"		"item_bloodstone"
 		"item"      "item_bloodstone_max_2"		 
 	}
 		
@@ -116,26 +109,27 @@
 		"item"		"item_freez_shivas_guard"
 		"item"		"item_fire_shivas_guard"
 		"item"		"item_shivas_guard_heal"
-		"item"		"item_bloodstone"
+		"item"		"item_world_order_amulet"
 		"item"		"item_assault"
 		"item"		"item_assault_2"
-		"item"		"item_heart"
-		"item"      "item_guardian_greaves_up"	
+		"item"		"item_last_standing_shield"	
 
 	}
 			
 	"weapons"
 	{	
-		"item"		"item_lesser_crit"	
 		"item"		"item_bfury_2"
-		"item"		"item_ethereal_blade_2"
 		"item"		"item_radiance"
-		"item"		"item_monkey_king_bar" 	
+		"item"		"item_lesser_crit"		
 		"item"		"item_greater_crit"
 		"item"		"item_greater_crit2"
-		"item"		"item_rapier"	
-		"item"		"item_bloodthorn"
 		"item"	    "item_maelstrom_4"
+		"item"		"item_Split_medusa"
+		"item"		"item_war_of_the_crossbow"
+		"item"		"item_armlet2"
+		"item"		"item_maelstrom"
+		"item"		"item_mask_of_madness_3"
+		"item"		"item_desolator_2_custom"
 
 					
 	}
@@ -145,20 +139,18 @@
 	{	
  		//"item"		"item_venomous_shield"
 
- 		"item"		"item_mask_of_madness_3"
  		"item"		"item_dragon_lance"
 		"item"		"item_sange"
  		"item"		"item_yasha"
- 		"item"		"item_kaya"
-		"item"		"item_echo_sabre"	
- 		"item"		"item_maelstrom"		
- 		"item"		"item_desolator_2_custom"
+ 		"item"		"item_kaya"			
   		"item"		"item_sange_and_yasha_2"
   		"item"		"item_kaya_and_sange_2"
  		"item"		"item_yasha_and_kaya_2"
- 		"item"		"item_skadi" 
  		"item"		"item_satanic"		
- 		"item"		"item_skadi_2" 	 		
+ 		"item"		"item_skadi_2" 	 
+ 		"item"		"item_heart"
+ 		"item"		"item_power_treads_2"
+		"item"	    "item_crystal_boots"			
 	}
 
 	"sideshop1"
