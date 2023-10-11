@@ -35,7 +35,7 @@ function modifier_item_desolator_custom:GetModifierPreAttack_BonusDamage()
     return self:GetAbility():GetSpecialValueFor("bonus_damage") +  self:GetAbility():GetCurrentCharges()
 end
 function modifier_item_desolator_custom:GetModifierExtraHealthBonus()
-    return self:GetAbility():GetSpecialValueFor("bonus_health") +  self:GetAbility():GetCurrentCharges() * 25
+    return self:GetAbility():GetSpecialValueFor("bonus_health") +  self:GetAbility():GetCurrentCharges()
 end
 
 function modifier_item_desolator_custom:OnAttackLanded(data)

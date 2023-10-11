@@ -2106,8 +2106,7 @@
 
         "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket Shots"
         "DOTA_Tooltip_Ability_rocket_shots_Description"                                "После многочисленных тренировок Sniper научился на короткое время стрелять с нереально большой скоростью!"
-        "DOTA_Tooltip_Ability_rocket_shots_bonus_speed_atack"                                        "БАЗОВАЯ СКОРОСТЬ АТАКИ:"
-        "DOTA_Tooltip_Ability_rocket_shots_duration"                                        "ДЛИТЕЛЬНОСТЬ:"
+        "DOTA_Tooltip_Ability_rocket_shots_net_damage"                                        "БАЗОВАЯ СКОРОСТЬ АТАКИ:"
         "DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "На полигоне и не такие выходки случаются."
 
 		"DOTA_Tooltip_modifier_rocket_shots_haste"                            	"Rocket Shots"

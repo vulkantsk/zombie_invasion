@@ -1855,8 +1855,7 @@
 
         "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
         "DOTA_Tooltip_Ability_rocket_shots_Description"                                "After numerous training sessions, Sniper learned to shoot at an unrealistically high speed for a short time!"
-        "DOTA_Tooltip_Ability_rocket_shots_bonus_speed_atack"                                        "BASE ATTACK SPEED:"
-        "DOTA_Tooltip_Ability_rocket_shots_duration"                                        "DURATION:"
+        "DOTA_Tooltip_Ability_rocket_shots_net_damage"                                        "BASE ATTACK SPEED:"
         "DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "At the training ground and not such antics happen."
 
 		"DOTA_Tooltip_modifier_rocket_shots_haste"                            	"Rocket shots"

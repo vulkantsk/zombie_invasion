@@ -11518,7 +11518,7 @@
 				"corruption_armor"		"-30"
 				"corruption_duration"	"14.0"
 				"bonus_damage_per_kill"	"5"
-				"max_damage"			"200"
+				"max_damage"			"600"
 				"chance_to_stack"		"15"
 				"bonus_health"			"625"
 		}
