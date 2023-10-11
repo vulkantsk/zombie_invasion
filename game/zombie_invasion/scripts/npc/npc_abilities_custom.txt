@@ -22755,7 +22755,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_amount"			"120 165 210 255"
+				"heal_amount"			"-10000"
 				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
 			}
 			"04"

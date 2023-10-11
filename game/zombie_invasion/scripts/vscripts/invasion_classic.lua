@@ -1246,7 +1246,7 @@ end
 end
 
 	if currentNight == 6 then
-      if killedEntity:GetUnitName() == "npc_classic_necr" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2" then 
+      if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1299,7 +1299,7 @@ end
      end
 end
  if currentNight == 7 then
-     if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_classic_wave_pudge_mini" then 
+     if killedEntity:GetUnitName() == "npc_classic_necr" or killedEntity:GetUnitName() == "npc_classic_wave_pudge_mini" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
