@@ -75,15 +75,15 @@
 		
 		"guide_basic"			"Basics"
 		"basic1"				"Gameplay"
-		"basic1_text"			"Суть игры заключается в сдерживании волн зомби и защиты Homer."
+		"basic1_text"			"The essence of the game is to contain waves of zombies and protect Homer."
 		"basic2"				"Phases"
-		"basic2_text"			"В игре есть разделение на ночную и дневную фазу. Каждая из них длится 5 минут. Если игроков меньше, то дневная фаза для будет дольше. Во время дневной фазы, вам лучше сосредоточится на фарме и выполнении квестов, во время ночи, вам лучше всем защищать Homer."
+		"basic2_text"			"The game has a division into night and day phases. Each of them lasts 5 minutes. If there are fewer players, then the daily phase for will be longer. During the daytime phase, you'd better focus on farming and completing quests, during the night, you'd better protect Homer."
 		"basic3"				"Zombies"
-		"basic3_text"			"С каждой ночью зомби становится сильнее, так что вам лучше как следует к этому подготовиться."
+		"basic3_text"			"The zombies are getting stronger every night, so you'd better prepare for it properly."
 		
 		"guide_advanced"		"Advanced"
 		"advanced1"				"Quests"
-		"advanced1_text"		"Выполняйте квесты у Цмочки, Кункевича и Бродяги. Они дают очень ценные награды за них, что очень сильно поможет вам сдерживать волны зомби."
+		"advanced1_text"		"Complete quests at Cristal Maiden, Kunnka and the Tramp. They give very valuable rewards for them, which will greatly help you to restrain the waves of zombies."
 		"advanced2"				"aaa"
 		"advanced2_text"		"bbb"
 		"advanced3"				""
@@ -369,7 +369,7 @@
 
 
 		"DOTA_Tooltip_ability_item_Split_medusa"									"Daedalus Stormbow"
-		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>PASSIVE: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>4</font>"
+		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Passive: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>4</font>"
 		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
 		"DOTA_Tooltip_ability_item_Split_medusa_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_Split_medusa_attack_range_bonus"					"+$attack_range"
@@ -381,8 +381,66 @@
 		"DOTA_Tooltip_ability_item_Split_medusa_Regen_bonus"						"+$hp_regen"
 
 
+
+"DOTA_Tooltip_ability_item_world_order_amulet"				"World order amulet"
+		"DOTA_Tooltip_ability_item_world_order_amulet_Description"	"<h1>Passive: World order </h1>The amulet gives you and your pet allies an advantage in battles by increasing damage by %damage_per_level%, armor by %armor_per_level% and attack speed by %attack_speed_per_level% per hero level."
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_strength"		"+$str"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_agility"		"+$agi"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_int"		"+$int"
+		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_armor"		"+$armor"
+
+
+		"DOTA_Tooltip_modifier_item_world_order_amulet_aura"				"Amulet aura"
+		"DOTA_Tooltip_modifier_item_world_order_amulet_aura_Description"	"The hero is blessed with an amulet of good luck."
+
+
+
+
+		"DOTA_Tooltip_ability_item_armlet2"											"Band of courage power"
+		"DOTA_Tooltip_ability_item_armlet2_Description"											"<h1>Active: Band of Devil power </h1> <font color='#6f0035'> if activated, the hero gets +%bonus_damage_active% extra.damage, +%movespeed_active% movement speed, +%bonus_str_active% extra.powers, +%lifesteal_active%%% vampirism, +%magic_lifesteal_active%%% mag.vampirism, +%armor_active% add.armor, +%bonus_attack_speed_active% attack speed, but the hero gets +%damage_per_second_active% damage per second.</font>" 
+		"DOTA_Tooltip_ability_item_armlet2_Lore"				"Will I be able to conquer my demons one day or not..?"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_damage"		"+$damage"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_attack_speed"	"+$Attack"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_armor"			"+$armor"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_hp_regen" 		"+$hp_regen"
+		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
+
+		"DOTA_Tooltip_ability_item_last_standing_shield"			"standing shield"
+		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Active: last block stand </h1>operates with a radius of %radius% blocks %damage_block% damage on all nearby allies with a chance of %damage_block_chance%%%, also increases movement speed by %bonus_movespeed% and attack speed by %bonus_attack_speed% with a duration of 20 seconds."
+		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"The power is only in me and the point is that it was engraved before the purchase."
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_stats"							"+$all"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_hp_regen"					"+$hp_regen"
+
+
+	
+		"DOTA_Tooltip_modifier_item_last_standing_shield_aura"					"The Blessing of Ankh"
+		"DOTA_Tooltip_modifier_item_last_standing_shield_aura_Description"		"A hero under the protection of Ankh."
+
+
+
+		"DOTA_Tooltip_ability_item_sad_shield"				"Smell shield"
+		"DOTA_Tooltip_ability_item_sad_shield_Description"	"<h1>Passive: Smell smell block </h1>blocks %damage_block% damage with %damage_block_chance chance%%%"
+		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Smelly, but really useful.. Really!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_sad_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_sad_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_modifier_item_sad_shield"				"Smelled"
+		"DOTA_Tooltip_modifier_item_sad_shield_Description"	"Smelly, but it can be used blocks <font color='#ffd0cb'>20</font> damage with a chance of 60%%%"
+
+		"DOTA_Tooltip_ability_item_poor_shield"				"happor shield"
+		"DOTA_Tooltip_ability_item_poor_shield_Description"	"<h1>Passive: Smell shell block </h1>блокирует %damage_block% урона с шансом в %damage_block_chance%%%"
+		"DOTA_Tooltip_ability_item_poor_shield_Lore"			"Smelly, but really useful.. Really!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_armor"							"+$armor"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_poor_shield_bonus_agility"						"+$agi"
+		"DOTA_Tooltip_modifier_item_poor_shield"			"Shield"
+		"DOTA_Tooltip_modifier_item_poor_shield_Description"	"Practical in combat blocks <font color='#ffd0cb'>120</font> damage with a chance of 60%%%"
+
+
+
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
-		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Пассивная: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>7</font>"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Passive: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>7</font>"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_attack_range_bonus"					"+$attack_range"
@@ -593,11 +651,11 @@
 		"DOTA_Tooltip_ability_item_bad_glasses_spell_amplify_bonus"								"%SPELL AMPLIFY:"
 
 		"DOTA_Tooltip_ability_item_brevno"													"The log"
-		"DOTA_Tooltip_ability_item_brevno_Description"										"Guaranteed to be better than your girlfriend in bed."
+		"DOTA_Tooltip_ability_item_brevno_Description"										"Guaranteed to be better than your girlfriend in bed. And weighs more than your mother."
 
 
 		"DOTA_Tooltip_ability_item_resist"													"Hat herbalist"
-		"DOTA_Tooltip_ability_item_resist_Description"										"Protct you from sick."
+		"DOTA_Tooltip_ability_item_resist_Description"										"Protect you from sick."
 
 		"DOTA_Tooltip_ability_item_yad"													"A clot of poison"
 		"DOTA_Tooltip_ability_item_yad_Description"										"STRANGE! BUT it'S looks delicious."
