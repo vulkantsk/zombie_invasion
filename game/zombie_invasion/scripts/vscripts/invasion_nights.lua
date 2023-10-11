@@ -202,7 +202,7 @@ function InvasionMode:ZombieNight3()
  function InvasionMode:ZombieNight4()  
    -- 4 НОЧЬ 
  	if GetMapName() == "invasion_refresh" then
-    	self:SpawnZombie("npc_classic_wave_ghoul_2",6)
+    	self:SpawnZombie("npc_classic_wave_ghoul_2",3)
  	
  	
 		

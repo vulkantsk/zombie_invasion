@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_item_midas_tress", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_item_midas_tress_use", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_item_midas_tress", "items/new_items/item_midas3", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_item_midas_tress_use", "items/new_items/item_midas3", LUA_MODIFIER_MOTION_NONE )
  
 item_midas = class({})
 
