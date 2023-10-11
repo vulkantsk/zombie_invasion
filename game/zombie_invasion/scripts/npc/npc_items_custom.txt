@@ -12939,8 +12939,8 @@
 		"AbilityValues"
 		{
 			"bonus_armor"			"4"
-			"bonus_health"			"160"
-			"damage_block"			"120"
+			"bonus_health"			"140"
+			"damage_block"			"70"
 			"damage_block_chance"	"60"
 			"bonus_agility"			"12"
 

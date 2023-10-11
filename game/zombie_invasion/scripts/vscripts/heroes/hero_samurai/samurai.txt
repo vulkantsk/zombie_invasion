@@ -279,7 +279,7 @@
 		"ScriptFile"					"heroes/hero_samurai/spells/juggernaut_blade_dance_lua"
 		"AbilityTextureName"			"juggernaut_blade_dance"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
+		"MaxLevel"						"3"
 		"precache"
 		{
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
@@ -519,7 +519,7 @@
 		}
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
+		"AbilityCooldown"				"200"
 		"AbilityCastPoint"				"0.7"
 
 		// Cost

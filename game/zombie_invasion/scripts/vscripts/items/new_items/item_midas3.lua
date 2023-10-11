@@ -1,9 +1,9 @@
 LinkLuaModifier( "modifier_item_midas_tress", "items/new_items/item_midas3", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_item_midas_tress_use", "items/new_items/item_midas3", LUA_MODIFIER_MOTION_NONE )
  
-item_midas = class({})
+item_midas3 = class({})
 
-function item_midas:OnAbilityPhaseStart()
+function item_midas3:OnAbilityPhaseStart()
 		if IsServer() then
 	    self:GetCaster():StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1)  
 	end
@@ -11,14 +11,14 @@ function item_midas:OnAbilityPhaseStart()
 end
 
 
-function item_midas:OnAbilityPhaseInterrupted()
+function item_midas3:OnAbilityPhaseInterrupted()
 		if IsServer() then
 	    self:GetCaster():RemoveGesture(ACT_DOTA_VICTORY) 
 	end
  	return true
 end
 
-function item_midas:OnSpellStart()
+function item_midas3:OnSpellStart()
 	   self:GetCaster():RemoveGesture(ACT_DOTA_VICTORY) 
 	local caster = self:GetCaster()
 	local point = caster:GetAbsOrigin() + RandomVector( RandomFloat( 150, 150))
