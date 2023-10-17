@@ -87,15 +87,10 @@ function Difficulty:NPC( npc )
  		npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
         npc:SetMaxHealth(npc:GetMaxHealth() * result)	
        	npc:SetHealth(npc:GetMaxHealth())
-
-
-        npc:SetBaseAttackTime(npc:GetBaseAttackTime() - result)
-
         npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() + result)
         npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result)
         npc:SetModelScale(npc:GetModelScale() + result * 0.025)
         npc:SetDeathXP(npc:GetDeathXP() * result / 3)
-
         npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result)
         npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
 
