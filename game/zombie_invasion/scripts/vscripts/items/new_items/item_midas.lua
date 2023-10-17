@@ -1,7 +1,11 @@
 LinkLuaModifier( "modifier_item_midas_tress", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_item_midas_buff", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_item_midas_tress_use", "items/new_items/item_midas", LUA_MODIFIER_MOTION_NONE )
+
  
-item_midas = class({})
+item_midas = class({
+	GetIntrinsicModifierName = function() return "modifier_item_midas_buff" end
+})
 
 function item_midas:OnAbilityPhaseStart()
 		if IsServer() then
@@ -85,4 +89,35 @@ function modifier_item_midas_tress_use:IsHidden()
 
 function modifier_item_midas_tress_use:RemoveOnDeath()
 	return false
+end
+
+modifier_item_midas_buff = class({
+    isHidden = function() return true end,
+    IsPurgable = function() return false end,
+    IsBuff = function() return true end,
+    DeclareFunctions = function() return {
+        MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+        MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+        MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+
+    } end
+})
+
+
+function modifier_item_midas_buff:GetModifierAttackSpeedBonus_Constant()
+	if self:GetAbility() then
+    	return self:GetAbility():GetSpecialValueFor("attack_speed")
+    end
+end
+
+function modifier_item_midas_buff:GetModifierPreAttack_BonusDamage()
+	if self:GetAbility() then
+    	return self:GetAbility():GetSpecialValueFor("attack_damage")
+    end
+end
+
+function modifier_item_midas_buff:GetModifierPhysicalArmorBonus()
+	if self:GetAbility() then
+    	return self:GetAbility():GetSpecialValueFor("armor")
+    end
 end

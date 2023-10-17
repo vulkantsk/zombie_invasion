@@ -43,7 +43,7 @@ function Difficulty:OnHeroSelectionState()
 
 	print( "Difficulty selected - " .. self.leader  )
 
-	if self.leader == "medium" or self.leader == "hard" or self.leader == "demon" or self.leader == "impossible" then
+	if self.leader == "normal" or self.leader == "medium" or self.leader == "hard" or self.leader == "demon" or self.leader == "impossible" then
 		for _, unit in pairs( FindUnitsInRadius(
 			DOTA_TEAM_GOODGUYS,
 			Vector(),
@@ -64,29 +64,39 @@ end
 
  
 function Difficulty:NPC( npc )
-	if self.leader == "normal" or npc:GetTeam() == DOTA_TEAM_GOODGUYS then
+	if npc:GetTeam() == DOTA_TEAM_GOODGUYS then
 		return
 	end
 
 	local s
 
-	if self.leader == "medium" then 
-		s = 1 
+	if self.leader == "normal" then 
+		s = 3 
+	elseif self.leader == "medium" then
+		s = 5
 	elseif self.leader == "hard" then
-		s = 2 
+		s = 7 
 	elseif self.leader == "demon" then
-		s = 4 
+		s = 9 
 	elseif self.leader == "impossible" then
 		s = 12 
 	end		
  
-	local result = ((s * 0.25) + 1)
+	local result = (s)
+
  		npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
         npc:SetMaxHealth(npc:GetMaxHealth() * result)	
-        npc:SetHealth(npc:GetMaxHealth())
+       	npc:SetHealth(npc:GetMaxHealth())
 
-        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() * result)
-        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result )
+
+        npc:SetBaseAttackTime(npc:GetBaseAttackTime() - result)
+
+        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() + result)
+        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result)
+        npc:SetModelScale(npc:GetModelScale() + result * 0.025)
+        npc:SetDeathXP(npc:GetDeathXP() * result / 3)
+
+        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result)
         npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
 
     local tablUnits = {

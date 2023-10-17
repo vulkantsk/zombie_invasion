@@ -899,13 +899,14 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_warlock_boss" then
 		StopGlobalSound("GigaChad Theme")
-		if Difficulter <= 1  then 
-       EndGame:GoodEnd()
-		elseif Difficulter == 2 then
-		 
-		     			 EndGame:IsItEndGame()
-			 GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
-		elseif  Difficulter == 4 then
+		if Difficulter == 3  then 
+      		EndGame:GoodEnd()
+  		elseif Difficulter == 5  then 
+  			EndGame:GoodEnd()
+		elseif Difficulter == 7 then
+		     EndGame:IsItEndGame()
+			GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		elseif  Difficulter == 9 then
 Boss_killed = Boss_killed + 1 
 EndGame:DemonEnd()
 		elseif Difficulter == 12 then

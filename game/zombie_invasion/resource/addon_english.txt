@@ -20,9 +20,9 @@
 		"Game_notification_win"         "<font color='#ff9900'>Write your opinion in workshop! </font>"
 
 		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
-		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 25%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
-		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 50%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
-		"difficulty_description_demon" "<font color='#ff0000'>You will suffer</font>!"
+		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 200%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
+		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 400%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
+		"difficulty_description_demon" "<font color='#ff0000'>STATS ENEMIES INCREASED BY 600%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
 		"difficulty_description_impossible" "<font color='#000000'>HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
 		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
 		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA

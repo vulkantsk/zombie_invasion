@@ -111,7 +111,7 @@
 		"Ability16"					"special_bonus_unique_hoodwink_acorn_shot_charges"
 		"Ability17"					"special_hoodwink"
 				"BaseAttackSpeed"	"70"
-				"AttackRate"		"1.20000"
+				"AttackRate"		"1.70000"
 
     } 
 
@@ -231,7 +231,7 @@
 		"npc_dota_hero_bloodseeker"
 	{
  
- 		"ArmorPhysical"		"9"
+ 		"ArmorPhysical"		"11"
 
 		"Ability1"		"bloodrage"
 		"Ability2"      "bloodstained_memory" 
@@ -283,7 +283,7 @@
 		"ArmorPhysical"		"3"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"32"
-		"AttackRate"		"1.000000"
+		"AttackRate"		"1.400000"
 		"BaseAttackSpeed"	"65"
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
@@ -352,7 +352,8 @@
 
 "npc_dota_hero_jakiro"
     {
-        "Ability1"        "jakiro_dual_breath"
+    	"Model"		"models/heroes/muerta/muerta_base.vmdl"
+        "Ability1"        "ability_elder_dragon_form"
         "Ability2"        "jakiro_ice_path"
         "Ability3"        "jakiro_liquid_fire"
         "Ability4"        ""
@@ -405,7 +406,7 @@
 		"Ability16"		"special_bonus_mp_1000"
 			"Ability17"		"special_bonus_unique_medusa"		
 
-			"ArmorPhysical" "8"
+			"ArmorPhysical" "-2"
 	}
 	
 "npc_dota_hero_gyrocopter"
@@ -536,7 +537,7 @@
 "Role" "Durable,Nuker"
 "Rolelevels" "3,3"
 
-		"ArmorPhysical"		"12"
+		"ArmorPhysical"		"20"
 
 "AttackRange" "200"
 "AbilityLayout" "4"
@@ -861,7 +862,7 @@
         "override_hero"                "npc_dota_hero_bristleback"
         "Role"                        "Durable,Nuker"
         "Rolelevels"                "2,1"
-		"ArmorPhysical"		"9"
+		"ArmorPhysical"		"4"
 
         "AttackRange"                "200"
         "Ability1"                    "bristleback_viscous_goo_custom"

@@ -41,7 +41,7 @@ function OnCreated( event )
 	end
 
 
-	ability.attacks_need = ability:GetSpecialValueFor("attacks_need") * (Difficulter + 1)
+	ability.attacks_need = ability:GetSpecialValueFor("attacks_need") + Difficulter
 	caster:SetBaseMaxHealth(ability.attacks_need)
 	caster:SetMaxHealth(ability.attacks_need)
 	caster:SetHealth(ability.attacks_need)

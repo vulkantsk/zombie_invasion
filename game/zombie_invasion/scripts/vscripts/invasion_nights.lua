@@ -204,7 +204,6 @@ function InvasionMode:ZombieNight3()
  	if GetMapName() == "invasion_refresh" then
     	self:SpawnZombie("npc_classic_wave_ghoul_2",3)
  	
- 	
 		
 		Timers:CreateTimer(150,function()
 			 self:SpawnZombie("npc_undying_4",1)

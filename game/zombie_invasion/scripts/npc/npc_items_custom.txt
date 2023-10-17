@@ -10065,12 +10065,15 @@
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"1.5"
 		"AbilityCooldown"				"90"
-		"AbilityManaCost"				"200"		
+		"AbilityManaCost"				"100"		
 
 		"AbilityValues"
 		{
 		    "gold_min"           "200"
 		    "gold_max"           "225"
+		    "attack_speed"		"30"
+		    "attack_damage"		"30"
+		    "armor"				"4"
 		}
 	}
 	"item_recipe_midas2"
@@ -10117,6 +10120,9 @@
 		{
 		    "gold_min"           "320"
 		    "gold_max"           "425"
+		    "attack_speed"		"45"
+		    "attack_damage"		"45"
+		    "armor"				"6"
 		}
 	}
 	"item_recipe_midas3"
@@ -10157,12 +10163,15 @@
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"0.5"
 		"AbilityCooldown"				"70"
-		"AbilityManaCost"				"200"		
+		"AbilityManaCost"				"300"		
 
 		"AbilityValues"
 		{
 		    "gold_min"           "450"
 		    "gold_max"           "625"
+		    "armor"				"9"
+		    "attack_speed"		"60"
+		    "attack_damage"		"60"
 		}
 	}
 
