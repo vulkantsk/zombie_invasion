@@ -4,7 +4,7 @@
 #base "../vscripts/heroes/hero_lion/lion.txt"
 #base "../vscripts/heroes/hero_brist/brist.txt"
 #base "../vscripts/heroes/hero_phantoma_assasin/phantomka.txt"
-#base "../vscripts/heroes/hero_jakiro/jakiro.txt"
+#base "../vscripts/heroes/hero_smaug/smaug.txt"
 #base "../vscripts/heroes/hero_sand_king/sand.txt"
 #base "../vscripts/heroes/hero_ursa/ursa.txt"
 #base "../vscripts/heroes/hero_troll/troll.txt"

@@ -1,0 +1,94 @@
+"DOTAAbilities"
+{
+ 	"fire_punishment"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_smaug/fire_punishment/fire_punishment"
+		"AbilityTextureName"			"jakiro_liquid_fire"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_DEAD"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"AbilityDuration"				"2.5"
+		"AbilityCooldown"				"0"
+
+		"AbilityValues"
+		{
+			
+				"debuff_magic" 		"-5 -10 -15 -20 -25 -30 -35"
+			
+				"radius"				"120 140 160 180 200 220 240"
+			
+				"damage"				"6 12 20 40 60 80 100"
+			
+		}
+	}
+	"incandescent_fury"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_smaug/incandescent_fury/incandescent_fury"
+		"AbilityTextureName"			"jakiro_macropyre"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"HasScepterUpgrade"			"1"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"1400"
+		"AbilityCastPoint"				"0.55"
+		"AbilityCooldown"				"60 60 60"
+		"AbilityManaCost"				"220 330 440"		
+
+		"AbilityValues"
+		{
+			
+				"damage"					"100 140 180"
+			
+				"cast_range"				"1400"					
+			
+				"path_radius"				"260"
+			
+				"duration"					"10"
+		
+				"burn_interval"				"0.25"
+			
+			
+				"damage_scepter"
+				{
+					"value"			"125 175 225"
+					"RequiresScepter"		"1"
+				}
+
+				"cast_range_scepter"
+				{
+					"value"					"1800"
+					"RequiresScepter"		"1"
+				}
+				"duration_scepter"
+				{
+					"value"					"30"
+					"RequiresScepter"		"1"
+				}
+			
+				"linger_duration"			"2"
+			
+		}
+	}
+
+}

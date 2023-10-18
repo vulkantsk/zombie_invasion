@@ -194,7 +194,8 @@
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		"npc_dota_hero_terrorblade"                                      "Sargatanas" 		
+		"npc_dota_hero_terrorblade"                                      "Sargatanas
+		"npc_dota_hero_jakiro"											"Elder Dragon Smaug"" 		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 	
 		"npc_dota_hero_nevermore"	                                     "Azzazel"
 		"npc_dota_hero_treant"                                      "Shinoba"
