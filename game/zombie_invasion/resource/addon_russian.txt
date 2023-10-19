@@ -2558,12 +2558,16 @@
 			"DOTA_Tooltip_ability_dragon_gold_deal_physical_armor"	"ДОП. БРОНЯ:"
 			"DOTA_Tooltip_ability_dragon_gold_deal_spell_amp"	"ДОП. МАГ. УРОН:"
 			"DOTA_Tooltip_ability_dragon_gold_deal_health_bonus"	"ДОП. ЗДОРОВЬЯ:"
+			"DOTA_Tooltip_modifier_dragon_gold_deal_buff"	"Золотое безумие"
+			"DOTA_Tooltip_modifier_dragon_gold_deal_buff_Description"	"Благодаря своим Еврейским наклоностям герой получает бонусом: урон, здоровье и броню."
 
 			"DOTA_Tooltip_ability_dragon_reward"		"dragon reward"
 			"DOTA_Tooltip_ability_dragon_reward_Description"	"Smaug использует души умерших для своих целей"
 			"DOTA_Tooltip_ability_dragon_reward_Lore"			"Коллекция душ, тут у меня есть и рыбак, и охотник, и даже душа жабы? Ну ладно. Сойдёт."
 			"DOTA_Tooltip_ability_dragon_reward_max"			"МАКСИМУМ ДУШ:"
 			"DOTA_Tooltip_ability_dragon_reward_bonus_attributes"	"БОНУС АТРИБУТОВ ЗА СТАК:"
+			"DOTA_Tooltip_modifier_dragon_reward"			"Накопленные души"
+			"DOTA_Tooltip_modifier_dragon_reward_Description"	"Герой получил бонусных атрибутов."
 
 			"DOTA_Tooltip_ability_dragon_scales"	"Dragon scale"
 			"DOTA_Tooltip_ability_dragon_scales_Description"	"Smaug окутывает своё тело чешуёй благодаря которой он избегает любого урона и отражает его в противника."
@@ -2571,6 +2575,15 @@
 			"DOTA_Tooltip_ability_dragon_scales_reflect"		"%ОТРАЖЕНИЕ:"
 			"DOTA_Tooltip_ability_dragon_scales_duration"		"ДЛИТЕЛЬНОСТЬ:"
 			"DOTA_Tooltip_ability_dragon_scales_max_radius"		"РАДИУС:"
+			"DOTA_Tooltip_modifier_dragon_scales"			"Чешуя дракона"
+			"DOTA_Tooltip_modifier_dragon_scales_Description"	"Ваше тело стало крепче и начало отражать урон."
+
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_scales_reflect"	"+{s:bonus_reflect}% к отражению scale reflect"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_scales_cd"		"-{s:bonus_AbilityCooldown} секунд перезарядки scale reflect"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_gold_deal"		"-{s:bonus_gold} золота для получения dragon gold deal"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_incandescent_fury"		"+{s:bonus_damage} урона способности incandescent fury"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_fire_punishment"		"+100% к способности fire punishment"
+
 
  		// -----------------Templar Assassin--------------------	
 
