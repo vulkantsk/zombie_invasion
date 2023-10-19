@@ -4,9 +4,6 @@ LinkLuaModifier( "modifier_incandescent_fury_thinker", "heroes/hero_smaug/incand
 incandescent_fury = {}
 
 function incandescent_fury:GetCastRange( vLocation, hTarget )
-    if self:GetCaster():HasScepter() then
-        return self:GetSpecialValueFor( "cast_range_scepter" )
-    end
 
     return self:GetSpecialValueFor( "cast_range" )
 end

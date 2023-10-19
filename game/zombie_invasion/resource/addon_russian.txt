@@ -2527,7 +2527,7 @@
 		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
 		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
 		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
-		// -----------------Templar Assassin--------------------
+		// -----------------Elder dragon smaug--------------------
 
 			"DOTA_Tooltip_ability_fire_punishment"			"fire punishment"
 			"DOTA_Tooltip_ability_fire_punishment_Description"			"Smaug поджигает свою цель на %AbilityDuration% секунд нанося ей переодический урон, а также снижая её сопротивление магии."
