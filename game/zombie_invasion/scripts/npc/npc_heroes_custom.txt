@@ -355,7 +355,7 @@
     	"Model"		"models/heroes/muerta/muerta_base.vmdl"
         "Ability1"        "fire_punishment"
         "Ability2"        ""
-        "Ability3"        ""
+        "Ability3"        "dragon_fear_aura"
         "Ability4"        ""
         "Ability5"        ""
         "Ability6"        "incandescent_fury"

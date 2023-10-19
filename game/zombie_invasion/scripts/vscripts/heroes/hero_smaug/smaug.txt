@@ -40,8 +40,7 @@
 		"AbilityTextureName"			"jakiro_macropyre"
 		"FightRecapLevel"				"2"
 		"MaxLevel"						"3"
-		"HasScepterUpgrade"			"1"
-
+		"HasScepterUpgrade"				"0"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -57,37 +56,31 @@
 
 		"AbilityValues"
 		{
-			
-				"damage"					"100 140 180"
-			
+				"damage"					"322 644 988"
 				"cast_range"				"1400"					
-			
 				"path_radius"				"260"
-			
 				"duration"					"10"
-		
 				"burn_interval"				"0.25"
-			
-			
-				"damage_scepter"
-				{
-					"value"			"125 175 225"
-					"RequiresScepter"		"1"
-				}
-
-				"cast_range_scepter"
-				{
-					"value"					"1800"
-					"RequiresScepter"		"1"
-				}
-				"duration_scepter"
-				{
-					"value"					"30"
-					"RequiresScepter"		"1"
-				}
-			
 				"linger_duration"			"2"
-			
+		}
+	}
+	"dragon_fear_aura"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_smaug/dragon_fear_aura/dragon_fear_aura"
+		"AbilityTextureName"			"abyssal_underlord_atrophy_aura"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
+		"AbilityValues"
+		{
+			"outgoing"		"-14 -16 -20 -26 -32 -38 -44"
+			"duration"		"2"
+			"spell_amp"		"16 20 24 28 32 36 40"
+			"incoming"		"15 20 25 30 35 40 45"
 		}
 	}
 
