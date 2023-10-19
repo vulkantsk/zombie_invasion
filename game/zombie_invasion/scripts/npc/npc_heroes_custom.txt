@@ -371,7 +371,7 @@
         "AttackDamageMin"        "7"
         "AttackDamageMax"        "14"
         "AttackRate"        "1.900000"
-        "AttributePrimary"        "DOTA_ATTRIBUTE_INTELLECT"
+        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
         "AttributeBaseStrength"        "25"
         "AttributeStrengthGain"        "1.2"
         "AttributeBaseIntelligence"        "26"
@@ -766,7 +766,8 @@
 		 "Ability14"		"special_bonus_agility_25"
 		 "Ability15"		"special_bonus_armor_10"
 		 "Ability16"		"special_bonus_hp_800"
-		 "Ability17"		"special_bonus_cooldown_reduction_15"				
+		 "Ability17"		"special_bonus_cooldown_reduction_15"	
+		         "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"			
 	}
 	
 "npc_dota_hero_earthshaker"
@@ -812,7 +813,8 @@
 		"Ability14"		"special_bonus_unique_tide_armor_reduction"
 		"Ability15"		"special_bonus_unique_tide_dmg_proc"
 		"Ability16"		"special_bonus_unique_tidehunter_7"
-		"Ability17"		"special_bonus_unique_tide_smash_damage"				
+		"Ability17"		"special_bonus_unique_tide_smash_damage"	
+		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"			
 	}	
 
 "npc_dota_hero_spectre"
@@ -1746,7 +1748,7 @@
 		"Ability15"		"special_bonus_unique_sara_evolution2"
 		"Ability16"		"special_bonus_cleave_60"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
 		"AttackRange"			"150"
 		"ArmorPhysical"		"8"
 		"ProjectileModel"		""
@@ -1824,7 +1826,7 @@
 		"AttackRange"		"575"
 		"ProjectileModel"			"particles/units/heroes/hero_muerta/muerta_base_attack.vpcf"
 		"ProjectileSpeed"		"3000"
-		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"19"
 		"AttributeStrengthGain"		"2.000000"
 		"AttributeBaseIntelligence"		"24"
