@@ -33,8 +33,7 @@ model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
 
 function InvasionMode:InvasionMap()
      
-  
-	
+
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
@@ -49,7 +48,7 @@ function InvasionMode:InvasionMap()
  
 	PlayerResource:SetCustomBuybackCost(0,1000)
 
-    GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
+     GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
   	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
 	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
  
@@ -57,7 +56,6 @@ function InvasionMode:InvasionMap()
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
-	--GameRules:GetGameModeEntity():SetRecommendedItemsDisabled( true )
 
  
   		GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ARMOR,0.050)
@@ -517,7 +515,7 @@ function InvasionMode:NightTimer(time)
 		return 1.0
 	end)
 end
---
+
 
  
  

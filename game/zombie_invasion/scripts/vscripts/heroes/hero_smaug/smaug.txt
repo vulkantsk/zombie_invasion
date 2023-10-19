@@ -4,7 +4,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_smaug/fire_punishment/fire_punishment"
-		"AbilityTextureName"			"jakiro_liquid_fire"
+		"AbilityTextureName"			"fire_punishment"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"7"
 
@@ -25,22 +25,29 @@
 		"AbilityValues"
 		{
 			
-				"debuff_magic" 		"-5 -10 -15 -20 -25 -30 -35"
-			
+				"debuff_magic" 		
+				{
+					"value"	"-4 -6 -8 -12 -14 -16 -18"
+					"special_bonus_unique_smaug_fire_punishment"	"-18"
+				}
 				"radius"				"120 140 160 180 200 220 240"
-			
-				"damage"				"6 12 20 40 60 80 100"
-			
+				"damage"				
+				{
+					"value"	"6 12 20 32 48 56 64"
+					"special_bonus_unique_smaug_fire_punishment"	"12 24 40 64 96 112 128"
+				}
 		}
 	}
 	"incandescent_fury"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_smaug/incandescent_fury/incandescent_fury"
-		"AbilityTextureName"			"jakiro_macropyre"
+		"AbilityTextureName"			"incandescent_fury"
 		"FightRecapLevel"				"2"
+		"RequiredLevel"					"6"
+		"LevelsBetweenUpgrades"			"6"	
 		"MaxLevel"						"3"
-		"HasScepterUpgrade"				"0"
+		"HasScepterUpgrade"				"1"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -51,12 +58,20 @@
 
 		"AbilityCastRange"				"1400"
 		"AbilityCastPoint"				"0.55"
-		"AbilityCooldown"				"60 60 60"
 		"AbilityManaCost"				"220 330 440"		
 
 		"AbilityValues"
 		{
-				"damage"					"322 644 988"
+				"AbilityCooldown"				
+				{
+					"value"			"180"
+					"special_bonus_scepter"	"-90"
+				}
+				"damage"					
+				{
+					"value"				"322 644 988"
+					"special_bonus_unique_smaug_incandescent_fury" 	"+1012"
+				}
 				"cast_range"				"1400"					
 				"path_radius"				"260"
 				"duration"					"10"
@@ -68,7 +83,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_smaug/dragon_fear_aura/dragon_fear_aura"
-		"AbilityTextureName"			"abyssal_underlord_atrophy_aura"
+		"AbilityTextureName"			"dragon_fear_aura"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"7"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
@@ -78,10 +93,124 @@
 		"AbilityValues"
 		{
 			"outgoing"		"-14 -16 -20 -26 -32 -38 -44"
-			"duration"		"2"
+			"duration"		"1"
 			"spell_amp"		"16 20 24 28 32 36 40"
 			"incoming"		"15 20 25 30 35 40 45"
 		}
 	}
+	"dragon_gold_deal"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_smaug/dragon_gold_deal/dragon_gold_deal"
+		"AbilityTextureName"			"dragon_gold_deal"
+		"FightRecapLevel"				"1"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"	
+		"MaxLevel"						"3"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
+		"AbilityValues"
+		{
+			"health_bonus"		"0.04 0.06 0.08"
+			"spell_amp"		"0.02 0.04 0.06"
+			"physical_armor"		"0.02 0.04 0.06"
+			"gold"
+			{
+				"value"		"100"
+				"special_bonus_unique_smaug_dragon_gold_deal" "-90"
+			}
+		}
+	}
+	"dragon_reward"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_smaug/dragon_reward/dragon_reward"
+		"AbilityTextureName"			"dragon_reward"
+		"FightRecapLevel"				"1"
+		"IsGrantedByShard"				"1"
+		"HasShardUpgrade"               "1"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"	
+		"AbilityValues"
+		{
+			"max"		"99"
+			"bonus_attributes"		"2"
+		}
+	}
+	"dragon_scales"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_smaug/dragon_scales/dragon_scales"
+        "AbilityTextureName"            "dragon_scales"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "MaxLevel"						"7"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {            
+        		"AbilityCooldown"
+        		{
+        			"value"			"60"
+        			"special_bonus_unique_smaug_dragon_scales_cd"	"-15"
+        		}
 
+                "reflect"
+                {
+                	"value"			"20 30 40 50 60 70 80"
+                	"special_bonus_unique_smaug_dragon_scales_reflect"	"+20"
+                }
+                "invul"		"-1000"                
+           		"duration"				"4 4.5 5 5.5 6 6.5 7"
+                "min_radius"            "300"    
+                "max_radius"            "700"              
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+    "special_bonus_unique_smaug_dragon_scales_cd"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_smaug_dragon_scales_reflect"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_smaug_dragon_gold_deal"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_smaug_incandescent_fury"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_smaug_fire_punishment"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
 }

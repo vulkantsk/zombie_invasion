@@ -20,9 +20,7 @@ function incandescent_fury:OnSpellStart()
     dir = dir:Normalized()
 
     local duration = self:GetSpecialValueFor( "duration" )
-    if caster:HasScepter() then
-        duration = self:GetSpecialValueFor( "duration_scepter" )
-    end
+ 
 
     CreateModifierThinker(
         caster,
@@ -116,11 +114,8 @@ function modifier_incandescent_fury_thinker:OnCreated( kv )
     self.duration = self:GetAbility():GetSpecialValueFor( "linger_duration" )
     self.interval = self:GetAbility():GetSpecialValueFor( "burn_interval" )
     self.range = self:GetAbility():GetCastRange( self.parent:GetAbsOrigin(), nil ) + self.caster:GetCastRangeBonus()
-    if self:GetCaster():HasScepter() then
-        self.damage = self:GetAbility():GetSpecialValueFor( "damage_scepter" )
-    else
-        self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
-    end
+    self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
+ 
 
     if not IsServer() then return end
 
@@ -146,7 +141,7 @@ function modifier_incandescent_fury_thinker:OnCreated( kv )
 
     local duration = self:GetDuration()
     local effect_cast = ParticleManager:CreateParticle(
-        "particles/units/heroes/hero_jakiro/jakiro_macropyre.vpcf",
+        "particles/econ/items/jakiro/jakiro_ti10_immortal/jakiro_ti10_macropyre.vpcf",
         PATTACH_WORLDORIGIN,
         self.parent
     )

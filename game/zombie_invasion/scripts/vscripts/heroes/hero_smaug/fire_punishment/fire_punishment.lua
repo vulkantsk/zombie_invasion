@@ -8,7 +8,7 @@ function fire_punishment:GetIntrinsicModifierName()
 end
 
 function fire_punishment:GetProjectileName()
-    return "particles/units/heroes/hero_jakiro/jakiro_base_attack_fire.vpcf"
+    return "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_base_attack.vpcf"
 end
 
 function fire_punishment:OnOrbFire( params )

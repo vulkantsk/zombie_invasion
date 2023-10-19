@@ -2527,6 +2527,50 @@
 		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
 		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
 		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
+		// -----------------Templar Assassin--------------------
+
+			"DOTA_Tooltip_ability_fire_punishment"			"fire punishment"
+			"DOTA_Tooltip_ability_fire_punishment_Description"			"Smaug поджигает свою цель на %AbilityDuration% секунд нанося ей переодический урон, а также снижая её сопротивление магии."
+			"DOTA_Tooltip_ability_fire_punishment_Lore"		"Обжигает да?"
+			"DOTA_Tooltip_ability_fire_punishment_debuff_magic"			"%СНИЖЕНИЕ СОПРОТИВЛЕНИЯ:"
+			"DOTA_Tooltip_ability_fire_punishment_radius"			"РАДИУС ПОДЖОГА:"
+			"DOTA_Tooltip_ability_fire_punishment_damage"			"УРОН В СЕКУНДУ:"
+
+			"DOTA_Tooltip_ability_incandescent_fury"			"incandescent fury"
+			"DOTA_Tooltip_ability_incandescent_fury_Description"			"Smaug извергает из себя лаву нанося урон противникам с интервалом %burn_interval% сек."
+			"DOTA_Tooltip_ability_incandescent_fury_Lore"	"Самая ужасная смерть сгореть заживо, но мне об этом не нужно беспокоится - Smaug."
+			"DOTA_Tooltip_ability_incandescent_fury_Scepter_Description"	"Уменьшает перезарядку до %AbilityCooldown% секунд"
+			"DOTA_Tooltip_ability_incandescent_fury_damage"		"УРОН В СЕКУНДУ:"
+			"DOTA_Tooltip_ability_incandescent_fury_cast_range"		"РАДИУС:"
+			"DOTA_Tooltip_ability_incandescent_fury_duration"		"ДЛИТЕЛЬНОСТЬ:"
+
+			"DOTA_Tooltip_ability_dragon_fear_aura"		"dragon fear"
+			"DOTA_Tooltip_ability_dragon_fear_aura_Description"		"Враги атакуя Smaug не могут бороться с собственным страхом, что заставляет их слабее наносить свои удары, а сам Smaug получает дополнительный магический урон."
+			"DOTA_Tooltip_ability_dragon_fear_aura_Lore"	"Страшная аура Smaug не позволяет им даже перестать дрожать."
+			"DOTA_Tooltip_ability_dragon_fear_aura_outgoing"	"%ИСХОДЯЩИЙ УРОН:"
+			"DOTA_Tooltip_ability_dragon_fear_aura_incoming"	"%ВХОДЯЩИЙ УРОН:"
+			"DOTA_Tooltip_ability_dragon_fear_aura_duration"	"ДЛИТЕЛЬНОСТЬ:"
+
+			"DOTA_Tooltip_ability_dragon_gold_deal"		"Dragon gold deal"
+			"DOTA_Tooltip_ability_dragon_gold_deal_Description"		"Smaug очень ценит свои вещи и извлекает из них больше пользы, получая дополнительно броню, урон и здоровье."
+			"DOTA_Tooltip_ability_dragon_gold_deal_Lore"	"Smaug - золото это то, что делает богаче, однако для меня это сила."
+			"DOTA_Tooltip_ability_dragon_gold_deal_gold"	"КОЛИЧЕСТВО ЗОЛОТА ДЛЯ СТАКА:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_physical_armor"	"ДОП. БРОНЯ:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_spell_amp"	"ДОП. МАГ. УРОН:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_health_bonus"	"ДОП. ЗДОРОВЬЯ:"
+
+			"DOTA_Tooltip_ability_dragon_reward"		"dragon reward"
+			"DOTA_Tooltip_ability_dragon_reward_Description"	"Smaug использует души умерших для своих целей"
+			"DOTA_Tooltip_ability_dragon_reward_Lore"			"Коллекция душ, тут у меня есть и рыбак, и охотник, и даже душа жабы? Ну ладно. Сойдёт."
+			"DOTA_Tooltip_ability_dragon_reward_max"			"МАКСИМУМ ДУШ:"
+			"DOTA_Tooltip_ability_dragon_reward_bonus_attributes"	"БОНУС АТРИБУТОВ ЗА СТАК:"
+
+			"DOTA_Tooltip_ability_dragon_scales"	"Dragon scale"
+			"DOTA_Tooltip_ability_dragon_scales_Description"	"Smaug окутывает своё тело чешуёй благодаря которой он избегает любого урона и отражает его в противника."
+			"DOTA_Tooltip_ability_dragon_scales_Lore"			"Из этой чешуи можно выковать непробиваемые доспехи, но чешуёй Smaug делится не планирует."
+			"DOTA_Tooltip_ability_dragon_scales_reflect"		"%ОТРАЖЕНИЕ:"
+			"DOTA_Tooltip_ability_dragon_scales_duration"		"ДЛИТЕЛЬНОСТЬ:"
+			"DOTA_Tooltip_ability_dragon_scales_max_radius"		"РАДИУС:"
 
  		// -----------------Templar Assassin--------------------	
 

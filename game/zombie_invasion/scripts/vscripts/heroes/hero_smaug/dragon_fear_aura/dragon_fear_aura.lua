@@ -100,12 +100,53 @@ function modifier_dragon_fear_aura_debuff:GetModifierPreAttack( params )
         
             self.record = params.record
             self.attackOther = true
+                local effect_cast1 = ParticleManager:CreateParticle(
+            "particles/econ/items/grimstroke/gs_fall20_immortal/gs_fall20_immortal_soul_debuff.vpcf",
+            PATTACH_ABSORIGIN_FOLLOW,
+            self:GetParent()
+        )
+        ParticleManager:SetParticleControlEnt(
+            effect_cast1,
+            2,
+            self:GetParent(),
+            PATTACH_ABSORIGIN_FOLLOW,
+            nil,
+            self:GetParent():GetAbsOrigin(),
+            true
+        )
+
+        self:AddParticle(
+            effect_cast1,
+            false,
+            false,
+            -1,
+            false,
+            false
+        )
+
+        if self.primary then
+            local effect_cast2 = ParticleManager:CreateParticle(
+                "particles/econ/items/grimstroke/gs_fall20_immortal/gs_fall20_immortal_soul_dragon_model.vpcf",
+                PATTACH_OVERHEAD_FOLLOW,
+                self:GetParent()
+            )
+
+            self:AddParticle(
+                effect_cast2,
+                false,
+                false,
+                -1,
+                false,
+                true
+            )
+        end
     end
 end
 
 function modifier_dragon_fear_aura_debuff:OnAttack( params )
     if IsServer() then
         if params.record~=self.record then return end
+
 
         self:SetDuration(self.duration, true)
         self.HasAttacked = true
@@ -120,10 +161,4 @@ function modifier_dragon_fear_aura_debuff:GetModifierMagicDamageOutgoing_Percent
 end
 function modifier_dragon_fear_aura_debuff:GetModifierIncomingDamage_Percentage()
     return self.incoming
-end
-function modifier_dragon_fear_aura_debuff:GetEffectName()
-    return "particles/units/heroes/hero_enchantress/enchantress_untouchable.vpcf"
-end
-function modifier_dragon_fear_aura_debuff:GetEffectAttachType()
-    return PATTACH_OVERHEAD_FOLLOW
 end
