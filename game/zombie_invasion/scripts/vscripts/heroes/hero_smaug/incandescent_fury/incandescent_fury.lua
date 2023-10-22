@@ -60,7 +60,7 @@ function modifier_incandescent_fury:OnCreated( kv )
     self.damageTable = {
         victim = self:GetParent(),
         attacker = self:GetCaster(),
-        damage = kv.damage,
+        damage = kv.damage + self:GetCaster():GetAttackDamage() * (self:GetAbility():GetSpecialValueFor( "pct_dmg" )  / 100),
         damage_type = kv.damage_type,
         ability = self:GetAbility(),
     }
@@ -70,7 +70,7 @@ end
 
 function modifier_incandescent_fury:OnRefresh( kv )
     if not IsServer() then return end
-    self.damageTable.damage = kv.damage
+    self.damageTable.damage = kv.damage + self:GetCaster():GetAttackDamage() * (self:GetAbility():GetSpecialValueFor( "pct_dmg"  / 100))
     self.damageTable.damage_type = kv.damage_type
 end
 

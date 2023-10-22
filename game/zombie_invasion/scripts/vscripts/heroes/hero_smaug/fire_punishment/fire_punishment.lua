@@ -80,7 +80,7 @@ function modifier_fire_punishment_fire:OnCreated( kv )
     self.damageTable = {
         victim = self:GetParent(),
         attacker = self:GetCaster(),
-        damage = damage,
+        damage = damage + self:GetCaster():GetAttackDamage() * (self:GetAbility():GetSpecialValueFor( "pct_dmg" )  / 100),
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility(),
     }

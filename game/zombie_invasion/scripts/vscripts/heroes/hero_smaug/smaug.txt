@@ -30,11 +30,21 @@
 					"value"	"-4 -6 -8 -12 -14 -16 -18"
 					"special_bonus_unique_smaug_fire_punishment"	"-18"
 				}
-				"radius"				"120 140 160 180 200 220 240"
+				"radius"				
+				{
+					"value"				"120 140 160 180 200 220 240"
+					"special_bonus_unique_smaug_fire_punishment"	"+20"
+				}
+				"pct_dmg"
+				{
+					"value" 		"66"
+					"special_bonus_unique_smaug_fire_punishment"	"+66"
+
+				}
 				"damage"				
 				{
 					"value"	"6 12 20 32 48 56 64"
-					"special_bonus_unique_smaug_fire_punishment"	"12 24 40 64 96 112 128"
+					"special_bonus_unique_smaug_fire_punishment"	"+64"
 				}
 		}
 	}
@@ -67,6 +77,7 @@
 					"value"			"180"
 					"special_bonus_scepter"	"-90"
 				}
+				"pct_dmg"		"100 200 300"
 				"damage"					
 				{
 					"value"				"322 644 988"
@@ -115,11 +126,11 @@
 		{
 			"health_bonus"		"0.04 0.06 0.08"
 			"spell_amp"		"0.02 0.04 0.06"
-			"physical_armor"		"0.001 0.002 0.003"
+			"physical_armor"		"0.01 0.02 0.03"
 			"gold"
 			{
 				"value"		"100"
-				"special_bonus_unique_smaug_dragon_gold_deal" "-90"
+				"special_bonus_unique_smaug_dragon_gold_deal" "-50"
 			}
 		}
 	}
@@ -139,7 +150,7 @@
 		"AbilityValues"
 		{
 			"max"		"99"
-			"bonus_attributes"		"2"
+			"bonus_attributes"		"1"
 		}
 	}
 	"dragon_scales"

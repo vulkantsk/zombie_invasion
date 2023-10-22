@@ -2530,17 +2530,14 @@
 		// -----------------Elder dragon smaug--------------------
 
 			"DOTA_Tooltip_ability_fire_punishment"			"fire punishment"
-			"DOTA_Tooltip_ability_fire_punishment_Description"			"Smaug поджигает свою цель на %AbilityDuration% секунд нанося ей переодический урон, а также снижая её сопротивление магии."
+			"DOTA_Tooltip_ability_fire_punishment_Description"			"Smaug поджигает свою цель на %AbilityDuration% секунд нанося ей переодический урон %damage% + %pct_dmg%%% своего урона, также снижая её сопротивление магии на %debuff_magic%%%."
 			"DOTA_Tooltip_ability_fire_punishment_Lore"		"Обжигает да?"
-			"DOTA_Tooltip_ability_fire_punishment_debuff_magic"			"%СНИЖЕНИЕ СОПРОТИВЛЕНИЯ:"
 			"DOTA_Tooltip_ability_fire_punishment_radius"			"РАДИУС ПОДЖОГА:"
-			"DOTA_Tooltip_ability_fire_punishment_damage"			"УРОН В СЕКУНДУ:"
 
 			"DOTA_Tooltip_ability_incandescent_fury"			"incandescent fury"
-			"DOTA_Tooltip_ability_incandescent_fury_Description"			"Smaug извергает из себя лаву нанося урон противникам с интервалом %burn_interval% сек."
+			"DOTA_Tooltip_ability_incandescent_fury_Description"			"Smaug извергает из себя лаву нанося урон %damage% + %pct_dmg%%% своего урона противникам с интервалом %burn_interval% сек."
 			"DOTA_Tooltip_ability_incandescent_fury_Lore"	"Самая ужасная смерть сгореть заживо, но мне об этом не нужно беспокоится - Smaug."
 			"DOTA_Tooltip_ability_incandescent_fury_Scepter_Description"	"Уменьшает перезарядку до %AbilityCooldown% секунд"
-			"DOTA_Tooltip_ability_incandescent_fury_damage"		"УРОН В СЕКУНДУ:"
 			"DOTA_Tooltip_ability_incandescent_fury_cast_range"		"РАДИУС:"
 			"DOTA_Tooltip_ability_incandescent_fury_duration"		"ДЛИТЕЛЬНОСТЬ:"
 

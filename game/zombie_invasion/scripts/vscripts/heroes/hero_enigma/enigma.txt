@@ -24,7 +24,7 @@
 		{
 				"spawn_count"					
 				{
-					"value"				"3 3 4 4 5 5 6"
+					"value"				"3 3 3 3 4 4 4"
 					"special_bonus_unique_enigma_demonic_conversion_number"                  "+2"
 				}
 				"split_attack_count"			
@@ -33,11 +33,16 @@
 				}
 				"eidolon_hp_tooltip"				
 				{
-					"value"				"1"
+					"value"				"200"
 				}
 				"eidolon_dmg_tooltip"			
 				{
 					"value"	"40 50 60 70 80 90 100"
+				}
+				"eidalon_duration_spawn"
+				{
+					"value"		"9"
+
 				}
  				"eidalon_duration"			
 				{
@@ -45,8 +50,8 @@
 				}
 				"bonus_str"			
 				{
-					"value"	"0"
-					"RequiresScepter"			"0"
+					"value"	"0.20"
+					"RequiresScepter"			"1"
 				}
 				"bonus_ag"		
 				{
