@@ -115,7 +115,7 @@
 		{
 			"health_bonus"		"0.04 0.06 0.08"
 			"spell_amp"		"0.02 0.04 0.06"
-			"physical_armor"		"0.02 0.04 0.06"
+			"physical_armor"		"0.001 0.002 0.003"
 			"gold"
 			{
 				"value"		"100"
