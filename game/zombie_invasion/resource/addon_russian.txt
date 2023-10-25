@@ -780,9 +780,9 @@
 
 		"DOTA_Tooltip_Ability_item_pirog_dps"						"Пирог дпсера"
 		"DOTA_Tooltip_Ability_item_pirog_dps_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог."  
-		"DOTA_Tooltip_Ability_item_pirog_dps_base_atack"	"БАЗОВАЯ СКОРОСТЬ АТАКИ: "		
-		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"ЛОВКОСТЬ: "
-		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%УРОН: "
+		"DOTA_Tooltip_Ability_item_pirog_dps_damage"	"БОНУСНЫЙ УРОН:"		
+		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"ЛОВКОСТЬ:"
+		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%БОНУСНЫЙ УРОН: "
 		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"Для истинных дпсеров."
 		"DOTA_Tooltip_modifier_item_pirog_dps"					"Пирог дпсера"
 		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"Вы стали намного сильнее!"
@@ -2114,6 +2114,12 @@
 
 		// -----------------sniper--------------------		
 
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel"			"Sniper Shrapnel"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Все находящиеся в радиусе shrapnel получают %shrapnel_damage% + 100% урона снайпера в секнду"
+
+
+
+
         "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket Shots"
         "DOTA_Tooltip_Ability_rocket_shots_Description"                                "После многочисленных тренировок Sniper научился на короткое время стрелять с нереально большой скоростью!"
         "DOTA_Tooltip_Ability_rocket_shots_net_damage"                                        "БАЗОВАЯ СКОРОСТЬ АТАКИ:"
@@ -2139,8 +2145,7 @@
 		"DOTA_Tooltip_ability_medusa_split_shot_custom"								"Split Shot"
 		"DOTA_Tooltip_ability_medusa_split_shot_custom_Description"					"Герой магически расщепляет свои стрелы, атакуя несколько целей, но при этом нанося меньше урона.\n\nНа дополнительные цели не действуют эффекты атаки, такие как критический урон."
  
-		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damage"     							""
-		"DOTA_Tooltip_Ability_medusa_split_shot_custom_fake_damage"     							"%НАНОСИМЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damagee"     							"%БОНУСНЫЙ УРОН:"
 
 		"DOTA_Tooltip_ability_medusa_split_shot_custom_Lore"							"Каждый, кто столкнётся с проклятой горгоной, испытает на себе её гнев."
 		"DOTA_Tooltip_ability_medusa_split_shot_custom_Note0"							"Дополнительными целями считаются ближайшие противники, не считая основной цели."
@@ -2268,9 +2273,10 @@
 
 
 			"DOTA_Tooltip_ability_illusion_of_blood"				"illusion of blood"
-			"DOTA_Tooltip_ability_illusion_of_blood_Description"	"Blood Hunter обращается за помощью к мертвецам, призывая свои копии в мир для защиты себя."
+			"DOTA_Tooltip_ability_illusion_of_blood_Description"	"Blood Hunter обращается за помощью к мертвецам жертвуя 15 стаки крови, призывает свои копии в мир для защиты себя."
 			"DOTA_Tooltip_ability_illusion_of_blood_Lore"			"Нет ничего лучше чем я - egoist Blood Hunter"
 			"DOTA_Tooltip_ability_illusion_of_blood_images_count"	"КОЛИЧЕСТВО ИЛЛЮЗИЙ:"
+			"DOTA_Tooltip_ability_illusion_of_blood_blood"	"<font color='#980002'>ЗАТРАТА КРОВИ:</font>"
 			"DOTA_Tooltip_ability_illusion_of_blood_illusion_duration"	"ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:"
 			"DOTA_Tooltip_ability_illusion_of_blood_outgoing_damage"	"%УРОН ОТ ИЛЛЮЗИИ:"
 			"DOTA_Tooltip_ability_illusion_of_blood_incoming_damage"	"%УРОН ПО ИЛЛЮЗИИ:"

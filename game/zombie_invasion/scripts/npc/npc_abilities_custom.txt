@@ -22278,6 +22278,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"				"4"
 		"RequiredLevel"					"-1"
 		"AbilityDraftUltScepterAbility"		"enchantress_bunny_hop"
 		
@@ -22288,13 +22289,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"slow_attack_speed"		"-375"
+				"slow_attack_speed"		"-115 -195 -245 -295"
 				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_3"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"slow_duration"			"2"
+				"slow_duration"			"1.5"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"

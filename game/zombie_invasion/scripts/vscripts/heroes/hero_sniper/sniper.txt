@@ -1,70 +1,64 @@
 "DOTAAbilities"
 {
 
-	//=================================================================================================================
-	// Sniper: Shrapnel
-	//=================================================================================================================
-	"sniper_shrapnel"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5154"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"FightRecapLevel"				"1"
-		"MaxLevel"						"7"
-		"AbilitySound"					"Hero_Sniper.ShrapnelShatter"
+	"ability_sniper_shrapnel"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_sniper/shrapnel/shrapnel"
+        "AbilityTextureName"            "sniper_shrapnel"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "1"
+        "MaxLevel"						"7"
 
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1800"
-		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1800"
+        "AbilityCastPoint"              "0.3 0.3 0.3 0.3"
 
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0"
-		"AbilityChargeRestoreTime"		"35"
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "2.5"
+        "AbilityCharges"                "6"
+        "AbilityChargeRestoreTime"      "60"
 
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"75"
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
 
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityModifierSupportValue"	"0.25"	// primarily about damage
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"   "0.25"  // primarily about damage
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-				"slow_movement_speed"	
-				{
-					"value"		"-12 -18 -24 -30"
-					"LinkedSpecialBonus"	"special_bonus_unique_sniper_5"
-				}
-				"radius"			
-				{
-					"value"		"400 425 450 475"
-					"affected_by_aoe_increase"	"1"
-				}
-				"shrapnel_damage"		
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            
+                "slow_movement_speed"   "-8 -12 -18 -24 -30 -34 -38"
+            
+            
+                "radius"                "450"
+            
+          		"shrapnel_damage"		
 				{
 					"value"			"40 60 80 100 120 140 160"
 					"LinkedSpecialBonus"	"special_bonus_unique_sniper_1"
 				}
-				"duration"				"10.0"
-				"damage_delay"			"0.6"
-				"slow_duration"			"2.0 2.0 2.0 2.0"
-				"AbilityCharges"		
-				{
-					"value" "3"
-					"LinkedSpecialBonus"	"special_bonus_unique_sniper_2"
-				}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
-	}
+           
+                "duration"              "10.0"
+          
+                "damage_delay"          "0.6"
+         
+                "slow_duration"         "2.0"
+        
+         
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    }
+
 	"sniper_concussive_grenade"
 	{
 		// General
@@ -314,7 +308,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"net_damage"		"0.90 0.70 0.50"	
+			"net_damage"		"0.90 0.85 0.80"	
 		}	
 
       

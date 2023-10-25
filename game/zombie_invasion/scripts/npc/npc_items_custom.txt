@@ -3034,7 +3034,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"base_atack"		"1.15"
+				"damage"		"240"
 			}						
 			"02"
 			{
@@ -7172,7 +7172,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"195 245"
+				"chain_damage_self"			"145 195"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
@@ -7269,7 +7269,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"195 245"
+				"chain_damage_self"			"145 195"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
@@ -7316,7 +7316,7 @@
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"			 "9"
+		"AbilityCooldown"			 "14"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -7336,12 +7336,12 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"			"30"
+				"bonus_damage"			"20"
 				"bonus_str"	             "12"
-				"lifesteal_pct"				"6" 
+				"lifesteal_pct"				"12" 
 				"charges_for_attack_creep"			"1"
 				"max_charges"			"20"
-				"heal_per_charge"			"10"
+				"heal_per_charge"			"20"
 		}
  
 	}	
@@ -7396,7 +7396,7 @@
 		{
 				"bonus_strength"		"60"
 				"bonus_damage"			"90"
-				"lifesteal_percent"		"25"
+				"lifesteal_percent"		"20"
 				"creep_lifesteal_reduction_pct"	"0"
 				"unholy_lifesteal_percent"	"150"
 				"unholy_lifesteal_total_tooltip"	"175"
@@ -7514,7 +7514,7 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"	"50"
+				"bonus_damage"	"70"
 				"bonus_attack_speed"	"40"
 				"lifesteal_pct"		"20"
 				"berserk_base_damage"            "10"
@@ -7575,7 +7575,7 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"	"75"
+				"bonus_damage"	"115"
 				"bonus_attack_speed"	"80"
 				"lifesteal_pct"		"25"
 				"berserk_base_damage"            "60"
@@ -8403,7 +8403,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"16"
+				"bonus_armor"			"14"
 			}
 			"02"
 			{
@@ -8502,7 +8502,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"24"
+				"bonus_armor"			"18"
 			}
 			"02"
 			{
@@ -8590,17 +8590,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"45"
+				"bonus_damage"			"65"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"14"
+				"cleave_damage_percent"	"27"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent_creep"	"20"
+				"cleave_damage_percent_creep"	"27"
 			}		
 			"05"
 			{
@@ -8677,7 +8677,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"70"
+				"bonus_damage"			"95"
 			}
 			"02"
 			{
@@ -8692,12 +8692,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"60"
+				"cleave_damage_percent"	"80"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent_creep"	"45"
+				"cleave_damage_percent_creep"	"80"
 			}			
 			"06"
 			{
@@ -8774,7 +8774,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"200"
+				"bonus_damage"			"245"
 			}
 			"02"
 			{
@@ -12035,13 +12035,13 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attack_damage_to_pure_pct"	"12"
+				"attack_damage_to_pure_pct"	"75"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"chance"	"12"
+				"chance"	"20"
 			}
 		}
 	}
@@ -12899,9 +12899,9 @@
 
 		"AbilityValues"
 		{
-			"bonus_armor"			"2"
+			"bonus_armor"			"4"
 			"bonus_health"			"120"
-			"damage_block"			"20"
+			"damage_block"			"40"
 			"damage_block_chance"		"60"
 
 		}
@@ -12947,11 +12947,11 @@
 
 		"AbilityValues"
 		{
-			"bonus_armor"			"4"
+			"bonus_armor"			"8"
 			"bonus_health"			"140"
-			"damage_block"			"70"
-			"damage_block_chance"	"60"
-			"bonus_agility"			"12"
+			"damage_block"			"40"
+			"damage_block_chance"	"80"
+			"bonus_agility"			"14"
 
 		}
 	}
@@ -12987,7 +12987,7 @@
 		"AbilityCastRange"	"1200"
 		"AbilityValues"
 		{
-			"bonus_armor" 			"27"
+			"bonus_armor" 			"24"
 			"bonus_stats" 			"32"
 			"bonus_hp_regen" 		"30"
 			"bonus_health" 			"750"

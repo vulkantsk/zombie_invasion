@@ -19,7 +19,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damagee"				"-40 -35 -30 -25 -10 -5 15"
+				"damagee"				"15 30 45 60 75 100 115"
 			}
 
 			"02"

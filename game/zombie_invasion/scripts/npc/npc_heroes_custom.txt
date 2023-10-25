@@ -1112,7 +1112,7 @@
 "npc_dota_hero_sniper"
 	{
 		"GibType"		"default"
-		"Ability1"		"sniper_shrapnel"
+		"Ability1"		"ability_sniper_shrapnel"
 		"Ability2"		"sniper_headshot"
 		"Ability3"		"sniper_take_aim"
 		"Ability4"		"sniper_concussive_grenade"

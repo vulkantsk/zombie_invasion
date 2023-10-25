@@ -25,11 +25,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16 14 12 10 8 6 4"
+		"AbilityCooldown"				"10"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80"
+		"AbilityManaCost"				"140"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -42,8 +42,8 @@
 			}
 			"damage"
 			{
-				"value"						"60 80 100 120 140 160 180"
-				"special_bonus_unique_muerta_dead_shot_damage"	"+100"
+				"value"						"160 320 360 420 470 520 560"
+				"special_bonus_unique_muerta_dead_shot_damage"	"+600"
 			}
 			"speed"							"2000"
 			"radius"						"100"
@@ -82,10 +82,10 @@
 		{
 				"duration"				"0"	
 				"duration_creep"		"0"
-				"chance_pct"			"4 6 8 10 12 14 16"
+				"chance_pct"			"16"
 				"bonus_damage"			
 				{
-					"value"				"15 20 25 30"
+					"value"				"15 30 45 60 75 90 115"
 					"LinkedSpecialBonus"	"special_bonus_unique_faceless_void_3"
 				}
 				"delay"			"0.1"
@@ -103,7 +103,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		//"AbilitySound"					"Hero_PhantomAssassin.CoupDeGrace"
-       "MaxLevel"                         "7"
+       "MaxLevel"                         "1"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 		// Special
@@ -112,8 +112,8 @@
 		{
 			"double_shot_chance"
 			{
-				"value"					"5 10 15 20 25 30 35"
-				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+15"
+				"value"					"20"
+				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+40"
 			}
 			"target_search_bonus_range"	"150"
 		}
@@ -149,7 +149,7 @@
 		{
 			"duration"					"5"
 			"transform_duration"		"0.35"
-			"base_damage_pct"			"60 80 100"
+			"base_damage_pct"			"100 110 120"
 			"modelscale"				"30"
 			"bonus_damage"				"100 200 300"
 		}

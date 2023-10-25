@@ -168,9 +168,8 @@
 	"BaseClass"				"ability_datadriven"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"oracle/int"
-	"MaxLevel"						"7"
-	"LevelsBetweenUpgrades"			"2"
-	"RequiredLevel"					"1"
+	"MaxLevel"				"1"
+	"RequiredLevel"					"-1"
    
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
@@ -180,15 +179,15 @@
 
 			"grow_int"				
 			{
-				"value"				"0.2 0.4 0.6 0.8 1.0 1.2 1.4"
+				"value"				"1.4"
 			   	"special_bonus_unique_silencer_grow_int"	    "+0.6"
 				 
 			}
 		
 			"stack_interval"						
 			{
-				"value"				"70 60 50 40 30 20 10"
-			   	"special_bonus_unique_silencer_stack_interval"	    "-4"
+				"value"				"60"
+			   	"special_bonus_unique_silencer_stack_interval"	    "-30"
 				 
 			}
 		
@@ -249,7 +248,7 @@
 		"BaseClass"				"ability_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"mystic_dragon/endless_wisdom"
-		"MaxLevel"						"3"
+		"MaxLevel"						"1"
 		"LevelsBetweenUpgrades"			"10"
 		"RequiredLevel"					"10"
 	
@@ -260,13 +259,13 @@
 			"01"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"grow_int"							"1.5 3.0 4.5"
+				"grow_int"							"1.4"
 			}
 	
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"stack_interval"						"70 60 50 40 30 20 10"
+				"stack_interval"						"60"
 			}
 	
 		}

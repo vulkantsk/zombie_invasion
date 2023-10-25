@@ -63,7 +63,7 @@ modifier_item_pirog_dps = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
 	DeclareFunctions		= function(self) return 
-		{	MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		{	MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
 			MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 			MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE,  
 		    MODIFIER_PROPERTY_MODEL_SCALE,
@@ -71,7 +71,7 @@ modifier_item_pirog_dps = class({
 })
 
 function modifier_item_pirog_dps:OnCreated()
-	self.bonus_value = self:GetAbility():GetSpecialValueFor("base_atack")
+	self.bonus_value = self:GetAbility():GetSpecialValueFor("damage")
 	self.bonus_value1 = self:GetAbility():GetSpecialValueFor("bonus_agility")
 	self.bonus_value2 = self:GetAbility():GetSpecialValueFor("bonus_dps")
 	self.bonus_value3 = self:GetAbility():GetSpecialValueFor("bonus_model")
@@ -87,7 +87,7 @@ function modifier_item_pirog_dps:GetModifierBaseDamageOutgoing_Percentage()
 	return self.bonus_value2
 end
 
-function modifier_item_pirog_dps:GetModifierBaseAttackTimeConstant()
+function modifier_item_pirog_dps:GetModifierPreAttack_BonusDamage()
 	return self.bonus_value
 end
 
