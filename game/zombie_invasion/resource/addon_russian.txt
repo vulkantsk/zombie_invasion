@@ -2116,6 +2116,11 @@
 
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel"			"Sniper Shrapnel"
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Все находящиеся в радиусе shrapnel получают %shrapnel_damage% + 100% урона снайпера в секнду"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Lore"			"Порох моё всё."
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_slow_movement_speed"	"%ЗАМЕДЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_radius"		"РАДИУС:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_duration"	"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_damage_delay"	"ТИКРЕЙТ:"
 
 
 
