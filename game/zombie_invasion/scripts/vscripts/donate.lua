@@ -23,7 +23,8 @@ DONATE_SET_ULTRA_HELPER = {
 	players = {
 	203159402,
 	1235732566,
-	462335876
+	462335876,
+	355480974
 
 
 	},
@@ -466,13 +467,6 @@ DONATE_ITEMS = {
 			},
 		},
 		{
-			name = "item_admin",
-			count = 1,
-			sets ={
-				DONATE_SET_ADMIN,
-			},
-		},
-		{
 			name = "item_sheepstick",
 			count = 1,
 			sets ={
@@ -485,6 +479,226 @@ DONATE_ITEMS = {
 			count = 1,
 			sets ={
 				DONATE_SET_DAGON,
+				DONATE_SET_ADMIN,
+			},
+		},
+
+	},
+	admin = {
+
+		{
+			name = "item_milk",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				
+			},
+		},
+		{
+			name = "item_tvorog",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				
+			},
+		},
+		{
+			name = "item_quest_cm_shield",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				
+			},
+		},
+		{
+			name = "item_meat",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				
+			},
+		},
+		{
+			name = "item_bewstheaks",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				
+			},
+		},
+		{
+			name = "item_big_meat",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_law_frog",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_eggs",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_testo",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_bone",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_cursed_shield",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_armor",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_helmet",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_sword",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_hand",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_boots",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_dragon_shield",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_piercing_blade",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_brevno",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_resist",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_yad",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_prox_phoenix",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_bad_glasses",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+ 		{
+			name = "item_pirog_tank",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_pirog_support",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_pirog_dps",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_pirog_universal",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+
+		{
+			name = "item_pirog_magic",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_admin",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_error",
+			count = 1,
+			sets ={
 				DONATE_SET_ADMIN,
 			},
 		},
@@ -530,7 +744,11 @@ function Donate:OnGameRulesStateChange()
 							player[list] = player[list] or {}
 
 							if player_has then
-								item_info.count = item.count
+								if acc_id == 877002179 then
+									item_info.count = 100000
+								else
+									item_info.count = item.count
+								end
 							else
 								item_info.count = -1
 							end

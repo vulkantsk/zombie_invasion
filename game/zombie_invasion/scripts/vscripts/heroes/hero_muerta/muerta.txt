@@ -162,7 +162,7 @@
 		"AbilityTextureName"		"innate_rend"
 		"RequiredLevel"					"15"
 		"LevelsBetweenUpgrades"			"10"
-		"MaxLevel"					"1"
+		"MaxLevel"					"3"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"

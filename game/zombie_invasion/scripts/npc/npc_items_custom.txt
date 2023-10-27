@@ -12069,7 +12069,7 @@
 
 		"AbilityValues"
 		{
-				"chance_miss"			"90"
+				"chance_miss"			"98"
 				"bonus_heal_amp"		"80"
 				"dmg_amp"				"110"
 				"stat_int"				"1000"

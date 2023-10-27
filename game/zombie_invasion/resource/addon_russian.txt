@@ -8,10 +8,11 @@
 
 	    "donate_list_name_heroes"		"Эссенции героев"
 	    "donate_list_name_artifacts"	"Артефакты"
+	    "donate_list_name_admin"	"АДМЭЭЭЭЭЭЭЭН uwu"
  
 		"sss"                                               	""
 
-	    		"dota_game_end_victory_title_radiant"	"Деревня защищена!"
+	    		"dota_game_end_victory_title_radiant"	"Деревня спасена!"
 		"dota_game_end_victory_title_dire"		"Ой в пизду, я в тильте(("
 				
 		"addon_game_name"				"Нашествие зомби"	
