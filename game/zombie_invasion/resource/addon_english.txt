@@ -22,6 +22,10 @@
 		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
 		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 200%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
 		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 400%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
+
+		"difficulty_description_randomheroes" "<font color='#ffff00'>After each successfully completed night, you will be given new hero!</font>!"
+ 		"difficulty_description_onedown" "<font color='#c10020'>YOU ONLY HAVE ONE LIFE</font>(you can be reborn after successful night)"
+
 		"difficulty_description_demon" "<font color='#ff0000'>STATS ENEMIES INCREASED BY 600%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
 		"difficulty_description_impossible" "<font color='#000000'>HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
 		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
@@ -1359,6 +1363,12 @@
 		"DOTA_Tooltip_Ability_item_zvezda_movespeed_bonus"			"BONUS.MOVEMENTSPEED:"
 		"DOTA_Tooltip_Ability_item_zvezda_stats_strength_bonus"		"BONUS.STR:"
 
+
+		"DOTA_Tooltip_Ability_item_alduin_soul_final"		"Alduin Soul"
+		"DOTA_Tooltip_Ability_item_alduin_soul_final_Description"	"<h1>Passive: magic crits</h1> Gives magic crits %trigger_chance%% with a chance. Chance per stack %chance_to_stack%%, max stacks %max_charge%. Each stack gives 1% pure damage in addition to any magic damage Radians %hp_damage%%  of HP in %radius%. Vampiric mage %all_lifesteal%%"
+
+
+
 		"DOTA_Tooltip_Ability_item_fish"							"fish"
 		"DOTA_Tooltip_Ability_item_fish_Description"				"stink"
 		"DOTA_Tooltip_Ability_item_fish_Lore"       "Naga loves this fish"
@@ -1808,56 +1818,67 @@
  		
  		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_eyes"			"+{s:bonus_damage_per_stack} damage evolution"
 
-        //-----------lc-------------
-        "DOTA_Tooltip_Ability_overwhelming_odds"                                            "overwhelming odds"
-        "DOTA_Tooltip_Ability_overwhelming_odds_Description"								"Releases a hail of arrows and hits his opponents."
-        "DOTA_Tooltip_Ability_overwhelming_odds_damage"										"Base damage:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_damage_per_unit"							"damage per unit:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_bonus_attack_speed"					"%bonus attack speed:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_duration"									"duration:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_radius"										"radius:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_shard_Description"							"For each hit creature gets +%armorka% armor and increases the duration of the ability to %shard_duration% seconds"
+        	//-----------lc-------------
+       		 "DOTA_Tooltip_Ability_overwhelming_odds"                                            "overwhelming odds"
+        	"DOTA_Tooltip_Ability_overwhelming_odds_Description"								"Releases a hail of arrows and hits his opponents."
+       		"DOTA_Tooltip_Ability_overwhelming_odds_damage"										"Base damage:"
+        	"DOTA_Tooltip_Ability_overwhelming_odds_damage_per_unit"							"damage per unit:"
+       		"DOTA_Tooltip_Ability_overwhelming_odds_bonus_attack_speed"					"%bonus attack speed:"
+        	"DOTA_Tooltip_Ability_overwhelming_odds_duration"									"duration:"
+        	"DOTA_Tooltip_Ability_overwhelming_odds_radius"										"radius:"
+        	"DOTA_Tooltip_Ability_overwhelming_odds_shard_Description"							"For each hit creature gets +%armorka% armor and increases the duration of the ability to %shard_duration% seconds"
 
-        "DOTA_Tooltip_Ability_press_the_berserk"											"press the berserk"
-        "DOTA_Tooltip_Ability_press_the_berserk_Description"								"The hero sacrifices part of his blood to get increased regeneration and attack speed for %duration% seconds.<font color='#ff0000'><h1>BERSERK</h1> also increases all damage by itself %damage_increase_incoming_pct%%% and damage by enemies %damage_increase_outgoing_pct%%%. </font>"
-        "DOTA_Tooltip_Ability_press_the_berserk_Lore"				"Sometimes sometimes the force requires sacrifices - Legion."
-        "DOTA_Tooltip_Ability_press_the_berserk_duration"					"duration:"
-        "DOTA_Tooltip_Ability_press_the_berserk_damage_increase_outgoing_pct"					"%bonus outgoing damage:"
-        "DOTA_Tooltip_Ability_press_the_berserk_damage_increase_incoming_pct"					"%bonus incoming damage:"
-        "DOTA_Tooltip_Ability_press_the_berserk_health_regeneration_bonus"						"%bonus regeneration:"
-        "DOTA_Tooltip_Ability_press_the_berserk_attack_speed_bonus"								"%bonus attack speed:"
+        	"DOTA_Tooltip_Ability_press_the_berserk"											"press the berserk"
+        	"DOTA_Tooltip_Ability_press_the_berserk_Description"								"The hero sacrifices part of his blood to get increased regeneration and attack speed for %duration% seconds.<font color='#ff0000'><h1>BERSERK</h1> also increases all damage by itself %damage_increase_incoming_pct%%% and damage by enemies %damage_increase_outgoing_pct%%%. </font>"
+        	"DOTA_Tooltip_Ability_press_the_berserk_Lore"				"Sometimes sometimes the force requires sacrifices - Legion."
+        	"DOTA_Tooltip_Ability_press_the_berserk_duration"					"duration:"
+        	"DOTA_Tooltip_Ability_press_the_berserk_damage_increase_outgoing_pct"					"%bonus outgoing damage:"
+        	"DOTA_Tooltip_Ability_press_the_berserk_damage_increase_incoming_pct"					"%bonus incoming damage:"
+        	"DOTA_Tooltip_Ability_press_the_berserk_health_regeneration_bonus"						"%bonus regeneration:"
+        	"DOTA_Tooltip_Ability_press_the_berserk_attack_speed_bonus"								"%bonus attack speed:"
 
-        "DOTA_Tooltip_modifier_press_the_berserk"						"The Legion's harvest"
-        "DOTA_Tooltip_modifier_press_the_berserk_Description"						"Your blood is hotter, and the pain is starting to get stronger."
+        	"DOTA_Tooltip_modifier_press_the_berserk"						"The Legion's harvest"
+        	"DOTA_Tooltip_modifier_press_the_berserk_Description"						"Your blood is hotter, and the pain is starting to get stronger."
 
-        "DOTA_Tooltip_Ability_legion_duel_arena"											"legioner challenge"
-        "DOTA_Tooltip_Ability_legion_duel_arena_Description"								"Legion challenges everyone who is in the circle to an unequal duel for her that lasts %duration% seconds. Testing their abilities to become an even stronger legion in the future."
-        "DOTA_Tooltip_Ability_legion_duel_arena_Lore"										"I am a united Legion."
-        "DOTA_Tooltip_Ability_legion_duel_arena_scepter_Description"					"Increases the number of stats received for killing, duration and reduces cooldown by %AbilityCooldown%."
-        "DOTA_Tooltip_Ability_legion_duel_arena_duration"				"duration:"
-        "DOTA_Tooltip_Ability_legion_duel_arena_stats_per_kill"				"stats per kill:"
-        "DOTA_Tooltip_Ability_legion_duel_arena_radius"				"radius:"
+        	"DOTA_Tooltip_Ability_legion_duel_arena"											"legioner challenge"
+        	"DOTA_Tooltip_Ability_legion_duel_arena_Description"								"Legion challenges everyone who is in the circle to an unequal duel for her that lasts %duration% seconds. Testing their abilities to become an even stronger legion in the future."
+        	"DOTA_Tooltip_Ability_legion_duel_arena_Lore"										"I am a united Legion."
+        	"DOTA_Tooltip_Ability_legion_duel_arena_scepter_Description"					"Increases the number of stats received for killing, duration and reduces cooldown by %AbilityCooldown%."
+        	"DOTA_Tooltip_Ability_legion_duel_arena_duration"				"duration:"
+        	"DOTA_Tooltip_Ability_legion_duel_arena_stats_per_kill"				"stats per kill:"
+        	"DOTA_Tooltip_Ability_legion_duel_arena_radius"				"radius:"
         
-        "DOTA_Tooltip_Ability_legion_low"                                            "Combat Excitement"
-        "DOTA_Tooltip_Ability_legion_low_Description"                                "For each lost percentage of health, the hero receives bonuses."
-        "DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "BONUS ARMOR:"
-        "DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "BONUS MAGIC RESISTANCE:"
-        "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Weakness is not a vice."
- 
+        	"DOTA_Tooltip_Ability_legion_low"                                            "Combat Excitement"
+        	"DOTA_Tooltip_Ability_legion_low_Description"                                "For each lost percentage of health, the hero receives bonuses."
+        	"DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "BONUS ARMOR:"
+        	"DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "BONUS MAGIC RESISTANCE:"
+        	"DOTA_Tooltip_Ability_legion_low_Lore"                                            "Weakness is not a vice."
+ 	
 
-        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonus_armor} to all legion low effects"
-        "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkregeneration"		"+{s:bonus_health_regeneration_bonus} BERSERK regeneration bonus."
-        "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkattackspeed"		"+{s:bonus_attack_speed_bonus} BERSERK attack speed bonus."
-        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"											"+{s:bonus_damage} arrow damage"
-        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage_per_unit"									"+{s:bonus_damage_per_unit} damage per creature overwhelm odds"
+        	"DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonus_armor} to all legion low effects"
+        	"DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkregeneration"		"+{s:bonus_health_regeneration_bonus} BERSERK regeneration bonus."
+        	"DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkattackspeed"		"+{s:bonus_attack_speed_bonus} BERSERK attack speed bonus."
+        	"DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"											"+{s:bonus_damage} arrow damage"
+        	"DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage_per_unit"									"+{s:bonus_damage_per_unit} damage per creature overwhelm odds"
 
 
-		// -----------------sniper--------------------		
+		// -----------------sniper--------------------	
 
-        "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
-        "DOTA_Tooltip_Ability_rocket_shots_Description"                                "After numerous training sessions, Sniper learned to shoot at an unrealistically high speed for a short time!"
-        "DOTA_Tooltip_Ability_rocket_shots_net_damage"                                        "BASE ATTACK SPEED:"
-        "DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "At the training ground and not such antics happen."
+
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel"			"Sniper Shrapnel"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Everyone in the shrapnel radius gets %shrapnel_damage% + 100% sniper damage in seconds"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Lore"			"Gunpowder is my weapon."
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_slow_movement_speed"	"%slow:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_radius"		"radius:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_duration"	"duration:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_damage_delay"	"delay:"
+
+
+
+        	"DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
+        	"DOTA_Tooltip_Ability_rocket_shots_Description"                                "After numerous training sessions, Sniper learned to shoot at an unrealistically high speed for a short time!"
+        	"DOTA_Tooltip_Ability_rocket_shots_net_damage"                                        "BASE ATTACK SPEED:"
+        	"DOTA_Tooltip_Ability_rocket_shots_Lore"                                            "At the training ground and not such antics happen."
 
 		"DOTA_Tooltip_modifier_rocket_shots_haste"                            	"Rocket shots"
 		"DOTA_Tooltip_modifier_rocket_shots_haste_Description"                	"You attack unrealistically fast!"
@@ -2167,7 +2188,7 @@ The player can control the summoned creeps."
 
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Description" "Adds a freezing effect to the hero's attacks, slowing down the movement of the target for 1.5 seconds and causing additional damage." 
- 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_bonus_damage" "bonus damage:"
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_damage" "Arrow damage:"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_movement_speed" "%slow enemy:"
 
  		"DOTA_Tooltip_ability_ability_wave_of_terror"	"Wave of terror"
@@ -2420,22 +2441,58 @@ The player can control the summoned creeps."
  
 
  
-		// -----------------jakiro--------------------	
-		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro releases a frost ray at the cost of his health, spending %hp_spend_pct%%  of his health per second. The beam deals damage and heals allies for a percentage of damage, also every %tick_interval% seconds imposes 1 stack of freezing. Each freeze stack slows enemies down by %movespeed_reduction_per_stack%% and upon reaching %stack_for_freeze% stacks the target will take %frozen_damage_amp%%  increased damage."
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage"						"DAMAGE"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_beam_duration"					"DURATION"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage_to_heal_pct"					"%TREATMENT"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_movespeed_reduction_per_stack"			"SLOW PER STACK"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Gives the effect of magical immunity for the duration of the skill!"
+		// -----------------Elder dragon smaug--------------------	
+					"DOTA_Tooltip_ability_fire_punishment"			"fire punishment"
+			"DOTA_Tooltip_ability_fire_punishment_Description"			"Smaug sets fire to its target on %AbilityDuration% seconds causing her periodic damage %damage% + %pct_dmg%%% her damage, also reducing her magic resistance by %debuff_magic%%%."
+			"DOTA_Tooltip_ability_fire_punishment_Lore"		"Does it burn?"
+			"DOTA_Tooltip_ability_fire_punishment_radius"			"radius:"
 
-		"DOTA_Tooltip_modifier_jakiro_freezing_ray"								"Freezing ray"
-		"DOTA_Tooltip_modifier_jakiro_freezing_ray_Description"						"Magic immunity"
-		"DOTA_Tooltip_modifier_jakiro_freezing_ray_debuff"							"Cold stacks"
+			"DOTA_Tooltip_ability_incandescent_fury"			"incandescent fury"
+			"DOTA_Tooltip_ability_incandescent_fury_Description"			"Smaug spews lava from itself causing damage %damage% + %pct_dmg%%% their damage to opponents at intervals %burn_interval% sec."
+			"DOTA_Tooltip_ability_incandescent_fury_Lore"	"The most terrible death is to burn alive, but I don't need to worry about it - Smaug."
+			"DOTA_Tooltip_ability_incandescent_fury_Scepter_Description"	"Reduces ability to %AbilityCooldown% sec"
+			"DOTA_Tooltip_ability_incandescent_fury_cast_range"		"radius:"
+			"DOTA_Tooltip_ability_incandescent_fury_duration"		"duration:"
 
+			"DOTA_Tooltip_ability_dragon_fear_aura"		"dragon fear"
+			"DOTA_Tooltip_ability_dragon_fear_aura_Description"		"Enemies attacking Smaug cannot fight their own fear, which makes them weaker to strike their blows, and Smaug himself receives additional magical damage."
+			"DOTA_Tooltip_ability_dragon_fear_aura_Lore"	"Smaug's scary aura doesn't even allow them to stop shaking."
+			"DOTA_Tooltip_ability_dragon_fear_aura_outgoing"	"%outgoing damage:"
+			"DOTA_Tooltip_ability_dragon_fear_aura_incoming"	"%incoming damage:"
+			"DOTA_Tooltip_ability_dragon_fear_aura_duration"	"duration:"
 
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop"								"Freezing ray stop"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop_Description"					"Stops the ability."	
+			"DOTA_Tooltip_ability_dragon_gold_deal"		"Dragon gold deal"
+			"DOTA_Tooltip_ability_dragon_gold_deal_Description"		"Smaug values his things very much and extracts more benefits from them, receiving additional armor, damage and health."
+			"DOTA_Tooltip_ability_dragon_gold_deal_Lore"	"Smaug - gold is what makes you richer, but for me it is power."
+			"DOTA_Tooltip_ability_dragon_gold_deal_gold"	"The amount of gold from the items:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_physical_armor"	"bonus armor:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_spell_amp"	"bonus magic damage:"
+			"DOTA_Tooltip_ability_dragon_gold_deal_health_bonus"	"bonus health:"
+			"DOTA_Tooltip_modifier_dragon_gold_deal_buff"	"Golden madness"
+			"DOTA_Tooltip_modifier_dragon_gold_deal_buff_Description"	"Thanks to his Jewish inclinations, the hero receives a bonus: damage, health and armor."
+
+			"DOTA_Tooltip_ability_dragon_reward"		"dragon reward"
+			"DOTA_Tooltip_ability_dragon_reward_Description"	"Smaug uses the souls of the dead for their own purposes"
+			"DOTA_Tooltip_ability_dragon_reward_Lore"			"A collection of souls, here I have a fisherman, a hunter, and even the soul of a toad? Well okay. It'll do."
+			"DOTA_Tooltip_ability_dragon_reward_max"			"max soul:"
+			"DOTA_Tooltip_ability_dragon_reward_bonus_attributes"	"bonus attributes of soul stack:"
+			"DOTA_Tooltip_modifier_dragon_reward"			"Saving up soul"
+			"DOTA_Tooltip_modifier_dragon_reward_Description"	"The hero received bonus attributes."
+
+			"DOTA_Tooltip_ability_dragon_scales"	"Dragon scale"
+			"DOTA_Tooltip_ability_dragon_scales_Description"	"Smaug covers himself with scales, which causes enemies to die from their own weapons."
+			"DOTA_Tooltip_ability_dragon_scales_Lore"			"Impenetrable armor can be forged from this scale, but Smaug does not plan to share scales."
+			"DOTA_Tooltip_ability_dragon_scales_reflect"		"%reflection:"
+			"DOTA_Tooltip_ability_dragon_scales_duration"		"duration:"
+			"DOTA_Tooltip_ability_dragon_scales_max_radius"		"radius:"
+			"DOTA_Tooltip_modifier_dragon_scales"			"Dragon Scales"
+			"DOTA_Tooltip_modifier_dragon_scales_Description"	"Your body became stronger and began to reflect the damage."
+
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_scales_reflect"	"+{s:bonus_reflect}% to reflection scale reflect"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_scales_cd"		"-{s:bonus_AbilityCooldown} seconds of recharge scale reflect"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_dragon_gold_deal"		"-{s:bonus_gold} gold to receive dragon gold deal"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_incandescent_fury"		"+{s:bonus_damage} ability damage incandescent fury"
+			"DOTA_Tooltip_ability_special_bonus_unique_smaug_fire_punishment"		"+100% to the ability fire punishment"
 
 		// -----------------antimage--------------------		
 
@@ -2620,7 +2677,7 @@ The player can control the summoned creeps."
 		"DOTA_Tooltip_Ability_rubick_meditation"											"Meditation"
 		"DOTA_Tooltip_Ability_rubick_meditation_Description"								"Meditating, Rubick fills allied forces around him, but at the same time spends his mana. He is such a fooly."
 		"DOTA_Tooltip_Ability_rubick_meditation_regen"        								"Number supply allies Mana / Life per second:"
-		"DOTA_Tooltip_Ability_rubick_meditation_mana_cost_per_second"                 		"Mana consumption per second:""
+		"DOTA_Tooltip_Ability_rubick_meditation_mana_cost_per_second"                 		"Mana consumption per second:"
  
  		"DOTA_Tooltip_Ability_special_bonus_unique_rubick_meditation"											"+{s:bonus_regen}% to heal and mana per second from Meditation"  
  		// -----------------Skeleton King--------------------	
