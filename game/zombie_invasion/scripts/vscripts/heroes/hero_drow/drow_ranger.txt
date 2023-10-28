@@ -11,7 +11,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
-        "MaxLevel"                        "1"
+        "MaxLevel"                        "14"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "0.0 0.0 0.0 0.0"
+        "AbilityCooldown"               "5 4.5 4 3.5 3 2.5 2 1.5 1 0.5 0"
         "AbilityDuration"               "2.5"
 
         // Damage.
@@ -37,8 +37,8 @@
 
             "damage"                    
             {
-                    "value"             "45"
-                    "special_bonus_unique_drow_range_frost_damage"      "+55"
+                    "value"             "45 70 90 115 135 160 195 210 235 260 385 410 435 470"
+                    "special_bonus_unique_drow_range_frost_damage"      "+30"
             }
 
             "frost_arrows_movement_speed"   "-24"
@@ -92,7 +92,7 @@
         "AbilityTextureName"    "drow/drow_marks2"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "ScriptFile"                    "heroes/hero_drow/marksmanship_detection/marksmanship_detection"
-        "RequiredLevel"                 "10"
+        "RequiredLevel"                 "50"
         "MaxLevel"                        "1"
         // Data driven
         // -------------------------------------------------------------------------------------------------------------
@@ -144,7 +144,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "AbilitySound"                  "Hero_Vengeful_Spirit.WaveOfTerror"
-        "MaxLevel"                        "7"
+        "MaxLevel"                        "14"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -154,11 +154,11 @@
         // Time     
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCooldown"               "8"
-        "AbilityDuration"               "12 16 20 24 28"
+        "AbilityDuration"               "12"
 
         // Damage.
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityDamage"                 "100"
+        "AbilityDamage"                 "55"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
@@ -174,8 +174,8 @@
                 "wave_width"        "400"
             "armor_reduction"
             {
-                "value"   "-4 -6 -8 -10 -12 -14 -16"
-                "special_bonus_unique_drow_range_armor"    "-8"
+                "value"   "-2 -4 -6 -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28"
+                "special_bonus_unique_drow_range_armor"    "-12"
             }
             
                 "vision_aoe"        "300"
@@ -221,7 +221,7 @@
         "ScriptFile"                    "heroes/hero_drow/devour/devour"
         "AbilityTextureName"            "drow/drow_ghoul"
         "FightRecapLevel"               "1"
-        "MaxLevel"                      "4"
+        "MaxLevel"                      "14"
 
         "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
@@ -230,34 +230,34 @@
         "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
 
-        "AbilityCastRange"              "300 300 300 300"
-        "AbilityCastPoint"              "0.3 0.3 0.3 0.3"
+        "AbilityCastRange"              "300"
+        "AbilityCastPoint"              "0.3"
 
-        "AbilityCooldown"               "120 100 80 70"
-        "AbilityManaCost"               "40 50 60 70"
+        "AbilityCooldown"               "80"
+        "AbilityManaCost"               "70"
 
         "AbilitySpecial"
         {
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "bonus_gold"            "25 50 75 100"
+                "bonus_gold"            "25 50 75 100 125 150 175 200 225 250 275 300 325 350"
                 "LinkedSpecialBonus"    "special_bonus_unique_doom_3"
             }
             "02"
             {
                 "var_type"              "FIELD_FLOAT"
-                "devour_time"           "60"
+                "devour_time"           "90"
             }
             "03"
             {
                 "var_type"              "FIELD_INTEGER"
-                "regen"                 "4 6 8 10"
+                "regen"                 "0"
             }
             "04"
             {
                 "var_type"              "FIELD_INTEGER"
-                "creep_level"           "1 4 10 35"
+                "creep_level"           "1 1 1 4 4 4 10 10 10 35 55 100"
             }
         }
     } 

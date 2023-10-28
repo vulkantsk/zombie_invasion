@@ -1950,7 +1950,7 @@
 		"DOTA_Tooltip_modifier_ability_surge_Description"				"Скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%"
 
 	     "DOTA_Tooltip_ability_ability_seer_punch"											"ONE PUNCH!!"
-		"DOTA_Tooltip_ability_ability_seer_punch_Description"								"Dark Seer собирает все свои силы, чтобы ударить по небольшой площади, нанося при этом огромный (урон + сила героя) и оглушая своих противников на %AbilityDuration% секунд."
+		"DOTA_Tooltip_ability_ability_seer_punch_Description"								"Dark Seer собирает все свои силы, чтобы ударить по небольшой площади, нанося при этом огромный (%damage% урона + %dmg_pct% здоровья героя) и оглушая своих противников на %AbilityDuration% секунд."
 		"DOTA_Tooltip_ability_ability_seer_punch_Lore"										"Dark Seer видимо пересмотрел аниме и возомнил себя Сайтамой."
 		"DOTA_Tooltip_ability_ability_seer_punch_damage"									"УРОН:"
 		"DOTA_Tooltip_ability_ability_seer_punch_punch_radius"									"РАДИУС:"

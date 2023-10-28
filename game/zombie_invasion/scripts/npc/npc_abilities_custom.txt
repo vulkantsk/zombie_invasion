@@ -20723,7 +20723,7 @@
 		{
 				"duration"				"6"
 				"slow_steps"			"-50 -50 -40 -30 -20 -10 -10 -10"
-				"heal_percent"			"150"
+				"heal_percent"			"90"
 				"max_health_as_damage_pct"	"2"
 				"damage_threshold"		"400"
 				"spread_radius"			"700"

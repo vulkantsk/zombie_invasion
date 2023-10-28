@@ -10198,11 +10198,11 @@
 
 		"AbilityValues"
 		{
-		    "gold_min"           "75"
-		    "gold_max"           "115"
+		    "gold_min"           "25"
+		    "gold_max"           "45"
 
-		    "experience_min"           "60"
-		    "experience_max"           "100"
+		    "experience_min"           "40"
+		    "experience_max"           "60"
 		}
 	}
 

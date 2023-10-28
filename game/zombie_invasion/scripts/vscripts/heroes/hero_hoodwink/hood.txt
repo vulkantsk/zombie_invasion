@@ -11,15 +11,15 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"				"7"
+		"MaxLevel"				"14"
 
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16 14 12 10"
+		"AbilityCooldown"				"14"
 		"AbilityCastRange"				"575"
 		"AbilityCastPoint"				"0.2"
-		"AbilityManaCost"				"70 75 80 85"
+		"AbilityManaCost"				"70 75 80 85 90 95 100 105 110 115 120 125 130 135"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -28,17 +28,17 @@
 				"bonus_range"			"125 200 275 350"
 				"acorn_shot_damage"		
 				{
-					"value"		"20 50 70 100 120 150 170"
+					"value"		"20 50 70 100 120 150 170 190 235 270 300 345 370 400"
 					"CalculateSpellDamageTooltip"	"0"
 				}
 				"base_damage_pct"		
 				{
-					"value"		"75"
+					"value"		"40 45 50 55 60 65 70 75 80 85 90 95 100 115"
 					"CalculateSpellDamageTooltip"	"0"
 				}
 				"bounce_count"			
 				{
-					"value"			"5 6 7 8 9 10 11"
+					"value"			"1 2 3 4 5 6 7 8 9 10 11 12 13 14"
 					"LinkedSpecialBonus"		"special_bonus_unique_hoodwink_acorn_shot_bounces"
 				}
 				"bounce_range"			
@@ -69,7 +69,7 @@
  		"AbilityCastRange"				"275"
 
  
-		        "MaxLevel"                        "7"
+		        "MaxLevel"                        "14"
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
@@ -95,12 +95,12 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"attack_speed"					"75 90 110 125 145 185 220"
+				"attack_speed"					"20 35 55 65 75 85 95 105 115 125 135 145 155 165"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"bonus_damage"					"55 75 95 115 135 180 210"
+				"bonus_damage"					"20 45 75 90 110 125 145 185 220 240 270 310 340 375"
 								"LinkedSpecialBonus"			"special_hoodwink"
 			}
  			"04"
@@ -133,11 +133,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0.0"
 		"AbilityCharges"				"2"
-		"AbilityChargeRestoreTime"		"18 17 16 15 14 13 12"
-				        "MaxLevel"                        "7"
+		"AbilityChargeRestoreTime"		"18 17 16 15 14 13 12 11 10 9 8 7 6 5"
+				        "MaxLevel"                        "14"
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"45"
+		"AbilityManaCost"				"70"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -146,7 +146,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"movement_speed_pct"			"25 30 35 40 45 50 55"
+				"movement_speed_pct"			"25 30 35 40 45 50 55 60 65 70 75 80 85 90"
 			}
 			"02"
 			{
@@ -167,12 +167,13 @@
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"               "1"
 		"AbilityTextureName"            "hoodwink_sharpshooter"
- 			"LevelsBetweenUpgrades"			"10"	
-		"RequiredLevel"					"10"
+		"MaxLevel"			"10"
+ 			"LevelsBetweenUpgrades"			"6"	
+		"RequiredLevel"					"6"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -217,7 +218,7 @@
 			"06"
 			{
 				"var_type"                  "FIELD_INTEGER"
-				"damage_pct"            	"300 600 900"
+				"damage_pct"            	"200 220 240 260 280 300 320 340 360 380 400 420 440 460"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"07"
@@ -236,9 +237,9 @@
 		"ScriptFile"					"heroes/hero_hoodwink/anti_armor/armor_penetration"
 		"AbilityBehavior"		      	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"Hero/hood/armor"
-		"MaxLevel"						"3"
-		"LevelsBetweenUpgrades"			"15"	
-		"RequiredLevel"					"15"
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades"			"25"	
+		"RequiredLevel"					"25"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -247,7 +248,7 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "trigger_chance"			"33 44 55"
+			     "trigger_chance"			"33 44 55 66"
 		    }
 		}
 	}

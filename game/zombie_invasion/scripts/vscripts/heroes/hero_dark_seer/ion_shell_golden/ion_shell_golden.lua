@@ -89,9 +89,7 @@ if not self:GetParent():PassivesDisabled() then
 		false
 	)
 
-if self:GetCaster():HasModifier("modifier_ability_ion_shell") then 
-	self:GetCaster():RemoveModifierByName("modifier_ability_ion_shell")
-end
+
 
 	for _,enemy in pairs(enemies) do
 		if enemy ~= self.parent then
