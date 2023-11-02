@@ -237,7 +237,7 @@
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/hero_wisp/blessed_walking/blessed_walking.lua"
-	"AbilityTextureName"			"wisp/sueside"
+		"AbilityTextureName"			"wisp/sueside"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
  		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
@@ -265,5 +265,22 @@
  
         }
     }
+    "wisp_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_wisp"
+		"AbilityTextureName"			"wisp_heal_aura"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_health_pct"		"15"
+			"aura_radius"			"700"
+		}	
+	}
 
 }

@@ -8,7 +8,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_tide/anchor_smash"
 		"AbilityTextureName"			"tidehunter_anchor_smash"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 
   		"HasScepterUpgrade"             "1"
 
@@ -29,18 +29,18 @@
 	    "AbilityValues"
 
 		{
-			"duration"			"10 12 14 16 18 20 24"
+			"duration"			"9"
             "smash_damage"				
 			{
-				"value"				"20 80 120 160 190 235 275"
-			   	"special_bonus_unique_tide_smash_damage"	    "+225"
+				"value"				"45 75 90 115 135 155 170 190 215 240 275 295 325 355"
+			   	"special_bonus_unique_tide_smash_damage"	    "+245"
 				 
 			}
             "radius"			"375"
 
             "armor_reduction"				
 			{
-				"value"				"0 -4 -8 -12 -16 -24 -28"
+				"value"				"-2 -4 -6 -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28"
 			   	"special_bonus_unique_tide_armor_reduction"	    "-4"
 				 
 			}
@@ -56,9 +56,9 @@
         "ScriptFile"                    "heroes/hero_tide/tide_health"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "tide/sosat"
-        "MaxLevel"                      "3"
+        "MaxLevel"                      "10"
         "LevelsBetweenUpgrades"         "10"
-        "RequiredLevel"                 "15"
+        "RequiredLevel"                 "10"
 
         "AbilityCastRange"              "%radius"
         // Special
@@ -66,20 +66,20 @@
         "AbilityValues"
         {
            
-				"dmg_proc"				"2250 1252 980"
+				"dmg_proc"				"2250"
 			    	
 
 				"str_per_stack"				
 				{
-					"value"				"0.1 0.2 0.3"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.1"
+					"value"				"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
 					 
 				}
 
 				"health_per_stack"				
 				{
-					"value"				"0.1 0.2 0.3"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.1"
+					"value"				"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
 					 
 				}
           
@@ -95,7 +95,7 @@
 		"ID"					"5119"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilitySound"					"Hero_Tidehunter.KrakenShell"
-		"MaxLevel"                      "7"
+		"MaxLevel"                      "14"
         "LevelsBetweenUpgrades"         "4"
         "RequiredLevel"                 "1"
 
@@ -106,24 +106,24 @@
 			
 				"damage_reduction"				
 				{
-					"value"				"45 70 110 190 240 270 325"
-			    	"special_bonus_unique_tide_damage_reduction"	    "+400"
+					"value"				"20 45 70 110 190 240 270 325 365 390 425 465 500 525"
+			    	"special_bonus_unique_tide_damage_reduction"	    "+225"
 					 
 				}
 			
-				"damage_cleanse"		"90 120 140 180"
+				"damage_cleanse"		"245"
 			
-				"damage_reset_interval"	"5"
+				"damage_reset_interval"	"8"
 			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 
-"tidehunter_gush"
+"gushik"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"					"5118"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"					"tidehunter_gush"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -131,6 +131,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
+		"MaxLevel"				"14"
 		"HasScepterUpgrade"			"1"
 		"AbilitySound"					"Ability.GushCast"
 
@@ -155,7 +156,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"gush_damage"		"125 180 275 335"
+				"gush_damage"		"125 144 176 190 275 295 325 355 420 445 470 500 525 560"
 				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
 			}
 			"02"
@@ -166,12 +167,12 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"movement_speed"	"-40 -40 -40 -40"
+				"movement_speed"	"-40"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"negative_armor"		"8 12 16 20"
+				"negative_armor"		"12"
 				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
 			}
 			"05"
@@ -216,6 +217,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"FightRecapLevel"				"2"
+		"MaxLevel"		"10"
 		"AbilitySound"					"Ability.Ravage"
 
 		"AbilityDraftUltShardAbility" "tidehunter_arm_of_the_deep"
@@ -246,8 +248,8 @@
 			"speed"				"725"
 			"duration"			
 			{
-				"value"					"6.0 8.2 12.4"
-				"special_bonus_unique_tidehunter_7"	"+12.6"
+				"value"					"6.0 7.1 8.2 9.3 10.4 11.5 12.6 13.7 14.8 15.9"
+				"special_bonus_unique_tidehunter_7"	"+4.1"
 			}
 		}
 	}

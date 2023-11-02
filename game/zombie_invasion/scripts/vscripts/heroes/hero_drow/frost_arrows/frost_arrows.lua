@@ -56,15 +56,17 @@ modifier_ability_drow_ranger_frost_arrows = class({
 --------------------------------------------------------------------------------
 
 function modifier_ability_drow_ranger_frost_arrows:OnDeath(data)
-    if not self:GetParent():HasShard() then return end
+    if not self:GetParent():HasScepter() then return end
     if IsServer() then
+        local caster = self:GetCaster()
+        local ability = self:GetAbility()
         local parent = self:GetParent()
         local killer = data.attacker
         local killed_unit = data.unit
 
       
         if killer == parent and killed_unit then
-        local radius = 500
+        local radius = 325
 
  
 
@@ -86,9 +88,9 @@ function modifier_ability_drow_ranger_frost_arrows:OnDeath(data)
     end
 
  
-    caster:EmitSound("Hero_Techies.Suicide")
-    local nfx = ParticleManager:CreateParticle('particles/units/heroes/hero_techies/techies_suicide.vpcf', PATTACH_POINT_FOLLOW, caster)
-    ParticleManager:SetParticleControl(nfx, 0, caster:GetAbsOrigin())
+    caster:EmitSound("sounds/weapons/hero/shredder/armor_explode.vsnd")
+    local nfx = ParticleManager:CreateParticle('particles/tb_soul_power.vpcf', PATTACH_POINT_FOLLOW, killed_unit)
+    ParticleManager:SetParticleControl(nfx, 0, killed_unit:GetAbsOrigin())
     ParticleManager:SetParticleControl(nfx, 1, Vector(radius/2, 0, 0))
     ParticleManager:SetParticleControl(nfx, 2, Vector(radius, 1, 1))
         end

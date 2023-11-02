@@ -11,6 +11,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+        "HasScepterUpgrade"               "1"
         "MaxLevel"                        "14"
 
         // Casting
@@ -34,12 +35,13 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-
+            "radius"    "325"
             "damage"                    
             {
                     "value"             "45 70 90 115 135 160 195 210 235 260 385 410 435 470"
                     "special_bonus_unique_drow_range_frost_damage"      "+30"
             }
+            "damage_pct"        "100"
 
             "frost_arrows_movement_speed"   "-24"
 
@@ -261,4 +263,39 @@
             }
         }
     } 
+    "drow_ranger_buff_1"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "items/book_of_heroes/heroes/item_npc_dota_hero_drow_ranger"
+        "AbilityTextureName"            "drow_buff"
+        "MaxLevel"                      "1"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "agi"       "1.5"
+        }   
+    }
+    "agility_thief"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_drow/agility_thief/agility_thief"
+        "AbilityTextureName"            "drow/agility_thief"
+        "FightRecapLevel"               "1"
+        "IsGrantedByShard"              "1"
+        "HasShardUpgrade"               "1"
+        "MaxLevel"                      "1"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"  
+        "AbilityValues"
+        {
+            "bonus_attributes"      "1"
+            "chance_to_stack" "2"
+        }
+    }
 }

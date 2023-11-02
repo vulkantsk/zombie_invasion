@@ -294,6 +294,22 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
+	"winter_wyvern_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_winter_wyvern"
+		"AbilityTextureName"			"yuki/mana_berserk"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"mana_pct"		"5"
+		}	
+	}
 
 
 	"special_bonus_unique_yuki_revenge_heal"

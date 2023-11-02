@@ -410,7 +410,7 @@
 
 
 		"DOTA_Tooltip_ability_item_quest_cm_shield"											"<font color='#4d8fac'>Blessed support shield</font>"
-		"DOTA_Tooltip_ability_item_quest_cm_shield_Description"											"<h1>Пассивная: Благославение богов.</h1> Имеет %chance_miss% шанс на избежания любого урона. Но герой становится слишком слаб и ему остаётся лишь молится."
+		"DOTA_Tooltip_ability_item_quest_cm_shield_Description"											"<h1>Пассивная: Благославение богов.</h1> Имеет %chance_miss%%% шанс на избежания любого урона. Но герой становится слишком слаб и ему остаётся лишь молится."
 		"DOTA_Tooltip_ability_item_quest_cm_shield_dmg_amp"							"%УРОНУ ОТ ЗАКЛИНАНИЙ: "
 		"DOTA_Tooltip_ability_item_quest_cm_shield_stat_int"						"ИНТЕЛЛЕКТ: "
 		"DOTA_Tooltip_ability_item_quest_cm_shield_chance_miss"						"%ШАНС ИЗБЕЖАНИЯ УРОНА: "
@@ -489,6 +489,91 @@
 
 		"DOTA_Tooltip_modifier_item_world_order_amulet_aura"				"Амулетное безумие"
 		"DOTA_Tooltip_modifier_item_world_order_amulet_aura_Description"	"Герой благославлён амулетом удачи"
+
+
+		"DOTA_Tooltip_ability_item_book_of_heroes"											"<font color='#ffb300'>Руководитель по выживанию в трудных условиях</font>"
+		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Если герой достиг 50 уровня, он может использовать книгу чтобы получить уникальное умение, которое можно изучить и стать сильнее.</font>" 
+		"DOTA_Tooltip_ability_item_book_of_heroes_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>
+		<h1>Пассивная:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper"											"<font color='#ffb300'>Руководитель по стрельбе закрытыми глазами</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Broken eyes </h1>Снайпер узнаёт куда ему лучше стрелять в зомби, из-за чего его выстрелы поражают цель и сокращают её броню на %armor_debuff% помноженную на его ловкость %agi_pct%%% длительностью в %corruption_duration% Секунд." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+	
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin"											"<font color='#ffb300'>Руководитель по стрельбе закрытыми глазами</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Phantom ambicient </h1>Phantom Assassin начинает видеть слабые места противников благодаря чему её критические атаки наносят на %critical_bonus%%% больше урона и шанс критического попадания увеличивается на %crit_chance_bonus%%%." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern"											"<font color='#ffb300'>Руководство для кур</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: mana berserk </h1> за количество своей мамы %mana_pct%%% герой также получает интеллект" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_luna"											"<font color='#ffb300'>Руководство для кур</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: lucent strike </h1>Luna при атаке использует улучшенный lucent beam и наносит урон %damage% помноженную на %agi_pct%%% ловкости" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Lore"  "<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma"											"<font color='#ffb300'>Руководитель пустоты для чайников</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Super idol</h1> После убийства %kill_count% существ, Энигма создаёт из их трупов огромного Эйдолона, который имеет %eidolon_hp_tooltip% здоровья и %eidolon_dmg_tooltip% урона + с его интеллектом и ловкостью." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink"											"<font color='#ffb300'>Руководитель для любителей белочек</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Acorn shot</h1> Герой кидает желудь в лицо своего противника нанося %acorn_damage% базового урона прибавленного к урону худвинк умноженного на %acorn_pct%%%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord"											"<font color='#ffb300'>Руководство для обезбашенных</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: illusion kiss </h1> Герой получает дополнительно магический урон за процент своего интеллекта %int_pct%%%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+																			
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: mercy </h1> За %bonus_health_pct%%% здоровья wisp, союзник в радиусе %aura_radius% получает бонусом здоровье." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_axe"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Health lost</h1> Axe слишком привык к боли, что эта боль делает его сильнее даруя %strength% силу за каждый процент потерянного здоровья, сила превращается в %armor% брони." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro"											"<font color='#ffb300'>Руководитель полёта</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Dragon fly </h1>Smaug взлетает вверх из-за чего его манёвренность теряется на 25% но, из-за этого он может проходить сквозь припядствия." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: not bad deal </h1>Превращает текущее золото алхимика в маг урон. При потере золота, урон также уменьшается." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Mana poison </h1>чешуя образует небольшие капли с маной, которые использует медуза, чтобы увеличить свой запас маны на %agi_pct%%% от ловкости" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: blood experience </h1>Blood Hunter научился не терять ни капли крови при ударах по противнику из-за чего получает её в %pct%%% раз больше." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
 
 
 		"DOTA_Tooltip_ability_item_armlet2"											"Band of courage power"
@@ -1888,6 +1973,11 @@
         "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Превращает текущее золото алхимика в урон. При потере золота, урон также уменьшается."
  		"DOTA_Tooltip_Ability_alchemist_good_deal_damage_gold"                                            "%ЗОЛОТО В УРОН:"        
         "DOTA_Tooltip_Ability_alchemist_good_deal_Lore"                                "Алхимик стал настолько жадным, что каждое золото у него на счету, делает его сильнее!" 
+
+        "DOTA_Tooltip_Ability_alchemist_buff_1"                                            "Not bad deal"
+        "DOTA_Tooltip_Ability_alchemist_buff_1_Description"                                "<h1>Пассивная: not bad deal </h1>Превращает текущее золото алхимика в маг урон. При потере золота, урон также уменьшается."
+ 		"DOTA_Tooltip_Ability_alchemist_buff_1_spell_gold"                                            "%ЗОЛОТО В МАГ УРОН:"        
+        "DOTA_Tooltip_Ability_alchemist_buff_1_Lore"                                "Алхимик стал настолько жадным, что каждое золото у него на счету, делает его сильнее!"
  
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Lore"					"Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом."		
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom"						"Unstable Concoction"
@@ -1910,6 +2000,11 @@
 		"DOTA_Tooltip_ability_luna_night_buff_spell_damage"					"%ДОП. УРОН ОТ ЗАКЛИНАНИЙ:"
 		"DOTA_Tooltip_ability_luna_night_buff_duration"								"ДЛИТЕЛЬНОСТЬ:"
         "DOTA_Tooltip_Ability_luna_night_buff_Lore"                                "Богиня луны слышит луну и дает ей свое благословение" 
+
+
+        "DOTA_Tooltip_ability_luna_buff_1"							"lucent strike"
+		"DOTA_Tooltip_ability_luna_buff_1_Description"				"<h1>Пассивная: lucent strike </h1>Luna при атаке использует улучшенный lucent beam и наносит урон %damage% помноженную на %agi_pct%%% ловкости"
+		"DOTA_Tooltip_ability_luna_buff_1_Lore"						"Благосклоность луны!"
 
 		"DOTA_Tooltip_modifier_luna_night_buff"						"Improved Moon Blessing"
 		"DOTA_Tooltip_modifier_luna_night_buff_Description"			"Вы благословлены богиней луны!"
@@ -1973,8 +2068,20 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_dark_seer_golden_shield_2"						"+{s:bonus_bonus_health} Бонус здоровья golden shield"
 		"DOTA_Tooltip_Ability_special_bonus_unique_dark_seer_ion_shield"						"+{s:bonus_damage_per_second} урона в сек. Ion Shield"
 
+		"DOTA_Tooltip_Ability_dark_seer_buff_1"						"Reallity kiss"
+		"DOTA_Tooltip_Ability_dark_seer_buff_1_Description"			"<h1>Пассивная: illusion kiss </h1> Герой получает дополнительно магический урон за процент своего интеллекта %int_pct%%%"
+		"DOTA_Tooltip_Ability_dark_seer_buff_1_Lore"		"В своём сознании богиня даровала свой поцелуй, благодаря чему его урон чутка увеличился."
+
 
 // -------------tide ----------
+
+		"DOTA_Tooltip_Ability_gushik"						"gush"
+		"DOTA_Tooltip_Ability_gushik_Description"			"Призывает водяной поток, наносящий противникам урон и уменьшающий их скорость передвижения и броню."
+		"DOTA_Tooltip_Ability_gushik_negative_armor"		"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_Ability_gushik_gush_damage"			"УРОН:"
+
+
+
 
 		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "Когда тайда бьют, он становится сильнее."
@@ -2116,15 +2223,12 @@
 		// -----------------sniper--------------------		
 
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel"			"Sniper Shrapnel"
-		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Все находящиеся в радиусе shrapnel получают %shrapnel_damage% + 100% урона снайпера в секнду"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Все находящиеся в радиусе shrapnel получают %shrapnel_damage% + 100% урона снайпера в секунду"
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Lore"			"Порох моё всё."
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_slow_movement_speed"	"%ЗАМЕДЛЕНИЕ:"
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_radius"		"РАДИУС:"
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_duration"	"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_damage_delay"	"ТИКРЕЙТ:"
-
-
-
 
         "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket Shots"
         "DOTA_Tooltip_Ability_rocket_shots_Description"                                "После многочисленных тренировок Sniper научился на короткое время стрелять с нереально большой скоростью!"
@@ -2143,6 +2247,17 @@
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_abilitycastpoint"						"ВРЕМЯ ПОДГОТОВКИ:"
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_damage"						"%КРИТИЧЕСКИЙ УРОН:"
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_splash_radius"						"РАДИУС:"
+
+		"DOTA_Tooltip_ability_sniper_buff_1"			"sniper penetration"
+		"DOTA_Tooltip_ability_sniper_buff_1_Description"			"<h1>Пассивная: Broken eyes </h1>Снайпер узнаёт куда ему лучше стрелять в зомби, из-за чего его выстрелы поражают цель и сокращают её броню на %armor_debuff% помноженную на его ловкость %agi_pct%%% длительностью в %corruption_duration% Секунд."
+		"DOTA_Tooltip_ability_sniper_buff_1_Lore"			"Ему даже холод не мешает целится точно в цель."
+
+
+
+
+
+
+
 
 		"DOTA_Tooltip_modifier_ability_sniper_assassinate"					"Assassinate"
 		"DOTA_Tooltip_modifier_ability_sniper_assassinate_Description"		"Sniper целится в твою голову!"		
@@ -2172,6 +2287,13 @@
 		"DOTA_Tooltip_Ability_enchantress_untouchable"											"Poison"
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "После нападения на Горгону большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную змею."
+
+
+		"DOTA_Tooltip_Ability_medusa_buff_1"											"Mana poison"
+		"DOTA_Tooltip_Ability_medusa_buff_1_Description"								"<h1>Пассивная: Mana poison </h1>чешуя образует небольшие капли с маной, которые использует медуза, чтобы увеличить свой запас маны на %agi_pct%%% от ловкости"
+		"DOTA_Tooltip_Ability_medusa_buff_1_Lore"                                     "Мана - то что делает всех сильнее, её в том числе."
+
+
 		// -----------------sf--------------------		
  
 		"DOTA_Tooltip_ability_shotgun_sf"								"Shotgun"
@@ -2299,6 +2421,13 @@
 			"DOTA_Tooltip_ability_ring_of_corrosive_Description"	"Blood Hunter проводит ритуал крови, во имя Кровавого братства. Герой создаёт кровавый круг на %duration% секунд, все противники в котором получают каждые %tick_rate% секунды чистый урон, равный %damage% + %damage_mult%%% от своего урона."
 			"DOTA_Tooltip_ability_ring_of_corrosive_Lore"			"Безобидный круг в который лучше не ступать."
 			"DOTA_Tooltip_ability_ring_of_corrosive_radius"		"РАДИУС:"
+
+
+			"DOTA_Tooltip_ability_blood_buff_1"				"blood late"
+			"DOTA_Tooltip_ability_blood_buff_1_Description"	"<h1>Пассивная: blood experience </h1>Blood Hunter научился не терять ни капли крови при ударах по противнику из-за чего получает её в %pct%%% раз больше."
+			"DOTA_Tooltip_ability_blood_buff_1_Lore"			"Кровяка сладкая."
+
+
 
 
 
@@ -2546,6 +2675,10 @@
 			"DOTA_Tooltip_ability_fire_punishment_Lore"		"Обжигает да?"
 			"DOTA_Tooltip_ability_fire_punishment_radius"			"РАДИУС ПОДЖОГА:"
 
+			"DOTA_Tooltip_ability_jakiro_buff_1"			"Fly to moon"
+			"DOTA_Tooltip_ability_jakiro_buff_1_Description"			"<h1>Пассивная: Dragon fly </h1>Smaug взлетает вверх из-за чего его манёвренность теряется на 25% но, из-за этого он может проходить сквозь припядствия."
+			"DOTA_Tooltip_ability_jakiro_buff_1_Lore"		"Крылатый"
+
 			"DOTA_Tooltip_ability_incandescent_fury"			"incandescent fury"
 			"DOTA_Tooltip_ability_incandescent_fury_Description"			"Smaug извергает из себя лаву нанося урон %damage% + %pct_dmg%%% своего урона противникам с интервалом %burn_interval% сек."
 			"DOTA_Tooltip_ability_incandescent_fury_Lore"	"Самая ужасная смерть сгореть заживо, но мне об этом не нужно беспокоится - Smaug."
@@ -2771,6 +2904,11 @@
 		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_chance"				"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
 		"DOTA_Tooltip_ability_ability_phantom_assassin_coup_de_grace_crit_bonus"				"%КРИТИЧЕСКИЙ УРОН:"
 
+
+		"DOTA_Tooltip_ability_phantom_assassin_buff_1"							"Phantom haste"
+		"DOTA_Tooltip_ability_phantom_assassin_buff_1_Description"				"<h1>Пассивная: Phantom ambicient </h1>Phantom Assassin начинает видеть слабые места противников благодаря чему её критические атаки наносят на %critical_bonus%%% больше урона и шанс критического попадания увеличивается на %crit_chance_bonus%%%"
+		"DOTA_Tooltip_ability_phantom_assassin_buff_1_Lore"						"Шёлковая вуаль Мортред — это последнее, что увидит её несчастная цель."
+
  
 
  		"DOTA_Tooltip_Ability_special_bonus_unique_assassin_stifling_dagger_triple"	"Stifling Dagger по трём целям"
@@ -2816,6 +2954,10 @@
         "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
 		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
 		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
+
+		 "dota_tooltip_ability_troll_warlord_buff_1"								"Berserk Strikes"
+		"dota_tooltip_ability_troll_warlord_buff_1_Description"					"<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%"
+		"dota_tooltip_ability_troll_warlord_buff_1_lore"						"Сила в быстроте, сила лишь в нём, ведь он самый быстрый драчун в мире."
 
        "DOTA_Tooltip_ability_frostivus2018_troll_warlord_fervor"	"Fervor"
        "DOTA_Tooltip_ability_frostivus2018_troll_warlord_fervor_Description"	"Каждый последующий удар по одной и той же цели увеличивает скорость атаки героя. Если сменить цель, число эффектов уменьшится вдвое."
@@ -2901,6 +3043,17 @@
 
 	// -----------------Crystal-Maiden--------------------
 
+
+	"DOTA_Tooltip_ability_crystal_maiden_buff_1" "Crystal shell"
+	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Description" "<h1>Пассивное:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%"
+	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Lore"			"Ледяное побоище её рук дело."
+
+	"DOTA_Tooltip_modifier_crystal_aura_buff"	"CRYSTAL SHELL"
+	"DOTA_Tooltip_modifier_crystal_aura_buff_Description"	"Вы под защитой льдов!"
+
+
+
+
 	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_cold_embrace"								"Улучшает cold embrace +2 сек. действия и +100 хп регена в секунду"
 
 	// -----------------Yuki-onna--------------------
@@ -2968,8 +3121,12 @@
 
 
 		"DOTA_Tooltip_modifier_challenge_buff"	"Challenge from yuki"
-		"DOTA_Tooltip_modifier_challenge_buff_Description"	"Вы хуйлан."
+		"DOTA_Tooltip_modifier_challenge_buff_Description"	"Вы гуйлан."
 
+
+		"dota_tooltip_ability_winter_wyvern_buff_1"								"Mana Berserk"
+		"dota_tooltip_ability_winter_wyvern_buff_1_Description"					"<h1>Пассивная: mana berserk </h1> за количество своей мамы %mana_pct%%% герой также получает интеллект"
+		"dota_tooltip_ability_winter_wyvern_buff_1_lore"						"Сила в мане, друзья мои."
 
 
 
@@ -3199,6 +3356,7 @@
 
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows" "Frost arrows"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Description" "Добавляет к атакам героя замораживающий эффект, замедляющий передвижение цели на 1,5 секунды и наносящий дополнительный урон." 
+ 		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_Scepter_Description" "Frost arrows наделяются разрушительной способностью благодаря чему при убийстве врага, она наносит окружающим существам урон в размере %damage_pct%%% от урона Drow Ranger в радиусе %radius%"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_damage" "БОНУСНЫЙ УРОН:"
  		"DOTA_Tooltip_ability_ability_drow_ranger_frost_arrows_frost_arrows_movement_speed" "%ЗАМЕДЛЕНИЕ:"
 
@@ -3219,6 +3377,18 @@
  		"DOTA_Tooltip_ability_ability_devour_time" "ВРЕМЯ ДЕЙСТВИЯ:"
  		"DOTA_Tooltip_ability_ability_devour_regen" "ДОП РЕГЕНЕРАЦИЯ:"
  		"DOTA_Tooltip_ability_ability_devour_creep_level" "УРОВЕНЬ КРИПА:"
+
+ 		"DOTA_Tooltip_ability_drow_ranger_buff_1"	"overstate agility price"
+        "DOTA_Tooltip_ability_drow_ranger_buff_1_Description"	"<h1>Пассивная: Level boom</h1> Герой с получением уровня получает по +%agi%%% бонусной ловкости за уровень."
+        "DOTA_Tooltip_ability_drow_ranger_buff_1_Lore"	"Drow становится сильнее с каждым уровнем из-за своего огромного.. жизненного опыта в быту."
+
+
+ 		"DOTA_Tooltip_ability_agility_thief"	"Agility thief"
+        "DOTA_Tooltip_ability_agility_thief_Description"	"Герой имеет шанс %chance_to_stack%%% получить ловкость в размере %bonus_attributes% за убийство любого врага."
+        "DOTA_Tooltip_ability_agility_thief_Lore"	"Жить чередой неудач и невезения не для меня, я заберу всё своё."
+
+        "DOTA_Tooltip_modifier_agility_thief"		"agility thief"
+        "DOTA_Tooltip_modifier_agility_thief_Description"		"agility thief получено ловкости %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%"
 
  		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven" "SUPER marksmanship"
  		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven_Description" "Каждая атака проводит дополнительную атаку по целям которые были в радиусе 275 от первого удара, на них не работают модификаторы атаки."
@@ -3263,6 +3433,10 @@
        "DOTA_Tooltip_ability_hoodwink_anti_armor_Description"	"Силы природы дали Hoodwink возможность наносить урон, игнорируя защиту"
         "DOTA_Tooltip_ability_hoodwink_anti_armor_trigger_chance"	"%ШАНС:"
        "DOTA_Tooltip_ability_hoodwink_anti_armor_Lore"	"Арбалет Hoodwink всегда был наполнен силой природы, но в последнее время этой силы становится в разы больше."
+
+        "DOTA_Tooltip_ability_hoodwink_buff_1"	"Acorn dance"
+       "DOTA_Tooltip_ability_hoodwink_buff_1_Description"	"<h1>Пассивная: Acorn shot</h1> Герой кидает желудь в лицо своего противника нанося %acorn_damage% базового урона прибавленного к урону худвинк умноженного на %acorn_pct%%%"
+       "DOTA_Tooltip_ability_hoodwink_buff_1_Lore"	"Hoodwink используют всю силу собственной сущности."
 
 		// -----------------axe--------------------			
 		"DOTA_Tooltip_ability_ability_berserkers_call"										"Berserker's Call"
@@ -3322,6 +3496,15 @@
 		"DOTA_Tooltip_Ability_axe_solo_bonus_regen" "РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ В ОДИНОЧЕСТВЕ:"
 		"DOTA_Tooltip_ability_axe_solo_Lore" "Быть одним, таков путь..."
 
+
+
+		"DOTA_Tooltip_Ability_axe_buff_1" "pain of strength"
+		"DOTA_Tooltip_Ability_axe_buff_1_Description" "<h1>Пассивная: Health lost</h1> Axe слишком привык к боли, что эта боль делает его сильнее даруя %strength% силу за каждый процент потерянного здоровья, сила превращается в %armor% брони."
+
+
+
+
+
 		"DOTA_Tooltip_modifier_axe_solo" "FOREVER ALONE"
 		"DOTA_Tooltip_modifier_axe_solo_Description" "Число союзников, находящихся рядом с аксом"
  
@@ -3336,6 +3519,7 @@
 		// -----------------enigma--------------------	
 
         "npc_classic_eidolon"                                                             "Эйдолон"
+        "npc_classic_eidolon_strong"                                                             "Супер эйдолон"
 
 		"DOTA_Tooltip_ability_ability_malefice"											"Malefice"
 		"DOTA_Tooltip_ability_ability_malefice_Description"								"Концентрирует энергию героя на цели, отчего та получает урон и оглушение каждые %tick_rate% сек."
@@ -3404,7 +3588,7 @@
 		"DOTA_Tooltip_modifier_enigma_eyes_debuff_Description"	"Каждая атака по вам от бездны наносит чистый урон."
   
 
-  			"DOTA_Tooltip_ability_ability_enigma_aura"						"AURA NAMED ENIGMA"
+  		"DOTA_Tooltip_ability_ability_enigma_aura"						"AURA NAMED ENIGMA"
   		"DOTA_Tooltip_ability_ability_enigma_aura_Description"					"<font color='#ff0000'>ИГРА СТАВКОЮ В ЖИЗНЬ</font>
   		Enigma have power pure damage + 4% + intellect enigma's"
   		"DOTA_Tooltip_ability_ability_enigma_aura_bonus_attributes"				"БОНУС АТРУБУТОВ:"
@@ -3415,6 +3599,9 @@
  		"DOTA_Tooltip_modifier_ability_enigma_aura_buff"				"МАТЕРИАЛЬНОЕ БЕЗУМИЕ."
  		"DOTA_Tooltip_modifier_ability_enigma_aura_buff_Description"	"Прибавка ко всем атрибутам, чистого урона и дополнтельная дальность атаки."
 
+
+ 		"DOTA_Tooltip_ability_enigma_buff_1"	"Eidalon's crusher"
+ 		"DOTA_Tooltip_ability_enigma_buff_1_Description"			"<h1>Пассивная: Super idol</h1> После убийства %kill_count% существ, Энигма создаёт из их трупов огромного Эйдолона, который имеет %eidolon_hp_tooltip% здоровья и %eidolon_dmg_tooltip% урона + с его интеллектом и ловкостью."
 
 
  		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_black_hole_dead"											"Black hole при смерти"
@@ -3549,6 +3736,12 @@
  
 
 		// -----------------WISP--------------------	
+
+		"DOTA_Tooltip_Ability_wisp_buff_1"											"Wisp mercy"
+		"DOTA_Tooltip_Ability_wisp_buff_1_Description"								"<h1>Пассивная: mercy </h1> За %bonus_health_pct%%% здоровья wisp, союзник в радиусе %aura_radius% бонусом здоровье."
+		"DOTA_Tooltip_Ability_wisp_buff_1_Lore"										"ihajkwq djigjaoiijkweqw skafolkarogpl"
+		"DOTA_Tooltip_modifier_wisp"					"Mercy"
+		"DOTA_Tooltip_modifier_wisp_Description"		"sakgosadjgaj adfjhaldshgl lasjdkl"
 
 		"DOTA_Tooltip_Ability_ability_wisp_teleport"											"Spatial jump"
 		"DOTA_Tooltip_Ability_ability_wisp_teleport_Description"								"Открывает тёмную брешь возле выбранного союзного существа. После небольшой задержки владелец способности и все союзные герои вокруг него телепортируются к этой бреши. Способность начнёт перезаряжаться, даже если отменить её или если цель телепортации умрёт."

@@ -60,14 +60,30 @@ end
 function modifier_bloodrage_buff:GetModifierProcAttack_Feedback( params )
     if IsServer() then
         local parent = self:GetParent()
-        if parent:HasScepter() then
-            local target = params.target   
 
-            self:AddStack( 200, 5 )
+        if self:GetCaster():HasAbility("blood_buff_1") then 
+
+
+            if parent:HasScepter() then
+                local target = params.target   
+    
+                self:AddStack( 60, 10 )
+            else
+                local target = params.target   
+    
+                self:AddStack( 40, 4 )
+            end
+
         else
-            local target = params.target   
-
-            self:AddStack( 20, 2 )
+            if parent:HasScepter() then
+                local target = params.target   
+    
+                self:AddStack( 40, 5 )
+            else
+                local target = params.target   
+    
+                self:AddStack( 20, 2 )
+            end
         end
     end
 end

@@ -42,10 +42,10 @@ ItemDrop.item_drop = {
   
 
  		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_1"}},	
-		{items = {"item_aghanims_shard_roshan"}, max_count = 2, units  ={"npc_witch_boss_2"}},
+		{items = {"item_book_of_heroes"}, max_count = 2, units  ={"npc_witch_boss_2"}},
 
 
-		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_3"}},   
+		{items = {"item_book_of_heroes"}, units ={"npc_witch_boss_3"}},   
 		{items = {"item_magic_heart"}, units ={"npc_witch_boss_3"}},   
 
 		{items = {"item_bag_of_gold"}, units ={"npc_boss_dead_pig"}},      -- если указан units - то итем может упасть тольк с этих юнитов  

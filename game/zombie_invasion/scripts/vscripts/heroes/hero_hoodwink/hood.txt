@@ -113,6 +113,25 @@
       }
 		
 	}
+	"hoodwink_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_hoodwink"
+		"AbilityTextureName"			"acorn_dance"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCooldown"				"4.5"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"acorn_damage"		"125"
+			"acorn_pct"		"300"
+			"cooldown"			"4.5"
+		}	
+	}
 
 	"hoodwink_scurry_custom"
 	{
@@ -272,4 +291,5 @@
 			}
 		}
 	}
+
 }

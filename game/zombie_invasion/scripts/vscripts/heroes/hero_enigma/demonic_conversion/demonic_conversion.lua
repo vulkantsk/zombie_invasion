@@ -21,7 +21,7 @@ function ability_demonic_conversion:OnSpellStart()
 	self.sound_cast = "Hero_Enigma.demonic_conversion"
 		EmitSoundOn( self.sound_cast, caster )
 	for i = 1, ability:GetSpecialValueFor( "spawn_count" ) do 
-		self:CreateEidolon( caster:GetAbsOrigin(), true, ability:GetSpecialValueFor( "eidalon_duration" ) )
+		self:CreateEidolon( caster:GetAbsOrigin(), true, ability:GetSpecialValueFor( "eidalon_duration_spawn" ) )
 	end
 end
 
@@ -38,7 +38,7 @@ function ability_demonic_conversion:CreateEidolon( pos, ve, duration )
 	eidolon:SetBaseDamageMax(damage)	
  
 	eidolon:AddNewModifier( caster, self, "modifier_ability_demonic_conversion", { duration = self:GetSpecialValueFor( "eidalon_duration" ), ve = ve } )
-	eidolon:AddNewModifier( caster, self, "modifier_kill", { duration = self:GetSpecialValueFor( "eidalon_duration_spawn" ) } )
+	eidolon:AddNewModifier( caster, self, "modifier_kill", { duration = self:GetSpecialValueFor( "eidalon_duration" ) } )
 	eidolon:SetOwner( caster )
 	eidolon:SetControllableByPlayer( caster:GetPlayerID(), true )
 	FindClearSpaceForUnit( eidolon, pos, true )

@@ -19,7 +19,7 @@
 		"AbilitySound"					"Hero_Luna.LucentBeam.Target"
 
 		"HasShardUpgrade"               "1"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
@@ -36,17 +36,17 @@
 		{
 			"AbilityCooldown"
 			{
-				"value"					"9.0 8.5 8.0 7.5 7.0 6.5 6.0"
+				"value"					"8"
 				"special_bonus_unique_luna_2" "-4.0"
 			}
 			"AbilityManaCost"
 			{
-				"value"					"60 65 75 85 95 105 115"
+				"value"					"95"
 				"special_bonus_shard"	"-50"
 			}
 			"beam_damage"
 			{
-				"value"					"100 200 300 400 500 600 700"
+				"value"					"100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400"
 				"special_bonus_unique_luna_1"	"+350"
 			}
 			"shard_search_radius"
@@ -83,18 +83,18 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilitySound"					"Hero_Luna.MoonGlaive.Impact"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
 			
 			"range"								"500"
-			"bounces"							"2 3 4 5 6 7 8"
+			"bounces"							"2 2 4 4 6 6 8 8 10 10 12 12 14 14"
 			"damage_reduction_percent"
 			{
-				"value"							"28"
-				"special_bonus_unique_luna_7"	"-8"
+				"value"							"34"
+				"special_bonus_unique_luna_7"	"-34"
 			}
 		}
  
@@ -111,7 +111,7 @@
 		"ID"					"5224"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
@@ -119,8 +119,8 @@
 				"radius"			"1200"
 				"bonus_damage"			
 				{
-					"value"			"20 40 60 80 100 120 140"
-					"special_bonus_unique_luna_3"	"+140"
+					"value"			"20 40 60 80 100 120 140 160 180 200 220 240 260 280"
+					"special_bonus_unique_luna_3"	"+120"
 				}
 				"bonus_night_vision"		
 				{
@@ -190,6 +190,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Luna.Eclipse.Cast"
+		"MaxLevel"			"10"
 			"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
 
@@ -213,12 +214,12 @@
 			
 			"beams"
 			{
-				"value"					"15 30 45"
-				"special_bonus_scepter"	"+3 +6 +10"
+				"value"					"8 10 12 14 16 18 20 22 24 26 28 30 32 34"
+				"special_bonus_scepter"	"+10"
 			}
 			"beam_interval"
 			{
-				"value"					"0.6 0.6 0.6"
+				"value"					"0.6"
 				"special_bonus_scepter"	"-0.3"
 			}
 			"beam_interval_scepter"		"0.3" // purely for the tooltip Note, since the scepter tooltip doesn't show this.
@@ -261,8 +262,9 @@
 		"ScriptFile"					"heroes/hero_luna/luna_night_buff/luna_night_buff"
 		"AbilityTextureName"			"luna/luna"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"3"
+		"MaxLevel"						"10"
 		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
@@ -283,12 +285,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"12 16 20"
+				"duration"				"12"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"				"345 550 780"
+				"bonus_damage"				"145 170 240 290 345 380 425 470 550 610"
 				"CalculateSpellDamageTooltip" "0"
 			}
 			"03"
@@ -300,11 +302,28 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spell_damage"				"450 900 1800"
+				"spell_damage"				"70 90 110 130 150 170 190 210 230 250"
 				"CalculateSpellDamageTooltip" "0"
 			}
 
 		}
+	}
+	"luna_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_luna"
+		"AbilityTextureName"			"luna/lucent_buff"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage"		"160"
+			"agi_pct"		"30"
+		}	
 	}
 
 

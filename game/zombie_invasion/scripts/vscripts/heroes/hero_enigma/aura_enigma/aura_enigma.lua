@@ -80,5 +80,5 @@ function modifier_ability_enigma_aura_buff:GetModifierBonusStats_Intellect()
 end
 
 function modifier_ability_enigma_aura_buff:GetModifierProcAttack_BonusDamage_Pure()
-        return ((self:GetAbility():GetSpecialValueFor("Pure_reflex") * (100 / 100 * 4)) + (self:GetCaster():GetIntellect() / 100 * 10))
+        return self:GetAbility():GetSpecialValueFor("Pure_reflex") + (self:GetCaster():GetIntellect() * (10 / 100))
 end

@@ -800,7 +800,7 @@
 		"ArmorPhysical"		"5"
 
 		"AttackRange"				"175"				
-		"Ability1"					"tidehunter_gush"
+		"Ability1"					"gushik"
 		"Ability2"					"tidehunter_kraken_shell"
 		"Ability3"					"anchor_smash_passive"
 		"Ability4"					"tidehunter_ravage"
@@ -1652,7 +1652,7 @@
 		"Ability2"		"ability_wave_of_terror"
 		"Ability3"		"ability_devour"
 		"Ability4"		"drow_ranger_marksmanship_datadriven"
-		"Ability5"		"generic_hidden"
+		"Ability5"		"agility_thief"
 		"Ability6"		"ability_drow_ranger_marksmanship"
 		"Ability10"		"special_bonus_unique_drow_range_frost_damage"
 		"Ability11"		"special_bonus_movement_speed_percentage_5"

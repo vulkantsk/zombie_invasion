@@ -184,6 +184,22 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
     }
+    "jakiro_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_jakiro"
+		"AbilityTextureName"			"fly_to_moon"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+		}	
+	}
     "special_bonus_unique_smaug_dragon_scales_cd"
 	{
 		// General

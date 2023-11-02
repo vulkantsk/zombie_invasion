@@ -13,7 +13,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 		"AbilitySound"					"Hero_SkywrathMage.ArcaneBolt.Cast"
 		"HasScepterUpgrade"			"0"
 
@@ -39,11 +39,11 @@
 			
 				"bolt_vision"			"325"
 			
-				"bolt_damage"			"75 115 155 215 265 325 375"
+				"bolt_damage"			"75 115 155 215 265 325 375 405 430 475 510 535 560 590"
 			
 			"int_multiplier"
 			{
-				"value"		"0.6 0.8 1 1.2 1.4 1.6 1.8"
+				"value"		"0.6 0.8 1 1.2 1.4 1.6 1.8 2 2.2 2.4 2.6 2.8 3 3.2"
 				"CalculateSpellDamageTooltip"	"1"
 				"special_bonus_unique_sky_bolt"		"0.2"
 			}
@@ -69,7 +69,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_SkywrathMage.ConcussiveShot.Cast"
 		"HasScepterUpgrade"				"0"
@@ -98,7 +98,7 @@
 		
 				"speed"				"800 800 800 800"
 		
-				"damage"			"100 160 220 280 320 470 560"
+				"damage"			"100 160 220 280 320 470 560 590 620 645 690 725 740 775"
 			
 				"slow_duration"		"4.0"
 		
@@ -116,7 +116,7 @@
 			}
 			"creep_damage_pct"
 			{
-				"value"		"75 100 115 130 155 185 225"
+				"value"		"55 75 100 115 130 155 185 225 250 275 300 325 350 375"
 				"special_bonus_unique_sky_concusive"		"+75"
 
 			}
@@ -178,6 +178,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Dazzle.Weave"
+		"MaxLevel"					"4"
 		"HasScepterUpgrade"			"0"
 
 		
@@ -191,11 +192,11 @@
 		"AbilityValues"
 		{
 			
-				"cooldown_reduction"		"25 33 50"
+				"cooldown_reduction"		"10 25 33 50"
 				"armor_reduction"
 				{	
-					"value"			"0.2 0.4 0.6"
-					"special_bonus_unique_sky_juju"	"+0.4"
+					"value"			"0.2 0.4 0.6 0.8"
+					"special_bonus_unique_sky_juju"	"+0.2"
 				}
 				"duration"					"4 6 8"
 				"radius"					"900 1200 1400"
@@ -215,7 +216,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
     	"AbilityTextureName"  "sky/cris"
-    	"MaxLevel"            "3"
+    	"MaxLevel"            "10"
     	"LevelsBetweenUpgrades" "10"
     	"RequiredLevel" "10"
 
@@ -225,13 +226,9 @@
 		"AbilityCooldown"				"40"
 		"AbilityManaCost" "1000"
 
-    	"AbilitySpecial"
+    	"AbilityValues"
     	{
-         	"01"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage"							"2000 4000 8000"
-			}	
+				"damage"							"2000 4000 6000 8000 10000 12000 14000 16000 18000 20000"	
     	}  
     }
 	"special_bonus_unique_sky_bolt"

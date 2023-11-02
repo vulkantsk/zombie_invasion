@@ -29,16 +29,21 @@ modifier_ability_phantom_assassin_coup_de_grace = class({
 })
 
 
---------------------------------------------------------------------------------
+function modifier_ability_phantom_assassin_coup_de_grace:OnCreated()
+     local ability = self:GetCaster():FindAbilityByName("phantom_assassin_buff_1")
+     if self:GetCaster():HasAbility("phantom_assassin_buff_1") then
+        self.crit_chance = self:GetAbility():GetSpecialValueFor("crit_chance") + ability:GetSpecialValueFor("crit_chance_bonus")
+        self.crit_bonus = self:GetAbility():GetSpecialValueFor("crit_bonus") + ability:GetSpecialValueFor("critical_bonus")
+     else
+        self.crit_chance = self:GetAbility():GetSpecialValueFor("crit_chance")
+        self.crit_bonus = self:GetAbility():GetSpecialValueFor("crit_bonus")
+      end
+
+    self.crit = false
+end
 
 function modifier_ability_phantom_assassin_coup_de_grace:OnRefresh()
     self:OnCreated()
-end
-
-function modifier_ability_phantom_assassin_coup_de_grace:OnCreated()
-    self.crit_chance = self:GetAbility():GetSpecialValueFor("crit_chance")
-    self.crit_bonus = self:GetAbility():GetSpecialValueFor("crit_bonus")
-    self.crit = false
 end
 
 function modifier_ability_phantom_assassin_coup_de_grace:GetModifierPreAttack_CriticalStrike(keys)
@@ -48,7 +53,10 @@ function modifier_ability_phantom_assassin_coup_de_grace:GetModifierPreAttack_Cr
     
         if self:GetCaster():HasAbility("ability_phantom_assassin_togle_crit") then 
             local ability = self:GetCaster():FindAbilityByName("ability_phantom_assassin_togle_crit")
+
             self.crit_chance = self.crit_chance + ability:GetSpecialValueFor("bonus_chance")
+
+
             self.crit_bonus_ab = ability:GetSpecialValueFor("bonus_crit") + self.crit_bonus
           
         end

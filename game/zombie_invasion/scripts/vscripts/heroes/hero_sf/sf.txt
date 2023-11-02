@@ -8,7 +8,7 @@
 
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
  
 		"RequiredLevel"					"1"
 		"BaseClass"						"ability_lua"
@@ -23,9 +23,9 @@
 		"AbilityValues"
 		{
 
-			"damage_modifier"		"-40 -30 -20 -10 0 10 20"
+			"damage_modifier"		"-60 -50 -40 -30 -20 -10 0 10 20 30 40 50 60 70"
 			"damage_modifier_tooltip"		"40 50 60 70 80 90 100"
-			"arrow_count"				"2 3 4 5 6 7 8"
+			"arrow_count"				"4"
 			"split_shot_bonus_range"		"100"
 			"slow_movespeed"				
 			{
@@ -44,7 +44,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_sf/sf_necromastery_hero/sf_necromastery_hero"
 		"AbilityTextureName"			"nevermore_necromastery"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@
 
 			"soul_damage"					
 			{
-				"value"				"0.2 0.4 0.6 0.8 1 1.2 1.4"  
+				"value"				"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4"  
 			    "special_bonus_unique_sf_necrom_damage"	    "+0.6"
 					 
 			}
@@ -66,8 +66,8 @@
 			"soul_release"			"0.5"
 			"lifesteal_pct"					
 			{
-				"value"				"8 10 12 14 16 18 20"  
-			    "special_bonus_unique_sf_necrom_life"	    "+12"
+				"value"				"8 9 10 11 12 13 14 15 16 17 18 19 20 21"  
+			    "special_bonus_unique_sf_necrom_life"	    "+14"
 					 
 			}
 		}
@@ -131,9 +131,9 @@
         "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "Hero/nevermore_requiem_png"
-        "MaxLevel"                      "3"
-        "LevelsBetweenUpgrades"         "10"
-        "RequiredLevel"                 "15"
+        "MaxLevel"                      "4"
+        "LevelsBetweenUpgrades"         "15"
+        "RequiredLevel"                 "20"
  
     }  
 
@@ -155,7 +155,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-                "reduced_armor"                          "40 60 80"
+                "reduced_armor"                          "40 60 80 100"
 
 
         }
@@ -170,7 +170,7 @@
         "ScriptFile"                    "heroes/hero_sf/sf_demonic/sf_demonic"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "Hero/sf_demonic"
-        "MaxLevel"                      "3"
+        "MaxLevel"                      "10"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "10"
 
@@ -180,9 +180,9 @@
         "AbilityValues"
         {
                 "dmg_proc"                          "900"
-                "str_per_stack"                      "2 4 6"
-				"bonus_health"			"250 500 750"
-				"bonus_armor"			"2 4 8"
+                "str_per_stack"                      "2 4 6 8 10"
+				"bonus_health"			"250 500 750 1000 1250 1500 1750 2000 2250 2500"
+				"bonus_armor"			"1 2 3 4 5 6 7 8 9 10"
 				"AbilityCooldown"					
 				{
 					"value"				"45"

@@ -11,7 +11,7 @@
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "FightRecapLevel"               "1"
         "AbilitySound"                  "Hero_LegionCommander.Overwhelming.Location"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
         "HasShardUpgrade"               "1"
         // Time     
         //-------------------------------------------------------------------------------------------------------------
@@ -31,23 +31,22 @@
         {           
                 "damage"             
                 {
-                    "value"     "35 65 95 125 155 195 245"
+                    "value"     "35 65 95 125 155 195 220 245 270 295 315 340 365 380"
                     "special_bonus_unique_arrow_damage" "+355"
 
                 }
                 "damage_per_unit"    
                 {
-                    "value"                             "14 16 18 20 34 46 68"
+                    "value"                             "14 16 18 20 22 24 26 28 30 32 34 36 38 40"
                     "special_bonus_unique_arrow_damage_per_unit"    "+32"
                 }
-                "bonus_attack_speed_creeps" "10 20 30 40 50 60 70"
-                "bonus_attack_speed"        "10 20 30 40 50 60 70"
+                "bonus_attack_speed_creeps" "5 10 15 20 25 30 35 40 45 50 55 60 65 70"
+                "bonus_attack_speed"        "5 10 15 20 25 30 35 40 45 50 55 60 65 70"
                 "duration"              "7.0"
                 "radius"                "600"
-                "armorka"           "1 2 3 4 5 6 7"
                 "armor_per_creep"   
                 {
-                    "value"                 "1 2 3 4 5 6 7"
+                    "value"                 "4"
                     "RequiresShard"             "1"
                 }
                 "shard_duration"    
@@ -59,8 +58,6 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
     }
-
-
  	"legion_low"
 	{
 		"BaseClass"						"ability_lua"
@@ -70,7 +67,7 @@
 		
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"MaxLevel"                      "4"
+		"MaxLevel"                      "10"
         "RequiredLevel"                 "6"
         "LevelsBetweenUpgrades"			"6"
 
@@ -79,13 +76,13 @@
 			
 				"bonuss_armor"		
 				{
-					"value" 					"0.15 0.20 0.25 0.30"
-					"special_bonus_unique_legion_low"		"+0.15"
+					"value" 					"0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50"
+					"special_bonus_unique_legion_low"		"+0.10"
 				}
 				"bonuss_magic"
 				{
-					"value"			"0.4 0.6 0.8 1"
-					"special_bonus_unique_legion_low"		"+0.25"
+					"value"			"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+					"special_bonus_unique_legion_low"		"+0.10"
 				}
 
 			
@@ -103,7 +100,7 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
         "FightRecapLevel"               "1"
-        "MaxLevel"						"7"
+        "MaxLevel"						"14"
         "AbilityHealthCost"				"150 200 350 400 550 600 750"
 
         // Casting
@@ -112,7 +109,7 @@
 
         // Time     
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "12 11 10 9 8 7 6"
+        "AbilityCooldown"               "8"
         
         // Cast Range
         //-------------------------------------------------------------------------------------------------------------
@@ -127,22 +124,22 @@
         "AbilityValues"
         {
             
-                "duration"                  "6 7 8 9 10 11 12"
+                "duration"                  "6 7 8 9 10 11 12 13 14 15 16 17 18 19"
           
-                "damage_increase_outgoing_pct"      "8 12 16 20 24 28 32"
+                "damage_increase_outgoing_pct"      "4 8 12 16 20 24 28 32 34 36 38 40 42 44 46"
          
-                "damage_increase_incoming_pct"      "4 6 8 10 12 14 16"
+                "damage_increase_incoming_pct"      "2 4 6 8 10 12 14 16 18 20 22 24 26 28"
 
             	"health_regeneration_bonus"		
             	{
-            		"value"	"0.2 0.4 0.6 0.8 1 1.2 1.4"
+            		"value"	"0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2 2.2 2.4 2.6 2.8"
             		"special_bonus_unique_legion_presstheberserkregeneration"	"+0.6"
             	}
 
             	"attack_speed_bonus"		
             	{
-            		"value"	"70 110 150 190 240 280 320"
-            		"special_bonus_unique_legion_presstheberserkattackspeed"	"+140"
+            		"value"	"24 36 48 54 66 78 85 92 104 114 120 132 140 144"
+            		"special_bonus_unique_legion_presstheberserkattackspeed"	"+76"
             	}
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
@@ -157,7 +154,7 @@
         "FightRecapLevel"               "1"
         "RequiredLevel"                 "10"
         "LevelsBetweenUpgrades"         "10"
-        "MaxLevel"                      "3"
+        "MaxLevel"                      "10"
         "HasScepterUpgrade"         "1"
 
         // Casting
@@ -170,7 +167,7 @@
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "200 300 400"
+        "AbilityManaCost"               "200"
         
         // Cast Range
         //-------------------------------------------------------------------------------------------------------------
@@ -184,22 +181,22 @@
                 "AbilityCooldown"              
                 { 
 
-                    "value" "300 180 120"
-                    "special_bonus_scepter" "-80 -60 -40"
+                    "value" "120"
+                    "special_bonus_scepter" "-40"
                 }
 
-                "radius"                    "300 400 600"  
+                "radius"                    "400"  
                       
                 "stats_per_kill"          
                 {
-                    "value"     "1 2 3"
-                    "special_bonus_scepter" "+1 +2 +3"
+                    "value"     "0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2"
+                    "special_bonus_scepter" "+2.5"
                 }         
                
                 "duration"        
                 {
-                    "value"     "6 8 10"
-                    "special_bonus_scepter" "+4 +8 +10"
+                    "value"     "10"
+                    "special_bonus_scepter" "+10"
                 }        
         }
     }

@@ -13,7 +13,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Crystal.CrystalNova"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
  
  
  
@@ -23,10 +23,10 @@
 		"AbilityValues"
 		{
 			"AbilityCastRange"				"700"
-			"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+			"AbilityCastPoint"				"0.3"
 			"AbilityCooldown"
 			{
-				"value"										"14 13 12 11 10 9 8"
+				"value"										"16 15 14 13 12 11 10 9 8 7 6 5 4"
 				"special_bonus_unique_crystal_maiden_5"		"-3"
 			}
 			"AbilityManaCost"				"90 130 170 210 250 290 330"
@@ -41,8 +41,8 @@
 			"vision_duration"				"6.0"
 			"nova_damage"
 			{
-				"value"										"120 240 360 480 600 720 840"
-				"special_bonus_unique_crystal_maiden_2"		"+350"
+				"value"										"120 240 360 480 600 720 840 960 1040 1160 1280 1310 1440 1500"
+				"special_bonus_unique_crystal_maiden_2"		"+500"
 			}
 		}		
  
@@ -86,13 +86,13 @@
 
 				"duration"					
 				{
-					"value"				"2.2 2.4 2.6 2.8 3 3.5 4"
+					"value"				"2.2 2.4 2.6 2.8 3 3.5 4 4.2 4.6 4.8 5 5.5 6 6.2"
 			    	"special_bonus_unique_crystal_maiden_cold_embrace"	    "+2"
 				}
 
 				"heal_additive"					
 				{
-					"value"				"50 100 150 200 250 300 350"
+					"value"				"50 100 150 200 250 300 350 400 450 500 550 600 650 700"
 			    	"special_bonus_unique_crystal_maiden_cold_embrace"	    "+100"
 				}
 
@@ -156,6 +156,7 @@
 		"AbilitySound"					"hero_Crystal.freezingField.wind"
 
 		"HasScepterUpgrade"			"1"
+		"MaxLevel"	"10"
 			"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
         "HasShardUpgrade"               "1"
@@ -196,7 +197,7 @@
 			}
 			"damage"
 			{
-				"value"										"620 940 1260"
+				"value"										"620 940 1260 1470 1690 1840 2080 2190 2325 2560"
 				"special_bonus_unique_crystal_maiden_3"		"+1980"
 			}
 			"frostbite_delay" // negative means don't apply.
@@ -291,6 +292,25 @@
 				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_3"
 			}
 		}
+	}
+	"crystal_maiden_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_crystal_maiden"
+		"AbilityTextureName"			"crystal_shell"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"aura_radius"		"450"
+			"bonus_spell_amp"			"0.6"	
+			"incom_cm"			"5"
+			"spell_amp_pct"	"33"
+		}	
 	}
 
 	"special_bonus_unique_crystal_maiden_ult_cooldown"

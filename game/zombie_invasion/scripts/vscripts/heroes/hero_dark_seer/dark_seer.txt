@@ -229,6 +229,22 @@
 			 
 		}
 	}
+	"dark_seer_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_dark_seer"
+		"AbilityTextureName"			"silent_kiss"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"int_pct"		"1.2"
+		}	
+	}
 	"special_bonus_unique_dark_seer_golden_shield"
 	{
 		// General

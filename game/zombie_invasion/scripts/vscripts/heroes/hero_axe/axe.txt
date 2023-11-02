@@ -303,6 +303,23 @@
 		}			 
 		 
 	}
+	"axe_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_axe"
+		"AbilityTextureName"			"axe_buff"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"armor"		"0.2"
+			"strength"			"2.5"	
+		}	
+	}
 
 	"special_bonus_unique_axe_helix_damage"
 	{

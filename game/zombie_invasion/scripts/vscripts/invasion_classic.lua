@@ -330,6 +330,11 @@ function InvasionMode:InvasionOnNPCSpawn(data)
         end
         npc.FirstSpawned = true
         npc:AddItemByName("item_tpscroll")
+
+
+
+
+
    
          --        npc:AddNewModifier(npc, nil, "modifier_main_pumpkin_hero", {  })
  
@@ -883,7 +888,7 @@ function InvasionMode:InvasionEntityKilled (data)
            end
      end)
 
-	elseif killedEntity:GetLevel() <= 10 then 
+	elseif killedEntity:GetLevel() <= 50 then 
           killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )  
 	else  
 		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		

@@ -205,8 +205,7 @@ end
 })
 
        function  modifier_phantom_assassin_jug_death:OnCreated()
-               EmitSoundOn("gate_dead_after",  self:GetCaster())  
-        self:GetCaster():StartGestureWithPlaybackRate(ACT_DOTA_DISABLED, 1)     
+               EmitSoundOn("gate_dead_after",  self:GetCaster())     
  
 end  
 

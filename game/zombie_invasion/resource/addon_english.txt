@@ -22,6 +22,10 @@
 		"difficulty_description_normal" "STATS ENEMIES ARE NOT INCREASED!"
 		"difficulty_description_medium" "<font color='#ffff00'>STATS ENEMIES INCREASED BY 200%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
 		"difficulty_description_hard" "<font color='#c10020'>STATS ENEMIES INCREASED BY 400%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
+
+		"difficulty_description_randomheroes" "<font color='#ffff00'>After each successfully completed night, you will be given new hero!</font>!"
+ 		"difficulty_description_onedown" "<font color='#c10020'>YOU ONLY HAVE ONE LIFE</font>(you can be reborn after successful night)"
+		
 		"difficulty_description_demon" "<font color='#ff0000'>STATS ENEMIES INCREASED BY 600%</font>! (Damage, Spell damage, Health and Armor, new abilities)"
 		"difficulty_description_impossible" "<font color='#000000'>HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
 		HAHAHAHAHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHA
@@ -100,6 +104,14 @@
 	   "big_bo_2"                                                   "<font color='#FA8172'>Smells like something awful ...</font>"
 	   "big_bo_3"                                                   "<font color='#B22228'>Butterflies in your stomach</font>"
 	   "big_bo_4"                                                   "<font color='#8B0100'>He is almost here...</font>"
+
+	   "begining_1"                                                 "<font color='#c10020'>I'm surprised you were able to hold out for so long</font>"
+	   "begining_2"                                                 "<font color='#c10020'>But this is your main mistake</font>"
+	   "beginend"                                                 "<font color='#c10020'>I have gained strength and will give you some fish :3</font>"
+
+
+
+
 	   
 	   "laughter"			                                    	"<font color='#c10020'>ahahahahahahahahahahahaha</font>"	
 	   "laughter_2"			                                    	"<font color='#c10020'>pahhahsahsahsahshshashsashahsashssash</font>"	
@@ -194,8 +206,8 @@
 
 		"npc_dota_hero_antimage"                                       		"Assasin"
 		"npc_dota_hero_skeleton_king"                                      "Skeleton King" 
-		"npc_dota_hero_terrorblade"                                      "Sargatanas
-		"npc_dota_hero_jakiro"											"Elder Dragon Smaug"" 		
+		"npc_dota_hero_terrorblade"                                      "Sargatanas"
+		"npc_dota_hero_jakiro"											"Elder Dragon Smaug"		
 		"npc_dota_hero_juggernaut"                                      "Samurai" 	
 		"npc_dota_hero_nevermore"	                                     "Azzazel"
 		"npc_dota_hero_treant"                                      "Shinoba"
@@ -1828,7 +1840,7 @@
         "DOTA_Tooltip_Ability_overwhelming_odds_bonus_attack_speed"					"%bonus attack speed:"
         "DOTA_Tooltip_Ability_overwhelming_odds_duration"									"duration:"
         "DOTA_Tooltip_Ability_overwhelming_odds_radius"										"radius:"
-        "DOTA_Tooltip_Ability_overwhelming_odds_shard_Description"							"For each hit creature gets +%armorka% armor and increases the duration of the ability to %shard_duration% seconds"
+        "DOTA_Tooltip_Ability_overwhelming_odds_shard_Description"							"For each hit creature gets +%armor_per_creep% armor and increases the duration of the ability to %shard_duration% seconds"
 
         "DOTA_Tooltip_Ability_press_the_berserk"											"press the berserk"
         "DOTA_Tooltip_Ability_press_the_berserk_Description"								"The hero sacrifices part of his blood to get increased regeneration and attack speed for %duration% seconds.<font color='#ff0000'><h1>BERSERK</h1> also increases all damage by itself %damage_increase_incoming_pct%%% and damage by enemies %damage_increase_outgoing_pct%%%. </font>"
@@ -1857,7 +1869,7 @@
         "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Weakness is not a vice."
  
 
-        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonus_armor} to all legion low effects"
+        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonuss_armor} to all legion low effects"
         "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkregeneration"		"+{s:bonus_health_regeneration_bonus} BERSERK regeneration bonus."
         "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkattackspeed"		"+{s:bonus_attack_speed_bonus} BERSERK attack speed bonus."
         "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"											"+{s:bonus_damage} arrow damage"
@@ -1865,6 +1877,17 @@
 
 
 		// -----------------sniper--------------------		
+
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel"			"Sniper Shrapnel"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Description"	"Everyone in the shrapnel radius gets %shrapnel_damage% + 100% sniper damage in seconds"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_Lore"			"Gunpowder is my weapon."
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_slow_movement_speed"	"%slow:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_radius"		"radius:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_duration"	"duration:"
+		"DOTA_Tooltip_Ability_ability_sniper_shrapnel_damage_delay"	"delay:"
+
+
+
 
         "DOTA_Tooltip_Ability_rocket_shots"                                            "Rocket shots"
         "DOTA_Tooltip_Ability_rocket_shots_Description"                                "After numerous training sessions, Sniper learned to shoot at an unrealistically high speed for a short time!"
@@ -2878,6 +2901,14 @@ The player can control the summoned creeps."
 		"DOTA_Tooltip_ability_phantom_assassin_blur_2_bonus_evasion"						"%EVASION:"
  
 	// -----------------TIdehunter--------------------
+
+	"DOTA_Tooltip_Ability_gushik"						"gush"
+	"DOTA_Tooltip_Ability_gushik_Description"			"Summons gush of water to damage an enemy unit, reducing their movement speed and armor"
+	"DOTA_Tooltip_Ability_gushik_negative_armor"			"armor reduction:"
+	"DOTA_Tooltip_Ability_gushik_gush_damage"			"damage:"
+
+
+
 
 	"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "When the tide comes in, it gets stronger."

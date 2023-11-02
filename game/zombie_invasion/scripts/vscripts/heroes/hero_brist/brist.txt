@@ -69,7 +69,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Bristleback.QuillSpray"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 	
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -92,12 +92,12 @@
 
 			"quill_base_damage"
 			{
- 				"value"		"30 50 70 90 110 130 150"
+ 				"value"		"30 50 70 90 110 130 150 170 190 210 230 250 270 290"
  				"special_bonus_unique_brist_quil_damage"                "+25%"
 			}
 			"quill_stack_damage"
 			{
- 				"value"		"15 30 35 40 45 50 55"
+ 				"value"		"10 20 30 40 50 60 70 80 90 100 120 130 140"
  				"special_bonus_unique_brist_quil_damage"          "+25%"
 			}
 			"quill_stack_duration"
@@ -124,7 +124,7 @@
 		"AbilitySound"					"Hero_Bristleback.Bristleback"
 	    "HasScepterUpgrade"              "1"
 
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
@@ -145,7 +145,7 @@
 			"back_angle"					"70"
 			"quill_release_threshold"				"540"
 
-			"armor_bonus"							"7 10 14 18 21 24 31"
+			"armor_bonus"							"7 9 11 13 15 17 19 21 23 25 27 29 31 33"
 
 			"quill_release_threshold_scepter1"			
 			{
@@ -191,17 +191,15 @@
 		"AbilityCastPoint"				"0"
 		"AbilityCastRange"				"0"
 		"MaxLevel"							"1"
-			 			"LevelsBetweenUpgrades"			"30"	
-		"RequiredLevel"					"10"
+		"RequiredLevel"					"40"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"18"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"30 50 70"
 		
-		"AbilityDuration"				"3.5 4.5 7.5"
+		"AbilityDuration"				"7.5"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -210,12 +208,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_speed_bonus"	"15 22 30"
+				"movement_speed_bonus"	"30"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"3.5 4.5 5.5"
+				"duration"				"5.5"
 				"LinkedSpecialBonus"	"special_bonus_unique_lifestealer"
 			}
 		}
@@ -233,13 +231,13 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_brist/warpath/warpath"
 		"AbilityTextureName"			"bristleback_warpath"
-		"MaxLevel"						"3"
+		"MaxLevel"						"10"
 		"RequiredLevel"					"10"
 		"LevelsBetweenUpgrades"			"10"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDuration"				"10.0 10.0 10.0"
+		"AbilityDuration"				"10.0"
 				
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -248,13 +246,13 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_per_stack"					"0.5 1 2.5"
+				"armor_per_stack"					"0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2"
  
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"move_speed_per_stack"				"1 1.5 2"
+				"move_speed_per_stack"				"1"
 			}
 			"03"
 			{
@@ -264,7 +262,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"max_stacks"					"12 24 36"
+				"max_stacks"					"24 28 32 36 40 44 48 52 56 60"
 			}
 		}
 	}
