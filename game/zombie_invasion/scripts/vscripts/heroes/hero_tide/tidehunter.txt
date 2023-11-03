@@ -88,6 +88,26 @@
         }
 
     }  
+    "tide_buff_1"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "items/book_of_heroes/heroes/item_npc_dota_hero_tidehunter"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "tide/nesosat"
+        "MaxLevel"                      "1"
+
+        "AbilityCastRange"              "%radius"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+       			"damage_per_stack"		"5"
+				"dmg_proc"				"540"
+        }
+
+    } 
     "tidehunter_kraken_shell"
 	{
 		// General

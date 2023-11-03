@@ -2913,7 +2913,6 @@ The player can control the summoned creeps."
 	"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "When the tide comes in, it gets stronger."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "SPENT HEALTH TO GET A STACK:"
-        "DOTA_Tooltip_Ability_tide_health_health_per_stack"                                        "BONUS HEALTH PER STACK:"
         "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "BONUS STRENGTH PER STACK:"
 
 	"DOTA_Tooltip_modifier_tide_health"												"More health"

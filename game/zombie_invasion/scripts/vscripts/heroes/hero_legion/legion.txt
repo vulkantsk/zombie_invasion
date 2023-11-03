@@ -68,8 +68,8 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"MaxLevel"                      "10"
-        "RequiredLevel"                 "6"
-        "LevelsBetweenUpgrades"			"6"
+        "RequiredLevel"                 "10"
+        "LevelsBetweenUpgrades"			"10"
 
 		"AbilityValues"
 		{
@@ -199,6 +199,23 @@
                     "special_bonus_scepter" "+10"
                 }        
         }
+    }
+    "legion_buff_1"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "items/book_of_heroes/heroes/item_npc_dota_hero_legion_commander"
+        "AbilityTextureName"            "crystal_shell"
+        "MaxLevel"                      "1"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "aura_radius"       "700" 
+            "atr_pct"           "0.2"
+        }   
     }
     "special_bonus_unique_legion_presstheberserkattackspeed"
 	{

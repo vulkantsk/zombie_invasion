@@ -59,6 +59,7 @@ function InvasionMode:InvasionMap()
      GameRules:GetGameModeEntity():SetUseCustomHeroLevels( true ) -- установка кастомной системы урвоней
   	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(HeroExpTable)
 	GameRules:GetGameModeEntity():SetCustomHeroMaxLevel(HeroMaxLevel)
+	GameRules:GetGameModeEntity():SetTPScrollSlotItemOverride( "item_bottle" )
  
  
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
@@ -329,7 +330,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
         	npc:SetRenderColor(255, 62 , 67 )
         end
         npc.FirstSpawned = true
-        npc:AddItemByName("item_tpscroll")
+        npc:AddItemByName("item_bottle")
 
 
 

@@ -8404,6 +8404,56 @@
 			 "pct"		"200"
 		}
 	}
+	"item_npc_dota_hero_tidehunter"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_tidehunter"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+        "AbilityTextureName"                         "book_tide"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_stack"		"5"
+			"dmg_proc"				"540"
+		}
+	}
+	"item_npc_dota_hero_legion_commander"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_legion_commander"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+        "AbilityTextureName"                         "book_tide"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"aura_radius"       "700" 
+            "atr_pct"           "7"
+		}
+	}
 	"item_npc_dota_hero_drow_ranger"
 	{
 		// General

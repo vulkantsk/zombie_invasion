@@ -20,13 +20,9 @@ modifier_tide_health = class({
 --	GetAttributes 			= function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 	DeclareFunctions		= function(self) return 
 		{MODIFIER_EVENT_ON_TAKEDAMAGE,
-		MODIFIER_PROPERTY_HEALTH_BONUS,
 		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS} end,
 })
 
-function modifier_tide_health:GetModifierHealthBonus()
-	return self:GetStackCount()*self:GetAbility():GetSpecialValueFor("health_per_stack")
-end
 
 function modifier_tide_health:GetModifierBonusStats_Strength()
 	return self:GetStackCount()*self:GetAbility():GetSpecialValueFor("str_per_stack")

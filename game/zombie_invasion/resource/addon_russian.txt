@@ -2080,19 +2080,21 @@
 		"DOTA_Tooltip_Ability_gushik_negative_armor"		"УМЕНЬШЕНИЕ БРОНИ:"
 		"DOTA_Tooltip_Ability_gushik_gush_damage"			"УРОН:"
 
-
-
-
 		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "Когда тайда бьют, он становится сильнее."
+        "DOTA_Tooltip_Ability_tide_health_Lore"										"Здоровье - всё что его интересует."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
         "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС СИЛЫ ЗА СТАК:"
-        "DOTA_Tooltip_Ability_tide_health_health_per_stack"                                        "БОНУС ЗДОРОВЬЯ ЗА СТАК:"
-
 		"DOTA_Tooltip_modifier_tide_health"												"More health"
-		"DOTA_Tooltip_modifier_tide_health_Description"									"Имеет %dMODIFIER_PROPERTY_HEALTH_BONUS%% бонусного здоровья"
 
-			"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
+		"DOTA_Tooltip_Ability_tide_buff_1"                                            "More damage"
+        "DOTA_Tooltip_Ability_tide_buff_1_Description"                                "Когда тайда бьют, он становится сильнее."
+        "DOTA_Tooltip_Ability_tide_buff_1_Lore"										"Сила - всё что его интересует."
+        "DOTA_Tooltip_Ability_tide_buff_1_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
+        "DOTA_Tooltip_Ability_tide_buff_1_damage_per_stack"                                        "БОНУС УРОНА ЗА СТАК:"
+		"DOTA_Tooltip_modifier_tide_damage"												"More damage"
+
+		"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Герой с шансом в 33% наносит <font color='#00e6b0'>Урон способности + урон героя * 7% силы героя.</font>"
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Уменьшение брони anchor smash"
