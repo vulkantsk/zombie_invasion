@@ -94,6 +94,56 @@ function CDOTA_BaseNPC:HasShard()
 	end
 end
 
+function CDOTA_BaseNPC:HasGoldUncommon()
+	local player = players[self:GetParent():GetTeamNumber()]
+	local gold_need = GetCaster():GetGold()
+	if gold_need = 1500 then
+		return true
+	else
+        return false 
+	end
+end
+
+function CDOTA_BaseNPC:HasGoldRare()
+	local player = players[self:GetParent():GetTeamNumber()]
+	local gold_need = GetCaster():GetGold()
+	if gold_need = 3000 then
+		return true
+	else
+        return false 
+	end
+end
+
+function CDOTA_BaseNPC:HasGoldMythical()
+	local player = players[self:GetParent():GetTeamNumber()]
+	local gold_need = GetCaster():GetGold()
+	if gold_need = 4500 then
+		return true
+	else
+        return false 
+	end
+end
+
+function CDOTA_BaseNPC:HasGoldLegendary()
+	local player = players[self:GetParent():GetTeamNumber()]
+	local gold_need = GetCaster():GetGold()
+	if gold_need = 6000 then
+		return true
+	else
+        return false 
+	end
+end
+
+function CDOTA_BaseNPC:HasGoldCursed()
+	local player = players[self:GetParent():GetTeamNumber()]
+	local gold_need = GetCaster():GetGold()
+	if gold_need = 10000 then
+		return true
+	else
+        return false 
+	end
+end
+
 function GiveExperiencePlayers( experience )
 	for index=0 ,PlayerResource:GetPlayerCount() do
 		if PlayerResource:HasSelectedHero(index) then
