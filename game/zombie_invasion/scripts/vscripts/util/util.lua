@@ -95,9 +95,8 @@ function CDOTA_BaseNPC:HasShard()
 end
 
 function CDOTA_BaseNPC:HasGoldUncommon()
-	local player = players[self:GetParent():GetTeamNumber()]
-	local gold_need = GetCaster():GetGold()
-	if gold_need = 1500 then
+	local gold_need = self:getGold()
+	if gold_need >= 1500 then
 		return true
 	else
         return false 
@@ -105,9 +104,8 @@ function CDOTA_BaseNPC:HasGoldUncommon()
 end
 
 function CDOTA_BaseNPC:HasGoldRare()
-	local player = players[self:GetParent():GetTeamNumber()]
-	local gold_need = GetCaster():GetGold()
-	if gold_need = 3000 then
+	local gold_need = self:getGold()
+	if gold_need >= 3000 then
 		return true
 	else
         return false 
@@ -115,9 +113,8 @@ function CDOTA_BaseNPC:HasGoldRare()
 end
 
 function CDOTA_BaseNPC:HasGoldMythical()
-	local player = players[self:GetParent():GetTeamNumber()]
-	local gold_need = GetCaster():GetGold()
-	if gold_need = 4500 then
+	local gold_need = self:getGold()
+	if gold_need >= 4500 then
 		return true
 	else
         return false 
@@ -125,9 +122,8 @@ function CDOTA_BaseNPC:HasGoldMythical()
 end
 
 function CDOTA_BaseNPC:HasGoldLegendary()
-	local player = players[self:GetParent():GetTeamNumber()]
-	local gold_need = GetCaster():GetGold()
-	if gold_need = 6000 then
+	local gold_need = self:getGold()
+	if gold_need >= 6000 then
 		return true
 	else
         return false 
@@ -135,9 +131,8 @@ function CDOTA_BaseNPC:HasGoldLegendary()
 end
 
 function CDOTA_BaseNPC:HasGoldCursed()
-	local player = players[self:GetParent():GetTeamNumber()]
-	local gold_need = GetCaster():GetGold()
-	if gold_need = 10000 then
+	local gold_need = self:getGold()
+	if gold_need >= 10000 then
 		return true
 	else
         return false 

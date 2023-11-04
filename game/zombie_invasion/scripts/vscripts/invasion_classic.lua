@@ -546,6 +546,18 @@ function InvasionMode:InvasionGameStart()
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
  
+if IsDaytime() then
+	local item = CreateItem("item_milk", nil, nil)
+	local point = Entities:FindByName( nil, "spawner_item_point")
+	local drop = CreateItemOnPositionForLaunch( point, item )
+     Timers:CreateTimer(300,function()
+	end) return 300
+
+end
+
+
+
+
 
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
