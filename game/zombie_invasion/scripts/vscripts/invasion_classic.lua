@@ -538,7 +538,8 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-     
+     InvasionMode:SecretShop()
+
      if randomheroess >= 1 then 
      	InvasionMode:RandomHeroes()  
      end
@@ -546,22 +547,48 @@ function InvasionMode:InvasionGameStart()
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
  
-if IsDaytime() then
-	local item = CreateItem("item_milk", nil, nil)
-	local point = Entities:FindByName( nil, "spawner_item_point")
-	local drop = CreateItemOnPositionForLaunch( point, item )
-     Timers:CreateTimer(300,function()
-	end) return 300
-
-end
-
-
-
-
+ 
 
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
+end
+
+function InvasionMode:SecretShop()
+	local dropItems = {
+	    item_milk = 40,
+	    item_sheepstick = 20,
+	    item_sange_last = 15,
+	    item_bonus_strength10 = 10,
+	    item_bonus_agility10 = 5
+	}
+	local defaultItem = CreateItem("item_milk", nil, nil)
+	local points = Entities:FindAllByName( "spawner_item_point" )
+	local restItems = {}
+
+	Timers:CreateTimer(0,function()
+		for _, restItem in ipairs(restItems) do
+			UTIL_Remove(restItem)
+		end		
+
+		restItems = {}
+		print(#restItems)
+		for _, point in ipairs(points) do
+			local item 
+
+			for itemName, chance in pairs(dropItems) do
+				if RollPercentage(chance) then 
+ 					item = CreateItem(itemName, nil, nil)
+ 					break
+ 				end
+ 			end
+ 			local dropItem = item and item or defaultItem
+			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
+			table.insert(restItems, drop) 
+		end
+
+		return 5
+	end)
 end
 
 function InvasionMode:RandomHeroes()  
