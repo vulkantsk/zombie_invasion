@@ -562,7 +562,7 @@ function InvasionMode:SecretShop()
 	    item_bonus_strength10 = 10,
 	    item_bonus_agility10 = 5
 	}
-	local defaultItem = CreateItem("item_milk", nil, nil)
+	local defaultItemName ="item_milk"
 	local points = Entities:FindAllByName( "spawner_item_point" )
 	local restItems = {}
 
@@ -572,7 +572,7 @@ function InvasionMode:SecretShop()
 		end		
 
 		restItems = {}
-		print(#restItems)
+
 		for _, point in ipairs(points) do
 			local item 
 
@@ -582,12 +582,12 @@ function InvasionMode:SecretShop()
  					break
  				end
  			end
- 			local dropItem = item and item or defaultItem
+ 			local dropItem = item and item or CreateItem(defaultItemName, nil, nil)
 			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
 			table.insert(restItems, drop) 
 		end
 
-		return 5
+		return 600
 	end)
 end
 
