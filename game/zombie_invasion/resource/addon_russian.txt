@@ -500,6 +500,16 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger"											"<font color='#ffb300'>Руководитель по залатыванию ненужных отверстий</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Level boom</h1> Герой с получением уровня получает по +%agi%%% бонусной ловкости за уровень." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter"											"<font color='#ffb300'>Руководитель по залатыванию ненужных отверстий</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: More damage</h1>Когда тайда бьют и наносят %dmg_proc% урона, он становится сильнее и получает %damage_per_stack% урона." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper"											"<font color='#ffb300'>Руководитель по стрельбе закрытыми глазами</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Broken eyes </h1>Снайпер узнаёт куда ему лучше стрелять в зомби, из-за чего его выстрелы поражают цель и сокращают её броню на %armor_debuff% помноженную на его ловкость %agi_pct%%% длительностью в %corruption_duration% Секунд." 
@@ -2088,7 +2098,7 @@
 		"DOTA_Tooltip_modifier_tide_health"												"More health"
 
 		"DOTA_Tooltip_Ability_tide_buff_1"                                            "More damage"
-        "DOTA_Tooltip_Ability_tide_buff_1_Description"                                "Когда тайда бьют, он становится сильнее."
+        "DOTA_Tooltip_Ability_tide_buff_1_Description"                                "<h1>Пассивная: More damage </h1>Когда тайда бьют и наносят %dmg_proc% урона, он становится сильнее и получает %damage_per_stack% урона."
         "DOTA_Tooltip_Ability_tide_buff_1_Lore"										"Сила - всё что его интересует."
         "DOTA_Tooltip_Ability_tide_buff_1_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
         "DOTA_Tooltip_Ability_tide_buff_1_damage_per_stack"                                        "БОНУС УРОНА ЗА СТАК:"

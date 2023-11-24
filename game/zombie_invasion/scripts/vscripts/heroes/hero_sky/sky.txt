@@ -203,6 +203,35 @@
 			
 		}
 	}
+	"skywrath_mage_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_skywrath_mage"
+		"AbilityTextureName"			"ogre_magi_multicast"
+		"MaxLevel"						"1"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				"multicast_2_times"		"0.75"
+			
+				"multicast_3_times"		"0.3"
+			
+				"multicast_4_times"		"0.15"
+		
+				"bloodlust_aoe"			"575"
+			
+				"multicast_2_times_tooltip"		"75"
+			
+				"multicast_3_times_tooltip"		"30"
+			
+				"multicast_4_times_tooltip"		"15"
+			
+		}
+	}
     "sky_bolt"
     {
 

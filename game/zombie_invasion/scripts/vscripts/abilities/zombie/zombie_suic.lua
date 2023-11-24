@@ -21,7 +21,7 @@ function zombie_suic:OnOwnerDied()
 			caster:GetAbsOrigin(),
 			nil,
 			radius,
-			DOTA_UNIT_TARGET_TEAM_BOTH,
+			DOTA_UNIT_TARGET_TEAM_ENEMY,
 			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
 			DOTA_UNIT_TARGET_FLAG_NONE,
 			FIND_CLOSEST,

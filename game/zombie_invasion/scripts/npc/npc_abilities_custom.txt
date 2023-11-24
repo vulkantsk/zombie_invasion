@@ -1,4 +1,5 @@
 #base "../vscripts/heroes/hero_skeleton_king/skelet.txt"
+#base "../vscripts/abilities/monsters/wave_abilities/zombie_abilities.txt"
 #base "../vscripts/heroes/hero_axe/axe.txt"
 #base "../vscripts/heroes/hero_sven/sven.txt"
 #base "../vscripts/heroes/hero_lion/lion.txt"
@@ -7028,13 +7029,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"		"250"
+				"radius"		"175"
  
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_basic"		"225"
+				"damage_basic"		"120"
 			}
 		}
 	}
@@ -7509,9 +7510,9 @@
         "AbilityCooldown"                  "10"
 		"AbilityValues"
 		{
-			"slow_duration"			"50"
-             "duration"			"4"
-             "chance"            "40"
+			"slow_duration"			"70"
+             "duration"			"1.5"
+             "chance"            "90"
 		}
 	}
 
@@ -7537,7 +7538,7 @@
 		"AbilityValues"
 		{
             "duration"               "6"
-            "slow_movespeed"               "-7"
+            "slow_movespeed"               "-17"
  
 
 		}			 

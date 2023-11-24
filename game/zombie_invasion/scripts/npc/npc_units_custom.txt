@@ -1642,7 +1642,7 @@
 {
 // General
 //--------------------------------------------------------------—
-    "BaseClass" "npc_dota_creature"
+    "BaseClass" "npc_dota_tower"
     "Model" "models/heroes/shopkeeper_dire/shopkeeper_dire.vmdl"
     "ModelScale" "1"
     "Level" "10"
@@ -1715,12 +1715,7 @@
     {
 
 
-        "EquippedItems"
-       {
-            "1" {"Item" "item_panic_button"}
-
-
-        }
+   
     }
 
 }
@@ -1745,7 +1740,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-  		"Ability1"					  ""
+  		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""

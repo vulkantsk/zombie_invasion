@@ -8363,6 +8363,7 @@
 		"ScriptFile"					"items/book_of_heroes/book_of_heroes"														 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemPurchasable"				"0" 
 		"ItemInitialCharges"            "1"
         "AbilityTextureName"                         "book_of_heroes"
 		// Stats		
@@ -8389,6 +8390,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_blood"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8413,6 +8415,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_tide"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8438,6 +8441,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_tide"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8462,6 +8466,7 @@
 		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_drow_ranger"														 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemPurchasable"				"0" 
 		"ItemInitialCharges"            "1"
         "AbilityTextureName"                         "drow_book"
 		// Stats		
@@ -8487,6 +8492,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "sniper_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8504,6 +8510,31 @@
 			"agi_pct"			"5" 
 		}
 	}
+	"item_npc_dota_hero_skywrath_mage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_skywrath_mage"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"                         "sniper_book"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+		}
+	}
 	"item_npc_dota_hero_alchemist"
 	{
 		// General
@@ -8513,6 +8544,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_alchemist"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8541,6 +8573,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"            "phantom_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8568,6 +8601,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"            "book_luna"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8595,6 +8629,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_dragon"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8619,6 +8654,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_cm"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8646,6 +8682,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "hoodwink_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8672,6 +8709,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_troll"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8696,6 +8734,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_medusa"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8720,6 +8759,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_dark_seer"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8744,6 +8784,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "book_yuki"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8768,6 +8809,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "wisp_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8793,6 +8835,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "wisp_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8818,6 +8861,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
         "AbilityTextureName"                         "enigma_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -8850,6 +8894,31 @@
 				"eidolon_dmg_tooltip"	"240"
 				"eidolon_hp_tooltip"	"400"
 				"eidalon_duration"	"20"
+		}
+	}
+	"item_blackshop_uncommon_injector"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_injector"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "book_blood"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "attack_base"		"200"
 		}
 	}
 
@@ -10927,19 +10996,19 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 
-		"ItemCost"						"600"
+		"ItemCost"						"200"
 		"ItemAliases"					"midas"
-		"AbilityCastPoint"				"1.5"
-		"AbilityCooldown"				"90"
-		"AbilityManaCost"				"100"		
+		"AbilityCastPoint"				"1"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"0"		
 
 		"AbilityValues"
 		{
-		    "gold_min"           "200"
-		    "gold_max"           "225"
-		    "attack_speed"		"30"
-		    "attack_damage"		"30"
-		    "armor"				"4"
+		    "gold_min"           "20"
+		    "gold_max"           "40"
+		    "attack_speed"		"6"
+		    "attack_damage"		"8"
+		    "armor"				"2"
 		}
 	}
 	"item_recipe_midas2"
@@ -10976,19 +11045,19 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 
-		"ItemCost"						"1000"
+		"ItemCost"						"600"
 		"ItemAliases"					"midas"
-		"AbilityCastPoint"				"1"
-		"AbilityCooldown"				"80"
-		"AbilityManaCost"				"200"		
+		"AbilityCastPoint"				"0.75"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"0"		
 
 		"AbilityValues"
 		{
-		    "gold_min"           "320"
-		    "gold_max"           "425"
-		    "attack_speed"		"45"
-		    "attack_damage"		"45"
-		    "armor"				"6"
+		    "gold_min"           "90"
+		    "gold_max"           "110"
+		    "attack_speed"		"18"
+		    "attack_damage"		"25"
+		    "armor"				"4"
 		}
 	}
 	"item_recipe_midas3"
@@ -11025,19 +11094,19 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 
-		"ItemCost"						"1600"
+		"ItemCost"						"1200"
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"0.5"
-		"AbilityCooldown"				"70"
-		"AbilityManaCost"				"300"		
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"0"		
 
 		"AbilityValues"
 		{
-		    "gold_min"           "450"
-		    "gold_max"           "625"
+		    "gold_min"           "180"
+		    "gold_max"           "210"
 		    "armor"				"9"
-		    "attack_speed"		"60"
-		    "attack_damage"		"60"
+		    "attack_speed"		"36"
+		    "attack_damage"		"45"
 		}
 	}
 

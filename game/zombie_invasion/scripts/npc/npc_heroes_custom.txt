@@ -24,13 +24,13 @@
 		"ArmorPhysical"		"5"
 		"AttackDamageMin"		"27"
 		"AttackDamageMax"		"33"
-		"AttributeBaseStrength"		"25"
+		"AttributeBaseStrength"		"10"
 		"AttributeStrengthGain"		"2.7"
-		"AttributeBaseAgility"		"22"
+		"AttributeBaseAgility"		"4"
 		"AttributeAgilityGain"		"1.500000"
-		"AttributeBaseIntelligence"		"25"
+		"AttributeBaseIntelligence"		"15"
 		"AttributeIntelligenceGain"		"1.800000"
-		"MovementSpeed"		"305"
+		"MovementSpeed"		"275"
  
 	}
 
@@ -71,30 +71,7 @@
   "npc_dota_hero_hoodwink"
 	{
 		"Model"		"models/heroes/hoodwink/hoodwink.vmdl"
-		"IdleExpression"		"scenes/hoodwink/hoodwink_portrait.vcd"
-		"SoundSet"		"Hero_Hoodwink"
-		"Enabled"		"1"
-		"HeroUnlockOrder"		"3"
-		"Role"			"Nuker,Escape,Disabler"
-		"NameAliases"	"squirrel"
-		"Rolelevels"	"2,2,1"
-		"Complexity"	"2"
-		"Team"		"Good"
-		"HeroID"		"123"
-		"BotImplemented"		"0"
-		"new_player_enable"			"1"
-		"ModelScale"		"0.80"
-		"LoadoutScale"		"0.95"
-		"SpectatorLoadoutScale" "0.98"
-		"HeroGlowColor"		"170 112 194"
-		"CMEnabled"					"0"
-		"PickSound"					"hoodwink_hoodwink_attack_10"
-		"BanSound"					"hoodwink_hoodwink_net_miss_06"
-		"workshop_guide_name"		"Hoodwink"
-		"LastHitChallengeRival"		"npc_dota_hero_snapfire"
 		"HeroSelectSoundEffect"		"Hero_Hoodwink.Pick"
-		"AbilityDraftDisabled"		"0"
-		"AbilityLayout"					"5"
 		"Ability1"					"hoodwink_acorn_shot"
 		"Ability2"					"tree_dependency"
 		"Ability3"					"hoodwink_scurry_custom"
@@ -110,8 +87,21 @@
 		"Ability15"					"special_bonus_corruption_3"
 		"Ability16"					"special_bonus_unique_hoodwink_acorn_shot_charges"
 		"Ability17"					"special_hoodwink"
-				"BaseAttackSpeed"	"70"
-				"AttackRate"		"1.70000"
+		"BaseAttackSpeed"	"70"
+		"ArmorPhysical"		"2"
+		"AttackDamageMin"		"24"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"2.000000"
+		"AttackAnimationPoint"		"0.560000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"150"
+		"AttributeBaseStrength"		"4"
+		"AttributeStrengthGain"		"1.2"
+		"AttributeBaseIntelligence"		"8"
+		"AttributeIntelligenceGain"		"1.000000"
+		"AttributeBaseAgility"		"16"
+		"AttributeAgilityGain"		"1.500000"
+		"MovementSpeed"		"285"
 
     } 
 
@@ -131,23 +121,23 @@
 		"Ability15"		"special_bonus_unique_beastmaster_4"
 		"Ability16"		"special_bonus_unique_troll_warlord"
 		"Ability17"		"special_bonus_unique_troll_warlord_4"
-		"ArmorPhysical"		"7"
+		"ArmorPhysical"		"6"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"32"
 		"AttackDamageMax"		"36"
-		"AttackRate"		"1.70000"
+		"AttackRate"		"1.80000"
 		"AttackAcquisitionRange"		"800"
 		"AttackRange"		"500"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"		"21"
-		"AttributeStrengthGain"		"2.500000"
+		"AttributeBaseStrength"		"12"
+		"AttributeStrengthGain"		"1.700000"
 		"AttributeBaseIntelligence"		"13"
 		"AttributeIntelligenceGain"		"1.000000"
-		"AttributeBaseAgility"		"21"
-		"AttributeAgilityGain"		"3.30000"
+		"AttributeBaseAgility"		"14"
+		"AttributeAgilityGain"		"2.10000"
 		"StatusHealthRegen"		"0.25"
 		"VisionDaytimeRange"		"1800"
-		"MovementSpeed"		"290"
+		"MovementSpeed"		"280"
 		"MovementTurnRate"		"0.500000"
  
 	}
@@ -287,14 +277,14 @@
 		"BaseAttackSpeed"	"65"
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"		"21"
-		"AttributeStrengthGain"		"2.20000"
-		"AttributeBaseAgility"		"23"
-		"AttributeAgilityGain"		"3.40000"
+		"AttributeBaseStrength"		"5"
+		"AttributeStrengthGain"		"1.20000"
+		"AttributeBaseAgility"		"21"
+		"AttributeAgilityGain"		"1.70000"
 		"AttributeBaseIntelligence"		"15"
 		"AttributeIntelligenceGain"		"1.400000"
 		"StatusHealthRegen"		"0.25"
-		"MovementSpeed"		"305"
+		"MovementSpeed"		"265"
 	}
 	
 "npc_dota_hero_rubick"
@@ -320,19 +310,19 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"2"									// Physical protection.
+		"ArmorPhysical"				"0"									// Physical protection.
 		"MagicalResistance"			"25"									// Magical protection (percentage).
 
 
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 
-		"AttributeBaseStrength"		"17"										// Base strength
-		"AttributeStrengthGain"		"2.3"										// Strength bonus per level.
+		"AttributeBaseStrength"		"5"										// Base strength
+		"AttributeStrengthGain"		"1.3"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"21"										// Base intelligence
-		"AttributeIntelligenceGain"	"4.0"										// Intelligence bonus per level.
-		"AttributeBaseAgility"		"12"										// Base agility
-		"AttributeAgilityGain"		"1.7"										// Agility bonus per level.
+		"AttributeIntelligenceGain"	"1.9"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"7"										// Base agility
+		"AttributeAgilityGain"		"1.2"										// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -367,18 +357,18 @@
         "Ability15"       "special_bonus_unique_smaug_dragon_gold_deal"
         "Ability16"       "special_bonus_unique_smaug_incandescent_fury"
         "Ability17"       "special_bonus_unique_smaug_fire_punishment"
-        "ArmorPhysical"        "4"
+        "ArmorPhysical"        "0"
         "AttackDamageMin"        "7"
         "AttackDamageMax"        "14"
         "AttackRate"        "1.900000"
         "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
-        "AttributeBaseStrength"        "25"
+        "AttributeBaseStrength"        "5"
         "AttributeStrengthGain"        "1.2"
-        "AttributeBaseIntelligence"        "26"
-        "AttributeIntelligenceGain"        "2.4"
-        "AttributeBaseAgility"        "12"
+        "AttributeBaseIntelligence"        "5"
+        "AttributeIntelligenceGain"        "1.2"
+        "AttributeBaseAgility"        "5"
         "AttributeAgilityGain"        "1.2"
-        "MovementSpeed"        "290"
+        "MovementSpeed"        "270"
         "MovementTurnRate"        "0.500000"
     }
     
@@ -534,7 +524,6 @@
 "Role" "Durable,Nuker"
 "Rolelevels" "3,3"
 
-		"ArmorPhysical"		"20"
 
 "AttackRange" "200"
 "AbilityLayout" "4"
@@ -552,6 +541,25 @@
 "Ability15" "special_bonus_unique_axe_culling_damage"
 "Ability16" "special_bonus_unique_axe_culling_cooldown"
 "Ability17" "special_bonus_unique_axe_helix_chance"
+
+"ArmorPhysical"		"9"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"26"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.360000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"150"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"16"
+		"AttributeStrengthGain"		"2.10000"
+		"AttributeBaseAgility"		"2"
+		"AttributeAgilityGain"		"1.100000"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"1.900000"
+		"StatusManaRegen"	"0.5"
+		"MovementSpeed"		"290"
+		"MovementTurnRate"		"0.600000"
 }
 
 	"npc_dota_hero_shredder"
@@ -797,7 +805,6 @@
 		"override_hero"				"npc_dota_hero_tidehunter"
 		"Role"						"Durable,Carry"
 		"Rolelevels"				"3,2"
-		"ArmorPhysical"		"5"
 
 		"AttackRange"				"175"				
 		"Ability1"					"gushik"
@@ -814,7 +821,26 @@
 		"Ability15"		"special_bonus_unique_tide_dmg_proc"
 		"Ability16"		"special_bonus_unique_tidehunter_7"
 		"Ability17"		"special_bonus_unique_tide_smash_damage"	
-		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"			
+		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"	
+
+		"ArmorPhysical"		"5"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"26"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.360000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"140"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"24"
+		"AttributeStrengthGain"		"1.20000"
+		"AttributeBaseAgility"		"9"
+		"AttributeAgilityGain"		"1.000000"
+		"AttributeBaseIntelligence"		"4"
+		"AttributeIntelligenceGain"		"0.900000"
+		"StatusManaRegen"	"0.5"
+		"MovementSpeed"		"265"
+		"MovementTurnRate"		"0.600000"		
 	}	
 
 "npc_dota_hero_spectre"
@@ -878,6 +904,24 @@
         "Ability15"        "special_bonus_cooldown_reduction_20"
         "Ability16"        "special_bonus_unique_brist_brist_block"
         "Ability17"        "special_bonus_magic_resistance_35"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"12"
+		"AttackDamageMax"		"20"
+		"AttackRate"		"1.900000"
+		"AttackAnimationPoint"		"0.360000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"190"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"24"
+		"AttributeStrengthGain"		"2.20000"
+		"AttributeBaseAgility"		"6"
+		"AttributeAgilityGain"		"1.200000"
+		"AttributeBaseIntelligence"		"10"
+		"AttributeIntelligenceGain"		"1.000000"
+		"StatusManaRegen"	"0.75"
+		"MovementSpeed"		"240"
+		"MovementTurnRate"		"0.600000"
     }
 
 "npc_dota_hero_dark_seer"
@@ -896,7 +940,7 @@
 		"Ability15"		"special_bonus_unique_dark_seer_golden_shield_2"
 		"Ability16"		"special_bonus_spell_lifesteal_15"
 		"Ability17"		"special_bonus_unique_dark_seer_golden_shield"
-		"ArmorPhysical"		"12"
+		"ArmorPhysical"		"9"
 		"AttackDamageMin"		"50"
 		"AttackDamageMax"		"61"
 		"AttackRate"		"1.700000"
@@ -907,11 +951,11 @@
 		"StatusMana"				"420"	
 		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"
-		"AttributeStrengthGain"		"7.100000"
+		"AttributeStrengthGain"		"2.400000"
 		"AttributeBaseAgility"		"0"
-		"AttributeAgilityGain"		"3.800000"
+		"AttributeAgilityGain"		"3.100000"
 		"AttributeBaseIntelligence"		"0"
-		"AttributeIntelligenceGain"		"11.100000"
+		"AttributeIntelligenceGain"		"2.400000"
 		"MovementSpeed"		"295"
 	}
  
@@ -932,19 +976,19 @@
 		"Ability16"		"special_bonus_unique_luna_8"
 		"Ability17"		"special_bonus_unique_luna_2"
 
-		"ArmorPhysical"		"4"
+		"ArmorPhysical"		"7"
 		"AttackDamageMin"		"26"
 		"AttackDamageMax"		"32"
 		"AttackRate"		"1.450000"
 		"AttackRange"		"330"
 		"AttributeBaseStrength"		"14"
-		"AttributeStrengthGain"		"3.200000"
-		"AttributeBaseAgility"		"24"
-		"AttributeAgilityGain"		"4.400000"
-		"AttributeBaseIntelligence"		"14"
-		"AttributeIntelligenceGain"		"1.90000"
+		"AttributeStrengthGain"		"2.200000"
+		"AttributeBaseAgility"		"19"
+		"AttributeAgilityGain"		"2.2"
+		"AttributeBaseIntelligence"		"11"
+		"AttributeIntelligenceGain"		"1.2"
 		"StatusHealthRegen"		"1.5"
-		"MovementSpeed"		"345"
+		"MovementSpeed"		"310"
 		"VisionNighttimeRange"		"800"
 	}
  
@@ -1106,6 +1150,25 @@
 		"Ability15"		"special_bonus_unique_crystal_maiden_5"
 		"Ability16"		"special_bonus_unique_crystal_maiden_cold_embrace"
 		"Ability17"		"special_bonus_unique_crystal_maiden_2"
+
+		"ArmorPhysical"		"-1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"26"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.360000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"150"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"12"
+		"AttributeStrengthGain"		"0.20000"
+		"AttributeBaseAgility"		"9"
+		"AttributeAgilityGain"		"1.200000"
+		"AttributeBaseIntelligence"		"30"
+		"AttributeIntelligenceGain"		"2.700000"
+		"StatusManaRegen"	"0.5"
+		"MovementSpeed"		"290"
+		"MovementTurnRate"		"0.600000"
  	
 	}	
  
@@ -1131,12 +1194,12 @@
 		"AttackDamageMax"		"19"
 		"AttackRate"		"1.700000"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"		"19"
-		"AttributeStrengthGain"		"2.0000"
+		"AttributeBaseStrength"		"9"
+		"AttributeStrengthGain"		"1.0000"
 		"AttributeBaseIntelligence"		"15"
-		"AttributeIntelligenceGain"		"2.600000"
-		"AttributeBaseAgility"		"27"
-		"AttributeAgilityGain"		"3.20000"
+		"AttributeIntelligenceGain"		"2.000000"
+		"AttributeBaseAgility"		"20"
+		"AttributeAgilityGain"		"2.40000"
 		"MovementSpeed"		"285"
  
 	}
@@ -1354,10 +1417,10 @@
 		"ProjectileModel"		"particles/units/heroes/hero_winter_wyvern/winter_wyvern_base_attack.vpcf"
 		"ProjectileSpeed"		"700"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"22"
-		"AttributeStrengthGain"		"2.2"
-		"AttributeBaseIntelligence"	"22"
-		"AttributeIntelligenceGain"	"3.2"
+		"AttributeBaseStrength"		"12"
+		"AttributeStrengthGain"		"0.7"
+		"AttributeBaseIntelligence"	"29"
+		"AttributeIntelligenceGain"	"1.9"
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.5"
 		"MovementSpeed"		"315"
@@ -1511,9 +1574,9 @@
 
  
 		"AttributeBaseStrength"		"14"										// Base strength
-		"AttributeStrengthGain"		"1.9"										// Strength bonus per level.
+		"AttributeStrengthGain"		"1.2"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"25"										// Base intelligence
-		"AttributeIntelligenceGain"	"4.8"										// Intelligence bonus per level.
+		"AttributeIntelligenceGain"	"2.7"										// Intelligence bonus per level.
 		"AttributeBaseAgility"		"11"										// Base agility
 		"AttributeAgilityGain"		"1.3"										// Agility bonus per level.
 
@@ -1669,9 +1732,9 @@
 		"AttackRate"		"1.400000"
 		"AttributeBaseStrength"		"21"
 		"AttributeStrengthGain"		"2.100000"
-		"AttributeBaseIntelligence"		"24"	
+		"AttributeBaseIntelligence"		"0"	
 		"AttributeIntelligenceGain"		"2.100000"
-		"AttributeBaseAgility"		"24"
+		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"3.100000"
 		"StatusHealthRegen"		"0"
 		"MovementSpeed"		"320"	
@@ -1767,31 +1830,6 @@
 	"npc_dota_hero_muerta"
 	{
 		"Model"		"models/heroes/muerta/muerta_base.vmdl"
-		"IdleExpression"		"scenes/muerta/muerta_exp_idle_01.vcd"
-		"SoundSet"		"Hero_Muerta"
-		"Enabled"		"1"
-		"RandomEnabled"		"1"
-		"HeroPool1"		"1"
-		"HeroUnlockOrder"		"0"
-		"Role"			"Carry,Nuker,Disabler"
-		"Rolelevels"	"3,2,1"
-		"Complexity"	"1"
-		"Team"		"Good"
-		"HeroID"		"138"
-		"HeroOrderID"			"124"
-		"BotImplemented"		"0"
-		"ModelScale"		"1"
-		"VersusScale"		"0.8"
-		"HeroGlowColor"		"237 154 15"
-		"PickSound"		"muerta_muerta_intro_06"
-		"BanSound"		"muerta_muerta_anger_12"
-		"CMEnabled"		"0"
-		"workshop_guide_name"		"Muerta"
-		"new_player_enable"		"0"
-		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
-		"HeroSelectSoundEffect"		"Hero_Muerta.Pick"
-		"GibType"		"default"
-		"GibTintColor"	"95 210 156 255"
 		"Ability1"		"muerta_dead_shot"
 		"Ability2"		"muerta_time_lock"
 		"Ability3"		"muerta_gunslinger"

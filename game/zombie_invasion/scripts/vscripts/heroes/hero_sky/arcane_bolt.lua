@@ -13,7 +13,7 @@ function ability_skywrath_mage_arcane_bolt:OnSpellStart()
     local int_multiplier = self:GetSpecialValueFor("int_multiplier")
 
     if caster:IsHero() then
-        self.damage = base_damage * int_multiplier
+        self.damage = base_damage + int_multiplier * self:GetCaster():GetIntellect()
     end
 
     ProjectileManager:CreateTrackingProjectile({

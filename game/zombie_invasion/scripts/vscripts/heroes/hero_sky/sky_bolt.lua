@@ -3,7 +3,7 @@ sky_bolt = class({})
 
 
 function sky_bolt:OnSpellStart()
-    print("hi")
+    --print("hi")
     local caster = self:GetCaster()
 	local unit = self:GetCursorTarget()
     --local targets = event.target_entities
@@ -14,7 +14,7 @@ function sky_bolt:OnSpellStart()
     ParticleManager:CreateParticle(effect1, PATTACH_OVERHEAD_FOLLOW, unit)
 
     local dmg = ability:GetSpecialValueFor("damage")
-    print("P : ", dmg)
+    --print("P : ", dmg)
 
     local damageTable = {
     victim = unit,

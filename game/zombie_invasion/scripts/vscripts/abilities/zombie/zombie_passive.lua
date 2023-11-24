@@ -83,6 +83,10 @@ function modifier_zombie_passive_fire:OnIntervalThink()
 	local ability = self:GetAbility()
 	local dps =  ability:GetSpecialValueFor("dps")
  	DealDamage (caster, parent, caster:GetMaxHealth() * (dps/100), DAMAGE_TYPE_PURE, nil, ability)
+
+ 	if caster:GetHealth() < 2 then
+ 		return caster:ForceKill(false)
+ 	end
  
  
 end
