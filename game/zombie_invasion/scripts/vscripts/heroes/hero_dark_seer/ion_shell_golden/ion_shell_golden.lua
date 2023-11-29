@@ -88,6 +88,9 @@ if not self:GetParent():PassivesDisabled() then
 		0,
 		false
 	)
+	if not self:GetCaster():HasScepter() then
+		self:GetCaster():RemoveModifierByName("modifier_ability_ion_shell")
+	end
 
 
 

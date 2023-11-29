@@ -12,6 +12,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"MaxLevel"				"14"
+		"HasShardUpgrade"	"1"
 
 
 		// Time		
@@ -25,16 +26,17 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{		
-				"bonus_range"			"125 200 275 350"
+				"bonus_range"			"225"
 				"acorn_shot_damage"		
 				{
 					"value"		"20 50 70 100 120 150 170 190 235 270 300 345 370 400"
-					"CalculateSpellDamageTooltip"	"0"
+					"CalculateSpellDamageTooltip"	"1"
 				}
 				"base_damage_pct"		
 				{
 					"value"		"40 45 50 55 60 65 70 75 80 85 90 95 100 115"
-					"CalculateSpellDamageTooltip"	"0"
+					"HasShardUpgrade"	"+35"
+					"CalculateSpellDamageTooltip"	"1"
 				}
 				"bounce_count"			
 				{
@@ -68,7 +70,7 @@
 		"AbilityTextureName"			"Hero/hood/dependency"
  		"AbilityCastRange"				"275"
 
- 
+ 			"HasScepterUpgrade"	"1"
 		        "MaxLevel"                        "14"
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -91,22 +93,26 @@
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"radius"					"325"
+				"HasScepterUpgrade"			"+125"
 			}  
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
-				"attack_speed"					"20 35 55 65 75 85 95 105 115 125 135 145 155 165"
+				"attack_speed"					"10 12 14 16 18 20 22 24 26 28 30 32 34 36"
+				"HasScepterUpgrade"				"+44"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"bonus_damage"					"20 45 75 90 110 125 145 185 220 240 270 310 340 375"
+				"HasScepterUpgrade"				"+75"
 								"LinkedSpecialBonus"			"special_hoodwink"
 			}
  			"04"
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"bonus_envasion"					"33"
+				"HasScepterUpgrade"				"+11"
 			}
  
 		

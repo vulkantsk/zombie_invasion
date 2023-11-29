@@ -2046,6 +2046,7 @@
 	     "DOTA_Tooltip_ability_ability_surge"											"Surge"
 		"DOTA_Tooltip_ability_ability_surge_Description"								"Заряжает дружественных существ энергией, ненадолго увеличивающий скорость передвижения и позволяющей проходить сквозь существ. С цели снимается ограничение скорости и её невозможно замедлить."
 		"DOTA_Tooltip_ability_ability_surge_Lore"										"Однажды Иш'Кафэль использовал скорость своего разума, чтобы преодолеть лабиринт между стенами."
+		"DOTA_Tooltip_ability_ability_surge_Shard_Description"			"Способность получает бонусную скорость передвижения %special_bonus_shard%"
 		"DOTA_Tooltip_ability_ability_surge_Note0"									"Цель способности нельзя замедлить, пока не спадёт её эффект."
 		"DOTA_Tooltip_ability_ability_surge_duration"									"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_ability_surge_speed_boost"									"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
@@ -2062,6 +2063,7 @@
 
  		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон врагам вокруг, а также увеличивает здоровье, регенерацию и броню. Если наложить обычный щит, то он тут же сбросится."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Scepter_Description"				"Герой получает благославение аганима, благодаря чему может использовать сразу два щита на себя."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_radius"								"РАДИУС:"
@@ -2090,12 +2092,16 @@
 		"DOTA_Tooltip_Ability_gushik_negative_armor"		"УМЕНЬШЕНИЕ БРОНИ:"
 		"DOTA_Tooltip_Ability_gushik_gush_damage"			"УРОН:"
 
+		"DOTA_Tooltip_Ability_gushik_Scepter_Description"	"Уменьшает перезарядку до %cooldown_scepter% секунд, а также делает способность направляемой на точку. Она подействует на всех врагов на своём пути."
+
 		"DOTA_Tooltip_Ability_tide_health"                                            "More health"
         "DOTA_Tooltip_Ability_tide_health_Description"                                "Когда тайда бьют, он становится сильнее."
         "DOTA_Tooltip_Ability_tide_health_Lore"										"Здоровье - всё что его интересует."
         "DOTA_Tooltip_Ability_tide_health_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
         "DOTA_Tooltip_Ability_tide_health_str_per_stack"                                        "БОНУС СИЛЫ ЗА СТАК:"
 		"DOTA_Tooltip_modifier_tide_health"												"More health"
+
+		"DOTA_Tooltip_Ability_tide_health_Shard_Description"			"Персонаж выносит больше пользы из боли полученной в бою, поэтому порог для получения здоровья уменьшается до %dmg_proc%"
 
 		"DOTA_Tooltip_Ability_tide_buff_1"                                            "More damage"
         "DOTA_Tooltip_Ability_tide_buff_1_Description"                                "<h1>Пассивная: More damage </h1>Когда тайда бьют и наносят %dmg_proc% урона, он становится сильнее и получает %damage_per_stack% урона."
@@ -2829,6 +2835,8 @@
 		"DOTA_Tooltip_ability_ability_bristleback"							"Bristleback"
 		"DOTA_Tooltip_ability_ability_bristleback_abilitydraft_note"		"Если не выбрать способность Quill Spray, герой не будет применять её при достижении порога урона."
 		"DOTA_Tooltip_ability_ability_bristleback_Description"				"Герой получает меньше урона от атак со спины и с боков. При получении %quill_release_threshold% урона со спины применяется способность Quill Spray текущего уровня."
+
+		"DOTA_Tooltip_ability_ability_bristleback_shard_Description"		"Снижает потребность в получении урона в дырявую спину Bristleback до %quill_release_threshold%"
 		"DOTA_Tooltip_ability_ability_bristleback_Lore"						"Иногда бывает полезно повернуться спиной к врагу во время битвы."
 		"DOTA_Tooltip_ability_ability_bristleback_Note0"					"Спиной героя считаются 70 градусов от середины его спины."
 		"DOTA_Tooltip_ability_ability_bristleback_Note1"					"Боками героя считаются 110 градусов от середины его спины."
@@ -2966,6 +2974,7 @@
         "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
 		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
 		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
+		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон за избыток до %pct_damage_per_attack_speed%%%"
 
 		 "dota_tooltip_ability_troll_warlord_buff_1"								"Berserk Strikes"
 		"dota_tooltip_ability_troll_warlord_buff_1_Description"					"<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%"
@@ -3414,6 +3423,7 @@
 
        "DOTA_Tooltip_ability_tree_dependency"	"Proximity with nature"
        "DOTA_Tooltip_ability_tree_dependency_Description"	"Если Hoodwink находится рядом с деревом в радиусе %radius%, то ее силы очень сильно возрастают."
+       "DOTA_Tooltip_ability_tree_dependency_Scepter_Description"		"Немного усиляет способность даруя %attack_speed% скорости атаки, %bonus_damage% дополнительного урона и шанс уклонения на %bonus_envasion%%%"
 		"DOTA_Tooltip_ability_tree_dependency_attack_speed"				"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_tree_dependency_bonus_damage"					"БОНУСНЫЙ УРОН:"
 		"DOTA_Tooltip_ability_tree_dependency_bonus_envasion"					"%БОНУС УКЛОНЕНИЯ:"
@@ -3422,6 +3432,7 @@
 		"DOTA_Tooltip_modifier_tree_dependency"					"Proximity with nature "
        "DOTA_Tooltip_modifier_tree_dependency_Description"	"Бонусные %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорость атаки,  %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% урона и  %dMODIFIER_PROPERTY_EVASION_CONSTANT%%% миссов"
 
+       "DOTA_Tooltip_Ability_hoodwink_acorn_shot_Shard_Description"		"Усиляет урон от героя способностью на %base_damage_pct%%%"
  
 		"DOTA_Tooltip_Ability_special_hoodwink"											"+{s:value} к урону от Proximity with nature"
 

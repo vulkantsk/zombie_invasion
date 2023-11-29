@@ -13,7 +13,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"MaxLevel"						"4"
+		"MaxLevel"						"14"
 		"RequiredLevel"					"2"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Silencer.Curse.Cast"
@@ -41,15 +41,15 @@
 		{
 			"damage"
 			{
-				"value"							"107 242 277 320"
-				"special_bonus_unique_silencer"		"+10"
+				"value"							"20 40 60 80 100 120 140 160 180 200 220 240 260 280"
+				"special_bonus_unique_silencer"		"+120"
 			}
-			"application_damage"				"242 277 320 368"
+			"application_damage"				"60 90 120 150 180 210 240 270 300 330 360 390 420 450"
 
 			"radius"			"350"
 			"duration"			"6"
 			"penalty_duration"			"2"
-			"movespeed"			"-10 -15 -20 -25"
+			"movespeed"			"-10"
 			"penalty_multiplier"			"1.5"
 			"undispellable"
 			{
@@ -66,7 +66,7 @@
 		"AbilityTextureName"			"silencer_glaives_of_wisdom"
 		"FightRecapLevel"				"1"
 		"RequiredLevel"					"2"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 
 		"HasScepterUpgrade"			"1"
 
@@ -84,8 +84,8 @@
 
 				"intellect_damage_pct"				
 				{
-					"value"				"24 35 45 55 65 88 100"
-			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+100"
+					"value"				"12 16 20 24 28 32 36 40 44 48 52 56 60 64"
+			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+146"
 					 
 				}
 			
@@ -93,74 +93,33 @@
 			
 		}
 	}
-	//=================================================================================================================
-	// Arc Warden: Magnetic Field
-	//=================================================================================================================
-	"arc_warden_magnetic_field"
+	"sil_glaive"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5678"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-		"FightRecapLevel"				"1"
-		"Maxlevel"						"1"
-		"RequiredLevel"					"10"
-		"AbilitySound"					"Hero_ArcWarden.MagneticField.Cast"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_silencer/sil_glaive"
+		"AbilityTextureName"			"sil_glaive"
+		"MaxLevel"						"1"
 
-        "HasShardUpgrade"               "1"
+		"HasScepterUpgrade"			"0"
 
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastAnimation"			"ACT_DOTA_AW_MAGNETIC_FIELD"
-		"AbilityCastGestureSlot"		"DEFAULT"
-		"AbilityCastPoint"				"0.3"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"110"
-		
-		// Cast Range
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1100"
+		"AbilityCastRange"				"600"
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"radius"					"320"
-			"duration"					"6.5"
-			"tempest_duration"			"5 6 7 8"
-			"attack_speed_bonus"		
-			{
-				"value" 				"50 60 70 80"
-			}
-			"evasion_chance"			"100"
-			"shard_magic_resist"
-			{
 
-				"value"						"40"
-				"RequiresShard"				"1"
-			}
-			"shard_slow_pct"
-			{
-				"value"						"30"
-				"RequiresShard"				"1"
-			}
-			"attack_range_bonus"				"250"
-			"attack_magic_damage"				
-			{
-				value	"20 40 60 80"
-			}
-			"AbilityCooldown"
-			{
-				"value"						"40"
-			}
+				"bounces"			"2"
+			
+				"range"		"600"
+			
 		}
 	}
-
 	"int"
 {
 	// General
@@ -323,7 +282,7 @@
 		"AbilityTextureName"			"silencer_last_word"
 		"FightRecapLevel"				"1"
 		"RequiredLevel"					"2"
-		"MaxLevel"						"7"
+		"MaxLevel"						"10"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
@@ -343,14 +302,16 @@
 		"AbilityValues"
 		{
 			
-				"damage"			"240 360 480 600 720 840 960"
+				"damage"			"720 1240 1800 2460 3480 4600 5220 6740 7200 7960"
 		
 				"debuff_duration"	"4"
 		
-				"duration"	"3 4 5 6 7 8 9"
+				"duration"	"4"
 			
 		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
+
 	"ability_global_silence"
 	{
 		"BaseClass"						"ability_lua"

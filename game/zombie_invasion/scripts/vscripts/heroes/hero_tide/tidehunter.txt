@@ -59,32 +59,30 @@
         "MaxLevel"                      "10"
         "LevelsBetweenUpgrades"         "10"
         "RequiredLevel"                 "10"
+        	"HasShardUpgrade"               "1"
 
         "AbilityCastRange"              "%radius"
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
-        {
-           
-				"dmg_proc"				"2250"
-			    	
-
+        {  
+				"dmg_proc"			
+				{
+					"value"					"1650"
+					"special_bonus_shard"	"-420"
+				}		    
 				"str_per_stack"				
 				{
-					"value"				"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
+					"value"		"0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.10"
+			    	"special_bonus_unique_tide_dmg_proc"	  "+0.20"
 					 
 				}
 
 				"health_per_stack"				
 				{
-					"value"				"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
-			    	"special_bonus_unique_tide_dmg_proc"	    "+0.2"
-					 
-				}
-          
-            
-
+					"value"		"0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 1"
+			    	"special_bonus_unique_tide_dmg_proc"	  "+0.20"	 
+				}                  
         }
 
     }  
@@ -103,8 +101,8 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-       			"damage_per_stack"		"5"
-				"dmg_proc"				"540"
+       			"damage_per_stack"		"2.5"
+				"dmg_proc"				"1650"
         }
 
     } 
@@ -163,7 +161,7 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"12"
-		"AbilityDuration"				"4.0"
+		"AbilityDuration"				"0.8"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -176,8 +174,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"gush_damage"		"125 144 176 190 275 295 325 355 420 445 470 500 525 560"
-				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+				"gush_damage"		"225 324 456 590 675 795 825 955 1120 1245 1370 1400 1525 1660"
 			}
 			"02"
 			{
@@ -187,7 +184,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"movement_speed"	"-40"
+				"movement_speed"	"-90"
 			}
 			"04"
 			{
@@ -204,7 +201,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"aoe_scepter"		"260"
+				"aoe_scepter"		"325"
 				"RequiresScepter"		"1"
 			}
 			"07"
@@ -216,7 +213,7 @@
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"cast_range_scepter"		"1200"
+				"cast_range_scepter"		"3600"
 				"RequiresScepter"		"1"
 			}	
 		}

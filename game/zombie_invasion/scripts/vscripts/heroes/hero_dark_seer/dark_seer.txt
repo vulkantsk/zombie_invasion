@@ -101,6 +101,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"  
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+			"HasShardUpgrade"               "1"
 
 		"AbilityCastPoint"				"0.4"
 
@@ -113,13 +114,14 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
+				"var_type"				"FIELD_FLOAT"	
 				"duration"				"3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8 8.5 9"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed_boost"				"250 300 400 500 600 700 950 1000 1050 1100 1150 1200 1250 1300"
+				"speed_boost"				"720"
+				"special_bonus_shard"	"+680"
 			}
  
 		}
@@ -195,6 +197,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"HasScepterUpgrade"               "1"
 
 		"AbilityCastRange"				"500"
 

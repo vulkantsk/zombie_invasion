@@ -2016,9 +2016,9 @@
 	{
 		"Ability1"		"silencer_curse_of_the_silent"
 		"Ability2"		"ability_glaives_of_wisdom"
-		"Ability3"		"ability_last_word"
+		"Ability3"		"sil_glaive"
 		"Ability4"		"int"
-		"Ability5"		"arc_warden_magnetic_field"
+		"Ability5"		"ability_last_word"
 		"Ability6"		"ability_global_silence"
         "Ability10"        "special_bonus_attack_speed_20"
         "Ability11"        "special_bonus_attack_damage_20" 

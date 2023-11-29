@@ -387,6 +387,7 @@
 		"AbilityTextureName"		"innate_giant_strikes"
 		"RequiredLevel"				"10"
 		"MaxLevel"					"10"
+		"HasShardUpgrade"               "1"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -394,7 +395,11 @@
 		"AbilityValues"
 		{
 			"locked_attack_speed"			"540 540 540 680 680 680 720 720 720 734"
-			"pct_damage_per_attack_speed"	"0.11 0.12 0.13 0.2 0.21 0.22 0.3 0.31 0.32 0.4"
+			"pct_damage_per_attack_speed"	
+			{
+				"value"	"0.11 0.12 0.13 0.2 0.21 0.22 0.3 0.31 0.32 0.4"
+				"HasShardUpgrade"	"+0.07"
+			}
 		}
 	}
 	"Troll_inner_beast"

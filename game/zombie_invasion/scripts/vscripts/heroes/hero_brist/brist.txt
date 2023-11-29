@@ -122,6 +122,7 @@
 		"AbilityTextureName"			"bristleback_bristleback"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilitySound"					"Hero_Bristleback.Bristleback"
+		"HasShardUpgrade"               "1"
 	    "HasScepterUpgrade"              "1"
 
 		"MaxLevel"						"14"
@@ -143,7 +144,11 @@
 
 			"side_angle"					"110"
 			"back_angle"					"70"
-			"quill_release_threshold"				"540"
+			"quill_release_threshold"				
+			{
+				"value"	"540"
+				"special_bonus_shard"	"-60"
+			}
 
 			"armor_bonus"							"7 9 11 13 15 17 19 21 23 25 27 29 31 33"
 
