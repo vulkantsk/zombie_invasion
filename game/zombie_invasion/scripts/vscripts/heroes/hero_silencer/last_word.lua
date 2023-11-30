@@ -107,7 +107,7 @@ function modifier_ability_last_word:Silence()
     local damageTable = {
         victim = self:GetParent(),
         attacker = self:GetCaster(),
-        damage = self.damage,
+        damage = self.damage * (self:GetCaster():GetIntellect() * (20 / 100)),
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self
     }

@@ -949,7 +949,7 @@
 		"AttackRange"		"150"
 		"StatusHealth"				"520"	
 		"StatusMana"				"420"	
-		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"0"
 		"AttributeStrengthGain"		"2.400000"
 		"AttributeBaseAgility"		"0"

@@ -2130,12 +2130,16 @@
 	
 	
 		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom"											"Glaives of wisdom"
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_intellect_damage_pct"										"%ИНТЕЛЛЕКТ = УРОН:"
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Description"										"Урон от интеллекта накладывается на глейвы благодаря чему герой наносит урон зависящий от своего интеллекта."
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Lore"			"Глейвы заточены насмерть."
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_intellect_damage_pct"										"%УРОН:"
 		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_radius"										"РАДИУС:"
+		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Scepter"			""	
 	
 		"DOTA_Tooltip_Ability_ability_last_word"											"The last word"
-		"DOTA_Tooltip_Ability_ability_last_word_Description"										"SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE SILENCE."
+		"DOTA_Tooltip_Ability_ability_last_word_damage"		"БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_ability_last_word_int"		"%УРОН ОТ ИНТЕЛЛЕКТА:"
+		"DOTA_Tooltip_Ability_ability_last_word_Description"										"Окутывает врага чарами silencer, что нагоняет страх на противника и заставляет его заткнуться и получить урон."
 		"DOTA_Tooltip_Ability_ability_last_word_radius"										"РАДИУС:"
 		"DOTA_Tooltip_Ability_ability_last_word_debuff_duration"								"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
 		"DOTA_Tooltip_Ability_ability_last_word_radius"										"ДЛИТЕЛЬНОСТЬ:"

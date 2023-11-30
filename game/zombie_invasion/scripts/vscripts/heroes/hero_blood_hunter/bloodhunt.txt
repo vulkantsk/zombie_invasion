@@ -16,6 +16,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityHealthCost"				"20 40 60 120 240 300 360 420"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_centaur/centaur_shard_buff_strength_counter_stack.vpcf"
+		}
  
 		"AbilityValues"
 		{

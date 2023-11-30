@@ -14,7 +14,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"MaxLevel"						"14"
-		"RequiredLevel"					"2"
+		"RequiredLevel"					"1"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Silencer.Curse.Cast"
 
@@ -65,10 +65,11 @@
 		"ScriptFile"					"heroes/hero_silencer/glaives_of_wisdom"
 		"AbilityTextureName"			"silencer_glaives_of_wisdom"
 		"FightRecapLevel"				"1"
-		"RequiredLevel"					"2"
+		"RequiredLevel"					"1"
 		"MaxLevel"						"14"
-
 		"HasScepterUpgrade"			"1"
+
+		"HasScepterUpgrade"			"0"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -85,7 +86,8 @@
 				"intellect_damage_pct"				
 				{
 					"value"				"12 16 20 24 28 32 36 40 44 48 52 56 60 64"
-			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+146"
+			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+46"
+			    	"special_bonus_scepter"		"+100"
 					 
 				}
 			
@@ -115,7 +117,13 @@
 		{
 
 				"bounces"			"2"
-			
+				"intellect_damage_pct"				
+				{
+					"value"				"12 16 20 24 28 32 36 40 44 48 52 56 60 64"
+			    	"special_bonus_unique_silencer_intellect_damage_pct"	    "+46"
+			    	"special_bonus_scepter"		"+100"
+					 
+				}
 				"range"		"600"
 			
 		}
@@ -128,7 +136,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"oracle/int"
 	"MaxLevel"				"1"
-	"RequiredLevel"					"-1"
+	"RequiredLevel"					"50"
    
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
@@ -145,8 +153,8 @@
 		
 			"stack_interval"						
 			{
-				"value"				"60"
-			   	"special_bonus_unique_silencer_stack_interval"	    "-30"
+				"value"				"10"
+			   	"special_bonus_unique_silencer_stack_interval"	    "-6"
 				 
 			}
 		
@@ -307,6 +315,7 @@
 				"debuff_duration"	"4"
 		
 				"duration"	"4"
+				"int"		"20"
 			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
