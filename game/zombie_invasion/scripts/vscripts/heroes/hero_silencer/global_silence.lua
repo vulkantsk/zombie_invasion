@@ -12,7 +12,7 @@ function ability_global_silence:OnSpellStart()
         nil,
         FIND_UNITS_EVERYWHERE,
         DOTA_UNIT_TARGET_TEAM_ENEMY,
-        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+        DOTA_UNIT_TARGET_ALL,
         DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_MANA_ONLY,
         0,
         false
@@ -69,6 +69,21 @@ end
 
 modifier_ability_global_silence = {}
 
+function modifier_ability_global_silence:DeclareFunctions()
+    local funcs = {
+        MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
+        MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE,
+
+    }
+
+    return funcs
+end
+
+function modifier_ability_global_silence:OnCreated( kv )
+    self.icnoming_enemy = self:GetAbility():GetSpecialValueFor( "icnoming_enemy" )
+
+end
+
 function modifier_ability_global_silence:IsDebuff()
     return true
 end
@@ -91,4 +106,12 @@ end
 
 function modifier_ability_global_silence:GetEffectAttachType()
     return PATTACH_OVERHEAD_FOLLOW
+end
+
+function modifier_ability_global_silence:GetModifierIncomingDamage_Percentage()
+    return self.icnoming_enemy
+end
+
+function modifier_ability_global_silence:GetModifierIncomingDamage_Percentage()
+    return self.icnoming_enemy
 end

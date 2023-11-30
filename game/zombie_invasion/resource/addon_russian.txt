@@ -2129,34 +2129,49 @@
 		"DOTA_Tooltip_Ability_ability_curse_of_the_silent_movespeed"										"УМЕНЬШЕНИЕ СКОРОСТИ:"
 	
 	
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom"											"Glaives of wisdom"
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Description"										"Урон от интеллекта накладывается на глейвы благодаря чему герой наносит урон зависящий от своего интеллекта."
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Lore"			"Глейвы заточены насмерть."
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_intellect_damage_pct"										"%УРОН:"
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_radius"										"РАДИУС:"
-		"DOTA_Tooltip_Ability_ability_glaives_of_wisdom_Scepter"			""	
+		"DOTA_Tooltip_Ability_glaives_of_wisdom"											"Glaives of wisdom"
+		"DOTA_Tooltip_Ability_glaives_of_wisdom_Description"										"Урон от интеллекта накладывается на глейвы благодаря чему герой наносит урон зависящий от своего интеллекта."	
+		"DOTA_Tooltip_Ability_glaives_of_wisdom_Lore"			"Нет ничего острее чем тройка миллионов ножей во всём мире, кроме моих глейвов."
+		"DOTA_Tooltip_Ability_glaives_of_wisdom_intellect_damage_pct"										"%УРОН:"
+		"DOTA_Tooltip_Ability_glaives_of_wisdom_radius"										"РАДИУС:"
 	
 		"DOTA_Tooltip_Ability_ability_last_word"											"The last word"
+		"DOTA_Tooltip_Ability_ability_last_word_Lore"		"Silencer -- Каким будет твоё последнее слово?"
 		"DOTA_Tooltip_Ability_ability_last_word_damage"		"БАЗОВЫЙ УРОН:"
 		"DOTA_Tooltip_Ability_ability_last_word_int"		"%УРОН ОТ ИНТЕЛЛЕКТА:"
+		"DOTA_Tooltip_Ability_ability_last_word_Shard_Description"			"Урон от интеллекта увеличивается"
 		"DOTA_Tooltip_Ability_ability_last_word_Description"										"Окутывает врага чарами silencer, что нагоняет страх на противника и заставляет его заткнуться и получить урон."
 		"DOTA_Tooltip_Ability_ability_last_word_radius"										"РАДИУС:"
 		"DOTA_Tooltip_Ability_ability_last_word_debuff_duration"								"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
 		"DOTA_Tooltip_Ability_ability_last_word_radius"										"ДЛИТЕЛЬНОСТЬ:"
 	
 		"DOTA_Tooltip_Ability_ability_global_silence"											"GLOBAL SILENCE"
-		"DOTA_Tooltip_Ability_ability_global_silence_Description"										"GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL 	SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE GLOBAL SILENCE."
+		"DOTA_Tooltip_Ability_ability_global_silence_Description"										"Герой заглушает все звуки на поле боя увеличивая урон по обезмолвленным существам, не давая врагам применять способности."
+		"DOTA_Tooltip_Ability_ability_global_silence_icnoming_enemy"			"%УВЕЛИЧЕНИЕ ВХОДЯЩЕГО УРОНА:"
 		"DOTA_Tooltip_Ability_ability_global_silence_tooltip_duration"										"ДЛИТЕЛЬНОСТЬ ОБЕЗМОВЛИВАНИЯ:"
+		"DOTA_Tooltip_Ability_ability_global_silence_Lore"		"Твой мозг не всегда друг для тебя же."
 	
-		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval} интервала срабатывания endless widsom"
-		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} интеллекта endless widsom"
-		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% урон от глейвов"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_stack_interval"							"-{s:bonus_stack_interval}секунд интервала срабатывания endless widsom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_grow_int"									"+{s:bonus_grow_int} за стак интеллекта endless widsom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_intellect_damage_pct"							"+{s:bonus_intellect_damage_pct}% к урону от Glaives of Wisdom"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_storm_interval"		"-{s:bonus_strike_interval} к интервалу молний"
+		"DOTA_Tooltip_Ability_special_bonus_unique_silencer_storm_duration"		"+{s:bonus_duration} секунд действия Storm of your minds"
 
 		"DOTA_Tooltip_Ability_int"											"Endless Wisdom"
 		"DOTA_Tooltip_Ability_int_Description"								"Сайленсер получает бонусный интеллект со временем."
 		"DOTA_Tooltip_Ability_int_Lore"								"Мудрость пророков растёт, как растёт курс доллара."
 		"DOTA_Tooltip_Ability_int_grow_int"        								"ИНТЕЛЛЕКТА ЗА СТАК:"
 		"DOTA_Tooltip_Ability_int_stack_interval"                                        "ИНТЕРВАЛ СТАКА:"
+
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua"			"Storm of your minds"
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_Description"		"Собирает над героем грозовую тучу, которая бьёт молнией врага с наименьшим здоровьем, нанося ему урон %damage% + интеллект владельца и снижая его броню в зависимости от интеллекта."
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_Scepter_Description"	"Увеличивает количество существ для атаки до %attack_units%."
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_duration"		"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_strike_interval"	"ИНТЕРВАЛ:"
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_armor_reduction"	"СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_Lore"		"Сила мыслей которая уничтожает всё сущее."
+
+
 
         //---tb-----
         "DOTA_Tooltip_Ability_tb_illusion_dd"                                            "<font color='#ff4d4d'>Conjure Image</font>"
