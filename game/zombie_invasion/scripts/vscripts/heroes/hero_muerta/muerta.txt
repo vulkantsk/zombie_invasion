@@ -15,7 +15,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
-		"Maxlevel"						"7"
+		"Maxlevel"						"14"
 		"AbilitySound"					"Hero_Muerta.DeadShot.Cast"
 
 		// Casting
@@ -39,10 +39,10 @@
 			{
 				"value"						"1000"
 				"special_bonus_unique_muerta_dead_shot_range"	"+250"
-			}
+			}	
 			"damage"
 			{
-				"value"						"160 320 360 420 470 520 560"
+				"value"						"90 110 140 160 190 240 280 320 360 420 470 520 560 600"
 				"special_bonus_unique_muerta_dead_shot_damage"	"+600"
 			}
 			"speed"							"2000"
@@ -70,7 +70,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"AbilitySound"					"Hero_FacelessVoid.TimeLockImpact"
-       "MaxLevel"                         "7"
+       "MaxLevel"                         "14"
         			"HasScepterUpgrade"	"1"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -84,12 +84,12 @@
 				"duration_creep"		"0"
 				"chance_pct"		
 				{
-					"value"		"14"
-					"special_bonus_scepter"	"+7"
+					"value"		"7 8 9 10 11 12 13 14 15 16 17 18 19 20 21"
+					"special_bonus_scepter"	"+6"
 				}
 				"bonus_damage"			
 				{
-					"value"				"15 30 45 60 75 90 115"
+					"value"				"15 30 45 60 75 90 115 130 145 160 175 190 205 220"
 					"special_bonus_scepter"		"+115"
 				}
 				"delay"			"0.1"
@@ -135,6 +135,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"				"2"
+		 "MaxLevel"                         "14"
 		"AbilitySound"					"Hero_Muerta.PierceTheVeil.Cast"
 		"AbilityCastPoint"				"0"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
@@ -145,17 +146,17 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150 250 350"
+		"AbilityManaCost"				"150 250 350 450 550 650 750 850 950 1050 1150 1250 1350 1450"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"duration"					"5"
+			"duration"					"5 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 10.5 11 11.5"
 			"transform_duration"		"0.35"
-			"base_damage_pct"			"100 110 120"
+			"base_damage_pct"			"100 105 110 115 120 125 130 135 140 145 150 155 160 165"
 			"modelscale"				"30"
-			"bonus_damage"				"100 200 300"
+			"bonus_damage"				"100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400"
 		}
 	}
 
@@ -164,16 +165,16 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_muerta/rend/rend"
 		"AbilityTextureName"		"innate_rend"
-		"RequiredLevel"					"15"
+		"RequiredLevel"					"10"
 		"LevelsBetweenUpgrades"			"10"
-		"MaxLevel"					"3"
+		"MaxLevel"					"10"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"AbilityValues"
 		{
-			"armor_tear"					"0.2 0.4 0.6"
+			"armor_tear"					"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
 			"crit_damage"					"115"
 			"crit_chance_per_negative_armor" "1"
 		}
@@ -183,9 +184,21 @@
 			"particle"	"particles/custom/innates/rend/rend_projectile.vpcf"
 		}
 	}
+	"muerta_buff_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_muerta"
+		"AbilityTextureName"			"eto_ne_prosto_gnev"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-
-
-
-
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"armor_debuff"		"-10"
+			"corruption_duration"		"2.5"
+		}	
+	}
 }

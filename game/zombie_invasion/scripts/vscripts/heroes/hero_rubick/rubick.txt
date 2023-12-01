@@ -11,7 +11,7 @@
 		"AbilityTextureName"			"rubick/rubick_meditation"
 		"ScriptFile"					"abilities/rubick_meditation.lua"
  
-        "MaxLevel"                        "7"
+        "MaxLevel"                        "14"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
@@ -33,16 +33,16 @@
 		{
 		"regen"
 		{
-					"value"			"30 60 90 120 150 180 210"
+					"value"			"30 60 90 120 150 180 210 240 270 300 320 350 370 400"
 					"special_bonus_unique_rubick_meditation"		"+100%"
 		}
  		"mana_cost_per_second"
 		{
-					"value"			"10 15 20 25 30 35 40"
+					"value"			"10 15 20 25 30 35 40 45 50 55 60 65 70 75"
 					"special_bonus_unique_rubick_meditation"		"+100%"
 		}
  	
-		}
+		
 	
 	}
 
@@ -50,7 +50,6 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5450"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -59,8 +58,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Rubick.FadeBolt.Cast"
- 
-        "MaxLevel"                        "7"
+		"MaxLevel"            "14"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
@@ -68,15 +66,15 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"18 17 16 15 14 13 12"
+		"AbilityCooldown"				"16 14 12 10"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"90 160 230 300 370 440 510"
+		"AbilityManaCost"				"120"
 		
 		// Cast Range
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"800"
+		"AbilityCastRange"				"800 800 800 800"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -84,51 +82,38 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"140 280 420 560 700 840 1000"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"jump_damage_reduction_pct"	"5"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"attack_damage_reduction"	"3 6 9 12 15 18 21"
-				"LinkedSpecialBonus"		"special_bonus_unique_rubick_2"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"440"
-			}			
-			"06"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"jump_delay"				"0.01"
-			}
+				"damage"					"140 170 210 280 340 390 420 510 560 640 700 840 920 1000"
+				"jump_damage_reduction_pct"	
+				{
+					"value"			"6"
+					"CalculateSpellDamageTooltip"	"0"
+					"DamageTypeTooltip"			"DAMAGE_TYPE_NONE"
+				}
+				"attack_damage_reduction"	
+				{
+					"value"			"5 6 7 8 9 10 11 12 13 14 15 16 17 18"
+					"LinkedSpecialBonus"		"special_bonus_unique_rubick_2"
+					"CalculateSpellDamageTooltip"	"0"
+					"DamageTypeTooltip"			"DAMAGE_TYPE_NONE"
+				}
+				"duration"					"10.0 10.0 10.0 10.0"
+				"radius"					
+				{
+					"value"			"440"
+					"affected_by_aoe_increase"	"1"
+				}			
+				"jump_delay"				"0.25 0.25 0.25 0.25"
 		}
 	}	
-
 	"rubick_arcane_supremacy"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"7320"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "MaxLevel"                        "7"
+        "MaxLevel"                        "14"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"

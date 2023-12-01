@@ -495,12 +495,17 @@
 		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Если герой достиг 50 уровня, он может использовать книгу чтобы получить уникальное умение, которое можно изучить и стать сильнее.</font>" 
 		"DOTA_Tooltip_ability_item_book_of_heroes_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>
-		<h1>Пассивная:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta"			"<font color='#ffb300'>РУКОВОДСТВО ПО КРЕМИРОВАНИЮ</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta_Description"	"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Dead inside </h1>Каждая атака пробивает сердце противника уменьшая его броню на %armor_debuff%"
+
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger"											"<font color='#ffb300'>Руководитель по залатыванию ненужных отверстий</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger"											"<font color='#ffb300'>Руководитель по укорачиванию стрел</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Level boom</h1> Герой с получением уровня получает по +%agi%%% бонусной ловкости за уровень." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -516,7 +521,7 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 	
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin"											"<font color='#ffb300'>Руководитель по стрельбе закрытыми глазами</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin"											"<font color='#ffb300'>Руководство по знакомствам в интернете</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Phantom ambicient </h1>Phantom Assassin начинает видеть слабые места противников благодаря чему её критические атаки наносят на %critical_bonus%%% больше урона и шанс критического попадания увеличивается на %crit_chance_bonus%%%." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -526,7 +531,7 @@
 		<h1>Пассивная: mana berserk </h1> за количество своей мамы %mana_pct%%% герой также получает интеллект" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_luna"											"<font color='#ffb300'>Руководство для кур</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_luna"											"<font color='#ffb300'>Руководство для наездников</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: lucent strike </h1>Luna при атаке использует улучшенный lucent beam и наносит урон %damage% помноженную на %agi_pct%%% ловкости" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Lore"  "<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -547,18 +552,18 @@
 		<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer"											"<font color='#ffb300'>Руководитель по расширению пространства</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: illusion kiss </h1> Герой получает дополнительно магический урон за процент своего интеллекта %int_pct%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 																			
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp"											"<font color='#ffb300'>Руководитель по шарикам</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: mercy </h1> За %bonus_health_pct%%% здоровья wisp, союзник в радиусе %aura_radius% получает бонусом здоровье." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_axe"											"<font color='#ffb300'>Руководитель реальности</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_axe"											"<font color='#ffb300'>Руководитель по кадированию</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Health lost</h1> Axe слишком привык к боли, что эта боль делает его сильнее даруя %strength% силу за каждый процент потерянного здоровья, сила превращается в %armor% брони." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -574,12 +579,12 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa"											"<font color='#ffb300'>Пособие для будующих змеек</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Mana poison </h1>чешуя образует небольшие капли с маной, которые использует медуза, чтобы увеличить свой запас маны на %agi_pct%%% от ловкости" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker"											"<font color='#ffb300'>Пособие для кровожадных</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: blood experience </h1>Blood Hunter научился не терять ни капли крови при ударах по противнику из-за чего получает её в %pct%%% раз больше." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -2414,6 +2419,11 @@
 		"DOTA_Tooltip_ability_muerta_time_lock_lore"	"Действительная копия реальности."
 		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "%ШАНС СРАБАТЫВАНИЯ:"
 		"DOTA_Tooltip_ability_muerta_time_lock_bonus_damage" "БОНУСНЫЙ УРОН:"
+
+
+		"DOTA_Tooltip_ability_muerta_buff_1" "ЭТО НЕ ПРОСТО ГНЕВ!💀"
+		"DOTA_Tooltip_ability_muerta_buff_1_Description"	"<h1>Пассивная: Dead inside </h1>Каждая атака пробивает сердце противника уменьшая его броню на %armor_debuff%"
+		"DOTA_Tooltip_ability_muerta_buff_1_Lore"		"Кремировал уёбище?"
 
 		"DOTA_Tooltip_ability_innate_rend" "Muerta call's"
 		"DOTA_Tooltip_ability_innate_rend_Description" "Каждой атакой Muerta снижает броню врагам, также если у противника негативное количество брони герой получает возможность нанести критическую атаку по нему."
