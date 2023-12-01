@@ -6,8 +6,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"						"7"
- 
+		"MaxLevel"						"14"
+ 		"HasShardUpgrade"	"1"
 		"RequiredLevel"					"1"
 		"BaseClass"						"ability_datadriven"
 		"AbilityTextureName"			"medusa_split_shot"
@@ -19,18 +19,19 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damagee"				"15 30 45 60 75 100 115"
+				"damagee"				"1 2 3 4 5 6 7 8 9 10 11 12 13 14"
 			}
 
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"arrow_count"			"4 5 6 7 8"
+				"arrow_count"			"4"
+				"special_bonus_shard"	"+2"
 			}	
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"fake_damage"				"30 35 40 45 50 55 60"
+				"fake_damage"				""
 			}		
 		}
 
@@ -136,7 +137,7 @@
 		"MaxLevel"						"3"
 		"RequiredLevel"					"10"
 		"AbilitySound"					"Hero_Medusa.StoneGaze.Cast"
-
+		"HasScepterUpgrade"			"1"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.4"
@@ -154,7 +155,12 @@
 		{
 			"AbilityCastRange"					"1200"
 			"AbilityCooldown"					"90"
-			"AbilityManaCost"					"500"
+			"AbilityManaCost"					
+			{
+				"value"   	"500"
+				"special_bonus_scepter"		"-400"
+			}
+
 			"radius"							"1200"
 			"duration"
 			{
@@ -162,12 +168,17 @@
 				"special_bonus_unique_medusa"	"+4"
 			}
 			"slow"								"70"
-			"stone_duration"					"2.0"
+			"stone_duration"					
+			{
+				"value"			"2.0"
+				"special_bonus_scepter"	"+2"
+			}
 			"face_duration"						"2.0"
 			"vision_cone"						"0.08715"		// 85 degree cone
 			"bonus_physical_damage"
 			{
 				"value"							"120 240 360"
+				"special_bonus_scepter"			"+140"
 				"DamageTypeTooltip"				"DAMAGE_TYPE_PHYSICAL"
 			}
 			"speed_boost"						"200"

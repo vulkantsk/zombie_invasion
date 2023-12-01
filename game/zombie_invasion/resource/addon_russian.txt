@@ -2277,6 +2277,7 @@
 
 		"DOTA_Tooltip_ability_ability_sniper_assassinate"										"Assassinate"
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_Description"							"Герой с огромного расстояния целится во вражеских существ и после небольшой задержки совершает сокрушительный выстрел, ненадолго оглушающий цель."
+		"DOTA_Tooltip_ability_ability_sniper_assassinate_Scepter_Description"		"Усиляет способность ускоряя заводку, урон, скорость пули и радиус"
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_Lore"									"Чтобы осуществить пророчество и вернуться в родной город, Кардел должен быть уверен, что следующий выстрел будет столь же метким, как и тот, что он совершил в далёкий день своего испытания." 
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note0"									"Значок прицела виден только союзникам."
 		"DOTA_Tooltip_ability_ability_sniper_assassinate_Note1"									"Снаряд этой способности нельзя сбить с цели невидимостью."
@@ -2290,7 +2291,11 @@
 		"DOTA_Tooltip_ability_sniper_buff_1_Lore"			"Ему даже холод не мешает целится точно в цель."
 
 
-
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_take_aim_chance"	"+{s:bonus_headshot_chance}% к шансу headshot во время действия take aim"
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_headshot_damage"	"+{s:bonus_damage} к урону headshot"
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_headshot_proc_chance"	"+{s:bonus_proc_chance}% к шансу срабатывания headshot"
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_shrapnel_damage"		"+{s:bonus_shrapnel_damage} урона shrapnel"
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_take_aim_duration"	"+{s:bonus_duration} к длительности Take Aim"
 
 
 
@@ -2302,6 +2307,7 @@
  
 		"DOTA_Tooltip_ability_medusa_split_shot_custom"								"Split Shot"
 		"DOTA_Tooltip_ability_medusa_split_shot_custom_Description"					"Герой магически расщепляет свои стрелы, атакуя несколько целей, но при этом нанося меньше урона.\n\nНа дополнительные цели не действуют эффекты атаки, такие как критический урон."
+		"DOTA_Tooltip_ability_medusa_split_shot_custom_Shard_Description"		"увеличивает количество целей"
  
 		"DOTA_Tooltip_Ability_medusa_split_shot_custom_damagee"     							"%БОНУСНЫЙ УРОН:"
 
@@ -2320,6 +2326,7 @@
         "DOTA_Tooltip_ability_medusa_mystic_snake_dm2017_snake_scale"	"%УСИЛЕНИЕ УРОНА ЗА СКАЧОК:"
         "DOTA_Tooltip_ability_medusa_mystic_snake_dm2017_snake_mana_steal"	"%КРАДЕТ МАНЫ:"
 		
+		"DOTA_Tooltip_ability_medusa_stone_gaze_Scepter_Description"		"Увеличивает длительность окаменения, уменьшает стоимость маны и урон"
 
 		"DOTA_Tooltip_Ability_enchantress_untouchable"											"Poison"
 		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
@@ -2403,6 +2410,7 @@
 
 		"DOTA_Tooltip_ability_muerta_time_lock" "Muerta's time lock"
 		"DOTA_Tooltip_ability_muerta_time_lock_Description" "Муэрта с шансом повторно атакует свою цель нанося ей дополнительный урон"
+		"DOTA_Tooltip_ability_muerta_time_lock_Scepter_Description"		"Увеличивает урон и шанс срабатывания"
 		"DOTA_Tooltip_ability_muerta_time_lock_lore"	"Действительная копия реальности."
 		"DOTA_Tooltip_ability_muerta_time_lock_chance_pct" "%ШАНС СРАБАТЫВАНИЯ:"
 		"DOTA_Tooltip_ability_muerta_time_lock_bonus_damage" "БОНУСНЫЙ УРОН:"
@@ -3442,7 +3450,7 @@
 
        "DOTA_Tooltip_ability_tree_dependency"	"Proximity with nature"
        "DOTA_Tooltip_ability_tree_dependency_Description"	"Если Hoodwink находится рядом с деревом в радиусе %radius%, то ее силы очень сильно возрастают."
-       "DOTA_Tooltip_ability_tree_dependency_Scepter_Description"		"Немного усиляет способность даруя %attack_speed% скорости атаки, %bonus_damage% дополнительного урона и шанс уклонения на %bonus_envasion%%%"
+       "DOTA_Tooltip_ability_tree_dependency_Scepter_Description"		"Немного усиляет способность даруя скорость атаки, дополнительного урона и шанс уклонения"
 		"DOTA_Tooltip_ability_tree_dependency_attack_speed"				"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_tree_dependency_bonus_damage"					"БОНУСНЫЙ УРОН:"
 		"DOTA_Tooltip_ability_tree_dependency_bonus_envasion"					"%БОНУС УКЛОНЕНИЯ:"

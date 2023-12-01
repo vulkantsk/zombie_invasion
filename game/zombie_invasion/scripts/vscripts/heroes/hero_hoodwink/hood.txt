@@ -35,7 +35,7 @@
 				"base_damage_pct"		
 				{
 					"value"		"40 45 50 55 60 65 70 75 80 85 90 95 100 115"
-					"HasShardUpgrade"	"+35"
+					"special_bonus_shard"	"+35"
 					"CalculateSpellDamageTooltip"	"1"
 				}
 				"bounce_count"			
@@ -93,26 +93,26 @@
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"radius"					"325"
-				"HasScepterUpgrade"			"+125"
+				"special_bonus_scepter"			"+125"
 			}  
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"attack_speed"					"10 12 14 16 18 20 22 24 26 28 30 32 34 36"
-				"HasScepterUpgrade"				"+44"
+				"special_bonus_scepter"				"+44"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"bonus_damage"					"20 45 75 90 110 125 145 185 220 240 270 310 340 375"
-				"HasScepterUpgrade"				"+75"
+				"special_bonus_scepter"				"+75"
 								"LinkedSpecialBonus"			"special_hoodwink"
 			}
  			"04"
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"bonus_envasion"					"33"
-				"HasScepterUpgrade"				"+11"
+				"special_bonus_scepter"				"+11"
 			}
  
 		

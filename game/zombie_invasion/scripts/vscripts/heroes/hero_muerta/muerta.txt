@@ -71,7 +71,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"AbilitySound"					"Hero_FacelessVoid.TimeLockImpact"
        "MaxLevel"                         "7"
-
+        			"HasScepterUpgrade"	"1"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityModifierSupportBonus"		"25"
@@ -82,11 +82,15 @@
 		{
 				"duration"				"0"	
 				"duration_creep"		"0"
-				"chance_pct"			"16"
+				"chance_pct"		
+				{
+					"value"		"14"
+					"special_bonus_scepter"	"+7"
+				}
 				"bonus_damage"			
 				{
 					"value"				"15 30 45 60 75 90 115"
-					"LinkedSpecialBonus"	"special_bonus_unique_faceless_void_3"
+					"special_bonus_scepter"		"+115"
 				}
 				"delay"			"0.1"
 		}

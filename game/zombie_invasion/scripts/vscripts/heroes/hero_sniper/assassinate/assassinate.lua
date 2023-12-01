@@ -144,6 +144,15 @@ function ability_sniper_assassinate:OnProjectileHit(Target, Location)
         EmitSoundOn("Hero_Sniper.AssassinateDamage", Target)
         local str_dmg = self:GetSpecialValueFor("damage")/100
         local damage = caster:GetAverageTrueAttackDamage(caster) * str_dmg  
+        if self:GetCaster():HasScepter() then
+        ApplyDamage({
+            victim = Target,
+            attacker = self:GetCaster(),
+            damage = damage,
+            damage_type = DAMAGE_TYPE_PURE,
+            ability = self
+        })
+        else
         ApplyDamage({
             victim = Target,
             attacker = self:GetCaster(),
@@ -151,6 +160,7 @@ function ability_sniper_assassinate:OnProjectileHit(Target, Location)
             damage_type = self:GetAbilityDamageType(),
             ability = self
         })
+        end
 
         Target:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration=0.01})
 
