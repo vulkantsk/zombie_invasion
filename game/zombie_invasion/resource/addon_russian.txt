@@ -520,6 +520,11 @@
 		<h1>Пассивная: Broken eyes </h1>Снайпер узнаёт куда ему лучше стрелять в зомби, из-за чего его выстрелы поражают цель и сокращают её броню на %armor_debuff% помноженную на его ловкость %agi_pct%%% длительностью в %corruption_duration% Секунд." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 	
+		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick"											"<font color='#ffb300'>Руководитель для чайников от батьки аганима</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: magic bastard </h1> Привет сын, ты родился у меня самым слабым и никчёмным, поэтому я вложил в эту книгу 25% своей магической силы, так как я уже стар, я не смогу выделить тебе больше, удачи тебе! Люблю тебя." 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin"											"<font color='#ffb300'>Руководство по знакомствам в интернете</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
@@ -2711,18 +2716,6 @@
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_bolt"						"+0.2 к урону от интеллекта способности arcane bolt"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_concusive"					"+75% урона по крипам способности concussive shot."
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_promise"						"+0.55 к урону от интеллекта способности skymage promise."
-
-		"DOTA_Tooltip_Ability_grand"											"True Power"
-		"DOTA_Tooltip_Ability_grand_Description"								"Герой сокращает перезарядку способностей, и затраты маны на их использование."
-		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
-		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
-		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
-
-		"DOTA_Tooltip_Ability_grand"											"True Power"
-		"DOTA_Tooltip_Ability_grand_Description"								"Герой сокращает перезарядку способностей, и затраты маны на их использование."
-		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
-		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
-		"DOTA_Tooltip_Ability_grand_spell"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
 		// -----------------Elder dragon smaug--------------------
 
 			"DOTA_Tooltip_ability_fire_punishment"			"fire punishment"
@@ -3145,6 +3138,10 @@
 			"DOTA_Tooltip_modifier_revenge_buff"	"Revenge Aura"
 			"DOTA_Tooltip_modifier_revenge_buff_Description"	"Холод вас согревает."
 
+
+
+
+
 		"DOTA_Tooltip_ability_yuki_ritual"	"Ritual"
 		"DOTA_Tooltip_ability_yuki_ritual_Description"	"Герой проводит ритуал Холода, увеличиваю всю броню и регенерацию союзных героев в области. Замедляет передвижение врагов  и скорость атаки."
 		"DOTA_Tooltip_ability_yuki_ritual_AbilityCastRange"	"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
@@ -3170,6 +3167,8 @@
 
 		"DOTA_Tooltip_ability_yuki_challenge"	"Challenge from yuki"
 		"DOTA_Tooltip_ability_yuki_challenge_Description"	"Yuki-onna проверяет прочность героя, в течение 10 секунд на героя накладывается отрицательные эффекты. Ему наносится урон, от его главного атрибута. Если герой выживает, то навсегда увеличивает свою основну характеристику. За каждое непройденное испытание урон от него же уменьшается на %dmg_reduce%%, а при успешном увеличивается на %dmg_incr%%%"
+		"DOTA_Tooltip_ability_yuki_challenge_Scepter_Description"		"Увеличивает каждый атрибут ещё на %main_pct%"
+		"DOTA_Tooltip_ability_yuki_challenge_Shard_Description"		"Уменьшает урон за атрибут"
 		"DOTA_Tooltip_ability_yuki_challenge_duration"	"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_yuki_challenge_dmg_per_atr"	"УРОН ЗА АТРИБУТ:"
 		"DOTA_Tooltip_ability_yuki_challenge_interval"	"ИНТЕРВАЛ ПОЛУЧЕНИЯ УРОНА:"
@@ -3793,6 +3792,17 @@
 		"DOTA_Tooltip_Ability_rubick_meditation_mana_cost_per_second"                 		"Расход маны в секунду:"
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_rubick_meditation"											"+{s:bonus_regen}% к лечению и затрату маны от Meditation"  
+
+		"DOTA_Tooltip_Ability_grand"											"True Power"
+		"DOTA_Tooltip_Ability_grand_Description"								"Герой сокращает перезарядку способностей, и затраты маны на их использование."
+		"DOTA_Tooltip_Ability_grand_Lore"								"Истинная сила, истинная мощь."
+		"DOTA_Tooltip_Ability_grand_cooldown"        								"%УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:"
+		"DOTA_Tooltip_Ability_grand_mana"        								"%УМЕНЬШЕНИЕ ЗАТРАТ МАНЫ:"
+
+		"DOTA_Tooltip_Ability_rubick_buff_1"		"Бездарность иногда полезна"
+		"DOTA_Tooltip_Ability_rubick_buff_1_Description"		"<h1>Пассивная: magic bastard </h1> Привет сын, ты родился у меня самым слабым и никчёмным, поэтому я вложил в эту книгу 25% своей магической силы, так как я уже стар, я не смогу выделить тебе больше, удачи тебе! Люблю тебя."
+		"DOTA_Tooltip_Ability_rubick_buff_1_Lore"		"Любимый сын получил поддержку от отца."
+
  
 
 		// -----------------WISP--------------------	

@@ -186,7 +186,8 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"            "yuki/challenge"
-
+		"HasScepterUpgrade"              "1"
+		"HasShardUpgrade"               "1"
         "RequiredLevel"                 "10"
         "MaxLevel"                        "4"
         "LevelsBetweenUpgrades"			"5"	
@@ -201,7 +202,7 @@
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"500 1300 2500 5000"
+		"AbilityManaCost"				"500 1200 1500 2500"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -209,11 +210,16 @@
 		{
  			
  			"duration"        "6"
- 			"dmg_per_atr"      "6"
+ 			"dmg_per_atr"      
+ 			{
+ 				"value"			"6"
+ 				"special_bonus_shard"	"-2.5"
+ 			}
  			"interval"      "0.2"
  			"bonus_main"         "11 14 18 22"
- 			 "dmg_incr"      "50"
- 			 "dmg_reduce"      "30"
+ 			"dmg_incr"      "50"
+ 			"dmg_reduce"      "30"
+ 			"main_pct"		"11"
 
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"

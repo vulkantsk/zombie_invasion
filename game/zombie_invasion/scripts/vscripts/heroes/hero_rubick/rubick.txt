@@ -31,18 +31,18 @@
 		//-----------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-		"regen"
-		{
-					"value"			"30 60 90 120 150 180 210 240 270 300 320 350 370 400"
-					"special_bonus_unique_rubick_meditation"		"+100%"
-		}
- 		"mana_cost_per_second"
-		{
-					"value"			"10 15 20 25 30 35 40 45 50 55 60 65 70 75"
-					"special_bonus_unique_rubick_meditation"		"+100%"
-		}
+			"regen"
+			{
+						"value"			"30 60 90 120 150 180 210 240 270 300 320 350 370 400"
+						"special_bonus_unique_rubick_meditation"		"+100%"
+			}
+ 			"mana_cost_per_second"
+			{
+						"value"			"10 15 20 25 30 35 40 45 50 55 60 65 70 75"
+						"special_bonus_unique_rubick_meditation"		"+100%"
+			}
  	
-		
+		}
 	
 	}
 
@@ -116,18 +116,13 @@
         "MaxLevel"                        "14"
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
+			
 				"cast_range"				"50 100 150 200 250 300 350"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
+		
 				"spell_amp"			"12 16 20 24 28 32 36"
-			}
+			
 		}
 	}
 
@@ -203,18 +198,27 @@
     	"LevelsBetweenUpgrades" "1"
     	"RequiredLevel" "35"
 		
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
+			
 				"cooldown"		"35"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"spell"		"40"
-			}
+				"mana"		"40"
+				"spellamp"	"25"
+		}
+	}
+		"rubick_buff_1"
+	{
+    	"BaseClass"           "ability_lua"
+    	"ScriptFile"          "items/book_of_heroes/heroes/item_npc_dota_hero_rubick"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityTextureName"  "rubick/grand"
+    	"MaxLevel"            "1"
+    	"LevelsBetweenUpgrades" "1"
+    	"RequiredLevel" "35"
+		
+		"AbilityValues"
+		{
+				"spellamp"	"25"
 		}
 	}
  

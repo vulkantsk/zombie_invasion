@@ -19,6 +19,7 @@ function modifier_grand:DeclareFunctions()
     local funcs = {
         MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
         MODIFIER_PROPERTY_MANACOST_PERCENTAGE,
+        MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
 
     }
     return funcs
@@ -42,7 +43,9 @@ end
 
 function modifier_grand:OnIntervalThink()
     self.cooldown = self:GetAbility():GetSpecialValueFor("cooldown")
-    self.mana = self:GetAbility():GetSpecialValueFor("spell")
+    self.mana = self:GetAbility():GetSpecialValueFor("mana")
+    self.spellamp = self:GetAbility():GetSpecialValueFor("spellamp")
+    
 end
 
 function modifier_grand:GetModifierPercentageCooldown()
@@ -51,4 +54,9 @@ end
 
 function modifier_grand:GetModifierPercentageManacost()
     return self.mana
+end
+function modifier_grand:GetModifierSpellAmplify_Percentage()
+    if self:GetCaster():HasModifier("modifier_rubick") then
+        return self.spellamp
+    end
 end

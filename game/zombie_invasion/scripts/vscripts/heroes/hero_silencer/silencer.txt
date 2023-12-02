@@ -253,6 +253,24 @@
 	}
 }
 
+
+	"silencer_buff_1"
+	{
+    	"BaseClass"           "ability_lua"
+    	"ScriptFile"          "items/book_of_heroes/heroes/item_npc_dota_hero_silencer"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    	"AbilityTextureName"  ""
+    	"MaxLevel"            "1"
+    	"LevelsBetweenUpgrades" "1"
+    	"RequiredLevel" "35"
+		
+		"AbilityValues"
+		{
+				"int"	"1.5"
+		}
+	}
+
+
 	
 	"ability_last_word"
 	{

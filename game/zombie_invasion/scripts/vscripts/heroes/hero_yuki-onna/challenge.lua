@@ -2,7 +2,7 @@
  LinkLuaModifier( "modifier_challenge_buff", "heroes/hero_yuki-onna/challenge", LUA_MODIFIER_MOTION_NONE )
  
 
- yuki_challenge = {}
+yuki_challenge = {}
 
  function yuki_challenge:OnSpellStart()
  	local target = self:GetCursorTarget()
@@ -110,4 +110,26 @@ function modifier_challenge_buff:GetModifierBonusStats_Intellect()
 	if self:GetParent():GetPrimaryAttribute() == 2 or self:GetParent():GetPrimaryAttribute() == 3 then  
 	return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
 end
+end
+function modifier_challenge_buff:GetModifierBonusStats_Strength()
+	if self:GetCaster():HasScepter() then
+	
+			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+
+	end
+end
+
+function modifier_challenge_buff:GetModifierBonusStats_Agility()
+	if self:GetCaster():HasScepter() then
+
+			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+
+	end
+end
+function modifier_challenge_buff:GetModifierBonusStats_Intellect()
+	if self:GetCaster():HasScepter() then
+
+			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+		
+	end
 end
