@@ -68,10 +68,9 @@ function modifier_legion_duel_arena_thinker:OnCreated(kv)
     local point = self:GetParent():GetAbsOrigin()
     local radius = self:GetAbility():GetSpecialValueFor("radius")
 
-    self.field_particle = ParticleManager:CreateParticle("particles/units/heroes/hero_dawnbreaker/dawnbreaker_solar_guardian_aoe.vpcf", PATTACH_WORLDORIGIN, nil)
+    self.field_particle = ParticleManager:CreateParticle("particles/legion_duel.vpcf", PATTACH_WORLDORIGIN, nil)
     ParticleManager:SetParticleControl( self.field_particle, 0, self:GetParent():GetOrigin() )
-    ParticleManager:SetParticleControl( self.field_particle, 1, self:GetParent():GetOrigin() )
-    ParticleManager:SetParticleControl( self.field_particle, 2, Vector( radius, 0, 0 ) )
+    ParticleManager:SetParticleControl( self.field_particle, 7, self:GetParent():GetOrigin() )
 
 end
 function modifier_legion_duel_arena_thinker:OnDestroy()

@@ -307,7 +307,7 @@
 		"AbilityValues"
 		{
 			"return_damage_str"			"44"
-			"aura_radius"				"1200"
+			"aura_radius"				"120"
 			"return_damage"				"60"
 		}
 	}

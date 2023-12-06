@@ -500,12 +500,21 @@
 		<h1>Пассивная: Dead inside </h1>Каждая атака пробивает сердце противника уменьшая его броню на %armor_debuff%"
 
 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: neeeeeeeeds healf </h1> ГЕРОЙ излучает ауру берсерка которая восстанавливает здоровье всех ГЕРОЕВ на %atr_pct%%% в радиусе %aura_radius%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
-		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback"											"<font color='#ffb300'>Руководитель инвесторов в будущее</font>"
+	
+
+
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback"											"<font color='#ffb300'>Руководитель дырявости</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: My back </h1>Атакуя дырявую спину бристла оружие застревает и враг получает урон %return_damage% + %return_damage_str%%% силы скопившихся иголок вокруг" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
@@ -597,7 +606,7 @@
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist"											"<font color='#ffb300'>Пособие для будующих миллиардеров</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
-		<h1>Пассивная: not bad deal </h1>Превращает текущее золото алхимика в маг урон. При потере золота, урон также уменьшается." 
+		<h1>Пассивная: not bad deal </h1>Превращает текущее золото алхимика в маг урон %spell_gold%. При потере золота, урон также уменьшается." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
 
@@ -2277,18 +2286,28 @@
         "DOTA_Tooltip_Ability_legion_duel_arena_duration"				"ДЛИТЕЛЬНОСТЬ:"
         "DOTA_Tooltip_Ability_legion_duel_arena_stats_per_kill"				"СТАТЫ ЗА УБИЙСТВО:"
         "DOTA_Tooltip_Ability_legion_duel_arena_radius"				"РАДИУС:"
+
+
+        "DOTA_Tooltip_Ability_legion_buff_1"			"WE NEED MORE HEALTH!"
+        "DOTA_Tooltip_Ability_legion_buff_1_Description"			"<h1>Пассивная: neeeeeeeeds healf </h1> ГЕРОЙ излучает ауру берсерка которая восстанавливает здоровье всех ГЕРОЕВ на %atr_pct%%% в радиусе %aura_radius%"
+        "DOTA_Tooltip_Ability_legion_buff_1_Lore"		"704 - 32 + 4 * 9 + 1?"
         
         "DOTA_Tooltip_Ability_legion_low"                                            "Combat Excitement"
-        "DOTA_Tooltip_Ability_legion_low_Description"                                "За каждый потерянный процент здоровья герой получает бонусы."
+        "DOTA_Tooltip_Ability_legion_low_Description"                                "За каждый потерянный процент здоровья герой получает бонусы"
         "DOTA_Tooltip_Ability_legion_low_bonuss_armor"                                        "БОНУС БРОНИ:"
         "DOTA_Tooltip_Ability_legion_low_bonuss_magic"                                        "БОНУС ЗАЩИТЫ ОТ МАГИИ:"
-        "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Слабость не порок."
+        "DOTA_Tooltip_Ability_legion_low_Lore"                                            "Слабость не порок"
 
-        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"									"+{s:bonus_bonuss_armor} ко всем эффектам legion low"
+
+        "DOTA_Tooltip_Ability_special_bonus_unique_legion_low"					"+{s:bonus_bonuss_armor} ко всем эффектам legion low"
         "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkregeneration"		"+{s:bonus_health_regeneration_bonus} бонус к регенерации BERSERK."
         "DOTA_Tooltip_Ability_special_bonus_unique_legion_presstheberserkattackspeed"		"+{s:bonus_attack_speed_bonus} бонус к скорости атаки BERSERK."
-        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"											"+{s:bonus_damage} урона overhelm odds"
-        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage_per_unit"									"+{s:bonus_damage_per_unit} урона за существо overhelm odds"
+        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage"				"+{s:bonus_damage} урона overwhelm odds"
+        "DOTA_Tooltip_Ability_special_bonus_unique_arrow_damage_per_unit"			"+{s:bonus_damage_per_unit} урона за существо overwhelm odds"
+
+
+
+
 
 		// -----------------sniper--------------------		
 

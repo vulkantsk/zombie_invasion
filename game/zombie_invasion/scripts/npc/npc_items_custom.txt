@@ -8859,8 +8859,8 @@
 		"AbilityValues"
 		{
 			
-				"critical_bonus"			"225"
-				"crit_chance_bonus"		"15"
+			"damage"		"160"
+			"agi_pct"		"30"
             
 		}
 	}
