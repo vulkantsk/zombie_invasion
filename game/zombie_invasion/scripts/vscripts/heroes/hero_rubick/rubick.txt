@@ -194,15 +194,15 @@
     	"ScriptFile"          "heroes/hero_rubick/grand"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     	"AbilityTextureName"  "rubick/grand"
-    	"MaxLevel"            "1"
-    	"LevelsBetweenUpgrades" "1"
-    	"RequiredLevel" "35"
+    	"MaxLevel"            "3"
+    	"LevelsBetweenUpgrades" "30"
+    	"RequiredLevel" "10"
 		
 		"AbilityValues"
 		{
 			
-				"cooldown"		"35"
-				"mana"		"40"
+				"cooldown"		"15 25 35"
+				"mana"		"30 40 50"
 				"spellamp"	"25"
 		}
 	}
