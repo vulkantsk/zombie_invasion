@@ -277,7 +277,7 @@
 		
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_bristleback"
-		"AbilityTextureName"			"bristleback"
+		"AbilityTextureName"			"brist_diryavaya"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
 		"precache"

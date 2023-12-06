@@ -492,7 +492,7 @@
 
 
 		"DOTA_Tooltip_ability_item_book_of_heroes"											"<font color='#ffb300'>Руководитель по выживанию в трудных условиях</font>"
-		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Если герой достиг 50 уровня, он может использовать книгу чтобы получить уникальное умение, которое можно изучить и стать сильнее.</font>" 
+		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Если герой достиг 25 уровня, он может использовать книгу чтобы получить уникальное умение, которое можно изучить и стать сильнее.</font>" 
 		"DOTA_Tooltip_ability_item_book_of_heroes_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta"			"<font color='#ffb300'>РУКОВОДСТВО ПО КРЕМИРОВАНИЮ</font>"
@@ -504,6 +504,23 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная:  Blessing of cold</h1> герой излучает ауру радиусом в %aura_radius% которая усиляет магический урон союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий урон на %incom_cm%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback"											"<font color='#ffb300'>Руководитель инвесторов в будущее</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: My back </h1>Атакуя дырявую спину бристла оружие застревает и враг получает урон %return_damage% + %return_damage_str%%% силы скопившихся иголок вокруг" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer"											"<font color='#ffb300'>Руководитель инвесторов в будущее</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная:  Level grow</h1>Сайленсер получает бонусный интеллект за уровень %int%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
+		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage"											"<font color='#ffb300'>Руководитель математики от сестры vengeful spirit</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: MULTICAST </h1> герой может использовать способность повторно с шансом 1 раз %multicast_2_times_tooltip%%%, 2 раза %multicast_3_times_tooltip%%%, 3 раза %multicast_4_times_tooltip%%%" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger"											"<font color='#ffb300'>Руководитель по укорачиванию стрел</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
@@ -2173,6 +2190,12 @@
 		"DOTA_Tooltip_Ability_int_grow_int"        								"ИНТЕЛЛЕКТА ЗА СТАК:"
 		"DOTA_Tooltip_Ability_int_stack_interval"                                        "ИНТЕРВАЛ СТАКА:"
 
+		"DOTA_Tooltip_Ability_silencer_buff_1"											"Level grow"
+		"DOTA_Tooltip_Ability_silencer_buff_1_Description"								"<h1>Пассивная:  Level grow</h1>Сайленсер получает бонусный интеллект за уровень %int%."
+		"DOTA_Tooltip_Ability_silencer_buff_1_Lore"								"suckyourbrain - anyanya"
+
+
+
 		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua"			"Storm of your minds"
 		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_Description"		"Собирает над героем грозовую тучу, которая бьёт молнией врага с наименьшим здоровьем, нанося ему урон %damage% + интеллект владельца и снижая его броню в зависимости от интеллекта."
 		"DOTA_Tooltip_Ability_razor_eye_of_the_storm_lua_Scepter_Description"	"Увеличивает количество существ для атаки до %attack_units%."
@@ -2711,6 +2734,11 @@
 		"DOTA_Tooltip_Ability_ancient_seal_duration"				"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_Ability_ancient_seal_radius"				"РАДИУС:"
 
+		"DOTA_Tooltip_Ability_skywrath_mage_buff_1"			"Multi skycasts"
+		"DOTA_Tooltip_Ability_skywrath_mage_buff_1_Description"		"<h1>Пассивная: MULTICAST </h1> герой может использовать способность повторно с шансом 1 раз %multicast_2_times_tooltip%%%, 2 раза %multicast_3_times_tooltip%%%, 3 раза %multicast_4_times_tooltip%%%"
+		"DOTA_Tooltip_Ability_skywrath_mage_buff_1_Lore"		"Сильный и везучий."
+
+
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_juju"						"+{s:bonus_armor_reduction} к уменьшению брони Ancient seal."
 		"DOTA_Tooltip_Ability_ability_skywrath_mage_concussive_shot_shard_Description"		"Добавляет заряд способности"
 		"DOTA_Tooltip_Ability_special_bonus_unique_sky_bolt"						"+0.2 к урону от интеллекта способности arcane bolt"
@@ -2878,7 +2906,8 @@
 
 
 		"DOTA_Tooltip_ability_bristleback_buff_1"		"Back my return"
-		"DOTA_Tooltip_ability_bristleback_buff_1_Description"	"<h1>Пассивная: My back </h1>Атакуя дырявую спину бристла оружие застревает и враг получает урон %return_damage% + %return_damage_str% силы скопившихся иголок вокруг"
+		"DOTA_Tooltip_ability_bristleback_buff_1_Description"	"<h1>Пассивная: My back </h1>Атакуя дырявую спину бристла оружие застревает и враг получает урон %return_damage% + %return_damage_str%%% силы скопившихся иголок вокруг"
+		"DOTA_Tooltip_ability_bristleback_buff_1_Lore"			"Дырявая, но полезная."
 
 		"DOTA_Tooltip_ability_ability_bristleback_scepter_description"	"Если урон врага превысит %quill_release_threshold_scepter1%, %quill_release_threshold_scepter2%, %quill_release_threshold_scepter3% или  %quill_release_threshold_scepter4% то Bristleback выпустит иглы вместо одного раза - 2,3,4,5 соответственно."
 

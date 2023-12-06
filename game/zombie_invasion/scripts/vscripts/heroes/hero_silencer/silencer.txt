@@ -183,7 +183,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"oracle/int"
 	"MaxLevel"				"1"
-	"RequiredLevel"					"50"
+	"RequiredLevel"					"25"
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityValues"
@@ -259,7 +259,7 @@
     	"BaseClass"           "ability_lua"
     	"ScriptFile"          "items/book_of_heroes/heroes/item_npc_dota_hero_silencer"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    	"AbilityTextureName"  ""
+    	"AbilityTextureName"  "level_grow"
     	"MaxLevel"            "1"
     	"LevelsBetweenUpgrades" "1"
     	"RequiredLevel" "35"

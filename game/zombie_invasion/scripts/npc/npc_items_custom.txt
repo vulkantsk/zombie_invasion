@@ -8494,7 +8494,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemPurchasable"				"0" 
 		"ItemInitialCharges"            "1"
-        "AbilityTextureName"                         "book_of_heroes"
+        "AbilityTextureName"                         "books/book_of_heroes"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8521,7 +8521,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_muerta"
+        "AbilityTextureName"                         "books/book_muerta"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8547,7 +8547,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         ""
+        "AbilityTextureName"                         "books/book_brist"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8574,7 +8574,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         ""
+        "AbilityTextureName"                         "books/book_rubick"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8599,7 +8599,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         ""
+        "AbilityTextureName"                         "books/book_silencer"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8625,7 +8625,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_blood"
+        "AbilityTextureName"                         "books/book_blood"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8650,7 +8650,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_tide"
+        "AbilityTextureName"                         "books/book_tide"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8676,7 +8676,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_tide"
+        "AbilityTextureName"                         "books/book_legion"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8702,7 +8702,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemPurchasable"				"0" 
 		"ItemInitialCharges"            "1"
-        "AbilityTextureName"                         "drow_book"
+        "AbilityTextureName"                         "books/drow_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8727,7 +8727,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "sniper_book"
+        "AbilityTextureName"                         "books/sniper_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8754,7 +8754,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "sniper_book"
+        "AbilityTextureName"                         "books/book_sky"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8766,7 +8766,17 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
+			"multicast_2_times"		"0.75"
 			
+				"multicast_3_times"		"0.3"
+			
+				"multicast_4_times"		"0.15"
+			
+				"multicast_2_times_tooltip"		"75"
+			
+				"multicast_3_times_tooltip"		"30"
+			
+				"multicast_4_times_tooltip"		"15"
 		}
 	}
 	"item_npc_dota_hero_alchemist"
@@ -8779,7 +8789,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_alchemist"
+        "AbilityTextureName"                         "books/book_alchemist"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8808,7 +8818,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "phantom_book"
+        "AbilityTextureName"            "books/phantom_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8836,7 +8846,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "book_luna"
+        "AbilityTextureName"            "books/book_luna"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8864,7 +8874,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_dragon"
+        "AbilityTextureName"                         "books/book_dragon"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8889,7 +8899,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_cm"
+        "AbilityTextureName"                         "books/book_cm"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8917,7 +8927,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "hoodwink_book"
+        "AbilityTextureName"                         "books/hoodwink_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8944,7 +8954,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_troll"
+        "AbilityTextureName"                         "books/book_troll"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8969,7 +8979,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_medusa"
+        "AbilityTextureName"                         "books/book_medusa"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -8994,7 +9004,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_dark_seer"
+        "AbilityTextureName"                         "books/book_dark_seer"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9019,7 +9029,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "book_yuki"
+        "AbilityTextureName"                         "books/book_yuki"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9044,7 +9054,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "wisp_book"
+        "AbilityTextureName"                         "books/wisp_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9070,7 +9080,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "wisp_book"
+        "AbilityTextureName"                         "books/axe_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9096,7 +9106,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"                         "enigma_book"
+        "AbilityTextureName"                         "books/enigma_book"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9140,7 +9150,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "book_blood"
+        "AbilityTextureName"            ""
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
