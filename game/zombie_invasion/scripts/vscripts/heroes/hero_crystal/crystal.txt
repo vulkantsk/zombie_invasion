@@ -243,9 +243,9 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_WinterWyvern.WintersCurse.Target"
-		"RequiredLevel"					"35"
-		"LevelsBetweenUpgrades"			"3"
-		"MaxLevel"						"1"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"
+		"MaxLevel"						"3"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"700"
