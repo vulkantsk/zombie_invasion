@@ -95,14 +95,18 @@
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "tide/nesosat"
         "MaxLevel"                      "1"
-
+        "HasShardUpgrade"               "1"
         "AbilityCastRange"              "%radius"
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
        			"damage_per_stack"		"2.5"
-				"dmg_proc"				"1650"
+				"dmg_proc"				
+				{
+					"value"	"1650"
+					"special_bonus_shard"	"-420"
+				}
         }
 
     } 

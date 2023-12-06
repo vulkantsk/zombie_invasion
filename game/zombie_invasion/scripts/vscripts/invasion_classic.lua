@@ -1298,7 +1298,7 @@ end
 end
 
 	if currentNight == 6 then
-      if killedEntity:GetUnitName() == "npc_classic_necr" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2" then 
+      if killedEntity:GetUnitName() == "npc_classic_wave_pudge_2" or killedEntity:GetUnitName() == "npc_wave_zombie_toxic_2" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else
@@ -1318,7 +1318,7 @@ end
  		         	       unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_65 = 1.5
  		             else
-                           unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_classic_wave_pudge_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 
                            rollBase_65 = rollBase_65 + 1.5

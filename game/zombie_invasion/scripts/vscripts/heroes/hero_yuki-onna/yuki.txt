@@ -107,7 +107,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
-     	"MaxLevel"						"7"
+     	"MaxLevel"						"14"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -130,10 +130,10 @@
 			 
 				"heal"				
 				{
-					"value"				"5 15 30 60 120 180 240"		
-					"special_bonus_unique_yuki_revenge_heal"    "+160"			 
+					"value"				"5 15 30 60 120 180 240 260 280 300 320 340 360 380"		
+					"special_bonus_unique_yuki_revenge_heal"    "+600"			 
 				}
-				"base_damage" 			"15 30 45 90 110 160 220"
+				"base_damage" 			"15 30 45 90 110 160 220 260 300 340 380 420 480 540"
 		
  
 				 

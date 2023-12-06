@@ -3210,7 +3210,7 @@
 				"bonus_intellect"		"325"
 				"bonus_movespeed"		"95"
 			
-				"bonus_amp"		"175"
+				"bonus_amp"		"75"
 			
 		
 				"mana_regen"		"45.5"
@@ -7744,6 +7744,39 @@
 			}	
  		}
 	}
+	"item_magic_stick"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"Model"							"models/props_gameplay/magic_wand.vmdl"
+		
+		// Stats	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"13.0"
+		"AbilitySharedCooldown"			"magicwand"
+		"AbilityCastRange"				"1200"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"200"
+		"ItemShopTags"					"regen_health;regen_mana;boost_health;boost_mana"
+		"ItemQuality"					"component"
+		"ItemAliases"					"magic stick"
+		"ItemRequiresCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		//"SideShop"						"1"
+		"ShouldBeInitiallySuggested"	"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"max_charges"			"10"
+				"charge_radius"			"1200"
+				"restore_per_charge"	"15"
+		}
+	}
 
 	"item_recipe_vampire_claw"
 	{
@@ -7756,7 +7789,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"150"
+		"ItemCost"						""
 		"ItemShopTags"					""
 
 		// Recipe
@@ -7766,7 +7799,7 @@
 		"ItemRequirements"
 		{
  
-			"01"						"item_belt_of_strength;item_blades_of_attack"
+			"01"						"item_gauntlets;item_magic_stick;item_blades_of_attack"
 		}
 	}
 
@@ -7785,7 +7818,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"700"
+		"ItemCost"						"720"
 		"ItemStackable"				"0"
 		
 		"ItemKillable"				"1"
@@ -7919,11 +7952,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_damage"	"20"
-				"bonus_attack_speed"	"20"
+				"bonus_damage"	"40"
+				"bonus_attack_speed"	"25"
 				"lifesteal_percent"		"15"
 				"creep_lifesteal_reduction_pct"	"0"
-				"berserk_bonus_attack_speed"	"60"
+				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"40"
 				"berserk_armor_reduction"	"4"
 				"berserk_duration"		"6.0"
@@ -7979,10 +8012,10 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"	"70"
-				"bonus_attack_speed"	"40"
+				"bonus_damage"	"110"
+				"bonus_attack_speed"	"65"
 				"lifesteal_pct"		"20"
-				"berserk_base_damage"            "10"
+				"berserk_base_damage"            "55"
 				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"25"
 				"berserk_armor_reduction"	"6"
@@ -8040,11 +8073,11 @@
 
 		"AbilityValues"
 		{
-				"bonus_damage"	"115"
+				"bonus_damage"	"145"
 				"bonus_attack_speed"	"80"
-				"lifesteal_pct"		"25"
-				"berserk_base_damage"            "60"
-				"berserk_bonus_attack_speed"	"240"
+				"lifesteal_pct"		"20"
+				"berserk_base_damage"            "90"
+				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"30"
 				"berserk_armor_reduction"	"12"
 				"berserk_duration"		"6.0"
@@ -10382,9 +10415,9 @@
 		{
 				"bonus_movement_speed"			"115"
 				"bonus_damage"		"120"
- 				"bonus_armor"			"16"
-				"crit_multiplier"		"160"
-				"crit_chance"		"30"
+ 				"bonus_armor"			"20"
+				"crit_multiplier"		"190"
+				"crit_chance"		"40"
 
                 "phase_duration"		"3"	   
                 "phase_ms"         "25"             
@@ -11221,7 +11254,7 @@
 		 		"AbilityTextureName" 			"custom_folder/item_recipe"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"400"	
+		"ItemCost"						"600"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -11246,7 +11279,7 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 
-		"ItemCost"						"600"
+		"ItemCost"						"800"
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"0.75"
 		"AbilityCooldown"				"60"
@@ -11270,7 +11303,7 @@
 		 		"AbilityTextureName" 			"custom_folder/item_recipe"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"600"	
+		"ItemCost"						"800"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -11295,7 +11328,7 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 
-		"ItemCost"						"1200"
+		"ItemCost"						"1400"
 		"ItemAliases"					"midas"
 		"AbilityCastPoint"				"0.5"
 		"AbilityCooldown"				"60"
@@ -11334,11 +11367,11 @@
 
 		"AbilityValues"
 		{
-		    "gold_min"           "25"
-		    "gold_max"           "45"
+		    "gold_min"           "45"
+		    "gold_max"           "75"
 
-		    "experience_min"           "40"
-		    "experience_max"           "60"
+		    "experience_min"           "50"
+		    "experience_max"           "100"
 		}
 	}
 
@@ -12442,7 +12475,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hp_regen_amp"			"40"
+				"hp_regen_amp"			"35"
 			}
 		}
 	}
@@ -12496,7 +12529,7 @@
 				"bonus_intellect"			"80"
 				"status_resistance"				"40"
 				"mana_regen_multiplier"		"100"
-				"spell_amp"			"48"
+				"spell_amp"			"20"
 				"hp_regen_amp"			"50"
 				"spell_lifesteal_amp"	""
 		}
@@ -12552,7 +12585,7 @@
 				"bonus_attack_speed"	"50"
 				"mana_regen_multiplier"		"100"
 				"movement_speed_percent_bonus"	"12"
-				"spell_amp"			"48"
+				"spell_amp"			"20"
 				"spell_lifesteal_amp"	""
 			
 		}
@@ -13966,7 +13999,7 @@
 		"AbilityValues"
 		{
 			"bonus_damage"			"70"
-			"bonus_attack_speed"	"50"
+			"bonus_attack_speed"	"40"
 			"bonus_armor"			"12"
 			"bonus_hp_regen"		"8"
 			"lifesteal"				"12"
@@ -14123,12 +14156,12 @@
 		"AbilityCastRange"	"1200"
 		"AbilityValues"
 		{
-			"bonus_armor" 			"24"
+			"bonus_armor" 			"19"
 			"bonus_stats" 			"32"
 			"bonus_hp_regen" 		"30"
 			"bonus_health" 			"750"
 			"bonus_mana_regen" 		"5"
-			"damage_block" 			"325"
+			"damage_block" 			"125"
 			"damage_block_chance" 	"70"
 			"bonus_armor_active" 	"42"
 			"bonus_attack_speed" 	"70"
@@ -14184,9 +14217,9 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_health"			"250"
+				"bonus_health"			"450"
 				"bonus_health_regen"	"4.5"
-				"block_damage_melee"	"90"
+				"block_damage_melee"	"110"
 				"block_damage_ranged"	"25"
 				"block_chance"			"60"
 		}

@@ -40,6 +40,7 @@
 #base "../vscripts/heroes/hero_templar/templar_assassin.txt"
 #base "../vscripts/heroes/hero_legion/legion.txt"
 #base "../vscripts/heroes/hero_blood_hunter/bloodhunt.txt"
+#base "../vscripts/heroes/hero_saitama/saitama.txt"
 
 
 
@@ -7035,7 +7036,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_basic"		"120"
+				"damage_basic"		"75"
 			}
 		}
 	}
@@ -20723,8 +20724,8 @@
 		"AbilityValues"
 		{
 				"duration"				"6"
-				"slow_steps"			"-50 -50 -40 -30 -20 -10 -10 -10"
-				"heal_percent"			"90"
+				"slow_steps"			"-50"
+				"heal_percent"			"45"
 				"max_health_as_damage_pct"	"2"
 				"damage_threshold"		"400"
 				"spread_radius"			"700"
@@ -22445,12 +22446,12 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"health_cost"					"0"
-				"DamageTypeTooltip"				"DAMAGE_TYPE_PURE"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_MAGICAL"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"burn_damage"					"255"
+				"burn_damage"					"550"
 				"LinkedSpecialBonus"			"special_bonus_unique_huskar_2"
 			}		
 			"03"
@@ -22626,7 +22627,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "bonus_damage"          "20000"
+                "bonus_damage"          "2000"
             }
             "02"
             {
@@ -22664,7 +22665,7 @@
 		"HasScepterUpgrade"			"1"
 
 		"AbilityManaCost"				"160"
-		"AbilityCooldown"				"2000"
+		"AbilityCooldown"				"200"
 
 		"AbilitySpecial"
 		{
@@ -22805,9 +22806,9 @@
 		{
 			"charge_speed"				"460"
 			"chargeup_time"				"0.2"
-			"knockback_radius"			"140"
+			"knockback_radius"			"100"
 			"max_distance"				"400"
-			"knockback_distance"		"70"
+			"knockback_distance"		"110"
 			"knockback_damage"
 			{
 				"value"					"65"

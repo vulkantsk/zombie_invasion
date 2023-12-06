@@ -2875,6 +2875,11 @@
 		"DOTA_Tooltip_ability_ability_bristleback_armor_bonus"				"БОНУС БРОНИ:"
 		"DOTA_Tooltip_ability_ability_bristleback_quill_release_threshold"	"ПОРОГ УРОНА:"
 
+
+
+		"DOTA_Tooltip_ability_bristleback_buff_1"		"Back my return"
+		"DOTA_Tooltip_ability_bristleback_buff_1_Description"	"<h1>Пассивная: My back </h1>Атакуя дырявую спину бристла оружие застревает и враг получает урон %return_damage% + %return_damage_str% силы скопившихся иголок вокруг"
+
 		"DOTA_Tooltip_ability_ability_bristleback_scepter_description"	"Если урон врага превысит %quill_release_threshold_scepter1%, %quill_release_threshold_scepter2%, %quill_release_threshold_scepter3% или  %quill_release_threshold_scepter4% то Bristleback выпустит иглы вместо одного раза - 2,3,4,5 соответственно."
 
 		"DOTA_Tooltip_ability_ability_warpath"								"Warpath"
@@ -3004,7 +3009,7 @@
         "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
 		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
 		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
-		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон за избыток до %pct_damage_per_attack_speed%%%"
+		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон за избыток"
 
 		 "dota_tooltip_ability_troll_warlord_buff_1"								"Berserk Strikes"
 		"dota_tooltip_ability_troll_warlord_buff_1_Description"					"<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%"
