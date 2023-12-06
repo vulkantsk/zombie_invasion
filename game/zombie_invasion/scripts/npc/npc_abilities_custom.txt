@@ -12122,7 +12122,7 @@
          
        "AbilityValues"
        {
-            "bat"        "1.5"
+            "bat"        "1.1"
             "at_sp"      "100"
        }
     

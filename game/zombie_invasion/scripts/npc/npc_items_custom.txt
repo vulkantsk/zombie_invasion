@@ -2358,6 +2358,7 @@
 		"Model"							"models/props_gameplay/bottle_blue.vmdl"
 		"ModelAlternate"				"models/props_gameplay/bottle_empty.vmdl"
 		"ItemIsNeutralDrop" 						"1"	
+		"ItemPurchasable"				"0" 
 		"FightRecapLevel"				"1"
 		
 		// Stats
