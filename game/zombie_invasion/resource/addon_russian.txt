@@ -3220,7 +3220,7 @@
 
 		"DOTA_Tooltip_ability_yuki_challenge"	"Challenge from yuki"
 		"DOTA_Tooltip_ability_yuki_challenge_Description"	"Yuki-onna проверяет прочность героя, в течение 10 секунд на героя накладывается отрицательные эффекты. Ему наносится урон, от его главного атрибута. Если герой выживает, то навсегда увеличивает свою основну характеристику. За каждое непройденное испытание урон от него же уменьшается на %dmg_reduce%%, а при успешном увеличивается на %dmg_incr%%%"
-		"DOTA_Tooltip_ability_yuki_challenge_Scepter_Description"		"Увеличивает каждый атрибут ещё на %main_pct%"
+		"DOTA_Tooltip_ability_yuki_challenge_Scepter_Description"		"Увеличивает основной атрибут ещё на %main_pct%"
 		"DOTA_Tooltip_ability_yuki_challenge_Shard_Description"		"Уменьшает урон за атрибут"
 		"DOTA_Tooltip_ability_yuki_challenge_duration"	"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_yuki_challenge_dmg_per_atr"	"УРОН ЗА АТРИБУТ:"

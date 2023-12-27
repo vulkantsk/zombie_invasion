@@ -96,40 +96,34 @@ modifier_challenge_buff = class({
 })
 
 function modifier_challenge_buff:GetModifierBonusStats_Strength()
-	if self:GetParent():GetPrimaryAttribute() == 0  or self:GetParent():GetPrimaryAttribute() == 3 then  
-	return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
+	if self:GetParent():GetPrimaryAttribute() == 0  or self:GetParent():GetPrimaryAttribute() == 3 then 
+		if self:GetCaster():HasScepter() then
+			return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount() + self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+		end
+		if not self:GetCaster():HasScepter() then
+			return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
+		end
+
 	end
 end
 
 function modifier_challenge_buff:GetModifierBonusStats_Agility()
 		if self:GetParent():GetPrimaryAttribute() == 1 or self:GetParent():GetPrimaryAttribute() == 3 then  
-	return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
-end
+			if self:GetCaster():HasScepter() then
+				return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount() + self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+			end
+			if not self:GetCaster():HasScepter() then
+				return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
+			end
+		end
 end
 function modifier_challenge_buff:GetModifierBonusStats_Intellect()
 	if self:GetParent():GetPrimaryAttribute() == 2 or self:GetParent():GetPrimaryAttribute() == 3 then  
-	return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
-end
-end
-function modifier_challenge_buff:GetModifierBonusStats_Strength()
-	if self:GetCaster():HasScepter() then
-	
-			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
-
-	end
-end
-
-function modifier_challenge_buff:GetModifierBonusStats_Agility()
-	if self:GetCaster():HasScepter() then
-
-			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
-
-	end
-end
-function modifier_challenge_buff:GetModifierBonusStats_Intellect()
-	if self:GetCaster():HasScepter() then
-
-			return self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
-		
+		if self:GetCaster():HasScepter() then
+			return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount() + self:GetAbility():GetSpecialValueFor("main_pct") * self:GetStackCount()
+		end
+		if not self:GetCaster():HasScepter() then
+			return self:GetAbility():GetSpecialValueFor("bonus_main") * self:GetStackCount()
+		end
 	end
 end
