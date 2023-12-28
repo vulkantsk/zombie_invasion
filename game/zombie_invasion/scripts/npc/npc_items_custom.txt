@@ -4043,6 +4043,58 @@
 		}
 	}
 	
+	//=================================================================================================================
+	// Recipe: Butterfly
+	//=================================================================================================================
+	"item_recipe_butterfly"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_butterfly"
+		"ItemRequirements"
+		{
+			"01"						"item_eagle;item_talisman_of_evasion;item_claymore"
+		}
+	}
+	
+	//=================================================================================================================
+	// Butterfly
+	//=================================================================================================================
+	"item_butterfly"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		//"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5450"
+		"ItemShopTags"					"agi;damage;evasion;attack_speed"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"bfly;butterfly"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_agility"			"35"
+			"bonus_evasion"			"15"
+			"bonus_attack_speed_pct"	"15"
+			"bonus_damage"	"40"
+		}
+	}
 	
 	"item_recipe_bunch_of_butterfly"
 	{
@@ -4078,7 +4130,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"17325"
+		"ItemCost"						"16350"
 		"ItemShopTags"					"agi;damage;evasion;attack_speed"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bfly;butterfly"
@@ -4086,28 +4138,12 @@
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"120"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"85"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_evasion"			"35"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"90"
-			}
+			"bonus_agility"			"115"
+			"bonus_evasion"			"33"
+			"bonus_attack_speed_pct"	"25"
+			"bonus_damage"	"145"
 		}
 	}
  
@@ -4404,7 +4440,6 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%Attackspeed_bonus"
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%Intellect_bonus"
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%Strength_bonus"
-					"MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS"			"%Health_bonus"
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%Regen_bonus"
 				}
 				"States"	{}
@@ -4425,7 +4460,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"60"
+				"bonus_damage"	"40"
 			}
 			"02"
 			{
@@ -4435,12 +4470,12 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Attackspeed_bonus"	"120"
+				"Attackspeed_bonus"	"75"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agility_bonus"	"40"
+				"agility_bonus"	"30"
 			}
 			"05"
 			{
@@ -4450,14 +4485,9 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Health_bonus"	"600"
+				"Strength_bonus"	"30"
 			}
 			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"Strength_bonus"	"60"
-			}
-			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"Regen_bonus"	"9"
@@ -4483,7 +4513,7 @@
 		"ItemResult"					"item_war_of_the_crossbow"
 		"ItemRequirements"
 		{
-			"01"						"item_Split_medusa;item_bunch_of_butterfly"
+			"01"						"item_Split_medusa;item_monkey_king_bar"
 		}
 	}
 	"item_war_of_the_crossbow"
@@ -4494,8 +4524,9 @@
 		"AbilityTextureName"	"bow2"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		// Valve's version of this item uses the ID "135".
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"ID"	"1620"
-		"ItemCost"	"22775"
+		"ItemCost"	"15050"
 		"ItemQuality"	"epic"
 		"Model"	"models/props_gameplay/red_box.vmdl"
 		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
@@ -4529,9 +4560,40 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%Attackspeed_bonus"
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%Intellect_bonus"
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%Strength_bonus"
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"			"%evasion_bonus"
 				}
 				"States"	{}
+				"OnAttackLanded"
+				{
+					"Random"
+					{
+						"Chance"	"%bash_chance"
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"TARGET"
+								"ModifierName"	"modifier_item_war_of_the_crossbow_bash"
+							}
+							"FireSound"
+							{
+								"EffectName"	"DOTA_Item.MKB.Minibash"
+								"Target"	"TARGET"
+							}
+							"Damage"
+							{
+								"Target"	"TARGET"
+								"Type"	"DAMAGE_TYPE_MAGICAL"
+								"Damage"	"%magical_damage"
+							}
+						}
+					}
+				}
+				"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"	"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%magical_damage"
+					}
 				"OnCreated"
 				{
 					"AttachEffect"
@@ -4539,6 +4601,12 @@
 						"Target"	"CASTER"
 						"EffectName"	"particles/units/heroes/hero_ember_spirit/ember_spirit_remnant_dash_embers.vpcf"
 						"EffectAttachType"	"follow_origin"
+					}
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/items/abilities/Enhance_skills.lua"
+						"Function"	"Crossbow_Enhance_skills_on"
 					}
 				}
 				"OnAttack"
@@ -4549,8 +4617,39 @@
 						"Function"	"multiple_attacks_6"
 					}
 				}
-				
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/items/abilities/Enhance_skills.lua"
+						"Function"	"Enhance_skills_off"
+					}
+				}
 			}
+			"modifier_item_war_of_the_crossbow_bash"
+			{
+				"Duration"	"%bash_stun"
+				"Passive"	"0"
+				"IsHidden"	"0"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+				"IsPurgable"	"1"
+				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"Properties"	{}
+				"OnAttacked"
+				{
+					
+				}
+			}	
+				
+			
 			
 		
 		}
@@ -4561,48 +4660,55 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"160"
+				"bonus_damage"	"90"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_range_bonus"	"120"
+				"bash_chance"	"80"
 			}
 			"03"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"Attackspeed_bonus"	"180"
+				"var_type"	"FIELD_FLOAT"
+				"bash_stun"	"0.1"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"agility_bonus"	"145"
+				"attack_range_bonus"	"120"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Intellect_bonus"	"60"
+				"Attackspeed_bonus"	"120"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Health_bonus"	"400"
+				"agility_bonus"	"45"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Strength_bonus"	"60"
+				"Intellect_bonus"	"25"
 			}
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"Regen_bonus"	"24"
+				"Strength_bonus"	"35"
 			}
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"evasion_bonus"	"33"
+				"Regen_bonus"	"12"
 			}
+			"10"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"magical_damage"	"160"
+			}
+			
+			
 		}
 	}
 	//=================================================================================================================
@@ -7921,7 +8027,7 @@
 		"ItemResult"					"item_mask_of_madness"
 		"ItemRequirements"
 		{
-			"01"						"item_lifesteal;item_quarterstaff"
+			"01"						"item_lifesteal;item_blitz_knuckles"
 		}
 	}
  
@@ -7941,7 +8047,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"25"
-		"ItemCost"						"1775"
+		"ItemCost"						"1900"
 		"ItemShopTags"					"unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"mom;mask of madness"
@@ -7954,7 +8060,7 @@
 		"AbilityValues"
 		{
 				"bonus_damage"	"40"
-				"bonus_attack_speed"	"25"
+				"bonus_attack_speed"	"40"
 				"lifesteal_percent"		"15"
 				"creep_lifesteal_reduction_pct"	"0"
 				"berserk_bonus_attack_speed"	"120"

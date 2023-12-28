@@ -29,7 +29,7 @@ for i=2,HeroMaxLevel-1 do
   HeroExpTable[i]=HeroExpTable[i-1]+exp[i-1]
 end
  
-HERO_RESPAWN_TIME_BEFORE_10 =	 10
+HERO_RESPAWN_TIME_BEFORE_10 =	 20
 
 Witch_killed = 0
 Boss_killed = 0 
@@ -67,9 +67,22 @@ function InvasionMode:InvasionMap()
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 
  
-  		GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ARMOR,0.050)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ARMOR,0.050)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ATTACK_SPEED,0.75)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP,22)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP_REGEN,0.35)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_DAMAGE,1)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA,12)
+  	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA_REGEN,0.1)
+
  
  
+
+
+
+
+
+
  	ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(InvasionMode, 'OnPlayerLevelUp'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
@@ -931,7 +944,7 @@ function InvasionMode:InvasionEntityKilled (data)
 	elseif killedEntity:GetLevel() <= 50 then 
           killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 )  
 	else  
-		killedEntity:SetTimeUntilRespawn( killedEntity:GetLevel() )		
+		killedEntity:SetTimeUntilRespawn( HERO_RESPAWN_TIME_BEFORE_10 * 2 )		
 	end
 	end
 
