@@ -918,6 +918,7 @@
 		"AttributeStrengthGain"		"2.20000"
 		"AttributeBaseAgility"		"6"
 		"AttributeAgilityGain"		"1.200000"
+		"StatusMana"					"460"	
 		"AttributeBaseIntelligence"		"10"
 		"AttributeIntelligenceGain"		"1.000000"
 		"StatusManaRegen"	"0.75"

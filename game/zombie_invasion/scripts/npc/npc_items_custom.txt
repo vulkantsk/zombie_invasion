@@ -4561,7 +4561,7 @@
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 
-		"ItemRecipe"					"0"
+		"ItemRecipe"					"1"
 		"ItemResult"					"item_spirit_pochti_vessel"
 
 		"ItemRequirements"

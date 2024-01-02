@@ -64,28 +64,30 @@
 		"item"		"item_null_talisman"
 		"item"		"item_wraith_band"
 		"item"		"item_bracer"
-		"item"       "item_vampire_claw"		
+		"item"      "item_vampire_claw"	
+		"item"		"item_holy_locket"
+		"item"		"item_falcon_blade"	
+		"item"		"item_headdress"
+		"item"		"item_buckler"
+		"item"		"item_ring_of_basilius"
+		"item"		"item_ancient_janggo"
 	}
 
 	// Level 2 - Blue Recipes
 	"support"
 	{
 		"item"		"item_ultimate_scepter"
-		"item"		"item_ring_of_basilius"
 		"item"		"item_iron_talon"	
-		"item"		"item_headdress"
-		"item"		"item_buckler"
 		"item"		"item_tranquil_boots"
 		"item"		"item_medallion_of_courage"
 		"item"		"item_arcane_boots"
 		"item"      "item_arcane_boots_2"
-		"item"		"item_ancient_janggo"
 		"item"		"item_mekansm"					
 		"item"		"item_vladmir"		
 		"item"		"item_medallion_of_courage_custom_3"
 		"item"      "item_imba_vladmir_3"
 		"item"      "item_guardian_greaves_up"
-		"item"		"item_spirit_vessel"
+		"item"		"item_spirit_pochti_vessel"
 	}
 				
 	"magics"			
@@ -115,6 +117,8 @@
 		"item"		"item_assault"
 		"item"		"item_assault_2"
 		"item"		"item_last_standing_shield"	
+		"item"		"item_steel_cuirass"
+		"item"		"item_blade_mail"
 
 	}
 			
@@ -132,6 +136,8 @@
 		"item"		"item_maelstrom"
 		"item"		"item_mask_of_madness_3"
 		"item"		"item_desolator_2_custom"
+		"item"		"item_manta_style"
+		"item"		"item_desolator"
 
 					
 	}

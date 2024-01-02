@@ -103,7 +103,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"enchantress_untouchable"
-		"AbilityType"					"DOTA_ABILITY_TYPE_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "medusa/passive"		
 
 		"HasScepterUpgrade"			"0"
