@@ -103,11 +103,10 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		//"AbilitySound"					"Hero_PhantomAssassin.CoupDeGrace"
-       "MaxLevel"                         "1"
+
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 		// Special
@@ -119,7 +118,7 @@
 				"value"					"20"
 				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+40"
 			}
-			"target_search_bonus_range"	"150"
+			"target_search_bonus_range"	"175"
 		}
 	}
 

@@ -21276,7 +21276,7 @@
 	"AbilityTextureName" 			"undying_tombstone_zombie_deathstrike"
 	"MaxLevel"						"1"
 
- 	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+ 	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilitySpecial"
