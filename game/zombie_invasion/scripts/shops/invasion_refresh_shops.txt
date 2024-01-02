@@ -85,6 +85,7 @@
 		"item"		"item_medallion_of_courage_custom_3"
 		"item"      "item_imba_vladmir_3"
 		"item"      "item_guardian_greaves_up"
+		"item"		"item_spirit_vessel"
 	}
 				
 	"magics"			
