@@ -4556,12 +4556,12 @@
 		"BaseClass"						"item_recipe_pipe"
 		"AbilityTextureName"			"item_recipe"
 
-		"ItemCost"						"1500"
+		"ItemCost"						"0"
 		"ItemShopTags"					""
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 
-		"ItemRecipe"					"1"
+		"ItemRecipe"					"0"
 		"ItemResult"					"item_spirit_pochti_vessel"
 
 		"ItemRequirements"
@@ -11477,8 +11477,8 @@
 
 		"AbilityValues"
 		{
-		    "gold_min"           "20"
-		    "gold_max"           "40"
+		    "gold_min"           "60"
+		    "gold_max"           "90"
 		    "attack_speed"		"6"
 		    "attack_damage"		"8"
 		    "armor"				"2"
@@ -11527,7 +11527,7 @@
 		"AbilityValues"
 		{
 		    "gold_min"           "90"
-		    "gold_max"           "110"
+		    "gold_max"           "180"
 		    "attack_speed"		"18"
 		    "attack_damage"		"25"
 		    "armor"				"4"
@@ -11606,10 +11606,10 @@
 
 		"AbilityValues"
 		{
-		    "gold_min"           "45"
-		    "gold_max"           "75"
+		    "gold_min"           "55"
+		    "gold_max"           "55"
 
-		    "experience_min"           "50"
+		    "experience_min"           "100"
 		    "experience_max"           "100"
 		}
 	}

@@ -3542,9 +3542,9 @@
  		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven" "SUPER marksmanship"
  		"DOTA_Tooltip_ability_drow_ranger_marksmanship_datadriven_Description" "Каждая атака проводит дополнительную атаку по целям которые были в радиусе 275 от первого удара, на них не работают модификаторы атаки."
 
- 		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_marksmanship" "+8% к шансу срабатывания Marksmanship"
-		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_armor" "-6 брони от wave of terror"
-		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_frost_damage" "+20 к урону frost arrow"
+ 		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_marksmanship" "+12% к шансу срабатывания Marksmanship"
+		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_armor" "-8 брони от wave of terror"
+		"DOTA_Tooltip_Ability_special_bonus_unique_drow_range_frost_damage" "+35 к урону frost arrow"
 
 
 	// -----------------Hoodwink-------------------
