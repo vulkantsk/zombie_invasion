@@ -9,7 +9,7 @@ modifier_ability_bristleback_buff = class({
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return false end,
     IsBuff                  = function(self) return true end,
-    RemoveOnDeath           = function(self) return false end,
+    RemoveOnDeath           = function(self) return true end,
     AllowIllusionDuplicate  = function(self) return true end,
     IsPermanent             = function(self) return true end,
 })
@@ -116,7 +116,6 @@ function modifier_ability_bristleback_buff:OnTakeDamage( keys )
   					if self:GetParent():HasScepter() then 
   						local count_qu_spray = 0
 
-
  						if self.damageTaken <= self.scepter_thr1 then 
  							Timers:CreateTimer(0,function()
 
@@ -170,11 +169,16 @@ function modifier_ability_bristleback_buff:OnTakeDamage( keys )
  			 
   
 
-                local count = 0
-                while(self.damageTaken >= self.quill_release_threshold and count < 10) do 
-                    self.damageTaken = self.damageTaken - self.quill_release_threshold
-                    count = count + 1
-                end
+                --local count = 0
+                --while(self.damageTaken >= self.quill_release_threshold and count < 10) do 
+                    --self.damageTaken = self.damageTaken - self.quill_release_threshold
+                    --count = count + 1
+                    --if count == 5 then
+                    	--self.damageTaken = 0
+                    --end
+               --end
+               self.damageTaken = self.damageTaken % self.quill_release_threshold
+
 			end
 		end
 	end

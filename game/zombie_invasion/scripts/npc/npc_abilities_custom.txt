@@ -1668,12 +1668,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "60"
+                "reward_exp"                "110"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "60"
+                "reward_gold"                "150"
             }
         }
 
@@ -1712,7 +1712,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "120"
+                "reward_exp"                "220"
             }
             "03"
             {
@@ -1756,7 +1756,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "115"
+                "reward_exp"                "330"
             }
             "03"
             {
@@ -1800,7 +1800,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "240"
+                "reward_exp"                "440"
             }
             "03"
             {
@@ -1981,7 +1981,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "55"
+                "reward_exp"                "75"
             }
             "03"
             {
@@ -2025,12 +2025,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "105"
+                "reward_exp"                "125"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "120"
+                "reward_gold"                "200"
             }
         }
 
@@ -2074,7 +2074,7 @@
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "220"
+                "reward_gold"                "250"
             }
         }
 
@@ -2093,51 +2093,6 @@
         }      
        
     }
-    "quest_test_old_men3"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                        "ability_datadriven"  
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "quest/quest_women1"
-    	"IsOnCastBar"                   "0"	
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "value_required"            "30"
-            }
-            "02"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "320"
-            }
-            "03"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "220"
-            }
-        }
-
-        "OnCreated"
-        {
-            "RunScript"
-            {
-                "ScriptFile"    "abilities/quest/quest_template"
-                "Function"        "OnQuestCreated"
-                "quest_item"    "item_milk"
-                "reward_item"    "item_tvorog"
-                "particle"        "1"
-                //"next_quest"    "quest_test_woman02"
-                "reusable"        "1"
-            }
-        }      
-       
-    }
-
 
 
  		    "quest_test_david"

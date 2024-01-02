@@ -6,18 +6,18 @@ if InvasionMode == nil then
 	InvasionMode = class({})
 end
 
- HeroMaxLevel = 101
+HeroMaxLevel = 101
 HeroExpTable = {0}
-exp={75,115,155,195,235,275,315,355,395,435,
-	485,535,585,635,685,735,785,835,885,935,
-	985,1035,1085,1135,1185,1260,1335,1410,1485,1560,
-	1635,1710,1785,1860,1935,2010,2085,2160,2235,2310,
-	2385,2460,2535,2610,2685,2760,2835,2910,2985,3060,
-	3210,3360,3510,3660,3810,3960,4110,4260,4410,4560,
-	4710,4860,5010,5160,5310,5460,5610,5760,5910,6060,
-	6210,6360,6510,6660,6810,6935,7060,7185,7310,7435,
-	7560,7685,7810,7935,8060,8185,8310,8435,8560,8685,
-	8810,8935,9060,9185,9310,9435,9560,9685,9810,9935
+exp={100,150,200,250,300,350,400,450,500,550,625,
+	700,775,850,925,1000,1075,1150,1225,1300,1375,
+	1450,1525,1600,1675,1775,1875,1975,2075,2175,
+	2275,2375,2475,2575,2675,2775,2875,2975,3075,3175,
+	3275,3375,3475,3575,3675,3775,3875,3975,4075,4175,
+	4325,4475,4625,4775,4925,5075,5225,5375,5525,5675,
+	5825,5975,6125,6275,6425,6575,6725,6875,7025,7175,
+	7325,7475,7625,7775,7925,8050,8175,8300,8425,8550,
+	8675,8800,8925,9050,9175,9300,9425,9550,9675,9800,
+	9925,10050,10175,10300,10425,10550,10675,10800,10925, 
 
   
   }
@@ -1105,7 +1105,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_2 = zombie_count_2 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(6,15)
+                   local time_res = RandomInt(4,15)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_2) then 
@@ -1157,7 +1157,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_3 = zombie_count_3 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(6,12)
+                   local time_res = RandomInt(4,12)
 		         Timers:CreateTimer(time_res, function()
 
  
@@ -1212,7 +1212,7 @@ end
 	         for i=1, 1 do
 		         zombie_count_4 = zombie_count_4 + 1
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(8,16)
+                   local time_res = RandomInt(5,16)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_4) then

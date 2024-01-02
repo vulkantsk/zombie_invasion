@@ -60,9 +60,9 @@
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
-        "RequiredLevel"                 "6"  
+        "RequiredLevel"                 "10"  
         "LevelsBetweenUpgrades"         "1"
-        "MaxLevel"                       "14"
+        "MaxLevel"                       "10"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -70,14 +70,14 @@
         {
             "chance"
             {       
-                "value"    "44"
-                "special_bonus_unique_drow_range_marksmanship"        "+37"
+                "value"    "10 12 14 16 18 20 22 24 26 28"
+                "special_bonus_unique_drow_range_marksmanship"        "+12"
             }
                         
-                "bonus_damage"  "120 140 160 180 200 220 240 260 280 300 320 340 360 380"
+                "bonus_damage"  "120 140 160 180 200 220 240 260 280 300"
 
 
-                "agility_multiplier"        "20 22 24 26 28 30 32 34 36 38 40 42 44 46"
+                "agility_multiplier"        "22 24 26 28 30 32 34 36 38 40"
             
 
                 "agility_range"     "-1"

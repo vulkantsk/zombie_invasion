@@ -4090,7 +4090,7 @@
 		"AbilityValues"
 		{
 			"bonus_agility"			"35"
-			"bonus_evasion"			"15"
+			"bonus_evasion"			"5"
 			"bonus_attack_speed_pct"	"15"
 			"bonus_damage"	"40"
 		}
@@ -4141,7 +4141,7 @@
 		"AbilityValues"
 		{
 			"bonus_agility"			"115"
-			"bonus_evasion"			"33"
+			"bonus_evasion"			"11"
 			"bonus_attack_speed_pct"	"25"
 			"bonus_damage"	"145"
 		}
@@ -4542,11 +4542,11 @@
 				"soul_radius"			"1400"
 				"soul_initial_charge"	"2"
 				"soul_additional_charges"	"1"
-				"soul_heal_amount"		"40"
-				"soul_damage_amount"	"35"
+				"soul_heal_amount"		"100"
+				"soul_damage_amount"	"220"
 				"duration"			"8.0"
 				"hp_regen_reduction_enemy"	"45"
-				"enemy_hp_drain"		"4"
+				"enemy_hp_drain"		"10"
 		}
 	}
 	"item_recipe_spirit_pochti_vessel"
