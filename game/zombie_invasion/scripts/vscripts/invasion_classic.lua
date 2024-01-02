@@ -8,17 +8,16 @@ end
 
  HeroMaxLevel = 101
 HeroExpTable = {0}
-exp={75,120,175,275,345,475,600,675,780,795,
-  895,985,1025,1075,1115,1175,1130,1250,1375,
-  1450,1550,1650,1760,1800,1900,2100,2250,2300,2350,
-  2400,2500,2600,2700,2800,2900,3000,3100,3200,3300,
-  3400,3500,3600,3700,3800,3900,4000,4100,4200,4300,
-  4500,4600,4700,4800,4900,5000,5100,5200,5300,5400,
-  5500,5600,5700,5800,5900,6000,6100,6200,6300,6400,
-  6500,6666,6700,6800,6900,7000,7100,7200,7300,7400,
-  7500,7600,7700,7800,8900,8000,8100,8200,8300,8400,
-  8500,8600,8700,8800,8900,9000,9100,9200,9300,9400,
-  10000
+exp={75,115,155,195,235,275,315,355,395,435,
+	485,535,585,635,685,735,785,835,885,935,
+	985,1035,1085,1135,1185,1260,1335,1410,1485,1560,
+	1635,1710,1785,1860,1935,2010,2085,2160,2235,2310,
+	2385,2460,2535,2610,2685,2760,2835,2910,2985,3060,
+	3210,3360,3510,3660,3810,3960,4110,4260,4410,4560,
+	4710,4860,5010,5160,5310,5460,5610,5760,5910,6060,
+	6210,6360,6510,6660,6810,6935,7060,7185,7310,7435,
+	7560,7685,7810,7935,8060,8185,8310,8435,8560,8685,
+	8810,8935,9060,9185,9310,9435,9560,9685,9810,9935
 
   
   }
@@ -1116,7 +1115,6 @@ end
  		             else
                            unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		         	       unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_2 = rollBase_2 + 1.5
  		             end
          	
@@ -1327,7 +1325,7 @@ end
 
 		 		   if RollPercentage(rollBase_65) then 
  		                 unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_big_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_65 = 1.5
  		             else
@@ -1381,7 +1379,7 @@ end
 		             if RollPercentage(rollBase_6) then 
 		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
 		             	  unit = CreateUnitByName("npc_classic_wave_pudge", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 unit = CreateUnitByName("npc_classic_wave_pudge_mini", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_big_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_6 = 1
  		             else
  		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
@@ -1436,7 +1434,7 @@ end
  		                 unit = CreateUnitByName("npc_classic_wave_reflect_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_7 = 1
  		             else
- 		             	  unit = CreateUnitByName("npc_classic_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		             	  unit = CreateUnitByName("npc_classic_big_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_greater_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_7 = rollBase_7 + 2.0
@@ -1518,8 +1516,11 @@ local tabGoldAll = {
 	{units = {'npc_witch_boss_2'}, gold = 1650},
 	{units = {'npc_witch_boss_3'}, gold = 2500},
 	{units = {'npc_boss_slark'}, gold = 1500},
-	{units = {'npc_classic_Night_Stalker_boss'}, gold = 2000},
-	{units = {'npc_boss_Gurd'}, gold = 500},
+	{units = {'npc_boss_bear'}, gold = 2500},
+	{units = {'npc_boss_slardar'}, gold = 2000},
+	{units = {'npc_boss_bear'}, gold = 3500},
+	{units = {'npc_classic_Night_Stalker_boss'}, gold = 4000},
+	{units = {'npc_boss_Gurd'}, gold = 1000},
 
  
 	{units = {'npc_undying_clock'}, gold = 800},

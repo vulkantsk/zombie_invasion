@@ -122,7 +122,7 @@
 		"Ability14"		"special_bonus_evasion_20"
 		"Ability15"		"special_bonus_unique_beastmaster_4"
 		"Ability16"		"special_bonus_unique_troll_warlord"
-		"Ability17"		"special_bonus_unique_troll_warlord_4"
+		"Ability17"		"special_bonus_attack_speed_100"
 		"ArmorPhysical"		"6"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"32"
@@ -381,7 +381,7 @@
 		"Rolelevels"				"3"
 
 		"Ability1"					"medusa_split_shot_custom"
-    	"Ability2"					"enchantress_untouchable"
+    	"Ability2"					"medusa_untouchable"
 		"Ability3"					"medusa_mana_shield"
 		"Ability4"					"generic_hidden"						
 		"Ability5"					"medusa_stone_gaze" 						
@@ -390,8 +390,8 @@
 		"Ability11"		"special_bonus_attack_speed_25"
 		"Ability12"		"special_bonus_hp_250"
 		"Ability13"		"special_bonus_all_stats_15"
-		"Ability14"		"special_bonus_lifesteal_12"
-		"Ability15"		"special_bonus_cooldown_reduction_25"
+		"Ability14"		"special_bonus_unique_medusa_untochable"
+		"Ability15"		"special_bonus_unique_medusa_mana_shield"
 		"Ability16"		"special_bonus_mp_1000"
 			"Ability17"		"special_bonus_unique_medusa"		
 

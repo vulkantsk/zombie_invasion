@@ -144,9 +144,9 @@ function modifier_imba_radiance_debuff:GetTexture()
 end
 function modifier_imba_radiance_debuff:OnIntervalThink()
 	local dmg = self.ability:GetSpecialValueFor("damage_radiance")
- 
+ 	local spell_amp = self:GetCaster():GetSpellAmplification(false)
 		 
-	dmg = dmg / (1.0 / self.ability:GetSpecialValueFor("interval_radiance"))
+	dmg = dmg * (spell_amp + 1) / (1.0 / self.ability:GetSpecialValueFor("interval_radiance")) 
 	ApplyDamage({victim = self:GetParent(), attacker = self:GetCaster(), ability = self.ability, damage = dmg, damage_type = DAMAGE_TYPE_MAGICAL, damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION})
 end
 

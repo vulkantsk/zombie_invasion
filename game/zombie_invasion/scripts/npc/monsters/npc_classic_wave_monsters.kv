@@ -21,21 +21,21 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"slow_mobs"
-		"Ability2"					""
+		"Ability2"					"zombie_toxin"
 		"Ability3"					"zombie_passive"	
 		"Ability4"					""
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"
+		"ArmorPhysical"				"4"
 		"MagicalResistance"         "15"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"16"
-		"AttackDamageMax"			"17"
+		"AttackDamageMin"			"24"
+		"AttackDamageMax"			"31"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -61,9 +61,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"50"
+		"StatusHealth"				"160"
 		"StatusHealthRegen"			"0"
-		"StatusMana"				"0"	
+		"StatusMana"				"400"	
 		"StatusManaRegen"			"0.0"		 
 		
 		// Vision
@@ -98,7 +98,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"slow_mobs"
-		"Ability2"					""
+		"Ability2"					"zombie_toxin"
 		"Ability3"					"zombie_passive"	
 		"Ability4"					""
 
@@ -111,8 +111,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"12"
-		"AttackDamageMax"			"14"
+		"AttackDamageMin"			"29"
+		"AttackDamageMax"			"36"
 		"AttackRate"				"1"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -138,9 +138,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"40"
+		"StatusHealth"				"120"
 		"StatusHealthRegen"			"0"
-		"StatusMana"				"0"	
+		"StatusMana"				"400"	
 		"StatusManaRegen"			"0.0"		 
 		
 		// Vision
@@ -183,20 +183,20 @@
 		//----------------------------------------------------------------
 		"Ability1"					"zombie_suic"
 		"Ability2"					"slow_mobs"
-		"Ability3"					""	
+		"Ability3"					"ember_spirit_searing_chains"	
 		"Ability4"					""
 		"Ability5"		            "zombie_passive"
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-4"
+		"ArmorPhysical"				"2"
 		"MagicalResistance"         "12"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"12"
-		"AttackDamageMax"			"20"
+		"AttackDamageMin"			"55"
+		"AttackDamageMax"			"60"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -222,9 +222,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"60"
+		"StatusHealth"				"200"
 		"StatusHealthRegen"			"0"
-		"StatusMana"				"0"	
+		"StatusMana"				"400"	
 		"StatusManaRegen"			"0.0"		 
 		
 		// Vision
@@ -239,6 +239,22 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Creature"
+		{
+
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_toxic_boots"}
+			}
+			"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"ember_spirit_searing_chains"										
+				}
+				
+			}
+		}
  
 	}
 	
@@ -259,20 +275,20 @@
 		//----------------------------------------------------------------
 		"Ability1"					"spider_explode_lua_2"
 		"Ability2"					"slow_mobs"
-		"Ability3"					""	
+		"Ability3"					"dazzle_poison_touch"	
 		"Ability4"					""
 		"Ability5"		            "zombie_passive"
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-9"
+		"ArmorPhysical"				"0"
 		"MagicalResistance"         "25"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"15"
-		"AttackDamageMax"			"19"
+		"AttackDamageMin"			"322"
+		"AttackDamageMax"			"322"
 		"AttackRate"				"2.2"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
@@ -298,9 +314,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"30"
+		"StatusHealth"				"50"
 		"StatusHealthRegen"			"0"
-		"StatusMana"				"0"	
+		"StatusMana"				"400"	
 		"StatusManaRegen"			"0.0"		 
 		
 		// Vision
@@ -325,6 +341,14 @@
 			{
 				"1"            	{"Item"        "item_toxic_boots"}
 			}
+			"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"dazzle_poison_touch"										
+				}
+				
+			}
 		}
 	}
 
@@ -346,21 +370,21 @@
 		//----------------------------------------------------------------
 		"Ability1"					"tombestone_und_1"
 		"Ability2"					"slow_mobs"
-		"Ability3"					""	
+		"Ability3"					"viper_viper_strike"	
 		"Ability4"					""
- 		"Ability5"		"zombie_passive"
+ 		"Ability5"					"zombie_passive"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-5"
+		"ArmorPhysical"				"5"
 		"MagicalResistance"         "25"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"38"
-		"AttackDamageMax"			"40"
+		"AttackDamageMin"			"120"
+		"AttackDamageMax"			"140"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -386,7 +410,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"80"
+		"StatusHealth"				"280"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"550"	
 		"StatusManaRegen"			"0.0"		 
@@ -417,6 +441,14 @@
  
  				
 				}
+				"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"viper_viper_strike"										
+				}
+				
+			}
  	
 			
 		}
@@ -444,19 +476,19 @@
 		"Ability1"					"slow_mobs"
 		"Ability2"					"zombie_armor_decress"
 		"Ability3"					"zombie_passive"	
-		"Ability4"					""
+		"Ability4"					"woobleydog_blade_dance"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"3"
+		"ArmorPhysical"				"6"
 		"MagicalResistance"         "25"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"25"
-		"AttackDamageMax"			"29"
+		"AttackDamageMin"			"90"
+		"AttackDamageMax"			"111"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -482,7 +514,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"75"
+		"StatusHealth"				"300"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -499,6 +531,7 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
  
 	}
 
@@ -527,15 +560,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"4"
-		"MagicalResistance"         "25"
+		"ArmorPhysical"				"7"
+		"MagicalResistance"         "35"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"55"
-		"AttackDamageMax"			"60"
+		"AttackDamageMin"			"190"
+		"AttackDamageMax"			"200"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -561,7 +594,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"120"
+		"StatusHealth"				"500"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"700"	
 		"StatusManaRegen"			"0.0"		 
@@ -591,6 +624,7 @@
  					"Wearable1" { "ItemDef" "13453" }
  				
 				}
+
 	
 			
 		}
@@ -616,21 +650,21 @@
 		//----------------------------------------------------------------
 		"Ability1"					"life_stealer_feast"
 		"Ability2"					"slow_mobs"
-		"Ability3"					""	
-		"Ability4"					"ghoul_crazy_look"
+		"Ability3"					"life_stealer_open_wounds"	
+		"Ability4"					"visage_gravekeepers_cloak"
 		"Ability5"                  "zombie_passive"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"6"
-		"MagicalResistance"         "25"
+		"ArmorPhysical"				"9"
+		"MagicalResistance"         "0"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"90"
-		"AttackDamageMax"			"94"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"220"
 		"AttackRate"				"2.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -656,7 +690,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"140"
+		"StatusHealth"				"400"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -673,6 +707,21 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Creature"
+		{
+		
+
+				"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"life_stealer_open_wounds"										
+				}
+				
+			}
+ 	
+			
+		}
  
 	}
 
@@ -701,15 +750,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-8"
-		"MagicalResistance"         "25"
+		"ArmorPhysical"				"12"
+		"MagicalResistance"         "45"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"100"
-		"AttackDamageMax"			"104"
+		"AttackDamageMin"			"333"
+		"AttackDamageMax"			"350"
 		"AttackRate"				"3.0"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -735,7 +784,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"140"
+		"StatusHealth"				"800"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"1100"	
 		"StatusManaRegen"			"0.0"		 
@@ -793,20 +842,20 @@
 		"Ability1"					""
 		"Ability2"					"life_stealer_feast"
 		"Ability3"					"slow_mobs"	
-		"Ability4"					"ghoul_crazy_look"
+		"Ability4"					""
 		"Ability5"                  "zombie_passive"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"6"
-		"MagicalResistance"         "25"
+		"ArmorPhysical"				"14"
+		"MagicalResistance"         "35"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"140"
-		"AttackDamageMax"			"160"
+		"AttackDamageMin"			"450"
+		"AttackDamageMax"			"450"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -832,7 +881,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"200"
+		"StatusHealth"				"800"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -880,22 +929,22 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"life_stealer_feast"
-		"Ability2"					"slow_mobs"
-		"Ability3"					""	
-		"Ability4"					"ghoul_crazy_look"
+		"Ability2"					"chaos_knight_reality_rift"
+		"Ability3"					"chaos_knight_chaos_strike"	
+		"Ability4"					"slow_mobs"
 		"Ability5"                  "zombie_passive"
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"18"
+		"ArmorPhysical"				"25"
 		"MagicalResistance"         "30"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"145"
-		"AttackDamageMax"			"155"
+		"AttackDamageMin"			"450"
+		"AttackDamageMax"			"455"
 		"AttackRate"				"6.0"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -921,7 +970,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"240"
+		"StatusHealth"				"1000"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -949,6 +998,19 @@
  					"Wearable1" { "ItemDef" "9105" }
 
         	}
+
+
+				"OffensiveAbilities"
+			{
+				"Ability2"
+				{
+					"Name"					"chaos_knight_reality_rift"										
+				}
+				
+			}
+ 	
+			
+		
         }
 	}
 
@@ -970,20 +1032,20 @@
 		"Ability3"					""
 		"Ability4"					"necrolyte_heartstopper_aura_big"	   
 		"Ability5"					"respawn_necr"
-		"Ability6"					"ghoul_crazy_look"
+		"Ability6"					""
  
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-4"
-		"MagicalResistance"         "20"
+		"ArmorPhysical"				"5"
+		"MagicalResistance"         "99"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"175"
-		"AttackDamageMax"			"200"
+		"AttackDamageMin"			"450"
+		"AttackDamageMax"			"360"
 		"AttackRate"				"1.77"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -1012,7 +1074,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"190"
+		"StatusHealth"				"1900"
 		"StatusHealthRegen"			"45.0"
 		"StatusMana"				"1200"	
 		"StatusManaRegen"			"20.0"		 
@@ -1066,6 +1128,107 @@
 			}
 		}
 	}
+	"npc_undying_4"	
+	{
+		// General
+		//----------------------------------------------------------------
+		
+		"vscripts"		"ai/ai_undying.lua"
+		"Model"						"models/heroes/undying/undying.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Undying"
+		"GameSoundsFile"			"soundevents/game_sounds_undying.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				"1.2"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"tombestone_und_4"
+		"Ability2"					"ghoul_crazy_look"
+		"Ability3"					"necrolyte_death_pulse_big"	
+		"Ability4"					""
+				"Ability5"			"zombie_passive"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"25"
+		"MagicalResistance"         "60"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"600"
+		"AttackDamageMax"			"750"
+		"AttackRate"				"1.1"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"5000"
+		"AttackRange"				"180"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"860"
+		"BountyGoldMin"				"620"	
+		"BountyGoldMax"				"850"	
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2500"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"1500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		"Creature"
+		{
+		
+					"AttachWearables"
+				{
+					"Wearable1" { "ItemDef" "12499" }
+					"Wearable1" { "ItemDef" "12497" }
+					"Wearable1" { "ItemDef" "542" }  
+					"Wearable1" { "ItemDef" "7938" }
+ 					"Wearable1" { "ItemDef" "13453" }
+ 				
+				}
+						"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"necrolyte_death_pulse_big"										
+				}
+				
+			}
+			
+ 	
+			
+		}
+	}
 
 
 //------fifty night----------------
@@ -1088,7 +1251,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					"slow_mobs"
 		"Ability2"					"pudge_rot_passive_wave"
-		"Ability3"					""	
+		"Ability3"					"abyssal_underlord_atrophy_aura"	
 		"Ability4"					"ghoul_crazy_look"
 		"Ability5"                  "zombie_passive"
 
@@ -1101,8 +1264,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"210"
-		"AttackDamageMax"			"222"
+		"AttackDamageMin"			"710"
+		"AttackDamageMax"			"722"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -1128,7 +1291,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"255"
+		"StatusHealth"				"2550"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1178,8 +1341,8 @@
 		//----------------------------------------------------------------
 		"Ability1"					"spider_explode_lua_3"
 		"Ability2"					"slow_mobs"
-		"Ability3"					""	
-		"Ability4"					""
+		"Ability3"					"chen_hand_of_god"	
+		"Ability4"					"sven_great_cleave"
 		"Ability5"		            "zombie_passive"
 		// Armor
 		//----------------------------------------------------------------
@@ -1190,8 +1353,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"155"
-		"AttackDamageMax"			"180"
+		"AttackDamageMin"			"5000"
+		"AttackDamageMax"			"5000"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
@@ -1244,6 +1407,14 @@
 			{
 				"1"            	{"Item"        "item_toxic_boots"}
 			}
+			"OffensiveAbilities"
+			{
+				"Ability3"
+				{
+					"Name"					"chen_hand_of_god"										
+				}
+				
+			}
 		}
 	}
 
@@ -1281,8 +1452,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"230"
-		"AttackDamageMax"			"240"
+		"AttackDamageMin"			"1230"
+		"AttackDamageMax"			"1240"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -1308,7 +1479,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"350"
+		"StatusHealth"				"3500"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1373,8 +1544,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"290"
-		"AttackDamageMax"			"310"
+		"AttackDamageMin"			"390"
+		"AttackDamageMax"			"400"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
@@ -1400,7 +1571,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"250"
+		"StatusHealth"				"1250"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1459,15 +1630,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"14"
-		"MagicalResistance"         "15"
+		"ArmorPhysical"				"66"
+		"MagicalResistance"         "75"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"400"
-		"AttackDamageMax"			"455"
+		"AttackDamageMin"			"920"
+		"AttackDamageMax"			"1155"
 		"AttackRate"				"2.2"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -1493,7 +1664,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"
+		"StatusHealth"				"4600"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1536,15 +1707,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-10"
+		"ArmorPhysical"				"-2"
 		"MagicalResistance"         "0"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"525"
-		"AttackDamageMax"			"560"
+		"AttackDamageMin"			"1525"
+		"AttackDamageMax"			"1560"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"1100"
@@ -1570,7 +1741,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"550"
+		"StatusHealth"				"10000"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1622,8 +1793,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"67"
-		"AttackDamageMax"			"70"
+		"AttackDamageMin"			"100"
+		"AttackDamageMax"			"110"
 		"AttackRate"				"2.5"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -1649,7 +1820,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1200"
+		"StatusHealth"				"2500"
 		"StatusHealthRegen"			"10.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1704,8 +1875,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"67"
-		"AttackDamageMax"			"71"
+		"AttackDamageMin"			"190"
+		"AttackDamageMax"			"200"
 		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -1814,19 +1985,19 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"1250"
+		"BountyXP"					"2250"
 		"BountyGoldMin"				"100"	
 		"BountyGoldMax"				"200"	
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
-		"MovementSpeed"				"100"	
+		"MovementSpeed"				"150"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1800"
+		"StatusHealth"				"2000"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1882,9 +2053,9 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"45"
-		"AttackDamageMax"			"58"
-		"AttackRate"				"2.3"
+		"AttackDamageMin"			"145"
+		"AttackDamageMax"			"158"
+		"AttackRate"				"0.9"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"				"1300"
@@ -1912,8 +2083,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"525"
-		"StatusHealthRegen"			"0"	
+		"StatusHealth"				"4525"
+		"StatusHealthRegen"			"150"	
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0.0"		 
 		
@@ -1973,16 +2144,16 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"16"
+		"ArmorPhysical"				"40"
 		"MagicalResistance"         "30"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"140"
-		"AttackDamageMax"			"242"
-		"AttackRate"				"2.6"
+		"AttackDamageMin"			"540"
+		"AttackDamageMax"			"560"
+		"AttackRate"				"1.4"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
 		"AttackRange"				"90"
@@ -2007,7 +2178,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1000"
+		"StatusHealth"				"3000"
 		"StatusHealthRegen"			"25.0"
 		"StatusMana"				"1850"	
 		"StatusManaRegen"			"3.0"		 
@@ -2077,7 +2248,7 @@
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"			"0"
 		"AttackDamageMax"			"0"
-		"AttackRate"				"2.3"
+		"AttackRate"				"0.4"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"				"450"
@@ -2105,8 +2276,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1250"
-		"StatusHealthRegen"			"100.0"	
+		"StatusHealth"				"6500"
+		"StatusHealthRegen"			"300.0"	
 		"StatusMana"				"1800"
 		"StatusManaRegen"			"10.0"		 
 		
@@ -2163,20 +2334,20 @@
 		"Ability1"					"undying_decay_boss_wave"
 	 	"Ability2"					"zombie_passive"
 		"Ability3"					"slow_mobs"	
-		"Ability4"					"ghoul_crazy_look"
+		"Ability4"					""
 		"Ability5"                  "wave_boss_aura"		
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"
-		"MagicalResistance"         "30"
+		"ArmorPhysical"				"90"
+		"MagicalResistance"         "60"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"151"
-		"AttackDamageMax"			"252"
+		"AttackDamageMin"			"890"
+		"AttackDamageMax"			"900"
 		"AttackRate"				"2.3"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
@@ -2252,7 +2423,7 @@
 		"IsBossMonster"				"1"		
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"ghoul_crazy_look"
+		"Ability1"					""
 		"Ability2"					"pudge_dispersion"  
 		"Ability3"					"pudge_spawn"	
 		"Ability4"					"wave_boss_aura"
@@ -2299,7 +2470,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"3400"
+		"StatusHealth"				"18400"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -2463,7 +2634,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"32"
+		"ArmorPhysical"				"64"
 		"MagicalResistance"         "30"
 
 		// Attack
@@ -2497,7 +2668,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"4500"
+		"StatusHealth"				"14500"
 		"StatusHealthRegen"			"100.0"
 		"StatusMana"				"1850"	
 		"StatusManaRegen"			"3.0"		 
@@ -2553,8 +2724,8 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"77"
-		"MagicalResistance"         "40"
+		"ArmorPhysical"				"111"
+		"MagicalResistance"         "0"
 
 		// Attack
 		//----------------------------------------------------------------
@@ -2629,7 +2800,7 @@
 		"Ability1"					"undying_decay_boss_wave_2"
 	 	"Ability2"					"zombie_passive"
 		"Ability3"					""	
-		"Ability4"					"ghoul_crazy_look"
+		"Ability4"					""
 		"Ability5"                  "wave_boss_aura"		
 
 		// Armor
@@ -2668,7 +2839,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"2500"
+		"StatusHealth"				"15000"
 		"StatusHealthRegen"			"100"
 		"StatusMana"				"1925"	
 		"StatusManaRegen"			"5.0"		 
@@ -2727,16 +2898,16 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"16"
+		"ArmorPhysical"				"12"
 		"MagicalResistance"         "30"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1182"
-		"AttackDamageMax"			"1275"
-		"AttackRate"				"4.9"
+		"AttackDamageMin"			"670"
+		"AttackDamageMax"			"700"
+		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"5000"
 		"AttackRange"				"180"
@@ -2756,12 +2927,12 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"395"	
+		"MovementSpeed"				"550"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1059"
+		"StatusHealth"				"21059"
 		"StatusHealthRegen"			"100"
 		"StatusMana"				"1925"	
 		"StatusManaRegen"			"5.0"		 

@@ -285,9 +285,21 @@ function InvasionMode:NextNight7()
 		 return nil	 
 	end) 
 
- 	Timers:CreateTimer(225,function()
+ 	Timers:CreateTimer(60,function()
  		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_viper",0,0)
-		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 3)
+		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 1)
+	end) 
+	Timers:CreateTimer(120,function()
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_viper",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 1)
+	end) 
+	Timers:CreateTimer(180,function()
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_viper",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 1)
+	end) 
+	Timers:CreateTimer(240,function()
+ 		  GameRules:SendCustomMessage("#Game_notification_boss_spawn_viper",0,0)
+		  InvasionMode:SpawnBoss("npc_wave_boss_viper", 1)
 	end) 
 end
 

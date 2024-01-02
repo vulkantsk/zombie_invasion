@@ -38,8 +38,8 @@
             "radius"    "325"
             "damage"                    
             {
-                    "value"             "45 70 90 115 135 160 195 210 235 260 385 410 435 470"
-                    "special_bonus_unique_drow_range_frost_damage"      "+30"
+                    "value"             "15 30 45 60 75 90 105 120 135 150 165 190 215 230"
+                    "special_bonus_unique_drow_range_frost_damage"      "+55"
             }
             "damage_pct"        "100"
 
@@ -71,13 +71,13 @@
             "chance"
             {       
                 "value"    "44"
-                "special_bonus_unique_drow_range_marksmanship"        "+16"
+                "special_bonus_unique_drow_range_marksmanship"        "+37"
             }
                         
-                "bonus_damage"  "120 160 200 240 280 320 360 400 440 480 520 560 600 640"
+                "bonus_damage"  "120 140 160 180 200 220 240 260 280 300 320 340 360 380"
 
 
-                "agility_multiplier"        "14 16 19 21 24 27 29 31 35 37 40 44 48 52"
+                "agility_multiplier"        "20 22 24 26 28 30 32 34 36 38 40 42 44 46"
             
 
                 "agility_range"     "-1"
@@ -177,7 +177,7 @@
             "armor_reduction"
             {
                 "value"   "-2 -4 -6 -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28"
-                "special_bonus_unique_drow_range_armor"    "-12"
+                "special_bonus_unique_drow_range_armor"    "-6"
             }
             
                 "vision_aoe"        "300"
@@ -238,29 +238,18 @@
         "AbilityCooldown"               "80"
         "AbilityManaCost"               "70"
 
-        "AbilitySpecial"
+        "AbilityValues"
         {
-            "01"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "bonus_gold"            "25 50 75 100 125 150 175 200 225 250 275 300 325 350"
-                "LinkedSpecialBonus"    "special_bonus_unique_doom_3"
-            }
-            "02"
-            {
-                "var_type"              "FIELD_FLOAT"
+           
                 "devour_time"           "90"
-            }
-            "03"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "regen"                 "0"
-            }
-            "04"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
+        
+                "regen"                 "2 4 6 8 10 12 14 16 18 20 22 24 26"
+            
                 "creep_level"           "1 1 1 4 4 4 10 10 10 35 55 100"
-            }
+            
         }
     } 
     "drow_ranger_buff_1"

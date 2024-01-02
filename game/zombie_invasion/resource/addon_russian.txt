@@ -3,6 +3,42 @@
 	"Language"		"russian"
 	"Tokens"
 	{		
+		//FOR ME
+		// To create a new key ( like $health ) just add the entry here
+		"dota_ability_variable_health"				"к здоровью"					// $health
+		"dota_ability_variable_mana"				"к мане"						// $mana
+		"dota_ability_variable_armor"				"к броне"						// $armor
+		"dota_ability_variable_damage"				"к урону"					// $damage
+		"dota_ability_variable_str"					"к силе"					// $str
+		"dota_ability_variable_int"					"к интеллекту"				// $int
+		"dota_ability_variable_agi"					"к ловкости"					// $agi
+		"dota_ability_variable_all"					"ко всем атрибутам"			// $all
+		"dota_ability_variable_primary_attribute"	"к основному атрибуту"			// $primary_attribute
+		"dota_ability_variable_attack"				"к скорости атаки"				// $attack
+		"dota_ability_variable_attack_pct"			"к базовой скорости атаки"	// $attack_pct
+		"dota_ability_variable_hp_regen"			"к восстановлению здоровья"		// $hp_regen
+		"dota_ability_variable_lifesteal"			"к вампиризму"					// $lifesteal
+		"dota_ability_variable_mana_regen"			"к восстановлению маны"			// $mana_regen
+		"dota_ability_variable_mana_regen_aura"		"к восстановлению маны в ауре"	// $mana_regen_aura
+		"dota_ability_variable_spell_amp"			"к урону от заклинаний"				// $spell_amp
+		"dota_ability_variable_debuff_amp"			"к длительности отрицательных эффектов"			// $debuff_amp
+		"dota_ability_variable_move_speed"			"к скорости передвижения"			// $move_speed
+		"dota_ability_variable_evasion"				"к уклонению"					// $evasion
+		"dota_ability_variable_spell_resist"		"к сопротивлению магии"			// $spell_resist
+		"dota_ability_variable_spell_lifesteal"		"к вампиризму заклинаниями"			// $spell_lifesteal
+		"dota_ability_variable_spell_lifesteal_creep"	"к вампиризму заклинаниями (от крипов)"	// $spell_lifesteal_creep
+		"dota_ability_variable_spell_lifesteal_hero"	"к вампиризму заклинаниями (от героев)"	// $spell_lifesteal_hero
+		"dota_ability_variable_selected_attrib"		"к выбранному атрибуту"		// $selected_attribute
+		"dota_ability_variable_attack_range"		"к дальности атаки <font color='#7d7d7d'>(в дальнем бою)</font>"	// $attack_range
+		"dota_ability_variable_attack_range_melee"	"к дальности атаки <font color='#7d7d7d'>(в ближнем бою)</font>"	// $attack_range_melee
+		"dota_ability_variable_cast_range"			"к дальности применения заклинаний"				// $cast_range
+		"dota_ability_variable_status_resist"		"к сопротивлению эффектам"			// $status_resist
+		"dota_ability_variable_projectile_speed"	"к скорости снарядов"			// $projectile_speed
+		"dota_ability_variable_manacost_reduction"	"к уменьшению расхода маны"		// $manacost_reduction
+		"dota_ability_variable_cooldown_reduction"	"к уменьшению перезарядок заклинаний"		// $cooldown_reduction 
+		"dota_ability_variable_max_mana_percentage"	"к максимальной мане"			// $max_mana_percentage
+		"dota_ability_variable_slow_resistance"		"к сопротивлению замедлениям"			// $slow_resistance
+		"dota_ability_variable_aoe_bonus"			"к радиусу заклинаний"					// $aoe_bonus
 
 		"music_toggle"                                              "Включить/отключить музыку"
 
@@ -626,17 +662,18 @@
 		"DOTA_Tooltip_ability_item_armlet2_Lore"				"Однажды я смогу покорить своих демонов или же нет..?"
 		"DOTA_Tooltip_ability_item_armlet2_bonus_damage"		"+$damage"
 		"DOTA_Tooltip_ability_item_armlet2_bonus_attack_speed"	"+$Attack"
-		"DOTA_Tooltip_ability_item_armlet2_bonus_armor"			"+$armor"
+		"DOTA_Tooltip_ability_item_armlet2_bonus_str"			"+$str"
 		"DOTA_Tooltip_ability_item_armlet2_bonus_hp_regen" 		"+$hp_regen"
 		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
 
 		"DOTA_Tooltip_ability_item_last_standing_shield"			"standing shield"
-		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Активная: last block stand </h1>действует радиусом в %radius% на всех ближайщих союзником блокирует %damage_block% урона с шансом в %damage_block_chance%%%, также увеличвает скорость передвижение на %bonus_movespeed% и скорость атаки на %bonus_attack_speed% длительностью в 20 секунд."
+		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Активная: last block stand </h1>действует радиусом в %radius% на всех ближайщих союзником блокирует %damage_block% + %block_procentage_active%%% от силы владельца с шансом в %damage_block_chance%%%, также увеличвает скорость передвижение на %bonus_movespeed% и скорость атаки на %bonus_attack_speed% длительностью в 20 секунд."
 		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"Сила лишь во мне и точка - это было выгравленно до покупки."
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_health"							"+$health"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_stats"							"+$all"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_hp_regen"					"+$hp_regen"
+		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_mana_regen"			"+$mana_regen"
 
 
 	
@@ -798,6 +835,7 @@
 		"DOTA_Tooltip_ability_item_bunch_of_butterfly_bonus_evasion"	"%+$evasion"
 		"DOTA_Tooltip_ability_item_bunch_of_butterfly_bonus_attack_speed"	"+$attack"
 		"DOTA_Tooltip_ability_item_bunch_of_butterfly_bonus_move_speed"	"%FLUTTER:\n• УСКОРЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_item_bunch_of_butterfly_bonus_attack_speed_pct"	"%+$attack_pct"
 		"DOTA_Tooltip_ability_item_bunch_of_butterfly_duration"			"FLUTTER ДЛИТЕЛЬНОСТЬ:"
 
  
@@ -981,7 +1019,7 @@
 		"DOTA_Tooltip_Ability_item_milk_shake_Lore"       "Обычный милкшейк бродяги."
 		
 		"DOTA_Tooltip_Ability_item_crystal_boots"                                "Crystal Boots"
-		"DOTA_Tooltip_Ability_item_crystal_boots_Description"                    "<h1>Активная: Crystal Haste</h1> Позволяет проходить сквозь юнитов, увеличивает скорость передвижения на %phase_ms%%, увеличивает ограничение передвижения до %ms_limit%. При прохождении через %en_num% юнитов, дает 100% шанс нанести критический удар в размере %crit_bonus_up%% .Длится %phase_duration% секунды.\n<h1>Пассивное: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона."
+		"DOTA_Tooltip_Ability_item_crystal_boots_Description"                    "<h1>Пассивное: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона."
 		"DOTA_Tooltip_Ability_item_crystal_boots_Note0"                          "Через каждого юнита, можно пройти 1 раз за использование."
 		"DOTA_Tooltip_Ability_item_crystal_boots_Lore"                           "Эти сапоги носил сам Кункевич!"
 		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_movement_speed"           "+$move_speed"
@@ -1708,21 +1746,14 @@
 	"DOTA_Tooltip_Ability_item_super_artefact_bonus_resistance"					"%ДОП.МАГ РЕЗИСТ:"
 	"DOTA_Tooltip_Ability_item_super_artefact_bonus_attack_speed"					"ДОП СКОРОСТЬ АТАКИ:"
 	"DOTA_Tooltip_Ability_item_super_artefact_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
-
 	"DOTA_Tooltip_Ability_item_artefact1"										"Первый артефакт."
 	"DOTA_Tooltip_Ability_item_artefact1_Description"										"Слухи гласят что он полезен."
-
 	"DOTA_Tooltip_Ability_item_artefact2"										"Второй артефакт."
 	"DOTA_Tooltip_Ability_item_artefact2_Description"										"Слухи гласят что он полезен.."
-
 	"DOTA_Tooltip_Ability_item_artefact3"										"Третий артефакт."
 	"DOTA_Tooltip_Ability_item_artefact3_Description"										"Слухи гласят что он полезен..."
-
-
 	"DOTA_Tooltip_Ability_item_salo"									"САЛО!"
-	
 	"DOTA_Tooltip_Ability_item_error"									"ERROR"
-
 	"DOTA_Tooltip_Ability_item_error_Description"									"<font color='#ff0000'>11010000 10101111 11010000 10011011 11010000 10101110 11010000 10010001 11010000 10011011 11010000 10101110 11010000 10100001 11010000 10010010 11010000 10011110 11010000 10011000 11010000 10100101 11010000 10011100 11010000 10010000 11010000 10011011 11010000 10010101 11010000 10011101 11010000 10101100 11010000 10011010 11010000 10011000 11010000 10100101 11010000 10010111 11010000 10010000 11010000 10101001 11010000 10011000 11010000 10100010 11010000 10011101 11010000 10011000 11010000 10100111 11010000 10011010 11010000 10011110 11010000 10010010 11010000 10100001 11010000 10011111 11010000 10010000 11010000 10100001 11010000 10011000 11010000 10010001 11010000 10011110 11010000 10100111 11010000 10100010 11010000 10011110 11010000 10010001 11010000 10101011 11010000 10011011 11010000 10011000 11010000 10100001 11010000 10011110 11010000 10011100 11010000 10011101 11010000 10011110 11010000 10011001 11010000 10100011 11010000 10010100 11010000 10010000 11010000 10100111 11010000 10011010 11010000 10011000 11010000 10010010 11010000 10010000 11010000 10011100 11010000 10011000 11010000 10010101 11010000 10100001 11010000 10011011 11010000 10011000 11010000 10101111 11010000 10011111 11010000 10100000 11010000 10011110 11010000 10011111 11010000 10010000 11010000 10010100 11010000 10100011 11010000 10100010 11010000 10011110 11010000 10011101 11010000 10010000 11010000 10010100 11010000 10010101 11010000 10101110 11010000 10100001 11010000 10101100 11010000 10011110 11010000 10100001 11010000 10100010 11010000 10010000 11010000 10011101 11010000 10100011 11010000 10100001 11010000 10101100 11010000 10010010 11010000 10010010 11010000 10010000 11010000 10101000 11010000 10010101 11010000 10011001 11010000 10011111 11010000 10010000 11010000 10011100 11010000 10101111 11010000 10100010 11010000 10011000</font>"
 	"DOTA_Tooltip_Ability_item_error_Lore"										"Эти цифры так и манят.."
 
@@ -2147,6 +2178,11 @@
 
 		"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Герой с шансом в 33% наносит <font color='#00e6b0'>Урон способности + урон героя * 7% силы героя.</font>"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_Lore"		"Этот зелёный, может и не такое."
+		"DOTA_Tooltip_Ability_anchor_smash_passive_armor_reduction"		"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_radius"			"РАДИУС:"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_smash_damage"	"БОНУСНЫЙ УРОН:"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_duration"		"ДЛИТЕЛЬНОСТЬ:"
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Уменьшение брони anchor smash"
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
@@ -2379,9 +2415,13 @@
 		
 		"DOTA_Tooltip_ability_medusa_stone_gaze_Scepter_Description"		"Увеличивает длительность окаменения, уменьшает стоимость маны и урон"
 
-		"DOTA_Tooltip_Ability_enchantress_untouchable"											"Poison"
-		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
-		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "После нападения на Горгону большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную змею."
+		"DOTA_Tooltip_Ability_medusa_untouchable"											"Poison"
+		"DOTA_Tooltip_Ability_medusa_untouchable_Description"								"Отравленные ядовитой чешуёй героя, противники атакуют его с уменьшенной скоростью.."
+		"DOTA_Tooltip_Ability_medusa_untouchable_Lore"                                     "После нападения на Горгону большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную змею."
+		"DOTA_Tooltip_Ability_medusa_untouchable_slow_attack_speed"					"УМЕНЬШЕНИЕ СКОРОСТИ АТАКИ:"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_medusa_untochable"	"+{s:bonus_slow_attack_speed} к уменьшению скорости атаки poison"
+		"DOTA_Tooltip_Ability_special_bonus_unique_medusa_mana_shield"	"+{s:bonus_damage_per_mana} к урону за единицу маны mana shield"
 
 
 		"DOTA_Tooltip_Ability_medusa_buff_1"											"Mana poison"
@@ -2533,7 +2573,7 @@
 
 
 
-			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_bloodstained_memory_speed"	"+{s:bonus_movespeed} к скорости восприятия реальности"
+			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_bloodstained_health"	"+{s:bonus_healthbonus} бонусного здоровья bloodstained memory"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_duration_blood"	"+{s:bonus_duration} секунд длительности bloodrage"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_count"	"+{s:bonus_images_count} количеству вызываемых иллюзий"
 			"DOTA_Tooltip_ability_special_bonus_unique_blood_hunter_blood_of_illusions_incoming_damage"	"-{s:bonus_incoming_damage}% входящего урона по иллюзиям"
@@ -3056,7 +3096,7 @@
         "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
 		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
 		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
-		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон за избыток"
+		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон на <font color='#fad201'>0.6%</font> за избыток скорости атаки"
 
 		 "dota_tooltip_ability_troll_warlord_buff_1"								"Berserk Strikes"
 		"dota_tooltip_ability_troll_warlord_buff_1_Description"					"<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%"
@@ -4278,6 +4318,16 @@
 		"Info1"						"Info 1"
 		"Info2"						" "	    
  
+		"dota_tooltip_ability_item_spirit_pochti_vessel"								"Spirit vessel"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_Description"					"<h1>Активная: Soul Release</h1>При использовании на врагов, снижает здоровье на %enemy_dot_current_health%%% от текущего здоровья в секунду и снижает восстановление здоровья на %heal_reduction%%%. Наносит %enemy_dot_base% урона в секунду.<br><br>При использовании на союзников, увеличивает %ally_heal% восстановление здоровья в секунду.<br><br>Длится %buff_duration% секунд.\n"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_Note0"						"Не увеличивает урон от предметов и процентных способностей."
+		"dota_tooltip_ability_item_spirit_pochti_vessel_bonus_all_stats"				"+$all"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_bonus_armor"					"+$armor"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_bonus_health"					"+$health"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_bonus_mana_regen"				"+$mana_regen"
+		"dota_tooltip_ability_item_spirit_pochti_vessel_lore"							"Оккультистский артефакт восточного происхождения, теперь перепрофилированный для причинения духовной агонии."
+
+
         "DOTA_Tooltip_ability_item_greater_crit2"								"Daedalus 2"
 		"DOTA_Tooltip_ability_item_greater_crit2_Description"					"<h1>Пассивная: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона."
 		"DOTA_Tooltip_ability_item_greater_crit2_Note0" 						"Постройкам дополнительный урон не наносится."

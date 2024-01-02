@@ -4494,6 +4494,126 @@
 			}
 		}
 	}
+	//=================================================================================================================
+	// Spirit Vessel
+	//=================================================================================================================
+	"item_spirit_vessel"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+			"ItemPurchasable"				"0"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"750"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"7.0"
+		"AbilitySharedCooldown"			"urn"
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRequiresCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		"ItemStackable"					"0"
+		"ItemPermanent"					"1"
+		"ItemDisassembleRule"				"DOTA_ITEM_DISASSEMBLE_NEVER"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2780"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"sv;spirit vessel"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"bonus_mana_regen"		"1.75"
+				"bonus_all_stats"		"6"
+				"bonus_armor"			"2"
+				"bonus_health"			"125"
+				"soul_radius"			"1400"
+				"soul_initial_charge"	"2"
+				"soul_additional_charges"	"1"
+				"soul_heal_amount"		"40"
+				"soul_damage_amount"	"35"
+				"duration"			"8.0"
+				"hp_regen_reduction_enemy"	"45"
+				"enemy_hp_drain"		"4"
+		}
+	}
+	"item_recipe_spirit_pochti_vessel"
+	{
+		//"ID"							"120023"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"BaseClass"						"item_recipe_pipe"
+		"AbilityTextureName"			"item_recipe"
+
+		"ItemCost"						"1500"
+		"ItemShopTags"					""
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_spirit_pochti_vessel"
+
+		"ItemRequirements"
+		{
+			"01"						"item_falcon_blade;item_vitality_booster;item_crown"
+		}
+	}
+	"item_spirit_pochti_vessel"
+	{
+		"ID"							"110023"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/magic/spirit_vessel/torture_pipe"
+		"AbilityTextureName" 			"item_spirit_vessel"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCastRange"				"950"
+		"AbilityCooldown"				"7"
+		"AbilitySharedCooldown"			"urn"
+
+		"ItemCost"						"5740"
+		"ItemQuality"					"artifact"
+		"ItemAliases"					"urn;spirit;vessel;dot;lantern;souls;torture"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+
+		"MaxUpgradeLevel"				"2"
+		"ItemBaseLevel"					"1"
+
+		"AbilityValues"
+		{
+			"torture_pipe_dot_boost"	"40"
+			"bonus_mana_regen"			"2.25"
+			"bonus_all_stats"			"11"
+			"bonus_armor"				"2.5"
+			"bonus_health"				"425"
+			"enemy_dot_current_health"	"4"
+			"heal_reduction"			"50"
+			"ally_heal"					"80"
+			"buff_duration"				"8"
+			"enemy_dot_base"
+			{
+				"value"							"50"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+		}
+	}
 	"item_recipe_war_of_the_crossbow"
 	{
 		// General
@@ -9385,7 +9505,7 @@
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"interval_radiance"	"0.1"
+				"interval_radiance"	"1"
 			}
 			"12"
 			{
@@ -10509,7 +10629,6 @@
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
 		"AbilitySharedCooldown"			"phase"
 
 		// Precache
@@ -10569,7 +10688,7 @@
 
 		"ItemRequirements"
 		{
-			"01"						"item_boots;item_mekansm;item_platemail"
+			"01"						"item_boots;item_mekansm;item_aeon_disk"
 		}
 	}
  
@@ -10583,7 +10702,7 @@
         "AbilityTextureName"                "item_guardian_greaves"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40"
+		"AbilityCooldown"				"120"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -10600,15 +10719,15 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{				
-			"bonus_movement"		"70"
-			"bonus_health"			"650"
+			"bonus_movement"		"120"
+			"bonus_health"			"900"
 			"bonus_armor"		"10"
  
-			"healt_for_use"		"20"
-			"heal_hp"		"25"
-			"heal_hp_per_second"		"250"
-			"buff_duration"		"5"
-			"debuff_duration"		"30"
+			"healt_for_use"		"30"
+			"heal_hp"		"100"
+			"heal_hp_per_second"		"322"
+			"buff_duration"		"8"
+			"debuff_duration"		"60"
 		}
 	}
 
@@ -10725,7 +10844,7 @@
     		"AbilityTextureName"                              "arcane_boots2_png"    
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50.0"
+		"AbilityCooldown"				"30.0"
 		"AbilityCastRange"				"1200"
 
 		// Item Info
@@ -10748,7 +10867,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement"		"65"
+				"bonus_movement"		"95"
 			}
 			"02"
 			{
@@ -14120,18 +14239,18 @@
 		{
 			"bonus_damage"			"70"
 			"bonus_attack_speed"	"40"
-			"bonus_armor"			"12"
 			"bonus_hp_regen"		"8"
 			"lifesteal"				"12"
 			"bonus_damage_active"			"220"
 			"movespeed_active"			"50"
 			"cast_point_active"		"15"
-			"bonus_str_active"				"55"
+			"bonus_str_active"				"25"
 			"lifesteal_active"	"18"
 			"magic_lifesteal_active"			"8"
 			"armor_active"		"9"
 			"damage_per_second_active"				"109200"
-			"bonus_attack_speed_active"				"200"
+			"bonus_attack_speed_active"				"90"
+			"bonus_str"	"60"
 		}
 	}
 	"item_quelling_blade"
@@ -14276,16 +14395,17 @@
 		"AbilityCastRange"	"1200"
 		"AbilityValues"
 		{
-			"bonus_armor" 			"19"
+			"bonus_armor" 			"20"
 			"bonus_stats" 			"32"
 			"bonus_hp_regen" 		"30"
 			"bonus_health" 			"750"
 			"bonus_mana_regen" 		"5"
 			"damage_block" 			"125"
-			"damage_block_chance" 	"70"
-			"bonus_armor_active" 	"42"
+			"damage_block_chance" 	"100"
+			"bonus_armor_active" 	"12"
 			"bonus_attack_speed" 	"70"
 			"bonus_movespeed" 		"35"
+			"block_procentage_active"	"70"
 			"radius"				"1200"
 		}
     }

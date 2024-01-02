@@ -57,10 +57,14 @@ function modifier_item_armlet2:DeclareFunctions()
         MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
         MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
         MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
-        MODIFIER_EVENT_ON_TAKEDAMAGE
+        MODIFIER_EVENT_ON_TAKEDAMAGE,
+        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
     }
 end
 
+function modifier_item_armlet2:GetModifierBonusStats_Strength()
+    return self:GetAbility():GetSpecialValueFor("bonus_str")
+end
 
 function modifier_item_armlet2:GetModifierPreAttack_BonusDamage()
     return self:GetAbility():GetSpecialValueFor("bonus_damage")

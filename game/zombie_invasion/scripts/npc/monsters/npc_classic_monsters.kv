@@ -31,16 +31,16 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"8"
+		"ArmorPhysical"				"12"
 		"MagicalResistance"         "25"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"950"
-		"AttackDamageMax"			"1050"
-		"AttackRate"				"2.4"
+		"AttackDamageMin"			"540"
+		"AttackDamageMax"			"560"
+		"AttackRate"				"2.0"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"				"150"
@@ -54,8 +54,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"120"
-		"BountyGoldMin"				"205"	
-		"BountyGoldMax"				"230"
+		"BountyGoldMin"				""	
+		"BountyGoldMax"				""
 
 		// Movement
 		//----------------------------------------------------------------
@@ -65,7 +65,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"16000"  
+		"StatusHealth"				"18000"  
 		"StatusHealthRegen"			"10"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0"		 
@@ -79,7 +79,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -471,99 +471,7 @@
     }
 }
  
-	
-	"npc_undying_4"	
-	{
-		// General
-		//----------------------------------------------------------------
-		
-		"vscripts"		"ai/ai_undying.lua"
-		"Model"						"models/heroes/undying/undying.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Undying"
-		"GameSoundsFile"			"soundevents/game_sounds_undying.vsndevts"
-		"Level"						"1"
-		"ModelScale" 				"1.2"
-		"UseNeutralCreepBehavior"	"0"
 
-		// Abilities
-		//----------------------------------------------------------------
-		"Ability1"					"tombestone_und_4"
-		"Ability2"					"ghoul_crazy_look"
-		"Ability3"					""	
-		"Ability4"					""
-				"Ability5"		"zombie_passive"
-
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"25"
-		"MagicalResistance"         "25"
-
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"600"
-		"AttackDamageMax"			"750"
-		"AttackRate"				"1.1"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"5000"
-		"AttackRange"				"180"
-	     
-
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"860"
-		"BountyGoldMin"				"620"	
-		"BountyGoldMax"				"850"	
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"225"	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"7000"
-		"StatusHealthRegen"			"0"
-		"StatusMana"				"1500"	
-		"StatusManaRegen"			"0.0"		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"900"
-		"VisionNighttimeRange"		"900"
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		
-		"Creature"
-		{
-		
-					"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "12499" }
-					"Wearable1" { "ItemDef" "12497" }
-					"Wearable1" { "ItemDef" "542" }  
-					"Wearable1" { "ItemDef" "7938" }
- 					"Wearable1" { "ItemDef" "13453" }
- 				
-				}
- 	
-			
-		}
-	}
 	
 	
 	"npc_zombie_toxic"	
@@ -636,7 +544,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -738,7 +646,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -839,7 +747,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -902,7 +810,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"25"
+		"ArmorPhysical"				"15"
 		"MagicalResistance"         "40"
 
 		// Attack
@@ -936,7 +844,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"12500"
+		"StatusHealth"				"15500"
 		"StatusHealthRegen"			"0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -950,7 +858,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -983,15 +891,15 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"52"
-		"MagicalResistance"         "75"
+		"ArmorPhysical"				"30"
+		"MagicalResistance"         "55"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1895"
-		"AttackDamageMax"			"2350"
+		"AttackDamageMin"			"895"
+		"AttackDamageMax"			"950"
 		"AttackRate"				"1.15"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"300"
@@ -1017,8 +925,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"22500"
-		"StatusHealthRegen"			"35"
+		"StatusHealth"				"17500"
+		"StatusHealthRegen"			"20"
 		"StatusMana"				"2500"	
 		"StatusManaRegen"			"3.0"		 
 		
@@ -1031,7 +939,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		
@@ -1133,7 +1041,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1214,7 +1122,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1263,16 +1171,16 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-4"
-		"MagicalResistance"         "-10"
+		"ArmorPhysical"				"2"
+		"MagicalResistance"         "22"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1"
-		"AttackDamageMax"			"2"
-		"AttackRate"				"2.0"
+		"AttackDamageMin"			"5"
+		"AttackDamageMax"			"6"
+		"AttackRate"				"0.5"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"300"
 		"AttackRange"				"90"
@@ -1285,9 +1193,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"6"
-		"BountyGoldMin"				"8"	
-		"BountyGoldMax"				"12"	
+		"BountyXP"					"8"
+		"BountyGoldMin"				"10"	
+		"BountyGoldMax"				"10"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1297,7 +1205,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"40"
+		"StatusHealth"				"110"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1311,7 +1219,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1363,16 +1271,16 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-2"
-		"MagicalResistance"         "20"
+		"ArmorPhysical"				"0"
+		"MagicalResistance"         "60"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"1"
-		"AttackDamageMax"			"2"
-		"AttackRate"				"1.7"
+		"AttackDamageMin"			"8"
+		"AttackDamageMax"			"10"
+		"AttackRate"				"1"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"300"
 		"AttackRange"				"90"
@@ -1385,20 +1293,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"6"
-		"BountyGoldMin"				"10"	
-		"BountyGoldMax"				"15"	
+		"BountyXP"					"5"
+		"BountyGoldMin"				"8"	
+		"BountyGoldMax"				"10"	
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"220"	
+		"MovementSpeed"				"325"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"36"
-		"StatusHealthRegen"			"2.0"
+		"StatusHealth"				"90"
+		"StatusHealthRegen"			"1.2"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -1411,7 +1319,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1463,15 +1371,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-6"
+		"ArmorPhysical"				"0"
 		"MagicalResistance"         "0"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"70"
-		"AttackDamageMax"			"73"
+		"AttackDamageMin"			"35"
+		"AttackDamageMax"			"42"
 		"AttackRate"				"1.8"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"300"
@@ -1485,19 +1393,19 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"18"
-		"BountyGoldMin"				"21"	
-		"BountyGoldMax"				"24"	
+		"BountyXP"					"25"
+		"BountyGoldMin"				"26"	
+		"BountyGoldMax"				"30"	
 
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"415"	
+		"MovementSpeed"				"295"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"95"
+		"StatusHealth"				"260"
 		"StatusHealthRegen"			"2.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1511,7 +1419,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1555,7 +1463,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"-4"
+		"ArmorPhysical"				"4"
 		"MagicalResistance"         "25"
 
 		// Attack
@@ -1577,9 +1485,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"26"
-		"BountyGoldMin"				"32"	
-		"BountyGoldMax"				"44"
+		"BountyXP"					"50"
+		"BountyGoldMin"				"45"	
+		"BountyGoldMax"				"55"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1589,8 +1497,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"155"
-		"StatusHealthRegen"			"20"
+		"StatusHealth"				"360"
+		"StatusHealthRegen"			"10"
 		"StatusMana"				"500"	
 		"StatusManaRegen"			"0.0"		 
 		
@@ -1603,7 +1511,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1652,15 +1560,15 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"
+		"ArmorPhysical"				"35"
 		"MagicalResistance"         "35"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"116"
-		"AttackDamageMax"			"120"
+		"AttackDamageMin"			"200"
+		"AttackDamageMax"			"220"
 		"AttackRate"				"1.8"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
@@ -1674,9 +1582,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"90"
-		"BountyGoldMin"				"325"	
-		"BountyGoldMax"				"350"
+		"BountyXP"					"300"
+		"BountyGoldMin"				"0"	
+		"BountyGoldMax"				"0"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1700,7 +1608,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1749,15 +1657,15 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"30"
+		"ArmorPhysical"				"50"
 		"MagicalResistance"         "10"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"160"
-		"AttackDamageMax"			"167"
+		"AttackDamageMin"			"220"
+		"AttackDamageMax"			"240"
 		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
@@ -1797,7 +1705,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -1859,11 +1767,11 @@
 		// Abilities
 		//----------------------------------------------------------------
      	"Ability1"					"warlock_splesh"		
- 		"Ability2"					""
- 		"Ability3"					""
+ 		"Ability2"					"nevermore_dark_lord"
+ 		"Ability3"					"skeleton_king_vampiric_aura"
  		"Ability4"					"ghoul_crazy_look"
 	 	"Ability5"					"warlock_terror"
- 		"Ability6"					""
+ 		"Ability6"					"troll_warlord_fervor"
  
 		// Armor
 		//----------------------------------------------------------------
@@ -1916,7 +1824,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
@@ -1964,8 +1872,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"140"
-		"AttackDamageMax"			"142"
+		"AttackDamageMin"			"250"
+		"AttackDamageMax"			"260"
 		"AttackRate"				"1.8"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -1980,8 +1888,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"110"
-		"BountyGoldMin"				"120"	
-		"BountyGoldMax"				"140"
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"170"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -2005,7 +1913,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2050,8 +1958,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"145"
-		"AttackDamageMax"			"147"
+		"AttackDamageMin"			"190"
+		"AttackDamageMax"			"210"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -2091,7 +1999,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2184,7 +2092,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2287,7 +2195,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2377,7 +2285,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2471,7 +2379,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2570,7 +2478,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}
@@ -2653,7 +2561,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2757,7 +2665,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -2861,7 +2769,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -3427,7 +3335,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -3519,7 +3427,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -3699,7 +3607,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		
@@ -3810,7 +3718,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -3916,7 +3824,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4022,7 +3930,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4130,7 +4038,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4229,7 +4137,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4313,7 +4221,7 @@
 // Team
 //--------------------------------------------------------------—
 "TeamName" "DOTA_TEAM_BADGUYS"
-"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
 "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 "UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4386,7 +4294,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4480,7 +4388,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		// Creature Data
@@ -4587,7 +4495,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"	
 
@@ -4595,7 +4503,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"	
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4704,7 +4612,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4809,7 +4717,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
@@ -4898,7 +4806,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -4984,7 +4892,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5029,8 +4937,8 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"100"
-		"MagicalResistance"         "50"
+		"ArmorPhysical"				"65"
+		"MagicalResistance"         "75"
 
 		// Attack
 		//----------------------------------------------------------------
@@ -5077,7 +4985,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5180,7 +5088,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5270,7 +5178,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5316,8 +5224,8 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"240"
-		"MagicalResistance"         "18"
+		"ArmorPhysical"				"100"
+		"MagicalResistance"         "70"
 
 		// Attack
 		//----------------------------------------------------------------
@@ -5364,7 +5272,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5464,7 +5372,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5539,7 +5447,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5636,7 +5544,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5732,7 +5640,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5826,7 +5734,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -5919,7 +5827,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -6089,7 +5997,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -6189,7 +6097,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -6291,7 +6199,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -6386,7 +6294,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
@@ -6493,7 +6401,7 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 

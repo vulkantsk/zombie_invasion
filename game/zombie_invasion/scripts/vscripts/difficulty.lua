@@ -71,26 +71,24 @@ function Difficulty:NPC( npc )
 	local s
 
 	if self.leader == "normal" then 
-		s = 3 
+		s = 1 
 	elseif self.leader == "medium" then
-		s = 5
+		s = 2
 	elseif self.leader == "hard" then
-		s = 7 
+		s = 3 
 	elseif self.leader == "demon" then
-		s = 9 
+		s = 4 
 	elseif self.leader == "impossible" then
-		s = 12 
+		s = 6 
 	end		
  
 	local result = (s)
 
  		npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
         npc:SetMaxHealth(npc:GetMaxHealth() * result)	
-       	npc:SetHealth(npc:GetMaxHealth())
-        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() + result)
-        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result)
-        npc:SetModelScale(npc:GetModelScale() + result * 0.025)
-        npc:SetDeathXP(npc:GetDeathXP() * result / 3)
+       	npc:SetHealth(npc:GetMaxHealth() + 0.50 * result)
+        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() * result)
+        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() * result)
         npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result)
         npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
 

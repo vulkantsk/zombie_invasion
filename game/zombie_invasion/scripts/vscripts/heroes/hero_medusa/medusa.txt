@@ -98,29 +98,32 @@
 		}		
 	}	
  
- 		"enchantress_untouchable"
+ 		"medusa_untouchable"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"BaseClass"						"enchantress_untouchable"
+		"AbilityType"					"DOTA_ABILITY_TYPE_PASSIVE"
         "AbilityTextureName"            "medusa/passive"		
 
 		"HasScepterUpgrade"			"0"
 
-		"MaxLevel"						"1"
+		"MaxLevel"						"14"
 		"LevelsBetweenUpgrades"			"2"
 		"RequiredLevel"					"-1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_attack_speed"		"-10 -15 -20 -25 -30 -35 -40"
-				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_3"
-			}
+			
+				"slow_attack_speed"		
+				{
+						"value"	"-20 -23 -26 -29 -32 -35 -38 -41 -44 -47 -50 -53 -56 -59"
+						"special_bonus_unique_medusa_untochable"		"-31"
+				}
+
+			
 		}
 	}
 
@@ -193,7 +196,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"		
 		"AbilitySound"					"Hero_Medusa.ManaShield.On"
-		"MaxLevel"						"7"
+		"MaxLevel"						"14"
 		"RequiredLevel"					"-1"
 
 		// Special
@@ -202,16 +205,17 @@
 		{
 			"damage_per_mana"		
 			{
-				"value"								"7 8 9 10 11"
+				"value"								"6 6 6 7 7 7 11 11 11 14 14 14 16 16"
+				"special_bonus_unique_medusa_mana_shield"	"+4"
 			}
 
 			"illusion_damage_per_mana"
 			{
-				"value"								"21 24 28 32 36"
+				"value"								"21 24 28 32 36 40 44 49 54 56 60 71 84 90"
 			}
 
-			"absorption_pct"						"98"
-			"bonus_mana"							"0 50 100 150 200"
+			"absorption_pct"						"99"
+			"bonus_mana"							"75 100 125 150 175 200 225 250 275 300 325 350 375 400"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
@@ -311,6 +315,22 @@
 		{
 			"agi_pct"		"20"
 		}	
+	}
+	"special_bonus_unique_medusa_untochable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_medusa_mana_shield"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	}
 
 }

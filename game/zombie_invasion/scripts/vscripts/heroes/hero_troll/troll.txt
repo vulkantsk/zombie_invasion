@@ -398,10 +398,12 @@
 			"pct_damage_per_attack_speed"	
 			{
 				"value"	"0.11 0.12 0.13 0.2 0.21 0.22 0.3 0.31 0.32 0.4"
-				"special_bonus_shard"	"+0.07"
+				"special_bonus_shard"	"+0.6"
 			}
+			"attack_speed_cap"				"1000"
 		}
 	}
+
 	"Troll_inner_beast"
 	{
 		// General

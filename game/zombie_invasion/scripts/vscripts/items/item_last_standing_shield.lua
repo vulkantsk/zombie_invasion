@@ -7,7 +7,7 @@ function item_last_standing_shield:OnSpellStart()
     if not IsServer() then return end
     local targets = FindUnitsInRadius(self:GetCaster():GetTeamNumber(),self:GetCaster():GetAbsOrigin(),nil,self:GetSpecialValueFor("radius"),DOTA_UNIT_TARGET_TEAM_FRIENDLY,DOTA_UNIT_TARGET_HERO,DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,FIND_CLOSEST,false)
     for _,target in pairs(targets) do
-        target:AddNewModifier(self:GetCaster(), self, "modifier_item_last_standing_shield_aura", {duration = 20})
+        target:AddNewModifier(self:GetCaster(), self, "modifier_item_last_standing_shield_aura", {duration = 16})
         self:GetCaster():EmitSound("Hero_LegionCommander.Overwhelming.Cast")
         local particle = ParticleManager:CreateParticle( "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff_symbol.vpcf", PATTACH_ABSORIGIN, target )
         ParticleManager:SetParticleControl(particle, 1, target:GetAbsOrigin())
@@ -122,7 +122,7 @@ end
 
 function modifier_item_last_standing_shield_aura:GetModifierPhysical_ConstantBlockSpecial()
     if not self:GetAbility() then return end
-    return self:GetAbility():GetSpecialValueFor("damage_block")
+    return self:GetAbility():GetSpecialValueFor("damage_block") + (self:GetCaster():GetStrength() * (self:GetAbility():GetSpecialValueFor("block_procentage_active") / 100))
 end
 
 function modifier_item_last_standing_shield_aura:GetTexture()

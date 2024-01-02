@@ -63,6 +63,28 @@
 	}
 }
 
+"zombie_toxin"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/monsters/zombie_toxin"
+		"AbilityTextureName"			"ursa_fury_swipes"
+		"FightRecapLevel"				"1"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityValues"
+		{
+			
+				"bonus_reset_time"				"12"
+				"damage_per_stack"				"2"
+			
+		}
+	}
+
 "quest_null"
 {
 	"BaseClass"						"ability_lua"
@@ -204,24 +226,24 @@
             "01"
             {
                 "var_type"                  "FIELD_FLOAT"
-                "duration"                  "0.8"
+                "duration"                  "1.2"
             }
             "02"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "bonus_attack_speed"        "420"
+                "bonus_attack_speed"        "890"
                 "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
             }
             "03"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "bonus_magic_resistance"    "0"
+                "bonus_magic_resistance"    "15"
                 "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
             }
             "04"
             {
                 "var_type"                  "FIELD_INTEGER"
-                "damage"                    "3220"
+                "damage"                    "322"
                 "LinkedSpecialBonus"    "special_bonus_unique_viper_1"
             }
             "05"
@@ -20875,7 +20897,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"decay_damage"					"500"
+				"decay_damage"					"750"
 			}
 			"02"
 			{
@@ -20892,12 +20914,12 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"radius"						"425"
+				"radius"						"1205"
 			}			
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str_health_up"					"400"
+				"str_health_up"					"600"
  
 			}		
 			"06"
@@ -20963,12 +20985,12 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"radius"						"425"
+				"radius"						"1425"
 			}			
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str_health_up"					"600"
+				"str_health_up"					"1000"
  
 			}		
 			"06"
@@ -22380,11 +22402,11 @@
 		{
 				"damage"					
 				{
-					"value"				"25"
+					"value"				"325"
 					"special_bonus_unique_death_prophet_3"	"+30"
 				}
 
-				"damage_pct"				"0"
+				"damage_pct"				"5"
 				"haunt_duration"				"6"
 				"siphon_buffer"			"250"
 				"AbilityChargeRestoreTime"		
