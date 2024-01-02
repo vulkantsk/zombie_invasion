@@ -3633,7 +3633,7 @@
 		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage_attack" "%УРОН ОТ БАЗОВОГО УРОНА:"
 		"DOTA_Tooltip_Ability_axe_culling_blade_lua_damage" "УРОН:"
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_Lore" "Любимый прием акса во всех его странствиях."
-		"DOTA_Tooltip_ability_axe_culling_blade_lua_scepter_description" "При каждом использовании способности или убийстве врага, базовый урон Axe вырастает на %duration_scepter%  секунд."
+		"DOTA_Tooltip_ability_axe_culling_blade_lua_scepter_description" "При каждом использовании способности или убийстве врага, броня Axe вырастает на %duration_scepter%  секунд."
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_base" "БРОНИ ЗА ИСПОЛЬЗОВАНИЕ:"
 		"DOTA_Tooltip_ability_axe_culling_blade_lua_bonus_kill" "БРОНИ ЗА УБИЙСТВО:"
  

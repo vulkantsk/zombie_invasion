@@ -44,7 +44,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = -1 } -- kv
+			{ duration = 20 } -- kv
 		)
 	 
 		bonus = bonus_base
@@ -55,7 +55,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = -1 } -- kv
+		{ duration = 60 } -- kv
 	)
 
 	modifier.parent = modif_scept
@@ -116,7 +116,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = -1 } -- kv
+			{ duration = 20 } -- kv
 		)
  
 		bonus = bonus_kill
@@ -125,7 +125,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = -1 } -- kv
+		{ duration = 60 } -- kv
 	)
 
 	modifier.parent = modif_scept
@@ -182,7 +182,7 @@ function axe_culling_blade_lua:OnSpellStart()
 			caster, -- player source
 			self, -- ability source
 			"modifier_scepter_culling_blade", -- modifier name
-			{ duration = -1 } -- kv
+			{ duration = 20 } -- kv
 		)
  
 		bonus = bonus_kill
@@ -191,7 +191,7 @@ function axe_culling_blade_lua:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_scepter_culling_blade_stack", -- modifier name
-		{ duration = -1 } -- kv
+		{ duration = 60 } -- kv
 	)
 
 	modifier.parent = modif_scept

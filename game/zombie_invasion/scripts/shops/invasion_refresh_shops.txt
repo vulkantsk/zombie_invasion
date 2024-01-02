@@ -102,7 +102,8 @@
 		"item"		"item_octarine_core"
 		"item"      "item_magic_stone"
 		"item"		"item_bloodstone"
-		"item"      "item_bloodstone_max_2"		 
+		"item"      "item_bloodstone_max_2"
+		"item"		"item_magic_stone"	 
 	}
 		
 	// Level 3 - Purple Recipes	
@@ -119,6 +120,7 @@
 		"item"		"item_last_standing_shield"	
 		"item"		"item_steel_cuirass"
 		"item"		"item_blade_mail"
+		"item"		"item_eternal_shroud"
 
 	}
 			
