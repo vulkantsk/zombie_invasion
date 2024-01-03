@@ -195,8 +195,8 @@
                
                 "duration"        
                 {
-                    "value"     "10"
-                    "special_bonus_scepter" "+10"
+                    "value"     "4.5"
+                    "special_bonus_scepter" "+3"
                 }        
         }
     }

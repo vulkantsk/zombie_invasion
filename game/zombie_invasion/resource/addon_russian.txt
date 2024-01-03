@@ -1870,6 +1870,12 @@
 		"DOTA_Tooltip_Ability_quest_stranger_7_reward_exp"                 		"ОПЫТА:"
 		"DOTA_Tooltip_Ability_quest_stranger_7_reward_gold"                 		"ЗОЛОТА:"
 
+		"DOTA_Tooltip_Ability_quest_stranger_8"										"НЕЗНАКОМЕЦ"
+		"DOTA_Tooltip_Ability_quest_stranger_8_Description"							"Я в тебе не сомневался. Ты сделал это, спасибо за твою работу, для тебя у меня больше нет заданий."
+		"DOTA_Tooltip_Ability_quest_stranger_8_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_stranger_8_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_stranger_8_reward_gold"                 		"ЗОЛОТА:"
+
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Огнезвёзд"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"---      Ты кто такой? Я тебя раньше не видел. Но в тебе чувствуется дух воителя, возможно из тебя выйдет хороший воин, но тебе сперва надо доказать, что ты что-то можешь. Я понимаю, что ты начинающий воитель, поэтому принеси-ка мне пару лапок лягушек, уж эти “чудовища” должны быть тебе по зубам."
 
