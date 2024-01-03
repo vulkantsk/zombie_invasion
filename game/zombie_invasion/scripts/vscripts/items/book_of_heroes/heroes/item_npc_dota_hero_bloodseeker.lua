@@ -1,4 +1,4 @@
-LinkLuaModifier("modifier_wisp", "items/book_of_heroes/heroes/item_npc_dota_hero_bloodseeker", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_blood", "items/book_of_heroes/heroes/item_npc_dota_hero_bloodseeker", LUA_MODIFIER_MOTION_NONE)
 item_npc_dota_hero_bloodseeker = class({})
 
 function item_npc_dota_hero_bloodseeker:OnSpellStart()
