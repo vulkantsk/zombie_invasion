@@ -8,6 +8,7 @@
 #base "../vscripts/heroes/hero_smaug/smaug.txt"
 #base "../vscripts/heroes/hero_sand_king/sand.txt"
 #base "../vscripts/heroes/hero_ursa/ursa.txt"
+#base "../vscripts/heroes/hero_dragon_knight/dragon.txt"
 #base "../vscripts/heroes/hero_troll/troll.txt"
 #base "../vscripts/heroes/hero_samurai/samurai.txt"
 #base "../vscripts/heroes/hero_hoodwink/hood.txt"

@@ -1,0 +1,303 @@
+"DOTAAbilities"
+{
+	"shield_crush"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dragon_knight/shield_crush/shield_crush"
+		"AbilityTextureName"			"shield_crush"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"14"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		"AbilityCooldown"				"12"
+		"AbilityManaCost"				"0"
+
+
+		"AbilityValues"
+		{
+			
+				"damage"			"25 50 75 100 125 150 175 200 225 250 275 300 325 350"
+				"stun_duration"			"2.25"
+				"dragon_cast_range"			"400"
+				"pct_damage"	"1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8"
+				"damage_resistance"		"7"
+				"damage_pct"	"300"
+
+			
+		}
+	}
+	"thunder_smash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_dragon_knight/thunder_smash/thunder_smash"
+        "AbilityTextureName"            "thunder_smash"
+        "MaxLevel"						"14"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_Brewmaster.ThunderClap"
+		"HasShardUpgrade"			"1"
+
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120"		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"AbilityCooldown"				
+				{
+					"value"	"14"
+					"special_bonus_shard"	"-2"
+				}
+
+				"radius"					
+				{
+					"value"		"400"
+					"special_bonus_shard"	"+225"
+				}
+				"damage"					"90 160 230 300 370 440 510 580 650 720 790 860 930 1000"	
+				"movement_slow"				"55"		
+				"attack_speed_slow"			"55"		
+				"duration"					"4.0"
+				"duration_creeps"			"4"
+			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	"armor_revenge"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/hero_dragon_knight/armor_revenge/armor_revenge"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "armor_revenge"
+        "MaxLevel"                      "14"
+        "LevelsBetweenUpgrades"         "4"
+        "RequiredLevel"                 "4"
+
+        "AbilityCastRange"              "%radius"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {  
+				"damage_bonus"			"1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5"
+				"armor_bonus"			
+				{
+					"value"	"4 6 8 10 12 14 16 18 20 22 24 26 28 30"
+					"special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"	"+12"
+				}
+
+        }
+
+    }  
+    "damage_collection"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dragon_knight/damage_collection/damage_collection"
+		"AbilityTextureName"			"damage_collection"
+		"FightRecapLevel"				"1"
+		"LevelsBetweenUpgrades"         "10"
+		"MaxLevel"						"10"
+		"RequiredLevel"                 "10"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_cast.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"300"
+		"AbilityManaCost"				"100 200 300 400 500 600 700 800 900 1000"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"bonus_damage"		"230 290 350 410 470 530 590 610 670 710"
+				"duration"		
+				{
+					"value"			"120"
+					"special_bonus_unique_dragon_knight_damage_collection_duration"	"+120"
+				}
+		}
+	}
+	 "full_armor_stand"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dragon_knight/full_armor_stand/full_armor_stand"
+		"AbilityTextureName"			"full_armor_stand"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"IsGrantedByScepter"			"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_cast.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"300"
+		"AbilityManaCost"				"400"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"resist_damage"		"-40"
+				"duration"		"8"
+				"damage"		"-25"
+				
+				
+		}
+	}
+	"destruction"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_dragon_knight/destruction/destruction"
+		"AbilityTextureName"			"destruction"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"10"
+		"LevelsBetweenUpgrades"         "10"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.5"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"edge_damage"					"325 450 575 700 825 950 1075 1200 1325 1450"
+				"radius"						"225"
+			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"dragon_knight_buff_1"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "items/book_of_heroes/heroes/item_npc_dota_hero_dragon_knight"
+        "AbilityTextureName"            "burning_strange"
+        "MaxLevel"                      "1"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "str"       "1.5"
+        }   
+    }
+	"special_bonus_unique_dragon_knight_damage_collection_duration"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	"special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+	
+}

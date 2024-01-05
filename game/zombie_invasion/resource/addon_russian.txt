@@ -3286,11 +3286,11 @@
 
 
 
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_pohela_resistance"	"+7% к резизсту от способности Pohela"
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_frostshtorm_duration"	"+5 к длительности FrostShtorm"
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+1.15 к УРОНУ от способности Revenge"
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_heal"	"+600 к лечению от способности Revenge"
-		"DOTA_Tooltip_ability_special_bonus_unique_yuki_snowman_max"	"+1 заряд способности snowman"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_pohela_resistance"	"+{s:bonus_bonus_resistance}% к резизсту от способности Pohela"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_frostshtorm_duration"	"+{s:bonus_duration} секунд к длительности FrostShtorm"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_damage"	"+{s:bonus_base_damage} к БАЗОВОМУ УРОНУ от способности Revenge"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_revenge_heal"	"+{s:bonus_heal} к лечению от способности Revenge"
+		"DOTA_Tooltip_ability_special_bonus_unique_yuki_snowman_max"	"+{s:bonus_max_snowman} заряд способности snowman"
 
 
 	// -----------------Samurai--------------------
@@ -3943,8 +3943,74 @@
 		"DOTA_Tooltip_Ability_undying_soul_rip_Description"					 			"Герой вырывает жизненные силы из всех существ рядом с целью, излечивая союзника или нанося урон противнику."
 		"DOTA_Tooltip_Ability_undying_soul_rip_Lore"								"Если рядом жрец теней, даже союзники чувствуют отчаяние."
 
- 
+ 		// -----------------Dragon Knight--------------------
 
+
+ 		"DOTA_Tooltip_Ability_shield_crush"			"shield crush"
+ 		"DOTA_Tooltip_Ability_shield_crush_Description"		"Герой совершает мощный удар щитом, оглушая противника на %stun_duration%, также щит начинает поглащать %damage_resistance% урона в себя."
+ 		"DOTA_Tooltip_modifier_shield_crush_buff"			"Благодать богов"
+ 		"DOTA_Tooltip_modifier_shield_crush_buff_Description"			"Урон по вам уменьшен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%"
+ 		"DOTA_Tooltip_Ability_shield_crush_Lore"		"Щит способный заткнуть самого бога."
+ 		"DOTA_Tooltip_Ability_shield_crush_damage"		"БАЗОВЫЙ УРОН:"
+ 		"DOTA_Tooltip_Ability_shield_crush_pct_damage"	"МНОЖИТЕЛЬ БРОНИ:"
+
+ 		"DOTA_Tooltip_Ability_thunder_smash"			"thunder smash"
+ 		"DOTA_Tooltip_Ability_thunder_smash_Description"		"Стремительный удар молний, которая наносит урон всем врагам в радиусе %radius%, замедляя скорость атаки и передвижения на %movement_slow%, длительность которой %duration% секунды."
+ 		"DOTA_Tooltip_Ability_thunder_smash_Lore"		"После удара грома следует потеря слуха и осезания всех, кто являлся грому врагом."
+ 		"DOTA_Tooltip_Ability_thunder_smash_Shard"	""
+ 		"DOTA_Tooltip_Ability_thunder_smash_Shard_Description"		"Уменьшает перезарядку до %AbilityCooldown% секунд и увеличивает радиус до %radius% единиц"
+ 		"DOTA_Tooltip_Ability_thunder_smash_damage"	"БАЗОВЫЙ УРОН:"
+ 		"DOTA_Tooltip_Ability_thunder_smash_damage_pct"	"%МНОЖИТЕЛЬ УРОНА:"
+
+
+ 		"DOTA_Tooltip_Ability_armor_revenge"			"Armor Revenge"
+ 		"DOTA_Tooltip_Ability_armor_revenge_Description"		"Ярость щита, брони и других аксессуаров на защиту придают вам мощь, увеличвая ваш урон за единицу силы и даёт дополнительно броню."
+ 		"DOTA_Tooltip_modifier_armor_revenge_passive"		"Ярость"
+ 		"DOTA_Tooltip_modifier_armor_revenge_passive_Description"	"Урон увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% единиц, защита на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% единиц."
+ 		"DOTA_Tooltip_Ability_armor_revenge_Lore"		"Самая сладкая месть, сделать врага беззащитным."
+ 		"DOTA_Tooltip_Ability_armor_revenge_damage_bonus"	"УРОНА ЗА ЕД.БРОНИ:"
+ 		"DOTA_Tooltip_Ability_armor_revenge_armor_bonus"	"БОНУСНАЯ БРОНЯ:"
+
+ 		"DOTA_Tooltip_Ability_full_armor_stand"			"Full armor stand"
+ 		"DOTA_Tooltip_Ability_full_armor_stand_Description"		"Концентрация на защите, уменьшает урон, но делает вашу стойку не пробиваемой"
+ 		"DOTA_Tooltip_modifier_full_armor_stand"		"Защитная стойка"
+ 		"DOTA_Tooltip_modifier_full_armor_stand_Description"	"Урон по вам уменьшен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%, ваш урон уменьшен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
+ 		"DOTA_Tooltip_Ability_full_armor_stand_resist_damage"	"%УМЕНЬШЕНИЕ ВХОДЯЩЕГО УРОНА:"
+ 		"DOTA_Tooltip_Ability_full_armor_stand_damage"	"%УМЕНЬШЕНИЕ ИСХОДЯЩЕГО УРОНА:"
+ 		"DOTA_Tooltip_Ability_full_armor_stand_Duration"	"ДЛИТЕЛЬНОСТЬ:"
+
+
+ 		"DOTA_Tooltip_Ability_damage_collection"			"Damage collection"
+ 		"DOTA_Tooltip_Ability_damage_collection_Description"		"Концентрация на атаке, увеличивает ваш урон"
+ 		"DOTA_Tooltip_modifier_damage_collection"		"Боевая стойка"
+ 		"DOTA_Tooltip_modifier_damage_collection_Description"	"Урон увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%"
+ 		"DOTA_Tooltip_Ability_damage_collection_bonus_damage"	"ДОПОЛНИТЕЛЬНЫЙ УРОН:"
+ 		"DOTA_Tooltip_Ability_damage_collection_Duration"	"ДЛИТЕЛЬНОСТЬ:"
+
+
+ 		"DOTA_Tooltip_Ability_destruction"			"destruction"
+ 		"DOTA_Tooltip_Ability_destruction_Description"		"Герой жертвуя своим здоровьем наносит коллосальный урон зависящий от (урона своей атаки + базовый урон способности) противникам в радиусе %radius% своей атаки."
+ 		"DOTA_Tooltip_Ability_destruction_Lore"			"Жертвенный огонь."
+ 		"DOTA_Tooltip_Ability_destruction_edge_damage"		"БАЗОВЫЙ УРОН:"
+
+ 		"DOTA_Tooltip_Ability_dragon_knight_buff_1"		"Dragon power"
+ 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_Description"	"Герой озадаченно думает о силе драконов, благодаря чему получает возможность стать сильнее с каждым уровнем."
+ 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_str"	"СИЛА ЗА УРОВЕНЬ:"
+ 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_Lore"	"Сила мечты"
+
+
+
+
+
+
+
+
+
+
+
+
+ 		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_damage_collection_duration"				"+{s:bonus_duration} секунд действия способности damage collection"
+		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"					"+{s:bonus_armor_bonus} брони способности armor revenge"
  
  		// -----------------Skeleton King--------------------	
 		"DOTA_Tooltip_ability_wraith_king_wraithfire_blast_lua"								"Wraithfire Blast"

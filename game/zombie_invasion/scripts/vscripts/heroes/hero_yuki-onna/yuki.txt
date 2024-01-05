@@ -32,16 +32,16 @@
 		{
 			"AbilityChannelTime"
 			{
-				"value" "6 7 8 9 10 11 12"
+				"value" "6"
 			}
 			"channel_duration"
 			{
-				"value" "8 9 10 11 12 13 14"
+				"value" "6"
 			}
 			"bonus_resistance"
 			{
-				"value" "8 9 10 11 12 13 14"
-				"special_bonus_unique_yuki_pohela_resistance"    "+7"
+				"value" "4 5 6 7 8 9 10"
+				"special_bonus_unique_yuki_pohela_resistance"    "+5"
 			}
  			"reduce_atack_speed"		"10 15 20 25 30 35 40"
 			"debuff_duration"		"1 1.25 1.5 1.75 2 2.5 3"
@@ -115,25 +115,28 @@
 		{
 				"damage_per_int"					
 				{
-					"value"				"0.11 0.25 0.5 0.75 1.0 1.05 1.15"
-					"special_bonus_unique_yuki_revenge_damage"    "+1.15"			 
+					"value"				"0.75"		 
 					 "CalculateSpellDamageTooltip"	"0"
 
 				}
 
 				"radius"					
 				{
-					"value"				"325 350 375 400 425 450 475"					 
+					"value"				"375"					 
 				}
  
-				"int_think"	 				"0.5"
+				"int_think"	 				"1"
 			 
 				"heal"				
 				{
-					"value"				"5 15 30 60 120 180 240 260 280 300 320 340 360 380"		
-					"special_bonus_unique_yuki_revenge_heal"    "+600"			 
+					"value"				"15 30 45 60 75 90 105 120 135 150 165 180 195 210"		
+					"special_bonus_unique_yuki_revenge_heal"    "+210"			 
 				}
-				"base_damage" 			"15 30 45 90 110 160 220 260 300 340 380 420 480 540"
+				"base_damage" 			
+				{
+					"value"	"15 45 75 105 135 165 195 225 255 285 315 345 375 405"
+					"special_bonus_unique_yuki_revenge_damage"		"+300"
+				}
 		
  
 				 
@@ -202,7 +205,7 @@
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"500 1200 1500 2500"
+		"AbilityManaCost"				"600 1200 1800 2600"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -214,12 +217,13 @@
  			{
  				"value"			"6"
  				"special_bonus_shard"	"-2.5"
+ 				"CalculateSpellDamageTooltip"	"0"
  			}
  			"interval"      "0.2"
- 			"bonus_main"         "11 14 18 22"
+ 			"bonus_main"         "4 8 12 16"
  			"dmg_incr"      "50"
  			"dmg_reduce"      "30"
- 			"main_pct"		"11"
+ 			"main_pct"		"8"
 
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -242,21 +246,21 @@
 		"RequiredLevel"					"10"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40 35 30"
+		"AbilityCooldown"				"30"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"170 320 550"
+		"AbilityManaCost"				"200 400 600"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
- 			"bonus_health" "500 1500 3000"
+ 			"bonus_health" "1200 2400 3600"
  			"max_snowman"					
 			{
 				"value"				"3 4 5"
-				"special_bonus_unique_yuki_snowman_max"    "+1"			 
+				"special_bonus_unique_yuki_snowman_max"    "+2"			 
 					 
 			}	
 		}
@@ -292,8 +296,8 @@
 		"AbilityValues"
 		{
  			
- 			"radius"                "150"
- 			"heal"                "190 370 550"
+ 			"radius"                "250"
+ 			"heal"                "400 800 1600"
  			"slow_as"              "-10 -20 -30"
  			"duration"               "2"
 

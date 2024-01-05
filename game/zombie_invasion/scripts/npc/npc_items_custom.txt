@@ -5259,12 +5259,12 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"buff_duration"		"8"
+				"buff_duration"		"16"
 			}						
  			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"		"165"
+				"bonus_damage"		"215"
 												"CalculateSpellDamageTooltip" "0"
 			}						
  
@@ -5281,7 +5281,7 @@
   			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_anti_damage"		"67"
+				"bonus_anti_damage"		"12"
 												"CalculateSpellDamageTooltip" "0"
 			}		
   			"06"
@@ -9022,7 +9022,32 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			 "agi"		"10"
+			 "agi"		"1.5"
+		}
+	}
+	"item_npc_dota_hero_dragon_knight"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_dragon_knight"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemPurchasable"				"0" 
+		"ItemInitialCharges"            "1"
+        "AbilityTextureName"                         "books/book_dragon"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "str"		"1.5"
 		}
 	}
 	"item_npc_dota_hero_sniper"

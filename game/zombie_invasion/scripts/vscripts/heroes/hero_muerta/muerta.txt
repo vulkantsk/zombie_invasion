@@ -108,6 +108,7 @@
 		//"AbilitySound"					"Hero_PhantomAssassin.CoupDeGrace"
 
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+		"MaxLevel"			"1"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
