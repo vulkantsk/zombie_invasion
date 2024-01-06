@@ -3599,8 +3599,8 @@
 		{
 				"bonus_damage"		"25"
 				"bonus_strength"		"10"
-				"bash_chance_melee"		"65"
-				"bash_chance_ranged"		"50"
+				"bash_chance_melee"		"25"
+				"bash_chance_ranged"		"20"
 				"bash_duration"			"0.2"
 				"bash_cooldown"			"0.5"
 				"bonus_chance_damage"	"100"
@@ -4785,12 +4785,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bash_chance"	"80"
+				"bash_chance"	"33"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"bash_stun"	"0.1"
+				"bash_stun"	"0.075"
 			}
 			"04"
 			{
@@ -4825,7 +4825,7 @@
 			"10"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"magical_damage"	"160"
+				"magical_damage"	"320"
 			}
 			
 			
@@ -8802,6 +8802,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemPurchasable"				"0" 
 		"ItemInitialCharges"            "1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
         "AbilityTextureName"                         "books/book_of_heroes"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------

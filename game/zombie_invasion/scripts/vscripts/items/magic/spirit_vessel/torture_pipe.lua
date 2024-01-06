@@ -5,7 +5,6 @@ item_torture_pipe_2 = item_torture_pipe
 LinkLuaModifier("modifier_item_torture_pipe", "items/magic/spirit_vessel/torture_pipe", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_torture_pipe_buff", "items/magic/spirit_vessel/torture_pipe", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_torture_pipe_debuff", "items/magic/spirit_vessel/torture_pipe", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_torture_pipe_buff",	"items/magic/spirit_vessel/torture_pipe", 	LUA_MODIFIER_MOTION_NONE)
 
 function item_spirit_pochti_vessel:GetIntrinsicModifierName()
 	return "modifier_item_torture_pipe"
@@ -86,10 +85,6 @@ function modifier_item_torture_pipe:OnRefresh(keys)
 end
 
 function modifier_item_torture_pipe:CacheDOTBoost()
-	local torture_modifier = self:GetParent():FindModifierByName("modifier_torture_pipe_buff")
-	if not torture_modifier then
-		torture_modifier = self:GetParent():AddNewModifier(self:GetParent(), nil, "modifier_torture_pipe_buff", {})
-	end
 
 	if torture_modifier and not torture_modifier:IsNull() then
 		torture_modifier:CacheDOTBoost()

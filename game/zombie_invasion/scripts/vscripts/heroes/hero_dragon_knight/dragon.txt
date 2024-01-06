@@ -31,7 +31,6 @@
 				"dragon_cast_range"			"400"
 				"pct_damage"	"1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8"
 				"damage_resistance"		"7"
-				"damage_pct"	"300"
 
 			
 		}
@@ -80,6 +79,7 @@
 				"attack_speed_slow"			"55"		
 				"duration"					"4.0"
 				"duration_creeps"			"4"
+				"damage_pct"	"300"
 			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"

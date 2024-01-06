@@ -3955,7 +3955,7 @@
  		"DOTA_Tooltip_Ability_shield_crush_pct_damage"	"МНОЖИТЕЛЬ БРОНИ:"
 
  		"DOTA_Tooltip_Ability_thunder_smash"			"thunder smash"
- 		"DOTA_Tooltip_Ability_thunder_smash_Description"		"Стремительный удар молний, которая наносит урон всем врагам в радиусе %radius%, замедляя скорость атаки и передвижения на %movement_slow%, длительность которой %duration% секунды."
+ 		"DOTA_Tooltip_Ability_thunder_smash_Description"		"Стремительный удар молний, которая наносит утроенный урон от атаки владельца всем врагам в радиусе %radius%, замедляя скорость атаки и передвижения на %movement_slow%, длительность которой %duration% секунды."
  		"DOTA_Tooltip_Ability_thunder_smash_Lore"		"После удара грома следует потеря слуха и осезания всех, кто являлся грому врагом."
  		"DOTA_Tooltip_Ability_thunder_smash_Shard"	""
  		"DOTA_Tooltip_Ability_thunder_smash_Shard_Description"		"Уменьшает перезарядку до %AbilityCooldown% секунд и увеличивает радиус до %radius% единиц"
@@ -4373,6 +4373,8 @@
     	"dota_hud_error_milk_bad_target"                    					"Чел ты..."    		
     	"dota_hud_error_full_inventory"                    						"Он жирный, нахуй ты еще пихаешь что-то"
     	"dota_hud_error_havent_charges"                    						"It просто брбрббр-кончилась"
+    	"dota_hud_error_not_your_level"                    						"Тебе надо качаться, дружок."
+    	"dota_hud_error_use_your_brain"                    						"Дохуя начитанный чтоли?"
     	"dota_hud_error_bad_target"                    						"Неверно выбрана цель"
     	"dota_hud_error_use_myself"                    						"Нельзя использовать на себя"    
     	"dota_hud_error_use_enemies"                    						"Нельзя использовать на врагов"  

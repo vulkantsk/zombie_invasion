@@ -15,3 +15,30 @@ function item_book_of_heroes:OnSpellStart()
      end
 end 
 
+function item_book_of_heroes:CastFilterResult()
+    --print("Error")
+    if IsServer() then
+
+        
+        if (self:GetCaster():GetLevel() < 25) then
+            return UF_FAIL_CUSTOM
+        end
+
+
+        return UF_SUCCESS
+    end
+end
+
+function item_book_of_heroes:GetCustomCastError()
+    --print("Error")
+    if IsServer() then
+        
+
+
+        if (self:GetCaster():GetLevel() < 25) then
+            return "#dota_hud_error_not_your_level"
+        end
+
+        return UF_SUCCESS
+    end
+end
