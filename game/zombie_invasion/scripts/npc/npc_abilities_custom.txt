@@ -6593,13 +6593,13 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"					"175"
+				"heal"					"550"
 				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_4"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"400"
+				"projectile_speed"		"800"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
@@ -6646,13 +6646,13 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"					"275"
+				"heal"					"1000"
 				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_4"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"400"
+				"projectile_speed"		"900"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
@@ -20823,7 +20823,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/zombie/Boss/undying_decay_boss_wave"
 				"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -20894,7 +20894,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/zombie/Boss/undying_decay_boss_wave"
 				"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -20946,7 +20946,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str_health_up"					"1000"
+				"str_health_up"					"5999"
  
 			}		
 			"06"
@@ -21285,7 +21285,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"damage"				"5000"
+			"damage"				"11111"
 		}
 	}
 }

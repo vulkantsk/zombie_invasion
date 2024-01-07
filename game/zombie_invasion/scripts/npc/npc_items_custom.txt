@@ -7925,7 +7925,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_strikes"			"6" // Vanilla is 4
+				"chain_strikes"			"5" // Vanilla is 4
 			}
 			"05"
 			{
@@ -7945,7 +7945,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"145 195"
+				"chain_damage_self"			"145 165"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
@@ -8022,7 +8022,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_strikes"			"8" // Vanilla is 4
+				"chain_strikes"			"6" // Vanilla is 4
 			}
 			"05"
 			{
@@ -8042,7 +8042,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage_self"			"145 195"
+				"chain_damage_self"			"145 165"
 								"CalculateSpellDamageTooltip" "0"
 			}			
  			"09"
