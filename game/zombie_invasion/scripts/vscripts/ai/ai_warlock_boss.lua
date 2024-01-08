@@ -9,7 +9,6 @@ function Spawn( entityKeyValues )
  
  	hSpawner = Entities:FindByName( nil, "final_point" )
     agro = false
-	hwarlock_spleshAbility = thisEntity:FindAbilityByName( "warlock_splesh" )  
  
 	thisEntity:SetContextThink( "WarlockThink", WarlockThink, 1 )
 end
@@ -32,9 +31,6 @@ function WarlockThink()
 		MoveToTarget()
         agro = false
 	else 
-	if npc:HasAbility("warlock_splesh") and hwarlock_spleshAbility:IsFullyCastable() then
-		return  CastROt( enemies[ RandomInt( 1, #enemies ) ] )
-	end
         if agro == false then 
         	AttackMove( npc, enemy )
         	agro = true

@@ -4,7 +4,8 @@
 	{		
 		"BaseClass"                 "ability_lua"
 		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid"
-		"MaxLevel"            		"4"
+		"MaxLevel"            		"14"
+		"DisplayAdditionalHeroes"		"1"
 				"AbilityTextureName"			"tech/android_pocket_factory"
 		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_POINT"
 
@@ -12,7 +13,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"3.0"
 		"AbilityCastRange"				"300"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"90"				
@@ -26,10 +27,10 @@
 		"AbilityValues"
 		{
  
-				"bonus_health"				"1500 2500 3500 5000 8000 12000 16000"
-				"bonus_damage"		"80 140 200 300 400 500 800"
-				"bonus_armor"		"15 20 25 30 35 40 45"
-				"bonus_regen"        "50 75 100 125 150 175 200"
+				"bonus_health"				"750 1500 2500 3500 5000 6000 8000 7000 9000 12000 14000 16000 18000 20000"
+				"bonus_damage"		"80 100 120 140 160 180 200 220 240 260 280 300 320 340"
+				"bonus_armor"		"5 15 20 25 30 35 40 45 50 55 60 65 70 75"
+				"bonus_regen"        "12.5 25 50 75 100 125 150 175 200 225 250 275 300 325"
 		}
    }
 
@@ -46,22 +47,22 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"3.0"
 		"AbilityCastRange"				"300"
-        "MaxLevel"                      "7"
+        "MaxLevel"                      "14"
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"90"				
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 120 160 200 240 280 320"
+		"AbilityManaCost"				"240"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
  
-				"bonus_health"				"500 1000 1500 2000 2500 3000 3500"
-				"bonus_damage"		"80 180 300 420 600 800 1200"
+				"bonus_health"				"500 1000 1500 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000"
+				"bonus_damage"		"100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400"
 		}
    }
 
@@ -70,7 +71,7 @@
 	{		
 		"BaseClass"                 "ability_lua"
 		"ScriptFile"      	"heroes/hero_tech/tech_mehanoid_turel"
-		"MaxLevel"						"3"
+		"MaxLevel"						"10"
 		"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
 				"AbilityTextureName"			"tech/android_armor"
@@ -95,21 +96,22 @@
 		"AbilityValues"
 		{
  
-				"duration"				"40 50 60"
-				"bonus_damage"		"450 875 1800"
-				"bonus_attack_speed"     "0 50 100"
-				"arrow_count"		"4 6 8"
-				"bonus_range"           "0 200 400"
+ 				"bonus_health"				"250 500 750 1000 1250 1500 1750 2000 2250 2500"
+				"bonus_damage"		"375 550 725 900 1075 1250 1425 1600 1775 1950"
+				"bonus_attack_speed"     "20 40 60 80 100 120 140 160 180 200"
+				"arrow_count"		"3"
+				"bonus_range"           "90 100 110 120 130 140 150 160 170 180"
 		}
    }
 
-   	"tech_speed"
+   	"tech_speed"	
 	{
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"heroes/hero_tech/tech_speed"
 				"AbilityTextureName"			"tech/4"
-		"RequiredLevel"				"10"
-		"MaxLevel"					"1"
+		"RequiredLevel"				"6"
+		"LevelsBetweenUpgrades"			"10"
+		"MaxLevel"					"10"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -117,7 +119,8 @@
 		"AbilityValues"
 		{
 			"locked_attack_speed"			"700"
-			"pct_damage_per_attack_speed"	"3"
+			"pct_damage_per_attack_speed"	"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+			"attack_speed_cap"				"100000000000000"
 		}
 	}
 }

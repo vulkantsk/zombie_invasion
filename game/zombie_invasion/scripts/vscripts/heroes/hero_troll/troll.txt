@@ -106,7 +106,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_TrollWarlord.WhirlingAxes.Ranged"
-        "MaxLevel"                        "4"
+        "MaxLevel"                        "14"
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastAnimation"			"ACT_DOTA_WHIRLING_AXES_RANGED"
@@ -185,7 +185,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_TrollWarlord.WhirlingAxes.Melee"
-       "MaxLevel"                        "4" 
+       "MaxLevel"                        "14" 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
  		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
@@ -208,7 +208,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"80 160 240 320 400 480 560 600 640 680 720 760 800 840"
+				"damage"					"110 160 240 320 400 480 560 600 640 680 720 760 800 840"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_3"
 			}
 			"02"
@@ -386,6 +386,7 @@
 		"ScriptFile"				"heroes/hero_troll/giant_strikes/giant_strikes"
 		"AbilityTextureName"		"innate_giant_strikes"
 		"RequiredLevel"				"10"
+		"LevelsBetweenUpgrades"			"10"	
 		"MaxLevel"					"10"
 		"HasShardUpgrade"               "1"
 
@@ -394,11 +395,11 @@
 
 		"AbilityValues"
 		{
-			"locked_attack_speed"			"540 540 540 680 680 680 720 720 720 734"
+			"locked_attack_speed"			"734"
 			"pct_damage_per_attack_speed"	
 			{
-				"value"	"0.11 0.12 0.13 0.2 0.21 0.22 0.3 0.31 0.32 0.4"
-				"special_bonus_shard"	"+0.6"
+				"value"	"0.11 0.12 0.13 0.2 0.21 0.22 0.3 0.31 0.32 0.33"
+				"special_bonus_shard"	"+0.11"
 			}
 			"attack_speed_cap"				"100000000000000"
 		}
@@ -445,7 +446,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"agi_pct"		"16"
+			"agi_pct"		"55"
 		}	
 	}
 

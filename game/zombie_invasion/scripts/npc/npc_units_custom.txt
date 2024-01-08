@@ -2362,14 +2362,16 @@
 		//----------------------------------------------------------------
 		"Model"						"models/heroes/rattletrap/rattletrap.vmdl"
 		"ModelScale" 				"1.3"		
+		"UnitLabel"			"spirit_bear"
 		"BaseClass"					"npc_dota_lone_druid_bear"
  
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
-		"Level"						"1"
+		"Level"						"1000"
 		"HasInventory"              "1"
-		"IsSummoned"                "1"
- 		"ConsideredHero"			"1"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ConsideredHero"			"1"
 
 		// Abilities
 		//----------------------------------------------------------------
@@ -2425,7 +2427,7 @@
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
@@ -2434,7 +2436,17 @@
 		//----------------------------------------------------------------
 		"Creature"
 		{
-
+		
+			//Level Up
+			"HPGain"                    "0"
+			"DamageGain"                "0"
+			"ArmorGain"                 "0"
+			"ManaGain"                  "0"
+			"MagicResistGain"           "0"
+			"MoveSpeedGain"             "0"
+			"BountyGain"                "0"
+			"XPGain"                    "0"
+		
  
 			"AttachWearables"
 						{
@@ -2458,10 +2470,11 @@
 		"BaseClass"					"npc_dota_lone_druid_bear"
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
-		"Level"						"1"
+		"Level"						"1000"
+		"UnitLabel"			"spirit_bear"
 		"HasInventory"              "1"
-		"IsSummoned"                "1"
- 		"ConsideredHero"			"1"
+		"IsSummoned"                "0"
+ 		"ConsideredHero"			"0"
 
 		// Abilities
 		//----------------------------------------------------------------
@@ -2481,7 +2494,7 @@
 		"AttackDamageMin"			"0"					
 		"AttackDamageMax"			"0"	
 		"AttackDamageType"			"DAMAGE_TYPE_PHYSICAL"
-		"AttackRate"				"1.2"
+		"AttackRate"				"1.1"
 		"AttackAnimationPoint"		"0.5"				// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"	
 		"AttackRange"				"400"
@@ -2517,10 +2530,23 @@
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		"Creature"
+		{
+			//Level Up
+			"HPGain"                    "0"
+			"DamageGain"                "0"
+			"ArmorGain"                 "0"
+			"ManaGain"                  "0"
+			"MagicResistGain"           "0"
+			"MoveSpeedGain"             "0"
+			"BountyGain"                "0"
+			"XPGain"                    "0"
+		}
  
 	}
 	"npc_mechanical_turret"
@@ -2529,10 +2555,15 @@
 		//----------------------------------------------------------------
 		"Model"						"models/items/rattletrap/mechanised_pilgrim_cog/mechanised_pilgrim_cog.vmdl"
 		"ModelScale" 				"2.1"	
-		"BaseClass"					"npc_dota_creature"
+		"BaseClass"					"npc_dota_lone_druid_bear"
 		"SoundSet"					"Tower.Fire"								// Name of sound set.
+		"Level"						"1000"
 		"MinimapIcon"				"minimap_shield"
-		"IsSummoned"                "1"
+		"UnitLabel"				"spirit_bear"
+		"HasInventory"              "1"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ConsideredHero"			"1"
 		"CanBeDominated"            "0"
 
 		// Abilities

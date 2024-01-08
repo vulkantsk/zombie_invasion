@@ -19,8 +19,10 @@ end
 
 function modifier_tech_speed:OnRefresh()
 	self.parent = self:GetParent()
-	self.locked_attack_speed = self:GetAbility():GetSpecialValueFor("locked_attack_speed")
-	self.pct_damage_per_attack_speed = self:GetAbility():GetSpecialValueFor("pct_damage_per_attack_speed")
+	local ability = self:GetAbility()
+	self.locked_attack_speed = ability:GetSpecialValueFor("locked_attack_speed")
+	self.pct_damage_per_attack_speed = ability:GetSpecialValueFor("pct_damage_per_attack_speed")
+	self.attack_speed_cap = ability:GetSpecialValueFor("attack_speed_cap") / 100 
 	self.bat_mult = self.locked_attack_speed * 0.01
 end
 
@@ -37,9 +39,8 @@ function modifier_tech_speed:GetModifierFixedAttackRate()
 end
 
 function modifier_tech_speed:GetModifierPreAttack_BonusDamage()
-	local attack_speed = self.parent:GetIncreasedAttackSpeed()
-	local bonus_damage = (attack_speed * self.pct_damage_per_attack_speed * 100) - (700 * self.pct_damage_per_attack_speed)
-
+	local attack_speed = math.min(self.parent:GetIncreasedAttackSpeed(false), self.attack_speed_cap)
+	local bonus_damage = attack_speed * self.pct_damage_per_attack_speed * 100
 	return math.max(bonus_damage, 0)
 end
 

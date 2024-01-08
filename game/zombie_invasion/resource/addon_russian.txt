@@ -149,7 +149,10 @@
 	   "big_bo_2"                                                   "<font color='#FA8172'>Запахло чем-то отвратительным...</font>"
 	   "big_bo_3"                                                   "<font color='#B22228'>Мурашки идут по твоей коже</font>"
 	   "big_bo_4"                                                   "<font color='#8B0100'>Он почти здесь...</font>"
-	  	"npc_stranger_jitel"                                         "довакин"
+	   "npc_stranger_jitel"                                         "довакин" 
+	   "npc_mechanoid"                                         "меха-бот-танк2000"
+	   "npc_mechanoid_attack"                                         "меха-бот-урон4000"
+	   "npc_mechanical_turret"                                         "меха-турель12000"
 
 	   "begining_1"                                                 "<font color='#c10020'>Я удивлен, что вы смогли так долго продержаться</font>"
 	   "begining_2"                                                 "<font color='#c10020'>Но в этом и заключается ваша главная ошибка</font>"
@@ -1643,6 +1646,10 @@
 		"DOTA_Tooltip_ability_item_power_treads_2_bonus_movement_speed"        "+$move_speed"
 		"DOTA_Tooltip_ability_item_power_treads_2_bonus_stat"                  "+$selected_attrib"
 		"DOTA_Tooltip_Ability_item_power_treads_2_bonus_attackspeed"           "+$attack"
+
+		"DOTA_Tooltip_ability_item_tech_change"								"<font color='#4285B4'>Technical prince of this world</font>"
+        "DOTA_Tooltip_ability_item_tech_change_Description"                    "<h1>Активная: Change Hero</h1> Меняет текущего героя на выдающегося технаря Techies."
+        "DOTA_Tooltip_ability_item_tech_change_Lore"								"Банки, склянки, флаконы, гайки, линейки, пилы, взрывчатки - Techies."
 
 
  		"DOTA_Tooltip_ability_item_change_templar_assassins_creed"								"<font color='#4285B4'>Templar essence of knowledge</font>"

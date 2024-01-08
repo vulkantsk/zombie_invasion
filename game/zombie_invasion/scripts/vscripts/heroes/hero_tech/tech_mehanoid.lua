@@ -19,6 +19,7 @@ function tech_mehanoid:OnSpellStart()
 		caster.meh:SetBaseDamageMax(bonus_damage)
 		caster.meh:SetPhysicalArmorBaseValue(bonus_armor)
 		caster.meh:SetBaseHealthRegen(bonus_regen)
+		caster.meh:SetRespawnsDisabled(true)
 	elseif caster.meh and IsValidEntity(caster.meh) and not caster.meh:IsAlive() then 
 		FindClearSpaceForUnit(caster.meh, point_for_unit, true)
 		caster.meh:RespawnUnit()
@@ -30,19 +31,21 @@ function tech_mehanoid:OnSpellStart()
 		caster.meh:SetBaseDamageMax(bonus_damage)
 		caster.meh:SetPhysicalArmorBaseValue(bonus_armor)
 		caster.meh:SetBaseHealthRegen(bonus_regen)
+		caster.meh:SetRespawnsDisabled(true)
 	else 
  
-	caster.meh = CreateUnitByName("npc_mechanoid", point_for_unit, true, nil, nil, DOTA_TEAM_GOODGUYS)
- 	
+	caster.meh = CreateUnitByName("npc_mechanoid", point_for_unit, true, caster, caster, caster:GetTeamNumber())
+	caster.meh:SetControllableByPlayer( caster:GetPlayerID(), true )
+
  	caster.meh:FindAbilityByName("mechanoid_splash"):SetLevel(1)
 	caster.meh:SetOwner( caster )
-	caster.meh:SetControllableByPlayer( caster:GetPlayerID(), true )
 	FindClearSpaceForUnit( caster.meh, point_for_unit, true )
 	caster.meh:SetBaseMaxHealth(bonus_health)
 	caster.meh:SetBaseDamageMin(bonus_damage)	
 	caster.meh:SetBaseDamageMax(bonus_damage)
 	caster.meh:SetPhysicalArmorBaseValue(bonus_armor)
  	caster.meh:SetBaseHealthRegen(bonus_regen)
+ 	caster.meh:SetRespawnsDisabled(true)
 
 	end
 end

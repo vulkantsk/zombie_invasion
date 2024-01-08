@@ -10,17 +10,39 @@ function tech_mehanoid_turel:OnSpellStart()
 	local bonus_damage = self:GetSpecialValueFor("bonus_damage")
 	local duration = self:GetSpecialValueFor("duration")
 
-	local bonus_damage = self:GetSpecialValueFor("bonus_damage")
+	if caster.mehTurret and IsValidEntity(caster.mehTurret) and caster.mehTurret:IsAlive() then 
+		caster.mehTurret:AddNewModifier(caster.mehTurret, self, "modifier_shotgun_turel", {})
+		FindClearSpaceForUnit(caster.mehTurret, point_for_unit, true)
 
-	local unit = CreateUnitByName("npc_mechanical_turret", point_for_unit, true, nil, nil, DOTA_TEAM_GOODGUYS)  
-    unit:AddNewModifier(unit, self, "modifier_kill", {duration = duration})
-    unit:AddNewModifier(unit, self, "modifier_shotgun_turel", {})
- 
-	unit:SetOwner( caster )
-	unit:SetControllableByPlayer( caster:GetPlayerID(), true )
-	FindClearSpaceForUnit( unit, point_for_unit, true )
-	unit:SetBaseDamageMin(bonus_damage)	
-	unit:SetBaseDamageMax(bonus_damage)
+		caster.mehTurret:SetBaseMaxHealth(bonus_health)
+
+		caster.mehTurret:SetMaxHealth(bonus_health )
+		caster.mehTurret:SetHealth(bonus_health )		
+		caster.mehTurret:SetBaseDamageMin(bonus_damage)	
+		caster.mehTurret:SetBaseDamageMax(bonus_damage)
+		caster.mehTurret:SetTimeUntilRespawn(-1)
+	elseif caster.mehTurret and IsValidEntity(caster.mehTurret) and not caster.mehTurret:IsAlive() then 
+		caster.mehTurret:AddNewModifier(caster.mehTurret, self, "modifier_shotgun_turel", {})
+		FindClearSpaceForUnit(caster.mehTurret, point_for_unit, true)
+		caster.mehTurret:RespawnUnit()
+			caster.mehTurret:SetBaseMaxHealth(bonus_health)
+					caster.mehTurret:SetMaxHealth(bonus_health )
+		caster.mehTurret:SetHealth(bonus_health )	
+	caster.mehTurret:SetBaseDamageMin(bonus_damage)	
+	caster.mehTurret:SetBaseDamageMax(bonus_damage)
+	caster.mehTurret:SetTimeUntilRespawn(-1)
+	else 
+	caster.mehTurret = CreateUnitByName("npc_mechanical_turret", point_for_unit, true, caster, caster, caster:GetTeamNumber())
+
+    caster.mehTurret:AddNewModifier(caster.mehTurret, self, "modifier_shotgun_turel", {})
+	caster.mehTurret:SetOwner( caster )
+	caster.mehTurret:SetControllableByPlayer( caster:GetPlayerID(), true )
+	FindClearSpaceForUnit( caster.mehTurret, point_for_unit, true )
+	caster.mehTurret:SetBaseMaxHealth(bonus_health)
+	caster.mehTurret:SetBaseDamageMin(bonus_damage)	
+	caster.mehTurret:SetBaseDamageMax(bonus_damage)
+	caster.mehTurret:SetTimeUntilRespawn(-1)
+	end
 end
 
 
