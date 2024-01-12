@@ -1,7 +1,6 @@
 LinkLuaModifier( "modifier_undying_stack_debuff", "abilities/zombie/Boss/undying_decay_boss_wave", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_undying_stack_buff", "abilities/zombie/Boss/undying_decay_boss_wave", LUA_MODIFIER_MOTION_NONE )
 undying_decay_boss_wave = class({})
- 
 undying_decay_boss_wave_2 = class({})
 --------------------------------------------------------------------------------
 -- Custom KV

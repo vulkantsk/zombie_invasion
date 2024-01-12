@@ -1050,8 +1050,9 @@ EndGame:DemonEnd()
 
  
 	         for i=1, 1 do
-		         zombie_count = zombie_count + 1
-
+	         	    if zombie_count < 30 then 
+		         	  zombie_count = zombie_count + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(4,6)
 		         Timers:CreateTimer(time_res, function()
@@ -1064,14 +1065,14 @@ EndGame:DemonEnd()
  		         	       unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase = rollBase + 2.8 
  		            end
-        	             if zombie_count < 105 then 
+        	             if zombie_count < 10 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 	 SetExpUsually(unit, 0)
                              	 	 SetExpUsually(unit, 0)
-           	             elseif  zombie_count < 238 then 
+           	             elseif  zombie_count < 25 then 
           	                     SetGoldUsually(unit, -1)          	                  	
            	                  	 SetExpUsually(unit, -8)
-            	             elseif  zombie_count > 238 then 
+            	             elseif  zombie_count > 30 then 
           	                     SetGoldUsually(unit, -2)         	                  	  
            	                  	 SetExpUsually(unit, -18)
              	        end                  
@@ -1103,7 +1104,9 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_2 = zombie_count_2 + 1
+		         if zombie_count_2 < 30 then 
+		         	  zombie_count_2 = zombie_count_2 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(4,15)
 		         Timers:CreateTimer(time_res, function()
@@ -1111,31 +1114,32 @@ end
 		             if RollPercentage(rollBase_2) then 
  		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_wave_loss_boss_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_2 = 1.5
  		             else
                            unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_wave_loss_boss_half_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_2 = rollBase_2 + 1.5
  		             end
          	
-        	             if zombie_count_2 < 50 then 
+        	             if zombie_count_2 < 10 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	      SetExpUsually(unit, 0)
-           	             elseif  zombie_count_2 < 110 then 
+           	             elseif  zombie_count_2 < 15 then 
           	                     SetGoldUsually(unit, -3)          	                  	
            	                  	 SetExpUsually(unit, -16)
-            	             elseif  zombie_count_2 > 110 then 
+            	             elseif  zombie_count_2 > 15 then 
           	                     SetGoldUsually(unit, -6)         	                  	  
            	                  	 SetExpUsually(unit, -32)
              	        end                  
 
 	 
  	              end)    
-        	             if zombie_count_2 < 50 then 
+        	             if zombie_count_2 < 10 then 
              	            	 GiveGoldPlayers(8)
-           	             elseif  zombie_count_2 < 110 then 
+           	             elseif  zombie_count_2 < 15 then 
            	                  	 GiveGoldPlayers(6)
-            	             elseif  zombie_count_2 > 110 then 
+            	             elseif  zombie_count_2 > 15 then 
            	                  	 GiveGoldPlayers(4)
              	        end
 	       	           
@@ -1155,42 +1159,43 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_3 = zombie_count_3 + 1
+		         if zombie_count_3 < 50 then 
+		         	  zombie_count_3 = zombie_count_3 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(4,12)
 		         Timers:CreateTimer(time_res, function()
 
  
 		         	if RollPercentage(rollBase_3) then 
- 		                 unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 unit = CreateUnitByName("npc_classic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		         	       unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_wave_loss_boss_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_wave_loss_boss_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_3 = 1.5
  		             else
-                           unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           unit = CreateUnitByName("npc_classic_wave_zombie_down", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_wave_loss_boss_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           unit = CreateUnitByName("npc_wave_loss_boss_meat_golem", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_3 = rollBase_3 + 1.5
  		             end
  
          	
-        	             if zombie_count_3 < 105 then 
+        	             if zombie_count_3 < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	      SetExpUsually(unit, 0)
-           	             elseif  zombie_count_3 < 238 then 
+           	             elseif  zombie_count_3 < 30 then 
           	                     SetGoldUsually(unit, -3)          	                  	
            	                  	 SetExpUsually(unit, -16)
-            	             elseif  zombie_count_3 > 238 then 
+            	             elseif  zombie_count_3 > 30 then 
           	                     SetGoldUsually(unit, -6)         	                  	  
            	                  	 SetExpUsually(unit, -32)
              	        end                  
  
  	              end)    
-        	             if zombie_count_3 < 105 then 
+        	             if zombie_count_3 < 20 then 
              	            	 GiveGoldPlayers(8)
-           	             elseif  zombie_count_3 < 238 then 
+           	             elseif  zombie_count_3 < 30 then 
            	                  	 GiveGoldPlayers(6)
-            	             elseif  zombie_count_3 > 238 then 
+            	             elseif  zombie_count_3 > 30 then 
            	                  	 GiveGoldPlayers(4)
              	        end
 	       	           
@@ -1210,7 +1215,9 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_4 = zombie_count_4 + 1
+		         if zombie_count_4 < 50 then 
+		         	  zombie_count_4 = zombie_count_4 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(5,16)
 		         Timers:CreateTimer(time_res, function()
@@ -1227,24 +1234,24 @@ end
                            rollBase_4 = rollBase_4 + 1.5
  		             end
          	
-        	             if zombie_count_4 < 105 then 
+        	             if zombie_count_4 < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	      SetExpUsually(unit, 0)
-           	             elseif  zombie_count_4 < 238 then 
+           	             elseif  zombie_count_4 < 40 then 
           	                     SetGoldUsually(unit, -4)          	                  	
            	                  	 SetExpUsually(unit, -20)
-            	             elseif  zombie_count_4 > 238 then 
+            	             elseif  zombie_count_4 > 40 then 
           	                     SetGoldUsually(unit, -7)         	                  	  
            	                  	 SetExpUsually(unit, -45)
              	        end                  
 
 		  
  	              end)    
-        	             if zombie_count_4 < 105 then 
+        	             if zombie_count_4 < 20 then 
              	            	 GiveGoldPlayers(9)
-           	             elseif  zombie_count_4 < 238 then 
+           	             elseif  zombie_count_4 < 40 then 
            	                  	 GiveGoldPlayers(7)
-            	             elseif  zombie_count_4 > 238 then 
+            	             elseif  zombie_count_4 > 40 then 
            	                  	 GiveGoldPlayers(6)
              	        end
 	       	           
@@ -1264,7 +1271,9 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_5 = zombie_count_5 + 1
+		         if zombie_count_5 < 50 then 
+		         	  zombie_count_5 = zombie_count_5 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(10,18)
 		         Timers:CreateTimer(time_res, function()
@@ -1281,13 +1290,13 @@ end
                            rollBase_5 = rollBase_5 + 1.5
  		             end
          	
-        	             if zombie_count_5 < 50 then 
+        	             if zombie_count_5 < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	      SetExpUsually(unit, 0)
-           	             elseif  zombie_count_5 < 110 then 
+           	             elseif  zombie_count_5 < 30 then 
           	                     SetGoldUsually(unit, -9)          	                  	
            	                  	 SetExpUsually(unit, -36)
-            	             elseif  zombie_count_5 > 110 then 
+            	             elseif  zombie_count_5 > 30 then 
           	                     SetGoldUsually(unit, -16)         	                  	  
            	                  	 SetExpUsually(unit, -70)
              	        end                  
@@ -1318,7 +1327,10 @@ end
 
  
 	         for i=1, 1 do
-		         necr_count = necr_count + 1
+		     
+		         if necr_count < 50 then 
+		         	  necr_count = necr_count + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(11,15)
 		         Timers:CreateTimer(time_res, function()
@@ -1335,24 +1347,24 @@ end
                            rollBase_65 = rollBase_65 + 1.5
  		             end
 
-        	             if necr_count < 50 then 
+        	             if necr_count < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	      SetExpUsually(unit, 0)
-           	             elseif  necr_count < 110 then 
+           	             elseif  necr_count < 30 then 
           	                     SetGoldUsually(unit, -9)          	                  	
            	                  	 SetExpUsually(unit, -36)
-            	             elseif  necr_count > 110 then 
+            	             elseif  necr_count > 30 then 
           	                     SetGoldUsually(unit, -16)         	                  	  
            	                  	 SetExpUsually(unit, -70)
              	        end                  
 
 		         
  	              end)    
-        	             if necr_count < 50 then 
+        	             if necr_count < 20 then 
              	            	 GiveGoldPlayers(15)
-           	             elseif  necr_count < 110 then 
+           	             elseif  necr_count < 30 then 
            	                  	 GiveGoldPlayers(12)
-            	             elseif  necr_count > 110 then 
+            	             elseif  necr_count > 30 then 
            	                  	 GiveGoldPlayers(8)
              	        end
 	       	           
@@ -1371,9 +1383,11 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_6 = zombie_count_6 + 1
+		         if zombie_count_6 < 50 then 
+		         	  zombie_count_6 = zombie_count_6 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(9,13)
+                   local time_res = RandomInt(4,12)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_6) then 
@@ -1388,23 +1402,23 @@ end
                            rollBase_6 = rollBase_6 + 2.0
  		             end
 
-        	             if zombie_count_6 < 105 then 
+        	             if zombie_count_6 < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 SetExpUsually(unit, 0)
-           	             elseif  zombie_count_6 < 238 then 
+           	             elseif  zombie_count_6 < 30 then 
           	                     SetGoldUsually(unit, -9)          	                  	
            	                  	 SetExpUsually(unit, -32)
-            	             elseif  zombie_count_6 > 238 then 
+            	             elseif  zombie_count_6 > 30 then 
           	                     SetGoldUsually(unit, -16)         	                  	  
            	                  	 SetExpUsually(unit, -55)
              	        end                  
  
  	              end)    
-        	             if zombie_count_6 < 105 then 
+        	             if zombie_count_6 < 20 then 
              	            	 GiveGoldPlayers(12)
-           	             elseif  zombie_count_6 < 238 then 
+           	             elseif  zombie_count_6 < 30 then 
            	                  	 GiveGoldPlayers(8)
-            	             elseif  zombie_count_6 > 238 then 
+            	             elseif  zombie_count_6 > 30 then 
            	                  	 GiveGoldPlayers(6)
              	        end
 	       	           
@@ -1423,9 +1437,11 @@ end
 
  
 	         for i=1, 1 do
-		         zombie_count_7 = zombie_count_7 + 1
+		         if zombie_count_7 < 50 then 
+		         	  zombie_count_7 = zombie_count_7 + 1
+		         end
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(9,16)
+                   local time_res = RandomInt(5,10)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_7) then 
@@ -1440,23 +1456,23 @@ end
                            rollBase_7 = rollBase_7 + 2.0
  		             end
 
-        	             if zombie_count_7 < 105 then 
+        	             if zombie_count_7 < 20 then 
            	                     SetGoldUsually(unit, 0)       	             	
                              	 SetExpUsually(unit, 0)
-           	             elseif  zombie_count_7 < 238 then 
+           	             elseif  zombie_count_7 < 30 then 
           	                     SetGoldUsually(unit, -12)          	                  	
            	                  	 SetExpUsually(unit, -35)
-            	             elseif  zombie_count_7 > 238 then 
+            	             elseif  zombie_count_7 > 30 then 
           	                     SetGoldUsually(unit, -24)         	                  	  
            	                  	 SetExpUsually(unit, -60)
              	        end                  
  
  	              end)    
-        	             if zombie_count_7 < 105 then 
+        	             if zombie_count_7 < 20 then 
              	            	 GiveGoldPlayers(14)
-           	             elseif  zombie_count_7 < 238 then 
+           	             elseif  zombie_count_7 < 30 then 
            	                  	 GiveGoldPlayers(10)
-            	             elseif  zombie_count_7 > 238 then 
+            	             elseif  zombie_count_7 > 30 then 
            	                  	 GiveGoldPlayers(7)
              	        end
 	       	           
