@@ -3,5 +3,5 @@
 
     local test_off = 0
  function item_test:OnSpellStart()
-	EndGame:ChristmasEnd()
+	InvasionMode:ChristmassEror()
 end

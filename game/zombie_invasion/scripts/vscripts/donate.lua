@@ -323,7 +323,6 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_SAITAMA,
-				DONATE_SET_ALL,
  
 			},
 		},

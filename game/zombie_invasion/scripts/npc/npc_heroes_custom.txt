@@ -1773,8 +1773,8 @@
 "npc_dota_hero_shinobu"
 	{
 	"override_hero"                    "npc_dota_hero_treant"
-		"Model"	"models/units/shinobu/shinobu.vmdl"
-		"DisableWearables" "1"
+		"Model"	"models/development/invisiblebox.vmdl"
+		"DisableWearables" "0"
 		"Ability1"		"shinobu_vampire_blood"
 		"Ability2"		"shinobu_eat_oddity"
 		"Ability3"		"shinobu_kokorowatari"

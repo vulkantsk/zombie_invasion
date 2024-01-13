@@ -1112,6 +1112,9 @@ end
 		         if zombie_count_2 < 30 then 
 		         	  zombie_count_2 = zombie_count_2 + 1
 		         end
+		         if zombie_count_2 > 30 then 
+		         		zombie_count_2 = 30
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(4,15)
 		         Timers:CreateTimer(time_res, function()
@@ -1166,6 +1169,9 @@ end
 	         for i=1, 1 do
 		         if zombie_count_3 < 50 then 
 		         	  zombie_count_3 = zombie_count_3 + 1
+		         end
+		         if zombie_count_3 > 50 then 
+		         		zombie_count_3 = 50
 		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(4,12)
@@ -1223,6 +1229,9 @@ end
 		         if zombie_count_4 < 50 then 
 		         	  zombie_count_4 = zombie_count_4 + 1
 		         end
+		         if zombie_count_4 > 50 then 
+		         		zombie_count_4 = 50
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(5,16)
 		         Timers:CreateTimer(time_res, function()
@@ -1278,6 +1287,9 @@ end
 	         for i=1, 1 do
 		         if zombie_count_5 < 50 then 
 		         	  zombie_count_5 = zombie_count_5 + 1
+		         end
+		         if zombie_count_5 > 50 then 
+		         		zombie_count_5 = 50
 		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(10,18)
@@ -1336,6 +1348,9 @@ end
 		         if necr_count < 50 then 
 		         	  necr_count = necr_count + 1
 		         end
+		         if necr_count > 50 then 
+		         		necr_count = 50
+		         end
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(11,15)
 		         Timers:CreateTimer(time_res, function()
@@ -1391,8 +1406,11 @@ end
 		         if zombie_count_6 < 50 then 
 		         	  zombie_count_6 = zombie_count_6 + 1
 		         end
+		         if zombie_count_6 > 50 then 
+		         		zombie_count_6 = 50
+		         end
 		         local point = points[RandomInt(1, #points)]
-                   local time_res = RandomInt(4,12)
+                   local time_res = RandomInt(8,12)
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_6) then 
@@ -1445,6 +1463,10 @@ end
 		         if zombie_count_7 < 50 then 
 		         	  zombie_count_7 = zombie_count_7 + 1
 		         end
+		         if zombie_count_7 > 50 then 
+		         		zombie_count_7 = 50
+		         end
+
 		         local point = points[RandomInt(1, #points)]
                    local time_res = RandomInt(5,10)
 		         Timers:CreateTimer(time_res, function()
