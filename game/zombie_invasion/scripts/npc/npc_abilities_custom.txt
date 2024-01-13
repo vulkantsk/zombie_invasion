@@ -1,6 +1,7 @@
 #base "../vscripts/heroes/hero_skeleton_king/skelet.txt"
 #base "../vscripts/abilities/monsters/wave_abilities/zombie_abilities.txt"
 #base "../vscripts/heroes/hero_axe/axe.txt"
+#base "../vscripts/heroes/hero_saitama/saitama.txt"
 #base "../vscripts/heroes/hero_sven/sven.txt"
 #base "../vscripts/heroes/hero_lion/lion.txt"
 #base "../vscripts/heroes/hero_brist/brist.txt"

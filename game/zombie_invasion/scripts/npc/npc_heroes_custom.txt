@@ -1773,7 +1773,8 @@
 "npc_dota_hero_shinobu"
 	{
 	"override_hero"                    "npc_dota_hero_treant"
-		"Model"	"models/development/invisiblebox.vmdl"
+		"Model"	"models/units/shinobu/shinobu.vmdl"
+		"DisableWearables" "1"
 		"Ability1"		"shinobu_vampire_blood"
 		"Ability2"		"shinobu_eat_oddity"
 		"Ability3"		"shinobu_kokorowatari"
@@ -1825,8 +1826,9 @@
 	"npc_hero_sara"
 	{
 		"override_hero"	"npc_dota_hero_phantom_lancer"
-		"Model"	"models/development/invisiblebox.vmdl"
+		"Model"	"models/units/sara/sara.vmdl"
 		"ModelScale"	"1"
+		"DisableWearables" "1"
 		"Ability1"	"sara_evolution"
 		"Ability2"	"sara_space_dissection"
 		"Ability3"	"sara_dark_blink"
@@ -2111,4 +2113,41 @@
  
 	}
 	
+	"npc_dota_hero_saitama"
+	{
+		"override_hero"	"npc_dota_hero_tusk"	
+		"Model"	"models/units/saitama/saitama.vmdl"
+		"DisableWearables" "1"
+		"ModelScale"	"1"
+		"Ability1"	"saitama_push_ups"
+		"Ability2"	"saitama_sit_ups"
+		"Ability3"	"saitama_squats"
+		"Ability4"	"saitama_jogging"
+		"Ability5"	"saitama_serious_punch"
+		"Ability6"	"saitama_limiter"
+		"Ability10"        "special_bonus_unique_saitama_jogging_range"
+        "Ability11"        "special_bonus_agility_10" 
+        "Ability12"        "special_bonus_unique_temp_crit_mult"
+        "Ability13"        "special_bonus_unique_temp_creeps_damage"
+        "Ability14"        "special_bonus_unique_temp_instances_damage"
+        "Ability15"        "special_bonus_unique_temp_refusion_trap"
+        "Ability16"        "special_bonus_unique_temp_AbilityCooldown_temp"
+        "Ability17"        "special_bonus_unique_temp_ability_bedlam"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttackRange"			"100"
+		"AttackRate"			"1.2"
+		"AttributeBaseStrength"	"40"
+		"AttributeBaseIntelligence"	"14"
+		"AttributeBaseAgility"	"16"
+		"AttributeStrengthGain"	"3.7"
+		"AttributeIntelligenceGain"	"2.3"
+		"AttributeAgilityGain"	"2.2"
+		"AttackDamageMin"		"70"
+		"AttackDamageMax"		"80"
+		"MagicalResistance"		"40"
+		"ItemSlots"
+  		{ }
+	}
+
 }

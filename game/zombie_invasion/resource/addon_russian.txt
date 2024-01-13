@@ -226,6 +226,7 @@
 		"npc_dota_hero_winter_wyvern" 										"Yuki-onna"
 		"npc_dota_hero_bloodseeker"			"Blood hunter"
 		"npc_dota_hero_huskar"                                            "Alucard"
+		"npc_dota_hero_tusk"                                             "Saitama"
 
 
 
@@ -387,6 +388,10 @@
 		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
 		"DOTA_Tooltip_ability_item_sara_change_Description" "Меняет выбранного героя на жёстокого убийцу SARA"
 		"DOTA_Tooltip_ability_item_sara_change_Lore" "Сильное создание."
+
+		"DOTA_Tooltip_ability_item_saitama_change" "<font color='#ccff00'>SAITAMA"
+		"DOTA_Tooltip_ability_item_saitama_change_Description" "Меняет выбранного героя на SAITAMA"
+		"DOTA_Tooltip_ability_item_saitama_change_Lore" "Сильнейшее создание"
 
 		"DOTA_Tooltip_ability_item_sargatanas_change" "<font color='#c12450'>SARGATANAS"
 		"DOTA_Tooltip_ability_item_sargatanas_change_Description" "Меняет выбранного героя на SARGATANAS"
@@ -3196,6 +3201,38 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_sara_space_dissection" "-3 секунды перезарядки способности space dissection"
 		"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
 		"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
+
+		// -----------------Saitama--------------------
+          "DOTA_Tooltip_ability_saitama_push_ups" "Push ups"
+          "DOTA_Tooltip_ability_saitama_push_ups_Description" "Сайтама делает сотню отжиманий, становясь сильнее. По окончании действия способности он навсегда увеличивает силу и получает %stacks_amount% стак лимитера." 
+          "DOTA_Tooltip_ability_saitama_push_ups_bonus_strength" "УВЕЛИЧЕНИЕ СИЛЫ:" 
+		  "DOTA_Tooltip_ability_saitama_sit_ups" "Sit ups"
+          "DOTA_Tooltip_ability_saitama_sit_ups_Description" "Сайтама делает сотню упражнений на пресс, становясь сильнее. По окончании действия способности он навсегда увеличивает силу и получает и %stacks_amount% стак лимитера." 
+          "DOTA_Tooltip_ability_saitama_sit_ups_Lore" "Сотня на пресс..." 
+		  "DOTA_Tooltip_ability_saitama_sit_ups_bonus_strength" "УВЕЛИЧЕНИЕ СИЛЫ:" 
+		  "DOTA_Tooltip_ability_saitama_squats" "Squats"
+		  "DOTA_Tooltip_ability_saitama_squats_Description" "Сайтама делает сотню приседаний, становясь сильнее. По окончании действия способности он навсегда увеличивает силу и получает и %stacks_amount% стак лимитера." 
+          "DOTA_Tooltip_ability_saitama_squats_Lore" "Сотня приседаний..." 
+		  "DOTA_Tooltip_ability_saitama_squats_bonus_strength" "УВЕЛИЧЕНИЕ СИЛЫ:" 
+		  "DOTA_Tooltip_ability_saitama_jogging" "Jogging"
+		  "DOTA_Tooltip_ability_saitama_jogging_Description" "Когда Сайтама пробегает некоторую дистанцию, он получает %bonus_strength% силу и %stacks_amount% стак лимитера." 
+          "DOTA_Tooltip_ability_saitama_jogging_Lore" "И десятикилометровая пробежка..." 
+		  "DOTA_Tooltip_ability_saitama_jogging_range" "ДИСТАНЦИЯ:" 
+		  "DOTA_Tooltip_modifier_saitama_jogging_Description" "Каждые 100%% (сейчас %dMODIFIER_PROPERTY_TOOLTIP%%%) срабатывает эффект способности Jogging." 
+		  "DOTA_Tooltip_ability_saitama_serious_punch" "Serious punch"
+          "DOTA_Tooltip_ability_saitama_serious_punch_Description" "Сайтама прилагает к удару чуть больше усилий, нанося огромное количество урона, основываясь на своем текущем уроне, а также отталкивая и оглушая её. За каждый стак лимитера множитель урона растет на %damage_multiplier_per_stack_pct%%%. Длительность и дальность отталкивниая зависят от нанесенного урона." 
+          "DOTA_Tooltip_ability_saitama_serious_punch_Lore" "Позволь мне стать немного серьезнее, чтобы ты вложил в эту битву всего себя..." 
+          "DOTA_Tooltip_ability_saitama_serious_punch_base_damage_multiplier_pct" "%НАЧАЛЬНЫЙ МНОЖИТЕЛЬ УРОНА:" 
+          "DOTA_Tooltip_ability_saitama_serious_punch_damage_multiplier_per_stack_pct" "%ДОП. МНОЖИТЕЛЬ УРОНА ЗА СТАК:" 
+          "DOTA_Tooltip_ability_saitama_serious_punch_knockback_duration_step" "УРОНА НА СЕКУНДУ ОТТАЛКИВАНИЯ:" 
+		  "DOTA_Tooltip_ability_saitama_limiter" "Limiter"
+          "DOTA_Tooltip_ability_saitama_limiter_Description" "Докажите, что у вас достаточно воли, чтобы разрушить свой лимитер! Каждый стак лимитера навсегда увеличивает вашу силу на некоторый процент от ее максимального количества, расходуя %manacost_pct%%% маны от ее максимального значения. Также Сайтама может получать стаки лиметера, убивая вражеских героев. При смерти %loss_stacks_pct%%% стаков теряются.\n\nУлучшается с Aghanim's Scepter." 
+          "DOTA_Tooltip_ability_saitama_limiter_aghanim_description" "Добавляет новую способность - Serious Punch" 
+          "DOTA_Tooltip_ability_saitama_limiter_Lore" "Каждый божий день!!" 
+		  "Dota_Tooltip_ability_saitama_limiter_bonus_strength_pct" "%ПРОЦЕНТ СИЛЫ:" 
+          "Dota_Tooltip_modifier_saitama_limiter_Description" "Сайтама получает стаки за тренировки и убийство вражеских героев. Каждый стак лимитера усиливает эффект способностей Limiter и Serious Punch" 
+
+
 
 	// -----------------Crystal-Maiden--------------------
 

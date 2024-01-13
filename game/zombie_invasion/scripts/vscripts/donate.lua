@@ -34,6 +34,7 @@ DONATE_SET_ADMIN = {
 	players = {
 		453736017,
 		877002179,
+		912133481,
 
 		
 
@@ -314,6 +315,17 @@ DONATE_ITEM_MIDAS = {
 DONATE_ITEMS = {
 	heroes = {
 		 
+		 {
+			name = "item_saitama_change",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_SAITAMA,
+				DONATE_SET_ALL,
+ 
+			},
+		},
 		{
 			name = "item_tech_change",
 			can_be_bought = true,
