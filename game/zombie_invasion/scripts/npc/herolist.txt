@@ -6,7 +6,6 @@
 "CustomHeroList"
 {
 	"npc_dota_hero_alchemist"			"1"
-	"npc_dota_hero_tusk"				"1"
 	"npc_dota_hero_tidehunter"			"1"
 	"npc_dota_hero_wisp"				"1"
 	"npc_dota_hero_bristleback"			"1" 
@@ -45,6 +44,7 @@
  	"npc_dota_hero_nevermore"			"0"
  	"npc_dota_hero_winter_wyvern"		"1"
     "npc_dota_hero_huskar"				"0"
+    "npc_dota_hero_tusk"				"0"
 
 
 // Almost ready

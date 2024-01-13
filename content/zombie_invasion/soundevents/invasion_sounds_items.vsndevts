@@ -676,7 +676,7 @@
                                                         "value0"                "sounds/limiter.vsnd"
                                                 }
                                         }
-                                                                                "volume"                        {   "value"     "120.000000"  }
+                                                                                "volume"                        {   "value"     "60"  }
                                                                              "soundlevel"               {   "value"     "56"  }
                                                                                 "pitch"                 {       "value"         "1.000000" }
                                        "chan_type"

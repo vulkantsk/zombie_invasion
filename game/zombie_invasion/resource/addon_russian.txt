@@ -3218,6 +3218,7 @@
 		  "DOTA_Tooltip_ability_saitama_jogging_Description" "Когда Сайтама пробегает некоторую дистанцию, он получает %bonus_strength% силу и %stacks_amount% стак лимитера." 
           "DOTA_Tooltip_ability_saitama_jogging_Lore" "И десятикилометровая пробежка..." 
 		  "DOTA_Tooltip_ability_saitama_jogging_range" "ДИСТАНЦИЯ:" 
+		  "DOTA_Tooltip_modifier_saitama_jogging" "Пройденная дистанция"
 		  "DOTA_Tooltip_modifier_saitama_jogging_Description" "Каждые 100%% (сейчас %dMODIFIER_PROPERTY_TOOLTIP%%%) срабатывает эффект способности Jogging." 
 		  "DOTA_Tooltip_ability_saitama_serious_punch" "Serious punch"
           "DOTA_Tooltip_ability_saitama_serious_punch_Description" "Сайтама прилагает к удару чуть больше усилий, нанося огромное количество урона, основываясь на своем текущем уроне, а также отталкивая и оглушая её. За каждый стак лимитера множитель урона растет на %damage_multiplier_per_stack_pct%%%. Длительность и дальность отталкивниая зависят от нанесенного урона." 
@@ -3230,6 +3231,7 @@
           "DOTA_Tooltip_ability_saitama_limiter_aghanim_description" "Добавляет новую способность - Serious Punch" 
           "DOTA_Tooltip_ability_saitama_limiter_Lore" "Каждый божий день!!" 
 		  "Dota_Tooltip_ability_saitama_limiter_bonus_strength_pct" "%ПРОЦЕНТ СИЛЫ:" 
+		  "Dota_Tooltip_modifier_saitama_limiter" "Стаки Limiter"
           "Dota_Tooltip_modifier_saitama_limiter_Description" "Сайтама получает стаки за тренировки и убийство вражеских героев. Каждый стак лимитера усиливает эффект способностей Limiter и Serious Punch" 
 
 
