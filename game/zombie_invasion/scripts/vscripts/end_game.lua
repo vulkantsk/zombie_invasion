@@ -738,7 +738,7 @@ function CDOTA_BaseNPC:CastSkill(skill_name, unit)
 		end
 				
 	else
-		print("ability "..skill_name.." not found !!!")
+		--print("ability "..skill_name.." not found !!!")
 	end
 	
 end
@@ -757,7 +757,7 @@ function CDOTA_BaseNPC:CastPointSkill(skill_name, point)
 
 			
 	else
-		print("ability "..skill_name.." not found !!!")
+		--print("ability "..skill_name.." not found !!!")
 	end
 	
 end
