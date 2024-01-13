@@ -21,8 +21,7 @@ end
 if IsServer() then
 	function saitama_limiter:OnSpellStart()
 		local caster = self:GetCaster()
-	
-		EmitSoundOn( "sounds.limiter", self:GetCaster() )
+		EmitSoundOn("limiter", caster)
 		
 		caster:ModifyStrength(caster:GetStrength() * self:GetSpecialValueFor("bonus_strength_pct") * caster:GetModifierStackCount("modifier_saitama_limiter", caster) * 0.01)
 	end
