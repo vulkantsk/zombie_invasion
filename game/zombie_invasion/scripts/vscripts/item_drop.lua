@@ -65,8 +65,8 @@ ItemDrop.item_drop = {
 		--все что ниже нахимичил ЕНОТ. А енотов бить нельзя кста!!!=)
 
 -- ***********************************     НОВЫЙ ГОД   ***************************
---		{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
---  {items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
+{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
+{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_mana","item_bonus_damage","item_bonus_spell"},chance = 5,duration = 25  },
  
  --  ***********************************  ХЭЛУИН    ***********************************
   	--	{items = {"item_candy"}, chance = 5, duration = 25}, 

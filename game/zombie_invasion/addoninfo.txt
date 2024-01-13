@@ -1,6 +1,6 @@
 "AddonInfo"
 {
-	"maps" "invasion_refresh invasion_refresh_nasqreal_fun_made test"
+	"maps" "invasion_refresh"
 	"IsPlayable" "1"
 	"MinimalPrecache" "0"
 	"HeroGuidesSupported" "0"
@@ -11,14 +11,6 @@
 	"DrawCustomTeamHeroesOnMinimap" "1"
 	"invasion_refresh"
 	{
-	"MaxPlayers" "5"
-	}
-	"invasion_refresh_nasqreal_fun_made"
-	{
-	"MaxPlayers" "5"
-	}
-	"test"
-	{
-	"MaxPlayers" "10"
+		"MaxPlayers" "6"
 	}
 }

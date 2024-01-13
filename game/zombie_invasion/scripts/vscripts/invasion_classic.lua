@@ -374,7 +374,6 @@ end
  
       -- Check if it's correct format
       if hero:GetModelName() ~= "models/development/invisiblebox.vmdl" then return nil end
- print('lket')
       -- Never got changed before
       local toRemove = {}
       local wearable = hero:FirstMoveChild()
@@ -1568,7 +1567,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
-  	
+  	--[[
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
@@ -1690,7 +1689,7 @@ function InvasionMode:ThemeMusic()
     	   ]]
         
 
- --[[
+ 
 
    [1] = {
  "Merry - Christmas Jingle Bells",  
@@ -1726,8 +1725,26 @@ function InvasionMode:ThemeMusic()
 		"Wham! - Last Christmas",
  		
     	},
-        ]] 
-    }	
+    	[5] = {
+  		"Lofi Origin - Jingle Bells Lo Fi Chill",
+  		"Andy Williams - Winter Wonderland",
+  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+  		},
+
+  	[6] = {
+  		"Andy Williams - It's the Most Wonderful Time of the Year",
+  		"Andy Williams - Winter Wonderland",
+  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+  		},
+  	[7] = {
+  		"Ансамбль Детские Песни - Три белых коня",
+  		    "Дискотека Авария - Новогодняя",
+  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+  		    "Michael Buble - Holly Jolly Christmas",
+  		},
+        
+    }
+
 
 
  	night_music =
