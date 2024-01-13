@@ -557,7 +557,7 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-	 	  InvasionMode:ChristmassEror()
+	 	  --InvasionMode:ChristmassEror()
 
     -- InvasionMode:SecretShop()
 
@@ -703,7 +703,7 @@ function InvasionMode:RandomHeroes()
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
 		for item,stacks in pairs(items_table) do 
-			print(item)
+			--print(item)
 			local item = newHero:AddItemByName(item) 
 			item:SetCurrentCharges(stacks)
 		end 
@@ -825,13 +825,10 @@ end
 		GameRules:SendCustomMessage('<font color="#58ACFA">PROTOCOL "The end of the world" WAS STARTED</font>', 0, 0)
 	end)
 
- 	Timers:CreateTimer(30,function()
-		 EmitGlobalSound("christmas_boss_begin")
-	end)
-
  
  	Timers:CreateTimer(40,function()
  		GameRules:SetTimeOfDay(0.8)
+ 		 EmitGlobalSound("christmas_boss_begin")
 		 InvasionMode:spawn_christmas_boss()
 	end)
 
@@ -1496,7 +1493,7 @@ if killedEntity:GetUnitName() == "npc_last_boss" then
      	   GameRules:SetTimeOfDay(0.25)
 end
 
-if killedEntity:GetUnitName() == "npc_christmas_boss" then
+if killedEntity:GetUnitName() == "npc_nevermore_boss" then
     EndGame:ChristmasEnd()
      	   GameRules:SetTimeOfDay(0.25)
 end
@@ -1838,7 +1835,7 @@ function InvasionMode:ThemeMusic()
 	    if day_time > 300 then
 	    	music = night_music[current_day]
 	    	time_until_end = 600 - day_time
-	    	print("night time")
+	    	--print("night time")
 
                for i,name in ipairs(jitels) do
                    local unit = Entities:FindByName(nil,name)    
@@ -1911,17 +1908,17 @@ end
 				 midle_music = sound
 	    	end
 	    end
-	    print("longest_music = "..longest_music)
-	    print("longest_music len= "..longest_music_len)
-	    print("shortest_music = "..shortest_music)
-	    print("shortest_music len= "..shortest_music_len)
+	    --print("longest_music = "..longest_music)
+	    --print("longest_music len= "..longest_music_len)
+	    --print("shortest_music = "..shortest_music)
+	    --print("shortest_music len= "..shortest_music_len)
 
 	    if time_until_end >= shortest_music_len then
 	    	for _, sound in pairs(music) do
 	    		local music_len = Sounds:GetSoundDuration(sound)
 	    		if music_len <= time_until_end and sound ~= last_music then
 	    			table.insert(available_music, sound)
-	    			print(string.format("sound name = %s",sound))
+	    			--print(string.format("sound name = %s",sound))
 	    		end
 	    	end
           
@@ -1942,7 +1939,7 @@ end
  
 	    GameRules:SendCustomMessage("<font color='#58ACFA'>"..current_music.."</font>", 0, 0)
  
-	    print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
+	    --print(string.format("sound  = %s ; sound duration = %d",current_music,Sounds:GetSoundDuration(current_music)))
 	    last_music = current_music 
 
 	    return Sounds:GetSoundDuration(current_music)		    

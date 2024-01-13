@@ -49,17 +49,17 @@ local sf_2 = Entities:FindByName(nil, "sf_2"):GetAbsOrigin()--СЮДА
 local sf_3 = Entities:FindByName(nil, "sf_3"):GetAbsOrigin()--СЮДА
 local sf_4 = Entities:FindByName(nil, "sf_4"):GetAbsOrigin()--СЮДА
 
-local pingwin_1 = Entities:FindByName(nil, "pingwin_1"):GetAbsOrigin()--СЮДА
-local pingwin_2 = Entities:FindByName(nil, "pingwin_2"):GetAbsOrigin()--СЮДА
-local pingwin_3 = Entities:FindByName(nil, "pingwin_3"):GetAbsOrigin()--СЮД--СЮДАА
-local pingwin_4 = Entities:FindByName(nil, "pingwin_4"):GetAbsOrigin()--СЮДА
-local pingwin_5 = Entities:FindByName(nil, "pingwin_5"):GetAbsOrigin()--СЮДА
+--local pingwin_1 = Entities:FindByName(nil, "pingwin_1"):GetAbsOrigin()--СЮДА
+--local pingwin_2 = Entities:FindByName(nil, "pingwin_2"):GetAbsOrigin()--СЮДА
+--local pingwin_3 = Entities:FindByName(nil, "pingwin_3"):GetAbsOrigin()--СЮД--СЮДАА
+--local pingwin_4 = Entities:FindByName(nil, "pingwin_4"):GetAbsOrigin()--СЮДА
+--local pingwin_5 = Entities:FindByName(nil, "pingwin_5"):GetAbsOrigin()--СЮДА
 
-local penguin_1 = Entities:FindByName(nil, 'penguin_1')   --СЮДА
-local penguin_2 = Entities:FindByName(nil, 'penguin_2')    --СЮДА
-local penguin_3 = Entities:FindByName(nil, 'penguin_3')  --СЮДА
-local penguin_4 = Entities:FindByName(nil, 'penguin_4')   --СЮДА
-local ping = Entities:FindByName(nil, 'ping')--СЮДА
+--local penguin_1 = Entities:FindByName(nil, 'penguin_1')   --СЮДА
+--local penguin_2 = Entities:FindByName(nil, 'penguin_2')    --СЮДА
+--local penguin_3 = Entities:FindByName(nil, 'penguin_3')  --СЮДА
+--local penguin_4 = Entities:FindByName(nil, 'penguin_4')   --СЮДА
+--local ping = Entities:FindByName(nil, 'ping')--СЮДА
 
 local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetAbsOrigin() --СЮДА
 
@@ -178,13 +178,13 @@ local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetA
          GameRules:SendCustomMessage("#sf_eg10", 0, 0)  
 	end) 
 
-	Timers:CreateTimer(53,function()
-        penguin_1:SetAbsOrigin(pingwin_1)    
-        penguin_2:SetAbsOrigin(pingwin_2)    
-        penguin_3:SetAbsOrigin(pingwin_3)    
-        penguin_4:SetAbsOrigin(pingwin_4)    
-        ping:SetAbsOrigin(pingwin_5)    
-	end) 
+	--Timers:CreateTimer(53,function()
+    --    penguin_1:SetAbsOrigin(pingwin_1)    
+    --    penguin_2:SetAbsOrigin(pingwin_2)    
+    --    penguin_3:SetAbsOrigin(pingwin_3)    
+    --    penguin_4:SetAbsOrigin(pingwin_4)    
+    --    ping:SetAbsOrigin(pingwin_5)    
+	--end) 
 
 
 	Timers:CreateTimer(56,function()
@@ -213,7 +213,6 @@ local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetA
     local unit = Entities:FindByName(nil, name)
     if unit then 
          unit:RemoveModifierByName("modifier_disable_sf")
-          
     else
           
     end
@@ -224,9 +223,9 @@ local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetA
 			        local hero = HeroList:GetHero(index)   
  
                    hero:RemoveModifierByName("modifier_disable_sf")
+                   EndGame:ChristmasEnd()
                 end
         end	
-        EndGame:ChristmasEnd()
 	end)
 
 end 
@@ -312,7 +311,7 @@ function CDOTA_BaseNPC:CastSkill(skill_name, unit)
 		end
 				
 	else
-		print("ability "..skill_name.." not found !!!")
+		--print("ability "..skill_name.." not found !!!")
 	end
 	
 end
@@ -331,7 +330,7 @@ function CDOTA_BaseNPC:CastPointSkill(skill_name, point)
 
 			
 	else
-		print("ability "..skill_name.." not found !!!")
+		--print("ability "..skill_name.." not found !!!")
 	end
 	
 end

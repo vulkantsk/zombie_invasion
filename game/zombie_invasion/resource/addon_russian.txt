@@ -206,10 +206,10 @@
        	   "sf_eg10"                                                  "<font color='#c10020'>ЧТО ПРОИСХОДИТ????</font>"
        	   "sf_eg11"                                                  "<font color='#c10020'>НЕЕЕЕЕЕЕТ......</font>"
 
-       	   "pn_eg1"                                                  "<font color='#58ACFA'>Еблан?</font>"
-       	   "pn_eg2"                                                  "<font color='#58ACFA'>Неужели не знал, что когда пингвинов становится пять</font>"
-       	   "pn_eg3"                                                  "<font color='#58ACFA'>То их ничто не остановит</font>"
-       	   "pn_eg4"                                                  "<font color='#58ACFA'>Good bye, my love:3</font>"
+       	   "pn_eg1"                                                  "<font color='#58ACFA'>Ты чё xуел?</font>"
+       	   "pn_eg2"                                                  "<font color='#58ACFA'>Неужели не знал, что в новогоднюю ночь..</font>"
+       	   "pn_eg3"                                                  "<font color='#58ACFA'>Всё волшебство вершит чудо в которое хорошие детки верят</font>"
+       	   "pn_eg4"                                                  "<font color='#58ACFA'>Прощай, избыток прошлого и встречай новый год!</font>"
 
        	   "christmas_1"                                                  "<font color='#deaa88'>Праздник продолжается!</font>"
 

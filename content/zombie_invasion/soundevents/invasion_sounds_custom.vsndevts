@@ -4018,7 +4018,7 @@
                                                         "value0"                "sounds/ho_ho_ho"
                                                 }
                                         }
-										"volume"			{   "value"     "3.000000"  }
+										"volume"			{   "value"     "70.000000"  }
    									     "soundlevel"		{   "value"     "36"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"
@@ -4056,6 +4056,78 @@
                                                 }
                                         }
 										"volume"			{   "value"     "3.000000"  }
+   									     "soundlevel"		{   "value"     "40"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"christmas_boss_begin"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/christmas_boss_begin.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "90.000000"  }
+   									     "soundlevel"		{   "value"     "40"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"christmas_boss_theme"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/christmas_boss_theme.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "67.000000"  }
    									     "soundlevel"		{   "value"     "40"  }
 										"pitch"       		{  	"value"   	"1.000000" }
                                        "chan_type"

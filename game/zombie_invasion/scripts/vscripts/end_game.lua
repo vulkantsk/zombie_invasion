@@ -566,7 +566,7 @@ end
 
 function EndGame:ChristmasEnd()
 
- InvasionMode:Christmas_penguiun_plus()	
+ InvasionMode:CristmasPlus()	
 	 Timers:CreateTimer(0,function()
   	     GameRules:SendCustomMessage("#christmas_1",0,0)  
 	 end)
@@ -583,41 +583,45 @@ function EndGame:ChristmasEnd()
     local jitels = {
     	"crystalka","deny","kunkka","old_men","miner","lina"
     }
+
+local point_for_lina = Entities:FindByName(nil, "point_for_lina"):GetAbsOrigin()
+local point_for_old_men = Entities:FindByName(nil, "point_for_old_men"):GetAbsOrigin()
+local point_for_kunkka = Entities:FindByName(nil, "point_for_kunkka"):GetAbsOrigin()
+local point_for_crystalka = Entities:FindByName(nil, "point_for_crystalka"):GetAbsOrigin()
+local point_for_deny = Entities:FindByName(nil, "point_for_deny"):GetAbsOrigin()
+local point_for_miner = Entities:FindByName(nil, "point_for_miner"):GetAbsOrigin()
+--local point_for_brodyagi = Entities:FindByName(nil, "for_brodyagi"):GetAbsOrigin()
+--local point_for_penguins_1 = Entities:FindByName(nil, "for_penguins_1"):GetAbsOrigin()
+--local point_for_penguins_2 = Entities:FindByName(nil, "for_penguins_2"):GetAbsOrigin()
+--local point_for_putin = Entities:FindByName(nil, "putin"):GetAbsOrigin() 
+
+
+ 	--local point_for_rotate = Entities:FindByName(nil, "pudge_end_point")
  
-local point_for_kunkka = Entities:FindByName(nil, "for_kunkka"):GetAbsOrigin()
-local point_for_crystal = Entities:FindByName(nil, "for_crystal"):GetAbsOrigin()
-local for_brodyagi = Entities:FindByName(nil, "for_brodyagi"):GetAbsOrigin()
-local point_for_penguins_1 = Entities:FindByName(nil, "for_penguins_1"):GetAbsOrigin()
-local point_for_penguins_2 = Entities:FindByName(nil, "for_penguins_2"):GetAbsOrigin()
-local point_for_putin = Entities:FindByName(nil, "putin"):GetAbsOrigin() 
 
+--local for_penguins_11 = Entities:FindByName(nil, "for_penguins_11"):GetAbsOrigin()
+--local for_penguins_22 = Entities:FindByName(nil, "for_penguins_22"):GetAbsOrigin()
+--local for_penguins_33 = Entities:FindByName(nil, "for_penguins_33"):GetAbsOrigin()
+--local for_penguins_44 = Entities:FindByName(nil, "for_penguins_44"):GetAbsOrigin()
+--local for_penguins_55 = Entities:FindByName(nil, "for_penguins_55"):GetAbsOrigin()
 
- 	local point_for_rotate = Entities:FindByName(nil, "pudge_end_point")
- 
-
-local for_penguins_11 = Entities:FindByName(nil, "for_penguins_11"):GetAbsOrigin()
-local for_penguins_22 = Entities:FindByName(nil, "for_penguins_22"):GetAbsOrigin()
-local for_penguins_33 = Entities:FindByName(nil, "for_penguins_33"):GetAbsOrigin()
-local for_penguins_44 = Entities:FindByName(nil, "for_penguins_44"):GetAbsOrigin()
-local for_penguins_55 = Entities:FindByName(nil, "for_penguins_55"):GetAbsOrigin()
-
-local penguin_1 = Entities:FindByName(nil, 'penguin_1')   
-local penguin_2 = Entities:FindByName(nil, 'penguin_2')    
-local penguin_3 = Entities:FindByName(nil, 'penguin_3')  
-local penguin_4 = Entities:FindByName(nil, 'penguin_4')   
-local ping = Entities:FindByName(nil, 'ping')
+--local penguin_1 = Entities:FindByName(nil, 'penguin_1')   
+--local penguin_2 = Entities:FindByName(nil, 'penguin_2')    
+--local penguin_3 = Entities:FindByName(nil, 'penguin_3')  
+--local penguin_4 = Entities:FindByName(nil, 'penguin_4')   
+--local ping = Entities:FindByName(nil, 'ping')
 
  	Timers:CreateTimer(0, function()  
  GameRules:SetTimeOfDay(0.3)
- MoveToPoint(penguin_1, for_penguins_11) 
- MoveToPoint(penguin_2, for_penguins_22) 
- MoveToPoint(penguin_3, for_penguins_33) 
- MoveToPoint(penguin_4, for_penguins_44) 
- MoveToPoint(ping, for_penguins_55) 
+ --MoveToPoint(penguin_1, for_penguins_11) 
+ --MoveToPoint(penguin_2, for_penguins_22) 
+ --MoveToPoint(penguin_3, for_penguins_33) 
+ --MoveToPoint(penguin_4, for_penguins_44) 
+ --MoveToPoint(ping, for_penguins_55) 
 
    for i,name in ipairs(jitels) do  
     local unit = Entities:FindByName(nil, name)
-    local point = Entities:FindByName(nil, "for_"..name):GetAbsOrigin() 
+    local point = Entities:FindByName(nil, "point_for_"..name):GetAbsOrigin() 
     if unit then 
          unit:StartGestureWithPlaybackRate(ACT_DOTA_VICTORY, 1.0)
          MoveToPoint(unit, point) 
@@ -643,31 +647,31 @@ local ping = Entities:FindByName(nil, 'ping')
 
 end
 
-function PuitnThink(npc)
-	Timers:CreateTimer(0, function()
-		if ( not npc:IsAlive() ) then		--если юнит мертв
-			return -1	
-		end
-		
-		if npc.stop then	--если игра приостановлена
-			return 1	
-		end
-
-		local point = Entities:FindByName(nil, "putin"):GetAbsOrigin()
-		local blink_point = point  
-
-		local effect = "models/heroes/antimage_female/debut/particles/blink/antimage_debut_blink_sparkles.vpcf"
-		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, npc)
-		ParticleManager:SetParticleControl(pfx, 0, npc:GetAbsOrigin())
-		ParticleManager:ReleaseParticleIndex(pfx)
-		npc:SetAbsOrigin(blink_point)
-		npc:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_2, 1)
-		npc:EmitSound("Hero_Antimage.Blink_out")
-
- 
-	 
-	end)
-end
+--function PuitnThink(npc)
+--	Timers:CreateTimer(0, function()
+--		if ( not npc:IsAlive() ) then		--если юнит мертв
+--			return -1	
+--		end
+--		
+--		if npc.stop then	--если игра приостановлена
+--			return 1	
+--		end
+--
+--		local point = Entities:FindByName(nil, "putin"):GetAbsOrigin()
+--		local blink_point = point  
+--
+--		local effect = "models/heroes/antimage_female/debut/particles/blink/antimage_debut_blink_sparkles.vpcf"
+--		local pfx = ParticleManager:CreateParticle(effect, PATTACH_WORLDORIGIN, npc)
+--		ParticleManager:SetParticleControl(pfx, 0, npc:GetAbsOrigin())
+--		ParticleManager:ReleaseParticleIndex(pfx)
+--		npc:SetAbsOrigin(blink_point)
+--		npc:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_2, 1)
+--		npc:EmitSound("Hero_Antimage.Blink_out")
+--
+-- 
+--	 
+--	end)
+--end
 
 function AntimageThink(npc)
 	Timers:CreateTimer(0, function()

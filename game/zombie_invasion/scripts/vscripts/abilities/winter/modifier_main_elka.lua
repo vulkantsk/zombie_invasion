@@ -41,13 +41,13 @@ if not IsServer() then return end
 		 
 		          
            
-     print(bitch)
+     --print(bitch)
                     
        
  
      local stack =  unit:GetModifierStackCount("modifier_elka_bonus", nil)
  
-print(Christmas_night)
+--print(Christmas_night)
 
 
  
