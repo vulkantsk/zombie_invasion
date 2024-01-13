@@ -347,7 +347,6 @@ function InvasionMode:ChristmasNight()
 	end)
 
 	Timers:CreateTimer(602,function()
-	    EmitGlobalSound("christmas_ne_Bydet")
 	    InvasionMode:ChristmassEror()
 	end)
  

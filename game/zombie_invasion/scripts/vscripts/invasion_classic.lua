@@ -32,7 +32,8 @@ HERO_RESPAWN_TIME_BEFORE_10 =	 20
 
 Witch_killed = 0
 Boss_killed = 0 
-  
+Christmas_night = 0
+
 model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
 model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
@@ -312,10 +313,14 @@ function InvasionMode:OnPlayerLevelUp(keys)
 	end
 end
  
- 
+  LinkLuaModifier( "modifier_elka_bonus", "modifiers/modifier_elka_bonus", LUA_MODIFIER_MOTION_NONE )
+
+function InvasionMode:CristmasPlus()
+	Christmas_night = Christmas_night  + 1
+end
+
 function InvasionMode:InvasionOnNPCSpawn(data)
--- LinkLuaModifier( "modifier_main_pumpkin_hero", "abilities/halloween/main_pumpkin", LUA_MODIFIER_MOTION_NONE )
-	local npc = EntIndexToHScript(data.entindex)
+ 	local npc = EntIndexToHScript(data.entindex)
 	local name = npc:GetUnitName()
  
  
@@ -349,7 +354,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 
    
-         --        npc:AddNewModifier(npc, nil, "modifier_main_pumpkin_hero", {  })
+     npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
  
   
  
@@ -512,11 +517,14 @@ function InvasionMode:NightTimer(time)
 				InvasionMode:NextNight7()
 			elseif currentNight == 8 then
 				InvasionMode:ZombieNight8() 
-				Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
-                        InvasionMode:UsuallyEnd()  
-				end)
 
- 
+				if Christmas_night < 1 then 
+					Timers:CreateTimer(DEFAULT_NIGHTTIME, function()
+                        		InvasionMode:UsuallyEnd()  
+					end)
+				end
+ 			elseif currentNight == 9 and Christmas_night >= 1 then 
+ 				InvasionMode:ChristmasNight()  
 			end
  
 
@@ -549,7 +557,9 @@ function InvasionMode:InvasionGameStart()
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
-     InvasionMode:SecretShop()
+	 	  InvasionMode:ChristmassEror()
+
+    -- InvasionMode:SecretShop()
 
      if randomheroess >= 1 then 
      	InvasionMode:RandomHeroes()  
@@ -558,8 +568,6 @@ function InvasionMode:InvasionGameStart()
      	GameRules:GetGameModeEntity():SetBuybackEnabled( false )
      end  
  
- 
-
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  
@@ -769,7 +777,8 @@ function InvasionMode:UsuallyEnd()
 end
  
  function InvasionMode:ChristmassEror()  
- 
+ 	 EmitGlobalSound("christmas_ne_Bydet")
+
 	Timers:CreateTimer(0,function()
 		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)
 		GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX CHRISTMAS WAS NOT FOUND</font>", 0, 0)

@@ -41,7 +41,7 @@ if not IsServer() then return end
 		 
 		          
            
-     
+     print(bitch)
                     
        
  
@@ -57,9 +57,9 @@ print(Christmas_night)
 		-- perform attack
 	 
  
+		          
 
 			unit:SetModifierStackCount("modifier_elka_bonus", nil, (2))
-		          
  
                     
                   end
@@ -96,7 +96,7 @@ print(Christmas_night)
 	        end   
 	        if Christmas_night == 0 then
 	        	   		EmitGlobalSound("ho_ho_ho")
-	       InvasionMode:Christmas_plus()
+	    	  InvasionMode:CristmasPlus()
 	   end
 	  end 
   

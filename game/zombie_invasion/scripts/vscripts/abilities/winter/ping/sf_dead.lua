@@ -44,27 +44,27 @@ end
 
 function modifier_sf_dead:ScenkaGood()
  Sounds:RemoveGlobalLoopingSound( "christmas_boss_theme" )
-local sf_1 = Entities:FindByName(nil, "sf_1"):GetAbsOrigin()
-local sf_2 = Entities:FindByName(nil, "sf_2"):GetAbsOrigin()
-local sf_3 = Entities:FindByName(nil, "sf_3"):GetAbsOrigin()
-local sf_4 = Entities:FindByName(nil, "sf_4"):GetAbsOrigin()
+local sf_1 = Entities:FindByName(nil, "sf_1"):GetAbsOrigin()--СЮДА
+local sf_2 = Entities:FindByName(nil, "sf_2"):GetAbsOrigin()--СЮДА
+local sf_3 = Entities:FindByName(nil, "sf_3"):GetAbsOrigin()--СЮДА
+local sf_4 = Entities:FindByName(nil, "sf_4"):GetAbsOrigin()--СЮДА
 
-local pingwin_1 = Entities:FindByName(nil, "pingwin_1"):GetAbsOrigin()
-local pingwin_2 = Entities:FindByName(nil, "pingwin_2"):GetAbsOrigin()
-local pingwin_3 = Entities:FindByName(nil, "pingwin_3"):GetAbsOrigin()
-local pingwin_4 = Entities:FindByName(nil, "pingwin_4"):GetAbsOrigin()
-local pingwin_5 = Entities:FindByName(nil, "pingwin_5"):GetAbsOrigin()
+local pingwin_1 = Entities:FindByName(nil, "pingwin_1"):GetAbsOrigin()--СЮДА
+local pingwin_2 = Entities:FindByName(nil, "pingwin_2"):GetAbsOrigin()--СЮДА
+local pingwin_3 = Entities:FindByName(nil, "pingwin_3"):GetAbsOrigin()--СЮД--СЮДАА
+local pingwin_4 = Entities:FindByName(nil, "pingwin_4"):GetAbsOrigin()--СЮДА
+local pingwin_5 = Entities:FindByName(nil, "pingwin_5"):GetAbsOrigin()--СЮДА
 
-local penguin_1 = Entities:FindByName(nil, 'penguin_1')   
-local penguin_2 = Entities:FindByName(nil, 'penguin_2')    
-local penguin_3 = Entities:FindByName(nil, 'penguin_3')  
-local penguin_4 = Entities:FindByName(nil, 'penguin_4')   
-local ping = Entities:FindByName(nil, 'ping')
+local penguin_1 = Entities:FindByName(nil, 'penguin_1')   --СЮДА
+local penguin_2 = Entities:FindByName(nil, 'penguin_2')    --СЮДА
+local penguin_3 = Entities:FindByName(nil, 'penguin_3')  --СЮДА
+local penguin_4 = Entities:FindByName(nil, 'penguin_4')   --СЮДА
+local ping = Entities:FindByName(nil, 'ping')--СЮДА
 
-local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetAbsOrigin() 
+local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetAbsOrigin() --СЮДА
 
     local jitels = {
-    	"crystalka","deny","kunkka","old_men","miner","lina"
+    	"crystalka","deny","kunkka","old_men","miner","lina" --СЮДА
     }
  
  
@@ -79,13 +79,13 @@ local techies_start_point = Entities:FindByName(nil, "techies_start_point"):GetA
                         hero:RespawnHero(false, false) 
                     end 
  		 
-                   local ent= Entities:FindByName( nil, "for_brodyagi") -- вот та сама точка, куда мы будем телепортировать героя, мы её указали в скрипте
+                   local ent= Entities:FindByName( nil, "for_brodyagi")--СЮДА
 
-                   local point = ent:GetAbsOrigin() --эта строка выясняет где находится pnt1 и получает её координаты
+                   local point = ent:GetAbsOrigin()  
                    
      	
-                   hero:SetAbsOrigin( point ) -- получили координаты, теперь меняем место героя на pnt1
-                   FindClearSpaceForUnit(hero, point, false) --нужно чтобы герой не застрял
+                   hero:SetAbsOrigin( point ) 
+                   FindClearSpaceForUnit(hero, point, false)  
                    hero:AddNewModifier(self.parent,self:GetAbility(),"modifier_disable_sf",{})
          
                 end
