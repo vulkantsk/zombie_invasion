@@ -9,18 +9,16 @@ ItemDrop.item_drop = {
 		{items = {"item_meat"}, chance = 53, duration = 20, units = {"npc_classic_big_pig"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_milk"}, chance = 35, duration = 20, units = {"npc_classic_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_milk"}, chance = 53, duration = 20, units = {"npc_classic_big_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_bone"}, units ={"npc_cemetery_skelet"}},      -- если указан units - то итем может упасть тольк с этих юнитов
+		{items = {"item_bone"}, chance = 20, duration = 12, units ={"npc_cemetery_skelet"}},      -- если указан units - то итем может упасть тольк с этих юнитов
 		{items = {"item_eggs"}, chance = 20, duration = 20, units = {"npc_classic_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_eggs"}, chance = 30, duration = 20, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
-		{items = {"item_necr_heart"}, chance = 20, duration = 20, units = {"npc_classic_necr"}}, 
-		{items = {"item_necr_heart"}, chance = 30, duration = 20, units = {"npc_classic_big_necr"}}, 		
+		{items = {"item_eggs"}, chance = 30, duration = 20, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть 		
 		{items = {"item_bone"}, chance = 5, duration = 20, units = {"npc_classic_woobleydog2"}},  
 		{items = {"item_bone"}, chance = 5, duration = 20, units = {"npc_classic_woobleydog"}},  
 		{items = {"item_ess_pudge"}, chance = 13, limit = 6, units = {"npc_classic_skelet_ruin"}},
 		{items = {"item_bone"}, chance = 20, duration = 12, units = {"npc_classic_dragon_small"}},
 		{items = {"item_bone"}, chance = 25, duration = 12, units = {"npc_classic_dragon_big"}}, 
 		{items = {"item_ess_pudge"}, chance = 10, duration = 20, units = {"npc_classic_skelet_ruin"}}, 
-		{items = {"item_necr_heart"}, chance = 7, duration = 20, units = {"npc_classic_microchel"}},
+		{items = {"item_necr_heart"}, chance = 14, duration = 20, units = {"npc_classic_microchel"}},
 		{items = {"item_yad"}, chance = 100, duration = 20, units = {"npc_classic_toxic_veno"}},
 		{items = {"item_basher"}, chance = 100, units = {"npc_boss_slardar"}},
 		{items = {"item_cursed_shield"}, chance = 100, units = {"npc_boss_bear"}},
