@@ -10720,7 +10720,7 @@
 		"ItemResult"					"item_crystal_boots"
 		"ItemRequirements"
 		{
-			"01"						"item_phase_boots;item_lesser_crit"
+			"01"						"item_phase_boots;item_angels_demise"
 		}
 	}
 	
@@ -10760,11 +10760,12 @@
 		"AbilityValues"
 		{
 				"bonus_movement_speed"			"115"
-				"bonus_damage"		"120"
+				"bonus_damage"		"150"
  				"bonus_armor"			"20"
+ 				"bonus_all"				"12"
 				"crit_multiplier"		"190"
 				"crit_chance"		"40"
-
+				"bonus_health"		"200"
                 "phase_duration"		"3"	   
                 "phase_ms"         "25"             
                 "en_num"		"7"	

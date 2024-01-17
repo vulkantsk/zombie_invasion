@@ -38,6 +38,9 @@ function modifier_item_crystal_boots:OnCreated()
 	self.bonus_armor = self.ability:GetSpecialValueFor("bonus_armor")
 	self.crit_bonus = self.ability:GetSpecialValueFor("crit_multiplier")
 	self.crit_chance = self.ability:GetSpecialValueFor("crit_chance")
+	self.bonus_health = self.ability:GetSpecialValueFor("bonus_health")
+	self.bonus_all = self.ability:GetSpecialValueFor("bonus_all")
+	
 end
 
 function modifier_item_crystal_boots:IsHidden() return true end
@@ -51,6 +54,11 @@ function modifier_item_crystal_boots:DeclareFunctions()
 	local decFuncs = {MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 		MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+		MODIFIER_PROPERTY_HEALTH_BONUS,
+		MODIFIER_PROPERTY_MANA_BONUS,
+		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
 		MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE}
 
 	return decFuncs
@@ -71,6 +79,26 @@ end
 
 function modifier_item_crystal_boots:GetModifierPreAttack_BonusDamage()
 	return self.bonus_damage
+end
+
+function modifier_item_crystal_boots:GetModifierHealthBonus()
+	return self.bonus_health
+end
+
+function modifier_item_crystal_boots:GetModifierManaBonus()
+	return self.bonus_health
+end
+
+function modifier_item_crystal_boots:GetModifierBonusStats_Strength()
+	return self.bonus_all
+end
+
+function modifier_item_crystal_boots:GetModifierBonusStats_Agility()
+	return self.bonus_all
+end
+
+function modifier_item_crystal_boots:GetModifierBonusStats_Intellect()
+	return self.bonus_all
 end
 
 function modifier_item_crystal_boots:GetModifierPhysicalArmorBonus()
