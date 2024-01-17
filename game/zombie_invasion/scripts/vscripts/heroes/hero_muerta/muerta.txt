@@ -50,7 +50,7 @@
 			"ricochet_radius_start"			"115"
 			"ricochet_radius_end"			"115"
 			"ricochet_distance_multiplier"	"1.5"
-			"ricochet_fear_duration"		"1.25 1.5 1.75 2.0"
+			"ricochet_fear_duration"		"0.2"
 			"impact_slow_percent"			"-100"
 			"impact_slow_duration"			"0.5"
 		}

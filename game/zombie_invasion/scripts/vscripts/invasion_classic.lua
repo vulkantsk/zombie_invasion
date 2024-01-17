@@ -42,7 +42,7 @@ model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
 function InvasionMode:InvasionMap()
      
 
-	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
+	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 6 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
  

@@ -235,6 +235,7 @@
 		"npc_stranger_jitel"												"Незнакомец"
 	    "npc_dota_bochok_saxara"	                                        "Сахарная бочка"
 		"npc_boss_chicken"                                                  "Петух???"
+		"npc_boss_ghost"													"Плачущая ведьма"
 		"npc_jitel"                                                         "Кункевич"
 		"npc_portal"														"Портал"
 		"npc_jitel_2"                                                       "Цмочка" 
@@ -949,7 +950,7 @@
 
 		"DOTA_Tooltip_Ability_item_pirog_support"						"Пирог саппортика"
 		"DOTA_Tooltip_Ability_item_pirog_support_Description"			"<h1>Активная: Ам-ням</h1> Сьедаешь пирог."  
-		"DOTA_Tooltip_Ability_item_pirog_support_bonus_amp"						"МАГИЧЕСКОЕ УСИЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_amp"						"%МАГИЧЕСКОЕ УСИЛЕНИЕ:"
 		"DOTA_Tooltip_Ability_item_pirog_support_bonus_intellect"						"ИНТЕЛЛЕКТ:"
 		"DOTA_Tooltip_Ability_item_pirog_support_bonus_movespeed"						"СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
 		"DOTA_Tooltip_Ability_item_pirog_support_Lore"						"Вкуснее чем любой другой."

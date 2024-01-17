@@ -1193,9 +1193,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"8"
-		"BountyGoldMin"				"10"	
-		"BountyGoldMax"				"10"	
+		"BountyXP"					"4"
+		"BountyGoldMin"				"6"	
+		"BountyGoldMax"				"9"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1205,7 +1205,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"110"
+		"StatusHealth"				"55"
 		"StatusHealthRegen"			"0.0"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -1293,9 +1293,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"5"
-		"BountyGoldMin"				"8"	
-		"BountyGoldMax"				"10"	
+		"BountyXP"					"4"
+		"BountyGoldMin"				"5"	
+		"BountyGoldMax"				"9"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1305,7 +1305,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"90"
+		"StatusHealth"				"70"
 		"StatusHealthRegen"			"1.2"
 		"StatusMana"				"0"	
 		"StatusManaRegen"			"0.0"		 
@@ -3267,28 +3267,29 @@
  
 	}
 
-	"npc_boss_ghost"	
+	"npc_classic_witch"	
 	{
 		// General
 		//----------------------------------------------------------------
 		"Model"						"models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl"
 		"BaseClass"					"npc_dota_creature"
+		"vscripts"                  "ai/mobs/ai_witch.lua"
 		"SoundSet"					"Hero_Bane.Attack"
 		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
 		"Level"						"1"
-		"ModelScale" 				"1.5"
+		"ModelScale" 				"0.6"
 
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"range_magick_attack"
-		"Ability2"					"ghost_elusive"
-		"Ability3"					""	
+		"Ability2"					"ghost_elusive_1"
+		"Ability3"					"respawn"	
 		"Ability4"					""
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"25"
-		"MagicalResistance"         "25"
+		"ArmorPhysical"				"2"
+		"MagicalResistance"         "10"
 
 		// Attack
 		//----------------------------------------------------------------
@@ -3312,18 +3313,18 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"30"
-		"BountyGoldMin"				"10"	
+		"BountyGoldMin"				"20"	
 		"BountyGoldMax"				"30"	
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
-		"MovementSpeed"				"300"	
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"225"	
 		
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"250"
+		"StatusHealth"				"80"
 		"StatusHealthRegen"			"0.5"	
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0.0"		 
