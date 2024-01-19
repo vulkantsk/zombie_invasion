@@ -4527,7 +4527,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "100" // Experience earn.
+		"BountyXP" "60" // Experience earn.
 		"BountyGoldMin" "80" // Gold earned min.
 		"BountyGoldMax" "140" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -4549,7 +4549,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "150" // Experience earn.
+		"BountyXP" "90" // Experience earn.
 		"BountyGoldMin" "100" // Gold earned min.
 		"BountyGoldMax" "150" // Gold earned max.
 		"StatusHealth" "1" // Base health.
@@ -4572,9 +4572,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "500" // Experience earn.
-		"BountyGoldMin" "300" // Gold earned min.
-		"BountyGoldMax" "400" // Gold earned max.
+		"BountyXP" "120" // Experience earn.
+		"BountyGoldMin" "120" // Gold earned min.
+		"BountyGoldMax" "140" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -4594,9 +4594,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "450" // Experience earn.
-		"BountyGoldMin" "300" // Gold earned min.
-		"BountyGoldMax" "400" // Gold earned max.
+		"BountyXP" "120" // Experience earn.
+		"BountyGoldMin" "120" // Gold earned min.
+		"BountyGoldMax" "140" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
@@ -4615,9 +4615,9 @@
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1.
 
-		"BountyXP" "500" // Experience earn.
-		"BountyGoldMin" "300" // Gold earned min.
-		"BountyGoldMax" "400" // Gold earned max.
+		"BountyXP" "100" // Experience earn.
+		"BountyGoldMin" "110" // Gold earned min.
+		"BountyGoldMax" "120" // Gold earned max.
 		"StatusHealth" "1" // Base health.
 		"StatusHealthRegen" "0" // Health regeneration rate.
 
