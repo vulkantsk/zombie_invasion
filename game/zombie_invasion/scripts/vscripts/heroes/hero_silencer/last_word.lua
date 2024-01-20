@@ -64,6 +64,7 @@ end
 function modifier_ability_last_word:OnCreated( kv )
     self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
     self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
+    self.int = self:GetAbility():GetSpecialValueFor( "int" )
 
     if not IsServer() then return end
 
@@ -107,7 +108,7 @@ function modifier_ability_last_word:Silence()
     local damageTable = {
         victim = self:GetParent(),
         attacker = self:GetCaster(),
-        damage = self.damage * (self:GetCaster():GetIntellect() * (20 / 100)),
+        damage = self.damage + (self:GetCaster():GetIntellect() * (self.int / 100)),
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self
     }

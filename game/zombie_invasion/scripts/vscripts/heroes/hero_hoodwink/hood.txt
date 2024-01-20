@@ -17,7 +17,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"7"
 		"AbilityCastRange"				"575"
 		"AbilityCastPoint"				"0.2"
 		"AbilityManaCost"				"70 75 80 85 90 95 100 105 110 115 120 125 130 135"
@@ -112,7 +112,7 @@
 			{
 				"var_type"						"FIELD_INTEGER"  
 				"bonus_envasion"					"33"
-				"special_bonus_scepter"				"+11"
+				"special_bonus_scepter"				"+33"
 			}
  
 		
@@ -127,7 +127,7 @@
 		"MaxLevel"						"1"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityCooldown"				"4.5"
+		"AbilityCooldown"				"2.5"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -135,7 +135,7 @@
 		{
 			"acorn_damage"		"125"
 			"acorn_pct"		"300"
-			"cooldown"			"4.5"
+			"cooldown"			"2.5"
 		}	
 	}
 

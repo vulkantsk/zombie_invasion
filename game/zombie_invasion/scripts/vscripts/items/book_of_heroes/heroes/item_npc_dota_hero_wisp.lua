@@ -21,7 +21,7 @@ function wisp_buff_1:GetIntrinsicModifierName()
 end
 
 modifier_wisp_aura = class({
-    IsHidden                = function(self) return true end,
+    IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return false end,
     IsBuff                  = function(self) return true end,
@@ -58,7 +58,7 @@ end
 
 
 modifier_wisp = class({
-    IsHidden                = function(self) return true end,
+    IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return false end,
     IsBuff                  = function(self) return true end,

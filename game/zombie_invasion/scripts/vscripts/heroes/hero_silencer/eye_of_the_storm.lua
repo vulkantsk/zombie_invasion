@@ -318,7 +318,7 @@ end
 
 function modifier_razor_eye_of_the_storm_lua_debuff:HandleCustomTransmitterData( data )
 	-- on client
-	self.armor = data.armor + ( ((5 / 100) * self:GetCaster():GetIntellect()) * self:GetStackCount() )
+	self.armor = data.armor + (self:GetCaster():GetIntellect() * (5 / 100 )) * self:GetStackCount()
 end
 
 --------------------------------------------------------------------------------

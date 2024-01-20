@@ -27,6 +27,9 @@ ghost_count_hal = 0
 zombie_count_new = 0
 ghost_count_new = 0 
 
+christmas_count = 0
+rollBase_9 = 1.4
+
 
 function InvasionMode:ZombieNight1()  
  	if GetMapName() == "invasion_refresh" then

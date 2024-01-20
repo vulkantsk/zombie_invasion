@@ -1413,15 +1413,7 @@
 		"DOTA_Tooltip_modifier_shiva_heal_aura_Description"	"Восстановление здоровья увеличено на %dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%%."
 
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom"	"Medallion of Courage"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_armor"					"+$armor"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_mana_regen_pct"		"+$mana_regen"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"Его носитель не боится сражений."
-
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom"	"Medallion of Courage"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed%, все атрибуты на %bonus_all% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_armor"					"+$armor"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
@@ -1437,7 +1429,7 @@
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Lore"						"Медаль одного из людей Солнечного восстания."
 
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3"	"Solar Crest"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Description"					"<h1>Активная: Faith</h1>Если использовать на союзника, увеличит его броню на %bonus_armor%, скорость атаки на %bonus_attack_speed%, все атрибуты на %bonus_all% и скорость передвижения на %bonus_move_speed%%%.<br><br>Дальность применения: %abilitycastrange%"	
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_armor"					"+$armor"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_all_stats"				"+$all"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"

@@ -415,7 +415,8 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
 		"MaxLevel"						"10"	
-		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"6"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------

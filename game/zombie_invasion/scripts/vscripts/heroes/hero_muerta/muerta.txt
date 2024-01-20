@@ -167,14 +167,14 @@
 		"AbilityTextureName"		"innate_rend"
 		"RequiredLevel"					"10"
 		"LevelsBetweenUpgrades"			"10"
-		"MaxLevel"					"10"
+		"MaxLevel"					"1"
 
 		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"AbilityValues"
 		{
-			"armor_tear"					"0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+			"armor_tear"					"0.1"
 			"crit_damage"					"115"
 			"crit_chance_per_negative_armor" "1"
 		}
@@ -197,8 +197,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"armor_debuff"		"-10"
-			"corruption_duration"		"2.5"
+			"armor_debuff"		"-23"
+			"corruption_duration"		"4.5"
 		}	
 	}
 }

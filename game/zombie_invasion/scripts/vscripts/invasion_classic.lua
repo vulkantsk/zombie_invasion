@@ -1508,6 +1508,64 @@ end
 	   	 end             
      end
  end
+ if currentNight == 9 then
+     if killedEntity:GetUnitName() == "npc_classic_new_years" or killedEntity:GetUnitName() == "npc_classic_new_years" then 
+     	 if GameRules:IsDaytime() then
+     		 return nil 
+     	 else
+	         local points = Entities:FindAllByName("zombie_spawner")
+              local unit
+
+ 
+	         for i=1, 1 do
+		         if christmas_count < 50 then 
+		         	  christmas_count = christmas_count + 1
+		         end
+		         if christmas_count > 50 then 
+		         		christmas_count = 50
+		         end
+
+		         local point = points[RandomInt(1, #points)]
+                   local time_res = RandomInt(5,10)
+		         Timers:CreateTimer(time_res, function()
+
+		             if RollPercentage(rollBase_9) then 
+		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             	  unit = CreateUnitByName("npc_classic_new_years_ancient", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_wave_reflect_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 rollBase_9 = 1
+ 		             else
+ 		             	  unit = CreateUnitByName("npc_classic_big_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		         	       unit = CreateUnitByName("npc_classic_new_years", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+                           rollBase_9 = rollBase_9 + 2.0
+ 		             end
+
+        	             if christmas_count < 20 then 
+           	                     SetGoldUsually(unit, 0)       	             	
+                             	 SetExpUsually(unit, 0)
+           	             elseif  christmas_count < 30 then 
+          	                     SetGoldUsually(unit, -12)          	                  	
+           	                  	 SetExpUsually(unit, -35)
+            	             elseif  christmas_count > 30 then 
+          	                     SetGoldUsually(unit, -24)         	                  	  
+           	                  	 SetExpUsually(unit, -60)
+             	        end                  
+ 
+ 	              end)    
+        	             if christmas_count < 20 then 
+             	            	 GiveGoldPlayers(14)
+           	             elseif  christmas_count < 30 then 
+           	                  	 GiveGoldPlayers(10)
+            	             elseif  christmas_count > 30 then 
+           	                  	 GiveGoldPlayers(7)
+             	        end
+	       	           
+                    
+           	 end	                        
+	   	 end             
+     end
+ end
 --*************************************** END SPAWN ***************************************
 
 if killedEntity:GetUnitName() == "npc_last_boss" then

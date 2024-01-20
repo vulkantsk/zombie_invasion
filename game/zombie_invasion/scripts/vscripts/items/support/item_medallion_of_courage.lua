@@ -230,21 +230,39 @@ function modifier_medallion_active:OnCreated()
  self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
  self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor( "bonus_attack_speed" )
   self.bonus_move_speed = self:GetAbility():GetSpecialValueFor( "bonus_move_speed" )  
+  self.bonus_all = self:GetAbility():GetSpecialValueFor( "bonus_all" )
 end 
 
 function modifier_medallion_active:OnRefresh()
   self.bonus_armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
  self.bonus_attack_speed = self:GetAbility():GetSpecialValueFor( "bonus_attack_speed" )
   self.bonus_move_speed = self:GetAbility():GetSpecialValueFor( "bonus_move_speed" )  
+  self.bonus_all = self:GetAbility():GetSpecialValueFor( "bonus_all" )
 end 
 
  function modifier_medallion_active:DeclareFunctions()
 	return {
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE  
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+
 
 	}
+end
+
+function modifier_medallion_active:GetModifierBonusStats_Strength()
+	return  self.bonus_all
+end
+
+function modifier_medallion_active:GetModifierBonusStats_Agility()
+	return  self.bonus_all
+end
+
+function modifier_medallion_active:GetModifierBonusStats_Intellect()
+	return  self.bonus_all
 end
 
 function modifier_medallion_active:GetModifierAttackSpeedBonus_Constant()

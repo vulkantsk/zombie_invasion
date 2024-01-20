@@ -784,17 +784,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"90"
+				"bonus_all_stats"		"115"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"725"
+				"bonus_health"			"625"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"620"
+				"bonus_mana"			"525"
 			}
 			"04"
 			{
@@ -814,7 +814,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_reduction"	"85"
+				"heal_reduction"	"55"
 			}
 		}
 	}
@@ -9702,7 +9702,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_as_reduction"		"60"
+				"aura_as_reduction"		"30"
 			}
 			"05"
 			{
@@ -9820,34 +9820,21 @@
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_armor"			"6"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_attack_speed"			"30"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_move_speed"			"6"
-			}
-
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
+				"bonus_all"		"8"
+			
 				"bonus_mana_regen_pct"	"1.25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"duration"				"12"
-			}
+	
 		}
 	}
 
@@ -9914,39 +9901,24 @@
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_armor"			"14"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_attack_speed"			"80"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"bonus_move_speed"			"8"
-			}
-
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
+		
 				"bonus_mana_regen_pct"	"3.25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"bonus_all_stats"	"10"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"duration"				"12"
-			}
+		
+				"bonus_all"			"20"
+
+			
 		}
 	}
 
@@ -10013,39 +9985,23 @@
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_armor"			"18"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_attack_speed"			"245"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_move_speed"			"60"
-			}
-
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
+		
 				"bonus_mana_regen_pct"	"5.00"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"bonus_all_stats"	"48"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"duration"				"12"
-			}
+
+				"bonus_all"			"40"
+			
 		}
 	}
 
@@ -12876,7 +12832,7 @@
 				"bonus_intellect"			"80"
 				"status_resistance"				"40"
 				"mana_regen_multiplier"		"100"
-				"spell_amp"			"20"
+				"spell_amp"			"65"
 				"hp_regen_amp"			"50"
 				"spell_lifesteal_amp"	""
 		}
@@ -12932,7 +12888,7 @@
 				"bonus_attack_speed"	"50"
 				"mana_regen_multiplier"		"100"
 				"movement_speed_percent_bonus"	"12"
-				"spell_amp"			"20"
+				"spell_amp"			"65"
 				"spell_lifesteal_amp"	""
 			
 		}
