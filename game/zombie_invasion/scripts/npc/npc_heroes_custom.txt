@@ -22,7 +22,7 @@
 		"Ability15"		"special_bonus_armor_10"
 		"Ability16"		"special_bonus_spell_lifesteal_20"
 		"Ability17"		"special_bonus_hp_regen_80"
-		"ArmorPhysical"		"7"
+		"ArmorPhysical"		"9"
 		"AttackDamageMin"		"27"
 		"AttackDamageMax"		"33"
 		"BaseAttackSpeed"		"70"
@@ -223,7 +223,7 @@
 		"npc_dota_hero_bloodseeker"
 	{
  
- 		"ArmorPhysical"		"11"
+ 		"ArmorPhysical"		"22"
 
 		"Ability1"		"bloodrage"
 		"Ability2"      "bloodstained_memory" 
@@ -272,11 +272,11 @@
 		"Ability15"		"special_bonus_unique_assassin_blur_duration"
 		"Ability16"		"special_bonus_unique_assassin_blur_agility"
 		"Ability17"		"special_bonus_unique_assassin_stifling_dagger_triple"
-		"ArmorPhysical"		"3"
+		"ArmorPhysical"		"4"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"32"
 		"AttackRate"		"1.400000"
-		"BaseAttackSpeed"	"65"
+		"BaseAttackSpeed"	"110"
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"5"
@@ -359,7 +359,7 @@
         "Ability15"       "special_bonus_unique_smaug_dragon_gold_deal"
         "Ability16"       "special_bonus_unique_smaug_incandescent_fury"
         "Ability17"       "special_bonus_unique_smaug_fire_punishment"
-        "ArmorPhysical"        "0"
+        "ArmorPhysical"        "12"
         "AttackDamageMin"        "7"
         "AttackDamageMax"        "14"
         "AttackRate"        "1.900000"
@@ -824,7 +824,7 @@
 		"Ability17"		"special_bonus_unique_tide_smash_damage"	
 		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"	
 
-		"ArmorPhysical"		"5"
+		"ArmorPhysical"		"12"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"26"
 		"AttackDamageMax"		"30"
@@ -841,6 +841,7 @@
 		"AttributeIntelligenceGain"		"0.900000"
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"265"
+		"BaseAttackSpeed"	"115"
 		"MovementTurnRate"		"0.600000"		
 	}	
 
@@ -890,7 +891,7 @@
         "Ability16"        "special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"
         "Ability17"        "special_bonus_magic_resistance_35"
 
-		"ArmorPhysical"		"7"
+		"ArmorPhysical"		"12"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"44"
 		"AttackDamageMax"		"56"
@@ -1264,8 +1265,8 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"0"									// Physical protection.
-		"MagicalResistance"			"25"									// Magical protection (percentage).
+		"ArmorPhysical"				"-6"									// Physical protection.
+		"MagicalResistance"			"35"									// Magical protection (percentage).
 
 
 		// Attributes
@@ -1641,7 +1642,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"12"									// Physical protection.
+		"ArmorPhysical"				"21"									// Physical protection.
 		"MagicalResistance"			"12"									// Magical protection (percentage).
 
 
@@ -1663,7 +1664,7 @@
 
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"				"100"									// Base health.
+		"StatusHealth"				"320"									// Base health.
 		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
 		"StatusMana"				"100"											// Base mana.
 		"StatusManaRegen"			"1"									// Mana regeneration rate.

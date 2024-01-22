@@ -1237,14 +1237,14 @@ end
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_4) then
-		             	  unit = CreateUnitByName("npc_wave_zombie_toxic", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 unit = CreateUnitByName("npc_classic_wave_big_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             	  unit = CreateUnitByName("npc_wave_loss_boss_meat_golem", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_wave_loss_boss_ghost", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_wave_ghoul_big", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 
  		                 rollBase_4 = 1.5
  		             else
- 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		             	  unit = CreateUnitByName("npc_wave_loss_boss_undying", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-                           unit = CreateUnitByName("npc_suic_wave_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 		     
+                           unit = CreateUnitByName("npc_wave_loss_boss_necr", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS) 		     
                            rollBase_4 = rollBase_4 + 1.5
  		             end
          	

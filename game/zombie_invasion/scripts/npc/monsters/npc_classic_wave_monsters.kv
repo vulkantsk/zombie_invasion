@@ -830,7 +830,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					"rot_splesh"
 		"Ability2"					"zombie_passive"
-		"Ability3"					""	
+		"Ability3"					"chen_penitence"	
 		"Ability4"					"slow_mobs"
 
 		// Armor
@@ -928,7 +928,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					"undying_soul_rip_flash_1"
 		"Ability2"					"mutant_reflector"
-		"Ability3"					""	
+		"Ability3"					"spider_explode_lua_3"	
 		"Ability4"					"zombie_passive"
 
 		// Armor
@@ -1016,8 +1016,8 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"life_stealer_feast"
-		"Ability2"					"slow_mobs"
-		"Ability3"					"life_stealer_open_wounds"	
+		"Ability2"					"ghoul_reincornation"
+		"Ability3"					"zombie_armor_decress_2"	
 		"Ability4"					"visage_gravekeepers_cloak"
 		"Ability5"                  "zombie_passive"
 
@@ -1113,7 +1113,7 @@
 		"Ability2"					"ghoul_crazy_look"
 		"Ability3"					""	
 		"Ability4"					"slow_mobs"
-		"Ability5"		"zombie_passive"
+		"Ability5"					"zombie_passive"
 
 		// Armor
 		//----------------------------------------------------------------
@@ -1191,7 +1191,7 @@
 
 
 
-	"npc_wave_boss_ghost"	
+	"npc_wave_loss_boss_ghost"	
 	{
 		// General
 		//----------------------------------------------------------------
@@ -1220,7 +1220,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"
+		"ArmorPhysical"				"8"
 		"MagicalResistance"         "14"
 
 		// Attack
@@ -1245,9 +1245,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"2"
-		"BountyGoldMin"				"0"	
-		"BountyGoldMax"				"0"		
+		"BountyXP"					"56"
+		"BountyGoldMin"				"12"	
+		"BountyGoldMax"				"17"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -1294,7 +1294,7 @@
 
 	}	
 
-	"npc_wave_boss_undying"	
+	"npc_wave_loss_boss_undying"	
 	{
 		// General
 		//----------------------------------------------------------------
@@ -1315,12 +1315,12 @@
 		"Ability1"					"undying_decay_boss_wave"
 	 	"Ability2"					"zombie_passive"
 		"Ability3"					"slow_mobs"	
-		"Ability4"					""
+		"Ability4"					"zombie_suic_2"
 		"Ability5"                  ""		
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"90"
+		"ArmorPhysical"				"14"
 		"MagicalResistance"         "60"
 
 		// Attack
@@ -1342,10 +1342,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"3250"
-		"BountyGoldMin"				"0"	
-		"BountyGoldMax"				"0"	
-
+		"BountyXP"					"56"
+		"BountyGoldMin"				"12"	
+		"BountyGoldMax"				"17"
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -1411,7 +1410,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""
+		"Ability1"					"zombie_armor_decress_3"
 		"Ability2"					"life_stealer_feast"
 		"Ability3"					"slow_mobs"	
 		"Ability4"					""
@@ -1432,7 +1431,7 @@
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"900"
 		"AttackRange"				"125"
-        "BaseAttackSpeed"			"160"		     
+        "BaseAttackSpeed"			"200"		     
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -1591,6 +1590,7 @@
 		// General
 		//----------------------------------------------------------------
 		"Model"						"models/heroes/necrolyte/necrolyte.vmdl"
+		"vscripts"		"ai/wave/ai_zombie.lua"
 		"BaseClass"					"npc_dota_creature"
 		"SoundSet"					"Hero_Necrolyte"
 		"GameSoundsFile"			"soundevents/game_sounds_necrolyte.vsndevts"

@@ -7019,6 +7019,33 @@
 			}
 		}
 	}
+	"zombie_suic_2"
+	{
+		"BaseClass" 					"ability_lua"
+		"ScriptFile"					"abilities/zombie/zombie_suic"
+    	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+	    "AbilityTextureName"            "techies_suicide"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+	    "MaxLevel"                      "1"	
+ 
+ 		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"		"320"
+ 
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_basic"		"575"
+			}
+		}
+	}
 
 	"ghoul_lifesteal"
 	{
