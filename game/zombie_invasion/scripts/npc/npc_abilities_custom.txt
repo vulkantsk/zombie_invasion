@@ -6647,7 +6647,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"					"1000"
+				"heal"					"2800"
 				"LinkedSpecialBonus"		"special_bonus_unique_necrophos_4"
 			}
 			"03"
