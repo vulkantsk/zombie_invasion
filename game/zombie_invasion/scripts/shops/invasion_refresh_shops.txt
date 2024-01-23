@@ -141,6 +141,8 @@
 		"item"		"item_desolator_2_custom"
 		"item"		"item_manta_style"
 		"item"		"item_desolator"
+		"item"		"item_manta_datadriven"
+		"item"		"item_manta"
 
 					
 	}

@@ -1647,6 +1647,25 @@
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_damage"	"+$damage"
 
 
+		"DOTA_Tooltip_ability_item_manta_datadriven"		"Manta style 2"
+		"DOTA_Tooltip_ability_item_manta_datadriven_Description"	"<h1>Активное: Manta's Illusioner style</h1> герой создаёт иллюзии на подобии себя которые существуют %illusion_duration% сек. <br><br>получают %illusion_damage_percent_incoming_ranged%%% урона, а наносимый ими урон зависит от типа атаки владельца: иллюзии ближнего боя наносят %illusion_damage_percent_outgoing_melee_tooltip%%% урона, а иллюзии дальнего боя %illusion_damage_percent_outgoing_ranged_tooltip%%% урона.<br><br> Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>"
+		"DOTA_Tooltip_ability_item_manta_datadriven_Lore"		"Вас будет сложно отличить от подделки"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_agility"							"+$agi"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_strength"						"+$str"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_intelligence"						"+$int"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_movement_speed_percentage"					"%+$move_speed"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_evasion"						"%+$evasion"
+		"DOTA_Tooltip_ability_item_manta_datadriven_bonus_damage"						"+$damage"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_images_count"							"NUMBER OF IMAGES:"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_tooltip_damage_incoming_melee_total_pct"		"%MELEE IMAGE DAMAGE TAKEN:"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_tooltip_damage_outgoing_melee"			"%MELEE IMAGE DAMAGE:"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_tooltip_damage_incoming_ranged_total_pct"		"%RANGED IMAGE DAMAGE TAKEN:"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_tooltip_damage_outgoing_ranged"		"%RANGED IMAGE DAMAGE:"
+		//"DOTA_Tooltip_ability_item_manta_datadriven_tooltip_illusion_duration"				"IMAGE DURATION:"
+		
+		
+
 
 		"DOTA_Tooltip_Ability_item_power_treads_2"                             "Mega Treads"
 		"DOTA_Tooltip_ability_item_power_treads_2_Description"                 "<h1>Активная: Switch Attribute</h1> Меняет атрибут между Силой, Ловкостью и Интеллектом.\n<h1><font color='#FF7800'>Пассивная: Source Boost</font></h1> Даёт определённый бонус основываясь на текущем атрибуте: \n<font color='#cc0000'>Сила</font> даёт %str_mode_resist%% сопротивления магии; <font color='#00802b'>Ловкость</font> даёт True Strike; <font color='#007acc'>Интеллект</font> даёт %int_mode_amp%% урона от способностей. <font color='#7442c8'>Универсал</font> даёт %all_mode_inc%%  уменьшение входящего урона. \n\nБонусы к скорости передвижения от нескольких пар сапог не сочетаются. \n\nЭффект Универсала даёт атрибутов в два раза меньше. "
