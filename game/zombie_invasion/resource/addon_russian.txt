@@ -1644,6 +1644,7 @@
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_strength"	"+$str"
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_agility"	"+$agi"
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_intellect"	"+$int"
+		"DOTA_Tooltip_ability_item_titanium_bar_bonus_damage"	"+$damage"
 
 
 
