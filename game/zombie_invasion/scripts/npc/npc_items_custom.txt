@@ -1,5 +1,191 @@
 "DOTAAbilities"
 {
+	"item_recipe_titanium_bar"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"500"
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_titanium_bar"
+		"ItemRequirements"
+		{
+			"01"						"item_black_king_bar;item_moon_shard;item_resistance;item_magic_heart"
+		}
+	}
+
+	"item_titanium_bar"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"titanium_bar"
+		"FightRecapLevel"				"2"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"              "0"
+		"AbilityCooldown"				"180"
+		"AbilityManaCost"				"0"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"legendary"
+		"ItemAliases"					"bkb;titanium bar;black king bar"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"AbilitySharedCooldown"			"black_king_bar"
+
+		"AbilityValues"
+		{
+			
+				"bonus_strength"				"40"
+			
+				"bonus_agility"					"10"
+			
+				"bonus_intellect"				"10"
+			
+				"bonus_damage"					"100"
+		
+				"duration"						"20.0"
+			
+				"active_damage_reduction_pct"	"-30"
+			
+				"active_bonus_strength"			"60"
+			
+				"active_bonus_attackspeed"		"200"
+
+				"bonus_resistance"		"15"
+
+				"bonus_armor"		"30"	
+		}
+
+		"OnSpellStart"
+		{
+
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.BlackKingBar.Activate"
+				"Target"
+				{
+					"Center"  	"CASTER"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ALLIES"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"     "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_item_titanium_bar_active"
+				"Target"
+				{
+					"Center"  	"CASTER"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ALLIES"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"     "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_item_titanium_bar"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"%bonus_resistance"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%bonus_armor"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_strength"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_agility"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_intellect"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+			}
+			"modifier_item_titanium_bar_active"
+			{
+				"Duration"              	"%duration"
+				"EffectName"            	"particles/titan_bar.vpcf"
+				"EffectAttachType"      	"follow_origin"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%active_bonus_strength"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%active_bonus_attackspeed"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"%active_damage_reduction_pct"
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"					"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+
+	//=================================================================================================================
+	// Recipe: Black King Bar
+	//=================================================================================================================
+	"item_recipe_black_king_bar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"250"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_black_king_bar"
+		"ItemRequirements"
+		{
+			"01"						"item_ogre_axe;item_mithril_hammer"
+		}
+	}
+	
+	//=================================================================================================================
+	// Black King Bar
+	//=================================================================================================================
+	"item_black_king_bar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"FightRecapLevel"				"2"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200"
+		"AbilityManaCost"				"50"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"4050"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"bkb;black king bar"
+		"ItemSellable"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_strength"		"10"
+			"bonus_damage"			"24"
+			"duration"				"20"
+			"max_level"				"4"
+			"model_scale"			"30"     // Percentage over model scale
+			"magic_resist"			"50"
+		}
+	}
 
 	"item_recipe_dagon"
 	{
@@ -11339,7 +11525,7 @@
 		{
 				"bonus_damage"			"30 60"
 				"bonus_armor"	"5 10"
-				"bonus_resistance"	"15"
+				"bonus_resistance"	"10"
 				"duration"				"5.5" 
 				"active_reflection_pct"			"100"
 				"passive_reflection_constant"			"20 100"
@@ -11385,12 +11571,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"res"	"10"
+				"res"	"5"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"arm"	"10"
+				"arm"	"22"
 			}												
 		}
 	}

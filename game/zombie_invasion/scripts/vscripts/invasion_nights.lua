@@ -338,7 +338,8 @@ end
 function InvasionMode:ChristmasNight()  
  
     local wave_4 = 0
-	
+	 self:SpawnZombie("npc_classic_new_years",8)
+
   	Timers:CreateTimer(300,function()
 		 self:SpawnZombie("npc_classic_new_years",8)
 		 self:SpawnGhost("npc_classic_new_years_lich",1)

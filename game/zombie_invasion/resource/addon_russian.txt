@@ -40,20 +40,19 @@
 		"dota_ability_variable_slow_resistance"		"к сопротивлению замедлениям"			// $slow_resistance
 		"dota_ability_variable_aoe_bonus"			"к радиусу заклинаний"					// $aoe_bonus
 
-		"music_toggle"                                              "Включить/отключить музыку"
+	
 
 	    "donate_list_name_heroes"		"Эссенции героев"
 	    "donate_list_name_artifacts"	"Артефакты"
 	    "donate_list_name_admin"	"АДМЭЭЭЭЭЭЭЭН uwu"
  
-		"sss"                                               	""
 
 	    		"dota_game_end_victory_title_radiant"	"Деревня спасена!"
 		"dota_game_end_victory_title_dire"		"Ой в пизду, я в тильте(("
 				
 		"addon_game_name"				"Нашествие зомби"	
 		"DOTA_GameMode_15" 				"Нашествие зомби"	
-		
+		"music_toggle"                                              "Включить/отключить музыку"
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
 
 		"difficulty_description_normal" "СТАТЫ ВРАГОВ НЕ УВЕЛИЧЕНЫ!"
@@ -1638,6 +1637,14 @@
 		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_bonus_attack_speed"					"+$attack"
 		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_movement_speed_percent_bonus"			"%+$move_speed"
 		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_spell_lifesteal_amp"				"%+к усилению вампиризма от заклинаний"
+
+		"DOTA_Tooltip_ability_item_titanium_bar"			"black titan bar"
+		"DOTA_Tooltip_ability_item_titanium_bar_Description" "<h1>Активная: world destroyer</h1> Герой получает полную невоспреимчивость к магии на %duration% секунд, при этом всём получая %active_bonus_attackspeed% скорости атаки, уменьшение входящего урона на %active_damage_reduction_pct%%% и увеличивая свою силу на %active_bonus_strength%
+		<h1> <font color='#ffa420'>Пассивная: king of titans </font> </h1> Уменьшает входящий урон на %bonus_resistance%%%"
+		"DOTA_Tooltip_ability_item_titanium_bar_bonus_strength"	"+$str"
+		"DOTA_Tooltip_ability_item_titanium_bar_bonus_agility"	"+$agi"
+		"DOTA_Tooltip_ability_item_titanium_bar_bonus_intellect"	"+$int"
+
 
 
 		"DOTA_Tooltip_Ability_item_power_treads_2"                             "Mega Treads"
@@ -3233,6 +3240,18 @@
 
 
 	// -----------------Crystal-Maiden--------------------
+
+	 "DOTA_Tooltip_ability_frost_glacier"	"Glacier of frosty power"
+	 "DOTA_Tooltip_ability_frost_glacier_Description"	"Конус холода который поражает противников холодом нанося <font color='#ff0000'>БАЗОВЫЙ УРОН</font> + <font color='#00bfff'>ИНТЕЛЛЕКТ ВЛАДЕЛЬЦА</font>"
+	 "DOTA_Tooltip_ability_frost_glacier_Lore" "Холод разбивающий сердца"
+	 "DOTA_Tooltip_ability_frost_glacier_damage"	"БАЗОВЫЙ УРОН:"
+
+	 "DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_damage"	"+{s:bonus_damage} урона к способности Freezing Field"
+
+	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_ult_cooldown"			"-{s:bonus_AbilityCooldown} сек. перезарядки Freezing Field"
+	"DOTA_Tooltip_ability_frost_glacier_Scepter_Description"		"Уменьшает перезарядку до %AbilityCooldown% Увеличивает дальность применения до %distance% "
+
+
 
 
 	"DOTA_Tooltip_ability_crystal_maiden_buff_1" "Crystal shell"
