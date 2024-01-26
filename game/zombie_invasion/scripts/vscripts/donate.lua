@@ -759,7 +759,7 @@ function Donate:OnGameRulesStateChange()
 							player[list] = player[list] or {}
 
 							if player_has then
-								if acc_id == 877002179 then
+								if acc_id == 877002179 or acc_id == 912133481 or acc_id == 453736017 then
 									item_info.count = 100000
 								else
 									item_info.count = item.count
