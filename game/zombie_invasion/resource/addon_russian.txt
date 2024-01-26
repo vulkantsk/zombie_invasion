@@ -3257,6 +3257,12 @@
 		  "Dota_Tooltip_modifier_saitama_limiter" "Стаки Limiter"
           "Dota_Tooltip_modifier_saitama_limiter_Description" "Сайтама получает стаки за тренировки и убийство вражеских героев. Каждый стак лимитера усиливает эффект способностей Limiter и Serious Punch" 
 
+          "DOTA_Tooltip_ability_special_bonus_unique_saitama_push_ups" "+{s:bonus_stacks_amount} к стакам Limiter за применение push ups"
+          "DOTA_Tooltip_ability_special_bonus_unique_saitama_squats" "+{s:bonus_stacks_amount} к стакам Limiter за применение squats"
+          "DOTA_Tooltip_ability_special_bonus_unique_saitama_sit_ups" "+{s:bonus_stacks_amount} к стакам Limiter за применение sit ups"
+          "DOTA_Tooltip_ability_special_bonus_unique_saitama_jogging_range" "-{s:bonus_range} дистанции для jogging"
+          "DOTA_Tooltip_ability_special_bonus_unique_saitama_limiter" "-{s:bonus_manacost_pct}% стоимости маны Limiter"
+
 
 
 	// -----------------Crystal-Maiden--------------------

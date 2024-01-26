@@ -5,24 +5,21 @@
 		"BaseClass"             		"ability_lua"
 		"AbilityTextureName"			"saitama_push_ups"
 		"ScriptFile"					"heroes/hero_saitama/push_ups.lua"
-		"MaxLevel" 						"7"
+		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"100 90 80 70 60 60 60"
+		"AbilityManaCost"				"100"
 
 		"AbilityValues"
 		{
+			"bonus_strength"		"1 1 1 2 2 2 3 3 3 4 4 4 5"
 		
-			
-				"bonus_strength"		"1 1 2 2 3 3 4"
-		
-
 			"stacks_amount"
-				{
+			{
 				"value"			"1"
 				"special_bonus_unique_saitama_push_ups" "+1"
-				}
+			}
 			
 		}
 	}
@@ -32,25 +29,22 @@
 		"BaseClass"             		"ability_lua"
 		"AbilityTextureName"			"saitama_squats"
 		"ScriptFile"					"heroes/hero_saitama/squats.lua"
-		"MaxLevel" 						"7"
+		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"100 90 80 70 60 60 60"
+		"AbilityManaCost"				"100"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"bonus_strength"		"1 1 1 2 2 2 3 3 3 4 4 4 5"
+		
+			"stacks_amount"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"1 1 2 2 3 3 4"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"stacks_amount"			"1"
+				"value"			"1"
 				"special_bonus_unique_saitama_squats" "+1"
 			}
+			
 		}
 	}
 
@@ -59,25 +53,22 @@
 		"BaseClass"             		"ability_lua"
 		"AbilityTextureName"			"saitama_sit_ups"
 		"ScriptFile"					"heroes/hero_saitama/sit_ups.lua"
-		"MaxLevel" 						"7"
+		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"100 90 80 70 60 60 60"
+		"AbilityManaCost"				"100"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"bonus_strength"		"1 1 1 2 2 2 3 3 3 4 4 4 5"
+		
+			"stacks_amount"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"1 1 2 2 3 3 4"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"stacks_amount"			"1"
+				"value"			"1"
 				"special_bonus_unique_saitama_sit_ups" "+1"
 			}
+			
 		}
 	}
 
@@ -87,16 +78,16 @@
 		"AbilityTextureName"			"saitama_jogging"
 		"ScriptFile"					"heroes/hero_saitama/jogging.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"LevelsBetweenUpgrades"			"3"
-		"RequiredLevel"                 "1"
-		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"6"
+		"RequiredLevel"                 "6"
+		"MaxLevel"						"10"
 
 		"AbilityValues"
 		{
 			
 			
 				
-				"bonus_strength"		"3"
+				"bonus_strength"		"1 2 3 4 5 6 7 8 9 10"
 			
 				
 				"stacks_amount"			"1"
@@ -104,8 +95,8 @@
 				 
 				"range"					
 				{
-					"value"				"6000 5500 5000 4500 4000 3500 3000"
-			    	"special_bonus_unique_saitama_jogging_range"	    "-500"
+					"value"				"5500 6000 6500 7000 7500 8000 8500 9000 9500 10000"
+			    	"special_bonus_unique_saitama_jogging_range"	    "-1000"
 					 
 				}
 					
@@ -113,6 +104,104 @@
 				
 				"range_limit"			"400"
 			
+		}
+	}
+
+	"marci_unleash_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_saitama/unleash/marci_unleash_lua"
+		"AbilityTextureName"			"fast_attack"
+		"MaxLevel"						"1"
+		"IsGrantedByShard"			"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"charges_per_flurry"	"10"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"flurry_bonus_attack_speed"	"1325"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"time_between_flurries"	"1.5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pulse_radius"			"800"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pulse_debuff_duration"	"2.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pulse_damage"			"0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pulse_move_slow_pct"	"30.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pulse_attack_slow_pct"	"0"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"max_time_window_per_hit"	"1.0"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"17"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"recovery_fixed_attack_rate"	"2.0"
+			}
 		}
 	}
 
@@ -138,13 +227,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"base_damage_multiplier_pct"	"200"
+				"base_damage_multiplier_pct"	"75"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_multiplier_per_stack_pct"	"5"
+				"damage_multiplier_per_stack_pct"	"3"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"03"
@@ -175,9 +264,10 @@
 		"BaseClass"             		"ability_lua"
 		"AbilityTextureName"			"saitama_limiter"
 		"ScriptFile"					"heroes/hero_saitama/limiter.lua"
-		"MaxLevel" 						"5"
+		"MaxLevel" 						"10"
+		"LevelsBetweenUpgrades"			"10"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityCooldown"				"2.5"
+		"AbilityCooldown"				"60"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"HasScepterUpgrade"				"1"
 		"HasInnateModifiers"			"1"
@@ -187,18 +277,18 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"bonus_strength_pct"	"0.01 0.02 0.03 0.04 0.05"
+				"bonus_strength_pct"	"0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1" 
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost_pct"			"35"
-				"special_bonus_unique_saitama_limiter" "1"
+				"manacost_pct"			"5 10 15 20 25 30 35 40 45 50"
+				"special_bonus_unique_saitama_limiter" "-10"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"loss_stacks_pct"		"70"
+				"loss_stacks_pct"		"80"
 			}
 			"04"
 			{
@@ -208,7 +298,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost"				"100 150 200 250 300"
+				"manacost"				"150"
 			}
 		}
 	}
@@ -219,7 +309,8 @@
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		
+	}
+
  	"special_bonus_unique_saitama_push_ups"
 	{
 		// General
@@ -230,4 +321,31 @@
 
 	}
 
+	"special_bonus_unique_saitama_squats"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	}
+	"special_bonus_unique_saitama_sit_ups"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	}
+	"special_bonus_unique_saitama_limiter"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	}
 }
