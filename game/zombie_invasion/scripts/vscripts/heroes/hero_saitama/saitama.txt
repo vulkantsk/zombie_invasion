@@ -11,18 +11,19 @@
 		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"100 90 80 70 60 60 60"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
+			
 				"bonus_strength"		"1 1 2 2 3 3 4"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"stacks_amount"			"1"
-			}
+		
+
+			"stacks_amount"
+				{
+				"value"			"1"
+				"special_bonus_unique_saitama_push_ups" "+1"
+				}
+			
 		}
 	}
 
@@ -48,6 +49,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"stacks_amount"			"1"
+				"special_bonus_unique_saitama_squats" "+1"
 			}
 		}
 	}
@@ -74,6 +76,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"stacks_amount"			"1"
+				"special_bonus_unique_saitama_sit_ups" "+1"
 			}
 		}
 	}
@@ -184,12 +187,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"bonus_strength_pct"	"0.03 0.05 0.08 0.091 0.1"
+				"bonus_strength_pct"	"0.01 0.02 0.03 0.04 0.05"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost_pct"			"10"
+				"manacost_pct"			"35"
+				"special_bonus_unique_saitama_limiter" "1"
 			}
 			"03"
 			{
@@ -216,6 +220,14 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
- 
+ 	"special_bonus_unique_saitama_push_ups"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
 	}
+
 }
