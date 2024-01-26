@@ -236,21 +236,6 @@
 				"damage_multiplier_per_stack_pct"	"3"
 				"CalculateSpellDamageTooltip"	"0"
 			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"knockback_duration_step"	"0"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"knockback_distance_step"	"0"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"knockback_height_step"	"0"
-			}
 		}
 		"precache"
 		{

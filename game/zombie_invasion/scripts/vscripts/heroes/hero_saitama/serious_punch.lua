@@ -20,22 +20,8 @@ if IsServer() then
 				ability = self
 			})
 
-			target:RemoveModifierByName("modifier_knockback")
-			if damage > 0 then
-				SendOverheadEventMessage(nil, OVERHEAD_ALERT_DAMAGE, target, damage, nil)
-				local sourcePos = caster:GetAbsOrigin()
-				local duration =  damage / self:GetSpecialValueFor("knockback_duration_step")
-				target:AddNewModifier(caster, self, "modifier_knockback", {
-					knockback_duration = duration,
-					knockback_distance = damage / self:GetSpecialValueFor("knockback_distance_step"),
-					knockback_height = damage / self:GetSpecialValueFor("knockback_height_step"),
-					should_stun = 1,
-					duration = duration,
-					center_x = sourcePos.x,
-					center_y = sourcePos.y,
-					center_z = sourcePos.z
-				})
-			end
+
+			SendOverheadEventMessage(nil, OVERHEAD_ALERT_DAMAGE, target, damage, nil)	
 		end
 	end
 end
