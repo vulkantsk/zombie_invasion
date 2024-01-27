@@ -348,7 +348,6 @@ function InvasionMode:InvasionOnNPCSpawn(data)
         	npc:SetRenderColor(255, 62 , 67 )
         end
         npc.FirstSpawned = true
-        npc:AddItemByName("item_bottle")
         npc:AddItemByName("item_tpscroll")
 
 
@@ -572,8 +571,43 @@ function InvasionMode:InvasionGameStart()
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
  	CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
- 		rewards = {"item_bottle", "item_eggs", "item_admin"}
+ 		rewards = {"item_bottle", "item_philosophers_stone", "item_misericorde"}
  	})
+ 	Timers:CreateTimer(600,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_gold", "item_exp", "item_tome_of_aghanim"}})
+	end)
+	Timers:CreateTimer(1200,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_gold2", "item_exp2", "item_tome_of_aghanim"}})
+	end)
+	Timers:CreateTimer(1800,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_gold3", "item_exp3", "item_tome_of_aghanim"}})
+	end)
+	Timers:CreateTimer(2400,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_gold4", "item_exp4", "item_tome_of_aghanim"}})
+	end)
+	Timers:CreateTimer(3000,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_bonus_agility10", "item_bonus_strength10", "item_bonus_intelligence10"}})
+	end)
+	Timers:CreateTimer(3600,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_bonus_agility10", "item_bonus_strength10", "item_bonus_intelligence10"}})
+	end)
+	Timers:CreateTimer(4200,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_bonus_agility10", "item_bonus_strength10", "item_bonus_intelligence10"}})
+	end)
+	Timers:CreateTimer(4800,function()
+			CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_bonus_agility10", "item_bonus_strength10", "item_bonus_intelligence10"}})
+	end)
+
+	
+
 end
 
 --function InvasionMode:SecretShop()

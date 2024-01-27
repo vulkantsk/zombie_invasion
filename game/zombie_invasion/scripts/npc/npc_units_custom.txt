@@ -587,7 +587,7 @@
 		
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"TeamName"					"DOTA_TEAM_BADGUYS"
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
