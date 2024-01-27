@@ -226,7 +226,8 @@ DONATE_ITEM_TECH = {
  		374557086,
  		1043951475,
  		1019687748,
- 		992207522
+ 		992207522,
+ 		157730745
 
 	},	
 }
@@ -264,6 +265,13 @@ DONATE_ITEM_ALUCARD= {
 DONATE_ITEM_KEFTEME= {
 	players = {
  		946902506,
+
+	},	
+}
+
+DONATE_ITEM_SAITAMA= {
+	players = {
+ 		170695158,
 
 	},	
 }
