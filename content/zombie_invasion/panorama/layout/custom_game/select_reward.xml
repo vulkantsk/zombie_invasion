@@ -1,0 +1,18 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/select_reward.js" />
+	</scripts>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/select_reward.css" />
+	</styles>
+	<Panel class="Hud" hittest="false"> 
+		<Panel id="reward" class="is-hide">
+            <Panel id="reward__popup"> 
+              <Label id="reward__title" text="CHOSE YOUR REWARD"/>
+              <Panel id="reward__body"></Panel>
+              <Image id="reward__tomb" src="file://{resources}/images/custom_game/undy.png" />
+            </Panel>
+            <Image id="reward__necr" src="file://{resources}/images/custom_game/necro.png" />
+        </Panel>
+	</Panel>
+</root>

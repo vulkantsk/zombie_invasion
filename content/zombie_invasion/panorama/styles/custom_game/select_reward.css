@@ -1,0 +1,75 @@
+.Hud {
+  width: 100%;
+  height: 100%;
+}
+
+#reward {
+  width: 100%;
+  height: 100%;
+}
+
+#reward__popup {
+  vertical-align: center;
+  horizontal-align: center;
+  background-image: url('file://{resources}/images/custom_game/reward_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80%;
+  height: 80%;
+  border: 10px solid black;
+  opacity: 1;
+  transition-property: opacity;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+#reward__body {
+  flow-children: right;
+  vertical-align: center;
+  horizontal-align: center;
+  background-color: black;
+  padding: 50px;
+  box-shadow: rgb(47, 187, 47) 0 0 6px 0px;
+}
+
+.reward__reward {
+  width: 100px;
+  height: 100px;
+}
+
+.is-hide {
+  visibility: collapse;
+  opacity: 0;
+}
+
+.reward__button {
+  padding: -2px 10px;
+  background-color: black;
+  border: 2px solid green;
+  margin-right: 30px;
+}
+
+#reward__necr {
+  vertical-align: bottom;
+  horizontal-align: left;
+  margin-bottom: 110px;
+  ui-scale: 70%;
+}
+
+#reward__tomb {
+  vertical-align: bottom;
+  horizontal-align: right;
+  ui-scale: 80%;
+  margin-bottom: 80px;
+  margin-right: 80px;
+}
+
+#reward__title {
+  color: black;
+  font-size: 80px;
+  font-weight: semi-bold;
+  horizontal-align: center;
+  margin-top: 100px;
+}

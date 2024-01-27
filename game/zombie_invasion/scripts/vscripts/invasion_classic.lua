@@ -102,7 +102,8 @@ function InvasionMode:InvasionMap()
 	LinkLuaModifier("modifier_damage1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
 	LinkLuaModifier("modifier_invasion_difficulty", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE)	
- 
+ 	CustomGameEventManager:RegisterListener( "get_reward", Dynamic_Wrap( self, "OnGetReward" ) )
+
 	local shop = Entities:FindByName( nil, "dota_shop")
 
 	if shop then
@@ -570,7 +571,9 @@ function InvasionMode:InvasionGameStart()
  
  	--	 self:SpawnGhost("npc_classic_wave_fly_pudge",8)
  --self:SpawnZombie("npc_wave_boss_suicide",1)
- 
+ 	CustomGameEventManager:Send_ServerToAllClients( "give_reward", {
+ 		rewards = {"item_bottle", "item_eggs", "item_admin"}
+ 	})
 end
 
 --function InvasionMode:SecretShop()
@@ -913,6 +916,13 @@ end
    newItem:SetPurchaseTime(0)
    CreateItemOnPositionSync(pos, newItem)
    newItem:LaunchLoot(false, 300, 0.75, pos + RandomVector(RandomFloat(50, 350)))
+end
+
+function InvasionMode:OnGetReward(data)
+	local player = PlayerResource:GetPlayer( data.id )
+	local hero = player:GetAssignedHero()
+
+	hero:AddItemByName(data.item)
 end
 
 function InvasionMode:InvasionEntityKilled (data)

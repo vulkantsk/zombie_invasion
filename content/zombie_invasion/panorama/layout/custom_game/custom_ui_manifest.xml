@@ -12,5 +12,6 @@
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/my_hud.xml" />
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/hud/hud.xml" />	
 		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/donate.xml" />	
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/select_reward.xml" />	
 	</Panel>
 </root>
