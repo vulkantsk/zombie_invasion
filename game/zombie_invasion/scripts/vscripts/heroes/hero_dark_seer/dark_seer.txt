@@ -211,7 +211,7 @@
 
 				"damage_per_second"				
 				{
-					"value"				"240 390 420 540 660 780 910 1040 1160 1250"
+					"value"				"280 390 420 540 660 780 910 1040 1160 1250"
 			    	"special_bonus_unique_dark_seer_golden_shield"	    "+750"
 					 
 				}
@@ -224,7 +224,7 @@
 				}
 
 
-				"bonus_armor"				"1 2 3 4 5 6 7 8 9 10"
+				"bonus_armor"				"2 4 6 8 10 12 14 16 18 20"
 			
 				"bonus_regen"				"2 4 6 8 10 12 14 16 18 20"
 			
