@@ -14349,6 +14349,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 			
+			"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"

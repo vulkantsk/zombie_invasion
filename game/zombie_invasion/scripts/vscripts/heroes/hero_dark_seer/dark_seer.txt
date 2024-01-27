@@ -206,7 +206,7 @@
 			
 				"radius"				"325"
 			
-				"tick_interval"				"0.01"
+				"tick_interval"				"0.1"
 			
 
 				"damage_per_second"				

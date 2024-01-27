@@ -40,7 +40,7 @@
 				}
 				"bounce_count"			
 				{
-					"value"			"4"
+					"value"			"8"
 					"LinkedSpecialBonus"		"special_bonus_unique_hoodwink_acorn_shot_bounces"
 				}
 				"bounce_range"			
