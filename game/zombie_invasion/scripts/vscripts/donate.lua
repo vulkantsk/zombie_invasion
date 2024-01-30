@@ -272,6 +272,7 @@ DONATE_ITEM_KEFTEME= {
 DONATE_ITEM_SAITAMA= {
 	players = {
  		170695158,
+ 		260725664,
 
 	},	
 }
