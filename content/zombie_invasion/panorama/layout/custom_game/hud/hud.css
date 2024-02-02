@@ -10,6 +10,7 @@
 //quests
 #QPanel {
   margin-bottom: 369px;
+  margin-left: 60px;
   align: left center;
   width: 300px;
   height: 500px;
@@ -27,6 +28,10 @@
   opacity: 0;
 }
 
+#quest-panel-exp {
+  flow-children: right;
+}
+
 .qtext {
   color: white;
   text-overflow: shrink;
@@ -34,6 +39,10 @@
   text-shadow: 5px 4px 6px 3 #ffffff03;
   text-align: center;
   align: middle center;
+}
+
+.quest-panel-down {
+  flow-children: down;
 }
 
 #QHead {
@@ -68,13 +77,31 @@
   margin: 5px;
   horizontal-align: middle;
   width: 100%;
-  height: 25%;
+}
+
+.quest-items {
+  width: 60px;
+  horizontal-align: center;
 }
 
 #QContent Label {
   align: middle top;
   font-size: 22px;
   text-overflow: shrink;
+}
+
+#quest-panel-exp Label {
+  font-size: 18px;
+}
+
+#quest-panel-items {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  flow-children: right;
+}
+
+#quest-panel-item-current {
+  margin-right: 20%;
 }
 
 #QFoot {
@@ -96,6 +123,14 @@
 
 #QClose Label {
   font-size: 64px;
+}
+
+#quest_item-current Label {
+  color: white;
+  text-shadow: 0 4px 6px 30 #00000003;
+  vertical-align: bottom;
+  font-size: 25px;
+  horizontal-align: right;
 }
 //--
 

@@ -16,13 +16,20 @@
 					<Label id="quest_desc" class="qtext" text="sobaka idet gulyat s toboy"/>
 				</Panel>
 				<Panel id="QReward">
-					<Panel class="qrewardpanel">
-						<Label id="quest_req" class="qtext" text="nado resov: 10"/>
+					<Panel id="quest-panel-items" lass="qrewardpanel">
+						<Panel id="quest-panel-item-current" class="quest-panel-down">
+							<Label class="qtext" text="НУЖНО:"/>
+							<DOTAItemImage id="quest_item-current" class="quest-items" itemname="item_meat">
+								<Label id="quest_item-count" text="2"/>
+							</DOTAItemImage>
+						</Panel>
+						<Panel class="quest-panel-down">
+							<Label class="qtext" text="НАГРАДА:"/>
+							<DOTAItemImage id="quest_item-reward" class="quest-items" itemname="item_meat"/>
+						</Panel>
 					</Panel>
-					<Panel class="qrewardpanel">
+					<Panel id="quest-panel-exp" class="qrewardpanel">
 						<Label id="quest_gold" class="qtext" text="dadut gold: 10"/>
-					</Panel>
-					<Panel class="qrewardpanel">
 						<Label id="quest_exp" class="qtext" text="dadut exp: 10"/>
 					</Panel>
 				</Panel>

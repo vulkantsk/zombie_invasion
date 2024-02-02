@@ -15,13 +15,15 @@ function ZFilter:OrderFilter(kv)
 		local target = EntIndexToHScript(kv.entindex_target)
 		if target and target ~= nil and target:IsBaseNPC() and string.match(target:GetUnitName(), "jitel")  then
 			local ab = target:GetAbilityByIndex(0) or nil
- 
+
     		if ab then 
 			CustomGameEventManager:Send_ServerToPlayer(	PlayerResource:GetPlayer(pid), "zpr_show_quest", {
 			an = ab:GetAbilityName(),
-			rq = ab:GetSpecialValueFor("value_required"),
+			value = ab:GetSpecialValueFor("value_required"),
 			re = ab:GetSpecialValueFor("reward_exp"),
 			rg = ab:GetSpecialValueFor("reward_gold"),
+			quest_item = ab.quest_item,
+			reward_item = ab.reward_item,
 			} )
 			return false
             end
@@ -31,4 +33,4 @@ function ZFilter:OrderFilter(kv)
 	return true
 end
 
---
+-- 
