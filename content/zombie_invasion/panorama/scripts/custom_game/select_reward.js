@@ -24,6 +24,7 @@ const giveReward = (props) => {
       GameEvents.SendCustomGameEventToServer('get_reward', {
         id: Players.GetLocalPlayer(),
         item: element,
+        
       });
     });
   });
@@ -32,7 +33,7 @@ const giveReward = (props) => {
 necrImage.SetPanelEvent('onactivate', () => {
   uiScaleNecr = uiScaleNecr + 1;
   necrImage.style.uiScale = `${Math.min(80, uiScaleNecr)}%`;
-  Game.EmitSound('I_am_sad');
+  Game.EmitSound('anime_chan');
 });
 
 GameEvents.Subscribe('give_reward', giveReward);
