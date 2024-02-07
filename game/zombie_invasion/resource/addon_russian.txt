@@ -1302,10 +1302,20 @@
 		"DOTA_Tooltip_modifier_veil_active_debuff"				"Magic Weakness"
 		"DOTA_Tooltip_modifier_veil_active_debuff_Description"	"Магический урон увеличен."
 
- 		"DOTA_Tooltip_Ability_item_veil_of_discord_3"			"Totem's Mask of Discord"
-		"DOTA_Tooltip_ability_item_veil_of_discord_3_Description"					"<h1>Активная: Magic Weakness</h1> Ослабляет вражеских героев в области радиусом %debuff_radius%, отчего они получают на %spell_amp%%% больше урона от заклинаний.<br><br>Дальность применения: %abilitycastrange%<br>Длительность: %resist_debuff_duration% сек. \n\n <h1>Пассивная: Basilius Aura</h1> Увеличивает восстановление маны союзников на %aura_mana_regen%.<br><br>Радиус: %aura_radius%"
-		"DOTA_Tooltip_ability_item_veil_of_discord_3_Lore"						"Ходят слухи, что эта маска самого Хидана!"
-		"DOTA_Tooltip_ability_item_veil_of_discord_3_bonus_all_stats"			"+$all"
+
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3"	"Shiva's Guard"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_Description"					"<h1>Активное: Arctic Blast</h1> Выпускает морозную волну, которая на %resist_debuff_duration% секунд увеличивает получаемый противниками урон от заклинаний на %spell_amp%%%, наносит им %blast_damage% магического урона и на %blast_debuff_duration% сек. снижает их скорость передвижения на %blast_movement_speed%%%. Наносит иллюзиям %illusion_multiplier_pct%%% урона.<br><br>Радиус: %blast_radius%\n\n<h1>Пассивное: Freezing Aura</h1>Снижает скорость атаки противников на %aura_attack_speed%, а их лечение, восстановление здоровья и вампиризм — на %hp_regen_degen_aura%%%.<br><br>Радиус: %aura_radius%"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_Lore"							"Говорят, когда-то этот артефакт принадлежал богине, и он не теряет былого могущества по сей день."
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_Note0"							"Волна распространяется со скоростью в %blast_speed% до максимального размера в %blast_radius%."
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_Note1"							"Морозная волна следует за владельцем."
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_Note2" 							"Эффект от нескольких Freezing Aura не складывается."
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_agility"					"+$agi"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_strength"					"+$str"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_hp_regen"					"+$hp_regen"
+
+
 
 		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3"				"Veil of Discord"
 		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3_Description"	"Восстановление маны союзников увеличена на %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
