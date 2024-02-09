@@ -1107,6 +1107,19 @@
         "DOTA_Tooltip_Ability_item_resistance_res"                                        "%+ к уменьшению входящего урона"
         "DOTA_Tooltip_Ability_item_resistance_Lore"                                "Стальной доспех, надёжно защищающий владельца."
 
+        "DOTA_Tooltip_Ability_item_blood_keeper"		"Blood Keeper Shield"
+        "DOTA_Tooltip_Ability_item_blood_keeper_Description"	"<h1>Активное: Blood Rivers</h1> Мгновенно восстанавливает %heal_per_charge% здоровья за каждый сохраненный заряд. Получает %charges_for_attack_creep% за атаку по крипу. <br><br>Максимум зарядов: %max_charges%\n\n<h1>Пассивное: Shield Dealer </h1>Атакуя герой с шансом в %chance%%% может получить щит размером %block% + %max%%% здоровья владельца на %duration% секунд"
+        "DOTA_Tooltip_Ability_item_blood_keeper_health_debuff" "%-<font color='#e03e2e'>к увеличению здоровья</font>"
+        "DOTA_Tooltip_Ability_item_blood_keeper_bonus_armor"	"+$armor"
+        "DOTA_Tooltip_Ability_item_blood_keeper_bonus_str"	"+$str"
+        "DOTA_Tooltip_Ability_item_blood_keeper_bonus_damage"	"+$damage"
+        "DOTA_Tooltip_Ability_item_blood_keeper_lifesteal_pct"	"%+$lifesteal"
+     
+
+
+
+
+
          "DOTA_Tooltip_Ability_item_blademail"                                            "Blade mail"
 		"DOTA_Tooltip_ability_item_blademail_Description"						"<h1>Активное: Damage Return</h1>Увеличивает возвращение урона от всех источников на %active_reflection_pct%%%. Длится %duration% сек.\n\n<h1>Пассивное: Damage Return</h1>Возвращает %passive_reflection_constant% + %passive_reflection_pct%%% урона от каждой атаки атакующим вас существам." 
 		"DOTA_Tooltip_ability_item_blademail_Lore"								"Острый, как лезвие бритвы, панцирь — выбор самоотверженных мучеников."
