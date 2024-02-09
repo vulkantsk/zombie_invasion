@@ -1114,6 +1114,8 @@
         "DOTA_Tooltip_Ability_item_blood_keeper_bonus_str"	"+$str"
         "DOTA_Tooltip_Ability_item_blood_keeper_bonus_damage"	"+$damage"
         "DOTA_Tooltip_Ability_item_blood_keeper_lifesteal_pct"	"%+$lifesteal"
+        "DOTA_Tooltip_modifier_item_blood_keeper_shield"	"Кровавый щит"
+        "DOTA_Tooltip_modifier_item_blood_keeper_shield_Description"	"Сгутки крови оберегают вас от получения урона, пока щит ещё цел"
      
 
 

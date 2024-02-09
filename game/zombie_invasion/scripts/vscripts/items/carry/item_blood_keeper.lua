@@ -218,5 +218,8 @@ end
 end
 
 
+function modifier_item_blood_keeper_shield:GetTexture()
+    return "blood_keeper"
+end
 
  
