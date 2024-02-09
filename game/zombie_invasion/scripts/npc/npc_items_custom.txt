@@ -12221,7 +12221,7 @@
 		"ItemResult"					"item_assault"
 		"ItemRequirements"
 		{
-			"01"						"item_platemail;item_hyperstone;item_buckler"
+			"01"						"item_chainmail;item_chainmail;item_hyperstone;item_sad_shield;item_buckler"
 		}
 	}
 	
@@ -12244,7 +12244,7 @@
 		"ItemAliases"					"ac;assault cuirass"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
-         "ItemBaseLevel"                 "1"		
+        "ItemBaseLevel"                 "1"		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -12252,12 +12252,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"30 60"
+				"bonus_attack_speed"	"40 60 90"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"10 17"
+				"bonus_armor"			"15 25 35"
 			}
 			"03"
 			{
@@ -12267,18 +12267,18 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_attack_speed"		"30 55"
+				"aura_attack_speed"		"25 45 65"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_positive_armor"	"5 8"
+				"aura_positive_armor"	"15 25 35"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_negative_armor"	"-5 -10"
-			}				
+				"aura_negative_armor"	"-15 -25 -35"
+			}			
 		}
 	}
 	"item_recipe_assault_2"
@@ -12330,12 +12330,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"30 70"
+				"bonus_attack_speed"	"40 60 90"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"10 20"
+				"bonus_armor"			"15 25 35"
 			}
 			"03"
 			{
@@ -12345,17 +12345,95 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_attack_speed"		"30 55"
+				"aura_attack_speed"		"25 45 65"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_positive_armor"	"5 12"
+				"aura_positive_armor"	"15 25 35"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_negative_armor"	"-5 -22"
+				"aura_negative_armor"	"-15 -25 -35"
+			}				
+		}
+	}
+	"item_recipe_assault_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_recipe_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3500"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_assault_3"
+		"ItemRequirements"
+		{
+			"01"						";item_platemail;item_hyperstone;item_assault_2"
+		}
+	}
+	//=================================================================================================================
+	// Assault Cuirass 2
+	//=================================================================================================================
+	"item_assault_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"baseclass"							"item_assault"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastRange"				"1200"
+		"AbilityTextureName" "assault3"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5125"
+		"ItemShopTags"					"attack_speed;armor;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"ac;assault cuirass"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+         "ItemBaseLevel"                 "3"		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"40 60 90"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"15 25 35"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"1200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_attack_speed"		"25 45 65"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_positive_armor"	"15 25 35"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_negative_armor"	"-15 -25 -35"
 			}				
 		}
 	}
@@ -13429,7 +13507,7 @@
  		"AbilityTextureName"				"custom_folder/item_recipe"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"100"	
+		"ItemCost"						"0"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -13450,10 +13528,11 @@
 		"ScriptFile"				"items/carry/item_desolator"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_desolator"
+		"ItemCost"						"3500"
+		"ItemBaseLevel"                 "1"	
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"3500"
 		"ItemShopTags"					"damage;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"desolator"
@@ -13461,17 +13540,19 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ShouldBeSuggested"				"1"
 
+
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_damage"			"50"
-				"corruption_armor"		"-12"
+				"bonus_damage"			"50 100 150"
+				"corruption_armor"		"-16 -32 -48"
 				"corruption_duration"	"14.0"
-				"bonus_damage_per_kill"	"2"
+				"bonus_damage_per_kill"	"2 4 8"
 				"bonus_damage_per_assist"	"1"
 				"max_damage"			"30"
-				"chance_to_stack"	"5"
+				"chance_to_stack"	"15"
+
 		}
 	}
 
@@ -13499,35 +13580,96 @@
  
 	"item_desolator_2_custom"
 	{
-		// General
+		// General 
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_desolator"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"item_desolator_2"
+		"AbilityTextureName"			"desol2"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"9675"
+		"ItemCost"						"9875"
 		"ItemShopTags"					"damage;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"desolator"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ShouldBeSuggested"				"1"
+		"ItemBaseLevel"                 "2"		
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_damage"			"100"
-				"corruption_armor"		"-30"
-				"corruption_duration"	"14.0"
-				"bonus_damage_per_kill"	"5"
-				"max_damage"			"600"
-				"chance_to_stack"		"15"
 				"bonus_health"			"625"
+				"bonus_damage"			"50 100 150"
+				"corruption_armor"		"-16 -32 -48"
+				"corruption_duration"	"14.0"
+				"bonus_damage_per_kill"	"2 4 8"
+				"bonus_damage_per_assist"	"1"
+				"max_damage"			"600"
+				"chance_to_stack"	"15"
+
 		}
+	}
+
+	"item_recipe_desolator_3_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"				
+		"Model"						 "models/props_gameplay/recipe.vmdl"
+ 		"AbilityTextureName"				"custom_folder/item_recipe"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2500"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_desolator_3_custom"
+		"ItemRequirements"
+		{
+			"01"						"item_desolator_2_custom;item_desolator_2_custom"
+		}
+	}
+ 
+	"item_desolator_3_custom"
+	{
+		// General 
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"item_lua"
+		"ScriptFile"				"items/carry/item_desolator"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_desolator_2"
+		"ItemCost"						"22100"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShopTags"					"damage;unique"
+		"ItemQuality"					"artifact"
+		"ItemAliases"					"desolator"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ShouldBeSuggested"				"1"
+		"ItemBaseLevel"                 "3"		
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"bonus_health"			"625"
+				"bonus_damage"			"50 100 200"
+				"corruption_armor"		"-16 -32 -48"
+				"corruption_duration"	"14.0"
+				"bonus_damage_per_kill"	"2 4 8"
+				"bonus_damage_per_assist"	"1"
+				"max_damage"			"1200"
+				"chance_to_stack"	"25"
+
+		}	
 	}
 
  	"item_recipe_lesser_crit"
@@ -15440,7 +15582,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_armor"			"6"
+				"bonus_armor"			"7"
 		}
 	}
 

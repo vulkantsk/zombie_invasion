@@ -116,6 +116,7 @@
 		"item"		"item_world_order_amulet"
 		"item"		"item_assault"
 		"item"		"item_assault_2"
+		"item"		"item_assault_3"
 		"item"		"item_last_standing_shield"	
 		"item"		"item_steel_cuirass"
 		"item"		"item_blade_mail"

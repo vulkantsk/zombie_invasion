@@ -11,6 +11,7 @@ modifier_item_resistance = class({
 	DeclareFunctions  = function(self) return {
 		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+		MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS
 	}end,
 })
 
@@ -21,4 +22,8 @@ end
 
 function modifier_item_resistance:GetModifierPhysicalArmorBonus()
 	return self:GetAbility():GetSpecialValueFor("arm")
+end
+
+function modifier_item_resistance:GetModifierExtraHealthBonus()
+	return self:GetCaster():GetAttackDamage() * 1.5
 end

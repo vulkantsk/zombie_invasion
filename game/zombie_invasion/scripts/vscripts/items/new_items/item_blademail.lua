@@ -95,6 +95,7 @@ function modifier_item_blademail_passive:DeclareFunctions()
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
         MODIFIER_EVENT_ON_TAKEDAMAGE,
         MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
+        MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS
     }
 
     return funcs
@@ -117,6 +118,10 @@ end
 function modifier_item_blademail_passive:GetModifierBonusStats_Intellect (params)
     local hAbility = self:GetAbility ()
     return hAbility:GetSpecialValueFor ("bonus_intellect")
+end
+
+function modifier_item_blademail_passive:GetModifierExtraHealthBonus()
+    return self:GetCaster():GetAttackDamage() * 2.5
 end
 
 function modifier_item_blademail_passive:OnCreated()

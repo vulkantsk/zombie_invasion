@@ -3,6 +3,8 @@ LinkLuaModifier("modifier_item_desolator_custom_debuff", "items/carry/item_desol
 
 item_desolator_1 = class({})
 item_desolator_2_custom = class({})
+item_desolator_3_custom = class({})
+
 
 function item_desolator_1:GetIntrinsicModifierName()
     return "modifier_item_desolator_custom"
@@ -13,6 +15,9 @@ function item_desolator_2_custom:GetIntrinsicModifierName()
     return "modifier_item_desolator_custom"
 end
 
+function item_desolator_3_custom:GetIntrinsicModifierName()
+    return "modifier_item_desolator_custom"
+end
  
  
 
@@ -24,6 +29,7 @@ modifier_item_desolator_custom = class({
         MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
         MODIFIER_EVENT_ON_ATTACK_LANDED,
         MODIFIER_EVENT_ON_DEATH,
+        MODIFIER_PROPERTY_FIXED_ATTACK_RATE,
     }end,
 })
 
@@ -37,6 +43,8 @@ end
 function modifier_item_desolator_custom:GetModifierExtraHealthBonus()
     return self:GetAbility():GetSpecialValueFor("bonus_health") +  self:GetAbility():GetCurrentCharges()
 end
+
+
 
 function modifier_item_desolator_custom:OnAttackLanded(data)
     local caster = self:GetCaster()
