@@ -10062,7 +10062,7 @@
         {
                 "bonus_armor"         "12"
                 "block"               "70"
-                "max_block"           "3200000"
+                "max_block"           "40"
                 "duration"            "5"
                 "max"		"10"
                 "chance"              "44"

@@ -164,8 +164,8 @@ end
 
 function modifier_item_blood_keeper_shield:AddShield()
 if not IsServer() then return end
- local shield = self:GetAbility():GetSpecialValueFor("block") + self:GetCaster():GetMaxHealth() * 15 / 100
- local max_block = self:GetAbility():GetSpecialValueFor("max_block")
+ local shield = self:GetAbility():GetSpecialValueFor("block") + self:GetCaster():GetMaxHealth() * 10 / 100
+ local max_block = self:GetAbility():GetSpecialValueFor("max_block") + self:GetCaster():GetMaxHealth() * 40 / 100
 
  self:SetStackCount(math.min(self:GetStackCount() + shield,max_block) )
  self.shield = self:GetStackCount()

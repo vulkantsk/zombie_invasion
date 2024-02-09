@@ -122,6 +122,7 @@
 		"item"		"item_eternal_shroud"
 		"item"		"item_black_king_bar"
 		"item"		"item_titanium_bar"
+		"item"		"item_blood_keeper"
 
 	}
 			

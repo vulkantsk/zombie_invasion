@@ -1108,7 +1108,7 @@
         "DOTA_Tooltip_Ability_item_resistance_Lore"                                "Стальной доспех, надёжно защищающий владельца."
 
         "DOTA_Tooltip_Ability_item_blood_keeper"		"Blood Keeper Shield"
-        "DOTA_Tooltip_Ability_item_blood_keeper_Description"	"<h1>Активное: Blood Rivers</h1> Мгновенно восстанавливает %heal_per_charge% здоровья за каждый сохраненный заряд. Получает %charges_for_attack_creep% за атаку по крипу. <br><br>Максимум зарядов: %max_charges%\n\n<h1>Пассивное: Shield Dealer </h1>Атакуя герой с шансом в %chance%%% может получить щит размером %block% + %max%%% здоровья владельца на %duration% секунд"
+        "DOTA_Tooltip_Ability_item_blood_keeper_Description"	"<h1>Активное: Blood Rivers</h1> Мгновенно восстанавливает %heal_per_charge% здоровья за каждый сохраненный заряд. Получает %charges_for_attack_creep% за атаку по крипу. <br><br>Максимум зарядов: %max_charges%\n\n<h1>Пассивное: Shield Dealer </h1>Атакуя герой с шансом в %chance%%% получит щит на %duration% секунд размером %block% + %max%%% здоровья, максимальное значение щита зависит от %max_block%%% максимального здоровья владельца"
         "DOTA_Tooltip_Ability_item_blood_keeper_health_debuff" "%-<font color='#e03e2e'>к увеличению здоровья</font>"
         "DOTA_Tooltip_Ability_item_blood_keeper_bonus_armor"	"+$armor"
         "DOTA_Tooltip_Ability_item_blood_keeper_bonus_str"	"+$str"
