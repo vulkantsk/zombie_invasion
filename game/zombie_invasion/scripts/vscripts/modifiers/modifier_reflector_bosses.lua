@@ -39,12 +39,12 @@ attacker,ranged_attack,record,unit,do_not_consume,damage_type,activity,heart_reg
 mkb_tested,no_attack_cooldown,damage_flags,original_damage,gain,cost,basher_tested,distance]]
 function modifier_reflector_bosses:OnTakeDamage(data)
 	if IsServer() then
-		if data.unit == self:GetParent() and self:AttackDistance(data) > 300 then
+		if data.unit == self:GetParent() and self:AttackDistance(data) > 325 then
 	        ApplyDamage({
 	            victim = data.attacker,
 	            attacker = self:GetParent(),
-	            damage = data.damage*1.5,
-	            damage_type = DAMAGE_TYPE_PURE,
+	            damage = data.damage * 3,
+	            damage_type = DAMAGE_TYPE_PHYSICAL,
 	            ability = self
 	           })
 	        local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_dispersion_fallback_mid.vpcf", PATTACH_POINT_FOLLOW, data.attacker) 

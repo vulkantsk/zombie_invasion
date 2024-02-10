@@ -54,6 +54,7 @@ function modifier_item_heart_2:OnCreated()
 	-- Ability specials
 	self.bonus_strength = self:GetAbility():GetSpecialValueFor("bonus_strength")
 	self.bonus_health = self:GetAbility():GetSpecialValueFor("bonus_health")	
+	self.bonus_all = self:GetAbility():GetSpecialValueFor("bonus_all")
 
 	if IsServer() then
 		-- If this is the first heart, add the unique modifier
@@ -74,12 +75,22 @@ end
 
 function modifier_item_heart_2:DeclareFunctions()
 	local decFuncs = {MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-		MODIFIER_PROPERTY_HEALTH_BONUS}
+		MODIFIER_PROPERTY_HEALTH_BONUS,
+		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS}
 	return decFuncs
 end
 
 function modifier_item_heart_2:GetModifierBonusStats_Strength()
-	return self.bonus_strength
+	return self.bonus_strength + self.bonus_all
+end
+
+function modifier_item_heart_2:GetModifierBonusStats_Intellect()
+	return self.bonus_all
+end
+
+function modifier_item_heart_2:GetModifierBonusStats_Agility()
+	return self.bonus_all
 end
 
 function modifier_item_heart_2:GetModifierHealthBonus()
@@ -104,11 +115,7 @@ function modifier_item_heart_2_unique:OnCreated()
 	self.base_regen = self:GetAbility():GetSpecialValueFor("base_regen")
 	self.noncombat_regen = self:GetAbility():GetSpecialValueFor("noncombat_regen")
 
-	if self:GetCaster():IsRangedAttacker() then
-		self.cooldown = self:GetSpecialValueFor("regen_cooldown_ranged")
-	else
-		self.cooldown = self:GetAbility():GetSpecialValueFor("regen_cooldown_melee")
-	end
+	
 end
 
 function modifier_item_heart_2_unique:IsAura() return true end
