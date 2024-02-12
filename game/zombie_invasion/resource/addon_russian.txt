@@ -4553,28 +4553,28 @@
 
 
 		"DOTA_Tooltip_ability_item_gold"		"Денюшечки"
-		"DOTA_Tooltip_ability_item_gold_Description"	"При использовании герой получает 150 голды"
+		"DOTA_Tooltip_ability_item_gold_Description"	"При использовании герой получает 300 голды"
 
 		"DOTA_Tooltip_ability_item_gold2"		"Денюшечки"
-		"DOTA_Tooltip_ability_item_gold2_Description"	"При использовании герой получает 300 голды"
+		"DOTA_Tooltip_ability_item_gold2_Description"	"При использовании герой получает 600 голды"
 
 		"DOTA_Tooltip_ability_item_gold3"		"Денюшечки"
-		"DOTA_Tooltip_ability_item_gold3_Description"	"При использовании герой получает 450 голды"
+		"DOTA_Tooltip_ability_item_gold3_Description"	"При использовании герой получает 900 голды"
 
 		"DOTA_Tooltip_ability_item_gold4"		"Денюшечки"
-		"DOTA_Tooltip_ability_item_gold4_Description"	"При использовании герой получает 600 голды"
+		"DOTA_Tooltip_ability_item_gold4_Description"	"При использовании герой получает 1200 голды"
 
 		"DOTA_Tooltip_ability_item_exp"		"опытычечок"
-		"DOTA_Tooltip_ability_item_exp_Description"	"При использовании герой получает 150 опыта"
+		"DOTA_Tooltip_ability_item_exp_Description"	"При использовании герой получает 400 опыта"
 
 		"DOTA_Tooltip_ability_item_exp2"		"опытычечок"
-		"DOTA_Tooltip_ability_item_exp2_Description"	"При использовании герой получает 300 опыта"
+		"DOTA_Tooltip_ability_item_exp2_Description"	"При использовании герой получает 600 опыта"
 
 		"DOTA_Tooltip_ability_item_exp3"		"опытычечок"
-		"DOTA_Tooltip_ability_item_exp3_Description"	"При использовании герой получает 450 опыта"
+		"DOTA_Tooltip_ability_item_exp3_Description"	"При использовании герой получает 800 опыта"
 
 		"DOTA_Tooltip_ability_item_exp4"		"опытычечок"
-		"DOTA_Tooltip_ability_item_exp4_Description"	"При использовании герой получает 600 опыта"
+		"DOTA_Tooltip_ability_item_exp4_Description"	"При использовании герой получает 1200 опыта"
 
 
 
