@@ -7,13 +7,14 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
  		"AbilityCastAnimation"			"ACT_INVALID"
+ 		"MaxLevel"                        "14"
 		"HasShardUpgrade"				"1"
 		// Casting
 		"AbilityValues"
 		{
 			"attack_speed"			
 			{
-				"value"		"15 20 25 30"
+				"value"		"10 15 20 25 30 35 40 45 50 55 60 65 70 75"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_5"
 			}
 			"max_stacks"			
