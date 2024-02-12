@@ -10057,7 +10057,7 @@
 		"ItemDisplayCharges"		"1"
 		"ItemRequiresCharges"		"1"
 
-        "AbilityCooldown"			 "14"
+        "AbilityCooldown"			 "10"
 
         "AbilityValues"
         {
@@ -10065,7 +10065,7 @@
                 "block"               "70"
                 "max_block"           "40"
                 "duration"            "5"
-                "max"		"10"
+                "max"		"2"
                 "chance"              "44"
                 "bonus_damage"			"25"
 				"bonus_str"	             "22"
@@ -14069,7 +14069,7 @@
 	{
 		"BaseClass"                     "item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"slark"
+		"AbilityTextureName"			"sarachka"
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 

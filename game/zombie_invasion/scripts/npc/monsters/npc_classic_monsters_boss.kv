@@ -317,7 +317,7 @@
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"			"420"
 		"AttackDamageMax"			"560"
-		"AttackRate"				"1.8"
+		"AttackRate"				"1.3"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
 		"AttackRange"				"150"
@@ -405,15 +405,15 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"50"
-		"MagicalResistance"         "10"
+		"ArmorPhysical"				"100"
+		"MagicalResistance"         "22"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"220"
-		"AttackDamageMax"			"240"
+		"AttackDamageMin"			"670"
+		"AttackDamageMax"			"690"
 		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
@@ -487,112 +487,6 @@
 			
 		}	
 	}
-	"npc_warlock_boss"	
-	{
-		// General
-		//----------------------------------------------------------------
-		
-		"vscripts"                  "ai/ai_warlock_boss.lua"
-
- 
-
-		"Model"						"models/heroes/warlock/warlock.vmdl"
-		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"Hero_Warlock"
-		"GameSoundsFile"			"soundevents/game_sounds_warlock.vsndevts"
-		"Level"						"30"
-		"ModelScale" 				"1.6"
-		"ConsideredHero"			"1"
-		"IsAncient"					"1"
-		"IsBossMonster"				"1"	
-		"UseNeutralCreepBehavior" 	"0"
- 
-		"HasInventory"              "1"
-		
-		"MinimapIcon"				"minimap_roshancamp"
-		"MinimapIconSize"			"950"
-
-		// Abilities
-		//----------------------------------------------------------------
-     	"Ability1"					""		
- 		"Ability2"					"nevermore_dark_lord"
- 		"Ability3"					"skeleton_king_vampiric_aura"
- 		"Ability4"					"ghoul_crazy_look"
-	 	"Ability5"					"warlock_terror"
- 		"Ability6"					"troll_warlord_fervor"
- 		"Ability7"					"spectre_dispersion"
- 		"Ability8"					"phantom_assassin_coup_de_grace"
- 
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"				"230"			// Physical protection.
-		"MagicalResistance"         "45"
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"7500"
-		"AttackDamageMax"			"9000"
-		"AttackRate"				"1.9"
-		"AttackAnimationPoint"		"0.4"
-		"AttackAcquisitionRange"	"900"
-		"AttackRange"				"600"
-		"ProjectileModel"			"particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
-        "BaseAttackSpeed"			"140"		     
-  
-
-		// Bounds
-		//----------------------------------------------------------------
-		"RingRadius"				"70"
-		"HealthBarOffset"			"290"
-
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyXP"					"5000"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"450"		// Speed.	
-		
-
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"				"600000"		// Base health.
-		"StatusHealthRegen"			"0"		// Health regeneration rate.
-		"StatusMana"				"15000"			// Base mana.
-		"StatusManaRegen"			"30.0"		// Mana regeneration rate.		 
-		
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"1000"		// Range of vision during day light.
-		"VisionNighttimeRange"		"1000"		// Range of vision at night time.
-
-
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_BADGUYS"						// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"Creature"
-		{
- 
-			"AttachWearables"
-				{
-					"Wearable1" { "ItemDef" "6473" }
-					"Wearable1" { "ItemDef" "8947" }
-					"Wearable1" { "ItemDef" "9862" }
-					"Wearable1" { "ItemDef" "9861" }
-					"Wearable1" { "ItemDef" "8941" }
-					"Wearable1" { "ItemDef" "14302" }
- 				
-				}
- 
-		}
-	}
 	"npc_boss_bear"	
 	{
 		// General
@@ -618,15 +512,15 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"55"
-		"MagicalResistance"         "50"
+		"ArmorPhysical"				"90"
+		"MagicalResistance"         "75"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"220"
-		"AttackDamageMax"			"221"
+		"AttackDamageMin"			"780"
+		"AttackDamageMax"			"821"
 		"AttackRate"				"1.9"
 		"AttackAnimationPoint"		"0.5"
 		"AttackAcquisitionRange"	"500"
@@ -721,15 +615,15 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"110"
+		"ArmorPhysical"				"140"
 		"MagicalResistance"         "18"
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"420"
-		"AttackDamageMax"			"421"
+		"AttackDamageMin"			"1420"
+		"AttackDamageMax"			"1421"
 		"AttackRate"				"0.7"
 		"AttackAnimationPoint"		"0.4"
 		"AttackAcquisitionRange"	"500"
@@ -926,8 +820,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"1425"
-		"BountyGoldMin"				"0"	
-		"BountyGoldMax"				"0"	
+		"BountyGoldMin"				"150"	
+		"BountyGoldMax"				"200"	
 
 		// Movement
 		//----------------------------------------------------------------
@@ -937,7 +831,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"3850"
+		"StatusHealth"				"5000"
 		"StatusHealthRegen"			"5"	
 		"StatusMana"				"1000"
 		"StatusManaRegen"			"20.0"		 

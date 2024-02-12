@@ -77,9 +77,9 @@ function Difficulty:NPC( npc )
 	elseif self.leader == "hard" then
 		s = 1.5 
 	elseif self.leader == "demon" then
-		s = 1.75 
+		s = 3 
 	elseif self.leader == "impossible" then
-		s = 2 
+		s = 6
 	end		
  
 	local result = (s)

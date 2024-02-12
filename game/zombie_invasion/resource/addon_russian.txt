@@ -387,7 +387,7 @@
 		// ******************** Предметы********************
 
 		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
-		"DOTA_Tooltip_ability_item_sara_change_Description" "Меняет выбранного героя на жёстокого убийцу SARA"
+		"DOTA_Tooltip_ability_item_sara_change_Description" "<h1>Активная: Change Hero</h1>Меняет выбранного героя на жёстокого убийцу SARA"
 		"DOTA_Tooltip_ability_item_sara_change_Lore" "Сильное создание."
 
 		"DOTA_Tooltip_ability_item_saitama_change" "<font color='#ccff00'>SAITAMA"
@@ -3213,9 +3213,9 @@
 	
    	 	"DOTA_Tooltip_ability_sara_space_dissection" "Space Dissection"
 		"DOTA_Tooltip_ability_sara_space_dissection_Description" "Когда способность не на перезарядке, она мгновенно убивает крипа и снижает броню боссам и героям. Когда способность убивает крипа, вы не получаете за него золото и опыт, но прирост максимальной энергии за него удваивается, а также способность не потратит энергию. Снижение брони зависит от потребления энергии этой способностью. Снижение брони стакается."
-		"DOTA_Tooltip_ability_sara_space_dissection_aghanim_scepter_description" "Теперь убийство крипов дает золото и опыт, множитель маны также увеличен до 4. Теперь количество стаков не ограничено."
+		"DOTA_Tooltip_ability_sara_space_dissection_shard_description" "Теперь за убийство крипов способностью дается золото и опыт."
 		"DOTA_Tooltip_ability_sara_space_dissection_creep_energy_multiplier" "МНОЖИТЕЛЬ:"
-		"DOTA_Tooltip_ability_sara_space_dissection_scepter_Description" "Множитель со скипетром %creep_energy_multiplier_scepter% Моментально убивает крипа, получает золото и опыт за уничтоженное сущетсво."
+		"DOTA_Tooltip_ability_sara_space_dissection_scepter_Description" "Множитель со скипетром %creep_energy_multiplier_scepter% Теперь количество стаков не ограничено."
 		"DOTA_Tooltip_ability_sara_space_dissection_energy_to_disarmor_pct" "%ЭНЕРГИИ В СНИЖ. БРОНИ:"
 		"DOTA_Tooltip_ability_sara_space_dissection_energy_to_disarmor_bosses_pct" "%ЭНЕРГИИ В СНИЖ. БРОНИ БОССУ:"
 		"DOTA_Tooltip_ability_sara_space_dissection_disarmor_duration" "ДЛИТЕЛЬНОСТЬ СНИЖЕНИЯ:"

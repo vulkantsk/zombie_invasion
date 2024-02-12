@@ -62,7 +62,7 @@ if IsServer() then
 					end
 				elseif unit:IsCreep() then
 					unit.SpaceDissectionMultiplier = ability:GetSpecialValueFor(parent:HasScepter() and "creep_energy_multiplier_scepter" or "creep_energy_multiplier")
-					if not parent:HasScepter() then
+					if not parent:HasShard() then
 						unit:SetDeathXP(0)
 						unit:SetMinimumGoldBounty(0)
 						unit:SetMaximumGoldBounty(0)
