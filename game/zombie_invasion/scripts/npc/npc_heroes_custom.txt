@@ -112,7 +112,7 @@
 		"Ability1"		"troll_warlord_berserkers_rage"
 		"Ability2"		"troll_warlord_whirling_axes_ranged"
 		"Ability3"		"troll_warlord_whirling_axes_melee"
-		"Ability4"		"frostivus2018_troll_warlord_fervor"
+		"Ability4"		"troll_warlord_fervor"
 		"Ability5"		"innate_giant_strikes"  
 		"Ability6"		"Troll_inner_beast"
 		"Ability10"		"special_bonus_agility_8"

@@ -1221,17 +1221,17 @@
             "01"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "value_required"            "100"
+                "value_required"            "30"
             }
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "3250"
+                "reward_exp"                "1260"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "2225"
+                "reward_gold"                "1000"
             }
         }
 

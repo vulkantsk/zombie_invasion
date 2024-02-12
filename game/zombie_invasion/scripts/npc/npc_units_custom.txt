@@ -1,6 +1,7 @@
 // Units File
 
 #base "monsters/npc_classic_monsters.kv"
+#base "monsters/npc_classic_monsters_boss.kv"
 #base "monsters/npc_classic_wave_monsters.kv"
 #base "monsters/npc_armageddon_monsters.kv"
 #base "portal/npc.txt"
@@ -533,7 +534,7 @@
 		"ConsideredHero"			"0"
 		"IsNeutralUnitType"         "1"
 		"IsAncient"                 "1"
-  		"MinimapIconSize"				"1"
+  		"MinimapIconSize"				"0"
          "HealthBarOffset"			"9999"
  
 		// Abilities
@@ -546,8 +547,8 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"
-		"MagicalResistance"			"0"
+		"ArmorPhysical"				"100000000000000000"
+		"MagicalResistance"			"1110"
 		
 		// Attack
 		//----------------------------------------------------------------
@@ -589,7 +590,7 @@
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 		// Creature Data

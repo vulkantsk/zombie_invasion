@@ -56,14 +56,14 @@
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
 
 		"difficulty_description_normal" "СТАТЫ ВРАГОВ НЕ УВЕЛИЧЕНЫ!"
-		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 200%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
-		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 300%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 125%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 150%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
  	
  		"difficulty_description_randomheroes" "<font color='#ffff00'>После каждой успешно пройденной ночи, вам будут выдавать нового героя!</font>!"
  		 "difficulty_description_onedown" "<font color='#c10020'>У ВАС ТОЛЬКО ОДНА ЖИЗНЬ</font>(возродиться можно после успешно пройденной ночи)"
 
 
-		"difficulty_description_demon" "<font color='#ff0000'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 400%</font>!  (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_demon" "<font color='#ff0000'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 175%</font>!  (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
 
 		"difficulty_description_impossible" "<font color='#000000'>АВХХВАХВАХВАХВАХВАХВАХВАХВАХВАХВАХАВХАВХВАХВХАХВАХВАХВАХВАХАВХВАХВАХВАХАВХВАХВАХВАХХ
 		АВХВАХВАХВАХХВАХВАХАВХВАВХХВАВАХАВХВАХВХВАХВ
@@ -3179,7 +3179,7 @@
         "dota_tooltip_ability_innate_giant_strikes"								"Giant Strikes"
 		"dota_tooltip_ability_innate_giant_strikes_Description"					"Ваша скорость атаки ограничена на %locked_attack_speed% и может быть изменена только модификациями Базового Времени Атаки.<br><br>Дарует %pct_damage_per_attack_speed%%% дополнительного урона за единицу избытка скорости атаки."
 		"dota_tooltip_ability_innate_giant_strikes_lore"						"Бойтесь не человека, который отработал один удар миллион раз, а того, который однажды отработал миллион ударов."
-		"dota_tooltip_ability_innate_giant_strikes_Shard_Description"		"Увеличивает дополнительный урон на <font color='#fad201'>0.6%</font> за избыток скорости атаки"
+		"dota_tooltip_ability_innate_giant_strikes_Scepter_Description"		"Увеличивает дополнительный урон на <font color='#fad201'>0.6%</font> за избыток скорости атаки"
 
 		 "dota_tooltip_ability_troll_warlord_buff_1"								"Berserk Strikes"
 		"dota_tooltip_ability_troll_warlord_buff_1_Description"					"<h1>Пассивная: Berserk Strikes </h1> герой дополнительно получает скорость атаки от своей ловкости %agi_pct%%%"
