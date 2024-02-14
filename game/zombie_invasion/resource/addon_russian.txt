@@ -1406,6 +1406,20 @@
 		"DOTA_Tooltip_Ability_item_dragon_helmet_bonus_intellecte"				"ДОП.ИНТЕЛЛЕКТ:"
 		"DOTA_Tooltip_Ability_item_dragon_helmet_spell_amp"					"%ДОП.МАГ.УРОН:"
 
+		"DOTA_Tooltip_Ability_item_mage_helper"	"The Last Mage Helper"
+		"DOTA_Tooltip_Ability_item_mage_helper_Description"	"<h1>Пассивное: Soul slay</h1> С каждым тиком предмет в радиусе %radius% наносит урон зависящий от %pct%%% интеллекта владельца %count% целям, также наделяя владельца даром благодаря которому он наносит на %bonus_magic_damage%%% больше урона с магии, но также получает проклятие на большую затрату магической энергии %reduce_mana_cost%%%"
+		"DOTA_Tooltip_Ability_item_mage_helper_bonus_int"	"+$int"
+		"DOTA_Tooltip_Ability_item_mage_helper_bonus_magic_damage"	"%+к урону от заклинаний"
+		"DOTA_Tooltip_Ability_item_mage_helper_reduce_mana_cost"	"%-<font color='#e03e2e'>к уменьшению расхода маны</font>"
+		
+
+
+
+
+
+
+
+
 		"DOTA_Tooltip_Ability_item_dragon_sword"			"Dragon sword"
 		"DOTA_Tooltip_Ability_item_dragon_sword_Description"					"<h1>Активная: Dragon sword</h1> Ваше оружие заостряется и пробивает броню противника уменьшая её на %disarmor%% <h1>Пассивная: Dragon sword</h1>Даёт вам  %bonus_dmg_sword% урона, а так-же %crit_chance_sword%%% шанс нанести урон в %crit_cg_sword%%%"
 		"DOTA_Tooltip_Ability_item_dragon_sword_range"				"РАДИУС:"
@@ -2255,22 +2269,24 @@
 		"DOTA_Tooltip_Ability_tide_buff_1"                                            "More damage"
         "DOTA_Tooltip_Ability_tide_buff_1_Description"                                "<h1>Пассивная: More damage </h1>Когда тайда бьют и наносят %dmg_proc% урона, он становится сильнее и получает %damage_per_stack% урона."
         "DOTA_Tooltip_Ability_tide_buff_1_Lore"										"Сила - всё что его интересует."
-        "DOTA_Tooltip_Ability_tide_buff_1_dmg_proc"                                        "ПОТРАЧЕННОГО ЗДОРОВЬЯ ДЛЯ СТАКА:"
-        "DOTA_Tooltip_Ability_tide_buff_1_damage_per_stack"                                        "БОНУС УРОНА ЗА СТАК:"
-		"DOTA_Tooltip_modifier_tide_damage"												"More damage"
+        "DOTA_Tooltip_Ability_tide_buff_1_damage_per_stack"                                       "БОНУС УРОНА ЗА СТАК:"
+		"DOTA_Tooltip_modifier_tide_damage"														"More damage"
 
 		"DOTA_Tooltip_Ability_anchor_smash_passive"                                            "Anchor smash"
-		"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Герой с шансом в 33% наносит <font color='#00e6b0'>Урон способности + урон героя * 7% силы героя.</font>"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_Description"                                "Герой с шансом наносит <font color='#00e6b0'>Урон способности + урон героя * 70% силы героя.</font>"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_Lore"		"Этот зелёный, может и не такое."
 		"DOTA_Tooltip_Ability_anchor_smash_passive_armor_reduction"		"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_Ability_anchor_smash_passive_chance"		"%ШАНС СРАБАТЫВАНИЯ:"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_radius"			"РАДИУС:"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_smash_damage"	"БОНУСНЫЙ УРОН:"
 		"DOTA_Tooltip_Ability_anchor_smash_passive_duration"		"ДЛИТЕЛЬНОСТЬ:"
 
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Уменьшение брони anchor smash"
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} SMASH DAMAGE"
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"+0.2 Силы и здоровья MORE HEALTH"
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
+
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_chance"	"+{s:bonus_chance}% к срабатыванию anchor smash"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"{s:bonus_armor_reduction} к уменьшению брони anchor smash"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"			"+{s:bonus_smash_damage} урон от anchor smash"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"			"+0.2 Силы и здоровья more health"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} к блокировнию урона"
 
 
 		//---silencer-----

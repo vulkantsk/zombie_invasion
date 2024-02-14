@@ -559,7 +559,7 @@ function InvasionMode:InvasionGameStart()
 	InvasionMode:NextNight()
 	 	  --InvasionMode:ChristmassEror()
 
-    -- InvasionMode:SecretShop()
+    InvasionMode:SecretShop()
 
      if randomheroess >= 1 then 
      	InvasionMode:RandomHeroes()  
@@ -610,42 +610,41 @@ function InvasionMode:InvasionGameStart()
 
 end
 
---function InvasionMode:SecretShop()
-	--local dropItems = {
-	    --item_milk = 40,
-	    --item_sheepstick = 20,
-	    --item_sange_last = 15,
-	    --item_bonus_strength10 = 10,
-	    --item_bonus_agility10 = 5
-	--}
-	--local defaultItemName ="item_milk"
-	--local points = Entities:FindAllByName( "spawner_item_point" )
-	--local restItems = {}
+function InvasionMode:SecretShop()
+	local dropItems = {
+	    item_blackshop_uncommon_injector = 100,
+	    item_bonus_agility10 = 35,
+	    item_bonus_strength10 = 35,
+	    item_bonus_intelligence10 = 35,
+	}
+	local defaultItemName ="item_milk"
+	local points = Entities:FindAllByName( "spawner_item_point" )
+	local restItems = {}
 
-	--Timers:CreateTimer(0,function()
-		--for _, restItem in ipairs(restItems) do
-			--UTIL_Remove(restItem)
-		--end		
+	Timers:CreateTimer(0,function()
+		for _, restItem in ipairs(restItems) do
+			UTIL_Remove(restItem)
+		end		
 
-		--restItems = {}
+		restItems = {}
 
-		--for _, point in ipairs(points) do
-			--local item 
+		for _, point in ipairs(points) do
+			local item 
 
-			--for itemName, chance in pairs(dropItems) do
-				--if RollPercentage(chance) then 
- 					--item = CreateItem(itemName, nil, nil)
- 					--break
- 				--end
- 			--end
- 			--local dropItem = item and item or CreateItem(defaultItemName, nil, nil)
-			--local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
-			--table.insert(restItems, drop) 
-		--end
+			for itemName, chance in pairs(dropItems) do
+				if RollPercentage(chance) then 
+ 					item = CreateItem(itemName, nil, nil)
+ 					break
+ 				end
+ 			end
+ 			local dropItem = item and item or CreateItem(defaultItemName, nil, nil)
+			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
+			table.insert(restItems, drop) 
+		end
 
-		--return 600
-	--end)
---end
+		return 600
+	end)
+end
 
 function InvasionMode:RandomHeroes()  
  -- Обычнй конец

@@ -42,6 +42,7 @@ function modifier_lucent:OnAttackLanded( data )
     local caster = self:GetCaster()
     local target = data.target
     local attacker = data.attacker
+    if RollPercentage(33) then
     local damageTable = {
         victim = target,
         attacker = self:GetParent(),
@@ -90,5 +91,6 @@ function modifier_lucent:OnAttackLanded( data )
 
     EmitSoundOn( "Hero_Luna.LucentBeam.Cast", self:GetCaster() )
     EmitSoundOn( "Hero_Luna.LucentBeam.Target", target )
+    end
     end
 end

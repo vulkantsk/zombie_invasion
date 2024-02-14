@@ -32,12 +32,16 @@
 			"duration"			"9"
             "smash_damage"				
 			{
-				"value"				"90 135 180 225 270 315 360 405 450 495 540 585 630 675"
-			   	"special_bonus_unique_tide_smash_damage"	    "+225"
+				"value"				"15 75 145 260 420 650 890 990 1240 1570 1930 2150 2370 2875"
+			   	"special_bonus_unique_tide_smash_damage"	    "+625"
 				 
 			}
             "radius"			"375"
-
+            "chance"		
+            	{
+            		"value"		"96 89 82 75 68 61 54 47 40 33 26 19 12 5"	
+            		"special_bonus_unique_tide_smash_chance"	"+12"
+            	}
             "armor_reduction"				
 			{
 				"value"				"-2 -4 -6 -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28"
@@ -317,6 +321,16 @@
 		
  
 	}
-	
+	"special_bonus_unique_tide_smash_chance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+ 
+	}
+
 	
 }

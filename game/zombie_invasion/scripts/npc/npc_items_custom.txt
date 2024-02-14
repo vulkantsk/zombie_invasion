@@ -3607,6 +3607,43 @@
 		}
  
 	}
+	"item_recipe_mage_helper"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.mdl"
+		"AbilityTextureName"			"item_recipe"
+		"ItemCost"						"0"
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_mage_helper"
+		"ItemRequirements"
+		{
+			"01"						"item_radiance;item_magic_stone"
+		}
+	}
+	"item_mage_helper"
+	{
+		"BaseClass"						"item_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"	        "mage_helper"
+		"ScriptFile"					"items/carry/item_mage_helper"
+		"AbilityCastRange"				"700"
+		"ItemBaseLevel"                 "1"
+		"ItemCost"						"8400"
+		"AbilityValues"
+		{
+			"bonus_int"					"75"
+			"damage"					"1"
+			"tick"						"1"
+			"count"						"3"
+			"radius"					"700"
+			"bonus_magic_damage"		"90"
+			"reduce_mana_cost"			"-35"
+			"pct"		"50"
+		}
+	}	
 	
  	"item_pirog_tank"
 	{
@@ -9871,6 +9908,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemInitialCharges"            "1"
+		"ItemStackable"				"1"
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            ""
 		// Stats		
@@ -9925,6 +9963,7 @@
 		"AbilityTextureName" 			"fire_shiva"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"FightRecapLevel"				"1"
+		"ItemPurchasable"				"0"
 		"ScriptFile"					"items/magic/item_shivas_fire"
 		
 		// Stats		

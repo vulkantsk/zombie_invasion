@@ -18,11 +18,18 @@ end
 function modifier_anchor_smash_passive:OnCreated()
     self.smash_damage = self:GetAbility():GetSpecialValueFor("smash_damage")
     self.radius = self:GetAbility():GetSpecialValueFor("radius")
+    self.chance = self:GetAbility():GetSpecialValueFor("chance")
+end 
+
+function modifier_anchor_smash_passive:OnRefresh()
+    self.smash_damage = self:GetAbility():GetSpecialValueFor("smash_damage")
+    self.radius = self:GetAbility():GetSpecialValueFor("radius")
+    self.chance = self:GetAbility():GetSpecialValueFor("chance")
 end 
 
 function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
 
-    if RollPercentage(33) then
+    if RollPercentage(self.chance) then
         local enemies = FindUnitsInRadius(
         self:GetParent():GetTeamNumber(), -- int, your team number
         self:GetParent():GetOrigin(), -- point, center point
@@ -38,7 +45,7 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         ApplyDamage( {
         victim = enemy,
         attacker = self:GetParent(),
-        damage = self.smash_damage + self:GetCaster():GetBaseDamageMax() + (self:GetCaster():GetStrength() * (7 / 100)),
+        damage = self.smash_damage + self:GetCaster():GetAttackDamage() + (self:GetCaster():GetStrength() * (70 / 100)),
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility(), --Optional.
         })
