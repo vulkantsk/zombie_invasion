@@ -3353,7 +3353,8 @@
 		"DOTA_Tooltip_ability_yuki_frostshtorm_AbilityCastRange"		"РАДИУС ПРИМЕНЕНИЯ:"
 		"DOTA_Tooltip_ability_yuki_frostshtorm_radius"		"РАДИУС"
 		"DOTA_Tooltip_ability_yuki_frostshtorm_duration"		"ДЛИТЕЛЬНОСТЬ:"
-		"DOTA_Tooltip_ability_yuki_frostshtorm_dmg_reduced"		"%УМЕНЬШ.УРОНА:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_dmg_reduced"		"УМЕНЬШЕНИЕ УРОНА ВРАГАМ:"
+		"DOTA_Tooltip_ability_yuki_frostshtorm_dmg_increese"		"УВЕЛИЧЕНИЕ УРОНА СОЮЗНИКАМ:"
 
 		"DOTA_Tooltip_ability_yuki_revenge"	"Revenge"
 		"DOTA_Tooltip_ability_yuki_revenge_Description"	"Аура Yuki-onna подмораживает любого противника нанося ему урон в зависимости от своего интеллекта и лечит союзников."

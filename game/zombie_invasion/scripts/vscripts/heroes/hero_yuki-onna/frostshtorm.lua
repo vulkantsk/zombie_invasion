@@ -100,15 +100,15 @@ end
  	RemoveOnDeath 			= function(self) return true end,
      DeclareFunctions        = function(self) return 
          {
- 			MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE,
+ 			MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
          } end,
  
  })
 
- function modifier_froststorm_buff:GetModifierDamageOutgoing_Percentage( )
- 	if self:GetParent():GetTeam() ~= self:GetCaster():GetTeamNumber() then 
- 		return -self:GetAbility():GetSpecialValueFor("dmg_reduced")
+ function modifier_froststorm_buff:GetModifierPreAttack_BonusDamage()
+ 	if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then 
+ 		return self:GetAbility():GetSpecialValueFor("dmg_reduced")
  	else 
- 		return self:GetAbility():GetSpecialValueFor("dmg_reduced")/2
+ 		return -self:GetAbility():GetSpecialValueFor("dmg_reduced")
  	end
  end
