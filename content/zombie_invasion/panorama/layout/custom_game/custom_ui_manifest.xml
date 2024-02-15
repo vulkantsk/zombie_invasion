@@ -1,9 +1,8 @@
 <root>
-	<script>
-//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_RADIANT_TEAM, false );
-		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_DIRE_TEAM, false );
- 
-	</script>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/error_hud.js" />
+		<include src="file://{resources}/scripts/custom_game/alucard_camera.js" />
+	</scripts>
 	<Panel>
 		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
 		<CustomUIElement type="GameSetup" 	layoutfile="file://{resources}/layout/custom_game/difficulty.xml" />

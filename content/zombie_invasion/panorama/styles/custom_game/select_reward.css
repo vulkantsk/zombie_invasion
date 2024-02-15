@@ -51,6 +51,21 @@
   margin-right: 30px;
 }
 
+#open-popup {
+  vertical-align: bottom;
+  horizontal-align: center;
+  margin-bottom: 240px;
+  padding: 20px;
+    background-image: url('file://{resources}/images/custom_game/reward_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#open-popup Label {
+  font-size: 28px;
+  color: white;
+}
+
 #reward__necr {
   vertical-align: bottom;
   horizontal-align: left;

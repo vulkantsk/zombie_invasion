@@ -2,6 +2,14 @@ const necrImage = $('#reward__necr');
 
 let uiScaleNecr = 70;
 
+const buttonOpen = $("#open-popup")
+
+buttonOpen.SetPanelEvent("onactivate", () => {
+    const mainPanel = $('#reward');
+
+    mainPanel.RemoveClass('is-hide');
+})
+
 const giveReward = (props) => {
   const rewards = Object.values(props.rewards);
   uiScaleNecr = 70;
@@ -9,7 +17,7 @@ const giveReward = (props) => {
 
   const mainPanel = $('#reward');
   const bodyContainer = $('#reward__body');
-  mainPanel.RemoveClass('is-hide');
+     buttonOpen.RemoveClass('is-hide');
 
   rewards.map((element) => {
     const button = $.CreatePanel('Button', bodyContainer, '');
@@ -19,6 +27,7 @@ const giveReward = (props) => {
     item.AddClass('reward__reward');
 
     button.SetPanelEvent('onactivate', () => {
+      buttonOpen.AddClass("is-hide")
       mainPanel.AddClass('is-hide');
       bodyContainer.RemoveAndDeleteChildren();
       GameEvents.SendCustomGameEventToServer('get_reward', {

@@ -219,17 +219,17 @@
 	"RequiredLevel"					"25"
 
     "AbilityCooldown"               "80 60"
-	"AbilityHealthCost"				"80 100"
+	"AbilityHealthCost"				"0"
 
  	"AbilityValues"
  	{
  		"duration"			
 		{
-			"value"	"5 8"
-			"special_bonus_unique_lord_dance_duration"	"+3"	
+			"value"	"7 14"
+			"special_bonus_unique_lord_dance_duration"	"+4"	
 		}
- 		"interval"                   "0.15"
- 		"radius"                     "500"
+ 		"interval"                   "0.35"
+ 		"radius"                     "5000"
  		"crit_pct"                   "200 300"
  		"crit_chance"                "20 30"
  		"bonus_stat"                 "20"

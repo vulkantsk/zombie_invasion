@@ -38,14 +38,16 @@ function lord_vampire_dance:GetCustomCastErrorTarget()
             end
         end
         return UF_SUCCESS
-end
-
+end 
+  
 function lord_vampire_dance:OnSpellStart()
     self.target = self:GetCursorTarget()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel() - 1)
     local modif = caster:FindModifierByName("modifier_lord_blood_rage")
 
+    PlayerResource:SetCameraTarget(caster:GetPlayerOwnerID(), caster)
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(caster:GetPlayerID()), "alucard_begin", {})
     caster:AddNewModifier(caster,self,"modifier_lord_vampire_dance_before", {duration = 16})
     modif:SetStackCount(modif:GetStackCount() - healthCost)
     EmitSoundOn("dance" , caster)
@@ -99,13 +101,21 @@ end
      IsDebuff                 = function(self) return false end,
      IsBuff                  = function(self) return true end,
      RemoveOnDeath             = function(self) return false end,
+             DeclareFunctions        = function(self) return 
+        {
+     MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+
+        } end,
      CheckState      = function(self) return 
         {
           [MODIFIER_STATE_INVULNERABLE] = true,
         } end,
  })
  
- 
+function modifier_lord_vampire_dance:GetModifierPreAttack_BonusDamage()
+    return 1000000
+end
+
 function modifier_lord_vampire_dance:OnCreated()
     local caster = self:GetCaster()
     local target = self:GetAbility().target
@@ -113,10 +123,11 @@ function modifier_lord_vampire_dance:OnCreated()
     local ability = self:GetAbility()
     self.origin = caster:GetAbsOrigin()
     caster:AddNoDraw()
-    PlayerResource:SetCameraTarget(caster:GetPlayerID(), nil)
+
     local random_pos = pos + Vector(RandomInt(-200,200),RandomInt(-200,200),0)
     caster:SetAbsOrigin(random_pos)
     caster:PerformAttack(target, true, true, true, true, true, false, false)
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(caster:GetPlayerID()), "alucard_camera", {})
 
     self:StartIntervalThink(ability:GetSpecialValueFor("interval"))
 end
@@ -126,6 +137,8 @@ function modifier_lord_vampire_dance:OnRemoved()
     caster:Stop()
     caster:RemoveNoDraw()
     caster:SetAbsOrigin(self.origin)
+    PlayerResource:SetCameraTarget(caster:GetPlayerID(), nil)
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(caster:GetPlayerID()), "camera_comback", {})
 end
 
 
@@ -148,6 +161,9 @@ function modifier_lord_vampire_dance:OnIntervalThink()
     local target_pos = target:GetAbsOrigin()
     local random_pos = target_pos + Vector(RandomInt(-200,200),RandomInt(-200,200),0)
     caster:SetAbsOrigin(random_pos)
+        ScreenShake( self:GetParent():GetOrigin(), 1000.0, 10000.0, 3, 130000.0, 0, true )
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(caster:GetPlayerID()), "alucard_yaw", {})
+
     caster:PerformAttack(target, true, true, true, true, true, false, false)
 end
  

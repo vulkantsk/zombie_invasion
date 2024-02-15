@@ -77,8 +77,7 @@ function InvasionMode:InvasionMap()
 
  
  
-
-
+ 
 
 
 
@@ -146,7 +145,7 @@ end
  		 
 	end 
 end
-
+ 
 function InvasionMode:OnItemPickedUp(keys)
 	print ( '[BAREBONES] OnItemPurchased' )
 	DeepPrintTable(keys)
@@ -154,12 +153,32 @@ function InvasionMode:OnItemPickedUp(keys)
 --	local heroEntity = EntIndexToHScript()
 	local unit_index = keys.HeroEntityIndex or keys.UnitEntityIndex
 	local hero = EntIndexToHScript(unit_index):GetPlayerOwner()
-	local itemEntity = EntIndexToHScript(keys.ItemEntityIndex)
-	local player = keys.PlayerID
+	local item = EntIndexToHScript(keys.ItemEntityIndex)
+	local playerId = keys.PlayerID
 	local itemname = keys.itemname
 	local owner = EntIndexToHScript( keys.HeroEntityIndex or -1 )
 	
-	--r = RandomInt(200, 400)	
+	--r = RandomInt(200, 400)
+	print(item.price)	
+	if item.price then 
+		local player = PlayerResource:GetPlayer(playerId)
+		local hero = player:GetAssignedHero()
+		local goldCurrent = hero:GetGold()
+		print(goldCurrent)
+		if goldCurrent >= item.price then 
+			PlayerResource:SpendGold(playerId, item.price, 4)
+			item.price = nil
+		else 
+			local dropItem = CreateItem(item:GetName(), nil, nil)
+ 			 dropItem.price = item.price
+ 			 dropItem.positionShop = item.positionShop
+			local drop = CreateItemOnPositionForLaunch( item.positionShop, dropItem )
+			drop.price = item.price
+			UTIL_Remove( item )
+			GameRules:SendCustomMessage("<font color='#c10020'>ЧЁ ХОТЕЛ СПИЗИДТЬ ХУЕСОС?!?!?!? ПОСОСАЛ?!?!?!?</font>", 0, 0)
+			hero:ForceKill(true)
+		end
+	end
 
 	if itemname == "item_bonus_health" then
      EmitSoundOn("present", owner) 
@@ -171,7 +190,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_health_regen" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_health_regen", {  })
@@ -181,7 +200,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana_regen" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_mana_regen", {  })
@@ -191,7 +210,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_mana", {  })
@@ -201,7 +220,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_damage" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_damage", {  })
@@ -211,7 +230,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_spell" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_spell", {  })
@@ -221,7 +240,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory		
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory		
     elseif itemname == "item_bonus_health_regen1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_health_regen1", {  })
@@ -231,7 +250,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana_regen1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_mana_regen1", {  })
@@ -241,7 +260,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_mana1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_mana1", {  })
@@ -251,7 +270,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_damage1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_damage1", {  })
@@ -261,7 +280,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory
     elseif itemname == "item_bonus_spell1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_spell1", {  })
@@ -271,7 +290,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory	
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory	
     elseif itemname == "item_bonus_health1" then
      EmitSoundOn("present", owner) 
                local modif = owner:AddNewModifier(owner, nil, "modifier_health1", {  })
@@ -282,7 +301,7 @@ function InvasionMode:OnItemPickedUp(keys)
 			ParticleManager:SetParticleControl(particle_fx, 40, owner:GetAbsOrigin())
 			ParticleManager:SetParticleControl(particle_fx, 50, owner:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(particle_fx)
-		UTIL_Remove( itemEntity ) -- otherwise it pollutes the player inventory				
+		UTIL_Remove( item ) -- otherwise it pollutes the player inventory				
 	end
 end
  
@@ -612,12 +631,13 @@ end
 
 function InvasionMode:SecretShop()
 	local dropItems = {
-	    item_blackshop_uncommon_injector = 100,
-	    item_bonus_agility10 = 35,
-	    item_bonus_strength10 = 35,
-	    item_bonus_intelligence10 = 35,
+	    item_blackshop_uncommon_injector = {chance = 100, price = 400},
+	    item_bonus_agility10 = {chance = 35, price = 400},
+	    item_bonus_strength10 = {chance = 35, price = 400},
+	    item_bonus_intelligence10 = {chance = 35, price = 400},
 	}
 	local defaultItemName ="item_milk"
+	local defaultPrice = 50
 	local points = Entities:FindAllByName( "spawner_item_point" )
 	local restItems = {}
 
@@ -630,15 +650,21 @@ function InvasionMode:SecretShop()
 
 		for _, point in ipairs(points) do
 			local item 
-
-			for itemName, chance in pairs(dropItems) do
-				if RollPercentage(chance) then 
+			local price 
+			for itemName, values in pairs(dropItems) do
+				if RollPercentage(values.chance) then 
  					item = CreateItem(itemName, nil, nil)
+ 					price = values.price
  					break
  				end
  			end
  			local dropItem = item and item or CreateItem(defaultItemName, nil, nil)
+ 			local priceItem = price and price or defaultPrice
+ 			 dropItem.price = priceItem
+ 			 dropItem.positionShop = point:GetAbsOrigin()
 			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
+			 drop.price = priceItem
+
 			table.insert(restItems, drop) 
 		end
 

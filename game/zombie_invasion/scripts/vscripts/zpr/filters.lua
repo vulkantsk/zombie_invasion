@@ -9,10 +9,12 @@ end
 --
 
 --filters
-function ZFilter:OrderFilter(kv)
-	local pid = kv.issuer_player_id_const
-	if kv.entindex_target ~= 0 then
-		local target = EntIndexToHScript(kv.entindex_target)
+function ZFilter:OrderFilter(data)
+	local type = data.order_type
+	local unit 
+	local pid = data.issuer_player_id_const
+	if data.entindex_target ~= 0 then
+		local target = EntIndexToHScript(data.entindex_target)
 		if target and target ~= nil and target:IsBaseNPC() and string.match(target:GetUnitName(), "jitel")  then
 			local ab = target:GetAbilityByIndex(0) or nil
 
@@ -29,7 +31,27 @@ function ZFilter:OrderFilter(kv)
             end
 		end
 	end
-	
+ 
+
+	if data.units and data.units["0"] then 
+		unit = EntIndexToHScript(data.units["0"])
+	end
+
+	if type == DOTA_UNIT_ORDER_PICKUP_ITEM  then 
+		local item = EntIndexToHScript(data.entindex_target)
+
+		if item.price then  
+			local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
+		     local hero = player:GetAssignedHero()
+		     local currentGold = hero:GetGold()
+
+		     if item.price > currentGold then 
+				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {message = "#dota_hud_error_cheese_bad_target"})
+		     	return false
+		    end
+		end
+	end
+
 	return true
 end
 

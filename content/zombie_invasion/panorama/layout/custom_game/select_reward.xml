@@ -6,6 +6,9 @@
 		<include src="file://{resources}/styles/custom_game/select_reward.css" />
 	</styles>
 	<Panel class="Hud" hittest="false"> 
+			<Button id="open-popup" class="is-hide">
+				<Label text="Выбери награду" />
+			</Button>
 		<Panel id="reward" class="is-hide">
             <Panel id="reward__popup"> 
               <Label id="reward__title" text="CHOSE YOUR REWARD"/>
