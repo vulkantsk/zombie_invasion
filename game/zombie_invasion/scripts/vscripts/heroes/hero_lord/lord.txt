@@ -228,7 +228,7 @@
 			"value"	"7 14"
 			"special_bonus_unique_lord_dance_duration"	"+4"	
 		}
- 		"interval"                   "0.35"
+ 		"interval"                   "0.5"
  		"radius"                     "5000"
  		"crit_pct"                   "200 300"
  		"crit_chance"                "20 30"

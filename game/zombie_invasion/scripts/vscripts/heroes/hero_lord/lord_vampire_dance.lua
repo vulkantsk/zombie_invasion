@@ -161,7 +161,7 @@ function modifier_lord_vampire_dance:OnIntervalThink()
     local target_pos = target:GetAbsOrigin()
     local random_pos = target_pos + Vector(RandomInt(-200,200),RandomInt(-200,200),0)
     caster:SetAbsOrigin(random_pos)
-        ScreenShake( self:GetParent():GetOrigin(), 1000.0, 10000.0, 3, 130000.0, 0, true )
+        ScreenShake( self:GetParent():GetOrigin(), 1000.0, 100.0, 3, 2000.0, 0, true )
     CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(caster:GetPlayerID()), "alucard_yaw", {})
 
     caster:PerformAttack(target, true, true, true, true, true, false, false)
