@@ -49,7 +49,7 @@ function ZFilter:OrderFilter(data)
 		     if item.price > currentGold then 
 				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {
 				gold = item.price - currentGold,
-				message = "#Ты бы ещё без денег в мега-маркет сходил, чудила".. " " .. needGold
+				message = "Ты бы ещё без денег в мега-маркет сходил, чудила".. " тебе не хватает".. " " .. needGold .." голды "
 			})
 		     	return false
 		    end
