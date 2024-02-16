@@ -631,12 +631,15 @@ end
 
 function InvasionMode:SecretShop()
 	local dropItems = {
+		--uncommon
 	    item_blackshop_uncommon_injector = {chance = 35, price = 400},
 	    item_bonus_agility10 = {chance = 35, price = 400},
 	    item_bonus_strength10 = {chance = 35, price = 400},
 	    item_bonus_intelligence10 = {chance = 35, price = 400},
 	    item_blackshop_uncommon_wizard_stuff = {chance = 35, price = 400},
-	    item_bonus_stats10 = {chance = 35, price = 400},
+	    item_blackshop_uncommon_exp = {chance = 35, price = 400},
+	    --rare
+	    item_bonus_stats10 = {chance = 35, price = 800},
 	}
 	local defaultItemName ="item_milk"
 	local defaultPrice = 50

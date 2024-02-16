@@ -41,16 +41,16 @@ function ZFilter:OrderFilter(data)
 		local item = EntIndexToHScript(data.entindex_target)
 
 		if item.price then  
-			local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
+			 local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
 		     local hero = player:GetAssignedHero()
 		     local currentGold = hero:GetGold()
 		     local needGold = tostring(item.price - currentGold)
 
-		     if item.price > currentGold then 
+		    if item.price > currentGold then 
 				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {
 				gold = item.price - currentGold,
 				message = "Ты бы ещё без денег в мега-маркет сходил, чудила".. " тебе не хватает".. " " .. needGold .." голды "
-			})
+				})
 		     	return false
 		    end
 		end

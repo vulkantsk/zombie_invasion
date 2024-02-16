@@ -704,8 +704,8 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		
-		"Model"							"models/props_gameplay/pumpkin_rune.vmdl"
-		"Effect"						"particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
 		// Item Info
@@ -714,7 +714,7 @@
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
-		"ItemKillable"					"1"
+		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -771,8 +771,8 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_agi_bonus"
 		
-		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vmdl"
-		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -780,7 +780,7 @@
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
-		"ItemKillable"					"1"
+		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -1846,8 +1846,8 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_int_bonus"
 		
-		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vmdl"
-		"Effect"						"particles/econ/courier/courier_roshan_frost/courier_roshan_frost_ambient.vpcf"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -1855,7 +1855,7 @@
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
-		"ItemKillable"					"1"
+		"ItemKillable"					"0"
 		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -2029,7 +2029,8 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 		
-		"Model"							"models/props_gameplay/halloween_candy.vmdl"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -2037,7 +2038,7 @@
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
-		"ItemKillable"					"1"
+		"ItemKillable"					"0"
 		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
@@ -9897,6 +9898,38 @@
 				"eidalon_duration"	"20"
 		}
 	}
+	"item_blackshop_uncommon_exp"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_exp"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"ItemInitialCharges"            "1"
+		"ItemKillable"					"0"	
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "custom_games_xp_coin"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "exp"		"800"
+		}
+	}
 	"item_blackshop_uncommon_injector"
 	{
 		// General
@@ -9907,13 +9940,14 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"ItemCost"						"400"	
+		"ItemCost"						"400"
+		"ItemKillable"					"0"	
 		"ItemInitialCharges"            "1"
-		"ItemStackable"				"0"
+		"ItemStackable"					"0"
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            ""
-        "Model"	"models/props_gameplay/red_box.vmdl"
-		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9940,10 +9974,11 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemCost"						"400"	
-		"Model"	"models/props_gameplay/red_box.vmdl"
-		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
 		"ItemInitialCharges"            "1"
 		"ItemStackable"				"0"
+		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            "fire_shiva"
 		// Stats		
