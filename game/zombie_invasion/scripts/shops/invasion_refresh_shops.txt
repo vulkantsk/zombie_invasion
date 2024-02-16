@@ -15,16 +15,13 @@
 		"item"		"item_color_fuchsia"
 	}
 
-	"attributes"
-	{
-
-		"item"		"item_bonus_stats10"
-		"item"		"item_bonus_intelligence10"
-		"item"		"item_bonus_agility10"
-		"item"		"item_bonus_strength10"
-
-	
-	}
+	//"attributes"
+	//{
+	//	"item"		"item_bonus_stats10"
+	//	"item"		"item_bonus_intelligence10"
+	//	"item"		"item_bonus_agility10"
+	//	"item"		"item_bonus_strength10"
+	//}
 
 	"weapons_armor"
 	{

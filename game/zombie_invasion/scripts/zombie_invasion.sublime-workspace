@@ -523,15 +523,18 @@
 			"file": "npc/npc_heroes_custom.txt",
 			"settings":
 			{
-				"buffer_size": 49746,
+				"buffer_size": 74825,
 				"line_ending": "Windows"
-			}
+			},
+			"undo_stack":
+			[
+			]
 		},
 		{
 			"file": "npc/npc_units_custom.txt",
 			"settings":
 			{
-				"buffer_size": 147185,
+				"buffer_size": 171044,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -540,7 +543,7 @@
 			"file": "npc/npc_abilities_custom.txt",
 			"settings":
 			{
-				"buffer_size": 607089,
+				"buffer_size": 685925,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -549,7 +552,7 @@
 			"file": "vscripts/sounds.lua",
 			"settings":
 			{
-				"buffer_size": 6286,
+				"buffer_size": 7971,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -558,7 +561,7 @@
 			"file": "npc/npc_items_custom.txt",
 			"settings":
 			{
-				"buffer_size": 263787,
+				"buffer_size": 481769,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -567,7 +570,7 @@
 			"file": "vscripts/end_game.lua",
 			"settings":
 			{
-				"buffer_size": 14591,
+				"buffer_size": 21945,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -576,7 +579,7 @@
 			"file": "vscripts/addon_game_mode.lua",
 			"settings":
 			{
-				"buffer_size": 15551,
+				"buffer_size": 19894,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -585,40 +588,8 @@
 			"file": "vscripts/invasion_classic.lua",
 			"settings":
 			{
-				"buffer_size": 60745,
+				"buffer_size": 80503,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
-			"settings":
-			{
-				"buffer_size": 630926,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
-			"settings":
-			{
-				"buffer_size": 3081466,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
-			"settings":
-			{
-				"buffer_size": 871696,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/vulka/Desktop/dota/items.txt",
-			"settings":
-			{
-				"buffer_size": 621287,
 				"line_ending": "Windows"
 			}
 		},
@@ -627,24 +598,6 @@
 			"settings":
 			{
 				"buffer_size": 615,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_russian.txt",
-			"settings":
-			{
-				"buffer_size": 166625,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_english.txt",
-			"settings":
-			{
-				"buffer_size": 149040,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -735,12 +688,17 @@
 	},
 	"expanded_folders":
 	[
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts"
+		"/C/Users/KOSKACOREJZ/Documents/GitHub/zombie_invasion/game/zombie_invasion/scripts"
 	],
 	"file_history":
 	[
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/heroes/hero_dev/genocide.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_english.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_russian.txt",
+		"/C/Users/vulka/Desktop/dota/items.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/heroes/hero_dev/genocide.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_rus.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/ai/ai_last_boss.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/scripts/vscripts/sounds.lua",
@@ -861,12 +819,7 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/encounters/encounter_combat_wraith_king.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/item_rapier.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/baseitems/item_base_chainmail.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_chicken_king_staff.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/heroes/snapfire.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/mortimer_ultra_kiss.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/gunner_on.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_huskar/double_spear.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_snapfire/combat_feel.lua"
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_chicken_king_staff.lua"
 	],
 	"find":
 	{
@@ -1007,15 +960,16 @@
 		[
 		],
 		"reverse": false,
+		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
+		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1024,15 +978,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 49746,
+						"buffer_size": 74825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								18163,
+								18163
 							]
 						],
 						"settings":
@@ -1044,24 +998,26 @@
 						"translation.y": 10025.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "npc/npc_units_custom.txt",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 147185,
+						"buffer_size": 171044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74794,
-								74808
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1074,6 +1030,7 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1082,7 +1039,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 607089,
+						"buffer_size": 685925,
 						"regions":
 						{
 						},
@@ -1095,13 +1052,16 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage"
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 25816.4,
+						"translation.y": 25816.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1110,7 +1070,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6286,
+						"buffer_size": 7971,
 						"regions":
 						{
 						},
@@ -1123,13 +1083,16 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 1136.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1138,7 +1101,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 263787,
+						"buffer_size": 481769,
 						"regions":
 						{
 						},
@@ -1158,7 +1121,8 @@
 						"translation.y": 66256.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 4,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1167,7 +1131,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14591,
+						"buffer_size": 21945,
 						"regions":
 						{
 						},
@@ -1188,6 +1152,7 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1196,7 +1161,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15551,
+						"buffer_size": 19894,
 						"regions":
 						{
 						},
@@ -1216,7 +1181,8 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 6,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -1225,7 +1191,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 60745,
+						"buffer_size": 80503,
 						"regions":
 						{
 						},
@@ -1246,133 +1212,18 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 8,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 630926,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 293930.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3081466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 130915.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 871696,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 235705.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/vulka/Desktop/dota/items.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 621287,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 116663.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
 					"file": "vscripts/abilities/ability_test.lua",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1389,71 +1240,16 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_russian.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 166625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/zombie_invasion/resource/addon_english.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 149040,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 25383.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 0,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]
@@ -1461,7 +1257,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1509,7 +1305,7 @@
 	"project": "zombie_invasion.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 52.0
 	},
 	"save_all_on_build": false,
 	"select_file":

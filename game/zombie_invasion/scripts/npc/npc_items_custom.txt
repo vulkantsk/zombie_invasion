@@ -710,12 +710,12 @@
 		"AbilityCastPoint"				"0.0"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"5000"
+		"ItemCost"						"400"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemKillable"					"1"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
@@ -776,12 +776,12 @@
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"5000"
+		"ItemCost"						"400"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemKillable"					"1"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
@@ -1851,12 +1851,12 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"5000"
+		"ItemCost"						"400"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemKillable"					"1"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
@@ -2033,12 +2033,12 @@
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"12500"
+		"ItemCost"						"800"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemStackable"					"1"
 		"ItemKillable"					"1"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
@@ -9907,10 +9907,13 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
 		"ItemInitialCharges"            "1"
 		"ItemStackable"				"0"
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            ""
+        "Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9924,6 +9927,37 @@
 		{
 			 "attack_base"		"30"
 			 "bonus_stat" 		"10"
+		}
+	}
+	"item_blackshop_uncommon_wizard_stuff"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_wizard_stuff"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl5.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"				"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "fire_shiva"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "bonus_amp"		"15"
 		}
 	}
 
@@ -12541,6 +12575,8 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ItemCost"						"400"
+
 
 		// Ability
 		//-------------------------------------------------------------------------------------------------------------

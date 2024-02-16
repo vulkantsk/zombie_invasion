@@ -408,7 +408,7 @@
 		"BaseClass"					"npc_dota_creature"
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
-		"Level"						"9"
+		"Level"						"12"
 		"ModelScale" 				"1"
 		"UseNeutralCreepBehavior"	"1"
 
@@ -486,6 +486,178 @@
 					"Name"					"fish_pounce"										
 				}
 				
+			}
+			
+ 
+		}
+	}
+	"npc_classic_not_fish"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/chicken.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"vscripts"                  "ai/mobs/ai_not_fish.lua"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"9"
+		"ModelScale" 				"1"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					"respawn"
+		"Ability3"					"frozen_zombie_attack"	
+		"Ability4"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"4"
+		"MagicalResistance"         "25"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"125"
+		"AttackDamageMax"			"175"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"150"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"26"
+		"BountyGoldMin"				"25"	
+		"BountyGoldMax"				"30"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"255"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"550"
+		"StatusHealthRegen"			"10"
+		"StatusMana"				"500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_moon_shard"}
+			}
+			
+ 
+		}
+	}
+	"npc_classic_not_fish_2"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/chicken.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"vscripts"                  "ai/mobs/ai_not_fish.lua"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"9"
+		"ModelScale" 				"1"
+		"UseNeutralCreepBehavior"	"0"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+		"Ability2"					"respawn"
+		"Ability3"					"frozen_zombie_attack"	
+		"Ability4"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"8"
+		"MagicalResistance"         "25"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"95"
+		"AttackDamageMax"			"155"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+		"AttackAcquisitionRange"	"500"
+		"AttackRange"				"150"
+	     
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"170"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"26"
+		"BountyGoldMin"				"25"	
+		"BountyGoldMax"				"30"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"255"	
+		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"550"
+		"StatusHealthRegen"			"10"
+		"StatusMana"				"500"	
+		"StatusManaRegen"			"0.0"		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"300"
+
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"EquippedItems"
+			{
+				"1"            	{"Item"        "item_moon_shard"}
 			}
 			
  
@@ -2129,7 +2301,7 @@
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
-		"Level"						"20"
+		"Level"						"30"
 		"ModelScale" 				"1.2"
 		"HasInventory"				"1"
 		"UseNeutralCreepBehavior"	"1"
@@ -2225,7 +2397,7 @@
 		"SoundSet"					"n_creep_Ranged"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
-		"Level"						"20"
+		"Level"						"30"
 		"HasInventory"				"1"
 		"ModelScale" 				"0.9"
 		"UseNeutralCreepBehavior"	"1"
@@ -2319,7 +2491,7 @@
 		"SoundSet"					"n_creep_Ranged"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ConsideredHero"			"1"
-		"Level"						"20"
+		"Level"						"30"
 		"HasInventory"				"1"
 		"ModelScale" 				"1.2"
 		"UseNeutralCreepBehavior"	"1"

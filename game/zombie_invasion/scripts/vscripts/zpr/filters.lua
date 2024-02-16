@@ -46,7 +46,7 @@ function ZFilter:OrderFilter(data)
 		     local currentGold = hero:GetGold()
 
 		     if item.price > currentGold then 
-				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {message = "#dota_hud_error_cheese_bad_target"})
+				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {message = "#dota_hud_error_man_you_just_no_money_rainer"})
 		     	return false
 		    end
 		end

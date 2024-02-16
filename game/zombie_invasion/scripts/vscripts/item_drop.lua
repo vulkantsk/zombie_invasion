@@ -10,7 +10,7 @@ ItemDrop.item_drop = {
 		{items = {"item_milk"}, chance = 35, duration = 20, units = {"npc_classic_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_milk"}, chance = 53, duration = 20, units = {"npc_classic_big_sheep"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_bone"}, chance = 20, duration = 12, units ={"npc_cemetery_skelet"}},      -- если указан units - то итем может упасть тольк с этих юнитов
-		{items = {"item_eggs"}, chance = 20, duration = 20, units = {"npc_classic_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
+		{items = {"item_eggs"}, chance = 20, duration = 20, units = {"npc_classic_not_fish"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть
 		{items = {"item_eggs"}, chance = 30, duration = 20, units = {"npc_stronger_chicken"}},--50% drop from list with limit --limit -это скольк таких итемов может выпасть 		
 		{items = {"item_bone"}, chance = 5, duration = 20, units = {"npc_classic_woobleydog2"}},  
 		{items = {"item_bone"}, chance = 5, duration = 20, units = {"npc_classic_woobleydog"}},  
@@ -63,8 +63,8 @@ ItemDrop.item_drop = {
 		--все что ниже нахимичил ЕНОТ. А енотов бить нельзя кста!!!=)
 
 -- ***********************************     НОВЫЙ ГОД   ***************************
-{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
-{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_damage","item_bonus_spell"},chance = 7,duration = 25  },
+--{items = {"item_letter"},  units = {"npc_mini_elka_1","npc_mini_elka_2","npc_mini_elka_3","npc_mini_elka_4","npc_mini_elka_5","npc_mini_elka_6"}},-- chance = шанс дропа со всех -Х(стока-то)%, пропадает(уничтожается с карты) через duration = 10 сек если не поднять!
+--{items = {"item_bonus_health","item_bonus_health_regen","item_bonus_mana_regen","item_bonus_damage","item_bonus_spell"},chance = 7,duration = 25  },
  
  --  ***********************************  ХЭЛУИН    ***********************************
   	--	{items = {"item_candy"}, chance = 5, duration = 25}, 

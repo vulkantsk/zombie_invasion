@@ -176,7 +176,7 @@
 				}
 		}	
 	}
-	"npc_blackshoop_jitel"
+	"npc_market_blackshop"
 	{
 		// General
 		//----------------------------------------------------------------
@@ -201,7 +201,7 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10"
+		"ArmorPhysical"				"100000000000"
 		"MagicalResistance"			"0"
 		
 		// Attack
@@ -230,7 +230,7 @@
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"5000"
+		"StatusHealth"				"50000000000"
 		"StatusHealthRegen"			"50"
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0"
@@ -1614,8 +1614,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -3821,8 +3821,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -3910,8 +3910,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -3999,8 +3999,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -4086,8 +4086,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------
@@ -4724,7 +4724,7 @@
 
  // 		"Model"						"models/props_gameplay/pumpkin_bucket.vmdl"
 
- 	  	"Model"						"models/props_structures/radiant_statue001.vmdl"
+ 	  	"Model"						"models/items/faceless_void/faceless_void_arcana/debut/models/structures/radiant_ancient_revamp_low.vmdl"
 
 		"ModelScale"				"1.0"
  
@@ -4808,6 +4808,7 @@
 		"ModelScale"				"0.75"
 		"Level"						"1"
 		"IsSummoned"				"1"
+		"ConsideredHero" "1"
 		"SelectionGroup"			"Eidolons"
 		"UnitLabel"			"eidolons"
 		"wearable"				"8638"
@@ -5584,8 +5585,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"0"
-		"VisionNighttimeRange"		"0"
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
 		
 		// Team
 		//----------------------------------------------------------------

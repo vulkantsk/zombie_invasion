@@ -270,6 +270,7 @@
 	     "npc_Edgard_jitel"        "npc_Edgard"
 		"npc_classic_pig"                                                  	"Свинья"
 		"npc_classic_big_pig"                                                  	"Большая Свинья"
+		"npc_classic_not_fish"												"Не курица"
 
 		"npc_classic_frog"                                                 "Лягух"
 		"npc_boss_slardar"                                                 "МЕГА КУРИЦА!?"
@@ -4516,6 +4517,7 @@
 		// ******************** ERRORS: ********************
 
     	"dota_hud_error_cheese_bad_target"                    					"Чел ты..."
+    	"dota_hud_error_man_you_just_no_money_rainer"                    					"Ты бы ещё без денег в мега-маркет сходил, чудила."
     	"dota_hud_error_milk_bad_target"                    					"Чел ты..."    		
     	"dota_hud_error_full_inventory"                    						"Он жирный, нахуй ты еще пихаешь что-то"
     	"dota_hud_error_havent_charges"                    						"It просто брбрббр-кончилась"
