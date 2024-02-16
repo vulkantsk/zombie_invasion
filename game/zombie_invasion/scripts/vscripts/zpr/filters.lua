@@ -44,9 +44,13 @@ function ZFilter:OrderFilter(data)
 			local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
 		     local hero = player:GetAssignedHero()
 		     local currentGold = hero:GetGold()
+		     local needGold = tostring(item.price - currentGold)
 
 		     if item.price > currentGold then 
-				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {message = "#dota_hud_error_man_you_just_no_money_rainer"})
+				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {
+				gold = item.price - currentGold,
+				message = "#Ты бы ещё без денег в мега-маркет сходил, чудила".. " " .. needGold
+			})
 		     	return false
 		    end
 		end
