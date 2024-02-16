@@ -228,5 +228,20 @@
 		{
 			m_ChildRef = resource:"particles/void_epic.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/econ/courier/courier_axolotl_ambient/courier_axolotl_ambient_trail_steam.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/courier/courier_babyroshan_ti9/courier_babyroshan_ti9_ambient_glow.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/courier/courier_greevil_purple/courier_greevil_purple_ambient_3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/courier/courier_greevil_purple/courier_greevil_purple_ambient_3_e.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/courier/courier_hwytty/courier_hwytty_magic.vpcf"
+		},
 	]
 }

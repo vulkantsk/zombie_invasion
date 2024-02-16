@@ -772,7 +772,7 @@
 		"AbilityTextureName"			"item_agi_bonus"
 		
 		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
+		"Effect"						"particles/legendary_full.vpcf"
 	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -9915,7 +9915,7 @@
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            "custom_games_xp_coin"
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
+		"Effect"						"particles/epic_sphere_full.vpcf"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -9975,7 +9975,7 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemCost"						"400"	
 		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
+		"Effect"						"particles/rare_full.vpcf"
 		"ItemInitialCharges"            "1"
 		"ItemStackable"				"0"
 		"ItemKillable"					"0"	
