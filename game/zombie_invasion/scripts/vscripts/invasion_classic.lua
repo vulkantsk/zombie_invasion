@@ -641,7 +641,7 @@ function InvasionMode:SecretShop()
 	    --rare
 	    item_bonus_stats10 = {chance = 35, price = 800},
 	}
-	local defaultItemName ="item_milk"
+	local defaultItemName ="item_blackshop_uncommon_injector"
 	local defaultPrice = 50
 	local points = Entities:FindAllByName( "spawner_item_point" )
 	local restItems = {}
