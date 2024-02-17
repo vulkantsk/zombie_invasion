@@ -15369,14 +15369,12 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"ItemCost"						"400"
-		"AbilityTextureName"            "soldier_injector"
+		"AbilityTextureName"            "soldier"
 		"ItemKillable"					"0"	
 		"ItemInitialCharges"            "1"
 		"ItemStackable"					"0"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            ""
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
 		"Effect"						"particles/uncommon_full.vpcf"
 		// Stats		
@@ -15391,7 +15389,6 @@
 		"AbilityValues"
 		{
 			 "attack_base"		"15"
-			 "bonus_stat" 		"10"
 		}
 	}
 	"item_blackshop_uncommon_wizard_stuff"

@@ -1245,34 +1245,49 @@
 		"DOTA_Tooltip_modifier_amaliels_cuirass_aura_friend_Description"	"Броня увеличена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nСкорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
 		"DOTA_Tooltip_ability_item_blackshop_uncommon_injector"			"soldier injector"
-		"DOTA_Tooltip_ability_item_blackshop_uncommon_injector_Description"			"<h1>Активное: soldier injector</h1> При использовании Увеличивает скорость атаки и скорость передвижения на %attack_base%"
+		"DOTA_Tooltip_ability_item_blackshop_uncommon_injector_Description"			"<h1>Активное: soldier injector</h1> При использовании увеличивает скорость атаки и скорость передвижения владельца на %attack_base% за штуку"
+		"DOTA_Tooltip_ability_item_blackshop_uncommon_injector_Lore" 		"В прошлом, этот шприц спасал миллионы солдат."
+        "DOTA_Tooltip_ability_item_blackshop_uncommon_injector_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff"			"Wizard stuff"
-		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Description"			"<h1>Активное: Wizard stuff</h1> При использовании Увеличивает магический урон на %bonus_amp%%%"
-
-		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff"			"Wizard stuff"
-		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Description"			"<h1>Активное: Wizard stuff</h1> При использовании Увеличивает магический урон на %bonus_amp%%%"
+		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Description"			"<h1>Активное: Wizard stuff</h1> При использовании Увеличивает магический урон на %bonus_amp%%% за штуку"
+		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Lore" 		"Маги, что создали это были шокированы его мощью.."
+        "DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp"			"БОНУС К ОПЫТУ +800"
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Description"			"<h1>Активное: exp bonus</h1> При использовании даёт 800 опыта герою"
+		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
+        "DOTA_Tooltip_ability_item_blackshop_rare_exp_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power"	"Berserk Power"
-		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %attack_damage% урона"
+		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %attack_damage% магического дополнительного урона с тычки за штуку"
+		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Lore" 		"Ваша душевная сила возрастает"
+        "DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon"	"Lens of wisdom"
-		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %cast_range% дальности атаки и применения заклинаниям"
+		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %cast_range% дальности атаки и %cast_range% применения заклинаниям за штуку"
+		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon_Lore" 		"Ваш глаз прозрел"
+        "DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher"	"Rocket Launcher"
 		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Description"	"<h1>Активное: Rocket Launcher</h1> При использовании из героя вылетают ракетки каждые %cooldown% секунд (-1 секунда за каждый стак) в %targets% цель (+1 цель за стак) нанося %damage% урона (+70 за стак) со скорость %speed% единиц"
+		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Lore" 		"Из вас в прямом смысле вылетает 250тысяч тонн тротила."
+        "DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"Octerinity of skull mages"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Активное: Octerinity of skull mages</h1> При использовании даёт герою %mana_casttime_cd%%% уменьшение стоимости заклинаний, %mana_casttime_cd%%% уменьшение перезарядки и увеличивает %mana_casttime_cd%%% скорость произнесения заклинаний"
+		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Lore" 		"Из вас в прямом смысле вылетает 250тысяч тонн тротила."
+        "DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
-		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff"	"mk 1 updater"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff"	"RPG BOOSTER"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Description"		"<h1>Активное: Octerinity of skull mages</h1> При использовании увеличивает урон от ракет в %damage%%%"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Lore" 		"Купить чтобы что? Чтобы ничего без того? ОГО"
+        "DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_cursed_remove_limits"	"Remove my limits"
 		"DOTA_Tooltip_ability_item_blackshop_cursed_remove_limits_Description"	"<h1>Активное: Remove my limits</h1> убирает лимиты героя по скорости атаки и передвижению, но <font color='#e03e2e'>запрещает восстанавливать здоровье</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_remove_limits_Lore" 		"С таким шутки плохи.."
+        "DOTA_Tooltip_ability_item_blackshop_cursed_remove_limits_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 		
  		"DOTA_Tooltip_Ability_item_maelstrom_2"				"Maelstrom 2"
 		"DOTA_Tooltip_ability_item_maelstrom_2_Description"						"<h1>Пассивная: Chain Lightning</h1> Каждая атака с вероятностью в %chain_chance%%% может создать разряд цепной молнии, которая %chain_strikes% раза перескочит между случайными врагами в радиусе %chain_radius%, нанося каждому по %chain_damage% магического урона. От атаки с цепной молнией нельзя уклониться."
@@ -4525,7 +4540,7 @@
 		"DOTA_Tooltip_modifier_slow_mobs_bonus"						"Dizziness"
 		"DOTA_Tooltip_modifier_slow_mobs_bonus_Description"			"Ваша скорость передвижения уменьшена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%"
 
-		DOTA_Tooltip_ability_item_bonus_stats5"	                                 "БОНУС К СТАТАМ +5 "
+		"DOTA_Tooltip_ability_item_bonus_stats5"	                                 "БОНУС К СТАТАМ +5 "
 	    "DOTA_Tooltip_ability_item_bonus_stats5_Description"							"<h1>Активная: Ам-ням</h1> Прямиком из рош дефа!\n или нет?"
 	    "DOTA_Tooltip_ability_item_bonus_stats5_Lore"							"Кункевич что-ли играл в рош деф?"
 
