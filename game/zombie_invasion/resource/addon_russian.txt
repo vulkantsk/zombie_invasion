@@ -1257,7 +1257,7 @@
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Description"			"<h1>Активное: exp bonus</h1> При использовании даёт 800 опыта герою"
 
 		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power"	"Berserk Power"
-		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %75% урона"
+		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %attack_damage% урона"
 
 		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon"	"Lens of wisdom"
 		"DOTA_Tooltip_ability_item_blackshop_rare_lens_of_wisdon_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %cast_range% дальности атаки и применения заклинаниям"
