@@ -19,7 +19,7 @@ end
 modifier_blackshop_cursed_remove_limits = class({})
 
 function modifier_blackshop_cursed_remove_limits:IsHidden()
-    return false
+    return true
 end
 
 function modifier_blackshop_cursed_remove_limits:IsDebuff()

@@ -632,28 +632,30 @@ end
 function InvasionMode:SecretShop()
 	local dropItems = {
 	    --uncommon
-	    item_blackshop_uncommon_injector = {chance = 55, price = 400},
-	    item_bonus_agility10 = {chance = 55, price = 400},
-	    item_bonus_strength10 = {chance = 55, price = 400},
-	    item_bonus_intelligence10 = {chance = 55, price = 400},
-	    item_blackshop_uncommon_wizard_stuff = {chance = 55, price = 400},
-	    item_bonus_stats5 = {chance = 55, price = 400},
+	    item_blackshop_uncommon_injector = {chance = 55, price = 300},
+	    item_bonus_agility10 = {chance = 55, price = 300},
+	    item_bonus_strength10 = {chance = 55, price = 300},
+	    item_bonus_intelligence10 = {chance = 55, price = 300},
+	    item_blackshop_uncommon_wizard_stuff = {chance = 55, price = 300},
+	    item_bonus_stats5 = {chance = 55, price = 300},
 
 	    --rare
-	    item_bonus_stats10 = {chance = 35, price = 800},
-	    item_blackshop_rare_exp = {chance = 35, price = 400},
-	    item_blackshop_rare_berserk_power = {chance = 35, price = 800},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 35, price = 800},
+	    item_bonus_stats10 = {chance = 35, price = 600},
+	    item_blackshop_rare_exp = {chance = 35, price = 600},
+	    item_blackshop_rare_berserk_power = {chance = 35, price = 600},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 35, price = 600},
 
 	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 20, price = 1200},
+	    item_blackshop_epic_rocket_launcher = {chance = 20, price = 900},
 
 	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 10, price = 1600},
-	    item_blackshop_legendary_boom_buff = {chance = 10, price = 1600},
+	    item_blackshop_legendary_octerinity = {chance = 10, price = 1200},
+	    item_blackshop_legendary_boom_buff = {chance = 10, price = 1200},
 
 	    --cursed
-	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1600},
+	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
+	    modifier_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
+	    blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
 
 	}
 	local defaultItemName ="item_blackshop_uncommon_injector"
@@ -1742,7 +1744,7 @@ end
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
-  	--[[
+  
     	[1] = {
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
@@ -1866,57 +1868,57 @@ function InvasionMode:ThemeMusic()
 
  
 
-   [1] = {
- "Merry - Christmas Jingle Bells",  
-  "Jingle Вells" ,
-  "Lofi Origin - Jingle Bells Lo Fi Chill",
-  "Andy Williams - Winter Wonderland",
-  "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
-  },
-  
-  	       
-    	[2] = {
-  		    "Aurélie - Jingle Bells", 
-  		    "Ансамбль Детские Песни - Три белых коня",
-  		    "Дискотека Авария - Новогодняя",
-  		    "Brenda Lee - Rockin' Around The Christmas Tree",
-  		    "Michael Buble - Holly Jolly Christmas",
-    	},
-
-     	[3] = {
-  		    "Дима Билан - Новый Год с новой строчки",
-  		    "ABBA - Happy New Year",
-  		    "Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
-  		    "O Liebert - Jinggle Bells",  
-  		    "Andy Williams - It's the Most Wonderful Time of the Year",
-    	},
-    
- 
-     	   	     
-     	[4] = {
-     	"Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
-     	"П.Чайковский - Pas de Deux",
-		"Jinggle bells - Remix",
-		"Wham! - Last Christmas",
- 		
-    	},
-    	[5] = {
-  		"Lofi Origin - Jingle Bells Lo Fi Chill",
-  		"Andy Williams - Winter Wonderland",
-  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
-  		},
-
-  	[6] = {
-  		"Andy Williams - It's the Most Wonderful Time of the Year",
-  		"Andy Williams - Winter Wonderland",
-  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
-  		},
-  	[7] = {
-  		"Ансамбль Детские Песни - Три белых коня",
-  		    "Дискотека Авария - Новогодняя",
-  		    "Brenda Lee - Rockin' Around The Christmas Tree",
-  		    "Michael Buble - Holly Jolly Christmas",
-  		},
+--   [1] = {
+-- "Merry - Christmas Jingle Bells",  
+--  "Jingle Вells" ,
+--  "Lofi Origin - Jingle Bells Lo Fi Chill",
+--  "Andy Williams - Winter Wonderland",
+--  "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+--  },
+--  
+--  	       
+--    	[2] = {
+--  		    "Aurélie - Jingle Bells", 
+--  		    "Ансамбль Детские Песни - Три белых коня",
+--  		    "Дискотека Авария - Новогодняя",
+--  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+--  		    "Michael Buble - Holly Jolly Christmas",
+--    	},
+--
+--     	[3] = {
+--  		    "Дима Билан - Новый Год с новой строчки",
+--  		    "ABBA - Happy New Year",
+--  		    "Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
+--  		    "O Liebert - Jinggle Bells",  
+--  		    "Andy Williams - It's the Most Wonderful Time of the Year",
+--    	},
+--    
+-- 
+--     	   	     
+--     	[4] = {
+--     	"Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
+--     	"П.Чайковский - Pas de Deux",
+--		"Jinggle bells - Remix",
+--		"Wham! - Last Christmas",
+-- 		
+--    	},
+--    	[5] = {
+--  		"Lofi Origin - Jingle Bells Lo Fi Chill",
+--  		"Andy Williams - Winter Wonderland",
+--  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+--  		},
+--
+--  	[6] = {
+--  		"Andy Williams - It's the Most Wonderful Time of the Year",
+--  		"Andy Williams - Winter Wonderland",
+--  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+--  		},
+--  	[7] = {
+--  		"Ансамбль Детские Песни - Три белых коня",
+--  		    "Дискотека Авария - Новогодняя",
+--  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+--  		    "Michael Buble - Holly Jolly Christmas",
+--  		},
         
     }
 

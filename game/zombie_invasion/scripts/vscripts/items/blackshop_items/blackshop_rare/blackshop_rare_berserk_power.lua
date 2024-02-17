@@ -21,7 +21,7 @@ end
 
 modifier_blackshop_rare_berserk_power = class({})
 function modifier_blackshop_rare_berserk_power:IsHidden()
-    return false
+    return true
 end
 
 function modifier_blackshop_rare_berserk_power:IsDebuff()

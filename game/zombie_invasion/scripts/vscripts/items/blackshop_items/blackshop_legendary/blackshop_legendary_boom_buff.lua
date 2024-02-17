@@ -24,5 +24,5 @@ blackshop_legendary_boom_buff = class({})
 
 modifier_blackshop_legendary_boom_buff = class({})
 function modifier_blackshop_legendary_boom_buff:IsHidden()
-    return false
+    return true
 end

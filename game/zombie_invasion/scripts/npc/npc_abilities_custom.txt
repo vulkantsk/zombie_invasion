@@ -23870,6 +23870,34 @@
 				"cooldown"			"14"
 		}
 	}
+	 "blackshop_epic_rocket_shot"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_epic/blackshop_epic_rocket_shot"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "fire_shiva"
+        		"AbilityCooldown"				"0"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+			
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage"			"45"
+				"radius"			"1400"
+				"targets"			"1"
+				"speed"				"1400"
+		}
+	}
 	"blackshop_legendary_boom_buff"
 	{
 		// General
