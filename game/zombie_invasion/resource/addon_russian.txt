@@ -1282,7 +1282,7 @@
         "DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff"	"RPG BOOSTER"
-		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Description"		"<h1>Активное: Octerinity of skull mages</h1> При использовании увеличивает урон от ракет в %damage%%%"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Description"		"<h1>Активное: Octerinity of skull mages</h1> выпускает ракеты в двойном объёме от всех типов предметов"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Lore" 		"Купить чтобы что? Чтобы ничего без того? ОГО"
         "DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 

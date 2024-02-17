@@ -16099,6 +16099,40 @@
 			"chance"		"5"
 		}
 	}
+	"item_blackshop_cursed_intellectual_moving"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_cursed/blackshop_cursed_intellectual_moving"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/cursed_sphere.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "remove_limits"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_all"			"600"
+			"chance"		"5"
+		}
+	}
 
 	"item_blackshop_cursed_magical_incpiration"
 	{

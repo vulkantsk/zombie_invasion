@@ -647,6 +647,7 @@ function InvasionMode:SecretShop()
 
 	    --epic
 	    item_blackshop_epic_rocket_launcher = {chance = 20, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 20, price = 900},
 
 	    --legendary
 	    item_blackshop_legendary_octerinity = {chance = 10, price = 1200},
@@ -656,6 +657,7 @@ function InvasionMode:SecretShop()
 	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
 	    modifier_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
 	    blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
+	    item_blackshop_cursed_intellectual_moving = {chance = 5, price = 1500},
 
 	}
 	local defaultItemName ="item_blackshop_uncommon_injector"

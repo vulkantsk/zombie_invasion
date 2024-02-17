@@ -4,19 +4,16 @@ function item_blackshop_legendary_boom_buff:OnSpellStart()
     self.caster = self:GetCaster()
     local hItem = self
     local m = self.caster:FindModifierByName("modifier_blackshop_legendary_boom_buff")
-    if m then
-        m:SetStackCount(m:GetStackCount() + self:GetCurrentCharges())
-    else
+    if not self.caster:HasModifier("modifier_blackshop_legendary_boom_buff") then 
         self.caster:AddAbility("blackshop_legendary_boom_buff"):SetLevel(1)
         self.caster:AddNewModifier(self.caster, nil, "modifier_blackshop_legendary_boom_buff", {}):SetStackCount(self:GetCurrentCharges())
-    end
-
-    self.caster:EmitSound("Item.TomeOfKnowledge")
-    if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-        self.caster:RemoveItem(hItem)
-        return
-    end
+        self.caster:EmitSound("Item.TomeOfKnowledge")
+        if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
+            self.caster:RemoveItem(hItem)
+            return
+        end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())
+    end
 end
 
 blackshop_legendary_boom_buff = class({})
@@ -25,4 +22,8 @@ blackshop_legendary_boom_buff = class({})
 modifier_blackshop_legendary_boom_buff = class({})
 function modifier_blackshop_legendary_boom_buff:IsHidden()
     return true
+end
+
+function modifier_blackshop_legendary_boom_buff:RemoveOnDeath()
+    return false
 end

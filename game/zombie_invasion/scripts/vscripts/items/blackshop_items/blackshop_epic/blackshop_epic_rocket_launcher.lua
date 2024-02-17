@@ -43,7 +43,7 @@ function blackshop_epic_rocket_launcher:OnSpellStart()
     local info = {
         Source = caster,
         Ability = self,
-        EffectName = "particles/econ/items/clockwerk/clockwerk_paraflare/clockwerk_para_rocket_flare.vpcf",
+        EffectName = "particles/units/heroes/hero_tinker/tinker_missile.vpcf",
         iMoveSpeed = self:GetSpecialValueFor("speed"),
         bDodgeable = true,
         ExtraData = {
@@ -60,7 +60,7 @@ function blackshop_epic_rocket_launcher:OnSpellStart()
         if self:GetCaster():ScriptLookupAttachment( "attach_attack3" )~=0 then attach = "attach_attack3" end
         local point = self:GetCaster():GetAttachmentOrigin( self:GetCaster():ScriptLookupAttachment( attach ) )
 
-        local effect_cast = ParticleManager:CreateParticle( "particles/econ/items/clockwerk/clockwerk_paraflare/clockwerk_para_rocket_flare_explosion_flameouts.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
+        local effect_cast = ParticleManager:CreateParticle( "particles/units/heroes/hero_tinker/tinker_missile_dud.vpcf", PATTACH_WORLDORIGIN, self:GetCaster() )
         ParticleManager:SetParticleControl( effect_cast, 0, point )
         ParticleManager:SetParticleControlForward( effect_cast, 0, self:GetCaster():GetForwardVector() )
         ParticleManager:ReleaseParticleIndex( effect_cast )
@@ -99,21 +99,16 @@ modifier_blackshop_epic_rocket_launcher = class({
     RemoveOnDeath           = function(self) return false end,
 
 })
-function modifier_blackshop_epic_rocket_launcher:DeclareFunctions()
-    return {
-        MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
-    }
+
+function modifier_blackshop_epic_rocket_launcher:OnCreated()
+    self:StartIntervalThink(0.2)
 end
 
-
-function modifier_blackshop_epic_rocket_launcher:GetModifierPreAttack_BonusDamage()
-    local caster = self:GetCaster()
-    local ability = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
-    if ability then
-        return 200 * caster:FindModifierByName("modifier_blackshop_legendary_boom_buff"):GetStackCount()
+function modifier_blackshop_epic_rocket_launcher:OnIntervalThink()
+    if self:GetStackCount() == 15 then
+        self:SetStackCount(14)
     end
 end
-
 
 modifier_blackshop_epic_rocket_launcher_autocast = class({
     IsHidden                = function(self) return true end,
@@ -133,9 +128,13 @@ end
 function modifier_blackshop_epic_rocket_launcher_autocast:OnIntervalThink()
     local caster = self:GetCaster()
     local parent = self:GetParent()
+    local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_launcher")
     if ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
         ability:OnSpellStart()
+        if ability2 then
+            Timers:CreateTimer(0.4,function() ability:OnSpellStart() end)
+        end
         ability:StartCooldown(14 - caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount())
     end
 end

@@ -25,7 +25,7 @@ blackshop_epic_rocket_shot = class({})
 
 function blackshop_epic_rocket_shot:OnSpellStart()
     local caster = self:GetCaster()
-    local damage = self:GetSpecialValueFor("damage")
+    local damage = self:GetSpecialValueFor("damage") + self:GetCaster():GetAttackDamage()
     local radius = self:GetSpecialValueFor("radius")
     local targets = self:GetSpecialValueFor("targets") * caster:FindModifierByName("modifier_blackshop_epic_rocket_shot"):GetStackCount()
     local enemies = FindUnitsInRadius(
@@ -82,7 +82,6 @@ function blackshop_epic_rocket_shot:OnProjectileHit_ExtraData( target, location,
         ability = self
     }
     ApplyDamage( damage )
-    self:GetCaster():PerformAttack(target, false, false, false, false, false, false, false)
 
     local effect_cast = ParticleManager:CreateParticle( "particles/units/heroes/hero_gyrocopter/gyro_rocket_barrage.vpcf", PATTACH_ABSORIGIN_FOLLOW, target )
     ParticleManager:ReleaseParticleIndex( effect_cast )
@@ -98,20 +97,6 @@ modifier_blackshop_epic_rocket_shot = class({
     RemoveOnDeath           = function(self) return false end,
 
 })
-function modifier_blackshop_epic_rocket_shot:DeclareFunctions()
-    return {
-        MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
-    }
-end
-
-
-function modifier_blackshop_epic_rocket_shot:GetModifierPreAttack_BonusDamage()
-    local caster = self:GetCaster()
-    local ability = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
-    if ability then
-        return 200 * caster:FindModifierByName("modifier_blackshop_legendary_boom_buff"):GetStackCount()
-    end
-end
 
 
 modifier_blackshop_epic_rocket_shot_autocast = class({
@@ -139,9 +124,14 @@ end
 function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded()
     local caster = self:GetCaster()
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_shot")
-    if RollPercentage(15 * caster:FindModifierByName("modifier_blackshop_legendary_boom_buff"):GetStackCount()) then
-        if  caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
+    local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
+    if RollPercentage(30) then
+        if  ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
+            if ability2 then
+                Timers:CreateTimer(0.2,function() ability:OnSpellStart() end)
+            end
             ability:OnSpellStart()
+            ability:StartCooldown(0.7)
         end
     end
 end

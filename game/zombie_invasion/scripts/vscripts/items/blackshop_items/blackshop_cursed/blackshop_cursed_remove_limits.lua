@@ -4,17 +4,17 @@ function item_blackshop_cursed_remove_limits:OnSpellStart()
     self.caster = self:GetCaster()
     local hItem = self
     local m = self.caster:FindModifierByName("modifier_blackshop_cursed_remove_limits")
-     if not m then 
+    if not self.caster:HasModifier("modifier_blackshop_cursed_remove_limits") then 
           self.caster:AddNewModifier(self.caster, nil, "modifier_blackshop_cursed_remove_limits", {})
-        end
+          self.caster:EmitSound("Item.TomeOfKnowledge")
+            if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
+                self.caster:RemoveItem(hItem)
+                return
+            end
+         hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())
+    end
     
 
-    self.caster:EmitSound("Item.TomeOfKnowledge")
-    if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-        self.caster:RemoveItem(hItem)
-        return
-    end
-         hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())
 end
 modifier_blackshop_cursed_remove_limits = class({})
 
