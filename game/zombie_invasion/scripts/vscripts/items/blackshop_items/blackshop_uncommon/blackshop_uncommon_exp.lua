@@ -1,5 +1,5 @@
-item_blackshop_uncommon_exp = class({})
-function item_blackshop_uncommon_exp:OnSpellStart()
+item_blackshop_rare_exp = class({})
+function item_blackshop_rare_exp:OnSpellStart()
     self.caster = self:GetCaster()
     local hItem = self
     self:GetCursorTarget():AddExperience(800, 0, false, true)

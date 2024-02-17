@@ -692,147 +692,6 @@
 			}
 		}
 	}
-
-	"item_bonus_strength10"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"3068"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_str_bonus"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		
-		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
-		"AbilityCastRange"				"100"
-		"AbilityCastPoint"				"0.0"
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"400"
-		"ItemShopTags"					"consumable"
-		"ItemQuality"					"consumable"
-		"ItemStackable"					"1"
-		"ItemKillable"					"0"	
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemInitialCharges"			"1"
-		"SideShop"						"0"
-		"ItemSellable"							"0"
-		"IsTempestDoubleClonable"				"0"		
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"		"FIELD_INTEGER"
-				"bonus_stat"	"10"
-			}
-		}
-		
-		"ItemCastOnPickup"				"0"
-		"OnSpellStart"
-		{
-			"SpendCharge" 
-			{}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"StrengthTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"FireSound"
-			{
-				"EffectName"			"DOTA_Item.Refresher.Activate"
-				"Target"				"CASTER"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/sweep_generic/sweep_2.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}			
-		}
-	}
-	"item_bonus_agility10"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"3055"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_agi_bonus"
-		
-		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/legendary_full.vpcf"
-	
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"400"
-		"ItemShopTags"					"consumable"
-		"ItemQuality"					"consumable"
-		"ItemStackable"					"1"
-		"ItemKillable"					"0"	
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemInitialCharges"			"1"
-		"SideShop"						"0"
-		"ItemSellable"							"0"
-		"IsTempestDoubleClonable"				"0"		
-		
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"		"FIELD_INTEGER"
-				"bonus_stat"	"10"
-			}
-		}
-		
-		"ItemCastOnPickup"				"0"
-		"OnSpellStart"
-		{
-			"SpendCharge" 
-			{}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"AgilityTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"FireSound"
-			{
-				"EffectName"			"DOTA_Item.Refresher.Activate"
-				"Target"				"CASTER"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}	
-			"AttachEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/sweep_generic/sweep_1.vpcf"
-				"EffectAttachType" 	"follow_overhead"
-			}
-		}
-	}
-	
- 
- 
-	
 	//=================================================================================================================
 	// Recipe: Bracer
 	//=================================================================================================================
@@ -1836,75 +1695,6 @@
 			}			
 		}
 	}
-
-	"item_bonus_intelligence10"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"3061"	
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_int_bonus"
-		
-		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
-		
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"400"
-		"ItemShopTags"					"consumable"
-		"ItemQuality"					"consumable"
-		"ItemStackable"					"1"
-		"ItemKillable"					"0"
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemInitialCharges"			"1"
-		"SideShop"						"0"
-		"ItemSellable"							"0"
-		"IsTempestDoubleClonable"				"0"		
-		
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"		"FIELD_INTEGER"
-				"bonus_stat"	"10"
-			}
-		}
-		
-		"ItemCastOnPickup"				"0"
-		"OnSpellStart"
-		{
-			"SpendCharge" 
-			{}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"IntellectTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"FireSound"
-			{
-				"EffectName"			"DOTA_Item.Refresher.Activate"
-				"Target"				"CASTER"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
-				"EffectAttachType" 	"follow_overhead"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}
-		}
-	}
-
 	"item_recipe_monkey_king_bar"
 	{
 		// General
@@ -2017,99 +1807,6 @@
 				"poison_duration"		"3.0"
 			}			
 		}
-	}
-	
-	"item_bonus_stats10"
-	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"3065"				
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_halloween_candy"
-		
-		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/rare_full.vpcf"
-	
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"800"
-		"ItemShopTags"					"consumable"
-		"ItemQuality"					"consumable"
-		"ItemStackable"					"1"
-		"ItemKillable"					"0"
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemInitialCharges"			"1"
-		"SideShop"						"0"
-		"ItemSellable"							"0"
-		"IsTempestDoubleClonable"				"0"		
-		
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"		"FIELD_INTEGER"
-				"bonus_stat"	"10"
-			}
-		}
-		
-		"ItemCastOnPickup"				"0"
-		"OnSpellStart"
-		{
-			"SpendCharge"
-			{}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"StrengthTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"AgilityTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}
-			"RunScript"
-			{
-				"ScriptFile"			"items/item_bonus_stat"
-				"Function"				"IntellectTomeUsed"
-				"bonus_stat"	"%bonus_stat"
-			}		
-			"FireSound"
-			{
-				"EffectName"			"DOTA_Item.Refresher.Activate"
-				"Target"				"CASTER"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
-				"EffectAttachType" 	"follow_overhead"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}	
-			"FireEffect"
-			{
-				"Target" "CASTER"
-				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
-				"EffectAttachType" 	"follow_origin"
-			}		
-		}	
 	}
 	"item_pizza1"
 	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
@@ -9898,103 +9595,6 @@
 				"eidalon_duration"	"20"
 		}
 	}
-	"item_blackshop_uncommon_exp"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_exp"	 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"ItemCost"						"400"	
-		"ItemInitialCharges"            "1"
-		"ItemKillable"					"0"	
-		"ItemStackable"					"0"
-		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "custom_games_xp_coin"
-        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/epic_sphere_full.vpcf"
-		// Stats		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0"
-		"AbilityCastRange"				"900"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-			 "exp"		"800"
-		}
-	}
-	"item_blackshop_uncommon_injector"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_injector"	 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"ItemCost"						"400"
-		"ItemKillable"					"0"	
-		"ItemInitialCharges"            "1"
-		"ItemStackable"					"0"
-		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            ""
-        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
-		// Stats		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0"
-		"AbilityCastRange"				"900"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-			 "attack_base"		"30"
-			 "bonus_stat" 		"10"
-		}
-	}
-	"item_blackshop_uncommon_wizard_stuff"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_wizard_stuff"	 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"ItemCost"						"400"	
-		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/rare_full.vpcf"
-		"ItemInitialCharges"            "1"
-		"ItemStackable"				"0"
-		"ItemKillable"					"0"	
-		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "fire_shiva"
-		// Stats		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0"
-		"AbilityCastRange"				"900"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-			 "bonus_amp"		"15"
-		}
-	}
 
 "item_recipe_fire_shivas_guard"
 	{
@@ -15758,6 +15358,780 @@
 				"bonus_armor"			"7"
 		}
 	}
+
+	// uncommon items
+	"item_blackshop_uncommon_injector"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_injector"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"
+		"AbilityTextureName"            "soldier_injector"
+		"ItemKillable"					"0"	
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            ""
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "attack_base"		"15"
+			 "bonus_stat" 		"10"
+		}
+	}
+	"item_blackshop_uncommon_wizard_stuff"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_uncommon_wizard_stuff"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"				"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "wizard_stuff"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "bonus_amp"		"15"
+		}
+	}
+	"item_bonus_agility10"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3055"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_agi_bonus"
+		
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"400"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
+		"ItemSellable"							"0"
+		"IsTempestDoubleClonable"				"0"		
+		
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"10"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge" 
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"AgilityTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}	
+			"AttachEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/sweep_generic/sweep_1.vpcf"
+				"EffectAttachType" 	"follow_overhead"
+			}
+		}
+	}
+	"item_bonus_strength10"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3068"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_str_bonus"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"400"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
+		"ItemSellable"							"0"
+		"IsTempestDoubleClonable"				"0"		
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"10"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge" 
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"StrengthTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/sweep_generic/sweep_2.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}			
+		}
+	}
+	"item_bonus_intelligence10"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3061"	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_int_bonus"
+		
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"400"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
+		"ItemSellable"							"0"
+		"IsTempestDoubleClonable"				"0"		
+		
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"10"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge" 
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"IntellectTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
+				"EffectAttachType" 	"follow_overhead"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+		}
+	}
+
+	"item_bonus_stats5"
+	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3065"				
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_halloween_candy"
+		
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"400"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
+		"ItemSellable"							"0"
+		"IsTempestDoubleClonable"				"0"		
+		
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"5"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge"
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"StrengthTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"AgilityTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"IntellectTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}		
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
+				"EffectAttachType" 	"follow_overhead"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}	
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}		
+		}	
+	}
+
+	// rare items
+
+	"item_blackshop_rare_exp"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_uncommon/blackshop_rare_exp"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"ItemInitialCharges"            "1"
+		"ItemKillable"					"0"	
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "custom_games_xp_coin"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "exp"		"800"
+		}
+	}
+
+
+	"item_blackshop_rare_berserk_power"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_rare/blackshop_rare_berserk_power"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"
+		"ItemKillable"					"0"	
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "berserk_power"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "attack_damage"		"75"
+		}
+	}
+
+	"item_blackshop_rare_lens_of_wisdon"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_rare/blackshop_rare_lens_of_wisdon"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"
+		"ItemKillable"					"0"	
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "lens"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "cast_range"		"55"
+		}
+	}
+
+	"item_bonus_stats10"
+	//Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3065"				
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_halloween_candy"
+		
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"800"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
+		"ItemSellable"							"0"
+		"IsTempestDoubleClonable"				"0"		
+		
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_stat"	"10"
+			}
+		}
+		
+		"ItemCastOnPickup"				"0"
+		"OnSpellStart"
+		{
+			"SpendCharge"
+			{}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"StrengthTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"AgilityTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_bonus_stat"
+				"Function"				"IntellectTomeUsed"
+				"bonus_stat"	"%bonus_stat"
+			}		
+			"FireSound"
+			{
+				"EffectName"			"DOTA_Item.Refresher.Activate"
+				"Target"				"CASTER"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/items2_fx/shivas_guard_impact.vpcf"
+				"EffectAttachType" 	"follow_overhead"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}	
+			"FireEffect"
+			{
+				"Target" "CASTER"
+				"EffectName"		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf"
+				"EffectAttachType" 	"follow_origin"
+			}		
+		}	
+	}
+
+	// epic items
+
+	"item_blackshop_epic_sword_cleave"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_epic/blackshop_epic_sword_cleave"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"
+		"ItemKillable"					"0"	
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            ""
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/uncommon_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "great_cleave_damage"		"15"
+			 "cleave_distance"		"450"
+			 "cleave_ending_width"	"700"
+			 "cleave_starting_width"	"150"
+
+		}
+	}
+
+
+
+
+
+
+	"item_blackshop_epic_rocket_launcher"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_epic/blackshop_epic_rocket_launcher"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/epic_sphere_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"				"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "rocket_launcher"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage"			"70"
+				"radius"			"2500"
+				"targets"			"1"
+				"speed"				"700"
+				"cooldown"			"14"
+		}
+	}
+
+	//legendary item
+
+	"item_blackshop_legendary_octerinity"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop_legendary_octerinity"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "octerinity"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"mana_casttime_cd"			"5"
+		}
+	}
+
+	"item_blackshop_legendary_boom_buff"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop_legendary_boom_buff"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "rpg"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage"			"200"
+		}
+	}
+
+	//cursed items
+	"item_blackshop_cursed_remove_limits"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_cursed/blackshop_cursed_remove_limits"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/cursed_sphere.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "remove_limits"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
