@@ -533,7 +533,6 @@
 				"as_bonus"				"145"		
 				"dmg_bonus"				"420"		
 				"damage_self"			"8.5"		
-				"cooldown"				"200"	
 				"turn"					"100"		
 				"attack_base"			"0.24"
 		}
