@@ -448,7 +448,7 @@
 		}
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30"
+		"AbilityCooldown"				"120"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 
 		// Cost
@@ -462,7 +462,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"6.5"
+				"duration"					"4.5"
 			}
 			"02"
 			{
@@ -510,9 +510,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"MaxLevel"						"1"
 		"LevelsBetweenUpgrades"			"1"
-		"RequiredLevel"					"75"
- 
-
+		"RequiredLevel"					"50"
 		"precache"
 		{
 			"particle"			"particles/econ/courier/courier_greevil_purple/courier_greevil_purple_ambient_3.vpcf"
@@ -520,7 +518,7 @@
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"200"
-		"AbilityCastPoint"				"0.7"
+		"AbilityCastPoint"				"0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -528,60 +526,33 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"23.5"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"ms_bonus"					"550"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"as_bonus"					"900"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"dmg_bonus"					"2525"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"damage_self"					"8.5"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"cooldown"					"75"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"turn"					"100"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"attack_base"					"0.20"
-			}
-			"09"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"status_resist"					"90"
-			}
-
+		"AbilityValues"
+		{		
+				"duration"				"30"		
+				"ms_bonus"				"145"			
+				"as_bonus"				"145"		
+				"dmg_bonus"				"420"		
+				"damage_self"			"8.5"		
+				"cooldown"				"200"	
+				"turn"					"100"		
+				"attack_base"			"0.24"
 		}
-
- 
-
 	}
+	"juggernaut_buff"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_juggernaut"
+		"AbilityTextureName"			"phantom_haste"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"agility"			"10"
 
-
+		}	
+	}
 }

@@ -545,6 +545,10 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta_Description"	"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
 		<h1>Пассивная: Dead inside </h1>Каждая атака пробивает сердце противника уменьшая его броню на %armor_debuff%"
 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_juggernaut"			"<font color='#ffb300'>РУКОВОДСТВО ПО КОДИРОВАНИЮ</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_juggernaut_Description"	"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
+		<h1>Пассивная: Gate F5 </h1>Герой каждую минуту получает по %agility% ловкости"
+
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander"											"<font color='#ffb300'>Руководитель для лучших саппортиков</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>

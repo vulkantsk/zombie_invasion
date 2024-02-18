@@ -8940,6 +8940,32 @@
 			 
 		}
 	}
+	"item_npc_dota_hero_juggernaut"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_juggernaut"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"                         "books/book_muerta"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "agility"		"10"
+			 
+		}
+	}
 
 	"item_npc_dota_hero_muerta"
 	{
@@ -9288,6 +9314,33 @@
 			
 				"critical_bonus"			"225"
 				"crit_chance_bonus"		"15"
+            
+		}
+	}
+	"item_npc_dota_hero_phantom_assassin"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_phantom_assassin"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "books/phantom_book"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"agility"			"10"
             
 		}
 	}
