@@ -15932,7 +15932,7 @@
 		"ItemInitialCharges"            "1"
 		"ItemStackable"					"0"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            ""
+        "AbilityTextureName"            "rocket_shot"
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
 		"Effect"						"particles/uncommon_full.vpcf"
 		// Stats		
@@ -15946,8 +15946,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-
-
+			"chance"		"30"
+			"damage"			"45"
+			"radius"			"1400"
+			"targets"			"1"
+			"speed"				"1400"
 		}
 	}
 
@@ -15995,6 +15998,43 @@
 	}
 
 	//legendary item
+
+
+	"item_blackshop_legendary_judgment_hammer"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop_legendary_judgment_hammer"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "hammer"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"armor_decress"			"60"
+				"duration"			"8"
+		}
+	}
+
 
 	"item_blackshop_legendary_octerinity"
 	{
@@ -16083,7 +16123,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "remove_limits"
+        "AbilityTextureName"            "damage_booster"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"14"
@@ -16117,7 +16157,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "remove_limits"
+        "AbilityTextureName"            "intellectual_moving"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"14"
@@ -16152,7 +16192,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "remove_limits"
+        "AbilityTextureName"            "magical_incpiration"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"14"

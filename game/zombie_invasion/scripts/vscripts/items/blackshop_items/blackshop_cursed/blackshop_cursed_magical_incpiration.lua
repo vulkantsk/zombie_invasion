@@ -21,7 +21,7 @@ end
 modifier_blackshop_cursed_magical_incpiration = class({})
 
 function modifier_blackshop_cursed_magical_incpiration:IsHidden()
-    return false
+    return true
 end
 
 function modifier_blackshop_cursed_magical_incpiration:IsDebuff()

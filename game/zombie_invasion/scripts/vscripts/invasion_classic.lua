@@ -652,6 +652,7 @@ function InvasionMode:SecretShop()
 	    --legendary
 	    item_blackshop_legendary_octerinity = {chance = 10, price = 1200},
 	    item_blackshop_legendary_boom_buff = {chance = 10, price = 1200},
+	    item_blackshop_legendary_judgment_hammer = {chance = 10, price = 1200},
 
 	    --cursed
 	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
