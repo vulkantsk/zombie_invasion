@@ -115,7 +115,10 @@ modifier_phantom_assassin_jug_death_after = class({
     RemoveOnDeath           = function(self) return false end,
     DeclareFunctions        = function(self) return 
         {
-             MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE, 
+             MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE,
+             MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+             MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+             MODIFIER_PROPERTY_STATS_INTELLECT_BONUS
         } end,
  
 })
@@ -136,6 +139,20 @@ end
 function modifier_phantom_assassin_jug_death_after:GetModifierDamageOutgoing_Percentage()
     return -(self:GetStackCount() * 15)
 end
+
+function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Strength()
+    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseStrength()))
+end
+
+function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Agility()
+    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseAgility()))
+end
+
+function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Intellect()
+    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseIntellect()))
+end
+
+
 
 modifier_phantom_assassin_death_rush_buff = class({
     IsHidden                = function(self) return false end,

@@ -69,8 +69,8 @@
 				    <Label text="#basic3" class="guideHeader classText"/>
 					<Label text="#basic3_text" class="guidePageText"/>
 					<Image src="file://{images}/custom_game/guide/basic3.png" class="guideImage"/>
-			    </Panel>
-				
+			    </Panel>			
+
 			    <Panel id="advanced1" class="guidePage hide">
 				    <Label text="#advanced1" class="guideHeader classText"/>
 					<Label text="#advanced1_text" class="guidePageText"/>
@@ -79,10 +79,17 @@
 				<Panel id="advanced2" class="guidePage hide">
 				    <Label text="#advanced2" class="guideHeader classText"/>
 					<Label text="#advanced2_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/advanced2.png" class="guideImage"/>
 			    </Panel>
 				<Panel id="advanced3" class="guidePage hide">
 				    <Label text="#advanced3" class="guideHeader classText"/>
 					<Label text="#advanced3_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/advanced3.png" class="guideImage"/>
+			    </Panel>
+			    <Panel id="advanced4" class="guidePage hide">
+				    <Label text="#advanced4" class="guideHeader classText"/>
+					<Label text="#advanced4_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/advanced4.png" class="guideImage"/>
 			    </Panel>
 			</Panel>
 			
