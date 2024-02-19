@@ -15987,7 +15987,7 @@
 		"ItemPurchasable"				"0" 
         "AbilityTextureName"            "rocket_shot"
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
-		"Effect"						"particles/uncommon_full.vpcf"
+		"Effect"						"particles/epic_sphere_full.vpcf"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"

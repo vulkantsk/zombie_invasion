@@ -1,6 +1,6 @@
 //--constants
 const GUIDE_BASIC_PAGE_COUNT = 3;
-const GUIDE_ADVANCED_PAGE_COUNT = 4;
+const GUIDE_ADVANCED_PAGE_COUNT = 5;
 //--
 
 //--variables
