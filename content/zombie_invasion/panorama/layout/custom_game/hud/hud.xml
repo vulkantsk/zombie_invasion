@@ -91,6 +91,11 @@
 					<Label text="#advanced4_text" class="guidePageText"/>
 					<Image src="file://{images}/custom_game/guide/advanced4.png" class="guideImage"/>
 			    </Panel>
+			    <Panel id="advanced5" class="guidePage hide">
+				    <Label text="#advanced5" class="guideHeader classText"/>
+					<Label text="#advanced5_text" class="guidePageText"/>
+					<Image src="file://{images}/custom_game/guide/advanced5.png" class="guideImage"/>
+			    </Panel>
 			</Panel>
 			
 			<Panel id="pagesBtns">
