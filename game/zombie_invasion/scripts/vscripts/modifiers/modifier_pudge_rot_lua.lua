@@ -139,6 +139,7 @@ function modifier_pudge_rot_lua:OnIntervalThink()
 			ApplyDamage( damage )
 		else 
 				  ParticleManager:DestroyParticle(self.nFXIndex, false)
+				  self:GetCaster():ForceKill(false)
 		end
 				 
 	end

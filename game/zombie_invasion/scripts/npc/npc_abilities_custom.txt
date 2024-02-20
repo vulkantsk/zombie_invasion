@@ -3178,7 +3178,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_damage"				"5"
+				"rot_damage"				"15"
 			}
 		}
 	}
@@ -3223,7 +3223,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_damage"				"10"
+				"rot_damage"				"30"
 			}
 		}
 	}
@@ -3269,7 +3269,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_damage"				"17"
+				"rot_damage"				"45"
 			}
 		}
 	}
@@ -3316,7 +3316,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rot_damage"				"25"
+				"rot_damage"				"60"
 			}
 		}
 	}

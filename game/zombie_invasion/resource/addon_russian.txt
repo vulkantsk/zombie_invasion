@@ -1313,6 +1313,12 @@
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Lore" 		"Ваш ум может вас подвести?"
         "DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
+        "DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster"	"<font color='#980002'>Damage booster</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster_Description"		"<h1>Активное: Damage booster</h1> Базовые статы героя увеличиваются в 6 раз, но <font color='#e03e2e'>герой с каждой минутой может умереть.</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster_Lore" 		"Это того стоило?"
+        "DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
+
+
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff"	"<font color='#ffff00'>RPG BOOSTER</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Description"		"<h1>Активное: Octerinity of skull mages</h1> выпускает ракеты в двойном объёме от всех типов предметов"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Lore" 		"Купить чтобы что? Чтобы ничего без того? ОГО"

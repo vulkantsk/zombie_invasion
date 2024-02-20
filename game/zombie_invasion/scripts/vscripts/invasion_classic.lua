@@ -632,33 +632,33 @@ end
 function InvasionMode:SecretShop()
 	local dropItems = {
 		--cursed
-	    item_blackshop_cursed_remove_limits = {chance = 4, price = 1500},
-	    item_blackshop_cursed_damage_booster = {chance = 4, price = 1500},
-	    item_blackshop_cursed_magical_incpiration = {chance = 4, price = 1500},
-	    item_blackshop_cursed_intellectual_moving = {chance = 4, price = 1500},
+	    item_blackshop_cursed_remove_limits = {chance = 8, price = 1500},
+	    item_blackshop_cursed_damage_booster = {chance = 8, price = 1500},
+	    item_blackshop_cursed_magical_incpiration = {chance = 8, price = 1500},
+	    item_blackshop_cursed_intellectual_moving = {chance = 8, price = 1500},
 
 	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 8, price = 1200},
-	    item_blackshop_legendary_boom_buff = {chance = 8, price = 1200},
-	    item_blackshop_legendary_judgment_hammer = {chance = 8, price = 1200},
+	    item_blackshop_legendary_octerinity = {chance = 16, price = 1200},
+	    item_blackshop_legendary_boom_buff = {chance = 16, price = 1200},
+	    item_blackshop_legendary_judgment_hammer = {chance = 16, price = 1200},
 
 	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 16, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 16, price = 900},
+	    item_blackshop_epic_rocket_launcher = {chance = 20, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 20, price = 900},
 
 	    --rare
-	    item_bonus_stats10 = {chance = 32, price = 600},
-	    item_blackshop_rare_exp = {chance = 32, price = 600},
-	    item_blackshop_rare_berserk_power = {chance = 32, price = 600},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 32, price = 600},
+	    item_bonus_stats10 = {chance = 35, price = 600},
+	    item_blackshop_rare_exp = {chance = 35, price = 600},
+	    item_blackshop_rare_berserk_power = {chance = 35, price = 600},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 35, price = 600},
 
 	    --uncommon
-	    item_blackshop_uncommon_injector = {chance = 64, price = 300},
-	    item_blackshop_uncommon_wizard_stuff = {chance = 64, price = 300},
-	    item_bonus_agility10 = {chance = 64, price = 300},
-	    item_bonus_strength10 = {chance = 64, price = 300},
-	    item_bonus_intelligence10 = {chance = 64, price = 300},
-	    item_bonus_stats5 = {chance = 64, price = 300},
+	    item_blackshop_uncommon_injector = {chance = 50, price = 300},
+	    item_blackshop_uncommon_wizard_stuff = {chance = 50, price = 300},
+	    item_bonus_agility10 = {chance = 50, price = 300},
+	    item_bonus_strength10 = {chance = 50, price = 300},
+	    item_bonus_intelligence10 = {chance = 50, price = 300},
+	    item_bonus_stats5 = {chance = 50, price = 300},
 	}
 	local defaultItemName ="item_blackshop_uncommon_injector"
 	local defaultPrice = 300
