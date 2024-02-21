@@ -2396,7 +2396,7 @@
 		"ScriptFile"					"items/item_meat.lua"
 		"AbilityCastAnimation" 			"ACT_DOTA_ATTACK"
 		"Model"							"models/gameplay/meat/meat.vmdl"
-		"AbilityTextureName"			"quest_drop/item_meat"
+		"AbilityTextureName"			"quest_drop/meat"
        
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
@@ -5286,7 +5286,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityChannelTime"			"1.5"
 
-		"AbilityCooldown"				"35.0"
+		"AbilityCooldown"				"12.0"
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
 		"ItemQuality"					""
@@ -5362,7 +5362,7 @@
 		"ItemIsNeutralDrop" 						"1"
 		"AbilityCastPoint"				"0.15"
 
-		"AbilityCooldown"				"55.0"
+		"AbilityCooldown"				"0"
 		"ItemCost"                      "1" 
 		"ItemDroppable"					"1" 
 		"ItemPurchasable"				"0" 
@@ -5375,47 +5375,14 @@
 
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
  
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"buff_duration"		"16"
-			}						
- 			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"		"215"
-												"CalculateSpellDamageTooltip" "0"
-			}						
- 
-  			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_speed"		"66"
-			}		
-  			"04"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"bonus_attack_time"		"0.4"
-			}		
-  			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_anti_damage"		"12"
-												"CalculateSpellDamageTooltip" "0"
-			}		
-  			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_spell_damage"		"214"
-												"CalculateSpellDamageTooltip" "0"
-			}						 										
-  			"07"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"strenght"		"24"
-			}
+		"AbilityValues"
+		{										
+				"bonus_damage"		"215"			  			
+				"bonus_speed"		"66"		
+				"bonus_attack_time"		"0.4"		
+				"bonus_anti_damage"		"12"		
+				"bonus_spell_damage"		"214"		
+				"strenght"		"24"			
 		}
  
 	}

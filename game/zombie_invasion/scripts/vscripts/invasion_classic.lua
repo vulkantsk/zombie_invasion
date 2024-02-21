@@ -633,18 +633,18 @@ function InvasionMode:SecretShop()
 	local dropItems = {
 		--cursed
 	    item_blackshop_cursed_remove_limits = {chance = 8, price = 1500},
-	    item_blackshop_cursed_damage_booster = {chance = 8, price = 1500},
+	    item_blackshop_cursed_damage_booster = {chance = 4, price = 1500},
 	    item_blackshop_cursed_magical_incpiration = {chance = 16, price = 1500},
-	    item_blackshop_cursed_intellectual_moving = {chance = 16, price = 1500},
+	    item_blackshop_cursed_intellectual_moving = {chance = 10, price = 1500},
 
 	    --legendary
 	    item_blackshop_legendary_octerinity = {chance = 24, price = 1200},
 	    item_blackshop_legendary_boom_buff = {chance = 20, price = 1200},
-	    item_blackshop_legendary_judgment_hammer = {chance = 24, price = 1200},
+	    item_blackshop_legendary_judgment_hammer = {chance = 20, price = 1200},
 
 	    --epic
 	    item_blackshop_epic_rocket_launcher = {chance = 32, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 40, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 36, price = 900},
 
 	    --rare
 	    item_blackshop_rare_berserk_power = {chance = 40, price = 600},

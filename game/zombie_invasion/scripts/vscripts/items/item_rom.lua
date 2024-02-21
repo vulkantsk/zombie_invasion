@@ -15,16 +15,16 @@ end
 
 function item_rom:OnSpellStart()
 	-- Effects
- 
- 
-	    EmitSoundOn( "drinking", self:GetCaster() )
+
  
    	local caster        =   self:GetCaster()
  
-  
- 
-   caster:AddNewModifier(caster, self, "modifier_rom_effect", {duration = self:GetSpecialValueFor("buff_duration")})
-
+  if not caster:HasModifier("modifier_rom_effect") then
+  	EmitSoundOn( "drinking", self:GetCaster() )
+  	caster:AddNewModifier(caster, self, "modifier_rom_effect", {})
+  else 
+  	caster:RemoveModifierByName("modifier_rom_effect")
+  end
 
 end
   
@@ -38,27 +38,7 @@ modifier_rom_effect = modifier_rom_effect or class({})
 function modifier_rom_effect:IsHidden()		return false end
 function modifier_rom_effect:IsPurgable()		return false end
 function modifier_rom_effect:RemoveOnDeath()	return true end
---function modifier_rom_effect:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
-
- 
-function modifier_rom_effect:OnCreated()
-	if IsServer() then
-        if not self:GetAbility() then self:Destroy() end
-    end
-
-	local ability   =   self:GetAbility()
-	if IsServer() then
-		-- Give buff aura modifier
- 
-	end
-
-	-- Ability parameters
- 
- 
- 
- 
-  
-end
+function modifier_rom_effect:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
 
  function modifier_rom_effect:GetTexture()
 	return "item_drink_pirate"
@@ -77,6 +57,7 @@ MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE
 end
 
 function modifier_rom_effect:OnCreated()
+	if not IsServer() then return end
 	self.ability	= self:GetAbility()
 
 		self.bonus_damage             =   self.ability:GetSpecialValueFor("bonus_damage")
@@ -84,7 +65,14 @@ function modifier_rom_effect:OnCreated()
 		self.bonus_attack_time             =   self.ability:GetSpecialValueFor("bonus_attack_time")
 		self.bonus_anti_damage             =   self.ability:GetSpecialValueFor("bonus_anti_damage")
 		self.bonus_spell_damage             =   self.ability:GetSpecialValueFor("bonus_spell_damage")
+		self:StartIntervalThink(0.25)
+   		self:OnIntervalThink()
 
+end
+
+function modifier_rom_effect:OnIntervalThink()
+    if not IsServer() then return end
+    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
 end
 
 
@@ -119,26 +107,6 @@ function modifier_rom_passive:IsHidden()		return true end
 function modifier_rom_passive:IsPurgable()		return false end
 function modifier_rom_passive:RemoveOnDeath()	return true end
 --function modifier_rom_passive:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
-
- 
-function modifier_rom_passive:OnCreated()
-	if IsServer() then
-        if not self:GetAbility() then self:Destroy() end
-    end
-
-	local ability   =   self:GetAbility()
-	if IsServer() then
-		-- Give buff aura modifier
- 
-	end
-
-	-- Ability parameters
- 
- 
- 
- 
-  
-end
 
 -- Various stat bonuses
 function modifier_rom_passive:DeclareFunctions()

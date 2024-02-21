@@ -68,14 +68,14 @@ function modifier_blackshop_cursed_damage_booster:OnIntervalThink()
 end
 
 function modifier_blackshop_cursed_damage_booster:GetModifierBonusStats_Strength()
-    return self:GetCaster():GetBaseStrength() * 6 * self:GetStackCount()
+    return self:GetCaster():GetBaseStrength() * 2 * self:GetStackCount()
 end
 
 function modifier_blackshop_cursed_damage_booster:GetModifierBonusStats_Agility()
-    return self:GetCaster():GetBaseAgility() * 6 * self:GetStackCount()
+    return self:GetCaster():GetBaseAgility() * 2 * self:GetStackCount()
 end
 
 function modifier_blackshop_cursed_damage_booster:GetModifierBonusStats_Intellect()
-    return self:GetCaster():GetBaseIntellect() * 6 * self:GetStackCount()
+    return self:GetCaster():GetBaseIntellect() * 2 * self:GetStackCount()
 end
 
