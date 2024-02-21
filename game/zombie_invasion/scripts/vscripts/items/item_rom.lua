@@ -72,7 +72,7 @@ end
 
 function modifier_rom_effect:OnIntervalThink()
     if not IsServer() then return end
-    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 0))
+    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
 end
 
 
