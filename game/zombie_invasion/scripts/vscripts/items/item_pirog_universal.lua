@@ -83,6 +83,6 @@ function modifier_item_pirog_universal:GetModifierMoveSpeedBonus_Constant()
 end
 
 function modifier_item_pirog_universal:GetTexture()
-	return "item_pie_universal"
+	return "pie_universal"
 end
  

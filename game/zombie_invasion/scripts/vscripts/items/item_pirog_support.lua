@@ -83,6 +83,6 @@ function modifier_item_pirog_support:GetModifierMoveSpeedBonus_Constant()
 end
 
 function modifier_item_pirog_support:GetTexture()
-	return "pirog_support"
+	return "pies/pirog_support"
 end
  

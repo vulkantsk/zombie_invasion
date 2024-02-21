@@ -1291,6 +1291,11 @@
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
         "DOTA_Tooltip_ability_item_blackshop_rare_exp_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
+        "DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage"			"<font color='#00bfff'>Rock of damage</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage_Description"			"<h1>Активное: jaw fracture</h1> При использовании даёт герою %damage% урона герою, но <font color='#e03e2e'>замедляет его на %slow%.</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
+        "DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
+
 		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power"	"<font color='#00bfff'>Berserk Power</font>"
 		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Description"	"<h1>Активное: Berserk Power</h1> При использовании даёт герою %attack_damage% магического дополнительного урона с тычки за штуку"
 		"DOTA_Tooltip_ability_item_blackshop_rare_berserk_power_Lore" 		"Ваша душевная сила возрастает"

@@ -644,13 +644,14 @@ function InvasionMode:SecretShop()
 
 	    --epic
 	    item_blackshop_epic_rocket_launcher = {chance = 32, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 32, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 40, price = 900},
 
 	    --rare
-	    item_bonus_stats10 = {chance = 40, price = 600},
-	    item_blackshop_rare_exp = {chance = 40, price = 600},
 	    item_blackshop_rare_berserk_power = {chance = 40, price = 600},
 	    item_blackshop_rare_lens_of_wisdon = {chance = 40, price = 600},
+	    item_blackshop_rare_rock_of_damage = {chance = 40, price = 600},
+	    item_bonus_stats10 = {chance = 40, price = 600},
+	    item_blackshop_rare_exp = {chance = 40, price = 600},
 
 	    --uncommon
 	    item_blackshop_uncommon_injector = {chance = 48, price = 300},
