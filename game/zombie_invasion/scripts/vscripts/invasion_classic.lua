@@ -661,8 +661,6 @@ function InvasionMode:SecretShop()
 	    item_bonus_intelligence10 = {chance = 48, price = 300},
 	    item_bonus_stats5 = {chance = 48, price = 300},
 	}
-	local defaultItemName ="item_blackshop_uncommon_injector"
-	local defaultPrice = 300
 	local points = Entities:FindAllByName( "spawner_item_point" )
 	local restItems = {}
 
@@ -676,15 +674,18 @@ function InvasionMode:SecretShop()
 		for _, point in ipairs(points) do
 			local item 
 			local price 
-			for itemName, values in pairs(dropItems) do
-				if RollPercentage(values.chance) then 
- 					item = CreateItem(itemName, nil, nil)
- 					price = values.price
- 					break
- 				end
- 			end
- 			local dropItem = item and item or CreateItem(defaultItemName, nil, nil)
- 			local priceItem = price and price or defaultPrice
+			while item == nil do 
+				for itemName, values in pairs(dropItems) do
+					if RollPercentage(values.chance) then 
+	 					item = CreateItem(itemName, nil, nil)
+	 					price = values.price
+	 					break
+	 				end
+	 			end
+			end
+ 
+ 			local dropItem = item 
+ 			local priceItem = price 
  			 dropItem.price = priceItem
  			 dropItem.positionShop = point:GetAbsOrigin()
 			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
