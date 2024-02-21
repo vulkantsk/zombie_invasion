@@ -633,33 +633,33 @@ function InvasionMode:SecretShop()
 	local dropItems = {
 		--cursed
 	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
-	    item_blackshop_cursed_damage_booster = {chance = 6, price = 1500},
-	    item_blackshop_cursed_magical_incpiration = {chance = 7, price = 1500},
-	    item_blackshop_cursed_intellectual_moving = {chance = 8, price = 1500},
+	    item_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
+	    item_blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
+	    item_blackshop_cursed_intellectual_moving = {chance = 5, price = 1500},
 
 	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 9, price = 1200},
-	    item_blackshop_legendary_boom_buff = {chance = 10, price = 1200},
-	    item_blackshop_legendary_judgment_hammer = {chance = 11, price = 1200},
+	    item_blackshop_legendary_octerinity = {chance = 5, price = 1200},
+	    item_blackshop_legendary_boom_buff = {chance = 5, price = 1200},
+	    item_blackshop_legendary_judgment_hammer = {chance = 5, price = 1200},
 
 	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 22, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 33, price = 900},
+	    item_blackshop_epic_rocket_launcher = {chance = 5, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 5, price = 900},
 
 	    --rare
-	    item_blackshop_rare_berserk_power = {chance = 40, price = 600},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 40, price = 600},
-	    item_blackshop_rare_rock_of_damage = {chance = 40, price = 600},
-	    item_bonus_stats10 = {chance = 40, price = 600},
-	    item_blackshop_rare_exp = {chance = 40, price = 600},
+	    item_blackshop_rare_berserk_power = {chance = 5, price = 600},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 5, price = 600},
+	    item_blackshop_rare_rock_of_damage = {chance = 5, price = 600},
+	    item_bonus_stats10 = {chance = 5, price = 600},
+	    item_blackshop_rare_exp = {chance = 5, price = 600},
 
 	    --uncommon
-	    item_blackshop_uncommon_injector = {chance = 48, price = 300},
-	    item_blackshop_uncommon_wizard_stuff = {chance = 48, price = 300},
-	    item_bonus_agility10 = {chance = 48, price = 300},
-	    item_bonus_strength10 = {chance = 48, price = 300},
-	    item_bonus_intelligence10 = {chance = 48, price = 300},
-	    item_bonus_stats5 = {chance = 48, price = 300},
+	    item_blackshop_uncommon_injector = {chance = 5, price = 300},
+	    item_blackshop_uncommon_wizard_stuff = {chance = 5, price = 300},
+	    item_bonus_agility10 = {chance = 5, price = 300},
+	    item_bonus_strength10 = {chance = 5, price = 300},
+	    item_bonus_intelligence10 = {chance = 5, price = 300},
+	    item_bonus_stats5 = {chance = 5, price = 300},
 	}
 	local points = Entities:FindAllByName( "spawner_item_point" )
 	local restItems = {}
