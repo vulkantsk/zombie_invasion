@@ -17,7 +17,7 @@ function item_rom:OnSpellStart()
 	-- Effects
 
  
-   	local caster        =   self:GetCaster()
+   	local caster = self:GetCaster()
  
   if not caster:HasModifier("modifier_rom_effect") then
   	EmitSoundOn( "drinking", self:GetCaster() )
@@ -38,7 +38,7 @@ modifier_rom_effect = modifier_rom_effect or class({})
 function modifier_rom_effect:IsHidden()		return false end
 function modifier_rom_effect:IsPurgable()		return false end
 function modifier_rom_effect:RemoveOnDeath()	return true end
-function modifier_rom_effect:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
+--function modifier_rom_effect:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
 
  function modifier_rom_effect:GetTexture()
 	return "item_drink_pirate"
@@ -48,23 +48,23 @@ end
 function modifier_rom_effect:DeclareFunctions()
 	return {
  
-      MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
-MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
-MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
-MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
-MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE
+      		MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+			MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+			MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+			MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
+			MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE
 	}
 end
 
 function modifier_rom_effect:OnCreated()
-	if not IsServer() then return end
-	self.ability	= self:GetAbility()
 
-		self.bonus_damage             =   self.ability:GetSpecialValueFor("bonus_damage")
-		self.bonus_speed             =   self.ability:GetSpecialValueFor("bonus_speed")
-		self.bonus_attack_time             =   self.ability:GetSpecialValueFor("bonus_attack_time")
-		self.bonus_anti_damage             =   self.ability:GetSpecialValueFor("bonus_anti_damage")
-		self.bonus_spell_damage             =   self.ability:GetSpecialValueFor("bonus_spell_damage")
+	self.ability = self:GetAbility()
+
+		self.bonus_damage = self.ability:GetSpecialValueFor("bonus_damage")
+		self.bonus_speed = self.ability:GetSpecialValueFor("bonus_speed")
+		self.bonus_attack_time = self.ability:GetSpecialValueFor("bonus_attack_time")
+		self.bonus_anti_damage = self.ability:GetSpecialValueFor("bonus_anti_damage")
+		self.bonus_spell_damage = self.ability:GetSpecialValueFor("bonus_spell_damage")
 		self:StartIntervalThink(0.25)
    		self:OnIntervalThink()
 
@@ -72,7 +72,7 @@ end
 
 function modifier_rom_effect:OnIntervalThink()
     if not IsServer() then return end
-    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
+    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 0))
 end
 
 

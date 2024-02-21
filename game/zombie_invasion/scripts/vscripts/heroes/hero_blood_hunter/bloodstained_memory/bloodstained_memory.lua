@@ -26,11 +26,10 @@ end
 function modifier_bloodstained_memory:OnCreated()
     self.healthbonus = self:GetAbility():GetSpecialValueFor("healthbonus")
     self.movespeed = self:GetAbility():GetSpecialValueFor("movespeed")
-    self:StartIntervalThink(1)
+    self:StartIntervalThink(0.1)
 end
 
 function modifier_bloodstained_memory:OnIntervalThink()
-    if not IsServer() then return end
     self:OnCreated()
 end
 

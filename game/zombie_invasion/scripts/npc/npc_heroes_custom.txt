@@ -285,6 +285,7 @@
 		"AttributeAgilityGain"		"1.70000"
 		"AttributeBaseIntelligence"		"15"
 		"AttributeIntelligenceGain"		"1.400000"
+		"StatusHealth"				"400"									// Base health.
 		"StatusHealthRegen"		"0.25"
 		"MovementSpeed"		"265"
 	}
