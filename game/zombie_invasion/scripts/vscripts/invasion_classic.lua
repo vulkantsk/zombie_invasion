@@ -694,7 +694,7 @@ function InvasionMode:SecretShop()
 			table.insert(restItems, drop) 
 		end
 
-		return 600
+		return 60
 	end)
 end
 
