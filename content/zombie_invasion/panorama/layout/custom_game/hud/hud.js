@@ -176,43 +176,49 @@ const UpdateTopBar = () => {
     if (player_id < 0) return;  
     const hero = Players.GetPlayerHeroEntityIndex( player_id )
     const heroName = Entities.GetUnitName( hero )
-    if (!heroIconChange.find((element) => element === heroName)) return null
+    $.Msg("32")
+    const heroImageDota = element.FindChildTraverse("HeroImage")
+    if (!heroIconChange.find((element) => element === heroName)) {
+        heroImageDota.style.visibility = "visible";
+          const heroImage = element.FindChildTraverse("HeroImageCustom")
+          if (heroImage) heroImage.DeleteAsync(0) 
+      return null
+    } 
     const panel = element.FindChildTraverse("SlantedContainerPanel")
 
-    const imageExist = element.FindChildTraverse("HeroImage")
-    $.Msg(imageExist.BHasClass("__hasImage__")) 
-    if (!imageExist.BHasClass("__hasImage__")) {
-        const heroImage = element.FindChildTraverse("HeroImage")
-        $.Msg("1")
-        const image = $.CreatePanel("Image", panel, "HeroImage", {
+    heroImageDota.style.visibility = "collapse";
+    const imageExist = element.FindChildTraverse("HeroImageCustom")
+
+    if (!imageExist) {
+        const image = $.CreatePanel("Image", panel, "HeroImageCustom", {
             class: "TopBarHeroImage __hasImage__",
             src: `file://{resources}/images/heroes/${heroName}_custom.png`,
         });   
-        $.Msg("2")
-
-      heroImage.DeleteAsync(0) 
-              $.Msg("3")
-
     } else {
-        $.Msg("5")
-
-      // const heroImage = element.FindChildTraverse("HeroImage")
-      //         $.Msg("4")
-
-      // heroImage.DeleteAsync(0) 
-      //         $.Msg("6")
-
-      //   const image = $.CreatePanel("Image", panel, "HeroImage", {
-      //       class: "TopBarHeroImage __hasImage__",
-      //       src: `file://{resources}/images/heroes/${heroName}_custom.png`,
-      //   });   
-      //           $.Msg("7")
-      
+      const heroImage = element.FindChildTraverse("HeroImageCustom")
+      heroImage.DeleteAsync(0) 
+        const image = $.CreatePanel("Image", panel, "HeroImageCustom", {
+            class: "TopBarHeroImage __hasImage__",
+            src: `file://{resources}/images/heroes/${heroName}_custom.png`,
+        });         
     }
  
   })     
 }
 
-UpdateTopBar()
+const Init = () => {
+  const cards = dotaHud.FindChildrenWithClassTraverse("HeroImage");
+
+    if (cards) {
+       $.Schedule(2, () => UpdateTopBar())  
+        return;
+    } else {
+       $.Schedule(0.03, () => Init());
+    }
+}
+
+
+Init()
+ 
 
 GameEvents.Subscribe("update_top_bar", () => UpdateTopBar()) 

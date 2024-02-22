@@ -24,7 +24,8 @@ function GiveNewHero(keys)
 			end 
 		end 
 		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
- 
+ 		CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
+
 		newHero:RespawnHero(false, false) 
 		
 		newHero:SetGold(gold, false)
@@ -38,8 +39,7 @@ function GiveNewHero(keys)
 			item:SetCurrentCharges(stacks)
 		end 
 	end 
-		CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
-
+ 
 end
 
 

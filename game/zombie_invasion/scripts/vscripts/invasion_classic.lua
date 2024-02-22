@@ -127,6 +127,7 @@ end
 			--	EmitGlobalSound("amekudeku - Drow Ranger")
 	
 		end
+ 
 	elseif newState == DOTA_GAMERULES_STATE_HERO_SELECTION then
 
 		Difficulty:OnHeroSelectionState()
@@ -139,7 +140,8 @@ end
 
     		if newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
     			return nil 
-    		end
+    		end  		 
+
    		 return 1
  	end)
  		 
@@ -362,13 +364,21 @@ function InvasionMode:InvasionOnNPCSpawn(data)
  
 
      if npc:IsRealHero() and npc.FirstSpawned == nil then
+ 	--	CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
         --
         if npc:GetUnitName() == 'npc_dota_hero_huskar' then 
         	npc:SetRenderColor(255, 62 , 67 )
         end
         npc.FirstSpawned = true
         npc:AddItemByName("item_tpscroll")
+                	npc:AddItemByName("item_milk")
+        	npc:AddItemByName("item_color_blue")
+        	npc:AddItemByName("item_color_red")
+        	npc:AddItemByName("item_color_aqua")
 
+        for i=1,100 do 
+        	npc:AddItemByName("item_necr_heart")
+   	end
 
 
 
