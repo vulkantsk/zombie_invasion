@@ -15778,6 +15778,74 @@
 			 "slow"		"45"
 		}
 	}
+	"item_blackshop_rare_strength_angel"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_rare/blackshop_rare_strength_angel"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"ItemInitialCharges"            "1"
+		"ItemKillable"					"0"	
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/rock"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "health"		"180"
+			 "str"		"15"
+		}
+	}
+	"item_blackshop_rare_armor"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_rare/blackshop_rare_armor"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemCost"						"400"	
+		"ItemInitialCharges"            "1"
+		"ItemKillable"					"0"	
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemStackable"					"0"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/rock"
+        "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/rare_full.vpcf"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			 "armor"		"12"
+			 "as"		"45"
+		}
+	}
 
 
 

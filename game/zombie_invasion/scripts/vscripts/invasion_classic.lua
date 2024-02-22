@@ -650,6 +650,8 @@ function InvasionMode:SecretShop()
 	    item_blackshop_rare_berserk_power = {chance = 5, price = 600},
 	    item_blackshop_rare_lens_of_wisdon = {chance = 5, price = 600},
 	    item_blackshop_rare_rock_of_damage = {chance = 5, price = 600},
+	    item_blackshop_rare_strength_angel = {chance = 5, price = 600},
+	    item_blackshop_rare_armor = {chance = 5, price = 600},
 	    item_bonus_stats10 = {chance = 5, price = 600},
 	    item_blackshop_rare_exp = {chance = 5, price = 600},
 

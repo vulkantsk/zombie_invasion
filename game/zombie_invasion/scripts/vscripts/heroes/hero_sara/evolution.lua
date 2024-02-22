@@ -14,7 +14,7 @@ function modifier_sara_evolution:DeclareFunctions()
 		MODIFIER_EVENT_ON_ATTACK_LANDED,
 		MODIFIER_EVENT_ON_DEATH,
 		MODIFIER_PROPERTY_MANA_BONUS,
-		MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
+		MODIFIER_PROPERTY_HEALTH_BONUS,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 		MODIFIER_PROPERTY_TOOLTIP
 	}
@@ -29,7 +29,7 @@ function modifier_sara_evolution:OnTooltip()
 	return ability:GetSpecialValueFor("max_per_minute") + ability:GetSpecialValueFor("max_per_minute_pct") * self:GetParent():GetMaxMana() * 0.01
 end
 
-function modifier_sara_evolution:GetModifierExtraHealthBonus()
+function modifier_sara_evolution:GetModifierHealthBonus()
 	local ability = self:GetAbility()
 	return ability:GetSpecialValueFor("bonus_health") / (1 - ability:GetSpecialValueFor("health_reduction_pct") * 0.01)
 end
