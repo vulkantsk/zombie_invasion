@@ -121,7 +121,8 @@ function modifier_blackshop_epic_rocket_shot_autocast:OnCreated()
     end
 end
 
-function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded()
+function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded(data)
+    if data.target ~= self.parent  then return end
     local caster = self:GetCaster()
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_shot")
     local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")

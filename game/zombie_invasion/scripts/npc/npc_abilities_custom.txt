@@ -21359,7 +21359,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance_pct"			"100"
+				"chance_pct"			"66"
 				"LinkedSpecialBonus"	"special_bonus_unique_spirit_breaker_1"
 			}
 			"02"
@@ -21391,7 +21391,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movespeed_pct"	"400"
+				"bonus_movespeed_pct"	"170"
 			}
 			"08"
 			{
