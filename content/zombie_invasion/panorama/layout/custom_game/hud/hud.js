@@ -166,40 +166,53 @@ function SecondsToMinsNSecs(seconds) {
     return panel;
 })();
 
-
+const heroIconChange = ["npc_dota_hero_tusk", "npc_dota_hero_juggernaut","npc_dota_hero_huskar"]
  
-// const UpdateTopBar = () => {
-//   const cards = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot");
+const UpdateTopBar = () => {
+  const cards = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot");
 
-//   cards.forEach((element) => { 
-//     const player_id = Number(element.id.match(/-?\d+(\.\d+)?/g)[0]);
-//     if (player_id < 0) return;  
-//     const hero = Players.GetPlayerHeroEntityIndex( player_id )
-//     const heroName = Entities.GetUnitName( hero )
+  cards.forEach((element) => { 
+    const player_id = Number(element.id.match(/-?\d+(\.\d+)?/g)[0]);
+    if (player_id < 0) return;  
+    const hero = Players.GetPlayerHeroEntityIndex( player_id )
+    const heroName = Entities.GetUnitName( hero )
+    if (!heroIconChange.find((element) => element === heroName)) return null
+    const panel = element.FindChildTraverse("SlantedContainerPanel")
 
-//     const panel = element.FindChildTraverse("SlantedContainerPanel")
+    const imageExist = element.FindChildTraverse("HeroImage")
+    $.Msg(imageExist.BHasClass("__hasImage__")) 
+    if (!imageExist.BHasClass("__hasImage__")) {
+        const heroImage = element.FindChildTraverse("HeroImage")
+        $.Msg("1")
+        const image = $.CreatePanel("Image", panel, "HeroImage", {
+            class: "TopBarHeroImage __hasImage__",
+            src: `file://{resources}/images/heroes/${heroName}_custom.png`,
+        });   
+        $.Msg("2")
 
-//     const imageExist = element.FindChildTraverse("HeroImage")
+      heroImage.DeleteAsync(0) 
+              $.Msg("3")
 
-//     if (!imageExist.BHasClass("__hasImage__")) {
-//         const image = $.CreatePanel("Image", panel, "HeroImage", {
-//             class: "TopBarHeroImage __hasImage__",
-//             src: `file://{resources}/images/heroes/${heroName}.png`,
-//         });   
-//       const heroImage = element.FindChildTraverse("HeroImage")
-//       heroImage.DeleteAsync(0) 
-//     } else {
-//       const heroImage = element.FindChildTraverse("HeroImage")
-//       heroImage.DeleteAsync(0) 
-//         const image = $.CreatePanel("Image", panel, "HeroImage", {
-//             class: "TopBarHeroImage __hasImage__",
-//             src: `file://{resources}/images/heroes/${heroName}.png`,
-//         });         
-//     }
+    } else {
+        $.Msg("5")
+
+      // const heroImage = element.FindChildTraverse("HeroImage")
+      //         $.Msg("4")
+
+      // heroImage.DeleteAsync(0) 
+      //         $.Msg("6")
+
+      //   const image = $.CreatePanel("Image", panel, "HeroImage", {
+      //       class: "TopBarHeroImage __hasImage__",
+      //       src: `file://{resources}/images/heroes/${heroName}_custom.png`,
+      //   });   
+      //           $.Msg("7")
+      
+    }
  
-//   })     
-// }
+  })     
+}
 
-// //UpdateTopBar()
+UpdateTopBar()
 
-// GameEvents.Subscribe("update_top_bar", () => UpdateTopBar())
+GameEvents.Subscribe("update_top_bar", () => UpdateTopBar()) 
