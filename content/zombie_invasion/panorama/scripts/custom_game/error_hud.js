@@ -10,3 +10,5 @@ GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_DIRE_
 				"message": data.message
 			})
 	})
+
+ 

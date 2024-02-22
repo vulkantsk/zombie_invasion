@@ -29,6 +29,8 @@ function GiveNewHero(keys)
 		
 		newHero:SetGold(gold, false)
 		newHero:AddExperience(experience, 0, false, true)
+		CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
+  
  		if abuzer then 
 		newHero:AddNewModifier(newHero,nil,"modifier_change_hero",{duration = 89})
 	end

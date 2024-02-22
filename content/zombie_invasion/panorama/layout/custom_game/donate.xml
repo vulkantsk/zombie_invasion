@@ -17,6 +17,8 @@
 				<Panel class="DonateInfoPanel" />
 			</Panel>
 			<Button class="DonateInfo"  onactivate="DOTADisplayURL('https://www.donationalerts.com/r/zombie_invasion')">
+
+				<!-- <Image src="file://{resources}/images/custom_game/sd.gif" scaling="stretch-to-fit-preserve-aspect" />  -->
 			</Button>
 		</Panel>
 		<Button id="DonateToggleButton" onactivate="DonateToggleButtonActivate()">
@@ -24,3 +26,4 @@
 		</Button>
 	</Panel>
 </root>
+ 
