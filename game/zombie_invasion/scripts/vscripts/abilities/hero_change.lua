@@ -24,8 +24,10 @@ function GiveNewHero(keys)
 			end 
 		end 
 		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
- 		CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
+			Timers:CreateTimer(1.0, function()
 
+ 		CustomGameEventManager:Send_ServerToAllClients("update_top_bar", {})
+ 	end)
 		newHero:RespawnHero(false, false) 
 		
 		newHero:SetGold(gold, false)
