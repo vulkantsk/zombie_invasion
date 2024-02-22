@@ -1286,10 +1286,20 @@
 		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Lore" 		"Маги, что создали это были шокированы его мощью.."
         "DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
-		"DOTA_Tooltip_ability_item_blackshop_rare_exp"			"<font color='#00bfff'>БОНУС К ОПЫТУ +800</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel"			"<font color='#00bfff'>devil armor</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Description"			"<h1>Активное: Angel chestplate</h1> При использовании увеличивает здоровье на %health% и силу владельца на %str%"
+		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
+        "DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
+
+        "DOTA_Tooltip_ability_item_blackshop_rare_exp"			"<font color='#00bfff'>БОНУС К ОПЫТУ +800</font>"
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Description"			"<h1>Активное: exp bonus</h1> При использовании даёт 800 опыта герою"
 		"DOTA_Tooltip_ability_item_blackshop_rare_exp_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
         "DOTA_Tooltip_ability_item_blackshop_rare_exp_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
+
+        "DOTA_Tooltip_ability_item_blackshop_rare_armor"			"<font color='#00bfff'>Kings crown</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_armor_Description"			"<h1>Активное: armor bonus</h1> При использовании увеличвает броню владельца на %armor%, но <font color='#e03e2e'>замедляет его скорость атаки на %as%.</font> "
+		"DOTA_Tooltip_ability_item_blackshop_rare_armor_Lore" 		"Боевой опыт нужен всем, особенно в нынешней ситуации."
+        "DOTA_Tooltip_ability_item_blackshop_rare_armor_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
         "DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage"			"<font color='#00bfff'>Rock of damage</font>"
 		"DOTA_Tooltip_ability_item_blackshop_rare_rock_of_damage_Description"			"<h1>Активное: jaw fracture</h1> При использовании даёт герою %damage% урона герою, но <font color='#e03e2e'>замедляет его на %slow%.</font>"

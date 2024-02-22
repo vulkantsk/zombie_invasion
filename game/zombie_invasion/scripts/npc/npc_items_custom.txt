@@ -15794,7 +15794,7 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemStackable"					"0"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "blackshop/rock"
+        "AbilityTextureName"            "blackshop/devil_armor"
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
 		"Effect"						"particles/rare_full.vpcf"
 		// Stats		
@@ -15828,7 +15828,7 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemStackable"					"0"
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "blackshop/rock"
+        "AbilityTextureName"            "blackshop/crown"
         "Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
 		"Effect"						"particles/rare_full.vpcf"
 		// Stats		
