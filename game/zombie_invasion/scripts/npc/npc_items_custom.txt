@@ -2002,45 +2002,6 @@
 
 		 
 	}
-	"item_leaf"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
-		"AbilityTextureName"			"quest_drop/leaf"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
- 
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemCost"                      "50" 
-		"ItemPurchasable"				"1" 
-		"ItemSellable"					"1" 
-		"ItemKillable"					"1" 
-		"ItemStackable" 				"1"
-		"ItemPermanent" 				"0"	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"			"0"
- 
-			}	
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"hit_damage"			"12"
- 
-			}	
-        }
-	}
 
 	"item_law_frog"
 	{
@@ -2082,6 +2043,38 @@
 				"hit_damage"			"0"
  
 			}	
+        }
+	}
+	
+	"item_edgard_history_number_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_edgard_history_number_1.lua"
+		"AbilityTextureName"			"quest_drop/rune_edgard"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 		"AbilityCooldown"				"120"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"1"	
+		"ItemStackable" 				"1"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		"AbilitySpecial"
+		{
+		
         }
 	}
 	"item_alduin_soul"

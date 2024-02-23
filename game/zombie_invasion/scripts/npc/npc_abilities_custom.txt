@@ -2298,6 +2298,94 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "0"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "0"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_color_green"
+                //"reward_item"    "item_color_green"
+                "particle"        "1"
+                "next_quest"    "quest_test_edgard2"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+     "quest_test_edgard2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/eggs"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_exp"                "0"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "reward_gold"                "0"
+            }
+        }
+
+        "OnCreated"
+        {
+            "RunScript"
+            {
+                "ScriptFile"    "abilities/quest/quest_template"
+                "Function"        "OnQuestCreated"
+                "quest_item"    "item_color_green"
+                //"reward_item"    "item_color_green"
+                "particle"        "1"
+                "next_quest"    "quest_test_edgard3"
+                "reusable"        "0"
+            }
+        }      
+       
+    }
+     "quest_test_edgard3"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"  
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "quest/eggs"
+    	"IsOnCastBar"                   "0"	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "value_required"            "1"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
                 "reward_exp"                "999999"
             }
             "03"
@@ -2314,9 +2402,9 @@
                 "ScriptFile"    "abilities/quest/quest_template"
                 "Function"        "OnQuestCreated"
                 "quest_item"    "item_color_green"
-                "reward_item"    "item_color_green"
+                //"reward_item"    "item_color_green"
                 "particle"        "1"
-               // "next_quest"    "quest_test_woman02"
+                //"next_quest"    "quest_test_edgard3"
                 "reusable"        "0"
             }
         }      
