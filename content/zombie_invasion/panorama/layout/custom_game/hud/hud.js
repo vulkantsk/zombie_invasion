@@ -166,7 +166,7 @@ function SecondsToMinsNSecs(seconds) {
     return panel;
 })();
 
-const heroIconChange = ["npc_dota_hero_axe_custom", "npc_dota_hero_bloodseeker_custom","npc_dota_hero_bristleback_custom","npc_dota_hero_crystal_maiden_custom","npc_dota_hero_drow_ranger_custom","npc_dota_hero_huskar_custom_custom","npc_dota_hero_juggernaut_custom","npc_dota_hero_legion_commander_custom","npc_dota_hero_medusa_custom","npc_dota_hero_nevermore_custom","npc_dota_hero_phantom_assassin_custom","npc_dota_hero_phantom_lancer_custom","npc_dota_hero_rubick_custom","npc_dota_hero_sniper_custom","npc_dota_hero_templar_assassin_custom","npc_dota_hero_tidehunter_custom","npc_dota_hero_treant_custom","npc_dota_hero_troll_warlord_custom","npc_dota_hero_tusk_custom"]
+const heroIconChange = ["npc_dota_hero_axe_custom", "npc_dota_hero_bloodseeker_custom","npc_dota_hero_bristleback_custom","npc_dota_hero_crystal_maiden_custom","npc_dota_hero_drow_ranger_custom","npc_dota_hero_huskar","npc_dota_hero_juggernaut_custom","npc_dota_hero_legion_commander_custom","npc_dota_hero_medusa_custom","npc_dota_hero_nevermore_custom","npc_dota_hero_phantom_assassin_custom","npc_dota_hero_phantom_lancer_custom","npc_dota_hero_rubick_custom","npc_dota_hero_sniper_custom","npc_dota_hero_templar_assassin_custom","npc_dota_hero_tidehunter_custom","npc_dota_hero_treant_custom","npc_dota_hero_troll_warlord_custom","npc_dota_hero_tusk_custom"]
  
 const UpdateTopBar = () => {
   const cards = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot");
@@ -179,28 +179,34 @@ const UpdateTopBar = () => {
     $.Msg("32")
     const heroImageDota = element.FindChildTraverse("HeroImage")
     if (!heroIconChange.find((element) => element === heroName)) {
-        heroImageDota.style.visibility = "visible";
+
           const heroImage = element.FindChildTraverse("HeroImageCustom")
           if (heroImage) heroImage.DeleteAsync(0) 
       return null
     } 
     const panel = element.FindChildTraverse("SlantedContainerPanel")
 
-    heroImageDota.style.visibility = "collapse";
+
     const imageExist = element.FindChildTraverse("HeroImageCustom")
 
     if (!imageExist) {
         const image = $.CreatePanel("Image", panel, "HeroImageCustom", {
             class: "TopBarHeroImage __hasImage__",
             src: `file://{resources}/images/heroes/${heroName}_custom.png`,
+            hittest: false
         });   
+        image.style.zIndex = "4"
     } else {
       const heroImage = element.FindChildTraverse("HeroImageCustom")
       heroImage.DeleteAsync(0) 
         const image = $.CreatePanel("Image", panel, "HeroImageCustom", {
             class: "TopBarHeroImage __hasImage__",
             src: `file://{resources}/images/heroes/${heroName}_custom.png`,
-        });         
+                        hittest: false
+
+        });      
+                image.style.zIndex = "4"
+   
     }
  
   })     
