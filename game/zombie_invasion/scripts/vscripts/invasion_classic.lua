@@ -371,13 +371,9 @@ function InvasionMode:InvasionOnNPCSpawn(data)
         end
         npc.FirstSpawned = true
         npc:AddItemByName("item_tpscroll")
-        	npc:AddItemByName("item_color_blue")
-        	npc:AddItemByName("item_color_red")
-        	npc:AddItemByName("item_color_aqua")
 
-        for i=1,100 do 
-        	npc:AddItemByName("item_fire")
-   	end
+
+   	
 
 
 
