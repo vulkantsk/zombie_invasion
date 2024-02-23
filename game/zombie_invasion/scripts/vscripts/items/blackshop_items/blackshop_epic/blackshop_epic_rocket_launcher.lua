@@ -84,7 +84,6 @@ function blackshop_epic_rocket_launcher:OnProjectileHit_ExtraData( target, locat
     }
     ApplyDamage( damage )
     self:GetCaster():PerformAttack(target, false, true, true, false, false, false, true)
-
     local effect_cast = ParticleManager:CreateParticle( "particles/units/heroes/hero_tinker/tinker_missle_explosion.vpcf", PATTACH_ABSORIGIN_FOLLOW, target )
     ParticleManager:ReleaseParticleIndex( effect_cast )
 
