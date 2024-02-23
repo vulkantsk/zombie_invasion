@@ -674,7 +674,7 @@ end
 function InvasionMode:SecretShop()
 	Timers:CreateTimer(0,function()
 		InvasionMode:UpdateBlackShop() 
-		return 60
+		return 300
 	end)
 end
 

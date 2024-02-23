@@ -16,7 +16,7 @@
 						<Label id="quest_desc" class="qtext" text="Я продаю разные предметы и они имеют уникальную ценность и цену"/>
 					</Panel>
 					<Button id="BlackshoopRefreshButton">
-					<Label text="Рефреш"/>
+					<Label text="Обновить"/>
 				</Button>
 				</Panel>
  
