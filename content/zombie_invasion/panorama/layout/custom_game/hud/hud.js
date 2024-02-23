@@ -166,7 +166,7 @@ function SecondsToMinsNSecs(seconds) {
     return panel;
 })();
 
-const heroIconChange = ["npc_dota_hero_axe_custom", "npc_dota_hero_bloodseeker_custom","npc_dota_hero_bristleback_custom","npc_dota_hero_crystal_maiden_custom","npc_dota_hero_drow_ranger_custom","npc_dota_hero_huskar_custom_custom","npc_dota_hero_juggernaut_custom","npc_dota_hero_legion_commander_custom","npc_dota_hero_medusa_custom","npc_dota_hero_nevermore_custom","npc_dota_hero_phantom_assassin_custom","npc_dota_hero_phantom_lancer_custom","npc_dota_hero_rubick_custom","npc_dota_hero_sniper_custom","npc_dota_hero_templar_assassin_custom","npc_dota_hero_tidehunter_custom","npc_dota_hero_treant_custom","npc_dota_hero_troll_warlord_custom","npc_dota_hero_tusk_custom"]
+const heroIconChange = ["npc_dota_hero_axe", "npc_dota_hero_bloodseeker","npc_dota_hero_bristleback","npc_dota_hero_crystal_maiden","npc_dota_hero_drow_ranger","npc_dota_hero_huskar","npc_dota_hero_juggernaut","npc_dota_hero_legion_commander","npc_dota_hero_medusa","npc_dota_hero_nevermore","npc_dota_hero_phantom_assassin","npc_dota_hero_phantom_lancer","npc_dota_hero_rubick","npc_dota_hero_sniper","npc_dota_hero_templar_assassin","npc_dota_hero_tidehunter","npc_dota_hero_treant","npc_dota_hero_troll_warlord","npc_dota_hero_tusk"]
  
 const UpdateTopBar = () => {
   const cards = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot");
