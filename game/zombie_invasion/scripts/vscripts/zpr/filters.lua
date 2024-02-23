@@ -30,6 +30,12 @@ function ZFilter:OrderFilter(data)
 			return false
             end
 		end
+		if target and target ~= nil and target:IsBaseNPC() and target:GetUnitName() == "npc_market_blackshop" then
+			CustomGameEventManager:Send_ServerToPlayer(	PlayerResource:GetPlayer(pid), "show_blackshop_tooltip", {
+ 
+				} )
+			return false		
+		end
 	end
  
 

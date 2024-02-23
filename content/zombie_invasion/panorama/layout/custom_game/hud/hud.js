@@ -228,3 +228,25 @@ Init()
  
 
 GameEvents.Subscribe("update_top_bar", () => UpdateTopBar()) 
+
+const showBlackshopTooltip = () => {
+  const hasPanel = $.GetContextPanel().FindChildTraverse("QPanelBlackshop")
+  if (hasPanel) return null
+  const snippet = $.CreatePanel("Panel", $.GetContextPanel(), "QPanelBlackshop")
+  snippet.BLoadLayoutSnippet("blackShopTooltip")
+
+  const button = snippet.FindChildTraverse("BlackshoopCloseButton")
+
+  button.SetPanelEvent("onactivate", () => {
+    snippet.DeleteAsync(0)
+  })
+
+  const buttonRefresh = snippet.FindChildTraverse("BlackshoopRefreshButton")
+  buttonRefresh.SetPanelEvent("onactivate", () => {
+    GameEvents.SendCustomGameEventToServer("refresh_blackshop", { 
+      player: Players.GetLocalPlayer(),
+    });
+  })  
+}
+
+GameEvents.Subscribe('show_blackshop_tooltip', showBlackshopTooltip);

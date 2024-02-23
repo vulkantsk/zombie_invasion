@@ -5,7 +5,29 @@
     <scripts>
         <include src="file://{resources}/layout/custom_game/hud/hud.js"/>
     </scripts>
-
+    <snippets>
+    	<snippet name="blackShopTooltip">
+	   		<Panel>
+				<Panel id="QHead">
+					<Label id="quest_name" class="qtext" text="Blackshop"/>
+				</Panel>
+				<Panel id="QContent">
+					<Panel id="QDesc">
+						<Label id="quest_desc" class="qtext" text="Я продаю разные предметы и они имеют уникальную ценность и цену"/>
+					</Panel>
+					<Button id="BlackshoopRefreshButton">
+					<Label text="Рефреш"/>
+				</Button>
+				</Panel>
+ 
+				<Panel id="QFoot">
+					<Button id="BlackshoopCloseButton">
+						<Label class="qtext" text="Закрыть"/>
+					</Button>
+				</Panel>
+			</Panel>
+    	</snippet>
+    </snippets>
 	<Panel hittest="false" class="root">
 		<Panel id="QPanel" class="hide">
 			<Panel id="QHead">

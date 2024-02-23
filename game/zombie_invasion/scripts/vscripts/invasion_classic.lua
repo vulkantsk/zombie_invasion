@@ -6,6 +6,41 @@ if InvasionMode == nil then
 	InvasionMode = class({})
 end
 
+local dropItemsBlackshop = {
+		--cursed
+	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
+	    item_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
+	    item_blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
+	    item_blackshop_cursed_intellectual_moving = {chance = 5, price = 1500},
+
+	    --legendary
+	    item_blackshop_legendary_octerinity = {chance = 5, price = 1200},
+	    item_blackshop_legendary_boom_buff = {chance = 5, price = 1200},
+	    item_blackshop_legendary_judgment_hammer = {chance = 5, price = 1200},
+
+	    --epic
+	    item_blackshop_epic_rocket_launcher = {chance = 5, price = 900},
+	    item_blackshop_epic_rocket_shot = {chance = 5, price = 900},
+
+	    --rare
+	    item_blackshop_rare_berserk_power = {chance = 5, price = 600},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 5, price = 600},
+	    item_blackshop_rare_rock_of_damage = {chance = 5, price = 600},
+	    item_blackshop_rare_strength_angel = {chance = 5, price = 600},
+	    item_blackshop_rare_armor = {chance = 5, price = 600},
+	    item_bonus_stats10 = {chance = 5, price = 600},
+	    item_blackshop_rare_exp = {chance = 5, price = 600},
+
+	    --uncommon
+	    item_blackshop_uncommon_injector = {chance = 5, price = 300},
+	    item_blackshop_uncommon_wizard_stuff = {chance = 5, price = 300},
+	    item_bonus_agility10 = {chance = 5, price = 300},
+	    item_bonus_strength10 = {chance = 5, price = 300},
+	    item_bonus_intelligence10 = {chance = 5, price = 300},
+	    item_bonus_stats5 = {chance = 5, price = 300},
+	}
+	local restItemsBlackshop = {}
+
 HeroMaxLevel = 101
 HeroExpTable = {0}
 exp={100,150,200,250,300,350,400,450,500,550,625,
@@ -29,6 +64,7 @@ for i=2,HeroMaxLevel-1 do
 end
  
 HERO_RESPAWN_TIME_BEFORE_10 =	 20
+REFRESH_BLACKSHOP_COST = 1000
 
 Witch_killed = 0
 Boss_killed = 0 
@@ -102,7 +138,8 @@ function InvasionMode:InvasionMap()
 	LinkLuaModifier("modifier_spell1", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)	
 	LinkLuaModifier("modifier_invasion_difficulty", "modifiers/modifier_invasion_difficulty", LUA_MODIFIER_MOTION_NONE)	
  	CustomGameEventManager:RegisterListener( "get_reward", Dynamic_Wrap( self, "OnGetReward" ) )
-
+ 	CustomGameEventManager:RegisterListener( "refresh_blackshop", Dynamic_Wrap( self, "RefreshBlackShop" ) )
+ 
 	local shop = Entities:FindByName( nil, "dota_shop")
 
 	if shop then
@@ -635,74 +672,43 @@ function InvasionMode:InvasionGameStart()
 end
 
 function InvasionMode:SecretShop()
-	local dropItems = {
-		--cursed
-	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
-	    item_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
-	    item_blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
-	    item_blackshop_cursed_intellectual_moving = {chance = 5, price = 1500},
-
-	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 5, price = 1200},
-	    item_blackshop_legendary_boom_buff = {chance = 5, price = 1200},
-	    item_blackshop_legendary_judgment_hammer = {chance = 5, price = 1200},
-
-	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 5, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 5, price = 900},
-
-	    --rare
-	    item_blackshop_rare_berserk_power = {chance = 5, price = 600},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 5, price = 600},
-	    item_blackshop_rare_rock_of_damage = {chance = 5, price = 600},
-	    item_blackshop_rare_strength_angel = {chance = 5, price = 600},
-	    item_blackshop_rare_armor = {chance = 5, price = 600},
-	    item_bonus_stats10 = {chance = 5, price = 600},
-	    item_blackshop_rare_exp = {chance = 5, price = 600},
-
-	    --uncommon
-	    item_blackshop_uncommon_injector = {chance = 5, price = 300},
-	    item_blackshop_uncommon_wizard_stuff = {chance = 5, price = 300},
-	    item_bonus_agility10 = {chance = 5, price = 300},
-	    item_bonus_strength10 = {chance = 5, price = 300},
-	    item_bonus_intelligence10 = {chance = 5, price = 300},
-	    item_bonus_stats5 = {chance = 5, price = 300},
-	}
-	local points = Entities:FindAllByName( "spawner_item_point" )
-	local restItems = {}
-
 	Timers:CreateTimer(0,function()
-		for _, restItem in ipairs(restItems) do
-			UTIL_Remove(restItem)
-		end		
-
-		restItems = {}
-
-		for _, point in ipairs(points) do
-			local item 
-			local price 
-			while item == nil do 
-				for itemName, values in pairs(dropItems) do
-					if RollPercentage(values.chance) then 
-	 					item = CreateItem(itemName, nil, nil)
-	 					price = values.price
-	 					break
-	 				end
-	 			end
-			end
- 
- 			local dropItem = item 
- 			local priceItem = price 
- 			 dropItem.price = priceItem
- 			 dropItem.positionShop = point:GetAbsOrigin()
-			local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
-			 drop.price = priceItem
-
-			table.insert(restItems, drop) 
-		end
-
+		InvasionMode:UpdateBlackShop() 
 		return 60
 	end)
+end
+
+function InvasionMode:UpdateBlackShop()
+	local points = Entities:FindAllByName( "spawner_item_point" )
+
+	for _, restItemsBlackshop in ipairs(restItemsBlackshop) do
+		UTIL_Remove(restItemsBlackshop)
+	end		
+
+	restItemsBlackshop = {}
+
+	for _, point in ipairs(points) do
+		local item 
+		local price 
+		while item == nil do 
+			for itemName, values in pairs(dropItemsBlackshop) do
+				if RollPercentage(values.chance) then 
+ 					item = CreateItem(itemName, nil, nil)
+ 					price = values.price
+ 					break
+ 				end
+ 			end
+		end
+
+			local dropItem = item 
+			local priceItem = price 
+			 dropItem.price = priceItem
+			 dropItem.positionShop = point:GetAbsOrigin()
+		local drop = CreateItemOnPositionForLaunch( point:GetAbsOrigin(), dropItem )
+		 drop.price = priceItem
+
+		table.insert(restItemsBlackshop, drop) 
+	end
 end
 
 function InvasionMode:RandomHeroes()  
@@ -1751,6 +1757,20 @@ for k,v in pairs(tabGoldAll) do
 end
  
  
+function InvasionMode:RefreshBlackShop(data)
+	local player = PlayerResource:GetPlayer(data.player)
+	local hero = player:GetAssignedHero()
+	local currentGold = hero:GetGold()
+
+	if currentGold < REFRESH_BLACKSHOP_COST then 
+	CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {
+	message = "Нема деняг"
+	})
+	else
+		PlayerResource:SpendGold(data.player, REFRESH_BLACKSHOP_COST, 4)		
+		InvasionMode:UpdateBlackShop() 
+	end	
+end
 
 function InvasionMode:ThemeMusic()
 	day_music =

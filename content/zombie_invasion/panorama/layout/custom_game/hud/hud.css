@@ -6,7 +6,22 @@
 .hide {
   visibility: collapse;
 }
-
+ 
+ 
+#QPanelBlackshop {
+  margin-bottom: 369px;
+  margin-left: 60px;
+  align: left center;
+  width: 300px;
+  height: 500px;
+  background-color: #000000d0;
+  flow-children: down;
+  border-radius: 1% / 1%;
+  opacity: 1;
+  transform: translateX(0%) translateY(0px);
+  transition-property: opacity, transform;
+  transition-duration: 0.35s;
+}
 //quests
 #QPanel {
   margin-bottom: 369px;
@@ -260,3 +275,36 @@
 }
 
 //--
+
+
+#BlackshoopCloseButton {
+  align: middle center;
+  background-color: green;
+  width: 50%;
+  height: 90%;
+  margin: 5px;
+  border-radius: 5%;
+}
+#BlackshoopCloseButton:hover {
+  wash-color: #bbbbbb;
+}
+
+#BlackshoopCloseButton Label {
+  font-size: 64px;
+}
+ 
+#BlackshoopRefreshButton {
+  align: middle center;
+  background-color: yellow;
+  width: 50%;
+  height: 20%;
+  margin: 5px;
+  border-radius: 5%;
+}
+#BlackshoopRefreshButton:hover {
+  wash-color: #bbbbbb;
+}
+
+#BlackshoopRefreshButton Label {
+  font-size: 64px;
+}
