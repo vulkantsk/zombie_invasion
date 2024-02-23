@@ -85,7 +85,7 @@ function blackshop_epic_rocket_shot:OnProjectileHit_ExtraData( target, location,
 
     local effect_cast = ParticleManager:CreateParticle( "particles/units/heroes/hero_gyrocopter/gyro_rocket_barrage.vpcf", PATTACH_ABSORIGIN_FOLLOW, target )
     ParticleManager:ReleaseParticleIndex( effect_cast )
-
+    self:GetCaster():PerformAttack(target, false, true, true, false, false, false, true)
     EmitSoundOn( "Hero_Tinker.Heat-Seeking_Missile.Impact", target )
 end
 
@@ -122,17 +122,16 @@ function modifier_blackshop_epic_rocket_shot_autocast:OnCreated()
 end
 
 function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded(data)
-    if data.target ~= self.parent  then return end
     local caster = self:GetCaster()
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_shot")
     local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
     if RollPercentage(30) then
-        if  ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
+        if data.attacker == caster and ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
             if ability2 then
                 Timers:CreateTimer(0.2,function() ability:OnSpellStart() end)
             end
             ability:OnSpellStart()
-            ability:StartCooldown(0.7)
+            ability:StartCooldown(1)
         end
     end
 end
