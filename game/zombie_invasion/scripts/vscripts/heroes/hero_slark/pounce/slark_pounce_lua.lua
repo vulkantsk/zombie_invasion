@@ -82,7 +82,7 @@ function modifier_slark_pounce_lua:OnCreated( kv )
 				speed = speed,
 				duration = duration,
 				distance = 0,
-				height = height,
+				height = 320,
 			} -- kv
 		)
 	else
