@@ -44,9 +44,9 @@ function modifier_item_quest_cm_shield:GetModifierIncomingDamage_Percentage(para
  
 if params.unit == self:GetParent() and bit.band(params.damage_flags, DOTA_DAMAGE_FLAG_HPLOSS) ~= DOTA_DAMAGE_FLAG_HPLOSS  then return end
 
-    if RandomInt(0, 100)<self.chance_miss then
+    if RandomInt(1, 100)<self.chance_miss then
             
-            return -100
+            return -10100
         end
 
     return

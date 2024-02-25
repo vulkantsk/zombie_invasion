@@ -20,7 +20,9 @@ modifier_enigma_eyes = class({
         {
 
             MODIFIER_PROPERTY_MODEL_CHANGE,
-            MODIFIER_EVENT_ON_ATTACK_LANDED
+            MODIFIER_EVENT_ON_ATTACK_LANDED,
+            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
+            MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT
         } end,
     CheckState      = function(self) return 
         {
@@ -29,6 +31,16 @@ modifier_enigma_eyes = class({
   
         } end,
 })
+
+function modifier_enigma_eyes:GetModifierAttackSpeedBonus_Constant()
+    return self:GetAbility():GetSpecialValueFor( "attack_speed" )
+end
+
+
+function modifier_enigma_eyes:GetModifierAttackRangeBonus()
+    return self:GetAbility():GetSpecialValueFor( "attack_range" )
+end
+
 
 function modifier_enigma_eyes:OnAttackLanded(keys)
     if keys.attacker == self:GetParent() and self:GetParent():IsAlive() and not self:GetParent():IsIllusion()  and not keys.target:IsBuilding() and not keys.target:IsOther() then

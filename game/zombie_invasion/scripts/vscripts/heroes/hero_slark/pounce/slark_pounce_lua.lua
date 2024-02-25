@@ -61,6 +61,8 @@ function modifier_slark_pounce_lua:OnCreated( kv )
 	-- references
 	local speed = self:GetAbility():GetSpecialValueFor( "pounce_speed" )
 	local distance = self:GetAbility():GetSpecialValueFor( "pounce_distance" )
+	
+
 	self.radius = self:GetAbility():GetSpecialValueFor( "pounce_radius" )
 	self.leash_radius = self:GetAbility():GetSpecialValueFor( "leash_radius" )
 	self.shadow_duration = self:GetAbility():GetSpecialValueFor( "shadow_duration" )
@@ -71,17 +73,31 @@ function modifier_slark_pounce_lua:OnCreated( kv )
 	if not IsServer() then return end
 
 	-- arc
-	self.arc = self.parent:AddNewModifier(
-		self.parent, -- player source
-		self:GetAbility(), -- ability source
-		"modifier_generic_arc_lua", -- modifier name
-		{
-			speed = speed,
-			duration = duration,
-			distance = distance,
-			height = height,
-		} -- kv
-	)
+	if self:GetAbility():GetAutoCastState() then
+		self.arc = self.parent:AddNewModifier(
+			self.parent, -- player source
+			self:GetAbility(), -- ability source
+			"modifier_generic_arc_lua", -- modifier name
+			{
+				speed = speed,
+				duration = duration,
+				distance = 0,
+				height = height,
+			} -- kv
+		)
+	else
+		self.arc = self.parent:AddNewModifier(
+			self.parent, -- player source
+			self:GetAbility(), -- ability source
+			"modifier_generic_arc_lua", -- modifier name
+			{
+				speed = speed,
+				duration = duration,
+				distance = distance,
+				height = height,
+			} -- kv
+		)
+	end
 	self.arc:SetEndCallback(function( interrupted )
 		-- destroy this modifier when arc ends
 		if self:IsNull() then return end

@@ -29,11 +29,12 @@ function ability_demonic_conversion:CreateEidolon( pos, ve, duration )
 	local caster = self:GetCaster()
 	local ability = self
 	local damage = ability:GetSpecialValueFor( "eidolon_dmg_tooltip" )
-	local health = ability:GetSpecialValueFor( "eidolon_hp_tooltip" )
+	local health = ability:GetSpecialValueFor( "eidolon_hp_tooltip" ) + caster:GetStrength() * ability:GetSpecialValueFor( "bonus_str" )
  
 	local eidolon = CreateUnitByName( "npc_classic_eidolon", pos, true, caster, caster, caster:GetTeamNumber() )
  
-    eidolon:SetBaseMaxHealth(health)
+    eidolon:SetMaxHealth(health)
+    eidolon:SetHealth(eidolon:GetMaxHealth())
 	eidolon:SetBaseDamageMin(damage)	
 	eidolon:SetBaseDamageMax(damage)	
  
@@ -46,9 +47,8 @@ function ability_demonic_conversion:CreateEidolon( pos, ve, duration )
   
 	local talent = self:GetCaster():FindAbilityByName( "special_bonus_unique_enigma_3" )
 
- 	if caster:HasScepter() then
          eidolon:AddNewModifier( caster, self, "modifier_ability_demonic_conversion_stats", {} )
-	end
+
 
 --[[ 
 	if talent and talent:GetLevel() > 0 then
@@ -117,15 +117,15 @@ modifier_ability_demonic_conversion_stats = {}
 
 function modifier_ability_demonic_conversion_stats:DeclareFunctions()
 	return {
-		MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS,
+		MODIFIER_PROPERTY_HEALTH_BONUS,
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
 		MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE
 	}
 end
 
-function modifier_ability_demonic_conversion_stats:GetModifierExtraHealthBonus()
-	return self:GetCaster():GetStrength() * self:GetAbility():GetSpecialValueFor( "bonus_str" )
-end
+--function modifier_ability_demonic_conversion_stats:GetModifierHealthBonus()
+	--return self:GetCaster():GetStrength() * self:GetAbility():GetSpecialValueFor( "bonus_str" )
+--end
 
 function modifier_ability_demonic_conversion_stats:GetModifierAttackSpeedBonus_Constant()
 	return self:GetCaster():GetAgility() * self:GetAbility():GetSpecialValueFor( "bonus_ag" )

@@ -2921,6 +2921,7 @@
 		"DOTA_Tooltip_ability_slark_pounce_lua_Lore"								"За время, проведённое в Тёмном рифе, узник стал опасным убийцей: агрессивным и бесстрашным."
 		"DOTA_Tooltip_ability_slark_pounce_lua_Note0"								"Герой летит в прыжке со скоростью в %pounce_speed% либо на расстояние в %pounce_distance%."
 		"DOTA_Tooltip_ability_slark_pounce_lua_Note2"								"Разрушает деревья в месте приземления."
+		"DOTA_Tooltip_ability_slark_pounce_lua_Note3"								"ПРИ ВКЛЮЧЕНИИ АВТОКАСТА, ГЕРОЙ ПРЫГНЕТ НА МЕСТЕ."
 		"DOTA_Tooltip_ability_slark_pounce_lua_shadow_duration"						"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_slark_pounce_lua_hp_regen_pct"						"%МАКС. ЗДОРОВЬЯ В СЕКУНДУ:"
 		"DOTA_Tooltip_ability_slark_pounce_lua_hp_regen"						"ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
@@ -3247,7 +3248,8 @@
 		"DOTA_Tooltip_ability_ability_phantom_assassin_blur"									"Blur"
 		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Description"						"Применение способности размоет очертания владельца, даруя дополнительную ловкость, универсальные уклонения от любого типа урона и позволяет ему ходить сквозь существ. \n\nТИП РАЗВЕИВАНИЯ: нормальное."
 		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_Lore"								"Медитация позволяет Сёстрам вуали опережать противников в бою."
-		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_chance_miss"						"%УНИВЕРСАЛЬНОЕ УКЛОНЕНИЕ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_chance_miss"						"%УНИВЕРСАЛЬНОЕ УКЛОНЕНИЕ ПРИ АКТИВАЦИИ:"
+		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_bonus_evasion"						"%ПАССИВНОЕ УКЛОНЕНИЕ:"
 		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_bonus_agility_base"					"ЛОВКОСТЬ:"
 		"DOTA_Tooltip_ability_ability_phantom_assassin_blur_duration"							"ДЛИТЕЛЬНОСТЬ:"
 
@@ -3974,7 +3976,6 @@
 		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_dmg_tooltip"			"УРОН ЭЙДОЛОНОВ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_eidalon_duration"				"ДЛИТЕЛЬНОСТЬ:"
 
-		"DOTA_Tooltip_ability_ability_demonic_conversion_scepter_description"					"Каждый ваш атрибут улучшает характеристики эйдолонов."
 		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_str"			"ЗДОРОВЬЕ ЗА ЕД. СИЛЫ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_ag"			"СКОРОСТЬ АТАКИ ЗА ЕД. ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_int"				"УРОН ЗА ЕД. ИНТЕЛЕКТА:"
@@ -3982,10 +3983,11 @@
 		"DOTA_Tooltip_modifier_ability_demonic_conversion"					"Demonic Conversion"
 		"DOTA_Tooltip_modifier_ability_demonic_conversion_Description"		"Эта сущность контролируется Enigma."
 		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats"					"Demonic Conversion"
-		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats_Description"		"Эта сущность имеет дополнительно %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% здоровья, %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорости атаки и %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%% урона."
+		"DOTA_Tooltip_modifier_ability_demonic_conversion_stats_Description"		"Эта сущность имеет дополнительно %MODIFIER_PROPERTY_HEALTH_BONUS% здоровья, %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% скорости атаки и %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%% урона."
 
 		"DOTA_Tooltip_ability_ability_midnight_pulse"									"Midnight Pulse"
 		"DOTA_Tooltip_ability_ability_midnight_pulse_Description"						"Наполняет местность тёмным резонансом, который наносит врагам урон, зависящий от их текущего здоровья."
+		"DOTA_Tooltip_ability_ability_midnight_pulse_scepter_description"					"Увеличивает длительность способности до %duration%"
 		"DOTA_Tooltip_ability_ability_midnight_pulse_Lore"								"Часть бытия медленно погружается в пустоту."
 		"DOTA_Tooltip_ability_ability_midnight_pulse_Note0"								"Разрушает деревья в области действия."
 		"DOTA_Tooltip_ability_ability_midnight_pulse_duration"							"ДЛИТЕЛЬНОСТЬ:"
@@ -4009,6 +4011,8 @@
 		"DOTA_Tooltip_ability_enigma_eyes"										"Evolution"
 		"DOTA_Tooltip_ability_enigma_eyes_Description"							"Энигма деформирует свою сущность. После чего он не может использовать способности и предметы, а каждая его атака настакивает дебаф. Если Enigma или эйдолоны ударят врага с этим дебафом, тогда врагу нанесется чистый урон в размере от кол-во стаков."
 		"DOTA_Tooltip_ability_enigma_eyes_Lore"									"Предвечный всегда стремится к совершенству."
+		"DOTA_Tooltip_ability_enigma_eyes_attack_range"				"ДОП ДАЛЬНОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_enigma_eyes_attack_speed"				"ДОП СКОРОСТЬ АТАКИ:"
 		"DOTA_Tooltip_ability_enigma_eyes_damage_per_stack"								"УРОН ЗА СТАК:"
 		"DOTA_Tooltip_ability_enigma_eyes_duration"								"ДЛИТЕЛЬНОСТЬ:"
   

@@ -2045,6 +2045,36 @@
 			}	
         }
 	}
+	"item_leaf"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"quest_drop/leaf"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "500" 
+		"ItemDroppable"					"1" 
+		"ItemPurchasable"				"1" 
+		"ItemSellable"					"1" 
+		"ItemKillable"					"1" 
+		"ItemInitialCharges"			"0"	
+		"ItemStackable" 				"0"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"1"
+		"AbilitySpecial"
+		{
+        }
+	}
 	
 	"item_edgard_history_number_1"
 	{
