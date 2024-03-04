@@ -8,36 +8,36 @@ end
 
 local dropItemsBlackshop = {
 		--cursed
-	    item_blackshop_cursed_remove_limits = {chance = 5, price = 1500},
-	    item_blackshop_cursed_damage_booster = {chance = 5, price = 1500},
-	    item_blackshop_cursed_magical_incpiration = {chance = 5, price = 1500},
-	    item_blackshop_cursed_intellectual_moving = {chance = 5, price = 1500},
+	    item_blackshop_cursed_remove_limits = {chance = 1, price = 3000},
+	    item_blackshop_cursed_damage_booster = {chance = 1, price = 3000},
+	    item_blackshop_cursed_magical_incpiration = {chance = 1, price = 3000},
+	    item_blackshop_cursed_intellectual_moving = {chance = 2, price = 3000},
 
 	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 5, price = 1200},
-	    item_blackshop_legendary_boom_buff = {chance = 5, price = 1200},
-	    item_blackshop_legendary_judgment_hammer = {chance = 5, price = 1200},
+	    item_blackshop_legendary_octerinity = {chance = 4, price = 2500},
+	    item_blackshop_legendary_boom_buff = {chance = 3, price = 2500},
+	    item_blackshop_legendary_judgment_hammer = {chance = 2, price = 2500},
 
 	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 5, price = 900},
-	    item_blackshop_epic_rocket_shot = {chance = 5, price = 900},
+	    item_blackshop_epic_rocket_launcher = {chance = 4, price = 2000},
+	    item_blackshop_epic_rocket_shot = {chance = 4, price = 2500},
 
 	    --rare
-	    item_blackshop_rare_berserk_power = {chance = 5, price = 600},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 5, price = 600},
-	    item_blackshop_rare_rock_of_damage = {chance = 5, price = 600},
-	    item_blackshop_rare_strength_angel = {chance = 5, price = 600},
-	    item_blackshop_rare_armor = {chance = 5, price = 600},
-	    item_bonus_stats10 = {chance = 5, price = 600},
-	    item_blackshop_rare_exp = {chance = 5, price = 600},
+	     item_blackshop_rare_armor = {chance = 6, price = 1000},
+	    item_bonus_stats10 = {chance = 6, price = 1000},
+	    item_blackshop_rare_exp = {chance = 6, price = 1000},
+	    item_blackshop_rare_berserk_power = {chance = 7, price = 1000},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 7, price = 1000},
+	    item_blackshop_rare_rock_of_damage = {chance = 7, price = 1000},
+	    item_blackshop_rare_strength_angel = {chance = 7, price = 1000},
 
 	    --uncommon
-	    item_blackshop_uncommon_injector = {chance = 5, price = 300},
-	    item_blackshop_uncommon_wizard_stuff = {chance = 5, price = 300},
-	    item_bonus_agility10 = {chance = 5, price = 300},
-	    item_bonus_strength10 = {chance = 5, price = 300},
-	    item_bonus_intelligence10 = {chance = 5, price = 300},
-	    item_bonus_stats5 = {chance = 5, price = 300},
+	    item_bonus_agility10 = {chance = 8, price = 500},
+	    item_bonus_strength10 = {chance = 8, price = 500},
+	    item_bonus_intelligence10 = {chance = 8, price = 500},
+	    item_bonus_stats5 = {chance = 8, price = 500},
+	    item_blackshop_uncommon_injector = {chance = 9, price = 500},
+	    item_blackshop_uncommon_wizard_stuff = {chance = 9, price = 500},
 	}
 	local restItemsBlackshop = {}
 
@@ -64,7 +64,7 @@ for i=2,HeroMaxLevel-1 do
 end
  
 HERO_RESPAWN_TIME_BEFORE_10 =	 20
-REFRESH_BLACKSHOP_COST = 1000
+REFRESH_BLACKSHOP_COST = 500
 
 Witch_killed = 0
 Boss_killed = 0 

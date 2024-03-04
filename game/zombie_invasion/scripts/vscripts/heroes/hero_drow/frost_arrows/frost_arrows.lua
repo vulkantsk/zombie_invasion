@@ -66,7 +66,7 @@ function modifier_ability_drow_ranger_frost_arrows:OnDeath(data)
 
       
         if killer == parent and killed_unit then
-        local radius = 125
+        local radius = 175
 
  
 

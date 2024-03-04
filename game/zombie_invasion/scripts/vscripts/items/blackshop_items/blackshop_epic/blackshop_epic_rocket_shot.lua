@@ -27,7 +27,7 @@ function blackshop_epic_rocket_shot:OnSpellStart()
     local caster = self:GetCaster()
     local damage = self:GetSpecialValueFor("damage") + self:GetCaster():GetAttackDamage()
     local radius = self:GetSpecialValueFor("radius")
-    local targets = self:GetSpecialValueFor("targets") * caster:FindModifierByName("modifier_blackshop_epic_rocket_shot"):GetStackCount()
+    local targets = self:GetSpecialValueFor("targets") * caster:FindModifierByName("modifier_blackshop_epic_rocket_shot"):GetStackCount() * 0.5 + 0.5
     local enemies = FindUnitsInRadius(
         caster:GetTeamNumber(),
         caster:GetOrigin(),
@@ -125,7 +125,7 @@ function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded(data)
     local caster = self:GetCaster()
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_shot")
     local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
-    if RollPercentage(30) then
+    if RollPercentage(3 * caster:FindModifierByName("modifier_blackshop_epic_rocket_shot"):GetStackCount()) then
         if data.attacker == caster and ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
             if ability2 then
                 Timers:CreateTimer(0.2,function() ability:OnSpellStart() end)

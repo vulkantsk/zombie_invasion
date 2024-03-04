@@ -1814,7 +1814,6 @@
 		"AttackDamageMax"		"48"
 		"AttackRate"		"1.400000"
 		"AttackRange"		"175"
-		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"12"
 		"AttributeStrengthGain"		"3.600000"
 		"AttributeBaseAgility"		"30"
@@ -1823,6 +1822,7 @@
 		"AttributeIntelligenceGain"		"4.800000"
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"345"
+		"AttributePrimary"        "DOTA_ATTRIBUTE_ALL"	
   "ItemSlots"
   { }
 	}

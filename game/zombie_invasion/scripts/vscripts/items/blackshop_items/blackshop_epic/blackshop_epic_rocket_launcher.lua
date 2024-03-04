@@ -28,7 +28,7 @@ function blackshop_epic_rocket_launcher:OnSpellStart()
     local caster = self:GetCaster()
     local damage = self:GetSpecialValueFor("damage")
     local radius = self:GetSpecialValueFor("radius")
-    local targets = self:GetSpecialValueFor("targets") * caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount()
+    local targets = self:GetSpecialValueFor("targets") * caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount() * 0.5 + 0.5
     local enemies = FindUnitsInRadius(
         caster:GetTeamNumber(),
         caster:GetOrigin(),
@@ -134,6 +134,6 @@ function modifier_blackshop_epic_rocket_launcher_autocast:OnIntervalThink()
         if ability2 then
             Timers:CreateTimer(0.4,function() ability:OnSpellStart() end)
         end
-        ability:StartCooldown(14 - caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount())
+        ability:StartCooldown(14 - caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount() * 0.5)
     end
 end

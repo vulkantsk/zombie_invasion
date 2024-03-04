@@ -4,7 +4,7 @@
 	{
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"shinobu/shinobu_vampire_blood"
-		"MaxLevel" 						"7"
+		"MaxLevel" 						"14"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"HasInnateModifiers"			"1"
 
@@ -13,7 +13,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal_pct_lvl1"		"30"
+				"lifesteal_pct_lvl1"		"25"
 			}
 			"02"
 			{
@@ -23,7 +23,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_move_speed_lvl1" "-15 -18 -21 -24 -27 -30 -33"
+				"bonus_move_speed_lvl1" "0"
 			}
 			"04"
 			{
@@ -33,7 +33,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal_pct_lvl2"		"30"
+				"lifesteal_pct_lvl2"		"35"
 			}
 			"06"
 			{
@@ -430,42 +430,26 @@
 	{
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"shinobu/shinobu_hide_in_shadows"
-		"MaxLevel" 						"1"
+		"MaxLevel" 						"10"
+		"LevelsBetweenUpgrades"			"5"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"ally_radius"		"600"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"fade_time"			"2.5"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"rage_duration"		"5"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"rage_bonus_damage"	"80 120 160 200 240 280 320"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"rage_bonus_speed_const" "500 525 550 575 600 625 650"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"rage_bonus_evasion_chance" "10 15 20 25 30 35 40"
-			}
+			
+				"ally_radius"		"444"
+		
+				"fade_time"			"5 4.5 4 3.5 3 2.5 2 1.5 1 0.5"
+		
+				"rage_duration"		"2.5 2 3.5 4 4.5 5 5.5 6 6.5 7"
+		
+				"rage_bonus_damage"	"80 160 240 320 400 480 560 640 720 800"
+		
+				"rage_bonus_speed_const" "500 525 550 575 600 625 650 700 750 800"
+	
+				"rage_bonus_evasion_chance" "5 10 15 20 25 30 35 40 45 50"
+			
 		}
 
 		"precache"
@@ -582,14 +566,9 @@
 
 				"OnAttack"
 				{
-					"RemoveModifier"
-					{
-						"ModifierName"	"modifier_shinobu_hide_in_shadows_invisibility"
-						"Target" 		"CASTER"
-					}
 					"ApplyModifier"
 					{
-						"ModifierName"	"modifier_shinobu_hide_in_shadows_fade"
+						"ModifierName"	"modifier_shinobu_hide_in_shadows_rage"
 						"Target" 		"CASTER"
 					}
 				}
