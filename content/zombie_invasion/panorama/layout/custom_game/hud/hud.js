@@ -251,3 +251,40 @@ const showBlackshopTooltip = () => {
 }
 
 GameEvents.Subscribe('show_blackshop_tooltip', showBlackshopTooltip);
+
+
+ 
+ 
+const opacityChange = (panel, opacity,up) => {
+  if (opacity >= 0.7) up = false
+  if (opacity <= 0.02) return panel.DeleteAsync(0)
+  opacity = up ? opacity + 0.01 : opacity - 0.01
+  panel.style.opacity = `${opacity}`
+
+  $.Schedule(0.08, () => opacityChange(panel, opacity, up))
+} 
+
+const wakeUp = () => {
+      Game.EmitSound("wake_up")
+    const image = $.CreatePanel("Image", $.GetContextPanel(), "", { 
+        src:`file://{resources}/images/custom_game/wake_up.png`, 
+        class: "imageHorror",
+        hittest: false, 
+    }); 
+    let opacity = 0.11
+    let up = true
+    opacityChange(image, opacity, up)
+}
+
+const wakeUpCicle = () => {
+    wakeUp()
+
+    $.Schedule(Math.floor(Math.random() * (60 - 20)) + 20, wakeUpCicle)
+}
+
+GameEvents.Subscribe("edgard_disable_exit", () => {
+    dotaHud.FindChildTraverse("DashboardButton").style.visibility = "collapse";
+
+    wakeUpCicle()
+ 
+})

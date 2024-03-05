@@ -21,16 +21,18 @@ GameUI.SetCameraPitchMax( dsa )
 
 GameEvents.Subscribe("alucard_yaw", function(data) {
 
- GameUI.SetCameraYaw(Math.floor(Math.random() * (360 - 0)) + 0)
+    GameUI.SetCameraYaw(Math.floor(Math.random() * (360 - 0)) + 0)
 })
 
 
 GameEvents.Subscribe("camera_comback", function(data) {
- GameUI.SetCameraYaw(0)
-GameUI.SetCameraDistance( 1200 )
-const dsa = 0
-dotaHud.style.visibility = "visible";
+    GameUI.SetCameraYaw(0)
+    GameUI.SetCameraDistance( 1200 )
+    const dsa = 0
+    dotaHud.style.visibility = "visible";
 
-GameUI.SetCameraPitchMin( dsa )
-GameUI.SetCameraPitchMax( dsa )
+    GameUI.SetCameraPitchMin( dsa )
+    GameUI.SetCameraPitchMax( dsa )
 })
+
+ 

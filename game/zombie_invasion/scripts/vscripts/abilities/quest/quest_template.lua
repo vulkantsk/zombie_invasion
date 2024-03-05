@@ -73,6 +73,7 @@ function modifier_quest_template:OnCreated()
 --        self.reward_gold     = ability.reward_gold
         self.quest_item     = ability.quest_item
         self.reward_item     = ability.reward_item
+        self.isEdgardEnd     = ability.isEdgardEnd
         self.particle          = ability.particle
         self.current_quest  = ability:GetName()
         self.next_quest      = ability.next_quest
@@ -128,6 +129,9 @@ function modifier_quest_template:OnIntervalThink()
                     if self.reward_item then
                         parent:DropQuestItem( hero, self.reward_item )
                     end
+                    if self.isEdgardEnd then 
+                        InvasionMode:EdgardQuestComplete()
+                    end
                     if self.reusable == 0 then
                         if self.current_quest then
                             parent:RemoveAbility(self.current_quest)
@@ -174,6 +178,7 @@ function OnQuestCreated(data)
         ability.particle         = data.particle or nil
         ability.next_quest         = data.next_quest or nil
         ability.reusable         = data.reusable or nil
+        ability.isEdgardEnd         = data.isEdgardEnd or nil
 
         caster:AddNewModifier(caster, ability, "modifier_quest_template", nil)
     end)

@@ -2386,12 +2386,12 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "999999"
+                "reward_exp"                "1"
             }
             "03"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "999999"
+                "reward_gold"                "1"
             }
         }
 
@@ -2406,6 +2406,7 @@
                 "particle"        "1"
                 //"next_quest"    "quest_test_edgard3"
                 "reusable"        "0"
+                "isEdgardEnd"        "1"
             }
         }      
        

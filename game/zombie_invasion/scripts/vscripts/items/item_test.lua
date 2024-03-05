@@ -3,6 +3,6 @@
 
     local test_off = 0
  function item_test:OnSpellStart()
-        ScreenShake( self:GetParent():GetOrigin(), 1000.0, 100.0, 3, 2000.0, 0, true )
+       CustomGameEventManager:Send_ServerToAllClients("edgard_disable_exit", {})
 
 end

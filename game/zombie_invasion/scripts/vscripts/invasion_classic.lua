@@ -69,6 +69,7 @@ REFRESH_BLACKSHOP_COST = 500
 Witch_killed = 0
 Boss_killed = 0 
 Christmas_night = 0
+isEdgardEnd = 0
 
 model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
@@ -123,7 +124,8 @@ function InvasionMode:InvasionMap()
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
 	ListenToGameEvent('npc_spawned', Dynamic_Wrap(InvasionMode, 'InvasionOnNPCSpawn'), self)	
 	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(InvasionMode, 'OnItemPickedUp'), self)
-
+	ListenToGameEvent('player_reconnected', Dynamic_Wrap(InvasionMode, 'onReconnected'), self)
+  
 	LinkLuaModifier("modifier_health", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
 	LinkLuaModifier("modifier_health_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)
 	LinkLuaModifier("modifier_mana_regen", "modifiers/modifier_new_year", LUA_MODIFIER_MOTION_NONE)  
@@ -464,8 +466,26 @@ end
       return nil
     end
   )
-  
 end
+
+function InvasionMode:onReconnected(event)
+	if isEdgardEnd ~= 1 then return nil end 
+
+	local player = PlayerResource:GetPlayer(event.PlayerID)
+	player.isConnected = true
+
+	local begginEdgard = true
+	for i=0, PlayerResource:GetPlayerCount() - 1 do 
+		local playerCurrent = PlayerResource:GetPlayer(i)
+
+		if not playerCurrent.isConnected then 
+			begginEdgard = false
+		end
+	end 
+
+	if begginEdgard then InvasionMode:EdgardEnd() end
+end
+
 
 function InvasionMode:spawn_last_boss()
 	local point = nil  -- отвечает за то, где появиться свинья
@@ -614,7 +634,7 @@ end
  
  
 function InvasionMode:InvasionGameStart()
-
+	CustomGameEventManager:Send_ServerToAllClients("edgard_disable_exit", {})
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
@@ -1772,6 +1792,15 @@ function InvasionMode:RefreshBlackShop(data)
 	end	
 end
 
+
+function InvasionMode:EdgardEnd()
+InvasionMode:SpawnBoss("npc_boss_pig_pet_wave", 1)
+end
+
+function InvasionMode:EdgardQuestComplete()
+	isEdgardEnd = 1 
+end
+
 function InvasionMode:ThemeMusic()
 	day_music =
     { 	
@@ -2147,8 +2176,8 @@ end
 	    return Sounds:GetSoundDuration(current_music)		    
 	end)
  end
+
  function InvasionMode:ChristmasMusic()
- 	
 	day_music =
     { 	
  
@@ -2192,10 +2221,6 @@ end
  		},
 
  	}
- 
- 
- 
-
 end
 
  
