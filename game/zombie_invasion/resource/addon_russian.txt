@@ -140,7 +140,7 @@
 		"advanced4"				"Книга героя и Аганим Шард"
 		"advanced4_text"		"Эти предметы делают героя сильнее и падают они с ведьмы на кладбище, шард можно использовать с любого уровня, а для книги героя придётся подождать до 25 уровня."
 		"advanced5"				"Чёрный рынок"
-		"advanced5_text"		"Пройдя в чёрный рынок вы можете купить предмет, который вам понравился, за свою стоимость он даёт очень много Необычная - 300, Редкая - 600, Эпическая - 900, Легендарная - 1200, Проклятая - 1500, единственное что можно подчеркнуть проклятая имеет дебафф, который может испортить вам прохождение, обновляется магазин на каждое утро."		
+		"advanced5_text"		"Пройдя в чёрный рынок вы можете купить предмет, который вам понравился, за свою стоимость он даёт очень много Необычная - 500, Редкая - 1000, Эпическая - 2000, Легендарная - 2500, Проклятая - 3000, единственное что можно подчеркнуть проклятая имеет дебафф, который может испортить вам прохождение, обновляется магазин на каждое утро."		
 		
 		"next"					"Дальше"
 		"previous"				"Назад"
@@ -1156,20 +1156,7 @@
 		"DOTA_Tooltip_modifier_item_blademail"					"Отражение атак от Blade Mail"
 		"DOTA_Tooltip_modifier_item_blademail_Description"		"Возвращает урон атакующим существам."
 
-        "DOTA_Tooltip_Ability_item_lance1"                                            "Bow"
-        "DOTA_Tooltip_Ability_item_lance1_Description"                                "<h1>Активная: bow bow bow</h1>Владелец получает дополнительные 300 скорости атаки на 2 секунды."
-        "DOTA_Tooltip_Ability_item_lance1_ran"                                        "БОНУСНАЯ ДАЛЬНОСТЬ АТАКИ ГЕРОЯМ ДАЛЬНОГО БОЯ:"
-        "DOTA_Tooltip_Ability_item_lance1_agi"                                        "БОНУСНАЯ ЛОВКОСТЬ:"        
-        "DOTA_Tooltip_Ability_item_lance1_str"                                        "БОНУСНАЯ СИЛА:"        
-        "DOTA_Tooltip_Ability_item_lance1_Lore"                                "Надёжный лук, который обязательно поможет в бою."      
-
-        "DOTA_Tooltip_Ability_item_lance2"                                            "Battle Bow"
-        "DOTA_Tooltip_Ability_item_lance2_Description"                                "<h1>Активная: bow bow bow</h1>Владелец получает максимальную скорость атаки на 3 секунды."
-        "DOTA_Tooltip_Ability_item_lance2_ran"                                        "БОНУСНАЯ ДАЛЬНОСТЬ АТАКИ ГЕРОЯМ ДАЛЬНОГО БОЯ:"
-        "DOTA_Tooltip_Ability_item_lance2_agi"                                        "БОНУСНАЯ ЛОВКОСТЬ:"        
-        "DOTA_Tooltip_Ability_item_lance2_str"                                        "БОНУСНАЯ СИЛА:"        
-        "DOTA_Tooltip_Ability_item_lance2_Lore"                                "Надёжный лук, который обязательно поможет в бою."     
-
+  
         "DOTA_Tooltip_Ability_item_law_frog"											"<font color='#0c5705'>Лягушачья лапка"
         "DOTA_Tooltip_Ability_item_law_frog_Description"											"Красивая лапка лягушки."
         "DOTA_Tooltip_Ability_item_law_frog_Lore"                                "На запах просто омерзительно, mais les français aiment ça."  
@@ -1422,16 +1409,6 @@
 		"DOTA_Tooltip_Ability_item_unknown_symbol"				"Unknown Symbol"
 		"DOTA_Tooltip_Ability_item_unknown_symbol_stats_bonus"					"+$all" 		
 		"DOTA_Tooltip_Ability_item_unknown_symbol_Lore"								"Этот символ похож на тот, что использует культ проклятых!"
-
-        "DOTA_Tooltip_Ability_item_magicpier"                                            "Magicpier"
-        "DOTA_Tooltip_Ability_item_magicpier_Description"                                "<h1>Пассивная: Spell Amplification</h1>Владелец получает бонусный магический урон."
-        "DOTA_Tooltip_Ability_item_magicpier_bonus_magic_damage"                                              "%+к урону от заклинаний"
-        "DOTA_Tooltip_Ability_item_magicpier_Lore" 									  "Владелец этого предмета получает невероятное желание сесть на него."
-
-        "DOTA_Tooltip_Ability_item_magic_rapier"                                            "Magic Rapier"
-        "DOTA_Tooltip_Ability_item_magic_rapier_Description"                                "<h1>Пассивная: Spell Amplification</h1>Владелец получает бонусный магический урон."
-        "DOTA_Tooltip_Ability_item_magic_rapier_bonus_magic_damage"                                        "%+к урону от заклинаний"
-        "DOTA_Tooltip_Ability_item_magic_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
 
 		"DOTA_Tooltip_ability_item_octarine_core_2"             "Reftarine"
 		"DOTA_Tooltip_ability_item_octarine_core_2_Description"				"<h1>Активная: Reset</h1>Сбрасывает время перезарядки всех ваших предметов и способностей.\n<h1>Пассивная: Cooldown Reduction</h1>Уменьшает перезарядку всех предметов и способностей на %bonus_cooldown_pct%%%."
@@ -1953,64 +1930,9 @@
 
 
 
-// **************************  items fun mode  *****************************
-
-	
-	"DOTA_Tooltip_Ability_item_super_artefact"					"SUPER ARTEFACT"
-	"DOTA_Tooltip_ability_item_super_artefact_Description"							"<h1>Пассивная: return to zero</h1>Отражает урон  %return_damage% + %return_damage_str%%% от силы героя <br>"
-	"DOTA_Tooltip_ability_item_super_artefact_Lore"								"cursed artefact."
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_strength"					"ДОП.СИЛА:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_armor"					"ДОП.БРОНЯ"
-	"DOTA_Tooltip_Ability_item_super_artefact_base_regen"					"%ДОП.РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_resistance"					"%ДОП.МАГ РЕЗИСТ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_attack_speed"					"ДОП СКОРОСТЬ АТАКИ:"
-	"DOTA_Tooltip_Ability_item_super_artefact_bonus_agility"					"ДОП.ЛОВКОСТЬ:"
-	"DOTA_Tooltip_Ability_item_artefact1"										"Первый артефакт."
-	"DOTA_Tooltip_Ability_item_artefact1_Description"										"Слухи гласят что он полезен."
-	"DOTA_Tooltip_Ability_item_artefact2"										"Второй артефакт."
-	"DOTA_Tooltip_Ability_item_artefact2_Description"										"Слухи гласят что он полезен.."
-	"DOTA_Tooltip_Ability_item_artefact3"										"Третий артефакт."
-	"DOTA_Tooltip_Ability_item_artefact3_Description"										"Слухи гласят что он полезен..."
-	"DOTA_Tooltip_Ability_item_salo"									"САЛО!"
 	"DOTA_Tooltip_Ability_item_error"									"ERROR"
 	"DOTA_Tooltip_Ability_item_error_Description"									"<font color='#ff0000'>11010000 10101111 11010000 10011011 11010000 10101110 11010000 10010001 11010000 10011011 11010000 10101110 11010000 10100001 11010000 10010010 11010000 10011110 11010000 10011000 11010000 10100101 11010000 10011100 11010000 10010000 11010000 10011011 11010000 10010101 11010000 10011101 11010000 10101100 11010000 10011010 11010000 10011000 11010000 10100101 11010000 10010111 11010000 10010000 11010000 10101001 11010000 10011000 11010000 10100010 11010000 10011101 11010000 10011000 11010000 10100111 11010000 10011010 11010000 10011110 11010000 10010010 11010000 10100001 11010000 10011111 11010000 10010000 11010000 10100001 11010000 10011000 11010000 10010001 11010000 10011110 11010000 10100111 11010000 10100010 11010000 10011110 11010000 10010001 11010000 10101011 11010000 10011011 11010000 10011000 11010000 10100001 11010000 10011110 11010000 10011100 11010000 10011101 11010000 10011110 11010000 10011001 11010000 10100011 11010000 10010100 11010000 10010000 11010000 10100111 11010000 10011010 11010000 10011000 11010000 10010010 11010000 10010000 11010000 10011100 11010000 10011000 11010000 10010101 11010000 10100001 11010000 10011011 11010000 10011000 11010000 10101111 11010000 10011111 11010000 10100000 11010000 10011110 11010000 10011111 11010000 10010000 11010000 10010100 11010000 10100011 11010000 10100010 11010000 10011110 11010000 10011101 11010000 10010000 11010000 10010100 11010000 10010101 11010000 10101110 11010000 10100001 11010000 10101100 11010000 10011110 11010000 10100001 11010000 10100010 11010000 10010000 11010000 10011101 11010000 10100011 11010000 10100001 11010000 10101100 11010000 10010010 11010000 10010010 11010000 10010000 11010000 10101000 11010000 10010101 11010000 10011001 11010000 10011111 11010000 10010000 11010000 10011100 11010000 10101111 11010000 10100010 11010000 10011000</font>"
 	"DOTA_Tooltip_Ability_item_error_Lore"										"Эти цифры так и манят.."
-
-
-
-
-
-// ******************** quest fun mode ********************
-
-		"DOTA_Tooltip_Ability_quest_gurd_boss1"										"CODE ERROR 722"
-		"DOTA_Tooltip_Ability_quest_gurd_boss1_Description"							"   МЕНЯ УЖЕ ПОДЗАЕБАЛО ЭТО ПРОКЛЯТОЕ МЕСТО, ПОЧЕМУ ВСЕ ПОСТОЯННО УБИВАЮТ МЕНЯ, ЧТО Я СДЕЛАЛ ВАМ НЕ ТАК ГЛУПЫЕ ЛЮДИШКИ!? ПОЧЕМУ СРАНЫЙ РАЗРАБОТЧИК СДЕЛАЛ МЕНЯ ТАКИМ НЕМОЩНЫМ, Я ПРОТИВ ВСЕГО ЭТОГО И НАДЕЮСЬ ЧТО ТЫ ПОМОЖЕШЬ НАМ БАСТОВАТЬ ПРОТИВ ВСЕГО ЭТОГО! УБЕЙ КУНКУ И ДОБУДЬ МНЕ РОМ! МНЕ ЯВНО СТОИТ РАССЛАБИТСЯ ПОСЛЕ ТАКОГО ДОЛГОГО И МУЧИТЕЛЬНОГО ВРЕМЕНИ! ХЕШТЕГ КОГДА АП БОССОВ НАСРАЛ!?"
-		"DOTA_Tooltip_Ability_quest_gurd_boss1_value_required"     							"КОЛИЧЕСТВО:"
-		"DOTA_Tooltip_Ability_quest_gurd_boss1_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_gurd_boss1_reward_gold"                 		"ЗОЛОТА:"
-
-		"DOTA_Tooltip_Ability_quest_dead"										"CODE ERROR 3012"
-		"DOTA_Tooltip_Ability_quest_dead_Description"							"    АААААААААААА Я НЕ МОГУ СЛЫШАТЬ ЕГО ГОЛОС УБЕЙ ЕГО УБЕЙ ЭТОГО ЧЁРТОВОГО УКРАИНЦА, ОН ТОЛЬКО И УМЕЕТ БАЛАБОЛИТЬ. АААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА"
-		"DOTA_Tooltip_Ability_quest_dead_value_required"     							"КОЛИЧЕСТВО:"
-		"DOTA_Tooltip_Ability_quest_dead_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_dead_reward_gold"                 		"ЗОЛОТА:"
-
-		"DOTA_Tooltip_Ability_quest_slardar"										"CODE ERROR 9419421e931d"
-		"DOTA_Tooltip_Ability_quest_slardar_Description"							"    Принеси мне трубу и я дам тебе таинственный артефакт.. "
-		"DOTA_Tooltip_Ability_quest_slardar_value_required"     							"КОЛИЧЕСТВО:"
-		"DOTA_Tooltip_Ability_quest_slardar_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_slardar_reward_gold"                 		"ЗОЛОТА:"
-
-		"DOTA_Tooltip_Ability_quest_slark"										"CODE ERROR 4195192d"
-		"DOTA_Tooltip_Ability_quest_slark_Description"							"    Принеси мне гем и я дам тебе таинственный артефакт.."
-		"DOTA_Tooltip_Ability_quest_slark_value_required"     							"КОЛИЧЕСТВО:"
-		"DOTA_Tooltip_Ability_quest_slark_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_slark_reward_gold"                 		"ЗОЛОТА:"
-
-		"DOTA_Tooltip_Ability_quest_bear"										"CODE ERROR 4195192d"
-		"DOTA_Tooltip_Ability_quest_bear_Description"							"    ТЫ ТОЛЬКО ПОСМОТРИ ЧТО ОН СДЕЛАЛ С МЕСТНОСТЬЮ! Я ЕГО НЕНАВИЖУ ЁБАНЫЙ НАСРАЛ!!!!!!!! Принеси мне бревно, чтобы я смог построить плотину и я дам тебе таинственный артефакт.."
-		"DOTA_Tooltip_Ability_quest_bear_value_required"     							"КОЛИЧЕСТВО:"
-		"DOTA_Tooltip_Ability_quest_bear_reward_exp"                 		"ОПЫТА:"
-		"DOTA_Tooltip_Ability_quest_bear_reward_gold"                 		"ЗОЛОТА:"
 
 
 
