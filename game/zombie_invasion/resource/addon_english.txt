@@ -1019,16 +1019,6 @@
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_attack_speed"                  "+$attack"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_damage"                  "+$damage"
 		"DOTA_Tooltip_Ability_item_echo_sabre_2_bonus_mana_regen"              "+$mana_regen"
-
-        "DOTA_Tooltip_Ability_item_dickrapier"                                            "Dickrapier"
-        "DOTA_Tooltip_Ability_item_dickrapier_Description"                                "<h1>Passive: Cock</h1>Владелец получает BONUS DAMAGE."
-        "DOTA_Tooltip_Ability_item_dickrapier_bonus_damage"                                        "+$damage"
-        "DOTA_Tooltip_Ability_item_dickrapier_Lore" 									  "Владелец этого предмета получает невероятное желание сесть на него."
-
-        "DOTA_Tooltip_Ability_item_god_rapier"                                            "Rapier"
-        "DOTA_Tooltip_Ability_item_god_rapier_Description"                                "<h1>Passive: True strike</h1>Владелец не промахивается ни по каким целям."
-        "DOTA_Tooltip_Ability_item_god_rapier_bonus_damage"                                        "+$damage"
-        "DOTA_Tooltip_Ability_item_god_rapier_Lore" 									  "Владелец этого предмета получает невероятную силу, которую сложно удержать в руках."
         
         "DOTA_Tooltip_Ability_item_her"                                            "Heart of Tarrasque 1"
         "DOTA_Tooltip_Ability_item_her_Description"                                "<h1>Passive: Heart of Tarrasque</h1>Increases owner hp regeneration."
@@ -1038,9 +1028,9 @@
         "DOTA_Tooltip_Ability_item_her_Lore"                                "Preserved heart of an extinct monster that strengthens the owner's resilience.."
 
         "DOTA_Tooltip_Ability_item_crit"                                            "Daedaedalus"
-        "DOTA_Tooltip_Ability_item_crit_Description"                                "<h1>Passive: Critical strike</h1> Каждая атака с вероятностью 35% может нанести 475% DAMAGEа."
+        "DOTA_Tooltip_Ability_item_crit_Description"                                "<h1>Passive: Critical strike</h1> Each attack has a 35% chance of causing 475% DAMAGE"
         "DOTA_Tooltip_Ability_item_crit_dmg"                                        "BONUS DAMAGE:"
-        "DOTA_Tooltip_Ability_item_crit_Lore"                                "Священное оружие, способное находить слабые месте в броне врага."
+        "DOTA_Tooltip_Ability_item_crit_Lore"                                "A sacred weapon capable of finding weaknesses in the enemy's armor."
 
         "DOTA_Tooltip_Ability_item_her2"                                            "Heart of Tarrasque 2"
         "DOTA_Tooltip_Ability_item_her2_Description"                                "<h1>Passive: Heart of Tarrasque</h1>Increases owner hp regeneration."
@@ -1106,7 +1096,7 @@
 
 
         "DOTA_Tooltip_Ability_item_active_midas"                                            "<font color='#ffdc33'>Paw of Gurd</font>"
-        "DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Active: Goldy!</h1>When used, you get %gold% gold and %experience% опыта."       
+        "DOTA_Tooltip_Ability_item_active_midas_Description"                                "<h1>Active: Goldy!</h1>When used, you get %gold% gold and %experience% exp."       
         "DOTA_Tooltip_Ability_item_active_midas_Lore"                                "Idea by BaronXX."  
 		"DOTA_Tooltip_ability_item_active_midas_bonus_all_stats"					"+$all"
 		"DOTA_Tooltip_ability_item_active_midas_bonus_attack_speed"					"+$attack"  
@@ -1253,7 +1243,7 @@
 		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Description"	"<h1>Active: Rocket Launcher</h1> When used, rockets fly out of the hero every %cooldown% seconds (-1 second for each stack) in %targets% target (+1 target per stack) causing %damage% damage (+70 per stack) at %speed% units"
 		"DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Lore" 		"250 thousand tons of TNT literally flies out of you."
         "DOTA_Tooltip_ability_item_blackshop_epic_rocket_launcher_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!" 
-        "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher"		"Ракетный залп"
+        "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher"		"Rocket descent"
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher_Description"		"After a period of time, you will fire missiles"
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
@@ -1298,7 +1288,7 @@
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer"	"<font color='#980002'>Judgment Hammer</font>"
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Description"	"<h1>Active: Judgment Hammer</h1>The owner's attack reduces the enemies' armor by %armor_decress% for %duration% seconds" 
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Lore" 		"Intelligence..There is never much of it"
-        "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!, ЭФФЕКТЫ НЕ СКЛАДЫВАЮТСЯ"
+        "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!, THE EFFECTS DON'T ADD UP"
 
         
 		
@@ -1488,10 +1478,10 @@
 		"DOTA_Tooltip_Ability_item_dragon_sword_bonus_intellecte"				"bonus int:"
 
 		"DOTA_Tooltip_Ability_item_mage_helper"	"The Last Mage Helper"
-		"DOTA_Tooltip_Ability_item_mage_helper_Description"	"<h1>Passiveе: Soul slay</h1> С каждым тиком предмет в RADIUSе %radius% наносит DAMAGE зависящий от %pct%%% интеллекта владельца %count% целям, также наделяя владельца даром благодаря которому он наносит на %bonus_magic_damage%%% больше DAMAGEа с магии, но также получает проклятие на большую затрату магической энергии %reduce_mana_cost%%%"
+		"DOTA_Tooltip_Ability_item_mage_helper_Description"	"<h1>Passiveе: Soul slay</h1>With each tick, the item is in RADIUS %radius% causes DAMAGE depending on %pct%%% the owner's intelligence %count% targets, also giving the owner a gift through which he causes %bonus_magic_damage%%% More damage is done with magic, but also receives a curse for a greater expenditure of magical energy %reduce_mana_cost%%%"
 		"DOTA_Tooltip_Ability_item_mage_helper_bonus_int"	"+$int"
-		"DOTA_Tooltip_Ability_item_mage_helper_bonus_magic_damage"	"%+к DAMAGEу от заклинаний"
-		"DOTA_Tooltip_Ability_item_mage_helper_reduce_mana_cost"	"%-<font color='#e03e2e'>к уменьшению расхода маны</font>"
+		"DOTA_Tooltip_Ability_item_mage_helper_bonus_magic_damage"	"%+spell amplify"
+		"DOTA_Tooltip_Ability_item_mage_helper_reduce_mana_cost"	"%-<font color='#e03e2e'>to reduce mana</font>"
 		
 
 
@@ -1581,7 +1571,7 @@ receives  %bonus_damage% damage.<br>"
 
 
  		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff"		"Arctic Blast"
-		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff_Description"		"Передвижение снижено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, а скорость атаки на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
+		"DOTA_Tooltip_modifier_item_freez_shivas_active_debuff_Description"		"Movement is reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, And the attack speed is %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%%."
 
 			"DOTA_Tooltip_Ability_item_necr_heart"			"Necr's heart"
 		"DOTA_Tooltip_ability_item_necr_heart_Description"					"<h1>Passive: Heartstopper Aura</h1> For every Heart Necrophos, you get %hit_damage% damage per second."
@@ -1837,7 +1827,7 @@ receives  %bonus_damage% damage.<br>"
 
 	"DOTA_Tooltip_Ability_item_error"									"ERROR"
 	"DOTA_Tooltip_Ability_item_error_Description"									"<font color='#ff0000'>11010000 10101111 11010000 10011011 11010000 10101110 11010000 10010001 11010000 10011011 11010000 10101110 11010000 10100001 11010000 10010010 11010000 10011110 11010000 10011000 11010000 10100101 11010000 10011100 11010000 10010000 11010000 10011011 11010000 10010101 11010000 10011101 11010000 10101100 11010000 10011010 11010000 10011000 11010000 10100101 11010000 10010111 11010000 10010000 11010000 10101001 11010000 10011000 11010000 10100010 11010000 10011101 11010000 10011000 11010000 10100111 11010000 10011010 11010000 10011110 11010000 10010010 11010000 10100001 11010000 10011111 11010000 10010000 11010000 10100001 11010000 10011000 11010000 10010001 11010000 10011110 11010000 10100111 11010000 10100010 11010000 10011110 11010000 10010001 11010000 10101011 11010000 10011011 11010000 10011000 11010000 10100001 11010000 10011110 11010000 10011100 11010000 10011101 11010000 10011110 11010000 10011001 11010000 10100011 11010000 10010100 11010000 10010000 11010000 10100111 11010000 10011010 11010000 10011000 11010000 10010010 11010000 10010000 11010000 10011100 11010000 10011000 11010000 10010101 11010000 10100001 11010000 10011011 11010000 10011000 11010000 10101111 11010000 10011111 11010000 10100000 11010000 10011110 11010000 10011111 11010000 10010000 11010000 10010100 11010000 10100011 11010000 10100010 11010000 10011110 11010000 10011101 11010000 10010000 11010000 10010100 11010000 10010101 11010000 10101110 11010000 10100001 11010000 10101100 11010000 10011110 11010000 10100001 11010000 10100010 11010000 10010000 11010000 10011101 11010000 10100011 11010000 10100001 11010000 10101100 11010000 10010010 11010000 10010010 11010000 10010000 11010000 10101000 11010000 10010101 11010000 10011001 11010000 10011111 11010000 10010000 11010000 10011100 11010000 10101111 11010000 10100010 11010000 10011000</font>"
-	"DOTA_Tooltip_Ability_item_error_Lore"										"Эти цифры так и манят.."
+	"DOTA_Tooltip_Ability_item_error_Lore"										"These numbers are so inviting.."
 
 
 
@@ -3221,29 +3211,29 @@ receives  %bonus_damage% damage.<br>"
 	// -----------------Crystal-Maiden--------------------
 
 	 "DOTA_Tooltip_ability_frost_glacier"	"Glacier of frosty power"
-	 "DOTA_Tooltip_ability_frost_glacier_Description"	"Конус холода который поражает противников холодом нанося <font color='#ff0000'>БАЗОВЫЙ DAMAGE</font> + <font color='#00bfff'>ИНТЕЛЛЕКТ ВЛАДЕЛЬЦА</font>"
-	 "DOTA_Tooltip_ability_frost_glacier_Lore" "Холод разбивающий сердца"
-	 "DOTA_Tooltip_ability_frost_glacier_damage"	"БАЗОВЫЙ DAMAGE:"
+	 "DOTA_Tooltip_ability_frost_glacier_Description"	"cone of cold that strikes opponents with cold by inflicting <font color='#ff0000'>base damage</font> + <font color='#00bfff'>OWNER'S INTELLIGENCE</font>"
+	 "DOTA_Tooltip_ability_frost_glacier_Lore" "The cold that breaks hearts"
+	 "DOTA_Tooltip_ability_frost_glacier_damage"	"base DAMAGE:"
 
-	 "DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_damage"	"+{s:bonus_damage} DAMAGEа к способности Freezing Field"
+	 "DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_damage"	"+{s:bonus_damage} DAMAGE Freezing Field"
 
-	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_ult_cooldown"			"-{s:bonus_AbilityCooldown} сек. перезарядки Freezing Field"
-	"DOTA_Tooltip_ability_frost_glacier_Scepter_Description"		"Уменьшает перезарядку до %AbilityCooldown% Увеличивает дальность применения до %distance% "
+	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_ult_cooldown"			"-{s:bonus_AbilityCooldown} sec. cooldown Freezing Field"
+	"DOTA_Tooltip_ability_frost_glacier_Scepter_Description"		"Reduces the recharge to %AbilityCooldown% Increases the range of application to %distance% "
 
 
 
 
 	"DOTA_Tooltip_ability_crystal_maiden_buff_1" "Crystal shell"
-	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Description" "<h1>Passiveе:  Blessing of cold</h1> герой излучает ауру RADIUSом в %aura_radius% которая усиляет магический DAMAGE союзников на %bonus_spell_amp%%% умноженную на %spell_amp_pct%%% интеллекта кристалки и уменьщающая входящий DAMAGE на %incom_cm%%%"
-	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Lore"			"Ледяное побоище её рук дело."
+	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Description" "<h1>Passiveе:  Blessing of cold</h1> The hero radiates an aura radius %aura_radius% which increases the magical DAMAGE of allies by %bonus_spell_amp%%% multiplied by %spell_amp_pct%%% intelligence crystals and reducing INCOMING DAMAGE on %incom_cm%%%"
+	"DOTA_Tooltip_ability_crystal_maiden_buff_1_Lore"			"The icy carnage was her doing."
 
 	"DOTA_Tooltip_modifier_crystal_aura_buff"	"CRYSTAL SHELL"
-	"DOTA_Tooltip_modifier_crystal_aura_buff_Description"	"Вы под защитой льдов!"
+	"DOTA_Tooltip_modifier_crystal_aura_buff_Description"	"You are under the protection of the ice!"
 
 
 
 
-	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_cold_embrace"								"Улучшает cold embrace +2 сек. действия и +100 хп регена в секунду"
+	"DOTA_Tooltip_ability_special_bonus_unique_crystal_maiden_cold_embrace"								"Improves cold embrace +2 sec. actions and +100 hp regen per second"
 
 	// -----------------Yuki-onna--------------------
 
@@ -3329,69 +3319,69 @@ receives  %bonus_damage% damage.<br>"
        "DOTA_Tooltip_ability_jugger_5"	"М" 
             
        "DOTA_Tooltip_ability_juggernaut_blade_fury_lua"	"Blade Fury"
-       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Description"	"Герой крутится в вихре сокрушительных ударов клинком, становясь невосприимчивым к магии и нанося DAMAGE врагам поблизости. \n\nТИП РАЗВЕИВАНИЯ: нормальное."
+       "DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Description"	"The hero spins in a whirlwind of crushing blows with a blade, becoming immune to magic and causing DAMAGE to enemies nearby. \n\nThe TYPE OF SCATTERING: normal."
 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage"					"DAMAGE В СЕКУНДУ:"
-		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage_agility"					"DAMAGE В СЕКУНДУ ОТ ЛОВКОСТИ:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage"					"damage per second:"
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_blade_fury_damage_agility"					"damage per agility:"
 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_duration"					"DURATION:"
-		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Note0"								"Во время действия этой способности можно использовать предметы и атаковать врагов."
- 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Lore"								"Умение Самурая обращаться с катаной внушает страх и воинам, и магам."
+		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Note0"								"During the action of this ability, you can use items and attack enemies."
+ 		"DOTA_Tooltip_ability_juggernaut_blade_fury_lua_Lore"								"The Samurai's ability to handle a katana inspires fear in both warriors and magicians."
 
       "DOTA_Tooltip_modifier_juggernaut_blade_fury_lua"	"Blade Fury" 
       "DOTA_Tooltip_modifier_juggernaut_blade_fury_lua_Description"	"JUUUUUUGGGGGGGERRRNNAAUUUUUT"
 
        "DOTA_Tooltip_ability_juggernaut_shadow"	"Hidden in shadow"
-       "DOTA_Tooltip_ability_juggernaut_shadow_Description"	"Самурай так хорошо сливается со своей же тенью, что враги в недопонимании начинают промахиваться. Применение этой способности позволит Самураю полностью слиться со своей тенью и враги перестанут видеть его."
-		"DOTA_Tooltip_ability_juggernaut_shadow_miss"				"%БОНУС УКЛОНЕНИЯ:"
-		"DOTA_Tooltip_ability_juggernaut_shadow_speed_atack"					"БАЗОВАЯ СКОРОСТЬ АТАКИ:"
+       "DOTA_Tooltip_ability_juggernaut_shadow_Description"	"The samurai merges so well with his own shadow that the enemies, in misunderstanding, begin to miss. The use of this ability will allow the Samurai to completely merge with his shadow and the enemies will stop seeing him."
+		"DOTA_Tooltip_ability_juggernaut_shadow_miss"				"%bonus evasion:"
+		"DOTA_Tooltip_ability_juggernaut_shadow_speed_atack"					"base attack speed:"
 		"DOTA_Tooltip_ability_juggernaut_shadow_duration"					"DURATION:"
- 		"DOTA_Tooltip_ability_juggernaut_shadow_Lore"								"Быть единым с тенью. Этому всегда учили Самурая, и он успешно приобрел и преуспел в этих навыках."
+ 		"DOTA_Tooltip_ability_juggernaut_shadow_Lore"								"To be one with the shadow. This has always been taught to the Samurai, and he has successfully acquired and succeeded in these skills."
  		"DOTA_Tooltip_ability_juggernaut_shadow_Note0"								""
 
       "DOTA_Tooltip_modifier_shadow_jug"	"Hidden in shadow" 
-      "DOTA_Tooltip_modifier_shadow_jug_Description"	"Единый с тенью"
+      "DOTA_Tooltip_modifier_shadow_jug_Description"	"One with the shadow"
 
 		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua"									"Blade Dance"
-		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Description"						"Даёт герою CHANCE нанести атакой критический DAMAGE."
-		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Lore"								"Как один из представитель своего культа, Самурай должен убедиться, что вы запомните стиль его боя."
-		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_mult"				"%КРИТИЧЕСКИЙ DAMAGE:"
-		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_chance"			"%CHANCE КРИТИЧЕСКОЙ АТАКИ:"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Description"						"Gives the hero a CHANCE to inflict critical DAMAGE with an attack."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_Lore"								"As one of the representatives of his cult, the Samurai must make sure that you remember his fighting style."
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_mult"				"%critical damage:"
+		"DOTA_Tooltip_ability_juggernaut_blade_dance_lua_blade_dance_crit_chance"			"%chance critical hit:"
 
 		"DOTA_Tooltip_ability_void_spirit_astral_step_lua"									"Spiritual Step"
-		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Description"						"Герой перемещается в указанную точку с помощью духовной силы, атакуя всех врагов на пути. Эта атака накладывает метку пустоты, которая замедляет жертв на %pop_damage_delay% сек."
-		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Lore"								"Шаг Самурая - это одно из чудес света."
-		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_movement_slow_pct"			"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
-		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_max_travel_distance"	"ДАЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Description"						"The hero moves to the specified point with the help of spiritual power, attacking all enemies on the way. This attack imposes a void mark that slows down the victims by %pop_damage_delay% sec."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_Lore"								"The Samurai's step is one of the wonders of the world."
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_movement_slow_pct"			"%slow movespeed:"
+		"DOTA_Tooltip_ability_void_spirit_astral_step_lua_max_travel_distance"	"range:"
 
 		"DOTA_Tooltip_modifier_void_spirit_astral_step_lua"				"Spiritual Step"
-		"DOTA_Tooltip_modifier_void_spirit_astral_step_lua_Description"	"Это существо замедлено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_void_spirit_astral_step_lua_Description"	"This creature is slowed down by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 
 		"DOTA_Tooltip_ability_jugger_miracle"									"Miracle"
-		"DOTA_Tooltip_ability_jugger_miracle_Description"						"Собирая все то, чему он научился, Самурай остается в этом мире еще на мгновение."
-		"DOTA_Tooltip_ability_jugger_miracle_Lore"								"Конец... Всему в этом мире приходит конец, но Самураи могут отсрочить этот момент и пожить столько, сколько они захотят."
-		"DOTA_Tooltip_ability_jugger_miracle_duration"	"DURATION:"
-		"DOTA_Tooltip_ability_jugger_miracle_as_bonus"	"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
-		"DOTA_Tooltip_ability_jugger_miracle_dmg_bonus"	"BONUS DAMAGE:"
+		"DOTA_Tooltip_ability_jugger_miracle_Description"						"Collecting all that he has learned, the Samurai remains in this world for a moment longer."
+		"DOTA_Tooltip_ability_jugger_miracle_Lore"								"The end... everything in this world is coming to an end, but Samurai can postpone this moment and live as long as they want."
+		"DOTA_Tooltip_ability_jugger_miracle_duration"	"duration:"
+		"DOTA_Tooltip_ability_jugger_miracle_as_bonus"	"attack speed bonus:"
+		"DOTA_Tooltip_ability_jugger_miracle_dmg_bonus"	"bonus damage:"
 
 		"DOTA_Tooltip_modifier_jugger_miracle"				"Miracle"
-		"DOTA_Tooltip_modifier_jugger_miracle_Description"	"Я БУДУ ЖИТЬ ВЕЧНО!!!!"
+		"DOTA_Tooltip_modifier_jugger_miracle_Description"	"I WILL LIVE FOREVER!!!!"
 
 		"DOTA_Tooltip_ability_jugger_dead"									"<font color='#ff0000'>Death</font>"
-		"DOTA_Tooltip_ability_jugger_dead_Description"						"Используя последние врата Самурай жертвует всем и становится очень сильным. Но при этом в процессе он получает DAMAGE в размере %damage_self%%  от своего здоровья в секунду.\n<font color='#ff0000'>Используй эту способность только при крайней нужде! </font>"
- 		"DOTA_Tooltip_ability_jugger_dead_Note0"								"После использования способности наклыдвается эффект, который уменьшает DAMAGE от руки на 15%, эффект складывается"
-  		"DOTA_Tooltip_ability_jugger_dead_Note1"								"\nПод эффектом этой способности нельзя умереть. И использовать такие способности как: Blade Fury, Hidden in shadow."
-		"DOTA_Tooltip_ability_jugger_dead_Lore"								"Последние врата... Учитель всегда говорил Самураю, что использовать эту способность нужно только тогда, когда твоим союзникам угрожает большая опасность."
-		"DOTA_Tooltip_ability_jugger_dead_duration"	"DURATION:"
-		"DOTA_Tooltip_ability_jugger_dead_as_bonus"	"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
-		"DOTA_Tooltip_ability_jugger_dead_ms_bonus"	"ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
-		"DOTA_Tooltip_ability_jugger_dead_dmg_bonus"	"BONUS DAMAGE:"  
- 		"DOTA_Tooltip_ability_jugger_dead_attack_base"	"БАЗОВАЯ СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_jugger_dead_Description"						"Using the last gate, the Samurai sacrifices everything and becomes very strong. But at the same time, in the process, he receives DAMAGE in the amount of %damage_self%% from your health in a second.\n<font color='#ff0000'>Use this ability only in extreme need! </font>"
+ 		"DOTA_Tooltip_ability_jugger_dead_Note0"								"After using the ability, an effect is added that reduces DAMAGE from the hand by 15%, the effect adds up"
+  		"DOTA_Tooltip_ability_jugger_dead_Note1"								"\nOne cannot die under the effect of this ability. And use such abilities as: Blade Fury, Hidden in shadow."
+		"DOTA_Tooltip_ability_jugger_dead_Lore"								"The last gate... The teacher always told the Samurai that you should use this ability only when your allies are in great danger."
+		"DOTA_Tooltip_ability_jugger_dead_duration"	"duration:"
+		"DOTA_Tooltip_ability_jugger_dead_as_bonus"	"attack speed bonus:"
+		"DOTA_Tooltip_ability_jugger_dead_ms_bonus"	"movespeed bonus:"
+		"DOTA_Tooltip_ability_jugger_dead_dmg_bonus"	"damage:"  
+ 		"DOTA_Tooltip_ability_jugger_dead_attack_base"	"base attack speed bonus::"
 
 		"DOTA_Tooltip_modifier_phantom_assassin_death_rush"				"Gate Death"
-		"DOTA_Tooltip_modifier_phantom_assassin_death_rush_Description"	"Отдам себя всего..."
+		"DOTA_Tooltip_modifier_phantom_assassin_death_rush_Description"	"I will give myself everything..."
 
 		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after"				"Responsibility" 
-		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after_Description"	"За свои действия, ты и только ты всегда в ответе... DAMAGE снижен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
+		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after_Description"	"You and only you are always responsible for your actions... DAMAGE is reduced by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
 
 
 
@@ -3399,29 +3389,29 @@ receives  %bonus_damage% damage.<br>"
 
 
        "DOTA_Tooltip_ability_juggernaut_first_gate"	"The Gate of the Beginning"
-       "DOTA_Tooltip_ability_juggernaut_first_gate_Description"	"Первые врата из семи доступных Самураю. Открывает способность Blade Fury, которая позволяет крутиться вокруг себя."
-		"DOTA_Tooltip_ability_juggernaut_first_gate_Lore"								"Самые первые врата, самое начало."
+       "DOTA_Tooltip_ability_juggernaut_first_gate_Description"	"The first gate of the seven available to the Samurai. Unlocks the Blade Fury ability, which allows you to spin around yourself."
+		"DOTA_Tooltip_ability_juggernaut_first_gate_Lore"								"The very first gate, the very beginning."
 
        "DOTA_Tooltip_ability_juggernaut_fourth_gate"	"The Gate of the Art"
-       "DOTA_Tooltip_ability_juggernaut_fourth_gate_Description"	"Вторые врата из семи доступных Самураю. Открывает способность Blade Dance, которая позволяет наносить удары вдвое сильнее обычных."
-		"DOTA_Tooltip_ability_juggernaut_fourth_gate_Lore"								"Чтобы открыть эти врата, Самураю пришлось побывать в самых изумительных местах этого мира."
+       "DOTA_Tooltip_ability_juggernaut_fourth_gate_Description"	"The second gate of the seven available to the Samurai. Unlocks the Blade Dance ability, which allows you to strike twice as hard as usual."
+		"DOTA_Tooltip_ability_juggernaut_fourth_gate_Lore"								"To open these gates, the Samurai had to visit the most amazing places in this world."
 
        "DOTA_Tooltip_ability_juggernaut_fifth_gate"	"The Gate of the Limit"
-       "DOTA_Tooltip_ability_juggernaut_fifth_gate_Description"	"Третьи врата из семи доступных Самураю. Открывает способность Spiritual Step, которая позволяет перемещаться к врагу через духовный портал, при этом нанося DAMAGE всем, кто попадется на пути."
-		"DOTA_Tooltip_ability_juggernaut_fifth_gate_Lore"								"Эти врата Самурай открыл только с помощью изнурительных тренировок. Учитель не щадил своего ученика, заставлял его бегать 10 км, 100 раз отжиматься, 100 раз делать пресс и 100 раз приседать, КАЖДЫЙ ДЕНЬ!"
+       "DOTA_Tooltip_ability_juggernaut_fifth_gate_Description"	"The third gate of the seven available to the Samurai. Unlocks the Spiritual Step ability, which allows you to move to the enemy through a spiritual portal, while causing DAMAGE to everyone who gets in the way."
+		"DOTA_Tooltip_ability_juggernaut_fifth_gate_Lore"								"The Samurai opened these gates only with the help of grueling training. The teacher did not spare his student, forced him to run 10 km, do push-ups 100 times, do abs 100 times and squat 100 times, EVERY DAY!"
 
 
        "DOTA_Tooltip_ability_juggernaut_second_gate"	"The Gate of the Shadows"
-       "DOTA_Tooltip_ability_juggernaut_second_gate_Description"	"Четвёртые врата из семи доступных Самураю. Открывает способность Hidden in shadow, которая позволяет прятаться в собственной тени."
-		"DOTA_Tooltip_ability_juggernaut_second_gate_Lore"								"Врата теней требуют большей концентрации, поэтому чтобы овладеть ими, нужно много медитировать."
+       "DOTA_Tooltip_ability_juggernaut_second_gate_Description"	"The fourth gate of the seven available to the Samurai. Unlocks the Hidden in shadow ability, which allows you to hide in your own shadow."
+		"DOTA_Tooltip_ability_juggernaut_second_gate_Lore"								"The Gates of shadows require more concentration, so to master them, you need to meditate a lot."
 
        "DOTA_Tooltip_ability_juggernaut_third_gate"	"The Gate of the Pain"
-       "DOTA_Tooltip_ability_juggernaut_third_gate_Description"	"Пятые врата из семи доступных Самураю. Открывает способность Omnislash, которая позволяет обрушить шквал ударов на врага."
-		"DOTA_Tooltip_ability_juggernaut_third_gate_Lore"								"Только всплеск сильных негативных эмоций поможет открыть Врата Боли."
+       "DOTA_Tooltip_ability_juggernaut_third_gate_Description"	"The fifth gate of the seven available to the Samurai. Unlocks the Omnislash ability, which allows you to unleash a barrage of blows on the enemy."
+		"DOTA_Tooltip_ability_juggernaut_third_gate_Lore"								"Only a surge of strong negative emotions will help open the Gates of Pain."
 
        "DOTA_Tooltip_ability_juggernaut_sixth_gate"	"The Gate of the Life"
-       "DOTA_Tooltip_ability_juggernaut_sixth_gate_Description"	"Шестые врата из семи доступных Самураю. Открывает способность Miracle, которая позволяет владельцу не умирать."
-		"DOTA_Tooltip_ability_juggernaut_sixth_gate_Lore"								"Жизнь - это самое дорогое, что у нас есть, и только на грани смерти мы можем осознать это. Врата открываются после того, как ты был на волоске от смерти."
+       "DOTA_Tooltip_ability_juggernaut_sixth_gate_Description"	"The sixth gate of the seven available to the Samurai. Unlocks the Miracle ability, which allows the owner not to die."
+		"DOTA_Tooltip_ability_juggernaut_sixth_gate_Lore"								"Life is the most precious thing we have, and only on the verge of death can we realize this. The gate opens after you were on the verge of death."
   
          "DOTA_Tooltip_ability_juggernaut_seventh_gate"	"<font color='#ff0000'>The Gate of the Deaths</font>"
        "DOTA_Tooltip_ability_juggernaut_seventh_gate_Description"	"<font color='#ff0000'>Последние врата из семи доступных Самураю. Открывает способность Death, которая дарует владельцу неземную мощь, но взамен забирает жизнь...</font>"
