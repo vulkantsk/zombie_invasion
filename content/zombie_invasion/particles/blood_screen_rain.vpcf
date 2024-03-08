@@ -71,8 +71,8 @@
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
 				m_nVectorComponent = 0
-				m_flRandomMin = 14.0
-				m_flRandomMax = 24.0
+				m_flRandomMin = 20.0
+				m_flRandomMax = 39.0
 				m_bHasRandomSignFlip = false
 				m_nRandomSeed = -1
 				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
@@ -130,8 +130,8 @@
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
 				m_nVectorComponent = 0
-				m_flRandomMin = 300.0
-				m_flRandomMax = 300.0
+				m_flRandomMin = 0.0
+				m_flRandomMax = 3.0
 				m_bHasRandomSignFlip = false
 				m_nRandomSeed = -1
 				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
