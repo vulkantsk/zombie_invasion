@@ -50,5 +50,29 @@ end
 function modifier_hommer_cry:OnCreated()
 	if IsServer() then	
 		self.numbAttack = 0
+		self:StartIntervalThink(1)
 	end
+end
+
+
+function modifier_hommer_cry:OnIntervalThink()
+if  self:GetCaster():GetUnitName() == "NPC_base_jitel" and self:GetCaster():HasAbility("quest_homer_fin") then
+	self:GetCaster():RemoveAbility("quest_homer_fin")
+		if Difficulter == 1  then 
+      		EndGame:GoodEnd()
+  		elseif Difficulter == 1.25  then 
+  			EndGame:GoodEnd()
+		elseif Difficulter == 1.5 then
+		     EndGame:IsItEndGame()
+			GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		elseif  Difficulter == 3 then
+			Boss_killed = Boss_killed + 1 
+			EndGame:DemonEnd()
+		elseif Difficulter == 6 then
+			Boss_killed = Boss_killed + 1 
+			EndGame:ImpossibleEnd()
+	     end
+
+	end	
+
 end

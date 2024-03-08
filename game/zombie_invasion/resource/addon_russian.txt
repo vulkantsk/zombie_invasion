@@ -161,6 +161,16 @@
 	   "begining_2"                                                 "<font color='#c10020'>Но в этом и заключается ваша главная ошибка</font>"
 	   "beginend"                                                 "<font color='#c10020'>Я набрался сил и дам вам пизды :3</font>"
 
+	   "ending_1"                                                 "со"
+	   "ending_2"                                                 "си"
+	   "ending_3"                                                 "те"
+	   "ending_4"                                                 "х"
+	   "ending_5"                                                 "у"
+	   "ending_6"                                                 "й"
+	   "ending_7"                                                 "ре"
+	   "ending_8"                                                 "бя"
+	   "ending_9"                                                 "та"
+
 
 	   "begining_fun1"													"<font color='#c10020'>ЗРЯ ВЫ РЕШИЛИ ДОНИМАТЬ МЕНЯ СВОИМИ "ГДЕ ОБНОВА!?"</font>"
 	   "begining_fun2"													"<font color='#c10020'>СЕЙЧАС Я ПОКАЖУ ВАМ СВОЁ ТВОРЕНИЕ"</font>"

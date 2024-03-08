@@ -2075,6 +2075,36 @@
 		{
         }
 	}
+	"item_warlock_head"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"AbilityTextureName"			"dis_magic"
+
+		// Behavior
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+ 
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
+		"ItemCost"                      "0" 
+		"ItemDroppable"					"0" 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"					"0" 
+		"ItemKillable"					"0" 
+		"ItemInitialCharges"			"0"	
+		"ItemStackable" 				"0"
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"	
+		"AbilitySpecial"
+		{
+        }
+	}
 	
 	"item_edgard_history_number_1"
 	{

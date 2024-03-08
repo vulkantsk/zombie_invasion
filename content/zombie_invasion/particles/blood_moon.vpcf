@@ -1,0 +1,125 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf59:version{6cf97bfa-52a0-441a-87f0-856fb7aaa129} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_BoundingBoxMin = [ -16384.0, -16384.0, -16384.0 ]
+	m_BoundingBoxMax = [ 16384.0, 16384.0, 16384.0 ]
+	m_flCullRadius = -1.0
+	m_flConstantRadius = 7.0
+	m_ConstantColor = [ 229, 92, 140, 255 ]
+	m_bShouldSort = false
+	m_bScreenSpaceEffect = true
+	m_nBehaviorVersion = 4
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_flStartTime = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.15
+			}
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 11.0
+				m_flRandomMax = 11.35
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+			}
+			m_nOutputField = 1
+		},
+		{
+			_class = "C_INIT_CreateWithinSphereTransform"
+			m_LocalCoordinateSystemSpeedMax = [ 256.0, 0.0, 0.0 ]
+			m_LocalCoordinateSystemSpeedMin = [ 256.0, 0.0, 0.0 ]
+			m_vecDistanceBias = [ 1.0, 1.0, 0.0 ]
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.1
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.25
+			m_flEndScale = 0.0
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_flOverbrightFactor = 10.0
+			m_bDisableOperator = true
+			m_vecTexturesInput = 
+			[
+				{
+					m_hTexture = resource:"materials/particle/yellowflare2.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/econ/events/killbanners/screen_killbanner_compendium14_firstblood_drips_b.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/killbanners/screen_killbanner_compendium14_firstblood_splatter1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/killbanners/screen_killbanner_compendium14_firstblood_spurt2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/black_blood_screen.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/blood_rain_screen.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/blood_screen_blood.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/blood_screen_rain.vpcf"
+		},
+	]
+}

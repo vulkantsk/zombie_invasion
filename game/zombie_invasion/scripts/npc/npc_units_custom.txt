@@ -1643,24 +1643,19 @@
 {
 // General
 //--------------------------------------------------------------—
-    "BaseClass" "npc_dota_tower"
+    "BaseClass" "npc_dota_creature"
     "Model" "models/heroes/shopkeeper_dire/shopkeeper_dire.vmdl"
-    "ModelScale" "1"
-    "Level" "10"
-    "HealthBarOffset" "140"
-    "HasInventory" "0"
-    "ConsideredHero" "0"
-    "IsNeutralUnitType" "1"
-    "HasInventory" "1"
-    "IsAncient" "1"
+    "Level"						"10"
+	"HealthBarOffset"			"140"
+	"HasInventory"				"0"
+	"ConsideredHero"			"0"
 
-"UnitLabel" "NPC_base_jitel"
 
 // Abilities
 //--------------------------------------------------------------—
-    "Ability1" "homer_aura"
+    "Ability1" "quest_homer"
     "Ability2" "hommer_cry"
-    "Ability3" "neutral_spell_immunity"
+    "Ability3" "homer_aura"
     "Ability4" ""
 
 
@@ -1709,7 +1704,7 @@
 //--------------------------------------------------------------—
     "TeamName" "DOTA_TEAM_GOODGUYS"
     "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
     "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 
     "Creature"
