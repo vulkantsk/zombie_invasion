@@ -634,7 +634,6 @@ end
  
  
 function InvasionMode:InvasionGameStart()
-	CustomGameEventManager:Send_ServerToAllClients("edgard_disable_exit", {})
  	InvasionMode:ThemeMusic()
  
 	InvasionMode:NextNight()
