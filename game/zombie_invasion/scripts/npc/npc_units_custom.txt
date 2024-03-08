@@ -1639,7 +1639,7 @@
 		}	
 	}
 
-	"npc_base"
+	"NPC_base_jitel"
 {
 // General
 //--------------------------------------------------------------—
@@ -1654,7 +1654,7 @@
     "HasInventory" "1"
     "IsAncient" "1"
 
-"UnitLabel" "npc_base"
+"UnitLabel" "NPC_base_jitel"
 
 // Abilities
 //--------------------------------------------------------------—

@@ -556,7 +556,7 @@ end
  
 function InvasionMode:NightTimer(time)
 	local timeLeft = time  
-	local putin = Entities:FindByName(nil, 'NPC_base') 
+	local putin = Entities:FindByName(nil, 'NPC_base_jitel') 
 	Timers:CreateTimer(1.0, function()
 		timeLeft = timeLeft - 1	
 		if Boss_killed == 1  then 
@@ -1080,7 +1080,7 @@ function InvasionMode:InvasionEntityKilled (data)
 	end
 	end
 
-	if killedEntity:GetUnitName() == "NPC_base" then
+	if killedEntity:GetUnitName() == "NPC_base_jitel" then
 		if Boss_killed >= 1 then 
 			EndGame:ImposHomer()
 		else 
@@ -1123,7 +1123,7 @@ EndGame:DemonEnd()
 
 	if killedEntity:GetUnitName() == "npc_EdgardBs" then
     		 local jitels = {
-    			"crystalka","deny","kunkka","old_men","miner","lina","guard","NPC_base","edgard_ed","glavniykit","roflkit1","roflkit2","roflkit3","roflkit4","gurdik"
+    			"NPC_base_jitel"
    		 }
  
                for i,name in ipairs(jitels) do
