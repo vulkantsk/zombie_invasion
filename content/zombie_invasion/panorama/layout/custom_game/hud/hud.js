@@ -13,28 +13,14 @@ var time = '00:00';
 //--init
 (function () {
   GameEvents.Subscribe('zpr_show_quest', OnShowQuest);
-  //-- GameEvents.Subscribe("zpr_time", OnTime);
-  $.Schedule(0.3, function () {
-    uhax(hax());
-  });
+ GameEvents.Subscribe("zpr_time", OnTime);
+ 
 })();
 //--
-
-//hack
-function hax() {
   var parent = $.GetContextPanel().GetParent();
   while (parent.id != 'Hud') parent = parent.GetParent();
 
-  return parent;
-}
-function uhax(parent) {
-  //-- parent.FindChildTraverse("GameTime").text = time;
-
-  $.Schedule(0.5, function () {
-    uhax(parent);
-  });
-}
-//
+ 
 
 //--CGE
 function OnShowQuest(data) {
@@ -67,7 +53,20 @@ function OnShowQuest(data) {
 }
 
 function OnTime(data) {
-  time = SecondsToMinsNSecs(data['time']);
+     const timePanel = parent.FindChildTraverse("TimeOfDay")
+   timePanel.hittest = false
+     const timePanelText= parent.FindChildTraverse("GameTime")
+
+       if (data.isDevil) {
+    time = "Edgard";
+  } else {
+    time = "66:66";
+  }
+   timePanelText.text = time;
+   timePanelText.style.color = "#bf0000"
+   timePanelText.style.textShadow = "20px 20px 80px 3.0 #333333b0"
+
+ 
 }
 //--
 

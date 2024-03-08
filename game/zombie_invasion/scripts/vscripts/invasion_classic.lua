@@ -1094,7 +1094,22 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_warlock_boss" then
 		StopGlobalSound("GigaChad Theme")
-	end
+		if Difficulter == 1  then 
+      		EndGame:GoodEnd()
+  		elseif Difficulter == 1.25  then 
+  			EndGame:GoodEnd()
+		elseif Difficulter == 1.5 then
+		     EndGame:IsItEndGame()
+			GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		elseif  Difficulter == 3 then
+Boss_killed = Boss_killed + 1 
+EndGame:DemonEnd()
+		elseif Difficulter == 6 then
+		Boss_killed = Boss_killed + 1 
+	EndGame:ImpossibleEnd()
+	     end
+
+	end	
 	 
 
 	if killedEntity:GetUnitName() == "npc_skelet_boss" and killedEntity:IsReincarnating() == false then
@@ -1776,9 +1791,60 @@ function InvasionMode:RefreshBlackShop(data)
 	end	
 end
 
+function InvasionMode:RefreshHeroes()
+	for i=0, PlayerResource:GetPlayerCount()-1 do 
+		local player = PlayerResource:GetPlayer(i)
+		local hero = player:GetAssignedHero()
+
+		if hero:IsAlive() then 
+			hero:ForceKill(false)
+		end
+
+		local newHero = PlayerResource:ReplaceHeroWith(i, "npc_dota_hero_omniknight", 0, 0) 
+		newHero:RespawnHero(false, false) 
+
+		newHero:SetWeather()
+	end
+
+end
+
+function InvasionMode:BeginEdgardTimer()
+	EmitGlobalSound("edgard_end")
+ 	InvasionMode:RefreshHeroes()
+	local time = 0
+	local times = true
+	local edgardes = {}
+	Timers:CreateTimer(1.0, function()
+		time = time + 1	
+		if times then 
+			CustomGameEventManager:Send_ServerToAllClients("zpr_time", {})
+			times = false
+		else 
+			CustomGameEventManager:Send_ServerToAllClients("zpr_time", {isDevil = true})
+			times = true
+		end
+
+ 		GameRules:SetTimeOfDay(0.3) 
+ 		
+ 		if time == 30 then 
+ 			local point = Entities:FindByName(nil, "boss_spawner_3"):GetAbsOrigin()
+			edgardes[0] = CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+			edgardes[0]:SetModelScale(2)
+ 		elseif time == 35 then 
+			EmitGlobalSound("edgard_end")
+			InvasionMode:RefreshHeroes()
+			UTIL_Remove(edgardes[0])
+
+ 		end
+
+
+		return 1.0
+	end)
+
+end
 
 function InvasionMode:EdgardEnd()
-InvasionMode:SpawnBoss("npc_boss_pig_pet_wave", 1)
+
 end
 
 function InvasionMode:EdgardQuestComplete()
