@@ -699,5 +699,67 @@ function CDOTA_BaseNPC:SetWeather()
 		ParticleManager:CreateParticleForPlayer("particles/blood_screen_rain.vpcf", PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
 		return 3
 	end)
-	ParticleManager:CreateParticleForPlayer("particles/rain_fx/econ_weather_aurora_screen.vpcf", PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
+end
+
+function CDOTA_BaseNPC:BloodOnFace()
+	ParticleManager:CreateParticleForPlayer("particles/blood_on_face.vpcf", PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
+	ParticleManager:CreateParticle("particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf", PATTACH_ABSORIGIN_FOLLOW, self)
+end
+ 
+function DoWithAllPlayer(callback) 
+	for i=0, PlayerResource:GetPlayerCount()-1 do 
+		local player = PlayerResource:GetPlayer(i)
+		callback(player)
+	end
+end 
+
+function DoWithRandomPlayer(callback) 
+	local random = RandomInt(0, PlayerResource:GetPlayerCount() - 1)
+	local player = PlayerResource:GetPlayer(random)
+	callback(player)
+end 
+
+function KillRandomPlayer()
+	DoWithRandomPlayer(function(player)
+		local hero = player:GetAssignedHero()
+
+		if hero:IsAlive() then 
+			hero:ForceKill(false)
+			hero:BloodOnFace()
+			EmitGlobalSound("massive_blood")
+		else 
+			local isSomebodyAlive = false
+			DoWithAllPlayer(function(player)
+				local hero = player:GetAssignedHero()
+
+				if hero:IsAlive() then 
+					isSomebodyAlive = true
+				end
+			end) 
+			if isSomebodyAlive then KillRandomPlayer() end
+		end
+	end)
+end
+
+
+function RespawnAllPlayers()
+	DoWithAllPlayer(function(player)
+		local hero = player:GetAssignedHero()
+
+		if not hero:IsAlive() then 
+			hero:RespawnHero(false, false)
+ 		end
+	end)
+end
+
+function KillAllPlayers()
+	DoWithAllPlayer(function(player)
+		local hero = player:GetAssignedHero()
+
+		if hero:IsAlive() then 
+			hero:ForceKill(false)
+			EmitGlobalSound("massive_blood")
+			hero:BloodOnFace()
+ 		end
+	end)
 end

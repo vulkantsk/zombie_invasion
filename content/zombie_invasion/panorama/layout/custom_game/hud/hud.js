@@ -287,3 +287,20 @@ GameEvents.Subscribe("edgard_disable_exit", () => {
     wakeUpCicle()
  
 })
+
+GameEvents.Subscribe("edgard_end", () => {
+    dotaHud.GetChild(0).style.visibility = "collapse"
+    let margin = -50
+    spamLaugh(margin)
+})
+ 
+const spamLaugh = (margin) => {
+      const label = $.CreatePanel("Label", dotaHud, "", { 
+        text: "АХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХААХАХАХАХАХАХХАХА",
+        class: "text__edgard",
+        style: `font-size: 80px;ui-scale:200%;margin-top:${margin}px;margin-left: ${Math.floor(Math.random() * (60 - -30)) + -30}px;`
+    }); 
+      margin += 15
+
+    $.Schedule(0.03, () => spamLaugh(margin))
+}

@@ -467,7 +467,7 @@ end
     end
   )
 end
-
+isEdgardBeggin = false
 function InvasionMode:onReconnected(event)
 	if isEdgardEnd ~= 1 then return nil end 
 
@@ -483,7 +483,10 @@ function InvasionMode:onReconnected(event)
 		end
 	end 
 
-	if begginEdgard then InvasionMode:EdgardEnd() end
+	if begginEdgard and isEdgardBeggin == false then 
+		isEdgardBeggin = true
+		InvasionMode:EdgardEnd()
+	end
 end
 
 
@@ -1823,17 +1826,66 @@ function InvasionMode:BeginEdgardTimer()
 			CustomGameEventManager:Send_ServerToAllClients("zpr_time", {isDevil = true})
 			times = true
 		end
-
+ 
  		GameRules:SetTimeOfDay(0.3) 
- 		
- 		if time == 30 then 
+ 		if time == 2 then 
+ 		elseif time == 30 then 
  			local point = Entities:FindByName(nil, "boss_spawner_3"):GetAbsOrigin()
 			edgardes[0] = CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
 			edgardes[0]:SetModelScale(2)
+			EmitGlobalSound("scary_sound_edgard_2")
  		elseif time == 35 then 
 			EmitGlobalSound("edgard_end")
 			InvasionMode:RefreshHeroes()
 			UTIL_Remove(edgardes[0])
+		elseif time == 40 then 
+			 EmitGlobalSound("scary_sound_edgard_3")
+		elseif time == 50 then 
+			KillRandomPlayer()
+		elseif time == 60 then 
+			KillRandomPlayer()
+		elseif time == 65 then 
+			KillRandomPlayer()
+		elseif time == 68 then 
+			KillRandomPlayer()
+		elseif time == 70 then 
+			KillRandomPlayer()
+		elseif time == 75 then 
+			RespawnAllPlayers()
+		elseif time == 90 then 
+			DoWithAllPlayer(function(player) 
+				local hero = player:GetAssignedHero()
+
+				hero:AddNewModifier(hero, nil, "modifier_fear", {})
+			end)
+		elseif time == 100 then 
+			RespawnAllPlayers()
+		elseif time == 115 then 
+			KillAllPlayers()
+			RespawnAllPlayers()
+ 			local point = Entities:FindByName(nil, "final_point"):GetAbsOrigin()
+			edgardes[1] = CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+			edgardes[1]:SetModelScale(2)
+		elseif time == 118 then 
+			 local point = Entities:FindByName(nil, "edgerd_end_respawn"):GetAbsOrigin()
+
+			DoWithAllPlayer(function(player)
+				local hero = player:GetAssignedHero()
+
+       			 parent:SetRespawnPosition( point )
+			end)	
+			KillAllPlayers()
+			RespawnAllPlayers()
+			DoWithAllPlayer(function(player)
+				local hero = player:GetAssignedHero()
+
+				hero:AddNewModifier(hero, nil, "modifier_stunnedt", {})
+			end)	
+
+			edgardes[2] = CreateUnitByName("npc_Edgard", point + RandomVector( 280 ), true, nil, nil, DOTA_TEAM_BADGUYS)
+			edgardes[2]:SetModelScale(2)
+			CustomGameEventManager:Send_ServerToAllClients("edgard_end", {})
+
 
  		end
 
@@ -1844,7 +1896,7 @@ function InvasionMode:BeginEdgardTimer()
 end
 
 function InvasionMode:EdgardEnd()
-
+	InvasionMode:BeginEdgardTimer()
 end
 
 function InvasionMode:EdgardQuestComplete()
