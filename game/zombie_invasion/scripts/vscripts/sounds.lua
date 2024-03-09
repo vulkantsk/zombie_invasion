@@ -45,6 +45,9 @@ Sounds = Sounds or {
   	 	["Kiesza - Hideaway"] = 92,
   	 	["John  Newman - Fire In Me"] = 95,
   	 	["iSpy - KYLE feat. Lil Yachty"] = 116,
+  	 	["HammAli & Navai - Пустите меня на танцпол"] = 250,
+
+  	 	["Feduk - Моряк"] = 168,
 		
  
  

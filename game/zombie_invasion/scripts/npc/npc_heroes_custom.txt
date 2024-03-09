@@ -23,8 +23,8 @@
 		"Ability16"		"special_bonus_spell_lifesteal_20"
 		"Ability17"		"special_bonus_hp_regen_80"
 		"ArmorPhysical"		"9"
-		"AttackDamageMin"		"27"
-		"AttackDamageMax"		"33"
+		"AttackDamageMin"		"56"
+		"AttackDamageMax"		"64"
 		"BaseAttackSpeed"		"70"
 		"AttributeBaseStrength"		"20"
 		"AttributeStrengthGain"		"2.7"
@@ -90,8 +90,8 @@
 		"Ability16"					"special_bonus_unique_hoodwink_acorn_shot_charges"
 		"Ability17"					"special_hoodwink"
 		"ArmorPhysical"		"4"
-		"AttackDamageMin"		"24"
-		"AttackDamageMax"		"30"
+		"AttackDamageMin"		"45"
+		"AttackDamageMax"		"52"
 		"AttackRate"		"2.000000"
 		"BaseAttackSpeed"	"145"
 		"AttackAnimationPoint"		"0.560000"
@@ -239,8 +239,8 @@
 		"Ability15"		"special_bonus_unique_blood_hunter_sacrifice_revenge_duration"
 		"Ability16"		"special_bonus_unique_blood_hunter_pure_damage_bonus"
 		"Ability17"		"special_bonus_unique_blood_hunter_duration_blood"
-		"AttackDamageMin"		"33"
-		"AttackDamageMax"		"36"
+		"AttackDamageMin"		"44"
+		"AttackDamageMax"		"48"
 		"AttackRate"		"1.600000"
 		"BaseAttackSpeed"	"65"
 		"AttackRange"		"150"
@@ -273,8 +273,8 @@
 		"Ability16"		"special_bonus_unique_assassin_blur_agility"
 		"Ability17"		"special_bonus_unique_assassin_stifling_dagger_triple"
 		"ArmorPhysical"		"4"
-		"AttackDamageMin"		"30"
-		"AttackDamageMax"		"32"
+		"AttackDamageMin"		"71"
+		"AttackDamageMax"		"80"
 		"AttackRate"		"1.400000"
 		"BaseAttackSpeed"	"110"
 		"AttackRange"		"150"
@@ -307,8 +307,8 @@
 		"Ability17"		"special_bonus_unique_rubick_meditation"
 		"Ability18"		"special_bonus_unique_rubick_5"  
 
-		"AttackDamageMin"			"13"										// Damage range min.
-		"AttackDamageMax"			"13"
+		"AttackDamageMin"			"35"										// Damage range min.
+		"AttackDamageMax"			"44"
  
 
 		// Armor
@@ -335,7 +335,7 @@
 
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"				"75"									// Base health.
+		"StatusHealth"				"124"									// Base health.
 		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
 		"StatusMana"				"150"											// Base mana.
 		"StatusManaRegen"			"2"									// Mana regeneration rate.
@@ -361,8 +361,8 @@
         "Ability16"       "special_bonus_unique_smaug_incandescent_fury"
         "Ability17"       "special_bonus_unique_smaug_fire_punishment"
         "ArmorPhysical"        "12"
-        "AttackDamageMin"        "7"
-        "AttackDamageMax"        "14"
+        "AttackDamageMin"        "27"
+        "AttackDamageMax"        "31"
         "AttackRate"        "1.900000"
         "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
         "AttributeBaseStrength"        "5"
@@ -547,8 +547,8 @@
 
 "ArmorPhysical"		"9"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"26"
-		"AttackDamageMax"		"30"
+		"AttackDamageMin"		"67"
+		"AttackDamageMax"		"71"
 		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.360000"
 		"AttackAcquisitionRange"		"600"
@@ -761,7 +761,7 @@
 		"AttributeBaseStrength"		"16"
 		"AttributeStrengthGain"		"1.7000"
 
-		"AttackRate"		"1.300000"
+		"AttackRate"		"1.4"
 		"AttackRange"				"200"							
 "Ability1" "jugger"
 "Ability2" "jugger_2"
@@ -827,8 +827,8 @@
 
 		"ArmorPhysical"		"12"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"26"
-		"AttackDamageMax"		"30"
+		"AttackDamageMin"		"45"
+		"AttackDamageMax"		"55"
 		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.360000"
 		"AttackAcquisitionRange"		"600"
@@ -894,9 +894,9 @@
 
 		"ArmorPhysical"		"12"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"44"
-		"AttackDamageMax"		"56"
-		"AttackRate"		"1.900000"
+		"AttackDamageMin"		"56"
+		"AttackDamageMax"		"61"
+		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.360000"
 		"AttackAcquisitionRange"		"600"
 		"AttackRange"		"190"
@@ -918,7 +918,7 @@
         "override_hero"                "npc_dota_hero_bristleback"
         "Role"                        "Durable,Nuker"
         "Rolelevels"                "2,1"
-		"ArmorPhysical"		"4"
+		"ArmorPhysical"		"6"
 
         "AttackRange"                "200"
         "Ability1"                    "bristleback_viscous_goo_custom"
@@ -937,15 +937,15 @@
         "Ability17"        "special_bonus_magic_resistance_35"
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"12"
-		"AttackDamageMax"		"20"
+		"AttackDamageMin"		"34"
+		"AttackDamageMax"		"39"
 		"AttackRate"		"1.900000"
 		"AttackAnimationPoint"		"0.360000"
 		"AttackAcquisitionRange"		"600"
 		"AttackRange"		"190"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"24"
-		"AttributeStrengthGain"		"2.20000"
+		"AttributeBaseStrength"		"31"
+		"AttributeStrengthGain"		"3.20000"
 		"AttributeBaseAgility"		"6"
 		"AttributeAgilityGain"		"1.200000"
 		"StatusMana"					"460"	
@@ -1009,8 +1009,8 @@
 		"Ability17"		"special_bonus_unique_luna_2"
 
 		"ArmorPhysical"		"7"
-		"AttackDamageMin"		"26"
-		"AttackDamageMax"		"32"
+		"AttackDamageMin"		"61"
+		"AttackDamageMax"		"72"
 		"AttackRate"		"1.450000"
 		"AttackRange"		"330"
 		"AttributeBaseStrength"		"14"
@@ -1223,9 +1223,9 @@
 		"Ability16"		"special_bonus_unique_sniper_take_aim_chance"
 		"Ability17"		"special_bonus_unique_sniper_shrapnel_damage"
 		"ArmorPhysical"		"-1"
-		"AttackDamageMin"		"13"
-		"AttackDamageMax"		"19"
-		"AttackRate"		"1.8500000"
+		"AttackDamageMin"		"31"
+		"AttackDamageMax"		"42"
+		"AttackRate"		"1.6500000"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"9"
 		"AttributeStrengthGain"		"1.0000"
@@ -1273,11 +1273,11 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 
-		"AttributeBaseStrength"		"18"										// Base strength
+		"AttributeBaseStrength"		"24"										// Base strength
 		"AttributeStrengthGain"		"3.6"										// Strength bonus per level.
-		"AttributeBaseIntelligence"	"23"										// Base intelligence
+		"AttributeBaseIntelligence"	"29"										// Base intelligence
 		"AttributeIntelligenceGain"	"2.2"    									// Intelligence bonus per level.
-		"AttributeBaseAgility"		"13"										// Base agility
+		"AttributeBaseAgility"		"19"										// Base agility
 		"AttributeAgilityGain"		"2.2"										// Agility bonus per level.
 
 		// Movement
@@ -1288,7 +1288,7 @@
 
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"StatusHealth"				"125"									// Base health.
+		"StatusHealth"				"245"									// Base health.
 		"StatusHealthRegen"			"1.0"									// Health regeneration rate.
 		"StatusMana"				"150"											// Base mana.
 		"StatusManaRegen"			"2"									// Mana regeneration rate.
@@ -1594,24 +1594,24 @@
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
-		"AttackDamageMin"			"13"										// Damage range min.
-		"AttackDamageMax"			"13"
+		"AttackDamageMin"			"31"										// Damage range min.
+		"AttackDamageMax"			"37"
  
  
 
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"-1"									// Physical protection.
+		"ArmorPhysical"				"-4"									// Physical protection.
 		"MagicalResistance"			"25"									// Magical protection (percentage).
 
  
-		"AttributeBaseStrength"		"14"										// Base strength
+		"AttributeBaseStrength"		"19"										// Base strength
 		"AttributeStrengthGain"		"1.2"										// Strength bonus per level.
-		"AttributeBaseIntelligence"	"25"										// Base intelligence
-		"AttributeIntelligenceGain"	"2.7"										// Intelligence bonus per level.
-		"AttributeBaseAgility"		"11"										// Base agility
-		"AttributeAgilityGain"		"1.3"										// Agility bonus per level.
+		"AttributeBaseIntelligence"	"49"										// Base intelligence
+		"AttributeIntelligenceGain"	"3.1"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.4"										// Agility bonus per level.
 
     }
 
@@ -1635,8 +1635,8 @@
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
-		"AttackDamageMin"			"31"										// Damage range min.
-		"AttackDamageMax"			"42"										// Damage range max.
+		"AttackDamageMin"			"71"										// Damage range min.
+		"AttackDamageMax"			"82"										// Damage range max.
 		"AttackRate"				"1.4"									// Speed of attack.
 		"ProjectileSpeed"			"1550"									// Speed of projectile.
 		"AttackAnimationPoint"		"0.35"
@@ -1650,12 +1650,12 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"24"										// Base strength
-		"AttributeStrengthGain"		"1.8"										// Strength bonus per level.
+		"AttributeBaseStrength"		"30"										// Base strength
+		"AttributeStrengthGain"		"2.8"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"14"										// Base intelligence
-		"AttributeIntelligenceGain"	"1.5"										// Intelligence bonus per level.
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
 		"AttributeBaseAgility"		"16"										// Base agility
-		"AttributeAgilityGain"		"1.5"										// Agility bonus per level.
+		"AttributeAgilityGain"		"1.9"										// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -1699,14 +1699,14 @@
 		"AttackDamageMax"		"31"
 
 		"AttributeBaseStrength"		"21"
-		"AttributeStrengthGain"		"2.100000"
+		"AttributeStrengthGain"		"1.100000"
 		"AttributeBaseIntelligence"		"19"
-		"AttributeIntelligenceGain"		"2.600000"
-		"AttributeBaseAgility"		"14"
-		"AttributeAgilityGain"		"1.0"
+		"AttributeIntelligenceGain"		"1.600000"
+		"AttributeBaseAgility"		"12"
+		"AttributeAgilityGain"		"1.2"
 		"MovementSpeed"		"260"
 		"BaseAttackSpeed"		"70"
-		"AttackRate"		"1.550000"
+		"AttackRate"		"2.1"
  
 	}
 
@@ -1728,10 +1728,10 @@
 		"Ability16"		"special_bonus_unique_slark_agi_gain"
 		"Ability17"		"special_bonus_unique_slark_shadow_bonus_bat"
 		"ArmorPhysical"		"2"
-		"AttackDamageMin"		"32"
-		"AttackDamageMax"		"38"
-		"BaseAttackSpeed"		"80"
-		"AttackRate"		"1.350000"
+		"AttackDamageMin"		"14"
+		"AttackDamageMax"		"21"
+		"BaseAttackSpeed"		"122"
+		"AttackRate"		"1.6"
 		"AttributeBaseStrength"		"21"
 		"AttributeStrengthGain"		"2.400000"
 		"AttributeBaseIntelligence"		"17"
@@ -1759,16 +1759,16 @@
 		"Ability16"		"special_bonus_attack_damage_100"
 		"Ability17"		"special_bonus_unique_drow_range_marksmanship"
 		"ArmorPhysical"		"-2"
-		"AttackDamageMin"		"29"
-		"AttackDamageMax"		"36"
+		"AttackDamageMin"		"34"
+		"AttackDamageMax"		"41"
 		"BaseAttackSpeed"		"120"
 		"AttackRate"		"1.400000"
 		"AttributeBaseStrength"		"21"
-		"AttributeStrengthGain"		"2.100000"
+		"AttributeStrengthGain"		"1.4"
 		"AttributeBaseIntelligence"		"0"	
-		"AttributeIntelligenceGain"		"2.100000"
+		"AttributeIntelligenceGain"		"2.400000"
 		"AttributeBaseAgility"		"16"
-		"AttributeAgilityGain"		"3.100000"
+		"AttributeAgilityGain"		"4.2"
 		"StatusHealthRegen"		"0"
 		"MovementSpeed"		"320"	
 	}
@@ -1810,8 +1810,8 @@
 
 		"ArmorPhysical"		"-8"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"42"
-		"AttackDamageMax"		"48"
+		"AttackDamageMin"		"51"
+		"AttackDamageMax"		"62"
 		"AttackRate"		"1.400000"
 		"AttackRange"		"175"
 		"AttributeBaseStrength"		"12"
@@ -1857,8 +1857,8 @@
 		"AttributeStrengthGain"	"2.4"
 		"AttributeIntelligenceGain"	"2.1"
 		"AttributeAgilityGain"	"3.1"
-		"AttackDamageMin"	"46"
-		"AttackDamageMax"	"51"
+		"AttackDamageMin"	"51"
+		"AttackDamageMax"	"62"
 		"ItemSlots"
   		{ }
 	}
@@ -1884,8 +1884,8 @@
 		"Ability17"		"special_bonus_magic_resistance_25"
 		"ArmorPhysical"		"-1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"24"
-		"AttackDamageMax"		"32"
+		"AttackDamageMin"		"34"
+		"AttackDamageMax"		"38"
 		"AttackRate"		"1.5"
 		"BaseAttackSpeed"		"100"
 		"AttackAnimationPoint"		"0.35"
@@ -1947,7 +1947,7 @@
 		"Ability15"		"special_bonus_unique_sf_devour_cooldown"
 		"Ability16"		"special_bonus_unique_sf_necrom_life"
 		"Ability17"		"special_bonus_unique_sf_necrom_damage"
-		"ArmorPhysical"		"-12"
+		"ArmorPhysical"		"-8"
 		"AttackDamageMin"		"51"
 		"AttackDamageMax"		"59"
 		"AttackRate"		"1.5"
@@ -2063,22 +2063,22 @@
         "Ability15"        "special_bonus_unique_silencer_storm_duration"
         "Ability16"        "special_bonus_unique_silencer_intellect_damage_pct"
         "Ability17"        "special_bonus_unique_silencer_glaives_bounces"
-		"ArmorPhysical"		"2"
+		"ArmorPhysical"		"4"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"37"
-		"AttackDamageMax"		"41"
+		"AttackDamageMin"		"55"
+		"AttackDamageMax"		"61"
 		"AttackRate"		"1.400000"
 		"AttackRange"		"521"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"18"
-		"AttributeStrengthGain"		"1.400000"
-		"AttributeBaseAgility"		"14"
-		"AttributeAgilityGain"		"2.200000"
-		"AttributeBaseIntelligence"		"14"
-		"AttributeIntelligenceGain"		"0.500000"
+		"AttributeBaseStrength"		"9"
+		"AttributeStrengthGain"		"1.2"
+		"AttributeBaseAgility"		"18"
+		"AttributeAgilityGain"		"1.6"
+		"AttributeBaseIntelligence"		"21"
+		"AttributeIntelligenceGain"		"2.7"
 		"MovementSpeed"		"330"
 		"MovementTurnRate"		"0.50000"
-		"StatusHealthRegen"		"4.5"
+		"StatusHealthRegen"		"1.5"
  
 	}
 	"npc_dota_hero_templar_assassin"
@@ -2099,8 +2099,8 @@
         "Ability17"        "special_bonus_unique_temp_ability_bedlam"
 		"ArmorPhysical"		"2"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"37"
-		"AttackDamageMax"		"41"
+		"AttackDamageMin"		"51"
+		"AttackDamageMax"		"67"
 		"AttackRate"		"1.350000"
 		"AttackRange"		"320"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"

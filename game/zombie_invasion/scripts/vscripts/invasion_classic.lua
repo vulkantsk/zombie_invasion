@@ -1793,7 +1793,8 @@ function InvasionMode:ThemeMusic()
   		    "Akira Yamaoka – Never Forgive Me",
    		    "Ula - Cannabis",
   		    "C418 - Sweden",
-  		    "Mase - Psycho",		
+  		    "Mase - Psycho",
+  		    "HammAli & Navai - Пустите меня на танцпол",		
     	},
  
     	[2] = {
@@ -1813,7 +1814,6 @@ function InvasionMode:ThemeMusic()
  
     	  
     	[3] = {
-  		    "Summertime",
   		    "I Follow Rivers - Lykke Li",
   		    "August - Intelligency",  
   		    "Shotgun - Yellow Claw feat. Rochelle",
@@ -1834,7 +1834,8 @@ function InvasionMode:ThemeMusic()
 		 "Sia - Chandelier",
 		"Does It Matter - Janieck",	
 		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
-		"Серега пират - Я взлетаю вверх",  			
+		"Серега пират - Я взлетаю вверх",  		
+		"Feduk - Моряк",	
     	},
   	   	     
      [5] = {

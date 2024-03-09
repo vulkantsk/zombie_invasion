@@ -365,7 +365,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					  "smash_of_edgard"
+		"Ability1"					"smash_of_edgard"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
@@ -374,16 +374,16 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"1000"
-		"MagicalResistance"			"0"
+		"MagicalResistance"			"90"
 		
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"999999"
-		"AttackDamageMax"			"999999"
+		"AttackDamageMin"			"12000"
+		"AttackDamageMax"			"24000"
 		"AttackRange"				"900"		// Range within a target can be attacked.
-		        "BaseAttackSpeed"			"50"		     
+		        "BaseAttackSpeed"			"400"		     
 
 		// Bounty
 		//----------------------------------------------------------------

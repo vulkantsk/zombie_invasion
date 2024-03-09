@@ -28,6 +28,7 @@
 	    "item"      "item_shield"
 		"item"		"item_ring_of_protection"
 		"item"		"item_midas"
+		"item"		"item_iron_talon"
 		"item"		"item_quelling_blade"
 		"item"		"item_sad_shield"
 		"item"		"item_poor_shield"

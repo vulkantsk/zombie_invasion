@@ -4137,6 +4137,47 @@
 		}
 	}
 	
+	//=================================================================================================================
+	// Iron Talon
+	//=================================================================================================================
+	"item_iron_talon"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_PREFER_ENEMIES"
+
+		"AbilityCastRange"				"350"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"14.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"200"
+		"ItemShopTags"					"damage" 
+		"ItemQuality"					"common"
+		"ItemAliases"					"quelling blade"
+		"ItemPurchasable"				"1"
+		"ItemIsNeutralDrop"				"0"
+		"DisplayOverheadAlertOnReceived" "0"
+		"ItemSellable"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"bonus_attack_speed"			"45"
+				"quelling_range_tooltip"			"350"
+				"cast_range_ward"			"450"
+				"creep_damage_pct"			"80"
+				"bonus_armor"	"8"
+				"alternative_cooldown"	"2"
+		}
+	}
+	
 	"item_bfury"
 	{
 		// General
@@ -10333,7 +10374,7 @@
 		"ItemRequirements"
 		{
  
-			"01"						"item_claymore;item_quelling_blade"
+			"01"						"item_quelling_blade;item_iron_talon;item_claymore"
 		}
 	}	
 	
