@@ -689,3 +689,15 @@ function SimpleDamageReflect(victim, attacker, damage, flags, ability, damage_ty
 	end
 	return false
 end
+
+function CDOTA_BaseNPC:SetWeather()
+	local effect = "particles/blood_rain_screen.vpcf"
+	Timers:CreateTimer(0.1, function()
+
+
+		ParticleManager:CreateParticleForPlayer(effect, PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
+		ParticleManager:CreateParticleForPlayer("particles/blood_screen_rain.vpcf", PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
+		return 3
+	end)
+	ParticleManager:CreateParticleForPlayer("particles/rain_fx/econ_weather_aurora_screen.vpcf", PATTACH_EYES_FOLLOW, self, self:GetPlayerOwner())
+end
