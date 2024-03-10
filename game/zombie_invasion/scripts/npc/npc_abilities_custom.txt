@@ -2381,53 +2381,9 @@
                 "quest_item"    "item_warlock_head"
                 //"reward_item"    "item_color_green"
                 "particle"        "1"
-                "next_quest"    "quest_test_edgard2"
+                //"next_quest"    "quest_test_edgard2"
                 "reusable"        "0"
                 "isEdgardEnd"        "1"
-            }
-        }      
-       
-    }
-     "quest_test_edgard2"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                        "ability_datadriven"  
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityTextureName"            "quest/eggs"
-    	"IsOnCastBar"                   "0"	
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "value_required"            "1"
-            }
-            "02"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "reward_exp"                "0"
-            }
-            "03"
-            {
-                "var_type"                    "FIELD_INTEGER"
-                "reward_gold"                "0"
-            }
-        }
-
-        "OnCreated"
-        {
-            "RunScript"
-            {
-                "ScriptFile"    "abilities/quest/quest_template"
-                "Function"        "OnQuestCreated"
-                "quest_item"    "item_color_green"
-                //"reward_item"    "item_color_green"
-                "particle"        "1"
-                "next_quest"    "quest_test_edgard3"
-                "reusable"        "0"
             }
         }      
        
@@ -9162,10 +9118,10 @@
 		"AbilityValues"
 		{
 
-			"damage_radius"							"1500"
+			"damage_radius"							"275"
 			"stun_duration"
 			{
-				"value"		"1.2"
+				"value"		"0.6"
 			    "CalculateSpellDamageTooltip"	"1"
 			}
  
