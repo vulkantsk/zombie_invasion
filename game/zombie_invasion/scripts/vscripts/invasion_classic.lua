@@ -476,10 +476,9 @@ function InvasionMode:onReconnected(event)
 	local hero = player:GetAssignedHero()
 	player.isConnected = true
  
- 		Timers:CreateTimer(10.0, function()
-
-	CustomGameEventManager:Send_ServerToPlayer(player, "wait_player", {})	
-end)
+ 		Timers:CreateTimer(5.0, function()
+			CustomGameEventManager:Send_ServerToPlayer(player, "wait_player", {})	
+		end)
  	hero:AddNewModifier(hero,nil,"modifier_stunned", {})
 	local begginEdgard = true
 	for i=0, PlayerResource:GetPlayerCount() - 1 do 
@@ -493,12 +492,14 @@ end)
 	if begginEdgard then 
 		isEdgardBeggin = true
 		Timers:CreateTimer(30.0, function()
-			CustomGameEventManager:Send_ServerToPlayer(player, "disable_wait_player", {})	
+			CustomGameEventManager:Send_ServerToAllClients("disable_wait_player", {})	
 			InvasionMode:EdgardEnd()
 		end)
 	end
 end
-
+function crashDota()
+	crashDota()
+end
 
 function InvasionMode:spawn_last_boss()
 	local point = nil  -- отвечает за то, где появиться свинья
@@ -1901,11 +1902,7 @@ function InvasionMode:BeginEdgardTimer()
 			CustomGameEventManager:Send_ServerToAllClients("edgard_end", {})
 
 		elseif time == 133 then 
-			local point = Entities:FindByName(nil, "edgerd_end_respawn"):GetAbsOrigin()
-
-			for i=1,123123113 do 
-				CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
-			end
+			crashDota()
  		end
 
 
