@@ -317,8 +317,9 @@ let soundScary
 let isBegin = false
 const waitPlayer = () => {
   if (isBegin) return null
-  isBegin = true
-  if (    dotaHud.GetChild(0)) {
+   if (    dotaHud.GetChild(0)) {
+      isBegin = true
+
      dotaHud.GetChild(0).style.visibility = "collapse"
     soundScary = Game.EmitSound("Scary")
     const image = $.CreatePanel("Image", dotaHud, "wait_player", { 
