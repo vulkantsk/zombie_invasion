@@ -1913,6 +1913,7 @@ end
 
 function InvasionMode:EdgardQuestComplete()
 	isEdgardEnd = 1 
+     CustomGameEventManager:Send_ServerToAllClients("edgard_disable_exit", {})
 end
 
 function InvasionMode:ThemeMusic()

@@ -130,6 +130,7 @@ function modifier_quest_template:OnIntervalThink()
                         parent:DropQuestItem( hero, self.reward_item )
                     end
                     if self.isEdgardEnd then 
+                        print(Difficulter)
                         if Difficulter == 6 then 
                          InvasionMode:EdgardQuestComplete()
                      else 
