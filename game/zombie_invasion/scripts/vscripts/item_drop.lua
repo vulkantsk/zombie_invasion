@@ -36,6 +36,9 @@ ItemDrop.item_drop = {
 		{items = {"item_rom"}, chance = 5, units = {"npc_classic_kunnka"}},
 		{items = {"item_salo"}, chance = 100, units = {"npc_oldmen_bednyaga"}},
 		{items = {"item_error"}, chance = 100, units = {"npc_dota_creature_sand_king"}},
+
+		{items = {"item_warlock_head"}, chance = 100, units = {"npc_warlock_boss"}},
+
  
   
 

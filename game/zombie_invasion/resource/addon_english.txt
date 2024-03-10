@@ -1380,8 +1380,6 @@
 		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_armor"					"+$armor"
 		"DOTA_Tooltip_Ability_item_veil_of_discord_3_bonus_hp_regen"					"+$hp_regen"
 
-		"DOTA_Tooltip_Ability_item_edgard_history_number_1"		"Cursed Rune"
-		"DOTA_Tooltip_Ability_item_edgard_history_number_1_Description"	"<h1>Active: voice inject</h1><font color='#e03e2e'>YOU DON'T UNDERSTAND WHAT TO DO WITH IT AND IT SCARES YOU.</font>"
 
 		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3"				"Veil of Discord"
 		"DOTA_Tooltip_modifier_veil_buff_aura_modifier_3_Description"	"Allies mana regeneration increased by %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%%."
@@ -1836,7 +1834,7 @@ receives  %bonus_damage% damage.<br>"
 
 // ******************** квесты ********************
  		"DOTA_Tooltip_Ability_quest_test_edgard"										"npc_Edgard"
-		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"Как-то я очень сильно набухался в таверне и пошел домой. В дом жена меня не пустила, а я ну че, не под дверью же ночевать, пошел в амбар. Лежу, почти отрубился и слышу, что кто-то зашел в амбар. Подумал: все таки приперлась, на сене конечно удобно спать, но дом есть дом. Поднимаю голову, а там БЕЗГОЛОВЫЙ МУЖИК! Я тогда так пересрался, что решил, больше пить не буду. Встаю с сена, предпренимаю попытки бежать но... "
+		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"One day I got very drunk in a tavern and went home. My wife wouldn't let me into the house, but I, well, I didn't spend the night under the door, I went to the barn. I'm lying down, almost passed out, and I hear that someone came into the barn. I thought: I came here after all, of course it's comfortable to sleep on the hay, but a house is a house. I raise my head, and there's a HEADLESS MAN! I got so drunk then that I decided I wouldn't drink anymore. I get up from the hay, I make attempts to escape, I was able to break away from him and in order to expel him, I need your help, bring me his head.."
 		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"COUNT:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"GOLD:"
@@ -2296,6 +2294,9 @@ receives  %bonus_damage% damage.<br>"
         "DOTA_Tooltip_Ability_tb_soul_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
 		"DOTA_Tooltip_Ability_tb_astral_Lore" "Не забывай проверять реальность перед глазами, возможно глаза тебя обманывают."      
 
+		"DOTA_Tooltip_Ability_item_warlock_head"										"Someone's head"
+		"DOTA_Tooltip_Ability_item_warlock_head_Description"					"<h1>Passive: head relax </h1> You feel a strange sense of calmness, as if it is consuming you."
+		"DOTA_Tooltip_Ability_item_warlock_head_Lore"			"The head, but whose?"
 
         "DOTA_Tooltip_Ability_item_color_red"                                            "Красный"
         "DOTA_Tooltip_Ability_item_color_green"                                            "Зелёный"

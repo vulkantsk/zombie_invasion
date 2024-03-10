@@ -2080,7 +2080,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
+		"ScriptFile"					"items/item_edgard_history_number_1.lua"
 		"AbilityTextureName"			"dis_magic"
 
 		// Behavior
@@ -2103,38 +2103,6 @@
 		"SideShop" 						"0"	
 		"AbilitySpecial"
 		{
-        }
-	}
-	
-	"item_edgard_history_number_1"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_edgard_history_number_1.lua"
-		"AbilityTextureName"			"quest_drop/rune_edgard"
-
-		// Behavior
-		//-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
- 		"AbilityCooldown"				"120"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
-		"ItemCost"                      "0" 
-		"ItemDroppable"					"1" 
-		"ItemPurchasable"				"0" 
-		"ItemSellable"					"0" 
-		"ItemKillable"					"1" 
-		"ItemInitialCharges"			"1"	
-		"ItemStackable" 				"1"
-		"ItemPermanent" 				"0"	
-		"SideShop" 						"0"
-		"AbilitySpecial"
-		{
-		
         }
 	}
 	"item_alduin_soul"
