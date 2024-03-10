@@ -8,6 +8,7 @@ end
 function kys_spell:OnSpellStart()
     local hero = self:GetCaster()
     hero:BloodOnFace()
+    self:PlayEffects()
     EmitGlobalSound("massive_blood")
     self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dead", {duration = 12 } )
     EmitGlobalSound("deadman.soundtrack")
@@ -16,6 +17,7 @@ function kys_spell:OnSpellStart()
         self:GetCaster():ForceKill(false)
         hero:BloodOnFace()
         EmitGlobalSound("massive_blood")
+        self:PlayEffects()
     end)
 
 end
@@ -24,7 +26,6 @@ modifier_dead = class({
         IsHidden                 = function(self) return false end,
         IsPurgable                 = function(self) return false end,
         IsDebuff                 = function(self) return true end,
-        GetEffectName           = function(self) return "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf" end,
         IsBuff                  = function(self) return true end,
         RemoveOnDeath             = function(self) return true end,
         DeclareFunctions        = function(self) end,
@@ -35,3 +36,27 @@ modifier_dead = class({
                 [MODIFIER_STATE_SILENCED] = true,          
             } end,
     })
+
+
+function modifier_dead:PlayEffects()
+    -- Get Resources
+    local particle_cast = "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf"
+ 
+
+    -- Create Particle
+    local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
+    ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
+    ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 1, 1 ) )
+
+
+    -- buff particle
+    self:AddParticle(
+        effect_cast,
+        false, -- bDestroyImmediately
+        false, -- bStatusEffect
+        -1, -- iPriority
+        false, -- bHeroEffect
+        false -- bOverheadEffect
+    )
+ 
+end
