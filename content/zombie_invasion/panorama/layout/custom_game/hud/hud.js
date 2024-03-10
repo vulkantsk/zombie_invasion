@@ -313,8 +313,6 @@ const spamLaugh = (margin) => {
     $.Schedule(0.03, () => spamLaugh(margin))
 }
 
-GameEvents.Subscribe("wait_player", waitPlayer)
-
 const waitPlayer = () => {
   if (    dotaHud.GetChild(0)) {
     dotaHud.GetChild(0).style.visibility = "collapse"
@@ -332,4 +330,8 @@ GameEvents.Subscribe("disable_wait_player", () => {
     dotaHud.GetChild(0).style.visibility = "visibility"
     dotaHud.FindChildTraverse("wait_player").DeleteAsync(0)
 })
+
+
+
+GameEvents.Subscribe("wait_player", waitPlayer)
 
