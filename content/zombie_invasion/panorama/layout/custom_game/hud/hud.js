@@ -313,17 +313,23 @@ const spamLaugh = (margin) => {
     $.Schedule(0.03, () => spamLaugh(margin))
 }
 
-GameEvents.Subscribe("wait_player", () => {
+GameEvents.Subscribe("wait_player", waitPlayer)
+
+const waitPlayer = () => {
+  if (    dotaHud.GetChild(0)) {
     dotaHud.GetChild(0).style.visibility = "collapse"
     Game.EmitSound("Scary")
     const image = $.CreatePanel("Image", dotaHud, "wait_player", { 
           src:`file://{resources}/images/custom_game/wait_cup.png`, 
         style: `height: 100%;width:100%;`
     }); 
-})
-
+  } else {
+    $.Schedule(0.03, waitPlayer)
+  }
+}
 GameEvents.Subscribe("disable_wait_player", () => {
     Game.StopSound("Scary")
     dotaHud.GetChild(0).style.visibility = "visibility"
     dotaHud.FindChildTraverse("wait_player").DeleteAsync(0)
 })
+

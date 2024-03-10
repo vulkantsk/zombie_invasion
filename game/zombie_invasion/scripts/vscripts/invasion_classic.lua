@@ -472,8 +472,10 @@ function InvasionMode:onReconnected(event)
 	if isEdgardEnd ~= 1 and isEdgardBeggin == true then return nil end 
  
 	local player = PlayerResource:GetPlayer(event.PlayerID)
+	local hero = PlayerResource:GetAssignedHero()
 	player.isConnected = true
 	CustomGameEventManager:Send_ServerToPlayer(player, "wait_player", {})	
+	hero:AddNewModifier(hero,nil,"modifier_stunned", {})
 	local begginEdgard = true
 	for i=0, PlayerResource:GetPlayerCount() - 1 do 
 		local playerCurrent = PlayerResource:GetPlayer(i)
