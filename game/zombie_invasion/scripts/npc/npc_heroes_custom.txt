@@ -1092,7 +1092,7 @@
 		"Role"						"Support,Carry"
 		"Rolelevels"				"3,2"
 
-		"Ability1"					"omniknight_purification"
+		"Ability1"					"kys_spell"
 		"Ability2"					"omniknight_repel"
 		"Ability3"					"power_of_faith"
 		"Ability4"					"omniknight_guardian_angel"

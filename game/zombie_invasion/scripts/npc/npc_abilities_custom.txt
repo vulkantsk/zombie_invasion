@@ -13307,6 +13307,27 @@
 			}
 		}
 	}
+		"kys_spell"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/ability_dead"
+		"AbilityTextureName"			"bloodrage"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityHealthCost"				"666"
+ 
+		"AbilityValues"
+		{
+			"duration"		"100"
+		}
+ 
+	}
+
 	"doom_doom_lua"
 	{
 		// Ability Technical Aspect
