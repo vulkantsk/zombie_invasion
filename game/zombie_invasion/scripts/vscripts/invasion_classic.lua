@@ -1105,8 +1105,7 @@ function InvasionMode:InvasionEntityKilled (data)
   		elseif Difficulter == 1.25  then 
   			EndGame:GoodEnd()
 		elseif Difficulter == 1.5 then
-		     EndGame:IsItEndGame()
-			GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
+		     EndGame:GoodEnd()
 		elseif  Difficulter == 3 then
 Boss_killed = Boss_killed + 1 
 EndGame:DemonEnd()
