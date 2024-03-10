@@ -752,14 +752,16 @@ function RespawnAllPlayers()
 	end)
 end
 
-function KillAllPlayers()
+function KillAllPlayers(withEffect)
 	DoWithAllPlayer(function(player)
 		local hero = player:GetAssignedHero()
 
 		if hero:IsAlive() then 
 			hero:ForceKill(false)
-			EmitGlobalSound("massive_blood")
-			hero:BloodOnFace()
+			if not withEffect then 
+				EmitGlobalSound("massive_blood")
+				hero:BloodOnFace()
+			end
  		end
 	end)
 end

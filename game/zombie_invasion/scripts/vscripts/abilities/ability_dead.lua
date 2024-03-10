@@ -7,15 +7,11 @@ end
 
 function kys_spell:OnSpellStart()
     local hero = self:GetCaster()
-    hero:BloodOnFace()
-    EmitGlobalSound("massive_blood")
-    self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dead", {duration = 26 } )
+    self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dead", {duration = 5 } )
     EmitGlobalSound("deadman.soundtrack")
     EmitSoundOn("sound.heartbreak", self:GetCaster())
-    Timers:CreateTimer( 26, function()
+    Timers:CreateTimer( 5, function()
         self:GetCaster():ForceKill(false)
-        hero:BloodOnFace()
-        EmitGlobalSound("massive_blood")
         self:PlayEffects()
     end)
 
