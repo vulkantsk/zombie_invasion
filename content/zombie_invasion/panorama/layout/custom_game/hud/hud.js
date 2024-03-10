@@ -330,10 +330,10 @@ const waitPlayer = () => {
   }
 }
 GameEvents.Subscribe("disable_wait_player", () => {
+      dotaHud.GetChild(0).style.visibility = "visible"
       dotaHud.FindChildTraverse("wait_player").DeleteAsync(0)
 
     Game.StopSound(soundScary)
-    dotaHud.GetChild(0).style.visibility = "visible"
 })
 
 GameEvents.Subscribe("wait_player", waitPlayer)
