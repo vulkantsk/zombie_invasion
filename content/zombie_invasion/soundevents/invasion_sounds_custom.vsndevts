@@ -5943,43 +5943,7 @@
                 }
         }
 }
-
-"Scary"   
-{
-        "operator_stacks"
-        {
-                "update_stack"
-                {
-                        "reference_operator"
-                        {
-                                "operator"              "sos_reference_stack"
-                                "reference_stack"               "src1_3d"
-                                "operator_variables"
-                                {
-                                        "vsnd_files"
-                                        {
-                                                "value"
-                                                {
-                                                        "value0"                "sounds/Scary"
-                                                }
-                                        }
-										"volume"			{   "value"     "3.800000"  }
-   									     "soundlevel"		{   "value"     "100"  }
-										"pitch"       		{  	"value"   	"1.000000" }
-                                       "chan_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                        "memory_type"
-                                        {
-                                                "value"         "0"
-                                        }
-                                }
-                        }
-                }
-        }
-}
-
+ 
 "after_sleep"   
 {
         "operator_stacks"

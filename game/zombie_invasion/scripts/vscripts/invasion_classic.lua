@@ -469,11 +469,11 @@ end
 end
 isEdgardBeggin = false
 function InvasionMode:onReconnected(event)
-	if isEdgardEnd ~= 1 then return nil end 
-
+	if isEdgardEnd ~= 1 and isEdgardBeggin == true then return nil end 
+ 
 	local player = PlayerResource:GetPlayer(event.PlayerID)
 	player.isConnected = true
-
+	CustomGameEventManager:Send_ServerToPlayer(player, "wait_player", {})	
 	local begginEdgard = true
 	for i=0, PlayerResource:GetPlayerCount() - 1 do 
 		local playerCurrent = PlayerResource:GetPlayer(i)
@@ -483,9 +483,12 @@ function InvasionMode:onReconnected(event)
 		end
 	end 
 
-	if begginEdgard and isEdgardBeggin == false then 
+	if begginEdgard then 
 		isEdgardBeggin = true
-		InvasionMode:EdgardEnd()
+		Timers:CreateTimer(30.0, function()
+			CustomGameEventManager:Send_ServerToPlayer(player, "disable_wait_player", {})	
+			InvasionMode:EdgardEnd()
+		end)
 	end
 end
 
