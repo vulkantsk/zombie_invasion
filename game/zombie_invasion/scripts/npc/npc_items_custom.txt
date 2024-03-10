@@ -4140,7 +4140,7 @@
 				"bonus_attack_speed"			"45"
 				"quelling_range_tooltip"			"350"
 				"cast_range_ward"			"450"
-				"creep_damage_pct"			"80"
+				"creep_damage_pct"			"22"
 				"bonus_armor"	"8"
 				"alternative_cooldown"	"2"
 		}
