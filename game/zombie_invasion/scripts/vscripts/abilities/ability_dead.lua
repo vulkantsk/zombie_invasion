@@ -8,12 +8,11 @@ end
 function kys_spell:OnSpellStart()
     local hero = self:GetCaster()
     hero:BloodOnFace()
-    self:PlayEffects()
     EmitGlobalSound("massive_blood")
-    self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dead", {duration = 12 } )
+    self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dead", {duration = 26 } )
     EmitGlobalSound("deadman.soundtrack")
     EmitSoundOn("sound.heartbreak", self:GetCaster())
-    Timers:CreateTimer( 12, function()
+    Timers:CreateTimer( 26, function()
         self:GetCaster():ForceKill(false)
         hero:BloodOnFace()
         EmitGlobalSound("massive_blood")
@@ -26,6 +25,7 @@ modifier_dead = class({
         IsHidden                 = function(self) return false end,
         IsPurgable                 = function(self) return false end,
         IsDebuff                 = function(self) return true end,
+        GetEffectName           = function(self) return "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf" end,
         IsBuff                  = function(self) return true end,
         RemoveOnDeath             = function(self) return true end,
         DeclareFunctions        = function(self) end,

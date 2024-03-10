@@ -1099,6 +1099,78 @@
         }
 }
 
+"deadman.soundtrack"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/deadman_soundtrack"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "25.000000"  }
+                                                                             "soundlevel"               {   "value"     "99"  }
+                                                                                "pitch"                 {       "value"         "0.600000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"sound.heartbreak"   
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/sound_heartbreak"
+                                                }
+                                        }
+                                                                                "volume"                        {   "value"     "25.000000"  }
+                                                                             "soundlevel"               {   "value"     "99"  }
+                                                                                "pitch"                 {       "value"         "0.600000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
  
 
  
