@@ -290,8 +290,16 @@ GameEvents.Subscribe("edgard_disable_exit", () => {
 
 GameEvents.Subscribe("edgard_end", () => {
     dotaHud.GetChild(0).style.visibility = "collapse"
+          const label = $.CreatePanel("Label", dotaHud, "", { 
+        text: "ВЫ И ВПРАВДУ ДУМАЛИ ЧТО СМОЖЕТЕ ИЗГНАТЬ МЕНЯ???",
+        class: "text__edgard",
+        style: `font-size: 80px;ui-scale:200%;vertical-align:center;horizontal-align:center;text-align:center;`
+    }); 
+
     let margin = -50
-    spamLaugh(margin)
+        $.Schedule(9, () => spamLaugh(margin))
+
+     
 })
  
 const spamLaugh = (margin) => {

@@ -1,5 +1,4 @@
 
-LinkLuaModifier("modifier_vision", "modifiers/modifier_vision.lua", LUA_MODIFIER_MOTION_NONE )
 modifier_vision = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return true end,

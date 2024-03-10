@@ -1093,9 +1093,9 @@
 		"Rolelevels"				"3,2"
 
 		"Ability1"					"kys_spell"
-		"Ability2"					"omniknight_repel"
-		"Ability3"					"power_of_faith"
-		"Ability4"					"omniknight_guardian_angel"
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
 		//"Ability10"		"special_bonus_gold_income_10"
 		//"Ability11"		"special_bonus_exp_boost_15"
 		//"Ability12"		"special_bonus_cast_range_75"

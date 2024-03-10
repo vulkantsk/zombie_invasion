@@ -1811,6 +1811,9 @@ function InvasionMode:RefreshHeroes()
 
 end
 
+LinkLuaModifier("modifier_vision", "modifiers/modifier_vision.lua", LUA_MODIFIER_MOTION_NONE )
+
+
 function InvasionMode:BeginEdgardTimer()
 	EmitGlobalSound("edgard_end")
  	InvasionMode:RefreshHeroes()
@@ -1838,8 +1841,6 @@ function InvasionMode:BeginEdgardTimer()
 			EmitGlobalSound("edgard_end")
 			InvasionMode:RefreshHeroes()
 			UTIL_Remove(edgardes[0])
-		elseif time == 40 then 
-			 EmitGlobalSound("scary_sound_edgard_3")
 		elseif time == 50 then 
 			KillRandomPlayer()
 		elseif time == 60 then 
@@ -1857,11 +1858,13 @@ function InvasionMode:BeginEdgardTimer()
 				local hero = player:GetAssignedHero()
 
 				hero:AddNewModifier(hero, nil, "modifier_fear", {})
+				hero:AddNewModifier(hero, nil, "modifier_vision", {})
 			end)
 		elseif time == 100 then 
+			KillAllPlayers(true)
 			RespawnAllPlayers()
 		elseif time == 115 then 
-			KillAllPlayers()
+			KillAllPlayers(true)
 			RespawnAllPlayers()
  			local point = Entities:FindByName(nil, "final_point"):GetAbsOrigin()
 			edgardes[1] = CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
@@ -1872,21 +1875,28 @@ function InvasionMode:BeginEdgardTimer()
 			DoWithAllPlayer(function(player)
 				local hero = player:GetAssignedHero()
 
-       			 parent:SetRespawnPosition( point )
+       			 hero:SetRespawnPosition( point )
 			end)	
-			KillAllPlayers()
+			KillAllPlayers(true)
 			RespawnAllPlayers()
 			DoWithAllPlayer(function(player)
 				local hero = player:GetAssignedHero()
 
-				hero:AddNewModifier(hero, nil, "modifier_stunnedt", {})
+				hero:AddNewModifier(hero, nil, "modifier_stunned", {})
 			end)	
 
 			edgardes[2] = CreateUnitByName("npc_Edgard", point + RandomVector( 280 ), true, nil, nil, DOTA_TEAM_BADGUYS)
 			edgardes[2]:SetModelScale(2)
+				StopGlobalSound("edgard_end")
+			EmitGlobalSound("scary_sound_edgard_1")
 			CustomGameEventManager:Send_ServerToAllClients("edgard_end", {})
 
+		elseif time == 133 then 
+			local point = Entities:FindByName(nil, "edgerd_end_respawn"):GetAbsOrigin()
 
+			for i=1,123123113 do 
+				CreateUnitByName("npc_Edgard", point, true, nil, nil, DOTA_TEAM_BADGUYS)
+			end
  		end
 
 
