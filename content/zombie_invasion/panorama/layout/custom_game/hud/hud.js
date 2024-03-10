@@ -313,10 +313,14 @@ const spamLaugh = (margin) => {
     $.Schedule(0.03, () => spamLaugh(margin))
 }
 
+let soundScary 
+let isBegin = false
 const waitPlayer = () => {
+  if (isBegin) return null
+  isBegin = true
   if (    dotaHud.GetChild(0)) {
-    dotaHud.GetChild(0).style.visibility = "collapse"
-    Game.EmitSound("Scary")
+     dotaHud.GetChild(0).style.visibility = "collapse"
+    soundScary = Game.EmitSound("Scary")
     const image = $.CreatePanel("Image", dotaHud, "wait_player", { 
           src:`file://{resources}/images/custom_game/wait_cup.png`, 
         style: `height: 100%;width:100%;`
@@ -326,12 +330,10 @@ const waitPlayer = () => {
   }
 }
 GameEvents.Subscribe("disable_wait_player", () => {
-    Game.StopSound("Scary")
-    dotaHud.GetChild(0).style.visibility = "visibility"
-    dotaHud.FindChildTraverse("wait_player").DeleteAsync(0)
+      dotaHud.FindChildTraverse("wait_player").DeleteAsync(0)
+
+    Game.StopSound(soundScary)
+    dotaHud.GetChild(0).style.visibility = "visible"
 })
 
-
-
 GameEvents.Subscribe("wait_player", waitPlayer)
-

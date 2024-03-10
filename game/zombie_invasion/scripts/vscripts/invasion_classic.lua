@@ -476,8 +476,9 @@ function InvasionMode:onReconnected(event)
 	local hero = player:GetAssignedHero()
 	player.isConnected = true
  
- 		Timers:CreateTimer(5.0, function()
+ 		Timers:CreateTimer(0.1, function()
 			CustomGameEventManager:Send_ServerToPlayer(player, "wait_player", {})	
+			return 0.1
 		end)
  	hero:AddNewModifier(hero,nil,"modifier_stunned", {})
 	local begginEdgard = true
