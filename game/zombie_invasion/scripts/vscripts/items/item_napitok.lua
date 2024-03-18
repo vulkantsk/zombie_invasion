@@ -8,7 +8,7 @@ function item_napitok:OnSpellStart()
 
 	caster:AddNewModifier(caster, self, "modifier_item_napitok", nil)
 	EmitSoundOn("drinking", caster)
-	caster:RemoveItem(self)
+	UTIL_Remove(self)
 end
 
 

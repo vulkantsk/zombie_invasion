@@ -7,7 +7,7 @@ function item_npc_dota_hero_hoodwink:OnSpellStart()
 		local hItem = self
         if not caster:HasAbility("hoodwink_buff_1") then 
 		  caster:AddAbility("hoodwink_buff_1"):SetLevel(1)
-		  caster:RemoveItem(hItem)
+		  UTIL_Remove(hItem)
         end
 end
 

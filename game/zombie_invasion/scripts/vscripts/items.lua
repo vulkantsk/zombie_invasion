@@ -42,10 +42,10 @@ local first = 0
 						charges = item:GetCurrentCharges()
 						item:SetCurrentCharges(charges-1)
 					else
-						caster:RemoveItem(item)
+						
 					end
 				else
-					caster:RemoveItem(item)			
+					UTIL_Remove(item)		
 				end
 				first = 1
 			end
@@ -154,10 +154,10 @@ local first = 0
 						charges = item:GetCurrentCharges()
 						item:SetCurrentCharges(charges-1)
 					else
-						caster:RemoveItem(item)
+						UTIL_Remove(item)
 					end
 				else
-					caster:RemoveItem(item)			
+					UTIL_Remove(item)	
 				end
 				first = 1
 			end
@@ -175,7 +175,7 @@ function GivePresent(data)
 		item = caster:GetItemInSlot(i)
 		if item ~= nil then
 			if item:GetAbilityName() == "item_custom_present" and first == 0 then
-				caster:RemoveItem(item)
+				UTIL_Remove(item)
 				first = 1
 			end
 		end
@@ -275,7 +275,7 @@ function ApplyIgnition(data)
 		target:SetOwner(caster)
 		target:EmitSound("DOTA_Item.BlackKingBar.Activate")
 		--target:EmitSoundParams("Hero_Enigma.Black_Hole", 0, 0.000001, 0)
-		caster:RemoveItem(data.ability)
+		UTIL_Remove(data.ability)
 	end
 
 end

@@ -14,7 +14,7 @@ function item_sumon_boss:OnSpellStart()
  
 if caster:HasModifier("modifier_sumon")   then   
  	 InvasionMode:Halloween_boss_plus()
- 	 		caster:RemoveItem(self)
+ 	 		UTIL_Remove(self)
 	local point = Entities:FindByName(nil,"skelet_boss_spawn")
 
 		local unit = CreateUnitByName("npc_skelet_boss", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)

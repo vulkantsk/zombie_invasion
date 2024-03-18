@@ -8,7 +8,7 @@ function item_blackshop_cursed_remove_limits:OnSpellStart()
           self.caster:AddNewModifier(self.caster, nil, "modifier_blackshop_cursed_remove_limits", {})
           self.caster:EmitSound("Item.TomeOfKnowledge")
             if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-                self.caster:RemoveItem(hItem)
+                UTIL_Remove(hItem)
                 return
             end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())

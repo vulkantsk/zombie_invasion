@@ -171,9 +171,9 @@ function modifier_campfire_quest:OnIntervalThink()
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
          newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
-         unit:RemoveItem(testo)
-        unit:RemoveItem(trash) 
-         unit:RemoveItem(tvorog)
+         UTIL_Remove(testo)
+        UTIL_Remove(trash) 
+         UTIL_Remove(tvorog)
  
         end
          
@@ -185,8 +185,8 @@ function modifier_campfire_quest:OnIntervalThink()
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
          newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
-               unit:RemoveItem(pirog)
-               unit:RemoveItem(tank_heart)   
+               UTIL_Remove(pirog)
+               UTIL_Remove(tank_heart)   
 
          end
   
@@ -198,8 +198,8 @@ function modifier_campfire_quest:OnIntervalThink()
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
          newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
-               unit:RemoveItem(pirog)
-               unit:RemoveItem(mag_heart) 
+               UTIL_Remove(pirog)
+               UTIL_Remove(mag_heart) 
 
          end
 
@@ -211,8 +211,8 @@ function modifier_campfire_quest:OnIntervalThink()
          CreateItemOnPositionSync(self:GetCaster():GetAbsOrigin(), newItem)
          newItem:LaunchLoot(false, 300, 0.75, self:GetCaster():GetAbsOrigin() + RandomVector(RandomFloat(25, 120)),nil)
 
-               unit:RemoveItem(pirog)
-               unit:RemoveItem(dps_heart) 
+               UTIL_Remove(pirog)
+               UTIL_Remove(dps_heart)
 
          end
 

@@ -9,7 +9,7 @@ function item_blackshop_legendary_boom_buff:OnSpellStart()
         self.caster:AddNewModifier(self.caster, nil, "modifier_blackshop_legendary_boom_buff", {}):SetStackCount(self:GetCurrentCharges())
         self.caster:EmitSound("Item.TomeOfKnowledge")
         if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-            self.caster:RemoveItem(hItem)
+            UTIL_Remove(hItem)
             return
         end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())

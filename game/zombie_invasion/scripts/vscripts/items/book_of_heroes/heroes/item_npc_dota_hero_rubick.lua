@@ -7,7 +7,7 @@ function item_npc_dota_hero_rubick:OnSpellStart()
         local hero = caster:GetUnitName()
         if not caster:HasAbility("rubick_buff_1") then 
           caster:AddAbility("rubick_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

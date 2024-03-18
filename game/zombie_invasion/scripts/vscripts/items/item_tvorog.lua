@@ -12,7 +12,7 @@ function item_tvorog:OnSpellStart()
 	local itemName = self:GetAbilityName()
 	local newItem = nil
 		hCaster:EmitSound("eating")
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
     
  
 end

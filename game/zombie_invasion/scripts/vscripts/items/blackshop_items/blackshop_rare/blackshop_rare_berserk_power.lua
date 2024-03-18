@@ -12,7 +12,7 @@ function item_blackshop_rare_berserk_power:OnSpellStart()
 
     self.caster:EmitSound("Item.TomeOfKnowledge")
     if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-        self.caster:RemoveItem(hItem)
+        UTIL_Remove(hItem)
         return
     end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())

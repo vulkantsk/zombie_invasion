@@ -20,7 +20,7 @@ function item_base_damage_aura:OnSpellStart()
 			self:SpendCharge()
 			local new_charges = self:GetCurrentCharges()
 			if new_charges <= 0 then
-			self.caster:RemoveItem(self)
+			UTIL_Remove(self)
 		end
 	end
 end

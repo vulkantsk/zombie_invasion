@@ -35,7 +35,7 @@ function item_pirog_support:OnSpellStart()
 
 	target:AddNewModifier(target, self, "modifier_item_pirog_support", nil)
 	target:EmitSound("eating")
-	caster:RemoveItem(self)
+	UTIL_Remove(self)
 end
 
 

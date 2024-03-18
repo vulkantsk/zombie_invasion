@@ -7,7 +7,7 @@ function item_npc_dota_hero_crystal_maiden:OnSpellStart()
 		local hItem = self
         if not caster:HasAbility("crystal_maiden_buff_1") then 
 		  caster:AddAbility("crystal_maiden_buff_1"):SetLevel(1)
-		  caster:RemoveItem(hItem)
+		  UTIL_Remove(hItem)
         end
 end
 

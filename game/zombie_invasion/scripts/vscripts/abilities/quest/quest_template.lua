@@ -116,7 +116,7 @@ function modifier_quest_template:OnIntervalThink()
                     if item_charges > self.value_required then
                         item:SetCurrentCharges(item_charges - self.value_required)
                     else
-                        hero:RemoveItem( item )
+                        UTIL_Remove(item)
                     end
 
                     if self.reward_exp > 0 then

@@ -8,7 +8,7 @@ function item_npc_dota_hero_wisp:OnSpellStart()
 
         if not caster:HasAbility("wisp_buff_1") then 
           caster:AddAbility("wisp_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

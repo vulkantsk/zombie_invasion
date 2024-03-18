@@ -11,7 +11,7 @@ function Item_sphere:new(items)
         if caster:GetGold() < cost then return caster:DropItemAtPositionImmediate(self, position)  end
 
         caster:SpendGold(cost, DOTA_ModifyGold_PurchaseItem)
-        caster:RemoveItem(self)
+        UTIL_Remove(self)
 
         caster:AddItemByName(items[RandomInt(1,#items)])
      end

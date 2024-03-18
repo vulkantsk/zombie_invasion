@@ -25,7 +25,7 @@ function item_saxar:OnSpellStart()
     if saxar2 == 4 then
  
         GameRules:SendCustomMessage("<font color='#fffacd'>Ты рассыпал сахар...</font>", 0, 0)
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
     end
  
 end

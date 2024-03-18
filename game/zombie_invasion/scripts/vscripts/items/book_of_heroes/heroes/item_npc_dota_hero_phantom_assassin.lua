@@ -7,7 +7,7 @@ function item_npc_dota_hero_phantom_assassin:OnSpellStart()
 
         if not caster:HasAbility("phantom_assassin_buff_1") then 
           caster:AddAbility("phantom_assassin_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

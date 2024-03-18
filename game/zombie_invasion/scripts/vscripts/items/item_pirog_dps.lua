@@ -40,7 +40,7 @@ function item_pirog_dps:OnSpellStart()
 			local team = caster:GetTeam()
 	target:AddNewModifier(target, self, "modifier_item_pirog_dps", nil)
 	target:EmitSound("eating")
-	caster:RemoveItem(self)
+	UTIL_Remove(self)
 	if target:GetUnitName() == "npc_boss_pig" then 
 		InvasionMode:Bo_plus()
 		print(Pig_bo_kill)

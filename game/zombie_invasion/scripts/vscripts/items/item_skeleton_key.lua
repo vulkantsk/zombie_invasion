@@ -44,7 +44,7 @@ function item_skeleton_key:OnSpellStart()
 	local guard = Entities:FindByName(nil, 'guard')    
 	local gate_main = Entities:FindByName(nil, 'gate_main')
 
-	caster:RemoveItem(self)
+	UTIL_Remove(self)
 
     if target:GetName() == "guard" then
    	 Timers:CreateTimer(0,function() 

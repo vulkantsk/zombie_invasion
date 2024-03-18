@@ -62,7 +62,7 @@ function item_milk:OnSpellStart()
 	end
 
 	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
 		return
 	end
 

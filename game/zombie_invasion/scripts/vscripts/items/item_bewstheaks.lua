@@ -69,7 +69,7 @@ function item_bewstheaks:OnSpellStart()
 	end
 
 	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
 		return
 	end
 

@@ -52,7 +52,7 @@ function item_up_hp_tower:OnSpellStart()
 if hTarget:GetUnitName() == "NPC_base" then 
  	hTarget:AddNewModifier(hCaster, self, "modifier_item_hp_tower", nil)
 		hCaster:EmitSound("DOTA_Item.Cheese.Activate")
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
  else 
  	return nil
  end

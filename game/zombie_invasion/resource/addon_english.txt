@@ -39,7 +39,7 @@
 		"dota_ability_variable_max_mana_percentage"	"Max Mana Bonus"			// $max_mana_percentage
 		"dota_ability_variable_slow_resistance"		"Slow Resistance"			// $slow_resistance
 		"dota_ability_variable_aoe_bonus"			"AoE Bonus"					// $aoe_bonus
-
+		"text_cheat_detected"								"EgardAntiCheat.exe"
 		"dota_ability_variable_damage_int_hero"	"Damage (Intelligence Heroes)"
 		"dota_ability_variable_damage_agi_hero"	"Damage (Agility Heroes)"
 		"dota_ability_variable_damage_str_hero"	"Damage (Strength Heroes)"

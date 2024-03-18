@@ -8,7 +8,7 @@ function item_npc_dota_hero_skywrath_mage:OnSpellStart()
 
         if not caster:HasAbility("skywrath_mage_buff_1") then 
           caster:AddAbility("skywrath_mage_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

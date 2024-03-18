@@ -7,7 +7,7 @@ function item_npc_dota_hero_juggernaut:OnSpellStart()
 
         if not caster:HasAbility("juggernaut_buff") then 
           caster:AddAbility("juggernaut_buff"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

@@ -7,7 +7,7 @@ function item_npc_dota_hero_troll_warlord:OnSpellStart()
 
         if not caster:HasAbility("troll_warlord_buff_1") then 
           caster:AddAbility("troll_warlord_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

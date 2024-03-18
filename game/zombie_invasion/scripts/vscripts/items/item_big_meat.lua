@@ -8,7 +8,7 @@ function item_big_meat:OnSpellStart()
 
 	caster:AddNewModifier(caster, self, "modifier_item_big_meat", nil)
 	caster:EmitSound("eating")
-	caster:RemoveItem(self)
+	UTIL_Remove(self)
 end
 
 

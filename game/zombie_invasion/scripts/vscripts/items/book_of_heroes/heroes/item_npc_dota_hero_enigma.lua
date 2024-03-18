@@ -9,7 +9,7 @@ function item_npc_dota_hero_enigma:OnSpellStart()
 
         if not caster:HasAbility("enigma_buff_1") then 
           caster:AddAbility("enigma_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

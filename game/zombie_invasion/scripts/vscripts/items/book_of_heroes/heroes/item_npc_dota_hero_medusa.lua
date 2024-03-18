@@ -7,7 +7,7 @@ function item_npc_dota_hero_medusa:OnSpellStart()
 
         if not caster:HasAbility("medusa_buff_1") then 
           caster:AddAbility("medusa_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

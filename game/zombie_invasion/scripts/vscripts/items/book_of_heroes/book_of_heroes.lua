@@ -8,7 +8,7 @@ function item_book_of_heroes:OnSpellStart()
          caster:EmitSound("DOTA_Item.Cheese.Activate")
          caster:AddItemByName("item_"..hero)
          if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-            caster:RemoveItem(hItem)
+            UTIL_Remove(hItem)
             return
          end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())

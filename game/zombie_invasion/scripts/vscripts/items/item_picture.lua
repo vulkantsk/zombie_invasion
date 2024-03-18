@@ -66,7 +66,7 @@ function item_picture:OnSpellStart()
 			hTarget:SetModifierStackCount(StackModifier, nil, (currentStacks + 1))
 		end
  	if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
 		return
 	end
 

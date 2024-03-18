@@ -7,7 +7,7 @@ function item_npc_dota_hero_drow_ranger:OnSpellStart()
 
         if not caster:HasAbility("drow_ranger_buff_1") then 
           caster:AddAbility("drow_ranger_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

@@ -45,7 +45,7 @@
 	    "donate_list_name_heroes"		"Эссенции героев"
 	    "donate_list_name_artifacts"	"Артефакты"
 	    "donate_list_name_admin"	"АДМЭЭЭЭЭЭЭЭН uwu"
- 
+ 		
 
 	    		"dota_game_end_victory_title_radiant"	"Деревня спасена!"
 		"dota_game_end_victory_title_dire"		"Ой в пизду, я в тильте(("
@@ -170,7 +170,7 @@
 	   "ending_7"                                                 "ре"
 	   "ending_8"                                                 "бя"
 	   "ending_9"                                                 "та"
-
+	   "text_cheat_detected"								"EgardAntiCheat.exe"
 
 	   "begining_fun1"													"<font color='#c10020'>ЗРЯ ВЫ РЕШИЛИ ДОНИМАТЬ МЕНЯ СВОИМИ "ГДЕ ОБНОВА!?"</font>"
 	   "begining_fun2"													"<font color='#c10020'>СЕЙЧАС Я ПОКАЖУ ВАМ СВОЁ ТВОРЕНИЕ"</font>"
@@ -426,6 +426,10 @@
 		"DOTA_Tooltip_ability_item_piercing_blade" "Piercing Blade"
 		"DOTA_Tooltip_ability_item_piercing_blade_Description" "C вероятностью в 12% превращает урон в чистый (РАБОТАЕТ ТОЛЬКО В ФИЗ)"
 		"DOTA_Tooltip_ability_item_piercing_blade_bonus_damage" "+$damage"
+
+		"DOTA_Tooltip_ability_item_ban_hammer"	"<font color='#980002'>BAN HAMMER</font>"
+		"DOTA_Tooltip_ability_item_ban_hammer_Description"	"<h1>Активная: BAN</h1>Удаляет игрока из игры."
+
 
 		"DOTA_Item_Build_Starting_Items"								"Начальные предметы"
 		"DOTA_Item_Build_Early_Game"									"Для первой ночи"

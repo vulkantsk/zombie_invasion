@@ -7,7 +7,7 @@ function item_npc_dota_hero_winter_wyvern:OnSpellStart()
 
         if not caster:HasAbility("winter_wyvern_buff_1") then 
           caster:AddAbility("winter_wyvern_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

@@ -7,7 +7,7 @@ function item_npc_dota_hero_dragon_knight:OnSpellStart()
 
         if not caster:HasAbility("dragon_knight_buff_1") then 
           caster:AddAbility("dragon_knight_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

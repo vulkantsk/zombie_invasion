@@ -50,7 +50,7 @@ function item_pizza2:OnSpellStart()
 
     hTarget:EmitSound("eating")
 	if self:GetCurrentCharges() <= self:GetInitialCharges() then
-		hCaster:RemoveItem(self)
+		UTIL_Remove(self)
 		return
 	end
  

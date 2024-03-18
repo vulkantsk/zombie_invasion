@@ -538,6 +538,31 @@
 			"dagon_spell_lifesteal"				"75"
 		}
 	}
+	"item_ban_hammer"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"FightRecapLevel"				"1"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_ban_hammer.lua"
+		"ItemPurchasable"				"0"	
+		"AbilityTextureName"			"ban_hammer"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100000000"
+		"ItemCost"						"0"
+
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+		}
+	}
 
 	//=================================================================================================================
 	// Sheepstick

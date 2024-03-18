@@ -7,7 +7,7 @@ function item_npc_dota_hero_bloodseeker:OnSpellStart()
 
         if not caster:HasAbility("blood_buff_1") then 
           caster:AddAbility("blood_buff_1"):SetLevel(1)
-          caster:RemoveItem(hItem)
+          UTIL_Remove(hItem)
         end
 end
 

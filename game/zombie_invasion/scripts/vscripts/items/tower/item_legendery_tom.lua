@@ -53,7 +53,7 @@ if hTarget:GetUnitName() == "NPC_base" then
  
         hTarget:AddAbility(Ability_exist[RandomInt(1, #Ability_exist)]):SetLevel(1)
 		hTarget:EmitSound("General.LevelUp.Bonus")
-		hCaster:RemoveItem(hItem)
+		UTIL_Remove(hItem)
  else 
  	return nil
  end

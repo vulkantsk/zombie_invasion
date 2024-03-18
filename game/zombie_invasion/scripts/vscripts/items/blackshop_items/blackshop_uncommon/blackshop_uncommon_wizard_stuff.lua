@@ -12,7 +12,7 @@ function item_blackshop_uncommon_wizard_stuff:OnSpellStart()
 
     self.caster:EmitSound("Item.TomeOfKnowledge")
     if hItem:GetCurrentCharges() <= hItem:GetInitialCharges() then
-        self.caster:RemoveItem(hItem)
+        UTIL_Remove(hItem)
         return
     end
          hItem:SetCurrentCharges(hItem:GetCurrentCharges() - hItem:GetInitialCharges())
