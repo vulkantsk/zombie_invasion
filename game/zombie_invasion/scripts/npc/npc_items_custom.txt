@@ -2178,7 +2178,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_alduin_soul_final.lua"
-		"AbilityTextureName"			"alduin_soul_final"
+		"AbilityTextureName"			"boss_item/alduin_soul_final"
 
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
@@ -2215,7 +2215,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
-		"AbilityTextureName"			"dragon_scale_quest"
+		"AbilityTextureName"			"Creep_items/dragon_scale_quest"
 
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
@@ -2713,7 +2713,7 @@
 		"BaseClass"						"item_datadriven"														
  
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"skin_zombie"
+		"AbilityTextureName"			"Creep_items/skin_zombie"
 
 		"ItemInitialCharges"			"1"	
 		"ItemStackable" 				"1"
@@ -4387,7 +4387,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityTextureName"            "imba_reverb_rapier"
+		"AbilityTextureName"            "carry/imba_reverb_rapier"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -4619,7 +4619,7 @@
 		// General
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"bow1"
+		"AbilityTextureName"	"carry/bow1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		// Valve's version of this item uses the ID "135".
 		"ID"	"1795"
@@ -4849,7 +4849,7 @@
 		// General
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"bow2"
+		"AbilityTextureName"	"carry/bow2"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		// Valve's version of this item uses the ID "135".
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -5479,7 +5479,7 @@
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_truba"
-		"AbilityTextureName"			"truba" 
+		"AbilityTextureName"			"quest_drop/truba" 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCastAnimation"			"ACT_DOTA_GENERIC_CHANNEL_1"
 				"Model"							"models/props_gameplay/neutral_box.vmdl"
@@ -8478,7 +8478,7 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_mask_of_madness"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityTextureName"		"item_mask_of_madness_2"
+		"AbilityTextureName"		"carry/item_mask_of_madness_2"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -8539,7 +8539,7 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_mask_of_madness"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityTextureName"		"item_mask_of_madness_3"
+		"AbilityTextureName"		"carry/item_mask_of_madness_3"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -9856,7 +9856,7 @@
     {
         "BaseClass"                     "item_lua"
         "ScriptFile"                    "items/carry/item_blood_keeper"
-        "AbilityTextureName"            "blood_keeper"
+        "AbilityTextureName"            "carry/blood_keeper"
         "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
         "ItemPurchasable"               "1" 
         "ItemSellable"                  "1"
@@ -10299,7 +10299,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityTextureName"                              "medallion_of_courage_3"
+		"AbilityTextureName"                              "sup/medallion_of_courage_3"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -11026,7 +11026,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"AbilityTextureName" 			"item_imba_phase_boots_2"
+		"AbilityTextureName" 			"carry/item_imba_phase_boots_2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"ScriptFile"					"items/bots/item_crystal_boots"
@@ -11738,7 +11738,7 @@
 		"BaseClass"          "item_lua"
 		"ScriptFile"         "items/drop/item_brassiere"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName" "quest_drop/item_Brassiere_of_Naga"
+		"AbilityTextureName" "boss_item/item_Brassiere_of_Naga"
 
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
 		"ItemQuality"					"artifact"	
@@ -13400,7 +13400,7 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_desolator"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"desol2"
+		"AbilityTextureName"			"carry/desol2"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -14129,7 +14129,7 @@
 	{
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/carry/item_bad_glasses"
-		"AbilityTextureName"			"bad"
+		"AbilityTextureName"			"quest_drop/bad"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
@@ -14953,7 +14953,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
-		"AbilityTextureName"			"phoenix_prox"
+		"AbilityTextureName"			"boss_item/phoenix_prox"
 
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
@@ -14987,7 +14987,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/drop_item/item_necr_heart.lua"
-		"AbilityTextureName"			"phoenix_prox"
+		"AbilityTextureName"			"boss_item/phoenix_prox"
 
 		// Behavior
 		//-------------------------------------------------------------------------------------------------------------
