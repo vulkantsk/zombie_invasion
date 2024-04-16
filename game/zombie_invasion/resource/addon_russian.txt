@@ -279,7 +279,7 @@
         "npc_kot_rofl4"														"Крутобок"
         "npc_kot_glavniy_jitel"													"Огнезвёзд"
 
-		"npc_base"                                                  		"Homer"
+		"npc_base_jitel"                                                  		"Homer"
 	    "npc_EdgardBs"        "npc_Edgard"
 	     "npc_Edgard_jitel"        "npc_Edgard"
 		"npc_classic_pig"                                                  	"Свинья"

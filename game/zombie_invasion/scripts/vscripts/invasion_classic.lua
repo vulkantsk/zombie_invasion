@@ -655,6 +655,7 @@ function InvasionMode:InvasionGameStart()
 	 	  --InvasionMode:ChristmassEror()
 
 	if GameRules:IsCheatMode() == true then
+		if GameRules:IsInToolsMode() == true then return end
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
@@ -677,6 +678,7 @@ function InvasionMode:InvasionGameStart()
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
 		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)				
 		return
+
 	end 	  
     InvasionMode:SecretShop()
 
@@ -1133,20 +1135,6 @@ function InvasionMode:InvasionEntityKilled (data)
 
 	if killedEntity:GetUnitName() == "npc_warlock_boss" then
 		StopGlobalSound("GigaChad Theme")
-		if Difficulter == 1  then 
-      		EndGame:GoodEnd()
-  		elseif Difficulter == 1.25  then 
-  			EndGame:GoodEnd()
-		elseif Difficulter == 1.5 then
-		     EndGame:GoodEnd()
-		elseif  Difficulter == 3 then
-Boss_killed = Boss_killed + 1 
-EndGame:DemonEnd()
-		elseif Difficulter == 6 then
-		Boss_killed = Boss_killed + 1 
-	EndGame:ImpossibleEnd()
-	     end
-
 	end	
 	 
 
