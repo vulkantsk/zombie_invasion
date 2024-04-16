@@ -1,0 +1,105 @@
+"DOTAAbilities"
+{
+	"morph_last_evolution"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_morph/morph_last_evolution/morph_last_evolution.lua"
+		"AbilityTextureName"			"sara_evolution"
+		"MaxLevel" 						"10"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasInnateModifiers"			"1"
+		"LevelsBetweenUpgrades"			"6"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityValues"
+		{
+			"max_per_minute" "5"
+			"max_per_minute_pct" "0.000000001"
+			"per_sec_pct"		"1123"
+			"per_sec"			"3123"
+			"max_per_creep"		"0.10"
+			"damage_to_energy_pct"	"2"
+		}
+	}
+
+
+ 	"morph_adaptive"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_morph/morph_swap/morph_adaptive"
+		"AbilityTextureName"			"enigma_demonic_conversion"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"1"
+ 
+		"AbilityManaCost"				"0"
+
+		"AbilityValues"
+		{
+		}
+	}
+	"morph_evolution_base"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_morph/morph_swap/morph_adaptive"
+		"AbilityTextureName"			"enigma_demonic_conversion"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"1"
+ 
+		"AbilityManaCost"				"0"
+
+		"AbilityValues"
+		{
+		}
+	}
+
+	"morph_agility"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_morph/morph_agility/morph_agility"
+		"AbilityTextureName"			"enigma_demonic_conversion"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"1"
+ 
+		"AbilityManaCost"				"0"
+
+		"AbilityValues"
+		{
+		}
+	}
+
+	"morph_strength"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_morph/morph_strength/morph_strength"
+		"AbilityTextureName"			"enigma_demonic_conversion"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"1"
+ 
+		"AbilityManaCost"				"0"
+
+		"AbilityValues"
+		{
+		}
+	}
+
+}

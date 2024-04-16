@@ -1839,6 +1839,12 @@ receives  %bonus_damage% damage.<br>"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"GOLD:"
 
+		"DOTA_Tooltip_Ability_quest_homer"										"Homer"
+		"DOTA_Tooltip_Ability_quest_homer_Description"							"One day I got very drunk in a tavern and went home. My wife wouldn't let me into the house, but I, well, I didn't spend the night under the door, I went to the barn. I'm lying down, almost passed out, and I hear that someone came into the barn. I thought: I came here after all, of course it's comfortable to sleep on the hay, but a house is a house. I raise my head, and there's a HEADLESS MAN! I got so drunk then that I decided I wouldn't drink anymore. I get up from the hay, I make attempts to escape, I was able to break away from him and in order to expel him, I need your help, bring me his head.."
+		"DOTA_Tooltip_Ability_quest_homer_value_required"     							"COUNT:"
+		"DOTA_Tooltip_Ability_quest_homer_reward_exp"                 		"EXP:"
+		"DOTA_Tooltip_Ability_quest_homer_reward_gold"                 		"GOLD:"
+
 		"DOTA_Tooltip_Ability_quest_herbalist_1"										"herbalist AZAZ"
 		"DOTA_Tooltip_Ability_quest_herbalist_1_Description"							"@!#$# WHEN~VET ~ TV ~ UYU YOU NIZNA- KOMETS WHAT HAVE YOU COME FOR!? ALTHOUGH I'M ALWAYS GLAD TO HAVE GUESTS AND-AND-AND MIN HAS A REQUEST FOR YOU. IN THE FOREST WHERE SCARY CREATURES WITH SLIMY PAWS AND A LONG TONGUE LIVE, THERE IS A TREE (SAKURA) I WANT YOU TO KILL HIM, HE OWES ME A LOT OF BIGWIGS, PLEASE DEAL WITH HIM AND I'LL GIVE YOU A MASK THAT MY GREAT-GRANDFATHER WHO LIVED HERE EARLIER WORE))00) UNTIL"
 		"DOTA_Tooltip_Ability_quest_herbalist_1_value_required"     							"КОЛИЧЕСТВО:"

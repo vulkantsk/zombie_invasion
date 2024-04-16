@@ -23,11 +23,11 @@ end
 
 function modifier_zombie_toxin:DeclareFunctions()
 	return {
-		MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_PHYSICAL,
+		MODIFIER_EVENT_ON_ATTACK_LANDED,
 	}
 end
 
-function modifier_zombie_toxin:GetModifierProcAttack_BonusDamage_Physical( params )
+function modifier_zombie_toxin:OnAttackLanded( params )
 	if IsServer() then
 		local target = params.target
 		

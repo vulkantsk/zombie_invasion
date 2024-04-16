@@ -14481,7 +14481,7 @@
 		"ItemPermanent" 				"0"	
 		"AbilityValues"
 		{
-			"gold"		"150"
+			"gold"		"250"
         }
 	}
 	"item_gold2"
@@ -14501,7 +14501,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "400" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14509,7 +14509,7 @@
 		"ItemPermanent" 				"0"	
 		"AbilityValues"
 		{
-			"gold"		"300"
+			"gold"		"400"
         }
 	}
 	"item_gold3"
@@ -14529,7 +14529,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "600" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14537,7 +14537,7 @@
 		"ItemPermanent" 				"0"	
 		"AbilityValues"
 		{
-			"gold"		"450"
+			"gold"		"600"
         }
 	}
 	"item_gold4"
@@ -14557,7 +14557,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "900" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14565,7 +14565,7 @@
 		"ItemPermanent" 				"0"	
 		"AbilityValues"
 		{
-			"gold"		"600"
+			"gold"		"900"
         }
 	}
 	"item_exp"
@@ -14585,7 +14585,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "150" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14613,7 +14613,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "300" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14641,7 +14641,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "450" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
@@ -14669,7 +14669,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemCost"                      "250" 
+		"ItemCost"                      "600" 
 		"ItemPurchasable"				"0" 
 		"ItemSellable"					"1" 
 		"ItemKillable"					"0" 
