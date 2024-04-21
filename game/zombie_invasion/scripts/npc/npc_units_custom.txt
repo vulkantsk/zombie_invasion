@@ -365,7 +365,7 @@
  
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"smash_of_edgard"
+		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
