@@ -1834,6 +1834,23 @@ function InvasionMode:RefreshHeroes()
 
 end
 
+function InvasionMode:CrashGame()
+	for i=0, PlayerResource:GetPlayerCount()-1 do 
+		local player = PlayerResource:GetPlayer(i)
+		local hero = player:GetAssignedHero()
+
+		if hero:IsAlive() then 
+			hero:ForceKill(false)
+		end
+
+		local newHero = PlayerResource:ReplaceHeroWith(i, "npc_dota_hero_omniknight", 0, 0) 
+		hero:RespawnHero(false, false) 
+
+		hero:SetWeather()
+	end
+
+end
+
 LinkLuaModifier("modifier_vision", "modifiers/modifier_vision.lua", LUA_MODIFIER_MOTION_NONE )
 
 
@@ -1923,7 +1940,7 @@ function InvasionMode:BeginEdgardTimer()
 			CustomGameEventManager:Send_ServerToAllClients("edgard_end", {})
 
 		elseif time == 133 then 
-			crashDota()
+			InvasionMode:CrashGame()
  		end
 
 
