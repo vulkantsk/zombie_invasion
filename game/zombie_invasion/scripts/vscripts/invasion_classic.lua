@@ -1826,10 +1826,10 @@ function InvasionMode:RefreshHeroes()
 			hero:ForceKill(false)
 		end
 
-		local newHero = PlayerResource:ReplaceHeroWith(i, "npc_dota_hero_omniknight", 0, 0) 
-		newHero:RespawnHero(false, false) 
+		-- local newHero = PlayerResource:ReplaceHeroWith(i, "npc_dota_hero_omniknight", 0, 0) 
+		hero:RespawnHero(false, false) 
 
-		newHero:SetWeather()
+		hero:SetWeather()
 	end
 
 end
@@ -1839,7 +1839,15 @@ LinkLuaModifier("modifier_vision", "modifiers/modifier_vision.lua", LUA_MODIFIER
 
 function InvasionMode:BeginEdgardTimer()
 	EmitGlobalSound("edgard_end")
- 	InvasionMode:RefreshHeroes()
+ 	-- InvasionMode:RefreshHeroes()
+ 	for i=0, PlayerResource:GetPlayerCount()-1 do 
+ 		local player = PlayerResource:GetPlayer(i)
+		local hero = player:GetAssignedHero()
+
+		hero:SetWeather()
+	end
+ 	DOTA_SpawnMapAtPosition("edgard_light", Vector(-64,-64,0), false, nil, nil, nil)
+
 	local time = 0
 	local times = true
 	local edgardes = {}

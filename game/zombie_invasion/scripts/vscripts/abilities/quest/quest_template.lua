@@ -130,13 +130,7 @@ function modifier_quest_template:OnIntervalThink()
                         parent:DropQuestItem( hero, self.reward_item )
                     end
                     if self.isEdgardEnd then 
-                        print(Difficulter)
-                        if Difficulter == 6 then 
                          InvasionMode:EdgardQuestComplete()
-                     else 
-                        EndGame:IsItEndGame()
-                        GameRules:SendCustomMessage("<font color='#c10020'>FATAL ERROR:SYNTAX GOOD ENDING WAS NOT FOUND</font>", 0, 0)
-                        end
                     end
                     if self.reusable == 0 then
                         if self.current_quest then

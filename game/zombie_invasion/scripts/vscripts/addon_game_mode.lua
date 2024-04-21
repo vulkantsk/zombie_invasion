@@ -133,6 +133,10 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_night_stalker/nightstalker_crippling_fear_aura.vpcf", context ) -- vampire
 	PrecacheResource( "particle", "particles/items2_fx/soul_ring.vpcf", context ) --modif dung church
 	PrecacheResource( "particle", "particles/items3_fx/lotus_orb_shell.vpcf", context ) --elementalist shield
+	PrecacheResource( "particle", "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf", context ) --elementalist shield
+	PrecacheResource( "particle", "particles/blood_screen_rain.vpcf", context ) --elementalist shield
+	PrecacheResource( "particle", "particles/blood_rain_screen.vpcf", context ) --elementalist shield
+
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context ) 
