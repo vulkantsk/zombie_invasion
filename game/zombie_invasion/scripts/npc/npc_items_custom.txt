@@ -2891,7 +2891,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"							"item_lifesteal"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"   "mask_of_madness_5"
+		"AbilityTextureName"   "carry/mask_of_madness_5"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -8478,7 +8478,7 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_mask_of_madness"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityTextureName"		"carry/item_mask_of_madness_2"
+		"AbilityTextureName"		"carry/mask_of_madness_2"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -8539,7 +8539,7 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/carry/item_mask_of_madness"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityTextureName"		"carry/item_mask_of_madness_3"
+		"AbilityTextureName"		"carry/mask_of_madness_3"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -11026,7 +11026,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"AbilityTextureName" 			"carry/item_imba_phase_boots_2"
+		"AbilityTextureName" 			"carry/phase_boots_2tem_"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"ScriptFile"					"items/bots/item_crystal_boots"
@@ -11738,7 +11738,7 @@
 		"BaseClass"          "item_lua"
 		"ScriptFile"         "items/drop/item_brassiere"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName" "boss_item/item_Brassiere_of_Naga"
+		"AbilityTextureName" "boss_item/Brassiere_of_Naga"
 
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"  
 		"ItemQuality"					"artifact"	

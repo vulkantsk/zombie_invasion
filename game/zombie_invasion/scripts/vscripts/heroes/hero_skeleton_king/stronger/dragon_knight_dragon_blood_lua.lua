@@ -154,7 +154,7 @@ end
 function modifier_triple_blow_haste:DeclareFunctions()
     local decFuns =
     {
-		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 		MODIFIER_EVENT_ON_ATTACK
     }
     return decFuns
@@ -165,7 +165,7 @@ function modifier_triple_blow_haste:OnAttack(keys)
 		
 		-- If the target is a deflector, do nothing
 	
-		if self:GetStackCount() == 1 then
+		if self:GetStackCount() == 2 then
 			self:Destroy()
 			return nil
 		end
