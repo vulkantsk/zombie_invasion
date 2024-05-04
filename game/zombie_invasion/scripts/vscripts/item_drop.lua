@@ -28,7 +28,7 @@ ItemDrop.item_drop = {
 		{items = {"item_dragon_scale_quest"}, chance = 100, units = {"npc_classic_dragon"}},
 		{items = {"item_alduin_soul"}, chance = 100, units = {"npc_classic_alduin_boss"}},
 		{items = {"item_big_meat"}, chance = 100, units = {"npc_boss_pig"}},
-		{items = {"item_law_frog"}, chance = 7,daration = 20, units = {"npc_classic_frog"}},
+		{items = {"item_law_frog"}, chance = 7, daration = 20, units = {"npc_classic_frog"}},
 		{items = {"item_fish"}, chance = 100, units = {"npc_boss_slardar"}},
 		{items = {"item_adulin"}, chance = 100, units = {"npc_classic_alduin_boss"}},
 		{items = {"item_prox_phoenix"}, chance = 100, units = {"npc_classic_phoenix_boss"}},
@@ -39,15 +39,15 @@ ItemDrop.item_drop = {
 
 		{items = {"item_warlock_head"}, chance = 100, units = {"npc_warlock_boss"}},
 
-		{items = {"item_egg_pasha_1"}, chance = 1, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_2"}, chance = 2, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_3"}, chance = 3, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_4"}, chance = 4, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_5"}, chance = 5, units = {"npc_classic_not_fish"}},
+		{items = {"item_egg_pasha_1"}, chance = 1, duration = 15, units = {"npc_classic_not_fish"}},
+		{items = {"item_egg_pasha_2"}, chance = 2, duration = 15, units = {"npc_classic_not_fish"}},
+		{items = {"item_egg_pasha_3"}, chance = 3, duration = 15, units = {"npc_classic_not_fish"}},
+		{items = {"item_egg_pasha_4"}, chance = 4, duration = 15, units = {"npc_classic_not_fish"}},
+		{items = {"item_egg_pasha_5"}, chance = 5, duration = 15, units = {"npc_classic_not_fish"}},
  
   
 
- 		{items = {"item_aghanims_shard_roshan"}, units ={"npc_witch_boss_1"}},	
+ 		{items = {"item_aghanims_shard_roshan"}, duration = 25, units ={"npc_witch_boss_1"}},	
  		{items = {"item_book_of_heroes"}, min_count = 1, max_count = 1, units  ={"npc_witch_boss_1"}},
 		{items = {"item_book_of_heroes"}, min_count = 2, max_count = 2, units  ={"npc_witch_boss_2"}},
 		{items = {"item_aghanims_shard_roshan"}, min_count = 1, max_count = 1, units ={"npc_witch_boss_2"}},	
