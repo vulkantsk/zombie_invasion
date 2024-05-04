@@ -3152,6 +3152,173 @@
  
 		}
 	} 
+
+
+"item_egg_pasha_1"
+	{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/moon_shard/moon_shard_001.vmdl" 
+	"ModelScale"					"10" 
+	"AbilityTextureName"			"pasha/1"
+ 
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+	"ItemPurchasable"				"0"
+	"ItemKillable"					"0"
+    "ItemSellable"                  "0"
+	"ItemAliases"					"air"
+ 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+    "ItemQuality"    "artifact"
+    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+	"ItemInitialCharges"            "1"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"IsTempestDoubleClonable"		"0"
+
+
+		"AbilitySpecial"
+		{
+				
+		}
+	
+	} 
+
+"item_egg_pasha_2"
+	{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/moon_shard/moon_shard_002.vmdl" 
+	"ModelScale"					"10" 
+	"AbilityTextureName"			"pasha/2"
+ 
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+	"ItemPurchasable"				"0"
+	"ItemKillable"					"0"
+    "ItemSellable"                  "0"
+	"ItemAliases"					"air"
+ 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+    "ItemQuality"    "artifact"
+    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+	"ItemInitialCharges"            "1"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"IsTempestDoubleClonable"		"0"
+
+
+		"AbilitySpecial"
+		{
+				
+		}
+	
+	} 
+
+"item_egg_pasha_3"
+	{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/moon_shard/moon_shard_004.vmdl" 
+	"ModelScale"					"10" 
+	"AbilityTextureName"			"pasha/3"
+ 	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+	"ItemPurchasable"				"0"
+	"ItemKillable"					"0"
+    "ItemSellable"                  "0"
+	"ItemAliases"					"air"
+ 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+    "ItemQuality"    "artifact"
+    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+	"ItemInitialCharges"            "1"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"IsTempestDoubleClonable"		"0"
+
+
+		"AbilitySpecial"
+		{
+				
+		}
+	
+	} 
+
+"item_egg_pasha_4"
+	{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	"Model"							"models/props_gameplay/moon_shard/moon_shard_meteor.vmdl" 
+	"ModelScale"					"10" 
+	"AbilityTextureName"			"pasha/4"
+ 
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+	"ItemPurchasable"				"0"
+	"ItemKillable"					"0"
+    "ItemSellable"                  "0"
+	"ItemAliases"					"air"
+ 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+    "ItemQuality"    "artifact"
+    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+	"ItemInitialCharges"            "1"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"IsTempestDoubleClonable"		"0"
+
+
+		"AbilitySpecial"
+		{
+				
+		}
+	
+	} 
+
+"item_egg_pasha_5"
+	{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/moon_shard/moon_shard_005.vmdl" 
+	"ModelScale"					"10" 
+	"AbilityTextureName"			"pasha/5"
+ 
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+	"ItemPurchasable"				"0"
+	"ItemKillable"					"0"
+    "ItemSellable"                  "0"
+	"ItemAliases"					"air"
+ 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+    "ItemQuality"    "artifact"
+    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+	"ItemInitialCharges"            "1"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"IsTempestDoubleClonable"		"0"
+
+
+		"AbilitySpecial"
+		{
+				
+		}
+	
+	} 
 	
  	"item_big_meat"
 	{

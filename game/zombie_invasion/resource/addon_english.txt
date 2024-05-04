@@ -1863,6 +1863,51 @@ receives  %bonus_damage% damage.<br>"
 		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_gold"                 		"GOLD:"
 
+			"npc_rabbit_jitel"			"Stuffy crawl"
+
+
+			"DOTA_Tooltip_Ability_item_egg_pasha_1" "Summer application"
+
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_2" "Root application"
+
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_3" - "White Apple"
+
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_4" - "Red Apple"
+
+			"DOTA_Tooltip_Ability_item_egg_pasha_5" "Pink Apple"
+
+ 			"DOTA_Tooltip_Ability_quest_rabbit_1" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_Description" "Thank you! I am the rabbit, the spirit of this wonderful holiday. I had an accident... I've lost my eggs and I can't put them under every bush, so I need your help! Could you bring me some Easter eggs? I need purple eggs, I will be very grateful to you and I will repay you with this. Thank you!!!!!!!!!!!!!!"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_reward_exp" "WORK EXPERIENCE:"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_reward_gold" "GOLD:"
+
+			"DOTA_Tooltip_Ability_quest_rabbit_2" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_2_Description" "Wow, you could make them! Well, it's not enough for me anyway, can you bring me the browns? I'll give them to the coolest kids, be sure! Well, I'll pay for your labors, of course, I'm still the spirit of this holiday and I can't leave people without a mood!"
+			"DOTA_Tooltip_Ability_quest_rabbit_2_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_2_reward_exp" "EXPERIENCE:"
+			"DOTA_Tooltip_Ability_quest_rabbit_2_reward_gold" "GOLD:"
+
+
+			"DOTA_Tooltip_Ability_quest_rabbit_3" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_3_Description" "Lovely eggs! But I need more, please bring me white ones and I will repay you!"
+			"DOTA_Tooltip_Ability_quest_rabbit_3_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_3_reward_exp" "EXPERIENCE:"
+			"DOTA_Tooltip_Ability_quest_rabbit_3_reward_gold" "GOLD:"
+
+			"DOTA_Tooltip_Ability_quest_rabbit_4" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_4_Description" "You never cease to amaze me! Thank you very much, but that's not all, I don't have enough red eggs, can you get them!? I will pay more!!"
+			"DOTA_Tooltip_Ability_quest_rabbit_4_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_4_reward_exp" "EXPERIENCE:"
+			"DOTA_Tooltip_Ability_quest_rabbit_4_reward_gold" "GOLD:"
+
+			"DOTA_Tooltip_Ability_quest_rabbit_5" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_5_Description" "There's only one color left, it's pink, bring them to me too, please! I really need it, because I will soon need to lay eggs in the bushes!"
+			"DOTA_Tooltip_Ability_quest_rabbit_5_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_5_reward_exp" "EXPERIENCE:"
+			"DOTA_Tooltip_Ability_quest_rabbit_5_reward_gold" "GOLD:"
+
+
 
 		"DOTA_Tooltip_Ability_quest_stranger_1"										"STRANGER"
 		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"Stand **** where you went, you have to help me. I predicted the coming of the World Eater, but no one believes me. Everyone thinks it's just a legend. To prove it, bring me the Ancient Remains. I think they will help me to reason with the village. If you bring me the remains, I'll thank you"

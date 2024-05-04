@@ -1981,6 +1981,48 @@
 		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_gold"                 		"ЗОЛОТА:"
 
 
+		"npc_rabbit_jitel"			"Душный крол"
+
+		"DOTA_Tooltip_Ability_item_egg_pasha_1"		"Фиолетовое яйцо"
+
+		"DOTA_Tooltip_Ability_item_egg_pasha_2"		"Коричневое яйцо"
+
+		"DOTA_Tooltip_Ability_item_egg_pasha_3"		"Белое яйцо"
+
+		"DOTA_Tooltip_Ability_item_egg_pasha_4"		"Красное яйцо"
+
+		"DOTA_Tooltip_Ability_item_egg_pasha_5"		"Розовое яйцо"
+
+		"DOTA_Tooltip_Ability_quest_rabbit_1"										"Душный крол"
+		"DOTA_Tooltip_Ability_quest_rabbit_1_Description"							"С пасхой! Это я кролик, Дух этого чудесного праздника. У меня случилось несчастье... Я потерял свои яйца и не могу их откладывать под каждым кустом, поэтому мне нужна твоя помощь! Можешь принести мне пасхальных яиц!? мне нужны фиолетовые яйца, буду очень благодарен и отплачу нехуйно так. Спасибо!!!!!!!!!!!!!!"
+		"DOTA_Tooltip_Ability_quest_rabbit_1_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_rabbit_1_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_rabbit_1_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_rabbit_2"										"Душный крол"
+		"DOTA_Tooltip_Ability_quest_rabbit_2_Description"							"Ого, ты смог сделать их! чтожь, мне этого всё-равно не хватит, можешь принести мне коричневых? Я их отдам самым классным ребятишкам будь уверен! Ну и оплачу твои труды конечно же, я же всё-таки дух этого праздника и не могу оставить людей без настроения!"
+		"DOTA_Tooltip_Ability_quest_rabbit_2_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_rabbit_2_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_rabbit_2_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_rabbit_3"										"Душный крол"
+		"DOTA_Tooltip_Ability_quest_rabbit_3_Description"							"Прекрасные яйца! Но мне нужно больше принеси мне белых пожалуйста и я отплачу тебе!"
+		"DOTA_Tooltip_Ability_quest_rabbit_3_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_rabbit_3_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_rabbit_3_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_rabbit_4"										"Душный крол"
+		"DOTA_Tooltip_Ability_quest_rabbit_4_Description"							"Ты не перестаёшь меня удивлять! Спасибо тебе огромное, но это ещё не всё, мне не хватает красных яиц, сможешь раздобыть их!? Отплачу больше!!"
+		"DOTA_Tooltip_Ability_quest_rabbit_4_value_required"     							"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_rabbit_4_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_rabbit_4_reward_gold"                 		"ЗОЛОТА:"
+
+		"DOTA_Tooltip_Ability_quest_rabbit_5"										"Душный крол"
+		"DOTA_Tooltip_Ability_quest_rabbit_5_Description"	"Остался лишь один цвет, это розовый принеси мне их тоже пожалуйста! Мне оооочень нужно, ибо мне скоро уже нужно будет закладывать яйца по кустам!"
+		"DOTA_Tooltip_Ability_quest_rabbit_5_value_required"     				"КОЛИЧЕСТВО:"
+		"DOTA_Tooltip_Ability_quest_rabbit_5_reward_exp"                 		"ОПЫТА:"
+		"DOTA_Tooltip_Ability_quest_rabbit_5_reward_gold"                 		"ЗОЛОТА:"
+
 
 
 
