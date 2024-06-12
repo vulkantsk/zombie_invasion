@@ -99,7 +99,7 @@ function modifier_item_mage_helper_passive:_ApplyDamage(target)
     local caster = self:GetCaster()
     local ability = self:GetAbility()
 
-    local damage = caster:GetIntellect() /2
+    local damage = caster:GetIntellect(true) /2
 
 ApplyDamage({
         attacker = caster,
