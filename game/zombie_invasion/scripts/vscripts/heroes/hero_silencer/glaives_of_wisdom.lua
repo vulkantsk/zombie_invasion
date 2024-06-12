@@ -38,7 +38,7 @@ end
 function ability_glaives_of_wisdom:OnOrbImpact( params )
     local caster = self:GetCaster()
     local int_mult = self:GetSpecialValueFor( "intellect_damage_pct" )
-    local damage = caster:GetIntellect() * int_mult/100
+    local damage = caster:GetIntellect(true) * int_mult/100
     if caster:HasScepter() then
         damage = damage*2
     end

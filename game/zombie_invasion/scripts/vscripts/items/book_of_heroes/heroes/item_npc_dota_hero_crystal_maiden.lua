@@ -72,7 +72,7 @@ modifier_crystal_aura_buff = class({
 })
 
 function modifier_crystal_aura_buff:GetModifierSpellAmplify_Percentage()
-        return self:GetAbility():GetSpecialValueFor("bonus_spell_amp") * (self:GetCaster():GetIntellect() * (self:GetAbility():GetSpecialValueFor("spell_amp_pct") / 100)) 
+        return self:GetAbility():GetSpecialValueFor("bonus_spell_amp") * (self:GetCaster():GetIntellect(true) * (self:GetAbility():GetSpecialValueFor("spell_amp_pct") / 100)) 
 end
 
 function modifier_crystal_aura_buff:GetModifierIncomingDamage_Percentage()

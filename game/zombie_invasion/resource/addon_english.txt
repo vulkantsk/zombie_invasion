@@ -963,8 +963,7 @@
 		
  		"DOTA_Tooltip_Ability_item_dust_2"						"Dast"
 		"DOTA_Tooltip_Ability_item_dust_2_Description"			"<h1>Active: Dust</h1> Dastit."  
-		
-		"DOTA_Tooltip_Ability_item_tvorog"						"Творог"
+
 		"DOTA_Tooltip_Ability_item_tvorog"						"Curd"
 		"DOTA_Tooltip_Ability_item_tvorog_Description"			"<h1>Active: Nam-nam</h1> You eat curd(but for what?).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
 		"DOTA_Tooltip_Ability_item_tvorog_Lore"       "Where is sense?"

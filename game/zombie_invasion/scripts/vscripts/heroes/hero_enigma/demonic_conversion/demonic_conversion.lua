@@ -132,6 +132,6 @@ function modifier_ability_demonic_conversion_stats:GetModifierAttackSpeedBonus_C
 end
 
 function modifier_ability_demonic_conversion_stats:GetModifierPreAttack_BonusDamage()
-	return self:GetCaster():GetIntellect() * self:GetAbility():GetSpecialValueFor( "bonus_int" )
+	return self:GetCaster():GetIntellect(true) * self:GetAbility():GetSpecialValueFor( "bonus_int" )
 end
  

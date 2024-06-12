@@ -33,5 +33,5 @@ end
 
 
 function modifier_dark_seer:GetModifierSpellAmplify_Percentage()
-    return self:GetCaster():GetIntellect() * (self:GetAbility():GetSpecialValueFor("int_pct") / 100)
+    return self:GetCaster():GetIntellect(true) * (self:GetAbility():GetSpecialValueFor("int_pct") / 100)
 end

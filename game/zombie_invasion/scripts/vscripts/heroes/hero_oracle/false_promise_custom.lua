@@ -14,8 +14,8 @@ function false_promise_custom:OnSpellStart()
     ParticleManager:CreateParticle(effect1, PATTACH_OVERHEAD_FOLLOW, unit)
 
     local intint = ability:GetSpecialValueFor("bonus_int_damage")
-    local min_dmg = ability:GetSpecialValueFor("min_damage") + intint * caster:GetIntellect() 
-    local max_dmg = ability:GetSpecialValueFor("max_damage") + intint * caster:GetIntellect() 
+    local min_dmg = ability:GetSpecialValueFor("min_damage") + intint * caster:GetIntellect(true) 
+    local max_dmg = ability:GetSpecialValueFor("max_damage") + intint * caster:GetIntellect(true) 
     local dmg = RandomInt(min_dmg, max_dmg)
 
     

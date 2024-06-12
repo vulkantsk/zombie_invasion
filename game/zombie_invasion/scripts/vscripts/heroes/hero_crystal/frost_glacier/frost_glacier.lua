@@ -24,7 +24,7 @@ function frost_glacier:OnProjectileHit( target, location )
 	ApplyDamage({
 		victim = target,
 		attacker = self:GetCaster(),
-		damage = self:GetSpecialValueFor("damage") + self:GetCaster():GetIntellect(),
+		damage = self:GetSpecialValueFor("damage") + self:GetCaster():GetIntellect(true),
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self
 	})

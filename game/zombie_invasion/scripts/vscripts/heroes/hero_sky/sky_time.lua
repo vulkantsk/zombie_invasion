@@ -4,7 +4,7 @@ sky_time = class({})
 function sky_time:OnSpellStart()
      local caster = self:GetCaster()
     self:GetCursorTarget():AddNewModifier(self:GetCursorTarget(), self, 'modifier_sky_time_active', {
-        duration = self:GetSpecialValueFor('duration') + self:GetSpecialValueFor("int_duration") * caster:GetIntellect()
+        duration = self:GetSpecialValueFor('duration') + self:GetSpecialValueFor("int_duration") * caster:GetIntellect(true)
     })
     self:GetCursorTarget():EmitSound('Hero_Abaddon.BorrowedTime')
 end

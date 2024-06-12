@@ -45,7 +45,7 @@ function modifier_death_or_life:OnCreated()
                 self.mnojitel = self:GetAbility():GetSpecialValueFor( "mnojitel" )
                     local caster = self:GetCaster()
     local target = self:GetParent()
-    local damage_bonus = self.mnojitel * caster:GetIntellect() * target:GetAttackDamage()
+    local damage_bonus = self.mnojitel * caster:GetIntellect(true) * target:GetAttackDamage()
 
     self:SetStackCount(damage_bonus)
 end

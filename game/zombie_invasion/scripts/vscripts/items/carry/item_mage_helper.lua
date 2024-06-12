@@ -49,7 +49,7 @@ function modifier_item_mage_helper_passive:OnIntervalThink()
     
     local maxcount = ability:GetSpecialValueFor('count')
     local radius = ability:GetSpecialValueFor('radius')
-    local damage = caster:GetIntellect() /2
+    local damage = caster:GetIntellect(true) /2
 
     local enemy_list = FindUnitsInRadius(self:GetParent():GetTeamNumber(), self:GetParent():GetAbsOrigin(), nil, self:GetAbility():GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES + DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE + DOTA_UNIT_TARGET_FLAG_NO_INVIS + DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE, FIND_ANY_ORDER, false)      
     

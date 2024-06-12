@@ -63,6 +63,6 @@ self.caster = self:GetCaster()
 self.parent = self:GetParent()
 local str =	self.parent:GetStrength()
 local agi = self.parent:GetAgility()
-local int = self.parent:GetIntellect()
+local int = self.parent:GetIntellect(true)
 	return 10 *((str+agi+int)/100)
 end

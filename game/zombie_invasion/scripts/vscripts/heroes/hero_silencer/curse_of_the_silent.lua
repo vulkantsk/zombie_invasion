@@ -97,7 +97,7 @@ function modifier_ability_curse_of_the_silent:OnCreated( kv )
      ApplyDamage( {
         victim = GetParent(),
         attacker = self:GetCaster(),
-        damage = self.damageTable + (self:GetCaster():GetIntellect() / 100) * 10,
+        damage = self.damageTable + (self:GetCaster():GetIntellect(true) / 100) * 10,
         damage_type = self:GetAbility():GetAbilityDamageType(),
         ability = self:GetAbility(), --Optional.
         })

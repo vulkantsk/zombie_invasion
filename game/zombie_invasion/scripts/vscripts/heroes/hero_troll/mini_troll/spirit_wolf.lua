@@ -11,7 +11,7 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 
 	local strenght = caster:GetStrength()
 	local agility = caster:GetAgility()
-	local intellegence = caster:GetIntellect()
+	local intellegence = caster:GetIntellect(true)
 
 	local base_hp = ability:GetSpecialValueFor("summon_hp")
 	local base_hpreg = ability:GetSpecialValueFor("summon_hpreg")
@@ -110,7 +110,7 @@ function lycan_spirit_wolf_custom:OnUpgrade()
 
 		local strenght = caster:GetStrength()
 		local agility = caster:GetAgility()
-		local intellegence = caster:GetIntellect()
+		local intellegence = caster:GetIntellect(true)
 
 		local base_hp = ability:GetSpecialValueFor("summon_hp")
 		local base_hpreg = ability:GetSpecialValueFor("summon_hpreg")

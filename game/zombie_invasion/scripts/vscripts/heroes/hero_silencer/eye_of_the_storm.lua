@@ -70,7 +70,7 @@ function modifier_razor_eye_of_the_storm_lua:OnCreated( kv )
 
 	-- references
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
-	self.damage = self:GetAbility():GetSpecialValueFor( "damage" ) + self:GetCaster():GetIntellect()
+	self.damage = self:GetAbility():GetSpecialValueFor( "damage" ) + self:GetCaster():GetIntellect(true)
 	self.interval = self:GetAbility():GetSpecialValueFor( "strike_interval" )
 	self.armor = self:GetAbility():GetSpecialValueFor( "armor_reduction" )
 

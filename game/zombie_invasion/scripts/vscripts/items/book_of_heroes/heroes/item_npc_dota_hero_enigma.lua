@@ -118,6 +118,6 @@ function modifier_enigma_stats:GetModifierAttackSpeedBonus_Constant()
 end
 
 function modifier_enigma_stats:GetModifierPreAttack_BonusDamage()
-    return self:GetCaster():GetIntellect() * 2
+    return self:GetCaster():GetIntellect(true) * 2
 end
  
