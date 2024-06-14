@@ -13440,6 +13440,24 @@
 			}
 		}
 	}
+
+		"ability_invul"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/ability_invul"
+        "AbilityTextureName"            "enigma_eidalons_strong"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+        "MaxLevel"						"1"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {			
+        					            
+        }
+    }
 		"kys_spell"
 	{
 		"BaseClass"						"ability_lua"

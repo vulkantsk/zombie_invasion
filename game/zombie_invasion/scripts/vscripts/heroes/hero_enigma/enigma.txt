@@ -232,27 +232,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {			
-        		"kill_count"		"10"
-				"bonus_str"			
-				{
-					"value"	"2.45"
-					"RequiresScepter"			"1"
-				}
-				"bonus_ag"		
-				{
-					"value"		"3.75"
-					"RequiresScepter"			"1"
-				}
- 				"bonus_int"		
-				{
-					"value"		"4.20"
-					"RequiresScepter"			"1"
-				}
-				"enigma_debuff"	"10"
-				"eidolon_dmg_tooltip"	"240"
-				"eidolon_attack_tooltip"	"110"
-				"eidolon_hp_tooltip"	"400"
-				"eidalon_duration"	"20"				            
+        					            
         }
     }
 

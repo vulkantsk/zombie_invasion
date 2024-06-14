@@ -33,11 +33,8 @@ modifier_enigma = class({
 })
 
 function modifier_enigma:CheckState()
-    if self:GetParent():GetUnitName() == npc_dota_hero_enigma then
-        return {[MODIFIER_STATE_ATTACK_IMMUNE] = true}
-    else
-        return{[MODIFIER_STATE_ATTACK_IMMUNE] = false}
-    end
+    return {[MODIFIER_STATE_ATTACK_IMMUNE] = true}
+    
 end
 
 function modifier_enigma:DeclareFunctions()

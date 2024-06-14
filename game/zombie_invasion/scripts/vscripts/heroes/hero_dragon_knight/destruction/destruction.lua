@@ -1,8 +1,6 @@
 destruction = class({})
 
 
-LinkLuaModifier( "modifier_destruction_debuff", "heroes/hero_dragon_knight/shield_crush/shield_crush", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_destruction_count", "heroes/hero_dragon_knight/shield_crush/shield_crush", LUA_MODIFIER_MOTION_NONE )
 --------------------------------------------------------------------------------
 -- Ability Start
 function destruction:OnSpellStart()
@@ -16,7 +14,7 @@ function destruction:OnSpellStart()
     end
 
     -- load data
-    local damage = self:GetSpecialValueFor("edge_damage") + self:GetCaster():GetAttackDamage()
+    local damage = self:GetSpecialValueFor("edge_damage")
     local radius = self:GetSpecialValueFor("radius")
 
     -- Find Units in Radius
@@ -36,7 +34,7 @@ function destruction:OnSpellStart()
     local damageTable = {
         -- victim = target,
         attacker = caster,
-        damage = damage,
+        damage = damage + self:GetCaster():GetAverageTrueAttackDamage(),
         damage_type = DAMAGE_TYPE_PURE,
         ability = self, --Optional.
     }
@@ -47,10 +45,6 @@ function destruction:OnSpellStart()
         ApplyDamage(damageTable)
     end
 
-    -- Apply self-damage
-    damageTable.victim = caster
-    damageTable.damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL
-    ApplyDamage( damageTable )
 
     -- Play effects
     self:PlayEffects( target )

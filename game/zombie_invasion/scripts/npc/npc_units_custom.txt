@@ -540,7 +540,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_kamen"
-		"Ability2"					"enigma_buff_1"
+		"Ability2"					"ability_invul"
 		"Ability3"					""
 		"Ability4"					""
 

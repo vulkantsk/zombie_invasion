@@ -34,7 +34,7 @@
 				}
 				"base_damage_pct"		
 				{
-					"value"		"40 45 50 55 60 65 70 75 80 85 90 95 100 115"
+					"value"		"115"
 					"special_bonus_shard"	"+35"
 					"CalculateSpellDamageTooltip"	"1"
 				}
@@ -263,8 +263,8 @@
 		"AbilityBehavior"		      	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"Hero/hood/armor"
 		"MaxLevel"						"4"
-		"LevelsBetweenUpgrades"			"25"	
-		"RequiredLevel"					"25"
+		"LevelsBetweenUpgrades"			"10"	
+		"RequiredLevel"					"10"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------

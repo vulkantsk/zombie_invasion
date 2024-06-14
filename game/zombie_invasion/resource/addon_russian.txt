@@ -4253,7 +4253,7 @@
 
 
  		"DOTA_Tooltip_Ability_destruction"			"destruction"
- 		"DOTA_Tooltip_Ability_destruction_Description"		"Герой жертвуя своим здоровьем наносит коллосальный урон зависящий от (урона своей атаки + базовый урон способности) противникам в радиусе %radius% своей атаки."
+ 		"DOTA_Tooltip_Ability_destruction_Description"		"Герой наносит коллосальный урон зависящий от (урона своей атаки + базовый урон способности) противникам в радиусе %radius% своей атаки."
  		"DOTA_Tooltip_Ability_destruction_Lore"			"Жертвенный огонь."
  		"DOTA_Tooltip_Ability_destruction_edge_damage"		"БАЗОВЫЙ УРОН:"
 

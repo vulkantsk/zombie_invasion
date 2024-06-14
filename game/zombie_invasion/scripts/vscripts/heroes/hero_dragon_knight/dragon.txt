@@ -223,6 +223,7 @@
 		"ScriptFile"					"heroes/hero_dragon_knight/destruction/destruction"
 		"AbilityTextureName"			"destruction"
 		"FightRecapLevel"				"1"
+		"RequiredLevel"                 "6"
 		"MaxLevel"						"10"
 		"LevelsBetweenUpgrades"         "10"
 		"precache"
