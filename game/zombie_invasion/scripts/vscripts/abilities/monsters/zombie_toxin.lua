@@ -76,11 +76,3 @@ end
 function modifier_zombie_toxin_debuff:OnCreated( kv )
 	self:SetStackCount(1)
 end
-
-function modifier_zombie_toxin_debuff:GetEffectName()
-	return "particles/units/heroes/hero_pangolier/pangolier_heartpiercer_delay.vpcf"
-end
-
-function modifier_zombie_toxin_debuff:GetEffectAttachType()
-	return PATTACH_OVERHEAD_FOLLOW
-end

@@ -14,7 +14,7 @@ function destruction:OnSpellStart()
     end
 
     -- load data
-    local damage = self:GetSpecialValueFor("edge_damage")
+    local damage = self:GetSpecialValueFor("edge_damage") + self:GetCaster():GetAttackDamage()
     local radius = self:GetSpecialValueFor("radius")
 
     -- Find Units in Radius
@@ -34,7 +34,7 @@ function destruction:OnSpellStart()
     local damageTable = {
         -- victim = target,
         attacker = caster,
-        damage = damage + self:GetCaster():GetAverageTrueAttackDamage(),
+        damage = damage,
         damage_type = DAMAGE_TYPE_PURE,
         ability = self, --Optional.
     }
