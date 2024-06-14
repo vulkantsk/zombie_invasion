@@ -1,4 +1,6 @@
 LinkLuaModifier('modifier_ability_counter_helix', 'heroes/hero_axe/counter_helix/counter_helix', LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier('modifier_attack_damage_reduction', 'heroes/hero_axe/counter_helix/counter_helix', LUA_MODIFIER_MOTION_NONE)
+
 ability_counter_helix = class({})
 
 function ability_counter_helix:GetIntrinsicModifierName()
@@ -63,12 +65,49 @@ function modifier_ability_counter_helix:OnAttackLanded(data)
                 damage = self.damage,
                 damage_type = DAMAGE_TYPE_PURE
             })
-
+            if enemy:HasModifier("modifier_attack_damage_reduction") then
+                enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
+                duration = self:GetAbility():GetSpecialValueFor("duration"),
+                }):IncrementStackCount()
+            else
+            enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
+            duration = self:GetAbility():GetSpecialValueFor("duration"),
+            }):SetStackCount(1)
+            end
+  
         end
 
         self.ability:StartCooldown(self.cooldown)
     end 
 end 
 
+modifier_attack_damage_reduction = class({
+    IsHidden                = function(self) return false end,
+    IsPurgable              = function(self) return false end,
+    IsDebuff                = function(self) return true end,
+    IsBuff                  = function(self) return true end,
+    RemoveOnDeath           = function(self) return false end,
+    AllowIllusionDuplicate  = function(self) return true end,
+    IsPermanent             = function(self) return true end,
+    DeclareFunctions        = function(self) return {MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE, MODIFIER_EVENT_ON_ATTACK_LANDED} end,
+})
+
+
+
+function modifier_attack_damage_reduction:OnCreated()
+    self.ability = self:GetAbility()
+    self.reduction = self.ability:GetSpecialValueFor('reduction')
+    
+   
+
+end  
+
+function modifier_attack_damage_reduction:OnAttackLanded()
+
+end
+
+function modifier_attack_damage_reduction:GetModifierPreAttack_BonusDamage()
+    return -self.reduction * self:GetStackCount() 
+end
 
 

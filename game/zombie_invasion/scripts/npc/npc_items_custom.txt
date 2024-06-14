@@ -13649,7 +13649,7 @@
 				"bonus_damage_per_kill"	"2 4 8"
 				"bonus_damage_per_assist"	"1"
 				"max_damage"			"1200"
-				"chance_to_stack"	"25"
+				"chance_to_stack"	"66"
 
 		}	
 	}

@@ -26,7 +26,7 @@
 		"AbilityValues"
 		{
 			
-				"damage"			"25 50 75 100 125 150 175 200 225 250 275 300 325 350"
+				"damage"			"125 150 175 200 225 250 275 300 325 350 375 400 425 450"
 				"stun_duration"			"2.25"
 				"dragon_cast_range"			"400"
 				"pct_damage"	"1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8"
@@ -104,8 +104,8 @@
 				"damage_bonus"			"1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5"
 				"armor_bonus"			
 				{
-					"value"	"4 6 8 10 12 14 16 18 20 22 24 26 28 30"
-					"special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"	"+12"
+					"value"	"6 10 14 18 22 26 30 34 38 42 46 50 54"
+					"special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"	"+16"
 				}
 
         }
@@ -207,7 +207,7 @@
 		{
 			
 				"resist_damage"		"-40"
-				"duration"		"8"
+				"duration"		"24"
 				"damage"		"-25"
 				
 				

@@ -94,7 +94,7 @@
         "AbilityTextureName"    "drow/drow_marks2"
         "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "ScriptFile"                    "heroes/hero_drow/marksmanship_detection/marksmanship_detection"
-        "RequiredLevel"                 "50"
+        "RequiredLevel"                 "12"
         "MaxLevel"                        "1"
         // Data driven
         // -------------------------------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@
                             "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_CUSTOM"
                             "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
                             "Center"    "TARGET"
-                            "Radius"    "275"
+                            "Radius"    "225"
                         }
                     }
                 }
@@ -176,8 +176,8 @@
                 "wave_width"        "400"
             "armor_reduction"
             {
-                "value"   "-2 -4 -6 -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28"
-                "special_bonus_unique_drow_range_armor"    "-6"
+                "value"   "-6 -9 -12 -15 -18 -21 -24 -27 -30 -33 -36 -39 -42 -45"
+                "special_bonus_unique_drow_range_armor"    "-15"
             }
             
                 "vision_aoe"        "300"

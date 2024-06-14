@@ -56,14 +56,14 @@
 		"Game_notification_win"         "<font color='#ff9900'>Оставляйте свои отзывы в мастерской! </font>"
 
 		"difficulty_description_normal" "СТАТЫ ВРАГОВ НЕ УВЕЛИЧЕНЫ!"
-		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 125%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
-		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 150%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_medium" "<font color='#ffff00'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 200%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_hard" "<font color='#c10020'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 300%</font>! (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
  	
  		"difficulty_description_randomheroes" "<font color='#ffff00'>После каждой успешно пройденной ночи, вам будут выдавать нового героя!</font>!"
  		"difficulty_description_onedown" "<font color='#c10020'>У ВАС ТОЛЬКО ОДНА ЖИЗНЬ</font>(возродиться можно после успешно пройденной ночи)"
 
 
-		"difficulty_description_demon" "<font color='#ff0000'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 175%</font>!  (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
+		"difficulty_description_demon" "<font color='#ff0000'>СТАТЫ ВРАГОВ УВЕЛИЧЕНЫ НА 400%</font>!  (Урон, урон от способностей, здоровье и защита, у некоторых врагов новые способности)"
 
 		"difficulty_description_impossible" "<font color='#000000'>АВХХВАХВАХВАХВАХВАХВАХВАХВАХВАХВАХАВХАВХВАХВХАХВАХВАХВАХВАХАВХВАХВАХВАХАВХВАХВАХВАХХ
 		АВХВАХВАХВАХХВАХВАХАВХВАВХХВАВАХАВХВАХВХВАХВ
@@ -636,7 +636,7 @@
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma"											"<font color='#ffb300'>Руководитель пустоты для чайников</font>"
 		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Description"											"<h1>Активная: Гайд от NASQREAL </h1> <font color='#ffb300'> Герой получает уникальное умение, которое можно изучить и стать сильнее.</font>
-		<h1>Пассивная: Super idol</h1> После убийства %kill_count% существ, Энигма создаёт из их трупов огромного Эйдолона, который имеет %eidolon_hp_tooltip% здоровья и %eidolon_dmg_tooltip% урона + с его интеллектом и ловкостью." 
+		<h1>Пассивная: Super idol</h1> Герой становится неуязвим к атакам" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink"											"<font color='#ffb300'>Руководитель для любителей белочек</font>"
@@ -3887,11 +3887,12 @@
  
 
 		"DOTA_Tooltip_ability_ability_counter_helix"										"Counter Helix"
-		"DOTA_Tooltip_ability_ability_counter_helix_Description"							"Герой с некоторой вероятностью отвечает на атаки противников, нанося чистый урон всем врагам вокруг себя."
+		"DOTA_Tooltip_ability_ability_counter_helix_Description"							"Герой с некоторой вероятностью отвечает на атаки противников, нанося чистый урон всем врагам вокруг себя и уменьшая урон своей цели."
 		"DOTA_Tooltip_ability_ability_counter_helix_shard_description"						"Каждое срабатывание способности применяет на жертв складывающийся эффект, уменьшающий их урон от атак по владельцу способности. Также увеличивает шанс контратаки."
 		"DOTA_Tooltip_ability_ability_counter_helix_Note0"									"Срабатывает при завершении атаки по владельцу способности."
 		"DOTA_Tooltip_ability_ability_counter_helix_Lore"									"Могул-хан — сам себе войско."
 		"DOTA_Tooltip_ability_ability_counter_helix_damage"									"УРОН:"
+		"DOTA_Tooltip_ability_ability_counter_helix_reduction"									"УМЕНЬШЕНИЕ УРОНА:"
 		"DOTA_Tooltip_ability_ability_counter_helix_radius"									"РАДИУС:"
 		"DOTA_Tooltip_ability_ability_counter_helix_trigger_chance"							"%ШАНС КОНТРАТАКИ:"
 
@@ -4021,7 +4022,7 @@
 
 
  		"DOTA_Tooltip_ability_enigma_buff_1"	"Eidalon's crusher"
- 		"DOTA_Tooltip_ability_enigma_buff_1_Description"			"<h1>Пассивная: Super idol</h1> После убийства %kill_count% существ, Энигма создаёт из их трупов огромного Эйдолона, который имеет %eidolon_hp_tooltip% здоровья и %eidolon_dmg_tooltip% урона + с его интеллектом и ловкостью."
+ 		"DOTA_Tooltip_ability_enigma_buff_1_Description"			"<h1>Пассивная: Super idol</h1>Герой становится неуязвим к атакам"
 
 
  		"DOTA_Tooltip_Ability_special_bonus_unique_enigma_black_hole_dead"											"Black hole при смерти"
@@ -4302,12 +4303,11 @@
 		"DOTA_Tooltip_ability_wraith_king_mortal_strike_lua_crit_mult"					"%КРИТИЧЕСКИЙ УРОН:"
 
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua"								"Be stronger"
-		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_Description"					"Король скелетов использует Темную силу, чтобы стать сильней. У него появляется встроенная сабля с перезарядков в %down% секунд и кучу новых прибавок."
+		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_Description"					"Король скелетов использует Темную силу, чтобы стать сильней."
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_Lore"							"Поистине Тёмная сила."
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_strength"					"ДОПОЛНИТЕЛЬНАЯ СИЛА:"
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_armor"					"ДОПОЛНИТЕЛЬНЫЙ АРМОР:"
 		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_resist"					"ДОПОЛНИТЕЛЬНЫЙ РЕЗИСТ К ЭФФЕКТАМ:"
-		"DOTA_Tooltip_ability_dragon_knight_dragon_blood_lua_bonus_speed_atack"					"СНИЖЕНИЕ БАЗОВОЙ СКОРОСТИ АТАКИ:"
 	
 		"DOTA_Tooltip_Ability_special_bonus_unique_skeleton_stronger"											"+{s:bonus_bonus_strength}% к бонусам от Be stronger"  
 		"DOTA_Tooltip_Ability_special_bonus_unique_skeleton_vampir"											"+{s:bonus_vampiric_aura}% к вампиризму от Vamрiric Aura"  

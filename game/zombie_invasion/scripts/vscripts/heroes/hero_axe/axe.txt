@@ -155,6 +155,8 @@
 			    	"special_bonus_unique_axe_helix_chance"	    "+22"
 					 
 				}
+				"reduction"		"45 75 115 135 165 190 215 245 270 310 375 410 475 525"
+				"duration"		"4"
 				"cooldown"				
 				{
 					"value"				"0"
