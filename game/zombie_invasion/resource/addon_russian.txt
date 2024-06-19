@@ -2251,6 +2251,12 @@
 
 		// -----------------alchemist--------------------  
 
+		"DOTA_Tooltip_alchemist_chemical_rage_custom"		"Chemical rage"
+
+
+
+
+
  		"DOTA_Tooltip_Ability_alchemist_good_deal"                                            "Good deal"
         "DOTA_Tooltip_Ability_alchemist_good_deal_Description"                                "Превращает текущее золото алхимика в урон. При потере золота, урон также уменьшается."
  		"DOTA_Tooltip_Ability_alchemist_good_deal_damage_gold"                                            "%ЗОЛОТО В УРОН:"        

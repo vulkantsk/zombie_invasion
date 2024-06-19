@@ -66,9 +66,15 @@ function modifier_ability_counter_helix:OnAttackLanded(data)
                 damage_type = DAMAGE_TYPE_PURE
             })
             if enemy:HasModifier("modifier_attack_damage_reduction") then
-                enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
-                duration = self:GetAbility():GetSpecialValueFor("duration"),
-                }):IncrementStackCount()
+                if enemy:GetModifierStackCount("modifier_attack_damage_reduction", nil) < 4 then
+                    enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
+                    duration = self:GetAbility():GetSpecialValueFor("duration"),
+                    }):IncrementStackCount()
+                else
+                    enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
+                    duration = self:GetAbility():GetSpecialValueFor("duration"),
+                    }):SetStackCount(4)
+                end
             else
             enemy:AddNewModifier(self:GetParent(), self:GetAbility(), 'modifier_attack_damage_reduction', {
             duration = self:GetAbility():GetSpecialValueFor("duration"),

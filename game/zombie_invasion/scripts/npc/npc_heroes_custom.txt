@@ -33,6 +33,7 @@
 		"AttributeBaseIntelligence"		"15"
 		"AttributeIntelligenceGain"		"1.800000"
 		"MovementSpeed"		"275"
+		"Facets"                 ""
  
 	}
 
@@ -68,6 +69,7 @@
 		"AttributeAgilityGain"		"1.700000"
 		"MovementSpeed"		"315"
 		"MovementTurnRate"		"0.500000"
+		"Facets"                 ""
 	}
 
   "npc_dota_hero_hoodwink"
@@ -92,7 +94,7 @@
 		"ArmorPhysical"		"4"
 		"AttackDamageMin"		"45"
 		"AttackDamageMax"		"52"
-		"AttackRate"		"2.000000"
+		"AttackRate"		"1.200000"
 		"BaseAttackSpeed"	"145"
 		"AttackAnimationPoint"		"0.560000"
 		"AttackAcquisitionRange"		"600"
@@ -104,6 +106,7 @@
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.7500000"
 		"MovementSpeed"		"285"
+		"Facets"                 ""
 
     } 
 
@@ -141,6 +144,7 @@
 		"VisionDaytimeRange"		"1800"
 		"MovementSpeed"		"280"
 		"MovementTurnRate"		"0.500000"
+		"Facets"                 ""
  
 	}
 
@@ -253,6 +257,7 @@
 		"AttributeIntelligenceGain"		"1.400000"
 		"StatusHealthRegen"		"0.25"
 		"MovementSpeed"		"305"		
+		"Facets"                 ""
  
 	}
 
@@ -288,6 +293,7 @@
 		"StatusHealth"				"400"									// Base health.
 		"StatusHealthRegen"		"0.25"
 		"MovementSpeed"		"265"
+		"Facets"                 ""
 	}
 	
 "npc_dota_hero_rubick"
@@ -339,6 +345,7 @@
 		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
 		"StatusMana"				"150"											// Base mana.
 		"StatusManaRegen"			"2"									// Mana regeneration rate.
+		"Facets"                 ""
 
  
 	}	
@@ -373,6 +380,7 @@
         "AttributeAgilityGain"        "1.2"
         "MovementSpeed"        "270"
         "MovementTurnRate"        "0.500000"
+        "Facets"                 ""
     }
     
 "npc_dota_hero_medusa"
@@ -400,6 +408,7 @@
 			"AttributeIntelligenceGain"	"3.4"										// Intelligence bonus per level.
 			"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
 			"ArmorPhysical" "12"
+			"Facets"                 ""
 	}
 	
 "npc_dota_hero_gyrocopter"
@@ -565,6 +574,7 @@
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"290"
 		"MovementTurnRate"		"0.600000"
+		"Facets"                 ""
 }
 
 	"npc_dota_hero_shredder"
@@ -706,6 +716,7 @@
 		"MovementSpeed"		"250"
 		"MovementTurnRate"		"0.500000"
 		"VisionDaytimeRange"		"1800"
+		"Facets"                 ""
 	}
  
 //=========================================================================================================
@@ -781,6 +792,7 @@
 		 "Ability16"		"special_bonus_hp_800"
 		 "Ability17"		"special_bonus_cooldown_reduction_15"	
 		         "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"			
+		         "Facets"                 ""
 	}
 	
 "npc_dota_hero_earthshaker"
@@ -846,7 +858,8 @@
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"265"
 		"BaseAttackSpeed"	"115"
-		"MovementTurnRate"		"0.600000"		
+		"MovementTurnRate"		"0.600000"	
+		"Facets"                 ""	
 	}	
 
 "npc_dota_hero_spectre"
@@ -914,6 +927,7 @@
 		"StatusManaRegen"	"0.75"
 		"MovementSpeed"		"290"
 		"MovementTurnRate"		"0.600000"
+		"Facets"                 ""
 	}
 
 "npc_dota_hero_bristleback"
@@ -957,6 +971,7 @@
 		"StatusManaRegen"	"0.75"
 		"MovementSpeed"		"240"
 		"MovementTurnRate"		"0.600000"
+		"Facets"                 ""
     }
 
 "npc_dota_hero_dark_seer"
@@ -992,6 +1007,7 @@
 		"AttributeBaseIntelligence"		"0"
 		"AttributeIntelligenceGain"		"2.400000"
 		"MovementSpeed"		"295"
+		"Facets"                 ""
 	}
  
  	"npc_dota_hero_luna"
@@ -1025,6 +1041,7 @@
 		"StatusHealthRegen"		"1.5"
 		"MovementSpeed"		"310"
 		"VisionNighttimeRange"		"800"
+		"Facets"                 ""
 	}
  
 	
@@ -1205,6 +1222,7 @@
 		"MovementSpeed"		"290"
 		"MovementTurnRate"		"0.600000"
 		"ProjectileSpeed" "900"
+		"Facets"                 ""
  	
 	}	
  
@@ -1237,6 +1255,7 @@
 		"AttributeBaseAgility"		"20"
 		"AttributeAgilityGain"		"2.40000"
 		"MovementSpeed"		"285"
+		"Facets"                 ""
  
 	}
 
@@ -1299,6 +1318,7 @@
 
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
+		"Facets"                 ""
 	}
 
 //=========================================================================================================
@@ -1460,6 +1480,7 @@
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.5"
 		"MovementSpeed"		"315"
+		"Facets"                 ""
  
 	}
 //=========================================================================================================
@@ -1676,6 +1697,7 @@
 
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
+		"Facets"                 ""
 	}
 
 	"npc_dota_hero_enigma"
@@ -1710,6 +1732,7 @@
 		"MovementSpeed"		"260"
 		"BaseAttackSpeed"		"70"
 		"AttackRate"		"2.1"
+		"Facets"                 ""
  
 	}
 
@@ -1743,6 +1766,7 @@
 		"AttributeAgilityGain"		"2.400000"
 		"StatusHealthRegen"		"2.75"
 		"MovementSpeed"		"375"
+		"Facets"                 ""
  
 	}
 	"npc_dota_hero_drow_ranger"
@@ -1774,6 +1798,7 @@
 		"AttributeAgilityGain"		"4.2"
 		"StatusHealthRegen"		"0"
 		"MovementSpeed"		"320"	
+		"Facets"                 ""
 	}
 
 	"npc_dota_hero_morphling"
@@ -1826,6 +1851,7 @@
 		"Ability15"		"special_bonus_unique_shinobu_eat_oddity2"
 		"Ability16"		"special_bonus_corruption_5"
 		"Ability17"		"special_bonus_unique_shinobu_shinobu_kokorowatari"
+		"Facets"                 ""
 
 
 		  "CustomSoundEvents"
@@ -1879,6 +1905,7 @@
 		"Ability14"		"special_bonus_unique_sara_evolution"
 		"Ability15"		"special_bonus_unique_sara_evolution2"
 		"Ability16"		"special_bonus_cleave_60"
+		"Facets"                 ""
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		        "AttributePrimary"        "DOTA_ATTRIBUTE_ALL"
 		"AttackRange"			"150"
@@ -1916,6 +1943,7 @@
 		"Ability15"		"special_bonus_unique_muerta_dead_shot_damage"
 		"Ability16"		"special_bonus_unique_muerta_gunslinger_double_shot_chance"
 		"Ability17"		"special_bonus_magic_resistance_25"
+		"Facets"                 ""
 		"ArmorPhysical"		"-1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"34"
@@ -1981,6 +2009,7 @@
 		"Ability15"		"special_bonus_unique_sf_devour_cooldown"
 		"Ability16"		"special_bonus_unique_sf_necrom_life"
 		"Ability17"		"special_bonus_unique_sf_necrom_damage"
+		"Facets"                 ""
 		"ArmorPhysical"		"-8"
 		"AttackDamageMin"		"51"
 		"AttackDamageMax"		"59"
@@ -2021,6 +2050,7 @@
 		"Ability15"		"special_bonus_unique_lord_kiss_damage"
 		"Ability16"		"special_bonus_unique_lord_dance_duration"
 		"Ability17"		"special_bonus_unique_lord_kiss_cooldown"
+		"Facets"                 ""
 		"ArmorPhysical"		"2"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"44"
@@ -2113,6 +2143,7 @@
 		"MovementSpeed"		"330"
 		"MovementTurnRate"		"0.50000"
 		"StatusHealthRegen"		"1.5"
+		"Facets"                 ""
  
 	}
 	"npc_dota_hero_templar_assassin"
@@ -2147,6 +2178,7 @@
 		"MovementSpeed"		"290"
 		"MovementTurnRate"		"0.50000"
 		"StatusHealthRegen"		"1.5"
+		"Facets"                 ""
  
 	}
 	
@@ -2185,6 +2217,7 @@
 		"AttackDamageMin"		"51"
 		"AttackDamageMax"		"59"
 		"MagicalResistance"		"40"
+		"Facets"                 ""
 		"ItemSlots"
   		{ }
 	}

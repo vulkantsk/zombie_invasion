@@ -20,11 +20,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"22.0"
+		"AbilityCooldown"				"12.0"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 120 160 200 240 280 320"
+		"AbilityManaCost"				"80"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@
 			"duration"				"16"
 			"damage"		
 			{
-				"value"						"20 45 65 75 80 95 110 125 140 155 170 195 210 235"
+				"value"						"75 80 95 110 125 140 155 170 195 210 235 255 275 295"
 				"special_bonus_unique_alchemist_acid_spray" "40"
 				"CalculateSpellDamageTooltip"	      "1"
 			}
@@ -73,7 +73,7 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12.0 12.0 12.0 12.0 11.0 10.0 9.0"
+		"AbilityCooldown"				"9.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -155,10 +155,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5368"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"MaxLevel"					"14"
+		"MaxLevel"					"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -170,10 +170,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"duration"				"36"
-			"bonus_gold"			"4"
-			"bonus_bonus_gold"		"1 1 2 2 3 3 4 4 5 5 6 6 7 7"
-			"bonus_gold_cap"		"9 10 11 12 13 14 15 16 17 18 19 20 21 22"
+			"duration"				"12"
+			"bonus_gold"			"1"
+			"bonus_bonus_gold"		"1"
+			"bonus_gold_cap"		"24"
 			"bounty_multiplier"		"5.0"
 		}
 
@@ -265,16 +265,16 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"duration"				"30"
+			"duration"				"30"	
 			"transformation_time"	"0.35"
-			"base_attack_time"		"1.2 1.1 1 0.9 0.8 0.7 0.6 0.5 0.4 0.3"
-			"bonus_health"			"0"
+			"base_attack_time"		"1.1 1 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2"
+			"bonus_health"			"500 1000 1500 2000 2500 3000 3500 4000 4500 5000"
 			"bonus_health_regen"
 			{
 				"value"	"50 100 150 200 250 300 350 400 450 500"
 				"special_bonus_unique_alchemist_4"		"+50"
 			}
-			"bonus_mana_regen"		"0"
+			"bonus_mana_regen"		"10 12 14 16 18 20 22 24 26 28"
 			"bonus_movespeed"
 			{
 				
@@ -288,12 +288,12 @@
 			}
 			"scepter_bonus_damage"
 			{
-				"value"						"125"
+				"value"						"245"
 				"RequiresScepter"			"1"
 			}
 			"scepter_spell_amp"
 			{
-				"value"						"25"
+				"value"						"75"
 				"RequiresScepter"			"1"
 			}
 		}

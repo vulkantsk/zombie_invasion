@@ -11083,12 +11083,14 @@
 		}
 	}
  
+	//=================================================================================================================
+	// Phase Boots
+	//=================================================================================================================
 	"item_phase_boots"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"50"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 		
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
@@ -11102,66 +11104,23 @@
 		"ItemAliases"					"phase boots"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"				"1"
+		"SpeciallyBannedFromNeutralSlot"		"1"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"95"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_damage_melee"			"70"
-			}			
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_damage_range"			"45"
-			}			
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"50"
+				"bonus_damage_melee"			"18"
+				"bonus_damage_range"			"12"
 				"damage_block_melee"	"0"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"damage_block_ranged"	"0"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"block_chance"			"0"
-			}		
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"phase_movement_speed"  "20"
-			}		
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"phase_movement_speed_range"  "10"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_FLOAT"
 				"phase_duration"		"3.0"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"bonus_attack_speed"	"0"
-			}		
-			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"8"
-			}		
+				"bonus_armor"			"12"
 		}
 	}
  
@@ -11193,7 +11152,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"AbilityTextureName" 			"carry/phase_boots_2tem_"
+		"AbilityTextureName" 			"carry/imba_phase_boots_2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"ScriptFile"					"items/bots/item_crystal_boots"

@@ -200,7 +200,7 @@
 		"ScriptFile"					"heroes/hero_skeleton_king/stronger/dragon_knight_dragon_blood_lua"
 		"AbilityTextureName"			"Hero/Skeleton_king/stronger"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"3"
+		"MaxLevel"						"10"
 
 			"LevelsBetweenUpgrades"			"10"	
 		"RequiredLevel"					"10"
@@ -228,18 +228,18 @@
 		    "attack_speed_buff"		"400"
  		    "bonus_strength"
 		    {
-					"value"			"20 30 55"
-					"special_bonus_unique_skeleton_stronger"		"+25%"
+					"value"			"25 45 65 85 105 125 145 165 185 205"
+					"special_bonus_unique_skeleton_stronger"		"+200%"
 		    }
  		    "bonus_armor"
 		    {
-					"value"			"16 20 24"
-					"special_bonus_unique_skeleton_stronger"		"+25%"
+					"value"			"10 15 20 25 30 35 40 45 50 55"
+					"special_bonus_unique_skeleton_stronger"		"+200%"
 		    }
  		    "bonus_resist"
 		    {
-					"value"			"15 20 25"
-					"special_bonus_unique_skeleton_stronger"		"+25%"
+					"value"	"9 19 29 39 49 59 69 79 89 99"
+					"special_bonus_unique_skeleton_stronger"		"+200%"
 		    }
  
  	
