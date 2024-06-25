@@ -24,6 +24,7 @@ modifier_bloodrage_buff = class({
             MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
             MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
             MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
+            MODIFIER_EVENT_ON_TAKEDAMAGE,
             } end,
 })
 
@@ -37,6 +38,25 @@ function modifier_bloodrage_buff:OnCreated( kv )
     self:StartIntervalThink(0.25)
     self:OnIntervalThink()
     
+end
+
+function modifier_bloodrage_buff:OnTakeDamage(params)
+    if not IsServer() then return end
+    if self:GetParent() ~= params.attacker then return end
+    if self:GetParent() == params.unit then return end
+    if params.unit:IsBuilding() then return end
+    if params.unit:IsWard() then return end
+    if params.inflictor == nil and not self:GetParent():IsIllusion() and bit.band(params.damage_flags, DOTA_DAMAGE_FLAG_REFLECTION) ~= DOTA_DAMAGE_FLAG_REFLECTION then 
+        local heal = self:GetAbility():GetSpecialValueFor("lifesteal") / 100 * params.damage
+        self:GetParent():Heal(heal, self:GetAbility())
+
+        local particle = "particles/generic_gameplay/generic_lifesteal.vpcf"
+
+       
+
+        local effect_cast = ParticleManager:CreateParticle( particle, PATTACH_ABSORIGIN_FOLLOW, params.attacker )
+        ParticleManager:ReleaseParticleIndex( effect_cast )
+    end
 end
 
 function modifier_bloodrage_buff:OnRefresh( kv )

@@ -39,6 +39,7 @@
 					"value"			"2"
 					"special_bonus_scepter"	"+3"
 				}
+				"lifesteal"		"16"
 				"stack_duration"		"20"
 		}
  

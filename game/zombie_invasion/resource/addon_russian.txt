@@ -2744,6 +2744,7 @@
 
 			"DOTA_Tooltip_ability_bloodrage"					"Blood rage"
 			"DOTA_Tooltip_ability_bloodrage_Description"		"Blood Hunter разрывает свою жертву на части, поглощая её кровь и получая стаки в колчичестве %stack% на %stack_duration% секунд. За каждый стак герой получает бонусный урон и скорость атаки."
+			"DOTA_Tooltip_ability_bloodrage_lifesteal"		"%ДОП.ВАМПИРИЗМ:"
 			"DOTA_Tooltip_ability_bloodrage_Lore"					"Его когти острее любого клинка."
 			"DOTA_Tooltip_ability_bloodrage_bonus_damage"			"ДОП.УРОН:"
 			"DOTA_Tooltip_ability_bloodrage_bonus_attack_speed"		"ДОП.СКОРОСТЬ АТАКИ:"

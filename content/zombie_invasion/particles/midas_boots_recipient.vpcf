@@ -2,10 +2,9 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 110
-	m_ConstantColor = [ 0, 139, 237, 255 ]
-	m_nBehaviorVersion = 12
-	m_nFirstMultipleOverride_BackwardCompat = 4
+	m_nMaxParticles = 100
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 6
 	m_controlPointConfigurations = 
 	[
 		{
@@ -16,47 +15,35 @@
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
 			]
 		},
 	]
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_ContinuousEmitter"
-			m_flEmissionDuration = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 0.25
-			}
-			m_flEmitRate = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 200.0
-			}
+			_class = "C_OP_InstantaneousEmitter"
 		},
 	]
 	m_Initializers = 
 	[
 		{
-			_class = "C_INIT_RandomSequence"
-			m_nSequenceMax = 3
-		},
-		{
-			_class = "C_INIT_CreateInEpitrochoid"
-			m_bUseCount = true
-			m_flParticleDensity = 4.0
-			m_flOffset = 92.000008
-			m_flRadius2 = -41.0
-			m_flRadius1 = 62.0
-			m_nComponent2 = 0
-			m_nComponent1 = 1
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 0, 156, 255, 255 ]
+			m_ColorMax = [ 0, 162, 255, 255 ]
 		},
 		{
 			_class = "C_INIT_InitFloat"
 			m_InputValue = 
 			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 0.6
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 0.6
+				m_flRandomMax = 0.8
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
 			}
 			m_nOutputField = 1
 		},
@@ -64,68 +51,101 @@
 			_class = "C_INIT_InitFloat"
 			m_InputValue = 
 			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 16.0
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = -10.0
+				m_flRandomMax = 10.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_bHasRandomSignFlip = true
+			}
+			m_nOutputField = 4
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_RANDOM_UNIFORM"
+				m_flRandomMin = 32.0
+				m_flRandomMax = 48.0
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
 			}
 		},
 		{
-			_class = "C_INIT_PositionOffset"
-			m_OffsetMax = [ 0.0, 0.0, 64.0 ]
-			m_OffsetMin = [ 0.0, 0.0, 64.0 ]
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+			m_nOutputField = 7
+		},
+		{
+			_class = "C_INIT_CreateOnModel"
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [ 0.0, 0.0, 60.0 ]
+			m_vecOutputMax = [ 1.0, 1.0, 84.0 ]
+			m_TransformInput = 
+			{
+				m_nType = "PT_TYPE_INVALID"
+			}
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_InputValue = 
+			{
+				m_flInput0 = 0.0
+				m_flInput1 = 1.0
+				m_flOutput0 = 1.0
+				m_flOutput1 = 0.0
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_nType = "PF_TYPE_PARTICLE_FLOAT"
+				m_nScalarAttribute = 8
+			}
+			m_nOutputField = 16
 		},
 	]
 	m_Operators = 
 	[
 		{
 			_class = "C_OP_BasicMovement"
+			m_Gravity = [ 0.0, 0.0, -40.0 ]
 		},
 		{
-			_class = "C_OP_PositionLock"
-		},
-		{
-			_class = "C_OP_Decay"
-		},
-		{
-			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 0.5
-		},
-		{
-			_class = "C_OP_FadeInSimple"
-			m_flFadeInTime = 0.5
+			_class = "C_OP_FadeAndKill"
+			m_flEndFadeInTime = 0.1
+			m_flStartFadeOutTime = 0.3
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 0, 8, 255 ]
-			m_flFadeStartTime = 0.5
+			m_bEaseInOut = false
+			m_ColorFade = [ 0, 228, 255, 255 ]
 		},
 		{
-			_class = "C_OP_InterpolateRadius"
-			m_flStartScale = 0.0
-			m_flEndScale = 12.0
-			m_flBias = 0.75
-		},
-		{
-			_class = "C_OP_Orient2DRelToCP"
-			m_flRotOffset = 315.0
+			_class = "C_OP_LockToBone"
+			m_flLifeTimeFadeStart = 1.0
+			m_flLifeTimeFadeEnd = 1.0
 		},
 	]
 	m_Renderers = 
 	[
 		{
 			_class = "C_OP_RenderSprites"
-			m_nOrientationType = "PARTICLE_ORIENTATION_WORLD_Z_ALIGNED"
+			m_flStartFadeSize = 0.5
+			m_flEndFadeSize = 0.75
+			m_flOverbrightFactor = 2.0
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/particle_swirl_04b.vtex"
+					m_hTexture = resource:"materials/particle/particle_flares/particle_flare_004b_mod.vtex"
 				},
 			]
-			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_MOD2X"
 			m_vecColorScale = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL_COLOR"
 				m_vLiteralValue = [ 0.0, 0.0, 0.0 ]
-				m_LiteralColor = [ 25, 25, 112 ]
+				m_LiteralColor = [ 255, 255, 0 ]
 				m_NamedValue = ""
 				m_bFollowNamedValue = false
 				m_nVectorAttribute = 6
@@ -164,7 +184,7 @@
 					m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
 					m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
 					m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-					m_flNoiseTurbulenceScale = 1.25
+					m_flNoiseTurbulenceScale = 1.0
 					m_flNoiseTurbulenceMix = 0.5
 					m_flNoiseImgPreviewScale = 1.0
 					m_bNoiseImgPreviewLive = true
@@ -219,7 +239,7 @@
 					m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
 					m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
 					m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-					m_flNoiseTurbulenceScale = 1.25
+					m_flNoiseTurbulenceScale = 1.0
 					m_flNoiseTurbulenceMix = 0.5
 					m_flNoiseImgPreviewScale = 1.0
 					m_bNoiseImgPreviewLive = true
@@ -274,7 +294,7 @@
 					m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
 					m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
 					m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-					m_flNoiseTurbulenceScale = 1.25
+					m_flNoiseTurbulenceScale = 1.0
 					m_flNoiseTurbulenceMix = 0.5
 					m_flNoiseImgPreviewScale = 1.0
 					m_bNoiseImgPreviewLive = true
@@ -329,7 +349,7 @@
 					m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
 					m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
 					m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-					m_flNoiseTurbulenceScale = 1.25
+					m_flNoiseTurbulenceScale = 1.0
 					m_flNoiseTurbulenceMix = 0.5
 					m_flNoiseImgPreviewScale = 1.0
 					m_bNoiseImgPreviewLive = true
@@ -367,6 +387,15 @@
 				m_vRandomMax = [ 0.0, 0.0, 0.0 ]
 			}
 			m_nColorBlendType = "PARTICLE_COLOR_BLEND_REPLACE"
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/items_fx/arcane_boots_recipient_b.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/items_fx/arcane_boots_recipient_c.vpcf"
 		},
 	]
 }

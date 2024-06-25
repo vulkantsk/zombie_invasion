@@ -33,9 +33,9 @@ end
 
 modifier_rom_effect = modifier_rom_effect or class({})
 
--- Modifier properties
+-- Modifier MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT
 
-function modifier_rom_effect:IsHidden()		return false end
+function modifier_rom_effect:IsHidden()		return true end
 function modifier_rom_effect:IsPurgable()		return false end
 function modifier_rom_effect:RemoveOnDeath()	return true end
 --function modifier_rom_effect:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
@@ -72,7 +72,11 @@ end
 
 function modifier_rom_effect:OnIntervalThink()
     if not IsServer() then return end
-    self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
+    	if self:GetParent():HasModifier("modifier_rom_passive") then
+    		self:GetParent():SetHealth(math.max( self:GetParent():GetHealth() - (100 * 0.25), 1))
+		else
+			self:GetParent():RemoveModifierByName("modifier_rom_effect")	
+		end
 end
 
 
