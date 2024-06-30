@@ -152,7 +152,7 @@ end
 
 
 modifier_item_blood_keeper_shield = class({})
-
+    
 function modifier_item_blood_keeper_shield:IsHidden() return false end
 function modifier_item_blood_keeper_shield:IsPurgable() return false end
 
