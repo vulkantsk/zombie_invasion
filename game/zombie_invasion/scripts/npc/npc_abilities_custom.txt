@@ -366,7 +366,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"dps"			"20"
+				"dps"			"51"
 			}						
  
 		}

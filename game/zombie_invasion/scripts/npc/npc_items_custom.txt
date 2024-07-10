@@ -11427,47 +11427,6 @@
 			}
 		}
 	}
-	"item_midas_boots"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"							"item_lua"	
-		"ScriptFile"					"items/new_items/item_midas_boots"	
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-    		"AbilityTextureName"                              "arcane_boots2_png"    
-		// Stats		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"90.0"
-		"AbilityCastRange"				"1200"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-		"ItemCost"						"1400"
-		"ItemShopTags"					"move_speed"
-		"ItemQuality"					"rare"
-		"ItemAliases"					"mana;mb;arcane boots"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemAlertable"					"1"
-		"ShouldBeSuggested"				"1"
- 
-
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			
-				"bonus_movement"		"95"
-
-		
-				"radius"		"1200"
-			
-				"duration"		"8"
-				"gold"			"560"
-			
-		}
-	}
 
 		"item_color_red"
 	{

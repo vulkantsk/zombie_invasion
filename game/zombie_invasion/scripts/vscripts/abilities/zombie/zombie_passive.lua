@@ -69,7 +69,7 @@ function modifier_zombie_passive_fire:OnCreated()
  
 		local ability = self:GetAbility()
  
-		self:StartIntervalThink(1)
+		self:StartIntervalThink(0.5)
 	end
 end
 
@@ -80,13 +80,15 @@ end
 function modifier_zombie_passive_fire:OnIntervalThink()
 	local caster = self:GetCaster()
 	local parent = self:GetParent()
+	local parent = self:GetParent()
 	local ability = self:GetAbility()
 	local dps =  ability:GetSpecialValueFor("dps")
- 	DealDamage (caster, parent, caster:GetMaxHealth() * (dps/100), DAMAGE_TYPE_PURE, nil, ability)
-
- 	if caster:GetHealth() < 2 then
- 		return caster:ForceKill(false)
+	if parent:GetHealthPercent() <= 50 then
+ 	     UTIL_Remove(parent)
+ 	else
+ 		DealDamage (caster, parent, caster:GetMaxHealth() * (dps/100), DAMAGE_TYPE_PURE, nil, ability)
  	end
+
  
  
 end
