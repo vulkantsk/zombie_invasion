@@ -14,25 +14,16 @@
 
 		// Special	
 		//-----------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"damagee"				"1 2 3 4 5 6 7 8 9 10 11 12 13 14"
-			}
-
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"arrow_count"			"4"
 				"special_bonus_shard"	"+2"
-			}	
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"fake_damage"				""
-			}		
+				
 		}
 
 	    "OnToggleOn"
@@ -251,53 +242,27 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"radius"				"475 475 475"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"snake_jumps"			"12 20 44"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"jump_delay"			"0.25 0.25 0.25"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"snake_damage"			"200 445 575"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"snake_mana_steal"		"0"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"snake_scale"			"10 25 40"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"initial_speed"			"800"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"return_speed"			"800"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"stone_duration"		"1.0 1.5 2.0"
-			}
+			
 		}
 	}
 	"medusa_buff_1"

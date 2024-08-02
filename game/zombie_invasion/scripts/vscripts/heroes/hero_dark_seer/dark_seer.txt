@@ -110,19 +110,17 @@
 
         "AbilityCastRange"              "375"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"	
+			
 				"duration"				"3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8 8.5 9"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"speed_boost"				"720"
-				"special_bonus_shard"	"+680"
-			}
+			
+				"speed_boost"				
+				{
+					"value" "720"
+					"special_bonus_shard"	"+680"
+				}
+			
  
 		}
 	}

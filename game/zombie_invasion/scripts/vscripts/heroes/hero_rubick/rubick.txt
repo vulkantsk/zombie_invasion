@@ -160,28 +160,17 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"duration"					"60.0 120.0 240.0"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"projectile_speed"			"900"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"cast_range_scepter"			"1400"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"stolen_debuff_amp"			"10 20 30"
-			}
+			
 
 		}
 	}	

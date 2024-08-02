@@ -95,51 +95,26 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"brew_time"					"5"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"extra_brew_time"			"0.5"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"stun"						"3.0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"damage"					"150 300 350 500 650 800 950 1000 1050 1100 1150 1200 1250 1300"
-				"CalculateSpellDamageTooltip"	"1"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"radius"					"350"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
+			
 				"time_per_stack"			"0.02"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"movement_speed"			"900"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"damage_pct"					"100 150 200 250 300 350 400 450 500 550 600 650 700 750"
-				"CalculateSpellDamageTooltip"	"1"
-
-			}
+			
 		}
 	}
 	 

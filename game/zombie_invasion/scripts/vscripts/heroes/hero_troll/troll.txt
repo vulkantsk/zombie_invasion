@@ -49,47 +49,24 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_hp"				"0"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_move_speed"		"5 10 15 20 25 30 35 40 45 50 55 60 65 70"
-				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_2"
 
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"bonus_armor"			"4 6 8 10 12 14 16 18 20 22 24 26 28 30"
-				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord"
-
-			}
-			"04"
-			{	
-				"var_type"				"FIELD_INTEGER"
+		
 				"bonus_range"			"350"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"base_attack_time"		"1.2"
-			}	
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
+		
 				"ensnare_chance"			"20"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"ensnare_duration"			"1.0"
-			}
+			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
@@ -132,50 +109,25 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"axe_width"					"100"
-			}
 			
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
+				"axe_width"					"100"
+			
 				"axe_speed"					"1500.0"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"axe_range"					"1000.0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"axe_damage"				"80 160 240 320 400 480 560 600 640 680 720 760 800 840"
-				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_3"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
+		
 				"axe_slow_duration"			"2.5"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"movement_speed"			"40"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"axe_spread"				"25"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"axe_count"					"5"
-			}
+			
 		}
 	}
 
@@ -212,44 +164,23 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"damage"					"110 160 240 320 400 480 560 600 640 680 720 760 800 840"
-				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_3"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"hit_radius"				"100"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"max_range"					"450.0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"axe_movement_speed"		"1250"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"blind_duration"			"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"blind_pct"					"55"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"whirl_duration"			"2.5"
-			}
+			
 		}
 	}
 
@@ -288,18 +219,13 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"range"			"1200"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
+			
 				"duration"				"3.0"
-			}
+			
 		}
 	}
  
@@ -340,52 +266,25 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"trance_duration"		"7.0"		
-				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_7"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"lifesteal"			"25 50 75"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"attack_speed"			"80 180 280"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"movement_speed"		"50 60 70"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"range"				"900"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"scepter_cooldown"	"35"
-				"RequiresScepter"	"1"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"scepter_duration_enemies"	"3.25"
-				"RequiresScepter"	"1"
-			}
-			"08"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"scepter_cast_range_tooltip"	"525"
-				"RequiresScepter"	"1"
-			}
+			
 			
 		}
 	}

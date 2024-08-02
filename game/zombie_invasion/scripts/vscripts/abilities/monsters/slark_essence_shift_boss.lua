@@ -72,7 +72,6 @@ end
 function modifier_slark_essence_shift_boss:GetModifierBaseAttack_BonusDamage()
 	return self:GetStackCount() * self.damage_gain
 end
-
 --------------------------------------------------------------------------------
 -- Helper
 function modifier_slark_essence_shift_boss:AddStack( duration )

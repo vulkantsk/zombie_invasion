@@ -177,53 +177,25 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"gush_damage"		"225 324 456 590 675 795 825 955 1120 1245 1370 1400 1525 1660"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"projectile_speed"	"2500"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"movement_speed"	"-90"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"negative_armor"		"12"
-				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"speed_scepter"		"1500"
-				"RequiresScepter"		"1"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"aoe_scepter"		"325"
-				"RequiresScepter"		"1"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"cooldown_scepter"		"4"
-				"RequiresScepter"		"1"
-			}
-			"08"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"cast_range_scepter"		"3600"
-				"RequiresScepter"		"1"
-			}	
+			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}

@@ -199,18 +199,13 @@
 		"AbilityCooldown"				"45"
 		"AbilityManaCost"				"325"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
+			
 				"radius"						"600"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
+		
 				"teleport_delay"				"2"
-			}
+			
 		}
 	}
 
@@ -253,15 +248,12 @@
  
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {
  
-            "01"
-            {
-                "var_type"                  "FIELD_INTEGER"
+            
                 "movement_damage_pct"       "25 50 75"
-                "CalculateSpellDamageTooltip"   "0"
-            }
+          
  
         }
     }

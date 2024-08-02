@@ -262,34 +262,19 @@
 				
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{	
-				"var_type"			"FIELD_INTEGER"
+			
 				"radius"			"325"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"damage_reduction"	"100"
-			}
-			"03"
-			{	
-				"var_type"			"FIELD_INTEGER"
+			
 				"damage_amplification"	"0"
-			}
-			"04"
-			{	
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_speed"	"80"
-			}
-			"05"
-			{	
-				"var_type"			"FIELD_FLOAT"
+			
 				"duration"			"5.0"
-				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_3"
-			}
+			
 		}
 	}
 

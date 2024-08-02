@@ -86,34 +86,30 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
  
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"  
-				"radius"					"325"
-				"special_bonus_scepter"			"+125"
-			}  
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"  
-				"attack_speed"					"10 12 14 16 18 20 22 24 26 28 30 32 34 36"
-				"special_bonus_scepter"				"+44"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"  
-				"bonus_damage"					"20 45 75 90 110 125 145 185 220 240 270 310 340 375"
-				"special_bonus_scepter"				"+75"
-								"LinkedSpecialBonus"			"special_hoodwink"
-			}
- 			"04"
-			{
-				"var_type"						"FIELD_INTEGER"  
+			
+				"radius"			
+				{
+						"value"	"325"
+					"special_bonus_scepter"			"+125"
+
+				}
+				
+			
+				"attack_speed"					
+				{
+					"value" "10 12 14 16 18 20 22 24 26 28 30 32 34 36"
+					"special_bonus_scepter"				"+44"
+				}
+			
+				"bonus_damage"		"20 45 75 90 110 125 145 185 220 240 270 310 340 375"
+			
+
+			
 				"bonus_envasion"					"33"
-				"special_bonus_scepter"				"+33"
-			}
+			
  
 		
       }
@@ -166,18 +162,13 @@
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
+			
 				"movement_speed_pct"			"25 30 35 40 45 50 55 60 65 70 75 80 85 90"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
+			
 				"duration"						"4.0"
-			}
+			
  
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -211,46 +202,23 @@
  
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"wave_speed"        "2200"
-			}
-
-			"02"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"wave_width_initial"    "200"
-			}
-			"03"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"wave_width_end"        "200"
-			}
-
-			"04"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"wave_distance"         "900 1100 1300"
-			}
-			"05"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"base_dmg"          		"1200 2400 3600"
-			}
-			"06"
-			{
-				"var_type"                  "FIELD_INTEGER"
+			
 				"damage_pct"            	"200 220 240 260 280 300 320 340 360 380 400 420 440 460"
-				"CalculateSpellDamageTooltip" "0"
-			}
-			"07"
-			{
-				"var_type"                   "FIELD_INTEGER"
+			
 				"stun_duration"          	 "1"
-			}
+			
 		}
 	}
 
@@ -268,13 +236,11 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-            "01"
-            {
-			     "var_type"					"FIELD_INTEGER"
+           
 			     "trigger_chance"			"33 44 55 66"
-		    }
+		    
 		}
 	}
 
@@ -288,13 +254,11 @@
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
+			
 				"value"				"420"
-			}
+			
 		}
 	}
 
