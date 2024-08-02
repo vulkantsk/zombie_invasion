@@ -93,23 +93,23 @@
 		
 		"guide_basic"			"basic"
 		"basic1"				"game"
-		"basic1_text"			"You need to defend Homer."
+		"basic1_text"			"You need to defence Homer."
 		"basic2"				"phase"
-		"basic2_text"			"The game has day and night phases. Each of them lasts 5 minutes. During the daytime phase, you'd better focus on farming and completing quests. During the night, you should all protect Homer."
+		"basic2_text"			"The game has a division into night and day phases. Each of them lasts 5 minutes. During the daytime phase, you'd better focus on farming and completing quests. During the night, you better all protect Homer."
 		"basic3"				"ZOMBIE"
 		"basic3_text"			"The zombies are getting stronger every night, so you better prepare for it properly."
 		
 		"guide_advanced"		"Additionally"
 		"advanced1"				"QUESTS"
-		"advanced1_text"		"Complete quests. They give very valuable rewards for them, which will greatly help you hold back the waves of zombies."
+		"advanced1_text"		"Complete quests They give very valuable rewards for them, which will greatly help you hold back the waves of zombies."
 		"advanced2"				"REWARDS"
-		"advanced2_text"		"Each morning you will receive a choice of three rewards"
+		"advanced2_text"		"Each morning you will receive a choice of three awards"
 		"advanced3"				"DROP"
-		"advanced3_text"		"Good items drop from bosses that can be useful to you"	
+		"advanced3_text"		"Good items fall from bosses that can be useful to you in some situations"	
 		"advanced4"				"The Book of the Hero and Aghanim Shard"
-		"advanced4_text"		"These items make the hero stronger and they drop from the witch to the cemetery, the shard can be used from any level, and for the hero's book you will have to wait until level 25."
-		"advanced5"				"Black market"
-		"advanced5_text"		"A unique store that is updated every morning. Prices: Unusual - 500, Rare - 1000, Epic - 2000, Legendary - 2500, Cursed - 3000."		
+		"advanced4_text"		"These items make the hero stronger and they fall from the witch to the cemetery, the shard can be used from any level, and for the hero's book you will have to wait until level 25."
+		"advanced5"				"Black shop"
+		"advanced5_text"		"After going to the black market, you can buy an item that you liked, for its value it gives a lot Unusual - 500, Rare - 1000, Epic - 2000, Legendary - 2500, Cursed - 3000, the only thing that can be emphasized is the cursed has a debuff that can spoil your passage, the store is updated every morning."		
 		
 		"next"					"Next"
 		"previous"				"Back"
@@ -117,10 +117,10 @@
 		
        // ******************** Messages ********************
 	   
-	   "big_bo_1"                                                   "<font color='#20B2AA'>Mud spreads</font>"
-	   "big_bo_2"                                                   "<font color='#FA8172'>The smell is atrocious</font>"
-	   "big_bo_3"                                                   "<font color='#B22228'>Goosebumps running down your skin</font>"
-	   "big_bo_4"                                                   "<font color='#8B0100'>He's almost here...</font>"
+	   "big_bo_1"                                                   "<font color='#20B2AA'>Грязи стало больше</font>"
+	   "big_bo_2"                                                   "<font color='#FA8172'>Запахло чем-то отвратительным...</font>"
+	   "big_bo_3"                                                   "<font color='#B22228'>Мурашки идут по твоей коже</font>"
+	   "big_bo_4"                                                   "<font color='#8B0100'>Он почти здесь...</font>"
 	   "npc_stranger_jitel"                                         "довакин" 
 	   "npc_mechanoid"                                         "меха-бот-танк2000"
 	   "npc_mechanoid_attack"                                         "меха-бот-DAMAGE4000"
@@ -161,16 +161,16 @@
 	   "imp4"							"<font color='#DBA901>COMING SOON TO ZOMBIE INVASION 2.</font>"
 
        // ******************** Messages Christmas ********************
-       	   "sf_eg1"                                                  "<font color='#c10020'>ENOUGH</font>"
-       	   "sf_eg2"                                                  "<font color='#c10020'>I'M TIRED PLAYING WITH YOU</font>" 
-       	   "sf_eg3"                                                  "<font color='#c10020'>AND ALL THE "WOUNDS" YOU'VE GIVEN ME...</font>"
+       	   "sf_eg1"                                                  "<font color='#c10020'>rather</font>"
+       	   "sf_eg2"                                                  "<font color='#c10020'>I'VE HAD ENOUGH OF PLAYING WITH YOU</font>" 
+       	   "sf_eg3"                                                  "<font color='#c10020'>AND ALL THE WOUNDS YOU'VE LEFT ME...</font>"
        	   "sf_eg4"                                                  "<font color='#c10020'>THEY DIDN'T DO ANYTHING TO ME AHAAHAHAHAHAH</font>"
-       	   "sf_eg5"                                                  "<font color='#c10020'>AND NOW...</font>"
+       	   "sf_eg5"                                                  "<font color='#c10020'>FOR NOW...</font>"
        	   "sf_eg6"                                                  "<font color='#c10020'>I WANT TO FULLY ENJOY YOUR SUFFERING</font>"
-       	   "sf_eg7"                                                  "<font color='#c10020'>BY KILLING EVERYONE YOU'VE BEEN PROTECTING</font>"
+       	   "sf_eg7"                                                  "<font color='#c10020'>KILLING ALL THOSE YOU PROTECTED</font>"
        	   "sf_eg8"                                                  "<font color='#c10020'>what?</font>"
        	   "sf_eg9"                                                  "<font color='#c10020'>WHAT????</font>"
-       	   "sf_eg10"                                                  "<font color='#c10020'>WHATS HAPPENING????</font>"
+       	   "sf_eg10"                                                  "<font color='#c10020'>WHATS HAPPENED????</font>"
        	   "sf_eg11"                                                  "<font color='#c10020'>NOOOOOOOOOOOOOOOOOO......</font>"
 
        	   "pn_eg1"                                                  "<font color='#58ACFA'>Fuck off bastard fiend?</font>"
@@ -201,19 +201,19 @@
 		"npc_herbalist_jitel"												"Grandpa"
 		"npc_stranger_jitel"												"Nonamer"
 		"npc_boss_chicken"                                                  "rooster???"
-		"npc_boss_ghost"													"Crying Witch"
-		"npc_jitel"                                                         "Kunkka"
+		"npc_boss_ghost"													"crying witch"
+		"npc_jitel"                                                         "kunkka"
 		"npc_market_blackshop"												"Steam-seller"
 		"npc_portal"														"The portal"
-		"npc_jitel_2"                                                       "Crystal maiden" 
-		"npc_jitel_3"                                                       "Hobo"
+		"npc_jitel_2"                                                       "Crystal miden" 
+		"npc_jitel_3"                                                       "dont know who he"
 	    "npc_jitel_4"                                                       "Lina"
-	    "npc_jitel_5"                                                       "Old man"
-	    "npc_jitel_6"                                                       "Danny"
+	    "npc_jitel_5"                                                       "The old man"
+	    "npc_jitel_6"                                                       "Deny"
 	    "npc_jitel_7"                                                       "The Undertaker"
 	    "npc_guard"                                                       	"The Guard"
 		"npc_boss_pig"                                                   	"Big Bo" 
-		"npc_spirit_sargatanas_hell_summon"									"Fire Spirit"
+		"npc_spirit_sargatanas_hell_summon"									"fire spirit"
 		"npc_golem_sargatanas_hell_summon"									"Golem"
 		"npc_dragon_sargatanas_hell_summon"									"Dark Dragon"
 		"npc_kaban_sargatanas_hell_summon"									"The Incomparable Boar"
@@ -221,17 +221,17 @@
 		"npc_boss_pig_pet"                                                   	"Big Bo"   
         "npc_boss_dead_pig"		                                            "Cursed Bo"   	
 		"npc_medas"                                                  		"Chest"
-		"npc_cemetery_skelet"		                                        "Skeleton" 		
+		"npc_cemetery_skelet"		                                        "Skelet" 		
 	    "npc_gate"                                                       "Gate"
-	    "npc_grave"                                                       "Grave"
-        "npc_shinobu_soul"                                                 "Spirit"
-        "npc_gurd_jitel"													"Dmeowrf"
-        "npc_kamen_jitel"													"Place for a tree"
+	    "npc_grave"                                                       "grave"
+        "npc_shinobu_soul"                                                 "spirit"
+        "npc_gurd_jitel"													"dneirf"
+        "npc_kamen_jitel"													"place for tree"
         "npc_kot_rofl1"														"Silverfish"
         "npc_kot_rofl2"														"Burnt"
         "npc_kot_rofl3"														"Variegated"
-        "npc_kot_rofl4"														"Graystriped"
-        "npc_kot_glavniy_jitel"													"Firestrawr"
+        "npc_kot_rofl4"														"Cool side"
+        "npc_kot_glavniy_jitel"													"Firestar"
 
 		"npc_base"                                                  		"Homer"
 	    "npc_EdgardBs"        "npc_Edgard"
@@ -239,38 +239,38 @@
 		"npc_classic_pig"                                                  	"Pig"
 		"npc_classic_not_fish"												"Not chicken"
 
-		"npc_classic_frog"                                                 "Froggy?"
+		"npc_classic_frog"                                                 "The frog!"
 		"npc_boss_slardar"                                                 "MEGA chicken!?"
 		"npc_boss_slark"													"Super chicken!?"
 		"npc_classic_woobleydog"                                                 "Wolf"
 		"npc_classic_woobleydog2"                                                 "Wolf number 2"
-		"npc_boss_bear"														"Winnie the POOH"
+		"npc_boss_bear"														"The one from mult on disney"
 		"npc_classic_skelet_ruin"                                                 "Dad Skelet"
 		"npc_classic_microchel"                                                 "Son Skelet"
 		"npc_classic_Night_Stalker_boss"                                                 "MOM The blood sucker"
-		"npc_classic_dragon_big"												"Big fuckgon"
-		"npc_classic_dragon_small"												"Small fuckgon"
-		"npc_classic_dragon"													"The old fuckgon"
+		"npc_classic_dragon_big"												"Big fuckdragon"
+		"npc_classic_dragon_small"												"small fuckdragon"
+		"npc_classic_dragon"													"the old fuckdragon"
 
 
 
 		"npc_classic_sheep"                                                 "Sheep"
 		"npc_classic_half_zombie"                                           "half zombie"			
 		"npc_stronger_chicken"	                                            "chicken???"
-		"npc_wave_zombie_toxic"												"Nippley"
+		"npc_wave_zombie_toxic"												"sysyd"
 		"npc_classic_chicken"                                               "Big chicken???"	
 		"npc_classic_zombie"                                                "Zombie"
-		"npc_classic_wave_zombie_down"										"Real Faggot"
+		"npc_classic_wave_zombie_down"										"Полупокер"
 		"npc_classic_big_zombie"                                            "Big Zombie"
 		"npc_classic_necr"	                                                    "Necr"
 		"npc_classic_big_necr"	                                                    "Big Necr"
 		"npc_classic_pudge"		                                            "PUDGE"
 		"npc_classic_big_pudge"		                                            "Big Pudge"
-        "npc_classic_grim"		                                            "Creature"
-        "npc_classic_big_grim"		                                            "Big creature"
-		"npc_classic_skelet"		                                        "Skeleton" 
-		"npc_classic_skeleton_king"		                                    "Skeleton King"
- 		"npc_classic__big_skeleton_king"		                                    "Skeleton King's King"
+        "npc_classic_grim"		                                            "creature"
+        "npc_classic_big_grim"		                                            "big creature"
+		"npc_classic_skelet"		                                        "skelettt" 
+		"npc_classic_skeleton_king"		                                    "skelettt"
+ 		"npc_classic__big_skeleton_king"		                                    "skelettt skelettt"
 
 		"npc_classic_ghoul"                                         		"Ghoul"
 		"npc_classic_ghost"                                         		"Ghost"
@@ -291,7 +291,7 @@
 		"npc_classic_witch"                                         		"Dead Witch"
 		"npc_boss_mutant"                                         			"Mutant"
 		
-		"npc_last_boss"                                                         "Fiend"
+		"npc_last_boss"                                                         "Zombie"
 		"npc_tombstone_flash_1"                                                 "tomb"
 		"npc_tombstone_flash_2"                                                 "tomb"
 		"npc_tombstone_flash_3"                                                 "tomb"				
@@ -312,16 +312,16 @@
 		"npc_tombstone3"                                                	"tomb"
 		"npc_tombstone4"                                                	"tomb"
 
-		"npc_wave_boss_half_zombie"                                         			"Neck Breaker"
+		"npc_wave_boss_half_zombie"                                         			"the neck breaker"
 		"npc_wave_boss_big_zombie"                                         			"super big zombie"
 		"npc_wave_boss_suicide"                                         		"Harmless"
 		"npc_wave_boss_undying"                                         		"Hungry"
 		"npc_wave_boss_necr"                                         		"Mr. NECROPHOS"
 		"npc_wave_boss_meat_golem"                                         		"fatty"
 		"npc_wave_boss_meat_golem_2"                                         		"fatty"
-		"npc_wave_boss_ghost"                                         		"Wandering Soul"
+		"npc_wave_boss_ghost"                                         		"Заблудшая"
 		"npc_wave_boss_pudge"                                         		"P.U.D.G.E."
-		"npc_wave_boss_mini_pudge"                                         		"mini Pudge"
+		"npc_wave_boss_mini_pudge"                                         		"mini pudge"
 
 		"npc_penguin_1"                                                         "Penguin"
 		"npc_penguin_2"	                                                    "Penguin"
@@ -355,24 +355,12 @@
 		"DOTA_Item_Build_Luxury"								"For the last night"
 
 
-		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
-		"DOTA_Tooltip_ability_item_sara_change_Description" "<h1>Active: Change Hero</h1>Changes your hero to the brutal killer - SARA"
-		"DOTA_Tooltip_ability_item_sara_change_Lore" "Powerful being."
-
-		"DOTA_Tooltip_ability_item_saitama_change" "<font color='#ccff00'>SAITAMA"
-		"DOTA_Tooltip_ability_item_saitama_change_Description" "Changes your hero to SAITAMA"
-		"DOTA_Tooltip_ability_item_saitama_change_Lore" "The MIGHTIEST being"
-
-		"DOTA_Tooltip_ability_item_sargatanas_change" "<font color='#c12450'>SARGATANAS"
-		"DOTA_Tooltip_ability_item_sargatanas_change_Description" "Changes your hero to SARGATANAS"
-		"DOTA_Tooltip_ability_item_sargatanas_change_Lore" "Created with help of Кабан_Пумба."
-
 
 		"DOTA_Tooltip_ability_item_cursed_shield" "Cursed Shield"
-		"DOTA_Tooltip_ability_item_cursed_shield_Description" "With a probability of 80% blocks 350 damage from attacks if the owner is a melee hero, or 450 damage if a ranged hero, also gives the hero +700 health and 30 health regen"
+		"DOTA_Tooltip_ability_item_cursed_shield_Description" "With a probability of 80% blocks 350 damage from attacks if the owner is a melee hero, or 450 damage if a ranged hero, also gives the hero +700 health and 30 health recovery"
 
 		"DOTA_Tooltip_ability_item_piercing_blade" "Piercing Blade"
-		"DOTA_Tooltip_ability_item_piercing_blade_Description" "With a probability of 12% turns damage into pure (WORKS ONLY FOR PHYSICAL DAMAGE)"
+		"DOTA_Tooltip_ability_item_piercing_blade_Description" "With a probability of 12% turns damage into pure (WORKS ONLY IN PHYSICS)"
 		"DOTA_Tooltip_ability_item_piercing_blade_bonus_damage" "+$damage"
 
 		"DOTA_Tooltip_ability_item_ethereal_blade_spell_lifesteal_amp"			""
@@ -403,11 +391,11 @@
 
 		"DOTA_Tooltip_ability_item_leaf" "leaf"
 
-		"DOTA_Tooltip_ability_item_leaf_Description" "Legend says, that if you plant it somewhere, you can get eternal flame..."
+		"DOTA_Tooltip_ability_item_leaf_Description" "Legend says, that if you plant it somewhere, then you can get eternal flame..."
 		"DOTA_Tooltip_ability_item_leaf_lore" "It's true!"
 
 		"DOTA_Tooltip_ability_item_bad_glasses"										"<font color='#950c02'>Glass</font>"
-		"DOTA_Tooltip_ability_item_bad_glasses_Description"										"<h1>Passive: Painfully painful.</h1> One look at this glass can cut out a crowd of people, only a worthy one will be able to carry such a strong weapon in his hands."
+		"DOTA_Tooltip_ability_item_bad_glasses_Description"										"<h1>Passive: painfull.</h1> One look at this glass can cut out a crowd of people, only a worthy one will be able to carry such a strong weapon in his hands."
 		"DOTA_Tooltip_ability_item_bad_glasses_bonus_damage_percent"						"%BONUS.DAMAGE"
 		"DOTA_Tooltip_ability_item_bad_glasses_health_debuff"								"%DECREASE HEALTH:"
 		"DOTA_Tooltip_ability_item_bad_glasses_spell_amplify_bonus"								"%SPELL AMPLIFY:"
@@ -427,26 +415,26 @@
 
 
 		"DOTA_Tooltip_ability_item_resist"													"Hat herbalist"
-		"DOTA_Tooltip_ability_item_resist_Description"										"Protects you from sicknesses."
+		"DOTA_Tooltip_ability_item_resist_Description"										"Protect you from sick."
 		"DOTA_Tooltip_ability_item_resist_magic_resist"										"%bonus magic armor:"
 
 		"DOTA_Tooltip_ability_item_yad"													"A clot of poison"
 		"DOTA_Tooltip_ability_item_yad_Description"										"STRANGE! BUT it'S looks delicious."
 		
 
-		"DOTA_Tooltip_ability_item_pizza1" "Pizza Dough"
-		"DOTA_Tooltip_ability_item_pizza1_Description" "<h1>Active: Am-yum</h1>Pizza Dough from another world adds +10 to all attributes"
+		"DOTA_Tooltip_ability_item_pizza1" "Pizza preparation"
+		"DOTA_Tooltip_ability_item_pizza1_Description" "<h1>Active: Am-yum</h1>Pizza preparation from another world adds +10 to all attributes"
 		"DOTA_Tooltip_ability_item_pizza1_Lore" "Pizza preparation, it doesn't look very nutritious."
 
-		"DOTA_Tooltip_ability_item_pizza2" "Pizza from other world"
-		"DOTA_Tooltip_ability_item_pizza2_Description" "<h1>Active: Am-yum</h1>After eating the legendary egg pizza, it adds +30 to all attributes, but your mouth starts to smell like eggs.
+		"DOTA_Tooltip_ability_item_pizza2" "pizza from other world"
+		"DOTA_Tooltip_ability_item_pizza2_Description" "<h1>Active: Am-yum</h1>After eating the legendary egg pizza, she adds +30 to all attributes, but your mouth starts to smell like eggs.
 		P.S If you give it to Gurd, something may happen.."
 		"DOTA_Tooltip_ability_item_pizza2_Lore" "Egg combo in one pizza"
 
 
 		"DOTA_Tooltip_ability_item_fire" "ETERNAL FLAME!?"
 		"DOTA_Tooltip_ability_item_fire_Description" "An ever-burning thing, it smells very disgusting."
-		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning and..."
+		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning."
 
        "DOTA_Tooltip_Ability_item_bloodstone_max"				"Bloodstone"
 		"DOTA_Tooltip_ability_item_bloodstone_max_Description"						"<h1>Active: Bloodpact</h1> increase magic vampirism %lifesteal_multiplier% times. At the end of the effect, it turns %mana_multiplier%% damage to mana. Duration: %buff_duration% sec."
@@ -484,8 +472,8 @@
 		"DOTA_Tooltip_ability_item_bloodstone2_spell_lifesteal_amp"																		"%+Spell Lifesteal Amplification"
  
 		"DOTA_Tooltip_ability_item_Split_medusa"									"Daedalus Stormbow"
-		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Passive: Split </h1>Your ability to hit targets is increased multi-fold. Targets: <font color='#ffc0cb'>4</font>"
-		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Daedal's storm bow is capable of destroying the very concept of this world."
+		"DOTA_Tooltip_ability_item_Split_medusa_Description"				"<h1>Passive: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>4</font>"
+		"DOTA_Tooltip_ability_item_Split_medusa_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
 		"DOTA_Tooltip_ability_item_Split_medusa_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_Split_medusa_attack_range_bonus"					"+$attack_range"
 		"DOTA_Tooltip_ability_item_Split_medusa_Attackspeed_bonus"					"+$Attack"
@@ -497,7 +485,7 @@
 
 
 		"DOTA_Tooltip_ability_item_world_order_amulet"				"World order amulet"
-		"DOTA_Tooltip_ability_item_world_order_amulet_Description"	"<h1>Passive: World order </h1>The amulet gives you and your pet-allies an advantage in battles by increasing damage by %damage_per_level%, armor by %armor_per_level% and attack speed by %attack_speed_per_level% per hero level."
+		"DOTA_Tooltip_ability_item_world_order_amulet_Description"	"<h1>Passive: World order </h1>The amulet gives you and your pet allies an advantage in battles by increasing damage by %damage_per_level%, armor by %armor_per_level% and attack speed by %attack_speed_per_level% per hero level."
 		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_strength"		"+$str"
 		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_agility"		"+$agi"
 		"DOTA_Tooltip_ability_item_world_order_amulet_bonus_int"		"+$int"
@@ -508,125 +496,129 @@
 		"DOTA_Tooltip_modifier_item_world_order_amulet_aura_Description"	"The hero is blessed with an amulet of good luck."
 
 
+		"DOTA_Tooltip_ability_item_book_of_heroes"											"<font color='#ffb300'>Руководитель по выживанию в трудных условиях</font>"
+		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Active: Гайд от NASQREAL </h1> <font color='#ffb300'> Если герой достиг 25 уровня, он может использовать книгу чтобы получить уникальное умение, которое можно изучить и стать сильнее.</font>" 
+		"DOTA_Tooltip_ability_item_book_of_heroes_Lore"				"<font color='#ffb300'> Это ещё не конец - конец не наступит без моих гайдов.</font>"
+
 		"DOTA_Tooltip_ability_item_book_of_heroes"											"<font color='#ffb300'>Book of heroes</font>"
-		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> If the hero has reached level 25, he can use the book to gain a unique skill and become stronger.</font>" 
+		"DOTA_Tooltip_ability_item_book_of_heroes_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> If the hero has reached level 50, he can use the book to gain a unique skill that can be learned and become stronger.</font>" 
 		"DOTA_Tooltip_ability_item_book_of_heroes_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 		
-		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback"											"<font color='#ffb300'>Guide for hOley spine</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
-		<h1>Passive: My back </h1>Attacking bristle's hOley back, the weapon gets stuck and the enemy takes damage %return_damage% + %return_damage_str%%% of the power of accumulated needles around" 
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback"											"<font color='#ffb300'>Guide for leakiness</font>"
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
+		<h1>Passive: My back </h1>Attacking bristle's leaky back, the weapon gets stuck and the enemy takes damage %return_damage% + %return_damage_str%%% of the power of accumulated needles around" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bristleback_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 		
 		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer"											"<font color='#ffb300'>Guide for rapidly growing intelligence</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive:  Level grow</h1>The silencer gets bonus intelligence for the %int level%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_silencer_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 		
 		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage"											"<font color='#ffb300'>Guide for multicast</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: MULTICAST </h1> Hero can use the ability repeatedly with a chance of 1 time %multicast_2_times_tooltip%%%, 2 times %multicast_3_times_tooltip%%%, 3 times %multicast_4_times_tooltip%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_skywrath_mage_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta"			"<font color='#ffb300'>Guide for cremation</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta_Description"	"<h1>Active: Guide by NASQREAl </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_muerta_Description"	"<h1>Active: Guide by NASQREAl </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Dead inside </h1>Each attack pierces the opponent's heart, reducing his armor by %armor_debuff%"
 		
 		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander"											"<font color='#ffb300'>Guide for BERSERK</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: neeeeeeeeds healf </h1> The HERO emits a berserker aura that restores the health of all HEROES to %atr_pct%%% within a radius of %aura_radius%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_legion_commander_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden"											"<font color='#ffb300'>Guide for best supports</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive:  Blessing of cold</h1> Hero gets aura with a radius of %aura_radius%, which increases magic damage of allies by %bonus_spell_amp%%% multiplied by %spell_amp_pct%%% of the intelligence from crystal maiden and reduces incoming damage by %incom_cm%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_crystal_maiden_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger"											"<font color='#ffb300'>Guide of arrow shortening</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Level boom</h1> Drow Ranger recives +%agi%%% bonus agility per level." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_drow_ranger_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter"											"<font color='#ffb300'>Guide of patching unnecessary holes</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: More damage</h1>Whenever a Tidehunter is attacked and recieve %dmg_proc% damage, it becomes stronger and gets %damage_per_stack% damage." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper"											"<font color='#ffb300'>Guide of shooting with closed eyes</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Broken eyes </h1>Sniper learns where it is better for him to shoot enemies, making his shots hit the target and reduce they armor by %armor_debuff% multiplied by his agility %agi_pct%%% duration in %corruption_duration% seconds." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 	
 		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick"											"<font color='#ffb300'>Guide for bastard from Aghanims father</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Magic bastard </h1> Hello son, you were born to me the weakest and worthless, so I put 25% of my magic power into this book, since I am already old, I will not be able to allocate more to you, good luck to you! Love you." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_rubick_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin"											"<font color='#ffb300'>Online Dating Guide</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Phantom ambicient </h1>Phantom Assassin begins to see the weaknesses of her opponents, so her critical attacks deal %critical_bonus%%% more damage and the chance of a critical strike increases by %crit_chance_bonus%%%." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_phantom_assassin_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern"											"<font color='#ffb300'>Guide for chikens</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Mana berserk </h1> For the amount of her mama %mana_pct%%%, the hero also gets intelligence" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_winter_wyvern_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_luna"											"<font color='#ffb300'>Guide for riders</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Lucent strike </h1>Luna uses an improved lucent beam when attacking and deals %damage% multiplied by %agi_pct%%% agility" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_luna_Lore"  "<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma"											"<font color='#ffb300'>Guide for void dummies</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Super idol</h1> After killing %kill_count% of creatures, Enigma creates a huge Eidolon from their corpses, which has %eidolon_hp_tooltip% health and %eidolon_dmg_tooltip% damage + intelligence and agility." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_enigma_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink"											"<font color='#ffb300'>Guide NASQREAL for squirrel-wife</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Acorn shot</h1> Hoodwink throws an acorn into she's opponent face, dealing %acorn_damage% base damage added to the damage of the hood multiplied by %acorn_pct%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_hoodwink_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord"											"<font color='#ffb300'>Guide for headless</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Berserk Strikes </h1> Hero additionally gains attack speed from his agility %agi_pct%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_troll_warlord_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer"											"<font color='#ffb300'>Guide for space expansion</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: illusion kiss </h1> Hero receives additional magic damage for the percentage of his intelligence %int_pct%%%" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_dark_seer_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 																			
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp"											"<font color='#ffb300'>Guide for the balls</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: mercy </h1> For %bonus_health_pct%%% wisp health, an ally within %aura_radius% radius receives a health bonus." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_wisp_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_axe"											"<font color='#ffb300'>Guide for coding</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Health lost</h1> Axe is too used to pain that this pain makes him stronger by granting %strength% strength for every percentage of health lost, the strength turns into %armor% armor." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_axe_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro"											"<font color='#ffb300'>Guide for flights</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Dragon fly </h1>Smaug flies up, which causes its maneuverability to be lost by 25%, but because of this, it can pass through obstacles." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_jakiro_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist"											"<font color='#ffb300'>Guide how to be millionare</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: not bad deal </h1>Turns the Alchemist's current gold into magic damage. If you lose gold, the damage is also reduced." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_alchemist_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa"											"<font color='#ffb300'>Guide for future medusas</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: Mana poison </h1>The scales form small drops with mana, which the jellyfish uses to increase its mana reserve by %agi_pct%%% of dexterity" 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_medusa_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker"											"<font color='#ffb300'>Guide</font>"
-		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
+		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> The hero gets unique skill that can be learned and become stronger.</font>
 		<h1>Passive: blood experience </h1>Blood Hunter learned not to lose a drop of blood when hitting an opponent, which is why he gets it %pct%%% times more." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_bloodseeker_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
 
@@ -643,9 +635,9 @@
 		"DOTA_Tooltip_ability_item_armlet2_bonus_hp_regen" 		"+$hp_regen"
 		"DOTA_Tooltip_ability_item_armlet2_lifesteal"			"%+$lifesteal"
 
-		"DOTA_Tooltip_ability_item_last_standing_shield"			"Standing shield"
-		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Active: Last Block Stand </h1>Operates with a radius of %radius% blocks %damage_block% damage on all nearby allies with a chance of %damage_block_chance%%%, also increases movement speed by %bonus_movespeed% and attack speed by %bonus_attack_speed% with a duration of 20 seconds."
-		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"POWER is I and I am the POWER - that was engraved before the purchase."
+		"DOTA_Tooltip_ability_item_last_standing_shield"			"standing shield"
+		"DOTA_Tooltip_ability_item_last_standing_shield_Description"	"<h1>Active: last block stand </h1>operates with a radius of %radius% blocks %damage_block% damage on all nearby allies with a chance of %damage_block_chance%%%, also increases movement speed by %bonus_movespeed% and attack speed by %bonus_attack_speed% with a duration of 20 seconds."
+		"DOTA_Tooltip_ability_item_last_standing_shield_Lore"			"The power is only in me and the point is that it was engraved before the purchase."
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_health"							"+$health"
 		"DOTA_Tooltip_ability_item_last_standing_shield_bonus_stats"							"+$all"
@@ -659,8 +651,8 @@
 
 
 		"DOTA_Tooltip_ability_item_sad_shield"				"Smell shield"
-		"DOTA_Tooltip_ability_item_sad_shield_Description"	"<h1>Passive: Smell shell block </h1>blocks %damage_block% damage with %damage_block_chance%%%"
-		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Smelly, but really useful... I swear!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_sad_shield_Description"	"<h1>Passive: Smell smell block </h1>blocks %damage_block% damage with %damage_block_chance%%%"
+		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Smelly, but really useful.. Really!!!!!!!!!!!"
 		"DOTA_Tooltip_ability_item_sad_shield_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_sad_shield_bonus_health"							"+$health"
 		"DOTA_Tooltip_modifier_item_sad_shield"				"Smelled"
@@ -678,8 +670,8 @@
 
 
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
-		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Passive: Split </h1>Your ability to hit targets is increased multi-fold. Targets: <font color='#ffc0cb'>7</font>"
-		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Daedal's storm bow is capable of destroying the very concept of this world."
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Passive: Split </h1>Your ability to defeat the target increases many times. Targets to attack: <font color='#ffc0cb'>7</font>"
+		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Lore"						"Deadal's storm bow is capable of destroying the very concept of this world."
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_attack_range_bonus"					"+$attack_range"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Attackspeed_bonus"					"+$Attack"
@@ -713,17 +705,17 @@
 		"DOTA_Tooltip_ability_item_magic_stone_bonus_magic_damage"       "%+to spell damage"
 		"DOTA_Tooltip_ability_item_magic_stone_bonus_int"       "+$int"
 
-		"DOTA_Tooltip_ability_item_desolator2"								"Desolator 2"
-		"DOTA_Tooltip_ability_item_desolator2_Description"					"<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
-		"DOTA_Tooltip_ability_item_desolator2_Lore"							"The original demonic favorite that served as basis for the beloved mortal design."	
-		"DOTA_Tooltip_ability_item_desolator2_Note0"						"Armor reduction works on buildings."
-		"DOTA_Tooltip_ability_item_desolator2_bonus_damage"					"+$damage"	
+		"DOTA_Tooltip_ability_item_desolator2"																							"Desolator 2"
+		"DOTA_Tooltip_ability_item_desolator2_Description"																				"<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
+		"DOTA_Tooltip_ability_item_desolator2_Lore"																						"The original demonic favorite that served as basis for the beloved mortal design."	
+		"DOTA_Tooltip_ability_item_desolator2_Note0"																					"Armor reduction works on buildings."
+		"DOTA_Tooltip_ability_item_desolator2_bonus_damage"																				"+$damage"	
 
-		"DOTA_Tooltip_ability_item_desolator3"								"Totem Desolator"
-		"DOTA_Tooltip_ability_item_desolator3_Description"					"<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
-		"DOTA_Tooltip_ability_item_desolator3_Lore"							"The original demonic favorite that served as basis for the beloved mortal design."	
-		"DOTA_Tooltip_ability_item_desolator3_Note0"						"Armor reduction works on buildings."
-		"DOTA_Tooltip_ability_item_desolator3_bonus_damage"					"+$damage"	
+		"DOTA_Tooltip_ability_item_desolator3"																							"Totem Desolator"
+		"DOTA_Tooltip_ability_item_desolator3_Description"																				"<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
+		"DOTA_Tooltip_ability_item_desolator3_Lore"																						"The original demonic favorite that served as basis for the beloved mortal design."	
+		"DOTA_Tooltip_ability_item_desolator3_Note0"																					"Armor reduction works on buildings."
+		"DOTA_Tooltip_ability_item_desolator3_bonus_damage"																				"+$damage"	
 
 		"DOTA_Tooltip_Ability_item_shield"				"The worst shield"
 		"DOTA_Tooltip_ability_item_shield_Description"							"<h1>Passive: Damage block </h1> Every attack enemy do less on 15 %damage_block%. "
@@ -855,7 +847,7 @@
 		"DOTA_Tooltip_Ability_item_dps_heart_Description"			"An incomprehensible mixture of everything, however, mixing it with a pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_dps_heart_damage_bonus"      	"+$damage"
  
-		"DOTA_Tooltip_Ability_item_zvezda"							"Colourful Star"
+		"DOTA_Tooltip_Ability_item_zvezda"							"FIRE STAR"
 		"DOTA_Tooltip_Ability_item_zvezda_Description"				"Ancestral Star: An artifact bestowed by the ancestors of the great founding cats, which marked the beginning of a new life. They say that only a true warrior whose mind is not intoxicated by his own strength and power can fully reveal the power of this artifact."
 		"DOTA_Tooltip_Ability_item_zvezda_stats_agility_bonus"		"BONUS.AGI:"
 		"DOTA_Tooltip_Ability_item_zvezda_stats_intellect_bonus"	"BONUS.INT:"
@@ -867,14 +859,14 @@
 
  
 		"DOTA_Tooltip_Ability_item_alduin_soul_final"						"Alduin Soul"
-		"DOTA_Tooltip_Ability_item_alduin_soul_final_Description"			"<h1>passive: Critical</h1> Gives magic crits %trigger_chance%% With a chance. A chance to stack %chance_to_stack%%, Max stacks %max_charge%.Each stack gives 1% net damage in addition to any magic damage. Radik %hp_damage%%  from hp to %radius%. The vampire Magician %all_lifesteal%%"
+		"DOTA_Tooltip_Ability_item_alduin_soul_final_Description"			"<h1>passive: crit</h1> Gives magic crits %trigger_chance%% With a chance. A chance to stack %chance_to_stack%%, Max stacks %max_charge%.Each stack gives 1% net damage in addition to any magic damage. Radik %hp_damage%%  from hp to %radius%. The vampire Magician %all_lifesteal%%"
 
  
 
 		"DOTA_Tooltip_Ability_item_big_meat"						"Meat of Big Bo"
 		"DOTA_Tooltip_Ability_item_big_meat_Description"			"<h1>Active: Nam-nam </h1> Give you listed characteristics \n So big and fatty."
-		"DOTA_Tooltip_Ability_item_big_meat_bonus_health"	"HEALTH BONUS: "
-		"DOTA_Tooltip_Ability_item_big_meat_bonus_regen"	"HP REGEN BONUS: "
+		"DOTA_Tooltip_Ability_item_big_meat_bonus_health"	"HEALTH ON FOREVER: "
+		"DOTA_Tooltip_Ability_item_big_meat_bonus_regen"	"REGEN ON FOREVER: "
 
 		"DOTA_Tooltip_Ability_item_zombie_skin"						"Skin of zombie"
 		"DOTA_Tooltip_Ability_item_zombie_skin_Description"			"So awful and... aghh."
@@ -909,42 +901,42 @@
 		"DOTA_Tooltip_Ability_item_skeleton_key_Lore"						"The key smells like graves." 	
 		
 		"DOTA_Tooltip_Ability_item_pirog"						"Pie"
-		"DOTA_Tooltip_Ability_item_pirog_Description"			"You just threw whatever in here... Why does it smell good?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
+		"DOTA_Tooltip_Ability_item_pirog_Description"			"This pie was created from trash. Still, it smells good.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Something is missing."
 
-		"DOTA_Tooltip_Ability_item_pirog_support"						"Support's pie"
-		"DOTA_Tooltip_Ability_item_pirog_support_Description"			"<h1>Active: Nam-nam </h1> You eat the pie."  
-		"DOTA_Tooltip_Ability_item_pirog_support_bonus_amp"						"%SPELL AMP:"
-		"DOTA_Tooltip_Ability_item_pirog_support_bonus_intellect"						"INTELLIGENCE:"
-		"DOTA_Tooltip_Ability_item_pirog_support_bonus_movespeed"						"MOVEMENT SPEED:"
-		"DOTA_Tooltip_Ability_item_pirog_support_Lore"						"Tastiest in your local supermarket."
+		"DOTA_Tooltip_Ability_item_pirog_support"						"Пирог саппортика"
+		"DOTA_Tooltip_Ability_item_pirog_support_Description"			"<h1>Active: Ам-ням</h1> Сьедаешь пирог."  
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_amp"						"%МАГИЧЕСКОЕ УСИЛЕНИЕ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_intellect"						"ИНТЕЛЛЕКТ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_bonus_movespeed"						"СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_Ability_item_pirog_support_Lore"						"Вкуснее чем любой другой."
 
 
 
-		"DOTA_Tooltip_Ability_item_pirog_dps"					"DPS Pie"
-		"DOTA_Tooltip_Ability_item_pirog_dps_Description"		"<h1>Active: Nam-nam</h1> You eat the pie."  
-		"DOTA_Tooltip_Ability_item_pirog_dps_damage"			"BONUS FLAT DMG:"		
-		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"		"AGILITY:"
-		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"			"%BONUS DMG: "
-		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"				"For the carries."
-		"DOTA_Tooltip_modifier_item_pirog_dps"					"DPS Pie"
-		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"Do you feel the POWER?"
+		"DOTA_Tooltip_Ability_item_pirog_dps"						"Dps pie"
+		"DOTA_Tooltip_Ability_item_pirog_dps_Description"			"<h1>Active: Nam-nam</h1> You eat a pie."  
+		"DOTA_Tooltip_Ability_item_pirog_dps_base_atack"	"BASE ATACK SPEED: "		
+		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_agility"	"AGILITY: "
+		"DOTA_Tooltip_Ability_item_pirog_dps_bonus_dps"	"%DAMAGE: "
+		"DOTA_Tooltip_Ability_item_pirog_dps_Lore"						"For the best dps men."
 
  
+ 		"DOTA_Tooltip_modifier_item_pirog_dps"					"Dps pie"
+		"DOTA_Tooltip_modifier_item_pirog_dps_Description"		"You stay more powerful!"
 
-		"DOTA_Tooltip_Ability_item_pirog_universal"						"Universal's Pie"
-		"DOTA_Tooltip_Ability_item_pirog_universal_Description"			"<h1>Active: Nam-nam</h1> You eat the pie." 
-		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_intellect"	"INTELLIGENCE: "		
-		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_agility"	"AGILITY: "
-		"DOTA_Tooltip_Ability_item_pirog_universal_strenght_bonus"	"STRENGHTH: "
-		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_movespeed"	"BONUS MOVEMENT SPEED: "
-		"DOTA_Tooltip_Ability_item_pirog_universal_Lore"						"For the UNIVERSALLY developed heroes."
-		"DOTA_Tooltip_modifier_item_pirog_universal"					"Universal's Pie"
-		"DOTA_Tooltip_modifier_item_pirog_universal_Description"		"Universal's might!"
+		"DOTA_Tooltip_Ability_item_pirog_universal"						"Пирог Универсала"
+		"DOTA_Tooltip_Ability_item_pirog_universal_Description"			"<h1>Active: Ам-ням</h1> Сьедаешь пирог." 
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_intellect"	"ИНТЕЛЛЕКТ: "		
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_agility"	"ЛОВКОСТЬ: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_strenght_bonus"	"СИЛА: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_bonus_movespeed"	"ДОП.СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: "
+		"DOTA_Tooltip_Ability_item_pirog_universal_Lore"						"Для истинных уникумов."
+		"DOTA_Tooltip_modifier_item_pirog_universal"					"Пирог универсала"
+		"DOTA_Tooltip_modifier_item_pirog_universal_Description"		"Вы стали намного универсальнее!"
  
 
- 		"DOTA_Tooltip_Ability_item_pirog_tank"						"Tank's pie"
-		"DOTA_Tooltip_Ability_item_pirog_tank_Description"			"<h1>Active: Nam-nam</h1> You eat the pie."  
+ 		"DOTA_Tooltip_Ability_item_pirog_tank"						"Tank pie"
+		"DOTA_Tooltip_Ability_item_pirog_tank_Description"			"<h1>Active: Nam-nam</h1> You eat a pie."  
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_health"	"HEALTH: "		
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_regen"	"%REGEN FROM MAX HP: "
 		"DOTA_Tooltip_Ability_item_pirog_tank_bonus_armor"	"ARMOR: "
@@ -952,10 +944,10 @@
 		"DOTA_Tooltip_Ability_item_pirog_tank_Lore"						"For the best tank."
 	
 	 		"DOTA_Tooltip_modifier_item_pirog_tank"					"Tank pie"
-		"DOTA_Tooltip_modifier_item_pirog_tank_Description"		"Say no to HEALTH problems!"	
+		"DOTA_Tooltip_modifier_item_pirog_tank_Description"		"You stay more powerful!"	
 	 	
  		"DOTA_Tooltip_Ability_item_pirog_magic"						"Pie of mage"
-		"DOTA_Tooltip_Ability_item_pirog_magic_Description"			"<h1>Active: Nam-nam</h1> You eat the pie."  
+		"DOTA_Tooltip_Ability_item_pirog_magic_Description"			"<h1>Active: Nam-nam</h1> You eat a pie."  
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana"	"MANA: "		
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana_regen"	"%REGEN  FROM MAX MANA: "
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_manacost"	"%MANACOST REDUCTION": "
@@ -963,11 +955,11 @@
 		"DOTA_Tooltip_Ability_item_pirog_magic_Lore"						"For the best mage."
 
  		"DOTA_Tooltip_modifier_item_pirog_magic"					"Pie of mage"
-		"DOTA_Tooltip_modifier_item_pirog_magic_Description"		"Mana empowers you!"	
+		"DOTA_Tooltip_modifier_item_pirog_magic_Description"		"You stay more powerful!"	
 		"DOTA_Tooltip_Ability_item_napitok"						"The strange tincture"
 		"DOTA_Tooltip_Ability_item_napitok_Description"			"<h1>Active: Hip-hip</h1> Drinking on a binge."  
 		"DOTA_Tooltip_Ability_item_napitok_bonus_dps"	"%DAMAGE: "
-		"DOTA_Tooltip_Ability_item_napitok_Lore"						"It looks strange and full of alcohol, but if there's no other option I'll DRINK!"	
+		"DOTA_Tooltip_Ability_item_napitok_Lore"						"It looks and smells strange, but if I must drink it I MUST!"	
 		
  		"DOTA_Tooltip_Ability_item_dust_2"						"Dast"
 		"DOTA_Tooltip_Ability_item_dust_2_Description"			"<h1>Active: Dust</h1> Dastit."  
@@ -977,15 +969,15 @@
 		"DOTA_Tooltip_Ability_item_tvorog_Lore"       "Where is sense?"
 		
 		"DOTA_Tooltip_Ability_item_testo"						"Dough"
-		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough?(atleast there's no joke about the lamb sauce).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
+		"DOTA_Tooltip_Ability_item_testo_Description"			"Dough(here must be joke but I don't see it).\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
 
          "DOTA_Tooltip_ability_item_totem_upgrade"																					"Тотем улучшения"
  		"DOTA_Tooltip_Ability_item_totem_upgrade_Description"			"<font color='#c10020'>Выпадает с тотемных боссов, которые появляются на карте каждые 5 минут!</font>\n<h1>Passive: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое."        
 		"DOTA_Tooltip_ability_item_totem_upgrade_lore"																				"Помогает улучшить предметы."
 
 
-		"DOTA_Tooltip_Ability_item_trash"						"Weird smelly thing"
-		"DOTA_Tooltip_Ability_item_trash_Description"			"UHHH SMELLS WEIRD?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
+		"DOTA_Tooltip_Ability_item_trash"						"Странно пахнущая штука"
+		"DOTA_Tooltip_Ability_item_trash_Description"			"Аъъъъъ странно пахнет?.\n<h1>Passive: Ингредиент</h1> Если скрестить с чем-то на костре, можно приготовить всякое. "
  
  
 		
@@ -996,12 +988,10 @@
 		"DOTA_Tooltip_Ability_item_crystal_boots"                                "Crystal Boots"
 		"DOTA_Tooltip_Ability_item_crystal_boots_Description"                    "<h1>Active: Crystal Haste</h1> Grants the bearer phased movement, %phase_ms%%% movespeed bonus, and increases the move speed limit to %ms_limit%.<font color='#FF7800'> While phased, passing through %en_num% units then caster has 100% chance to %crit_bonus_up%% critical damage.</font> Lasts %phase_duration% seconds.\n<font color='#FFD700'>\n<h1>Passive: Critical Strike</h1>Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage."
 		"DOTA_Tooltip_Ability_item_crystal_boots_Note0"                          "You can pass each unit only 1 time per use."
-		"DOTA_Tooltip_Ability_item_crystal_boots_Lore"                           "These boots were worn by Kunkka!."
+		"DOTA_Tooltip_Ability_item_crystal_boots_Lore"                           "These boots was worn the Kunnka!."
 		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_movement_speed"           "+$move_speed"
 		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_damage"                   "+$damage"
-		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_armor"                	 "+$armor"
-		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_health"					"+$health"
-		"DOTA_Tooltip_Ability_item_crystal_bonus_all"							"+$all"
+		"DOTA_Tooltip_Ability_item_crystal_boots_bonus_armor"                 "+$armor"
 
 		"DOTA_Tooltip_modifier_imba_crystal_boots_buff"                               "Crystal Haste"
 		"DOTA_Tooltip_modifier_imba_crystal_boots_buff_Description"                   "Phased, drastically increased move speed."
@@ -1015,9 +1005,9 @@
 
 
 		"DOTA_Tooltip_Ability_item_lifesteal_2"							"Mask of the Cult of the damned"
-		"DOTA_Tooltip_Ability_item_lifesteal_2_Description"				"This mask of one of the Cult of the damned still reeks of cursed smell... \n<h1>Passive: Tish-tish</h1> Lifesteal.\n <font color='#ff9900'>If you want it then complete quest from Tramp: Bone it's not Bone</font>"
+		"DOTA_Tooltip_Ability_item_lifesteal_2_Description"				"This mask of one of the Cult of the damned still smells... \n<h1>Passive: Tish-tish</h1> Lifesteal.\n <font color='#ff9900'>If you want it then complete quest from Tramp: Bone it's not Bone</font>"
 		"DOTA_Tooltip_Ability_item_lifesteal_2_lifesteal_percent"				"LIFESTEAL: "
-		"DOTA_Tooltip_Ability_item_lifesteal_2_Lore"       "Wanna know what is cult? Suck my dick, bitch lasanga."
+		"DOTA_Tooltip_Ability_item_lifesteal_2_Lore"       "Do you wanna know what is cult? Suck my dick, bitch lasanga."
 		
 		"DOTA_Tooltip_Ability_item_echo_sabre_2"				"Echo Sabre 2"
 			
@@ -1159,7 +1149,7 @@
         "DOTA_Tooltip_Ability_item_kefteme_Lore" 								"anynya milaxajest'"
         "DOTA_Tooltip_Ability_item_kefteme_Note0"								"Passive: Hero gets 1.5 to all attributes and 1.5% to all outgoing damage." 
 
-        "DOTA_Tooltip_Ability_item_dragon_scale_quest"										"Fuckgon's scales"
+        "DOTA_Tooltip_Ability_item_dragon_scale_quest"										"Scale fuckdragon"
         "DOTA_Tooltip_Ability_item_dragon_scale_quest_Description"							"Very durable with a soothing texture."
 
         "DOTA_Tooltip_Ability_item_maikl"										"Entity SLARK"
@@ -1194,7 +1184,7 @@
 	    "DOTA_Tooltip_ability_item_bonus_stats10_Lore"							"Did Kunkevich play rush def?"
 		
 		"DOTA_Tooltip_ability_item_bonus_intelligence10"	                                 "<font color='#ffffff'>INTELLIGENCE BONUS +10</font>"
-	    "DOTA_Tooltip_ability_item_bonus_intelligence10_Description"							"Gives additional intelligence !"
+	    "DOTA_Tooltip_ability_item_bonus_intelligence10_Description"							"Gives aditional intelligence !"
 		"DOTA_Tooltip_tome_intelect_modifier"	                                 "BONUS INTELLIGENCE "
 	    "DOTA_Tooltip_tome_intelect_modifier_Description"							"Now even glasses won't hide your iq!!!"
 
@@ -1204,7 +1194,7 @@
 	    "DOTA_Tooltip_tome_agility_modifier_Description"							"You become more agile than your father!!!"
 
 		"DOTA_Tooltip_ability_item_bonus_strength10"	                                 "<font color='#ffffff'>STRENGTH BONUS +10</font>"
-	    "DOTA_Tooltip_ability_item_bonus_strength10_Description"							"Gives additional strength !"
+	    "DOTA_Tooltip_ability_item_bonus_strength10_Description"							"Gives aditional strength !"
 		"DOTA_Tooltip_tome_strenght_modifier"	                                 "BONUS STRENGTH "
 	    "DOTA_Tooltip_tome_strenght_modifier_Description"							"Now you are stronger than ever!!!"
 
@@ -1218,7 +1208,7 @@
 		"DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Lore" 		"Magicians who created it were shocked by its power.."
         "DOTA_Tooltip_ability_item_blackshop_uncommon_wizard_stuff_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!" 
 
-		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel"			"<font color='#00bfff'>Devil armor</font>"
+		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel"			"<font color='#00bfff'>devil armor</font>"
 		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Description"			"<h1>Active: Angel chestplate</h1> Increases health by %health% and wearer's strength by %str% when used"
 		"DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Lore" 		"Everyone needs combat experience, especially in current situation."
         "DOTA_Tooltip_ability_item_blackshop_rare_strength_angel_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!" 
@@ -1445,7 +1435,7 @@
 		"DOTA_Tooltip_ability_item_dragon_armor_Lore"								"CURSED DRAGON ARMOR."
 		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_strength"					"BONUS STR:"
 		"DOTA_Tooltip_Ability_item_dragon_armor_bonus_armor"					"BONUS ARMOR:"
-		"DOTA_Tooltip_Ability_item_dragon_armor_base_regen"					"%BONUS HEALTH REGEN:"
+		"DOTA_Tooltip_Ability_item_dragon_armor_base_regen"					"%BONUS.HEALTH REGEN:"
 
 		"DOTA_Tooltip_Ability_item_dragon_hand"					"Dragon hands"
 		"DOTA_Tooltip_ability_item_dragon_hand_Lore"								"CURSED DRAGON HANDS."
@@ -1459,7 +1449,7 @@
 		"DOTA_Tooltip_Ability_item_dragon_boots_bonus_evasion"					"BONUS EVASION:"
 
 		"DOTA_Tooltip_Ability_item_dragon_shield"					"Dragon shield"
-		"DOTA_Tooltip_Ability_item_dragon_shield_Description"					"<h1>ACTIVE: Dragon shield</h1> Creates a shield that absorbs damage for 15 seconds and deals damage %damage_absorb% <br>"
+		"DOTA_Tooltip_Ability_item_dragon_shield_Description"					"<h1>ACTIVE: Dragon shield</h1> Hangs a shield that absorbs damage for 15 seconds and deals damage %damage_absorb% <br>"
 		"DOTA_Tooltip_Ability_item_dragon_shield_Lore"								"cursed shield."
 		"DOTA_Tooltip_Ability_item_dragon_shield_bonus_resistance"					"bonus magic resist:"
 		"DOTA_Tooltip_Ability_item_dragon_shield_bonus_armor"					"bonus armor:"
@@ -1510,7 +1500,7 @@
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_all_stats"				"+$all"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_self_movement_speed"			"+$move_speed"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_bonus_mana_regen_pct"		"+$mana_regen"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"A talisman forged to honor the daylight."
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_Lore"						"A talisman forged to honor the daytime sky."
 
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2"	"Solar medallion"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Description"					"<h1>Active: Faith</h1>When cast on an ally, grants them %bonus_armor% armor, %target_attack_speed% attack speed, and %target_movement_speed%%% movement speed.<br><br>Range: %abilitycastrange%"	
@@ -1518,7 +1508,7 @@
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_all_stats"				"+$all"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_bonus_mana_regen_pct"		"+$mana_regen"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Lore"						"A talisman forged to honor the daylight."
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_2_Lore"						"A talisman forged to honor the daytime sky."
 
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3"	"Solar Crest"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Description"					"<h1>Active: Faith</h1>When cast on an ally, grants them %bonus_armor% armor, %target_attack_speed% attack speed, and %target_movement_speed%%% movement speed.<br><br>Range: %abilitycastrange%"	
@@ -1526,7 +1516,7 @@
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_all_stats"				"+$all"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom__2self_movement_speed"			"+$move_speed"
 		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_bonus_mana_regen_pct"		"+$mana_regen"
-		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Lore"						"A talisman forged in the praise of the dayligh."
+		"DOTA_Tooltip_Ability_item_medallion_of_courage_custom_3_Lore"						"A talisman forged in the praise of the daytime sky."
 
 		"DOTA_Tooltip_modifier_medallion_active"		"Faith"
 		"DOTA_Tooltip_modifier_medallion_active_Description"		"Armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%, movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
@@ -1558,7 +1548,8 @@
 		"DOTA_Tooltip_Ability_item_bfury_3_bonus_mana_regen"						"+$mana_regen"
 
 		"DOTA_Tooltip_Ability_item_alucard_weapon"				"Alucard Weapon"
-		"DOTA_Tooltip_ability_item_alucard_weapon_Description"							"<h1>Passive: Infinity</h1> for each kill Alucard with chance %chance_to_stack%% receives  %bonus_damage% damage.<br>"
+		"DOTA_Tooltip_ability_item_alucard_weapon_Description"							"<h1>Passive: Infinity</h1> for each kill Alucard with chance %chance_to_stack%% 
+receives  %bonus_damage% damage.<br>"
 
  
 		"DOTA_Tooltip_Ability_item_energy_booster_2"			"Energy Booster"
@@ -1605,7 +1596,7 @@
 		"DOTA_Tooltip_ability_item_mask_of_madness_3_lifesteal_percent"			"%+$lifesteal"
 
 		"DOTA_Tooltip_Ability_item_gril"			"Kunnka's Grill"
-		"DOTA_Tooltip_ability_item_gril_Description"					"<h1>Active: We need to Cook</h1> Cooks the meat from local pigs into Kunkka's favorite steak"
+		"DOTA_Tooltip_ability_item_gril_Description"					"<h1>Active: Cock</h1> It Cooks a kunnka's steak from one piece of meat!"
 		"DOTA_Tooltip_ability_item_gril_Lore"							"IT IS!!!!! LEGENDARY KUNNKA'S GRILL!!"
 		"DOTA_Tooltip_ability_item_gril_bonus_atribute"				"+$all"
  
@@ -1617,7 +1608,7 @@
 
 		"DOTA_Tooltip_Ability_item_rom"			"Strong Rum"
 		"DOTA_Tooltip_ability_item_rom_Description"					"<h1>Active: Hip-hip</h1> Drinking rum, the hero receives %bonus_damage% damage, %bonus_speed% % additional. movement speed, reducing the base attack speed by %bonus_attack_time%, reduces incoming damage by %bonus_anti_damage%% and increases additional magic damage by %bonus_spell_damage%%."
-		"DOTA_Tooltip_ability_item_rom_Lore"							"It is so strange that after rum there is no hangover."
+		"DOTA_Tooltip_ability_item_rom_Lore"							"It is so strange that after rum there is no after effect."
 		"DOTA_Tooltip_ability_item_rom_strenght"				"+$str"
  
 		"DOTA_Tooltip_modifier_rom_effect"		"Drunk"
@@ -1644,11 +1635,10 @@
 
 
 		"DOTA_Tooltip_Ability_item_heart_2"				"Totem Heart of Tarrasque"
-		"DOTA_Tooltip_ability_item_heart_2_Lore"								"Preserved heart of an extinct monster, it strengthens the resilience of the wearer."
+		"DOTA_Tooltip_ability_item_heart_2_Lore"									"Preserved heart of an extinct monster, it bolsters the bearer's fortitude."
 		"DOTA_Tooltip_ability_item_heart_2_bonus_strength"						"+$str"
-		"DOTA_Tooltip_ability_item_heart_2_bonus_health"						"+$health"
-		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"					"%+Max Health Regen"
-		"DOTA_Tooltip_ability_item_heart_2_bonus_all"							"+$all"
+		"DOTA_Tooltip_ability_item_heart_2_bonus_health"							"+$health"
+		"DOTA_Tooltip_ability_item_heart_2_health_regen_pct"							"%+Max Health Regen"
 
 		"DOTA_Tooltip_Ability_item_sumon_boss"						"Thing?"
 		"DOTA_Tooltip_Ability_item_sumon_boss_Description"			"<h1>Active: Click-Click </h1>If you click this thing in the right place, which resembles the Illuminati, then..."
@@ -1706,9 +1696,9 @@
 		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_movement_speed_percent_bonus"			"%+$move_speed"
 		"DOTA_Tooltip_ability_item_yasha_and_kaya_2_spell_lifesteal_amp"				"%+Spell Lifesteal Amplification"
 
-		"DOTA_Tooltip_ability_item_titanium_bar"			"Black Titan Bar"
-		"DOTA_Tooltip_ability_item_titanium_bar_Description" "<h1>Active: World destroyer</h1>The hero gets complete immunity to magic on %duration% seconds, at the same time, everyone gets %active_bonus_attackspeed% attack speeds, reducing incoming damage by %active_damage_reduction_pct%%% and increasing your strength by %active_bonus_strength%
-		<h1> <font color='#ffa420'>Passive: King of Titans </font> </h1> Reduces incoming damage by %bonus_resistance%%%"
+		"DOTA_Tooltip_ability_item_titanium_bar"			"black titan bar"
+		"DOTA_Tooltip_ability_item_titanium_bar_Description" "<h1>Active: world destroyer</h1>The hero gets complete immunity to magic on %duration% seconds, at the same time, everyone gets %active_bonus_attackspeed% attack speeds, reducing incoming damage by %active_damage_reduction_pct%%% and increasing your strength by %active_bonus_strength%
+		<h1> <font color='#ffa420'>Passive: king of titans </font> </h1> Reduces incoming damage by %bonus_resistance%%%"
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_strength"	"+$str"
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_agility"	"+$agi"
 		"DOTA_Tooltip_ability_item_titanium_bar_bonus_intellect"	"+$int"
@@ -1843,7 +1833,7 @@
 
 // ******************** квесты ********************
  		"DOTA_Tooltip_Ability_quest_test_edgard"										"npc_Edgard"
-		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"One day I got very drunk in a tavern and went home. My wife wouldn't let me into the house, but I, well, Man shouldn't sleep under the door, so I went to the barn. I'm lying down, almost passed out, and I hear that someone came into the barn. I thought: I came here after all, of course it's comfortable to sleep on the hay, but a house is a house. I raise my head, and there's a HEADLESS MAN! I got so drunk then that I decided I wouldn't drink anymore. I get up from the hay, I make attempts to escape, I was able to break away from him and in order to expel him, I need your help, bring me his head.."
+		"DOTA_Tooltip_Ability_quest_test_edgard_Description"							"One day I got very drunk in a tavern and went home. My wife wouldn't let me into the house, but I, well, I didn't spend the night under the door, I went to the barn. I'm lying down, almost passed out, and I hear that someone came into the barn. I thought: I came here after all, of course it's comfortable to sleep on the hay, but a house is a house. I raise my head, and there's a HEADLESS MAN! I got so drunk then that I decided I wouldn't drink anymore. I get up from the hay, I make attempts to escape, I was able to break away from him and in order to expel him, I need your help, bring me his head.."
 		"DOTA_Tooltip_Ability_quest_test_edgard_value_required"     							"COUNT:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_edgard_reward_gold"                 		"GOLD:"
@@ -1854,72 +1844,72 @@
 		"DOTA_Tooltip_Ability_quest_homer_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_homer_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_herbalist_1"										"Herbalist AZAZ"
-		"DOTA_Tooltip_Ability_quest_herbalist_1_Description"							"@!#$# PRI~VET ~ TSTV ~ UYU TEBYA NEZNA-KOMETS WHAT HAVE YOU COME FOR!? ALTHOUGH I'M ALWAYS GLAD TO HAVE GUESTS AND-AND-AND ME HAS A REQUEST FOR YOU. IN THE FOREST WHERE SCARY CREATURES WITH SLIMY PAWS AND A LONG TONGUE LIVE, THERE IS A TREE (SAKURA) I WANT YOU TO KILL HIM, HE OWES ME A LOT OF SWEET COCAINE, PLEASE DEAL WITH HIM AND I'LL GIVE YOU A MASK THAT MY GREAT-GRANDFATHER WHO LIVED HERE EARLIER WORE))00) UNTIL"
-		"DOTA_Tooltip_Ability_quest_herbalist_1_value_required"     							"COUNT:"
+		"DOTA_Tooltip_Ability_quest_herbalist_1"										"herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_Description"							"@!#$# WHEN~VET ~ TV ~ UYU YOU NIZNA- KOMETS WHAT HAVE YOU COME FOR!? ALTHOUGH I'M ALWAYS GLAD TO HAVE GUESTS AND-AND-AND MIN HAS A REQUEST FOR YOU. IN THE FOREST WHERE SCARY CREATURES WITH SLIMY PAWS AND A LONG TONGUE LIVE, THERE IS A TREE (SAKURA) I WANT YOU TO KILL HIM, HE OWES ME A LOT OF BIGWIGS, PLEASE DEAL WITH HIM AND I'LL GIVE YOU A MASK THAT MY GREAT-GRANDFATHER WHO LIVED HERE EARLIER WORE))00) UNTIL"
+		"DOTA_Tooltip_Ability_quest_herbalist_1_value_required"     							"КОЛИЧЕСТВО:"
 		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_herbalist_1_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_herbalist_2"										"Herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_2"										"herbalist AZAZ"
 		"DOTA_Tooltip_Ability_quest_herbalist_2_Description"							"THANK YOU FOR GETTING THIS STONED LOG FOR ME, WELL, SHO I CAN SAY THANK YOU AND YES, I STILL HAVE NOT EVERYTHING WILL YOU DO SOMETHING ELSE FOR ME? THERE ARE SCUM WALKING AROUND KILL THEM AND BRING THESE CLOTS SO THAT I AM SATISFIED AND I WILL GIVE YOU A FRAGMENT FROM A BROKEN BOTTLE WHOSE CONTENTS I DRANK 10 MINUTES AGO"
 		"DOTA_Tooltip_Ability_quest_herbalist_2_value_required"     							"COUNT:"
 		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_herbalist_2_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_herbalist_3"										"Herbalist AZAZ"
+		"DOTA_Tooltip_Ability_quest_herbalist_3"										"herbalist AZAZ"
 		"DOTA_Tooltip_Ability_quest_herbalist_3_Description"							"HOORAY, YOU'RE BACK AND I HAVE SOMETHING ELSE FOR YOU, THERE'S A BIRD CONSTANTLY FLYING BY AND WHISTLING, IT PISSES ME OFF A LITTLE, SHE'S SHE'S STILL GLOWING, BURNING, YOU UNDERSTAND RIGHT? BRING ME HER ASHES AND I'LL MAKE A PIE ESPECIALLY FOR YOU SO THAT YOU DON'T COMPLAIN THAT I'M NOT SO HOSPITABLE, ALTHOUGH I'M ON THE CONTRARY, LET'S GO. BYE."
 		"DOTA_Tooltip_Ability_quest_herbalist_3_value_required"     							"COUNT:"
 		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_herbalist_3_reward_gold"                 		"GOLD:"
 
-			"npc_rabbit_jitel"			"Rabbooot"
+			"npc_rabbit_jitel"			"Stuffy crawl"
 
 
-			"DOTA_Tooltip_Ability_item_egg_pasha_1" "Violet egg"
+			"DOTA_Tooltip_Ability_item_egg_pasha_1" "Summer application"
 
- 			"DOTA_Tooltip_Ability_item_egg_pasha_2" "Brown egg"
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_2" "Root application"
 
- 			"DOTA_Tooltip_Ability_item_egg_pasha_3" - "White egg"
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_3" - "White Apple"
 
- 			"DOTA_Tooltip_Ability_item_egg_pasha_4" - "Red egg"
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_4" - "Red Apple"
 
-			"DOTA_Tooltip_Ability_item_egg_pasha_5" "Pink egg"
+			"DOTA_Tooltip_Ability_item_egg_pasha_5" "Pink Apple"
 
- 			"DOTA_Tooltip_Ability_quest_rabbit_1" "Rabbooot"
-			"DOTA_Tooltip_Ability_quest_rabbit_1_Description" "Happy Easter! I am the rabbit, the spirit of this wonderful holiday. I had an accident... I've lost my eggs and I can't put them under every bush, so I need your help! Could you bring me some Easter eggs? I need purple eggs, I will be very grateful to you and I will repay you with this. Thank you!!!!!!!!!!!!!!"
-			"DOTA_Tooltip_Ability_quest_rabbit_1_value_required" "COUNT:"
-			"DOTA_Tooltip_Ability_quest_rabbit_1_reward_exp" "EXPERIENCE:"
+ 			"DOTA_Tooltip_Ability_quest_rabbit_1" "Stuffy crawl"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_Description" "Thank you! I am the rabbit, the spirit of this wonderful holiday. I had an accident... I've lost my eggs and I can't put them under every bush, so I need your help! Could you bring me some Easter eggs? I need purple eggs, I will be very grateful to you and I will repay you with this. Thank you!!!!!!!!!!!!!!"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_value_required" "QUANTITY:"
+			"DOTA_Tooltip_Ability_quest_rabbit_1_reward_exp" "WORK EXPERIENCE:"
 			"DOTA_Tooltip_Ability_quest_rabbit_1_reward_gold" "GOLD:"
 
-			"DOTA_Tooltip_Ability_quest_rabbit_2" "Rabbooot"
+			"DOTA_Tooltip_Ability_quest_rabbit_2" "Stuffy crawl"
 			"DOTA_Tooltip_Ability_quest_rabbit_2_Description" "Wow, you could make them! Well, it's not enough for me anyway, can you bring me the browns? I'll give them to the coolest kids, be sure! Well, I'll pay for your labors, of course, I'm still the spirit of this holiday and I can't leave people without a mood!"
-			"DOTA_Tooltip_Ability_quest_rabbit_2_value_required" "COUNT:"
+			"DOTA_Tooltip_Ability_quest_rabbit_2_value_required" "QUANTITY:"
 			"DOTA_Tooltip_Ability_quest_rabbit_2_reward_exp" "EXPERIENCE:"
 			"DOTA_Tooltip_Ability_quest_rabbit_2_reward_gold" "GOLD:"
 
 
-			"DOTA_Tooltip_Ability_quest_rabbit_3" "Rabbooot"
+			"DOTA_Tooltip_Ability_quest_rabbit_3" "Stuffy crawl"
 			"DOTA_Tooltip_Ability_quest_rabbit_3_Description" "Lovely eggs! But I need more, please bring me white ones and I will repay you!"
-			"DOTA_Tooltip_Ability_quest_rabbit_3_value_required" "COUNT:"
+			"DOTA_Tooltip_Ability_quest_rabbit_3_value_required" "QUANTITY:"
 			"DOTA_Tooltip_Ability_quest_rabbit_3_reward_exp" "EXPERIENCE:"
 			"DOTA_Tooltip_Ability_quest_rabbit_3_reward_gold" "GOLD:"
 
-			"DOTA_Tooltip_Ability_quest_rabbit_4" "Rabbooot"
+			"DOTA_Tooltip_Ability_quest_rabbit_4" "Stuffy crawl"
 			"DOTA_Tooltip_Ability_quest_rabbit_4_Description" "You never cease to amaze me! Thank you very much, but that's not all, I don't have enough red eggs, can you get them!? I will pay more!!"
-			"DOTA_Tooltip_Ability_quest_rabbit_4_value_required" "COUNT:"
+			"DOTA_Tooltip_Ability_quest_rabbit_4_value_required" "QUANTITY:"
 			"DOTA_Tooltip_Ability_quest_rabbit_4_reward_exp" "EXPERIENCE:"
 			"DOTA_Tooltip_Ability_quest_rabbit_4_reward_gold" "GOLD:"
 
-			"DOTA_Tooltip_Ability_quest_rabbit_5" "Rabbooot"
+			"DOTA_Tooltip_Ability_quest_rabbit_5" "Stuffy crawl"
 			"DOTA_Tooltip_Ability_quest_rabbit_5_Description" "There's only one color left, it's pink, bring them to me too, please! I really need it, because I will soon need to lay eggs in the bushes!"
-			"DOTA_Tooltip_Ability_quest_rabbit_5_value_required" "COUNT:"
+			"DOTA_Tooltip_Ability_quest_rabbit_5_value_required" "QUANTITY:"
 			"DOTA_Tooltip_Ability_quest_rabbit_5_reward_exp" "EXPERIENCE:"
 			"DOTA_Tooltip_Ability_quest_rabbit_5_reward_gold" "GOLD:"
 
 
 
 		"DOTA_Tooltip_Ability_quest_stranger_1"										"STRANGER"
-		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"HOLLUP N****, where are you going, you have to help me. I predicted the coming of the World Eater, but no one believes me. Everyone thinks it's just a legend. To prove it, bring me the Ancient Remains. I think they will help me to reason with the village. If you bring me the remains, I'll thank you"
+		"DOTA_Tooltip_Ability_quest_stranger_1_Description"							"Stand **** where you went, you have to help me. I predicted the coming of the World Eater, but no one believes me. Everyone thinks it's just a legend. To prove it, bring me the Ancient Remains. I think they will help me to reason with the village. If you bring me the remains, I'll thank you"
 		"DOTA_Tooltip_Ability_quest_stranger_1_value_required"     							"COUNT:"
 		"DOTA_Tooltip_Ability_quest_stranger_1_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_stranger_1_reward_gold"                 		"GOLD:"
@@ -1960,35 +1950,35 @@
 		"DOTA_Tooltip_Ability_quest_stranger_7_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_stranger_7_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"Firestrawr"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_Description"						"      Who are you? I haven't seen you before. But you feel the spirit of a warrior, perhaps you will make a good warrior, but first you need to prove that you can do something. I understand that you are a novice warrior, so bring me a pair of frog legs, these “monsters should be in your teeth."
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_value_required"						"Number of ..:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel01_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"Firestrawr"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_Description"						"     I see you have mastered these “terrible creatures”, well, it's time to move on to the next level of hunting. Every warrior should be able to feed himself and his tribe, so bring me the Cooked meat of fat monsters that sit in the two-legged pens."
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel02_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"Firestrawr"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_Description"						"     WHAT HAVE YOU BROUGHT ME!!!! I ASKED YOU FOR MEAT, NOT BURNT BIPEDAL FOOD!!!! WHAT AM I GOING TO FEED THE TRIBE WITH?!! GET OUT OF HERE AND DON'T COME BACK WITHOUT NORMAL MEAT!!!!"
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel03_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"Firestrawr"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_Description"						"     Well, finally back, the meat seems fresh. Sometimes, in times of bare trees, when there is little game in the forest, we eat fish, but only as a last resort. You have to prove that you can kill slardar so that the tribe can survive even when famine comes."
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_exp"                 		"EXP:"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel04_reward_gold"                 		"GOLD:"
 
-		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"Firestrawr"
+		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05"								"firestar"
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_Description"						"     Here you are, we need your help urgently. We found out that wolves from the forest are approaching us, go and kill them, protect us and give 7 bones."
 
 		"DOTA_Tooltip_Ability_quest_test_kot_glavniy_jitel05_value_required"						"Number of .."
@@ -1997,7 +1987,7 @@
 
 
 
-		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"Dmeowrf"
+		"DOTA_Tooltip_Ability_quest_test_gurd_01"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_01_Description"						"Oh, hello, would you be interested in my artifact? It is filled with the power of gold and can make you strong! Only, you know, I'm very hungry and I can't summon him, You know, it's still very difficult to do something in the current conditions, And it's hard to find food yourself, let's do it this way, you'll do a couple of my tasks, And I'll give you an artifact!
  		So first of all, bring me 10 pieces of meat."
 
@@ -2005,28 +1995,28 @@
 		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_exp"                 		"exp:"
 		"DOTA_Tooltip_Ability_quest_test_gurd_01_reward_gold"                 		"gold:"
 
-		"DOTA_Tooltip_Ability_quest_test_gurd_02"									"Dmeowrf"
+		"DOTA_Tooltip_Ability_quest_test_gurd_02"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_02_Description"						"Dachshund, now I don't have enough cottage cheese. Could you get it for me?"
 
 		"DOTA_Tooltip_Ability_quest_test_gurd_02_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_exp"                 		"exp:"
 		"DOTA_Tooltip_Ability_quest_test_gurd_02_reward_gold" 						"gold:"
 
-		"DOTA_Tooltip_Ability_quest_test_gurd_03"									"Dmeowrf"
+		"DOTA_Tooltip_Ability_quest_test_gurd_03"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_03_Description"						"Dachshund, and now almost everything is ready! All that remains is to give me 2 eggs, by any chance are they lying around in your pants?"
 
 		"DOTA_Tooltip_Ability_quest_test_gurd_03_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_exp"                 		"exp:"
 		"DOTA_Tooltip_Ability_quest_test_gurd_03_reward_gold" 						"gold:"
 
-		"DOTA_Tooltip_Ability_quest_test_gurd_04"									"Dmeowrf"
+		"DOTA_Tooltip_Ability_quest_test_gurd_04"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_04_Description"						"So, hold the pizza billet, but now we are missing 1 ingredient of Eternal Flame! I just forgot something where I buried it while I moved to this world, maybe you can find it and give it to me?"
 
 		"DOTA_Tooltip_Ability_quest_test_gurd_04_value_required"						"Number of .."
 		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_exp"                 		"exp:"
 		"DOTA_Tooltip_Ability_quest_test_gurd_04_reward_gold" 						"gold:"
 
-		"DOTA_Tooltip_Ability_quest_test_gurd_05"									"Dmeowrf"
+		"DOTA_Tooltip_Ability_quest_test_gurd_05"									"dneirf"
  		"DOTA_Tooltip_Ability_quest_test_gurd_05_Description"						"So now you can return that pizza blank and you'll get an artifact!"
 
 		"DOTA_Tooltip_Ability_quest_test_gurd_05_value_required"						"Number of .."
@@ -2040,7 +2030,7 @@
 		"DOTA_Tooltip_Ability_quest_test_kamen_reward_gold" 						"gold:"
  
  		"DOTA_Tooltip_Ability_quest_test01"										"Oh meat meat meat..."
-		"DOTA_Tooltip_Ability_quest_test01_Description"							"Tere-zizizi)) Did you come here to hear my story? What? You don't want? No, I know that you want. But I'm very very hungry. Bring me a couple of pieces of meat, they are... you know where. If I'll have to explain such simple things to you, I'd rather put my anchor up Tide's ASS. "
+		"DOTA_Tooltip_Ability_quest_test01_Description"							"Tere-zizizi)) Did you come here to hear my story? What? You don't want? No, I know that you want. But I'm very very hungry. Bring me a couple of pieces of meat, they are... you know where. If I'll explain such simple things to you, I'll put anchor in my ass. "
 		"DOTA_Tooltip_Ability_quest_test01_value_required"     							"NUMBER OF MEATS:"
 		"DOTA_Tooltip_Ability_quest_test01_reward_exp"                 		"EXPERIENCE:"
 		"DOTA_Tooltip_Ability_quest_test01_reward_gold"                 		"GOLD:"
@@ -2138,7 +2128,7 @@
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note0"					"While brewing, this ability is replaced by Unstable Concoction Throw.  Alchemist can move and act normally while brewing."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note1"					"A timer above Alchemist's head will indicate the remaining brew time. This timer is visible to enemies."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note2"					"You can deny yourself with this skill."
-		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"					"Unstable Concoction cannot be evaded."
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"					"Unstable Concoction cannot be disjointed."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"					"Once thrown, Unstable Concoction stops brewing."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"				"MAX STUN:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"				"MAX DAMAGE:"
@@ -2256,7 +2246,7 @@
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_armor_reduction"			"+{s:bonus_armor_reduction} Armor reduction Anchor Smash"
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_damage"				"+{s:bonus_smash_damage} SMASH DAMAGE"
-		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"					"+0.2 Strength and HP from MORE HEALTH"
+		"DOTA_Tooltip_Ability_special_bonus_unique_tide_dmg_proc"					"+0.2 Strenght and HP from MORE HEALTH"
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_damage_reduction"			"+{s:bonus_damage_reduction} BLOCK DAMAGE"
 
 		"DOTA_Tooltip_Ability_special_bonus_unique_tide_smash_chance"	"+{s:bonus_chance}% to chance anchor smash"
@@ -2322,48 +2312,48 @@
 
         //---tb-----
         "DOTA_Tooltip_Ability_tb_illusion_dd"                                            "<font color='#ff4d4d'>Conjure Image</font>"
-        "DOTA_Tooltip_Ability_tb_illusion_dd_Description"                                "Creates an illusion that deals damage."
-        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_duration"                                        "Duration:"
-        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_outgoing_tooltip"                                        "%Outgoing damage:"
-        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_incoming_damage"                                        "%Incoming Damage:"
-        "DOTA_Tooltip_Ability_tb_illusion_dd_Lore"                                            "The only thing more dangerous than an encounter with one pillager is an encounter with several at once."
+        "DOTA_Tooltip_Ability_tb_illusion_dd_Description"                                "Создает иллюзию героя, которая наносит DAMAGE."
+        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_duration"                                        "DURATION ИЛЛЮЗИИ:"
+        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_outgoing_tooltip"                                        "%НАНОСИМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_illusion_dd_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_illusion_dd_Lore"                                            "Опаснее встречи с одним мародёром может быть только встреча сразу с несколькими."
 
         "DOTA_Tooltip_Ability_tb_illusion_tank"                                            "<font color='#0099ff'>Conjure Image</font>"
-        "DOTA_Tooltip_Ability_tb_illusion_tank_Description"                                "Creates an illusion that deals damage."
-        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_duration"                                        "Duration:"
-        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_outgoing_tooltip"                                        "%Outgoing damage:"
-        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_incoming_damage"                                        "%Incoming Damage:"
-        "DOTA_Tooltip_Ability_tb_illusion_tank_Lore"                                            "The only thing more dangerous than an encounter with one pillager is an encounter with several at once."
+        "DOTA_Tooltip_Ability_tb_illusion_tank_Description"                                "Создает иллюзию героя, которая получает DAMAGE."
+        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_duration"                                        "DURATION ИЛЛЮЗИИ:"
+        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_outgoing_tooltip"                                        "%НАНОСИМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_illusion_tank_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_illusion_tank_Lore"                                            "Опаснее встречи с одним мародёром может быть только встреча сразу с несколькими."
 
-        "DOTA_Tooltip_Ability_tb_swap"                                            "Illusion swap"
-        "DOTA_Tooltip_Ability_tb_swap_Description"                                "Instantly swaps places with his illusion."
-		"DOTA_Tooltip_Ability_tb_swap_Lore"					 "Passing through mirrors, Terrorblade can end up anywhere."
+        "DOTA_Tooltip_Ability_tb_swap"                                            "Sunder"
+        "DOTA_Tooltip_Ability_tb_swap_Description"                                "Мгновенно меняется местами с своей иллюзией."
+		"DOTA_Tooltip_Ability_tb_swap_Lore" "Проходя сквозь зеркала, Terrorblade может оказаться где угодно."
 
         "DOTA_Tooltip_Ability_tb_astral"                                            "Deception"
-        "DOTA_Tooltip_Ability_tb_astral_Description"                                "Becomes invulnerable, creating an illusion in its place."
-        "DOTA_Tooltip_Ability_tb_astral_Lore"                                        "Can't trust a Demon?~"
-        "DOTA_Tooltip_Ability_tb_astral_illusion_outgoing_tooltip"                                        "%Outgoing damage:"
-        "DOTA_Tooltip_Ability_tb_astral_illusion_duration"                                        "Duration:"
-        "DOTA_Tooltip_Ability_tb_astral_illusion_incoming_damage"                                        "%Incoming Damage:"
-        "DOTA_Tooltip_Ability_tb_astral_buff_duration"                                        "Invisibility Duration:"    
+        "DOTA_Tooltip_Ability_tb_astral_Description"                                "Становится неуязвимым, создавая на своём месте иллюзию."
+        "DOTA_Tooltip_Ability_tb_astral_Lore"                                        "Демону-мародеру доверять нельзя."
+        "DOTA_Tooltip_Ability_tb_astral_illusion_outgoing_tooltip"                                        "%НАНОСИМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_astral_illusion_duration"                                        "DURATION ИЛЛЮЗИИ:"
+        "DOTA_Tooltip_Ability_tb_astral_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_astral_buff_duration"                                        "DURATION НЕВИДИМОСТИ:"    
         
         "DOTA_Tooltip_Ability_tb_soul"                                            "To hell"
-        "DOTA_Tooltip_Ability_tb_soul_Description"                                "Dies and creates a couple of powerful illusions."
-        "DOTA_Tooltip_Ability_tb_soul_illusion_duration"                                        "Duration:"
-        "DOTA_Tooltip_Ability_tb_soul_illusion_outgoing_damage"                                        "%Outgoing damage:"
-        "DOTA_Tooltip_Ability_tb_soul_illusion_incoming_damage"                                        "%Incoming Damage:"
-		"DOTA_Tooltip_Ability_tb_astral_Lore" 				"Don't forget to check reality before your eyes, they may be deceiving you."      
+        "DOTA_Tooltip_Ability_tb_soul_Description"                                "Умирает, создавая несколько сильных иллюзий."
+        "DOTA_Tooltip_Ability_tb_soul_illusion_duration"                                        "DURATION ИЛЛЮЗИИ:"
+        "DOTA_Tooltip_Ability_tb_soul_illusion_outgoing_damage"                                        "%НАНОСИМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+        "DOTA_Tooltip_Ability_tb_soul_illusion_incoming_damage"                                        "%ПОЛУЧАЕМЫЙ ИЛЛЮЗИЕЙ DAMAGE:"
+		"DOTA_Tooltip_Ability_tb_astral_Lore" "Не забывай проверять реальность перед глазами, возможно глаза тебя обманывают."      
 
 		"DOTA_Tooltip_Ability_item_warlock_head"										"Someone's head"
-		"DOTA_Tooltip_Ability_item_warlock_head_Description"					"<h1>Passive: Head relax </h1> You feel a strange sense of calmness, as if it is consuming you."
+		"DOTA_Tooltip_Ability_item_warlock_head_Description"					"<h1>Passive: head relax </h1> You feel a strange sense of calmness, as if it is consuming you."
 		"DOTA_Tooltip_Ability_item_warlock_head_Lore"			"The head, but whose?"
 
-        "DOTA_Tooltip_Ability_item_color_red"                                            "Red"
-        "DOTA_Tooltip_Ability_item_color_green"                                            "Green"
-        "DOTA_Tooltip_Ability_item_color_yellow"                                            "Yellow"
-        "DOTA_Tooltip_Ability_item_color_blue"                                            "Blue"
-        "DOTA_Tooltip_Ability_item_color_aqua"                                            "Aqua"
-        "DOTA_Tooltip_Ability_item_color_fuchsia"                                            "Purple"
+        "DOTA_Tooltip_Ability_item_color_red"                                            "Красный"
+        "DOTA_Tooltip_Ability_item_color_green"                                            "Зелёный"
+        "DOTA_Tooltip_Ability_item_color_yellow"                                            "Жёлтый"
+        "DOTA_Tooltip_Ability_item_color_blue"                                            "Синий"
+        "DOTA_Tooltip_Ability_item_color_aqua"                                            "Бирюзовый"
+        "DOTA_Tooltip_Ability_item_color_fuchsia"                                            "Пурпурный"
 
         //-----------lc-------------
        "DOTA_Tooltip_Ability_overwhelming_odds"                                            "overwhelming odds"
@@ -2501,7 +2491,7 @@
 		"DOTA_Tooltip_Ability_shotgun_sf_damage_modifier_tooltip"     							"%damage:"
 		"DOTA_Tooltip_Ability_shotgun_sf_slow_movespeed"     							"slow:"
 		"DOTA_Tooltip_ability_shotgun_sf_Lore"							"Idea by BaronXX"
-		"DOTA_Tooltip_ability_shotgun_sf_Note0"							"Additional targets are considered to be the closest opponents, not counting the main target."
+		"DOTA_Tooltip_ability_shotgun_sf_Note0"							"Additional targets are considered to be the closest opponents, not counting the main goal."
 		"DOTA_Tooltip_ability_shotgun_sf_Note1"							"If this ability is enabled when creating illusions, it will also work for them."
 
 		"DOTA_Tooltip_ability_shotgun_sf_shard_description"						"Now the ability doesn't slow you down."
@@ -2944,14 +2934,14 @@
 		"DOTA_Tooltip_ability_Meld_blink_range"						"BLINK RANGE:"
 		"DOTA_Tooltip_ability_Meld_meld_damage_deal"					"%DAMAGE:"
 		"DOTA_Tooltip_ability_Meld_radius"					"RADIUS:"
-		"DOTA_Tooltip_ability_Meld_duration"				"DURATION:"
-		"DOTA_Tooltip_ability_Meld_armor_reduction"					"Armor Reduction:"
-		"DOTA_Tooltip_ability_Meld_shard_description"				"Increases Damage and Armor Reduction"
+		"DOTA_Tooltip_ability_Meld_duration"				"DURATION ДЕБАФФА:"
+		"DOTA_Tooltip_ability_Meld_armor_reduction"					"УМЕНЬШЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_Meld_shard_description"				"Увеличивает DAMAGE и снижение брони"
 
-		"DOTA_Tooltip_ability_templar_secret"								"Templar's secret"
-		"DOTA_Tooltip_ability_templar_secret_Description"							"The assassin knows very well how to kill opponents as best as possible, so the DAMAGE on them may increase"
-		"DOTA_Tooltip_ability_templar_secret_temp_crit_chance"							"%CHANCE:"
-		"DOTA_Tooltip_ability_templar_secret_temp_crit_mult"						"%CRIT.DAMAGE:"
+		"DOTA_Tooltip_ability_templar_secret"								"Templar secret"
+		"DOTA_Tooltip_ability_templar_secret_Description"											"The assassin knows very well how to kill opponents as best as possible, so the DAMAGE on them may increase"
+		"DOTA_Tooltip_ability_templar_secret_temp_crit_chance"											"%CHANCE:"
+		"DOTA_Tooltip_ability_templar_secret_temp_crit_mult"						"%КРИТ.DAMAGE:"
 
 		"DOTA_Tooltip_ability_ability_bedlam"									"Secret friend"
 		"DOTA_Tooltip_ability_ability_bedlam_Description"									"The creature that the Templar calls to his aid."
@@ -4151,31 +4141,31 @@ The player can control the summoned creeps."
 		"DOTA_Tooltip_Ability_necrolyte_heartstopper_aura_2_aura_damage"     							"%DAMAGE:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_2_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_2_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_2_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_2_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
  
  		"DOTA_Tooltip_Ability_golden_mine_3_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_3_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_3_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_3_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_4_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_4_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_4_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_4_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_5_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_5_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_5_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_5_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_6_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_6_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_6_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_6_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		
 		"DOTA_Tooltip_Ability_golden_mine_7_passive"										"FIGHT!"
-		"DOTA_Tooltip_Ability_golden_mine_7_passive_Description"							"1 hit of hero = - 1 hp."
+		"DOTA_Tooltip_Ability_golden_mine_7_passive_Description"							"1 hit of hero = - 1 хп."
 		"DOTA_Tooltip_Ability_golden_mine_7_passive_attacks_need"     							"HOW MUCH ATTACK YOU NEED:"
 		 
 		"DOTA_Tooltip_Ability_pudge_meat_hook_2"										"Hook"
@@ -4365,7 +4355,7 @@ The player can control the summoned creeps."
      	"dota_hud_error_use_myself"                    						"You can't use it on yourself"    
     	"dota_hud_error_use_enemies"                    						"You can't use it on enemies"     
         "dota_hud_error_gril_not_meat"                    						"Grill needs meat"  
-        "dota_hud_error_pirog"                    						"You ate the pie"  
+        "dota_hud_error_pirog"                    						"You have eated pie"  
         "dota_hud_error_key"                    						"It don't want the key"   
 
        	"dota_hud_error_letter_bad_target"                    					"It can use only on Main christmas tree!"
