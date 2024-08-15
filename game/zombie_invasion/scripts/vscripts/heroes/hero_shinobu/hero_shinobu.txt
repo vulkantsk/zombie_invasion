@@ -8,83 +8,39 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"HasInnateModifiers"			"1"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"lifesteal_pct_lvl1"		"25"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_speed_lvl1" "0"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_move_speed_lvl1" "0"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"hp_mark_pct_lvl2"	"25"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"lifesteal_pct_lvl2"		"35"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_speed_lvl2" "10 15 20 25 30 35 40"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_move_speed_lvl2" "0 3 6 9 12 15 18"
-			}
-			"08"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"hp_mark_pct_lvl3"	"50"
-			}
-			"09"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"lifesteal_pct_lvl3"		"45"
-			}
-			"10"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_speed_lvl3" "25 30 35 40 45 50 55"
-			}
-			"11"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_move_speed_lvl3" "15 20 22 24 26 28 32"
-			}
-			"12"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"hp_mark_pct_lvl4"	"75"
-			}
-			"13"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"lifesteal_pct_lvl4"	"65"
-			}
-			"14"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_attack_speed_lvl4"	"40 45 50 55 60 65 140"
-			}
-			"15"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"bonus_move_speed_lvl4"	"30 33 36 39 42 45 94"
-			}
+			
 		}
 
 		"precache"

@@ -110,39 +110,21 @@
                 
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {                       
-            "01"
-            {
-                "var_type"              "FIELD_INTEGER"
+           
                 "cleave_starting_width"         "150"
-            }           
-            "02"
-            {
-                "var_type"              "FIELD_INTEGER"
+          
                 "cleave_ending_width"           "360"
-            }           
-            "03"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "cleave_distance"           "650"
-            }
-
-            "04"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "great_cleave_damage"   "40 70 90 110 140 180 240"
-            }
-            "05"
-            {
-                "var_type"              "FIELD_INTEGER"
+           
                 "fire_damage"   "2 4 8 16 32 64 326"
-            }
-            "06"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "duration"   "8"
-            }
+            
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
@@ -166,55 +148,27 @@
         
         // Special
         //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
+        "AbilityValues"
         {                       
-            "01"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "start_radius"          "150 150 150 150"
-            }
-            "02"
-            {
-                "var_type"              "FIELD_INTEGER"
+          
                 "end_radius"            "250 250 250 250"
-            }
-            "03"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "range"                 "800"
-            }
-            "04"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "speed"                 "800"
-            }   
-            "05"
-            {
-                "var_type"              "FIELD_INTEGER"
+           
                 "stack_overhell"                 "110"
-            }      
-            "06"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "damage"                 "20000"
-            } 
- 
-            "07"
-            {
-                "var_type"              "FIELD_INTEGER"
+            
                 "unduced"                 "34"
-            }     
-            "08"
-            {
-                "var_type"              "FIELD_INTEGER"
+           
                 "damage_meta"                 "50000"
-            } 
- 
-            "09"
-            {
-                "var_type"              "FIELD_INTEGER"
+           
                 "unduced_meta"                 "67"
-            }  
+              
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }

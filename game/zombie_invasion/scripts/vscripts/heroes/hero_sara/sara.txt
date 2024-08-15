@@ -83,33 +83,20 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCooldown"				"19"
 		"AbilityCastPoint"				"0.2 0.2 0.2 0.2 0.2 0.15 0.1"
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"blink_range"			"600"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
+		
 				"energy_to_blink_range"	"16"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"range_energy_step"		"50"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"max_energy_per_step_pct"	"0.5"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"min_cost_pct"			"5"
-			}
+			
 		}
 
 		"precache"
@@ -129,31 +116,17 @@
 		"AbilityCooldown"				"10"
 		"HasScepterUpgrade"				"1"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"crit_chance_pct"	"17"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
+		
 				"energy_to_crit_pct" "0.5"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"energy_to_damage_pct" "1 2 3 4 5 6 7 8 9 10 11 12 13 14"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"damage_pct_scepter" "200"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"buff_duration_scepter" "14.0"
 			}
 		}
@@ -169,26 +142,15 @@
 		"MaxLevel"						"10"
 		"HasScepterUpgrade"				"1"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"damage_per_energy"		"1.0"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"blocked_damage_pct"	"5 10 15 20 25 30 35 40 45 50"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"reflected_damage_pct_scepter"	"20"
-				"CalculateSpellDamageTooltip"	"0"
-			}
+			
 		}
 
 		"precache"
@@ -211,28 +173,17 @@
 		"AbilityCooldown"				"38 36 34 32 28 26 24 22 20 18"
 		"HasScepterUpgrade"				"1"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
+			
 				"energy_const"		"0 75 150 225 300 375 450 525 600 675"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"energy_pct"		"18"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"debuff_duration"	"10"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_FLOAT"
+			
 				"cooldown_scepter"	"36 32 28 24 20 16 12 8 4 0"
-			}
+			
 		}
 
 		"precache"
