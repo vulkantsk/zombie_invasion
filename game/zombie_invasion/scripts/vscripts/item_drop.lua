@@ -39,11 +39,11 @@ ItemDrop.item_drop = {
 
 		{items = {"item_warlock_head"}, chance = 100, units = {"npc_warlock_boss"}},
 
-		{items = {"item_egg_pasha_1"}, chance = 1, duration = 15, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_2"}, chance = 2, duration = 15, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_3"}, chance = 3, duration = 15, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_4"}, chance = 4, duration = 15, units = {"npc_classic_not_fish"}},
-		{items = {"item_egg_pasha_5"}, chance = 5, duration = 15, units = {"npc_classic_not_fish"}},
+		--{items = {"item_egg_pasha_1"}, chance = 1, duration = 15, units = {"npc_classic_not_fish"}},
+		--{items = {"item_egg_pasha_2"}, chance = 2, duration = 15, units = {"npc_classic_not_fish"}},
+		--{items = {"item_egg_pasha_3"}, chance = 3, duration = 15, units = {"npc_classic_not_fish"}},
+		--{items = {"item_egg_pasha_4"}, chance = 4, duration = 15, units = {"npc_classic_not_fish"}},
+		--{items = {"item_egg_pasha_5"}, chance = 5, duration = 15, units = {"npc_classic_not_fish"}},
  
   
 

@@ -144,10 +144,9 @@
 		
 		"next"					"Дальше"
 		"previous"				"Назад"
-		//
 		
        // ******************** Messages ********************
-	   
+
 	   "big_bo_1"                                                   "<font color='#20B2AA'>Грязи стало больше</font>"
 	   "big_bo_2"                                                   "<font color='#FA8172'>Запахло чем-то отвратительным...</font>"
 	   "big_bo_3"                                                   "<font color='#B22228'>Мурашки идут по твоей коже</font>"
@@ -171,9 +170,7 @@
 	   "ending_9"                                                 "Эволюционируя они отрастили ноги, так и зародилась новая раса зверолюдей."
 	   "text_cheat_detected"								"EgardAntiCheat.exe"
 
-	   "begining_fun1"													"<font color='#c10020'>ЗРЯ ВЫ РЕШИЛИ ДОНИМАТЬ МЕНЯ СВОИМИ "ГДЕ ОБНОВА!?"</font>"
-	   "begining_fun2"													"<font color='#c10020'>СЕЙЧАС Я ПОКАЖУ ВАМ СВОЁ ТВОРЕНИЕ"</font>"
-	   "beginend_fun"													"<font color='#c10020'>УЗРИТЕ SAND KING!"</font>"
+	 
 
 	   "warlock_terror"			                                    	"<font color='#c10020'>ЭТО НЕ МОЖЕТ ВСЕ ЗАКОНЧИТЬСЯ ТАК</font>"
 
@@ -3406,6 +3403,7 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution2" "+450 здоровья от способности evolution"
 		"DOTA_Tooltip_ability_special_bonus_unique_sara_evolution" "+75 к получаемой энергии каждую минуту"
 
+
 		// -----------------Saitama--------------------
           "DOTA_Tooltip_ability_saitama_push_ups" "Push ups"
           "DOTA_Tooltip_ability_saitama_push_ups_Description" "Сайтама делает сотню отжиманий, становясь сильнее. По окончании действия способности он навсегда увеличивает силу и получает %stacks_amount% стак лимитера." 
@@ -3564,6 +3562,8 @@
 
 	// -----------------Samurai--------------------
 
+
+
       "DOTA_Tooltip_ability_jugger"	"Х" 
       "DOTA_Tooltip_ability_jugger_2"	"М" 
       "DOTA_Tooltip_ability_jugger_3"	"М" 
@@ -3677,8 +3677,8 @@
     	0% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl1%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl1% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl1%
     	%hp_mark_pct_lvl2%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl2%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl2% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl2%
     	%hp_mark_pct_lvl3%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl3%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl3% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl3%
-  		%hp_mark_pct_lvl4%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl4%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl4% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl4%
-		"DOTA_Tooltip_ability_shinobu_vampire_blood_Lore" "Вампирская кровь имеет свои недостатки, но преимуществ гораздо больше."
+  		%hp_mark_pct_lvl4%%% и более здоровья: ВАМПИРИЗМ: %lifesteal_pct_lvl4%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl4% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl4%"
+		"DOTA_Tooltip_ability_shinobu_vampire_blood_Lore" "Вампирская кровь имеет свои недостатки, но преимуществ гораздо больше."	
 		"DOTA_Tooltip_ability_shinobu_vampire_blood_Note0" "Shinobu воскресает с 50% здоровья"
 		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl4_Description" "+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% к скорости атаки
   		+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% к скорости передвижения"

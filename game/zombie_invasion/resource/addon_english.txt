@@ -153,31 +153,32 @@
 	   "Game_notification_boss_spawn_ghost"				"<font color='#DBA901'>HE IS APPROACHING YOUА </font><font color='#FF0000'>'THE LOST' </font><font color='#DBA901'>,будьте наготове!</font>"
 	   "Game_notification_boss_spawn_pudge"				"<font color='#DBA901'>HE IS APPROACHING YOU </font><font color='#FF0000'>'P.U.D.G.E.' </font><font color='#DBA901'>,будьте наготове!</font>"
  	   "Game_notification_portal_boss"				"<font color='#DBA901'>ТОТЕМНЫЙ БОСС ПОЯВИЛСЯ НА КАРТЕ!</font>"
-	   "Game_notification_boss_spawn_meatgolem_2"				"<font color='#DBA901'>HE IS APPROACHING YOU </font><font color='#FF0000'>'FATTY' </font><font color='#DBA901'>,будьте наготове!</font>"
-
+	   "Game_notification_boss_spawn_meatgolem_2"				"<font color='#DBA901'>HE IS APPROACHING YOU </font><font color='#FF0000'>'FATTY' </font><font color='#DBA901'>,будьте наготове!</font>"	
 	   "imp1"  							"<font color='#c10020>Is all this unreal?</font>"
 	   "imp2"  							"<font color='#c10020>But if that's the case.. Then I have to get out of here.</font>"
 	   "imp3"							"<font color='#c10020>I couldn't save the village here, but I will definitely be able to save it in reality!</font>"
 	   "imp4"							"<font color='#DBA901>COMING SOON TO ZOMBIE INVASION 2.</font>"
 
        // ******************** Messages Christmas ********************
+
        	   "sf_eg1"                                                  "<font color='#c10020'>ENOUGH</font>"
        	   "sf_eg2"                                                  "<font color='#c10020'>I'M TIRED PLAYING WITH YOU</font>" 
-       	   "sf_eg3"                                                  "<font color='#c10020'>AND ALL THE "WOUNDS" YOU'VE GIVEN ME...</font>"
+       	   "sf_eg3"                                                  "<font color='#c10020'>AND ALL THE WOUNDS YOU'VE GIVEN ME...</font>"
+
        	   "sf_eg4"                                                  "<font color='#c10020'>THEY DIDN'T DO ANYTHING TO ME AHAAHAHAHAHAH</font>"
        	   "sf_eg5"                                                  "<font color='#c10020'>AND NOW...</font>"
        	   "sf_eg6"                                                  "<font color='#c10020'>I WANT TO FULLY ENJOY YOUR SUFFERING</font>"
        	   "sf_eg7"                                                  "<font color='#c10020'>BY KILLING EVERYONE YOU'VE BEEN PROTECTING</font>"
        	   "sf_eg8"                                                  "<font color='#c10020'>what?</font>"
        	   "sf_eg9"                                                  "<font color='#c10020'>WHAT????</font>"
-       	   "sf_eg10"                                                  "<font color='#c10020'>WHATS HAPPENING????</font>"
-       	   "sf_eg11"                                                  "<font color='#c10020'>NOOOOOOOOOOOOOOOOOO......</font>"
+       	   "sf_eg10"                                                 "<font color='#c10020'>WHATS HAPPENING????</font>"
+       	   "sf_eg11"                                                 "<font color='#c10020'>NOOOOOOOOOOOOOOOOOO......</font>"
+
 
        	   "pn_eg1"                                                  "<font color='#58ACFA'>Fuck off bastard fiend?</font>"
        	   "pn_eg2"                                                  "<font color='#58ACFA'>Didn't you know that on New Year's Eve..</font>"
        	   "pn_eg3"                                                  "<font color='#58ACFA'>All magic works a miracle that good kids believe in</font>"
        	   "pn_eg4"                                                  "<font color='#58ACFA'>Goodbye to the excess of the past and celebrate the new year!</font>"
-
        	   "christmas_1"                                                  "<font color='#deaa88'>The celebration continues!</font>"
 
 		// ******************** heroes ********************
@@ -675,7 +676,7 @@
 		"DOTA_Tooltip_modifier_item_poor_shield"			"Shield"
 		"DOTA_Tooltip_modifier_item_poor_shield_Description"	"Practical in combat blocks <font color='#ffd0cb'>120</font> damage with a chance of 60%%%"
 
-
+		
 
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow"								"Daedalus Stormbow 2"
 		"DOTA_Tooltip_ability_item_war_of_the_crossbow_Description"				"<h1>Passive: Split </h1>Your ability to hit targets is increased multi-fold. Targets: <font color='#ffc0cb'>7</font>"
@@ -956,9 +957,10 @@
 	 	
  		"DOTA_Tooltip_Ability_item_pirog_magic"						"Pie of mage"
 		"DOTA_Tooltip_Ability_item_pirog_magic_Description"			"<h1>Active: Nam-nam</h1> You eat the pie."  
+
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana"	"MANA: "		
-		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana_regen"	"%REGEN  FROM MAX MANA: "
-		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_manacost"	"%MANACOST REDUCTION": "
+		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_mana_regen"	"%REGEN FROM MAX MANA: "
+		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_manacost"	"%MANACOST REDUCTION: "
 		"DOTA_Tooltip_Ability_item_pirog_magic_bonus_dps"	"%SPELL AMPLIFICATION: "
 		"DOTA_Tooltip_Ability_item_pirog_magic_Lore"						"For the best mage."
 
@@ -987,7 +989,7 @@
 		"DOTA_Tooltip_Ability_item_trash"						"Weird smelly thing"
 		"DOTA_Tooltip_Ability_item_trash_Description"			"UHHH SMELLS WEIRD?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
  
- 
+
 		
 		"DOTA_Tooltip_Ability_item_milk_shake"							"Милкшейк"
 		"DOTA_Tooltip_Ability_item_milk_shake_Description"				"<h1>Active: Хлюп-Хлюп</h1>Восстанавливает много маны.\n Очень.\n Много.\n(1000)"
@@ -1879,9 +1881,9 @@
 
  			"DOTA_Tooltip_Ability_item_egg_pasha_2" "Brown egg"
 
- 			"DOTA_Tooltip_Ability_item_egg_pasha_3" - "White egg"
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_3"  "White egg"
 
- 			"DOTA_Tooltip_Ability_item_egg_pasha_4" - "Red egg"
+ 			"DOTA_Tooltip_Ability_item_egg_pasha_4"  "Red egg"
 
 			"DOTA_Tooltip_Ability_item_egg_pasha_5" "Pink egg"
 
@@ -2164,8 +2166,8 @@
 
  		"DOTA_Tooltip_ability_ability_ion_shell"										"Ion Shell"
 		"DOTA_Tooltip_ability_ability_ion_shell_Description"							"Places a barbed shield on the selected creature, which increases the creature's health and regeneration. If used on yourself, then it also causes damage to all enemies around."
-		"DOTA_Tooltip_ability_ability_ion_shell_Lore"									"Ish-Kafel punches holes in the "world beyond the wall", causing prismatic energy to seep out."
-		"DOTA_Tooltip_ability_ability_ion_shell_Note0"								"Deals minor damage with an interval of %tick_interval%sec."
+		"DOTA_Tooltip_ability_ability_ion_shell_Lore"									"Ish-Kafel punches holes in the world beyond the wall, causing prismatic energy to seep out."
+		"DOTA_Tooltip_ability_ability_ion_shell_Note0"								"Deals minor damage with an interval of %tick_interval% sec."
 		"DOTA_Tooltip_ability_ability_ion_shell_Note1"								"Target of the ability does not take damage from it."
 		"DOTA_Tooltip_ability_ability_ion_shell_Note2"								"If the target of the ability already has a shield, it will be replaced with a new one."
 		"DOTA_Tooltip_ability_ability_ion_shell_radius"								"RADIUS:"
@@ -2174,6 +2176,7 @@
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_health"								"BONUS HEALTH:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_armor"								"BONUS ARMOR:"
 		"DOTA_Tooltip_ability_ability_ion_shell_bonus_regen"					"BONUS REGENERATION:"
+
 
 		"DOTA_Tooltip_modifier_ability_ion_shell"						"Ion Shell"
 		"DOTA_Tooltip_modifier_ability_ion_shell_Description"			"Increases target health by %dMODIFIER_PROPERTY_HEALTH_BONUS%, regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% and armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%" 
@@ -2205,7 +2208,7 @@
  		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Passively hanging on the owner. Deals damage to enemies around, as well as increases health, regeneration and armor. If you apply a regular shield, it will immediately reset."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Scepter_Description"				"The hero receives the blessing of aghanim, so he can use two shields on himself at once."
-		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Ish-Kafel punches holes in the "world beyond the wall", causing prismatic energy to seep out."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Ish-Kafel punches holes in the world beyond the wall, causing prismatic energy to seep out."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Deals minor damage with an interval of %tick_interval%sec."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_radius"								"RADIUS:"
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_duration"								"DURATION:"
@@ -3486,7 +3489,7 @@
     	0% и более здоровья: LIFESTEAL: %lifesteal_pct_lvl1%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl1% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl1%
     	%hp_mark_pct_lvl2%%% и более здоровья: LIFESTEAL: %lifesteal_pct_lvl2%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl2% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl2%
     	%hp_mark_pct_lvl3%%% и более здоровья: LIFESTEAL: %lifesteal_pct_lvl3%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl3% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl3%
-  		%hp_mark_pct_lvl4%%% и более здоровья: LIFESTEAL: %lifesteal_pct_lvl4%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl4% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl4%
+  		%hp_mark_pct_lvl4%%% и более здоровья: LIFESTEAL: %lifesteal_pct_lvl4%% СКОРОСТЬ АТАКИ: %bonus_attack_speed_lvl4% СКОРОСТЬ ПЕРЕДВИЖЕНИЯ: %bonus_move_speed_lvl4%"
 		"DOTA_Tooltip_ability_shinobu_vampire_blood_Lore" "Вампирская кровь имеет свои недостатки, но преимуществ гораздо больше."
 		"DOTA_Tooltip_ability_shinobu_vampire_blood_Note0" "Shinobu воскресает с 50% здоровья"
 		"DOTA_Tooltip_modifier_shinobu_vampire_blood_buff_lvl4_Description" "+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% к скорости атаки
