@@ -45,7 +45,6 @@ function modifier_item_poor_shield:GetModifierPhysical_ConstantBlock()
         return self:GetAbility():GetSpecialValueFor("damage_block")
     end
 end
-RollPseudoRandomPercentage()
 function modifier_item_poor_shield:GetTexture()
     return "items/pms"
 end

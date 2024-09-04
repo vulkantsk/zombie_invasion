@@ -290,6 +290,12 @@ DONATE_ITEM_KEFTEME= {
 
 	},	
 }
+DONATE_ITEM_MIRON= {
+	players = {
+ 		170695158,
+
+	},	
+}
 
 DONATE_ITEM_SAITAMA= {
 	players = {
@@ -500,6 +506,14 @@ DONATE_ITEMS = {
 			sets ={
 				DONATE_SET_ADMIN,
 				DONATE_ITEM_KEFTEME,
+			},
+		},
+		{
+			name = "item_smoky_miron",
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+				DONATE_ITEM_MIRON,
 			},
 		},
 		{

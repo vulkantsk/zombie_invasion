@@ -7541,6 +7541,43 @@
 			 
 		}
 	}
+	"item_smoky_miron"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/item_smoky_miron"														 
+		"ItemPurchasable"				"0" 
+		"ItemSellable"                  "0"
+		"ItemIsNeutralDrop" 						"1"
+        "AbilityTextureName"                         "drink_miron"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"AbilityCooldown"				"52"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"radius"					"400"
+				"damage"					"100"
+				"duration"				"12"
+
+				"ms_t_pct"						"52"
+				"damage_pct"				"40"
+
+				"agi"						"12"
+				"evasion"					"15"
+				"damage_pre_attack"			"35"
+				"armor_bonus"				"6"
+
+			 
+		}
+	}	
 	"item_npc_dota_hero_juggernaut"
 	{
 		// General
