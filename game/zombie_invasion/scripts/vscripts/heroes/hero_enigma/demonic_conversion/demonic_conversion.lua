@@ -5,10 +5,10 @@ LinkLuaModifier( "modifier_ability_demonic_conversion_damage", "heroes/hero_enig
 LinkLuaModifier( "modifier_ability_demonic_conversion_stats", "heroes/hero_enigma/demonic_conversion/demonic_conversion", LUA_MODIFIER_MOTION_NONE )
 
 function ability_demonic_conversion:GetCooldown( level )
-    local talent = self:GetCaster():FindAbilityByName("special_bonus_unique_enigma_demonic_conversion_cooldown")
-    if talent:GetLevel() == 1  then
-        return self.BaseClass.GetCooldown( self, level ) - talent:GetSpecialValueFor( "value" )
-    end
+
+
+  
+
 
     return self.BaseClass.GetCooldown( self, level )
 end

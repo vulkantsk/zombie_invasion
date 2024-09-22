@@ -47,8 +47,8 @@
 
 			"AbilityCooldown"			
 			{
-				"value"						"5"		
-				"special_bonus_unique_assassin_stifling_dagger_cooldown"		"-1.5"
+				"value"						"3"		
+				"special_bonus_unique_assassin_stifling_dagger_cooldown"		"-2.5"
 			}  			       
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
@@ -74,7 +74,7 @@
  
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "30 35 40 45 50 55"
+        "AbilityManaCost"               "55"
         
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -82,11 +82,11 @@
         {
 			"duration"					
 			{
-				"value"				"4.25"
-			    "special_bonus_unique_assassin_phantom_strike_duration"	    "+0.75"
+				"value"				"5.25"
+			    "special_bonus_unique_assassin_phantom_strike_duration"	    "+4.75"
 			}
            "bonus_lifesteal"           "10 12 14 17 19 22 24 26 28 30 32 34 36 38"
-           "bonus_attack_speed"    "20 40 60 80 100 120 140 160 180 200 220 240 260 280"
+           "bonus_attack_speed"    "120 140 160 180 200 220 240 260 280 300 320 340 360 380"
 			"illusion_outgoing_tooltip"			
 			{
 				"value"	"60"
@@ -125,7 +125,7 @@
         
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "40 45 50 55 60 65"
+        "AbilityManaCost"               "70"
     
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -134,15 +134,15 @@
         		"bonus_evasion"				"4 5 6 7 8 9 10 11 12 13 14 15 16 17"
  				"duration"					
 				{
-					"value"				"8"
-			    	"special_bonus_unique_assassin_blur_duration"	    "+12"
+					"value"				"20"
+			    	"special_bonus_unique_assassin_blur_duration"	    "+10"
 				}
 				"bonus_agility_base"					
 				{
 					"value"				"25 50 75 100 125 150 175 200 225 250 275 300 325 350"
 			    	"special_bonus_unique_assassin_blur_agility"	    "+100"
 				}
-				"chance_miss"			"40"
+				"chance_miss"			"55"
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
     }
@@ -217,7 +217,7 @@
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         
 		"RequiredLevel"					"35"
-		"MaxLevel" "1"
+		"MaxLevel" "3"
         "AbilityCooldown"               "5"
         "AbilityCastPoint"              "0.4"
 
@@ -225,8 +225,8 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
- 				"bonus_chance"					"15"
-				"bonus_crit"			"250"
+ 				"bonus_chance"					"10 20 30"
+				"bonus_crit"			"150 250 350"
 	 
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
@@ -250,8 +250,8 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-				 "crit_chance"               "15"
-				 "crit_bonus"                "200 225 250 275 300 400 425 450 475 500"
+				 "crit_chance"               "25 23 21 19 17 15 13 11 9 7"
+				 "crit_bonus"                "200 250 300 350 400 450 500 550 600 650"
         }
     }
     "phantom_assassin_buff_1"

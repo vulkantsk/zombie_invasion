@@ -80,7 +80,7 @@ function modifier_ability_ion_shell:OnCreated( kv )
 
 	self.damageTable = {
 		attacker = self:GetCaster(),
-		damage = damage*tick,
+		damage = (damage+self:GetCaster():GetAttackDamage())*tick,
 		damage_type = self.abilityDamageType,
 		ability = self:GetAbility(),
 	}

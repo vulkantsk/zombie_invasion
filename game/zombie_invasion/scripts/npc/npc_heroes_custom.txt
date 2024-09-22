@@ -1197,10 +1197,10 @@
 		"Ability10"		"special_bonus_armor_6"
 		"Ability11"		"special_bonus_gold_income_120"  
 		"Ability12"		"special_bonus_unique_crystal_maiden_6" 
-		"Ability13"		"special_bonus_unique_crystal_maiden_4"  
+		"Ability13"		"special_bonus_unique_crystal_maiden_cold_embrace"  
 		"Ability14"		"special_bonus_unique_crystal_maiden_damage"
 		"Ability15"		"special_bonus_unique_crystal_maiden_5"
-		"Ability16"		"special_bonus_unique_crystal_maiden_cold_embrace"
+		"Ability16"		"special_bonus_movement_speed_90"
 		"Ability17"		"special_bonus_unique_crystal_maiden_ult_cooldown"
 
 		"ArmorPhysical"		"-1"
@@ -1715,7 +1715,7 @@
 		"Ability12"		"special_bonus_unique_enigma_pulse_radius"
 		"Ability13"		"special_bonus_intelligence_25"
 		"Ability14"		"special_bonus_unique_enigma_black_hole_dead"
-		"Ability15"		"special_bonus_unique_enigma_demonic_conversion_cooldown"
+		"Ability15"		"special_bonus_all_stats_20"
 		"Ability16"		"special_bonus_unique_enigma_demonic_conversion_number"
 		"Ability17"		"special_bonus_unique_enigma_eyes"
 

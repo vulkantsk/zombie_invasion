@@ -2309,7 +2309,7 @@
         // -------------dark seer ----------
 
  		"DOTA_Tooltip_ability_ability_ion_shell"										"Ion Shell"
-		"DOTA_Tooltip_ability_ability_ion_shell_Description"							"Накладывает на выбранное существо колючий щит, который увеличивает здоровье и регенерацию существа. Если использовать на себя, тогда ко всему прочему наносит урон всем врагам вокруг."
+		"DOTA_Tooltip_ability_ability_ion_shell_Description"							"Накладывает на выбранное существо колючий щит, который увеличивает здоровье и регенерацию существа. Если использовать на себя, тогда ко всему прочему наносит урон + 100% урона с руки всем врагам вокруг."
 		"DOTA_Tooltip_ability_ability_ion_shell_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
 		"DOTA_Tooltip_ability_ability_ion_shell_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
 		"DOTA_Tooltip_ability_ability_ion_shell_Note1"								"Цель способности не получает от неё урон."
@@ -2349,7 +2349,7 @@
 		"DOTA_Tooltip_ability_ability_seer_punch_punch_radius"									"РАДИУС:"
 
  		"DOTA_Tooltip_ability_ability_ion_shell_golden"										"Ion Shell Golden"
-		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон врагам вокруг, а также увеличивает здоровье, регенерацию и броню. Если наложить обычный щит, то он тут же сбросится."
+		"DOTA_Tooltip_ability_ability_ion_shell_golden_Description"							"Пассивно висит на владельце. Наносит урон + 200% урона с руки врагам вокруг, а также увеличивает здоровье, регенерацию и броню. Если наложить обычный щит, то он тут же сбросится."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Scepter_Description"				"Герой получает благославение аганима, благодаря чему может использовать сразу два щита на себя."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Lore"									"Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу."
 		"DOTA_Tooltip_ability_ability_ion_shell_golden_Note0"								"Наносит небольшой урон с интервалом в %tick_interval% сек."
