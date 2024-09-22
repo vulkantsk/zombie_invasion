@@ -42,7 +42,8 @@
 		"ItemCost"						"0"
 		"ItemIsNeutralDrop"				"1"
 		"DisplayOverheadAlertOnReceived" "0"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
+			"ItemDroppable"					"1" 
 		"ItemSellable"				"0"
 
 		"Model"							"models/props_gameplay/neutral_box.vmdl"
