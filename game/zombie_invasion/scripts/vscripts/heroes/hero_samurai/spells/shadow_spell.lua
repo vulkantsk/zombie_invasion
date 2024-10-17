@@ -44,6 +44,9 @@ end
 function modifier_juggernaut_shadow:IsHidden()
 	return true
 end
+function modifier_juggernaut_shadow:GetAttributes()
+    return MODIFIER_ATTRIBUTE_MULTIPLE
+end
 
  
 --------------------------------------------------------------------------------
@@ -51,20 +54,20 @@ end
 function modifier_juggernaut_shadow:OnCreated( kv )
 	-- references
 	self.miss = self:GetAbility():GetSpecialValueFor( "miss" ) -- special value
-	self.speed_atack = self:GetAbility():GetSpecialValueFor( "speed_atack" ) -- special value
+	self.speed_atack = self:GetAbility():GetSpecialValueFor( "speed" ) -- special value
 end
 
 function modifier_juggernaut_shadow:OnRefresh( kv )
 	-- references
 	self.miss = self:GetAbility():GetSpecialValueFor( "miss" ) -- special value
-	self.speed_atack = self:GetAbility():GetSpecialValueFor( "speed_atack" ) -- special value
+	self.speed_atack = self:GetAbility():GetSpecialValueFor( "speed" ) -- special value
 end
 
 function modifier_juggernaut_shadow:DeclareFunctions()
 	local funcs = 
 	{
 		MODIFIER_PROPERTY_EVASION_CONSTANT,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
 	}
 	return funcs
 end
@@ -76,8 +79,10 @@ function modifier_juggernaut_shadow:GetModifierEvasion_Constant( kv )
  
 end
 
-function modifier_juggernaut_shadow:GetModifierBaseAttackTimeConstant()
+function modifier_juggernaut_shadow:GetModifierMoveSpeedBonus_Percentage()
 	if not self:GetParent():PassivesDisabled() then
-		return self.speed_atack
+
+			return self.speed
+		
 	end
 end

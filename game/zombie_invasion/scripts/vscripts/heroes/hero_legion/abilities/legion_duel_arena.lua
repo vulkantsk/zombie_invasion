@@ -1,12 +1,13 @@
 LinkLuaModifier( "modifier_legion_duel_arena_thinker", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_legion_duel_arena", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_legion_duel_arena_buff", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_legion_duel_arena_debuff", "heroes/hero_legion/abilities/legion_duel_arena" ,LUA_MODIFIER_MOTION_NONE )
 
-if legion_duel_arena == nil then
-    legion_duel_arena = class({})
-end
+legion_duel_arena = class({})
 
+function legion_duel_arena:GetIntrinsicModifierName()
+    return 'modifier_legion_duel_arena'
+end 
+ 
 --------------------------------------------------------------------------------
 
 function legion_duel_arena:OnSpellStart()
@@ -149,7 +150,7 @@ function modifier_legion_duel_arena_debuff:GetModifierMoveSpeed_Absolute()
 end
  
 modifier_legion_duel_arena = class({
-    IsHidden                 = function(self) return true end,
+    IsHidden                 = function(self) return false end,
     IsPurgable                 = function(self) return false end,
     IsDebuff                 = function(self) return false end,
     IsBuff                  = function(self) return true end,
@@ -157,32 +158,6 @@ modifier_legion_duel_arena = class({
     DeclareFunctions        = function(self) return 
         {
             MODIFIER_EVENT_ON_DEATH,
-          
-
-        } end,
-})
-
-function modifier_legion_duel_arena:OnDeath(data)
-    local parent = self:GetParent()
-    local killer = data.attacker
-    local killed_unit = data.unit
-
-    if killer == parent then
-        if killed_unit:HasModifier("modifier_legion_duel_arena_debuff") then 
-            local modif = parent:AddNewModifier(parent,self:GetAbility(),"modifier_legion_duel_arena_buff", {})
-            modif:SetStackCount(modif:GetStackCount() + self:GetAbility():GetSpecialValueFor("stats_per_kill"))
-        end
-    end
-end
-
-modifier_legion_duel_arena_buff = class({
-    IsHidden                 = function(self) return true end,
-    IsPurgable                 = function(self) return false end,
-    IsDebuff                 = function(self) return false end,
-    IsBuff                  = function(self) return true end,
-    RemoveOnDeath             = function(self) return false end,
-    DeclareFunctions        = function(self) return 
-        {
             MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
             MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
             MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
@@ -190,23 +165,30 @@ modifier_legion_duel_arena_buff = class({
         } end,
 })
 
-function modifier_legion_duel_arena_buff:GetAttributes()
+function modifier_legion_duel_arena:OnDeath(data)
+    local killer = data.attacker
+    local killed_unit = data.unit
+    if killed_unit:HasModifier("modifier_legion_duel_arena_debuff") then 
+        self:IncrementStackCount()
+    end
+  
+end
+function modifier_legion_duel_arena:GetAttributes()
     return MODIFIER_ATTRIBUTE_MULTIPLE
 end
 
-function modifier_legion_duel_arena_buff:OnCreated()
-    self.stats_per_kill = self:GetAbility():GetSpecialValueFor("stats_per_kill")
+function modifier_legion_duel_arena:GetModifierBonusStats_Strength()
+    return self:GetAbility():GetSpecialValueFor("stats_per_kill") * self:GetStackCount()
+end
+
+function modifier_legion_duel_arena:GetModifierBonusStats_Agility()
+    return self:GetAbility():GetSpecialValueFor("stats_per_kill") * self:GetStackCount()
 end
 
 
-function modifier_legion_duel_arena_buff:GetModifierBonusStats_Strength()
-    return self.stats_per_kill 
+function modifier_legion_duel_arena:GetModifierBonusStats_Intellect()
+    return self:GetAbility():GetSpecialValueFor("stats_per_kill") * self:GetStackCount()
 end
 
-function modifier_legion_duel_arena_buff:GetModifierBonusStats_Agility()
-    return self.stats_per_kill
-end
 
-function modifier_legion_duel_arena_buff:GetModifierBonusStats_Intellect()
-    return self.stats_per_kill
-end
+

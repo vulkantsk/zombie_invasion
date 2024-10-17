@@ -1333,7 +1333,7 @@
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher_Description"		"Через промежуток времени вы выстрелите ракетами"
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
-		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Активное: Octerinity of skull mages</h1> При использовании даёт герою %mana_casttime_cd%%% уменьшение стоимости заклинаний, %mana_casttime_cd%%% уменьшение перезарядки и увеличивает %mana_casttime_cd%%% скорость произнесения заклинаний"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Активное: Octerinity of skull mages</h1> При использовании даёт герою %mana_casttime_cd%%% уменьшение перезарядки способностей и предметов."
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Lore" 		"Ваш ум может вас подвести?"
         "DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
@@ -3597,7 +3597,7 @@
        "DOTA_Tooltip_ability_juggernaut_shadow"	"Hidden in shadow"
        "DOTA_Tooltip_ability_juggernaut_shadow_Description"	"Самурай так хорошо сливается со своей же тенью, что враги в недопонимании начинают промахиваться. Применение этой способности позволит Самураю полностью слиться со своей тенью и враги перестанут видеть его."
 		"DOTA_Tooltip_ability_juggernaut_shadow_miss"				"%БОНУС УКЛОНЕНИЯ:"
-		"DOTA_Tooltip_ability_juggernaut_shadow_speed_atack"					"БАЗОВАЯ СКОРОСТЬ АТАКИ:"
+		"DOTA_Tooltip_ability_juggernaut_shadow_speed"					"%СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
 		"DOTA_Tooltip_ability_juggernaut_shadow_duration"					"ДЛИТЕЛЬНОСТЬ:"
  		"DOTA_Tooltip_ability_juggernaut_shadow_Lore"								"Быть единым с тенью. Этому всегда учили Самурая, и он успешно приобрел и преуспел в этих навыках."
  		"DOTA_Tooltip_ability_juggernaut_shadow_Note0"								""
@@ -3631,9 +3631,8 @@
 		"DOTA_Tooltip_modifier_jugger_miracle_Description"	"Я БУДУ ЖИТЬ ВЕЧНО!!!!"
 
 		"DOTA_Tooltip_ability_jugger_dead"									"<font color='#ff0000'>Death</font>"
-		"DOTA_Tooltip_ability_jugger_dead_Description"						"Используя последние врата Самурай жертвует всем и становится очень сильным. Но при этом в процессе он получает урон в размере %damage_self%%  от своего здоровья в секунду.\n<font color='#ff0000'>Используй эту способность только при крайней нужде! </font>"
- 		"DOTA_Tooltip_ability_jugger_dead_Note0"								"После использования способности наклыдвается эффект, который уменьшает урон от руки на 15%, эффект складывается"
-  		"DOTA_Tooltip_ability_jugger_dead_Note1"								"\nПод эффектом этой способности нельзя умереть. И использовать такие способности как: Blade Fury, Hidden in shadow."
+		"DOTA_Tooltip_ability_jugger_dead_Description"						"Используя последние врата Самурай жертвует всем и становится очень сильным. Но при этом в процессе он получает урон в размере %damage_self%%  от своего здоровья в секунду.\n<font color='#ff0000'>Используй эту способность только при крайней нужде! </font><br/><br/><font color='#ff0000'>После использования способности наклыдвается эффект, который уменьшает урон с руки и все статы героя на 15%, эффект складывается</font>"
+ 		"DOTA_Tooltip_ability_jugger_dead_Note0"								"\nПод эффектом этой способности нельзя умереть. И использовать такие способности как: Blade Fury, Hidden in shadow."
 		"DOTA_Tooltip_ability_jugger_dead_Lore"								"Последние врата... Учитель всегда говорил Самураю, что использовать эту способность нужно только тогда, когда твоим союзникам угрожает большая опасность."
 		"DOTA_Tooltip_ability_jugger_dead_duration"	"ДЛИТЕЛЬНОСТЬ:"
 		"DOTA_Tooltip_ability_jugger_dead_as_bonus"	"БОНУСНАЯ СКОРОСТЬ АТАКИ:"
@@ -3645,7 +3644,7 @@
 		"DOTA_Tooltip_modifier_phantom_assassin_death_rush_Description"	"Отдам себя всего..."
 
 		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after"				"Responsibility" 
-		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after_Description"	"За свои действия, ты и только ты всегда в ответе... Урон снижен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
+		"DOTA_Tooltip_modifier_phantom_assassin_jug_death_after_Description"	"За свои действия, ты и только ты всегда в ответе... урон и статы снижен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
 
 
 

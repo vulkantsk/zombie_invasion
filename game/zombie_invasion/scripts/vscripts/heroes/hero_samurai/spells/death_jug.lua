@@ -12,7 +12,7 @@ end
 
 function jugger_dead:OnSpellStart()
 
-    self:GetCaster():AddNewModifier(self:GetCaster(), nil, "modifier_phantom_assassin_death_rush", {duration = 30})
+    self:GetCaster():AddNewModifier(self:GetCaster(), nil, "modifier_phantom_assassin_death_rush", {duration = self:GetSpecialValueFor("duration")})
             EmitSoundOn("gate_dead_theme",  self:GetCaster())
      
     self:PlayEffects()
@@ -108,7 +108,7 @@ function modifier_phantom_assassin_death_rush:GetEffectName()
 end
 
 modifier_phantom_assassin_jug_death_after = class({
-    IsHidden                = function(self) return true end,
+    IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return true end,
     IsBuff                  = function(self) return false end,
@@ -141,21 +141,21 @@ function modifier_phantom_assassin_jug_death_after:GetModifierDamageOutgoing_Per
 end
 
 function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Strength()
-    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseStrength()))
+    return -(self:GetStackCount() * (0.15 * self:GetCaster():GetBaseStrength()))
 end
 
 function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Agility()
-    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseAgility()))
+    return -(self:GetStackCount() * (0.15 * self:GetCaster():GetBaseAgility()))
 end
 
 function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Intellect()
-    return -(self:GetStackCount() * ((15 / 100) * self:GetCaster():GetBaseIntellect()))
+    return -(self:GetStackCount() * (0.15 * self:GetCaster():GetBaseIntellect()))
 end
 
 
 
 modifier_phantom_assassin_death_rush_buff = class({
-    IsHidden                = function(self) return false end,
+    IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
     IsDebuff                = function(self) return false end,
     IsBuff                  = function(self) return true end,
@@ -166,7 +166,6 @@ modifier_phantom_assassin_death_rush_buff = class({
             MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
             MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
             MODIFIER_PROPERTY_CASTTIME_PERCENTAGE,
-            MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
             MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE,
             MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
         } end,
@@ -183,10 +182,6 @@ end
 
 function modifier_phantom_assassin_death_rush_buff:GetModifierPercentageCooldown()
     return self.cooldown
-end
-
-function modifier_phantom_assassin_death_rush_buff:GetModifierBaseAttackTimeConstant()
-    return self.attack_base
 end
 
 function modifier_phantom_assassin_death_rush_buff:GetModifierBaseAttack_BonusDamage()

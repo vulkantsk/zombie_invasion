@@ -21,7 +21,7 @@ end
 
 modifier_blackshop_legendary_octerinity = class({})
 function modifier_blackshop_legendary_octerinity:IsHidden()
-    return true
+    return false
 end
 
 function modifier_blackshop_legendary_octerinity:IsDebuff()
@@ -36,7 +36,6 @@ function modifier_blackshop_legendary_octerinity:IsPurgeException()
     return false
 end
 
--- Optional Classifications
 function modifier_blackshop_legendary_octerinity:IsStunDebuff()
     return false
 end
@@ -53,20 +52,9 @@ end
 function modifier_blackshop_legendary_octerinity:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
-        MODIFIER_PROPERTY_MANACOST_PERCENTAGE,
-        MODIFIER_PROPERTY_CASTTIME_PERCENTAGE
     }
 end
 function modifier_blackshop_legendary_octerinity:GetModifierPercentageCooldown()
-    return self:GetStackCount() * 5
-end
-
-
-function modifier_blackshop_legendary_octerinity:GetModifierPercentageManacost()
-    return self:GetStackCount() * 5
-end
-
-function modifier_blackshop_legendary_octerinity:GetModifierPercentageCasttime()
-    return -self:GetStackCount() * 0.5
+    return 5/1+0.50*(self:GetStackCount() - 1) * self:GetStackCount()
 end
 
