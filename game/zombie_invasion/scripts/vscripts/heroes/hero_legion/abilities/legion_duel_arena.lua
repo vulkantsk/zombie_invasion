@@ -154,7 +154,7 @@ modifier_legion_duel_arena = class({
     IsPurgable                 = function(self) return false end,
     IsDebuff                 = function(self) return false end,
     IsBuff                  = function(self) return true end,
-    RemoveOnDeath             = function(self) return true end,
+    RemoveOnDeath             = function(self) return false end,
     DeclareFunctions        = function(self) return 
         {
             MODIFIER_EVENT_ON_DEATH,

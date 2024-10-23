@@ -120,11 +120,11 @@
 	   "big_bo_1"                                                   "<font color='#20B2AA'>Mud spreads</font>"
 	   "big_bo_2"                                                   "<font color='#FA8172'>The smell is atrocious</font>"
 	   "big_bo_3"                                                   "<font color='#B22228'>Goosebumps running down your skin</font>"
-	   "big_bo_4"                                                   "<font color='#8B0100'>He's almost here...</font>"
-	   "npc_stranger_jitel"                                         "довакин" 
-	   "npc_mechanoid"                                         "меха-бот-танк2000"
-	   "npc_mechanoid_attack"                                         "меха-бот-DAMAGE4000"
-	   "npc_mechanical_turret"                                         "меха-турель12000"
+	   "big_bo_4"                                                   "<font color='#8B0100'>He's almost here..</font>"
+	   "npc_stranger_jitel"                                         "Dovahkiin" 
+	   "npc_mechanoid"                                         "mech-bot-tank2000"
+	   "npc_mechanoid_attack"                                         "mech-bot-DAMAGE4000"
+	   "npc_mechanical_turret"                                         "mech-tourett12000"
 
 	   "begining_1"                                                 "<font color='#c10020'>I'm surprised you've been able to hold out for so long.</font>"
 	   "begining_2"                                                 "<font color='#c10020'>But this is your main mistake.</font>"
@@ -172,7 +172,7 @@
        	   "sf_eg8"                                                  "<font color='#c10020'>what?</font>"
        	   "sf_eg9"                                                  "<font color='#c10020'>WHAT????</font>"
        	   "sf_eg10"                                                 "<font color='#c10020'>WHATS HAPPENING????</font>"
-       	   "sf_eg11"                                                 "<font color='#c10020'>NOOOOOOOOOOOOOOOOOO......</font>"
+       	   "sf_eg11"                                                 "<font color='#c10020'>NOOOOOOOOOOOOOOOOOO.....</font>"
 
 
        	   "pn_eg1"                                                  "<font color='#58ACFA'>Fuck off bastard fiend?</font>"
@@ -366,7 +366,7 @@
 
 		"DOTA_Tooltip_ability_item_sargatanas_change" "<font color='#c12450'>SARGATANAS"
 		"DOTA_Tooltip_ability_item_sargatanas_change_Description" "Changes your hero to SARGATANAS"
-		"DOTA_Tooltip_ability_item_sargatanas_change_Lore" "Created with help of Кабан_Пумба."
+		"DOTA_Tooltip_ability_item_sargatanas_change_Lore" "Created with help of kaban pumba."
 
 
 		"DOTA_Tooltip_ability_item_cursed_shield" "Cursed Shield"
@@ -447,7 +447,7 @@
 
 		"DOTA_Tooltip_ability_item_fire" "ETERNAL FLAME!?"
 		"DOTA_Tooltip_ability_item_fire_Description" "An ever-burning thing, it smells very disgusting."
-		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning and..."
+		"DOTA_Tooltip_ability_item_fire_Lore" "Burning and burning and.."
 
        "DOTA_Tooltip_Ability_item_bloodstone_max"				"Bloodstone"
 		"DOTA_Tooltip_ability_item_bloodstone_max_Description"						"<h1>Active: Bloodpact</h1> increase magic vampirism %lifesteal_multiplier% times. At the end of the effect, it turns %mana_multiplier%% damage to mana. Duration: %buff_duration% sec."
@@ -661,7 +661,7 @@
 
 		"DOTA_Tooltip_ability_item_sad_shield"				"Smell shield"
 		"DOTA_Tooltip_ability_item_sad_shield_Description"	"<h1>Passive: Smell shell block </h1>blocks %damage_block% damage with %damage_block_chance%%%"
-		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Smelly, but really useful... I swear!!!!!!!!!!!"
+		"DOTA_Tooltip_ability_item_sad_shield_Lore"			"Smelly, but really useful.. I swear!!!!!!!!!!!"
 		"DOTA_Tooltip_ability_item_sad_shield_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_sad_shield_bonus_health"							"+$health"
 		"DOTA_Tooltip_modifier_item_sad_shield"				"Smelled"
@@ -778,7 +778,7 @@
 		"DOTA_Tooltip_Ability_item_bag_of_gold_pig_Description"				"Somebody said that if you take a lot of this gold you will become a pig!"
 
 		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant"							"Infected gold"
-		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant_Description"				"This gold smell like rot and... grain?"
+		"DOTA_Tooltip_Ability_item_bag_of_gold_mutant_Description"				"This gold smell like rot and.. grain?"
 
 		"DOTA_Tooltip_Ability_item_tesla"								"Tesla"
 		"DOTA_Tooltip_Ability_item_tesla_Description"					"Passive: Alternating current - for melee heroes grants each attack a chance to hit nearby targets and stun them. Discharge deals magic damage equal to the damage of the attacker.\nPassive: Damage Block - blocks 50 any incoming damage from each attack.\n\nDo not combine with Battlefury and not stackable."
@@ -837,23 +837,23 @@
 		"DOTA_Tooltip_Ability_item_hurricane_pike_max_attacks"	""
  
 		"DOTA_Tooltip_Ability_item_dead_golova"						"<font color='#ff9900'> Head of Bo </font>"
-		"DOTA_Tooltip_Ability_item_dead_golova_Description"			"<h1>Mmmmmmm...</h1>It is head of Big Bo affected by corruption. Looks like Heart of Tarrasque."
+		"DOTA_Tooltip_Ability_item_dead_golova_Description"			"<h1>Mmmmmmm..</h1>It is head of Big Bo affected by corruption. Looks like Heart of Tarrasque."
 		"DOTA_Tooltip_Ability_item_dead_golova_all_bonus"	"+$all"
 		"DOTA_Tooltip_Ability_item_dead_golova_Lore"			"If corruption can change big pig so much, what will be with powerful creature?."
 
  
 		"DOTA_Tooltip_Ability_item_undying_heart"						"<font color='#ff0000'> Undying Heart </font>"
-		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Still throbbing, however, mixing it with the pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
+		"DOTA_Tooltip_Ability_item_undying_heart_Description"			"Still throbbing, however, mixing it with the pie..\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_undying_heart_bonus_health_regen"	"%+$hp_regen"
 		"DOTA_Tooltip_Ability_item_undying_heart_physical_armor_bonus"	"+$armor"
 		
 	      "DOTA_Tooltip_Ability_item_magic_heart"						"<font color='#ff0000'> Magic Heart </font>"
-		"DOTA_Tooltip_Ability_item_magic_heart_Description"			"Just a Dragon's heart, however, mixing it with a pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
+		"DOTA_Tooltip_Ability_item_magic_heart_Description"			"Just a Dragon's heart, however, mixing it with a pie..\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_magic_heart_bonus_mana_regen"	"%+$mana_regen"
 		"DOTA_Tooltip_Ability_item_magic_heart_mana_bonus"	"+$mana:"
  
  	    "DOTA_Tooltip_Ability_item_dps_heart"						"<font color='#ff0000'> What..??? </font>"
-		"DOTA_Tooltip_Ability_item_dps_heart_Description"			"An incomprehensible mixture of everything, however, mixing it with a pie...\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
+		"DOTA_Tooltip_Ability_item_dps_heart_Description"			"An incomprehensible mixture of everything, however, mixing it with a pie..\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_dps_heart_damage_bonus"      	"+$damage"
  
 		"DOTA_Tooltip_Ability_item_zvezda"							"Colourful Star"
@@ -878,11 +878,11 @@
 		"DOTA_Tooltip_Ability_item_big_meat_bonus_regen"	"HP REGEN BONUS: "
 
 		"DOTA_Tooltip_Ability_item_zombie_skin"						"Skin of zombie"
-		"DOTA_Tooltip_Ability_item_zombie_skin_Description"			"So awful and... aghh."
+		"DOTA_Tooltip_Ability_item_zombie_skin_Description"			"So awful and.. aghh."
 		"DOTA_Tooltip_Ability_item_zombie_skin_Note0"			"Health and Armor are not depending from number of skins."
 		"DOTA_Tooltip_Ability_item_zombie_skin_armor_bonus"	"+$armor"
 		"DOTA_Tooltip_Ability_item_zombie_skin_health_bonus"	"+$health"
-		"DOTA_Tooltip_Ability_item_zombie_skin_Lore"						"Eeeeeeewwwwww..."
+		"DOTA_Tooltip_Ability_item_zombie_skin_Lore"						"Eeeeeeewwwwww.."
 		
 		
 		"DOTA_Tooltip_Ability_item_prox_phoenix"				"Ashes phoenix"
@@ -900,7 +900,7 @@
 		"DOTA_Tooltip_Ability_item_bone_Description"			"<h1>Active: Crunch-crunch </h1>You're putting the remains inside you????"
 		"DOTA_Tooltip_Ability_item_bone_bonus_regen"	"HEALTH REGEN FOREVER:"
 		"DOTA_Tooltip_Ability_item_bone_bonus_hp"	"HEALTH FOREVER:"
-		"DOTA_Tooltip_Ability_item_bone_Lore"						"Smelly remains of former villagers..."
+		"DOTA_Tooltip_Ability_item_bone_Lore"						"Smelly remains of former villagers.."
 		
 		"DOTA_Tooltip_modifier_bone"												"Remains"
 		"DOTA_Tooltip_modifier_bone_Description"									"You feel a surge of strength in the form of %dMODIFIER_PROPERTY_EXTRA_HEALTH_BONUS% health and %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%% health regen"
@@ -910,7 +910,7 @@
 		"DOTA_Tooltip_Ability_item_skeleton_key_Lore"						"The key smells like graves." 	
 		
 		"DOTA_Tooltip_Ability_item_pirog"						"Pie"
-		"DOTA_Tooltip_Ability_item_pirog_Description"			"You just threw whatever in here... Why does it smell good?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
+		"DOTA_Tooltip_Ability_item_pirog_Description"			"You just threw whatever in here.. Why does it smell good?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
 		"DOTA_Tooltip_Ability_item_pirog_Lore"						"Something is missing."
 
 		"DOTA_Tooltip_Ability_item_pirog_support"						"Support's pie"
@@ -991,9 +991,9 @@
  
 
 		
-		"DOTA_Tooltip_Ability_item_milk_shake"							"Милкшейк"
-		"DOTA_Tooltip_Ability_item_milk_shake_Description"				"<h1>Active: Хлюп-Хлюп</h1>Восстанавливает много маны.\n Очень.\n Много.\n(1000)"
-		"DOTA_Tooltip_Ability_item_milk_shake_Lore"       "Обычный милкшейк бродяги."
+		"DOTA_Tooltip_Ability_item_milk_shake"							"milkshake"
+		"DOTA_Tooltip_Ability_item_milk_shake_Description"				"<h1>Active: Squish-Squish</h1>Restores a lot of mana.\n Very.\n Much.\n(1000)"
+		"DOTA_Tooltip_Ability_item_milk_shake_Lore"       "default milkshake."
 		
 		"DOTA_Tooltip_Ability_item_crystal_boots"                                "Crystal Boots"
 		"DOTA_Tooltip_Ability_item_crystal_boots_Description"                    "<h1>Active: Crystal Haste</h1> Grants the bearer phased movement, %phase_ms%%% movespeed bonus, and increases the move speed limit to %ms_limit%.<font color='#FF7800'> While phased, passing through %en_num% units then caster has 100% chance to %crit_bonus_up%% critical damage.</font> Lasts %phase_duration% seconds.\n<font color='#FFD700'>\n<h1>Passive: Critical Strike</h1>Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage."
@@ -1017,7 +1017,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_lifesteal_2"							"Mask of the Cult of the damned"
-		"DOTA_Tooltip_Ability_item_lifesteal_2_Description"				"This mask of one of the Cult of the damned still reeks of cursed smell... \n<h1>Passive: Tish-tish</h1> Lifesteal.\n <font color='#ff9900'>If you want it then complete quest from Tramp: Bone it's not Bone</font>"
+		"DOTA_Tooltip_Ability_item_lifesteal_2_Description"				"This mask of one of the Cult of the damned still reeks of cursed smell.. \n<h1>Passive: Tish-tish</h1> Lifesteal.\n <font color='#ff9900'>If you want it then complete quest from Tramp: Bone it's not Bone</font>"
 		"DOTA_Tooltip_Ability_item_lifesteal_2_lifesteal_percent"				"LIFESTEAL: "
 		"DOTA_Tooltip_Ability_item_lifesteal_2_Lore"       "Wanna know what is cult? Suck my dick, bitch lasanga."
 		
@@ -2486,9 +2486,9 @@
 		
 		"DOTA_Tooltip_ability_medusa_stone_gaze_Scepter_Description"		"Increases the duration of petrification, reduces the cost of mana and damage"
 
-		"DOTA_Tooltip_Ability_enchantress_untouchable"											"Poison"
-		"DOTA_Tooltip_Ability_enchantress_untouchable_Description"								"Poisoned by the poisonous scales of the hero, the opponents attack him with reduced speed.."
-		"DOTA_Tooltip_Ability_enchantress_untouchable_Lore"                                     "After the attack on the Gorgon, most of the rivals feel guilty for daring to raise their hand against such a beautiful snake."
+		"DOTA_Tooltip_Ability_medusa_untouchable"											"Poison"
+		"DOTA_Tooltip_Ability_medusa_untouchable_Description"								"Poisoned by the poisonous scales of the hero, the opponents attack him with reduced speed.."
+		"DOTA_Tooltip_Ability_medusa_untouchable_Lore"                                     "After the attack on the Gorgon, most of the rivals feel guilty for daring to raise their hand against such a beautiful snake."
 
 
 		"DOTA_Tooltip_Ability_medusa_buff_1"											"Mana poison"
@@ -3989,59 +3989,60 @@ The player can control the summoned creeps."
 
 
  		"DOTA_Tooltip_Ability_shield_crush"			"shield crush"
- 		"DOTA_Tooltip_Ability_shield_crush_Description"		"Герой совершает мощный удар щитом, оглушая противника на %stun_duration%, также щит начинает поглащать %damage_resistance%%% получаемого DAMAGEа."
- 		"DOTA_Tooltip_modifier_shield_crush_buff"			"Благодать богов"
- 		"DOTA_Tooltip_modifier_shield_crush_buff_Description"			"DAMAGE по вам уменьшен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%"
- 		"DOTA_Tooltip_Ability_shield_crush_Lore"		"Щит способный заткнуть самого бога."
- 		"DOTA_Tooltip_Ability_shield_crush_damage"		"БАЗОВЫЙ DAMAGE:"
- 		"DOTA_Tooltip_Ability_shield_crush_pct_damage"	"МНОЖИТЕЛЬ БРОНИ:"
+ 		"DOTA_Tooltip_Ability_shield_crush_Description" "The hero makes a powerful blow with his shield, stunning the enemy by %stun_duration%, and the shield also begins to absorb %damage_resistance%%% of the damage received."
+"DOTA_Tooltip_modifier_shield_crush_buff" "Grace of the Gods"
+ 		"DOTA_Tooltip_modifier_shield_crush_buff_Description" "DAMAGE to you has been reduced by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%"
+"DOTA_Tooltip_Ability_shield_crush_Lore" "A shield capable of shutting up God himself."
+ 		"DOTA_Tooltip_Ability_shield_crush_damage" "BASIC DAMAGE:"
+"DOTA_Tooltip_Ability_shield_crush_pct_damage" "ARMOR MULTIPLIER:"
 
  		"DOTA_Tooltip_Ability_thunder_smash"			"thunder smash"
- 		"DOTA_Tooltip_Ability_thunder_smash_Description"		"Стремительный удар молний, которая наносит утроенный DAMAGE от атаки владельца всем врагам в RADIUSе %radius%, замедляя скорость атаки и передвижения на %movement_slow%, DURATION которой %duration% секунды."
- 		"DOTA_Tooltip_Ability_thunder_smash_Lore"		"После удара грома следует потеря слуха и осезания всех, кто являлся грому врагом."
- 		"DOTA_Tooltip_Ability_thunder_smash_Shard"	""
- 		"DOTA_Tooltip_Ability_thunder_smash_Shard_Description"		"Уменьшает перезарядку до %AbilityCooldown% секунд и увеличивает RADIUS до %radius% единиц"
- 		"DOTA_Tooltip_Ability_thunder_smash_damage"	"БАЗОВЫЙ DAMAGE:"
- 		"DOTA_Tooltip_Ability_thunder_smash_damage_pct"	"%МНОЖИТЕЛЬ DAMAGEА:"
+ 		"DOTA_Tooltip_Ability_thunder_smash_Description" "A rapid lightning strike that deals triple DAMAGE from the owner's attack to all enemies in Radius %radius%, slowing down the attack and movement speed by %movement_slow%, the DURATION of which is %duration% seconds."
+		"DOTA_Tooltip_Ability_thunder_smash_Lore" "Thunderclap is followed by hearing loss and the loss of all those who were the enemy of thunder."
+ 		"DOTA_Tooltip_Ability_thunder_smash_Shard" ""
+		"DOTA_Tooltip_Ability_thunder_smash_Shard_Description" "Reduces recharge to %AbilityCooldown% seconds and increases RADIUS to %radius% units"
+ 		"DOTA_Tooltip_Ability_thunder_smash_damage" "BASIC DAMAGE:"
+		"DOTA_Tooltip_Ability_thunder_smash_damage_pct" "%DAMAGE MULTIPLIER:"
 
+		
 
  		"DOTA_Tooltip_Ability_armor_revenge"			"Armor Revenge"
- 		"DOTA_Tooltip_Ability_armor_revenge_Description"		"Ярость щита, брони и других аксессуаров на защиту придают вам мощь, увеличвая ваш DAMAGE за единицу силы и даёт дополнительно броню."
- 		"DOTA_Tooltip_modifier_armor_revenge_passive"		"Ярость"
- 		"DOTA_Tooltip_modifier_armor_revenge_passive_Description"	"DAMAGE увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% единиц, защита на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% единиц."
- 		"DOTA_Tooltip_Ability_armor_revenge_Lore"		"Самая сладкая месть, сделать врага беззащитным."
- 		"DOTA_Tooltip_Ability_armor_revenge_damage_bonus"	"DAMAGEА ЗА ЕД.БРОНИ:"
+ 		"DOTA_Tooltip_Ability_armor_revenge_Description" "The rage of the shield, armor and other protection accessories give you power, increasing your DAMAGE per unit of strength and gives additional armor."
+ 		"DOTA_Tooltip_modifier_armor_revenge_passive" "Rage"
+"DOTA_Tooltip_modifier_armor_revenge_passive_Description" "DAMAGE increased by %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%units, protection by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% units."
+" DOTA_Tooltip_Ability_armor_revenge_Lore" "The sweetest revenge is to make the enemy defenseless."
+"DOTA_Tooltip_Ability_armor_revenge_damage_bonus" "DAMAGE PER UNIT OF ARMOR:"
  		"DOTA_Tooltip_Ability_armor_revenge_armor_bonus"	"BONUS ARMOR:"
 
  		"DOTA_Tooltip_Ability_full_armor_stand"			"Full armor stand"
- 		"DOTA_Tooltip_Ability_full_armor_stand_Description"		"Концентрация на защите, уменьшает DAMAGE, но делает вашу стойку не пробиваемой"
- 		"DOTA_Tooltip_modifier_full_armor_stand"		"Защитная стойка"
- 		"DOTA_Tooltip_modifier_full_armor_stand_Description"	"DAMAGE по вам уменьшен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%, ваш DAMAGE уменьшен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
- 		"DOTA_Tooltip_Ability_full_armor_stand_resist_damage"	"%УМЕНЬШЕНИЕ ВХОДЯЩЕГО DAMAGEА:"
- 		"DOTA_Tooltip_Ability_full_armor_stand_damage"	"%УМЕНЬШЕНИЕ ИСХОДЯЩЕГО DAMAGEА:"
+ 		"DOTA_Tooltip_Ability_full_armor_stand_Description" "Focus on protection, reduces DAMAGE, but makes your rack unbreakable"
+ 		"DOTA_Tooltip_modifier_full_armor_stand" "Guard post"
+"DOTA_Tooltip_modifier_full_armor_stand_Description" "DAMAGE to you has been reduced by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%, your DAMAGE has been reduced by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%"
+" DOTA_Tooltip_Ability_full_armor_stand_resist_damage" "%REDUCING INCOMING DAMAGE:"
+"DOTA_Tooltip_Ability_full_armor_stand_damage" "%REDUCING OUTGOING DAMAGE:"
  		"DOTA_Tooltip_Ability_full_armor_stand_Duration"	"DURATION:"
 
 
  		"DOTA_Tooltip_Ability_damage_collection"			"Damage collection"
- 		"DOTA_Tooltip_Ability_damage_collection_Description"		"Концентрация на атаке, увеличивает ваш DAMAGE"
- 		"DOTA_Tooltip_modifier_damage_collection"		"Боевая стойка"
- 		"DOTA_Tooltip_modifier_damage_collection_Description"	"DAMAGE увеличен на %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%"
- 		"DOTA_Tooltip_Ability_damage_collection_bonus_damage"	"ДОПОЛНИТЕЛЬНЫЙ DAMAGE:"
- 		"DOTA_Tooltip_Ability_damage_collection_Duration"	"DURATION:"
+ 		"DOTA_Tooltip_Ability_damage_collection_Description" "Focus on attack, increases your DAMAGE"
+"DOTA_Tooltip_modifier_damage_collection" "Fighting stance"
+"DOTA_Tooltip_modifier_damage_collection_Description" "DAMAGE increased by %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%"
+" DOTA_Tooltip_Ability_damage_collection_bonus_damage" "ADDITIONAL DAMAGE:"
+"DOTA_Tooltip_Ability_damage_collection_Duration" "DURATION:"
 
 
  		"DOTA_Tooltip_Ability_destruction"			"destruction"
- 		"DOTA_Tooltip_Ability_destruction_Description"		"Герой жертвуя своим здоровьем наносит коллосальный DAMAGE зависящий от (DAMAGEа своей атаки + базовый DAMAGE способности) противникам в RADIUSе %radius% своей атаки."
- 		"DOTA_Tooltip_Ability_destruction_Lore"			"Жертвенный огонь."
- 		"DOTA_Tooltip_Ability_destruction_edge_damage"		"БАЗОВЫЙ DAMAGE:"
+ 		"DOTA_Tooltip_Ability_destruction_Description" "The hero, sacrificing his health, causes colossal DAMAGE depending on (damage of his attack + basic DAMAGE ability) to opponents in Radius %radius% of his attack."
+"DOTA_Tooltip_Ability_destruction_Lore" "Sacrificial fire."
+"DOTA_Tooltip_Ability_destruction_edge_damage" "BASIC DAMAGE:"
 
  		"DOTA_Tooltip_Ability_dragon_knight_buff_1"		"Dragon power"
- 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_Description"	"Герой озадаченно думает о силе драконов, благодаря чему получает возможность стать сильнее с каждым уровнем."
- 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_str"	"СИЛА ЗА УРОВЕНЬ:"
- 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_Lore"	"Сила мечты"
+ 		"DOTA_Tooltip_Ability_dragon_knight_buff_1_Description" "The hero is puzzled about the power of dragons, so he gets the opportunity to become stronger with each level."
+"DOTA_Tooltip_Ability_dragon_knight_buff_1_str" "STRENGTH PER LEVEL:"
+"DOTA_Tooltip_Ability_dragon_knight_buff_1_Lore" "The power of dreams"
 
- 		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_damage_collection_duration"				"+{s:bonus_duration} секунд действия способности damage collection"
-		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"					"+{s:bonus_armor_bonus} брони способности armor revenge"
+ 		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_damage_collection_duration"				"+{s:bonus_duration} seconds of damage collection ability action"
+		"DOTA_Tooltip_ability_special_bonus_unique_dragon_knight_revenge_armor_bonus_armor"					"+{s:bonus_armor_bonus} armor abilities armor revenge"
  
  		// -----------------Skeleton King--------------------	
 		"DOTA_Tooltip_ability_wraith_king_wraithfire_blast_lua"								"Wraithfire Blast"
