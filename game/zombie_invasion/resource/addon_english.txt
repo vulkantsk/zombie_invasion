@@ -2489,6 +2489,7 @@
 		"DOTA_Tooltip_Ability_medusa_untouchable"											"Poison"
 		"DOTA_Tooltip_Ability_medusa_untouchable_Description"								"Poisoned by the poisonous scales of the hero, the opponents attack him with reduced speed.."
 		"DOTA_Tooltip_Ability_medusa_untouchable_Lore"                                     "After the attack on the Gorgon, most of the rivals feel guilty for daring to raise their hand against such a beautiful snake."
+		"DOTA_Tooltip_Ability_medusa_untouchable_slow_attack_speed"						"REDUCING ATTACK SPEED:"
 
 
 		"DOTA_Tooltip_Ability_medusa_buff_1"											"Mana poison"
