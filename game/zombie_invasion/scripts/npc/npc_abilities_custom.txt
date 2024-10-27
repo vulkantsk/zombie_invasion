@@ -19547,31 +19547,17 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"self_damage"			"10"
-				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"target_damage"			"42"
-				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"heal_amount"			"-10000"
-				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"missile_speed"			"1300"
-			}
+			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
