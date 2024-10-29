@@ -258,6 +258,37 @@
 		}
  	}
  }
+ "lord_devour"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "items/book_of_heroes/heroes/item_npc_dota_hero_huskar"
+        "AbilityTextureName"            "alucard/lord_devour"
+        "RequiredLevel"							"1000"
+        "MaxLevel"                      "1"
+
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CUSTOM"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+
+        "AbilityCastRange"              "300"
+        "AbilityCastPoint"              "0.3"
+
+        "AbilityCooldown"               "90"
+        "AbilityManaCost"               "0"
+
+        "AbilityValues"
+        {
+          "devour_time"			"30"
+					"bonus_gold"			"420"
+					"bonus_movespeed"			"5"
+					"bonus_armor"			"2.5"
+					"bonus_damage"			"40"
+            
+        }
+    } 
 
 	"special_bonus_unique_lord_blood_rage_blood_per_kill"
 	{

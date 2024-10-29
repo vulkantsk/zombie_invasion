@@ -7605,6 +7605,32 @@
 			 
 		}
 	}
+	"item_npc_dota_hero_huskar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"item_lua"
+		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_huskar"														 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"ItemInitialCharges"            "1"
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"                         "books/book_muerta"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+
+			 
+		}
+	}
 
 	"item_npc_dota_hero_muerta"
 	{
