@@ -570,7 +570,22 @@ DONATE_ITEMS = {
 
 	},
 	admin = {
-
+		{
+			name = "item_rom",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
+		{
+			name = "item_blink",
+			can_be_bought = true,
+			count = 1,
+			sets ={
+				DONATE_SET_ADMIN,
+			},
+		},
 		{
 			name = "item_ban_hammer",
 			can_be_bought = true,
@@ -797,6 +812,8 @@ DONATE_ITEMS = {
 				DONATE_SET_ADMIN,
 			},
 		},
+
+		
 
 	},
 }

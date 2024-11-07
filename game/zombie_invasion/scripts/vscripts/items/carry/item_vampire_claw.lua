@@ -78,8 +78,10 @@ modifier_item_vampire_claw = class({
 
 function modifier_item_vampire_claw:OnCreated()
 	self.parent = self:GetParent()
-    self.modif_lif = self.parent:AddNewModifier(self.parent, self:GetAbility(), "modifier_lifesteal", {})
- self.bonusDamage = self:GetAbility():GetSpecialValueFor("bonus_damage")
+    if IsServer() then
+        self.modif_lif = self.parent:AddNewModifier(self.parent, self:GetAbility(), "modifier_lifesteal", {})
+    end
+    self.bonusDamage = self:GetAbility():GetSpecialValueFor("bonus_damage")
 	self:OnRefresh()
 end
 
@@ -104,8 +106,9 @@ end
 
 
 function modifier_item_vampire_claw:OnDestroy()
-    self.parent = self:GetParent()
-            self.modif_lif:Destroy()
+    if IsServer() and self.modif_lif and not self.modif_lif:IsNull() then
+        self.modif_lif:Destroy()
+    end
 end
 
 function modifier_item_vampire_claw:OnAttackLanded(kv)
@@ -120,5 +123,3 @@ function modifier_item_vampire_claw:OnAttackLanded(kv)
 
     self.ability:SetCurrentCharges(math.min(currentCharges + bonusChargesPerAttack, self.maxCharges))
 end
-
- 

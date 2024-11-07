@@ -66,6 +66,13 @@
 	}
 }
 
+"out_of_game"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/ability_out_of_game_helper"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName"			"rubick_empty1"
+}
 "zombie_toxin"
 	{
 		"BaseClass"						"ability_lua"
@@ -20734,7 +20741,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"armor_debuff"			"60"
+				"armor_debuff"			"20"
+				"armor_debuff_for_stack"			"5"
 				"duration"			"8"
 
 		}

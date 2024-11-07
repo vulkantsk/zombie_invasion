@@ -373,17 +373,17 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"1000"
-		"MagicalResistance"			"90"
+		"ArmorPhysical"				"100000000000000000"
+		"MagicalResistance"			"99"
 		
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"			"12000"
-		"AttackDamageMax"			"24000"
+		"AttackDamageMin"			"120000"
+		"AttackDamageMax"			"240000"
 		"AttackRange"				"900"		// Range within a target can be attacked.
-		        "BaseAttackSpeed"			"400"		     
+		        "BaseAttackSpeed"			"145"		     
 
 		// Bounty
 		//----------------------------------------------------------------
@@ -404,8 +404,8 @@
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"326542"
-		"StatusHealthRegen"			"2435"
+		"StatusHealth"				"326542000"
+		"StatusHealthRegen"			"1000"
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0"
 		
@@ -454,7 +454,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_gurd_01"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -541,7 +541,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_kamen"
 		"Ability2"					"ability_invul"
-		"Ability3"					""
+		"Ability3"					"out_of_game"
 		"Ability4"					""
 
 		
@@ -626,7 +626,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_rabbit_1"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -713,7 +713,7 @@
 		//----------------------------------------------------------------
 		"Ability1"					"quest_stranger_1"
 		"Ability2"					"quest_null"
-		"Ability3"					""
+		"Ability3"					"out_of_game"
 		"Ability4"					""
 
 		
@@ -1056,7 +1056,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"quest_stranger1"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1142,7 +1142,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"quest_herbalist_1"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -1657,7 +1657,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"quest_test_kot_glavniy_jitel01"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -3597,7 +3597,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test01"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -3686,7 +3686,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_crystal"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -3777,7 +3777,7 @@
 		"Ability2"					"quest_brodyaga_test02"
 		"Ability3"					"quest_brodyaga_test04"
 		"Ability4"					"quest_brodyaga_test03"
-	    "Ability5"	             	""
+	    "Ability5"	             	"out_of_game"
 
 		
 		// Armor
@@ -3859,7 +3859,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_lina"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -3948,7 +3948,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_old_men"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -4037,7 +4037,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_david"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 
@@ -4124,7 +4124,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"quest_test_meepo"
-		"Ability2"					""
+		"Ability2"					"out_of_game"
 		"Ability3"					""
 		"Ability4"					""
 

@@ -123,17 +123,28 @@ function modifier_blackshop_epic_rocket_launcher_autocast:OnCreated()
         self:StartIntervalThink(0.2)
     end
 end
-
 function modifier_blackshop_epic_rocket_launcher_autocast:OnIntervalThink()
     local caster = self:GetCaster()
     local parent = self:GetParent()
-    local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_launcher")
-    if ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
+    if ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed() and not caster:IsInvisible() and not caster:IsInvulnerable() then
         ability:OnSpellStart()
-        if ability2 then
-            Timers:CreateTimer(0.4,function() ability:OnSpellStart() end)
+        local modifier = caster:FindModifierByName("modifier_blackshop_legendary_boom_buff")
+        if modifier then
+            local stacks = modifier:GetStackCount()
+            for i=1,stacks do
+                Timers:CreateTimer(0.4 * i, function()
+                    if caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed() and not caster:IsInvisible() and not caster:IsInvulnerable() then
+                        ability:OnSpellStart()
+                    end
+                end)
+            end
         end
-        ability:StartCooldown(14 - caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher"):GetStackCount() * 0.5)
+        local rocket_launcher_modifier = caster:FindModifierByName("modifier_blackshop_epic_rocket_launcher")
+        if rocket_launcher_modifier then
+            ability:StartCooldown(14 - rocket_launcher_modifier:GetStackCount() * 0.5)
+        else
+            ability:StartCooldown(14)
+        end
     end
 end

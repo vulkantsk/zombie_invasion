@@ -124,14 +124,26 @@ end
 function modifier_blackshop_epic_rocket_shot_autocast:OnAttackLanded(data)
     local caster = self:GetCaster()
     local ability = caster:FindAbilityByName("blackshop_epic_rocket_shot")
-    local ability2 = self:GetCaster():FindAbilityByName("blackshop_legendary_boom_buff")
     if RollPercentage(3 * caster:FindModifierByName("modifier_blackshop_epic_rocket_shot"):GetStackCount()) then
-        if data.attacker == caster and ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed()  then
-            if ability2 then
-                Timers:CreateTimer(0.2,function() ability:OnSpellStart() end)
-            end
+        if data.attacker == caster and ability:IsCooldownReady() and caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed() and not caster:IsInvisible() and not caster:IsInvulnerable() then
             ability:OnSpellStart()
-            ability:StartCooldown(1)
+            local modifier = caster:FindModifierByName("modifier_blackshop_legendary_boom_buff")
+            if modifier then
+                local stacks = modifier:GetStackCount()
+                for i=1,stacks do
+                    Timers:CreateTimer(0.4 * i, function()
+                        if caster:IsAlive() and not caster:IsStunned() and not caster:IsMuted() and not caster:IsHexed() and not caster:IsInvisible() and not caster:IsInvulnerable() then
+                            ability:OnSpellStart()
+                        end
+                    end)
+                end
+            end
+            local rocket_shot_modifier = caster:FindModifierByName("modifier_blackshop_epic_rocket_shot")
+            if rocket_shot_modifier then
+                ability:StartCooldown(14 - rocket_shot_modifier:GetStackCount() * 0.5)
+            else
+                ability:StartCooldown(14)
+            end
         end
     end
 end

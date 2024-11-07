@@ -83,14 +83,36 @@ function Difficulty:NPC( npc )
 	end		
  
 	local result = (s)
+ 		if self.leader == "normal" or self.leader == "medium" or self.leader == "hard" then
+ 			npc:SetBaseMaxHealth(npc:GetMaxHealth() * result * 2)
+	        npc:SetMaxHealth(npc:GetMaxHealth() * result * 2)	
+	       	npc:SetHealth(npc:GetMaxHealth() * result * 2)
+	        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() * result * 2)
+	        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result * 5 * 2)
+	        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result * 2)
+	        npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result * 2)
+	        npc:SetDeathXP(npc:GetDeathXP() * (result * 2))
+		elseif self.leader == "demon" then
+	    	npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
+	        npc:SetMaxHealth(npc:GetMaxHealth() * result)	
+	       	npc:SetHealth(npc:GetMaxHealth() * result)
+	        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() * result)
+	        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result * 5)
+	        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result)
+	        npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
+	        npc:SetDeathXP(npc:GetDeathXP() * (result))
+		elseif self.leader == "impossible" then
+			npc:SetBaseMaxHealth(npc:GetMaxHealth() * result )
+	        npc:SetMaxHealth(npc:GetMaxHealth() * result )	
+	       	npc:SetHealth(npc:GetMaxHealth() * result )
+	        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() * result )
+	        npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() + result * 5 )
+	        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result )
+	        npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
+	        npc:SetDeathXP(npc:GetDeathXP() * (result ))
+		end
 
- 		npc:SetBaseMaxHealth(npc:GetMaxHealth() * result)
-        npc:SetMaxHealth(npc:GetMaxHealth() * result)	
-       	npc:SetHealth(npc:GetMaxHealth() * result)
-        npc:SetBaseHealthRegen(npc:GetBaseHealthRegen() * result)
-        --npc:SetPhysicalArmorBaseValue(npc:GetPhysicalArmorBaseValue() * result)
-        npc:SetBaseDamageMin(npc:GetBaseDamageMin() * result)
-        npc:SetBaseDamageMax(npc:GetBaseDamageMax() * result)
+
 
     local tablUnits = {
         {unit = {'npc_classic_half_zombie'}, ability = {'slow_zombie_attack'} },
