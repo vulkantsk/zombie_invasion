@@ -21,9 +21,10 @@ local dropItemsBlackshop = {
 	    --epic
 	    item_blackshop_epic_rocket_launcher = {chance = 4, price = 2000},
 	    item_blackshop_epic_rocket_shot = {chance = 4, price = 2500},
+		item_blackshop_epic_vampire_blood = {chance = 5, price = 2500},
 
 	    --rare
-	     item_blackshop_rare_armor = {chance = 6, price = 1000},
+	    item_blackshop_rare_armor = {chance = 6, price = 1000},
 	    item_bonus_stats10 = {chance = 6, price = 1000},
 	    item_blackshop_rare_exp = {chance = 6, price = 1000},
 	    item_blackshop_rare_berserk_power = {chance = 7, price = 1000},

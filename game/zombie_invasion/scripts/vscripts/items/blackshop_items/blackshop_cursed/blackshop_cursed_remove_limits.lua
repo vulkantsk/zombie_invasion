@@ -52,7 +52,8 @@ function modifier_blackshop_cursed_remove_limits:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_IGNORE_ATTACKSPEED_LIMIT,
         MODIFIER_PROPERTY_MOVESPEED_LIMIT,
-        MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE
+        MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE,
+        MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
     }
 end
 
@@ -61,6 +62,10 @@ function modifier_blackshop_cursed_remove_limits:GetModifierMoveSpeed_Limit()
 end
 
 function modifier_blackshop_cursed_remove_limits:GetModifierAttackSpeed_Limit()
+    return 1
+end
+
+function modifier_blackshop_cursed_remove_limits:GetModifierIgnoreMovespeedLimit()  
     return 1
 end
 

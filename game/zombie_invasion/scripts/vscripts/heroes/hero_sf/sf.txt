@@ -131,7 +131,7 @@
         "ScriptFile"                    "heroes/hero_sf/sf_scary_shape/sf_scary_shape"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "Hero/nevermore_requiem_png"
-        "MaxLevel"                      "4"
+        "MaxLevel"                      "3"
         "LevelsBetweenUpgrades"         "15"
         "RequiredLevel"                 "20"
  
@@ -155,7 +155,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-                "reduced_armor"                          "40 60 80 100"
+                "reduced_armor"                          "25 50 75"
 
 
         }

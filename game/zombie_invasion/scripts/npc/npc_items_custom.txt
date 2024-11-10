@@ -6962,7 +6962,7 @@
 		{
 				"bonus_damage"			"20"
 				"bonus_str"	             "12"
-				"lifesteal_pct"				"12" 
+				"lifesteal_pct"				"4" 
 				"charges_for_attack_creep"			"1"
 				"max_charges"			"20"
 				"heal_per_charge"			"20"
@@ -7081,7 +7081,7 @@
 				"bonus_damage"	"40"
 				"bonus_attack_speed"	"40"
 				"lifesteal_percent"		"15"
-				"creep_lifesteal_reduction_pct"	"0"
+				"creep_lifesteal_reduction_pct"	"40"
 				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"40"
 				"berserk_armor_reduction"	"4"
@@ -7140,7 +7140,7 @@
 		{
 				"bonus_damage"	"110"
 				"bonus_attack_speed"	"65"
-				"lifesteal_pct"		"20"
+				"lifesteal_pct"		"10"
 				"berserk_base_damage"            "55"
 				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"25"
@@ -7201,7 +7201,7 @@
 		{
 				"bonus_damage"	"145"
 				"bonus_attack_speed"	"80"
-				"lifesteal_pct"		"20"
+				"lifesteal_pct"		"14"
 				"berserk_base_damage"            "90"
 				"berserk_bonus_attack_speed"	"120"
 				"berserk_bonus_movement_speed"	"30"
@@ -7268,7 +7268,7 @@
 			
 				"aura_radius"			"1200"
 			
-				"vampiric_aura"			"10"
+				"vampiric_aura"			"8"
 			
 				"damage_aura"			"8"
 			
@@ -7341,7 +7341,7 @@
 			
 				"aura_radius"			"1200"
 			
-				"vampiric_aura"			"15"
+				"vampiric_aura"			"12"
 			
 				"damage_aura"			"16"
 			
@@ -7414,7 +7414,7 @@
 			
 				"aura_radius"			"1200"
 		
-				"vampiric_aura"			"20"
+				"vampiric_aura"			"16"
 			
 				"damage_aura"			"24"
 			
@@ -8456,7 +8456,7 @@
                 "chance"              "44"
                 "bonus_damage"			"25"
 				"bonus_str"	             "22"
-				"lifesteal_pct"				"20" 
+				"lifesteal_pct"				"9" 
 				"charges_for_attack_creep"			"1"
 				"max_charges"			"20"
 				"heal_per_charge"			"40"
@@ -13305,12 +13305,12 @@
 			"bonus_damage"			"70"
 			"bonus_attack_speed"	"40"
 			"bonus_hp_regen"		"8"
-			"lifesteal"				"12"
+			"lifesteal"				"8"
 			"bonus_damage_active"			"220"
 			"movespeed_active"			"50"
 			"cast_point_active"		"15"
 			"bonus_str_active"				"25"
-			"lifesteal_active"	"18"
+			"lifesteal_active"	"12"
 			"magic_lifesteal_active"			"8"
 			"armor_active"		"9"
 			"damage_per_second_active"				"109200"
@@ -14376,6 +14376,41 @@
 				"targets"			"1"
 				"speed"				"700"
 				"cooldown"			"14"
+		}
+	}
+
+	"item_blackshop_epic_vampire_blood"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_epic/blackshop_epic_vampire_blood"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/epic_sphere_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/vampire_blood"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"lifesteal"			"2"
 		}
 	}
 

@@ -71,8 +71,8 @@ function modifier_item_desolator_custom:OnDeath(data)
         if killer == parent and killed_unit and killed_unit:HasModifier("modifier_item_desolator_custom_debuff") and RollPercentage(chance) then
             self:GetAbility():SetCurrentCharges(math.min(charges,max_charge))
         end
-        if self:GetCaster() and not self:GetCaster():IsNull() then
-            self:GetCaster():CalculateStatBonus(true)
+        if self:GetParent() and not self:GetParent():IsNull() then
+            self:GetParent():CalculateStatBonus(true)
         end
     end
 end
@@ -95,5 +95,3 @@ end
 function modifier_item_desolator_custom_debuff:GetModifierPhysicalArmorBonus()
     return self.armor_debuff 
 end
-
- 

@@ -55,6 +55,13 @@ function modifier_blackshop_legendary_octerinity:DeclareFunctions()
     }
 end
 function modifier_blackshop_legendary_octerinity:GetModifierPercentageCooldown()
-    return 5/1+0.50*(self:GetStackCount() - 1) * self:GetStackCount()
+    local stacks = self:GetStackCount()
+    if stacks <= 6 then
+        return stacks * 5
+    elseif stacks <= 60 then
+        return 30 + (stacks - 6) * 2.5
+    else
+        return 30 + (54 * 2.5) + (stacks - 60) * 1.25
+    end
 end
 

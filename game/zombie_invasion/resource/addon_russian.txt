@@ -1332,6 +1332,17 @@
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher"		"Ракетный залп"
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher_Description"		"Через промежуток времени вы выстрелите ракетами"
 
+
+		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood"	"<font color='#8b00ff'>Vampire blood</font>"
+		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Description"	"<h1>Активное: Vampire blood</h1> При использовании даёт герою %lifesteal%%% вампиризма (+2% за стак)"
+		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Lore" 		"Кровь вампира течёт по вашим венам"
+        "DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
+
+
+
+
+
+
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Активное: Octerinity of skull mages</h1> При использовании даёт герою %mana_casttime_cd%%% уменьшение перезарядки способностей и предметов."
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Lore" 		"Ваш ум может вас подвести?"
