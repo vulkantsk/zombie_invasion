@@ -123,4 +123,342 @@
 			"attack_speed_cap"				"100000000000000"
 		}
 	}
+	"imba_centaur_double_edge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"			"ACT_DOTA_TELEPORT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityTextureName"			"techies_suicide"
+ 
+ 
+		// Casting		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"80 75 70 65 60 55 50"
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.0"
+		"AbilityManaCost"               "0"
+		"MaxLevel"                      "7"
+		// Precache	
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"  				"particles/units/heroes/hero_techies/techies_suicide.vpcf"
+			"particle"					"particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
+			"particle"  				"particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_calldown_explosion.vpcf"
+			"particle"  				"particles/units/heroes/hero_lina/lina_spell_light_strike_array_explosion.vpcf"
+ 
+		}
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"damage"				"600 1200 1800 2400 3000 3600 4200"
+		
+				"radius"				"900"
+			
+				"delay"					"2.5"
+			
+		}		
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"Target" 				"CASTER"
+				"EffectName"			""
+			}
+			"Knockback"
+			{
+				"Target"            "CASTER"
+				"Center" 	        "CASTER"
+				"Distance"	        "0"
+				"Duration"	        "2.5"
+				"Height"	        "1200"
+				"IsFixedDistance"	"1"
+				"ShouldStun"        "1"	
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_allahuakbar"
+				"Target" 		"CASTER"
+				"Duration"		"3.0"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_allahuakbar"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsPurgable"		"0"
+				"IsBuff"			"1"
+				"IsDebuff"			"0"
+				"IsStunDebuff"		"0"
+				"ThinkInterval" 	"0.03"
+        		"OnIntervalThink"
+        		{
+            		"Rotate"
+            		{
+                		"Target"       "TARGET"
+                		"PitchYawRoll"  "0x 10y 0z"
+            		}
+    			}
+    			"States"
+    			{
+    				"MODIFIER_STATE_STUNNED"			"MODIFIER_STATE_VALUE_ENABLED"
+    				"MODIFIER_STATE_MAGIC_IMMUNE"		"MODIFIER_STATE_VALUE_ENABLED"
+    				"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+    				"MODIFIER_STATE_NO_HEALTH_BAR"		"MODIFIER_STATE_VALUE_ENABLED"
+    				"MODIFIER_STATE_UNTARGETABLE"		"MODIFIER_STATE_VALUE_ENABLED"
+    			}
+    			"Properties"
+    			{
+    				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
+    				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
+    			}
+    			"OnCreated"
+    			{
+    				"DelayedAction"
+					{
+						"Delay"     "2.6"
+						"Action"    
+						{
+							"ActOnTargets"
+							{
+								"Target"
+								{
+									"Center"  	"CASTER"
+									"Radius" 	"%radius"
+									"Teams" 	"DOTA_UNIT_TARGET_TEAM_BOTH"
+									"Types" 	"DOTA_UNIT_TARGET_ALL"
+  
+								}
+								"Action"    
+								{
+									"Damage"
+									{
+										"Target"		"TARGET"
+										"Type"			"DAMAGE_TYPE_PURE"
+										"Damage"		"%damage"
+									}
+								}
+							}
+						}
+					}
+					"DelayedAction"
+					{
+						"Delay"     "2.2"
+						"Action"    
+						{
+							"FireEffect"
+							{
+								"EffectName"        "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_calldown_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+								"ControlPoints"
+								{
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_techies/techies_suicide.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "TARGET"
+								"ControlPoints"
+								{
+									"01"	"1000 0 0"
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_lina/lina_spell_light_strike_array_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+							}
+						}
+					}
+					"DelayedAction"
+					{
+						"Delay"     "2.3"
+						"Action"    
+						{
+							"FireEffect"
+							{
+								"EffectName"        "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_calldown_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+								"ControlPoints"
+								{
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_techies/techies_suicide.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "TARGET"
+								"ControlPoints"
+								{
+									"01"	"1000 0 0"
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_lina/lina_spell_light_strike_array_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+							}
+						}
+					}
+					"DelayedAction"
+					{
+						"Delay"     "2.4"
+						"Action"    
+						{
+							"FireEffect"
+							{
+								"EffectName"        "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_calldown_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+								"ControlPoints"
+								{
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_techies/techies_suicide.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "TARGET"
+								"ControlPoints"
+								{
+									"01"	"1000 0 0"
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_lina/lina_spell_light_strike_array_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+							}
+						}
+					}
+					"DelayedAction"
+					{
+						"Delay"     "2.5"
+						"Action"    
+						{
+							"FireEffect"
+							{
+								"EffectName"        "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_calldown_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+								"ControlPoints"
+								{
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_techies/techies_suicide.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "TARGET"
+								"ControlPoints"
+								{
+									"01"	"1000 0 0"
+									"02"	"1000 0 0"
+								}
+							}
+							"FireEffect"
+							{
+								"EffectName"        "particles/units/heroes/hero_lina/lina_spell_light_strike_array_explosion.vpcf"
+								"EffectAttachType"  "follow_origin"
+								"Target"            "CASTER"
+							}
+						}
+					}
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_allahuakbar_anim"
+						"Target" 		"CASTER"
+						"Duration"		"2.6"
+					}
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_allahuakbar_removecamera"
+						"Target" 		"CASTER"
+						"Duration"		"15.0"
+					}
+    			}
+			}
+			"modifier_allahuakbar_anim"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsPurgable"		"0"
+				"IsBuff"			"1"
+				"IsDebuff"			"0"
+				"IsStunDebuff"		"0"
+				"ThinkInterval"  	"0.1"
+				"OnIntervalThink"
+				{
+					"FireEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "CASTER"
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_Centaur.DoubleEdge"
+						"Target" 		"CASTER"
+					}
+				}
+			}
+			"modifier_allahuakbar_removecamera"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsPurgable"		"0"
+				"IsBuff"			"1"
+				"IsDebuff"			"0"
+				"IsStunDebuff"		"0"
+				"Attributes"		"MODIFIER_ATTRIBUTE_PERMANENT"
+				"ThinkInterval"  	"0.1"
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"10000"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_BOTH"
+							"Types" 	"DOTA_UNIT_TARGET_HERO"
+							"Flags"     "DOTA_UNIT_TARGET_FLAG_NONE"
+						}
+						"Action"    
+						{
+							"RunScript"
+							{
+								"ScriptFile"	"heroes/allah.lua"
+								"Function"		"UnsetCamera"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
