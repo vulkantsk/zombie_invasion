@@ -454,7 +454,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					  "quest_test_gurd_01"
-		"Ability2"					"out_of_game"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
 
