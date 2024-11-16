@@ -14448,12 +14448,58 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"armor_decress"			"60"
+				"armor_decress"			"20"
 				"duration"			"8"
+				"armor_bonus"			"5"
 		}
 	}
 
-
+	"item_blackshop_cursed_tonic_booster"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_cursed/blackshop_cursed_tonic_booster"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/cursed_full.vpcf"
+			"ItemIsNeutralDrop" 						"1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/tonic"
+		"ItemDroppable"					"1" 
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"duration"				"18"
+				"chance"				"15"
+				"bonus_movespeed"			"25"
+				"bonus_damage"				"300"
+				"bonus_spell_amp"			"200"
+				"bonus_attack_speed"			"150"
+				"bonus_projectile_speed"		"900"
+				"bonus_hp_regen"			"0.01"
+				"bonus_health"				"900"
+				"debuff_movespeed"			"-5"
+				"debuff_damage"				"-5"
+				"debuff_spell_amp"			"-3"
+				"debuff_attack_speed"		"-10"
+				"debuff_projectile_speed"	"-40"
+				"debuff_strength"			"-12"
+		}
+	}
 	"item_blackshop_legendary_octerinity"
 	{
 		// General

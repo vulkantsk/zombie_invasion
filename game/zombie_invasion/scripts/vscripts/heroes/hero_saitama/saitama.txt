@@ -7,7 +7,7 @@
 		"ScriptFile"					"heroes/hero_saitama/push_ups.lua"
 		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"100"
 
@@ -31,7 +31,7 @@
 		"ScriptFile"					"heroes/hero_saitama/squats.lua"
 		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"100"
 
@@ -55,7 +55,7 @@
 		"ScriptFile"					"heroes/hero_saitama/sit_ups.lua"
 		"MaxLevel" 						"14"
 		"AbilityChannelTime"			"1"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"100"
 
@@ -222,20 +222,21 @@
 		"AbilityCastRange"				"25"
 		"AbilityCastPoint"				"0.2"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"base_damage_multiplier_pct"	"75"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_multiplier_per_stack_pct"	"3"
-				"CalculateSpellDamageTooltip"	"0"
-			}
+			
+				"base_damage_multiplier_pct"	
+				{
+					"value"			"75"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+			
+				"damage_multiplier_per_stack_pct"	
+				{
+					"value"			"3"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+			
 		}
 		"precache"
 		{
@@ -257,34 +258,24 @@
 		"HasScepterUpgrade"				"1"
 		"HasInnateModifiers"			"1"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
+			
 				"bonus_strength_pct"	"0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1" 
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"manacost_pct"			"5 10 15 20 25 30 35 40 45 50"
-				"special_bonus_unique_saitama_limiter" "-10"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
+
+				"manacost_pct"			
+				{
+					"value"			"5 10 15 20 25 30 35 40 45 50"
+					"special_bonus_unique_saitama_limiter" "-10"
+				}
+			
 				"loss_stacks_pct"		"80"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"stacks_for_kill"		"10"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
+			
 				"manacost"				"150"
-			}
+			
 		}
 	}
 	"special_bonus_unique_saitama_jogging_range"

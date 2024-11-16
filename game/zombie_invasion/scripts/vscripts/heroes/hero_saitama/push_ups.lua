@@ -8,7 +8,7 @@ if IsServer() then
 
 			local modifier = caster:FindModifierByName("modifier_saitama_limiter")
 			if not modifier then modifier = caster:AddNewModifier(caster, self, "modifier_saitama_limiter", nil) end
-			modifier:SetStackCount(modifier:GetStackCount() + self:GetSpecialValueFor("stacks_amount"))
+			modifier:IncrementStackCount()
 		end
 	end
 end

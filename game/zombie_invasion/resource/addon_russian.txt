@@ -936,7 +936,7 @@
 
  
 		"DOTA_Tooltip_Ability_item_alduin_soul_final"						"Alduin Soul"
-		"DOTA_Tooltip_Ability_item_alduin_soul_final_Description"			"<h1>Пассивная: Криты</h1> Дает магические криты %trigger_chance%% с шансом. Шанс на стак %chance_to_stack%%, макс стаков %max_charge%. Каждый стак дает 1% чистого урона в добавок к любому магическому. Радик %hp_damage%%  от хп в %radius%. Маг вампирик %all_lifesteal%%"
+		"DOTA_Tooltip_Ability_item_alduin_soul_final_Description"			"<h1>Пассивная: Криты</h1> Дает магические криты %trigger_chance%%% с шансом. Шанс на стак %chance_to_stack%%%, макс стаков %max_charge%. Каждый стак дает 1% чистого урона в добавок к любому магическому. Радик %hp_damage%%%  от хп в %radius%. Маг вампирик %all_lifesteal%%%"
 
  
 
@@ -1338,9 +1338,32 @@
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Lore" 		"Кровь вампира течёт по вашим венам"
         "DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
 
+		"DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster"	"<font color='#980002'>Tonic</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster_Description"	"<h1>Активное: Тоническое усиление</h1> Усиляет героя на %duration% секунд даруя %bonus_damage%%% урона, %bonus_spell_amp%%% магического усиления, %bonus_attack_speed% скорости атаки, %bonus_projectile_speed% скорости снарядов, %bonus_hp_regen%%% скорости восстановления здоровья, %bonus_health% максимального здоровья
+		<font color='#ff0000'><h1>Пассивное: Тонический недуг </h1> С шансом в %chance%%% герой получит недуг из-за чего снизит свои характеристики %debuff_damage%%% урона, %debuff_spell_amp%%% магического усиления, %debuff_attack_speed%%% скорости атаки, %debuff_projectile_speed%%% скорости снарядов, %debuff_hp_regen%%% скорости восстановления здоровья, %debuff_health%%% максимального здоровья</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster_Lore" 		"Освежающий напиток для тела и души"
+        "DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
 
+		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster"		"Тоническое усиление"
+		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster_Description"		"Увеличивает характеристики героя"
 
+		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster_debuff"		"Тонический недуг" 
+		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster_debuff_Description"		"Уменьшает характеристики героя"
 
+		"DOTA_Tooltip_modifier_blackshop_cursed_damage_booster"		"Усиление урона"
+		"DOTA_Tooltip_modifier_blackshop_cursed_damage_booster_Description"		"Базовые характеристики увеличены в 6 раз, но герой может умереть в любой момент"
+
+		"DOTA_Tooltip_modifier_blackshop_cursed_remove_limits"		"Снятие ограничений"
+		"DOTA_Tooltip_modifier_blackshop_cursed_remove_limits_Description"		"Лимиты скорости атаки и передвижения сняты, но нельзя восстанавливать здоровье"
+
+		"DOTA_Tooltip_modifier_blackshop_cursed_magical_incpiration"		"Магическое вдохновение"
+		"DOTA_Tooltip_modifier_blackshop_cursed_magical_incpiration_Description"		"Увеличено магическое усиление, но герой стал слабым"
+
+		"DOTA_Tooltip_modifier_blackshop_cursed_intellectual_moving"		"Интеллектуальное движение"
+		"DOTA_Tooltip_modifier_blackshop_cursed_intellectual_moving_Description"		"Ловкость и сила уменьшены, интеллект увеличен"
+
+		"DOTA_Tooltip_modifier_blackshop_legendary_judgment_hammer"		"Молот правосудия"
+		"DOTA_Tooltip_modifier_blackshop_legendary_judgment_hammer_Description"		"Броня уменьшена"
 
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
@@ -1383,7 +1406,7 @@
         "DOTA_Tooltip_ability_item_blackshop_cursed_intellectual_moving_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
 
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer"	"<font color='#980002'>Judgment Hammer</font>"
-        "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Description"	"<h1>Активное: Judgment Hammer</h1>Атака владельца уменьшает броню врагов на %armor_decress% на %duration% секунд" 
+        "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Description"	"<h1>Активное: Judgment Hammer</h1>Атака владельца уменьшает броню врагов на %armor_decress% (+%armor_bonus% за стак) на %duration% секунд" 
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Lore" 		"Интеллект..Его много не бывает"
         "DOTA_Tooltip_ability_item_blackshop_legendary_judgment_hammer_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ, ЭФФЕКТЫ НЕ СКЛАДЫВАЮТСЯ"
 
@@ -3999,7 +4022,7 @@
   
 
 		"DOTA_Tooltip_ability_ability_demonic_conversion"								"Demonic Conversion"
-		"DOTA_Tooltip_ability_ability_demonic_conversion_Description"					"Энигма создает из неоткуда свою маленькую копию. Он раздваивается при нескольких ударах, при этом восстанавливая своё здоровье. Раздвоенный эйдолон не может раздвоиться, а тот кто изначально раздвоил, все также двоится."
+		"DOTA_Tooltip_ability_ability_demonic_conversion_Description"					"Энигма создает из неоткуда свою маленькую копию. Он раздваивается при нескольких ударах, всего их может быть до 10 штук одновременно, при этом восстанавливая своё здоровье. Раздвоенный эйдолон не может раздвоиться, а тот кто изначально раздвоил, все также двоится."
 		"DOTA_Tooltip_ability_ability_demonic_conversion_Lore"							"Предвечный может притягивать свои сущности из других измерений, создавая в материальном мире троицу тёмных эйдолонов."
 		"DOTA_Tooltip_ability_ability_demonic_conversion_split_attack_count"				"АТАК ДЛЯ РАЗДВОЕНИЯ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_spawn_count"					"ЧИСЛО ЭЙДОЛОНОВ:"
@@ -4007,7 +4030,7 @@
 		"DOTA_Tooltip_ability_ability_demonic_conversion_eidolon_dmg_tooltip"			"УРОН ЭЙДОЛОНОВ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_eidalon_duration"				"ДЛИТЕЛЬНОСТЬ:"
 
-		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_str"			"ЗДОРОВЬЕ ЗА ЕД. СИЛЫ:"
+		//"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_str"			"ЗДОРОВЬЕ ЗА ЕД. СИЛЫ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_ag"			"СКОРОСТЬ АТАКИ ЗА ЕД. ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_ability_demonic_conversion_bonus_int"				"УРОН ЗА ЕД. ИНТЕЛЕКТА:"
 

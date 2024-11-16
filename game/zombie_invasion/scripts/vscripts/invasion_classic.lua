@@ -12,7 +12,7 @@ local dropItemsBlackshop = {
 	    item_blackshop_cursed_damage_booster = {chance = 1, price = 3000},
 	    item_blackshop_cursed_magical_incpiration = {chance = 1, price = 3000},
 	    item_blackshop_cursed_intellectual_moving = {chance = 2, price = 3000},
-
+	    item_blackshop_cursed_tonic_booster = {chance = 2, price = 5000},
 	    --legendary
 	    item_blackshop_legendary_octerinity = {chance = 4, price = 2500},
 	    item_blackshop_legendary_boom_buff = {chance = 3, price = 2500},
@@ -418,7 +418,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 
    
-     npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
+     --npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
  
   
  
@@ -655,6 +655,7 @@ function InvasionMode:InvasionGameStart()
 	InvasionMode:NextNight()
 	 	  --InvasionMode:ChristmassEror()
 
+	
 	if GameRules:IsCheatMode() == true then
 		 if GameRules:IsInToolsMode() then return end
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
