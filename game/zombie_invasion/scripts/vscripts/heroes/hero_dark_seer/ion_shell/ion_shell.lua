@@ -99,6 +99,12 @@ function modifier_ability_ion_shell:OnDestroy()
 	if not IsServer() then
 		return
 	end
+	if IsServer() then
+		if self:GetAbility():GetAutoCastState() then
+		
+			self:GetParent():CastAbilityOnTarget(self:GetParent(), self:GetAbility(), self.caster:GetPlayerOwnerID())
+		end
+	end
 
 	StopSoundOn( "Hero_Dark_Seer.Ion_Shield_lp", self.parent )
 	EmitSoundOn( "Hero_Dark_Seer.Ion_Shield_end", self.parent )

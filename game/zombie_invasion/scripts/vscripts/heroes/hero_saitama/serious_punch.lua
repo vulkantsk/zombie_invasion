@@ -20,6 +20,20 @@ if IsServer() then
 				ability = self
 			})
 
+			-- Добавляем клиф атаку
+			GridNav:DestroyTreesAroundPoint(target:GetAbsOrigin(), 300, false)
+			local direction = (target:GetAbsOrigin() - caster:GetAbsOrigin()):Normalized()
+			local stacks = caster:GetModifierStackCount("modifier_saitama_limiter", caster)
+			target:AddNewModifier(caster, self, "modifier_knockback", {
+				center_x = target:GetAbsOrigin().x - direction.x,
+				center_y = target:GetAbsOrigin().y - direction.y,
+				center_z = target:GetAbsOrigin().z,
+				duration = 0.5,
+				knockback_duration = 0.5 + 0.1 * stacks,
+				knockback_distance = 300 + 50 * stacks,
+				knockback_height = 200 + 20 * stacks
+			})
+			DoCleaveAttack(caster, target, self, damage, 300, 600, 650, "particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf")
 
 			SendOverheadEventMessage(nil, OVERHEAD_ALERT_DAMAGE, target, damage, nil)	
 		end
