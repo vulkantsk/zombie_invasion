@@ -17,7 +17,7 @@
 		"AbilityValues"
 		{
 			
-				"damagee"				"1 2 3 4 5 6 7 8 9 10 11 12 13 14"
+				"damagee"				"15 20 25 30 35 40 45 50 55 60 65 70"
 			
 				"arrow_count"			"4"
 				"special_bonus_shard"	"+2"
@@ -110,8 +110,8 @@
 			
 				"slow_attack_speed"		
 				{
-						"value"	"-20 -23 -26 -29 -32 -35 -38 -41 -44 -47 -50 -53 -56 -59"
-						"special_bonus_unique_medusa_untochable"		"-31"
+						"value"	"-5 -10 -15 -20 -25 -30 -35 -40 -45 -50 -55 -60 -65 -70"
+						"special_bonus_unique_medusa_untochable"		"-15"
 				}
 
 			
@@ -196,17 +196,17 @@
 		{
 			"damage_per_mana"		
 			{
-				"value"								"6 7 8 9 10 11 12 13 14 15 16 17 18 19"
-				"special_bonus_unique_medusa_mana_shield"	"+7"
+				"value"								"4 5 6 7 8 9 10 11 12 13 14 15 16 17"
+				"special_bonus_unique_medusa_mana_shield"	"+4"
 			}
 
 			"illusion_damage_per_mana"
 			{
-				"value"								"21 24 28 32 36 40 44 49 54 56 60 71 84 90"
+				"value"								"0"
 			}
 
 			"absorption_pct"						"99"
-			"bonus_mana"							"75 100 125 150 175 200 225 250 275 300 325 350 375 400"
+			"bonus_mana"							"0 225 259 298 343 394 453 520 598 688 791 910 1046 1203"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}

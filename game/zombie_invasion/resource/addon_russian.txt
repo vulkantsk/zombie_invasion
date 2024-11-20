@@ -1265,7 +1265,20 @@
 	    "DOTA_Tooltip_ability_item_bonus_stats5_Description"							"<h1>Активная: Ам-ням</h1> Прямиком из рош дефа!\n или нет?"
 	    "DOTA_Tooltip_ability_item_bonus_stats5_Lore"							"Кункевич что-ли играл в рош деф?"
 
-   
+
+		"DOTA_Tooltip_Ability_item_dragon_set"                                            "<font color='#ff4500'>Комплект Дракона</font>"
+		"DOTA_Tooltip_Ability_item_dragon_set_Description"                                "<h1>Активная: Драконья Ярость</h1> На %duration% секунд увеличивает скорость передвижения на %bonus_movement_speed%%% Увеличивает скорость атаки на %bonus_attack_speed% Снижает получаемый урон на %damage_reduction%%%, даёт %crit_chance%%% шанс нанести критический урон в %crit_damage%%% Атаки снижают броню цели на %armor_reduction_per_stack% на %armor_reduction_duration% сек.\n<h1>Пассивные бонусы:</h1>Возвращает %return_damage%%% полученного урона + %return_damage_str%%% от силы\n<h1>Драконья аура:</h1>Союзники в радиусе %aura_radius% получают 50% от бонусов брони, здоровья и силы"
+		"DOTA_Tooltip_Ability_item_dragon_set_Lore"                                       "Легендарный комплект доспехов, выкованный из чешуи древнего дракона"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_health"					"+$health"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_strength"					"+$str"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_agility"					"+$agi"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_damage"					"+$damage"
+		"DOTA_Tooltip_Ability_item_dragon_set_spell_amp"						"%+$spell_amp"
+
+
+
 		"DOTA_Tooltip_ability_item_bonus_stats10"	                                 "<font color='#00bfff'>БОНУС К СТАТАМ +10</font>"
 	    "DOTA_Tooltip_ability_item_bonus_stats10_Description"							"<h1>Активная: Ам-ням</h1> Прямиком из рош дефа!\n или нет?"
 	    "DOTA_Tooltip_ability_item_bonus_stats10_Lore"							"Кункевич что-ли играл в рош деф?"
@@ -1332,7 +1345,13 @@
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher"		"Ракетный залп"
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher_Description"		"Через промежуток времени вы выстрелите ракетами"
 
+		"npc_dota_demon_friend"													"Демонический друг"
 
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend"	"<font color='#ffff00'>Демонический друг</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Description"	"<h1>Активное: Демонический друг</h1> При использовании призывает демона который будет сражаться на вашей стороне. Демон неуязвим и наносит урон равный урону владельца. При новом использовании призывает ещё одного демона."
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Lore" 		"Даже демоны могут быть верными друзьями"
+        "DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
+		
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood"	"<font color='#8b00ff'>Vampire blood</font>"
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Description"	"<h1>Активное: Vampire blood</h1> При использовании даёт герою %lifesteal%%% вампиризма (+2% за стак)"
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Lore" 		"Кровь вампира течёт по вашим венам"

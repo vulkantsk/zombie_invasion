@@ -14,9 +14,10 @@ local dropItemsBlackshop = {
 	    item_blackshop_cursed_intellectual_moving = {chance = 2, price = 3000},
 	    item_blackshop_cursed_tonic_booster = {chance = 2, price = 5000},
 	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 4, price = 2500},
-	    item_blackshop_legendary_boom_buff = {chance = 3, price = 2500},
+	    item_blackshop_legendary_octerinity = {chance = 3, price = 2500},
+	    item_blackshop_legendary_boom_buff = {chance = 1, price = 2500},
 	    item_blackshop_legendary_judgment_hammer = {chance = 2, price = 2500},
+		item_blackshop_legendary_demon_friend = {chance = 1, price = 2500},
 
 	    --epic
 	    item_blackshop_epic_rocket_launcher = {chance = 4, price = 2000},

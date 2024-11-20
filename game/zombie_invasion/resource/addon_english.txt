@@ -899,6 +899,15 @@
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher"		"Rocket descent"
         "DOTA_Tooltip_modifier_blackshop_epic_rocket_launcher_Description"		"After a period of time, you will fire missiles"
 
+		
+		"npc_dota_demon_friend"													"Demon Friend"
+
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend"	"<font color='#ffff00'>Demon Friend</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Description"	"<h1>Active: Demon Friend</h1> When used, summons a demon that will fight on your side. The demon is invulnerable and deals damage equal to the owner's damage. Using it again summons another demon."
+		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Lore" 		"Even demons can be loyal friends"
+        "DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!"
+
+
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Active: Octerinity of skull mages</h1> When used, gives hero %mana_casttime_cd%%% reduces manacost, %mana_casttime_cd%%% reduces cooldown and increases %mana_casttime_cd%%% cast time"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Lore" 		"Can your mind let you down?"
@@ -1083,6 +1092,19 @@
 
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3"				"Vladmir's Aura 3"
 		"DOTA_Tooltip_modifier_item_imba_vladmir_aura_3_Description"	"Gaining %dMODIFIER_PROPERTY_TOOLTIP%%% lifesteal, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% damage, %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor, and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
+
+		"DOTA_Tooltip_Ability_item_dragon_set"                                            "<font color='#ff4500'>Dragon Set</font>"
+		"DOTA_Tooltip_Ability_item_dragon_set_Description"                                "<h1>Active: Dragon's Fury</h1> For %duration% seconds increases movement speed by %bonus_movement_speed%%%, attack speed by %bonus_attack_speed%, reduces incoming damage by %damage_reduction%%%, gives %crit_chance%%% chance to deal critical damage for %crit_damage%%%. Attacks reduce target's armor by %armor_reduction_per_stack% for %armor_reduction_duration% sec.\n<h1>Passive bonuses:</h1>Returns %return_damage%%% of received damage + %return_damage_str%%% of strength\n<h1>Dragon aura:</h1>Allies within %aura_radius% radius receive 50% of armor, health and strength bonuses"
+		"DOTA_Tooltip_Ability_item_dragon_set_Lore"                                       "Legendary armor set forged from ancient dragon scales"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_armor"					"+$armor"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_health"					"+$health"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_strength"					"+$str"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_agility"					"+$agi"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_intellect"				"+$int"
+		"DOTA_Tooltip_Ability_item_dragon_set_bonus_damage"					"+$damage"
+		"DOTA_Tooltip_Ability_item_dragon_set_spell_amp"						"%+$spell_amp"
+
+	
 
 		"DOTA_Tooltip_Ability_item_dragon_armor"					"Dragon armor"
 		"DOTA_Tooltip_ability_item_dragon_armor_Description"							"<h1>PASSIVE: Dragon armor</h1>RETURN DAMAGE  %return_damage% + %return_damage_str%%% STR HERO<br>"

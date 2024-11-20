@@ -2531,7 +2531,7 @@
 	{
 		"BaseClass"						"item_lua"											
 		"ScriptFile"					"items/item_big_meat"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"quest_drop/big_meat" 
 
 		"ItemCost"						"0"
@@ -3326,11 +3326,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-				"bonus_attack_speed"			"45"
+				"bonus_attack_speed"			"12"
 				"quelling_range_tooltip"			"350"
 				"cast_range_ward"			"450"
 				"creep_damage_pct"			"22"
-				"bonus_armor"	"8"
+				"bonus_armor"	"2"
 				"alternative_cooldown"	"2"
 		}
 	}
@@ -12538,7 +12538,66 @@
 			
 		}
 	}
+	"item_recipe_dragon_set"
+	{
+		"BaseClass"						"item_datadriven"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"custom_folder/item_recipe"
 
+		"ItemCost"						"99999"
+		"ItemShopTags"					""
+		
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_dragon_set"
+		"ItemRequirements"
+		{
+			"01"						"item_dragon_sword;item_dragon_shield;item_dragon_helmet;item_dragon_armor;item_dragon_hand;item_dragon_boots"
+		}
+	}
+
+	"item_dragon_set"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_dragon_set"
+		"AbilityTextureName"			"dragon_heart"
+
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"55"
+		"AbilityManaCost"				"100"
+
+		"ItemQuality"					"artifact"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemPurchasable"				"0"
+		"ItemKillable"					"0"
+		"ItemIsNeutralDrop"				"0"
+
+		"AbilityValues"
+		{
+			"duration"					"12"
+			"bonus_damage"				"300"
+			"bonus_armor"				"45" 
+			"bonus_strength"			"150"
+			"bonus_agility"				"150"
+			"bonus_intellect"			"150"
+			"bonus_health"				"1000"
+			"spell_amp"					"80"
+			"return_damage"				"35"
+			"return_damage_str"			"30"
+			"aura_radius"				"1200"
+			"bonus_movement_speed"		"50"
+			"bonus_attack_speed"		"100"
+			"damage_reduction"			"-30"
+			"crit_chance"				"5"
+			"crit_damage"				"425"
+			"armor_reduction_duration"	"8"
+			"armor_reduction_per_stack"	"-3"
+		}
+	}
 
 
 		"item_recipe_kefteme"
@@ -14453,7 +14512,35 @@
 				"armor_bonus"			"5"
 		}
 	}
-
+	"item_blackshop_legendary_demon_friend"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop-legendary_demon_friend"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/demon_friend"
+		
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+		}
+	}
 	"item_blackshop_cursed_tonic_booster"
 	{
 		// General
@@ -14522,7 +14609,7 @@
         "AbilityTextureName"            "blackshop/octerinity"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -14557,7 +14644,7 @@
         "AbilityTextureName"            "blackshop/rpg"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -14593,7 +14680,7 @@
         "AbilityTextureName"            "blackshop/damage_booster"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -14628,7 +14715,7 @@
         "AbilityTextureName"            "blackshop/intellectual_moving"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -14664,7 +14751,7 @@
         "AbilityTextureName"            "blackshop/magical_incpiration"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -14698,7 +14785,7 @@
         "AbilityTextureName"            "blackshop/remove_limits"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14"
+		"AbilityCooldown"				"0"
 		"AbilityCastRange"				"900"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		

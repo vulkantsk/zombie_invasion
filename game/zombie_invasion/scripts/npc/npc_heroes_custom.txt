@@ -2207,6 +2207,9 @@
         "Ability17"        "special_bonus_unique_saitama_limiter"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"100"
+		"HealthBarOffset"			"326542000"
 		"AttackRange"			"100"
 		"StatusHealth"			"400"
 		"AttackRate"			"1.2"
