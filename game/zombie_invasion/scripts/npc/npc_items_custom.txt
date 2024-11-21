@@ -12569,12 +12569,16 @@
 
 		"ItemQuality"					"artifact"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemSellable"					"0"
+		"ItemSellable"					"1"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPermanent"					"0"
-		"ItemPurchasable"				"0"
-		"ItemKillable"					"0"
+		"ItemPurchasable"				"1" 
+		"ItemKillable"					"1"
 		"ItemIsNeutralDrop"				"0"
+		"ItemCost"						"99999"
+		"ItemShopTags"					"damage;str;agi;int"
+		"ItemAliases"					"dragon set"
+		"ShouldBeSuggested"				"1"
 
 		"AbilityValues"
 		{

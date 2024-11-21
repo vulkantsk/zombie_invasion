@@ -11,6 +11,17 @@ function item_blackshop_legendary_demon_friend:OnSpellStart()
     demon:SetBaseDamageMin(self.caster:GetBaseDamageMin() + 550)
     demon:SetBaseDamageMax(self.caster:GetBaseDamageMax() + 550)
     demon:SetBaseMoveSpeed(self.caster:GetBaseMoveSpeed() + 125)
+    local demon_models = {
+        "models/items/terrorblade/tb_samurai_samurai_demon/tb_samurai_samurai_demon.vmdl",
+        "models/items/terrorblade/terrorblade_jailbreakers_rage_ability/terrorblade_jailbreakers_rage_ability.vmdl", 
+        "models/items/terrorblade/marauders_demon/marauders_demon.vmdl",
+        "models/items/terrorblade/dotapit_s3_fallen_light_metamorphosis/dotapit_s3_fallen_light_metamorphosis.vmdl",
+        "models/heroes/terrorblade/demon.vmdl"
+    }
+    
+    local random_model = demon_models[RandomInt(1, #demon_models)]
+    demon:SetModel(random_model)
+    demon:SetOriginalModel(random_model)
 
     demon:AddNewModifier(self.caster, nil, "modifier_blackshop_legendary_demon_friend", {})
     self.caster:EmitSound("Item.TomeOfKnowledge")
@@ -81,6 +92,7 @@ end
 function modifier_blackshop_legendary_demon_friend:CheckState()
     return {
         [MODIFIER_STATE_NO_HEALTH_BAR] = true,
-        [MODIFIER_STATE_INVULNERABLE] = true
+        [MODIFIER_STATE_INVULNERABLE] = true,
+        [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
     }
 end
