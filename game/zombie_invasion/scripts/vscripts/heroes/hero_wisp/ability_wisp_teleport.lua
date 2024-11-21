@@ -95,7 +95,6 @@ function modifier_ability_wisp_teleport:OnRemoved()
 	local caster = self:GetCaster()
 
 	self:PlayEffects3()
-
 	local targets = FindUnitsInRadius(
 		caster:GetTeamNumber(),
 		caster:GetOrigin(),
@@ -107,6 +106,17 @@ function modifier_ability_wisp_teleport:OnRemoved()
 		0,
 		false
 	)
+
+	-- Фильтруем только реальных героев
+	local filtered_targets = {}
+	for _, target in pairs(targets) do
+		if target:IsRealHero() then
+			table.insert(filtered_targets, target)
+		end
+	end
+	targets = filtered_targets
+
+	
 
 	local point = self:GetParent():GetOrigin()
 	for _,target in pairs(targets) do

@@ -419,7 +419,7 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 
    
-     --npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
+     npc:AddNewModifier(npc, nil, "modifier_elka_bonus", {  })
  
   
  
@@ -656,9 +656,17 @@ function InvasionMode:InvasionGameStart()
 	InvasionMode:NextNight()
 	 	  --InvasionMode:ChristmassEror()
 
-	
+		   --InvasionMode:ChristmasNight()  
+
 	if GameRules:IsCheatMode() == true then
-		 if GameRules:IsInToolsMode() then return end
+		local heroes = HeroList:GetAllHeroes()
+		for _, hero in pairs(heroes) do
+			if hero:IsRealHero() then
+				hero:AddItemByName("item_blink")
+			end
+		end
+		if GameRules:IsInToolsMode() then return end
+		
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
@@ -1686,13 +1694,13 @@ end
 		         Timers:CreateTimer(time_res, function()
 
 		             if RollPercentage(rollBase_9) then 
-		             	  unit = CreateUnitByName("npc_wave_zombie_toxic_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+		             	  unit = CreateUnitByName("npc_classic_new_years_winterwyvern", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
 		             	  unit = CreateUnitByName("npc_classic_new_years_ancient", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		                 unit = CreateUnitByName("npc_classic_wave_reflect_zombie", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		                 unit = CreateUnitByName("npc_classic_new_years", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		                 rollBase_9 = 1
  		             else
  		             	  unit = CreateUnitByName("npc_classic_new_years_lich", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
- 		             	  unit = CreateUnitByName("npc_classic_wave_ghoul_2", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+ 		             	  unit = CreateUnitByName("npc_classic_new_years_ancient", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
  		         	       unit = CreateUnitByName("npc_classic_new_years", point:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
                            rollBase_9 = rollBase_9 + 2.0
  		             end
@@ -1965,96 +1973,96 @@ function InvasionMode:ThemeMusic()
 	day_music =
     { 	
   
-    	[1] = {
-  		    "Akira Yamaoka – Never Forgive Me",
-   		    "Ula - Cannabis",
-  		    "C418 - Sweden",
-  		    "Mase - Psycho",
-  		    "HammAli & Navai - Пустите меня на танцпол",		
-    	},
+    -- 	[1] = {
+  	-- 	    "Akira Yamaoka – Never Forgive Me",
+   	-- 	    "Ula - Cannabis",
+  	-- 	    "C418 - Sweden",
+  	-- 	    "Mase - Psycho",
+  	-- 	    "HammAli & Navai - Пустите меня на танцпол",		
+    -- 	},
  
-    	[2] = {
-  		    "Серега пират - АМ ФП", 
-  		    "Life - Larson",
-  		    "Musica - Fly Project",
-  		    "Wake Me Up - Avicii",
-  		    "Galantis - No Money",
-  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 
-  		    "a-ha - Take On Me",	
-  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",
-              "Серега пират - Мой байк",
-    	},
+    -- 	[2] = {
+  	-- 	    "Серега пират - АМ ФП", 
+  	-- 	    "Life - Larson",
+  	-- 	    "Musica - Fly Project",
+  	-- 	    "Wake Me Up - Avicii",
+  	-- 	    "Galantis - No Money",
+  	--         "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  	-- 	    "Boulevard of Broken Dreams - Green Day", 
+  	-- 	    "a-ha - Take On Me",	
+  	-- 	    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  	-- 	    "Bee Gees - Stayin' Alive",
+  	-- 	    "Earth Wind And Fire - September",
+    --           "Серега пират - Мой байк",
+    -- 	},
  
     	  
-    	[3] = {
-  		    "I Follow Rivers - Lykke Li",
-  		    "August - Intelligency",  
-  		    "Shotgun - Yellow Claw feat. Rochelle",
-  		    "Runaway - Parachute Youth feat. Jay Martin",
-  		    "Sia - Cheap Thrills",
-  		    "L Starz - My Life Be LikeGrits",
-  		    "Kiesza - Hideaway",
-  		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",
-  		    "AJR - World's Smallest Violin",
-  		    "Earth Wind And Fire - Let's Groove",
-  		    "Redbone - Come and Get Your Love",
-    	},
+    -- 	[3] = {
+  	-- 	    "I Follow Rivers - Lykke Li",
+  	-- 	    "August - Intelligency",  
+  	-- 	    "Shotgun - Yellow Claw feat. Rochelle",
+  	-- 	    "Runaway - Parachute Youth feat. Jay Martin",
+  	-- 	    "Sia - Cheap Thrills",
+  	-- 	    "L Starz - My Life Be LikeGrits",
+  	-- 	    "Kiesza - Hideaway",
+  	-- 	    "John  Newman - Fire In Me",
+  	-- 	    "iSpy - KYLE feat. Lil Yachty",
+  	-- 	    "AJR - World's Smallest Violin",
+  	-- 	    "Earth Wind And Fire - Let's Groove",
+  	-- 	    "Redbone - Come and Get Your Love",
+    -- 	},
     		 
-     [4] = {
-		"RSAC - NBA",
-		"Daved Guetta - Would I Lie To You",
-		 "Sia - Chandelier",
-		"Does It Matter - Janieck",	
-		"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
-		"Серега пират - Я взлетаю вверх",  		
-		"Feduk - Моряк",	
-    	},
+    --  [4] = {
+	-- 	"RSAC - NBA",
+	-- 	"Daved Guetta - Would I Lie To You",
+	-- 	 "Sia - Chandelier",
+	-- 	"Does It Matter - Janieck",	
+	-- 	"Grover Washington, Jr, Bill Withers - Just The Two Of Us",
+	-- 	"Серега пират - Я взлетаю вверх",  		
+	-- 	"Feduk - Моряк",	
+    -- 	},
   	   	     
-     [5] = {
-		"RSAC - NBA",
-  		"Galantis - No Money",
-  	        "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
-  		    "Boulevard of Broken Dreams - Green Day", 
-  		    "a-ha - Take On Me",	
-  		    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",	
-		  		    "C418 - Sweden",		
-    	},
+    --  [5] = {
+	-- 	"RSAC - NBA",
+  	-- 	"Galantis - No Money",
+  	--         "Jackie Chan - Tiësto, Dzeko feat. Preme, Post Malone",  
+  	-- 	    "Boulevard of Broken Dreams - Green Day", 
+  	-- 	    "a-ha - Take On Me",	
+  	-- 	    "Bangers Only, fawlin, Preston Pablo, Chill Only - Circles",	
+  	-- 	    "Bee Gees - Stayin' Alive",
+  	-- 	    "Earth Wind And Fire - September",	
+	-- 	  		    "C418 - Sweden",		
+    -- 	},
 
-     [6] = {
-  		    "Kiesza - Hideaway",
-  		    "John  Newman - Fire In Me",
-  		    "iSpy - KYLE feat. Lil Yachty",
-  		    "AJR - World's Smallest Violin",
-  		    "Earth Wind And Fire - Let's Groove",
-  		    "Redbone - Come and Get Your Love",
-  		    "Akira Yamaoka – Never Forgive Me",			
-    	},
-     [7] = {
-  		    "Bee Gees - Stayin' Alive",
-  		    "Earth Wind And Fire - September",
-              "Серега пират - Мой байк",
-		"Серега пират - Я взлетаю вверх",  	
-		  		    "C418 - Sweden",	
-  		    "Runaway - Parachute Youth feat. Jay Martin",
-  		    "Sia - Cheap Thrills",
-    	},
+    --  [6] = {
+  	-- 	    "Kiesza - Hideaway",
+  	-- 	    "John  Newman - Fire In Me",
+  	-- 	    "iSpy - KYLE feat. Lil Yachty",
+  	-- 	    "AJR - World's Smallest Violin",
+  	-- 	    "Earth Wind And Fire - Let's Groove",
+  	-- 	    "Redbone - Come and Get Your Love",
+  	-- 	    "Akira Yamaoka – Never Forgive Me",			
+    -- 	},
+    --  [7] = {
+  	-- 	    "Bee Gees - Stayin' Alive",
+  	-- 	    "Earth Wind And Fire - September",
+    --           "Серега пират - Мой байк",
+	-- 	"Серега пират - Я взлетаю вверх",  	
+	-- 	  		    "C418 - Sweden",	
+  	-- 	    "Runaway - Parachute Youth feat. Jay Martin",
+  	-- 	    "Sia - Cheap Thrills",
+    -- 	},
 
- 	[8] = {
-  		    "part of me call me karizma, три дня дождя",
-  		    "Baur Karbon - отпусти",
+ 	-- [8] = {
+  	-- 	    "part of me call me karizma, три дня дождя",
+  	-- 	    "Baur Karbon - отпусти",
 
-    	},
+    -- 	},
 
-    	[9] = {
-  		    "GigaChad Theme",
+    -- 	[9] = {
+  	-- 	    "GigaChad Theme",
 
-    	},
+    -- 	},
     	--[[ 
         	[5] = {
 		"RSAC - NBA",
@@ -2089,57 +2097,57 @@ function InvasionMode:ThemeMusic()
 
  
 
---   [1] = {
--- "Merry - Christmas Jingle Bells",  
---  "Jingle Вells" ,
---  "Lofi Origin - Jingle Bells Lo Fi Chill",
---  "Andy Williams - Winter Wonderland",
---  "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
---  },
---  
---  	       
---    	[2] = {
---  		    "Aurélie - Jingle Bells", 
---  		    "Ансамбль Детские Песни - Три белых коня",
---  		    "Дискотека Авария - Новогодняя",
---  		    "Brenda Lee - Rockin' Around The Christmas Tree",
---  		    "Michael Buble - Holly Jolly Christmas",
---    	},
---
---     	[3] = {
---  		    "Дима Билан - Новый Год с новой строчки",
---  		    "ABBA - Happy New Year",
---  		    "Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
---  		    "O Liebert - Jinggle Bells",  
---  		    "Andy Williams - It's the Most Wonderful Time of the Year",
---    	},
---    
--- 
---     	   	     
---     	[4] = {
---     	"Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
---     	"П.Чайковский - Pas de Deux",
---		"Jinggle bells - Remix",
---		"Wham! - Last Christmas",
--- 		
---    	},
---    	[5] = {
---  		"Lofi Origin - Jingle Bells Lo Fi Chill",
---  		"Andy Williams - Winter Wonderland",
---  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
---  		},
---
---  	[6] = {
---  		"Andy Williams - It's the Most Wonderful Time of the Year",
---  		"Andy Williams - Winter Wonderland",
---  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
---  		},
---  	[7] = {
---  		"Ансамбль Детские Песни - Три белых коня",
---  		    "Дискотека Авария - Новогодняя",
---  		    "Brenda Lee - Rockin' Around The Christmas Tree",
---  		    "Michael Buble - Holly Jolly Christmas",
---  		},
+   [1] = {
+ "Merry - Christmas Jingle Bells",  
+  "Jingle Вells" ,
+  "Lofi Origin - Jingle Bells Lo Fi Chill",
+  "Andy Williams - Winter Wonderland",
+  "Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+  },
+  
+  	       
+    	[2] = {
+  		    "Aurélie - Jingle Bells", 
+  		    "Ансамбль Детские Песни - Три белых коня",
+  		    "Дискотека Авария - Новогодняя",
+  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+  		    "Michael Buble - Holly Jolly Christmas",
+    	},
+
+     	[3] = {
+  		    "Дима Билан - Новый Год с новой строчки",
+  		    "ABBA - Happy New Year",
+  		    "Bing Crosby, The Andrews Sisters - Santa Claus is Coming to Town",
+  		    "O Liebert - Jinggle Bells",  
+  		    "Andy Williams - It's the Most Wonderful Time of the Year",
+    	},
+    
+ 
+     	   	     
+     	[4] = {
+     	"Dean Martin, Gus Levene - Let It Snow! Let It Snow! Let It Snow!",
+     	"П.Чайковский - Pas de Deux",
+		"Jinggle bells - Remix",
+		"Wham! - Last Christmas",
+ 		
+    	},
+    	[5] = {
+  		"Lofi Origin - Jingle Bells Lo Fi Chill",
+  		"Andy Williams - Winter Wonderland",
+  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+  		},
+
+  	[6] = {
+  		"Andy Williams - It's the Most Wonderful Time of the Year",
+  		"Andy Williams - Winter Wonderland",
+  		"Bing Crosby - It's Beginning to Look a Lot Like Christmas"
+  		},
+  	[7] = {
+  		"Ансамбль Детские Песни - Три белых коня",
+  		    "Дискотека Авария - Новогодняя",
+  		    "Brenda Lee - Rockin' Around The Christmas Tree",
+  		    "Michael Buble - Holly Jolly Christmas",
+  		},
         
     }
 

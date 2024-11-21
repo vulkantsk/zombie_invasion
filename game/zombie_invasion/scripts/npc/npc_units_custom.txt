@@ -373,7 +373,7 @@
 		
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10000000"
+		"ArmorPhysical"				"100000"
 		"MagicalResistance"			"99"
 		
 		// Attack
@@ -394,7 +394,7 @@
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
 		"RingRadius"				"100"
-		"HealthBarOffset"			"326542000"
+		"HealthBarOffset"			"3265420"
 		"MinimapIconSize"			"375"
 		
 		
@@ -405,7 +405,7 @@
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"326542000"
+		"StatusHealth"				"32654200"
 		"StatusHealthRegen"			"1000"
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0"
