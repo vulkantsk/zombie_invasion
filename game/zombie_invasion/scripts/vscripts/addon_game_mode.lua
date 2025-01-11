@@ -67,6 +67,7 @@ function Precache( context )
 	PrecacheResource("particle", "particles/generic_gameplay/generic_hit_blood.vpcf", context) --blood
 	PrecacheResource("particle", "particles/world_destruction_fx/tree_dire_destroy.vpcf", context) --blood
 
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_arc_warden/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witch_doctor/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_oracle/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_legion_commander", context )
@@ -140,6 +141,7 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/blood_screen_rain.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_rain_screen.vpcf", context ) --elementalist shield
 
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context ) 
@@ -247,8 +249,8 @@ function Activate()
 --	InvasionMode:InitInvasionMode()
 	
 	--
---	 GameRules:GetGameModeEntity():SetWeatherEffectsDisabled(false)
--- GameRules:GetGameModeEntity():SetCustomTerrainWeatherEffect( "particles/rain_fx/econ_snow.vpcf" )
+	--GameRules:GetGameModeEntity():SetWeatherEffectsDisabled(false)
+	GameRules:GetGameModeEntity():SetCustomTerrainWeatherEffect( "particles/rain_fx/econ_snow.vpcf" )
 	GameRules:GetGameModeEntity():SetFreeCourierModeEnabled(true)
 	GameRules:GetGameModeEntity():SetDaynightCycleDisabled(true)
 	  -- 

@@ -359,6 +359,10 @@
 		"npc_tombstone3"                                                	"Томба"
 		"npc_tombstone4"                                                	"Томба"
 
+		"skip_night"														"Ждать до ночи."	
+		"skip_night_pressed"												"Ожидание..."	
+		"skip_night_not_available"											"Невозможно."
+
 		"npc_wave_boss_half_zombie"                                         			"Спиногрыз"
 		"npc_wave_boss_big_zombie"                                         			"Супер Большой Зомби"
 		"npc_wave_boss_suicide"                                         		"Безвредный"

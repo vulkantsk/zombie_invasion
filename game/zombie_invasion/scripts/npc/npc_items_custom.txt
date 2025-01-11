@@ -14360,6 +14360,55 @@
 
 	// epic items
 
+
+	"item_blackshop_epic_chronomancer_vesture"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_epic/blackshop_epic_chronomancer_vesture"	 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/epic_sphere_full.vpcf"
+			"ItemIsNeutralDrop" 						"1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/tonic"
+		"ItemDroppable"					"1" 
+		"ItemPermanent" 				"0"	
+		"SideShop" 						"0"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"duration"				"18"
+				"chance"				"15"
+				"bonus_movespeed"			"25"
+				"bonus_damage"				"300"
+				"bonus_spell_amp"			"200"
+				"bonus_attack_speed"			"150"
+				"bonus_projectile_speed"		"900"
+				"bonus_hp_regen"			"0.01"
+				"bonus_health"				"900"
+				"debuff_movespeed"			"-5"
+				"debuff_damage"				"-5"
+				"debuff_spell_amp"			"-3"
+				"debuff_attack_speed"		"-10"
+				"debuff_projectile_speed"	"-40"
+				"debuff_strength"			"-12"
+		}
+	}
+
+
 	"item_blackshop_epic_rocket_shot"
 	{
 		// General
@@ -14479,7 +14528,40 @@
 
 	//legendary item
 
-
+	"item_blackshop_legendary_magic_mushroom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop_legendary_magic_mushroom"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/mushroom"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"damage_bonus"			"30"
+				"model_scale"			"30"
+		}
+	}
 	"item_blackshop_legendary_judgment_hammer"
 	{
 		// General
@@ -14662,6 +14744,47 @@
 	}
 
 	//cursed items
+	
+	"item_blackshop_cursed_heal_collector"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_cursed/blackshop_cursed_heal_collector"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemCost"						"400"	
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/cursed_sphere.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/damage_booster"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+		}
+	}
+
+
+
+
+
+
 	"item_blackshop_cursed_damage_booster"
 	{
 		// General

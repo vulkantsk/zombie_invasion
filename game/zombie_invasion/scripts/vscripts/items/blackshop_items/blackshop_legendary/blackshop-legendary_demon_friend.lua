@@ -64,9 +64,13 @@ function modifier_blackshop_legendary_demon_friend:OnIntervalThink()
         
         -- Следование за владельцем
         local distanceToCaster = (parent:GetAbsOrigin() - caster:GetAbsOrigin()):Length2D()
-        if distanceToCaster > 300 then
+        if distanceToCaster > 222 then
             parent:MoveToPosition(caster:GetAbsOrigin() + RandomVector(200))
         end
+        if distanceToCaster > 700 then
+            FindClearSpaceForUnit(parent, caster:GetAbsOrigin() + RandomVector(200), true)
+        end
+        
         
         -- Поиск и атака ближайших врагов только если рядом с кастером и кастер жив
         if distanceToCaster <= 300 and caster:IsAlive() then
@@ -94,5 +98,7 @@ function modifier_blackshop_legendary_demon_friend:CheckState()
         [MODIFIER_STATE_NO_HEALTH_BAR] = true,
         [MODIFIER_STATE_INVULNERABLE] = true,
         [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
+        [MODIFIER_STATE_NO_TEAM_SELECT] = true,
+        [MODIFIER_STATE_NO_TEAM_MOVE_TO] = true,
     }
 end

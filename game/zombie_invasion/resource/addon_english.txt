@@ -163,6 +163,10 @@
 
 	   "warlock_end"			                                    	"<font color='#c10020'>I didn't have enough strength...</font>"	
 
+		"skip_night"														"Wait for night."		
+		"skip_night_pressed"												"Waiting..."	
+		"skip_night_not_available"											"Not possible."
+
 	   "laughter_2"			                                    	"<font color='#c10020'>HAHAHAHAHAHA</font>"	
 	   "laughter_3"			                                    	"<font color='#c10020'>AHAHAHAHAHAHA</font>"	
 	   "laughter_4"			                                    	"<font color='#c10020'>SDAHADSHAWAEGAHAHAHA</font>"	

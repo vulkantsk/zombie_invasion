@@ -87,7 +87,7 @@
 				"damage"					"140 170 210 280 340 390 420 510 560 640 700 840 920 1000"
 				"jump_damage_reduction_pct"	
 				{
-					"value"			"6"
+					"value"			"2"
 					"CalculateSpellDamageTooltip"	"0"
 					"DamageTypeTooltip"			"DAMAGE_TYPE_NONE"
 				}
@@ -104,7 +104,7 @@
 					"value"			"440"
 					"affected_by_aoe_increase"	"1"
 				}			
-				"jump_delay"				"0.25 0.25 0.25 0.25"
+				"jump_delay"				"0.25"
 		}
 	}	
 	"rubick_arcane_supremacy"
@@ -119,9 +119,9 @@
 		"AbilityValues"
 		{
 			
-				"cast_range"				"50 100 150 200 250 300 350"
+				"cast_range"				"15 30 45 60 75 90 105 120 135 150 165 180 195 210"
 		
-				"spell_amp"			"12 16 20 24 28 32 36"
+				"spell_amp"			"15 20 25 30 35 40 45 50 55 60 65 70 75 80"
 			
 		}
 	}

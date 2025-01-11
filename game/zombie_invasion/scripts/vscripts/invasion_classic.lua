@@ -1,4 +1,3 @@
-
 require( 'modifiers_links' )
 require( 'timers' )
 
@@ -151,6 +150,9 @@ function InvasionMode:InvasionMap()
 	end
 
 	Difficulty:Init()
+
+    -- Добавляем регистрацию нового обработчика события
+    CustomGameEventManager:RegisterListener("skip_night", Dynamic_Wrap(InvasionMode, "OnSkipNight"))
 end
  
  function InvasionMode:InvasionMapGameRulesStateChange(data)
@@ -2390,6 +2392,30 @@ end
  		},
 
  	}
+
 end
 
- 
+-- Добавляем новую функцию для обработки события
+function InvasionMode:OnSkipNight(event)
+    local playerID = event.PlayerID
+    
+    -- Проверка на валидность игрока
+    if not PlayerResource:IsValidPlayer(playerID) then 
+        return 
+    end
+    
+    Convars:SetFloat("host_timescale", 10.0)
+    
+    -- Через 3 секунды возвращаем нормальную скорость
+    Timers:CreateTimer(1, function()
+        local timeOfDay = GameRules:GetTimeOfDay()
+        if timeOfDay >= 0.75 or timeOfDay <= 0.25 then
+            Convars:SetFloat("host_timescale", 1.0)
+            return nil
+            -- Здесь можно добавить действия, которые должны выполняться ночью
+        else
+           
+        end
+        return 1 -- Повторяем проверку каждую секунду
+    end)
+end

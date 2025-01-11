@@ -8,6 +8,6 @@
 
                    --     self:GetCaster():AddNewModifier(self:GetCaster(), nil, "modifier_vision", {})
                  -- EmitGlobalSound("massive_blood")
-    
-    InvasionMode:ChristmasNight() 
+                 Convars:SetFloat("host_timescale", 10);
+    --InvasionMode:ChristmasNight() 
 end

@@ -1,0 +1,13 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/skip_button.js" />
+    </scripts>
+    <styles>
+        <include src="file://{resources}/styles/skip_button.css" />
+    </styles>
+    <Panel class="CustomButton" hittest="true">
+        <Button id="MyCustomButton">
+            <Label text="#skip_night" />
+        </Button>
+    </Panel>
+</root>
