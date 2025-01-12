@@ -14528,6 +14528,44 @@
 
 	//legendary item
 
+
+	"item_blackshop_legendary_prism_of_chaos"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/blackshop_items/blackshop_legendary/blackshop_prism_of_chaos"	 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemCost"						"400"	
+		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Effect"						"particles/legendary_full.vpcf"
+		"ItemInitialCharges"            "1"
+		"ItemStackable"					"0"
+		"ItemKillable"					"0"	
+		"ItemPurchasable"				"0" 
+        "AbilityTextureName"            "blackshop/prism_of_chaos"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastRange"				"900"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"spell_counter"			"3"
+				"bonus_spell_amp"			"12"
+				"spell_lifesteal"			"15"
+		}
+	}
+
+
 	"item_blackshop_legendary_magic_mushroom"
 	{
 		// General

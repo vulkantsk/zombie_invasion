@@ -66,7 +66,7 @@ function Precache( context )
 	PrecacheResource("particle", "particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_blood04.vpcf", context) --blood
 	PrecacheResource("particle", "particles/generic_gameplay/generic_hit_blood.vpcf", context) --blood
 	PrecacheResource("particle", "particles/world_destruction_fx/tree_dire_destroy.vpcf", context) --blood
-
+	PrecacheResource("particle", "particles/units/heroes/hero_leshrac/leshrac_pulse_nova.vpcf", context) --prism
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_arc_warden/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witch_doctor/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_oracle/", context) --heal
@@ -140,7 +140,9 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_screen_rain.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_rain_screen.vpcf", context ) --elementalist shield
-
+	
+	
+	PrecacheResource( "soundfile", "sounds/weapons/hero/invoker/emp_discharge.vsnd", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts", context ) 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts", context ) 

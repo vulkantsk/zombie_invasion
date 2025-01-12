@@ -14,7 +14,6 @@
   background-color: gradient(linear, 0% 0%, 0% 100%, from(#5c677a), to(#2e3540));
   border: 2px solid #4d5760;
   border-radius: 3px;
-  transition: background-color 0.2s ease-in-out;
 }
 
 #MyCustomButton:hover {
@@ -37,9 +36,7 @@
   font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
   padding: 0px 8px;
   transition: all 0.2s ease;
-  min-font-size: 12px;
-  max-font-size: 18px;
-  font-size-shrink-to-fit: true;
+
   text-overflow: shrink;
   width: 100%;
 }
