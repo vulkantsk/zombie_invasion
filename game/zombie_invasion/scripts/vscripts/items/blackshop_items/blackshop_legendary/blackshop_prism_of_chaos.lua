@@ -15,8 +15,6 @@ end
 
 function modifier_blackshop_legendary_prism_of_chaos:OnCreated()
     self.spell_counter = 0
-    self.bonus_spell_amp = 12
-    self.spell_lifesteal = 15
     self.can_trigger = true
     self.next_trigger_time = 0
     
@@ -40,13 +38,15 @@ function modifier_blackshop_legendary_prism_of_chaos:OnAbilityExecuted(keys)
     -- Проверяем, что использованная способность не является предметом
     if keys.unit == self:GetParent() and self.can_trigger and not keys.ability:IsItem() then
         self.spell_counter = self.spell_counter + 1
-        
+        local cooldown_reduction = self:GetParent():GetCooldownReduction()
+        local base_duration = 12
+        local reduced_duration = base_duration * (1 - cooldown_reduction / 100)
         if self.spell_counter >= 3 then
             self:CastChaosWave()
             self.spell_counter = 0
             self.can_trigger = false
             self.next_trigger_time = GameRules:GetGameTime() + 12
-            self:GetParent():AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_blackshop_legendary_prism_of_chaos_cd", {duration = 12})
+            self:GetParent():AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_blackshop_legendary_prism_of_chaos_cd", {duration = reduced_duration})
         end
     end
 end

@@ -906,11 +906,34 @@
 		
 		"npc_dota_demon_friend"													"Demon Friend"
 
+
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos"	"<font color='#ffff00'>Prism of Chaos</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Description"	"<h1>Active: Prism of Chaos</h1> When used, every third ability of the owner triggers a wave of chaos with a cooldown of %cooldown% seconds, dealing damage to all enemies within a radius of %radius%. The damage depends on the owner's intelligence %int_multiplier%%% + %damage% damage + %damage_bonus% per stack."
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Lore" 		"This prism contains the power of pure chaos, capable of destroying everything in its path."
+        "DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!"
+        "DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Note1"		"USE WITH CAUTION!"
+
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector"				"<font color='#980002'>Cursed Heal Collector</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Description"	"<h1>Active: Cursed Heal Collector</h1> The owner shares healing with others, healing %heal_to_mana%%% health and %mana_to_heal%%% mana to nearby allies within a radius of %radius%."
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Lore" 		"This cursed ability collects healing energy to heal you and your allies."
+        "DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Note0"		"EFFECTS RESET WHEN CHANGING CHARACTER<br>"
+        "DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Note1"		"<font color='#980002'>THE OWNER OF THIS ITEM CANNOT RESTORE HEALTH WITH IT</font><br>"
+
+
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture"	"<font color='#8b00ff'>Chronomancer's Vesture</font>"
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture_Description"	"<h1>Active: Chronomancer's Vesture</h1> When used, creates an illusion of the owner that uses all the same abilities as the owner for %duration% seconds."
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture_Lore" 		"A vesture woven from the very fabric of time, allowing its wearer to manipulate time."
+
+
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend"	"<font color='#ffff00'>Demon Friend</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Description"	"<h1>Active: Demon Friend</h1> When used, summons a demon that will fight on your side. The demon is invulnerable and deals damage equal to the owner's damage. Using it again summons another demon."
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Lore" 		"Even demons can be loyal friends"
         "DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Note0"		"WHEN CHANGING CHARACTER, EFFECTS WILL RESET!"
 
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom"	"<font color='#ffff00'>Magic Mushroom</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Description"	"<h1>Active: Magic Mushroom</h1> When used, increases damage by %damage_bonus%%%, scales the model by %model_scale%% and decreases movement speed by %movespeed_bonus%%. The effect is increased with each charge."
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Lore" 		"This mushroom has magical properties that enhance your hero, but slow him down."
+        "DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Note0"		"EFFECTS RESET WHEN CHANGING CHARACTER<br>"
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity"	"<font color='#ffff00'>Octerinity of skull mages</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_octerinity_Description"	"<h1>Active: Octerinity of skull mages</h1> When used, gives hero %mana_casttime_cd%%% reduces manacost, %mana_casttime_cd%%% reduces cooldown and increases %mana_casttime_cd%%% cast time"

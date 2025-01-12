@@ -1351,11 +1351,27 @@
 
 		"npc_dota_demon_friend"													"Демонический друг"
 
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos"	"<font color='#ffff00'>Призма Хаоса</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Description"	"<h1>Активное: Призма Хаоса</h1> При использовании каждая третья способность владельца вызывает волну хаоса с перезарядкой в %cooldown% секунд, наносящую урон всем врагам в радиусе %radius% урон зависит от интеллекта владельца %int_multiplier%%% + %damage% урона + %damage_bonus% за стак"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Lore" 		"Эта призма заключает в себе силу чистого хаоса, способного разрушить всё на своём пути."
+        "DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_prism_of_chaos_Note1"		"Вы можете использовать этот предмет только раз в %cooldown% секунд, перезарядка уменьшается при помощи ускорения перезарядки"
+
+		"DOTA_Tooltip_modifier_blackshop_legendary_prism_of_chaos_cd"		"Перезарядка Призмы Хаоса"
+		"DOTA_Tooltip_modifier_blackshop_legendary_prism_of_chaos_cd_Description"		"Призма Хаоса находится на перезарядке. Вы не можете использовать её способности."
+
+
+		
+
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend"	"<font color='#ffff00'>Демонический друг</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Description"	"<h1>Активное: Демонический друг</h1> При использовании призывает демона который будет сражаться на вашей стороне. Демон неуязвим и наносит урон равный урону владельца. При новом использовании призывает ещё одного демона."
 		"DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Lore" 		"Даже демоны могут быть верными друзьями"
         "DOTA_Tooltip_ability_item_blackshop_legendary_demon_friend_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
 		
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture"	"<font color='#8b00ff'>Одеяние Хрономанта</font>"
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture_Description"	"<h1>Активное: Одеяние Хрономанта</h1> При использовании создаёт иллюзию владельца которая применяет все те-же способности что и владелец на %duration% секунд."
+		"DOTA_Tooltip_ability_item_blackshop_epic_chronomancer_vesture_Lore" 		"Одеяние, сотканное из самой ткани времени, позволяет своему владельцу манипулировать временем."
+
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood"	"<font color='#8b00ff'>Vampire blood</font>"
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Description"	"<h1>Активное: Vampire blood</h1> При использовании даёт герою %lifesteal%%% вампиризма (+2% за стак)"
 		"DOTA_Tooltip_ability_item_blackshop_epic_vampire_blood_Lore" 		"Кровь вампира течёт по вашим венам"
@@ -1366,6 +1382,13 @@
 		<font color='#ff0000'><h1>Пассивное: Тонический недуг </h1> С шансом в %chance%%% герой получит недуг из-за чего снизит свои характеристики %debuff_damage%%% урона, %debuff_spell_amp%%% магического усиления, %debuff_attack_speed%%% скорости атаки, %debuff_projectile_speed%%% скорости снарядов, %debuff_hp_regen%%% скорости восстановления здоровья, %debuff_health%%% максимального здоровья</font>"
 		"DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster_Lore" 		"Освежающий напиток для тела и души"
         "DOTA_Tooltip_ability_item_blackshop_cursed_tonic_booster_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ"
+
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector"				"<font color='#980002'>Проклятый коллекционер исцеления</font>"
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Description"	"<h1>Активное: Проклятый сбор исцеления</h1> Владелец при исцелении делится хилом с другими, исцеляя %heal_to_mana%%% здоровья и маны %mana_to_heal%%% ближайшим союзникам в радиусе %radius%."
+		"DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Lore" 		"Эта проклятая способность собирает целебную энергию, чтобы исцелить вас и ваших союзников."
+        "DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ<br>"
+        "DOTA_Tooltip_ability_item_blackshop_cursed_heal_collector_Note1"		"<font color='#980002'>САМ ВЛАДЕЛЕЦ ЭТОГО ПРЕДМЕТА НЕ МОЖЕТ ВОССТАНОВЛЯТЬ ЗДОРОВЬЕ С ЕГО ПОМОЩЬЮ</font><br>"
+
 
 		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster"		"Тоническое усиление"
 		"DOTA_Tooltip_modifier_blackshop_cursed_tonic_booster_Description"		"Увеличивает характеристики героя"
@@ -1399,6 +1422,11 @@
 		"DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster_Lore" 		"Это того стоило?"
         "DOTA_Tooltip_ability_item_blackshop_cursed_damage_booster_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ" 
 
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom"	"<font color='#ffff00'>Волшебный гриб</font>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Description"	"<h1>Активное: Волшебный гриб</h1> При использовании увеличивает урон на %damage_bonus%%, масштаб модели на %model_scale%% и уменьшает скорость передвижения на %movespeed_bonus%%. Эффекты усиливаются с каждым зарядом."
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Lore" 		"Этот гриб обладает магическими свойствами, которые усиливают вашего героя, но замедляют его."
+        "DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Note0"		"ПРИ СМЕНЕ ПЕРСОНАЖА ЭФФЕКТЫ СБРАСЫВАЮТСЯ<br>"
+		"DOTA_Tooltip_ability_item_blackshop_legendary_magic_mushroom_Note1"		"В РАДИУСЕ 150 ЛОМАЕТ ДЕРЕВЬЯ ПОД СОБОЙ<br>"
 
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff"	"<font color='#ffff00'>RPG BOOSTER</font>"
 		"DOTA_Tooltip_ability_item_blackshop_legendary_boom_buff_Description"		"<h1>Активное: Octerinity of skull mages</h1> выпускает ракеты в двойном объёме от всех типов предметов"

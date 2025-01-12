@@ -14376,7 +14376,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "blackshop/tonic"
+        "AbilityTextureName"            "item_glimmer_cape"
 		"ItemDroppable"					"1" 
 		"ItemPermanent" 				"0"	
 		"SideShop" 						"0"
@@ -14391,20 +14391,7 @@
 		"AbilityValues"
 		{
 				"duration"				"18"
-				"chance"				"15"
-				"bonus_movespeed"			"25"
-				"bonus_damage"				"300"
-				"bonus_spell_amp"			"200"
-				"bonus_attack_speed"			"150"
-				"bonus_projectile_speed"		"900"
-				"bonus_hp_regen"			"0.01"
-				"bonus_health"				"900"
-				"debuff_movespeed"			"-5"
-				"debuff_damage"				"-5"
-				"debuff_spell_amp"			"-3"
-				"debuff_attack_speed"		"-10"
-				"debuff_projectile_speed"	"-40"
-				"debuff_strength"			"-12"
+				
 		}
 	}
 
@@ -14548,7 +14535,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "blackshop/prism_of_chaos"
+        "AbilityTextureName"            "blackshop/chaos"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -14560,8 +14547,11 @@
 		"AbilityValues"
 		{
 				"spell_counter"			"3"
-				"bonus_spell_amp"			"12"
-				"spell_lifesteal"			"15"
+				"damage"			"200"
+				"radius"			"400"
+				"int_multiplier"			"0.4"
+				"damage_bonus"			"125"
+				"cooldown"			"12"
 		}
 	}
 
@@ -14598,6 +14588,7 @@
 		{
 				"damage_bonus"			"30"
 				"model_scale"			"30"
+				"movespeed_bonus"			"-3.5"
 		}
 	}
 	"item_blackshop_legendary_judgment_hammer"
@@ -14802,7 +14793,7 @@
 		"ItemStackable"					"0"
 		"ItemKillable"					"0"	
 		"ItemPurchasable"				"0" 
-        "AbilityTextureName"            "blackshop/damage_booster"
+        "AbilityTextureName"            "blackshop/heal_collector"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
@@ -14814,7 +14805,9 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			
+			"radius"			"900"
+			"heal_to_mana"			"15"
+			"mana_to_heal"			"20"
 		}
 	}
 

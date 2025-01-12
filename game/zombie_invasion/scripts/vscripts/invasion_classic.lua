@@ -7,30 +7,34 @@ end
 
 local dropItemsBlackshop = {
 		--cursed
-	    item_blackshop_cursed_remove_limits = {chance = 1, price = 3000},
-	    item_blackshop_cursed_damage_booster = {chance = 1, price = 3000},
-	    item_blackshop_cursed_magical_incpiration = {chance = 1, price = 3000},
-	    item_blackshop_cursed_intellectual_moving = {chance = 2, price = 3000},
-	    item_blackshop_cursed_tonic_booster = {chance = 2, price = 5000},
-	    --legendary
-	    item_blackshop_legendary_octerinity = {chance = 3, price = 2500},
-	    item_blackshop_legendary_boom_buff = {chance = 1, price = 2500},
-	    item_blackshop_legendary_judgment_hammer = {chance = 2, price = 2500},
-		item_blackshop_legendary_demon_friend = {chance = 1, price = 2500},
+	    item_blackshop_cursed_remove_limits = {chance = 1, price = 5000},
+	    item_blackshop_cursed_damage_booster = {chance = 1, price = 5000},
+	    item_blackshop_cursed_magical_incpiration = {chance = 1, price = 5000},
+	    item_blackshop_cursed_intellectual_moving = {chance = 1, price = 5000},
+	    item_blackshop_cursed_tonic_booster = {chance = 1, price = 5000},
+		item_blackshop_cursed_heal_collector = {chance = 1, price = 5000},
+		--legendary
+	    item_blackshop_legendary_octerinity = {chance = 1, price = 3000},
+	    item_blackshop_legendary_boom_buff = {chance = 1, price = 3000},
+	    item_blackshop_legendary_judgment_hammer = {chance = 1, price = 3000},
+		item_blackshop_legendary_demon_friend = {chance = 1, price = 3000},
+		item_blackshop_legendary_magic_mushroom = {chance = 1, price = 3000},
+		item_blackshop_legendary_prism_of_chaos = {chance = 1, price = 3000},
 
 	    --epic
-	    item_blackshop_epic_rocket_launcher = {chance = 4, price = 2000},
-	    item_blackshop_epic_rocket_shot = {chance = 4, price = 2500},
-		item_blackshop_epic_vampire_blood = {chance = 5, price = 2500},
+	    item_blackshop_epic_rocket_launcher = {chance = 2, price = 2500},
+	    item_blackshop_epic_rocket_shot = {chance = 2, price = 2500},
+		item_blackshop_epic_vampire_blood = {chance = 1, price = 2500},
+		item_blackshop_epic_chronomancer_vesture = {chance = 1, price = 2500},
 
 	    --rare
-	    item_blackshop_rare_armor = {chance = 6, price = 1000},
-	    item_bonus_stats10 = {chance = 6, price = 1000},
-	    item_blackshop_rare_exp = {chance = 6, price = 1000},
-	    item_blackshop_rare_berserk_power = {chance = 7, price = 1000},
-	    item_blackshop_rare_lens_of_wisdon = {chance = 7, price = 1000},
-	    item_blackshop_rare_rock_of_damage = {chance = 7, price = 1000},
-	    item_blackshop_rare_strength_angel = {chance = 7, price = 1000},
+	    item_blackshop_rare_armor = {chance = 6, price = 1500},
+	    item_bonus_stats10 = {chance = 6, price = 1500},
+	    item_blackshop_rare_exp = {chance = 6, price = 1500},
+	    item_blackshop_rare_berserk_power = {chance = 7, price = 1500},
+	    item_blackshop_rare_lens_of_wisdon = {chance = 7, price = 1500},
+	    item_blackshop_rare_rock_of_damage = {chance = 7, price = 1500},
+	    item_blackshop_rare_strength_angel = {chance = 7, price = 1500},
 
 	    --uncommon
 	    item_bonus_agility10 = {chance = 8, price = 500},
@@ -2404,7 +2408,7 @@ function InvasionMode:OnSkipNight(event)
         return 
     end
     
-    Convars:SetFloat("host_timescale", 10.0)
+    Convars:SetFloat("host_timescale", 5.0)
     
     -- Через 3 секунды возвращаем нормальную скорость
     Timers:CreateTimer(1, function()
