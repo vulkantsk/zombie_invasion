@@ -671,7 +671,7 @@ function InvasionMode:InvasionGameStart()
 				hero:AddItemByName("item_blink")
 			end
 		end
-		if GameRules:IsInToolsMode() then return end
+		--if GameRules:IsInToolsMode() then return end
 		
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
