@@ -42,7 +42,12 @@ function Precache( context )
 	PrecacheModel("models/heroes/life_stealer/life_stealer.vmdl", context) -- ghoul
 	PrecacheModel("models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl", context) -- ghost
 	PrecacheModel("models/heroes/undying/undying_flesh_golem.vmdl", context) -- undying mutant
-	
+	PrecacheModel("models/heroes/undying/undying_flesh_golem_rubick.vmdl", context) -- toxic zombie
+	PrecacheModel("models/items/undying/undying_fall20_immortal_head/undying_fall20_immortal_minion.vmdl", context) -- half zombie
+	PrecacheModel("models/heroes/undying/undying_tombstone.vmdl", context) -- undying tombstone
+
+
+
 	PrecacheModel("models/structures/village_building_1.vmdl", context) -- ghoul
 	PrecacheModel("models/structures/village_building_2.vmdl", context) -- ghost
 	PrecacheModel("models/structures/village_tower_1.vmdl", context) -- undying mutant
@@ -52,6 +57,7 @@ function Precache( context )
 	PrecacheModel("models/buildings/building_racks_ranged_reference.vmdl", context) -- tower
 	PrecacheModel("models/buildings/building_racks_melee_reference.vmdl", context) -- tower
 	PrecacheModel("models/props_gameplay/gold_bag.vmdl", context) -- gold bags
+	PrecacheModel("models/props_gameplay/treasure_chest_gold.vmdl", context) -- medas
 
 	PrecacheModel("models/creeps/neutral_creeps/n_creep_jungle_stalker/n_creep_gargoyle_jungle_stalker.vmdl", context) -- armageddon boss
 	PrecacheModel("models/items/dragon_knight/ti8_dk_third_awakening_dragon/ti8_dk_third_awakening_dragon.vmdl", context) -- armageddon boss
@@ -60,7 +66,6 @@ function Precache( context )
 
 --models/props_structures/tower_upgrade/tower_upgrade.vmdl
 --models/props_structures/tower001.vmdl
-
 
 	---------------------------------spells-------------------------------
 	PrecacheResource("particle", "particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_blood04.vpcf", context) --blood
@@ -140,6 +145,8 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_screen_rain.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_rain_screen.vpcf", context ) --elementalist shield
+	PrecacheResource( "particle", "particles/econ/items/alchemist/alchemist_midas_knuckles/alch_knuckles_lasthit_coins.vpcf", context ) --midas effect
+	PrecacheResource( "particle", "particles/units/heroes/hero_primal_beast/primal_beast_onslaught_chargeup.vpcf", context ) --pig onslaught
 	
 	
 	PrecacheResource( "soundfile", "sounds/weapons/hero/invoker/emp_discharge.vsnd", context ) 
@@ -183,6 +190,7 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_brewm
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_crystal_maden.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts", context )
+
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vo_nevermore.vsndevts", context )
 
@@ -229,7 +237,9 @@ PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_brewm
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts", context )        
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts", context )        
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts", context )        
-    PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts", context )        
+    PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts", context )  
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts", context )  
+	
 
 
 	---------------------------------------
