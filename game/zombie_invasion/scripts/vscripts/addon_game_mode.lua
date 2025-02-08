@@ -44,7 +44,6 @@ function Precache( context )
 	PrecacheModel("models/heroes/undying/undying_flesh_golem.vmdl", context) -- undying mutant
 	PrecacheModel("models/heroes/undying/undying_flesh_golem_rubick.vmdl", context) -- toxic zombie
 	PrecacheModel("models/items/undying/undying_fall20_immortal_head/undying_fall20_immortal_minion.vmdl", context) -- half zombie
-	PrecacheModel("models/heroes/undying/undying_tombstone.vmdl", context) -- undying tombstone
 
 
 
@@ -145,8 +144,6 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_screen_rain.vpcf", context ) --elementalist shield
 	PrecacheResource( "particle", "particles/blood_rain_screen.vpcf", context ) --elementalist shield
-	PrecacheResource( "particle", "particles/econ/items/alchemist/alchemist_midas_knuckles/alch_knuckles_lasthit_coins.vpcf", context ) --midas effect
-	PrecacheResource( "particle", "particles/units/heroes/hero_primal_beast/primal_beast_onslaught_chargeup.vpcf", context ) --pig onslaught
 	
 	
 	PrecacheResource( "soundfile", "sounds/weapons/hero/invoker/emp_discharge.vsnd", context ) 
