@@ -664,7 +664,7 @@ function InvasionMode:InvasionGameStart()
 
 		   --InvasionMode:ChristmasNight()  
 
-	if GameRules:IsCheatMode() == false then
+	if GameRules:IsCheatMode() == true then
 		local heroes = HeroList:GetAllHeroes()
 		for _, hero in pairs(heroes) do
 			if hero:IsRealHero() then
