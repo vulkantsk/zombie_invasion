@@ -37,6 +37,7 @@ function Precache( context )
 	PrecacheModel("models/props_gameplay/pig.vmdl", context) --pig
 	PrecacheModel("models/items/hex/sheep_hex/sheep_hex.vmdl", context) --sheep
 
+--	PrecacheModel("models/heroes/undying/", context) --идинахуй
 	PrecacheModel("models/heroes/undying/undying_minion_torso.vmdl", context) --half zombie
 	PrecacheModel("models/heroes/undying/undying_minion.vmdl", context) -- zombie
 	PrecacheModel("models/heroes/life_stealer/life_stealer.vmdl", context) -- ghoul
@@ -74,13 +75,14 @@ function Precache( context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_arc_warden/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witch_doctor/", context) --heal
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_oracle/", context) --heal
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_legion_commander", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_enigma", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witchdoctor", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_bane", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_night_stalker", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_doom_bringer", context )
-	PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix", context)
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_legion_commander/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_enigma/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witchdoctor/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_bane/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_night_stalker/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_undying/", context )
+	PrecacheResource( "particle_folder", "particles/units/heroes/hero_doom_bringer/", context )
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix/", context)
 	PrecacheResource( "particle", "particles/rain_fx/econ_snow.vpcf", context )	
 
  
