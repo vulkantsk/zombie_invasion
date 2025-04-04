@@ -51,6 +51,12 @@ function Precache( context )
 	PrecacheModel("models/structures/village_building_1.vmdl", context) -- ghoul
 	PrecacheModel("models/structures/village_building_2.vmdl", context) -- ghost
 	PrecacheModel("models/structures/village_tower_1.vmdl", context) -- undying mutant
+
+	PrecacheModel("models/gameplay/meat/meat.vmdl", context) -- meat
+	PrecacheModel("models/props_gameplay/bottle_mango001.vmdl", context) -- milk
+	PrecacheModel("models/props_winter/present.vmdl", context) -- present
+	PrecacheModel("models/props_gameplay/moon_shard/moon_shard_003.vmdl", context) -- eggs
+
  
 	PrecacheModel("models/props_structures/radiant_tower001.vmdl", context) -- tower
 	PrecacheModel("models/props_structures/tower_upgrade/tower_upgrade.vmdl", context) -- tower
