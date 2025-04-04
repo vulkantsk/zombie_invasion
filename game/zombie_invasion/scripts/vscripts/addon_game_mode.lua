@@ -72,17 +72,64 @@ function Precache( context )
 	PrecacheResource("particle", "particles/generic_gameplay/generic_hit_blood.vpcf", context) --blood
 	PrecacheResource("particle", "particles/world_destruction_fx/tree_dire_destroy.vpcf", context) --blood
 	PrecacheResource("particle", "particles/units/heroes/hero_leshrac/leshrac_pulse_nova.vpcf", context) --prism
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_arc_warden/", context) --heal
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witch_doctor/", context) --heal
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_oracle/", context) --heal
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_legion_commander/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_enigma/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_witchdoctor/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_bane/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_night_stalker/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_undying/", context )
-	PrecacheResource( "particle_folder", "particles/units/heroes/hero_doom_bringer/", context )
-	PrecacheResource("particle_folder", "particles/units/heroes/hero_phoenix/", context)
+	-- Прекешируем основные частицы и эффекты
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_abaddon", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_alchemist", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_ancient_apparition", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_antimage", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_axe", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_beastmaster", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_bloodseeker", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_bounty_hunter", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_chen", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_crystal_maiden", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_dazzle", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_dragon_knight", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_drow", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_earthshaker", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_enchantress", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_faceless_void", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_furion", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_juggernaut", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_keeper_of_the_light", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_kunkka", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_lina", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_lion", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_mirana", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_morphling", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_necrolyte", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_nevermore", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_omniknight", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_puck", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_pudge", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_pugna", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_razor", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_riki", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_sand_king", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_shadow_shaman", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_slardar", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_sniper", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_spectre", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_storm_spirit", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_sven", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_tidehunter", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_tinker", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_tiny", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_vengefulspirit", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_venomancer", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_viper", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_weaver", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_windrunner", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_witch_doctor", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_zeus", context)
+
+
+
+
+
+
+
+
 	PrecacheResource( "particle", "particles/rain_fx/econ_snow.vpcf", context )	
 
  
