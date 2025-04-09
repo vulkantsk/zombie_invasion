@@ -190,8 +190,6 @@
 	   "imp1"  							"<font color='#c10020>Is all this unreal?</font>"
 	   "imp2"  							"<font color='#c10020>But if that's the case.. Then I have to get out of here.</font>"
 	   "imp3"							"<font color='#c10020>I couldn't save the village here, but I will definitely be able to save it in reality!</font>"
-```
-</rewritten_file>
 	   "imp4"							"<font color='#DBA901>COMING SOON TO ZOMBIE INVASION 2.</font>"
 
        // ******************** Messages Christmas ********************
@@ -389,8 +387,8 @@
 		"DOTA_Item_Build_Early_Game"							"For the first night"
 		"DOTA_Item_Build_Core_Items"							"For the second night"
 		"DOTA_Item_Build_Luxury"								"For the last night"
-```
-</rewritten_file>
+
+
 
 
 		"DOTA_Tooltip_ability_item_sara_change" "<font color='#1b1116'>SARA GOD"
@@ -588,17 +586,14 @@
 		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Description"											"<h1>Active: Guide by NASQREAL </h1> <font color='#ffb300'> the hero gets unique skill and becomes significantly stronger</font>
 		<h1>Passive: More damage</h1>Whenever a Tidehunter is attacked and recieve %dmg_proc% damage, it becomes stronger and gets %damage_per_stack% damage." 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_tidehunter_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
-```
-</rewritten_file>
+
 
 		"DOTA_Tooltip_ability_item_npc_dota_hero_sniper_Lore"				"<font color='#ffb300'> This is not the end yet - the end will not come without my guides.</font>"
-```
-</rewritten_file>
+
 		
 
 		"DOTA_Tooltip_Ability_item_shield_5_Lore"									"Shield of the Gods."
-```
-</rewritten_file>
+
 		"DOTA_Tooltip_Ability_item_pirog_magic"						"Pie of mage"
 		"DOTA_Tooltip_Ability_item_pirog_magic_Description"			"<h1>Active: Nam-nam</h1> You eat the pie."  
 
@@ -610,8 +605,7 @@
 
  		"DOTA_Tooltip_modifier_item_pirog_magic"					"Pie of mage"
 		"DOTA_Tooltip_modifier_item_pirog_magic_Description"		"Mana empowers you!"	
-```
-</rewritten_file>
+
 		"DOTA_Tooltip_Ability_item_napitok"						"The strange tincture"
 		"DOTA_Tooltip_Ability_item_napitok_Description"			"<h1>Active: Hip-hip</h1> Drinking on a binge."  
 		"DOTA_Tooltip_Ability_item_napitok_bonus_dps"	"%DAMAGE: "
@@ -633,7 +627,7 @@
 
 
 		"DOTA_Tooltip_Ability_item_trash"						"Weird smelly thing"
-		"DOTA_Tooltip_Ability_item_trash_Description"			"UHHH SMELLS WEIRD?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked. "
+		"DOTA_Tooltip_Ability_item_trash_Description"			"UHHH SMELLS WEIRD?.\n<h1>Passive: Ingredient</h1> If you cross it with something on campfire then something will be cooked."
  
 
 		
