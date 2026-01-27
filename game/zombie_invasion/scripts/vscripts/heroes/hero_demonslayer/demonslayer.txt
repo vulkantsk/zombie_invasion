@@ -200,7 +200,7 @@
         "ScriptFile"                    "heroes/hero_demonslayer/demon_buff/demon_buff.lua"
         "AbilityTextureName"            "sven_gods_strength"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityType"                   "ABILITY_TYPE_ULTIMATE"
         "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
         "FightRecapLevel"               "1"
         

@@ -12,7 +12,7 @@ function Spawn( entityKeyValues )	-- вызывается когда юнит п
  	if waypoint then thisEntity:SetInitialGoalEntity( waypoint ) end-- Посылаем моба на наш d_waypoint19, координаты которого мы записали в переменную 'waypoint'
 
  
-
+ 	print("lolkek")
 	ItemAbility = FindItemAbility( thisEntity, "item_toxic_boots" )
 
 	thisEntity:SetContextThink( "NecroLordThink", NecroLordThink, 1 )	-- поведение юнита каждую секунду

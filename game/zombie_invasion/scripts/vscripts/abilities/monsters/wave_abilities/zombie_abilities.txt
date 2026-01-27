@@ -6,7 +6,7 @@
 		"ScriptFile"					"abilities/monsters/wave_abilities/zombie_armor_decress"
 		"AbilityTextureName"			"fire"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
@@ -23,7 +23,7 @@
 		"ScriptFile"					"abilities/monsters/wave_abilities/zombie_armor_decress"
 		"AbilityTextureName"			"fire"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
@@ -40,7 +40,7 @@
 		"ScriptFile"					"abilities/monsters/wave_abilities/zombie_armor_decress"
 		"AbilityTextureName"			"fire"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special

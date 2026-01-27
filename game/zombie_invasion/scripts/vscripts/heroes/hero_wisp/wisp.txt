@@ -218,7 +218,7 @@
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
 
-		"AbilityType"						"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"						"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 
 		"AbilityCastPoint"				"0"
@@ -235,7 +235,7 @@
 		"AbilityTextureName"			"wisp/sueside"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
- 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+ 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
  
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -263,7 +263,7 @@
 		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_wisp"
 		"AbilityTextureName"			"wisp_heal_aura"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special

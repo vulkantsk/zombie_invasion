@@ -123,7 +123,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5507"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		//"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
@@ -215,7 +215,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-       "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+       "AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"BaseClass"						"ability_lua"
 		"AbilityTextureName"			"medusa_mystic_snake"
 		"ScriptFile"					"abilities/medusa_mystic_snake_dm2017"
@@ -271,7 +271,7 @@
 		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_medusa"
 		"AbilityTextureName"			"medusa_buff"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
@@ -286,7 +286,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	}
 	"special_bonus_unique_medusa_mana_shield"
@@ -294,7 +294,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	}
 

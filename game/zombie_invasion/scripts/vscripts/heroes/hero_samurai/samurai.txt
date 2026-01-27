@@ -483,7 +483,7 @@
 		"ScriptFile"					"items/book_of_heroes/heroes/item_npc_dota_hero_juggernaut"
 		"AbilityTextureName"			"phantom_haste"
 		"MaxLevel"						"1"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
 		// Special
