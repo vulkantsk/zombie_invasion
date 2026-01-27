@@ -32,6 +32,19 @@ function Precache( context )
  
 		print("[BAREBONES] Performing pre-load precache")
 
+	-- Автоматический прикеш всех юнитов из KV файлов
+	print("[BAREBONES] Вызов автоматического прикеша юнитов из KV файлов...")
+	if InvasionMode and InvasionMode.PrecacheUnitsFromKV then
+		print("[BAREBONES] InvasionMode найден, вызываю PrecacheUnitsFromKV")
+		InvasionMode:PrecacheUnitsFromKV(context)
+	else
+		print("[BAREBONES] ВНИМАНИЕ: InvasionMode или PrecacheUnitsFromKV не найдены!")
+		if not InvasionMode then
+			print("[BAREBONES] InvasionMode = nil")
+		elseif not InvasionMode.PrecacheUnitsFromKV then
+			print("[BAREBONES] InvasionMode.PrecacheUnitsFromKV = nil")
+		end
+	end
 
 	PrecacheModel("model", "models/heroes/rattletrap/rattletrap.vmdl", context)
 	PrecacheModel("model", "models/items/broodmother/spiderling/ti9_cache_brood_mother_of_thousands_spiderling/ti9_cache_brood_mother_of_thousands_spiderling.vmdl", context)

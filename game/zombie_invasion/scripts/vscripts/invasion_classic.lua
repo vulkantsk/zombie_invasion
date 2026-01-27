@@ -80,6 +80,221 @@ model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
 model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
 
+-- Функция для автоматического прикеша всех юнитов из KV файлов используя PrecacheUnitByNameAsync
+function InvasionMode:PrecacheUnitsFromKV(context)
+	print("[INVASION] ========================================")
+	print("[INVASION] PrecacheUnitsFromKV ВЫЗВАНА!")
+	print("[INVASION] Начало автоматического прикеша юнитов из KV файлов")
+	print("[INVASION] Контекст прикеша: " .. tostring(context ~= nil))
+	print("[INVASION] ========================================")
+	
+	local kvFiles = {
+		"scripts/npc/npc_units_custom.txt",
+		"scripts/npc/monsters/npc_classic_monsters.kv",
+		"scripts/npc/monsters/npc_classic_monsters_boss.kv",
+		"scripts/npc/monsters/npc_classic_wave_monsters.kv",
+		"scripts/npc/monsters/holiday/npc_classic_new_year.kv",
+		"scripts/npc/monsters/npc_classic_monsters_not_used.kv",
+		"scripts/vscripts/heroes/hero_sargatanas/summons/summons.kv"
+	}
+	
+	local unitsSet = {}
+	local heroesSet = {}
+	
+	-- Читаем все KV файлы и извлекаем имена юнитов и героев
+	for _, kvFile in ipairs(kvFiles) do
+		local success, kvData = pcall(function() return LoadKeyValues(kvFile) end)
+		if success and kvData then
+			print("[INVASION] Загружен KV файл: " .. kvFile)
+			
+			-- Отладочная информация о структуре данных
+			local hasDOTAUnits = kvData.DOTAUnits ~= nil
+			local hasDOTAHeroes = kvData.DOTAHeroes ~= nil
+			print("[INVASION]   - Секция DOTAUnits: " .. tostring(hasDOTAUnits))
+			print("[INVASION]   - Секция DOTAHeroes: " .. tostring(hasDOTAHeroes))
+			
+			-- Список служебных ключей, которые не являются юнитами
+			local serviceKeys = {
+				["Version"] = true,
+				["Ability1"] = true,
+				["Ability2"] = true,
+				["Ability3"] = true,
+				["Ability4"] = true,
+				["Ability5"] = true,
+				["Ability6"] = true,
+				["Ability7"] = true,
+				["Ability8"] = true,
+				["BountyXP"] = true,
+				["Model"] = true,
+				["SoundSet"] = true,
+				["MinimapIcon"] = true,
+				["MinimapIconSize"] = true,
+				["HealthBarOffset"] = true,
+				["vscripts"] = true,
+				["ArmorPhysical"] = true,
+				["MagicalResistance"] = true,
+				["AttackCapabilities"] = true,
+				["AttackDamageMin"] = true,
+				["AttackDamageMax"] = true,
+				["AttackRate"] = true,
+				["AttackAnimationPoint"] = true,
+				["AttackAcquisitionRange"] = true,
+				["AttackRange"] = true,
+				["ProjectileSpeed"] = true,
+				["BountyGoldMin"] = true,
+				["BountyGoldMax"] = true,
+				["Creature"] = true,
+				["BoundsHullName"] = true,
+				["RingRadius"] = true,
+				["MovementCapabilities"] = true,
+				["MovementSpeed"] = true,
+				["MovementTurnRate"] = true,
+				["StatusHealth"] = true,
+				["StatusHealthRegen"] = true,
+				["StatusMana"] = true,
+				["ProjectileModel"] = true,
+				["TeamName"] = true,
+				["BaseClass"] = true,
+				["CombatClassAttack"] = true,
+				["VoiceFile"] = true,
+				["CombatClassDefend"] = true,
+				["StatusManaRegen"] = true,
+				["UnitRelationshipClass"] = true,
+				["VisionDaytimeRange"] = true,
+				["VisionNighttimeRange"] = true,
+				["GameSoundsFile"] = true,
+				["Level"] = true,
+				["IsBossMonster"] = true,
+				["ModelScale"] = true,
+			}
+			
+			-- Извлекаем юниты из секции DOTAUnits или напрямую из корня
+			local fileUnitsCount = 0
+			local unitsSource = kvData.DOTAUnits or kvData
+			
+			if kvData.DOTAUnits then
+				print("[INVASION]   - Используется секция DOTAUnits")
+			else
+				print("[INVASION]   - Юниты находятся на верхнем уровне файла")
+			end
+			
+			for unitName, unitData in pairs(unitsSource) do
+				-- Пропускаем служебные ключи
+				if not serviceKeys[unitName] and unitName ~= "Version" then
+					-- Проверяем, что это таблица (юнит), а не строка или число
+					if type(unitData) == "table" then
+						-- Проверяем, что имя начинается с "npc_" (стандартное именование юнитов в Dota 2)
+						-- или содержит свойства юнита (BaseClass, Model)
+						-- и это не вложенная секция (DOTAUnits, DOTAHeroes)
+						local isUnit = false
+						if string.sub(unitName, 1, 4) == "npc_" or string.sub(unitName, 1, 4) == "NPC_" then
+							isUnit = true
+						elseif unitData.BaseClass or unitData.Model then
+							isUnit = true
+						end
+						
+						-- Исключаем вложенные секции
+						if isUnit and not unitData.DOTAUnits and not unitData.DOTAHeroes then
+							unitsSet[unitName] = true
+							fileUnitsCount = fileUnitsCount + 1
+							-- Выводим первые несколько юнитов для отладки
+							if fileUnitsCount <= 3 then
+								print("[INVASION]     - Юнит: " .. unitName)
+							end
+						end
+					end
+				end
+			end
+			print("[INVASION]   - Найдено юнитов в файле: " .. fileUnitsCount)
+			
+			-- Извлекаем героев из секции DOTAHeroes или напрямую из корня
+			local fileHeroesCount = 0
+			local heroesSource = kvData.DOTAHeroes
+			
+			if kvData.DOTAHeroes then
+				print("[INVASION]   - Используется секция DOTAHeroes")
+				for heroName, heroData in pairs(heroesSource) do
+					-- Пропускаем служебные ключи
+					if heroName ~= "Version" then
+						-- Проверяем, что это таблица (герой), а не строка или число
+						if type(heroData) == "table" then
+							heroesSet[heroName] = true
+							fileHeroesCount = fileHeroesCount + 1
+							-- Выводим первые несколько героев для отладки
+							if fileHeroesCount <= 3 then
+								print("[INVASION]     - Герой: " .. heroName)
+							end
+						end
+					end
+				end
+				print("[INVASION]   - Найдено героев в файле: " .. fileHeroesCount)
+			else
+				print("[INVASION]   - Секция DOTAHeroes отсутствует в файле")
+			end
+			
+			-- Отладочная информация о всех ключах верхнего уровня
+			local topLevelKeys = {}
+			for key, _ in pairs(kvData) do
+				table.insert(topLevelKeys, key)
+			end
+			if #topLevelKeys > 0 then
+				print("[INVASION]   - Ключи верхнего уровня: " .. table.concat(topLevelKeys, ", "))
+			end
+		else
+			local errorMsg = "неизвестная ошибка"
+			if not success then
+				errorMsg = "ошибка выполнения pcall"
+			elseif not kvData then
+				errorMsg = "данные не загружены"
+			end
+			print("[INVASION] Ошибка загрузки KV файла: " .. kvFile .. " (" .. errorMsg .. ")")
+		end
+	end
+	
+	-- Прикешируем все найденные юниты используя PrecacheUnitByNameAsync
+	local unitCount = 0
+	local heroCount = 0
+	
+	if context then
+		-- В Dota 2 API PrecacheUnitByNameAsync принимает:
+		-- unitName: string, callback: (precacheId: number) => void, playerId?: PlayerID (опционально)
+		-- Контекст прикеша используется автоматически из функции Precache
+		-- playerId не передаем, так как прикешируем для всех игроков
+		for unitName, _ in pairs(unitsSet) do
+			PrecacheUnitByNameAsync(unitName, function(precacheId) end)
+			unitCount = unitCount + 1
+		end
+		
+		-- Прикешируем все найденные герои используя PrecacheUnitByNameAsync
+		for heroName, _ in pairs(heroesSet) do
+			PrecacheUnitByNameAsync(heroName, function(precacheId) end)
+			heroCount = heroCount + 1
+		end
+		
+		print("[INVASION] Автоматически прикешировано юнитов из KV: " .. unitCount)
+		print("[INVASION] Автоматически прикешировано героев из KV: " .. heroCount)
+	else
+		-- Если контекст не предоставлен, просто считаем количество
+		for unitName, _ in pairs(unitsSet) do
+			unitCount = unitCount + 1
+		end
+		
+		for heroName, _ in pairs(heroesSet) do
+			heroCount = heroCount + 1
+		end
+		
+		print("[INVASION] ВНИМАНИЕ: Контекст прикеша не предоставлен!")
+		print("[INVASION] Найдено юнитов для прикеша: " .. unitCount .. " (прикеш не выполнен)")
+		print("[INVASION] Найдено героев для прикеша: " .. heroCount .. " (прикеш не выполнен)")
+		print("[INVASION] Рекомендуется вызывать PrecacheUnitsFromKV из функции Precache(context)")
+	end
+	
+	print("========================================")
+	print("[INVASION] Автоматически прикешировано юнитов из KV: " .. unitCount)
+	print("[INVASION] Автоматически прикешировано героев из KV: " .. heroCount)
+	print("[INVASION] Завершение автоматического прикеша юнитов из KV файлов")
+	print("========================================")
+end
 
 function InvasionMode:InvasionMap()
      
@@ -657,14 +872,17 @@ end
  
  
 function InvasionMode:InvasionGameStart()
- 	InvasionMode:ThemeMusic()
- 
+	print("[INVASION] InvasionGameStart вызвана")
+	
+	InvasionMode:ThemeMusic()
+
 	InvasionMode:NextNight()
 	 	  --InvasionMode:ChristmassEror()
 
-		   --InvasionMode:ChristmasNight()  
+		   InvasionMode:ChristmasNight()
 
-	if GameRules:IsCheatMode() == false then
+	if GameRules:IsCheatMode() == true then
+		if IsInToolsMode() then return end
 		local heroes = HeroList:GetAllHeroes()
 		for _, hero in pairs(heroes) do
 			if hero:IsRealHero() then
