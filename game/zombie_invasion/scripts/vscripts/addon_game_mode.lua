@@ -216,6 +216,10 @@ function Precache( context )
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_windrunner", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_witch_doctor", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_zeus", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_crystalmaiden", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_winter_wyvern", context)
+	PrecacheResource("particle_folder", "particles/units/heroes/hero_lich", context)
+	
 
 
 

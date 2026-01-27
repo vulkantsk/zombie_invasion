@@ -879,7 +879,7 @@ function InvasionMode:InvasionGameStart()
 	InvasionMode:NextNight()
 	 	  --InvasionMode:ChristmassEror()
 
-		   InvasionMode:ChristmasNight()
+		   --InvasionMode:ChristmasNight()
 
 	if GameRules:IsCheatMode() == true then
 	--	if IsInToolsMode() then return end
@@ -889,7 +889,7 @@ function InvasionMode:InvasionGameStart()
 				hero:AddItemByName("item_blink")
 			end
 		end
-		--if GameRules:IsInToolsMode() then return end
+		if GameRules:IsInToolsMode() then return end
 		
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)
@@ -1897,7 +1897,7 @@ end
      end
  end
  if currentNight == 9 then
-     if killedEntity:GetUnitName() == "npc_classic_new_years" or killedEntity:GetUnitName() == "npc_classic_new_years_ancient" then 
+     if killedEntity:GetUnitName() == "npc_classic_new_years" then 
      	 if GameRules:IsDaytime() then
      		 return nil 
      	 else

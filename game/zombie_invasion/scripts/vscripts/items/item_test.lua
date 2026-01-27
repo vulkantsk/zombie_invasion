@@ -14,5 +14,5 @@
                      Convars:SetFloat("host_timescale", 10);
                      end
 
-    --InvasionMode:ChristmasNight() 
+    InvasionMode:ChristmasNight() 
 end
