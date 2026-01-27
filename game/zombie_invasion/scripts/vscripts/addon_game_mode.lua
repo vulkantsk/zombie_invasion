@@ -217,6 +217,8 @@ function Precache( context )
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_witch_doctor", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_zeus", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_crystalmaiden", context)
+	PrecacheResource("particle_folder", "particles/econ/items/crystal_maiden", context)
+	
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_winter_wyvern", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_lich", context)
 	
@@ -227,9 +229,11 @@ function Precache( context )
 
 
 
-
+	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_snow.vpcf", context )	
+	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf", context )	
+	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_crystal_nova.vpcf", context )	
+	PrecacheResource( "particle", "particles/units/heroes/hero_winter_wyvern/wyvern_winters_curse.vpcf", context )	
 	PrecacheResource( "particle", "particles/rain_fx/econ_snow.vpcf", context )	
-
  
 	PrecacheResource( "particle", "particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf", context )
 	PrecacheResource( "particle", "particles/econ/items/bounty_hunter/bounty_hunter_hunters_hoard/bounty_hunter_hoard_track_trail_circle.vpcf", context )	
