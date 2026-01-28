@@ -881,7 +881,7 @@ function InvasionMode:InvasionGameStart()
 
 		   --InvasionMode:ChristmasNight()
 
-	if GameRules:IsCheatMode() == true then
+	if GameRules:IsCheatMode() == false then
 	--	if IsInToolsMode() then return end
 		local heroes = HeroList:GetAllHeroes()
 		for _, hero in pairs(heroes) do
@@ -889,7 +889,7 @@ function InvasionMode:InvasionGameStart()
 				hero:AddItemByName("item_blink")
 			end
 		end
-		if GameRules:IsInToolsMode() then return end
+		--if GameRules:IsInToolsMode() then return end
 		
 		DebugScreenTextPretty(15, 22, 13, "ЧИТЕРАМ ЗДЕСЬ НЕ РАДЫ. No cheating mode allowed！", 255, 0,0,100,20.0, "Verdana",50,true)
 		GameRules:SendCustomMessage("#text_cheat_detected", 0, 0)

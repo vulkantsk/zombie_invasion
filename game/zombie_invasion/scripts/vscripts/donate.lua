@@ -988,7 +988,7 @@ LinkLuaModifier( "modifier_special_effect_zombie2", "modifiers/donate/modifier_s
 LinkLuaModifier( "modifier_special_effect_zombie3", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH )	
 
 function Donate:OnNPCSpawned(keys)
-	print("[BAREBONES] NPC Spawned")
+	
 --	DeepPrintTable(keys)
 	local npc = EntIndexToHScript(keys.entindex)
 	local name = npc:GetUnitName()

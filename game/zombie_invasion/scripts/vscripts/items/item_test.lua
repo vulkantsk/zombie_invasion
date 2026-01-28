@@ -7,12 +7,16 @@
     --InvasionMode:BeginEdgardTimer()
 
                    --     self:GetCaster():AddNewModifier(self:GetCaster(), nil, "modifier_vision", {})
-                 -- EmitGlobalSound("massive_blood")
-           
+                   print("EmitGlobalSound")
+                  local sound2 = self:GetCaster():EmitSound("CMH Lida - STIKER")
+                  local sound = EmitGlobalSound("CMH Lida - STIKER")
+                  print(sound2)
+                  print(sound)
+                  EmitGlobalSound("CMH Lida - STIKER")
                     if self:GetCaster():GetPrimaryAttribute() == 0 then
                   
                      Convars:SetFloat("host_timescale", 10);
                      end
 
-    InvasionMode:ChristmasNight() 
+    --InvasionMode:ChristmasNight() 
 end

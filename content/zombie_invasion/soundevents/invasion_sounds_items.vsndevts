@@ -16,7 +16,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/grill_end"
+                                                        "value0"                "sounds/items/quest/grill_end.vsnd"
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
@@ -52,7 +52,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/grill_ing"
+                                                        "value0"                "sounds/items/quest/grill_ing.vsnd"
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
@@ -89,7 +89,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/grill_ing_2"
+                                                        "value0"                "sounds/items/quest/grill_ing_2.vsnd"
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
@@ -126,7 +126,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/grill_ing_3"
+                                                        "value0"                "sounds/items/quest/grill_ing_3.vsnd"
                                                 }
                                         }
 										"volume"			{   "value"     "5.000000"  }
@@ -163,7 +163,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/shovel"
+                                                        "value0"                "sounds/items/quest/shovel.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -200,7 +200,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/lufi"
+                                                        "value0"                "sounds/items/quest/lufi.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "15.000000"  }
@@ -236,7 +236,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/quest/open_gate"
+                                                        "value0"                "sounds/items/quest/open_gate.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -273,7 +273,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/winter/laught_1"
+                                                        "value0"                "sounds/winter/laught_1.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "2.000000"  }
@@ -308,7 +308,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/anime_chan"
+                                                        "value0"                "sounds/anime_chan.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "2.000000"  }
@@ -345,7 +345,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/winter/laught_2"
+                                                        "value0"                "sounds/winter/laught_2.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "2.000000"  }
@@ -381,7 +381,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/winter/laught_3"
+                                                        "value0"                "sounds/winter/laught_3.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "2.000000"  }
@@ -417,7 +417,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/winter/sf_no"
+                                                        "value0"                "sounds/winter/sf_no.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "2.000000"  }
@@ -453,7 +453,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/zombie/Slow_mobs_1"
+                                                        "value0"                "sounds/zombie/Slow_mobs_1.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "11.000000"  }
@@ -489,7 +489,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/zombie/Slow_mobs_2"
+                                                        "value0"                "sounds/zombie/Slow_mobs_2.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "11.000000"  }
@@ -525,7 +525,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/zombie/Slow_mobs_3"
+                                                        "value0"                "sounds/zombie/Slow_mobs_3.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "11.000000"  }
@@ -561,7 +561,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/murloc"
+                                                        "value0"                "sounds/items/murloc.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "11.000000"  }
@@ -597,7 +597,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/kefteme"
+                                                        "value0"                "sounds/items/kefteme.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "30.000000"  }
@@ -635,7 +635,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/fly"
+                                                        "value0"                "sounds/items/fly.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -672,7 +672,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/blood_rage"
+                                                        "value0"                "sounds/items/blood_rage.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "12.000000"  }
@@ -747,7 +747,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/evolution"
+                                                        "value0"                "sounds/items/evolution.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "150.000000"  }
@@ -784,7 +784,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/vamp_kiss"
+                                                        "value0"                "sounds/items/vamp_kiss.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "10.000000"  }
@@ -821,7 +821,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/infinity_vamp"
+                                                        "value0"                "sounds/items/infinity_vamp.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "10.000000"  }
@@ -857,7 +857,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/dance"
+                                                        "value0"                "sounds/items/dance.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "20.000000"  }
@@ -894,7 +894,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/true"
+                                                        "value0"                "sounds/items/true.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "20.000000"  }
@@ -931,7 +931,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/items/rest"
+                                                        "value0"                "sounds/items/rest.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "100.000000"  }
@@ -967,7 +967,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/skyrim"
+                                                        "value0"                "sounds/skyrim.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -1005,7 +1005,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/wake_up"
+                                                        "value0"                "sounds/wake_up.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -1043,7 +1043,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/edgard_end"
+                                                        "value0"                "sounds/edgard_end.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "5.000000"  }
@@ -1079,7 +1079,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/massive_blood"
+                                                        "value0"                "sounds/massive_blood.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "12.000000"  }
@@ -1115,7 +1115,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/deadman_soundtrack"
+                                                        "value0"                "sounds/deadman_soundtrack.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "25.000000"  }
@@ -1151,7 +1151,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/sound_heartbreak"
+                                                        "value0"                "sounds/sound_heartbreak.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "25.000000"  }
@@ -1188,7 +1188,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/scary_sound_edgard_1"
+                                                        "value0"                "sounds/scary_sound_edgard_1.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "150.000000"  }
@@ -1225,7 +1225,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/scary_sound_edgard_2"
+                                                        "value0"                "sounds/scary_sound_edgard_2.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "25.000000"  }
@@ -1262,7 +1262,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/scary_sound_edgard_3"
+                                                        "value0"                "sounds/scary_sound_edgard_3.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "25.000000"  }
@@ -1300,7 +1300,7 @@
                                         {
                                                 "value"
                                                 {
-                                                        "value0"                "sounds/Scary"
+                                                        "value0"                "sounds/Scary.vsnd"
                                                 }
                                         }
                                                                                 "volume"                        {   "value"     "15.800000"  }
