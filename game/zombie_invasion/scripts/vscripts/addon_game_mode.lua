@@ -44,7 +44,123 @@ function Precache( context )
 
 --models/props_structures/tower_upgrade/tower_upgrade.vmdl
 --models/props_structures/tower001.vmdl
+PrecacheResource("model", "models/hero_shinobu/shinobu_01.vmdl", context)
+PrecacheResource("model", "models/units/sara/sara.vmdl", context)  
+---------------------------------model-------------------------------
+PrecacheResource("model", "models/props_gameplay/pig.vmdl", context) --pig
+PrecacheResource("model", "models/items/hex/sheep_hex/sheep_hex.vmdl", context) --sheep
 
+--	PrecacheResource("models/heroes/undying/", context) --идинахуй
+PrecacheResource("model", "models/heroes/undying/undying_minion_torso.vmdl", context) --half zombie
+PrecacheResource("model", "models/heroes/undying/undying_minion.vmdl", context) -- zombie
+PrecacheResource("model", "models/heroes/life_stealer/life_stealer.vmdl", context) -- ghoul
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl", context) -- ghost
+PrecacheResource("model", "models/heroes/undying/undying_flesh_golem.vmdl", context) -- undying mutant
+PrecacheResource("model", "models/heroes/undying/undying_flesh_golem_rubick.vmdl", context) -- toxic zombie
+PrecacheResource("model", "models/items/undying/undying_fall20_immortal_head/undying_fall20_immortal_minion.vmdl", context) -- half zombie
+
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl", context) -- npc_cemetery_skelet
+PrecacheResource("model", "models/props_gameplay/pig.vmdl", context) -- npc_classic_pig
+PrecacheResource("model", "models/items/hex/sheep_hex/sheep_hex.vmdl", context) -- npc_classic_sheep
+PrecacheResource("model", "models/props_gameplay/frog.vmdl", context) -- npc_classic_frog
+PrecacheResource("model", "models/items/hex/fish_hex/fish_hex.vmdl", context) -- npc_classic_chicken
+PrecacheResource("model", "models/props_gameplay/chicken.vmdl", context) -- npc_classic_not_fish
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_worg_large/n_creep_worg_large.vmdl", context) -- npc_classic_woobleydog
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_worg_small/n_creep_worg_small.vmdl", context) -- npc_classic_woobleydog2
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl", context) -- npc_classic_microchel
+PrecacheResource("model", "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton_armor01.vmdl", context) -- npc_classic_skelet_ruin
+PrecacheResource("model", "models/heroes/undying/undying_minion_torso.vmdl", context) -- npc_classic_half_zombie
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl", context) -- npc_classic_witch
+PrecacheResource("model", "models/items/rattletrap/the_neuromaniac_experiment_subject_no08/the_neuromaniac_experiment_subject_no08.vmdl", context) -- npc_tombstone_clock
+PrecacheResource("model", "models/heroes/rattletrap/rattletrap.vmdl", context) -- npc_undying_clock
+PrecacheResource("model", "models/heroes/doom/doom.vmdl", context) -- npc_classic_mini_crampus
+PrecacheResource("model", "models/items/warlock/golem/ahmhedoq/ahmhedoq.vmdl", context) -- npc_classic_doom_crampus
+PrecacheResource("model", "models/courier/greevil/gold_greevil.vmdl", context) -- npc_greevil
+PrecacheResource("model", "models/creeps/ice_biome/frostbitten/n_creep_frostbitten_swollen01.vmdl", context) -- npc_classic_new_years
+PrecacheResource("model", "models/heroes/lich/lich.vmdl", context) -- npc_classic_new_years_lich
+PrecacheResource("model", "models/heroes/winterwyvern/winterwyvern.vmdl", context) -- npc_classic_new_years_winterwyvern
+PrecacheResource("model", "models/heroes/ancient_apparition/ancient_apparition.vmdl", context) -- npc_classic_new_years_ancient
+PrecacheResource("model", "models/items/undying/idol_of_ruination/ruin_wight_minion_gold.vmdl", context) -- npc_creep_impossible
+PrecacheResource("model", "models/heroes/venomancer/venomancer.vmdl", context) -- npc_classic_toxic_veno
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_dragonspawn_b/n_creep_dragonspawn_b.vmdl", context) -- npc_classic_dragon_small
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl", context) -- npc_classic_dragon_big
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl", context) -- npc_classic_dragon
+PrecacheResource("model", "models/items/venomancer/ward/chomper_ward/chomper_ward.vmdl", context) -- npc_dota_venomancer_plague_ward
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl", context) -- npc_cemetery_skelet
+PrecacheResource("model", "models/heroes/undying/undying_minion_torso.vmdl", context) -- npc_classic_half_zombie
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl", context) -- npc_classic_witch
+PrecacheResource("model", "models/props_gameplay/pig.vmdl", context) -- npc_classic_pig
+PrecacheResource("model", "models/items/hex/sheep_hex/sheep_hex.vmdl", context) -- npc_classic_sheep
+PrecacheResource("model", "models/props_gameplay/frog.vmdl", context) -- npc_classic_frog
+PrecacheResource("model", "models/items/hex/fish_hex/fish_hex.vmdl", context) -- npc_classic_chicken
+PrecacheResource("model", "models/props_gameplay/chicken.vmdl", context) -- npc_classic_not_fish (and npc_classic_not_fish_2)
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_worg_large/n_creep_worg_large.vmdl", context) -- npc_classic_woobleydog
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_worg_small/n_creep_worg_small.vmdl", context) -- npc_classic_woobleydog2
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl", context) -- npc_classic_microchel
+PrecacheResource("model", "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton_armor01.vmdl", context) -- npc_classic_skelet_ruin
+PrecacheResource("model", "models/items/venomancer/ward/chomper_ward/chomper_ward.vmdl", context) -- npc_dota_venomancer_plague_ward
+PrecacheResource("model", "models/items/rattletrap/the_neuromaniac_experiment_subject_no08/the_neuromaniac_experiment_subject_no08.vmdl", context) -- npc_tombstone_clock
+PrecacheResource("model", "models/heroes/rattletrap/rattletrap.vmdl", context) -- npc_undying_clock
+PrecacheResource("model", "models/heroes/doom/doom.vmdl", context) -- npc_classic_mini_crampus
+PrecacheResource("model", "models/items/warlock/golem/ahmhedoq/ahmhedoq.vmdl", context) -- npc_classic_doom_crampus
+PrecacheResource("model", "models/courier/greevil/gold_greevil.vmdl", context) -- npc_greevil
+PrecacheResource("model", "models/creeps/ice_biome/frostbitten/n_creep_frostbitten_swollen01.vmdl", context) -- npc_classic_new_years
+PrecacheResource("model", "models/heroes/lich/lich.vmdl", context) -- npc_classic_new_years_lich
+PrecacheResource("model", "models/heroes/winterwyvern/winterwyvern.vmdl", context) -- npc_classic_new_years_winterwyvern
+PrecacheResource("model", "models/heroes/ancient_apparition/ancient_apparition.vmdl", context) -- npc_classic_new_years_ancient
+PrecacheResource("model", "models/items/undying/idol_of_ruination/ruin_wight_minion_gold.vmdl", context) -- npc_creep_impossible
+PrecacheResource("model", "models/heroes/venomancer/venomancer.vmdl", context) -- npc_classic_toxic_veno
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_dragonspawn_b/n_creep_dragonspawn_b.vmdl", context) -- npc_classic_dragon_small
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl", context) -- npc_classic_dragon_big
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl", context) -- npc_classic_dragon
+PrecacheResource("model", "models/structures/village_building_1.vmdl", context) -- ghoul
+PrecacheResource("model", "models/structures/village_building_2.vmdl", context) -- ghost
+PrecacheResource("model", "models/structures/village_tower_1.vmdl", context) -- undying mutant
+PrecacheResource("model", "models/heroes/leshrac/leshrac.vmdl", context) -- leshrac
+PrecacheResource("model", "models/heroes/death_prophet/death_prophet.vmdl", context) -- death prophet
+PrecacheResource("model", "models/heroes/witchdoctor/witchdoctor.vmdl", context) -- witchdoctor
+PrecacheResource("model", "models/heroes/undying/undying_flesh_golem_rubick.vmdl", context) -- toxic zombie
+PrecacheResource("model", "models/heroes/undying/undying_flesh_golem.vmdl", context) -- undying mutant
+PrecacheResource("model", "models/heroes/undying/undying_flesh_golem_rubick.vmdl", context) -- toxic zombie
+PrecacheResource("model", "models/heroes/warlock/warlock.vmdl", context) -- warlock
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl", context) -- npc_classic_skelet_ruin
+-- Boss Models
+PrecacheResource("model", "models/items/warlock/warlock_fourleg_demon.vmdl", context) -- npc_boss_Gurd
+PrecacheResource("model", "models/items/beastmaster/boar/legacy_of_the_nords_battle_boar/legacy_of_the_nords_battle_boar.vmdl", context) -- npc_boss_pig
+PrecacheResource("model", "models/heroes/life_stealer/life_stealer.vmdl", context) -- npc_boss_dead_pig
+PrecacheResource("model", "models/heroes/slark/slark.vmdl", context) -- npc_boss_slark
+PrecacheResource("model", "models/heroes/slardar/slardar.vmdl", context) -- npc_boss_slardar
+PrecacheResource("model", "models/items/lone_druid/bear/iron_claw_spirit_bear/iron_claw_spirit_bear.vmdl", context) -- npc_boss_bear
+PrecacheResource("model", "models/heroes/nightstalker/nightstalker_night.vmdl", context) -- npc_classic_Night_Stalker_boss
+PrecacheResource("model", "models/heroes/undying/undying_minion_torso.vmdl", context) -- npc_classic_half_zombie
+PrecacheResource("model", "models/heroes/death_prophet/death_prophet.vmdl", context) -- npc_witch_boss_1/2/3
+PrecacheResource("model", "models/heroes/undying/undying_tower.vmdl", context) -- npc_tombstone1/2/3/4
+PrecacheResource("model", "models/items/undying/idol_of_ruination/idol_tower_gold_sim.vmdl", context) -- npc_tombstone_flash_3
+PrecacheResource("model", "models/items/undying/idol_of_ruination/idol_tower_sim.vmdl", context) -- npc_tombstone_flash_4
+PrecacheResource("model", "models/items/wraith_king/wk_ti8_creep/wk_ti8_creep_crimson.vmdl", context) -- npc_skelet_boss_mini
+PrecacheResource("model", "models/items/wraith_king/arcana/wraith_king_arcana.vmdl", context) -- npc_skelet_boss
+PrecacheResource("model", "models/heroes/doom/doom.vmdl", context) -- npc_christmas_boss
+PrecacheResource("model", "models/heroes/warlock/warlock.vmdl", context) -- npc_warlock_boss
+PrecacheResource("model", "models/heroes/venomancer/venomancer.vmdl", context) -- npc_classic_toxic_veno_boss
+PrecacheResource("model", "models/heroes/phoenix/phoenix_bird.vmdl", context) -- npc_classic_phoenix_boss
+PrecacheResource("model", "models/heroes/dragon_knight/dragon_knight_dragon.vmdl", context) -- npc_classic_alduin_boss
+
+
+PrecacheResource("model", "models/gameplay/meat/meat.vmdl", context) -- meat
+PrecacheResource("model", "models/props_gameplay/bottle_mango001.vmdl", context) -- milk
+PrecacheResource("model", "models/props_winter/present.vmdl", context) -- present
+PrecacheResource("model", "models/props_gameplay/moon_shard/moon_shard_003.vmdl", context) -- eggs
+
+
+PrecacheResource("model", "models/props_structures/radiant_tower001.vmdl", context) -- tower
+PrecacheResource("model", "models/props_structures/tower_upgrade/tower_upgrade.vmdl", context) -- tower
+PrecacheResource("model", "models/buildings/building_racks_ranged_reference.vmdl", context) -- tower
+PrecacheResource("model", "models/buildings/building_racks_melee_reference.vmdl", context) -- tower
+PrecacheResource("model", "models/props_gameplay/gold_bag.vmdl", context) -- gold bags
+PrecacheResource("model", "models/props_gameplay/treasure_chest_gold.vmdl", context) -- medas
+
+PrecacheResource("model", "models/creeps/neutral_creeps/n_creep_jungle_stalker/n_creep_gargoyle_jungle_stalker.vmdl", context) -- armageddon boss
+PrecacheResource("model", "models/items/dragon_knight/ti8_dk_third_awakening_dragon/ti8_dk_third_awakening_dragon.vmdl", context) -- armageddon boss
 	---------------------------------spells-------------------------------
 	PrecacheResource("particle", "particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_blood04.vpcf", context) --blood
 	PrecacheResource("particle", "particles/generic_gameplay/generic_hit_blood.vpcf", context) --blood
