@@ -1,0 +1,127 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/store.js" />
+	</scripts>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/store.css" />
+	</styles>
+
+	<snippets>
+		<snippet name="ZiShopItem">
+			<Panel class="ZiShopItemCard">
+				<DOTAItemImage class="ZiShopItemCardImage" itemname="" />
+				<Label class="ZiShopItemCardTitle" text="{s:name}" html="true" />
+				<Panel class="ZiShopItemCardBottom">
+					<Panel class="ZiShopItemCardPriceRow">
+						<Image class="ZiShopItemCardCurrencyImg" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+						<Label class="ZiShopItemCardPriceLabel" text="{s:price}" />
+					</Panel>
+					<TextButton class="ZiShopItemCardBuy" text="Купить" />
+				</Panel>
+				<Label class="ZiShopItemCardOwned IsHidden" text="Куплено" />
+			</Panel>
+		</snippet>
+
+		<snippet name="ZiDonatePack">
+			<Panel class="ZiDonatePackCard">
+				<Panel class="ZiDonatePackBadge">
+					<Label class="ZiDonatePackBadgeLabel" text="{s:badge}" />
+				</Panel>
+				<Image class="ZiDonatePackImage" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+				<Label class="ZiDonatePackTitle" text="{s:title}" html="true" />
+				<Label class="ZiDonatePackDescription" text="{s:description}" html="true" />
+				<Panel class="ZiDonatePackRewards">
+					<Panel class="ZiDonatePackRewardRow">
+						<Image class="ZiDonatePackRewardImg" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+						<Label class="ZiDonatePackRewardLabel" text="{s:currency}" />
+					</Panel>
+					<Panel class="ZiDonatePackRewardRow ZiDonatePackUpgradeRow">
+						<Image class="ZiDonatePackRewardImg" src="s2r://panorama/images/cavern/style_unlock_2_psd.vtex" />
+						<Label class="ZiDonatePackRewardLabel" text="{s:upgrade}" />
+					</Panel>
+				</Panel>
+				<TextButton class="ZiDonatePackBuy" text="Купить за {s:price} ₽" />
+			</Panel>
+		</snippet>
+	</snippets>
+
+	<Panel class="Hud" hittest="false">
+		<Panel id="ZiStore" hittest="false">
+			<Panel id="ZiStoreContainer">
+				<Panel id="ZiStoreInner">
+					<Panel id="ZiStoreBody">
+						<Panel id="ZiStoreHeader">
+							<Panel id="ZiStoreShards">
+								<Image id="ZiStoreShardsImage" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+								<Label id="ZiStoreShardsLabel" text="{s:currency}" />
+								<Button id="ZiStoreRefreshButton" onmouseover="DOTAShowTextTooltip('Обновить баланс после оплаты')" onmouseout="DOTAHideTextTooltip()">
+									<Image id="ZiStoreRefreshImage" src="s2r://panorama/images/control_icons/refresh_psd.vtex" />
+								</Button>
+							</Panel>
+
+							<Panel id="ZiStoreContainerLeft">
+								<Button id="ZiStoreClose" onactivate="HideZiStore()" />
+							</Panel>
+						</Panel>
+
+						<Panel id="ZiStoreTabBar">
+							<Panel id="ZiStoreTabBarTabs">
+								<Button id="ZiStoreTabShop" class="ZiStoreTab IsActive" onactivate="ZiStoreSelectTab('shop')">
+									<Label text="ПРЕДМЕТЫ" />
+								</Button>
+								<Button id="ZiStoreTabDonate" class="ZiStoreTab" onactivate="ZiStoreSelectTab('donate')">
+									<Label text="ДОНАТ" />
+								</Button>
+							</Panel>
+						</Panel>
+
+						<Button id="ZiStoreShopPromo" class="IsHidden" onactivate="ZiStoreSelectTab('donate')">
+							<Panel id="ZiStoreShopPromoAccent" />
+							<Image id="ZiStoreShopPromoImage" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+							<Panel id="ZiStoreShopPromoText">
+								<Panel id="ZiStoreShopPromoTitleRow">
+									<Label id="ZiStoreShopPromoBadge" text="ХИТ" />
+									<Label id="ZiStoreShopPromoTitle" text="{s:title}" html="true" />
+								</Panel>
+								<Label id="ZiStoreShopPromoDescription" text="{s:description}" html="true" />
+								<Panel id="ZiStoreShopPromoRewards">
+									<Image id="ZiStoreShopPromoCurrencyImg" src="s2r://panorama/images/cavern/map_unlock_support_psd.vtex" />
+									<Label id="ZiStoreShopPromoCurrencyLabel" text="+{s:currency}" />
+								</Panel>
+							</Panel>
+							<Panel id="ZiStoreShopPromoCTA">
+								<Label id="ZiStoreShopPromoPrice" text="{s:priceRub} ₽" />
+								<Label id="ZiStoreShopPromoBuyLabel" text="ПЕРЕЙТИ →" />
+							</Panel>
+						</Button>
+
+						<Panel id="ZiStoreShopInside" />
+						<Panel id="ZiStoreDonateInside" class="IsHidden" />
+					</Panel>
+				</Panel>
+			</Panel>
+
+			<Panel id="ZiStorePaymentModal">
+				<Panel id="ZiStorePaymentDialog">
+					<Label id="ZiStorePaymentTitle" text="Оплата: {s:title}" html="true" />
+					<Label id="ZiStorePaymentHint" text="Откройте ссылку в браузере и завершите оплату. Валюта зачислится автоматически после подтверждения." />
+					<Panel id="ZiStorePaymentUrlBox">
+						<Label id="ZiStorePaymentUrl" text="{s:url}" />
+					</Panel>
+					<Label id="ZiStorePaymentCopied" class="IsHidden" text="Ссылка скопирована" />
+					<Panel id="ZiStorePaymentButtons">
+						<TextButton id="ZiStorePaymentOpen" text="Открыть в браузере" />
+						<TextButton id="ZiStorePaymentCopy" text="Скопировать ссылку" />
+						<TextButton id="ZiStorePaymentClose" text="Закрыть" onactivate="ZiStorePaymentHide()" />
+					</Panel>
+				</Panel>
+			</Panel>
+
+			<Button id="ZiStoreButton" onactivate="ToggleZiStore()">
+				<Label id="ZiStoreButtonLabel" text="МАГАЗИН" />
+			</Button>
+		</Panel>
+	</Panel>
+</root>

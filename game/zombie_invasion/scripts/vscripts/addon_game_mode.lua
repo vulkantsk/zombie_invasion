@@ -14,7 +14,9 @@ require( "triggers" )
 require( "modifiers_links" )
  
 
+require('economy_api')
 require('donate')
+require('donate_robokassa')
 require( "zpr/path_graph" )
 require( "end_game" )
 require( "zpr/req" )

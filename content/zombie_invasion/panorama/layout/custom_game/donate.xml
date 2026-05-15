@@ -22,7 +22,7 @@
 			</Button>
 		</Panel>
 		<Button id="DonateToggleButton" onactivate="DonateToggleButtonActivate()">
-			<Panel id="Arrow" />
+			<Label id="DonateToggleLabel" text="ПРЕДМЕТЫ" />
 		</Button>
 	</Panel>
 </root>

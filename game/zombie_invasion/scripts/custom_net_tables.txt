@@ -6,5 +6,6 @@
 		"containers_lua",
 		"custom_entity_values",
 		"shared_modifiers",
+		"economy",
 	]
 }

@@ -895,56 +895,63 @@ DONATE_ITEMS = {
 
 Donate = Donate or class({})
 
+--- Сборка донат-панели из данных Economy (владение героями/предметами с бэкенда).
+function Donate:RebuildForPlayer(pId)
+	self.players[pId] = {}
+	local player = self.players[pId]
+	local econ = Economy and Economy.GetForPlayer and Economy:GetForPlayer(pId) or { currency = 0, heroes = {}, items = {} }
+	local heroes_owned = type(econ.heroes) == "table" and econ.heroes or {}
+	local items_owned = type(econ.items) == "table" and econ.items or {}
+
+	for list, items in pairs(DONATE_ITEMS) do
+		player[list] = {}
+		for _, item in pairs(items) do
+			local item_info = {
+				name = item.name,
+				sets = {},
+				economy_owned = false,
+			}
+			local player_has = item.free_available or false
+			if list == "heroes" then
+				player_has = player_has or (heroes_owned[item.name] ~= nil)
+			else
+				player_has = player_has or (items_owned[item.name] ~= nil)
+			end
+
+			for _, set in pairs(item.sets) do
+				if set.name and set.can_be_bought then
+					table.insert(item_info.sets, {
+						name = set.name,
+						can_be_bought = set.can_be_bought,
+						free_available = set.free_available,
+					})
+				end
+			end
+
+			if item.can_be_bought or player_has then
+				if player_has then
+					item_info.economy_owned = (heroes_owned[item.name] ~= nil) or (items_owned[item.name] ~= nil)
+					--- Каждый предмет можно взять ровно один раз за матч.
+					item_info.count = 1
+				else
+					item_info.count = -1
+				end
+				table.insert(player[list], item_info)
+			end
+		end
+	end
+
+	self:UpdateNetTables(pId)
+end
+
 function Donate:OnGameRulesStateChange()
 	if GameRules:State_Get() == DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP then
 		self.players = {}
-		for p = 0, PlayerResource:GetPlayerCount() - 1 do
-			self.players[p] = {}
-			local acc_id = PlayerResource:GetSteamAccountID( p )
-			local player = self.players[p]
-
-			if acc_id then
-				for list, items in pairs( DONATE_ITEMS ) do
-					for _, item in pairs( items ) do
-						local item_info = {
-							name = item.name,
-							sets = {}
-						}
-						local player_has = item.free_available or nil
-						for _, set in pairs( item.sets ) do
-							for _, id in pairs( set.players or {} ) do
-								if id == acc_id then
-									player_has = true
-								end
-							end
-							if set.name and set.can_be_bought then
-								local set_info = {
-									name = set.name,
-									can_be_bought = set.can_be_bought,
-									free_available = set.free_available,
-								}
-								table.insert( item_info.sets, set_info )
-							end
-						end
-
-						if item.can_be_bought or player_has then
-							player[list] = player[list] or {}
-
-							if player_has then
-								if acc_id == 877002179 or acc_id == 912133481 or acc_id == 453736017 then
-									item_info.count = 100000
-								else
-									item_info.count = item.count
-								end
-							else
-								item_info.count = -1
-							end
-							table.insert( player[list], item_info )
-						end
-					end
-				end
+		for p = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
+			if PlayerResource:IsValidPlayerID(p) then
+				self.players[p] = {}
+				self:RebuildForPlayer(p)
 			end
-			self:UpdateNetTables( p )
 		end
 	end
 end
@@ -969,6 +976,7 @@ function Donate:PlayerTake( info )
 					for ii = 0, 8 do
 						if not hero:GetItemInSlot( ii ) then
 							player:GetAssignedHero():AddItemByName( i.name )
+							--- Один раз за матч — счётчик уменьшаем всегда, в т.ч. для купленных в магазине.
 							i.count = i.count - 1
 							self:UpdateNetTables( info.id )
 							return
@@ -1040,3 +1048,8 @@ end
 ListenToGameEvent( "game_rules_state_change", Dynamic_Wrap( Donate, "OnGameRulesStateChange" ), Donate )
 ListenToGameEvent("npc_spawned",Dynamic_Wrap(Donate,'OnNPCSpawned'),Donate)
 CustomGameEventManager:RegisterListener( "donate_player_take", Dynamic_Wrap( Donate, "PlayerTake" ) )
+CustomGameEventManager:RegisterListener( "donate_player_create", function( _, data )
+	if Economy and data and data.id ~= nil then
+		Economy:SyncPlayer( data.id )
+	end
+end )

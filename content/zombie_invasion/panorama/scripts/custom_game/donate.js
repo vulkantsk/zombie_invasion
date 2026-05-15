@@ -1,11 +1,6 @@
 function DonateToggleButtonActivate() {
   var panel = $("#DonateContainer");
   panel.SetHasClass("Visible", !panel.BHasClass("Visible"));
-  // if ( panel.style.visibility == "visible" ) {
-  // 	panel.style.visibility = "collapse"
-  // } else {
-  // 	panel.style.visibility = "visible"
-  // }
 }
 
 function AddEvent(button, itemname) {
@@ -21,9 +16,8 @@ function DonatePanelUpdate(table, id, lists) {
   if (id == Players.GetLocalPlayer()) {
     var panel = $("#DonateItemsList");
     if (panel.GetAttributeInt("created", 0) == 0) {
-      for (name in lists) {
+      for (var name in lists) {
         var items = lists[name];
-        // var list_panel = $.CreatePanel( "Panel", panel, "" )
         var list_name = $.CreatePanel("Label", panel, "");
         list_name.text = $.Localize("#donate_list_name_" + name);
         list_name.AddClass("ListName");
@@ -32,8 +26,7 @@ function DonatePanelUpdate(table, id, lists) {
 
         var item_count = 0;
         var row = null;
-        var countRow = 8;
-        for (i in items) {
+        for (var i in items) {
           if (item_count % 7 == 0) {
             row = $.CreatePanel("Panel", list, "");
             row.AddClass("Row");
@@ -59,20 +52,17 @@ function DonatePanelUpdate(table, id, lists) {
         }
       }
     } else {
-      //			$.Msg( "ANIME" )
       var listsinfo = panel.Children();
-      for (i in listsinfo) {
+      for (var i in listsinfo) {
         var rows = listsinfo[i].Children();
-        for (int in rows) {
+        for (var int in rows) {
           var items = rows[int].Children();
-          for (ii in items) {
+          for (var ii in items) {
             var button = items[ii];
             var item_name = button.GetAttributeString("itemname", "");
-            for (n in lists) {
-              for (iitem in lists[n]) {
+            for (var n in lists) {
+              for (var iitem in lists[n]) {
                 var iteminfo = lists[n][iitem];
-                //								$.Msg( iteminfo )
-                //								$.Msg( lists[n] )
                 if (iteminfo.name == item_name) {
                   if (iteminfo.count > 0) {
                     button.AddClass("DonateItemButton");
@@ -89,11 +79,27 @@ function DonatePanelUpdate(table, id, lists) {
   }
 }
 
+function EconomyNetTableUpdate(table, key, data) {
+  if (String(key) === String(Players.GetLocalPlayer())) {
+    var inv = CustomNetTables.GetTableValue(
+      "donate",
+      Players.GetLocalPlayer().toString()
+    );
+    if (inv) {
+      $("#DonateItemsList").SetAttributeInt("created", 0);
+      $("#DonateItemsList").RemoveAndDeleteChildren();
+      DonatePanelUpdate(null, Players.GetLocalPlayer(), inv);
+    }
+  }
+}
+
 (function () {
   GameEvents.SendCustomGameEventToServer("donate_player_create", {
     id: Players.GetLocalPlayer(),
   });
   CustomNetTables.SubscribeNetTableListener("donate", DonatePanelUpdate);
+  CustomNetTables.SubscribeNetTableListener("economy", EconomyNetTableUpdate);
+
   var items = CustomNetTables.GetTableValue(
     "donate",
     Players.GetLocalPlayer().toString()

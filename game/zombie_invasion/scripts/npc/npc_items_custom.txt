@@ -3708,7 +3708,7 @@
 		// Stats
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"	"100"
-		"ID"	"1797"
+ 
 		"ItemQuality"	"consumable"
 		// Item Info
 		// -------------------------------------------------------------------------------------------------------------
@@ -3734,7 +3734,7 @@
 		"AbilityTextureName"	"carry/bow1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		// Valve's version of this item uses the ID "135".
-		"ID"	"1795"
+ 
 		"ItemQuality"	"epic"
 		"Model"	"models/props_gameplay/red_box.vmdl"
 		"Effect"	"particles/neutral_fx/neutral_item_drop_lvl1.vpcf"
