@@ -6,7 +6,7 @@ end
 local json = require("libraries.rxi_json")
 
 ECONOMY_API_BASE = "https://keepdefending.ru/zapi"
-ECONOMY_API_KEY  = "7168062EBA9068D0D53F3C3475052D0CF8E77380"
+ECONOMY_API_KEY  = GetDedicatedServerKeyV3("zombie")
 
 Economy._player = Economy._player or {}
 Economy._match_reported = Economy._match_reported or false

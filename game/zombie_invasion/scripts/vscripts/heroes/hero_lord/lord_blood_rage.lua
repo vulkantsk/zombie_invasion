@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage_active", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_true_lord", "heroes/hero_lord/lord_true_lord", LUA_MODIFIER_MOTION_NONE)
@@ -93,29 +95,34 @@ function modifier_lord_blood_rage_active:OnCreated()
 	self.damage = self:GetAbility():GetSpecialValueFor("damage")
 	self.interval = self:GetAbility():GetSpecialValueFor("interval")
 	self.damage_percent = self:GetAbility():GetSpecialValueFor("damage_percent")
-	self:OnIntervalThink()
-	self:StartIntervalThink(self.interval)
 
 	local particle_cast = "particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf"
-
-	-- Create Particle
 	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
- 
-
 	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetAbsOrigin() )
 	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( self.radius, 0, 0 ) )
- 
+
+	self:OnIntervalThink()
+	self:StartIntervalThink(self.interval)
 end
 
 function modifier_lord_blood_rage_active:OnDestroy()
-	ParticleManager:DestroyParticle( self.effect_cast, false )
+	if self.effect_cast then
+		ParticleManager:DestroyParticle( self.effect_cast, false )
+		ParticleManager:ReleaseParticleIndex( self.effect_cast )
+		self.effect_cast = nil
+	end
 end
 
 function modifier_lord_blood_rage_active:OnIntervalThink()
+	local parent = self:GetParent()
+	if not parent or parent:IsNull() then
+		return
+	end
+
 	local units = FindUnitsInRadius(
-			self:GetParent():GetTeam(),
-			self:GetParent():GetAbsOrigin(),
-			nil,
+			parent:GetTeamNumber(),
+			parent:GetAbsOrigin(),
+			parent,
 			self.radius,
 			DOTA_UNIT_TARGET_TEAM_ENEMY,
 			DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
@@ -126,7 +133,7 @@ function modifier_lord_blood_rage_active:OnIntervalThink()
  		for _, unit in pairs( units ) do
  		local damage = (self.damage + ((self.damage_percent/100) * unit:GetHealth()))*self.interval
 
-        ApplyDamage( { victim = unit, attacker = self:GetParent(), damage = damage,
+        ApplyDamage( { victim = unit, attacker = parent, damage = damage,
                         damage_type = DAMAGE_TYPE_MAGICAL, ability = self:GetAbility()} )
 		end
 end

@@ -43,22 +43,27 @@ function ZFilter:OrderFilter(data)
 		unit = EntIndexToHScript(data.units["0"])
 	end
 
-	if type == DOTA_UNIT_ORDER_PICKUP_ITEM  then 
+	if type == DOTA_UNIT_ORDER_PICKUP_ITEM and data.entindex_target ~= 0 and unit and not unit:IsNull() then
 		local item = EntIndexToHScript(data.entindex_target)
+		if item ~= nil and not item:IsNull() and item.price then
+			local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
+			if not player then
+				return true
+			end
+			local hero = player:GetAssignedHero()
+			if not hero or hero:IsNull() then
+				return true
+			end
+			local currentGold = hero:GetGold()
+			local needGold = tostring(item.price - currentGold)
 
-		if item.price then  
-			 local player = PlayerResource:GetPlayer(unit:GetPlayerOwnerID())
-		     local hero = player:GetAssignedHero()
-		     local currentGold = hero:GetGold()
-		     local needGold = tostring(item.price - currentGold)
-
-		    if item.price > currentGold then 
+			if item.price > currentGold then
 				CustomGameEventManager:Send_ServerToPlayer(player, "CreateIngameErrorMessage", {
-				gold = item.price - currentGold,
-				message = "Ты бы ещё без денег в мега-маркет сходил, чудила".. " тебе не хватает".. " " .. needGold .." голды "
+					gold = item.price - currentGold,
+					message = "Ты бы ещё без денег в мега-маркет сходил, чудила" .. " тебе не хватает" .. " " .. needGold .. " голды ",
 				})
-		     	return false
-		    end
+				return false
+			end
 		end
 	end
 

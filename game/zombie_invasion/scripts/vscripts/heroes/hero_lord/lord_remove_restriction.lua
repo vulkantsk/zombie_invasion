@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_remove_restriction", "heroes/hero_lord/lord_remove_restriction", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_remove_restriction_before", "heroes/hero_lord/lord_remove_restriction", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
@@ -18,33 +20,17 @@ function lord_remove_restriction:Precache(context)
 end
 
 
- function lord_remove_restriction:CastFilterResult()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return UF_FAIL_CUSTOM
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return UF_FAIL_CUSTOM
-            end
-        end
-        return UF_SUCCESS
+function lord_remove_restriction:CastFilterResult()
+	if not LordAbilityHasEnoughBlood(self) then
+		return UF_FAIL_CUSTOM
+	end
+	return UF_SUCCESS
 end
-  
 
 function lord_remove_restriction:GetCustomCastError()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return "#dota_hud_error_havent_charges"
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return "#dota_hud_error_havent_charges"
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return "#dota_hud_error_havent_charges"
+	end
 end
   
  
@@ -52,8 +38,10 @@ function lord_remove_restriction:OnSpellStart()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel())
 
-    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
-    modif:SetStackCount(modif:GetStackCount() - healthCost)    
+    local modif = GetLordBloodRageModifier(caster)
+    if modif then
+        modif:SetStackCount(modif:GetStackCount() - healthCost)
+    end    
     
     caster:AddNewModifier(caster,self,"modifier_lord_remove_restriction_before", {duration = 2})
     EmitSoundOn("rest", caster)
@@ -96,9 +84,9 @@ function modifier_lord_remove_restriction:OnAttackLanded(keys)
          
         self:SetStackCount(self:GetStackCount() - 1)
     local units = FindUnitsInRadius(
-            self:GetParent():GetTeam(),
+            parent:GetTeamNumber(),
             target:GetAbsOrigin(),
-            nil,
+            parent,
             self.radius,
             DOTA_UNIT_TARGET_TEAM_ENEMY,
             DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,

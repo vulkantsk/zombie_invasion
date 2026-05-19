@@ -6,7 +6,7 @@
 		[
 			{
 				m_meshName = "shinobu_01"
-				m_meshFile = "models/hero_shinobu/shinobu_01.fbx"
+				m_meshFile = "models/units/shinobu/shinobu.fbx"
 				m_materialSearchPath = ""
 				m_bSkinParentedObjects = true
 				m_bLegacySkinParentedTransforms = false
@@ -594,7 +594,7 @@
 						[
 							{
 								m_Animationname = "shinobu_idle"
-								m_Filepath = "models/hero_shinobu/shinobu_01_anim.fbx"
+								m_Filepath = "models/units/shinobu/shinobu_anim.fbx"
 								m_nStartframe = 3
 								m_nEndframe = 46
 								m_flFps = 30.0
@@ -640,7 +640,7 @@
 							},
 							{
 								m_Animationname = "shinobu_run"
-								m_Filepath = "models/hero_shinobu/shinobu_01_anim.fbx"
+								m_Filepath = "models/units/shinobu/shinobu_anim.fbx"
 								m_nStartframe = 318
 								m_nEndframe = 350
 								m_flFps = 30.0
@@ -686,7 +686,7 @@
 							},
 							{
 								m_Animationname = "shinobu_attack1"
-								m_Filepath = "models/hero_shinobu/shinobu_01_anim.fbx"
+								m_Filepath = "models/units/shinobu/shinobu_anim.fbx"
 								m_nStartframe = 125
 								m_nEndframe = 156
 								m_flFps = 30.0
@@ -732,7 +732,7 @@
 							},
 							{
 								m_Animationname = "shinobu_attack2"
-								m_Filepath = "models/hero_shinobu/shinobu_01_anim.fbx"
+								m_Filepath = "models/units/shinobu/shinobu_anim.fbx"
 								m_nStartframe = 187
 								m_nEndframe = 219
 								m_flFps = 30.0
@@ -778,7 +778,7 @@
 							},
 							{
 								m_Animationname = "shinobu_die"
-								m_Filepath = "models/hero_shinobu/shinobu_01_anim.fbx"
+								m_Filepath = "models/units/shinobu/shinobu_anim.fbx"
 								m_nStartframe = 407
 								m_nEndframe = 469
 								m_flFps = 30.0

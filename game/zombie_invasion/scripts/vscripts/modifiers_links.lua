@@ -59,6 +59,14 @@ LinkLuaModifier("modifier_devastator_aura_debuff", "modifiers/monsters/modifier_
 LinkLuaModifier("modifier_circulator_infection", "modifiers/monsters/modifier_circulator_infection.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_circulator_infection_debuff", "modifiers/monsters/modifier_circulator_infection.lua", LUA_MODIFIER_MOTION_NONE )
 
+LinkLuaModifier("modifier_overheating", "heroes/hero_sargatanas/modifier_overheating.lua", LUA_MODIFIER_MOTION_NONE )
+
+LinkLuaModifier("modifier_special_effect_legendary", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_special_effect_slark_skin", "modifiers/donate/modifier_special_effect_legendary", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_special_effect_admin", "modifiers/donate/modifier_special_effect_admin", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_special_effect_zombie", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_special_effect_zombie2", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_special_effect_zombie3", "modifiers/donate/modifier_special_effect_zombie", LUA_MODIFIER_MOTION_BOTH)
 
 -------------------------------------------------------------------
 

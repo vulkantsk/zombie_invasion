@@ -344,20 +344,22 @@ end
 function CDOTA_BaseNPC:DamageHell() 
 	if self:HasModifier("modifier_overheating") then 
 		local modif = self:FindModifierByName("modifier_overheating")
-		return modif:GetStackCount()/100 + 1 
-	else 
-		return 1 
+		if modif then
+			return modif:GetStackCount() / 100 + 1
+		end
 	end
-
+	return 1
 end
 
 function CDOTA_BaseNPC:ModifierStackInc(modifier, setStack,dur,beginStack,ability)
 	if self:HasModifier(modifier) then 
 		local modif = self:FindModifierByName(modifier)
+		if not modif then return end
 		modif:SetStackCount(modif:GetStackCount() + setStack)
 		modif:SetDuration(dur, true)
 	else
-		local modif = self:AddNewModifier(self,ability,modifier,{duration = dur})
+		local modif = self:AddNewModifier(self, ability, modifier, {duration = dur})
+		if not modif then return end
 		modif:SetStackCount(beginStack)
 	end
 end
@@ -778,5 +780,5 @@ function ReplaceHeroWithPrecache(playerID, heroName, callback)
 		if callback then
 			callback(newHero)
 		end
-	end)
+	end, playerID)
 end

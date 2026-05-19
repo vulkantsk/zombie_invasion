@@ -3190,7 +3190,8 @@
   		"DOTA_Tooltip_modifier_shinobu_eat_oddity" "Eat Oddity"
   		"DOTA_Tooltip_modifier_shinobu_eat_oddity_buff_Description" "Максимальное здоровье увеличено на %dMODIFIER_PROPERTY_HEALTH_BONUS%"
 
-		"DOTA_Tooltip_ability_shinobu_kokorowatari" "kokorowatari"  		
+		"DOTA_Tooltip_ability_shinobu_kokorowatari" "kokorowatari"
+		"DOTA_Tooltip_Ability_shinobu_kokorowatari_SummaryDescription" "Creates a soul of a killed creep. Increases attack range and grants a chance to instantly kill creeps."
   		"DOTA_Tooltip_ability_shinobu_kokorowatari_Description" "Когда Шинобу убивает любого не-героя, она создаёт душу этого юнита. Эта душа неуязвима и длится %soul_duration% секунд. Также увеличивает RADIUS атаки Шинобу и даёт CHANCE убить крипа с одного удара."
   		"DOTA_Tooltip_ability_shinobu_kokorowatari_Lore" "Шинобу может превратить жертву в слугу и заставить подчиняться своим приказам, но предпочитает это не использовать."
   		"DOTA_Tooltip_ability_shinobu_kokorowatari_bonus_attack_range" "ДОП. RADIUS АТАКИ:"

@@ -49,13 +49,15 @@ function shinobu_yumewatari_lua:OnSpellStart() if IsServer() then
 		soul:SetOwner(caster)
 		soul:RemoveModifierByName("modifier_shinobu_soul_unit")
 		soul:RemoveAbility("shinobu_soul_unit")
- 		for i=0,9 do 
+		for i = 0, old_soul:GetAbilityCount() - 1 do
 			local ability_target = old_soul:GetAbilityByIndex(i)
-			local ability_name = ability_target and ability_target:GetAbilityName() or nil
-      		if ability_name and ability_name ~= "shinobu_soul_unit" then 
-				soul:AddAbility(ability_name):SetLevel(1)
+			if ability_target then
+				local ability_name = ability_target:GetAbilityName()
+				if ability_name and ability_name ~= "shinobu_soul_unit" then
+					soul:AddAbility(ability_name):SetLevel(ability_target:GetLevel())
+				end
 			end
-     	end
+		end
 		if old_soul:GetLevel() > 1 then
 			soul:CreatureLevelUp(old_soul:GetLevel() - 1)
 		end

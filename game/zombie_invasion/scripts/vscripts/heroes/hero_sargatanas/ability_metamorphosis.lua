@@ -1,5 +1,9 @@
 ability_metamorphosis = {}
 
+function ability_metamorphosis:Precache(context)
+	PrecacheResource("model", "models/items/terrorblade/endless_purgatory_demon/endless_purgatory_demon.vmdl", context)
+end
+
 LinkLuaModifier( "modifier_ability_metamorphosis", "heroes/hero_sargatanas/ability_metamorphosis", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_metamorphosis_aura", "heroes/hero_sargatanas/ability_metamorphosis", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_metamorphosis_burn", "heroes/hero_sargatanas/ability_metamorphosis", LUA_MODIFIER_MOTION_NONE )

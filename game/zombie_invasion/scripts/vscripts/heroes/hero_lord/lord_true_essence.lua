@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_true_essence", "heroes/hero_lord/lord_true_essence", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_true_essence_active", "heroes/hero_lord/lord_true_essence", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
@@ -19,32 +21,16 @@ end
 
 
 function lord_true_essence:CastFilterResult()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return UF_FAIL_CUSTOM
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return UF_FAIL_CUSTOM
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return UF_FAIL_CUSTOM
+	end
+	return UF_SUCCESS
 end
-  
 
 function lord_true_essence:GetCustomCastError()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return "#dota_hud_error_havent_charges"
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return "#dota_hud_error_havent_charges"
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return "#dota_hud_error_havent_charges"
+	end
 end
  
 
@@ -155,7 +141,10 @@ end
  
 function modifier_lord_true_essence_active:OnIntervalThink()
     local caster = self:GetParent()
-    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
+    local modif = GetLordBloodRageModifier(caster)
+    if not modif then
+        return
+    end
     modif:SetStackCount(modif:GetStackCount() - self.pay)    
 
     if modif:GetStackCount() < self.pay then 

@@ -78,7 +78,7 @@ isEdgardEnd = 0
 
 model_lookup = {}
 model_lookup["npc_dota_hero_phantom_lancer"] = "models/units/sara/sara.vmdl"
-model_lookup["npc_dota_hero_treant"] = "models/hero_shinobu/shinobu_01.vmdl"
+model_lookup["npc_dota_hero_treant"] = "models/units/shinobu/shinobu.vmdl"
 
 -- Функция для автоматического прикеша всех юнитов из KV файлов используя PrecacheUnitByNameAsync
 function InvasionMode:PrecacheUnitsFromKV(context)
@@ -420,9 +420,7 @@ function InvasionMode:OnItemPickedUp(keys)
 	local itemname = keys.itemname
 	local owner = EntIndexToHScript( keys.HeroEntityIndex or -1 )
 	
-	--r = RandomInt(200, 400)
-	print(item.price)	
-	if item.price then 
+	if item ~= nil and not item:IsNull() and item.price then 
 		local player = PlayerResource:GetPlayer(playerId)
 		local hero = player:GetAssignedHero()
 		local goldCurrent = hero:GetGold()

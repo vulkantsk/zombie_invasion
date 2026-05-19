@@ -13,7 +13,8 @@ require( "invasion_classic" )
 require( "invasion_nights" )
 require( "triggers" )
 require( "modifiers_links" )
- 
+require( "heroes/hero_lord/lord_blood_helpers" )
+
 
 require('economy_api')
 require('donate')
@@ -47,7 +48,7 @@ function Precache( context )
 
 --models/props_structures/tower_upgrade/tower_upgrade.vmdl
 --models/props_structures/tower001.vmdl
-PrecacheResource("model", "models/hero_shinobu/shinobu_01.vmdl", context)
+PrecacheResource("model", "models/units/shinobu/shinobu.vmdl", context)
 PrecacheResource("model", "models/units/sara/sara.vmdl", context)  
 ---------------------------------model-------------------------------
 PrecacheResource("model", "models/props_gameplay/pig.vmdl", context) --pig

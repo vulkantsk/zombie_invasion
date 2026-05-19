@@ -59,19 +59,30 @@ function modifier_item_desolator_custom:OnAttackLanded(data)
 end
 
 function modifier_item_desolator_custom:OnDeath(data)
-    if IsServer() then
-        local parent = self:GetParent()
-        local killer = data.attacker
-        local killed_unit = data.unit
+    if not IsServer() then
+        return
+    end
 
-        local chance = self:GetAbility():GetSpecialValueFor("chance_to_stack")
-        local max_charge = self:GetAbility():GetSpecialValueFor("max_damage")
-        local charges = self:GetAbility():GetSpecialValueFor("bonus_damage_per_kill") + self:GetAbility():GetCurrentCharges()
-        if killer == parent and killed_unit and killed_unit:HasModifier("modifier_item_desolator_custom_debuff") and RollPercentage(chance) then
-            self:GetAbility():SetCurrentCharges(math.min(charges,max_charge))
-        end
-        if self:GetParent() and not self:GetParent():IsNull() then
-            self:GetParent():CalculateStatBonus(true)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return
+    end
+
+    local ability = self:GetAbility()
+    if not ability or ability:IsNull() then
+        return
+    end
+
+    local killer = data.attacker
+    local killed_unit = data.unit
+
+    local chance = ability:GetSpecialValueFor("chance_to_stack")
+    local max_charge = ability:GetSpecialValueFor("max_damage")
+    local charges = ability:GetSpecialValueFor("bonus_damage_per_kill") + ability:GetCurrentCharges()
+    if killer == parent and killed_unit and killed_unit:HasModifier("modifier_item_desolator_custom_debuff") and RollPercentage(chance) then
+        ability:SetCurrentCharges(math.min(charges, max_charge))
+        if parent.CalculateStatBonus then
+            parent:CalculateStatBonus(true)
         end
     end
 end

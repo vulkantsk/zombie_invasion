@@ -10,6 +10,8 @@ ability_bedlam = class({
 })
 
 function ability_bedlam:Precache(context)
+	PrecacheUnitByNameSync("npc_dota_dark_willow_creature", context, -1)
+	PrecacheResource("model", "models/heroes/dark_willow/dark_willow_wisp.vmdl", context)
 	PrecacheAbilityResources({
 		"particles/units/heroes/hero_dark_willow/dark_willow_willowisp_ambient.vpcf",
 		"particles/units/heroes/hero_dark_willow/dark_willow_willowisp_base_attack.vpcf",

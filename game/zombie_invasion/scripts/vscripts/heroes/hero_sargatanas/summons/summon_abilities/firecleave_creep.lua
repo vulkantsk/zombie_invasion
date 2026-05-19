@@ -75,13 +75,26 @@ function modifier_ability_firecleave_creep_fire:OnCreated()
 end
 
 function modifier_ability_firecleave_creep_fire:OnIntervalThink()
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then return end
+
     local damage = self:GetAbility():GetSpecialValueFor("fire_damage")
+    local hellMult = 1
+    if parent.DamageHell then
+        hellMult = parent:DamageHell()
+    elseif parent:HasModifier("modifier_overheating") then
+        local modif = parent:FindModifierByName("modifier_overheating")
+        if modif then
+            hellMult = modif:GetStackCount() / 100 + 1
+        end
+    end
+
     local damageTable = {
-        victim = self:GetParent(),
+        victim = parent,
         attacker = self:GetCaster(),
-        damage = damage * self:GetParent():DamageHell(),
+        damage = damage * hellMult,
         damage_type = self:GetAbility():GetAbilityDamageType(),
-        ability = self, --Optional.
+        ability = self:GetAbility(),
     }
     ApplyDamage(damageTable)
 end

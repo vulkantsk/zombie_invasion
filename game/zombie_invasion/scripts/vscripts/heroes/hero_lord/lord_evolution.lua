@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_evolution", "heroes/hero_lord/lord_evolution", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
@@ -16,33 +18,17 @@ function lord_evolution:Precache(context)
 end
 
 
- function lord_evolution:CastFilterResult()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return UF_FAIL_CUSTOM
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return UF_FAIL_CUSTOM
-            end
-        end
-        return UF_SUCCESS
+function lord_evolution:CastFilterResult()
+	if not LordAbilityHasEnoughBlood(self) then
+		return UF_FAIL_CUSTOM
+	end
+	return UF_SUCCESS
 end
-  
 
 function lord_evolution:GetCustomCastError()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return "#dota_hud_error_havent_charges"
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return "#dota_hud_error_havent_charges"
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return "#dota_hud_error_havent_charges"
+	end
 end
  
 function lord_evolution:GetBehavior()
@@ -61,8 +47,10 @@ function lord_evolution:OnSpellStart()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel())
 
-    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
-    modif:SetStackCount(modif:GetStackCount() - healthCost)    
+    local modif = GetLordBloodRageModifier(caster)
+    if modif then
+        modif:SetStackCount(modif:GetStackCount() - healthCost)
+    end    
     if self:GetCaster():HasShard() and self:GetLevel() == 5 then 
         caster:AddAbility( "lord_true_lord" ):SetLevel(1)
         caster:SwapAbilities( "lord_evolution", "lord_true_lord", false, true )

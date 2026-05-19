@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_true_lord", "heroes/hero_lord/lord_true_lord", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
@@ -16,33 +18,17 @@ function lord_true_lord:Precache(context)
 end
 
 
- function lord_true_lord:CastFilterResult()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return UF_FAIL_CUSTOM
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return UF_FAIL_CUSTOM
-            end
-        end
-        return UF_SUCCESS
+function lord_true_lord:CastFilterResult()
+	if not LordAbilityHasEnoughBlood(self) then
+		return UF_FAIL_CUSTOM
+	end
+	return UF_SUCCESS
 end
-  
 
 function lord_true_lord:GetCustomCastError()
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return "#dota_hud_error_havent_charges"
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return "#dota_hud_error_havent_charges"
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return "#dota_hud_error_havent_charges"
+	end
 end
  
 function lord_true_lord:GetIntrinsicModifierName()
@@ -53,8 +39,10 @@ function lord_true_lord:OnSpellStart()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel())
 
-    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
-    modif:SetStackCount(modif:GetStackCount() - healthCost)    
+    local modif = GetLordBloodRageModifier(caster)
+    if modif then
+        modif:SetStackCount(modif:GetStackCount() - healthCost)
+    end    
     caster:AddAbility( "lord_true_vampire_lord" ):SetLevel(1)
     caster:SwapAbilities( "lord_true_lord", "lord_true_vampire_lord", false, true )
 end
@@ -100,12 +88,13 @@ end
 function modifier_lord_true_lord:OnIntervalThink()
         local parent = self:GetParent()
 
-        local modif = parent:FindModifierByName("modifier_lord_blood_rage")
-        local max_charge =  modif:GetAbility():GetSpecialValueFor("max_blood") + self:GetAbility():GetSpecialValueFor("max_blood")
-
-         local charges = self:GetAbility():GetSpecialValueFor("blood_per_tick") + modif:GetStackCount()
-         
-        modif:SetStackCount(math.min(charges,max_charge))
+        local modif = GetLordBloodRageModifier(parent)
+        if not modif then
+            return
+        end
+        local max_charge = modif:GetAbility():GetSpecialValueFor("max_blood") + self:GetAbility():GetSpecialValueFor("max_blood")
+        local charges = self:GetAbility():GetSpecialValueFor("blood_per_tick") + modif:GetStackCount()
+        modif:SetStackCount(math.min(charges, max_charge))
 
 end 
 

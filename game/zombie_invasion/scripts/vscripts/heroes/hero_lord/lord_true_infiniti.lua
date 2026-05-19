@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_true_infiniti", "heroes/hero_lord/lord_true_infiniti", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
@@ -36,11 +38,16 @@ modifier_lord_true_infiniti = class({
         } end,
 })
 
+function modifier_lord_true_infiniti:RefreshBloodRage()
+    self.modif = GetLordBloodRageModifier(self:GetParent())
+end
+
 function modifier_lord_true_infiniti:OnCreated()
-    self.modif = self:GetParent():FindModifierByName("modifier_lord_blood_rage")
-    self.pay = self:GetAbility():GetHealthCost(self:GetAbility():GetLevel() - 1)
-    print(self.pay)
-end 
+    self:RefreshBloodRage()
+    local ability = self:GetAbility()
+    local level = math.max(ability:GetLevel() - 1, 0)
+    self.pay = ability:GetHealthCost(level)
+end
  
 
 
@@ -49,16 +56,23 @@ function modifier_lord_true_infiniti:OnRefresh()
 end 
  
 function modifier_lord_true_infiniti:GetMinHealth()
-    if self:GetAbility():IsCooldownReady() and self.modif:GetStackCount() >= self.pay then
-        return 1
-    else
-        return 
+    if not self.modif or self.modif:IsNull() then
+        self:RefreshBloodRage()
     end
-
+    if self.modif and self:GetAbility():IsCooldownReady() and self.modif:GetStackCount() >= self.pay then
+        return 1
+    end
 end
 
 function modifier_lord_true_infiniti:OnTakeDamage( keys )
     if keys.unit ~= self:GetCaster() then
+        return
+    end
+
+    if not self.modif or self.modif:IsNull() then
+        self:RefreshBloodRage()
+    end
+    if not self.modif then
         return
     end
 

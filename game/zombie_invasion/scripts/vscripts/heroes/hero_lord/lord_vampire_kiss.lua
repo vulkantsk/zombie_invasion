@@ -1,3 +1,5 @@
+require("heroes/hero_lord/lord_blood_helpers")
+
 LinkLuaModifier("modifier_lord_vampire_kiss_buff", "heroes/hero_lord/lord_vampire_kiss", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", LUA_MODIFIER_MOTION_NONE)
 
@@ -17,35 +19,17 @@ function lord_vampire_kiss:Precache(context)
 end
 
  
- function lord_vampire_kiss:CastFilterResultTarget(hTarget)
-
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return UF_FAIL_CUSTOM
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return UF_FAIL_CUSTOM
-            end
-        end
-        return UF_SUCCESS
+function lord_vampire_kiss:CastFilterResultTarget(hTarget)
+	if not LordAbilityHasEnoughBlood(self) then
+		return UF_FAIL_CUSTOM
+	end
+	return UF_SUCCESS
 end
 
-
 function lord_vampire_kiss:GetCustomCastErrorTarget(hTarget)
-
-        if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
-            return "#dota_hud_error_havent_charges"
-        end
-
-        if self:GetCaster():HasModifier("modifier_lord_blood_rage") then
-            local modif = self:GetCaster():FindModifierByName("modifier_lord_blood_rage")
-            if not (modif:GetStackCount() >= self:GetHealthCost(self:GetLevel())) then 
-                return "#dota_hud_error_havent_charges"
-            end
-        end
-        return UF_SUCCESS
+	if not LordAbilityHasEnoughBlood(self) then
+		return "#dota_hud_error_havent_charges"
+	end
 end
 
 function lord_vampire_kiss:OnSpellStart()
@@ -53,7 +37,10 @@ function lord_vampire_kiss:OnSpellStart()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel())
 
-    local modif = caster:FindModifierByName("modifier_lord_blood_rage")
+    local modif = GetLordBloodRageModifier(caster)
+    if not modif then
+        return
+    end
 
     if target:GetTeamNumber() == caster:GetTeamNumber() then 
         target:AddNewModifier(caster, self, "modifier_lord_vampire_kiss_buff", {})

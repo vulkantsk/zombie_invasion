@@ -24,13 +24,15 @@ function CreateSoul(keys)
 		soul:SetBaseAttackTime(target:GetBaseAttackTime())
 		soul:SetAttackCapability(target:GetAttackCapability())
 
-		for i=0,9 do 
+		for i = 0, target:GetAbilityCount() - 1 do
 			local ability_target = target:GetAbilityByIndex(i)
-			local ability_name = ability_target and ability_target:GetAbilityName() or nil
-      		if ability_name and ability_name ~= "respawn" then 
-				soul:AddAbility(ability_name)
+			if ability_target then
+				local ability_name = ability_target:GetAbilityName()
+				if ability_name and ability_name ~= "respawn" then
+					soul:AddAbility(ability_name)
+				end
 			end
-     	end
+		end
 		if target:GetLevel() > 1 then
 			soul:CreatureLevelUp(target:GetLevel() - 1)
 		end
