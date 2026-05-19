@@ -44,6 +44,7 @@ end
 
 modifier_razor_eye_of_the_storm_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_razor_eye_of_the_storm_lua:IsHidden()
@@ -267,6 +268,7 @@ function modifier_razor_eye_of_the_storm_lua:PlayEffects2( enemy )
 end
 
 modifier_razor_eye_of_the_storm_lua_debuff = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

@@ -5,7 +5,6 @@ end
 LinkLuaModifier("modifier_item_ess_pudge", "items/drop_item/item_ess_pudge", LUA_MODIFIER_MOTION_NONE)
 
 
-
  
 -------------------------------------------
 function item_ess_pudge:GetIntrinsicModifierName()

@@ -75,6 +75,8 @@ end
     AllowIllusionDuplicate 	= function(self) return true end,
     GetAttributes           = function(self) return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end,
 })
+
+
  
 function modifier_hell_summon_portal:OnCreated()
 

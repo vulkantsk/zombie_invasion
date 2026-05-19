@@ -1,4 +1,17 @@
 ability_berserkers_call = class({})
+
+function ability_berserkers_call:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_beserkers_call.vpcf",
+		"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf",
+	}, {
+		"Hero_Axe.BerserkersCall.Start",
+		"Hero_Axe.Berserkers_Call",
+		"axe_axe_ability_berserk_0",
+		"axe_axe_anger_0",
+	}, context)
+end
+
 LinkLuaModifier('modifier_ability_berserkers_call_debuff_cmd', 'heroes/hero_axe/berserkers_call/berserkers_call', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier('modifier_ability_berserkers_call_buff_armor', 'heroes/hero_axe/berserkers_call/berserkers_call', LUA_MODIFIER_MOTION_NONE)
 function ability_berserkers_call:OnAbilityPhaseStart()
@@ -90,6 +103,8 @@ function ability_berserkers_call:GetCalledUnits()
 end
 
 modifier_ability_berserkers_call_buff_armor = class({})
+
+
 function modifier_ability_berserkers_call_buff_armor:DeclareFunctions()
 	return {
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS

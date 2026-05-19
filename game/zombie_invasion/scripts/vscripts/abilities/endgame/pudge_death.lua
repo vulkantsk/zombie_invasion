@@ -10,7 +10,6 @@ function pudge_death:OnSpellStart()
 end
 
 
-
 modifier_pudge_death = class({
 	IsHidden = function() return true end,
 	DeclareFunctions = function() return {

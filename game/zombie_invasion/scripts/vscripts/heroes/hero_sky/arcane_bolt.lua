@@ -1,5 +1,15 @@
 ability_skywrath_mage_arcane_bolt = class({})
 
+function ability_skywrath_mage_arcane_bolt:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_arcane_bolt.vpcf",
+	}, {
+		"Hero_SkywrathMage.ArcaneBolt.Cast",
+		"Hero_SkywrathMage.ArcaneBolt.Impact",
+	}, context)
+end
+
+
 function ability_skywrath_mage_arcane_bolt:OnSpellStart()
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()

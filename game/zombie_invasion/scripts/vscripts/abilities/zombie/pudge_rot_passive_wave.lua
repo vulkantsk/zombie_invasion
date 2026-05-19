@@ -1,5 +1,25 @@
 pudge_rot_passive_wave = class({})
+
+function pudge_rot_passive_wave:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_pudge/pudge_rot.vpcf",
+		"particles/units/heroes/hero_pudge/pudge_rot_recipient.vpcf",
+	}, {
+		"Hero_Pudge.Rot",
+	}, context)
+end
+
 pudge_rot_passive_wave_2 = class({})
+
+function pudge_rot_passive_wave_2:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_pudge/pudge_rot.vpcf",
+		"particles/units/heroes/hero_pudge/pudge_rot_recipient.vpcf",
+	}, {
+		"Hero_Pudge.Rot",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_pudge_rot_passive_wave", "abilities/zombie/pudge_rot_passive_wave", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_pudge_rot_passive_wave_debuff", "abilities/zombie/pudge_rot_passive_wave", LUA_MODIFIER_MOTION_NONE )
 
@@ -21,6 +41,7 @@ modifier_pudge_rot_passive_wave = class({
 	IsDebuff 				= function(self) return false end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
 
  
 --------------------------------------------------------------------------------
@@ -92,6 +113,7 @@ end
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+
 
 modifier_pudge_rot_passive_wave_debuff = class({
 	IsHidden 				= function(self) return false end,

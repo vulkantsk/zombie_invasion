@@ -214,11 +214,7 @@ function modifier_halloween_spell:GetModifierSpellAmplify_Percentage()
 end
 
 
-
  
-
-
-
 
 
  

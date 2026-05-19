@@ -3,11 +3,20 @@ LinkLuaModifier("modifier_darksoul_desolate_debuff", "abilities/last_stuck", LUA
 
 last_stuck = class({})
 
+function last_stuck:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_spectre/spectre_desolate_debuff.vpcf",
+	}, {
+	}, context)
+end
+
+
 function last_stuck:GetIntrinsicModifierName()
 	return "modifier_darksoul_desolate"
 end
 --------------------------------------------------------
 ------------------------------------------------------------
+
 modifier_darksoul_desolate = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
@@ -57,6 +66,8 @@ modifier_darksoul_desolate_debuff = class({
 	IsBuff                  = function(self) return false end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
+
 -------------------------------------------
 
 function modifier_darksoul_desolate_debuff:GetEffectName()

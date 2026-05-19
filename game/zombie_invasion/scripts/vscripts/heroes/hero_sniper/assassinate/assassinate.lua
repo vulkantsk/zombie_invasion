@@ -4,6 +4,20 @@ if ability_sniper_assassinate == nil then
     ability_sniper_assassinate = class({})
 end
 
+function ability_sniper_assassinate:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_sniper/sniper_assassinate.vpcf",
+		"particles/units/heroes/hero_sniper/sniper_assassinate_endpoint.vpcf",
+		"particles/units/heroes/hero_sniper/sniper_assassinate_impact_sparks.vpcf",
+		"particles/units/heroes/hero_sniper/sniper_crosshair.vpcf",
+	}, {
+		"Ability.AssassinateLoad",
+		"Hero_Sniper.AssassinateDamage",
+		"Hero_Sniper.AssassinateProjectile",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 function ability_sniper_assassinate:GetAOERadius()
  

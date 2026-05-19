@@ -6,6 +6,15 @@ if ability_firecleave == nil then
     ability_firecleave = class({})
 end
 
+function ability_firecleave:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/huskar/huskar_2021_immortal/huskar_2021_immortal_burning_spear_debuff_flame_circulate.vpcf",
+		"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave_gods_strength_crit_b.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_firecleave:GetIntrinsicModifierName()
@@ -71,6 +80,7 @@ modifier_ability_firecleave_fire = class({
     GetEffectName           = function(self) return "particles/econ/items/huskar/huskar_2021_immortal/huskar_2021_immortal_burning_spear_debuff_flame_circulate.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
 })
+
 
 function modifier_ability_firecleave_fire:OnCreated()
     self:StartIntervalThink(1)

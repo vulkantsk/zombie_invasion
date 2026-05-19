@@ -13,7 +13,6 @@ function item_npc_dota_hero_silencer:OnSpellStart()
 end
 
 
-
 silencer_buff_1 = class({})
 
 function silencer_buff_1:GetIntrinsicModifierName()

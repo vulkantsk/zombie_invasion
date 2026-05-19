@@ -11,6 +11,7 @@ Ability checklist (erase if done/checked):
 --------------------------------------------------------------------------------
 modifier_void_spirit_astral_step_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_void_spirit_astral_step_lua:IsHidden()

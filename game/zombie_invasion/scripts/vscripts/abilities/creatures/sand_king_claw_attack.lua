@@ -1,5 +1,13 @@
 
 sand_king_claw_attack = class({})
+
+function sand_king_claw_attack:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"DOTA_Item.Maim",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_sand_king_claw_attack", "modifiers/creatures/modifier_sand_king_claw_attack", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------

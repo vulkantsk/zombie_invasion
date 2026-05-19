@@ -1,7 +1,6 @@
 LinkLuaModifier("modifier_bone", "items/item_bone.lua", LUA_MODIFIER_MOTION_NONE)
 
 
-
 function SetStacks( keys )
 
 	local ability = keys.ability

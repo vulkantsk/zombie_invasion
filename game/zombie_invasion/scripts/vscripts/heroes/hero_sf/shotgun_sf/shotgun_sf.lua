@@ -10,6 +10,14 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 shotgun_sf = class({})
+
+function shotgun_sf:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"Hero_Medusa.AttackSplit",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_shotgun_sf", "heroes/hero_sf/shotgun_sf/shotgun_sf", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
@@ -46,6 +54,7 @@ function shotgun_sf:OnProjectileHit( target, location )
 	)
 	self.split_shot_attack = false
 end
+
 
 modifier_shotgun_sf = class({
 	IsHidden 				= function(self) return true end,

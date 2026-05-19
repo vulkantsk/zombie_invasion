@@ -5,6 +5,17 @@ if ability_phantom_assassin_stifling_dagger == nil then
     ability_phantom_assassin_stifling_dagger = class({})
 end
 
+function ability_phantom_assassin_stifling_dagger:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_stifling_dagger.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_stifling_dagger_debuff.vpcf",
+	}, {
+		"Hero_PhantomAssassin.Dagger.Cast",
+		"Hero_PhantomAssassin.Dagger.Target",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_phantom_assassin_stifling_dagger:OnSpellStart()

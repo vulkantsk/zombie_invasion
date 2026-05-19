@@ -2,7 +2,16 @@
  LinkLuaModifier( "modifier_froststorm_thunker", "heroes/hero_yuki-onna/frostshtorm", LUA_MODIFIER_MOTION_NONE )
 
 
- yuki_frostshtorm = {}
+yuki_frostshtorm = class({})
+
+function yuki_frostshtorm:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/ancient_apparition/ancient_apparation_ti8/ancient_ice_vortex_ti8.vpcf",
+	}, {
+		"Hero_Ancient_Apparition.IceVortex",
+		"Hero_Ancient_Apparition.IceVortexCast",
+	}, context)
+end
 
 function yuki_frostshtorm:GetAOERadius()
 	return self:GetSpecialValueFor( "radius" )
@@ -92,7 +101,7 @@ function modifier_froststorm_thunker:GetAuraSearchFlags()
 	return self:GetAbility():GetAbilityTargetFlags()
 end
  
- modifier_froststorm_buff = class({
+modifier_froststorm_buff = class({
  	IsHidden 				= function(self) return false end,
  	IsPurgable 				= function(self) return false end,
  	IsDebuff 				= function(self) return false end,

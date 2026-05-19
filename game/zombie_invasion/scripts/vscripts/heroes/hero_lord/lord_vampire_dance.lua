@@ -7,6 +7,19 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_vampire_dance = class({})
 
+function lord_vampire_dance:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"Hero_Juggernaut.BladeDance",
+		"blood_rage",
+		"dance",
+	}, context)
+end
+
+
 function lord_vampire_dance:GetIntrinsicModifierName()
     return "modifier_lord_vampire_dance_passive"
 end
@@ -53,6 +66,7 @@ function lord_vampire_dance:OnSpellStart()
     EmitSoundOn("dance" , caster)
 end
 
+
  modifier_lord_vampire_dance_before = class({
      IsHidden                 = function(self) return true end,
      IsPurgable                 = function(self) return false end,
@@ -94,6 +108,7 @@ function modifier_lord_vampire_dance_before:OnDestroy()
         self:GetParent():AddNewModifier(self:GetParent(),self:GetAbility(),"modifier_lord_vampire_dance_atr", {duration = 20})
 
 end
+
 
  modifier_lord_vampire_dance = class({
      IsHidden                 = function(self) return false end,
@@ -168,6 +183,9 @@ function modifier_lord_vampire_dance:OnIntervalThink()
 end
  
 
+
+ 
+
 modifier_lord_vampire_dance_passive = class({
     IsHidden                 = function(self) return true end,
     IsPurgable                 = function(self) return false end,
@@ -205,6 +223,7 @@ function modifier_lord_vampire_dance_passive:GetModifierProcAttack_Feedback( par
             EmitSoundOn( sound_cast, params.target )
         end
 end
+
 
 modifier_lord_vampire_dance_atr = class({
     IsHidden                 = function(self) return false end,

@@ -1,5 +1,14 @@
 innate_rend = class({})
 
+function innate_rend:Precache(context)
+	PrecacheAbilityResources({
+		"particles/custom/innates/rend_debuff.vpcf",
+	}, {
+		"Item_Desolator.Target",
+	}, context)
+end
+
+
 LinkLuaModifier("modifier_innate_rend", "heroes/hero_muerta/rend/rend", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_innate_rend_tear", "heroes/hero_muerta/rend/rend", LUA_MODIFIER_MOTION_NONE)
 
@@ -58,6 +67,7 @@ end
 
 
 modifier_innate_rend_tear = class({})
+
 
 function modifier_innate_rend_tear:IsHidden() return false end
 function modifier_innate_rend_tear:IsDebuff() return true end

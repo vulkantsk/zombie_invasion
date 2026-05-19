@@ -4,6 +4,16 @@ LinkLuaModifier("modifier_ghoul_reincornation_active", "abilities/zombie/ghoul_r
  
 ghoul_reincornation = class({})
 
+function ghoul_reincornation:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_life_stealer_rage.vpcf",
+		"particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf",
+	}, {
+		"Hero_LifeStealer.Rage",
+	}, context)
+end
+
+
 function ghoul_reincornation:GetIntrinsicModifierName()
    return "modifier_ghoul_reincornation" 
 end
@@ -11,6 +21,8 @@ end
 
 if modifier_ghoul_reincornation == nil then
     modifier_ghoul_reincornation = class({})
+
+
 end
 
 function modifier_ghoul_reincornation:IsHidden()
@@ -66,6 +78,7 @@ function modifier_ghoul_reincornation:OnTakeDamage( params )
 end
 
 modifier_ghoul_reincornation_active = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

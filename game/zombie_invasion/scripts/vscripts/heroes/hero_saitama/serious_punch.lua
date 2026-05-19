@@ -1,5 +1,15 @@
 saitama_serious_punch = class({})
 
+function saitama_serious_punch:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/earthshaker/egteam_set/hero_earthshaker_egset/earthshaker_echoslam_start_fallback_mid_egset.vpcf",
+		"particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf",
+	}, {
+		"Hero_Earthshaker.EchoSlam",
+	}, context)
+end
+
+
 if IsServer() then
 	function saitama_serious_punch:OnSpellStart()
 		local caster = self:GetCaster()

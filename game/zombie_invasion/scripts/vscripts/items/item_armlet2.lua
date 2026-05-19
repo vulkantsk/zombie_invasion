@@ -192,7 +192,6 @@ function modifier_item_armlet2_buff:OnTakeDamage(params)
 end
 
 
-
 function modifier_item_armlet2_buff:GetEffectName()
     return "particles/units/heroes/hero_bloodseeker/bloodseeker_bloodrage.vpcf" 
 end

@@ -2,6 +2,16 @@ LinkLuaModifier( "modifier_ring_of_corrosive", "heroes/hero_blood_hunter/ring_of
 
 ring_of_corrosive = class({})
 
+function ring_of_corrosive:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodritual_ring_lv.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_spell_bloodbath_bubbles_.vpcf",
+	}, {
+		"Hero_Warlock.Upheaval",
+	}, context)
+end
+
+
 function ring_of_corrosive:OnSpellStart()
  
 	local caster = self:GetCaster()
@@ -28,6 +38,7 @@ function ring_of_corrosive:GetAOERadius()
 end
 
 modifier_ring_of_corrosive = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

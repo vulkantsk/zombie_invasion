@@ -61,6 +61,4 @@ function modifier_ghost_speed:GetModifierMoveSpeedBonus_Constant()
 end
 
 
-
-
  

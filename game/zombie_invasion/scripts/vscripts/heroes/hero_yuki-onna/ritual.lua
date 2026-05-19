@@ -1,8 +1,17 @@
  LinkLuaModifier( "modifier_ritual_buff", "heroes/hero_yuki-onna/ritual", LUA_MODIFIER_MOTION_NONE )
 
 
- yuki_ritual = {}
- 
+yuki_ritual = class({})
+
+function yuki_ritual:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_arcana1.vpcf",
+		"particles/econ/items/crystal_maiden/ti9_immortal_staff/cm_ti9_staff_lvlup_globe.vpcf",
+	}, {
+		"hero_Crystal.freezingField.wind",
+	}, context)
+end
+
 function yuki_ritual:OnAbilityPhaseStart()
 	local particle_cast = "particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_arcana1.vpcf"
     
@@ -43,7 +52,7 @@ function yuki_ritual:OnSpellStart()
 end
 
  
- modifier_ritual_buff = class({
+modifier_ritual_buff = class({
  	IsHidden 				= function(self) return false end,
  	IsPurgable 				= function(self) return false end,
  	IsDebuff 				= function(self) return false end,

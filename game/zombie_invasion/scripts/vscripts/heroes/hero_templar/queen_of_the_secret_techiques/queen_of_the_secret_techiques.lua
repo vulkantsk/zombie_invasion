@@ -1,8 +1,16 @@
 LinkLuaModifier( "modifier_templar_secret", "heroes/hero_templar/queen_of_the_secret_techiques/queen_of_the_secret_techiques", LUA_MODIFIER_MOTION_NONE )
 
 
-
 templar_secret = class({})
+
+function templar_secret:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/templar_assassin/templar_assassin_butterfly/templar_assassin_meld_attack_butterfly.vpcf",
+	}, {
+		"Hero_TemplarAssassin.Meld.Attack",
+	}, context)
+end
+
 
 function templar_secret:GetIntrinsicModifierName()
     return "modifier_templar_secret"
@@ -10,6 +18,7 @@ end
 
 
 modifier_templar_secret = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

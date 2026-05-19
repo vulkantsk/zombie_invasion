@@ -13,7 +13,6 @@ function item_npc_dota_hero_muerta:OnSpellStart()
 end
 
 
-
 muerta_buff_1 = class({})
 
 function muerta_buff_1:GetIntrinsicModifierName()

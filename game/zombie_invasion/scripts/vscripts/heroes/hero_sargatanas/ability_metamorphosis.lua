@@ -97,7 +97,6 @@ function modifier_ability_metamorphosis:GetEffectAttachType()
 end
 
 
-
 modifier_ability_metamorphosis_aura = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
@@ -106,6 +105,7 @@ modifier_ability_metamorphosis_aura = class({
 	RemoveOnDeath 			= function(self) return true end,
 
 })
+
 
  
 function modifier_ability_metamorphosis_aura:OnCreated( kv )
@@ -156,6 +156,7 @@ function modifier_ability_metamorphosis_aura:GetAuraEntityReject( hEntity )
 	return false
 end
 
+
 modifier_ability_metamorphosis_burn = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
@@ -170,7 +171,6 @@ modifier_ability_metamorphosis_burn = class({
     GetEffectName           = function(self) return "particles/econ/courier/courier_golden_doomling/courier_golden_doomling_ambient.vpcf" end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
 })
-
 
 
 function modifier_ability_metamorphosis_burn:GetModifierAttackSpeedBonus_Constant()

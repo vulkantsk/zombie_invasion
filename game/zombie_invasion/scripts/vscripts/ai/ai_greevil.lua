@@ -14,8 +14,6 @@ function Spawn( entityKeyValues )
 end
 
 
-
-
 function NeutralAutoCasterThink()
 	if GameRules:IsGamePaused() == true or GameRules:State_Get() == DOTA_GAMERULES_STATE_POST_GAME or thisEntity:IsAlive() == false then
 		return 1

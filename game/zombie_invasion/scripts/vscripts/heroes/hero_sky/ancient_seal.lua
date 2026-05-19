@@ -1,10 +1,19 @@
 ancient_seal = class({})
+
+function ancient_seal:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_ancient_seal_passive", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ancient_seal_debuff", "heroes/hero_sky/ancient_seal", LUA_MODIFIER_MOTION_NONE )
 
 function ancient_seal:GetIntrinsicModifierName()
     return 'modifier_ancient_seal_passive'
 end
+
 
 modifier_ancient_seal_passive = class({
     IsHidden    = function() return true end,
@@ -58,6 +67,7 @@ function modifier_ancient_seal_passive:OnAbilityFullyCast(keys)
 
     end
 end
+
 
 modifier_ancient_seal_debuff = class({
     DeclareFunctions    = function(self)

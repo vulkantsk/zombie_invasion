@@ -113,7 +113,6 @@ function Difficulty:NPC( npc )
 		end
 
 
-
     local tablUnits = {
         {unit = {'npc_classic_half_zombie'}, ability = {'slow_zombie_attack'} },
         {unit = {'npc_classic_wave_ghoul'}, ability = {'ghoul_reincornation'} },

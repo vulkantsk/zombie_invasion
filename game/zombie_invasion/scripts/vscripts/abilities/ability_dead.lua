@@ -1,6 +1,16 @@
 LinkLuaModifier( "modifier_dead", "abilities/ability_dead", LUA_MODIFIER_MOTION_NONE )
 kys_spell = class({})
 
+function kys_spell:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_radial_burst_blood.vpcf",
+	}, {
+		"deadman.soundtrack",
+		"sound.heartbreak",
+	}, context)
+end
+
+
 function kys_spell:GetCastAnimation()  
     return ACT_DOTA_CAST_ABILITY_4  
 end
@@ -16,6 +26,7 @@ function kys_spell:OnSpellStart()
     end)
 
 end
+
 
 modifier_dead = class({
         IsHidden                 = function(self) return false end,

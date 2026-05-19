@@ -3,6 +3,19 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 
 lord_vampire_kiss = class({})
+
+function lord_vampire_kiss:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_darkartistry_dmg_stroke_tgt.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"vamp_kiss",
+	}, context)
+end
+
  
  function lord_vampire_kiss:CastFilterResultTarget(hTarget)
 
@@ -66,6 +79,7 @@ function lord_vampire_kiss:OnSpellStart()
  
  
 end
+
 
 modifier_lord_vampire_kiss_buff = class({
     IsHidden                 = function(self) return false end,

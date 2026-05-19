@@ -1,5 +1,6 @@
 modifier_shadow_jug = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_shadow_jug:IsHidden()

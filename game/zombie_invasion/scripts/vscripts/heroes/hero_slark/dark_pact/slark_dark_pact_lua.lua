@@ -1,4 +1,17 @@
 slark_dark_pact_lua = class({})
+
+function slark_dark_pact_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/slark/slark_head_immortal/slark_head_immortal_start.vpcf",
+		"particles/econ/items/slark/slark_head_immortal/slark_immortal_dark_pact_pulses.vpcf",
+		"particles/units/heroes/hero_slark/slark_dark_pact_pulses.vpcf",
+		"particles/units/heroes/hero_slark/slark_dark_pact_start.vpcf",
+	}, {
+		"Hero_Slark.DarkPact.Cast",
+		"Hero_Slark.DarkPact.PreCast",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_dark_pact_lua", "heroes/hero_slark/dark_pact/slark_dark_pact_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_slark_dark_pact_lua_scepter", "heroes/hero_slark/dark_pact/slark_dark_pact_lua", LUA_MODIFIER_MOTION_NONE )
 
@@ -24,6 +37,7 @@ function slark_dark_pact_lua:OnSpellStart()
 end
 
 modifier_slark_dark_pact_lua = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications
@@ -221,6 +235,7 @@ function modifier_slark_dark_pact_lua:PlayEffects2()
 	-- play sound
 	EmitSoundOn( sound_cast, self:GetParent() )
 end
+
 
 modifier_slark_dark_pact_lua_scepter = class({
 	IsHidden 				= function(self) return true end,

@@ -1,6 +1,16 @@
 
 --------------------------------------------------------------------------------
 slark_fish_bait_lua = class({})
+
+function slark_fish_bait_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_undying/undying_fg_aura.vpcf",
+	}, {
+		"Hero_Undying.Tombstone",
+		"murloc",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_fish_bait", "heroes/hero_slark/slark_fish_bait/slark_fish_bait_lua", LUA_MODIFIER_MOTION_BOTH )
  
 
@@ -26,6 +36,7 @@ function slark_fish_bait_lua:OnSpellStart()
 end
  
 --------------------------------------------------------------------------------
+
 modifier_slark_fish_bait = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,

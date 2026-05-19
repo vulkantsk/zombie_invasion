@@ -4,6 +4,17 @@ if sizzling_ray == nil then
     sizzling_ray = class({})
 end
 
+function sizzling_ray:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_lina/lina_base_attack_explosion_c.vpcf",
+		"particles/units/heroes/hero_phoenix/phoenix_sunray.vpcf",
+	}, {
+		"Hero_Phoenix.SunRay.Cast",
+		"Hero_Phoenix.SuperNova.Death",
+	}, context)
+end
+
+
 function sizzling_ray:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
 end

@@ -5,6 +5,16 @@ LinkLuaModifier( "modifier_meld_reduction", "heroes/hero_templar/meld/meld" ,LUA
 
 Meld = class({})
 
+function Meld:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/templar_assassin/templar_assassin_butterfly/templar_assassin_trap_explode_butterfly.vpcf",
+		"particles/units/heroes/hero_antimage/antimage_blink_end.vpcf",
+		"particles/units/heroes/hero_templar_assassin/templar_assassin_meld.vpcf",
+	}, {
+	}, context)
+end
+
+
 function Meld:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
@@ -60,6 +70,7 @@ function Meld:OnSpellStart()
 	
 end
 
+
 modifier_meld_damage = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -76,9 +87,8 @@ modifier_meld_damage = class({
 })
 
 
-
-
 --------------------------------------------------------------------------------
+
 
 modifier_meld_reduction = class({
     IsHidden                = function(self) return false end,
@@ -138,7 +148,5 @@ function modifier_meld_reduction:OnRefresh()
 end
 
 function modifier_meld_reduction:GetModifierPhysicalArmorBonus() return self.armor_reduction end
-
-
 
 

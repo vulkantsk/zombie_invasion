@@ -1,5 +1,13 @@
 item_book_of_heroes = class({})
 
+function item_book_of_heroes:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"DOTA_Item.Cheese.Activate",
+	}, context)
+end
+
+
 function item_book_of_heroes:OnSpellStart()
      local caster = self:GetCaster()
      local hero = caster:GetUnitName()

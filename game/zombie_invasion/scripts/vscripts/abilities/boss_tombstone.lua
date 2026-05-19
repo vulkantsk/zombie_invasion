@@ -1,6 +1,14 @@
 
 boss_tombstone = class({})
 
+function boss_tombstone:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"Hero_Axe.BerserkersCall.Start",
+	}, context)
+end
+
+
 function boss_tombstone:GetCastAnimation()
 	--EmitSoundOn("Hero_Axe.BerserkersCall.Start", self:GetCaster())	
     return ACT_DOTA_OVERRIDE_ABILITY_1 

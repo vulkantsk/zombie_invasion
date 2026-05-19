@@ -1,5 +1,13 @@
 tb_soul = class({})
 
+function tb_soul:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/sven/sven_warcry_ti5/sven_warcry_cast_arc_lightning.vpcf",
+	}, {
+	}, context)
+end
+
+
 function tb_soul:OnSpellStart()
     local caster = self:GetCaster()
 	local duration = self:GetSpecialValueFor( "illusion_duration" )

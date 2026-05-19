@@ -1,5 +1,12 @@
 false_promise_custom = class({})
 
+function false_promise_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_oracle/oracle_purifyingflames_flash_elec.vpcf",
+		"particles/units/heroes/hero_oracle/oracle_purifyingflames_head.vpcf",
+	}, {
+	}, context)
+end
 
 
 function false_promise_custom:OnSpellStart()
@@ -22,7 +29,6 @@ function false_promise_custom:OnSpellStart()
     --local damage_bonus = ability:GetSpecialValueFor("bonus_int_damage") * caster:GetIntellect()
     --local damage = dmg + damage_bonus 
     --print("A : ",damage_bonus)
-
 
 
     local damageTable = {

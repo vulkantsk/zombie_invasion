@@ -7,6 +7,20 @@ if ability_drow_ranger_marksmanship == nil then
     ability_drow_ranger_marksmanship = class({})
 end
 
+function ability_drow_ranger_marksmanship:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_drow/drow_base_attack.vpcf",
+		"particles/units/heroes/hero_drow/drow_frost_arrow.vpcf",
+		"particles/units/heroes/hero_drow/drow_marksmanship.vpcf",
+		"particles/units/heroes/hero_drow/drow_marksmanship_attack.vpcf",
+		"particles/units/heroes/hero_drow/drow_marksmanship_frost_arrow.vpcf",
+		"particles/units/heroes/hero_drow/drow_marksmanship_start.vpcf",
+	}, {
+		"Hero_DrowRanger.Marksmanship.Target",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_drow_ranger_marksmanship:GetIntrinsicModifierName()

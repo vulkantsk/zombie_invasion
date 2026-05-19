@@ -85,7 +85,6 @@ function modifier_blackshop_cursed_tonic_booster:GetModifierHealthBonus()
 end
 
 
-
 modifier_blackshop_cursed_tonic_booster_debuff = class({})
 
 function modifier_blackshop_cursed_tonic_booster_debuff:IsHidden()

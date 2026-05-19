@@ -6,6 +6,14 @@ if ability_firecleave_creep == nil then
     ability_firecleave_creep = class({})
 end
 
+function ability_firecleave_creep:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/huskar/huskar_2021_immortal/huskar_2021_immortal_burning_spear_debuff_flame_circulate.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
     
 function ability_firecleave_creep:GetIntrinsicModifierName()
@@ -60,6 +68,7 @@ modifier_ability_firecleave_creep_fire = class({
         GetAttributes             = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 
 })
+
 
 function modifier_ability_firecleave_creep_fire:OnCreated()
     self:StartIntervalThink(1)

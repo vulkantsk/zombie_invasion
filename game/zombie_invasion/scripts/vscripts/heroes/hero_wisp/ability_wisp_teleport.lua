@@ -61,6 +61,7 @@ end
 
 modifier_ability_wisp_teleport = class({})
 
+
 function modifier_ability_wisp_teleport:IsHidden()
 	return false
 end

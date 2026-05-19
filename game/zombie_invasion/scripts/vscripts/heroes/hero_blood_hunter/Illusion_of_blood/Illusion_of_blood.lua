@@ -1,4 +1,16 @@
 illusion_of_blood = class({})
+
+function illusion_of_blood:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_eztzhok.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_chaos_knight/chaos_knight_phantasm.vpcf",
+	}, {
+		"Hero_ChaosKnight.Phantasm",
+		"hero_bloodseeker.bloodRage",
+	}, context)
+end
+
 LinkLuaModifier('modifier_illusion_of_blood', 'heroes/hero_blood_hunter/illusion_of_blood/illusion_of_blood', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier( "modifier_bloodrage_buff", "heroes/hero_blood_hunter/bloodrage/bloodrage", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_bloodrage_count", "heroes/hero_blood_hunter/bloodrage/bloodrage", LUA_MODIFIER_MOTION_NONE )
@@ -34,9 +46,6 @@ function illusion_of_blood:GetCustomCastError()
 end
 
 
-
-
-
 function illusion_of_blood:OnSpellStart()
     local caster = self:GetCaster()
     local healthCost = self:GetHealthCost(self:GetLevel())
@@ -50,7 +59,8 @@ function illusion_of_blood:OnSpellStart()
     })
 end 
 
-modifier_illusion_of_blood  = class({
+
+modifier_illusion_of_blood = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return true end,
     IsDebuff                = function(self) return false end,

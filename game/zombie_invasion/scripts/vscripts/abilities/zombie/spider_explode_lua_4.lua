@@ -2,6 +2,19 @@
 ----------------------------------------------------------------------
 spider_explode_lua_4 = class({})
 
+function spider_explode_lua_4:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_alchemist/alchemist_acid_spray.vpcf",
+		"particles/units/heroes/hero_viper/viper_nethertoxin.vpcf",
+		"particles/units/heroes/hero_viper/viper_nethertoxin_debuff.vpcf",
+	}, {
+		"Hero_Broodmother.SpawnSpiderlings",
+		"Hero_Viper.NetherToxin",
+		"Hero_Viper.NetherToxin.Damage",
+	}, context)
+end
+
+
  
 
 LinkLuaModifier( "modifier_spider_nethertoxin_lua", "modifiers/monsters/modifier_spider_nethertoxin_lua", LUA_MODIFIER_MOTION_NONE )

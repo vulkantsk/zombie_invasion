@@ -1,5 +1,6 @@
 modifier_juggernaut_blade_fury_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_juggernaut_blade_fury_lua:IsHidden()

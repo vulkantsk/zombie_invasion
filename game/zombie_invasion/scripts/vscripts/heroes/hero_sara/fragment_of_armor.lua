@@ -1,4 +1,15 @@
 sara_fragment_of_armor = class({})
+
+function sara_fragment_of_armor:Precache(context)
+	PrecacheAbilityResources({
+		"particles/arena/units/heroes/hero_sara/fragment_of_armor.vpcf",
+	}, {
+		"Hero_Medusa.ManaShield.Off",
+		"Hero_Medusa.ManaShield.On",
+		"Hero_Medusa.ManaShield.Proc",
+	}, context)
+end
+
 LinkLuaModifier("modifier_sara_fragment_of_armor", "heroes/hero_sara/fragment_of_armor.lua", LUA_MODIFIER_MOTION_NONE)
 
 if IsServer() then
@@ -25,6 +36,7 @@ modifier_sara_fragment_of_armor = class({
 	GetEffectAttachType = function() return PATTACH_ABSORIGIN_FOLLOW end,
 	GetEffectName = function() return "particles/arena/units/heroes/hero_sara/fragment_of_armor.vpcf" end,
 })
+
 
 function modifier_sara_fragment_of_armor:DeclareFunctions()
 	return {MODIFIER_EVENT_ON_TAKEDAMAGE,

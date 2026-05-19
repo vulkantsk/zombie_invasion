@@ -4,11 +4,20 @@ LinkLuaModifier("modifier_ursa_fury_swipes_custom_buff", "heroes/hero_ursa/fury_
 
 ursa_fury_swipes_custom = class({})
 
+function ursa_fury_swipes_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf",
+	}, {
+	}, context)
+end
+
+
 function ursa_fury_swipes_custom:GetIntrinsicModifierName()
 	return "modifier_ursa_fury_swipes_custom"
 end
 --------------------------------------------------------
 ------------------------------------------------------------
+
 modifier_ursa_fury_swipes_custom = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
@@ -103,6 +112,8 @@ modifier_ursa_fury_swipes_custom_debuff = class({
 	IsBuff                  = function(self) return false end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
+
 -------------------------------------------
 
 function modifier_ursa_fury_swipes_custom_debuff:GetEffectName()

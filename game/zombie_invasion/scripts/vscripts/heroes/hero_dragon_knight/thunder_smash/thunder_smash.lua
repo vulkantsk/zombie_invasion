@@ -1,4 +1,14 @@
 thunder_smash = class({})
+
+function thunder_smash:Precache(context)
+	PrecacheAbilityResources({
+		"particles/thunder_smash.vpcf",
+	}, {
+		"Hero_invoker.emp.cast",
+		"Hero_invoker.emp.discharge",
+	}, context)
+end
+
 LinkLuaModifier('modifier_thunder_smash_debuff', 'heroes/hero_dragon_knight/thunder_smash/thunder_smash', LUA_MODIFIER_MOTION_NONE)
 
 function thunder_smash:OnSpellStart()
@@ -44,6 +54,7 @@ function thunder_smash:OnSpellStart()
 
     end 
 end
+
 
 modifier_thunder_smash_debuff = class({
     IsHidden                = function(self) return false end,

@@ -7,7 +7,6 @@ if item_picture == nil then
 end
 
 
-
  
 
 

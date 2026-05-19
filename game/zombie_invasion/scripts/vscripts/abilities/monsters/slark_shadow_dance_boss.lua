@@ -1,4 +1,15 @@
 slark_shadow_dance_boss = class({})
+
+function slark_shadow_dance_boss:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_slark_shadow_dance.vpcf",
+		"particles/units/heroes/hero_slark/slark_shadow_dance.vpcf",
+		"particles/units/heroes/hero_slark/slark_shadow_dance_dummy.vpcf",
+	}, {
+		"Hero_Slark.ShadowDance",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_shadow_dance_boss", "abilities/monsters/slark_shadow_dance_boss", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_slark_shadow_dance_boss_passive", "abilities/monsters/slark_shadow_dance_boss", LUA_MODIFIER_MOTION_NONE )
 
@@ -21,6 +32,8 @@ function slark_shadow_dance_boss:OnSpellStart()
 		{ duration = bDuration } -- kv
 	)
 end
+ 
+
  
 modifier_slark_shadow_dance_boss = class({
     IsHidden                = function(self) return false end,

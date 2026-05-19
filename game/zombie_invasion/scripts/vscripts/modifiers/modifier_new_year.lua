@@ -296,11 +296,7 @@ function modifier_spell1:GetModifierSpellAmplify_Percentage()
 end
 
 
-
  
-
-
-
 
 
  

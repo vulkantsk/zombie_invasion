@@ -1,5 +1,6 @@
 modifier_generic_silenced_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_generic_silenced_lua:IsDebuff()

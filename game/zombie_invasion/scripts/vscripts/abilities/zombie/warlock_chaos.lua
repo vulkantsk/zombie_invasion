@@ -1,6 +1,17 @@
 LinkLuaModifier( "modifier_warlock_chaos", "abilities/zombie/warlock_chaos", LUA_MODIFIER_MOTION_NONE )
 
 warlock_chaos = class({})
+
+function warlock_chaos:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_warlock/warlock_rain_of_chaos.vpcf",
+		"particles/units/heroes/hero_warlock/warlock_rain_of_chaos_start.vpcf",
+	}, {
+		"Hero_Warlock.RainOfChaos",
+		"Hero_Warlock.RainOfChaos_buildup",
+	}, context)
+end
+
  
 function warlock_chaos:GetIntrinsicModifierName()
 	return "modifier_warlock_chaos"
@@ -60,6 +71,9 @@ end
 function warlock_chaos:GetAOERadius()
 	return self:GetSpecialValueFor("radius")
 end
+
+ 
+
 
  
 modifier_warlock_chaos = class({

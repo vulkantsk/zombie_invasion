@@ -68,7 +68,6 @@ function CastROt( enemy )
 end
 
 
-
 function MoveToTarget()
 	if hSpawner == nil then
 		print ( "Lycan doesn't know where target is" )

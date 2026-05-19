@@ -4,6 +4,14 @@ if demon_buff == nil then
     demon_buff = class({})
 end
 
+function demon_buff:Precache(context)
+	PrecacheAbilityResources({
+		"particles/items_fx/manacles_of_power_effect.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function demon_buff:OnSpellStart()

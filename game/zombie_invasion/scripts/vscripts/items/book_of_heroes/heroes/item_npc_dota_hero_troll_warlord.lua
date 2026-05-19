@@ -12,7 +12,6 @@ function item_npc_dota_hero_troll_warlord:OnSpellStart()
 end
 
 
-
 troll_warlord_buff_1 = class({})
 
 function troll_warlord_buff_1:GetIntrinsicModifierName()

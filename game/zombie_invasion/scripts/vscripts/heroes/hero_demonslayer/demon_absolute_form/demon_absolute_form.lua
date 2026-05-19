@@ -2,6 +2,16 @@ LinkLuaModifier( "modifier_demon_absolute_form", "heroes/hero_demonslayer/demon_
 
 demon_absolute_form = class({})
 
+function demon_absolute_form:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_nevermore/nevermore_requiemofsouls.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_line.vpcf",
+	}, {
+		"Hero_Nevermore.RequiemOfSouls",
+	}, context)
+end
+
+
 function demon_absolute_form:OnSpellStart() 
 
     self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_demon_absolute_form", {duration = 6 } )

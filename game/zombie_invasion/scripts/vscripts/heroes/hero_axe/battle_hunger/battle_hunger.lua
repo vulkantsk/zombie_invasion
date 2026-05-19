@@ -1,5 +1,16 @@
 ability_battle_hunger = class({})
 
+function ability_battle_hunger:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_axe/axe_battle_hunger.vpcf",
+		"particles/units/heroes/hero_axe/axe_battle_hunger_cast.vpcf",
+	}, {
+		"Hero_Axe.Battle_Hunger",
+		"axe_axe_ability_battlehunger_0",
+	}, context)
+end
+
+
 function ability_battle_hunger:OnAbilityPhaseStart()
 	local cast_particle = ParticleManager:CreateParticle("particles/units/heroes/hero_axe/axe_battle_hunger_cast.vpcf", PATTACH_POINT_FOLLOW, self:GetCaster())
 	ParticleManager:SetParticleControlEnt(cast_particle, 0, self:GetCaster(), PATTACH_POINT_FOLLOW, "attach_attack1", self:GetCaster():GetAbsOrigin(), true)
@@ -66,6 +77,9 @@ function ability_battle_hunger:OnSpellStart()
 end
  
 
+
+ 
+
 modifier_imba_battle_hunger_debuff_dot = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return true end,
@@ -109,6 +123,7 @@ function modifier_imba_battle_hunger_debuff_dot:OnIntervalThink()
         ability = self:GetAbility(),
     })
 end
+
 
 modifier_imba_battle_hunger_buff_dot = class({
     IsHidden                = function(self) return false end,

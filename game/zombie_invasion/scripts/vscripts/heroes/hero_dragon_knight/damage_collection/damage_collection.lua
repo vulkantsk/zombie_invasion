@@ -1,4 +1,13 @@
 damage_collection = class({})
+
+function damage_collection:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_centaur/centaur_stampede_cast.vpcf",
+	}, {
+		"Hero_Centaur.Stampede.Cast",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_damage_collection", "heroes/hero_dragon_knight/damage_collection/damage_collection", LUA_MODIFIER_MOTION_NONE )
 
 
@@ -56,6 +65,7 @@ function damage_collection:PlayEffects()
 end
 
 modifier_damage_collection = class({})
+
 
 function modifier_damage_collection:DeclareFunctions()
     return {

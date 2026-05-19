@@ -411,6 +411,7 @@
 		"precache"
 		{
 			"particle"  "particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf"
+			"particle"  "particles/arena/range_display.vpcf"
 		}
 
 		"OnUpgrade"

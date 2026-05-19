@@ -1,5 +1,6 @@
 modifier_lion_finger_of_death_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
  

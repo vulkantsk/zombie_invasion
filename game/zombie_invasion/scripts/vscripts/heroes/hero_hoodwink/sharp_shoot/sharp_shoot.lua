@@ -1,5 +1,17 @@
 hoodwink_sharp_shoot = class({})
 
+function hoodwink_sharp_shoot:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_hoodwink/hoodwink_sharpshooter_projectile.vpcf",
+	}, {
+		"Hero_Hoodwink.Sharpshooter.Projectile",
+		"Hero_hoodwink.StormBoltImpact",
+		"hood_shoot",
+		"hoodwink_hoodwink_arb_hit_",
+	}, context)
+end
+
+
 function hoodwink_sharp_shoot:GetCastRange()
 	return self:GetSpecialValueFor("wave_distance")
 end

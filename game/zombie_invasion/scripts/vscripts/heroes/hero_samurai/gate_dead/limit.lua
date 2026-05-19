@@ -1,12 +1,21 @@
 LinkLuaModifier( "modifier_juggernaut_fifth_gate", "heroes/hero_samurai/gate_dead/limit", LUA_MODIFIER_MOTION_NONE )
 
 juggernaut_fifth_gate = class({})
+
+function juggernaut_fifth_gate:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/doom/doom_f2p_death_effect/doom_bringer_f2p_death_fire.vpcf",
+	}, {
+	}, context)
+end
+
 --------------------------------------------------------------------------------
 -- Ability Start
 
 function juggernaut_fifth_gate:GetIntrinsicModifierName()
 	return "modifier_juggernaut_fifth_gate"
 end
+
 
 modifier_juggernaut_fifth_gate = class({
 	IsHidden 				= function(self) return true end,

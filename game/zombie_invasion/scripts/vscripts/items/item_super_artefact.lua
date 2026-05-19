@@ -27,7 +27,6 @@ modifier_item_super_artefact_return = class({
 })
 
 
-
 function modifier_item_super_artefact_return:OnCreated()
     self.return_damage = self:GetAbility():GetSpecialValueFor("return_damage")
     self.str_to_damage = self:GetAbility():GetSpecialValueFor("return_damage_str")

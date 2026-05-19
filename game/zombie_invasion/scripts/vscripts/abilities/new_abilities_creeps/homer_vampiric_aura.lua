@@ -1,4 +1,13 @@
 homer_vampiric_aura = class({})
+
+function homer_vampiric_aura:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_skeletonking/wraith_king_vampiric_aura_lifesteal.vpcf",
+		"particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_homer_vampiric_aura", "abilities/quest/homer_vampiric_aura", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_homer_vampiric_aura_lifesteal", "abilities/quest/homer_vampiric_aura", LUA_MODIFIER_MOTION_NONE )
 
@@ -12,6 +21,7 @@ end
 	return "modifier_homer_vampiric_aura"
 end
 modifier_homer_vampiric_aura = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications
@@ -69,6 +79,7 @@ function modifier_homer_vampiric_aura:OnRefresh( kv )
 end
 
 modifier_homer_vampiric_aura_lifesteal = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

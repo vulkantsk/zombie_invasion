@@ -105,7 +105,6 @@ function modifier_survior_passive:OnDeath( kv )
 	end
 
 
-
       return 0
 end
 

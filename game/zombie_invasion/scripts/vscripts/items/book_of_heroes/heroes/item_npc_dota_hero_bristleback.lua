@@ -3,6 +3,15 @@ LinkLuaModifier( "modifier_bristleback_buff", "items/book_of_heroes/heroes/item_
 
 item_npc_dota_hero_bristleback = class({})
 
+function item_npc_dota_hero_bristleback:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_centaur/centaur_return_buff_start_flame.vpcf",
+		"particles/units/heroes/hero_omniknight/omniknight_heavenly_grace_buff.vpcf",
+	}, {
+	}, context)
+end
+
+
 function item_npc_dota_hero_bristleback:OnSpellStart()
 		local caster = self:GetCaster()
 		local hItem = self
@@ -14,12 +23,21 @@ function item_npc_dota_hero_bristleback:OnSpellStart()
 end
 
 
-
 bristleback_buff_1 = class({})
+
+function bristleback_buff_1:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_centaur/centaur_return_buff_start_flame.vpcf",
+		"particles/units/heroes/hero_omniknight/omniknight_heavenly_grace_buff.vpcf",
+	}, {
+	}, context)
+end
+
 
 function bristleback_buff_1:GetIntrinsicModifierName()
     return "modifier_bristleback"
 end
+
 
 modifier_bristleback = class({
     isHidden = function() return true end,
@@ -35,7 +53,6 @@ modifier_bristleback = class({
 
     } end
 })
-
 
 
 function modifier_bristleback:OnCreated()

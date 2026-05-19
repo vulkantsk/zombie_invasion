@@ -1,5 +1,6 @@
 modifier_wraith_king_wraithfire_blast_lua = class({})
 
+
 --------------------------------------------------------------------------------
 
 function modifier_wraith_king_wraithfire_blast_lua:IsDebuff()

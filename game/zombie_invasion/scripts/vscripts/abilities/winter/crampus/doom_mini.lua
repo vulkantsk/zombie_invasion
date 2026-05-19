@@ -124,8 +124,6 @@ function modifier_doom_mini:OnTakeDamage( keys )
 end
 
 
-
-
  modifier_doom_mini_death = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,

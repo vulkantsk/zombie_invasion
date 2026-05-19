@@ -168,22 +168,6 @@ function modifier_item_imba_vladmir_aura:OnTakeDamage( keys )
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if modifier_item_imba_vladmir_2 == nil then modifier_item_imba_vladmir_2 = class({}) end
 
 function modifier_item_imba_vladmir_2:IsHidden()		return true end
@@ -314,16 +298,6 @@ function modifier_item_imba_vladmir_aura_2:OnTakeDamage( keys )
 		end
 	end
 end
-
-
-
-
-
-
-
-
-
-
 
 
 if modifier_item_imba_vladmir_3 == nil then modifier_item_imba_vladmir_3 = class({}) end

@@ -1,5 +1,13 @@
 destruction = class({})
 
+function destruction:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_centaur/centaur_double_edge.vpcf",
+	}, {
+		"Hero_Centaur.DoubleEdge",
+	}, context)
+end
+
 
 --------------------------------------------------------------------------------
 -- Ability Start

@@ -1,5 +1,6 @@
 modifier_wraith_king_vampiric_aura_lua_lifesteal = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_wraith_king_vampiric_aura_lua_lifesteal:IsHidden()

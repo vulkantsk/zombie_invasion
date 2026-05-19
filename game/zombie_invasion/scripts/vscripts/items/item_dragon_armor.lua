@@ -22,7 +22,6 @@ modifier_item_dragon_armor_return = class({
 })
 
 
-
 function modifier_item_dragon_armor_return:OnCreated()
     self.return_damage = self:GetAbility():GetSpecialValueFor("return_damage")
     self.str_to_damage = self:GetAbility():GetSpecialValueFor("return_damage_str")

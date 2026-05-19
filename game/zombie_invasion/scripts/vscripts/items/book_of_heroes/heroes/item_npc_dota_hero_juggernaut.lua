@@ -12,7 +12,6 @@ function item_npc_dota_hero_juggernaut:OnSpellStart()
 end
 
 
-
 juggernaut_buff = class({})
 
 function juggernaut_buff:GetIntrinsicModifierName()

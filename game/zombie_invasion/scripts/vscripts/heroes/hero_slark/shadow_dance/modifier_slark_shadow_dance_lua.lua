@@ -1,5 +1,6 @@
 modifier_slark_shadow_dance_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_slark_shadow_dance_lua:IsHidden()

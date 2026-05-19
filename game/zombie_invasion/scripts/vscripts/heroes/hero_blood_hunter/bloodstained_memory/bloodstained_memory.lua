@@ -4,9 +4,20 @@ LinkLuaModifier( "modifier_bloodstained_memory", "heroes/hero_blood_hunter/blood
 
 bloodstained_memory = class({})
 
+function bloodstained_memory:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_eztzhok.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+	}, {
+		"hero_bloodseeker.bloodRage",
+	}, context)
+end
+
+
 function bloodstained_memory:GetIntrinsicModifierName()
     return "modifier_bloodstained_memory"
 end
+
 
  modifier_bloodstained_memory = class({
         IsHidden                = function(self) return false end,
@@ -20,7 +31,6 @@ end
             MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
             } end,
     })
-
 
 
 function modifier_bloodstained_memory:OnCreated()

@@ -1,10 +1,20 @@
 ability_warpath = class({})
 
+function ability_warpath:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bristleback/bristleback_warpath.vpcf",
+		"particles/units/heroes/hero_bristleback/bristleback_warpath_dust.vpcf",
+	}, {
+	}, context)
+end
+
+
 function ability_warpath:GetIntrinsicModifierName() return 'modifier_ability_warpath_buff' end
 
 LinkLuaModifier('modifier_ability_warpath_buff', 'heroes/hero_brist/warpath/warpath', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier('modifier_ability_warpath_buff_particle', 'heroes/hero_brist/warpath/warpath', LUA_MODIFIER_MOTION_NONE)
 -- Original: https://github.com/EarthSalamander42/dota_imba/blob/77d0b1f04e322812d16b0fce6e0089c24c4a38e2/game/dota_addons/dota_imba_reborn/scripts/vscripts/components/abilities/heroes/hero_bristleback.lua#L548-L628
+
 modifier_ability_warpath_buff = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -50,6 +60,7 @@ function modifier_ability_warpath_buff:OnAbilityFullyCast(keys)
 
 	end
 end
+
 
 modifier_ability_warpath_buff_particle = class({
     IsHidden                = function(self) return false end,

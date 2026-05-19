@@ -1,5 +1,15 @@
 ability_mist_coil = class({})
 
+function ability_mist_coil:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_abaddon/abaddon_death_coil.vpcf",
+	}, {
+		"Hero_Abaddon.DeathCoil.Cast",
+		"Hero_Abaddon.DeathCoil.Target",
+	}, context)
+end
+
+
 function ability_mist_coil:CastFilterResultTarget(hTarget)
     if hTarget == self:GetCaster() then
         return UF_FAIL_CUSTOM

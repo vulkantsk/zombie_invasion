@@ -5,6 +5,15 @@ if ability_viper_corrosive_skin == nil then
     ability_viper_corrosive_skin = class({})
 end
 
+function ability_viper_corrosive_skin:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_viper/viper_corrosive_debuff.vpcf",
+	}, {
+		"hero_viper.CorrosiveSkin",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_viper_corrosive_skin:GetIntrinsicModifierName()

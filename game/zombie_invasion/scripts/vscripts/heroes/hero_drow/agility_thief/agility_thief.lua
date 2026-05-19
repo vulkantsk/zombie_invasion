@@ -1,8 +1,17 @@
 agility_thief = class({})
+
+function agility_thief:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/drow/drow_arcana/drow_ranger_arcana_revenge_kill_effect_caster_beam.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier("modifier_agility_thief", "heroes/hero_drow/agility_thief/agility_thief", LUA_MODIFIER_MOTION_NONE)
 function agility_thief:GetIntrinsicModifierName()
     return "modifier_agility_thief"
 end
+
 modifier_agility_thief = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,

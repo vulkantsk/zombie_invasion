@@ -12,7 +12,6 @@ function item_npc_dota_hero_rubick:OnSpellStart()
 end
 
 
-
 rubick_buff_1 = class({})
 
 function rubick_buff_1:GetIntrinsicModifierName()

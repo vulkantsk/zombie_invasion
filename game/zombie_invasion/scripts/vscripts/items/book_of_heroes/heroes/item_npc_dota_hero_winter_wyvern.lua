@@ -12,7 +12,6 @@ function item_npc_dota_hero_winter_wyvern:OnSpellStart()
 end
 
 
-
 winter_wyvern_buff_1 = class({})
 
 function winter_wyvern_buff_1:GetIntrinsicModifierName()

@@ -1,5 +1,12 @@
 spectre_midnight_pulse = class({})
 
+function spectre_midnight_pulse:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_enigma/enigma_midnight_pulse.vpcf",
+	}, {
+	}, context)
+end
+
 
 function spectre_midnight_pulse:GetCastAnimation()  
     return ACT_DOTA_CAST_ABILITY_4  

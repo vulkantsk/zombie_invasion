@@ -1,6 +1,23 @@
 shinobu_yumewatari_lua = class({})
 LinkLuaModifier("modifier_shinobu_yumewatari", "heroes/hero_shinobu/yumewatari.lua", LUA_MODIFIER_MOTION_NONE)
 
+function shinobu_yumewatari_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/arena/units/heroes/hero_shinobu/lifesteal_lvl1.vpcf",
+		"particles/arena/units/heroes/hero_shinobu/lifesteal_lvl2.vpcf",
+		"particles/arena/units/heroes/hero_shinobu/lifesteal_lvl3.vpcf",
+		"particles/arena/units/heroes/hero_shinobu/lifesteal_lvl4.vpcf",
+		"particles/arena/range_display.vpcf",
+		"particles/items2_fx/hand_of_midas.vpcf",
+		"particles/units/heroes/hero_legion_commander/legion_commander_press.vpcf",
+		"particles/econ/items/legion/legion_fallen/legion_fallen_press_a.vpcf",
+		"particles/econ/items/legion/legion_fallen/legion_fallen_press.vpcf",
+		"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf",
+	}, {
+		"DOTA_Item.Hand_Of_Midas",
+	}, context)
+end
+
 function shinobu_yumewatari_lua:GetIntrinsicModifierName()
 	return "modifier_shinobu_yumewatari"
 end

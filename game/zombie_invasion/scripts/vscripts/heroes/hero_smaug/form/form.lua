@@ -2,6 +2,24 @@ ability_elder_dragon_form = class({
     GetIntrinsicModifierName = function() return "modifier_ability_elder_dragon_form" end
 })
 
+function ability_elder_dragon_form:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_frost.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_corrosion_debuff.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_corrosive.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_fire.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_blue.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_red.vpcf",
+	}, {
+		"Hero_DragonKnight.ElderDragonForm",
+		"Hero_DragonKnight.ElderDragonForm.Revert",
+		"Hero_DragonKnight.ProjectileImpact",
+	}, context)
+end
+
+
 LinkLuaModifier( "modifier_ability_elder_dragon_form", "heroes/hero_jakiro/form/form", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_elder_dragon_form_corrosive", "heroes/hero_jakiro/form/form", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ability_elder_dragon_form_frost", "heroes/hero_jakiro/form/form", LUA_MODIFIER_MOTION_NONE )

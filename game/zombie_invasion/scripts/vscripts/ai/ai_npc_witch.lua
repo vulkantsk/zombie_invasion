@@ -58,7 +58,6 @@ function NecroLordThink()
 end
 
 
-
 function NoTargetAbilityCast(unit)
       ExecuteOrderFromTable({
             UnitIndex = thisEntity:entindex(),    --индекс кастера

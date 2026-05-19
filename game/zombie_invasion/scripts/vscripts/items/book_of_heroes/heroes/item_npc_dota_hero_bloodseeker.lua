@@ -12,7 +12,6 @@ function item_npc_dota_hero_bloodseeker:OnSpellStart()
 end
 
 
-
 blood_buff_1 = class({})
 
 function blood_buff_1:GetIntrinsicModifierName()

@@ -2,11 +2,22 @@ LinkLuaModifier( "modifier_fort_zombie", "abilities/fort_zombie", LUA_MODIFIER_M
 
 
 fort_zombie = class({})
+
+function fort_zombie:Precache(context)
+	PrecacheAbilityResources({
+		"particles/dire_fx/bad_ancient_sauron.vpcf",
+	}, {
+	}, context)
+end
+
  
  
 function fort_zombie:GetIntrinsicModifierName()
     return "modifier_fort_zombie"
 end
+
+ 
+
 
  
 modifier_fort_zombie = class({

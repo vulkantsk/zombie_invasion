@@ -1,7 +1,25 @@
 LinkLuaModifier( "modifier_undying_stack_debuff", "abilities/zombie/Boss/undying_decay_boss_wave", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_undying_stack_buff", "abilities/zombie/Boss/undying_decay_boss_wave", LUA_MODIFIER_MOTION_NONE )
 undying_decay_boss_wave = class({})
+
+function undying_decay_boss_wave:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_undying/undying_decay.vpcf",
+	}, {
+		"Hero_Undying.Decay.Cast",
+	}, context)
+end
+
 undying_decay_boss_wave_2 = class({})
+
+function undying_decay_boss_wave_2:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_undying/undying_decay.vpcf",
+	}, {
+		"Hero_Undying.Decay.Cast",
+	}, context)
+end
+
 --------------------------------------------------------------------------------
 -- Custom KV
 -- AOE Radius
@@ -135,6 +153,7 @@ end
 
 modifier_undying_stack_buff = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_undying_stack_buff:IsHidden()
@@ -212,6 +231,7 @@ end
 -- Aura Effects
  
  modifier_undying_stack_debuff = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

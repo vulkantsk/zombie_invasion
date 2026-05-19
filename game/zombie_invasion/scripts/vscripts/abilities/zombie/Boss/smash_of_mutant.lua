@@ -1,5 +1,16 @@
 smash_of_mutant = class({})
 smash_of_edgard = class({})
+
+function smash_of_edgard:Precache(context)
+	PrecacheAbilityResources({
+		"particles/creatures/ogre/ogre_melee_smash.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf",
+	}, {
+		"Dungeon.BloodSplatterImpact.Lesser",
+		"Hero_EarthSpirit.BoulderSmash.Target",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_smash_of_mutant", "abilities/zombie/boss/smash_of_mutant", LUA_MODIFIER_MOTION_NONE )
 
 ----------------------------------------------------------------------------------------
@@ -25,6 +36,7 @@ end
  
 
 modifier_smash_of_mutant = class({})
+
 
 --------------------------------------------------------------------------------
 

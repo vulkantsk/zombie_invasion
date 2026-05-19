@@ -4,6 +4,15 @@ if exhausting_fireball == nil then
     exhausting_fireball = class({})
 end
 
+function exhausting_fireball:Precache(context)
+	PrecacheAbilityResources({
+		"particles/neutral_fx/satyr_hellcaller.vpcf",
+	}, {
+		"Hero_Nightstalker.Darkness",
+	}, context)
+end
+
+
 function exhausting_fireball:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET
 end

@@ -4,6 +4,17 @@ LinkLuaModifier( "modifier_ability_phantom_assassin_stifling_dagger_target_debuf
 
  
     ability_phantom_assassin_fan_of_knives = class({})
+
+function ability_phantom_assassin_fan_of_knives:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_stifling_dagger.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_stifling_dagger_debuff.vpcf",
+	}, {
+		"Hero_PhantomAssassin.Dagger.Cast",
+		"Hero_PhantomAssassin.Dagger.Target",
+	}, context)
+end
+
  
 
 --------------------------------------------------------------------------------

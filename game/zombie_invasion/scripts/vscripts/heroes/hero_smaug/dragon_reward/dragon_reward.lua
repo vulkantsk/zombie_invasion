@@ -1,8 +1,17 @@
 dragon_reward = class({})
+
+function dragon_reward:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/legion/legion_fallen/legion_fallen_press_buff.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_dragon_reward", "heroes/hero_smaug/dragon_reward/dragon_reward", LUA_MODIFIER_MOTION_NONE )
 function dragon_reward:GetIntrinsicModifierName()
     return "modifier_dragon_reward"
 end
+
 modifier_dragon_reward = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,

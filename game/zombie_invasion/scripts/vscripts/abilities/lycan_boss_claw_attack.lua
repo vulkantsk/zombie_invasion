@@ -1,4 +1,21 @@
 lycan_boss_claw_attack = class({})
+
+function lycan_boss_claw_attack:Precache(context)
+	PrecacheAbilityResources({
+		"particles/test_particle/generic_attack_crit_blur.vpcf",
+		"particles/test_particle/generic_attack_crit_blur_shapeshift.vpcf",
+	}, {
+		"Roshan.Attack.Post",
+		"Roshan.PreAttack",
+		"lycan_lycan_attack_01",
+		"lycan_lycan_pain_01",
+		"lycan_lycan_pain_08",
+		"lycan_lycan_pain_09",
+		"lycan_lycan_wolf_attack_01",
+		"lycan_lycan_wolf_attack_10",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_lycan_boss_claw_attack", "modifiers/modifier_lycan_boss_claw_attack", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------

@@ -1,5 +1,17 @@
 --------------------------------------------------------------------------------
 slark_pounce_lua = class({})
+
+function slark_pounce_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_slark/slark_pounce_ground.vpcf",
+		"particles/units/heroes/hero_slark/slark_pounce_start.vpcf",
+		"particles/units/heroes/hero_slark/slark_pounce_trail.vpcf",
+	}, {
+		"Hero_Slark.Pounce.Cast",
+		"Hero_Slark.Pounce.Leash",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_pounce_lua", "heroes/hero_slark/pounce/slark_pounce_lua", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_slark_pounce_shadow_thinker", "heroes/hero_slark/pounce/slark_pounce_lua", LUA_MODIFIER_MOTION_BOTH )
 LinkLuaModifier( "modifier_modifier_slark_pounce_shadow_heal", "heroes/hero_slark/pounce/slark_pounce_lua", LUA_MODIFIER_MOTION_BOTH )
@@ -34,6 +46,7 @@ end
  
 --------------------------------------------------------------------------------
 modifier_slark_pounce_lua = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications
@@ -185,6 +198,8 @@ end
  
 --------------------------------------------------------------------------------
 modifier_slark_pounce_shadow_thinker = class({})
+
+
  
 function modifier_slark_pounce_shadow_thinker:IsHidden()
 	return false

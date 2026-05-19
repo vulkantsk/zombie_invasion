@@ -6,6 +6,18 @@ if ability_phantom_assassin_phantom_strike == nil then
     ability_phantom_assassin_phantom_strike = class({})
 end
 
+function ability_phantom_assassin_phantom_strike:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/status_fx/status_effect_terrorblade_reflection.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_phantom_strike_end.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_phantom_strike_start.vpcf",
+		"particles/units/heroes/hero_terrorblade/terrorblade_reflection_slow.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_phantom_assassin_phantom_strike:CastFilterResultTarget(target)

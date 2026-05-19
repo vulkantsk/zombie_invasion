@@ -1,12 +1,13 @@
  
 grim_health = class({})
 
-
-
-
-
-
-
+function grim_health:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/undying/fall20_undying_head/fall20_undying_soul_rip_heal.vpcf",
+		"particles/econ/items/undying/fall20_undying_head/fall20_undying_soul_rip_heal_body.vpcf",
+	}, {
+	}, context)
+end
 
 
 function grim_health:OnSpellStart()

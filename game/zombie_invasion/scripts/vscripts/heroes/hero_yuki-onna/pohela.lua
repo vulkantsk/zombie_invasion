@@ -2,9 +2,18 @@
  LinkLuaModifier( "modifier_pohela_debuff", "heroes/hero_yuki-onna/pohela", LUA_MODIFIER_MOTION_NONE )
 
 
- yuki_pohela = {}
+yuki_pohela = class({})
 
- function yuki_pohela:OnSpellStart()
+function yuki_pohela:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_slowed_cold.vpcf",
+		"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf",
+	}, {
+		"hero_Crystal.frostbite",
+	}, context)
+end
+
+function yuki_pohela:OnSpellStart()
  	local target = self:GetCursorTarget()
  
 	target:AddNewModifier( self:GetCaster(), self, "modifier_pohela_buff", { duration = self:GetChannelTime() } )
@@ -55,7 +64,6 @@ function modifier_pohela_buff:OnAttackLanded(data)
 end 
 
 
-
 modifier_pohela_debuff = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return true end,
@@ -69,7 +77,6 @@ modifier_pohela_debuff = class({
     GetEffectName = function() return "particles/generic_gameplay/generic_slowed_cold.vpcf" end,
 
 })
-
 
 
 function modifier_pohela_debuff:GetModifierAttackSpeedBonus_Constant()

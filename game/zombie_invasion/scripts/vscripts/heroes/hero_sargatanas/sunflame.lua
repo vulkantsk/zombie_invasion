@@ -1,4 +1,14 @@
 ability_sunflame = class({})
+
+function ability_sunflame:Precache(context)
+	PrecacheAbilityResources({
+		"particles/heroes/dragon_knight_breathe_fire_meta.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf",
+	}, {
+		"Hero_DragonKnight.BreathFire",
+	}, context)
+end
+
  
 --------------------------------------------------------------------------------
 -- Ability Start

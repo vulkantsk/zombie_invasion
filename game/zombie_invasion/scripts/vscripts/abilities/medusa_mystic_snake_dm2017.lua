@@ -2,6 +2,20 @@ require( "utils" )
 
 medusa_mystic_snake_dm2017 = class({})
 
+function medusa_mystic_snake_dm2017:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_medusa/medusa_mystic_snake_cast.vpcf",
+		"particles/units/heroes/hero_medusa/medusa_mystic_snake_projectile.vpcf",
+		"particles/units/heroes/hero_medusa/medusa_mystic_snake_projectile_initial.vpcf",
+		"particles/units/heroes/hero_medusa/medusa_mystic_snake_projectile_return.vpcf",
+	}, {
+		"Hero_Medusa.MysticSnake.Cast",
+		"Hero_Medusa.MysticSnake.Return",
+		"Hero_Medusa.MysticSnake.Target",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function medusa_mystic_snake_dm2017:OnSpellStart()

@@ -1,4 +1,14 @@
 juggernaut_blade_fury_lua = class({})
+
+function juggernaut_blade_fury_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf",
+		"particles/units/heroes/hero_juggernaut/juggernaut_blade_fury_tgt.vpcf",
+	}, {
+		"Hero_Juggernaut.BladeFuryStart",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_juggernaut_blade_fury_lua", "heroes/hero_samurai/spells/modifier_juggernaut_blade_fury_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_silenced_jug", "heroes/hero_samurai/spells/modifier_generic_silenced_jug", LUA_MODIFIER_MOTION_NONE )
 --------------------------------------------------------------------------------

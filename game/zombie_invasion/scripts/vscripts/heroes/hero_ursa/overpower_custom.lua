@@ -3,6 +3,15 @@ LinkLuaModifier("modifier_ursa_overpower_ultimate", "heroes/hero_ursa/overpower_
 
 ursa_overpower_custom = class({})
 
+function ursa_overpower_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_ursa/ursa_overpower_buff.vpcf",
+	}, {
+		"Hero_Ursa.Overpower",
+	}, context)
+end
+
+
 function ursa_overpower_custom:OnSpellStart()
 	local caster = self:GetCaster()
 	local buff_duration = self:GetSpecialValueFor("buff_duration")
@@ -12,6 +21,7 @@ function ursa_overpower_custom:OnSpellStart()
 end
 --------------------------------------------------------
 ------------------------------------------------------------
+
 modifier_ursa_overpower_custom = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
@@ -33,6 +43,15 @@ end
 
 ursa_overpower_ultimate = class({})
 
+function ursa_overpower_ultimate:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_ursa/ursa_overpower_buff.vpcf",
+	}, {
+		"Hero_Ursa.Overpower",
+	}, context)
+end
+
+
 function ursa_overpower_ultimate:GetIntrinsicModifierName()
 	return "modifier_ursa_overpower_ultimate"
 end
@@ -44,6 +63,7 @@ modifier_ursa_overpower_ultimate = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
 })
+
 
 function modifier_ursa_overpower_ultimate:OnCreated()
 	local ability = self:GetAbility()

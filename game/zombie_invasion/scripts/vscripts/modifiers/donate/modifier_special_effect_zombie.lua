@@ -42,7 +42,6 @@ modifier_special_effect_slark_skin = class({
 })
 
 
-
 if modifier_special_effect_zombie2 == nil then
     modifier_special_effect_zombie2 = class({})
 end

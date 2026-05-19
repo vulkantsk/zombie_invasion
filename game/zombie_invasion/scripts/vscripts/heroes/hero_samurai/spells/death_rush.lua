@@ -5,9 +5,18 @@ LinkLuaModifier("modifier_jugger_miracle_rush_cooldown", "heroes/hero_samurai/sp
 
 jugger_miracle = class({})
 
+function jugger_miracle:Precache(context)
+	PrecacheAbilityResources({
+		"particles/heroes/death/samurai_purple_ambient_3.vpcf",
+	}, {
+	}, context)
+end
+
+
 function jugger_miracle:GetIntrinsicModifierName()
     return "modifier_jugger_miracle_passive"
 end
+
 
 modifier_jugger_miracle_passive = class({
     IsHidden                = function(self) return true end,
@@ -57,6 +66,7 @@ function modifier_jugger_miracle_passive:OnTakeDamage( keys )
    
     end
 end
+
 
 modifier_jugger_miracle = class({
     IsHidden                = function(self) return false end,

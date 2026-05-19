@@ -1,5 +1,15 @@
 techies_attack = class({})
 
+function techies_attack:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_techies/techies_base_attack.vpcf",
+	}, {
+		"Hero_Techies.Attack",
+		"Hero_Techies.ProjectileImpact",
+	}, context)
+end
+
+
 function techies_attack:OnSpellStart()
 	local target = self:GetCursorTarget()
 	local caster = self:GetCaster()

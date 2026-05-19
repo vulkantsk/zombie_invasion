@@ -93,7 +93,6 @@ if not self:GetParent():PassivesDisabled() then
 	end
 
 
-
 	for _,enemy in pairs(enemies) do
 		if enemy ~= self.parent then
 			self.damageTable.victim = enemy

@@ -9,6 +9,7 @@ function sf_dead:GetIntrinsicModifierName()
     return "modifier_sf_dead"
 end
 
+
 modifier_sf_dead = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -232,6 +233,10 @@ end
 
  
  
+
+
+ 
+ 
 modifier_disable_sf = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -259,6 +264,9 @@ end
 function  modifier_disable_sf:OnDestroy()
  self:GetParent():RemoveGesture(ACT_DOTA_DISABLED)   
 end  
+ 
+
+
  
 
 modifier_no_attack = class({

@@ -12,7 +12,6 @@ function item_npc_dota_hero_medusa:OnSpellStart()
 end
 
 
-
 medusa_buff_1 = class({})
 
 function medusa_buff_1:GetIntrinsicModifierName()

@@ -1,4 +1,12 @@
 slark_essence_shift_lua = class({})
+
+function slark_essence_shift_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_slark/slark_essence_shift.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_essence_shift_lua", "heroes/hero_slark/essence_shift/slark_essence_shift_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_slark_essence_shift_lua_stack", "heroes/hero_slark/essence_shift/slark_essence_shift_lua", LUA_MODIFIER_MOTION_NONE )
 
@@ -9,6 +17,8 @@ function slark_essence_shift_lua:GetIntrinsicModifierName()
 end
 
 modifier_slark_essence_shift_lua = class({})
+
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_slark_essence_shift_lua:IsHidden()
@@ -120,6 +130,8 @@ function modifier_slark_essence_shift_lua:PlayEffects( target )
 end
 
 modifier_slark_essence_shift_lua_stack = class({})
+
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_slark_essence_shift_lua_stack:IsHidden()

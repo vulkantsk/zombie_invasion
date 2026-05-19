@@ -54,7 +54,6 @@ function modifier_item_guardian_greaves_up:GetModifierHealthBonus()
 end
 
 
-
 function modifier_item_guardian_greaves_up:GetModifierMoveSpeedBonus_Special_Boots()
     return self.bonus_movement
 end
@@ -85,8 +84,6 @@ function modifier_item_guardian_greaves_up:OnTakeDamage( params )
         end
     end
 end
-
-
 
 
 -- Move speed bonus buff (active)

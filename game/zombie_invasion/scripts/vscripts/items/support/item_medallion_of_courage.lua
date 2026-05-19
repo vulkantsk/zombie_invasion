@@ -53,7 +53,6 @@ function item_medallion_of_courage_custom:GetIntrinsicModifierName()
 end
 
 
-
 function item_medallion_of_courage_custom_2:OnSpellStart()
 	-- Parameters
  	local caster = self:GetCaster()
@@ -102,9 +101,6 @@ function item_medallion_of_courage_custom_2:GetIntrinsicModifierName()
 end
 
 
-
-
-
 function item_medallion_of_courage_custom_3:OnSpellStart()
 	-- Parameters
  	local caster = self:GetCaster()
@@ -151,7 +147,6 @@ end
 function item_medallion_of_courage_custom_3:GetIntrinsicModifierName()
 	return "modifier_medallion_passive"
 end
-
 
 
 modifier_medallion_passive = class({})

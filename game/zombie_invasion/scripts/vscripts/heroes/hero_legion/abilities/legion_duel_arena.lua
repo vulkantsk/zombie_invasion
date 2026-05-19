@@ -4,6 +4,14 @@ LinkLuaModifier( "modifier_legion_duel_arena_debuff", "heroes/hero_legion/abilit
 
 legion_duel_arena = class({})
 
+function legion_duel_arena:Precache(context)
+	PrecacheAbilityResources({
+		"particles/legion_duel.vpcf",
+	}, {
+	}, context)
+end
+
+
 function legion_duel_arena:GetIntrinsicModifierName()
     return 'modifier_legion_duel_arena'
 end 
@@ -149,6 +157,8 @@ function modifier_legion_duel_arena_debuff:GetModifierMoveSpeed_Absolute()
     return 
 end
  
+
+ 
 modifier_legion_duel_arena = class({
     IsHidden                 = function(self) return false end,
     IsPurgable                 = function(self) return false end,
@@ -189,6 +199,5 @@ end
 function modifier_legion_duel_arena:GetModifierBonusStats_Intellect()
     return self:GetAbility():GetSpecialValueFor("stats_per_kill") * self:GetStackCount()
 end
-
 
 

@@ -3,9 +3,21 @@ LinkLuaModifier('modifier_attack_damage_reduction', 'heroes/hero_axe/counter_hel
 
 ability_counter_helix = class({})
 
+function ability_counter_helix:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_axe/axe_attack_blur_counterhelix.vpcf",
+	}, {
+		"Hero_Axe.CounterHelix",
+	}, context)
+end
+
+
 function ability_counter_helix:GetIntrinsicModifierName()
     return 'modifier_ability_counter_helix'
 end 
+ 
+
+
  
 
 modifier_ability_counter_helix = class({
@@ -87,6 +99,7 @@ function modifier_ability_counter_helix:OnAttackLanded(data)
     end 
 end 
 
+
 modifier_attack_damage_reduction = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
@@ -97,7 +110,6 @@ modifier_attack_damage_reduction = class({
     IsPermanent             = function(self) return true end,
     DeclareFunctions        = function(self) return {MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE, MODIFIER_EVENT_ON_ATTACK_LANDED} end,
 })
-
 
 
 function modifier_attack_damage_reduction:OnCreated()

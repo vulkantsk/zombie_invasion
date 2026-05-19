@@ -1,4 +1,13 @@
 sven_shield = class({})
+
+function sven_shield:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_sven/sven_spell_warcry_wave.vpcf",
+		"particles/units/heroes/hero_sven/sven_warcry_buff_shield.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier('modifier_sven_shield', 'heroes/hero_sven/shield_sven/sven_shield', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier('modifier_sven_shield_passive', 'heroes/hero_sven/shield_sven/sven_shield', LUA_MODIFIER_MOTION_NONE)
  
@@ -34,6 +43,7 @@ function modifier_sven_shield_passive:OnIntervalThink()
  end 
     end
 end 
+
 
 modifier_sven_shield = class({
     IsHidden                = function(self) return false end,

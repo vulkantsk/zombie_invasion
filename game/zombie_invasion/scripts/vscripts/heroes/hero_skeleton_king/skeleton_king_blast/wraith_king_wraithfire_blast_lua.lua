@@ -1,4 +1,16 @@
 wraith_king_wraithfire_blast_lua = class({})
+
+function wraith_king_wraithfire_blast_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_stunned.vpcf",
+		"particles/units/heroes/hero_skeletonking/skeletonking_hellfireblast.vpcf",
+		"particles/units/heroes/hero_skeletonking/skeletonking_hellfireblast_debuff.vpcf",
+	}, {
+		"Hero_SkeletonKing.Hellfire_Blast",
+		"Hero_SkeletonKing.Hellfire_BlastImpact",
+	}, context)
+end
+
 LinkLuaModifier("modifier_generic_stunned_lua", "heroes/generic/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_wraith_king_wraithfire_blast_lua_slow", "heroes/hero_skeleton_king/skeleton_king_blast/modifier_wraith_king_wraithfire_blast_lua_slow", LUA_MODIFIER_MOTION_NONE )
 

@@ -1,5 +1,6 @@
 modifier_template = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_template:IsHidden()

@@ -5,6 +5,19 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_remove_restriction = class({})
 
+function lord_remove_restriction:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"rest",
+	}, context)
+end
+
+
  function lord_remove_restriction:CastFilterResult()
         if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
             return UF_FAIL_CUSTOM
@@ -105,6 +118,10 @@ function modifier_lord_remove_restriction:OnAttackLanded(keys)
         end
      end
 end
+ 
+ 
+
+
  
  
 

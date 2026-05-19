@@ -4,6 +4,18 @@ LinkLuaModifier( "modifier_bloodrage_buff", "heroes/hero_blood_hunter/bloodrage/
 
 sacrifice_revenge = class({})
 
+function sacrifice_revenge:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_eztzhok.vpcf",
+		"particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest_gold.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_ursa/ursa_enrage_buff_2.vpcf",
+	}, {
+		"hero_bloodseeker.bloodRage",
+		"hero_bloodseeker.rupture",
+	}, context)
+end
+
 
 function sacrifice_revenge:CastFilterResult()
         if not (self:GetCaster():HasModifier("modifier_bloodrage_buff")) then
@@ -52,6 +64,7 @@ modifier_sacrifice_revenge = class({
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN end,
 })
 
+
 if IsServer() then
     function modifier_sacrifice_revenge:OnCreated()
         if self:GetParent():GetUnitName() == "npc_dota_hero_bloodseeker" then
@@ -64,6 +77,7 @@ if IsServer() then
         caster:AddNewModifier(caster, self:GetAbility(), "modifier_sacrifice_revenge_buff", {duration = self:GetAbility():GetSpecialValueFor("duration")})
     end
 end
+
 
 modifier_sacrifice_revenge_buff = class({
     IsHidden                = function() return false end,

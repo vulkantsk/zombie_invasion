@@ -42,5 +42,3 @@ function item_octar:OnDestroy(data)
 end
 
 
-
-

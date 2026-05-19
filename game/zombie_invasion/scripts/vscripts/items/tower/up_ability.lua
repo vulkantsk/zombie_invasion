@@ -272,7 +272,6 @@ function up_hp(event)
 end
 
 
-
 function up_dmg(event)
 			local caster = event.caster
 			local target = event.target

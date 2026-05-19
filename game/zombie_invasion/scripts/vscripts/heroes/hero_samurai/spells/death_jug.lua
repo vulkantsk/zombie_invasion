@@ -6,6 +6,16 @@ LinkLuaModifier("modifier_phantom_assassin_jug_death_after", "heroes/hero_samura
 LinkLuaModifier("modifier_phantom_assassin_death_rush_buff", "heroes/hero_samurai/spells/death_jug", LUA_MODIFIER_MOTION_NONE)
 jugger_dead = class({})
 
+function jugger_dead:Precache(context)
+	PrecacheAbilityResources({
+		"particles/heroes/death/gate_death.vpcf",
+		"particles/heroes/death/samurai_golem_ambient.vpcf",
+	}, {
+		"gate_dead_theme",
+	}, context)
+end
+
+
 function jugger_dead:GetIntrinsicModifierName()
     return "modifier_phantom_assassin_death_rush_buff"
 end
@@ -38,6 +48,9 @@ end
 
  
 
+
+ 
+
 modifier_phantom_assassin_death_rush_passive = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -51,6 +64,10 @@ modifier_phantom_assassin_death_rush_passive = class({
         } end,
 
 })
+ 
+ 
+
+
  
  
 
@@ -107,6 +124,7 @@ function modifier_phantom_assassin_death_rush:GetEffectName()
     return "particles/heroes/death/samurai_golem_ambient.vpcf"
 end
 
+
 modifier_phantom_assassin_jug_death_after = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
@@ -151,7 +169,6 @@ end
 function modifier_phantom_assassin_jug_death_after:GetModifierBonusStats_Intellect()
     return -(self:GetStackCount() * (0.15 * self:GetCaster():GetBaseIntellect()))
 end
-
 
 
 modifier_phantom_assassin_death_rush_buff = class({

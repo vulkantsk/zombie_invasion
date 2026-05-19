@@ -1,5 +1,13 @@
 tb_swap = class ({})
 
+function tb_swap:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/terrorblade/terrorblade_back_ti8/terrorblade_sunder_ti8.vpcf",
+	}, {
+	}, context)
+end
+
+
 function tb_swap:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()

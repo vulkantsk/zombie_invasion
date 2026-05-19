@@ -2,6 +2,17 @@ LinkLuaModifier("modifier_ursa_enrage_custom", "heroes/hero_ursa/enrage_custom",
 
 ursa_enrage_custom = class({})
 
+function ursa_enrage_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_overpower.vpcf",
+		"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf",
+		"particles/units/heroes/hero_ursa/ursa_enrage_hero_effect.vpcf",
+	}, {
+		"Hero_Ursa.Enrage",
+	}, context)
+end
+
+
 function ursa_enrage_custom:OnSpellStart()
 	local caster = self:GetCaster()
 	local buff_duration = self:GetSpecialValueFor("buff_duration")
@@ -18,6 +29,7 @@ function ursa_enrage_custom:OnSpellStart()
 end
 --------------------------------------------------------
 ------------------------------------------------------------
+
 modifier_ursa_enrage_custom = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,

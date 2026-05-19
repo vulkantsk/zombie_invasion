@@ -1,5 +1,12 @@
 sky_bolt = class({})
 
+function sky_bolt:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/skywrath_mage/skywrath_mage_weapon_empyrean/skywrath_mystic_flare_hit_sword_gold.vpcf",
+		"particles/units/heroes/hero_oracle/oracle_false_promise_attacked.vpcf",
+	}, {
+	}, context)
+end
 
 
 function sky_bolt:OnSpellStart()

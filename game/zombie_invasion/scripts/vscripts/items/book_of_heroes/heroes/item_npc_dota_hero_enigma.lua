@@ -13,7 +13,6 @@ function item_npc_dota_hero_enigma:OnSpellStart()
 end
 
 
-
 enigma_buff_1 = class({})
 
 function enigma_buff_1:GetIntrinsicModifierName()

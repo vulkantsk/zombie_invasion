@@ -4,6 +4,14 @@ if ability_dispersion == nil then
     ability_dispersion = class({})
 end
 
+function ability_dispersion:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_spectre/spectre_dispersion.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_dispersion:GetIntrinsicModifierName()

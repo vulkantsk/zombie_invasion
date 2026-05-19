@@ -111,7 +111,6 @@ end
 end	 
 
 
-
 	return 0.5
 	
 end
@@ -155,8 +154,6 @@ function CastSprayLunge( enemy )
 end
 
 
-
-
 function CastTomb()
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
@@ -190,7 +187,6 @@ function CastSoulRip_2()
 end
 
 
-
 function CastTomb_2()
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
@@ -222,7 +218,6 @@ function CastSoulRip_3()
 
 	return 1.00
 end
-
 
 
 function MoveToTarget()

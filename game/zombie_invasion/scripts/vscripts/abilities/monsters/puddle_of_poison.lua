@@ -4,6 +4,15 @@ if puddle_of_poison == nil then
     puddle_of_poison = class({})
 end
 
+function puddle_of_poison:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_witchdoctor/witchdoctor_maledict.vpcf",
+	}, {
+		"Hero_DeathProphet.Silence",
+	}, context)
+end
+
+
 function puddle_of_poison:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
 end

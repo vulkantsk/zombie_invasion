@@ -14,7 +14,6 @@ function generic_unit_target:Init( spell )
 end
 
 
-
 function generic_unit_target:SetProjectile( name, speed, dodgeable )
 	self.data.projectile = {
 		name = name,

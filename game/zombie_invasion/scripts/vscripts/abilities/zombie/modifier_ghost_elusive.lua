@@ -22,7 +22,6 @@ function modifier_ghost_elusive:OnCreated( kv )
 end
 
 
-
 function modifier_ghost_elusive:DeclareFunctions()
 	local funcs = 
 	{

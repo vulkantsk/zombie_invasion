@@ -10,7 +10,6 @@ end
 LinkLuaModifier("modifier_necr_heart", "items/drop_item/item_necr_heart", LUA_MODIFIER_MOTION_NONE)
 
 
-
  
 -------------------------------------------
 function item_necr_heart:GetIntrinsicModifierName()

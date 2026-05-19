@@ -1,5 +1,6 @@
 modifier_generic_knockback_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_generic_knockback_lua:IsHidden()

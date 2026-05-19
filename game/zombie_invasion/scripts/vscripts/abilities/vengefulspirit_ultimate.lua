@@ -1,6 +1,16 @@
 
 vengefulspirit_ultimate = class({})
 
+function vengefulspirit_ultimate:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/faceless_void/faceless_void_mace_of_aeons/fv_chronosphere_aeons_g.vpcf",
+	}, {
+		"Hero_ArcWarden.MagneticField",
+		"Hero_ArcWarden.MagneticField.Cast",
+	}, context)
+end
+
+
 LinkLuaModifier("modifier_no_damage_physical", "modifiers/modifier_no_damage_physical.lua", LUA_MODIFIER_MOTION_NONE )
 
 function vengefulspirit_ultimate:GetCastAnimation()

@@ -1,5 +1,15 @@
  LinkLuaModifier("modifier_tiny_toss_lua", "abilities/zombie/Boss/suicide_boys", LUA_MODIFIER_MOTION_NONE)
 suicide_boys = class({})
+
+function suicide_boys:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_techies/techies_suicide.vpcf",
+		"particles/units/heroes/hero_tiny/tiny_toss_blur.vpcf",
+	}, {
+		"balah_babar",
+	}, context)
+end
+
  
 LinkLuaModifier( "modifier_generic_arc_lua", "heroes/generic/modifier_generic_arc_lua", LUA_MODIFIER_MOTION_BOTH )
 
@@ -56,6 +66,7 @@ end
  
 
 modifier_tiny_toss_lua = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

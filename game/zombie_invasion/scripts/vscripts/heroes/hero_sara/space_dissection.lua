@@ -4,6 +4,15 @@ sara_space_dissection = class({
 	GetIntrinsicModifierName = function() return "modifier_sara_space_dissection" end,
 })
 
+function sara_space_dissection:Precache(context)
+	PrecacheAbilityResources({
+		"particles/arena/units/heroes/hero_sara/space_dissection.vpcf",
+	}, {
+		"Hero_Centaur.DoubleEdge",
+	}, context)
+end
+
+
 if IsClient() then
 	function sara_space_dissection:GetManaCost()
 		return self:GetCaster():GetMana() * self:GetSpecialValueFor("energy_pct") * 0.01
@@ -15,6 +24,7 @@ modifier_sara_space_dissection = class({
 	IsHidden   = function() return true end,
 	IsPurgable = function() return false end,
 })
+
 
 function modifier_sara_space_dissection:DeclareFunctions()
 	return {MODIFIER_EVENT_ON_ATTACK_LANDED}
@@ -77,6 +87,7 @@ end
 modifier_sara_space_dissection_armor_reduction = class({
 	IsPurgable = function() return false end,
 })
+
 
 function modifier_sara_space_dissection_armor_reduction:DeclareFunctions()
 	return {MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS}

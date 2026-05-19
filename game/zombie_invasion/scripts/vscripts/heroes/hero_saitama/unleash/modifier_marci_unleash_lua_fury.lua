@@ -11,6 +11,7 @@ Ability checklist (erase if done/checked):
 --------------------------------------------------------------------------------
 modifier_marci_unleash_lua_fury = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_marci_unleash_lua_fury:IsHidden()

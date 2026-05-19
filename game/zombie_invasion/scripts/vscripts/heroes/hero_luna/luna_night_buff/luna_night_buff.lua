@@ -1,5 +1,15 @@
 luna_night_buff = class({})
 
+function luna_night_buff:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/luna/luna_lucent_ti5/luna_eclipse_impact_moonfall.vpcf",
+	}, {
+		"Hero_Luna.LucentBeam.Cast",
+		"Hero_Luna.LucentBeam.Target",
+	}, context)
+end
+
+
 LinkLuaModifier( "modifier_luna_night_buff", "heroes/hero_luna/luna_night_buff/luna_night_buff", LUA_MODIFIER_MOTION_NONE )
 
 function luna_night_buff:OnSpellStart()
@@ -63,6 +73,7 @@ function luna_night_buff:PlayEffects2( target )
 end
 
 modifier_luna_night_buff = class({})
+
 
 function modifier_luna_night_buff:IsHidden()
 	return false

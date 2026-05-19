@@ -4,6 +4,14 @@ saitama_limiter = class({
 	GetIntrinsicModifierName = function() return "modifier_saitama_limiter" end,
 })
 
+function saitama_limiter:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"limiter",
+	}, context)
+end
+
+
 function saitama_limiter:GetManaCost()
 	return self:GetCaster():GetMaxMana() * self:GetSpecialValueFor("manacost_pct") * 0.01 + self:GetSpecialValueFor("manacost")
 end
@@ -30,6 +38,7 @@ end
 modifier_saitama_limiter = class({
 	IsHidden = function() return false end,
 })
+
 
 if IsServer() then
 	function modifier_saitama_limiter:OnCreated()

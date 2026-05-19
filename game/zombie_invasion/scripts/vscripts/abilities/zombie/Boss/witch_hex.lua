@@ -1,6 +1,14 @@
 LinkLuaModifier( "modifier_witch_hex", "abilities/zombie/Boss/witch_hex", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_witch_hex_active", "abilities/zombie/Boss/witch_hex", LUA_MODIFIER_MOTION_NONE )
 witch_hex = class({})
+
+function witch_hex:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"Hero_Lion.Voodoo",
+	}, context)
+end
+
  
 
 --------------------------------------------------------------------------------
@@ -12,6 +20,7 @@ end
 
 
 modifier_witch_hex = class({})
+
 
 modifier_witch_hex = class({
 	IsHidden 				= function(self) return true end,

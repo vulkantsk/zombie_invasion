@@ -10,8 +10,38 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 doom_devour_lua = class({})
+
+function doom_devour_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
 doom_devour_lua_slot1 = class({})
+
+function doom_devour_lua_slot1:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
 doom_devour_lua_slot2 = class({})
+
+function doom_devour_lua_slot2:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
 
 LinkLuaModifier( "modifier_doom_devour_lua", "abilities/winter/crampus/modifier_doom_devour_lua", LUA_MODIFIER_MOTION_NONE )
 

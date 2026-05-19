@@ -2,6 +2,15 @@ LinkLuaModifier("modifier_ability_multicast", "items/book_of_heroes/heroes/item_
 LinkLuaModifier("modifier_ability_multicast_proc", "items/book_of_heroes/heroes/item_npc_dota_hero_skywrath_mage", LUA_MODIFIER_MOTION_NONE)
 item_npc_dota_hero_skywrath_mage = class({})
 
+function item_npc_dota_hero_skywrath_mage:Precache(context)
+	PrecacheAbilityResources({
+		"particles/sky_multi.vpcf",
+	}, {
+		"Hero_OgreMagi.Fireblast.x",
+	}, context)
+end
+
+
 function item_npc_dota_hero_skywrath_mage:OnSpellStart()
 		local caster = self:GetCaster()
 		local hItem = self
@@ -13,8 +22,16 @@ function item_npc_dota_hero_skywrath_mage:OnSpellStart()
 end
 
 
-
 skywrath_mage_buff_1 = class({})
+
+function skywrath_mage_buff_1:Precache(context)
+	PrecacheAbilityResources({
+		"particles/sky_multi.vpcf",
+	}, {
+		"Hero_OgreMagi.Fireblast.x",
+	}, context)
+end
+
 
 function skywrath_mage_buff_1:GetIntrinsicModifierName()
     return "modifier_ability_multicast"

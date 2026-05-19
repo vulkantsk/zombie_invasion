@@ -2,7 +2,6 @@ LinkLuaModifier("modifier_item_god_rapier", "items/new_items/item_god_rapier", L
 item_god_rapier = class({})
 
 
-
 function item_god_rapier:GetIntrinsicModifierName()
 	return "modifier_item_god_rapier"
 end

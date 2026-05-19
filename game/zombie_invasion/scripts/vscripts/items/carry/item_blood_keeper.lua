@@ -31,7 +31,6 @@ function item_blood_keeper:OnSpellStart()
 end
 
 
-
 modifier_item_blood_keeper = class({})
 
 function modifier_item_blood_keeper:IsHidden() return true end
@@ -130,7 +129,6 @@ function modifier_item_blood_keeper:GetModifierBonusStats_Strength()
 end
 
 
-
 function modifier_item_blood_keeper:OnDestroy()
     self.parent = self:GetParent()
             self.modif_lif:Destroy()
@@ -175,7 +173,6 @@ function modifier_item_blood_keeper_shield:OnRefresh(table)
 if not IsServer() then return end
  self:AddShield()
 end
-
 
 
 function modifier_item_blood_keeper_shield:DeclareFunctions()

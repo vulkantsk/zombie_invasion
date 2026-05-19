@@ -91,7 +91,6 @@ function modifier_morph_evolution_base:OnCreated()
         self.morph_last_evolution:SetHidden(false)
 
 
-
         self.morph_adaptive = self:GetCaster():AddAbility("morph_adaptive")
         self.morph_adaptive:SetLevel(1)
         self.morph_adaptive:SetHidden(false)

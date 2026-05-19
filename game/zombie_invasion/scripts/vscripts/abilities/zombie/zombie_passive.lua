@@ -4,6 +4,13 @@ LinkLuaModifier( "modifier_zombie_passive_day_or_night", "abilities/zombie/zombi
 
 zombie_passive = class({})
 
+function zombie_passive:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf",
+	}, {
+	}, context)
+end
+
 
  
 
@@ -23,6 +30,7 @@ modifier_zombie_passive_day_or_night = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
 
 function modifier_zombie_passive_day_or_night:OnCreated()
 	if IsServer() then
@@ -63,6 +71,7 @@ modifier_zombie_passive_fire = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
 
 function modifier_zombie_passive_fire:OnCreated()
 	if IsServer() then

@@ -1,5 +1,15 @@
 item_npc_dota_hero_huskar = class({})
 
+function item_npc_dota_hero_huskar:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
+
 function item_npc_dota_hero_huskar:OnSpellStart()
 		local caster = self:GetCaster()
 		local hItem = self
@@ -10,6 +20,16 @@ function item_npc_dota_hero_huskar:OnSpellStart()
 end
 
 lord_devour = class({})
+
+function lord_devour:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
  
 
 LinkLuaModifier( "modifier_lord_devour", "items/book_of_heroes/heroes/item_npc_dota_hero_huskar", LUA_MODIFIER_MOTION_NONE )
@@ -91,6 +111,8 @@ function lord_devour:GetAttributes()
     return MODIFIER_ATTRIBUTE_MULTIPLE
 end
  
+
+ 
 modifier_lord_devour = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
@@ -130,6 +152,9 @@ end
 function modifier_lord_devour:GetAttributes()
     return MODIFIER_ATTRIBUTE_MULTIPLE
 end
+ 
+
+
  
 
 modifier_lord_devour_endless = class({

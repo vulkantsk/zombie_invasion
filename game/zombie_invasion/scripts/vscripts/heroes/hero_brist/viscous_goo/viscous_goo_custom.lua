@@ -3,6 +3,17 @@ LinkLuaModifier( "modifier_bristleback_viscous_goo_custom", "heroes/hero_brist/v
 
 bristleback_viscous_goo_custom = class({})
 
+function bristleback_viscous_goo_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bristleback/bristleback_viscous_nasal_goo.vpcf",
+		"particles/units/heroes/hero_bristleback/bristleback_viscous_nasal_goo_debuff.vpcf",
+	}, {
+		"Hero_Bristleback.ViscousGoo.Cast",
+		"Hero_Bristleback.ViscousGoo.Target",
+	}, context)
+end
+
+
 function bristleback_viscous_goo_custom:GetAOERadius()
 	return self:GetSpecialValueFor("radius")
 end
@@ -60,6 +71,7 @@ function bristleback_viscous_goo_custom:OnProjectileHit(hTarget, vLocation)
 	end
  end 
 --------------------------------------------------------------------------------
+
 
 modifier_bristleback_viscous_goo_custom = class({
 	IsHidden 				= function(self) return false end,

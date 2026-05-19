@@ -12,7 +12,6 @@ function item_npc_dota_hero_phantom_assassin:OnSpellStart()
 end
 
 
-
 phantom_assassin_buff_1 = class({})
 
 function phantom_assassin_buff_1:GetIntrinsicModifierName()

@@ -1,5 +1,6 @@
 modifier_generic_stunned_lua = class({})
 
+
 --------------------------------------------------------------------------------
 
 function modifier_generic_stunned_lua:IsDebuff()

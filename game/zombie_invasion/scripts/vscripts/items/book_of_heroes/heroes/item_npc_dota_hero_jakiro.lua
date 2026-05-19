@@ -12,7 +12,6 @@ function item_npc_dota_hero_jakiro:OnSpellStart()
 end
 
 
-
 jakiro_buff_1 = class({})
 
 function jakiro_buff_1:GetIntrinsicModifierName()

@@ -316,11 +316,6 @@ end
 end
 
 
-
-
-
-
-
  function InvasionMode:ZombieNightUnreal()  
 
  
@@ -328,11 +323,6 @@ end
  
 
 end
-
-
-
-
-
 
 
 function InvasionMode:ChristmasNight()  
@@ -384,7 +374,6 @@ function InvasionMode:ZombieNightHalloween()
 		     return 35
 		end
 	end)
-
 
 
 	Timers:CreateTimer(90,function()

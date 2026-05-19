@@ -1,4 +1,14 @@
 ability_bristleback = class({})
+
+function ability_bristleback:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bristleback/bristleback_back_dmg.vpcf",
+		"particles/units/heroes/hero_bristleback/bristleback_back_lrg_dmg.vpcf",
+	}, {
+		"Hero_Bristleback.Bristleback",
+	}, context)
+end
+
 function ability_bristleback:GetIntrinsicModifierName() return 'modifier_ability_bristleback_buff' end
 
 LinkLuaModifier('modifier_ability_bristleback_buff', 'heroes/hero_brist/bristleback', LUA_MODIFIER_MOTION_NONE)
@@ -13,6 +23,7 @@ modifier_ability_bristleback_buff = class({
     AllowIllusionDuplicate  = function(self) return true end,
     IsPermanent             = function(self) return true end,
 })
+
 
 function modifier_ability_bristleback_buff:OnCreated()
 	self.ability	= self:GetAbility()

@@ -3,6 +3,16 @@ LinkLuaModifier("modifier_hoodwink_scurry_custom_buff", "heroes/hero_hoodwink/sc
 
 hoodwink_scurry_custom = class({})
 
+function hoodwink_scurry_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_hoodwink/hoodwink_scurry_aura.vpcf",
+	}, {
+		"Hero_Hoodwink.Scurry.Cast",
+		"hoodwink/hoodwink_scurry_0",
+	}, context)
+end
+
+
 function hoodwink_scurry_custom:OnSpellStart()
 	local caster = self:GetCaster()
 	local ability = self
@@ -20,6 +30,7 @@ end
  
  
 ------------------------------------------------------------
+
 modifier_hoodwink_scurry_custom_buff = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,

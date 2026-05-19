@@ -1,5 +1,14 @@
 ability_surge = class({})
 
+function ability_surge:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_dark_seer/dark_seer_surge.vpcf",
+	}, {
+		"Hero_Dark_Seer.Surge",
+	}, context)
+end
+
+
 LinkLuaModifier( "modifier_ability_surge", "heroes/hero_dark_seer/surge/surge", LUA_MODIFIER_MOTION_NONE )
 
 function ability_surge:OnSpellStart()
@@ -17,6 +26,7 @@ function ability_surge:OnSpellStart()
 end
 
 modifier_ability_surge = class({})
+
 
 function modifier_ability_surge:IsHidden()
 	return false

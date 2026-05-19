@@ -1,6 +1,16 @@
 LinkLuaModifier("modifier_lucent", "items/book_of_heroes/heroes/item_npc_dota_hero_luna", LUA_MODIFIER_MOTION_NONE)
 item_npc_dota_hero_luna = class({})
 
+function item_npc_dota_hero_luna:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/luna/luna_lucent_ti5/luna_lucent_beam_impact_shared_ti_5.vpcf",
+	}, {
+		"Hero_Luna.LucentBeam.Cast",
+		"Hero_Luna.LucentBeam.Target",
+	}, context)
+end
+
+
 function item_npc_dota_hero_luna:OnSpellStart()
 		local caster = self:GetCaster()
 		local hItem = self
@@ -12,8 +22,17 @@ function item_npc_dota_hero_luna:OnSpellStart()
 end
 
 
-
 luna_buff_1 = class({})
+
+function luna_buff_1:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/luna/luna_lucent_ti5/luna_lucent_beam_impact_shared_ti_5.vpcf",
+	}, {
+		"Hero_Luna.LucentBeam.Cast",
+		"Hero_Luna.LucentBeam.Target",
+	}, context)
+end
+
 
 function luna_buff_1:GetIntrinsicModifierName()
     return "modifier_lucent"

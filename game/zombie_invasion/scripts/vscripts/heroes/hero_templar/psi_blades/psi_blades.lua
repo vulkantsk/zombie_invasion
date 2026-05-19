@@ -9,15 +9,51 @@ LinkLuaModifier( "modifier_templar_assassin_psi_blades_custom_attack_ready", "he
 
 templar_assassin_psi_blades_custom = class({})
 
+function templar_assassin_psi_blades_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/ta_crystall_spawn.vpcf",
+		"particles/ta_psi_speed.vpcf",
+		"particles/templar_assassin_knockback.vpcf",
+		"particles/units/heroes/hero_templar_assassin/templar_assassin_psi_blade.vpcf",
+	}, {
+		"Hero_TemplarAssassin.PsiBlade",
+		"Lina.Array_triple",
+		"TA.Psibaldes_knockback",
+	}, context)
+end
 
 function templar_assassin_psi_blades_custom:GetIntrinsicModifierName()
 	return "modifier_templar_assassin_psi_blades_custom"
 end
 
 
+function templar_assassin_psi_blades_custom:GetCooldown(iLevel)
+
+if self:GetCaster():HasModifier("modifier_templar_assassin_psiblades_7") then 
+  return self.legendary_cd
+end
+
+return 0
+
+end
+
+
+function templar_assassin_psi_blades_custom:GetCastRange(vLocation, hTarget)
+if self:GetCaster():HasModifier("modifier_templar_assassin_psiblades_7") then 
+    return self.legendary_castrange
+end
+
+end
+
+
+
 function templar_assassin_psi_blades_custom:GetBehavior()
+    if self:GetCaster():HasModifier("modifier_templar_assassin_psiblades_7") then
+        return DOTA_ABILITY_BEHAVIOR_UNIT_TARGET
+    end
     return DOTA_ABILITY_BEHAVIOR_PASSIVE
 end
+
 
 
 function templar_assassin_psi_blades_custom:OnSpellStart()
@@ -67,6 +103,10 @@ end
 
 
 function modifier_templar_assassin_psi_blades_custom:GetModifierAttackRangeBonus()
+local bonus = 0
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_1") then 
+	bonus = bonus + self:GetAbility().range_attack[self:GetParent():GetUpgradeStack("modifier_templar_assassin_psiblades_1")]
+end
 	return self:GetAbility():GetSpecialValueFor("bonus_attack_range") + bonus
 end
 
@@ -81,8 +121,13 @@ if params.unit:IsBuilding() then return end
 if params.inflictor then return end
 if self:GetParent():PassivesDisabled() then return end
 
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_5") then 
+	self:GetParent():AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_templar_assassin_psi_blades_custom_speed", {duration = self:GetAbility().speed_duration})
+end
 
-
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_3") and (self:GetParent():GetAbsOrigin() - params.unit:GetAbsOrigin()):Length2D() >= self:GetAbility().heal_distance then
+	my_game:GenericHeal(self:GetParent(), self:GetAbility().heal_attack[self:GetParent():GetUpgradeStack("modifier_templar_assassin_psiblades_3")], self:GetAbility())
+end
 
 
 params.unit:EmitSound("Hero_TemplarAssassin.PsiBlade")
@@ -92,6 +137,10 @@ direction.z = 0
 direction = direction:Normalized()
 
 local distance = self:GetAbility():GetSpecialValueFor("attack_spill_range")
+
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_1") then 
+	distance = distance + self:GetAbility().range_blades[self:GetParent():GetUpgradeStack("modifier_templar_assassin_psiblades_1")]
+end
 
 local attack_spill_width = self:GetAbility():GetSpecialValueFor("attack_spill_width")
 local attack_spill_pct = self:GetAbility():GetSpecialValueFor("attack_spill_pct")/100
@@ -121,13 +170,38 @@ for _, enemy in pairs(enemies) do
    
 end
 
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_2") and hit then 
+	local damage = self:GetAbility().damage_inc[self:GetCaster():GetUpgradeStack("modifier_templar_assassin_psiblades_2")]*params.damage
+	
+	ApplyDamage({victim = params.unit, attacker = self:GetCaster(), damage = damage, damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION + DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS, damage_type = DAMAGE_TYPE_PURE, ability = self:GetAbility()})
+	
+	SendOverheadEventMessage(params.unit, 4, params.unit, damage, nil)
+end
+
+
+if self:GetParent():HasModifier("modifier_templar_assassin_psiblades_4") then 
+
+	local chance = self:GetAbility().crystal_chance[self:GetParent():GetUpgradeStack("modifier_templar_assassin_psiblades_4")] 
+	local random = RollPseudoRandomPercentage(chance,27,self:GetParent())
+
+	if random then 
+
+		local pos = params.unit:GetAbsOrigin() + RandomVector(250)
 
 
 
+		crystal:EmitSound("Lina.Array_triple")
+		local particle_peffect = ParticleManager:CreateParticle("particles/ta_crystall_spawn.vpcf", PATTACH_ABSORIGIN_FOLLOW, crystal)
+		ParticleManager:SetParticleControl(particle_peffect, 0, crystal:GetAbsOrigin())
+		ParticleManager:SetParticleControl(particle_peffect, 2, crystal:GetAbsOrigin())
+		ParticleManager:ReleaseParticleIndex(particle_peffect)
+
+	end
 
 end
 
 
+end
 
 
 function modifier_templar_assassin_psi_blades_custom:DealDamage(damage, enemy, unit)
@@ -140,15 +214,23 @@ if enemy:IsCreep() then
 end
 
 local k = 1
+if self:GetCaster():HasModifier("modifier_templar_assassin_psiblades_2") then 
+	k = 1 + self:GetAbility().damage_inc[self:GetCaster():GetUpgradeStack("modifier_templar_assassin_psiblades_2")]
+end
 
-
-
+if unit:GetUnitName() == "npc_psi_blades_crystal_mini" and not enemy:IsMagicImmune() then 
+	enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_stunned", {duration = (1 - enemy:GetStatusResistance())*self:GetAbility().crystal_stun})
+end	
 
 local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_templar_assassin/templar_assassin_psi_blade.vpcf", PATTACH_POINT_FOLLOW, self:GetCaster())
 ParticleManager:SetParticleControlEnt(particle, 0, unit, PATTACH_POINT_FOLLOW, "attach_hitloc", unit:GetAbsOrigin(), true)
 ParticleManager:SetParticleControlEnt(particle, 1, enemy, PATTACH_POINT_FOLLOW, "attach_hitloc", enemy:GetAbsOrigin(), true)
 
 ApplyDamage({victim = enemy, attacker = self:GetCaster(), damage = damage*creeps_k*k, damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION, damage_type = DAMAGE_TYPE_PURE, ability = self:GetAbility()})
+
+if unit:GetUnitName() == "npc_psi_blades_crystal" then 
+	enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_templar_assassin_psi_blades_custom_psi", {duration =  self:GetAbility().legendary_slow_duration*(1 - enemy:GetStatusResistance())})
+end
 
 end
 

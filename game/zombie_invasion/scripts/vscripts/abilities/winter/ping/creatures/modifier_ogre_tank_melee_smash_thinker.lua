@@ -1,6 +1,7 @@
 
 modifier_ogre_tank_melee_smash_thinker = class({})
 
+
 -----------------------------------------------------------------------------
 
 function modifier_ogre_tank_melee_smash_thinker:OnCreated( kv )

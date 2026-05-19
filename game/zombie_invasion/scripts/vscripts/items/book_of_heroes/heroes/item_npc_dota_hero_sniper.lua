@@ -13,7 +13,6 @@ function item_npc_dota_hero_sniper:OnSpellStart()
 end
 
 
-
 sniper_buff_1 = class({})
 
 function sniper_buff_1:GetIntrinsicModifierName()

@@ -1,9 +1,18 @@
 LinkLuaModifier( "modifier_snowball_debuff", "heroes/hero_yuki-onna/snowball" ,LUA_MODIFIER_MOTION_NONE )
 
 
- yuki_snowball = {}
+yuki_snowball = class({})
 
- function yuki_snowball:OnSpellStart()
+function yuki_snowball:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/events/snowball/snowball_projectile.vpcf",
+		"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ice_blast_debuff.vpcf",
+	}, {
+		"FrostivusConsumable.Snowball.Target",
+	}, context)
+end
+
+function yuki_snowball:OnSpellStart()
  	local target = self:GetCursorTarget()
  	local caster = self:GetCaster()
 

@@ -3,6 +3,14 @@ LinkLuaModifier( "modifier_shotgun_turel", "heroes/hero_tech/tech_mehanoid_turel
 
 tech_mehanoid_turel = class({})
 
+function tech_mehanoid_turel:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"Hero_Medusa.AttackSplit",
+	}, context)
+end
+
+
 function tech_mehanoid_turel:OnSpellStart() 
 	local caster = self:GetCaster()
 	local point_for_unit = self:GetCursorPosition()
@@ -63,6 +71,8 @@ end
 	)
 	self.split_shot_attack = false
 end
+ 
+
  
  modifier_shotgun_turel = class({
 	IsHidden 				= function(self) return true end,

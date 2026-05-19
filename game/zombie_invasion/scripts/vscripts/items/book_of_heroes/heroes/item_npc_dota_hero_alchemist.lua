@@ -12,7 +12,6 @@ function item_npc_dota_hero_alchemist:OnSpellStart()
 end
 
 
-
 alchemist_buff_1 = class({})
 
 function alchemist_buff_1:GetIntrinsicModifierName()

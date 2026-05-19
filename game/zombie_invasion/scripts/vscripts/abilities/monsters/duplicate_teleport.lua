@@ -40,6 +40,3 @@ function duplicate_teleport:OnSpellStart()
 end
 
 
-
-
-

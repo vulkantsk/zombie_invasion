@@ -1,12 +1,21 @@
 LinkLuaModifier( "modifier_juggernaut_gate_dead", "heroes/hero_samurai/gate_dead", LUA_MODIFIER_MOTION_NONE )
 
 juggernaut_hell_samurai = class({})
+
+function juggernaut_hell_samurai:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/doom/doom_f2p_death_effect/doom_bringer_f2p_death_fire.vpcf",
+	}, {
+	}, context)
+end
+
 --------------------------------------------------------------------------------
 -- Ability Start
 
 function juggernaut_hell_samurai:GetIntrinsicModifierName()
 	return "modifier_juggernaut_gate_dead"
 end
+
 
 modifier_juggernaut_gate_dead = class({
 	IsHidden 				= function(self) return true end,

@@ -4,6 +4,18 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_true_lord = class({})
 
+function lord_true_lord:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"evolution",
+	}, context)
+end
+
+
  function lord_true_lord:CastFilterResult()
         if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
             return UF_FAIL_CUSTOM

@@ -2,7 +2,6 @@ rocket_shots = class({})
  LinkLuaModifier("modifier_rocket_shots_passive", "heroes/hero_sniper/rocket_shots/rocket_shots", LUA_MODIFIER_MOTION_NONE)
 
 
-
 function rocket_shots:GetIntrinsicModifierName()
     return "modifier_rocket_shots_passive"
 end
@@ -23,7 +22,6 @@ end
 function modifier_rocket_shots_passive:OnRefresh()
     self.net_damage = self:GetAbility():GetSpecialValueFor("net_damage")
 end
-
 
 
 function modifier_rocket_shots_passive:DeclareFunctions()

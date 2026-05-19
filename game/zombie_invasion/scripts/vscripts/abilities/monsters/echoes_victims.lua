@@ -3,6 +3,15 @@ if echoes_victims == nil then
     echoes_victims = class({})
 end
 
+function echoes_victims:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bane/bane_nightmare_slime.vpcf",
+	}, {
+		"Hero_DeathProphet.Exorcism.Cast",
+	}, context)
+end
+
+
 function echoes_victims:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
 end

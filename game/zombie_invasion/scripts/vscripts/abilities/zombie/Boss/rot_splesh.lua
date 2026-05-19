@@ -1,5 +1,15 @@
 LinkLuaModifier( "modifier_rot_splash", "abilities/zombie/Boss/rot_splesh", LUA_MODIFIER_MOTION_NONE )
 rot_splesh = class({})
+
+function rot_splesh:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_pudge/pudge_rot.vpcf",
+	}, {
+		"Hero_Alchemist.AcidSpray",
+		"Hero_Pudge.Rot",
+	}, context)
+end
+
  
 
 --------------------------------------------------------------------------------
@@ -32,6 +42,7 @@ function rot_splesh:GetAOERadius()
 end
 
 modifier_rot_splash = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

@@ -1,4 +1,16 @@
 lion_finger_of_death_lua = class({})
+
+function lion_finger_of_death_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_shadowraze.vpcf",
+	}, {
+		"Hero_Lion.FingerOfDeath",
+		"Hero_Lion.FingerOfDeathImpact",
+		"Hero_Nevermore.Shadowraze",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_lion_finger_of_death_lua", "heroes/hero_lion/finger/modifier_lion_finger_of_death_lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------

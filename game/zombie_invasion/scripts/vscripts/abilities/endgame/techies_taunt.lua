@@ -2,6 +2,16 @@ LinkLuaModifier("modifier_techies_taunt", "abilities/endgame/techies_taunt", 0)
 
 techies_taunt=class({})
 
+function techies_taunt:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_techies/techies_base_attack.vpcf",
+	}, {
+		"Hero_Techies.ProjectileImpact",
+		"techies_tech_levelup_0",
+	}, context)
+end
+
+
 function techies_taunt:GetIntrinsicModifierName()
 	return "modifier_techies_taunt"
 end
@@ -14,6 +24,7 @@ function techies_taunt:OnSpellStart()
 	local effect = "particles/units/heroes/hero_techies/techies_base_attack.vpcf"
 	caster:StartGestureWithPlaybackRate(ACT_DOTA_TAUNT, 1.5)
 end
+
 
 modifier_techies_taunt = class({
 	IsHidden = function() return true end,

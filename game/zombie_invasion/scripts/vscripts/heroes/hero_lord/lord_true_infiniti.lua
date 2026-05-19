@@ -4,9 +4,23 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_true_infiniti = class({})
 
+function lord_true_infiniti:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_sfm_ink_swell_reveal.vpcf",
+	}, {
+		"blood_rage",
+		"infinity_vamp",
+	}, context)
+end
+
+
 function lord_true_infiniti:GetIntrinsicModifierName()
 	return "modifier_lord_true_infiniti"
 end
+
 
 modifier_lord_true_infiniti = class({
 	IsHidden 				= function(self) return true end,

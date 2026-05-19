@@ -2,6 +2,14 @@ LinkLuaModifier("modifier_spirit_wolf", "heroes/hero_troll/mini_troll/spirit_wol
 
 lycan_spirit_wolf_custom = class({})
 
+function lycan_spirit_wolf_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_lone_druid/lone_druid_bear_spawn.vpcf",
+	}, {
+	}, context)
+end
+
+
 function lycan_spirit_wolf_custom:OnSpellStart()
 	local caster = self:GetCaster()
 	local player = caster:GetPlayerID()
@@ -101,7 +109,6 @@ function lycan_spirit_wolf_custom:OnUpgrade()
 	local unit_name = "npc_dota_spirit_wolf1"
 
 
-
 	if caster.wolf and caster.wolf:IsAlive() then 
 		-- Remove the old wolf in its position
 		local origin = caster.wolf:GetAbsOrigin()
@@ -156,6 +163,7 @@ function SpiritwolfDeath( event )
 
 	ApplyDamage({ victim = caster, attacker = killer, damage = damage, damage_type = DAMAGE_TYPE_PURE })
 end
+
 
 modifier_spirit_wolf = class({
 	IsHidden = function(self) return true end,

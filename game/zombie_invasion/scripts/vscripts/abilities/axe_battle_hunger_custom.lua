@@ -1,6 +1,14 @@
 
 axe_battle_hunger_custom = class({})
 
+function axe_battle_hunger_custom:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"Hero_Axe.BerserkersCall.Start",
+	}, context)
+end
+
+
 function axe_battle_hunger_custom:GetCastAnimation()
 	EmitSoundOn("Hero_Axe.BerserkersCall.Start", self:GetCaster())	
     return ACT_DOTA_OVERRIDE_ABILITY_1 

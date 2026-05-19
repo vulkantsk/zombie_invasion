@@ -1,6 +1,54 @@
+local RUBICK_STEAL_PARTICLES = {
+	"particles/units/heroes/hero_rubick/rubick_spell_steal.vpcf",
+	"particles/rubick_manavoid.vpcf",
+	"particles/rubick_freezing_field_explosion.vpcf",
+	"particles/rubick_freezing_field_snow.vpcf",
+	"particles/rubick_wisp_aoe_proj.vpcf",
+	"particles/rubick_wisp_aoe_cast.vpcf",
+	"particles/rubick_wisp_spell_channel.vpcf",
+	"particles/rubick_willowisp_base_attack.vpcf",
+	"particles/rubick_willowisp_ambient.vpcf",
+	"particles/rubick_fissure.vpcf",
+	"particles/rubick_blackhole.vpcf",
+	"particles/rubick_chronosphere.vpcf",
+	"particles/rubick_chaos_meteor.vpcf",
+	"particles/rubick_chaos_meteor_fly.vpcf",
+	"particles/rubick_chain_frost.vpcf",
+	"particles/rubick_chakram.vpcf",
+	"particles/rubick_chakram_stay.vpcf",
+	"particles/rubick_chakram_return.vpcf",
+	"particles/rubick_guardian_angel_ally.vpcf",
+	"particles/rubick_guardian_angel_rubick.vpcf",
+}
+
+local RUBICK_STEAL_SOUNDS = {
+	"Hero_Rubick.SpellSteal.Cast",
+	"Hero_Rubick.SpellSteal.Complete",
+	"Hero_Rubick.SpellSteal.Target",
+}
+
+local function PrecacheRubickSpellSteal(context)
+	PrecacheAbilityResources(RUBICK_STEAL_PARTICLES, RUBICK_STEAL_SOUNDS, context)
+end
+
 rubick_spell_steal_lua = class({})
+
+function rubick_spell_steal_lua:Precache(context)
+	PrecacheRubickSpellSteal(context)
+end
+
 rubick_spell_steal_lua_slot1 = class({})
+
+function rubick_spell_steal_lua_slot1:Precache(context)
+	PrecacheRubickSpellSteal(context)
+end
+
 rubick_spell_steal_lua_slot2 = class({})
+
+function rubick_spell_steal_lua_slot2:Precache(context)
+	PrecacheRubickSpellSteal(context)
+end
+
 LinkLuaModifier( "modifier_rubick_spell_steal_lua", "lua_abilities/rubick_spell_steal_lua/modifier_rubick_spell_steal_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_rubick_spell_steal_lua_hidden", "lua_abilities/rubick_spell_steal_lua/modifier_rubick_spell_steal_lua_hidden", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_rubick_spell_steal_lua_animation", "lua_abilities/rubick_spell_steal_lua/modifier_rubick_spell_steal_lua_animation", LUA_MODIFIER_MOTION_NONE )

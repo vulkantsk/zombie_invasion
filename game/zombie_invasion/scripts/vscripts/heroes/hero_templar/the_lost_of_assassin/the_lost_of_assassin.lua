@@ -9,6 +9,19 @@ ability_bedlam = class({
     GetIntrinsicModifierName = function() return "modifier_ability_bedlam" end
 })
 
+function ability_bedlam:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_dark_willow/dark_willow_willowisp_ambient.vpcf",
+		"particles/units/heroes/hero_dark_willow/dark_willow_willowisp_base_attack.vpcf",
+		"particles/units/heroes/hero_dark_willow/dark_willow_wisp_aoe.vpcf",
+		"particles/units/heroes/hero_dark_willow/dark_willow_wisp_aoe_cast.vpcf",
+	}, {
+		"Hero_DarkWillow.WillOWisp.Damage",
+		"Hero_DarkWillow.WispStrike.Cast",
+	}, context)
+end
+
+
 modifier_ability_bedlam = class({})
 
 
@@ -200,6 +213,7 @@ end
 
 modifier_ability_bedlam_attack = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_ability_bedlam_attack:IsHidden()
@@ -365,6 +379,7 @@ function modifier_ability_bedlam_attack:PlayEffects1( target, speed )
 end
 
 modifier_wisp_ambient = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

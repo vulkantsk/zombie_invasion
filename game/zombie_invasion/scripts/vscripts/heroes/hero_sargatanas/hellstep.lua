@@ -5,6 +5,18 @@ LinkLuaModifier( "modifier_overheating", "heroes/hero_sargatanas/modifier_overhe
 
 if ability_hellstep== nil then
     ability_hellstep = class({})
+
+function ability_hellstep:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/wraith_king/wraith_king_ti6_bracer/wraith_king_ti6_ambient_fireball_lava.vpcf",
+		"particles/units/heroes/hero_doom_bringer/doom_scorched_earth.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_shard_fireball.vpcf",
+	}, {
+		"Hero_DragonKnight.BreathFire",
+		"Hero_Viper.NetherToxin.Damage",
+	}, context)
+end
+
 end
 
 --------------------------------------------------------------------------------
@@ -89,6 +101,7 @@ modifier_ability_hellstep_thinker = class({
     RemoveOnDeath           = function(self) return true end,
 })
 
+
  --------------------------------------------------------------------------------
 
 function modifier_ability_hellstep_thinker:IsAura()
@@ -150,6 +163,7 @@ modifier_ability_hellstep_aura = class({
     RemoveOnDeath           = function(self) return true end,
 
 })
+
 
  
 function modifier_ability_hellstep_aura:OnCreated( kv )

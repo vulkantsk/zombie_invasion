@@ -1,4 +1,14 @@
 ability_frostbite = class({})
+
+function ability_frostbite:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_crystalmaiden/maiden_frostbite.vpcf",
+		"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf",
+	}, {
+		"hero_Crystal.frostbite",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_ability_frostbite_debuff", "abilities/new_abilities_creeps/ability_frostbite", LUA_MODIFIER_MOTION_NONE )
 
 function ability_frostbite:OnSpellStart()
@@ -33,6 +43,7 @@ end
 
 
 modifier_ability_frostbite_debuff = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

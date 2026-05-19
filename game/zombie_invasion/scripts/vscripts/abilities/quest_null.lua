@@ -5,6 +5,14 @@ quest_null = class({
     GetIntrinsicModifierName = function() return "modifier_quest_null" end
 })
 
+function quest_null:Precache(context)
+	PrecacheAbilityResources({
+	}, {
+		"skyrim",
+	}, context)
+end
+
+
 modifier_quest_null = class({
     isHidden = function() return true end,
     IsPurgable = function() return false end,
@@ -31,7 +39,6 @@ function modifier_quest_null:OnIntervalThink()
         self.music_play = true 
     end 
      
-
 
 
 end

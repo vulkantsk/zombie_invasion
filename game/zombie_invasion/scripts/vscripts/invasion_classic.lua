@@ -337,8 +337,6 @@ function InvasionMode:InvasionMap()
  
 
 
-
-
  	ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(InvasionMode, 'OnPlayerLevelUp'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(InvasionMode, 'InvasionMapGameRulesStateChange'), self)
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(InvasionMode, 'InvasionEntityKilled'), self)		
@@ -636,7 +634,6 @@ function InvasionMode:InvasionOnNPCSpawn(data)
 
 
    	
-
 
 
    
@@ -1093,21 +1090,27 @@ function InvasionMode:RandomHeroes()
 		end 
  
 
-		local newHero = PlayerResource:ReplaceHeroWith(playerID, newHeroName, 0, 0) 
-		newHero:RespawnHero(false, false) 
-	 
-		newHero:SetGold(gold, false)
-		newHero:AddExperience(experience, 0, false, true)
-		for item,stacks in pairs(items_table) do 
-			--print(item)
-			local item = newHero:AddItemByName(item) 
-			item:SetCurrentCharges(stacks)
-		end 
-		for modif,stacks in pairs(modif_table) do 
-			local modif = newHero:AddNewModifier(newHero, nil, modif, {  }) 
-			modif:SetStackCount(stacks)
-		end 
-	end 
+		ReplaceHeroWithPrecache(playerID, newHeroName, function(newHero)
+			if not newHero then
+				return
+			end
+			newHero:RespawnHero(false, false)
+			newHero:SetGold(gold, false)
+			newHero:AddExperience(experience, 0, false, true)
+			for itemName, stacks in pairs(items_table) do
+				local newItem = newHero:AddItemByName(itemName)
+				if newItem then
+					newItem:SetCurrentCharges(stacks)
+				end
+			end
+			for modifName, stacks in pairs(modif_table) do
+				local modif = newHero:AddNewModifier(newHero, nil, modifName, {})
+				if modif then
+					modif:SetStackCount(stacks)
+				end
+			end
+		end)
+	end
 
 
      end	
@@ -2078,10 +2081,14 @@ function InvasionMode:CrashGame()
 			hero:ForceKill(false)
 		end
 
-		local newHero = PlayerResource:ReplaceHeroWith(i, "npc_dota_hero_omniknight", 0, 0) 
-		hero:RespawnHero(false, false) 
-
-		hero:SetWeather()
+		ReplaceHeroWithPrecache(i, "npc_dota_hero_omniknight", function(newHero)
+			if newHero then
+				newHero:RespawnHero(false, false)
+				if newHero.SetWeather then
+					newHero:SetWeather()
+				end
+			end
+		end)
 	end
 
 end
@@ -2376,7 +2383,6 @@ function InvasionMode:ThemeMusic()
     }
 
 
-
  	night_music =
  	{
  
@@ -2599,7 +2605,6 @@ end
  
  	night_music =
  	{
-
 
 
  

@@ -4,6 +4,16 @@ if fire_storm == nil then
     fire_storm = class({})
 end
 
+function fire_storm:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/invoker/invoker_apex/invoker_sun_strike_flame_immortal1.vpcf",
+		"particles/econ/items/invoker/invoker_apex/invoker_sun_strike_team_immortal1.vpcf",
+	}, {
+		"Hero_Nevermore.RequiemOfSoulsCast",
+	}, context)
+end
+
+
 function fire_storm:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
 end

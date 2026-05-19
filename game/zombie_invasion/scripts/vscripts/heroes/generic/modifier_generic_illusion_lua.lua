@@ -1,5 +1,6 @@
 modifier_generic_illusion_lua = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_generic_illusion_lua:IsHidden()

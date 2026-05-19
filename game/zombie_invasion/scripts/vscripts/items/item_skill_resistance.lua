@@ -15,7 +15,6 @@ modifier_item_resist = class({
 })
 
 
-
 function modifier_item_resist:OnCreated()
 	self.magic_resist = self:GetAbility():GetSpecialValueFor("magic_resist")
 end

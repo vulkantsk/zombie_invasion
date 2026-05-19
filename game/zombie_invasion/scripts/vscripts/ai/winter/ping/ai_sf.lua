@@ -50,7 +50,6 @@ function SfThink()
         end
 
 
-
 	end	
 
 	return 1.0	

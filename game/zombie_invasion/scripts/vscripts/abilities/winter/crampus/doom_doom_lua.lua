@@ -10,6 +10,16 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 doom_doom_lua = class({})
+
+function doom_doom_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_doom.vpcf",
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf",
+	}, {
+		"Hero_DoomBringer.Doom",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_doom_passive", "abilities/winter/crampus/doom_doom_lua", LUA_MODIFIER_MOTION_NONE )
  LinkLuaModifier( "modifier_doom_aura", "abilities/winter/crampus/doom_doom_lua", LUA_MODIFIER_MOTION_NONE )  
  LinkLuaModifier( "modifier_doom_doom_lua", "abilities/winter/crampus/doom_doom_lua", LUA_MODIFIER_MOTION_NONE )
@@ -19,6 +29,9 @@ LinkLuaModifier( "modifier_doom_passive", "abilities/winter/crampus/doom_doom_lu
 function doom_doom_lua:GetIntrinsicModifierName()
     return "modifier_doom_passive"
 end
+
+ 
+
 
  
 
@@ -52,6 +65,7 @@ function modifier_doom_passive:OnTakeDamage( keys )
 end
 
 modifier_doom_aura = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications
@@ -102,10 +116,9 @@ function modifier_doom_aura:OnRefresh( kv )
 end
 
 
-
-
 --------------------------------------------------------------------------------
 modifier_doom_doom_lua = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

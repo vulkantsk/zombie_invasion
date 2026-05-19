@@ -5,6 +5,15 @@ sara_fragment_of_logic = class({
 	GetIntrinsicModifierName = function() return "modifier_sara_fragment_of_logic" end,
 })
 
+function sara_fragment_of_logic:Precache(context)
+	PrecacheAbilityResources({
+		"particles/arena/units/heroes/hero_sara/fragment_of_logic.vpcf",
+	}, {
+		"Hero_Chen.HandOfGodHealHero",
+	}, context)
+end
+
+
 if IsClient() then
 	function sara_fragment_of_logic:GetManaCost()
 		return self:GetSpecialValueFor("energy_const") + self:GetCaster():GetMaxMana() * self:GetSpecialValueFor("energy_pct") * 0.01
@@ -16,6 +25,7 @@ modifier_sara_fragment_of_logic = class({
 	IsHidden   = function() return true end,
 	IsPurgable = function() return false end,
 })
+
 
 if IsServer() then
 	function modifier_sara_fragment_of_logic:DeclareFunctions()
@@ -61,3 +71,5 @@ modifier_sara_fragment_of_logic_debuff = class({
 	IsPurgable = function() return false end,
 	IsDebuff = function() return true end,
 })
+
+

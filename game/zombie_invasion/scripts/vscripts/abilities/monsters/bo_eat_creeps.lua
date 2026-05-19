@@ -10,6 +10,15 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 bo_eat_creeps = class({})
+
+function bo_eat_creeps:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_Pudge.Dismember",
+	}, context)
+end
+
  
 
 LinkLuaModifier( "modifier_bo_eat_creeps", "abilities/monsters/bo_eat_creeps", LUA_MODIFIER_MOTION_NONE )
@@ -87,6 +96,7 @@ function bo_eat_creeps:PlayEffects( target )
 end
  
 modifier_bo_eat_creeps = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

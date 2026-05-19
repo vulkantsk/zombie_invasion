@@ -2,6 +2,15 @@ LinkLuaModifier("modifier_quest_template", "abilities/quest/quest_template", LUA
 
 quest_template = class({})
 
+function quest_template:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_has_quest.vpcf",
+	}, {
+		"quest_complete",
+	}, context)
+end
+
+
 function quest_template:GetIntrinsicModifierName()
     return "modifier_quest_template"
 end
@@ -61,6 +70,7 @@ modifier_quest_template = class({
     GetEffectName           = function(self) return 'particles/generic_gameplay/generic_has_quest.vpcf' end,
     GetEffectAttachType     = function(self) return PATTACH_OVERHEAD_FOLLOW end,
 })
+
 
 function modifier_quest_template:OnCreated()
     if IsServer() then

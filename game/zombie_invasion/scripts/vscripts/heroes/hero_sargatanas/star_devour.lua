@@ -184,3 +184,4 @@ modifier_star_devour_stack = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
 })
+

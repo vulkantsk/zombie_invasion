@@ -3,6 +3,14 @@ LinkLuaModifier("modifier_anudin_reduce_damage_debuff", "abilities/anudin_reduce
 
 
 anudin_reduce_damage = class({})
+
+function anudin_reduce_damage:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/lycan/ti9_immortal/lycan_ti9_immortal_overhead.vpcf",
+	}, {
+	}, context)
+end
+
  
 function anudin_reduce_damage:GetIntrinsicModifierName()
    return "modifier_anudin_reduce_damage"
@@ -16,6 +24,7 @@ modifier_anudin_reduce_damage = class({
    RemoveOnDeath          = function(self) return false end,
 
 })
+
 
 function modifier_anudin_reduce_damage:IsAura()
    return true

@@ -1,4 +1,14 @@
 sf_necromastery_hero = class({})
+
+function sf_necromastery_hero:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/heroes/azzazel/nevermore_necro_souls.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_sf_necromastery_hero", "heroes/hero_sf/sf_necromastery_hero/sf_necromastery_hero", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
@@ -105,8 +115,6 @@ function modifier_sf_necromastery_hero:OnTakeDamage( params )
 		end
 
 end
-
-
 
 
 function modifier_sf_necromastery_hero:PlayEffects( target )

@@ -1,5 +1,14 @@
 antimage_ult=class({})
 
+function antimage_ult:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_antimage/antimage_manavoid.vpcf",
+	}, {
+		"Hero_Antimage.ManaVoid",
+	}, context)
+end
+
+
 function antimage_ult:OnSpellStart()
 	local target = self:GetCursorTarget()
 	target:EmitSound("Hero_Antimage.ManaVoid")

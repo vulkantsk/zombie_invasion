@@ -1,6 +1,16 @@
 
 wisp_heal = class({})
 
+function wisp_heal:Precache(context)
+	PrecacheAbilityResources({
+		"particles/msg_fx/msg_damage.vpcf",
+		"particles/units/heroes/hero_oracle/oracle_purifyingflames.vpcf",
+		"particles/units/heroes/hero_oracle/oracle_purifyingflames_hit.vpcf",
+	}, {
+		"Hero_Oracle.PurifyingFlames.Damage",
+	}, context)
+end
+
 
  function wisp_heal:GetBehavior() 
      local behav = DOTA_ABILITY_BEHAVIOR_UNIT_TARGET

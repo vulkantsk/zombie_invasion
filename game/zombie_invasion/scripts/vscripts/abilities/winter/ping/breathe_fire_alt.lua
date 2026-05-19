@@ -1,5 +1,15 @@
 breathe_fire_alt = class({})
 
+function breathe_fire_alt:Precache(context)
+	PrecacheAbilityResources({
+		"particles/fire_trap/trap_breathe_fire.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf",
+	}, {
+		"Conquest.FireTrap.Generic",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function breathe_fire_alt:OnSpellStart()

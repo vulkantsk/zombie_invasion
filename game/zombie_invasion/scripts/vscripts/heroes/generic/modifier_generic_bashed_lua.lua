@@ -1,5 +1,6 @@
 modifier_generic_bashed_lua = class({})
 
+
 --------------------------------------------------------------------------------
 
 function modifier_generic_bashed_lua:IsDebuff()

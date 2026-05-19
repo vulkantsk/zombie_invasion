@@ -2,6 +2,18 @@ shield_crush = class({
      GetIntrinsicModifierName = function() return "modifier_shield_crush_buff" end
 })
 
+function shield_crush:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_stunned.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf",
+		"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail_dragonform_proj.vpcf",
+	}, {
+		"Hero_DragonKnight.DragonTail.Cast",
+		"Hero_DragonKnight.DragonTail.Target",
+	}, context)
+end
+
+
 LinkLuaModifier( "modifier_shield_crush", "heroes/hero_dragon_knight/shield_crush/shield_crush", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_shield_crush_buff", "heroes/hero_dragon_knight/shield_crush/shield_crush", LUA_MODIFIER_MOTION_NONE )
 
@@ -108,6 +120,7 @@ function shield_crush:PlayEffects( target, dragonform )
     ParticleManager:ReleaseParticleIndex( effect_cast )
 end
 
+
 modifier_shield_crush_buff = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
@@ -135,8 +148,8 @@ function modifier_shield_crush_buff:GetModifierIncomingDamage_Percentage()
 end
 
 
-
 modifier_shield_crush = class({})
+
 
 function modifier_shield_crush:IsDebuff()
     return true

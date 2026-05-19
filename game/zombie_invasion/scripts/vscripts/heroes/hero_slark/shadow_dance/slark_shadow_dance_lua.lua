@@ -1,4 +1,15 @@
 slark_shadow_dance_lua = class({})
+
+function slark_shadow_dance_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_slark_shadow_dance.vpcf",
+		"particles/units/heroes/hero_slark/slark_shadow_dance.vpcf",
+		"particles/units/heroes/hero_slark/slark_shadow_dance_dummy.vpcf",
+	}, {
+		"Hero_Slark.ShadowDance",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_shadow_dance_lua", "heroes/hero_slark/shadow_dance/slark_shadow_dance_lua", LUA_MODIFIER_MOTION_NONE )
  
 --------------------------------------------------------------------------------
@@ -18,6 +29,7 @@ function slark_shadow_dance_lua:OnSpellStart()
 		{ duration = bDuration } -- kv
 	)
 end
+
 
 modifier_slark_shadow_dance_lua = class({
 	IsHidden 				= function(self) return false end,
@@ -73,7 +85,6 @@ end
 function modifier_slark_shadow_dance_lua:GetModifierBaseAttackTimeConstant()
 	return self.bonus_bat
 end
-
 
 
 function modifier_slark_shadow_dance_lua:GetModifierHPRegenAmplify_Percentage()  

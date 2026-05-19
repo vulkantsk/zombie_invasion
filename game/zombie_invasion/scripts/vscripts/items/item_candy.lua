@@ -8,7 +8,6 @@ if item_candy == nil then
 end
 
 
-
  
 
 

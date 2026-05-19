@@ -1,5 +1,15 @@
 demon_desolate = class({})
 
+function demon_desolate:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/faceless_void/faceless_void_arcana/faceless_void_arcana_maelstrom_impact_sparks.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+	}, {
+		"Item_Desolator.Target",
+	}, context)
+end
+
+
 LinkLuaModifier("modifier_demon_desolate", "heroes/hero_demonslayer/demon_desolate/demon_desolate", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_demon_desolate_tear", "heroes/hero_demonslayer/demon_desolate/demon_desolate", LUA_MODIFIER_MOTION_NONE)
 
@@ -74,6 +84,7 @@ end
 
 
 modifier_demon_desolate_tear = class({})
+
 
 function modifier_demon_desolate_tear:IsHidden() return false end
 function modifier_demon_desolate_tear:IsDebuff() return true end

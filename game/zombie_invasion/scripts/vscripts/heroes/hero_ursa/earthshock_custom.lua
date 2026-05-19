@@ -1,6 +1,16 @@
 LinkLuaModifier("modifier_ursa_earthshock_custom", "heroes/hero_ursa/earthshock_custom", LUA_MODIFIER_MOTION_NONE)
 
-if not ursa_earthshock_custom then ursa_earthshock_custom = class({}) end
+if not ursa_earthshock_custom then ursa_earthshock_custom = class({})
+
+function ursa_earthshock_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_ursa/ursa_earthshock.vpcf",
+		"particles/units/heroes/hero_ursa/ursa_earthshock_modifier.vpcf",
+	}, {
+		"Hero_Ursa.Earthshock",
+	}, context)
+end
+ end
 
 function ursa_earthshock_custom:OnSpellStart()
 	local caster = self:GetCaster()
@@ -32,6 +42,7 @@ function ursa_earthshock_custom:OnSpellStart()
 		DealDamage(caster, unit, damage, DAMAGE_TYPE_MAGICAL, nil, ability)
 	end
 end
+
 
 modifier_ursa_earthshock_custom = class({
 	IsHidden 				= function(self) return false end,

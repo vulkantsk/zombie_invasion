@@ -13,7 +13,6 @@ function item_npc_dota_hero_wisp:OnSpellStart()
 end
 
 
-
 wisp_buff_1 = class({})
 
 function wisp_buff_1:GetIntrinsicModifierName()

@@ -2,6 +2,19 @@ LinkLuaModifier("modifier_skywrath_mage_concussive_shot", "heroes/hero_sky/concu
 
 ability_skywrath_mage_concussive_shot = class({})
 
+function ability_skywrath_mage_concussive_shot:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot.vpcf",
+		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot_cast.vpcf",
+		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot_failure.vpcf",
+		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot_slow_debuff.vpcf",
+	}, {
+		"Hero_SkywrathMage.ConcussiveShot.Cast",
+		"Hero_SkywrathMage.ConcussiveShot.Target",
+	}, context)
+end
+
+
 function ability_skywrath_mage_concussive_shot:OnSpellStart()
     local caster = self:GetCaster()
     local target = nil
@@ -99,6 +112,7 @@ function ability_skywrath_mage_concussive_shot:OnProjectileHit(hTarget, vLocatio
         hTarget:EmitSound("Hero_SkywrathMage.ConcussiveShot.Target")
     end
 end
+
 
 modifier_skywrath_mage_concussive_shot = class({
     IsHidden = function() return false end,

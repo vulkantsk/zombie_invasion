@@ -5,6 +5,19 @@ if ability_drow_ranger_frost_arrows == nil then
     ability_drow_ranger_frost_arrows = class({})
 end
 
+function ability_drow_ranger_frost_arrows:Precache(context)
+	PrecacheAbilityResources({
+		"particles/status_fx/status_effect_drow_frost_arrow.vpcf",
+		"particles/tb_soul_power.vpcf",
+		"particles/units/heroes/hero_drow/drow_frost_arrow.vpcf",
+		"particles/units/heroes/hero_drow/drow_frost_arrow_debuff.vpcf",
+	}, {
+		"Hero_DrowRanger.FrostArrows",
+		"sounds/weapons/hero/shredder/armor_explode.vsnd",
+	}, context)
+end
+
+
 function ability_drow_ranger_frost_arrows:GetIntrinsicModifierName()
     return "modifier_ability_drow_ranger_frost_arrows"
 end

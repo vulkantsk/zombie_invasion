@@ -5,6 +5,17 @@ if ability_phantom_assassin_blur == nil then
     ability_phantom_assassin_blur = class({})
 end
 
+function ability_phantom_assassin_blur:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_active_blur.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_blur.vpcf",
+	}, {
+		"Hero_PhantomAssassin.Blur",
+		"Hero_PhantomAssassin.Blur.Break",
+	}, context)
+end
+
+
 function ability_phantom_assassin_blur:GetIntrinsicModifierName()
     return "modifier_phantom_assassin_blur_lua"
 end
@@ -91,6 +102,7 @@ end
 
  
 modifier_phantom_assassin_blur_lua = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

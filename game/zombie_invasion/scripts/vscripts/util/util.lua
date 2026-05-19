@@ -607,7 +607,6 @@ function CDOTA_BaseNPC_Hero:GetTotalHealthReduction()
 end
 
 
-
 function CDOTA_BaseNPC_Hero:CalculateHealthReduction()
 	self:CalculateStatBonus(true)
 	local pct = self:GetTotalHealthReduction()
@@ -763,5 +762,21 @@ function KillAllPlayers(withEffect)
 				hero:BloodOnFace()
 			end
  		end
+	end)
+end
+
+--- Прикеш героя перед ReplaceHeroWith (иначе возможны missing model / abilities).
+function ReplaceHeroWithPrecache(playerID, heroName, callback)
+	if heroName == nil or heroName == "" then
+		return
+	end
+	if playerID == nil or not PlayerResource:IsValidPlayerID(playerID) then
+		return
+	end
+	PrecacheUnitByNameAsync(heroName, function()
+		local newHero = PlayerResource:ReplaceHeroWith(playerID, heroName, 0, 0)
+		if callback then
+			callback(newHero)
+		end
 	end)
 end

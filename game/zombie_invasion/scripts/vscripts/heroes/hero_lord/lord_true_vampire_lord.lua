@@ -5,6 +5,19 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_true_vampire_lord = class({})
 
+function lord_true_vampire_lord:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"evolution",
+		"true",
+	}, context)
+end
+
+
  function lord_true_vampire_lord:CastFilterResult()
         if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
             return UF_FAIL_CUSTOM
@@ -157,9 +170,6 @@ function modifier_lord_true_vampire_lord:OnTakeDamage( keys )
 end
 
 
-
-
-
 modifier_lord_true_vampire_lord_active = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
@@ -167,6 +177,8 @@ modifier_lord_true_vampire_lord_active = class({
     IsBuff                  = function(self) return true end,
     RemoveOnDeath           = function(self) return true end,
 })
+
+
  
 function modifier_lord_true_vampire_lord_active:OnCreated()
     self.radius = self:GetAbility():GetSpecialValueFor("radius")

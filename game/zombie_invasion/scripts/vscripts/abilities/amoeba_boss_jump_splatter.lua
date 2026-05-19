@@ -1,4 +1,18 @@
 amoeba_boss_jump_splatter = class({})
+
+function amoeba_boss_jump_splatter:Precache(context)
+	PrecacheAbilityResources({
+		"particles/act_2/amoeba_blob_launch_no_arc.vpcf",
+		"particles/act_2/amoeba_marker.vpcf",
+		"particles/test_particle/ogre_melee_smash.vpcf",
+		"particles/units/heroes/hero_batrider/batrider_stickynapalm_impact.vpcf",
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf",
+	}, {
+		"Dungeon.BloodSplatterImpact",
+		"Hero_Bristleback.ViscousGoo.Target",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_amoeba_boss_jump", "modifiers/modifier_amoeba_boss_jump", LUA_MODIFIER_MOTION_BOTH )
 
 -------------------------------------------------------------------

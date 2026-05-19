@@ -13,7 +13,6 @@ function item_fire_shivas_guard:GetIntrinsicModifierName() return "modifier_fire
  
 
 
-
 function item_fire_shivas_guard:OnSpellStart()
 	local caster = self:GetCaster()
 	caster:EmitSound("DOTA_Item.ShivasGuard.Activate")

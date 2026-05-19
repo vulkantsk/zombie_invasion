@@ -1,4 +1,13 @@
 ability_thunder_clap = class({})
+
+function ability_thunder_clap:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/brewmaster/brewmaster_offhand_elixir/brewmaster_thunder_clap_elixir.vpcf",
+	}, {
+		"clap",
+	}, context)
+end
+
 LinkLuaModifier('modifier_ability_thunder_clap_debuff', 'heroes/hero_sand_king/clap/thunder_clap', LUA_MODIFIER_MOTION_NONE)
 
 function ability_thunder_clap:OnSpellStart()
@@ -45,6 +54,7 @@ function ability_thunder_clap:OnSpellStart()
 
     end 
 end
+
 
 modifier_ability_thunder_clap_debuff = class({
     IsHidden                = function(self) return false end,

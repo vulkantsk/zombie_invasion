@@ -1,5 +1,6 @@
 modifier_wraith_king_mortal_strike_lua_spawn = class({})
 
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_wraith_king_mortal_strike_lua_spawn:IsHidden()

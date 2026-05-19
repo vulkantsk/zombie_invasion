@@ -8,7 +8,6 @@ if item_pizza2 == nil then
 end
 
 
-
 function item_pizza2:OnSpellStart()
 	--print("OnSpellStart")
 	local hCaster = self:GetCaster()

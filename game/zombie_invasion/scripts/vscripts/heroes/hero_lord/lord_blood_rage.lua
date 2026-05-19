@@ -5,6 +5,18 @@ LinkLuaModifier("modifier_lord_true_lord", "heroes/hero_lord/lord_true_lord", LU
 
 lord_blood_rage = class({})
 
+function lord_blood_rage:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"evolution",
+	}, context)
+end
+
+
 function lord_blood_rage:OnSpellStart()
 	self:GetCaster():AddNewModifier(self:GetCaster(),self,"modifier_lord_blood_rage_active",{duration = self:GetSpecialValueFor("duration")})
 	EmitSoundOn( "blood_rage", self:GetCaster() )
@@ -14,6 +26,7 @@ end
 function lord_blood_rage:GetIntrinsicModifierName()
 	return "modifier_lord_blood_rage"
 end
+
 
 modifier_lord_blood_rage = class({
 	IsHidden 				= function(self) return false end,
@@ -72,6 +85,8 @@ modifier_lord_blood_rage_active = class({
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return true end,
 })
+
+
  
 function modifier_lord_blood_rage_active:OnCreated()
 	self.radius = self:GetAbility():GetSpecialValueFor("radius")

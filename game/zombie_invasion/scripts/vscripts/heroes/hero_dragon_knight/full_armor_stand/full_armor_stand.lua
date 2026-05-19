@@ -1,4 +1,13 @@
 full_armor_stand = class({})
+
+function full_armor_stand:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/events/frostivus/frostivus_tree_cast_ability.vpcf",
+	}, {
+		"n_creep_Thunderlizard_Big.Stomp",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_full_armor_stand", "heroes/hero_dragon_knight/full_armor_stand/full_armor_stand", LUA_MODIFIER_MOTION_NONE )
 
 
@@ -56,6 +65,7 @@ function full_armor_stand:PlayEffects()
 end
 
 modifier_full_armor_stand = class({})
+
 
 function modifier_full_armor_stand:DeclareFunctions()
     return {

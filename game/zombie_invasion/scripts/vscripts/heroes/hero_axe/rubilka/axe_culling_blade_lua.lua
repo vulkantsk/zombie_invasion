@@ -1,4 +1,15 @@
 axe_culling_blade_lua = class({})
+
+function axe_culling_blade_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_axe/axe_culling_blade.vpcf",
+		"particles/units/heroes/hero_axe/axe_culling_blade_kill.vpcf",
+	}, {
+		"Hero_Axe.Culling_Blade_Fail",
+		"Hero_Axe.Culling_Blade_Success",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_scepter_culling_blade", "heroes/hero_axe/rubilka/axe_culling_blade_lua",LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_scepter_culling_blade_stack", "heroes/hero_axe/rubilka/axe_culling_blade_lua",LUA_MODIFIER_MOTION_NONE )
 
@@ -240,15 +251,8 @@ function axe_culling_blade_lua:PlayEffects( target, success )
 end
 
 
-
-
-
-
-
-
-
-
 modifier_scepter_culling_blade = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications
@@ -302,8 +306,8 @@ end
  
 
 
-
 modifier_scepter_culling_blade_stack = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

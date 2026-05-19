@@ -12,7 +12,6 @@ function item_npc_dota_hero_dark_seer:OnSpellStart()
 end
 
 
-
 dark_seer_buff_1 = class({})
 
 function dark_seer_buff_1:GetIntrinsicModifierName()

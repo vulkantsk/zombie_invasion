@@ -44,4 +44,3 @@ function modifier_item_sad_shield:GetTexture()
 end
 
 
-

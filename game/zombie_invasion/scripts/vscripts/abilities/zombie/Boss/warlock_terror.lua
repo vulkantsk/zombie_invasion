@@ -8,6 +8,7 @@ function warlock_terror:GetIntrinsicModifierName()
     return "modifier_warlock_terror"
 end
 
+
 modifier_warlock_terror = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -56,6 +57,7 @@ modifier_warlock_terror_stay = class({
     AllowIllusionDuplicate  = function(self) return true end,
  
 })
+
 
 function modifier_warlock_terror_stay:OnCreated( kv )
     self.bat = self:GetAbility():GetSpecialValueFor( "base_attack_time" )
@@ -120,6 +122,7 @@ function modifier_warlock_terror_stay:GetEffectAttachType()
     return PATTACH_ABSORIGIN_FOLLOW
 end
  --[[ 
+
 modifier_disable_sf = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -149,6 +152,9 @@ function  modifier_disable_sf:OnDestroy()
 end  
  
 
+
+ 
+
 modifier_no_attack = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -163,6 +169,9 @@ modifier_no_attack = class({
  
         } end,
 })
+
+ 
+
 
  
 

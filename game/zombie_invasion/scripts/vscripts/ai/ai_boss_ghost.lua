@@ -102,7 +102,6 @@ function CastCursed( enemy )
 end
 
 
-
 function AttackMove( unit, enemy )
 	if enemy == nil then
 		return

@@ -52,7 +52,6 @@ function modifier_item_refresher_core:GetModifierCastRangeBonusStacking()
 end
 
 
-
 ItemsExeptions = 
 {
  

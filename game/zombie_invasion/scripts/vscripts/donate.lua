@@ -17,7 +17,6 @@ DONATE_SET_HELPER = {
 }
 
 
-
 DONATE_SET_ULTRA_HELPER = {
 	players = {
 	203159402,
@@ -1034,7 +1033,6 @@ function Donate:OnNPCSpawned(keys)
 	end
 
 end
-
 
 
 function addModifierBySteamID(enum,modifier_name,steamID,npc)

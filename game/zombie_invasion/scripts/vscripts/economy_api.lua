@@ -5,9 +5,8 @@ end
 
 local json = require("libraries.rxi_json")
 
---- База URL без завершающего слэша (например http://127.0.0.1:3000)
-ECONOMY_API_BASE = ECONOMY_API_BASE or "http://127.0.0.1:3010"
-ECONOMY_API_KEY  = ECONOMY_API_KEY  or "BC7BD311B52FB9A50D2057B66FFCE9A095CD2755"
+ECONOMY_API_BASE = "https://keepdefending.ru/zapi"
+ECONOMY_API_KEY  = "7168062EBA9068D0D53F3C3475052D0CF8E77380"
 
 Economy._player = Economy._player or {}
 Economy._match_reported = Economy._match_reported or false
@@ -124,7 +123,7 @@ local function economy_count_keys(t)
 end
 
 function Economy:FetchCatalogThenPlayers()
-	self:HttpPost("/api/store/store_info", {}, function(data)
+	self:HttpPost("/store/store_info", {}, function(data)
 		local heroes_net = economy_catalog_list_to_net(data.heroes or {})
 		local items_net = economy_catalog_list_to_net(data.items or {})
 		DeepPrintTable(data)
@@ -159,7 +158,7 @@ function Economy:SyncPlayer(playerId)
 		end
 		return
 	end
-	self:HttpPost("/api/player", { id = sid }, function(data)
+	self:HttpPost("/player", { id = sid }, function(data)
 		self:ApplyPlayerData(playerId, data)
 	end)
 end
@@ -184,7 +183,7 @@ function Economy:RequestBuy(playerId, steamStr, kind, name)
 	if tostring(PlayerResource:GetSteamAccountID(playerId)) ~= steamStr then
 		return
 	end
-	self:HttpPost("/api/store/buy", { id = steamStr, kind = kind, name = name }, function()
+	self:HttpPost("/store/buy", { id = steamStr, kind = kind, name = name }, function()
 		self:SyncPlayer(playerId)
 	end)
 end
@@ -221,7 +220,7 @@ function Economy:RefreshPlayerInfo(playerId)
 		return
 	end
 	local sid = tostring(acc)
-	self:HttpPost("/api/player", { id = sid }, function(data)
+	self:HttpPost("/player", { id = sid }, function(data)
 		self:ApplyPlayerData(playerId, data)
 		CustomGameEventManager:Send_ServerToPlayer(player, "refresh_player_info_done", {})
 	end, function()
@@ -308,7 +307,7 @@ function Economy:OnMatchDone(keys)
 			end
 		end
 	end
-	self:HttpPost("/api/create_match", {
+	self:HttpPost("/create_match", {
 		difficulty = difficulty_string(),
 		isWin = isWin,
 		waves_cleared = 0,

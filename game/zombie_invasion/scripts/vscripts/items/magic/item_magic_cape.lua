@@ -145,8 +145,6 @@ function modifier_magic_cape_debuff_aura_modifier:GetTexture()
 end
 
 
-
-
 modifier_magic_cape_passive_2 = modifier_magic_cape_passive_2 or class({})
 
 -- Modifier properties
@@ -249,9 +247,7 @@ function modifier_magic_cape_debuff_aura_modifier_2:GetTexture()
 end
 
 
-
  
-
 
 
 modifier_magic_cape_passive_3 = modifier_magic_cape_passive_3 or class({})
@@ -354,7 +350,6 @@ end
 function modifier_magic_cape_debuff_aura_modifier_3:GetTexture()
 	return  "item_dis_magic"
 end
-
 
 
  

@@ -4,6 +4,16 @@ if ability_wave_of_terror == nil then
     ability_wave_of_terror = class({})
 end
 
+function ability_wave_of_terror:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_vengeful/vengeful_wave_of_terror.vpcf",
+		"particles/units/heroes/hero_vengeful/vengeful_wave_of_terror_recipient.vpcf",
+	}, {
+		"Hero_VengefulSpirit.WaveOfTerror",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_wave_of_terror:OnSpellStart()

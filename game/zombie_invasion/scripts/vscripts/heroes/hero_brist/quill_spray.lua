@@ -1,4 +1,13 @@
 ability_quill_spray = class({})
+
+function ability_quill_spray:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bristleback/bristleback_quill_spray.vpcf",
+	}, {
+		"Hero_Bristleback.QuillSpray.Cast",
+	}, context)
+end
+
 LinkLuaModifier('modifier_ability_quill_spray_debuff_active', 'heroes/hero_brist/quill_spray', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier('modifier_ability_quill_spray_debuff', 'heroes/hero_brist/quill_spray', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier('modifier_bristleback_quill_spray_autocast', 'heroes/hero_brist/quill_spray', LUA_MODIFIER_MOTION_NONE)
@@ -66,6 +75,7 @@ modifier_ability_quill_spray_debuff_active = class({
     GetAttributes           = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 })
 
+
 function modifier_ability_quill_spray_debuff_active:OnDestroy()
     if IsClient() then return end
     self:GetParent():AddStackModifier({
@@ -85,6 +95,7 @@ modifier_ability_quill_spray_debuff = class({
     AllowIllusionDuplicate  = function(self) return true end,
 })
 
+
 modifier_bristleback_quill_spray_autocast = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
@@ -92,6 +103,7 @@ modifier_bristleback_quill_spray_autocast = class({
     IsBuff                  = function(self) return true end,
     RemoveOnDeath           = function(self) return false end,
 })
+
 
 function modifier_bristleback_quill_spray_autocast:OnCreated()
     if IsServer() then

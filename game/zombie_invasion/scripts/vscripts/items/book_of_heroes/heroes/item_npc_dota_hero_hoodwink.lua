@@ -2,6 +2,14 @@ LinkLuaModifier("modifier_hoodwink", "items/book_of_heroes/heroes/item_npc_dota_
 LinkLuaModifier("modifier_hoodwink_acorn", "items/book_of_heroes/heroes/item_npc_dota_hero_hoodwink", LUA_MODIFIER_MOTION_NONE)
 item_npc_dota_hero_hoodwink = class({})
 
+function item_npc_dota_hero_hoodwink:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_hoodwink/hoodwink_acorn_shot_tracking.vpcf",
+	}, {
+	}, context)
+end
+
+
 function item_npc_dota_hero_hoodwink:OnSpellStart()
 		local caster = self:GetCaster()
 		local hItem = self
@@ -14,11 +22,20 @@ end
 
 if hoodwink_buff_1== nil then
     hoodwink_buff_1 = class({})
+
+function hoodwink_buff_1:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_hoodwink/hoodwink_acorn_shot_tracking.vpcf",
+	}, {
+	}, context)
+end
+
 end
 
 function hoodwink_buff_1:GetIntrinsicModifierName()
     return "modifier_hoodwink"
 end
+
 
 modifier_hoodwink = class({
     IsHidden                = function(self) return true end,

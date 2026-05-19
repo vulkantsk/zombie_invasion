@@ -1,4 +1,14 @@
 juggernaut_shadow = class({})
+
+function juggernaut_shadow:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/phantom_assassin/pa_fall20_immortal_shoulders/pa_fall20_blur_ambient.vpcf",
+		"particles/econ/items/phantom_assassin/pa_fall20_immortal_shoulders/pa_fall20_blur_start.vpcf",
+	}, {
+		"Hero_Invoker.GhostWalk",
+	}, context)
+end
+
  
 
 LinkLuaModifier( "modifier_juggernaut_shadow", "heroes/hero_samurai/spells/shadow_spell", LUA_MODIFIER_MOTION_NONE )
@@ -38,6 +48,7 @@ end
  
  
  modifier_juggernaut_shadow = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

@@ -8,6 +8,7 @@ require( "item_drop" )
 require( "timers" )
 require( "sounds" )
 require( "util/util" );
+require( "util/precache_ability" );
 require( "invasion_classic" )
 require( "invasion_nights" )
 require( "triggers" )
@@ -226,11 +227,6 @@ PrecacheResource("model", "models/items/dragon_knight/ti8_dk_third_awakening_dra
 	
 
 
-
-
-
-
-
 	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_snow.vpcf", context )	
 	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf", context )	
 	PrecacheResource( "particle", "particles/units/heroes/hero_crystalmaiden/maiden_crystal_nova.vpcf", context )	
@@ -332,13 +328,10 @@ PrecacheResource("model", "models/items/dragon_knight/ti8_dk_third_awakening_dra
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts", context )
 
 
-
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_lich.vsndevts", context )
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts", context )
-
-
 
 
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts", context )

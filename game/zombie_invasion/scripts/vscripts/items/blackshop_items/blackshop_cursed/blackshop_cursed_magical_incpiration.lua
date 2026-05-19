@@ -70,4 +70,3 @@ function modifier_blackshop_cursed_magical_incpiration:GetModifierIncomingDamage
 end
 
 
-

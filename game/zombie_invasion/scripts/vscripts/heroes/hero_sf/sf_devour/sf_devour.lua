@@ -1,5 +1,15 @@
 --------------------------------------------------------------------------------
 sf_devour = class({})
+
+function sf_devour:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_doom_bringer/doom_bringer_devour.vpcf",
+	}, {
+		"Hero_DoomBringer.Devour",
+		"Hero_DoomBringer.DevourCast",
+	}, context)
+end
+
  
 
 LinkLuaModifier( "modifier_sf_devour", "heroes/hero_sf/sf_devour/sf_devour", LUA_MODIFIER_MOTION_NONE )
@@ -80,6 +90,8 @@ function sf_devour:PlayEffects( target )
 	EmitSoundOn( sound_target, target )
 end
  
+
+ 
 modifier_sf_devour = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
@@ -120,6 +132,9 @@ function modifier_sf_devour:OnDestroy()
 		end
 	end
 end
+ 
+
+
  
 
 modifier_sf_devour_endless = class({

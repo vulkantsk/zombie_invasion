@@ -10,6 +10,18 @@ Ability checklist (erase if done/checked):
 ]]
 --------------------------------------------------------------------------------
 void_spirit_astral_step_lua = class({})
+
+function void_spirit_astral_step_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/heroes/samurai_astral_step.vpcf",
+		"particles/heroes/samurai_astral_step_debuff.vpcf",
+		"particles/heroes/samurai_astral_step_impact.vpcf",
+	}, {
+		"Hero_VoidSpirit.AstralStep.End",
+		"Hero_VoidSpirit.AstralStep.Start",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_generic_charges", "heroes/generic/modifier_generic_charges", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_void_spirit_astral_step_lua", "heroes/hero_samurai/spells/modifier_void_spirit_astral_step_lua", LUA_MODIFIER_MOTION_NONE )
 

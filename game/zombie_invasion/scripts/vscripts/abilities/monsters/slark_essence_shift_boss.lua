@@ -1,4 +1,12 @@
 slark_essence_shift_boss = class({})
+
+function slark_essence_shift_boss:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_slark/slark_essence_shift.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_slark_essence_shift_boss", "abilities/monsters/slark_essence_shift_boss", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_slark_essence_shift_boss_debuff", "abilities/monsters/slark_essence_shift_boss", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_slark_essence_shift_boss_stack", "abilities/monsters/slark_essence_shift_boss", LUA_MODIFIER_MOTION_NONE )
@@ -8,6 +16,7 @@ LinkLuaModifier( "modifier_slark_essence_shift_boss_stack", "abilities/monsters/
 function slark_essence_shift_boss:GetIntrinsicModifierName()
 	return "modifier_slark_essence_shift_boss"
 end
+
 
 modifier_slark_essence_shift_boss = class({
     IsHidden                = function(self) return false end,
@@ -104,8 +113,9 @@ function modifier_slark_essence_shift_boss:PlayEffects( target )
 end
 
 
-
 modifier_slark_essence_shift_boss_debuff = class({})
+
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_slark_essence_shift_boss_debuff:IsHidden()
@@ -195,6 +205,8 @@ function modifier_slark_essence_shift_boss_debuff:RemoveStack()
 end
 
 modifier_slark_essence_shift_boss_stack = class({})
+
+
 --------------------------------------------------------------------------------
 -- Classifications
 function modifier_slark_essence_shift_boss_stack:IsHidden()

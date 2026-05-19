@@ -1,5 +1,16 @@
 sara_dark_blink = class({})
 
+function sara_dark_blink:Precache(context)
+	PrecacheAbilityResources({
+		"particles/arena/units/heroes/hero_sara/dark_blink_end.vpcf",
+		"particles/arena/units/heroes/hero_sara/dark_blink_start.vpcf",
+	}, {
+		"Hero_Antimage.Blink_in",
+		"Hero_Antimage.Blink_out",
+	}, context)
+end
+
+
 if IsClient() then
 	function sara_dark_blink:GetManaCost()
 		return self:GetCaster():GetMaxMana() * self:GetSpecialValueFor("min_cost_pct") * 0.01

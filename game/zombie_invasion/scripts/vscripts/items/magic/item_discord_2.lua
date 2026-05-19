@@ -88,7 +88,6 @@ function modifier_veil_active_debuff:OnTooltip()
 end
 
 
-
 function modifier_veil_active_debuff:GetEffectName()
 	return "particles/items2_fx/veil_of_discord_debuff.vpcf"
 end

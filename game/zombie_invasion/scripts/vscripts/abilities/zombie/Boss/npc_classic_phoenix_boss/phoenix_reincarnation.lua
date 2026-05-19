@@ -5,7 +5,6 @@ LinkLuaModifier("modifier_phoenix_reincarnation_stack", "abilities/zombie/Boss/p
 phoenix_reincarnation = {}
 
 
-
 function phoenix_reincarnation:GetIntrinsicModifierName()
 	return "modifier_phoenix_reincarnation"
 end

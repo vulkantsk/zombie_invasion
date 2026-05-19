@@ -4,6 +4,16 @@ if crushing_leap == nil then
     crushing_leap = class({})
 end
 
+function crushing_leap:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_warlock/warlock_rain_of_chaos_explosion.vpcf",
+	}, {
+		"Hero_Undying.FleshGolem.Cast",
+		"Hero_Warlock.RainOfChaos",
+	}, context)
+end
+
+
 function crushing_leap:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_AOE
 end

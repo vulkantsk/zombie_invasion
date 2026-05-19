@@ -1,6 +1,15 @@
 
 ----------------------------------------------------------------------
 spider_nethertoxin_lua = class({})
+
+function spider_nethertoxin_lua:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_viper/viper_nethertoxin_proj.vpcf",
+	}, {
+		"Hero_Viper.Nethertoxin.Cast",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_spider_nethertoxin_lua", "creature_ability/modifier/modifier_spider_nethertoxin_lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------

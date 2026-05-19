@@ -1,5 +1,17 @@
 axe_culling_blade_custom = class({})
 
+function axe_culling_blade_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodritual_impact.vpcf",
+		"particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_bloody.vpcf",
+		"particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff_symbol.vpcf",
+	}, {
+		"Hero_Axe.Culling_Blade_Fail",
+		"Hero_Axe.Culling_Blade_Success",
+	}, context)
+end
+
+
 LinkLuaModifier("modifier_autocast_culling_blade", "modifiers/modifier_autocast_culling_blade.lua", LUA_MODIFIER_MOTION_NONE )
 
 

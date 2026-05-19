@@ -1,6 +1,14 @@
 
 intent_look = class({})
 
+function intent_look:Precache(context)
+	PrecacheAbilityResources({
+		"particles/items_fx/dust_of_appearance.vpcf",
+	}, {
+		"DOTA_Item.DustOfAppearance.Activate",
+	}, context)
+end
+
 
  function intent_look:GetAOERadius()
      return self:GetSpecialValueFor("radius")

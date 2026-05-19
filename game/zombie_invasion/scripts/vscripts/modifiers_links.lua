@@ -13,7 +13,6 @@ LinkLuaModifier("modifier_attack_of_deactivating", "modifiers/modifier_attack_of
 LinkLuaModifier("modifier_victory_animation", "modifiers/modifier_victory_animation.lua", LUA_MODIFIER_MOTION_NONE )
 
 
-
 LinkLuaModifier("modifier_range_magick_attack", "modifiers/monsters/modifier_range_magick_attack.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_no_health_bar", "modifiers/monsters/modifier_no_health_bar.lua", LUA_MODIFIER_MOTION_NONE )
 -------------------------------------------------------------------
@@ -59,7 +58,6 @@ LinkLuaModifier("modifier_devastator_aura_debuff", "modifiers/monsters/modifier_
 
 LinkLuaModifier("modifier_circulator_infection", "modifiers/monsters/modifier_circulator_infection.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier("modifier_circulator_infection_debuff", "modifiers/monsters/modifier_circulator_infection.lua", LUA_MODIFIER_MOTION_NONE )
-
 
 
 -------------------------------------------------------------------

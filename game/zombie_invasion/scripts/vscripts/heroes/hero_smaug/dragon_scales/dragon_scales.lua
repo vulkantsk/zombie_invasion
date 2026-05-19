@@ -2,10 +2,19 @@ LinkLuaModifier( "modifier_dragon_scales", "heroes/hero_smaug/dragon_scales/drag
 
 dragon_scales = class({})
 
+function dragon_scales:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/medusa/medusa_daughters/medusa_daughters_mana_shield.vpcf",
+	}, {
+	}, context)
+end
+
+
 function dragon_scales:OnSpellStart() 
     self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_dragon_scales", { duration =  self:GetSpecialValueFor("duration")})
     
 end
+
 
 modifier_dragon_scales = class({
         IsHidden                 = function(self) return false end,

@@ -1,5 +1,25 @@
 sf_scary_shape = class({})
+
+function sf_scary_shape:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/heroes/azzazel/nevermore_necro_souls.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf",
+	}, {
+	}, context)
+end
+
 sf_scary_shape_active = class({})
+
+function sf_scary_shape_active:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/heroes/azzazel/nevermore_necro_souls.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf",
+	}, {
+	}, context)
+end
+
 LinkLuaModifier( "modifier_sf_scary_shape", "heroes/hero_sf/sf_scary_shape/sf_scary_shape", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_sf_scary_shape_active", "heroes/hero_sf/sf_scary_shape/sf_scary_shape", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_sf_scary_shape_active_debuff", "heroes/hero_sf/sf_scary_shape/sf_scary_shape", LUA_MODIFIER_MOTION_NONE )
@@ -23,6 +43,8 @@ modifier_sf_scary_shape = class({
 	IsDebuff 				= function(self) return false end,
 	RemoveOnDeath 			= function(self) return false end,
 })
+
+
  
 
 --------------------------------------------------------------------------------
@@ -42,6 +64,8 @@ function modifier_sf_scary_shape:OnIntervalThink()
      	caster:RemoveAbility("sf_scary_shape")
     end
 end
+ 
+
  
 modifier_sf_scary_shape_active = class({
 	IsHidden 				= function(self) return true end,
@@ -86,6 +110,7 @@ function modifier_sf_scary_shape_active:OnAttackLanded(data)
         modif.target_armor = target_armor
     end
 end
+
 
 modifier_sf_scary_shape_active_debuff = class({
     IsHidden        = function(self) return false end,

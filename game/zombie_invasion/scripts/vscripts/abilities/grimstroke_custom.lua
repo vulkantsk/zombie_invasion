@@ -7,6 +7,21 @@ if grimstroke_custom == nil then
 	grimstroke_custom = class({})
 end
 
+function grimstroke_custom:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_demonartist/demonartist_darkartistry_dmg_steam.vpcf",
+		"particles/units/heroes/hero_demonartist/demonartist_darkartistry_dmg_stroke_tgt.vpcf",
+		"particles/units/heroes/hero_demonartist/demonartist_darkartistry_proj.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_loadout.vpcf",
+	}, {
+		"Hero_Grimstroke.DarkArtistry.Cast",
+		"Hero_Grimstroke.DarkArtistry.Cast.Layer",
+		"Hero_Grimstroke.DarkArtistry.Damage",
+		"Hero_Grimstroke.DarkArtistry.PreCastPoint",
+		"Hero_Grimstroke.DarkArtistry.Projectile",
+	}, context)
+end
+
 --[[
 Определяем тип умения, непосредственно каст на точку. 
 ]] 
@@ -150,7 +165,6 @@ function grimstroke_custom:OnSpellStart()
 	end
 
 end
-
 
 
 --[[

@@ -1,5 +1,15 @@
 power_of_faith = class({})
 
+function power_of_faith:Precache(context)
+	PrecacheAbilityResources({
+		"particles/dire_fx/tower_bad_face_end_ball.vpcf",
+		"particles/units/heroes/hero_techies/techies_land_mine_ball_explosion.vpcf",
+	}, {
+		"Hero_Spirit_Breaker.GreaterBash",
+	}, context)
+end
+
+
 function power_of_faith:OnToggle()
 
 

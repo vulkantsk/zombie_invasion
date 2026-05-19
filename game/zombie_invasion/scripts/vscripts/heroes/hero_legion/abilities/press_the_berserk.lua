@@ -4,6 +4,16 @@ if press_the_berserk == nil then
     press_the_berserk = class({})
 end
 
+function press_the_berserk:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/legion/legion_fallen/legion_fallen_press.vpcf",
+		"particles/econ/items/legion/legion_fallen/legion_fallen_press_owner_alt.vpcf",
+	}, {
+		"Hero_LegionCommander.PressTheAttack",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function press_the_berserk:OnSpellStart()

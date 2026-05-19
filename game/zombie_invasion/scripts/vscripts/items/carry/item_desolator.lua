@@ -45,7 +45,6 @@ function modifier_item_desolator_custom:GetModifierExtraHealthBonus()
 end
 
 
-
 function modifier_item_desolator_custom:OnAttackLanded(data)
     local caster = self:GetCaster()
     local target = data.target

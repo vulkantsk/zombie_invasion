@@ -109,7 +109,7 @@ local function packages_to_net(list)
 end
 
 function DonateRobokassa:FetchPackages()
-	self:_RawPost("/api/donate/bundles-ingame", {}, function(code, data)
+	self:_RawPost("/donate/bundles-ingame", {}, function(code, data)
 		if code ~= 200 or type(data) ~= "table" or type(data.packages) ~= "table" then
 			print("[DonateRobokassa] FetchPackages failed code=" .. tostring(code))
 			return
@@ -177,7 +177,7 @@ function DonateRobokassa:CreatePayment(playerId, packageId)
 		return
 	end
 
-	self:_RawPost("/api/donate/create-payment-ingame", {
+	self:_RawPost("/donate/create-payment-ingame", {
 		packageId = packageId,
 		steam_account_id = tostring(acc),
 	}, function(code, data)

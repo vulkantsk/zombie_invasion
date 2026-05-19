@@ -12,7 +12,6 @@ function item_npc_dota_hero_tidehunter:OnSpellStart()
 end
 
 
-
 tide_buff_1 = class({})
 
 function tide_buff_1:GetIntrinsicModifierName()

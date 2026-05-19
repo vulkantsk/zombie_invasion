@@ -1,4 +1,15 @@
 shotgun_shoot = class({})
+
+function shotgun_shoot:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/events/league_teleport_2014/teleport_end_dust_league.vpcf",
+		"particles/units/heroes/hero_lina/lina_spell_dragon_slave.vpcf",
+	}, {
+		"Hero_Sniper.AssassinateDamage",
+		"Hero_Sniper.MKG_attack",
+	}, context)
+end
+
 first = 0
 --XCaster = nil
 function shotgun_shoot:OnSpellStart()

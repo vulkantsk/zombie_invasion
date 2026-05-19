@@ -2,6 +2,15 @@ LinkLuaModifier("modifier_death_or_life", "heroes/hero_oracle/death_or_life", LU
 
 death_or_life = class({})
 
+function death_or_life:Precache(context)
+	PrecacheAbilityResources({
+		"particles/addons_gameplay/tower_good_tintable_lamp_end.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_darkartistry_dmg_stroke_tgt.vpcf",
+	}, {
+	}, context)
+end
+
+
 function death_or_life:OnSpellStart()
 local caster = self:GetCaster()
 local target = self:GetCursorTarget()
@@ -30,6 +39,9 @@ damage_type = DAMAGE_TYPE_PURE,
  
  
 end
+ 
+
+
  
 
 modifier_death_or_life = class({

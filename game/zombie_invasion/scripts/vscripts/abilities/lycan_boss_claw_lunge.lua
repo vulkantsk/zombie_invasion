@@ -1,4 +1,20 @@
 lycan_boss_claw_lunge = class({})
+
+function lycan_boss_claw_lunge:Precache(context)
+	PrecacheAbilityResources({
+		"particles/darkmoon_creep_warning.vpcf",
+		"particles/econ/items/ancient_apparition/aa_blast_ti_5/ancient_apparition_ice_blast_sphere_final_smoke_ti5.vpcf",
+		"particles/generic_gameplay/generic_bashed.vpcf",
+		"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ice_blast_debuff.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_thirst_owner.vpcf",
+		"particles/units/heroes/hero_ember_spirit/ember_spirit_fire_remnant_trail.vpcf",
+	}, {
+		"EGE",
+		"Hero_Bristleback.QuillSpray.Cast",
+		"Hero_Lycan.Howl",
+	}, context)
+end
+
 LinkLuaModifier( "modifier_lycan_boss_claw_lunge", "modifiers/modifier_lycan_boss_claw_lunge", LUA_MODIFIER_MOTION_HORIZONTAL )
 LinkLuaModifier( "modifier_no_heal", "modifiers/modifier_no_heal", LUA_MODIFIER_MOTION_HORIZONTAL )
 LinkLuaModifier( "modifier_bkb", "modifiers/modifier_bkb", LUA_MODIFIER_MOTION_HORIZONTAL )

@@ -5,10 +5,7 @@ if item_legendery_tom == nil then
 end
 
 
-
  
-
-
 
 
 function item_legendery_tom:CastFilterResultTarget(hTarget)

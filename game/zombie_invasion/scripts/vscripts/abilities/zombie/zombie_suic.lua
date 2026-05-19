@@ -2,7 +2,25 @@ LinkLuaModifier( "modifier_zombie_suic", "abilities/zombie/zombie_suic", LUA_MOD
 LinkLuaModifier( "modifier_zombie_suic_2", "abilities/zombie/zombie_suic", LUA_MODIFIER_MOTION_NONE )
 
 zombie_suic = class({})
+
+function zombie_suic:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_techies/techies_suicide.vpcf",
+	}, {
+		"Hero_Techies.Suicide",
+	}, context)
+end
+
 zombie_suic_2 = class({})
+
+function zombie_suic_2:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_techies/techies_suicide.vpcf",
+	}, {
+		"Hero_Techies.Suicide",
+	}, context)
+end
+
  
 function zombie_suic:GetIntrinsicModifierName()
     return "modifier_zombie_suic"

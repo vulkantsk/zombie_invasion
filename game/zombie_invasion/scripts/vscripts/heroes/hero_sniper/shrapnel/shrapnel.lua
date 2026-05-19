@@ -5,6 +5,17 @@ if ability_sniper_shrapnel == nil then
     ability_sniper_shrapnel = class({})
 end
 
+function ability_sniper_shrapnel:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_sniper/sniper_shrapnel.vpcf",
+		"particles/units/heroes/hero_sniper/sniper_shrapnel_launch.vpcf",
+	}, {
+		"Hero_Sniper.ShrapnelShatter",
+		"Hero_Sniper.ShrapnelShoot",
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_sniper_shrapnel:GetAOERadius()

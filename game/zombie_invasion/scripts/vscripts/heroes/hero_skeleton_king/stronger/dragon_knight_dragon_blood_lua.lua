@@ -38,11 +38,6 @@ function modifier_triple_blow_passive:IsStunDebuff() return false end
 function modifier_triple_blow_passive:RemoveOnDeath() return false end
 
 
-
-
-
-
-
 function modifier_triple_blow_passive:OnCreated( kv )
 	-- references
 	self.armor = self:GetAbility():GetSpecialValueFor( "bonus_armor" )
@@ -70,8 +65,6 @@ end
  
 
  
-
-
 
 
 function modifier_triple_blow_passive:DeclareFunctions()
@@ -111,7 +104,6 @@ function modifier_triple_blow_passive:GetModifierPhysicalArmorBonus()
 end
 
 
-
 function modifier_triple_blow_passive:OnAttackStart(keys)
 	local item = self:GetAbility()
 	local parent = self:GetParent()
@@ -124,9 +116,6 @@ function modifier_triple_blow_passive:OnAttackStart(keys)
 		end
 	end
 end
-
-
-
 
 
 -------------------------------------------

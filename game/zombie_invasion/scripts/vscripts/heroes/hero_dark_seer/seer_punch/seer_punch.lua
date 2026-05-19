@@ -6,6 +6,16 @@ if ability_seer_punch == nil then
     ability_seer_punch = class({})
 end
 
+function ability_seer_punch:Precache(context)
+	PrecacheAbilityResources({
+		"particles/generic_gameplay/generic_stunned.vpcf",
+		"particles/units/heroes/hero_dark_seer/dark_seer_attack_normal_punch.vpcf",
+		"particles/units/heroes/hero_dark_seer/dark_seer_punch_glove_attack.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 function ability_seer_punch:GetAOERadius()
  
@@ -99,6 +109,7 @@ end
 
 
 modifier_ability_seer_punch = class({})
+
 
 --------------------------------------------------------------------------------
 -- Classifications

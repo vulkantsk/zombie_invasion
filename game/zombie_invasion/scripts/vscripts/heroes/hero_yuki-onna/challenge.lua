@@ -2,9 +2,17 @@
  LinkLuaModifier( "modifier_challenge_buff", "heroes/hero_yuki-onna/challenge", LUA_MODIFIER_MOTION_NONE )
  
 
-yuki_challenge = {}
+yuki_challenge = class({})
 
- function yuki_challenge:OnSpellStart()
+function yuki_challenge:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/winter_wyvern/winter_wyvern_ti7/wyvern_cold_embrace_ti7buff.vpcf",
+	}, {
+		"Hero_Winter_Wyvern.ColdEmbrace",
+	}, context)
+end
+
+function yuki_challenge:OnSpellStart()
  	local target = self:GetCursorTarget()
  
 	target:AddNewModifier( self:GetCaster(), self, "modifier_challenge_debuff", { duration = self:GetSpecialValueFor('duration') } )

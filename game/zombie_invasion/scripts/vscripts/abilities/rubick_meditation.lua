@@ -1,4 +1,17 @@
 rubick_meditation = class({})
+
+function rubick_meditation:Precache(context)
+	PrecacheAbilityResources({
+		"particles/customgames/capturepoints/msg_capturepoints_allied.vpcf",
+		"particles/econ/items/leshrac/leshrac_tormented_staff/leshrac_split_sparks_tormented.vpcf",
+		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force_cube.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodbath_heal.vpcf",
+		"particles/units/heroes/hero_rubick/rubick_telekinesis_impact_rings.vpcf",
+	}, {
+		"DOTA_Item.FaerieSpark.Activate",
+	}, context)
+end
+
 return_time = 1
 
 function rubick_meditation:OnSpellStart()

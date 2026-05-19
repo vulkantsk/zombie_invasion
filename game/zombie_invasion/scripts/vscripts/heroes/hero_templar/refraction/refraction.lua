@@ -3,13 +3,7 @@ LinkLuaModifier( "modifier_templar_assassin_refraction_custom_absorb", "heroes/h
 LinkLuaModifier( "modifier_templar_assassin_refraction_custom_reflect_cd", "heroes/hero_templar/refraction/refraction", LUA_MODIFIER_MOTION_NONE )
 
 
-
-
-
-
-
 templar_assassin_refraction_custom = class({})
-
 
 
 function templar_assassin_refraction_custom:Precache(context)
@@ -21,19 +15,11 @@ PrecacheResource( "particle", 'particles/units/heroes/hero_templar_assassin/temp
 end
 
 
-
-
-
-
-
 function templar_assassin_refraction_custom:GetCooldown(level)
 local bonus = 0
 
     return self.BaseClass.GetCooldown( self, level ) - bonus
 end
-
-
-
 
 
 function templar_assassin_refraction_custom:OnSpellStart()
@@ -52,6 +38,7 @@ end
 -- Урон
 
 modifier_templar_assassin_refraction_custom_damage = class({})
+
 
 function modifier_templar_assassin_refraction_custom_damage:GetPriority()
 	return MODIFIER_PRIORITY_ULTRA
@@ -125,6 +112,7 @@ end
 
 modifier_templar_assassin_refraction_custom_absorb = class({})
 
+
 function modifier_templar_assassin_refraction_custom_absorb:GetPriority()
 	return MODIFIER_PRIORITY_ULTRA
 end
@@ -175,17 +163,12 @@ function modifier_templar_assassin_refraction_custom_absorb:DeclareFunctions()
 end
 
 
-
-
-
-
 function modifier_templar_assassin_refraction_custom_absorb:OnStackCountChanged()
 if not IsServer() then return end
 
 
 if self:GetStackCount() <= 0 then
 	self:Destroy()
-
 
 
 		self:GetParent():EmitSound("TA.Shield_break")
@@ -234,7 +217,6 @@ function modifier_templar_assassin_refraction_custom_absorb:GetModifierTotal_Con
 
     return params.damage
 end
-
 
 
 function modifier_templar_assassin_refraction_custom_absorb:OnDestroy()

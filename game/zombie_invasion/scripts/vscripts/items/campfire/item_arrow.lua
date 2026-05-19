@@ -38,7 +38,6 @@ function modifier_item_arrow_fire:GetEffectName()
 end
 
 
-
 campfire_quest = class({})
 
 function campfire_quest:GetIntrinsicModifierName()
@@ -218,6 +217,5 @@ function modifier_campfire_quest:OnIntervalThink()
 
 	end	
 end
-
 
 

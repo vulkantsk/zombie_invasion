@@ -6,7 +6,18 @@ anchor_smash_passive = class({
     GetIntrinsicModifierName = function() return "modifier_anchor_smash_passive" end
 })
 
+function anchor_smash_passive:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_tidehunter/tidehunter_anchor.vpcf",
+		"particles/units/heroes/hero_tidehunter/tidehunter_anchor_hero.vpcf",
+	}, {
+		"Hero_Tidehunter.AnchorSmash",
+	}, context)
+end
+
+
 modifier_anchor_smash_passive = class({})
+
 
 function modifier_anchor_smash_passive:DeclareFunctions()
     return {
@@ -62,6 +73,7 @@ function modifier_anchor_smash_passive:GetModifierProcAttack_Feedback()
         end
 
     end
+
 
     modifier_anchor_smash_passive_reduction = class({
     IsHidden                = function(self) return false end,

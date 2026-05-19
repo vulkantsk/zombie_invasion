@@ -4,6 +4,19 @@ if crushing_explosion == nil then
     crushing_explosion = class({})
 end
 
+function crushing_explosion:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/antimage/antimage_ti7_golden/antimage_blink_start_ti7_golden_flame.vpcf",
+		"particles/neutral_fx/satyr_hellcaller.vpcf",
+		"particles/units/heroes/hero_nevermore/nevermore_requiem_head.vpcf",
+	}, {
+		"Hero_Nevermore.RequiemOfSouls",
+		"Hero_Nevermore.RequiemOfSoulsCast",
+		"Hero_Warlock.RainOfChaos",
+	}, context)
+end
+
+
 VECTOR_TABLE = {
 	Vector(-1,-1,0),
 	Vector(-1,0,0),

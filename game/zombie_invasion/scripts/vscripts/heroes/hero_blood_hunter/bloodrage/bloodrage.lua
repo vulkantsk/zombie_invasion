@@ -3,6 +3,16 @@ LinkLuaModifier( "modifier_bloodrage_count", "heroes/hero_blood_hunter/bloodrage
 
 bloodrage = class({})
 
+function bloodrage:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_eztzhok.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+	}, {
+		"hero_bloodseeker.bloodRage",
+	}, context)
+end
+
+
 function bloodrage:OnSpellStart()
      local caster = self:GetCaster()
 
@@ -10,6 +20,7 @@ function bloodrage:OnSpellStart()
      caster:EmitSound("hero_bloodseeker.bloodRage")
 
 end 
+
 
 modifier_bloodrage_buff = class({
     IsHidden                = function(self) return false end,
@@ -145,6 +156,8 @@ modifier_bloodrage_count = class({
     RemoveOnDeath             = function(self) return false end,
     GetAttributes                = function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 })
+
+
  
 function modifier_bloodrage_count:OnRemoved()
         self.modifier:RemoveStack(self.bonus)

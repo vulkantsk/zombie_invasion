@@ -4,6 +4,14 @@ if ability_phantom_assassin_coup_de_grace == nil then
     ability_phantom_assassin_coup_de_grace = class({})
 end
 
+function ability_phantom_assassin_coup_de_grace:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf",
+	}, {
+	}, context)
+end
+
+
 --------------------------------------------------------------------------------
 
 function ability_phantom_assassin_coup_de_grace:GetIntrinsicModifierName()

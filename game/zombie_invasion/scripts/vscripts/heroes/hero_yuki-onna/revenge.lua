@@ -2,9 +2,15 @@
  LinkLuaModifier( "modifier_revenge_aura", "heroes/hero_yuki-onna/revenge", LUA_MODIFIER_MOTION_NONE )
 
 
- yuki_revenge = {}
- 
- function yuki_revenge:GetIntrinsicModifierName() 
+yuki_revenge = class({})
+
+function yuki_revenge:Precache(context)
+	PrecacheAbilityResources({
+		"particles/yuki_voodoo_restoration.vpcf",
+	}, {}, context)
+end
+
+function yuki_revenge:GetIntrinsicModifierName() 
  	return "modifier_revenge_aura"
  end
 
@@ -35,7 +41,6 @@ end
 function modifier_revenge_aura:OnRefresh() 
 	self:OnCreated()
 end
-
 
 
 function modifier_revenge_aura:IsAura()

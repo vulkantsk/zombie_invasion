@@ -12,7 +12,6 @@ function item_npc_dota_hero_axe:OnSpellStart()
 end
 
 
-
 axe_buff_1 = class({})
 
 function axe_buff_1:GetIntrinsicModifierName()
@@ -22,7 +21,6 @@ end
 function axe_buff_1:RemoveOnDeath()
     return true
 end
-
 
 
 modifier_axe = class({})

@@ -6,8 +6,6 @@ end
  
 
 
-
-
 LinkLuaModifier("modifier_legoin_low", "heroes/hero_legion/abilities/legion_low", LUA_MODIFIER_MOTION_NONE)
 
 legion_low = class({})

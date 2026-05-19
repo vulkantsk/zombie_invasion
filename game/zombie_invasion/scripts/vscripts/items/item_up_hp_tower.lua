@@ -5,10 +5,7 @@ if item_up_hp_tower == nil then
 end
 
 
-
  
-
-
 
 
 function item_up_hp_tower:CastFilterResultTarget(hTarget)

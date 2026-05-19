@@ -8,7 +8,6 @@ if item_letter == nil then
 end
 
 
-
  
 
 

@@ -5,6 +5,19 @@ LinkLuaModifier("modifier_lord_blood_rage", "heroes/hero_lord/lord_blood_rage", 
 
 lord_true_essence = class({})
 
+function lord_true_essence:Precache(context)
+	PrecacheAbilityResources({
+		"particles/econ/items/nightstalker/nightstalker_black_nihility/nightstalker_black_nihility_void.vpcf",
+		"particles/generic_gameplay/generic_lifesteal.vpcf",
+		"particles/units/heroes/hero_bloodseeker/bloodseeker_scepter_blood_mist_aoe.vpcf",
+		"particles/units/heroes/hero_grimstroke/grimstroke_ink_swell_aoe.vpcf",
+	}, {
+		"blood_rage",
+		"fly",
+	}, context)
+end
+
+
 function lord_true_essence:CastFilterResult()
         if not (self:GetCaster():HasModifier("modifier_lord_blood_rage")) then
             return UF_FAIL_CUSTOM
@@ -55,6 +68,9 @@ function lord_true_essence:OnToggle()
             caster:RemoveModifierByName("modifier_lord_true_essence_active")
         end
 end
+
+ 
+
 
  
 
@@ -110,6 +126,9 @@ end
 function modifier_lord_true_essence:GetModifierConstantHealthRegen()
     return self.hp_regen_bonus
 end 
+  
+
+
   
 
   modifier_lord_true_essence_active = class({

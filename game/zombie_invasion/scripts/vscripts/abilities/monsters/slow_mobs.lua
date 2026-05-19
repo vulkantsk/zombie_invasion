@@ -3,6 +3,15 @@ LinkLuaModifier("modifier_slow_mobs_bonus", "abilities/monsters/slow_mobs", LUA_
  
 slow_mobs = class({})
 
+function slow_mobs:Precache(context)
+	PrecacheAbilityResources({
+		"particles/units/heroes/hero_brewmaster/brewmaster_thunder_clap_debuff.vpcf",
+	}, {
+		"Slow_mobs_1",
+	}, context)
+end
+
+
 function slow_mobs:GetIntrinsicModifierName()
    return "modifier_slow_mobs" 
 end
@@ -51,6 +60,9 @@ function modifier_slow_mobs:OnAttackLanded(data)
       end
    end
 end
+ 
+
+
  
 
 modifier_slow_mobs_bonus = class({
